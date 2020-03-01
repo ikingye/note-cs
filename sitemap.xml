@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/javascript/</loc>
+    <lastmod>2020-03-01T13:33:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/compile/</loc>
+    <lastmod>2020-03-01T13:33:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/</loc>
+    <lastmod>2020-03-01T13:33:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/</loc>
+    <lastmod>2020-03-01T13:33:41+08:00</lastmod>
+  </url>
+  
+</urlset>
