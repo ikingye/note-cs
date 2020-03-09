@@ -3,13 +3,103 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/language/</loc>
-    <lastmod>2020-03-08T00:00:32+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/os/linux/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/computer-composition/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/os/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/os/macos/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/os/windows/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/data-structure/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/os/unix/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/network/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/compile/</loc>
-    <lastmod>2020-03-01T13:33:41+08:00</lastmod>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/os/ios/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/os/android/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/go/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/virtual/hyperkit/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/python/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/rust/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/virtual/vmware/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/virtual/virtualbox/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/database/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/virtual/</loc>
+    <lastmod>2020-03-09T17:41:22+08:00</lastmod>
   </url>
   
   <url>
