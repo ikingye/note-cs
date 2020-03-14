@@ -15,7 +15,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/compile/make/makefile/</guid>
-      <description>makefile 简介 基础 进阶 原理 </description>
+      <description>makefile 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。创建这一工具的目标是 减少不必要的编译或者任务。传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+基础 进阶 原理 </description>
     </item>
     
     <item>
