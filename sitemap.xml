@@ -13,6 +13,56 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/tutorial/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/appendix/tutorial/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/basic/practice/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/basic/practice/spec/baidu/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/basic/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/basic/practice/spec/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/computer-composition/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
   </url>
@@ -23,8 +73,48 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/interview/basic/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/appendix/interview/basic/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/os/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/priciple/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/priciple/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/interview/advanced/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/appendix/interview/advanced/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/interview/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/appendix/interview/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
   <url>
@@ -48,8 +138,38 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/source/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/source/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/interview/expert/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/appendix/interview/expert/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/os/unix/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/appendix/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
   <url>
@@ -60,6 +180,21 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/compile/make/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/basic/practice/snippet/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/snippet/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/tutorial/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
   <url>
@@ -89,7 +224,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/go/</loc>
-    <lastmod>2020-03-16T14:04:41+08:00</lastmod>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
   <url>
@@ -100,6 +235,16 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/iaas/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/debug/gdb/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/debug/lldb/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
   <url>
@@ -138,6 +283,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/baidu/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
   </url>
@@ -163,6 +313,16 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/virtual/parallels/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
   </url>
@@ -175,6 +335,11 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/database/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/debug/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
   <url>
@@ -198,8 +363,18 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/coding-online/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/</loc>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/tool/</loc>
-    <lastmod>2020-03-16T15:09:33+08:00</lastmod>
+    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
   <url>
