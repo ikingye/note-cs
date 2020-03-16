@@ -88,8 +88,18 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/iaas/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/onvif/</loc>
     <lastmod>2020-03-14T14:45:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/openshift/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
   </url>
   
   <url>
@@ -108,8 +118,38 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/</loc>
     <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/saas/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/cloud-foundry/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/gae/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/heroku/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
   </url>
   
   <url>
@@ -125,6 +165,11 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/database/</loc>
     <lastmod>2020-03-09T17:41:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/appfog/</loc>
+    <lastmod>2020-03-16T12:10:58+08:00</lastmod>
   </url>
   
   <url>
