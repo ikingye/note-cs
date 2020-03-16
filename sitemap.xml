@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/debug/</loc>
+    <lastmod>2020-03-16T22:39:05+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/tutorial/</loc>
     <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
@@ -223,6 +228,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/debug/gdb/tutorial/</loc>
+    <lastmod>2020-03-16T22:39:05+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/tool/dev/git/</loc>
     <lastmod>2020-03-16T20:27:51+08:00</lastmod>
   </url>
@@ -245,6 +255,11 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/debug/lldb/</loc>
     <lastmod>2020-03-16T20:27:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/debug/lldb/tutorial/</loc>
+    <lastmod>2020-03-16T22:39:05+08:00</lastmod>
   </url>
   
   <url>
