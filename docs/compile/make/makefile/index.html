@@ -9,7 +9,7 @@
 基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/compile/make/makefile/" />
-<meta property="article:modified_time" content="2020-03-15T18:57:54+08:00" />
+<meta property="article:modified_time" content="2020-03-16T10:52:34+08:00" />
 <title>makefile | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
 
 
-<script defer src="/note-cs/en.search.min.94a53f62801588e80cbde09104c24c8f2fefe610ced6611964b35a3701b4a54f.js" integrity="sha256-lKU/YoAViOgMveCRBMJMjy/v5hDO1mEZZLNaNwG0pU8="></script>
+<script defer src="/note-cs/en.search.min.a6828a3d7eb505d7d75e075b78bdb3e276ca814c3292afb90feeee88ad646293.js" integrity="sha256-poKKPX61BdfXXgdbeL2z4nbKgUwykq&#43;5D&#43;7uiK1kYpM="></script>
 
 <!--
 Made with Book Theme
@@ -986,8 +986,25 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#heading">简介</a></li>
         <li><a href="#heading-1">基础</a>
           <ul>
-            <li><a href="#heading-2">语法</a></li>
-            <li><a href="#heading-8">分支和变体</a></li>
+            <li><a href="#heading-2">语法</a>
+              <ul>
+                <li><a href="#target-">target 声明</a>
+                  <ul>
+                    <li><a href="#-phony-target">常用 phony target</a></li>
+                  </ul>
+                </li>
+                <li><a href="#heading-3">变量与通配符</a></li>
+                <li><a href="#heading-4">模式匹配</a></li>
+                <li><a href="#heading-5">变量</a></li>
+                <li><a href="#heading-6">函数</a></li>
+                <li><a href="#heading-7">指令</a></li>
+              </ul>
+            </li>
+            <li><a href="#heading-8">分支和变体</a>
+              <ul>
+                <li><a href="#gnu-make">GNU make</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#heading-9">进阶</a></li>
@@ -1065,7 +1082,6 @@ https://github.com/alex-shpak/hugo-book
 <li>意思是 tagets 并不是文件, 可以想象成一个任务的名字而已</li>
 <li>因为不是文件, 无法比对是否有更新, 所以每次 <code>make</code> 都会执行</li>
 <li>依赖于 phony target 的 target 也会每次 make 都执行, 即使 target 是文件</li>
-<li>常用的 phony target 有: all clean install</li>
 </ul>
 </li>
 <li>.PHONY
@@ -1073,6 +1089,13 @@ https://github.com/alex-shpak/hugo-book
 <li>如果定义的 phony target 与文件名重名, 可以用 .PHONY 显式地指明哪些 targets 是 phony</li>
 </ul>
 </li>
+</ul>
+<h5 id="-phony-target">常用 phony target</h5>
+<ul>
+<li><code>all</code></li>
+<li><code>clean</code></li>
+<li><code>install</code></li>
+<li><code>uninstall</code></li>
 </ul>
 <h4 id="heading-3">变量与通配符</h4>
 <ul>
@@ -1214,9 +1237,9 @@ var4 <span style="color:#f92672">:=</span> good night
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/6e966e19aec4e47381c7fd53d5ce3958a3b58d2b" title='Last modified by yewang | 2020-03-15' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/8a692305d4d3268e0c0a17aeebd822597a6dfb2e" title='Last modified by yewang | 2020-03-16' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-15</span>
+      <span>2020-03-16</span>
     </a>
   </div>
 
@@ -1255,8 +1278,25 @@ var4 <span style="color:#f92672">:=</span> good night
         <li><a href="#heading">简介</a></li>
         <li><a href="#heading-1">基础</a>
           <ul>
-            <li><a href="#heading-2">语法</a></li>
-            <li><a href="#heading-8">分支和变体</a></li>
+            <li><a href="#heading-2">语法</a>
+              <ul>
+                <li><a href="#target-">target 声明</a>
+                  <ul>
+                    <li><a href="#-phony-target">常用 phony target</a></li>
+                  </ul>
+                </li>
+                <li><a href="#heading-3">变量与通配符</a></li>
+                <li><a href="#heading-4">模式匹配</a></li>
+                <li><a href="#heading-5">变量</a></li>
+                <li><a href="#heading-6">函数</a></li>
+                <li><a href="#heading-7">指令</a></li>
+              </ul>
+            </li>
+            <li><a href="#heading-8">分支和变体</a>
+              <ul>
+                <li><a href="#gnu-make">GNU make</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#heading-9">进阶</a></li>
