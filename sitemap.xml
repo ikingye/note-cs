@@ -33,11 +33,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/</loc>
-    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/basic/practice/spec/baidu/</loc>
     <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
@@ -54,11 +49,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/basic/practice/spec/</loc>
-    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/</loc>
     <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
   
@@ -193,13 +183,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/snippet/</loc>
-    <lastmod>2020-03-16T20:12:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu/</loc>
-    <lastmod>2020-03-17T14:56:02+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/spec/baidu/</loc>
+    <lastmod>2020-03-17T15:08:47+08:00</lastmod>
   </url>
   
   <url>
@@ -298,6 +283,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/spec/</loc>
+    <lastmod>2020-03-17T15:08:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
   </url>
@@ -348,6 +338,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/</loc>
+    <lastmod>2020-03-17T15:08:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/debug/</loc>
     <lastmod>2020-03-16T20:27:51+08:00</lastmod>
   </url>
@@ -358,8 +353,13 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu-best-practice/</loc>
-    <lastmod>2020-03-17T14:56:02+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/snippet/</loc>
+    <lastmod>2020-03-17T15:08:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/baidu/</loc>
+    <lastmod>2020-03-17T15:08:47+08:00</lastmod>
   </url>
   
   <url>

@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="AppFog"><meta property="og:title" content="AppFog" />
-<meta property="og:description" content="AppFog " />
+<meta name="description" content="百度"><meta property="og:title" content="百度" />
+<meta property="og:description" content="百度 Scala 编码规范 前言 就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
+ Apache Spark 开源社区 Scala 编程指南:
+Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/cloud-computing/paas/appfog/" />
-<meta property="article:modified_time" content="2020-03-16T14:04:41+08:00" />
-<title>AppFog | 计算机学习笔记</title>
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/language/scala/basic/spec/baidu/" />
+<meta property="article:modified_time" content="2020-03-17T15:08:47+08:00" />
+<title>百度 | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
@@ -482,62 +484,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  
-  <ul>
-    
-      
-        <li>
-
-  <a href="/note-cs/docs/cloud-computing/paas/gae/" >
-      GAE
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/note-cs/docs/cloud-computing/paas/heroku/" >
-      Heroku
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/note-cs/docs/cloud-computing/paas/openshift/" >
-      OpenShift
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/note-cs/docs/cloud-computing/paas/cloud-foundry/" >
-      Cloud Foundry
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/note-cs/docs/cloud-computing/paas/appfog/"  class="active">
-      AppFog
-  </a>
-
-</li>
-      
-    
-  </ul>
-  
-
 
 
   </li>
@@ -743,6 +689,282 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      <span>第一部分 基础入门</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/language/scala/basic/spec/" >
+      编程规范
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/note-cs/docs/language/scala/basic/spec/baidu/"  class="active">
+      百度
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/language/scala/basic/practice/" >
+      最佳实践
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/language/scala/basic/snippet/" >
+      代码片段
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>第二部分 原理</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>第三部分 源码实现</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>第四部分 附录</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/note-cs/docs/language/scala/appendix/tutorial/" >
+      教程
+  </a>
+
+</li>
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/language/scala/appendix/interview/" >
+      面试题
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/note-cs/docs/language/scala/appendix/interview/basic/" >
+      基础
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/note-cs/docs/language/scala/appendix/interview/advanced/" >
+      进阶
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/note-cs/docs/language/scala/appendix/interview/expert/" >
+      高阶
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
 
 
 
@@ -1296,7 +1518,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>AppFog</strong>
+  <strong>百度</strong>
 
   <label for="toc-control">
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -1305,24 +1527,20 @@ https://github.com/alex-shpak/hugo-book
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#appfog">AppFog</a></li>
-  </ul>
-</nav>
-
-
-    </aside>
-  
  
       </header>
 
       
       
-<article class="markdown"><h1 id="appfog">AppFog</h1>
+<article class="markdown"><h1 id="-scala-">百度 Scala 编码规范</h1>
+<h2 id="heading">前言</h2>
+<p>就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：</p>
+<ol>
+<li>Apache Spark 开源社区  <a href="https://github.com/databricks/scala-style-guide/blob/master/README-ZH.md">Scala 编程指南</a>:<br>
+Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。</li>
+<li><a href="https://docs.scala-lang.org/style/">scala 官方 style guide</a>  里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200316200132.png" alt=""></p>
 </article>
  
       
@@ -1335,9 +1553,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/daac348b7bf389da20f7beafe77401c7c9120872" title='Last modified by yewang | 2020-03-16' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/d8a25d5634ebccc49ea1a3725a3e8311b8efa060" title='Last modified by yewang | 2020-03-17' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-16</span>
+      <span>2020-03-17</span>
     </a>
   </div>
 
@@ -1366,17 +1584,6 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#appfog">AppFog</a></li>
-  </ul>
-</nav>
-
- 
-    </aside>
     
   </main>
 
