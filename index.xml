@@ -49,17 +49,6 @@
     </item>
     
     <item>
-      <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu/</guid>
-      <description>百度 Objective-C 编码规范 (2019 版) 前言 就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
- Apache Spark 开源社区 Scala 编程指南:
-Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  </description>
-    </item>
-    
-    <item>
       <title>makefile</title>
       <link>https://ikingye.github.io/note-cs/docs/compile/make/makefile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -133,6 +122,17 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
+      <title>百度</title>
+      <link>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu/</guid>
+      <description>百度 Objective-C 编码规范 (2019 版) 前言 就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
+ Apache Spark 开源社区 Scala 编程指南:
+Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  </description>
+    </item>
+    
+    <item>
       <title>编程学习网站</title>
       <link>https://ikingye.github.io/note-cs/docs/study/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -178,15 +178,6 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
-      <title>百度 Scala 最佳实践</title>
-      <link>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/baidu/</guid>
-      <description>百度 Scala 最佳实践 </description>
-    </item>
-    
-    <item>
       <title>GAE</title>
       <link>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/gae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -213,6 +204,15 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <description>OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform. OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
 Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。
 Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿？</description>
+    </item>
+    
+    <item>
+      <title>百度 Scala 最佳实践</title>
+      <link>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu-best-practice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/language/scala/basic/practice/spec/baidu-best-practice/</guid>
+      <description>百度 Scala 最佳实践 </description>
     </item>
     
     <item>
