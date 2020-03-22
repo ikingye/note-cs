@@ -10,18 +10,6 @@
     
     
     <item>
-      <title>VSCode Debug</title>
-      <link>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/debug/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/debug/</guid>
-      <description>VSCode Debug 参考：
-  USER GUIDE - Debugging
-  Debug C++ in Visual Studio Code
-  </description>
-    </item>
-    
-    <item>
       <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -338,6 +326,15 @@
     </item>
     
     <item>
+      <title>快捷键</title>
+      <link>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/shortcuts/</guid>
+      <description>VScode 快捷键 编辑 格式化： opt + shift + f</description>
+    </item>
+    
+    <item>
       <title>百度</title>
       <link>https://ikingye.github.io/note-cs/docs/language/scala/basic/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -391,6 +388,34 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       
       <guid>https://ikingye.github.io/note-cs/docs/cloud-computing/saas/crm/salesforce/</guid>
       <description>Salesforce </description>
+    </item>
+    
+    <item>
+      <title>VSCode Debug</title>
+      <link>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/debug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/debug/</guid>
+      <description>VSCode Debug 参考：
+  USER GUIDE - Debugging
+  Debug C++ in Visual Studio Code
+  </description>
+    </item>
+    
+    <item>
+      <title>设备发现</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/onvif/discovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/onvif/discovery/</guid>
+      <description>设备发现 我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
+那如果客户端预先不知道目标服务的地址该怎么办？
+WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
+WS-Discovery 模式 WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
+Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  官方技术规范：http://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html
+ 传输方式 TCP/IP 有三种传输方式：单播 (Unicast)、多播 (Multicast) 和广播 (Broadcast)，在 IPv6 领域还有另一种方式：任播 (Anycast)。
+单播 Unicast 单播 (Unicast)：一对一，双向通信，目的地址是对方主机地址。网络上绝大部分的数据都是以单播的形式传输的。如收发邮件、浏览网页等。
+多播 Multicast 多播 (Multicast)：也叫组播，一对多，单向通信，目的地址是多播地址，主机可以通过 IGMP 协议请求加入或退出某个多播组 (multicast group)，数据只会转发给有需要（已加入组）的主机，不影响其他不需要（未加入组）的主机。如网上视频会议、网上视频点播、IPTV 等。</description>
     </item>
     
     <item>

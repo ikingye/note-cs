@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/debug/</loc>
-    <lastmod>2020-03-16T22:39:05+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/objective-c/appendix/tutorial/</loc>
     <lastmod>2020-03-16T20:12:23+08:00</lastmod>
   </url>
@@ -453,6 +448,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/shortcuts/</loc>
+    <lastmod>2020-03-22T18:06:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/scala/basic/spec/baidu/</loc>
     <lastmod>2020-03-17T15:08:47+08:00</lastmod>
   </url>
@@ -518,11 +518,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/onvif/</loc>
-    <lastmod>2020-03-16T20:27:51+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/language/python/</loc>
     <lastmod>2020-03-16T14:04:41+08:00</lastmod>
   </url>
@@ -540,6 +535,11 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/virtual/vmware/</loc>
     <lastmod>2020-03-16T20:27:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/tool/editor/vscode/debug/</loc>
+    <lastmod>2020-03-22T18:06:49+08:00</lastmod>
   </url>
   
   <url>
@@ -593,6 +593,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/onvif/discovery/</loc>
+    <lastmod>2020-03-22T18:06:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/cloud-computing/paas/</loc>
     <lastmod>2020-03-16T20:27:51+08:00</lastmod>
   </url>
@@ -628,8 +633,18 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/webservice/soap/</loc>
+    <lastmod>2020-03-22T18:06:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/virtual/virtualbox/</loc>
     <lastmod>2020-03-16T20:27:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/webservice/</loc>
+    <lastmod>2020-03-22T18:06:49+08:00</lastmod>
   </url>
   
   <url>
@@ -755,6 +770,11 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/tool/editor/</loc>
     <lastmod>2020-03-16T20:27:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/onvif/</loc>
+    <lastmod>2020-03-22T18:06:49+08:00</lastmod>
   </url>
   
   <url>
