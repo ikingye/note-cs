@@ -47,15 +47,6 @@
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -138,15 +129,6 @@
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -174,28 +156,28 @@
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/android/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/android/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/ios/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/ios/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/xiaochengxu/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/xiaochengxu/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -237,15 +219,6 @@
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -273,28 +246,28 @@
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/android/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/android/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/ios/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/ios/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/xiaochengxu/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/xiaochengxu/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
@@ -345,15 +318,6 @@
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/linux/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -381,28 +345,28 @@
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/android/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/android/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/ios/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/ios/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/practice/client/xiaochengxu/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/practice/client/xiaochengxu/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
