@@ -376,7 +376,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</guid>
-      <description>VScode 快捷键 编辑 格式化： opt + shift + f</description>
+      <description>VScode 快捷键 MacOS  选择  选中所有同一个词：cmd + shift + L  编辑  格式化：opt + shift + f  Windows  选择  选中所有同一个词：ctrl + shift + L   </description>
     </item>
     
     <item>
@@ -436,6 +436,15 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
   USER GUIDE - Debugging
   Debug C++ in Visual Studio Code
   </description>
+    </item>
+    
+    <item>
+      <title>推荐软件</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</guid>
+      <description>推荐软件 MacOS  开发 iTerm Keyboard Maestro  参考  jaywcjlove/awesome-mac   Windows  todo iOS  todo Android  todo Linux  todo  </description>
     </item>
     
     <item>
