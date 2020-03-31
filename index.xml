@@ -528,5 +528,17 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
       <description>在线编程 </description>
     </item>
     
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/tutorial/</guid>
+      <description>教程 基础 系统设计入门  学习如何设计可扩展的系统将会有助于你成为一个更好的工程师。
+系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
+这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
+ 进阶 </description>
+    </item>
+    
   </channel>
 </rss>
