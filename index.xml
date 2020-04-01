@@ -439,6 +439,15 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/circuit-breaker/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/circuit-breaker/attention/</guid>
+      <description>关注 其他 resilience4j/resilience4j  Netflix/Hystrix  </description>
+    </item>
+    
+    <item>
       <title>推荐软件</title>
       <link>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
