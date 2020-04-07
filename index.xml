@@ -514,6 +514,16 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
     </item>
     
     <item>
+      <title>A/B 测试</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/release/ab-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/release/ab-testing/</guid>
+      <description>A/B 测试 A/B testing
+ 参考 </description>
+    </item>
+    
+    <item>
       <title>OpenShift</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/openshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -531,6 +541,16 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/language/scala/basic/practice/baidu/</guid>
       <description>百度 Scala 最佳实践 </description>
+    </item>
+    
+    <item>
+      <title>金丝雀发布</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/release/canary-rollouts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/release/canary-rollouts/</guid>
+      <description>金丝雀发布 canary rollouts
+ 参考 </description>
     </item>
     
     <item>
