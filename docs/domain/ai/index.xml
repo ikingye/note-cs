@@ -15,10 +15,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 基础 josephmisiti/awesome-machine-learning  ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
-ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
-fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库
-eriklindernoren/ML-From-Scratch  Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning.</description>
+      <description>教程 基础 视频 shuhuai007/Machine-Learning-Session 【机器学习】【白板推导系列】【合集 1 ～ 23】
+视频内容电子化  tsyw/MachineLearningNotes  Bilibili - 机器学习白板系列   机器学习教程（小象学院）  josephmisiti/awesome-machine-learning  ZuzooVn/machine-learning-for-software-engineers A complete daily plan for studying to become a machine learning engineer.
+ ageron/handson-ml A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
+ fighting41love/funNLP NLP 民工的乐园：几乎最全的中文 NLP 资源库
+ eriklindernoren/ML-From-Scratch Machine Learning From Scratch.</description>
     </item>
     
     <item>
