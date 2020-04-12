@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
 
 
-<script defer src="/note-cs/en.search.min.4d5f8927653dc5ab8ae07e4dd32734d64a8704759fffb91e83e1f1b524f8ce2c.js" integrity="sha256-TV&#43;JJ2U9xauK4H5N0yc01kqHBHWf/7keg&#43;HxtST4ziw="></script>
+<script defer src="/note-cs/en.search.min.31e592a8f232153ac02930f97dc732c6bedbfc0993432d2865ebe570e7acaa1b.js" integrity="sha256-MeWSqPIyFTrAKTD5fccyxr7b/AmTQy0oZevlcOesqhs="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/github/index.xml" title="计算机学习笔记" />
 <!--
@@ -885,8 +885,41 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#github">GitHub</a>
       <ul>
-        <li><a href="#shieldsiohttpsshieldsio">shields.io</a></li>
-        <li><a href="#tholmangithub-cornershttpsgithubcomtholmangithub-corners">tholman/github-corners</a></li>
+        <li><a href="#---">开源库 素材 / 规范</a>
+          <ul>
+            <li><a href="#-shieldsiohttpsshieldsio">徽章 shields.io</a></li>
+            <li><a href="#-tholmangithub-cornershttpsgithubcomtholmangithub-corners">角落标志 tholman/github-corners</a></li>
+          </ul>
+        </li>
+        <li><a href="#github-apps">GitHub Apps</a>
+          <ul>
+            <li><a href="#mergifyhttpsgithubcomappsmergify">Mergify</a>
+              <ul>
+                <li><a href="#mergifyiomergify-enginehttpsgithubcommergifyiomergify-engine">Mergifyio/mergify-engine</a></li>
+              </ul>
+            </li>
+            <li><a href="#netlifyhttpsgithubcomappsnetlify">Netlify</a></li>
+            <li><a href="#weipull">[wei/pull]</a></li>
+            <li><a href="#pullhttpsgithubcomappspull">Pull</a></li>
+            <li><a href="#probotweekly-digesthttpsgithubcomprobotweekly-digest">probot/weekly-digest</a></li>
+          </ul>
+        </li>
+        <li><a href="#github-actions">GitHub Actions</a></li>
+        <li><a href="#github-">Github 工具开发</a>
+          <ul>
+            <li><a href="#webhook">webhook</a>
+              <ul>
+                <li><a href="#neteasegamegit-webhookhttpsgithubcomneteasegamegit-webhook">NetEaseGame/git-webhook</a></li>
+                <li><a href="#github-webhook-handlerhttpsgithubcomgithub-webhook-handler">github-webhook-handler</a></li>
+                <li><a href="#go-playgroundwebhookshttpsgithubcomgo-playgroundwebhooks">go-playground/webhooks</a></li>
+                <li><a href="#hustccwebhookithttpsgithubcomhustccwebhookit">hustcc/webhookit</a></li>
+              </ul>
+            </li>
+            <li><a href="#gordaissue-manhttpsgithubcomgordaissue-man">gorda/issue-man</a></li>
+            <li><a href="#building-apps">Building apps</a></li>
+            <li><a href="#building-actions">Building actions</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -901,14 +934,83 @@ https://github.com/alex-shpak/hugo-book
       
       
 <article class="markdown"><h1 id="github">GitHub</h1>
-<h2 id="shieldsiohttpsshieldsio"><a href="https://shields.io/">shields.io</a></h2>
+<h2 id="---">开源库 素材 / 规范</h2>
+<h3 id="-shieldsiohttpsshieldsio">徽章 <a href="https://shields.io/">shields.io</a></h3>
 <p>如：</p>
 <p><img src="https://img.shields.io/github/stars/doocs/advanced-java.svg" alt="Github stars"></p>
-<h2 id="tholmangithub-cornershttpsgithubcomtholmangithub-corners"><a href="https://github.com/tholman/github-corners">tholman/github-corners</a></h2>
-<p><img src="https://img.shields.io/github/stars/tholman/github-corners.svg" alt="Github stars">
-<a href="http://tholman.com/github-corners/">http://tholman.com/github-corners/</a>
-如：
+<hr>
+<h3 id="-tholmangithub-cornershttpsgithubcomtholmangithub-corners">角落标志 <a href="https://github.com/tholman/github-corners">tholman/github-corners</a></h3>
+<p><img src="https://img.shields.io/github/stars/tholman/github-corners.svg" alt="Github stars"></p>
+<p><a href="http://tholman.com/github-corners/">http://tholman.com/github-corners/</a></p>
+<p>如：
 <img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200330145209.png" alt=""></p>
+<hr>
+<h2 id="github-apps">GitHub Apps</h2>
+<ul>
+<li>Run persistently and can react to events quickly.</li>
+<li>Work great when persistent data is needed.</li>
+<li>Work best with API requests that aren't time consuming.</li>
+<li>Run on a server or compute infrastructure that you provide.</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a href="https://help.github.com/en/actions/building-actions/about-actions#strengths-of-github-actions-and-github-apps">Strengths of GitHub Actions and GitHub Apps</a></li>
+</ul>
+<h3 id="mergifyhttpsgithubcomappsmergify"><a href="https://github.com/apps/Mergify">Mergify</a></h3>
+<p>Stop merging your pull requests manually.</p>
+<p>We save your time by automatically merging, commenting, rebasing, updating, labeling, backporting, closing, assigning, your pull requests.</p>
+<h4 id="mergifyiomergify-enginehttpsgithubcommergifyiomergify-engine"><a href="https://github.com/Mergifyio/mergify-engine">Mergifyio/mergify-engine</a></h4>
+<p><img src="https://img.shields.io/github/stars/Mergifyio/mergify-engine.svg" alt="Github stars"></p>
+<p>Engine for Mergify <a href="https://mergify.io">https://mergify.io</a></p>
+<h3 id="netlifyhttpsgithubcomappsnetlify"><a href="https://github.com/apps/netlify">Netlify</a></h3>
+<h3 id="weipull">[wei/pull]</h3>
+<h3 id="pullhttpsgithubcomappspull"><a href="https://github.com/apps/pull">Pull</a></h3>
+<p>Keep your forks up-to-date via automated PRs</p>
+<p><a href="https://github.com/wei/pull">wei/pull</a> <img src="https://img.shields.io/github/stars/wei/pull.svg" alt="Github stars"></p>
+<h3 id="probotweekly-digesthttpsgithubcomprobotweekly-digest"><a href="https://github.com/probot/weekly-digest">probot/weekly-digest</a></h3>
+<p><img src="https://img.shields.io/github/stars/probot/weekly-digest.svg" alt="Github stars"></p>
+<p>自动生成周报到 issue</p>
+<h2 id="github-actions">GitHub Actions</h2>
+<ul>
+<li>Provide automation that can perform continuous integration and continuous deployment.</li>
+<li>Can run directly on runner machines or in Docker containers.</li>
+<li>Can include access to a clone of your repository, enabling deployment and publishing tools, code formatters, and command line tools to access your code.</li>
+<li>Don't require you to deploy code or serve an app.</li>
+<li>Have a simple interface to create and use secrets, which enables actions to interact with third-party services without needing to store the credentials of the person using the action.</li>
+</ul>
+<hr>
+<h2 id="github-">Github 工具开发</h2>
+<h3 id="webhook">webhook</h3>
+<h4 id="neteasegamegit-webhookhttpsgithubcomneteasegamegit-webhook"><a href="https://github.com/NetEaseGame/git-webhook">NetEaseGame/git-webhook</a></h4>
+<p><img src="https://img.shields.io/github/stars/NetEaseGame/git-webhook.svg" alt="Github stars">
+使用 Python Flask + SQLAchemy + Celery + Redis + React 开发的用于迅速搭建并使用 WebHook 进行自动化部署和运维，支持 Github / GitLab / Gogs / GitOsc。 <a href="https://webhook.hust.cc/">https://webhook.hust.cc/</a></p>
+<p>若觉得 git-webhook 部署依然比较复杂，可以尝试更为简洁的 cli 版本 <a href="https://github.com/hustcc/webhookit">hustcc/webhookit</a> <img src="https://img.shields.io/github/stars/hustcc/webhookit.svg" alt="Github stars"></p>
+<hr>
+<h4 id="github-webhook-handlerhttpsgithubcomgithub-webhook-handler"><a href="https://github.com/github-webhook-handler">github-webhook-handler</a></h4>
+<p><img src="https://img.shields.io/github/stars/github-webhook-handler.svg" alt="Github stars"></p>
+<p>Node.js web handler / middleware for processing GitHub Webhooks</p>
+<hr>
+<h4 id="go-playgroundwebhookshttpsgithubcomgo-playgroundwebhooks"><a href="https://github.com/go-playground/webhooks">go-playground/webhooks</a></h4>
+<p><img src="https://img.shields.io/github/stars/go-playground/webhooks.svg" alt="Github stars">
+Webhook receiver for GitHub, Bitbucket, GitLab, Gogs</p>
+<hr>
+<h4 id="hustccwebhookithttpsgithubcomhustccwebhookit"><a href="https://github.com/hustcc/webhookit">hustcc/webhookit</a></h4>
+<p><img src="https://img.shields.io/github/stars/hustcc/webhookit.svg" alt="Github stars"></p>
+<p>Simple git webhook cli tool for automation tasks, bind git webhook to action.</p>
+<hr>
+<h3 id="gordaissue-manhttpsgithubcomgordaissue-man"><a href="https://github.com/gorda/issue-man">gorda/issue-man</a></h3>
+<p><img src="https://img.shields.io/github/stars/gorda/issue-man.svg" alt="Github stars"></p>
+<hr>
+<h3 id="building-apps">Building apps</h3>
+<p>参考：</p>
+<ul>
+<li><a href="https://developer.github.com/apps/">Building apps</a></li>
+</ul>
+<h3 id="building-actions">Building actions</h3>
+<p>参考：</p>
+<ul>
+<li><a href="https://help.github.com/en/actions/building-actions">Building actions</a></li>
+</ul>
 </article>
  
       
@@ -921,9 +1023,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/dd928e0c02a025aa896b2324340bbc415ba4473c" title='Last modified by yewang | 2020-04-11' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/264fbb725f6982c4397812f13bcef86074f5b622" title='Last modified by yewang | 2020-04-12' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-04-11</span>
+      <span>2020-04-12</span>
     </a>
   </div>
 
@@ -959,8 +1061,41 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#github">GitHub</a>
       <ul>
-        <li><a href="#shieldsiohttpsshieldsio">shields.io</a></li>
-        <li><a href="#tholmangithub-cornershttpsgithubcomtholmangithub-corners">tholman/github-corners</a></li>
+        <li><a href="#---">开源库 素材 / 规范</a>
+          <ul>
+            <li><a href="#-shieldsiohttpsshieldsio">徽章 shields.io</a></li>
+            <li><a href="#-tholmangithub-cornershttpsgithubcomtholmangithub-corners">角落标志 tholman/github-corners</a></li>
+          </ul>
+        </li>
+        <li><a href="#github-apps">GitHub Apps</a>
+          <ul>
+            <li><a href="#mergifyhttpsgithubcomappsmergify">Mergify</a>
+              <ul>
+                <li><a href="#mergifyiomergify-enginehttpsgithubcommergifyiomergify-engine">Mergifyio/mergify-engine</a></li>
+              </ul>
+            </li>
+            <li><a href="#netlifyhttpsgithubcomappsnetlify">Netlify</a></li>
+            <li><a href="#weipull">[wei/pull]</a></li>
+            <li><a href="#pullhttpsgithubcomappspull">Pull</a></li>
+            <li><a href="#probotweekly-digesthttpsgithubcomprobotweekly-digest">probot/weekly-digest</a></li>
+          </ul>
+        </li>
+        <li><a href="#github-actions">GitHub Actions</a></li>
+        <li><a href="#github-">Github 工具开发</a>
+          <ul>
+            <li><a href="#webhook">webhook</a>
+              <ul>
+                <li><a href="#neteasegamegit-webhookhttpsgithubcomneteasegamegit-webhook">NetEaseGame/git-webhook</a></li>
+                <li><a href="#github-webhook-handlerhttpsgithubcomgithub-webhook-handler">github-webhook-handler</a></li>
+                <li><a href="#go-playgroundwebhookshttpsgithubcomgo-playgroundwebhooks">go-playground/webhooks</a></li>
+                <li><a href="#hustccwebhookithttpsgithubcomhustccwebhookit">hustcc/webhookit</a></li>
+              </ul>
+            </li>
+            <li><a href="#gordaissue-manhttpsgithubcomgordaissue-man">gorda/issue-man</a></li>
+            <li><a href="#building-apps">Building apps</a></li>
+            <li><a href="#building-actions">Building actions</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
