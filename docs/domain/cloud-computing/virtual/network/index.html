@@ -13,10 +13,10 @@
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
+<link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/note-cs/en.search.min.31e592a8f232153ac02930f97dc732c6bedbfc0993432d2865ebe570e7acaa1b.js" integrity="sha256-MeWSqPIyFTrAKTD5fccyxr7b/AmTQy0oZevlcOesqhs="></script>
+<script defer src="/note-cs/en.search.min.4ec0b0e7c058a2ed90f3d6695ab9ce98277e8d98f190f7f680260a246fe9e341.js" integrity="sha256-TsCw58BYou2Q89ZpWrnOmCd&#43;jZjxkPf2gCYKJG/p40E="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cloud-computing/virtual/network/index.xml" title="计算机学习笔记" />
 <!--
@@ -44,12 +44,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="book-search-spinner spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
-
-
-
-
-
-
 
 
 
@@ -939,11 +933,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-
-
-
-
 </nav>
 
 
@@ -998,7 +987,6 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-      
 <article class="markdown"><h1 id="heading">虚拟机网络</h1>
 <p>在 VMware 的 3 中网络模式中，NAT 模式是最简单的，基本不需要手动配置 IP 地址等相关参数。至于桥接模式则需要额外的 IP 地址，如果是在内网环境中还很容易，如果是 ADSL 宽带就比较麻烦了，ISP 一般是不会大方的多提供一个公网 IP 的。</p>
 <h2 id="heading-1">三种网络模式</h2>
@@ -1027,7 +1015,6 @@ https://github.com/alex-shpak/hugo-book
 <p>Host-Only 的宗旨就是建立一个与外界隔绝的内部网络，来提高内网的安全性。这个功能或许对普通用户来说没有多大意义，但大型服务商会常常利用这个功能。如果你想为 VMnet1 网段提供路由功能，那就需要使用 RRAS，而不能使用 XP 或 2000 的 ICS，因为 ICS 会把内网的 IP 地址改为 192.168.0.1，但虚拟机是不会给 VMnet1 虚拟网卡分配这个地址的，那么主机和虚拟机之间就不能通信了。</p>
 </article>
  
-      
 
       <footer class="book-footer">
         
@@ -1064,8 +1051,6 @@ https://github.com/alex-shpak/hugo-book
  
       </footer>
       
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     

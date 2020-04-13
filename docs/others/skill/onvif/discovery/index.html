@@ -20,10 +20,10 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
+<link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/note-cs/en.search.min.31e592a8f232153ac02930f97dc732c6bedbfc0993432d2865ebe570e7acaa1b.js" integrity="sha256-MeWSqPIyFTrAKTD5fccyxr7b/AmTQy0oZevlcOesqhs="></script>
+<script defer src="/note-cs/en.search.min.4ec0b0e7c058a2ed90f3d6695ab9ce98277e8d98f190f7f680260a246fe9e341.js" integrity="sha256-TsCw58BYou2Q89ZpWrnOmCd&#43;jZjxkPf2gCYKJG/p40E="></script>
 
 <!--
 Made with Book Theme
@@ -50,12 +50,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="book-search-spinner spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
-
-
-
-
-
-
 
 
 
@@ -793,11 +787,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-
-
-
-
 </nav>
 
 
@@ -855,7 +844,6 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-      
 <article class="markdown"><h1 id="heading">设备发现</h1>
 <p>我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。</p>
 <p>那如果客户端预先不知道目标服务的地址该怎么办？</p>
@@ -890,7 +878,6 @@ https://github.com/alex-shpak/hugo-book
 实现 socket 编程（UDP），通过 <code>sendto</code> 往多播地址发送探测消息（<code>Probe</code>），再使用 <code>recvfrom</code> 接收 IPC 的应答消息（<code>ProbeMatch</code>）</p>
 </article>
  
-      
 
       <footer class="book-footer">
         
@@ -927,8 +914,6 @@ https://github.com/alex-shpak/hugo-book
  
       </footer>
       
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     
