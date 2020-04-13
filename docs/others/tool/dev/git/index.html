@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/note-cs/en.search.min.4ec0b0e7c058a2ed90f3d6695ab9ce98277e8d98f190f7f680260a246fe9e341.js" integrity="sha256-TsCw58BYou2Q89ZpWrnOmCd&#43;jZjxkPf2gCYKJG/p40E="></script>
+<script defer src="/note-cs/en.search.min.d9dc2e6ba01e685d2cd2a9ee23e5f96f9d8ed70f02b914d9487ddaceac75a076.js" integrity="sha256-2dwua6AeaF0s0qnuI&#43;X5b52O1w8CuRTZSH3azqx1oHY="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/git/index.xml" title="计算机学习笔记" />
 <!--
@@ -875,6 +875,13 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#git">git</a>
       <ul>
         <li><a href="#git-module">git module</a></li>
+        <li><a href="#merge-vs-squash-vs-rebase">merge vs squash vs rebase</a>
+          <ul>
+            <li><a href="#squash-merge">squash merge</a></li>
+            <li><a href="#rebase-merge">rebase merge</a></li>
+          </ul>
+        </li>
+        <li><a href="#-git-commit">合并 git commit</a></li>
       </ul>
     </li>
   </ul>
@@ -893,7 +900,63 @@ https://github.com/alex-shpak/hugo-book
 git submodule update
 git submodule foreach <span style="color:#e6db74">&#34;git checkout master; git pull&#34;</span>
 git submodule foreach git clean -f
-</code></pre></div></article>
+</code></pre></div><hr>
+<h2 id="merge-vs-squash-vs-rebase">merge vs squash vs rebase</h2>
+<p>merge 不能保持 master 分支干净，但是保持了所有的 commit history，大多数情况下都是不好的，个别情况挺好
+squash 也可以保持 master 分支干净，但是 master 中 author 都是 maintainer，而不是原 owner
+rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 author</p>
+<h3 id="squash-merge">squash merge</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 切换到目标分支</span>
+$ git checkout master
+
+<span style="color:#75715e"># 以 squash 的形式 merge</span>
+$ git merge --squash devel
+
+<span style="color:#75715e"># it does not produce a commit right away: you need an additional commit</span>
+$ git commit -m <span style="color:#e6db74">&#34;squash branch&#34;</span>
+</code></pre></div><ul>
+<li>你会发现，在 master 分支上居然有未提交的修改，然后你就需要在 master 上主动提交了修改，</li>
+<li>注意，这里是你 commit 的，也就是改变了 commit 的 author。</li>
+<li>git merge has a &ndash;commit option, but it cannot be used with &ndash;squash.</li>
+<li>It was never possible to use &ndash;commit and &ndash;squash together.</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/2427238/in-git-what-is-the-difference-between-merge-squash-and-rebase">In git, what is the difference between merge &ndash;squash and rebase?</a></li>
+</ul>
+<h3 id="rebase-merge">rebase merge</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 先切换到 devel 分支（不一样咯）</span>
+$ git checkout devel
+
+<span style="color:#75715e"># 变基</span>
+$ git rebase -i master
+
+<span style="color:#75715e"># 切换回目标分支</span>
+$ git checkout master
+
+<span style="color:#75715e"># 合并</span>
+$ git merge
+</code></pre></div><ul>
+<li>我们在 devel 里面对照 master 进行了变基
+<ul>
+<li>所谓的变基其实就是找到两个分支共同的祖先</li>
+</ul>
+</li>
+<li>然后在当前分支上合并从共同祖先到现在的所有 commit
+<ul>
+<li>会选择怎么处理这些 commit</li>
+</ul>
+</li>
+<li>然后我们就得到了一个从公共 commit 到现在的单个 commit</li>
+<li>这个时候别人将我们这个 commit 合并到 master 也只会在 master 上留下一个 commit 记录</li>
+</ul>
+<hr>
+<h2 id="-git-commit">合并 git commit</h2>
+<p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/2302736/trimming-git-commits-squashing-git-history">Trimming Git Commits/Squashing Git History</a></li>
+</ul>
+</article>
  
 
       <footer class="book-footer">
@@ -941,6 +1004,13 @@ git submodule foreach git clean -f
     <li><a href="#git">git</a>
       <ul>
         <li><a href="#git-module">git module</a></li>
+        <li><a href="#merge-vs-squash-vs-rebase">merge vs squash vs rebase</a>
+          <ul>
+            <li><a href="#squash-merge">squash merge</a></li>
+            <li><a href="#rebase-merge">rebase merge</a></li>
+          </ul>
+        </li>
+        <li><a href="#-git-commit">合并 git commit</a></li>
       </ul>
     </li>
   </ul>
