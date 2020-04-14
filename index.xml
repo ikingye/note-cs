@@ -11,64 +11,64 @@
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
@@ -87,83 +87,83 @@
     
     <item>
       <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/basic/practice/spec/baidu/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/basic/practice/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/basic/practice/spec/baidu/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/basic/practice/spec/baidu/</guid>
       <description>百度 Objective-C 编码规范 (2019 版) </description>
     </item>
     
     <item>
       <title>makefile</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/compile/make/makefile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/compile/make/makefile/</guid>
       <description>makefile 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。创建这一工具的目标是 减少不必要的编译或者任务。传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
 基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &amp;lt;target&amp;gt; 生成 target  重命名：make -f &amp;quot;filename&amp;quot; &amp;lt;target&amp;gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2.</description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -196,64 +196,64 @@
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
@@ -286,73 +286,73 @@
     
     <item>
       <title>cmake</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/compile/make/cmake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/compile/make/cmake/</guid>
       <description>cmake </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/objective-c/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/scala/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
@@ -394,10 +394,10 @@
     
     <item>
       <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/scala/basic/spec/baidu/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/scala/basic/spec/baidu/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/spec/baidu/</guid>
       <description>百度 Scala 编码规范 前言 就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
  Apache Spark 开源社区 Scala 编程指南:
 Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  </description>
@@ -432,10 +432,10 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     
     <item>
       <title>Salesforce</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/saas/crm/salesforce/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/salesforce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/saas/crm/salesforce/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/salesforce/</guid>
       <description>Salesforce </description>
     </item>
     
@@ -453,10 +453,10 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     
     <item>
       <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/circuit-breaker/attention/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/circuit-breaker/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/circuit-breaker/attention/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/circuit-breaker/attention/</guid>
       <description>关注 其他 resilience4j/resilience4j Netflix/Hystrix </description>
     </item>
     
@@ -498,38 +498,38 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
     
     <item>
       <title>GAE</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/gae/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/gae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/gae/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/gae/</guid>
       <description>Google App Engine </description>
     </item>
     
     <item>
       <title>Heroku</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/heroku/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/heroku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/heroku/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/heroku/</guid>
       <description>Heroku </description>
     </item>
     
     <item>
       <title>A/B 测试</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/release/ab-testing/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/release/ab-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/release/ab-testing/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/release/ab-testing/</guid>
       <description>A/B 测试 A/B testing
  参考 </description>
     </item>
     
     <item>
       <title>OpenShift</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/openshift/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/openshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/openshift/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/openshift/</guid>
       <description>OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform. OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
 Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。
 Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿？</description>
@@ -537,38 +537,38 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/language/scala/basic/practice/baidu/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/practice/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/language/scala/basic/practice/baidu/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/practice/baidu/</guid>
       <description>百度 Scala 最佳实践 </description>
     </item>
     
     <item>
       <title>金丝雀发布</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/release/canary-rollouts/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/release/canary-rollouts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/release/canary-rollouts/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/release/canary-rollouts/</guid>
       <description>金丝雀发布 canary rollouts
  参考 </description>
     </item>
     
     <item>
       <title>Cloud Foundry</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/cloud-foundry/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/cloud-foundry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/cloud-foundry/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/cloud-foundry/</guid>
       <description>Cloud Foundry </description>
     </item>
     
     <item>
       <title>AppFog</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/appfog/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/appfog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cloud-computing/paas/appfog/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/appfog/</guid>
       <description>AppFog </description>
     </item>
     
@@ -583,10 +583,22 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/architecture/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/architecture/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/tutorial/</guid>
+      <description>教程 基础 系统设计入门  学习如何设计可扩展的系统将会有助于你成为一个更好的工程师。
+系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
+这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
+ 进阶 </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/tutorial/</guid>
       <description>教程 基础 系统设计入门  学习如何设计可扩展的系统将会有助于你成为一个更好的工程师。
 系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
 这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。

@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="makefile"><meta property="og:title" content="makefile" />
+<meta property="og:description" content="makefile 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。创建这一工具的目标是 减少不必要的编译或者任务。传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basis/compile/make/makefile/" />
+
+<title>makefile | 计算机学习笔记</title>
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
+
+
+<script defer src="/note-cs/en.search.min.6652e7f55b2a0b8a3527274a62454fcc1c59bfcc071e13047c8d1e9b45ab6a02.js" integrity="sha256-ZlLn9VsqC4o1JydKYkVPzBxZv8wHHhMEfI0em0WragI="></script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      <span>第一部分 基础</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/computer-composition/" >
+      1.1 计算机组成原理
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/os/" >
+      1.2 操作系统
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/algs/" >
+      1.3 数据结构与算法
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/network/" >
+      1.4 计算机网络
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/pl/" >
+      1.5 编程语言
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/db/" >
+      1.6 数据库
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/compile/" >
+      1.7 编译原理
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/basis/compile/make/" >
+      make
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  <a href="/note-cs/docs/basis/compile/make/makefile/"  class="active">
+      makefile
+  </a>
+
+</li>
+      
+    
+      
+        <li>
+
+  <a href="/note-cs/docs/basis/compile/make/cmake/" >
+      cmake
+  </a>
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>第二部分 方向</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/be/" >
+      2.1 后端
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/fe/" >
+      2.2 前端
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/client/" >
+      2.3 客户端
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/embedded/" >
+      2.4 嵌入式
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/security/" >
+      2.5 安全
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/mp/" >
+      2.6 中台
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/arch/" >
+      2.7 架构设计
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/direction/se/" >
+      2.8 软件工程
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>第三部分 领域</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/domain/cc/" >
+      3.1 云计算
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/domain/bigdata/" >
+      3.2 大数据
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/domain/ai/" >
+      3.3 人工智能
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>第四部分 其他</span>
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/others/skill/" >
+      4.1 技能树
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/others/tool/" >
+      4.2 工具
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/book/" >
+      第五部分 读书
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/note-cs/docs/course/" >
+      第六部分 课程
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>makefile</strong>
+
+  <label for="toc-control">
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#makefile">makefile</a>
+      <ul>
+        <li><a href="#heading">简介</a></li>
+        <li><a href="#heading-1">基础</a>
+          <ul>
+            <li><a href="#heading-2">语法</a>
+              <ul>
+                <li><a href="#target-">target 声明</a>
+                  <ul>
+                    <li><a href="#-phony-target">常用 phony target</a></li>
+                  </ul>
+                </li>
+                <li><a href="#heading-3">变量与通配符</a></li>
+                <li><a href="#heading-4">模式匹配</a></li>
+                <li><a href="#heading-5">变量</a></li>
+                <li><a href="#heading-6">函数</a></li>
+                <li><a href="#heading-7">指令</a></li>
+              </ul>
+            </li>
+            <li><a href="#heading-8">分支和变体</a>
+              <ul>
+                <li><a href="#gnu-make">GNU make</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#heading-9">进阶</a></li>
+        <li><a href="#heading-10">原理</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+<article class="markdown"><h1 id="makefile">makefile</h1>
+<h2 id="heading">简介</h2>
+<p>Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。创建这一工具的目标是 减少不必要的编译或者任务。传说 <a href="https://en.wikipedia.org/wiki/Stuart_Feldman">Stuart Feldman</a> 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。</p>
+<h2 id="heading-1">基础</h2>
+<h3 id="heading-2">语法</h3>
+<ul>
+<li>注释：<code>#</code></li>
+<li>文件名： 必须是 <code>Makefile</code>
+<ul>
+<li>区分大小写</li>
+</ul>
+</li>
+<li><code>make &lt;target&gt;</code> 生成 target
+<ul>
+<li>重命名：<code>make -f &quot;filename&quot; &lt;target&gt;</code></li>
+</ul>
+</li>
+<li><strong>只认识 <code>TAB</code></strong>，不认识<code>空格</code>
+<ul>
+<li>但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改</li>
+</ul>
+</li>
+<li>shell 符号
+<ul>
+<li><code>@</code>：不把命令打印到 stdout</li>
+<li><code>-</code>：发生错误了也没关系</li>
+</ul>
+</li>
+</ul>
+<h4 id="target-">target 声明</h4>
+<ul>
+<li>创建一个 <code>target</code>：
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">targets </span><span style="color:#f92672">:</span> prerequisites
+    recipe
+</code></pre></div><ul>
+<li>prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给</li>
+<li>targets 和 prerequisites 都可以是多个, 以空格分割
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">file2.txt file3.txt</span><span style="color:#f92672">:</span> file0.txt file1.txt
+    touch file2.txt
+    touch file3.txt
+</code></pre></div></li>
+</ul>
+</li>
+<li>target 的声明顺序并不重要
+<ul>
+<li>上面的依赖可以下面再声明</li>
+</ul>
+</li>
+<li>如果声明重复的 target，make 会给一个 warning，后面会覆盖前面的
+<ul>
+<li>但是如果<strong>不定义任何 recipe</strong>, 就不会冲突, 只是多了依赖关系
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">file2.txt</span><span style="color:#f92672">:</span> file0.txt file3.txt
+</code></pre></div></li>
+</ul>
+</li>
+<li>Phony(假的) Targets
+<ul>
+<li>意思是 tagets 并不是文件, 可以想象成一个任务的名字而已</li>
+<li>因为不是文件, 无法比对是否有更新, 所以每次 <code>make</code> 都会执行</li>
+<li>依赖于 phony target 的 target 也会每次 make 都执行, 即使 target 是文件</li>
+</ul>
+</li>
+<li>.PHONY
+<ul>
+<li>如果定义的 phony target 与文件名重名, 可以用 .PHONY 显式地指明哪些 targets 是 phony</li>
+</ul>
+</li>
+</ul>
+<h5 id="-phony-target">常用 phony target</h5>
+<ul>
+<li><code>all</code></li>
+<li><code>clean</code></li>
+<li><code>install</code></li>
+<li><code>uninstall</code></li>
+</ul>
+<h4 id="heading-3">变量与通配符</h4>
+<ul>
+<li><code>$^</code>: 代表 prerequisites
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 即便分开定义依赖, $^ 依然能拿到
+</span><span style="color:#75715e"></span><span style="color:#75715e"># 非常智能的, ex1.txt 会被找到, file0.txt 会被去重
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> ex1.txt file0.txt
+  @echo $^
+</code></pre></div></li>
+<li><code>$@</code>: 代表 target, 如果 target 为多个, <code>$@</code> 代表当前执行的那个</li>
+<li><code>$&lt;</code>: prerequisite 中的第一个</li>
+<li><code>$?</code>: 需要更新的 prerequisite 文件列表</li>
+<li><code>$+</code>: 所有依赖, 包括重复的</li>
+<li><code>$|</code>: 竖线后面的 <code>order-only prerequisites</code></li>
+<li><code>$*</code>: <code>target</code> <code>%</code> 那部分, 包括路径
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">a.%.b</span><span style="color:#f92672">:</span>
+    <span style="color:#75715e"># $* match 的target % 那部分, 包括路径, 比如 `make dir/a.foo.b` 会打出 `dir/foo`</span>
+    @echo $*  
+</code></pre></div></li>
+</ul>
+<h4 id="heading-4">模式匹配</h4>
+<ul>
+<li>make 会找到最具体的匹配
+<ul>
+<li><code>make small/foo.png</code> 则会匹配下面这个规则（在这之前要先有 small/foo.svg 这个文件）
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">%.png</span><span style="color:#f92672">:</span> %.svg
+    inkscape --export-png $^
+<span style="color:#a6e22e">small/%.png</span><span style="color:#f92672">:</span> %.svg
+    inkscape --export-png --export-dpi <span style="color:#ae81ff">30</span> $^
+</code></pre></div></li>
+</ul>
+</li>
+<li>make 已经有一些内置的规则, 比如从 *.c 到 *.o</li>
+</ul>
+<h4 id="heading-5">变量</h4>
+<ul>
+<li>
+<p>变量都是字符串类型</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 这俩是一样一样的
+</span><span style="color:#75715e"></span>name <span style="color:#f92672">=</span> Ted
+name2<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sarah&#34;</span>
+</code></pre></div></li>
+<li>
+<p>设置变量，按以下顺序由高到低:</p>
+<ol>
+<li>命令行参数. 比如试试 <code>make echo name3=JICHAO</code></li>
+<li>Makefile 里面的</li>
+<li>shell 中的环境变量</li>
+<li>make 预设的一些变量</li>
+</ol>
+</li>
+<li>
+<p><code>?=</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 如果 name 被设置过了, 就不设置了
+</span><span style="color:#75715e"></span>name <span style="color:#f92672">?=</span> Jean
+</code></pre></div></li>
+<li>
+<p><code>override</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 用 override 可以防止命令行参数设置的覆盖
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">o</span><span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">r</span><span style="color:#960050;background-color:#1e0010">r</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">e</span> name <span style="color:#f92672">=</span> David
+<span style="color:#960050;background-color:#1e0010">`</span><span style="color:#960050;background-color:#1e0010">`</span>
+</code></pre></div></li>
+<li>
+<p><code>+</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 用加号可以连接 (中间用空格分割)
+</span><span style="color:#75715e"></span>name4 <span style="color:#f92672">+=</span>grey
+</code></pre></div></li>
+<li>
+<p>内置的变量</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">echo_inbuilt</span><span style="color:#f92672">:</span>
+    echo <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span>
+    echo <span style="color:#e6db74">${</span>CXX)<span style="color:#e6db74">}</span>
+    echo <span style="color:#66d9ef">$(</span>FC<span style="color:#66d9ef">)</span>
+    echo <span style="color:#e6db74">${</span>CFLAGS)<span style="color:#e6db74">}</span>
+    echo <span style="color:#66d9ef">$(</span>CPPFLAGS<span style="color:#66d9ef">)</span>
+    echo <span style="color:#e6db74">${</span>CXXFLAGS<span style="color:#e6db74">}</span>
+    echo <span style="color:#66d9ef">$(</span>LDFLAGS<span style="color:#66d9ef">)</span>
+    echo <span style="color:#e6db74">${</span>LDLIBS<span style="color:#e6db74">}</span>
+</code></pre></div></li>
+<li>
+<p><code>:=</code></p>
+<ul>
+<li>等号声明时 recursively expanded 递归扩展</li>
+<li>加个冒号可以声明 Simply expanded variables 即时扩展变量, 即只在声明时扩展一次</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># var3 声明时找不到 var4, var3 会扩展成 `and good luck`，直接忽视 var4
+</span><span style="color:#75715e"></span>var3 <span style="color:#f92672">:=</span> <span style="color:#66d9ef">$(</span>var4<span style="color:#66d9ef">)</span> and good luck
+<span style="color:#75715e"># var5 是正常的，扩展为 `good night and good luck`
+</span><span style="color:#75715e"></span>var5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>var4<span style="color:#66d9ef">)</span> and good luck
+var4 <span style="color:#f92672">:=</span> good night
+</code></pre></div></li>
+</ul>
+<h4 id="heading-6">函数</h4>
+<ul>
+<li>
+<p>函数调用格式</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#66d9ef">$(</span>func arg0,arg1,arg2...<span style="color:#66d9ef">)</span>
+</code></pre></div></li>
+<li>
+<p>wildcard：将后面的<strong>通配符</strong>变成一串文件路径</p>
+</li>
+<li>
+<p>patsubst：做替换</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 把所有 markdown 后缀的文件重命名为 md 后缀
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">substitue</span><span style="color:#f92672">:</span> *
+    @echo <span style="color:#66d9ef">$(</span>patsubst %.markdown,%.md,$* $^<span style="color:#66d9ef">)</span>
+</code></pre></div></li>
+</ul>
+<h4 id="heading-7">指令</h4>
+<ul>
+<li>include：引入别的 Makefile 文件</li>
+<li>流程控制语句<strong>顶格写</strong>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile">sport <span style="color:#f92672">=</span> tennis
+<span style="color:#75715e"># 流程控制语句 (如if else 等等) 顶格写
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">report</span><span style="color:#f92672">:</span>
+<span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">f</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">q</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#66d9ef">$(</span>sport<span style="color:#66d9ef">)</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#960050;background-color:#1e0010">t</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">n</span><span style="color:#960050;background-color:#1e0010">n</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">)</span>
+    <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">c</span><span style="color:#960050;background-color:#1e0010">h</span><span style="color:#960050;background-color:#1e0010">o</span> <span style="color:#e6db74">&#39;game, set, match&#39;</span>
+<span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">l</span><span style="color:#960050;background-color:#1e0010">s</span><span style="color:#960050;background-color:#1e0010">e</span>
+    <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">c</span><span style="color:#960050;background-color:#1e0010">h</span><span style="color:#960050;background-color:#1e0010">o</span> <span style="color:#e6db74">&#34;They think it&#39;s all over; it is now&#34;</span>
+<span style="color:#960050;background-color:#1e0010">e</span><span style="color:#960050;background-color:#1e0010">n</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">f</span>
+</code></pre></div></li>
+</ul>
+<hr>
+<h3 id="heading-8">分支和变体</h3>
+<h4 id="gnu-make">GNU make</h4>
+<hr>
+<h2 id="heading-9">进阶</h2>
+<hr>
+<h2 id="heading-10">原理</h2>
+</article>
+ 
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
+  
+ 
+      </footer>
+      
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#makefile">makefile</a>
+      <ul>
+        <li><a href="#heading">简介</a></li>
+        <li><a href="#heading-1">基础</a>
+          <ul>
+            <li><a href="#heading-2">语法</a>
+              <ul>
+                <li><a href="#target-">target 声明</a>
+                  <ul>
+                    <li><a href="#-phony-target">常用 phony target</a></li>
+                  </ul>
+                </li>
+                <li><a href="#heading-3">变量与通配符</a></li>
+                <li><a href="#heading-4">模式匹配</a></li>
+                <li><a href="#heading-5">变量</a></li>
+                <li><a href="#heading-6">函数</a></li>
+                <li><a href="#heading-7">指令</a></li>
+              </ul>
+            </li>
+            <li><a href="#heading-8">分支和变体</a>
+              <ul>
+                <li><a href="#gnu-make">GNU make</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#heading-9">进阶</a></li>
+        <li><a href="#heading-10">原理</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs" 
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
