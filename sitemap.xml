@@ -8,7 +8,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/linux/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/linux/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -17,31 +18,36 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/tutorial/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/tutorial/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/tutorial/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/tutorial/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/tutorial/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/tutorial/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/tutorial/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/tutorial/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/tutorial/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/tutorial/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/tutorial/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/tutorial/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</loc>
   </url>
   
   <url>
@@ -65,7 +71,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/basic/practice/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/</loc>
   </url>
   
   <url>
@@ -84,39 +90,45 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/basic/practice/spec/baidu/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/</loc>
   </url>
   
   <url>
@@ -135,7 +147,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/basic/practice/spec/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/</loc>
   </url>
   
   <url>
@@ -154,35 +166,41 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/compile/make/makefile/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/basic/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/basic/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/basic/</loc>
   </url>
   
   <url>
@@ -201,31 +219,36 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/priciple/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/priciple/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/priciple/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/priciple/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/priciple/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/priciple/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/priciple/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/priciple/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/priciple/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/priciple/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/priciple/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/priciple/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/priciple/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/priciple/</loc>
   </url>
   
   <url>
@@ -249,31 +272,36 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/advanced/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/advanced/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/advanced/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/advanced/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/advanced/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/advanced/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/advanced/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/advanced/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/advanced/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/advanced/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/advanced/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/advanced/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/advanced/</loc>
   </url>
   
   <url>
@@ -292,31 +320,36 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/</loc>
   </url>
   
   <url>
@@ -335,7 +368,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/compile/make/cmake/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -343,39 +377,46 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/source/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/source/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/source/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/source/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/source/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/source/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/source/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/source/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/source/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/source/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/source/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/source/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/source/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/source/</loc>
   </url>
   
   <url>
@@ -399,31 +440,36 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/interview/expert/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/interview/expert/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/interview/expert/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/interview/expert/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/interview/expert/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/interview/expert/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/interview/expert/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/interview/expert/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/interview/expert/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/interview/expert/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/interview/expert/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/interview/expert/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/expert/</loc>
   </url>
   
   <url>
@@ -442,7 +488,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -451,31 +498,36 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/appendix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/appendix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/appendix/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/appendix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/appendix/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/appendix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/appendix/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/appendix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/appendix/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/appendix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/appendix/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/</loc>
   </url>
   
   <url>
@@ -499,11 +551,12 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/compile/make/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/basic/practice/snippet/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/snippet/</loc>
   </url>
   
   <url>
@@ -527,7 +580,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/spec/baidu/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/baidu/</loc>
   </url>
   
   <url>
@@ -544,11 +597,13 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/computer-composition/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/computer-composition/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -565,23 +620,24 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/cc/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/cc/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/cc/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/cc/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -608,11 +664,11 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/go/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/go/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/pl/Go-in-Action/chinese/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/Go-in-Action/chinese/</loc>
   </url>
   
   <url>
@@ -638,11 +694,11 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/python/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/python/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/rust/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/</loc>
   </url>
   
   <url>
@@ -677,27 +733,32 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/basic/spec/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/basic/spec/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/basic/spec/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/basic/spec/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/basic/spec/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/basic/spec/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/basic/spec/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/basic/spec/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/basic/spec/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/basic/spec/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/spec/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/</loc>
   </url>
   
   <url>
@@ -728,7 +789,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -741,7 +803,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/os/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/os/</loc>
   </url>
   
   <url>
@@ -749,7 +811,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/os/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/os/</loc>
   </url>
   
   <url>
@@ -774,7 +836,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/objective-c/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/</loc>
   </url>
   
   <url>
@@ -786,7 +848,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/</loc>
   </url>
   
   <url>
@@ -794,27 +856,32 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/basic/practice/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/basic/practice/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/basic/practice/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/basic/practice/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/basic/practice/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/basic/practice/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/basic/practice/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/basic/practice/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/basic/practice/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/basic/practice/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/practice/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/practice/</loc>
   </url>
   
   <url>
@@ -822,7 +889,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/algs/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/algs/</loc>
   </url>
   
   <url>
@@ -836,7 +903,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/algs/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/algs/</loc>
   </url>
   
   <url>
@@ -844,7 +911,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/algs/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/algs/</loc>
   </url>
   
   <url>
@@ -874,27 +941,32 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/android/basic/snippet/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/android/basic/snippet/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/ios/basic/snippet/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/basic/snippet/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/macos/basic/snippet/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/macos/basic/snippet/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/unix/basic/snippet/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/basic/snippet/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/os/windows/basic/snippet/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/basic/snippet/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/snippet/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/snippet/</loc>
   </url>
   
   <url>
@@ -908,7 +980,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/scala/basic/practice/baidu/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/practice/baidu/</loc>
   </url>
   
   <url>
@@ -920,11 +992,12 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/pl/Go-in-Action/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/Go-in-Action/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/network/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/network/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -933,7 +1006,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/network/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/network/</loc>
   </url>
   
   <url>
@@ -941,7 +1014,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/network/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/network/</loc>
   </url>
   
   <url>
@@ -953,7 +1026,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/pl/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/</loc>
   </url>
   
   <url>
@@ -970,7 +1043,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/pl/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/</loc>
   </url>
   
   <url>
@@ -978,7 +1051,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/pl/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/</loc>
   </url>
   
   <url>
@@ -995,7 +1068,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/db/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/</loc>
   </url>
   
   <url>
@@ -1003,7 +1076,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/db/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/db/</loc>
   </url>
   
   <url>
@@ -1011,7 +1084,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/db/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/db/</loc>
   </url>
   
   <url>
@@ -1027,7 +1100,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basis/compile/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/compile/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -1035,7 +1109,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basis/compile/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/compile/</loc>
   </url>
   
   <url>
@@ -1043,7 +1117,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basis/compile/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/compile/</loc>
   </url>
   
   <url>
@@ -1094,6 +1168,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
+    <lastmod>2020-04-13T11:27:39+08:00</lastmod>
   </url>
   
   <url>

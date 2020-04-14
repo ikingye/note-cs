@@ -23,7 +23,7 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
 <link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/note-cs/en.search.min.6652e7f55b2a0b8a3527274a62454fcc1c59bfcc071e13047c8d1e9b45ab6a02.js" integrity="sha256-ZlLn9VsqC4o1JydKYkVPzBxZv8wHHhMEfI0em0WragI="></script>
+<script defer src="/note-cs/en.search.min.658a4f39b0985dfeced992076f19afc2b4c33eed4b604f5ff3b63d74924d0f93.js" integrity="sha256-ZYpPObCYXf7O2ZIHbxmvwrTDPu1LYE9f87Y9dJJND5M="></script>
 
 <!--
 Made with Book Theme
@@ -97,7 +97,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/note-cs/docs/basis/computer-composition/" >
+  <a href="/note-cs/docs/basic/computer-composition/" >
       1.1 计算机组成原理
   </a>
 
@@ -129,7 +129,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/note-cs/docs/basis/os/" >
+  <a href="/note-cs/docs/basic/os/" >
       1.2 操作系统
   </a>
 
@@ -155,7 +155,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/note-cs/docs/basis/algs/" >
+  <a href="/note-cs/docs/basic/algs/" >
       1.3 数据结构与算法
   </a>
 
@@ -187,7 +187,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/note-cs/docs/basis/network/" >
+  <a href="/note-cs/docs/basic/network/" >
       1.4 计算机网络
   </a>
 
@@ -219,7 +219,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/note-cs/docs/basis/pl/" >
+  <a href="/note-cs/docs/basic/pl/" >
       1.5 编程语言
   </a>
 
@@ -245,7 +245,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/note-cs/docs/basis/db/" >
+  <a href="/note-cs/docs/basic/db/" >
       1.6 数据库
   </a>
 
@@ -277,7 +277,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/note-cs/docs/basis/compile/" >
+  <a href="/note-cs/docs/basic/compile/" >
       1.7 编译原理
   </a>
 
@@ -924,18 +924,18 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading">设备发现</a>
+    <li><a href="#设备发现">设备发现</a>
       <ul>
-        <li><a href="#ws-discovery-">WS-Discovery 模式</a>
+        <li><a href="#ws-discovery-模式">WS-Discovery 模式</a>
           <ul>
-            <li><a href="#ad-hoc-">Ad hoc 模式</a></li>
-            <li><a href="#managed-">Managed 模式</a></li>
+            <li><a href="#ad-hoc-模式">Ad hoc 模式</a></li>
+            <li><a href="#managed-模式">Managed 模式</a></li>
           </ul>
         </li>
-        <li><a href="#heading-1">传输方式</a></li>
-        <li><a href="#-unicast">单播 Unicast</a></li>
-        <li><a href="#-multicast">多播 Multicast</a></li>
-        <li><a href="#-broadcast">广播 Broadcast</a></li>
+        <li><a href="#传输方式">传输方式</a></li>
+        <li><a href="#单播-unicast">单播 Unicast</a></li>
+        <li><a href="#多播-multicast">多播 Multicast</a></li>
+        <li><a href="#广播-broadcast">广播 Broadcast</a></li>
       </ul>
     </li>
   </ul>
@@ -948,33 +948,33 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="heading">设备发现</h1>
+<article class="markdown"><h1 id="设备发现">设备发现</h1>
 <p>我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。</p>
 <p>那如果客户端预先不知道目标服务的地址该怎么办？</p>
 <p>WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。</p>
-<h2 id="ws-discovery-">WS-Discovery 模式</h2>
+<h2 id="ws-discovery-模式">WS-Discovery 模式</h2>
 <p>WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。</p>
-<h3 id="ad-hoc-">Ad hoc 模式</h3>
+<h3 id="ad-hoc-模式">Ad hoc 模式</h3>
 <ul>
 <li><strong>Ad hoc 模式</strong>：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。</li>
 </ul>
-<h3 id="managed-">Managed 模式</h3>
+<h3 id="managed-模式">Managed 模式</h3>
 <ul>
 <li><strong>Managed 模式</strong>：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。</li>
 </ul>
 <p>官方技术规范：http://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html</p>
 <hr>
-<h2 id="heading-1">传输方式</h2>
+<h2 id="传输方式">传输方式</h2>
 <p>TCP/IP 有三种传输方式：单播 (Unicast)、多播 (Multicast) 和广播 (Broadcast)，在 IPv6 领域还有另一种方式：任播 (Anycast)。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200319174214.png" alt=""></p>
-<h2 id="-unicast">单播 Unicast</h2>
+<h2 id="单播-unicast">单播 Unicast</h2>
 <p>单播 (Unicast)：一对一，双向通信，目的地址是对方主机地址。网络上绝大部分的数据都是以单播的形式传输的。如收发邮件、浏览网页等。</p>
-<h2 id="-multicast">多播 Multicast</h2>
+<h2 id="多播-multicast">多播 Multicast</h2>
 <p>多播 (Multicast)：也叫组播，一对多，单向通信，目的地址是多播地址，主机可以通过 IGMP 协议请求加入或退出某个多播组 (multicast group)，数据只会转发给有需要（已加入组）的主机，不影响其他不需要（未加入组）的主机。如网上视频会议、网上视频点播、IPTV 等。</p>
 <p>多播地址（Multicast Address）有很多，各个行业都不一样，IPC 摄像头用的是 <code>239.255.255.250</code>（端口 <code>3702</code>）。</p>
 <p>多播地址的范围和分类可以见官方 <a href="https://www.iana.org/">IANA（互联网地址分配机构）</a> 的说明：<a href="https://www.iana.org/assignments/multicast-addresses/multicast-addresses.xhtml">IPv4 Multicast Address Space Registry</a>。</p>
 <p>WS-Discovery 协议用到了多播。</p>
-<h2 id="-broadcast">广播 Broadcast</h2>
+<h2 id="广播-broadcast">广播 Broadcast</h2>
 <p>广播 (Broadcast)：一对所有，单向通信，目的地址是广播地址，整个网络中所有主机均可以收到（不管你是否需要），如 ARP 地址解析、GARP 数据包等。广播会被限制在局域网范围内，禁止广播数据穿过路由器，防止广播数据影响大面积的主机。</p>
 <p>参考：<a href="https://blog.csdn.net/wangerge/article/details/3931491">单播、多播（组播）和广播的区别</a></p>
 <hr>
@@ -1025,18 +1025,18 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading">设备发现</a>
+    <li><a href="#设备发现">设备发现</a>
       <ul>
-        <li><a href="#ws-discovery-">WS-Discovery 模式</a>
+        <li><a href="#ws-discovery-模式">WS-Discovery 模式</a>
           <ul>
-            <li><a href="#ad-hoc-">Ad hoc 模式</a></li>
-            <li><a href="#managed-">Managed 模式</a></li>
+            <li><a href="#ad-hoc-模式">Ad hoc 模式</a></li>
+            <li><a href="#managed-模式">Managed 模式</a></li>
           </ul>
         </li>
-        <li><a href="#heading-1">传输方式</a></li>
-        <li><a href="#-unicast">单播 Unicast</a></li>
-        <li><a href="#-multicast">多播 Multicast</a></li>
-        <li><a href="#-broadcast">广播 Broadcast</a></li>
+        <li><a href="#传输方式">传输方式</a></li>
+        <li><a href="#单播-unicast">单播 Unicast</a></li>
+        <li><a href="#多播-multicast">多播 Multicast</a></li>
+        <li><a href="#广播-broadcast">广播 Broadcast</a></li>
       </ul>
     </li>
   </ul>
