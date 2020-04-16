@@ -126,19 +126,6 @@ seaswalker/JDK JDK 源码阅读笔记
     </item>
     
     <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 基础 视频 shuhuai007/Machine-Learning-Session 【机器学习】【白板推导系列】【合集 1 ～ 23】
-视频内容电子化  tsyw/MachineLearningNotes  Bilibili - 机器学习白板系列   机器学习教程（小象学院）  josephmisiti/awesome-machine-learning  ZuzooVn/machine-learning-for-software-engineers A complete daily plan for studying to become a machine learning engineer.
- ageron/handson-ml A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
- fighting41love/funNLP NLP 民工的乐园：几乎最全的中文 NLP 资源库
- eriklindernoren/ML-From-Scratch Machine Learning From Scratch.</description>
-    </item>
-    
-    <item>
       <title>百度</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -158,28 +145,10 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</guid>
-      <description>百度 Objective-C 编码规范 (2019 版) </description>
-    </item>
-    
-    <item>
-      <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</guid>
-      <description>百度 PHP 编码规范 (201904 版) </description>
-    </item>
-    
-    <item>
-      <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/</guid>
       <description>百度 JavaScript 编码规范 1 前言
 2 代码风格
 2.1 文件
@@ -213,6 +182,24 @@ seaswalker/JDK JDK 源码阅读笔记
 3.5 字符串
 3.6 对象
 3.7 数组</description>
+    </item>
+    
+    <item>
+      <title>百度</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</guid>
+      <description>百度 Objective-C 编码规范 (2019 版) </description>
+    </item>
+    
+    <item>
+      <title>百度</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</guid>
+      <description>百度 PHP 编码规范 (201904 版) </description>
     </item>
     
     <item>
@@ -317,6 +304,15 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -348,6 +344,15 @@ seaswalker/JDK JDK 源码阅读笔记
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -389,46 +394,28 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/basic/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/basic/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -560,6 +547,15 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -591,6 +587,15 @@ seaswalker/JDK JDK 源码阅读笔记
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
@@ -632,46 +637,28 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/advanced/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/advanced/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
@@ -794,6 +781,15 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -825,6 +821,15 @@ seaswalker/JDK JDK 源码阅读笔记
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
@@ -866,46 +871,28 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/expert/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/expert/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
@@ -929,10 +916,10 @@ seaswalker/JDK JDK 源码阅读笔记
     
     <item>
       <title>gulp</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/build/gulp/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/basic/build/gulp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/build/gulp/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/basic/build/gulp/</guid>
       <description>gulp 类似与 make 参考：https://learnxinyminutes.com/docs/zh-cn/make-cn/</description>
     </item>
     
@@ -1044,22 +1031,11 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     
     <item>
       <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/circuit-breaker/attention/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/circuit-breaker/attention/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/attention/</guid>
       <description>关注 其他 resilience4j/resilience4j Netflix/Hystrix </description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</guid>
-      <description>关注 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
-php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
- 深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
     </item>
     
     <item>
@@ -1149,10 +1125,10 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
     
     <item>
       <title>A/B 测试</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/release/ab-testing/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/ab-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/release/ab-testing/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/ab-testing/</guid>
       <description>A/B 测试 A/B testing
  参考 </description>
     </item>
@@ -1179,10 +1155,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title>金丝雀发布</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/release/canary-rollouts/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/canary-rollouts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/release/canary-rollouts/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/canary-rollouts/</guid>
       <description>金丝雀发布 canary rollouts
  参考 </description>
     </item>
@@ -1216,6 +1192,30 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
+      <description>教程 基础 视频 shuhuai007/Machine-Learning-Session 【机器学习】【白板推导系列】【合集 1 ～ 23】
+视频内容电子化  tsyw/MachineLearningNotes  Bilibili - 机器学习白板系列   机器学习教程（小象学院）  josephmisiti/awesome-machine-learning  ZuzooVn/machine-learning-for-software-engineers A complete daily plan for studying to become a machine learning engineer.
+ ageron/handson-ml A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
+ fighting41love/funNLP NLP 民工的乐园：几乎最全的中文 NLP 资源库
+ eriklindernoren/ML-From-Scratch Machine Learning From Scratch.</description>
+    </item>
+    
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</guid>
+      <description>关注 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
+php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
+ 深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
+    </item>
+    
+    <item>
+      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/arch/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1240,10 +1240,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title></title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/css/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/css/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/css/</guid>
       <description>CSS 编码规范 1 前言
 2 代码风格
 2.1 文件
@@ -1282,10 +1282,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title></title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/es-next/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/es-next/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/es-next/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/es-next/</guid>
       <description>JavaScript 编码规范 - ESNext 补充篇（草案） 1 前言
 2 代码风格
 2.1 文件
@@ -1316,10 +1316,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title></title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/html/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/html/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/html/</guid>
       <description>HTML 编码规范 1 前言
 2 代码风格
 2.1 缩进与换行
@@ -1348,10 +1348,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title></title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/react/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/react/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/react/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/react/</guid>
       <description>React 编码规范 1 版本限制
 1.1 法律要求
 2 文件组织
@@ -1384,10 +1384,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title></title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/typescript/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/typescript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/typescript/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/typescript/</guid>
       <description>TypeScript 编码规范 1 前言
 2 代码风格
 2.1 环境
@@ -1412,10 +1412,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title></title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/vue/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/vue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/vue/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/vue/</guid>
       <description>Vue 组件代码规范 1 前言
 2 代码风格
 2.1 缩进
