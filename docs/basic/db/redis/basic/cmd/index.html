@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Redis 命令 key  DEL DUMP EXISTS EXPIRE EXPIREAT KEYS MOVE PERSIST PEXPIREAT PEXPIREAT PTTL RANDOMKEY RENAME RENAMENX TTL TYPE   string  APPEND DECR DECRBY DEL EXISTS GET GETRANGE GETSET INCR INCRBY INCRBYFLOAT MGET MSET MSETNX PSETEX SET SETBIT SETEX SETNX STRLEN   list  DEL DUMP EXISTS EXPIRE EXPIREAT KEYS MOVE PERSIST PEXPIREAT PEXPIREAT PTTL RANDOMKEY RENAME RENAMENX TTL TYPE   hash  HDEL HEXISTS HGET HGETALL HINCRBY HINCRBYFLOAT HKEYS HLEN HMGET HMSET HSET HSETNX HVALS   set  SADD SCARD SDIFF SDIFFSTORE SINTER SINTERSTORE SISMEMBER SMEMBERS SMOVE SPOP SRANDMEMBER SREM SSCAN SUNION SUNIONSTORE   zset  ZADD ZCARD ZCOUNT ZINCRBY ZINTERSTORE ZLEXCOUNT ZRANGE ZRANGEBYLEX ZRANGEBYSCORE ZRANK ZREM ZREMRANGEBYLEX ZREMRANGEBYRANK ZREMRANGEBYSCORE ZREVRANGE ZREVRANGEBYSCORE ZREVRANK ZSCAN ZSCORE ZUNIONSTORE   连接  AUTH ECHO PING QUIT SELECT   服务器  BGREWRITEAOF BGSAVE CLIENT GETNAME CLIENT KILL CLIENT LIST CLIENT PAUSE CLIENT SETNAME CLUSTER SLOTS COMMAND COMMAND COUNT COMMAND GETKEYS COMMAND INFO CONFIG GET CONFIG RESETSTAT CONFIG REWRITE CONFIG SET DBSIZE DEBUG OBJECT DEBUG SEGFAULT FLUSHALL FLUSHDB INFO LASTSAVE MONITOR ROLE SAVE SHOWLOG SHUTDOWN SLAVEOF SYNC TIME   脚本  EVAL EVALSHA SCRIPT EXISTS SCRIPT FLUSH SCRIPT KILL SCRIPT LOAD   事务  DISCARD EXEC MULTI UNWATCH WATCH   HyperLogLog  PFADD PFCOUNT PGMERGE   发布订阅  PSUBSCRIBE PUBLISH PUBSUB PUNSUBSCRIBE SUBSCRIBE UNSUBSCRIBE   地理位置 (geo)  GEOADD GEODIST GEOHASH GEOPOS GEORADIUS GEORADIUSBYMEMBER   参考  www."><meta property="og:title" content="命令" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/cmd/" />
+
+<title>命令 | 计算机学习笔记</title>
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
+
+
+<script defer src="/note-cs/en.search.min.24c03bffdfb20634ba6a29a667e0da655b83bb925800696c8a3370c7087d8415.js" integrity="sha256-JMA7/9&#43;yBjS6aimmZ&#43;DaZVuDu5JYAGlsijNwxwh9hBU="></script>
+
+<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/cmd/index.xml" title="计算机学习笔记" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me">博客</a></li>
+  <li><a href="https://github.com/ikingye">Github</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip">知乎</a></li>
+  <li><a href="https://weibo.com/kingyip15215">微博</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第一部分 基础</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/" class="">1.6 数据库</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/mysql/" class="collapsed ">Mysql</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/postgresql/" class="collapsed ">PostgreSQL</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/" class="collapsed ">Redis</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第一部分 基础入门</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/basic/type/" class="">数据类型</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/basic/cmd/" class="active">命令</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/basic/practice/" class="">最佳实践</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/basic/practice/spec/" class="collapsed ">编程规范</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/basic/practice/snippet/" class="collapsed ">代码片段</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第二部分 设计</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第三部分 源码实现</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/source/type/" class="">类型实现</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/source/type/string/" class="">String 实现</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/source/type/list/" class="">List 实现</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第四部分 附录</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/appendix/tutorial/" class="">教程</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/redis/appendix/interview/" class="">面试题</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/basic/db/redis/appendix/interview/basic/" class="">基础</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/basic/db/redis/appendix/interview/advanced/" class="">进阶</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/basic/db/redis/appendix/interview/expert/" class="">高阶</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第二部分 方向</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/arch/" class="collapsed ">2.7 架构设计</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第三部分 领域</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第四部分 其他</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>命令</strong>
+
+  <label for="toc-control">
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#redis-命令">Redis 命令</a>
+      <ul>
+        <li><a href="#key">key</a></li>
+        <li><a href="#string">string</a></li>
+        <li><a href="#list">list</a></li>
+        <li><a href="#hash">hash</a></li>
+        <li><a href="#set">set</a></li>
+        <li><a href="#zset">zset</a></li>
+        <li><a href="#连接">连接</a></li>
+        <li><a href="#服务器">服务器</a></li>
+        <li><a href="#脚本">脚本</a></li>
+        <li><a href="#事务">事务</a></li>
+        <li><a href="#hyperloglog">HyperLogLog</a></li>
+        <li><a href="#发布订阅">发布订阅</a></li>
+        <li><a href="#地理位置-geo">地理位置 (geo)</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="redis-命令">Redis 命令</h1>
+<h2 id="key">key</h2>
+<ul>
+<li>DEL</li>
+<li>DUMP</li>
+<li>EXISTS</li>
+<li>EXPIRE</li>
+<li>EXPIREAT</li>
+<li>KEYS</li>
+<li>MOVE</li>
+<li>PERSIST</li>
+<li>PEXPIREAT</li>
+<li>PEXPIREAT</li>
+<li>PTTL</li>
+<li>RANDOMKEY</li>
+<li>RENAME</li>
+<li>RENAMENX</li>
+<li>TTL</li>
+<li>TYPE</li>
+</ul>
+<hr>
+<h2 id="string">string</h2>
+<ul>
+<li>APPEND</li>
+<li>DECR</li>
+<li>DECRBY</li>
+<li>DEL</li>
+<li>EXISTS</li>
+<li>GET</li>
+<li>GETRANGE</li>
+<li>GETSET</li>
+<li>INCR</li>
+<li>INCRBY</li>
+<li>INCRBYFLOAT</li>
+<li>MGET</li>
+<li>MSET</li>
+<li>MSETNX</li>
+<li>PSETEX</li>
+<li>SET</li>
+<li>SETBIT</li>
+<li>SETEX</li>
+<li>SETNX</li>
+<li>STRLEN</li>
+</ul>
+<hr>
+<h2 id="list">list</h2>
+<ul>
+<li>DEL</li>
+<li>DUMP</li>
+<li>EXISTS</li>
+<li>EXPIRE</li>
+<li>EXPIREAT</li>
+<li>KEYS</li>
+<li>MOVE</li>
+<li>PERSIST</li>
+<li>PEXPIREAT</li>
+<li>PEXPIREAT</li>
+<li>PTTL</li>
+<li>RANDOMKEY</li>
+<li>RENAME</li>
+<li>RENAMENX</li>
+<li>TTL</li>
+<li>TYPE</li>
+</ul>
+<hr>
+<h2 id="hash">hash</h2>
+<ul>
+<li>HDEL</li>
+<li>HEXISTS</li>
+<li>HGET</li>
+<li>HGETALL</li>
+<li>HINCRBY</li>
+<li>HINCRBYFLOAT</li>
+<li>HKEYS</li>
+<li>HLEN</li>
+<li>HMGET</li>
+<li>HMSET</li>
+<li>HSET</li>
+<li>HSETNX</li>
+<li>HVALS</li>
+</ul>
+<hr>
+<h2 id="set">set</h2>
+<ul>
+<li>SADD</li>
+<li>SCARD</li>
+<li>SDIFF</li>
+<li>SDIFFSTORE</li>
+<li>SINTER</li>
+<li>SINTERSTORE</li>
+<li>SISMEMBER</li>
+<li>SMEMBERS</li>
+<li>SMOVE</li>
+<li>SPOP</li>
+<li>SRANDMEMBER</li>
+<li>SREM</li>
+<li>SSCAN</li>
+<li>SUNION</li>
+<li>SUNIONSTORE</li>
+</ul>
+<hr>
+<h2 id="zset">zset</h2>
+<ul>
+<li>ZADD</li>
+<li>ZCARD</li>
+<li>ZCOUNT</li>
+<li>ZINCRBY</li>
+<li>ZINTERSTORE</li>
+<li>ZLEXCOUNT</li>
+<li>ZRANGE</li>
+<li>ZRANGEBYLEX</li>
+<li>ZRANGEBYSCORE</li>
+<li>ZRANK</li>
+<li>ZREM</li>
+<li>ZREMRANGEBYLEX</li>
+<li>ZREMRANGEBYRANK</li>
+<li>ZREMRANGEBYSCORE</li>
+<li>ZREVRANGE</li>
+<li>ZREVRANGEBYSCORE</li>
+<li>ZREVRANK</li>
+<li>ZSCAN</li>
+<li>ZSCORE</li>
+<li>ZUNIONSTORE</li>
+</ul>
+<hr>
+<h2 id="连接">连接</h2>
+<ul>
+<li>AUTH</li>
+<li>ECHO</li>
+<li>PING</li>
+<li>QUIT</li>
+<li>SELECT</li>
+</ul>
+<hr>
+<h2 id="服务器">服务器</h2>
+<ul>
+<li>BGREWRITEAOF</li>
+<li>BGSAVE</li>
+<li>CLIENT GETNAME</li>
+<li>CLIENT KILL</li>
+<li>CLIENT LIST</li>
+<li>CLIENT PAUSE</li>
+<li>CLIENT SETNAME</li>
+<li>CLUSTER SLOTS</li>
+<li>COMMAND</li>
+<li>COMMAND COUNT</li>
+<li>COMMAND GETKEYS</li>
+<li>COMMAND INFO</li>
+<li>CONFIG GET</li>
+<li>CONFIG RESETSTAT</li>
+<li>CONFIG REWRITE</li>
+<li>CONFIG SET</li>
+<li>DBSIZE</li>
+<li>DEBUG OBJECT</li>
+<li>DEBUG SEGFAULT</li>
+<li>FLUSHALL</li>
+<li>FLUSHDB</li>
+<li>INFO</li>
+<li>LASTSAVE</li>
+<li>MONITOR</li>
+<li>ROLE</li>
+<li>SAVE</li>
+<li>SHOWLOG</li>
+<li>SHUTDOWN</li>
+<li>SLAVEOF</li>
+<li>SYNC</li>
+<li>TIME</li>
+</ul>
+<hr>
+<h2 id="脚本">脚本</h2>
+<ul>
+<li>EVAL</li>
+<li>EVALSHA</li>
+<li>SCRIPT EXISTS</li>
+<li>SCRIPT FLUSH</li>
+<li>SCRIPT KILL</li>
+<li>SCRIPT LOAD</li>
+</ul>
+<hr>
+<h2 id="事务">事务</h2>
+<ul>
+<li>DISCARD</li>
+<li>EXEC</li>
+<li>MULTI</li>
+<li>UNWATCH</li>
+<li>WATCH</li>
+</ul>
+<hr>
+<h2 id="hyperloglog">HyperLogLog</h2>
+<ul>
+<li>PFADD</li>
+<li>PFCOUNT</li>
+<li>PGMERGE</li>
+</ul>
+<hr>
+<h2 id="发布订阅">发布订阅</h2>
+<ul>
+<li>PSUBSCRIBE</li>
+<li>PUBLISH</li>
+<li>PUBSUB</li>
+<li>PUNSUBSCRIBE</li>
+<li>SUBSCRIBE</li>
+<li>UNSUBSCRIBE</li>
+</ul>
+<hr>
+<h2 id="地理位置-geo">地理位置 (geo)</h2>
+<ul>
+<li>GEOADD</li>
+<li>GEODIST</li>
+<li>GEOHASH</li>
+<li>GEOPOS</li>
+<li>GEORADIUS</li>
+<li>GEORADIUSBYMEMBER</li>
+</ul>
+<hr>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://www.redis.net.cn/order/">www.redis.net.cn/order</a></li>
+<li><a href="http://www.rainybowe.com/blog/2017/07/13/%E7%A5%9E%E5%A5%87%E7%9A%84HyperLogLog%E7%AE%97%E6%B3%95/index.html">神奇的 HyperLogLog 算法</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#redis-命令">Redis 命令</a>
+      <ul>
+        <li><a href="#key">key</a></li>
+        <li><a href="#string">string</a></li>
+        <li><a href="#list">list</a></li>
+        <li><a href="#hash">hash</a></li>
+        <li><a href="#set">set</a></li>
+        <li><a href="#zset">zset</a></li>
+        <li><a href="#连接">连接</a></li>
+        <li><a href="#服务器">服务器</a></li>
+        <li><a href="#脚本">脚本</a></li>
+        <li><a href="#事务">事务</a></li>
+        <li><a href="#hyperloglog">HyperLogLog</a></li>
+        <li><a href="#发布订阅">发布订阅</a></li>
+        <li><a href="#地理位置-geo">地理位置 (geo)</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs" 
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

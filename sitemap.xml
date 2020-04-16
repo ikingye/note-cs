@@ -8,6 +8,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/html/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/linux/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
@@ -15,6 +19,26 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/</loc>
     <lastmod>2020-04-07T18:11:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/quick-start/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/practice/optimize/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/tutorial/</loc>
   </url>
   
   <url>
@@ -43,7 +67,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/tutorial/</loc>
   </url>
   
   <url>
@@ -66,8 +106,52 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</loc>
     <lastmod>2020-04-12T01:20:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/practice/</loc>
   </url>
   
   <url>
@@ -90,12 +174,64 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/basic/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/</loc>
   </url>
   
   <url>
@@ -124,7 +260,19 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/</loc>
   </url>
   
   <url>
@@ -147,7 +295,67 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/basic/practice/spec/</loc>
   </url>
   
   <url>
@@ -166,8 +374,64 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/basic/practice/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/css/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/basic/</loc>
   </url>
   
   <url>
@@ -196,7 +460,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/basic/</loc>
   </url>
   
   <url>
@@ -216,6 +496,42 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/basic/</loc>
     <lastmod>2020-03-29T20:58:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/design/</loc>
   </url>
   
   <url>
@@ -244,6 +560,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/principle/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/priciple/</loc>
   </url>
   
@@ -252,8 +572,32 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/principle/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/</loc>
     <lastmod>2020-03-29T20:58:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/design/</loc>
   </url>
   
   <url>
@@ -269,6 +613,46 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/design/</loc>
     <lastmod>2020-03-29T20:58:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/design/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/advanced/</loc>
   </url>
   
   <url>
@@ -297,7 +681,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/advanced/</loc>
   </url>
   
   <url>
@@ -317,6 +717,50 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/advanced/</loc>
     <lastmod>2020-03-29T20:58:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/</loc>
   </url>
   
   <url>
@@ -345,7 +789,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/</loc>
   </url>
   
   <url>
@@ -368,12 +828,48 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/be/Designing-Data-Intensive-Applications/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/</loc>
   </url>
   
   <url>
@@ -384,6 +880,18 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/source/</loc>
   </url>
   
   <url>
@@ -412,7 +920,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/source/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/source/</loc>
   </url>
   
   <url>
@@ -435,8 +959,52 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/source/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/source/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/expert/</loc>
   </url>
   
   <url>
@@ -465,7 +1033,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/expert/</loc>
   </url>
   
   <url>
@@ -488,6 +1072,42 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/expert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/mqtt/mosquitto/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/unix/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
@@ -495,6 +1115,18 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/</loc>
   </url>
   
   <url>
@@ -523,7 +1155,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/</loc>
   </url>
   
   <url>
@@ -546,13 +1194,65 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/build/gulp/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/practice/snippet/</loc>
   </url>
   
   <url>
@@ -575,8 +1275,44 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/practice/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</loc>
     <lastmod>2020-03-31T00:04:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/version/</loc>
   </url>
   
   <url>
@@ -597,6 +1333,18 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/node/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/cmd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/source/type/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/ios/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
@@ -612,11 +1360,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/others/skill/</loc>
-    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -650,6 +1393,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/cas/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/</loc>
   </url>
   
@@ -672,11 +1419,19 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/grpc/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/hyperkit/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/iaas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/lib/jquery/</loc>
   </url>
   
   <url>
@@ -690,11 +1445,31 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/mysql/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/oauth/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/openid/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/paxos/</loc>
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rest/</loc>
   </url>
   
   <url>
@@ -703,6 +1478,10 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/salesforce/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/source/type/string/</loc>
   </url>
   
   <url>
@@ -715,6 +1494,22 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/xml/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/vs-c/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/vs-cpp/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/circuit-breaker/attention/</loc>
   </url>
   
@@ -724,12 +1519,56 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/pointer/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</loc>
     <lastmod>2020-03-31T00:04:30+08:00</lastmod>
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/basic/practice/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/circuit-breaker/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/version/</loc>
   </url>
   
   <url>
@@ -772,6 +1611,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/</loc>
   </url>
   
@@ -781,6 +1624,10 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/gae/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/spring-cloud/</loc>
   </url>
   
   <url>
@@ -799,6 +1646,11 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
@@ -827,12 +1679,40 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/dubbo/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/heroku/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/http/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/ios/</loc>
     <lastmod>2020-03-29T20:58:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/jwt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/web/laravel/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/source/type/list/</loc>
   </url>
   
   <url>
@@ -844,7 +1724,27 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/raft/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/redis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/</loc>
   </url>
   
   <url>
@@ -853,6 +1753,26 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/virtualbox/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/web/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/namespace/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/</loc>
   </url>
   
   <url>
@@ -889,6 +1809,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/thrift/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/algs/</loc>
   </url>
   
@@ -899,6 +1823,11 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/</loc>
+    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/tool/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
@@ -923,8 +1852,20 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/activemq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/debug/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/</loc>
   </url>
   
   <url>
@@ -934,6 +1875,22 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/frame/paddlepaddle/</loc>
     <lastmod>2020-04-03T18:28:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/rocketmq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/soa/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/soap/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/</loc>
   </url>
   
   <url>
@@ -963,6 +1920,22 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/windows/basic/snippet/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/snippet/</loc>
   </url>
   
   <url>
@@ -1026,6 +1999,18 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/tars/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/wsdl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/</loc>
   </url>
   
@@ -1035,11 +2020,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/others/tool/</loc>
-    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
   
   <url>
@@ -1063,8 +2043,28 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/motan/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/rabbitmq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/uudi/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/study/coding-online/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/lib/</loc>
   </url>
   
   <url>
@@ -1089,6 +2089,10 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/course/cc/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/zeromq/</loc>
   </url>
   
   <url>
@@ -1137,11 +2141,23 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/others/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/course/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/mqtt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/saml/</loc>
   </url>
   
   <url>
@@ -1153,6 +2169,14 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
@@ -1160,6 +2184,30 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/onvif/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/es-next/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/react/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/typescript/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/vue/</loc>
   </url>
   
   <url>

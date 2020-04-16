@@ -10,6 +10,27 @@
     
     
     <item>
+      <title>快速上手</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/quick-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/quick-start/</guid>
+      <description>快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
+默认 psql
+user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l 使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
+ 创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?</description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
       <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/os/android/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,6 +77,15 @@
     
     <item>
       <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</guid>
+      <description>教程 基础  learn c++ in y minutes  进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -87,11 +117,70 @@
     
     <item>
       <title>百度</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</guid>
+      <description>百度 C++ 编程规范 </description>
+    </item>
+    
+    <item>
+      <title>百度</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</guid>
       <description>百度 Objective-C 编码规范 (2019 版) </description>
+    </item>
+    
+    <item>
+      <title>百度</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</guid>
+      <description>百度 PHP 编码规范 (201904 版) </description>
+    </item>
+    
+    <item>
+      <title>百度</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/</guid>
+      <description>百度 JavaScript 编码规范 1 前言
+2 代码风格
+2.1 文件
+2.2 结构
+2.2.1 缩进
+2.2.2 空格
+2.2.3 换行
+2.2.4 语句
+2.3 命名
+2.4 注释
+2.4.1 单行注释
+2.4.2 多行注释
+2.4.3 文档化注释
+2.4.4 类型定义
+2.4.5 文件注释
+2.4.6 命名空间注释
+2.4.7 类注释
+2.4.8 函数/方法注释
+2.4.9 事件注释
+2.4.10 常量注释
+2.4.11 复杂类型注释
+2.4.12 AMD 模块注释
+2.4.13 细节注释
+3 语言特性
+3.1 变量
+3.2 条件
+3.3 循环
+3.4 类型
+3.4.1 类型检测
+3.4.2 类型转换
+3.5 字符串
+3.6 对象
+3.7 数组</description>
     </item>
     
     <item>
@@ -102,6 +191,33 @@
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</guid>
       <description>makefile 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。创建这一工具的目标是 减少不必要的编译或者任务。传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
 基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &amp;lt;target&amp;gt; 生成 target  重命名：make -f &amp;quot;filename&amp;quot; &amp;lt;target&amp;gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2.</description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
     </item>
     
     <item>
@@ -151,10 +267,46 @@
     
     <item>
       <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -192,6 +344,105 @@
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
     </item>
     
     <item>
@@ -241,10 +492,46 @@
     
     <item>
       <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/advanced/</guid>
       <description>进阶面试题 </description>
     </item>
     
@@ -285,12 +572,111 @@
     </item>
     
     <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
       <title>cmake</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</guid>
       <description>cmake </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
     </item>
     
     <item>
@@ -340,10 +726,46 @@
     
     <item>
       <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
@@ -381,6 +803,98 @@
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/angular/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/react/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/framework/vue/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>gulp</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/build/gulp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/node/basic/build/gulp/</guid>
+      <description>gulp 类似与 make 参考：https://learnxinyminutes.com/docs/zh-cn/make-cn/</description>
+    </item>
+    
+    <item>
+      <title>关键字</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/keyword/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/keyword/</guid>
+      <description>C++ 关键字 这是 C++ 中的保留字列表。因为它们为语言所用，故这些关键词不可用于重定义或重载。
+注意 and、bitor、or、xor、compl、bitand、and_eq、or_eq、xor_eq、not 及 not_eq（还有双标符 &amp;lt;%、%&amp;gt;、&amp;lt;:、:&amp;gt;、%: 及 %:%:）提供标准记号的代用表示方法。
+参考：C++ 参考手册</description>
     </item>
     
     <item>
@@ -422,6 +936,15 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
+      <title>Jquery</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/lib/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/lib/jquery/</guid>
+      <description>Jquery </description>
+    </item>
+    
+    <item>
       <title>LLDB 教程</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/debug/lldb/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -452,6 +975,24 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
+      <title>与 C 的差异</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/vs-c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/vs-c/</guid>
+      <description>C++ 与 C 语言的差异  字符字面量的大小 // 在C++中，字符字面量的大小是一个字节。 sizeof(&amp;#39;c&amp;#39;) == 1 // 在C语言中，字符字面量的大小与int相同。 sizeof(&amp;#39;c&amp;#39;) == sizeof(10)  函数原型与函数定义匹配 // C++ 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数  // 而在C语言中 void func(); // 这个函数能接受任意数量的参数  NULL vs nullptr // 在 C++ 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr;  同文件 // C++ 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &amp;lt;cstdio&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>与 C&#43;&#43; 的差异</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/vs-cpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/vs-cpp/</guid>
+      <description>C 语言与 C++ 的差异 参考：C++ 学习笔记</description>
+    </item>
+    
+    <item>
       <title>关注</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/arch/circuit-breaker/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -469,6 +1010,27 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <description>关注 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
 php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
  深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
+    </item>
+    
+    <item>
+      <title>函数</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</guid>
+      <description>函数 函数参数 参数默认值
+// 你可以为函数的参数指定默认值， // 默认参数必须放在所有的常规参数之后。 void doSomethingWithInts(int a, int b = 1, int c = 4) { } 函数重载 // C++支持函数重载，你可以定义一组名称相同而参数不同的函数 void print(char const* myString) { printf(&amp;#34;String %s\n&amp;#34;, myString); } void print(int myInt) { printf(&amp;#34;My int is %d&amp;#34;, myInt); } int main() { print(&amp;#34;Hello&amp;#34;); // 解析为 void print(const char*)  print(15); // 解析为 void print(int) } </description>
+    </item>
+    
+    <item>
+      <title>指针</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/pointer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/pointer/</guid>
+      <description>C++ 指针 智能指针    指针类别 支持 备注     unique_ptr C++ 11 拥有独有对象所有权语义的智能指针   shared_ptr C++ 11 拥有共享对象所有权语义的智能指针   weak_ptr C++ 11 到 std::shared_ptr 所管理对象的弱引用   auto_ptr C++ 17 中移除 拥有严格对象所有权语义的智能指针    unique_ptr std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
+ 销毁了管理的 unique_ptr 对象 通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。  shared_ptr std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：
+ 最后剩下的占有对象的 shared_ptr 被销毁； 最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。  有两种方式创建 shared_ptr ：</description>
     </item>
     
     <item>
@@ -512,6 +1074,27 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/heroku/</guid>
       <description>Heroku </description>
+    </item>
+    
+    <item>
+      <title>命名空间</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/namespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/namespace/</guid>
+      <description>C++ 命名空间 // 命名空间为变量、函数和其他声明提供了分离的的作用域。 // 命名空间可以嵌套使用。  namespace First { namespace Nested { void foo() { printf(&amp;#34;This is First::Nested::foo\n&amp;#34;); } } // 结束嵌套的命名空间Nested } // 结束命名空间First  namespace Second { void foo() { printf(&amp;#34;This is Second::foo\n&amp;#34;) } } void foo() { printf(&amp;#34;This is global foo\n&amp;#34;); } int main() { // 如果没有特别指定，就从“Second”中取得所需的内容。  using namespace Second; foo(); // 显示“This is Second::foo”  First::Nested::foo(); // 显示“This is First::Nested::foo”  ::foo(); // 显示“This is global foo” } </description>
+    </item>
+    
+    <item>
+      <title>引用</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/reference/</guid>
+      <description>C++ 引用   引用是一种特殊的指针类型，一旦被定义就不能重新赋值，并且不能被设置为空值。
+  使用引用时的语法与原变量相同
+ 对引用类型进行解引用时，不需要使用 * 赋值时也不需要用 &amp;amp; 来取地址  using namespace std; string foo = &amp;#34;I am foo&amp;#34;; string bar = &amp;#34;I am bar&amp;#34;; string&amp;amp; fooRef = foo; // 建立了一个对foo的引用。 fooRef += &amp;#34;. Hi!&amp;#34;; // 通过引用来修改foo的值 cout &amp;lt;&amp;lt; fooRef; // &amp;#34;I am foo. Hi!&amp;#34; // 这句话的并不会改变fooRef的指向，其效果与“foo = bar”相同。 // 也就是说，在执行这条语句之后，foo == &amp;#34;I am bar&amp;#34;。 fooRef = bar;   不能修改一个常量引用的值
+const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。 barRef += &amp;#34;.</description>
     </item>
     
     <item>
@@ -603,6 +1186,208 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
 系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
 这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
  进阶 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/css/</guid>
+      <description>CSS 编码规范 1 前言
+2 代码风格
+2.1 文件
+2.2 缩进
+2.3 空格
+2.4 行长度
+2.5 选择器
+2.6 属性
+3 通用
+3.1 选择器
+3.2 属性缩写
+3.3 属性书写顺序
+3.4 清除浮动
+3.5 !important
+3.6 z-index
+4 值与单位
+4.1 文本
+4.2 数值
+4.3 url()
+4.4 长度
+4.5 颜色
+4.6 2D 位置
+5 文本编排
+5.1 字体族
+5.2 字号
+5.3 字体风格
+5.4 字重
+5.5 行高
+6 变换与动画
+7 响应式
+8 兼容性
+8.1 属性前缀
+8.2 Hack
+8.3 Expression</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/es-next/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/es-next/</guid>
+      <description>JavaScript 编码规范 - ESNext 补充篇（草案） 1 前言
+2 代码风格
+2.1 文件
+2.2 结构
+2.2.1 缩进
+2.2.2 空格
+2.2.3 语句
+3 语言特性
+3.1 变量
+3.2 解构
+3.3 模板字符串
+3.4 函数
+3.5 箭头函数
+3.6 对象
+3.7 类
+3.8 模块
+3.9 集合
+3.10 异步
+4 环境
+4.1 运行环境
+4.2 预编译
+1 前言 随着 ECMAScript 的不断发展，越来越多更新的语言特性将被使用，给应用的开发带来方便。本文档的目标是使 ECMAScript 新特性的代码风格保持一致，并给予一些实践建议。
+本文档仅包含新特性部分。基础部分请遵循 JavaScript Style Guide。
+由于 ECMAScript 依然在快速的不断发展，本文档也将可能随时保持更新。更新内容主要涉及对新增的语言特性的格式规范化、实践指导，引擎与编译器环境变化的使用指导。
+虽然本文档是针对 ECMAScript 设计的，但是在使用各种基于 ECMAScript 扩展的语言时(如 JSX、TypeScript 等)，适用的部分也应尽量遵循本文档的约定。
+任何问题或建议，欢迎跟我们讨论: fe-styleguide@baidu.com</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/html/</guid>
+      <description>HTML 编码规范 1 前言
+2 代码风格
+2.1 缩进与换行
+2.2 命名
+2.3 标签
+2.4 属性
+3 通用
+3.1 DOCTYPE
+3.2 编码
+3.3 CSS 和 JavaScript 引入
+4 head
+4.1 title
+4.2 favicon
+4.3 viewport
+5 图片
+6 表单
+6.1 控件标题
+6.2 按钮
+6.3 可访问性 (A11Y)
+7 多媒体
+8 模板中的 HTML
+1 前言 HTML 作为描述网页结构的超文本标记语言，在百度一直有着广泛的应用。本文档的目标是使 HTML 代码风格保持一致，容易被理解和被维护。
+任何问题或建议，欢迎跟我们讨论: fe-styleguide@baidu.com
+2 代码风格 2.1 缩进与换行 [强制] 使用 4 个空格做为一个缩进层级，不允许使用 2 个空格 或 tab 字符。 解释： 对于非 HTML 标签之间的缩进，比如 script 或 style 标签内容缩进，与 script 或 style 标签的缩进同级。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/react/</guid>
+      <description>React 编码规范 1 版本限制
+1.1 法律要求
+2 文件组织
+2.1 命名
+2.2 模块化
+3 命名规则
+3.1 组件
+3.2 属性
+3.3 高阶组件
+4 组件声明
+4.1 组件
+4.2 属性
+4.3 生命周期
+4.4 高阶组件
+5 组件实现
+5.1 更新机制
+5.2 纯函数应用
+6 JSX
+6.1 标签
+6.2 属性
+6.2.1 层级
+1 版本限制 1.1 法律要求 [强制] 使用 React &amp;gt;=15.6.2版本 解释
+在15.6.2以前的版本协议带有 Facebook Patents，依据法务风险，严禁使用。
+2 文件组织 2.1 命名 [强制] 同一目录下不得拥有同名的.js和.jsx文件。 解释：
+在使用模块导入时，倾向于不添加后缀，如果存在同名但不同后缀的文件，构建工具将无法决定哪一个是需要引入的模块。
+[强制] 组件文件使用一致的.js或 .jsx后缀。 解释：
+所有组件文件的后缀名从.js或.jsx中任选其一。
+不应在项目中出现部分组件为.js文件，部分为.jsx的情况。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/typescript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/typescript/</guid>
+      <description>TypeScript 编码规范 1 前言
+2 代码风格
+2.1 环境
+2.2 文件
+2.3 命名
+3 语言特性
+3.1 变量
+3.2 类型
+3.3 条件
+3.4 循环
+3.5 数组
+3.6 对象
+3.7 函数
+3.8 类
+3.9 模块
+1 前言 随着 TypeScript 的不断发展，越来越多的开发者认可并使用 TypeScript 开发应用。本文档的目标是使 TypeScript 新特性的代码风格保持一致，并给予一些实践建议。
+本文档基本遵循 JavaScript Style Guide 与 ES-Next Style Guide。
+由于 TypeScript 依然在快速发展，本文档也将随时保持更新。更新内容主要涉及对新增的语言特性的格式规范化、实践指导，引擎与编译器环境变化的使用指导。
+任何问题或建议，欢迎跟我们讨论: fe-styleguide@baidu.com
+2 代码风格 2.1 环境 [强制] TypeScript 文件使用 .ts 扩展名。含 JSX 语法的 TypeScript 文件使用 .tsx 扩展名。 [建议] tsconfig.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/vue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/javascript/basic/practice/spec/baidu/vue/</guid>
+      <description>Vue 组件代码规范 1 前言
+2 代码风格
+2.1 缩进
+2.2 单行最长限制
+2.3 模块书写顺序
+3 template 部分
+3.1 根节点
+3.2 标签
+3.3 属性
+3.4 指令
+3.5 插值（Mustache）
+3.6 空格
+3.7 变量
+4 javascript 部分
+4.1 props
+4.2 data
+4.3 变量
+4.4 其他
+5 style 部分
+6 参考
+1 前言 任何问题或建议，欢迎跟我们讨论: fe-styleguide@baidu.com
+2 代码风格 2.1 缩进 [强制] 使用 4 个空格做为一个缩进层级，不允许使用 2 个空格或 tab 字符 2.2 单行最长限制 [强制] 每行不得超过 120 个字符 2.3 模块书写顺序 [建议] template -&amp;gt; script -&amp;gt; style 3 template 部分 3.</description>
     </item>
     
   </channel>
