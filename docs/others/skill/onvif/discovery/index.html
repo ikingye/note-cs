@@ -4,7 +4,14 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="设备发现"><meta property="og:title" content="设备发现" />
+<meta name="description" content="设备发现 我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
+那如果客户端预先不知道目标服务的地址该怎么办？
+WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
+WS-Discovery 模式 WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
+Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  官方技术规范：http://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html
+ 传输方式 TCP/IP 有三种传输方式：单播 (Unicast)、多播 (Multicast) 和广播 (Broadcast)，在 IPv6 领域还有另一种方式：任播 (Anycast)。
+单播 Unicast 单播 (Unicast)：一对一，双向通信，目的地址是对方主机地址。网络上绝大部分的数据都是以单播的形式传输的。如收发邮件、浏览网页等。
+多播 Multicast 多播 (Multicast)：也叫组播，一对多，单向通信，目的地址是多播地址，主机可以通过 IGMP 协议请求加入或退出某个多播组 (multicast group)，数据只会转发给有需要（已加入组）的主机，不影响其他不需要（未加入组）的主机。如网上视频会议、网上视频点播、IPTV 等。"><meta property="og:title" content="设备发现" />
 <meta property="og:description" content="设备发现 我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
 那如果客户端预先不知道目标服务的地址该怎么办？
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
@@ -20,10 +27,10 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
+<link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/note-cs/en.search.min.658a4f39b0985dfeced992076f19afc2b4c33eed4b604f5ff3b63d74924d0f93.js" integrity="sha256-ZYpPObCYXf7O2ZIHbxmvwrTDPu1LYE9f87Y9dJJND5M="></script>
+<script defer src="/note-cs/en.search.min.3ad641c52ca0c808c3eab704a541cdd8ace4e6eed1b1d217781a31ad8713de27.js" integrity="sha256-OtZBxSygyAjD6rcEpUHN2Kzk5u7RsdIXeBoxrYcT3ic="></script>
 
 <!--
 Made with Book Theme
@@ -52,6 +59,7 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
 
+
 <ul>
   <li><a href="https://kingye.me">博客</a></li>
   <li><a href="https://github.com/ikingye">Github</a></li>
@@ -59,6 +67,11 @@ https://github.com/alex-shpak/hugo-book
   <li><a href="https://weibo.com/kingyip15215">微博</a></li>
 </ul>
 <hr />
+
+
+
+
+
 
 
 
@@ -84,10 +97,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第一部分 基础</span>
-    
+
+  
+  <span>第一部分 基础</span>
+  
+
 
     
 
@@ -100,74 +116,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
-
-  <a href="/note-cs/docs/basic/computer-composition/" >
-      1.1 计算机组成原理
-  </a>
-
-
-    
-
-    
-
-
-
 
   
-  <ul>
-    
-  </ul>
+  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/os/" >
-      1.2 操作系统
-  </a>
-
-
-    
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/algs/" >
-      1.3 数据结构与算法
-  </a>
-
-
-    
 
     
 
@@ -190,16 +145,36 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/network/" >
-      1.4 计算机网络
-  </a>
-
-
+  <li>
     
+
+  
+  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
 
     
 
@@ -222,42 +197,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/pl/" >
-      1.5 编程语言
-  </a>
-
-
+  <li>
     
 
-    
+  
+  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
 
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/db/" >
-      1.6 数据库
-  </a>
-
-
-    
 
     
 
@@ -280,16 +226,65 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/compile/" >
-      1.7 编译原理
-  </a>
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/" class="">1.6 数据库</a>
+  
 
 
     
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  
+
 
     
 
@@ -316,10 +311,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第二部分 方向</span>
-    
+
+  
+  <span>第二部分 方向</span>
+  
+
 
     
 
@@ -332,16 +330,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/be/" >
-      2.1 后端
-  </a>
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  
 
-
-    
 
     
 
@@ -358,16 +353,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/fe/" >
-      2.2 前端
-  </a>
+  
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  
 
-
-    
 
     
 
@@ -384,16 +376,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/client/" >
-      2.3 客户端
-  </a>
+  
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  
 
-
-    
 
     
 
@@ -410,16 +399,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/embedded/" >
-      2.4 嵌入式
-  </a>
+  
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  
 
-
-    
 
     
 
@@ -436,16 +422,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/security/" >
-      2.5 安全
-  </a>
+  
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  
 
-
-    
 
     
 
@@ -462,16 +445,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/mp/" >
-      2.6 中台
-  </a>
+  
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
+  
 
-
-    
 
     
 
@@ -488,16 +468,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/" >
-      2.7 架构设计
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/" class="collapsed ">2.7 架构设计</a>
+  
 
-
-    
 
     
 
@@ -514,16 +491,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/se/" >
-      2.8 软件工程
-  </a>
+  
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  
 
-
-    
 
     
 
@@ -550,10 +524,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第三部分 领域</span>
-    
+
+  
+  <span>第三部分 领域</span>
+  
+
 
     
 
@@ -566,16 +543,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/" >
-      3.1 云计算
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
 
-
-    
 
     
 
@@ -592,16 +566,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/bigdata/" >
-      3.2 大数据
-  </a>
+  
+  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
 
-
-    
 
     
 
@@ -618,16 +589,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/ai/" >
-      3.3 人工智能
-  </a>
+  
+  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
 
-
-    
 
     
 
@@ -654,10 +622,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第四部分 其他</span>
-    
+
+  
+  <span>第四部分 其他</span>
+  
+
 
     
 
@@ -670,16 +641,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/skill/" >
-      4.1 技能树
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.1 技能树</a>
+  
 
-
-    
 
     
 
@@ -692,16 +660,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/skill/debug/" >
-      Debug
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
+  
 
-
-    
 
     
 
@@ -718,16 +683,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/skill/lorawan/" >
-      LoRaWan
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
+  
 
-
-    
 
     
 
@@ -744,16 +706,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/skill/onvif/" >
-      ONVIF
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
+  
 
-
-    
 
     
 
@@ -766,9 +725,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/others/skill/onvif/discovery/"  class="active">
-      设备发现
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/onvif/discovery/" class="active">设备发现</a>
+  
 
 </li>
       
@@ -796,16 +755,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/tool/" >
-      4.2 工具
-  </a>
+  
+  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.2 工具</a>
+  
 
-
-    
 
     
 
@@ -832,16 +788,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/book/" >
-      第五部分 读书
-  </a>
+  
+  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
 
-
-    
 
     
 
@@ -858,16 +811,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/course/" >
-      第六部分 课程
-  </a>
+  
+  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
 
-
-    
 
     
 
@@ -887,6 +837,11 @@ https://github.com/alex-shpak/hugo-book
 
 
   
+
+
+
+
+
 
 
 
@@ -955,7 +910,8 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="设备发现">设备发现</h1>
+      
+  <article class="markdown"><h1 id="设备发现">设备发现</h1>
 <p>我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。</p>
 <p>那如果客户端预先不知道目标服务的地址该怎么办？</p>
 <p>WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。</p>
@@ -973,7 +929,7 @@ https://github.com/alex-shpak/hugo-book
 <hr>
 <h2 id="传输方式">传输方式</h2>
 <p>TCP/IP 有三种传输方式：单播 (Unicast)、多播 (Multicast) 和广播 (Broadcast)，在 IPv6 领域还有另一种方式：任播 (Anycast)。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200319174214.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200319174214.png" alt="" /></p>
 <h2 id="单播-unicast">单播 Unicast</h2>
 <p>单播 (Unicast)：一对一，双向通信，目的地址是对方主机地址。网络上绝大部分的数据都是以单播的形式传输的。如收发邮件、浏览网页等。</p>
 <h2 id="多播-multicast">多播 Multicast</h2>
@@ -989,6 +945,7 @@ https://github.com/alex-shpak/hugo-book
 实现 socket 编程（UDP），通过 <code>sendto</code> 往多播地址发送探测消息（<code>Probe</code>），再使用 <code>recvfrom</code> 接收 IPC 的应答消息（<code>ProbeMatch</code>）</p>
 </article>
  
+      
 
       <footer class="book-footer">
         
@@ -1010,6 +967,9 @@ https://github.com/alex-shpak/hugo-book
 
  
         
+      </footer>
+
+      
   
   <div class="book-comments">
 <script src="https://utteranc.es/client.js"
@@ -1023,8 +983,8 @@ https://github.com/alex-shpak/hugo-book
 </div>
   
  
-      </footer>
-      
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     

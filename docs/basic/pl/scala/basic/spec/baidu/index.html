@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="百度"><meta property="og:title" content="百度" />
+<meta name="description" content="百度 Scala 编码规范 前言 就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
+ Apache Spark 开源社区 Scala 编程指南:
+Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  "><meta property="og:title" content="百度" />
 <meta property="og:description" content="百度 Scala 编码规范 前言 就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
  Apache Spark 开源社区 Scala 编程指南:
 Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  " />
@@ -15,10 +17,10 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
+<link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/note-cs/en.search.min.658a4f39b0985dfeced992076f19afc2b4c33eed4b604f5ff3b63d74924d0f93.js" integrity="sha256-ZYpPObCYXf7O2ZIHbxmvwrTDPu1LYE9f87Y9dJJND5M="></script>
+<script defer src="/note-cs/en.search.min.3ad641c52ca0c808c3eab704a541cdd8ace4e6eed1b1d217781a31ad8713de27.js" integrity="sha256-OtZBxSygyAjD6rcEpUHN2Kzk5u7RsdIXeBoxrYcT3ic="></script>
 
 <!--
 Made with Book Theme
@@ -47,6 +49,7 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
 
+
 <ul>
   <li><a href="https://kingye.me">博客</a></li>
   <li><a href="https://github.com/ikingye">Github</a></li>
@@ -54,6 +57,11 @@ https://github.com/alex-shpak/hugo-book
   <li><a href="https://weibo.com/kingyip15215">微博</a></li>
 </ul>
 <hr />
+
+
+
+
+
 
 
 
@@ -79,10 +87,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第一部分 基础</span>
-    
+
+  
+  <span>第一部分 基础</span>
+  
+
 
     
 
@@ -95,74 +106,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
-
-  <a href="/note-cs/docs/basic/computer-composition/" >
-      1.1 计算机组成原理
-  </a>
-
-
-    
-
-    
-
-
-
 
   
-  <ul>
-    
-  </ul>
+  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/os/" >
-      1.2 操作系统
-  </a>
-
-
-    
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/algs/" >
-      1.3 数据结构与算法
-  </a>
-
-
-    
 
     
 
@@ -185,16 +135,36 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/network/" >
-      1.4 计算机网络
-  </a>
-
-
+  <li>
     
+
+  
+  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
 
     
 
@@ -217,38 +187,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
-
-  <a href="/note-cs/docs/basic/pl/" >
-      1.5 编程语言
-  </a>
-
-
-    
-
-    
-
-
-
 
   
-  <ul>
-    
-      
-        
+  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
 
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/pl/go/" >
-      Go
-  </a>
-
-
-    
 
     
 
@@ -271,16 +216,32 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
     
       
+        
 
-  <a href="/note-cs/docs/basic/pl/python/" >
-      Python
-  </a>
-
-
+  <li>
     
+
+  
+  <a href="/note-cs/docs/basic/pl/go/" class="">Go</a>
+  
+
 
     
 
@@ -303,16 +264,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/pl/rust/" >
-      Rust
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/python/" class="">Python</a>
+  
 
-
-    
 
     
 
@@ -335,16 +293,42 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/rust/" class="">Rust</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/pl/objective-c/" >
-      Objective-C
-  </a>
-
-
+  <li>
     
+
+  
+  <a href="/note-cs/docs/basic/pl/objective-c/" class="collapsed ">Objective-C</a>
+  
+
 
     
 
@@ -361,16 +345,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/pl/scala/" >
-      Scala
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/" class="collapsed ">Scala</a>
+  
 
-
-    
 
     
 
@@ -383,10 +364,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第一部分 基础入门</span>
-    
+
+  
+  <span>第一部分 基础入门</span>
+  
+
 
     
 
@@ -399,16 +383,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/pl/scala/basic/spec/" >
-      编程规范
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/basic/spec/" class="collapsed ">编程规范</a>
+  
 
-
-    
 
     
 
@@ -421,9 +402,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/basic/pl/scala/basic/spec/baidu/"  class="active">
-      百度
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/basic/spec/baidu/" class="active">百度</a>
+  
 
 </li>
       
@@ -441,16 +422,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/pl/scala/basic/practice/" >
-      最佳实践
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/basic/practice/" class="collapsed ">最佳实践</a>
+  
 
-
-    
 
     
 
@@ -467,16 +445,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/pl/scala/basic/snippet/" >
-      代码片段
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/basic/snippet/" class="collapsed ">代码片段</a>
+  
 
-
-    
 
     
 
@@ -503,10 +478,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第二部分 原理</span>
-    
+
+  
+  <span>第二部分 原理</span>
+  
+
 
     
 
@@ -529,10 +507,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第三部分 源码实现</span>
-    
+
+  
+  <span>第三部分 源码实现</span>
+  
+
 
     
 
@@ -555,10 +536,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第四部分 附录</span>
-    
+
+  
+  <span>第四部分 附录</span>
+  
+
 
     
 
@@ -571,9 +555,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/basic/pl/scala/appendix/tutorial/" >
-      教程
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/appendix/tutorial/" class="">教程</a>
+  
 
 </li>
       
@@ -581,16 +565,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/" >
-      面试题
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/" class="">面试题</a>
+  
 
-
-    
 
     
 
@@ -603,9 +584,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/basic/" >
-      基础
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/basic/" class="">基础</a>
+  
 
 </li>
       
@@ -613,9 +594,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/advanced/" >
-      进阶
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/advanced/" class="">进阶</a>
+  
 
 </li>
       
@@ -623,9 +604,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/expert/" >
-      高阶
-  </a>
+  
+  <a href="/note-cs/docs/basic/pl/scala/appendix/interview/expert/" class="">高阶</a>
+  
 
 </li>
       
@@ -673,16 +654,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/db/" >
-      1.6 数据库
-  </a>
+  
+  <a href="/note-cs/docs/basic/db/" class="">1.6 数据库</a>
+  
 
-
-    
 
     
 
@@ -705,16 +683,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/basic/compile/" >
-      1.7 编译原理
-  </a>
+  
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  
 
-
-    
 
     
 
@@ -741,10 +716,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第二部分 方向</span>
-    
+
+  
+  <span>第二部分 方向</span>
+  
+
 
     
 
@@ -757,16 +735,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/be/" >
-      2.1 后端
-  </a>
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  
 
-
-    
 
     
 
@@ -783,16 +758,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/fe/" >
-      2.2 前端
-  </a>
+  
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  
 
-
-    
 
     
 
@@ -809,16 +781,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/client/" >
-      2.3 客户端
-  </a>
+  
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  
 
-
-    
 
     
 
@@ -835,16 +804,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/embedded/" >
-      2.4 嵌入式
-  </a>
+  
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  
 
-
-    
 
     
 
@@ -861,16 +827,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/security/" >
-      2.5 安全
-  </a>
+  
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  
 
-
-    
 
     
 
@@ -887,16 +850,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/mp/" >
-      2.6 中台
-  </a>
+  
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
+  
 
-
-    
 
     
 
@@ -913,16 +873,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/" >
-      2.7 架构设计
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/" class="collapsed ">2.7 架构设计</a>
+  
 
-
-    
 
     
 
@@ -939,16 +896,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/se/" >
-      2.8 软件工程
-  </a>
+  
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  
 
-
-    
 
     
 
@@ -975,10 +929,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第三部分 领域</span>
-    
+
+  
+  <span>第三部分 领域</span>
+  
+
 
     
 
@@ -991,16 +948,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/" >
-      3.1 云计算
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
 
-
-    
 
     
 
@@ -1017,16 +971,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/bigdata/" >
-      3.2 大数据
-  </a>
+  
+  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
 
-
-    
 
     
 
@@ -1043,16 +994,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/ai/" >
-      3.3 人工智能
-  </a>
+  
+  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
 
-
-    
 
     
 
@@ -1079,10 +1027,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第四部分 其他</span>
-    
+
+  
+  <span>第四部分 其他</span>
+  
+
 
     
 
@@ -1095,16 +1046,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/skill/" >
-      4.1 技能树
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.1 技能树</a>
+  
 
-
-    
 
     
 
@@ -1121,16 +1069,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/tool/" >
-      4.2 工具
-  </a>
+  
+  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.2 工具</a>
+  
 
-
-    
 
     
 
@@ -1157,16 +1102,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/book/" >
-      第五部分 读书
-  </a>
+  
+  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
 
-
-    
 
     
 
@@ -1183,16 +1125,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/course/" >
-      第六部分 课程
-  </a>
+  
+  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
 
-
-    
 
     
 
@@ -1212,6 +1151,11 @@ https://github.com/alex-shpak/hugo-book
 
 
   
+
+
+
+
+
 
 
 
@@ -1255,7 +1199,8 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="百度-scala-编码规范">百度 Scala 编码规范</h1>
+      
+  <article class="markdown"><h1 id="百度-scala-编码规范">百度 Scala 编码规范</h1>
 <h2 id="前言">前言</h2>
 <p>就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：</p>
 <ol>
@@ -1263,9 +1208,10 @@ https://github.com/alex-shpak/hugo-book
 Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。</li>
 <li><a href="https://docs.scala-lang.org/style/">scala 官方 style guide</a>  里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200316200132.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200316200132.png" alt="" /></p>
 </article>
  
+      
 
       <footer class="book-footer">
         
@@ -1279,6 +1225,9 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
 
  
         
+      </footer>
+
+      
   
   <div class="book-comments">
 <script src="https://utteranc.es/client.js"
@@ -1292,8 +1241,8 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
 </div>
   
  
-      </footer>
-      
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     

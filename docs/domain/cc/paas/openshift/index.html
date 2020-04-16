@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="OpenShift"><meta property="og:title" content="OpenShift" />
+<meta name="description" content="OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform. OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
+Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。
+Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿？"><meta property="og:title" content="OpenShift" />
 <meta property="og:description" content="OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform. OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
 Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。
 Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿？" />
@@ -15,10 +17,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
+<link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/note-cs/en.search.min.658a4f39b0985dfeced992076f19afc2b4c33eed4b604f5ff3b63d74924d0f93.js" integrity="sha256-ZYpPObCYXf7O2ZIHbxmvwrTDPu1LYE9f87Y9dJJND5M="></script>
+<script defer src="/note-cs/en.search.min.3ad641c52ca0c808c3eab704a541cdd8ace4e6eed1b1d217781a31ad8713de27.js" integrity="sha256-OtZBxSygyAjD6rcEpUHN2Kzk5u7RsdIXeBoxrYcT3ic="></script>
 
 <!--
 Made with Book Theme
@@ -47,6 +49,7 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
 
+
 <ul>
   <li><a href="https://kingye.me">博客</a></li>
   <li><a href="https://github.com/ikingye">Github</a></li>
@@ -54,6 +57,11 @@ https://github.com/alex-shpak/hugo-book
   <li><a href="https://weibo.com/kingyip15215">微博</a></li>
 </ul>
 <hr />
+
+
+
+
+
 
 
 
@@ -79,10 +87,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第一部分 基础</span>
-    
+
+  
+  <span>第一部分 基础</span>
+  
+
 
     
 
@@ -95,74 +106,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
-
-  <a href="/note-cs/docs/basic/computer-composition/" >
-      1.1 计算机组成原理
-  </a>
-
-
-    
-
-    
-
-
-
 
   
-  <ul>
-    
-  </ul>
+  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/os/" >
-      1.2 操作系统
-  </a>
-
-
-    
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/algs/" >
-      1.3 数据结构与算法
-  </a>
-
-
-    
 
     
 
@@ -185,16 +135,36 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/network/" >
-      1.4 计算机网络
-  </a>
-
-
+  <li>
     
+
+  
+  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
 
     
 
@@ -217,42 +187,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/pl/" >
-      1.5 编程语言
-  </a>
-
-
+  <li>
     
 
-    
+  
+  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
 
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/db/" >
-      1.6 数据库
-  </a>
-
-
-    
 
     
 
@@ -275,16 +216,65 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/compile/" >
-      1.7 编译原理
-  </a>
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/" class="">1.6 数据库</a>
+  
 
 
     
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  
+
 
     
 
@@ -311,10 +301,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第二部分 方向</span>
-    
+
+  
+  <span>第二部分 方向</span>
+  
+
 
     
 
@@ -327,16 +320,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/be/" >
-      2.1 后端
-  </a>
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  
 
-
-    
 
     
 
@@ -353,16 +343,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/fe/" >
-      2.2 前端
-  </a>
+  
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  
 
-
-    
 
     
 
@@ -379,16 +366,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/client/" >
-      2.3 客户端
-  </a>
+  
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  
 
-
-    
 
     
 
@@ -405,16 +389,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/embedded/" >
-      2.4 嵌入式
-  </a>
+  
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  
 
-
-    
 
     
 
@@ -431,16 +412,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/security/" >
-      2.5 安全
-  </a>
+  
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  
 
-
-    
 
     
 
@@ -457,16 +435,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/mp/" >
-      2.6 中台
-  </a>
+  
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
+  
 
-
-    
 
     
 
@@ -483,16 +458,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/" >
-      2.7 架构设计
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/" class="collapsed ">2.7 架构设计</a>
+  
 
-
-    
 
     
 
@@ -509,16 +481,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/se/" >
-      2.8 软件工程
-  </a>
+  
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  
 
-
-    
 
     
 
@@ -545,10 +514,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第三部分 领域</span>
-    
+
+  
+  <span>第三部分 领域</span>
+  
+
 
     
 
@@ -561,16 +533,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/" >
-      3.1 云计算
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
 
-
-    
 
     
 
@@ -583,16 +552,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/iaas/" >
-      IaaS
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/iaas/" class="collapsed ">IaaS</a>
+  
 
-
-    
 
     
 
@@ -609,16 +575,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/paas/" >
-      PaaS
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/paas/" class="collapsed ">PaaS</a>
+  
 
-
-    
 
     
 
@@ -631,9 +594,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/domain/cc/paas/gae/" >
-      GAE
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/paas/gae/" class="">GAE</a>
+  
 
 </li>
       
@@ -641,9 +604,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/domain/cc/paas/heroku/" >
-      Heroku
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/paas/heroku/" class="">Heroku</a>
+  
 
 </li>
       
@@ -651,9 +614,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/domain/cc/paas/openshift/"  class="active">
-      OpenShift
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/paas/openshift/" class="active">OpenShift</a>
+  
 
 </li>
       
@@ -661,9 +624,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/domain/cc/paas/cloud-foundry/" >
-      Cloud Foundry
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/paas/cloud-foundry/" class="">Cloud Foundry</a>
+  
 
 </li>
       
@@ -671,9 +634,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/domain/cc/paas/appfog/" >
-      AppFog
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/paas/appfog/" class="">AppFog</a>
+  
 
 </li>
       
@@ -691,16 +654,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/saas/" >
-      SaaS
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/saas/" class="collapsed ">SaaS</a>
+  
 
-
-    
 
     
 
@@ -717,16 +677,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/virtual/" >
-      虚拟化
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/virtual/" class="">虚拟化</a>
+  
 
-
-    
 
     
 
@@ -739,16 +696,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/virtual/hyperkit/" >
-      HyperKit
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/virtual/hyperkit/" class="collapsed ">HyperKit</a>
+  
 
-
-    
 
     
 
@@ -765,16 +719,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/virtual/vmware/" >
-      VMware Fusion
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/virtual/vmware/" class="collapsed ">VMware Fusion</a>
+  
 
-
-    
 
     
 
@@ -791,16 +742,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/virtual/parallels/" >
-      Parallels
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/virtual/parallels/" class="collapsed ">Parallels</a>
+  
 
-
-    
 
     
 
@@ -817,16 +765,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/virtual/virtualbox/" >
-      VirtualBox
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/virtual/virtualbox/" class="collapsed ">VirtualBox</a>
+  
 
-
-    
 
     
 
@@ -843,16 +788,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/virtual/network/" >
-      虚拟机网络
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/virtual/network/" class="collapsed ">虚拟机网络</a>
+  
 
-
-    
 
     
 
@@ -889,16 +831,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/bigdata/" >
-      3.2 大数据
-  </a>
+  
+  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
 
-
-    
 
     
 
@@ -915,16 +854,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/ai/" >
-      3.3 人工智能
-  </a>
+  
+  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
 
-
-    
 
     
 
@@ -951,10 +887,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第四部分 其他</span>
-    
+
+  
+  <span>第四部分 其他</span>
+  
+
 
     
 
@@ -967,16 +906,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/skill/" >
-      4.1 技能树
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.1 技能树</a>
+  
 
-
-    
 
     
 
@@ -993,16 +929,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/tool/" >
-      4.2 工具
-  </a>
+  
+  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.2 工具</a>
+  
 
-
-    
 
     
 
@@ -1029,16 +962,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/book/" >
-      第五部分 读书
-  </a>
+  
+  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
 
-
-    
 
     
 
@@ -1055,16 +985,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/course/" >
-      第六部分 课程
-  </a>
+  
+  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
 
-
-    
 
     
 
@@ -1084,6 +1011,11 @@ https://github.com/alex-shpak/hugo-book
 
 
   
+
+
+
+
+
 
 
 
@@ -1139,15 +1071,17 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="openshift">OpenShift</h1>
+      
+  <article class="markdown"><h1 id="openshift">OpenShift</h1>
 <p>Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform.
-<img src="https://www.openshift.com/hubfs/images/illustrations/marketure-diagram.svg" alt=""></p>
+<img src="https://www.openshift.com/hubfs/images/illustrations/marketure-diagram.svg" alt="" /></p>
 <p>OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。</p>
 <p>Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。</p>
 <p>Openshift 没有 root 权限
 参考：<a href="https://www.zhihu.com/question/31637672">openshift 和普通 vps 的区别在哪儿？</a></p>
 </article>
  
+      
 
       <footer class="book-footer">
         
@@ -1161,6 +1095,9 @@ https://github.com/alex-shpak/hugo-book
 
  
         
+      </footer>
+
+      
   
   <div class="book-comments">
 <script src="https://utteranc.es/client.js"
@@ -1174,8 +1111,8 @@ https://github.com/alex-shpak/hugo-book
 </div>
   
  
-      </footer>
-      
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     

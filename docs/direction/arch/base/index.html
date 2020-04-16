@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="BASE"><meta property="og:title" content="BASE" />
+<meta name="description" content="BASE Basically Available, Soft state, Eventual consistency
+BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。
+基本可用  流量削峰  在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值   延迟响应  在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果   体验降级  比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。   过载保护  把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。    最终的一致  读时修复：在读取数据时，检测数据的不一致，进行修复。  比如 Cassandra 的 Read Repair 实现，具体来说，在向 Cassandra 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。   写时修复：在写入数据，检测数据的不一致时，进行修复。  比如 Cassandra 的 Hinted Handoff 实现。具体来说，Cassandra 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。 写时修复不需要做数据一致性对比，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。   异步修复：这个是最常用的方式，通过定时对账检测副本数据的一致性，并修复。   BASE 是追求 CAP 的可用性 "><meta property="og:title" content="BASE" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/arch/base/" />
@@ -13,10 +15,10 @@
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
+<link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/note-cs/en.search.min.658a4f39b0985dfeced992076f19afc2b4c33eed4b604f5ff3b63d74924d0f93.js" integrity="sha256-ZYpPObCYXf7O2ZIHbxmvwrTDPu1LYE9f87Y9dJJND5M="></script>
+<script defer src="/note-cs/en.search.min.3ad641c52ca0c808c3eab704a541cdd8ace4e6eed1b1d217781a31ad8713de27.js" integrity="sha256-OtZBxSygyAjD6rcEpUHN2Kzk5u7RsdIXeBoxrYcT3ic="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/arch/base/index.xml" title="计算机学习笔记" />
 <!--
@@ -46,6 +48,7 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
 
+
 <ul>
   <li><a href="https://kingye.me">博客</a></li>
   <li><a href="https://github.com/ikingye">Github</a></li>
@@ -53,6 +56,11 @@ https://github.com/alex-shpak/hugo-book
   <li><a href="https://weibo.com/kingyip15215">微博</a></li>
 </ul>
 <hr />
+
+
+
+
+
 
 
 
@@ -78,10 +86,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第一部分 基础</span>
-    
+
+  
+  <span>第一部分 基础</span>
+  
+
 
     
 
@@ -94,74 +105,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
-
-  <a href="/note-cs/docs/basic/computer-composition/" >
-      1.1 计算机组成原理
-  </a>
-
-
-    
-
-    
-
-
-
 
   
-  <ul>
-    
-  </ul>
+  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/os/" >
-      1.2 操作系统
-  </a>
-
-
-    
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/algs/" >
-      1.3 数据结构与算法
-  </a>
-
-
-    
 
     
 
@@ -184,16 +134,36 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/network/" >
-      1.4 计算机网络
-  </a>
-
-
+  <li>
     
+
+  
+  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
 
     
 
@@ -216,42 +186,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/pl/" >
-      1.5 编程语言
-  </a>
-
-
+  <li>
     
 
-    
+  
+  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
 
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/note-cs/docs/basic/db/" >
-      1.6 数据库
-  </a>
-
-
-    
 
     
 
@@ -274,16 +215,65 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
+        
 
-  <a href="/note-cs/docs/basic/compile/" >
-      1.7 编译原理
-  </a>
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/" class="">1.6 数据库</a>
+  
 
 
     
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  
+
 
     
 
@@ -310,10 +300,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第二部分 方向</span>
-    
+
+  
+  <span>第二部分 方向</span>
+  
+
 
     
 
@@ -326,16 +319,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/be/" >
-      2.1 后端
-  </a>
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  
 
-
-    
 
     
 
@@ -352,16 +342,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/fe/" >
-      2.2 前端
-  </a>
+  
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  
 
-
-    
 
     
 
@@ -378,16 +365,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/client/" >
-      2.3 客户端
-  </a>
+  
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  
 
-
-    
 
     
 
@@ -404,16 +388,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/embedded/" >
-      2.4 嵌入式
-  </a>
+  
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  
 
-
-    
 
     
 
@@ -430,16 +411,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/security/" >
-      2.5 安全
-  </a>
+  
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  
 
-
-    
 
     
 
@@ -456,16 +434,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/mp/" >
-      2.6 中台
-  </a>
+  
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
+  
 
-
-    
 
     
 
@@ -482,16 +457,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/" >
-      2.7 架构设计
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/" class="collapsed ">2.7 架构设计</a>
+  
 
-
-    
 
     
 
@@ -504,16 +476,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/cap/" >
-      CAP
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/cap/" class="collapsed ">CAP</a>
+  
 
-
-    
 
     
 
@@ -530,16 +499,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/paxos/" >
-      Paxos
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/paxos/" class="collapsed ">Paxos</a>
+  
 
-
-    
 
     
 
@@ -556,16 +522,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/circuit-breaker/" >
-      熔断
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/circuit-breaker/" class="collapsed ">熔断</a>
+  
 
-
-    
 
     
 
@@ -582,16 +545,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/acid/" >
-      ACID
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/acid/" class="collapsed ">ACID</a>
+  
 
-
-    
 
     
 
@@ -608,16 +568,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/base/"  class="active">
-      BASE
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/base/" class="collapsed active">BASE</a>
+  
 
-
-    
 
     
 
@@ -640,16 +597,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/raft/" >
-      Raft
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/raft/" class="collapsed ">Raft</a>
+  
 
-
-    
 
     
 
@@ -666,16 +620,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/release/" >
-      发布形式
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/release/" class="collapsed ">发布形式</a>
+  
 
-
-    
 
     
 
@@ -692,16 +643,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/arch/seckill/" >
-      秒杀
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/seckill/" class="collapsed ">秒杀</a>
+  
 
-
-    
 
     
 
@@ -718,9 +666,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/note-cs/docs/direction/arch/tutorial/" >
-      教程
-  </a>
+  
+  <a href="/note-cs/docs/direction/arch/tutorial/" class="">教程</a>
+  
 
 </li>
       
@@ -738,16 +686,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/direction/se/" >
-      2.8 软件工程
-  </a>
+  
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  
 
-
-    
 
     
 
@@ -774,10 +719,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第三部分 领域</span>
-    
+
+  
+  <span>第三部分 领域</span>
+  
+
 
     
 
@@ -790,16 +738,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/cc/" >
-      3.1 云计算
-  </a>
+  
+  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
 
-
-    
 
     
 
@@ -816,16 +761,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/bigdata/" >
-      3.2 大数据
-  </a>
+  
+  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
 
-
-    
 
     
 
@@ -842,16 +784,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/domain/ai/" >
-      3.3 人工智能
-  </a>
+  
+  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
 
-
-    
 
     
 
@@ -878,10 +817,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第四部分 其他</span>
-    
+
+  
+  <span>第四部分 其他</span>
+  
+
 
     
 
@@ -894,16 +836,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/skill/" >
-      4.1 技能树
-  </a>
+  
+  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.1 技能树</a>
+  
 
-
-    
 
     
 
@@ -920,16 +859,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/others/tool/" >
-      4.2 工具
-  </a>
+  
+  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.2 工具</a>
+  
 
-
-    
 
     
 
@@ -956,16 +892,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/book/" >
-      第五部分 读书
-  </a>
+  
+  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
 
-
-    
 
     
 
@@ -982,16 +915,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      
 
-  <a href="/note-cs/docs/course/" >
-      第六部分 课程
-  </a>
+  
+  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
 
-
-    
 
     
 
@@ -1011,6 +941,11 @@ https://github.com/alex-shpak/hugo-book
 
 
   
+
+
+
+
+
 
 
 
@@ -1072,7 +1007,8 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="base">BASE</h1>
+      
+  <article class="markdown"><h1 id="base">BASE</h1>
 <p>Basically Available, Soft state, <a href="https://www.wikiwand.com/en/Eventual_consistency">Eventual consistency</a></p>
 <p>BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。</p>
 <h2 id="基本可用">基本可用</h2>
@@ -1117,6 +1053,7 @@ https://github.com/alex-shpak/hugo-book
 <h2 id="base-是追求-cap-的可用性">BASE 是追求 CAP 的可用性</h2>
 </article>
  
+      
 
       <footer class="book-footer">
         
@@ -1130,6 +1067,9 @@ https://github.com/alex-shpak/hugo-book
 
  
         
+      </footer>
+
+      
   
   <div class="book-comments">
 <script src="https://utteranc.es/client.js"
@@ -1143,8 +1083,8 @@ https://github.com/alex-shpak/hugo-book
 </div>
   
  
-      </footer>
-      
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     
