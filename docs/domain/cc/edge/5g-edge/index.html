@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="5G 边缘计算 5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思
+简单说，5G 就是第五代移动通信系统
+5G 5G 速度 世界上最快的 4G 网速（挪威，63.13Mbps）
+最快的宽带网速（新加坡，189Mbps）
+2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
+在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
+5G 应用场景 国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
+ 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
+超可靠低时延通信（uRLLC） mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
+海量大规模连接物联网（mMTC） uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
+5G 技术 5G 承载网 在无线侧有大量新技术实现对不同应用场景的支撑，但传输网络侧，硬件技术提升有限的情况下，需要对网络架构进行革新。
+5G 承载整体要求 5G 承载组网架构 多样化网络需求 边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一
+在靠近接入网的机房增加计算能力，将能够"><meta property="og:title" content="5G 边缘计算" />
+<meta property="og:description" content="5G 边缘计算 5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思
+简单说，5G 就是第五代移动通信系统
+5G 5G 速度 世界上最快的 4G 网速（挪威，63.13Mbps）
+最快的宽带网速（新加坡，189Mbps）
+2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
+在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
+5G 应用场景 国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
+ 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
+超可靠低时延通信（uRLLC） mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
+海量大规模连接物联网（mMTC） uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
+5G 技术 5G 承载网 在无线侧有大量新技术实现对不同应用场景的支撑，但传输网络侧，硬件技术提升有限的情况下，需要对网络架构进行革新。
+5G 承载整体要求 5G 承载组网架构 多样化网络需求 边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一
+在靠近接入网的机房增加计算能力，将能够" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/" />
+
+<title>5G 边缘计算 | 计算机学习笔记</title>
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
+
+
+<script defer src="/note-cs/en.search.min.6cc13950f704fd235c6ad3610776b1aa3b135c1c42df4c0fd7cdb409b0358f0d.js" integrity="sha256-bME5UPcE/SNcatNhB3axqjsTXBxC30wP1820CbA1jw0="></script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me">博客</a></li>
+  <li><a href="https://github.com/ikingye">Github</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip">知乎</a></li>
+  <li><a href="https://weibo.com/kingyip15215">微博</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第一部分 基础</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/" class="collapsed ">1.6 数据库</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第二部分 方向</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/arch/" class="collapsed ">2.7 架构设计</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第三部分 领域</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/cn/" class="collapsed ">云原生</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/edge/" class="collapsed ">边缘计算</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/domain/cc/edge/5g-edge/" class="active">5G 边缘计算</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/knative/" class="collapsed ">Knative</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/virtual/" class="collapsed ">虚拟化</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/others/" class="collapsed ">其他</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第四部分 其他</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>5G 边缘计算</strong>
+
+  <label for="toc-control">
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#5g-边缘计算">5G 边缘计算</a>
+      <ul>
+        <li><a href="#5g">5G</a>
+          <ul>
+            <li><a href="#5g-速度">5G 速度</a></li>
+            <li><a href="#5g-应用场景">5G 应用场景</a>
+              <ul>
+                <li><a href="#增强型移动宽带embb">增强型移动宽带（eMBB）</a></li>
+                <li><a href="#超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</a></li>
+                <li><a href="#海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</a></li>
+              </ul>
+            </li>
+            <li><a href="#5g-技术">5G 技术</a>
+              <ul>
+                <li><a href="#5g-承载网">5G 承载网</a>
+                  <ul>
+                    <li><a href="#5g-承载整体要求">5G 承载整体要求</a></li>
+                    <li><a href="#5g-承载组网架构">5G 承载组网架构</a></li>
+                  </ul>
+                </li>
+                <li><a href="#多样化网络需求">多样化网络需求</a></li>
+              </ul>
+            </li>
+            <li><a href="#5g-应用">5G 应用</a></li>
+          </ul>
+        </li>
+        <li><a href="#边缘计算">边缘计算</a>
+          <ul>
+            <li><a href="#边缘计算在网络中的位置">边缘计算在网络中的位置</a></li>
+            <li><a href="#边缘计算节点部署方式">边缘计算节点部署方式</a></li>
+          </ul>
+        </li>
+        <li><a href="#5g-与边缘计算有什么关系">5G 与边缘计算有什么关系？</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="5g-边缘计算">5G 边缘计算</h1>
+<p>5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思</p>
+<p>简单说，5G 就是第五代移动通信系统</p>
+<h2 id="5g">5G</h2>
+<h3 id="5g-速度">5G 速度</h3>
+<p>世界上最快的 4G 网速（挪威，63.13Mbps）</p>
+<p>最快的宽带网速（新加坡，189Mbps）</p>
+<p>2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000</p>
+<p>在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍</p>
+<h3 id="5g-应用场景">5G 应用场景</h3>
+<p>国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：</p>
+<ul>
+<li>增强型移动宽带（eMBB）</li>
+<li>超可靠低时延通信（uRLLC）</li>
+<li>海量大规模连接物联网（mMTC）</li>
+</ul>
+<h4 id="增强型移动宽带embb">增强型移动宽带（eMBB）</h4>
+<p>eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务</p>
+<h4 id="超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</h4>
+<p>mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务</p>
+<h4 id="海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</h4>
+<p>uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。</p>
+<h3 id="5g-技术">5G 技术</h3>
+<h4 id="5g-承载网">5G 承载网</h4>
+<p>在无线侧有大量新技术实现对不同应用场景的支撑，但<strong>传输网络</strong>侧，硬件技术提升有限的情况下，需要对<strong>网络架构</strong>进行革新。</p>
+<h5 id="5g-承载整体要求">5G 承载整体要求</h5>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418092832.png" alt="" /></p>
+<h5 id="5g-承载组网架构">5G 承载组网架构</h5>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093220.png" alt="" /></p>
+<h4 id="多样化网络需求">多样化网络需求</h4>
+<p>边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一</p>
+<p>在靠近接入网的机房增加计算能力，将能够</p>
+<ul>
+<li>大幅降低业务时延</li>
+<li>减少对传输网的带宽压力降低传输成本</li>
+<li>进一步提高内容分发效率提升用户体验</li>
+</ul>
+<p>传统网络结构中，信息的处理主要位于<strong>核心网</strong>的<strong>数据中心机房</strong>内，所有信息必须从<strong>网络边缘</strong>传输到核心网进行处理之后再返回网络边缘。</p>
+<p>5G 时代，<strong>传输网</strong>架构中引入边缘计算技术，在靠近<strong>接入侧</strong>的边缘机房部署网关、服务器等设备，增加计算能力，将低时延业务、局域性数据、低价值量数据等数据在边缘机房进行处理和传输，不需要通过<strong>传输网</strong>返回<strong>核心网</strong>，进而降低时延、减少回传压力、提升用户体验。</p>
+<hr>
+<h3 id="5g-应用">5G 应用</h3>
+<p>底层网络进步带来应用和商业模式的升级</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093445.png" alt="" /></p>
+<hr>
+<h2 id="边缘计算">边缘计算</h2>
+<h3 id="边缘计算在网络中的位置">边缘计算在网络中的位置</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093944.png" alt="" /></p>
+<p>为实现边缘计算，需要在更底层的网络节点增加计算和转发能力，运营商组网结构将逐步演进，边缘计算能力持续提升。</p>
+<h3 id="边缘计算节点部署方式">边缘计算节点部署方式</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418094331.png" alt="" /></p>
+<hr>
+<h2 id="5g-与边缘计算有什么关系">5G 与边缘计算有什么关系？</h2>
+<p>5G 通信网络更加<strong>去中心化</strong>，需要在网络边缘部署小规模或者便携式数据中心，进行<strong>终端请求的本地化处理</strong>，以满足 URLLC 和 mMTC 的超低延时需求，因此边缘计算是 5G 核心技术之一。</p>
+<p>5G 的三大典型应用场景<strong>对网络性能的要求有显著差异</strong>，但为控制成本，运营商必然选择<strong>一张承载网</strong> + <strong>网络切片 / 边缘计算</strong>技术，实现在最少的资本投入下最丰富的网络功能。</p>
+<p>在 5G 时代，承载网的带<strong>宽瓶颈</strong>、<strong>时延抖动</strong>等性能瓶颈难以突破，引入边缘计算后将大量业务在网络边缘终结。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/60790035">终于有人把 5G 和边缘计算的关系说清楚了</a></li>
+<li><a href="https://medium.com/@bonuscloud/%E7%9F%A5%E8%AF%86%E7%A7%91%E6%99%AE%E5%A4%A9%E5%A4%A9%E6%8A%8A-5g-%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97-%E6%8C%82%E5%98%B4%E8%BE%B9-%E8%BF%99%E5%88%B0%E5%BA%95%E8%B7%9F%E6%88%91%E4%BB%AC%E6%9C%89%E5%87%A0%E6%AF%9B%E9%92%B1%E5%85%B3%E7%B3%BB-e92999b82ef1">5G 边缘计算跟我们有什么关系？</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#5g-边缘计算">5G 边缘计算</a>
+      <ul>
+        <li><a href="#5g">5G</a>
+          <ul>
+            <li><a href="#5g-速度">5G 速度</a></li>
+            <li><a href="#5g-应用场景">5G 应用场景</a>
+              <ul>
+                <li><a href="#增强型移动宽带embb">增强型移动宽带（eMBB）</a></li>
+                <li><a href="#超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</a></li>
+                <li><a href="#海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</a></li>
+              </ul>
+            </li>
+            <li><a href="#5g-技术">5G 技术</a>
+              <ul>
+                <li><a href="#5g-承载网">5G 承载网</a>
+                  <ul>
+                    <li><a href="#5g-承载整体要求">5G 承载整体要求</a></li>
+                    <li><a href="#5g-承载组网架构">5G 承载组网架构</a></li>
+                  </ul>
+                </li>
+                <li><a href="#多样化网络需求">多样化网络需求</a></li>
+              </ul>
+            </li>
+            <li><a href="#5g-应用">5G 应用</a></li>
+          </ul>
+        </li>
+        <li><a href="#边缘计算">边缘计算</a>
+          <ul>
+            <li><a href="#边缘计算在网络中的位置">边缘计算在网络中的位置</a></li>
+            <li><a href="#边缘计算节点部署方式">边缘计算节点部署方式</a></li>
+          </ul>
+        </li>
+        <li><a href="#5g-与边缘计算有什么关系">5G 与边缘计算有什么关系？</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+  </path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm">
+  </path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body">
+  </path>
+</svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

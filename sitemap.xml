@@ -1663,6 +1663,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/course/basic/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -1698,8 +1702,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/</loc>
   </url>
   
   <url>
@@ -1728,8 +1731,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/iaas/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/iaas/</loc>
   </url>
   
   <url>
@@ -1773,8 +1775,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/salesforce/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/salesforce/</loc>
   </url>
   
   <url>
@@ -1810,6 +1811,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/vs-cpp/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/cn/</loc>
   </url>
   
   <url>
@@ -1928,18 +1933,20 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/edge/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/saas/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/</loc>
   </url>
   
   <url>
@@ -1948,8 +1955,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/gae/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/gae/</loc>
   </url>
   
   <url>
@@ -2023,8 +2029,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/heroku/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</loc>
   </url>
   
   <url>
@@ -2223,8 +2228,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/openshift/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</loc>
   </url>
   
   <url>
@@ -2383,8 +2387,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/cloud-foundry/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</loc>
   </url>
   
   <url>
@@ -2438,8 +2441,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/paas/appfog/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</loc>
   </url>
   
   <url>
@@ -2578,6 +2580,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -2640,6 +2646,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/saml/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/</loc>
   </url>
   
   <url>

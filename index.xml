@@ -964,6 +964,27 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
+      <title>5G 边缘计算</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</guid>
+      <description>5G 边缘计算 5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思
+简单说，5G 就是第五代移动通信系统
+5G 5G 速度 世界上最快的 4G 网速（挪威，63.13Mbps）
+最快的宽带网速（新加坡，189Mbps）
+2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
+在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
+5G 应用场景 国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
+ 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
+超可靠低时延通信（uRLLC） mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
+海量大规模连接物联网（mMTC） uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
+5G 技术 5G 承载网 在无线侧有大量新技术实现对不同应用场景的支撑，但传输网络侧，硬件技术提升有限的情况下，需要对网络架构进行革新。
+5G 承载整体要求 5G 承载组网架构 多样化网络需求 边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一
+在靠近接入网的机房增加计算能力，将能够</description>
+    </item>
+    
+    <item>
       <title>GDB 教程</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -992,10 +1013,10 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     
     <item>
       <title>Salesforce</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/salesforce/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/salesforce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/saas/crm/salesforce/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/salesforce/</guid>
       <description>Salesforce </description>
     </item>
     
@@ -1086,19 +1107,19 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
     
     <item>
       <title>GAE</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/gae/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/gae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/gae/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/gae/</guid>
       <description>Google App Engine </description>
     </item>
     
     <item>
       <title>Heroku</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/heroku/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/heroku/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</guid>
       <description>Heroku </description>
     </item>
     
@@ -1135,10 +1156,10 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
     
     <item>
       <title>OpenShift</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/openshift/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/openshift/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</guid>
       <description>OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform. OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
 Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。
 Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿？</description>
@@ -1165,19 +1186,19 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title>Cloud Foundry</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/cloud-foundry/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/cloud-foundry/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</guid>
       <description>Cloud Foundry </description>
     </item>
     
     <item>
       <title>AppFog</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/paas/appfog/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/paas/appfog/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</guid>
       <description>AppFog </description>
     </item>
     
@@ -1201,6 +1222,15 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
  ageron/handson-ml A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
  fighting41love/funNLP NLP 民工的乐园：几乎最全的中文 NLP 资源库
  eriklindernoren/ML-From-Scratch Machine Learning From Scratch.</description>
+    </item>
+    
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</guid>
+      <description>关注 octokit/rest.js GitHub REST API client for JavaScript https://octokit.github.io/rest.js/</description>
     </item>
     
     <item>
