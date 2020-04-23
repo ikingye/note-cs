@@ -985,6 +985,15 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
+      <title>config</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</guid>
+      <description>config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa Host gitcafe HostName e.coding.net User git IdentityFile ~/.ssh/id_rsa Host gitee HostName gitee.com User git IdentityFile ~/.</description>
+    </item>
+    
+    <item>
       <title>GDB 教程</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1000,6 +1009,19 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/lib/jquery/</guid>
       <description>Jquery </description>
+    </item>
+    
+    <item>
+      <title>LDS</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/lds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/lds/</guid>
+      <description>LDS 监听器发现服务（LDS）是一个可选的 API，Envoy 将调用它来动态获取监听器。Envoy 将协调 API 响应，并根据需要添加、修改或删除已知的监听器。
+监听器更新的语义如下：
+ 每个监听器必须有一个独特的名字。如果没有提供名称，Envoy 将创建一个 UUID。要动态更新的监听器，管理服务必须提供监听器的唯一名称。 当一个监听器被添加，在参与连接处理之前，会先进入 “预热” 阶段。例如，如果监听器引用 RDS 配置，那么在监听器迁移到 “active” 之前，将会解析并提取该配置。 监听器一旦创建，实际上就会保持不变。因此，更新监听器时，会创建一个全新的监听器（使用相同的侦听套接字）。新增加的监听者都会通过上面所描述的相同 “预热” 过程。 当更新或删除监听器时，旧的监听器将被置于 “draining（逐出）” 状态，就像整个服务重新启动时一样。监听器移除之后，该监听器所拥有的连接，经过一段时间优雅地关闭（如果可能的话）剩余的连接。逐出时间通过 --drain-time-s 选项设置。  注意
+ 任何在 Envoy 配置中静态定义的监听器都不能通过 LDS API 进行修改或删除。
+ </description>
     </item>
     
     <item>
@@ -1115,6 +1137,15 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
     </item>
     
     <item>
+      <title>CDS</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</guid>
+      <description>CDS </description>
+    </item>
+    
+    <item>
       <title>Heroku</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1155,6 +1186,15 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
     </item>
     
     <item>
+      <title>EDS</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</guid>
+      <description>EDS </description>
+    </item>
+    
+    <item>
       <title>OpenShift</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1191,6 +1231,15 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</guid>
       <description>Cloud Foundry </description>
+    </item>
+    
+    <item>
+      <title>RDS</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/rds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/rds/</guid>
+      <description>RDS </description>
     </item>
     
     <item>
