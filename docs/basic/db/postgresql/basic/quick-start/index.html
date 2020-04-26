@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
+<meta name="description" content="PostgreSQL 快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
 默认 psql
 user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l 使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
  创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?"><meta property="og:title" content="快速上手" />
-<meta property="og:description" content="快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
+<meta property="og:description" content="PostgreSQL 快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
 默认 psql
 user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l 使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
  创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?" />
@@ -22,7 +22,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
 <link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/note-cs/en.search.min.cfb1d344317ac98a414ee82aa96a91bdab4cd7a7f8a865f85ee08a1edddc4eda.js" integrity="sha256-z7HTRDF6yYpBTugqqWqRvatM16f4qGX4XuCKHt3cTto="></script>
+<script defer src="/note-cs/en.search.min.454ed5a7c6fa81873620fe4d0a308518e1fb733d797a2a80b3b3f160a98cf6c8.js" integrity="sha256-RU7Vp8b6gYc2IP5NCjCFGOH7cz15eiqAs7PxYKmM9sg="></script>
 
 <!--
 Made with Book Theme
@@ -319,23 +319,13 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
-        <li>
-
-  
-  <a href="/note-cs/docs/basic/db/postgresql/basic/quick-start/" class="active">快速上手</a>
-  
-
-</li>
-      
-    
-      
         
 
   <li>
     
 
   
-  <a href="/note-cs/docs/basic/db/postgresql/basic/practice/" class="">最佳实践</a>
+  <a href="/note-cs/docs/basic/db/postgresql/basic/practice/" class="">实践</a>
   
 
 
@@ -393,6 +383,16 @@ https://github.com/alex-shpak/hugo-book
 
       
     
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/basic/db/postgresql/basic/practice/error/" class="">常见错误</a>
+  
+
+</li>
+      
+    
   </ul>
   
 
@@ -401,6 +401,26 @@ https://github.com/alex-shpak/hugo-book
   </li>
 
 
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/basic/db/postgresql/basic/quick-start/" class="active">快速上手</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/basic/db/postgresql/basic/version/" class="">版本</a>
+  
+
+</li>
       
     
   </ul>
@@ -1096,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#快速上手">快速上手</a>
+    <li><a href="#postgresql-快速上手">PostgreSQL 快速上手</a>
       <ul>
         <li><a href="#安装">安装</a>
           <ul>
@@ -1108,6 +1128,16 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#登录-postgresql-控制台psql">登录 PostgreSQL 控制台：<code>psql</code></a></li>
             <li><a href="#l"><code>\l</code></a></li>
             <li><a href="#常用控制台命令">常用控制台命令</a></li>
+          </ul>
+        </li>
+        <li><a href="#查询">查询</a>
+          <ul>
+            <li><a href="#x">\x</a></li>
+          </ul>
+        </li>
+        <li><a href="#权限">权限</a>
+          <ul>
+            <li><a href="#grant">GRANT</a></li>
           </ul>
         </li>
       </ul>
@@ -1123,7 +1153,7 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="快速上手">快速上手</h1>
+  <article class="markdown"><h1 id="postgresql-快速上手">PostgreSQL 快速上手</h1>
 <h2 id="安装">安装</h2>
 <h3 id="macos">MacOS</h3>
 <ul>
@@ -1162,7 +1192,28 @@ database：用户同名数据库
 <span style="color:#960050;background-color:#1e0010">\</span>conninfo<span style="color:#960050;background-color:#1e0010">：列出当前数据库和连接的信息。</span>
 <span style="color:#960050;background-color:#1e0010">\</span>password [<span style="color:#66d9ef">user</span>]: <span style="color:#960050;background-color:#1e0010">修改用户密码</span>
 <span style="color:#960050;background-color:#1e0010">\</span>q<span style="color:#960050;background-color:#1e0010">：退出</span>
-</code></pre></div></article>
+</code></pre></div><h2 id="查询">查询</h2>
+<h3 id="x">\x</h3>
+<p>类似 mysql 的 \G</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span> <span style="color:#960050;background-color:#1e0010">\</span>x
+Expanded display <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">on</span>.
+<span style="color:#f92672">#</span> <span style="color:#960050;background-color:#1e0010">\</span>x
+Expanded display <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">off</span>.
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/22407860/display-select-results-vertically-in-psql-as-is-done-by-mysqls-g">Display select results vertically in psql, as is done by MySQL&rsquo;s \G</a></li>
+</ul>
+<hr>
+<h2 id="权限">权限</h2>
+<h3 id="grant">GRANT</h3>
+<p>GRANT on the <strong>database</strong> is not what you need. Grant on the <strong>tables</strong> directly.</p>
+<p>Granting privileges on the database mostly is used to grant or revoke connect privileges. This allows you to specify who may do stuff in the database if they have sufficient other permissions.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#66d9ef">TABLE</span> side_adzone <span style="color:#66d9ef">TO</span> jerry;
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/15520361/permission-denied-for-relation">Permission denied for relation</a></li>
+</ul>
+</article>
  
       
 
@@ -1211,7 +1262,7 @@ database：用户同名数据库
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#快速上手">快速上手</a>
+    <li><a href="#postgresql-快速上手">PostgreSQL 快速上手</a>
       <ul>
         <li><a href="#安装">安装</a>
           <ul>
@@ -1223,6 +1274,16 @@ database：用户同名数据库
             <li><a href="#登录-postgresql-控制台psql">登录 PostgreSQL 控制台：<code>psql</code></a></li>
             <li><a href="#l"><code>\l</code></a></li>
             <li><a href="#常用控制台命令">常用控制台命令</a></li>
+          </ul>
+        </li>
+        <li><a href="#查询">查询</a>
+          <ul>
+            <li><a href="#x">\x</a></li>
+          </ul>
+        </li>
+        <li><a href="#权限">权限</a>
+          <ul>
+            <li><a href="#grant">GRANT</a></li>
           </ul>
         </li>
       </ul>

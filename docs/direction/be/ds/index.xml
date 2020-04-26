@@ -9,5 +9,26 @@
 	<atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/ds/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>raft 算法</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/ds/raft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/ds/raft/</guid>
+      <description>raft 算法 </description>
+    </item>
+    
+    <item>
+      <title>一致性哈希</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/ds/consistent-hashing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/ds/consistent-hashing/</guid>
+      <description>一致性哈希 这篇论文中提出了一致性 hash 的概念。
+incubator-brpc doc - 一致性哈希
+一致性 hash 满足以下四个性质：
+ 平衡性 (Balance) : 每个节点被选到的概率是 O (1/n)。 单调性 (Monotonicity) : 当新节点加入时， 不会有请求在老节点间移动， 只会从老节点移动到新节点。当有节点被删除时，也不会影响落在别的节点上的请求。 分散性 (Spread) : 当上游的机器看到不同的下游列表时 (在上线时及不稳定的网络中比较常见), 同一个请求尽量映射到少量的节点中。 负载 (Load) : 当上游的机器看到不同的下游列表的时候， 保证每台下游分到的请求数量尽量一致。  </description>
+    </item>
+    
   </channel>
 </rss>

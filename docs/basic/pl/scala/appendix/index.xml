@@ -18,5 +18,14 @@
       <description>教程 基础 进阶 高阶 </description>
     </item>
     
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</guid>
+      <description>关注 akka/akka Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
+    </item>
+    
   </channel>
 </rss>

@@ -8,18 +8,12 @@
 那如果客户端预先不知道目标服务的地址该怎么办？
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
 WS-Discovery 模式 WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
-Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  官方技术规范：http://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html
- 传输方式 TCP/IP 有三种传输方式：单播 (Unicast)、多播 (Multicast) 和广播 (Broadcast)，在 IPv6 领域还有另一种方式：任播 (Anycast)。
-单播 Unicast 单播 (Unicast)：一对一，双向通信，目的地址是对方主机地址。网络上绝大部分的数据都是以单播的形式传输的。如收发邮件、浏览网页等。
-多播 Multicast 多播 (Multicast)：也叫组播，一对多，单向通信，目的地址是多播地址，主机可以通过 IGMP 协议请求加入或退出某个多播组 (multicast group)，数据只会转发给有需要（已加入组）的主机，不影响其他不需要（未加入组）的主机。如网上视频会议、网上视频点播、IPTV 等。"><meta property="og:title" content="设备发现" />
+Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode."><meta property="og:title" content="设备发现" />
 <meta property="og:description" content="设备发现 我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
 那如果客户端预先不知道目标服务的地址该怎么办？
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
 WS-Discovery 模式 WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
-Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  官方技术规范：http://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html
- 传输方式 TCP/IP 有三种传输方式：单播 (Unicast)、多播 (Multicast) 和广播 (Broadcast)，在 IPv6 领域还有另一种方式：任播 (Anycast)。
-单播 Unicast 单播 (Unicast)：一对一，双向通信，目的地址是对方主机地址。网络上绝大部分的数据都是以单播的形式传输的。如收发邮件、浏览网页等。
-多播 Multicast 多播 (Multicast)：也叫组播，一对多，单向通信，目的地址是多播地址，主机可以通过 IGMP 协议请求加入或退出某个多播组 (multicast group)，数据只会转发给有需要（已加入组）的主机，不影响其他不需要（未加入组）的主机。如网上视频会议、网上视频点播、IPTV 等。" />
+Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/onvif/discovery/" />
 <meta property="article:modified_time" content="2020-03-29T14:03:40+08:00" />
@@ -30,7 +24,7 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
 <link rel="stylesheet" href="/note-cs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/note-cs/en.search.min.cfb1d344317ac98a414ee82aa96a91bdab4cd7a7f8a865f85ee08a1edddc4eda.js" integrity="sha256-z7HTRDF6yYpBTugqqWqRvatM16f4qGX4XuCKHt3cTto="></script>
+<script defer src="/note-cs/en.search.min.454ed5a7c6fa81873620fe4d0a308518e1fb733d797a2a80b3b3f160a98cf6c8.js" integrity="sha256-RU7Vp8b6gYc2IP5NCjCFGOH7cz15eiqAs7PxYKmM9sg="></script>
 
 <!--
 Made with Book Theme
@@ -892,6 +886,8 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#单播-unicast">单播 Unicast</a></li>
         <li><a href="#多播-multicast">多播 Multicast</a></li>
         <li><a href="#广播-broadcast">广播 Broadcast</a></li>
+        <li><a href="#ipc-搜索实现">IPC 搜索实现</a></li>
+        <li><a href="#组播-ip-地址">组播 IP 地址</a></li>
       </ul>
     </li>
   </ul>
@@ -915,10 +911,16 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><strong>Ad hoc 模式</strong>：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。</li>
 </ul>
+<p>Message Exchanges in an ad hoc mode.
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153821.png" alt="" /></p>
+<p>Message exchanges in an ad hoc mode in the presence of a Discovery Proxy.
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153835.png" alt="" /></p>
 <h3 id="managed-模式">Managed 模式</h3>
 <ul>
 <li><strong>Managed 模式</strong>：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。</li>
 </ul>
+<p>Message exchanges in a managed mode.
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153754.png" alt="" /></p>
 <p>官方技术规范：http://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html</p>
 <hr>
 <h2 id="传输方式">传输方式</h2>
@@ -935,8 +937,25 @@ https://github.com/alex-shpak/hugo-book
 <p>广播 (Broadcast)：一对所有，单向通信，目的地址是广播地址，整个网络中所有主机均可以收到（不管你是否需要），如 ARP 地址解析、GARP 数据包等。广播会被限制在局域网范围内，禁止广播数据穿过路由器，防止广播数据影响大面积的主机。</p>
 <p>参考：<a href="https://blog.csdn.net/wangerge/article/details/3931491">单播、多播（组播）和广播的区别</a></p>
 <hr>
-<p>IPC 搜索实现：
-实现 socket 编程（UDP），通过 <code>sendto</code> 往多播地址发送探测消息（<code>Probe</code>），再使用 <code>recvfrom</code> 接收 IPC 的应答消息（<code>ProbeMatch</code>）</p>
+<h2 id="ipc-搜索实现">IPC 搜索实现</h2>
+<p>实现 socket 编程（UDP），通过 <code>sendto</code> 往多播地址发送探测消息（<code>Probe</code>），再使用 <code>recvfrom</code> 接收 IPC 的应答消息（<code>ProbeMatch</code>）</p>
+<h2 id="组播-ip-地址">组播 IP 地址</h2>
+<p>组播也是一种 IP 包，也有源 IP 地址，目的 IP 地址，</p>
+<ul>
+<li>源 IP 地址为<strong>组播源</strong>的服务器 IP 地址，</li>
+<li>目的地址为一个特殊的 IP 地址，</li>
+<li>它位于 <code>224.0.0.0</code> - <code>239.255.255.255</code> 中，
+<ul>
+<li>由于 224.0.0.0/24 用于本地链路，即一跳的组播，</li>
+<li>239.0.0.0/8 为私有组播地址，</li>
+<li>所以实际的可用于在互联网上组播地址是 <code>225.0.0.0/8</code> - <code>238.0.0.0/8</code></li>
+</ul>
+</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/27233903">组播 IP 地址到底是谁的 IP？</a></li>
+</ul>
 </article>
  
       
@@ -998,6 +1017,8 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#单播-unicast">单播 Unicast</a></li>
         <li><a href="#多播-multicast">多播 Multicast</a></li>
         <li><a href="#广播-broadcast">广播 Broadcast</a></li>
+        <li><a href="#ipc-搜索实现">IPC 搜索实现</a></li>
+        <li><a href="#组播-ip-地址">组播 IP 地址</a></li>
       </ul>
     </li>
   </ul>
