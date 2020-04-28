@@ -117,11 +117,11 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/appendix/tutorial/</guid>
-      <description>Java 教程 基础 博客  farmerjohngit/myblog    进阶 doocs/advanced-java 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
-Snailclimb/JavaGuide 【Java 学习 + 面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。
-Effective Java  第 3 版中文版：sjsdfg.github.io/effective-java-3rd-chinese   Java 编程思想  第 5 版中文版：lingcoder.github.io/OnJava8   redspider1/concurrent Java 多线程系列文章 在线阅读
-高阶 源码阅读 seaswalker/spring-analysis Spring 源码阅读
-seaswalker/JDK JDK 源码阅读笔记
+      <description>Java 教程 基础 博客  farmerjohngit/myblog    进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
+Snailclimb/JavaGuide  【Java 学习 + 面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。
+Effective Java  第 3 版中文版：sjsdfg.github.io/effective-java-3rd-chinese   Java 编程思想  第 5 版中文版：lingcoder.github.io/OnJava8   redspider1/concurrent  Java 多线程系列文章 在线阅读
+高阶 源码阅读 seaswalker/spring-analysis  Spring 源码阅读
+seaswalker/JDK  JDK 源码阅读笔记
  参考 badges/shields  显示图片标签</description>
     </item>
     
@@ -1417,7 +1417,7 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/rpc/brpc/</guid>
-      <description>brpc </description>
+      <description>brpc  </description>
     </item>
     
     <item>
@@ -1446,7 +1446,7 @@ A live version is available at: http://play-with-docker.com/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/rpc/grpc/</guid>
-      <description>grpc quick start </description>
+      <description>grpc  quick start </description>
     </item>
     
     <item>
@@ -1464,7 +1464,7 @@ A live version is available at: http://play-with-docker.com/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/rpc/protobuf/</guid>
-      <description>protobuf </description>
+      <description>protobuf  </description>
     </item>
     
     <item>
@@ -1621,11 +1621,10 @@ incubator-brpc doc - 一致性哈希
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 基础 视频 shuhuai007/Machine-Learning-Session 【机器学习】【白板推导系列】【合集 1 ～ 23】
-视频内容电子化  tsyw/MachineLearningNotes  Bilibili - 机器学习白板系列   机器学习教程（小象学院）  josephmisiti/awesome-machine-learning  ZuzooVn/machine-learning-for-software-engineers A complete daily plan for studying to become a machine learning engineer.
- ageron/handson-ml A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
- fighting41love/funNLP NLP 民工的乐园：几乎最全的中文 NLP 资源库
- eriklindernoren/ML-From-Scratch Machine Learning From Scratch.</description>
+      <description>教程 基础 视频 shuhuai007/Machine-Learning-Session  【机器学习】【白板推导系列】【合集 1 ～ 23】
+视频内容电子化  tsyw/MachineLearningNotes  Bilibili - 机器学习白板系列   机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
+ ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
+ fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库</description>
     </item>
     
     <item>
@@ -1634,7 +1633,7 @@ incubator-brpc doc - 一致性哈希
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</guid>
-      <description>关注 octokit/rest.js GitHub REST API client for JavaScript https://octokit.github.io/rest.js/</description>
+      <description>关注 octokit/rest.js  GitHub REST API client for JavaScript https://octokit.github.io/rest.js/</description>
     </item>
     
     <item>
@@ -1643,7 +1642,7 @@ incubator-brpc doc - 一致性哈希
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</guid>
-      <description>关注 akka/akka Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
+      <description>关注 akka/akka  Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
     </item>
     
     <item>
@@ -1652,9 +1651,9 @@ incubator-brpc doc - 一致性哈希
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</guid>
-      <description>关注 机器学习 tensorflow/tensorflow scikit-learn/scikit-learn scikit-learn: machine learning in Python https://scikit-learn.org
-php-ai/php-ml PHP-ML - Machine Learning library for PHP https://php-ml.org/
- 深度学习 paddlepaddle/paddle  机器人 gunthercox/ChatterBot ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
+      <description>关注 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
+php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
+ 深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
     </item>
     
     <item>
