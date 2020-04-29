@@ -117,12 +117,12 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/appendix/tutorial/</guid>
-      <description>Java 教程 基础 博客  farmerjohngit/myblog    进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
+      <description>Java 教程 基础  进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
 Snailclimb/JavaGuide  【Java 学习 + 面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。
 Effective Java  第 3 版中文版：sjsdfg.github.io/effective-java-3rd-chinese   Java 编程思想  第 5 版中文版：lingcoder.github.io/OnJava8   redspider1/concurrent  Java 多线程系列文章 在线阅读
 高阶 源码阅读 seaswalker/spring-analysis  Spring 源码阅读
 seaswalker/JDK  JDK 源码阅读笔记
- 参考 badges/shields  显示图片标签</description>
+ 综合 博客  farmerjohngit/myblog    sorenduan/awesome-java-books  Java 技术书籍大全</description>
     </item>
     
     <item>
@@ -1535,6 +1535,15 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</guid>
       <description>EDS </description>
+    </item>
+    
+    <item>
+      <title>Markdown 文件生成 TOC</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/snippet/simple-php-github-toc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/snippet/simple-php-github-toc/</guid>
+      <description>生成 Github Readme 文件 TOC 目录 的简单脚本 &amp;lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &amp;lt; 2){ exit(&amp;#34;Please input github file url, eg &amp;#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&amp;#39;.\n&amp;#34;); } $url = $argv[1]; #$url = &amp;#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&amp;#34;;  function get_anchor($content){ preg_match_all(&amp;#34;/href=\&amp;#34;(.*)\&amp;#34;&amp;gt;/iUs&amp;#34;, $content, $anchor_arr); if(count($anchor_arr) &amp;gt; 0){ return $anchor_arr[1][0]; } return &amp;#34;&amp;#34;; } function get_title($content){ preg_match_all(&amp;#34;/a\&amp;gt;(.*)$/iUs&amp;#34;, $content, $title_arr); if(count($title_arr) &amp;gt; 0){ return trim($title_arr[1][0]); } return &amp;#34;&amp;#34;; } $content = file_get_contents($url); preg_match_all(&amp;#34;/&amp;lt;article(.*)&amp;lt;\/article&amp;gt;/iUs&amp;#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&amp;#34;/&amp;lt;h([1-6])&amp;gt;(.</description>
     </item>
     
     <item>

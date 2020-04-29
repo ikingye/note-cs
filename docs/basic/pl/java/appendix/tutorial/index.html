@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Java 教程 基础 博客  farmerjohngit/myblog    进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
+<meta name="description" content="Java 教程 基础  进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
 Snailclimb/JavaGuide  【Java 学习 &#43; 面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。
 Effective Java  第 3 版中文版：sjsdfg.github.io/effective-java-3rd-chinese   Java 编程思想  第 5 版中文版：lingcoder.github.io/OnJava8   redspider1/concurrent  Java 多线程系列文章 在线阅读
 高阶 源码阅读 seaswalker/spring-analysis  Spring 源码阅读
 seaswalker/JDK  JDK 源码阅读笔记
- 参考 badges/shields  显示图片标签"><meta property="og:title" content="教程" />
-<meta property="og:description" content="Java 教程 基础 博客  farmerjohngit/myblog    进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
+ 综合 博客  farmerjohngit/myblog    sorenduan/awesome-java-books  Java 技术书籍大全"><meta property="og:title" content="教程" />
+<meta property="og:description" content="Java 教程 基础  进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
 Snailclimb/JavaGuide  【Java 学习 &#43; 面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。
 Effective Java  第 3 版中文版：sjsdfg.github.io/effective-java-3rd-chinese   Java 编程思想  第 5 版中文版：lingcoder.github.io/OnJava8   redspider1/concurrent  Java 多线程系列文章 在线阅读
 高阶 源码阅读 seaswalker/spring-analysis  Spring 源码阅读
 seaswalker/JDK  JDK 源码阅读笔记
- 参考 badges/shields  显示图片标签" />
+ 综合 博客  farmerjohngit/myblog    sorenduan/awesome-java-books  Java 技术书籍大全" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/pl/java/appendix/tutorial/" />
 <meta property="article:modified_time" content="2020-04-28T14:53:39+08:00" />
@@ -26,7 +26,7 @@ seaswalker/JDK  JDK 源码阅读笔记
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.3d91601dc058662ac93b7234683ff253f54a26cdad7a71177d12bc328c9220da.js" integrity="sha256-PZFgHcBYZirJO3I0aD/yU/VKJs2tenEXfRK8MoySINo="></script>
+<script defer src="/note-cs/en.search.min.e21cedc127e8ea54624d9f39dfc05b9a22ae9c0a842721ff5d4c3d4f719d066e.js" integrity="sha256-4hztwSfo6lRiTZ8538BbmiKunAqEJyH/XUw9T3GdBm4="></script>
 
 <!--
 Made with Book Theme
@@ -58,9 +58,13 @@ https://github.com/alex-shpak/hugo-book
 
 <ul>
   <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
-  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">
+    Github  <img src="https://img.shields.io/github/followers/ikingye.svg?label=%E5%85%B3%E6%B3%A8">
+  </a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">
+    微博  <img src="http://www.sinaimg.cn/blog/developer/wiki/LOGO_16x16.png">
+  </a></li>
   <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
-  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
 </ul>
 <hr />
 
@@ -1439,11 +1443,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#java-教程">Java 教程</a>
       <ul>
-        <li><a href="#基础">基础</a>
-          <ul>
-            <li><a href="#博客">博客</a></li>
-          </ul>
-        </li>
+        <li><a href="#基础">基础</a></li>
         <li><a href="#进阶">进阶</a>
           <ul>
             <li><a href="#doocsadvanced-javahttpsgithubcomdoocsadvanced-java-github-starshttpsimgshieldsiogithubstarsdoocsadvanced-javasvg"><a href="https://github.com/doocs/advanced-java">doocs/advanced-java</a> <img src="https://img.shields.io/github/stars/doocs/advanced-java.svg" alt="Github stars"></a></li>
@@ -1461,11 +1461,12 @@ https://github.com/alex-shpak/hugo-book
                 <li><a href="#seaswalkerjdkhttpsgithubcomseaswalkerjdk-github-starshttpsimgshieldsiogithubstarsseaswalkerjdksvg"><a href="https://github.com/seaswalker/JDK">seaswalker/JDK</a> <img src="https://img.shields.io/github/stars/seaswalker/JDK.svg" alt="Github stars"></a></li>
               </ul>
             </li>
-          </ul>
-        </li>
-        <li><a href="#参考">参考</a>
-          <ul>
-            <li><a href="#badgesshieldshttpsgithubcombadgesshields-github-starshttpsimgshieldsiogithubstarsbadgesshieldssvg"><a href="https://github.com/badges/shields/">badges/shields</a> <img src="https://img.shields.io/github/stars/badges/shields.svg" alt="Github stars"></a></li>
+            <li><a href="#综合">综合</a>
+              <ul>
+                <li><a href="#博客">博客</a></li>
+                <li><a href="#sorenduanawesome-java-bookshttpsgithubcomsorenduanawesome-java-books-github-starshttpsimgshieldsiogithubstarssorenduanawesome-java-bookssvg"><a href="https://github.com/sorenduan/awesome-java-books">sorenduan/awesome-java-books</a> <img src="https://img.shields.io/github/stars/sorenduan/awesome-java-books.svg" alt="Github stars"></a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
@@ -1483,10 +1484,6 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="java-教程">Java 教程</h1>
 <h2 id="基础">基础</h2>
-<h3 id="博客">博客</h3>
-<ul>
-<li><a href="https://github.com/farmerjohngit/myblog">farmerjohngit/myblog</a> <img src="https://img.shields.io/github/stars/farmerjohngit/myblog.svg" alt="Github stars" /></li>
-</ul>
 <hr>
 <h2 id="进阶">进阶</h2>
 <h3 id="doocsadvanced-javahttpsgithubcomdoocsadvanced-java-github-starshttpsimgshieldsiogithubstarsdoocsadvanced-javasvg"><a href="https://github.com/doocs/advanced-java">doocs/advanced-java</a> <img src="https://img.shields.io/github/stars/doocs/advanced-java.svg" alt="Github stars" /></h3>
@@ -1514,9 +1511,14 @@ https://github.com/alex-shpak/hugo-book
 <h4 id="seaswalkerjdkhttpsgithubcomseaswalkerjdk-github-starshttpsimgshieldsiogithubstarsseaswalkerjdksvg"><a href="https://github.com/seaswalker/JDK">seaswalker/JDK</a> <img src="https://img.shields.io/github/stars/seaswalker/JDK.svg" alt="Github stars" /></h4>
 <p>JDK 源码阅读笔记</p>
 <hr>
-<h2 id="参考">参考</h2>
-<h3 id="badgesshieldshttpsgithubcombadgesshields-github-starshttpsimgshieldsiogithubstarsbadgesshieldssvg"><a href="https://github.com/badges/shields/">badges/shields</a> <img src="https://img.shields.io/github/stars/badges/shields.svg" alt="Github stars" /></h3>
-<p>显示图片标签</p>
+<h3 id="综合">综合</h3>
+<h4 id="博客">博客</h4>
+<ul>
+<li><a href="https://github.com/farmerjohngit/myblog">farmerjohngit/myblog</a> <img src="https://img.shields.io/github/stars/farmerjohngit/myblog.svg" alt="Github stars" /></li>
+</ul>
+<hr>
+<h4 id="sorenduanawesome-java-bookshttpsgithubcomsorenduanawesome-java-books-github-starshttpsimgshieldsiogithubstarssorenduanawesome-java-bookssvg"><a href="https://github.com/sorenduan/awesome-java-books">sorenduan/awesome-java-books</a> <img src="https://img.shields.io/github/stars/sorenduan/awesome-java-books.svg" alt="Github stars" /></h4>
+<p>Java 技术书籍大全</p>
 </article>
  
       
@@ -1568,11 +1570,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#java-教程">Java 教程</a>
       <ul>
-        <li><a href="#基础">基础</a>
-          <ul>
-            <li><a href="#博客">博客</a></li>
-          </ul>
-        </li>
+        <li><a href="#基础">基础</a></li>
         <li><a href="#进阶">进阶</a>
           <ul>
             <li><a href="#doocsadvanced-javahttpsgithubcomdoocsadvanced-java-github-starshttpsimgshieldsiogithubstarsdoocsadvanced-javasvg"><a href="https://github.com/doocs/advanced-java">doocs/advanced-java</a> <img src="https://img.shields.io/github/stars/doocs/advanced-java.svg" alt="Github stars"></a></li>
@@ -1590,11 +1588,12 @@ https://github.com/alex-shpak/hugo-book
                 <li><a href="#seaswalkerjdkhttpsgithubcomseaswalkerjdk-github-starshttpsimgshieldsiogithubstarsseaswalkerjdksvg"><a href="https://github.com/seaswalker/JDK">seaswalker/JDK</a> <img src="https://img.shields.io/github/stars/seaswalker/JDK.svg" alt="Github stars"></a></li>
               </ul>
             </li>
-          </ul>
-        </li>
-        <li><a href="#参考">参考</a>
-          <ul>
-            <li><a href="#badgesshieldshttpsgithubcombadgesshields-github-starshttpsimgshieldsiogithubstarsbadgesshieldssvg"><a href="https://github.com/badges/shields/">badges/shields</a> <img src="https://img.shields.io/github/stars/badges/shields.svg" alt="Github stars"></a></li>
+            <li><a href="#综合">综合</a>
+              <ul>
+                <li><a href="#博客">博客</a></li>
+                <li><a href="#sorenduanawesome-java-bookshttpsgithubcomsorenduanawesome-java-books-github-starshttpsimgshieldsiogithubstarssorenduanawesome-java-bookssvg"><a href="https://github.com/sorenduan/awesome-java-books">sorenduan/awesome-java-books</a> <img src="https://img.shields.io/github/stars/sorenduan/awesome-java-books.svg" alt="Github stars"></a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
