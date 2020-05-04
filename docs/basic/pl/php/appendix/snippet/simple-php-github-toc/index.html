@@ -8,7 +8,7 @@
 <meta property="og:description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &lt; 2){ exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); } $url = $argv[1]; #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;  function get_anchor($content){ preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr); if(count($anchor_arr) &gt; 0){ return $anchor_arr[1][0]; } return &#34;&#34;; } function get_title($content){ preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr); if(count($title_arr) &gt; 0){ return trim($title_arr[1][0]); } return &#34;&#34;; } $content = file_get_contents($url); preg_match_all(&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&#34;/&lt;h([1-6])&gt;(." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/snippet/simple-php-github-toc/" />
-
+<meta property="article:modified_time" content="2020-04-29T20:00:55+08:00" />
 <title>Markdown 文件生成 TOC | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.e21cedc127e8ea54624d9f39dfc05b9a22ae9c0a842721ff5d4c3d4f719d066e.js" integrity="sha256-4hztwSfo6lRiTZ8538BbmiKunAqEJyH/XUw9T3GdBm4="></script>
+<script defer src="/note-cs/en.search.min.50dd8b79c711ae4c1fcf1fafc79f9b67c37f517aeaefaa088db72402c8b88737.js" integrity="sha256-UN2LeccRrkwfzx&#43;vx5&#43;bZ8N/UXrq76oIjbckAsi4hzc="></script>
 
 <!--
 Made with Book Theme
@@ -1488,6 +1488,14 @@ $len <span style="color:#f92672">=</span> <span style="color:#a6e22e">count</spa
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/7725f6cf3069ab7464d04172d02db8e0b4c32cd0" title='Last modified by yewang | 2020-04-29' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-04-29</span>
+    </a>
+  </div>
 
 
 

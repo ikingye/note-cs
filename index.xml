@@ -99,7 +99,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</guid>
-      <description>教程 基础  learn c++ in y minutes  进阶 高阶 </description>
+      <description>教程 基础  learn c++ in y minutes  进阶 高阶 综合  C++ 后台开发有哪些练基础的开源项目？  yedf/handy     </description>
     </item>
     
     <item>
@@ -641,7 +641,10 @@ seaswalker/JDK  JDK 源码阅读笔记
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 为什么 C++ 的 member function template 不能是 virtual 的 比如，下面的代码是不合法的：
+class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound(){ //...  } }; 因为 C++ 的编译与链接模型是 &amp;ldquo;分离&amp;rdquo; 的 (至少是部分原因吧)。
+从 Unix/C 开始，一个 C/C++ 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。 一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。 同时，virtual function 的实现大多利用了一个 &amp;ldquo;虚函数表&amp;rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。 所以，由上面的矛盾可知，C++ 的 member function 不能既是 template 又是 virtual 的。
+参考：https://www.zhihu.com/question/60911582/answer/182045051</description>
     </item>
     
     <item>
@@ -1150,6 +1153,15 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/study/tutorial/</guid>
       <description>编程学习网站 基础 Codecademy Programiz  算法 Codewars  进阶 Codeplace 通过实际应用来学习编程。</description>
+    </item>
+    
+    <item>
+      <title>计算机程序的构造和解释</title>
+      <link>https://ikingye.github.io/note-cs/docs/book/basic/cc/sicp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/book/basic/cc/sicp/</guid>
+      <description>计算机程序的构造和解释  豆瓣   黄健宏：SICP 解题集  </description>
     </item>
     
     <item>
