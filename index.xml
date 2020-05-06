@@ -127,6 +127,17 @@ seaswalker/JDK  JDK 源码阅读笔记
     
     <item>
       <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/turorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/turorial/</guid>
+      <description>教程 基础 ruanyf/jstraining  全栈工程师培训材料，帮助学习者掌握 JavaScript 全栈开发的基本知识，承担简单 Web 应用的前后端开发。
+一共四讲，适合两天的训练营。
+ 进阶  高阶 </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1153,15 +1164,6 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/study/tutorial/</guid>
       <description>编程学习网站 基础 Codecademy Programiz  算法 Codewars  进阶 Codeplace 通过实际应用来学习编程。</description>
-    </item>
-    
-    <item>
-      <title>计算机程序的构造和解释</title>
-      <link>https://ikingye.github.io/note-cs/docs/book/basic/cc/sicp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/book/basic/cc/sicp/</guid>
-      <description>计算机程序的构造和解释  豆瓣   黄健宏：SICP 解题集  </description>
     </item>
     
     <item>

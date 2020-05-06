@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/chinese/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/html/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -178,8 +182,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/tutorial/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/turorial/</loc>
   </url>
   
   <url>
@@ -1698,8 +1701,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/compile/gcc/</loc>
-    <lastmod>2020-05-04T19:15:35+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/compile/gcc/</loc>
   </url>
   
   <url>
@@ -1824,7 +1826,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/basic/cc/sicp/</loc>
-    <lastmod>2020-05-04T19:15:35+08:00</lastmod>
   </url>
   
   <url>
@@ -1959,11 +1960,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/Go-in-Action/chinese/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
@@ -2328,6 +2324,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-advanced-programming/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/haproxy/</loc>
     <lastmod>2020-04-23T19:39:33+08:00</lastmod>
   </url>
@@ -2653,6 +2653,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/algs/</loc>
     <lastmod>2020-04-28T15:08:01+08:00</lastmod>
   </url>
@@ -2890,11 +2894,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/Go-in-Action/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
   <url>
