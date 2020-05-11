@@ -8,7 +8,7 @@
 <meta property="og:description" content="Docker 端口 端口映射  -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/port/" />
-
+<meta property="article:modified_time" content="2020-05-11T21:57:57+08:00" />
 <title>端口 | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.3e48dc2e408ae93c6f04c178325cbaeb9bc9640c9b418c83c314a2a9b1243721.js" integrity="sha256-PkjcLkCK6TxvBMF4Mly665vJZAybQYyDwxSiqbEkNyE="></script>
+<script defer src="/note-cs/en.search.min.53d3b2b756624ec980e07a0ed5bda3febcb11b497b62c9c7de61cae2f66ba3f8.js" integrity="sha256-U9Oyt1ZiTsmA4HoO1b2j/ryxG0l7YsnH3mHK4vZro/g="></script>
 
 <!--
 Made with Book Theme
@@ -1295,6 +1295,14 @@ systemctl restart network
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/1739a037e3e898ab2cde7960c1cacf3c5a276031" title='Last modified by yewang | 2020-05-11' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-05-11</span>
+    </a>
+  </div>
 
 
 
