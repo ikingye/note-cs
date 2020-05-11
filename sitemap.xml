@@ -13,17 +13,12 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/image/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</loc>
     <lastmod>2020-04-28T14:53:39+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/chinese/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/zh/</loc>
   </url>
   
   <url>
@@ -34,6 +29,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/linux/</loc>
     <lastmod>2020-04-28T15:08:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/zh/</loc>
   </url>
   
   <url>
@@ -1952,11 +1951,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/network/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/tutorial/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url>
@@ -2122,11 +2116,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/attention/</loc>
-    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -2204,6 +2193,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/version/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/port/</loc>
   </url>
   
   <url>
@@ -2302,6 +2295,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/image/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -2312,8 +2310,16 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/container/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/repository/</loc>
   </url>
   
   <url>
@@ -2409,11 +2415,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</loc>
     <lastmod>2020-04-23T19:39:33+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/tutorial/</loc>
-    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
   </url>
   
   <url>
@@ -2607,6 +2608,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/volume/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/version/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
@@ -2658,6 +2663,10 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/</loc>
   </url>
   
   <url>
@@ -2718,6 +2727,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/debug/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/dockerfile/</loc>
   </url>
   
   <url>
@@ -2943,6 +2956,11 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/network/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
   
   <url>
@@ -3226,6 +3244,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/tutorial/</loc>
+    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -3238,6 +3261,11 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/saml/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/attention/</loc>
+    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
   </url>
   
   <url>

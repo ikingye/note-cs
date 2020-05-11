@@ -19,6 +19,16 @@
     </item>
     
     <item>
+      <title>Vim 实用技巧（第 2 版）</title>
+      <link>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/zh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/zh/</guid>
+      <description>Vim 实用技巧（第 2 版） 
+译者 杨源 / 车文隆</description>
+    </item>
+    
+    <item>
       <title>关键字</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/grammar/keyword/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1340,18 +1350,6 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/attention/</guid>
-      <description>关注 moby/moby  Moby Project - a collaborative project for the container ecosystem to assemble container-based systems https://mobyproject.org/
-docker/docker-ce  Docker CE https://www.docker.com/community-edition
-play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
-Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.</description>
-    </item>
-    
-    <item>
       <title>函数</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1394,6 +1392,15 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
     </item>
     
     <item>
+      <title>端口</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/port/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/port/</guid>
+      <description>Docker 端口 端口映射  -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192.</description>
+    </item>
+    
+    <item>
       <title>设备发现</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/onvif/discovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1404,6 +1411,24 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
 WS-Discovery 模式 WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
 Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode.</description>
+    </item>
+    
+    <item>
+      <title>容器</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/container/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/container/</guid>
+      <description>Docker 容器 </description>
+    </item>
+    
+    <item>
+      <title>仓库</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/repository/</guid>
+      <description>Docker 仓库 </description>
     </item>
     
     <item>
@@ -1441,17 +1466,6 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</guid>
       <description>CDS </description>
-    </item>
-    
-    <item>
-      <title>Docker 教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/tutorial/</guid>
-      <description>Docker 教程 play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
-Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.
-A live version is available at: http://play-with-docker.com/</description>
     </item>
     
     <item>
@@ -1524,6 +1538,15 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
     </item>
     
     <item>
+      <title>数据卷</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/volume/</guid>
+      <description>Docker 数据卷 </description>
+    </item>
+    
+    <item>
       <title>版本</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1540,6 +1563,22 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
       <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/ab-testing/</guid>
       <description>A/B 测试 A/B testing
  参考 </description>
+    </item>
+    
+    <item>
+      <title>Dockerfile</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/dockerfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/dockerfile/</guid>
+      <description>Dockerfile 目标:
+ 更快的构建速度 更小的 Docker 镜像大小 更少的 Docker 镜像层 充分利用镜像缓存 增加 Dockerfile 可读性 让 Docker 容器使用起来更简单  做法：
+  编写.dockerignore 文件
+  容器只运行单个应用
+  将多个 RUN 指令合并为一个
+  基础镜像的标签不要用 latest
+ 如果你的确需要使用最新版的基础镜像，可以使用 latest 标签，否则的话，最好指定确定的镜像标签    每个 RUN 指令后删除多余文件
+# 假设我们更新了 apt-get 源，下载，解压并安装了一些软件包，它们都保存在 /var/lib/apt/lists/ 目录中 RUN apt-get update \  &amp;amp;&amp;amp; apt-get install -y nodejs \  # added lines &amp;amp;&amp;amp; rm -rf /var/lib/apt/lists/*   选择合适的基础镜像 (alpine 版本最好)</description>
     </item>
     
     <item>
@@ -1689,6 +1728,29 @@ php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
 系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
 这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
  进阶 </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/tutorial/</guid>
+      <description>Docker 教程 play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
+Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.
+A live version is available at: http://play-with-docker.com/</description>
+    </item>
+    
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/attention/</guid>
+      <description>关注 moby/moby  Moby Project - a collaborative project for the container ecosystem to assemble container-based systems https://mobyproject.org/
+docker/docker-ce  Docker CE https://www.docker.com/community-edition
+play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
+Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.</description>
     </item>
     
     <item>
