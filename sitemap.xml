@@ -213,7 +213,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/tutorial/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
   
   <url>
@@ -2268,6 +2267,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/</loc>
+    <lastmod>2020-05-11T23:32:11+08:00</lastmod>
   </url>
   
   <url>
@@ -2527,6 +2527,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/uml/</loc>
+    <lastmod>2020-05-11T23:32:11+08:00</lastmod>
   </url>
   
   <url>
@@ -3064,6 +3065,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/web/swoole/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/uudi/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -3196,6 +3201,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</loc>
     <lastmod>2020-04-28T14:53:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/attention/</loc>
   </url>
   
   <url>
@@ -3354,7 +3363,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-05-11T21:57:57+08:00</lastmod>
+    <lastmod>2020-05-11T23:32:11+08:00</lastmod>
   </url>
   
   <url>
