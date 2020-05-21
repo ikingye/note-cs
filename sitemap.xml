@@ -38,7 +38,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/</loc>
-    <lastmod>2020-04-07T18:11:20+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>
@@ -478,7 +478,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/practice/spec/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>
@@ -598,7 +598,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/basic/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>
@@ -1078,7 +1078,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/</loc>
-    <lastmod>2020-04-16T23:25:55+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>
@@ -1199,6 +1199,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/be/Designing-Data-Intensive-Applications/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/helm/</loc>
   </url>
   
   <url>
@@ -1733,7 +1737,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/practice/snippet/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>
@@ -1858,7 +1862,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/cmd/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>
@@ -2352,17 +2356,26 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/brew/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/spring-cloud/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/</loc>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/</loc>
-    <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/hhkb/</loc>
   </url>
   
   <url>
@@ -2481,8 +2494,16 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/mas/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/parallels/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/php/</loc>
   </url>
   
   <url>
@@ -2528,6 +2549,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/rpc/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/tmux/</loc>
   </url>
   
   <url>
@@ -2628,6 +2653,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/volume/</loc>
     <lastmod>2020-05-11T21:57:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/</loc>
   </url>
   
   <url>
@@ -2770,6 +2799,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/kong/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/kubernetes/</loc>
     <lastmod>2020-04-28T15:08:01+08:00</lastmod>
   </url>
@@ -2782,6 +2815,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/oam/</loc>
   </url>
   
   <url>
@@ -3060,6 +3097,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/rabbitmq/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -3070,8 +3111,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/web/swoole/</loc>
-    <lastmod>2020-05-13T02:10:47+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/php/swoole/</loc>
   </url>
   
   <url>
@@ -3160,6 +3200,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/tutorial/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</loc>
     <lastmod>2020-04-28T14:53:39+08:00</lastmod>
   </url>
@@ -3200,6 +3244,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/cassandra/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -3222,6 +3270,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</loc>
     <lastmod>2020-04-28T14:53:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</loc>
   </url>
   
   <url>
@@ -3370,7 +3422,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-05-13T02:10:47+08:00</lastmod>
+    <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
   
   <url>

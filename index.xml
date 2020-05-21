@@ -1453,6 +1453,33 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
     </item>
     
     <item>
+      <title>homebrew</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/brew/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/brew/</guid>
+      <description>Homebrew tap brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
+如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件
+tap 命令的仓库源默认来至于 Github，但是这个命令也不限制于这一个地方
+brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 tapped 的仓库
+# URL 默认是 https://github.com/user/homebrew-repo brew tap &amp;lt;user&amp;gt;/&amp;lt;repo&amp;gt; brew tap &amp;lt;user&amp;gt;/&amp;lt;homebrew-repo&amp;gt; # URL 可以是任何位置，任何协议 brew tap &amp;lt;user&amp;gt;/&amp;lt;repo&amp;gt; URL homebrew/core 默认是最高优先级
+可以使用 brew tap-pin username/repo 使这个仓库优先级高于 core
+使用 brew-tap-unpin username/repo 取消
+当你使用 brew install foo 这个命令时，brew 将按照下面的顺序去查找哪个 formula(tap) 将被使用:
+ pinned taps core formulae other taps   镜像加速 清华大学镜像 替换现有上游</description>
+    </item>
+    
+    <item>
+      <title>HHKB</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/hhkb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/hhkb/</guid>
+      <description>HHKB 键盘 Happy Hacking Keyboard
+使用 方向键 右侧的 Fn 键 + [ / ; &#39;</description>
+    </item>
+    
+    <item>
       <title>Application</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/application/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1499,6 +1526,16 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
     </item>
     
     <item>
+      <title>Mas</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/mas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/mas/</guid>
+      <description>mas-cli/mas  Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.
+$ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
+    </item>
+    
+    <item>
       <title>protobuf</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/rpc/protobuf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1514,6 +1551,18 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/ds/raft/</guid>
       <description>raft 算法 </description>
+    </item>
+    
+    <item>
+      <title>tmux</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/tmux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/tmux/</guid>
+      <description>tmux 配置 ChrisJohnsen/tmux-MacOSX-pasteboard  Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.
+Other services and unpatched builds of screen are also affected.
+gpakosz/.tmux  Oh My Tmux!
+cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .tmux/.tmux.conf.local .  教程 tmux 2: Productive Mouse-Free Development by @bphogan. </description>
     </item>
     
     <item>
@@ -1597,14 +1646,8 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/dockerfile/</guid>
-      <description>Dockerfile 目标:
- 更快的构建速度 更小的 Docker 镜像大小 更少的 Docker 镜像层 充分利用镜像缓存 增加 Dockerfile 可读性 让 Docker 容器使用起来更简单  做法：
-  编写.dockerignore 文件
-  容器只运行单个应用
-  将多个 RUN 指令合并为一个
-  基础镜像的标签不要用 latest
- 如果你的确需要使用最新版的基础镜像，可以使用 latest 标签，否则的话，最好指定确定的镜像标签    每个 RUN 指令后删除多余文件
-# 假设我们更新了 apt-get 源，下载，解压并安装了一些软件包，它们都保存在 /var/lib/apt/lists/ 目录中 RUN apt-get update \  &amp;amp;&amp;amp; apt-get install -y nodejs \  # added lines &amp;amp;&amp;amp; rm -rf /var/lib/apt/lists/*   选择合适的基础镜像 (alpine 版本最好)</description>
+      <description>Dockerfile 教程 CMD # exec form, preferredCMD [&amp;#34;executable&amp;#34;,&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# shell formCMD command param1 param2# as default parameters to ENTRYPOINTCMD [&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# 下面两者是等价的CMD echo &amp;#34;hello cmd!&amp;#34;CMD [&amp;#34;/bin/bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;echo &amp;#39;hello cmd!&amp;#39;&amp;#34;]docker run 时指定了命令或者有 ENTRYPOINT，那么 CMD 就会被覆盖
+Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生效。  ENTRYPOINT  docker run 使用 --entrypoint，则覆盖 Dockerfile 的 ENTRYPOINT 如何 ENTRYPOINT 使用中括号形式  docker run 带了参数，则参数会加给 ENTRYPOINT 定义了 CMD，则 CMD 的参数会加给 ENTRYPOINT    # exec form, preferredENTRYPOINT [&amp;#34;executable&amp;#34;, &amp;#34;param1&amp;#34;, &amp;#34;param2&amp;#34;]# shell formENTRYPOINT command param1 param2# ENTRYPOINT 使用中括号时，也可以直接指定命令# 而 CMD 不行，必须带上 shell 命令做前缀ENTRYPOINT [&amp;#34;/start.</description>
     </item>
     
     <item>
@@ -1705,14 +1748,27 @@ incubator-brpc doc - 一致性哈希
     
     <item>
       <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/tutorial/</guid>
+      <description>教程 基础 《深度学习》(花书) MingchaoZhu/DeepLearning  Python for《Deep Learning》，该书为《深度学习》(花书) 数学推导、原理剖析与源码级别代码实现
+ 进阶  高阶 </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 基础 视频 shuhuai007/Machine-Learning-Session  【机器学习】【白板推导系列】【合集 1 ～ 23】
-视频内容电子化  tsyw/MachineLearningNotes  Bilibili - 机器学习白板系列   机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
+      <description>教程 基础 [video]shuhuai007/machine-learning-session  【机器学习】【白板推导系列】【合集 1 ～ 23】
+tsyw/MachineLearningNotes  My personal notes
+Bilibili - 机器学习白板系列
+ [video]机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
  ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
- fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库</description>
+ fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库
+ eriklindernoren/ML-From-Scratch  Machine Learning From Scratch.</description>
     </item>
     
     <item>
@@ -1757,6 +1813,18 @@ actix/actix-web  Actix web is a small, pragmatic, and extremely fast rust web fr
       <description>关注 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
 php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
  深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
+    </item>
+    
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</guid>
+      <description>关注 cncf/landscape  The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets. https://l.cncf.io
+Trail Map CNCF Cloud Native Landscape 
+CNCF Serverless Landscape 
+ </description>
     </item>
     
     <item>

@@ -9,5 +9,17 @@
 	<atom:link href="https://ikingye.github.io/note-cs/docs/domain/cc/cn/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</guid>
+      <description>关注 cncf/landscape  The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets. https://l.cncf.io
+Trail Map CNCF Cloud Native Landscape 
+CNCF Serverless Landscape 
+ </description>
+    </item>
+    
   </channel>
 </rss>
