@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GB28181 GB28181 协议是设备端主动向服务端发起注册消息，并定时发送保活消息，服务端收到后就认为设备在线，超时收不到保活的话就认为设备离线了。客户端发起播放视频请求时，服务端给指定的设备发送 INVITE 请求，通知设备将指定的通道的视频推送到服务端，服务端再转发给客户端，用户就可以播放了。
+GB28181 传输协议是 RTP，去掉 RTP 头部，剩余数据为 H264 PS 流，可使用 VLC 直接播放
+SIP 协议 SIP 协议是一个应用层的点对点协议，用于初始、管理和终止网络中的语音和视频会话，是 GB28181 的核心之一。
+会话发起协议（ Session Initiation Protocol，缩写 SIP）是一个由 IETF MMUSIC 工作组开发的协议，作为标准被提议用于创建，修改和终止包括视频，语音，即时通信，在线游戏和虚拟现实等多种多媒体元素在内的交互式用户会话。2000 年 11 月，SIP 被正式批准成为 3GPP 信号协议之一，并成为 IMS 体系结构的一个永久单元。SIP 与 H.323 一样，是用于 VoIP 最主要的信令协议之一。
+  Antisip
+  List of SIP software
+  osip vs exosip osip oSIP is a free software library for VoIP applications implementing lower layers of Session Initiation Protocol (SIP)."><meta property="og:title" content="GB28181" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/" />
+
+<title>GB28181 | 计算机学习笔记</title>
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
+
+
+<script defer src="/note-cs/en.search.min.4186151d8efdb48460f8b3dd51debd9438e6ec5225e0e906c33dc8de333ca414.js" integrity="sha256-QYYVHY79tIRg&#43;LPdUd69lDjm7FIl4OkGwz3I3jM8pBQ="></script>
+
+<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/index.xml" title="计算机学习笔记" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">
+    Github  <img src="https://img.shields.io/github/followers/ikingye.svg?label=%E5%85%B3%E6%B3%A8">
+  </a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">
+    微博  <img src="http://www.sinaimg.cn/blog/developer/wiki/LOGO_16x16.png">
+  </a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+ 
+  
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第一部分 基础</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/" class="collapsed ">1.6 数据库</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第二部分 方向</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/arch/" class="collapsed ">2.7 架构设计</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第三部分 领域</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <span>第四部分 其他</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/skill/gb28181/" class="collapsed active">GB28181</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">关注微信公众号</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png" target="_blank" rel="noopener noreferrer">请我喝饮料</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">加我微信</a></li>
+</ul>
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>GB28181</strong>
+
+  <label for="toc-control">
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gb28181">GB28181</a>
+      <ul>
+        <li><a href="#sip-协议httpswwwwikiwandcomensession_initiation_protocol"><a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">SIP 协议</a></a></li>
+        <li><a href="#osip-vs-exosip">osip vs exosip</a>
+          <ul>
+            <li><a href="#osiphttpswwwwikiwandcomenosip"><a href="https://www.wikiwand.com/en/OSIP">osip</a></a></li>
+            <li><a href="#exosip">exosip</a></li>
+          </ul>
+        </li>
+        <li><a href="#pjsiphttpswwwpjsiporg"><a href="https://www.pjsip.org/">pjsip</a></a></li>
+        <li><a href="#开源实现">开源实现</a>
+          <ul>
+            <li><a href="#标准">标准</a></li>
+            <li><a href="#服务端">服务端</a></li>
+            <li><a href="#客户端">客户端</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="gb28181">GB28181</h1>
+<p>GB28181 协议是设备端主动向服务端发起注册消息，并定时发送保活消息，服务端收到后就认为设备在线，超时收不到保活的话就认为设备离线了。客户端发起播放视频请求时，服务端给指定的设备发送 INVITE 请求，通知设备将指定的通道的视频推送到服务端，服务端再转发给客户端，用户就可以播放了。</p>
+<p>GB28181 传输协议是 RTP，去掉 RTP 头部，剩余数据为 H264 PS 流，可使用 VLC 直接播放</p>
+<h2 id="sip-协议httpswwwwikiwandcomensession_initiation_protocol"><a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">SIP 协议</a></h2>
+<p>SIP 协议是一个应用层的点对点协议，用于初始、管理和终止网络中的语音和视频会话，是 <code>GB28181</code> 的核心之一。</p>
+<p>会话发起协议（ Session Initiation Protocol，缩写  SIP）是一个由  <a href="https://www.wikiwand.com/zh-cn/IETF" title="IETF">IETF</a> <a href="https://web.archive.org/web/20051206085212/http://www.ietf.org/html.charters/mmusic-charter.html">MMUSIC 工作组</a>开发的协议，作为标准被提议用于创建，修改和终止包括视频，语音，<a href="https://www.wikiwand.com/zh-cn/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1">即时通信</a>，<a href="https://www.wikiwand.com/zh-cn/%E5%9C%A8%E7%BA%BF%E6%B8%B8%E6%88%8F">在线游戏</a>和<a href="https://www.wikiwand.com/zh-cn/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E" title="虚拟现实">虚拟现实</a>等多种多媒体元素在内的交互式用户会话。2000 年 11 月，SIP 被正式批准成为  <a href="https://www.wikiwand.com/zh-cn/3GPP" title="3GPP">3GPP</a>  信号协议之一，并成为  <a href="https://www.wikiwand.com/zh-cn/IP%E5%A4%9A%E5%AA%92%E4%BD%93%E5%AD%90%E7%B3%BB%E7%BB%9F" title="IP多媒体子系统">IMS</a>  体系结构的一个永久单元。SIP 与  <a href="https://www.wikiwand.com/zh-cn/H.323" title="H.323">H.323</a>  一样，是用于  <a href="https://www.wikiwand.com/zh-cn/VoIP" title="VoIP">VoIP</a>  最主要的信令协议之一。</p>
+<ul>
+<li>
+<p><a href="https://www.antisip.com/">Antisip</a></p>
+</li>
+<li>
+<p><a href="https://www.wikiwand.com/en/List_of_SIP_software">List of SIP software</a></p>
+</li>
+</ul>
+<h2 id="osip-vs-exosip">osip vs exosip</h2>
+<h3 id="osiphttpswwwwikiwandcomenosip"><a href="https://www.wikiwand.com/en/OSIP">osip</a></h3>
+<p>oSIP is a <a href="https://www.wikiwand.com/en/Free_software">free software</a> library for <a href="https://www.wikiwand.com/en/VoIP">VoIP</a> applications implementing lower layers of <a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">Session Initiation Protocol</a> (SIP).</p>
+<p>oSIP 的开发开始于 2000 年 7 月，第一个版本在 2001 年 5 月发布。</p>
+<p>oSIP 采用 ANSI C 编写，而且结构简单小巧，所以速度特别快。</p>
+<p>它并不提供高层的 SIP 会话 控制 API，它主要提供一些解析 SIP/SDP 消息的 API 和事务处理的状态机。</p>
+<p>oSIP 不提供任何快速产生请求消息和响应消息的方法，所有请求消息和响应消息的形成必须调用一组 sip message api 来手动组装完成，</p>
+<p>oSIP 的作者还开发了基于 oSIP 的 UA <code>lib:exosip</code> 和 proxy server <code>lib:partysip</code></p>
+<p>Software using oSIP</p>
+<ul>
+<li>eXosip, the &ldquo;eXtended osip&rdquo; library. An extension of oSIP for softphone implementation written by Aymeric Moizard.</li>
+<li><a href="https://www.wikiwand.com/en/GNU_SIP_Witch">GNU SIP Witch</a></li>
+</ul>
+<h3 id="exosip">exosip</h3>
+<hr>
+<h2 id="pjsiphttpswwwpjsiporg"><a href="https://www.pjsip.org/">pjsip</a></h2>
+<p>PJSIP 是一个开源的 SIP 协议库，它实现了 SIP、SDP、RTP、STUN、TURN 和 ICE。PJSIP 作为基于 SIP 的一个多媒体通信框架提供了非常清晰的 API，以及 NAT 穿越的功能。PJSIP 具有非常好的移植性，几乎支持现今所有系统：从桌面系统、嵌入式系统到智能手机。</p>
+<p>PJSIP 同时支持语音、视频、状态呈现和即时通讯。PJSIP 具有非常完善的文档，对开发者非常友好。</p>
+<p>PJSIP 由 Benny Prijono、Perry Ismangil 在 2005 年创建，之后不久，Nanang Izzuddin、Sauw Ming 加入开发团队。2006 年成立 Teluu Ltd.，成为开发和维护 PJSIP 的公司。PJSIP 采用双 License：GPLv2 以及商业许可证，开发者可以根据需要选择不同的 License。</p>
+<hr>
+<h2 id="开源实现">开源实现</h2>
+<h3 id="标准">标准</h3>
+<ul>
+<li><a href="https://github.com/GB28181/GB28181.Solution">GB28181/GB28181.Solution</a> <img src="https://img.shields.io/github/stars/GB28181/GB28181.Solution.svg" alt="Github stars" /></li>
+</ul>
+<h3 id="服务端">服务端</h3>
+<ul>
+<li><a href="https://github.com/ossrs/srs">ossrs/srs</a> <img src="https://img.shields.io/github/stars/ossrs/srs.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/xiongziliang/ZLMediaKit">xiongziliang/ZLMediaKit</a> <img src="https://img.shields.io/github/stars/xiongziliang/ZLMediaKit.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/livegbs/GB28181-Server">livegbs/GB28181-Server</a> <img src="https://img.shields.io/github/stars/livegbs/GB28181-Server.svg" alt="Github stars" /></li>
+</ul>
+<h3 id="客户端">客户端</h3>
+<ul>
+<li><a href="https://github.com/pjsip/pjproject">pjsip/pjproject</a> <img src="https://img.shields.io/github/stars/pjsip/pjproject.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/ghettovoice/gosip">ghettovoice/gosip</a> <img src="https://img.shields.io/github/stars/ghettovoice/gosip.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/StefanKopieczek/gossip">StefanKopieczek/gossip</a> <img src="https://img.shields.io/github/stars/StefanKopieczek/gossip.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/kirm/sip.js">kirm/sip.js</a> <img src="https://img.shields.io/github/stars/kirm/sip.js.svg" alt="Github stars" /></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gb28181">GB28181</a>
+      <ul>
+        <li><a href="#sip-协议httpswwwwikiwandcomensession_initiation_protocol"><a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">SIP 协议</a></a></li>
+        <li><a href="#osip-vs-exosip">osip vs exosip</a>
+          <ul>
+            <li><a href="#osiphttpswwwwikiwandcomenosip"><a href="https://www.wikiwand.com/en/OSIP">osip</a></a></li>
+            <li><a href="#exosip">exosip</a></li>
+          </ul>
+        </li>
+        <li><a href="#pjsiphttpswwwpjsiporg"><a href="https://www.pjsip.org/">pjsip</a></a></li>
+        <li><a href="#开源实现">开源实现</a>
+          <ul>
+            <li><a href="#标准">标准</a></li>
+            <li><a href="#服务端">服务端</a></li>
+            <li><a href="#客户端">客户端</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

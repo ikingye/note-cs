@@ -15,7 +15,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/attention/</guid>
-      <description>关注 其他 resilience4j/resilience4j Netflix/Hystrix </description>
+      <description>关注 其他 resilience4j/resilience4j Netflix/Hystrix Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
+Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。</description>
     </item>
     
   </channel>
