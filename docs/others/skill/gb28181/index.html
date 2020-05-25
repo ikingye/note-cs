@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="GB28181 GB28181 协议是设备端主动向服务端发起注册消息，并定时发送保活消息，服务端收到后就认为设备在线，超时收不到保活的话就认为设备离线了。客户端发起播放视频请求时，服务端给指定的设备发送 INVITE 请求，通知设备将指定的通道的视频推送到服务端，服务端再转发给客户端，用户就可以播放了。
 GB28181 传输协议是 RTP，去掉 RTP 头部，剩余数据为 H264 PS 流，可使用 VLC 直接播放
-SIP 协议 SIP 协议是一个应用层的点对点协议，用于初始、管理和终止网络中的语音和视频会话，是 GB28181 的核心之一。
-会话发起协议（ Session Initiation Protocol，缩写 SIP）是一个由 IETF MMUSIC 工作组开发的协议，作为标准被提议用于创建，修改和终止包括视频，语音，即时通信，在线游戏和虚拟现实等多种多媒体元素在内的交互式用户会话。2000 年 11 月，SIP 被正式批准成为 3GPP 信号协议之一，并成为 IMS 体系结构的一个永久单元。SIP 与 H.323 一样，是用于 VoIP 最主要的信令协议之一。
-  Antisip
-  List of SIP software
-  osip vs exosip osip oSIP is a free software library for VoIP applications implementing lower layers of Session Initiation Protocol (SIP)."><meta property="og:title" content="GB28181" />
+GB28181 报文 国标 IPC 的 IP 为 192.168.10.8， IPC 本地 SIP 端口为 60719， SIP ID 为 34020000002000000719；
+SIP 服务器的 IP 为 192.168.10.10， SIP 服务器的端口为 57030， SIP ID 为 34020000002000000001。
+整个国标信令部分基于 UDP 协议进行传输。
+开发基于 resiprocate/resiprocate 注册（REGISTER） 注销（REGISTER） 心跳（Keepalive） INVITE 云台控制（PTZ）  GB28181 协议版本 2012 年，GB/T-28181 的第一版标准 国家为了规范安防行业的设备平台互联互通，在 2012 年出台了 GB/T-28181 的第一版标准
+协议对流媒体的规范还是比较好（H.264&#43;G711 封装成 PS 流，再经过 RTP 协议进行实时传输），但是控制方面有很多不足，相对于当前流行的 ONVIF 协议在控制信令上还是有很多不足。"><meta property="og:title" content="GB28181" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/" />
@@ -22,7 +22,7 @@ SIP 协议 SIP 协议是一个应用层的点对点协议，用于初始、管�
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.9b752a8f10ec721469425351ed7cc889c085cb15d588eae268e54c1b17ef1e1c.js" integrity="sha256-m3UqjxDschRpQlNR7XzIicCFyxXViOriaOVMGxfvHhw="></script>
+<script defer src="/note-cs/en.search.min.cc50a98ee6caf49d46f7cdb6ec14bb0157da211832f3916967564abd0a3192c7.js" integrity="sha256-zFCpjubK9J1G98227BS7AVfaIRgy85FpZ1ZKvQoxksc="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/index.xml" title="计算机学习笔记" />
 <!--
@@ -763,6 +763,29 @@ https://github.com/alex-shpak/hugo-book
     
 
   
+  <a href="/note-cs/docs/others/communication/" class="collapsed ">通信技术</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
   <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
   
 
@@ -898,6 +921,23 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#gb28181">GB28181</a>
       <ul>
+        <li><a href="#gb28181-报文">GB28181 报文</a>
+          <ul>
+            <li><a href="#注册register">注册（REGISTER）</a></li>
+            <li><a href="#注销register">注销（REGISTER）</a></li>
+            <li><a href="#心跳keepalive">心跳（Keepalive）</a></li>
+            <li><a href="#invite">INVITE</a></li>
+            <li><a href="#云台控制ptz">云台控制（PTZ）</a></li>
+          </ul>
+        </li>
+        <li><a href="#gb28181-协议版本">GB28181 协议版本</a>
+          <ul>
+            <li><a href="#2012-年gbt-28181-的第一版标准">2012 年，GB/T-28181 的第一版标准</a></li>
+            <li><a href="#2014-年修改补充文件">2014 年，修改补充文件</a></li>
+            <li><a href="#2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</a></li>
+          </ul>
+        </li>
+        <li><a href="#gb28181-的协议栈实现">GB28181 的协议栈实现</a></li>
         <li><a href="#sip-协议httpswwwwikiwandcomensession_initiation_protocol"><a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">SIP 协议</a></a></li>
         <li><a href="#osip-vs-exosip">osip vs exosip</a>
           <ul>
@@ -929,7 +969,48 @@ https://github.com/alex-shpak/hugo-book
   <article class="markdown"><h1 id="gb28181">GB28181</h1>
 <p>GB28181 协议是设备端主动向服务端发起注册消息，并定时发送保活消息，服务端收到后就认为设备在线，超时收不到保活的话就认为设备离线了。客户端发起播放视频请求时，服务端给指定的设备发送 INVITE 请求，通知设备将指定的通道的视频推送到服务端，服务端再转发给客户端，用户就可以播放了。</p>
 <p>GB28181 传输协议是 RTP，去掉 RTP 头部，剩余数据为 H264 PS 流，可使用 VLC 直接播放</p>
+<h2 id="gb28181-报文">GB28181 报文</h2>
+<p>国标 IPC 的 IP 为 192.168.10.8，
+IPC 本地 SIP 端口为 60719，
+SIP ID 为 34020000002000000719；</p>
+<p>SIP 服务器的 IP 为 192.168.10.10，
+SIP 服务器的端口为 57030，
+SIP ID 为 34020000002000000001。</p>
+<p>整个国标信令部分基于 UDP 协议进行传输。</p>
+<p>开发基于 <a href="https://github.com/resiprocate/resiprocate">resiprocate/resiprocate</a> <img src="https://img.shields.io/github/stars/resiprocate/resiprocate.svg" alt="Github stars" /></p>
+<h3 id="注册register">注册（REGISTER）</h3>
+<h3 id="注销register">注销（REGISTER）</h3>
+<h3 id="心跳keepalive">心跳（Keepalive）</h3>
+<h3 id="invite">INVITE</h3>
+<h3 id="云台控制ptz">云台控制（PTZ）</h3>
+<hr>
+<h2 id="gb28181-协议版本">GB28181 协议版本</h2>
+<h3 id="2012-年gbt-28181-的第一版标准">2012 年，GB/T-28181 的第一版标准</h3>
+<p>国家为了规范安防行业的设备平台互联互通，在 2012 年出台了 GB/T-28181 的第一版标准</p>
+<p>协议对流媒体的规范还是比较好（H.264+G711 封装成 PS 流，再经过 RTP 协议进行实时传输），但是控制方面有很多不足，相对于当前流行的 ONVIF 协议在控制信令上还是有很多不足。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525154618.png" alt="" /></p>
+<h3 id="2014-年修改补充文件">2014 年，修改补充文件</h3>
+<p>后续公安一所又感觉 2011 版本的协议不能满足方方面面的信令需求，于是增加了修改补充协议
+这次的补充，完善之前协议各地方说辞有误或是不清晰的地方，还增加了不少的信令需求，如：回放、下载、配置、传输协议、设备控制（拉宽放大、缩小）等待一系列的功能。
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525154704.png" alt="" /></p>
+<h3 id="2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</h3>
+<p>2016 年公安部一所又推出了 GB/T-28181 - 2016 版本，此版本就是对之前的 2011 版和修改补充版进行合并，并增加一些信令，说明制定协议的同志们一直都在努力。</p>
+<p>这次的版本应该算是阶段性的版本了，短时间内应该不会修改了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525154847.png" alt="" /></p>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/Zhu__/article/details/62215134">GB28181 协议实现简介</a></li>
+</ul>
+<hr>
+<h2 id="gb28181-的协议栈实现">GB28181 的协议栈实现</h2>
+<p>GB/T-28181 协议其实就是在国际上通用的 SIP 协议进行私有化定制，
+流媒体方面就是在国际最流行的编码上进行封装（当然也有我们国家的编码标准 <code>SVAC</code>）。</p>
+<p>libosip+libexosip+libxml 来实现 IPC 和平台协议功能，前面两者负责 sip 协议的实现，libxml 用来封装和解析实体信令。通过 3~4 年的市场应用感觉挺稳定的。</p>
+<p>流媒体方面：从编码中获取的 h.264+g711 的视音频帧，进行 PS 媒体协议封装（自己写的 PS 封装协议），再经过 RTP 传输协议（自己实现）发送至平台。</p>
+<p>平台对收到的 RTP 流媒体进行解 RTP, 解 PS，再进行 h.264+g711 的解码。</p>
+<hr>
 <h2 id="sip-协议httpswwwwikiwandcomensession_initiation_protocol"><a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">SIP 协议</a></h2>
+<p>会话初始协议</p>
 <p>SIP 协议是一个应用层的点对点协议，用于初始、管理和终止网络中的语音和视频会话，是 <code>GB28181</code> 的核心之一。</p>
 <p>会话发起协议（ Session Initiation Protocol，缩写  SIP）是一个由  <a href="https://www.wikiwand.com/zh-cn/IETF" title="IETF">IETF</a> <a href="https://web.archive.org/web/20051206085212/http://www.ietf.org/html.charters/mmusic-charter.html">MMUSIC 工作组</a>开发的协议，作为标准被提议用于创建，修改和终止包括视频，语音，<a href="https://www.wikiwand.com/zh-cn/%E5%8D%B3%E6%97%B6%E9%80%9A%E4%BF%A1">即时通信</a>，<a href="https://www.wikiwand.com/zh-cn/%E5%9C%A8%E7%BA%BF%E6%B8%B8%E6%88%8F">在线游戏</a>和<a href="https://www.wikiwand.com/zh-cn/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E" title="虚拟现实">虚拟现实</a>等多种多媒体元素在内的交互式用户会话。2000 年 11 月，SIP 被正式批准成为  <a href="https://www.wikiwand.com/zh-cn/3GPP" title="3GPP">3GPP</a>  信号协议之一，并成为  <a href="https://www.wikiwand.com/zh-cn/IP%E5%A4%9A%E5%AA%92%E4%BD%93%E5%AD%90%E7%B3%BB%E7%BB%9F" title="IP多媒体子系统">IMS</a>  体系结构的一个永久单元。SIP 与  <a href="https://www.wikiwand.com/zh-cn/H.323" title="H.323">H.323</a>  一样，是用于  <a href="https://www.wikiwand.com/zh-cn/VoIP" title="VoIP">VoIP</a>  最主要的信令协议之一。</p>
 <ul>
@@ -1029,6 +1110,23 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#gb28181">GB28181</a>
       <ul>
+        <li><a href="#gb28181-报文">GB28181 报文</a>
+          <ul>
+            <li><a href="#注册register">注册（REGISTER）</a></li>
+            <li><a href="#注销register">注销（REGISTER）</a></li>
+            <li><a href="#心跳keepalive">心跳（Keepalive）</a></li>
+            <li><a href="#invite">INVITE</a></li>
+            <li><a href="#云台控制ptz">云台控制（PTZ）</a></li>
+          </ul>
+        </li>
+        <li><a href="#gb28181-协议版本">GB28181 协议版本</a>
+          <ul>
+            <li><a href="#2012-年gbt-28181-的第一版标准">2012 年，GB/T-28181 的第一版标准</a></li>
+            <li><a href="#2014-年修改补充文件">2014 年，修改补充文件</a></li>
+            <li><a href="#2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</a></li>
+          </ul>
+        </li>
+        <li><a href="#gb28181-的协议栈实现">GB28181 的协议栈实现</a></li>
         <li><a href="#sip-协议httpswwwwikiwandcomensession_initiation_protocol"><a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">SIP 协议</a></a></li>
         <li><a href="#osip-vs-exosip">osip vs exosip</a>
           <ul>
