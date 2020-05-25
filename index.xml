@@ -1358,7 +1358,8 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/attention/</guid>
-      <description>关注 其他 resilience4j/resilience4j Netflix/Hystrix Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
+      <description>关注 其他 resilience4j/resilience4j ehcache/ehcache3  ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库， ehcache 提供了用内存，磁盘文件存储，以及分布式存储方式等多种灵活的 cache 管理方案。 http://www.ehcache.org
+Netflix/Hystrix Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
 Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。</description>
     </item>
     
@@ -1534,6 +1535,15 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/mas/</guid>
       <description>mas-cli/mas  Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.
 $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
+    </item>
+    
+    <item>
+      <title>picgo</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/picgo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/picgo/</guid>
+      <description>picgo CLI 命令 PicGo/PicGo-Core  Molunerfinn/PicGo  </description>
     </item>
     
     <item>
@@ -1826,6 +1836,21 @@ php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
 Trail Map CNCF Cloud Native Landscape 
 CNCF Serverless Landscape 
  </description>
+    </item>
+    
+    <item>
+      <title>缓存</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/cache/</guid>
+      <description>缓存 热点数据集中失效问题
+ 设置不同的失效时间 互斥锁  缓存穿透 查询不存在的数据
+缓存雪崩 当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
+解决  事前：使用集群缓存，保证缓存服务的高可用 事中：ehcache 本地缓存 + Hystrix 限流 &amp;amp; 降级，避免 MySQL 被打死 事后：开启 Redis 持久化机制，尽快恢复缓存集群  参考：
+ ehcache/ehcache3    缓存击穿 在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了， 就会导致大量的请求都打到数据库上面去。
+缓存击穿实际上是缓存雪崩的一个特例
+解决 问题是多个线程同时去查询数据库的这条数据， 我们可以在第一个查询数据的请求上使用一个互斥锁来锁住它。 其他的线程走到这一步拿不到锁就等着，等第一个线程查询到了数据，然后做缓存。 后面的线程进来发现已经有缓存了，就直接走缓存。</description>
     </item>
     
     <item>
