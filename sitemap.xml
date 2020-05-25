@@ -2118,7 +2118,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/attention/</loc>
-    <lastmod>2020-05-23T15:18:40+08:00</lastmod>
+    <lastmod>2020-05-26T00:39:23+08:00</lastmod>
   </url>
   
   <url>
@@ -2193,7 +2193,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+    <lastmod>2020-05-26T00:39:23+08:00</lastmod>
   </url>
   
   <url>
@@ -2487,6 +2487,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/kafka/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/web/laravel/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -2513,6 +2517,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/picgo/</loc>
+    <lastmod>2020-05-26T00:39:23+08:00</lastmod>
   </url>
   
   <url>
@@ -2538,16 +2543,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/</loc>
-    <lastmod>2020-05-21T09:57:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/redis/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
   <url>
@@ -2830,11 +2825,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/</loc>
-    <lastmod>2020-05-21T09:57:22+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/oam/</loc>
     <lastmod>2020-05-21T09:57:22+08:00</lastmod>
   </url>
@@ -2956,11 +2946,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
   
@@ -3115,11 +3100,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/</loc>
-    <lastmod>2020-05-21T09:57:22+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/rabbitmq/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -3265,8 +3245,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/cassandra/</loc>
-    <lastmod>2020-05-21T09:57:22+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/db/cassandra/</loc>
   </url>
   
   <url>
@@ -3311,6 +3290,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/scene/cache/</loc>
+    <lastmod>2020-05-26T00:39:23+08:00</lastmod>
   </url>
   
   <url>
@@ -3454,7 +3434,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-05-25T21:39:00+08:00</lastmod>
+    <lastmod>2020-05-26T00:39:23+08:00</lastmod>
   </url>
   
   <url>

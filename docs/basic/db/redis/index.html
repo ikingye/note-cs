@@ -4,7 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Redis "><meta property="og:title" content="Redis" />
+<meta name="description" content="Redis redis-cli -h host -p port -a password 设置密码 打开文件 /etc/redis.conf， 找到其中的 # requirepass foobared，去掉前面的 #， 并把 foobared 改成你的密码。
+ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？ 答案是：可以
+为什么 Redis 默认端口是 6379 6379 在是手机按键上 MERZ 对应的号码，而 MERZ 取自意大利歌女 Alessia Merz 的名字。 MERZ 长期以来被 antirez 及其朋友当作愚蠢的代名词。
+参考：http://oldblog.antirez.com/post/redis-as-LRU-cache.html
+问答 MySQL 和 Redis 如何保持数据的一致性？ MySQL binlog 增量订阅消费 &#43; 消息队列 &#43; 处理并把数据更新到 redis
+参考：
+liukelin/canal_mysql_nosql_sync  alibaba/canal  阿里巴巴 MySQL binlog 增量订阅 &amp; 消费组件"><meta property="og:title" content="Redis" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/db/redis/" />
@@ -16,7 +22,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.9f610a5bf8f6fdcdf884e67eba8993d5b9a367740a940ac2dde3e4d4aa3f1fc1.js" integrity="sha256-n2EKW/j2/c34hOZ&#43;uomT1bmjZ3QKlArC3ePk1Ko/H8E="></script>
+<script defer src="/note-cs/en.search.min.dacae561acf6d7d12cb77a608906c8e477d2904a4895a8be78d5a9f1d2ffaf01.js" integrity="sha256-2srlYaz219Est3pgiQbI5HfSkEpIlai&#43;eNWp8dL/rwE="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/basic/db/redis/index.xml" title="计算机学习笔记" />
 <!--
@@ -719,6 +725,29 @@ https://github.com/alex-shpak/hugo-book
 
       
     
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/basic/db/cassandra/" class="collapsed ">Cassandra</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
   </ul>
   
 
@@ -1278,7 +1307,22 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#redis">Redis</a></li>
+    <li><a href="#redis">Redis</a>
+      <ul>
+        <li><a href="#设置密码">设置密码</a></li>
+        <li><a href="#为什么-redis-默认端口是-6379">为什么 Redis 默认端口是 6379</a></li>
+        <li><a href="#问答">问答</a>
+          <ul>
+            <li><a href="#mysql-和-redis-如何保持数据的一致性">MySQL 和 Redis 如何保持数据的一致性？</a>
+              <ul>
+                <li><a href="#liukelincanal_mysql_nosql_synchttpsgithubcomliukelincanal_mysql_nosql_sync-github-starshttpsimgshieldsiogithubstarsliukelincanal_mysql_nosql_syncsvg"><a href="https://github.com/liukelin/canal_mysql_nosql_sync">liukelin/canal_mysql_nosql_sync</a> <img src="https://img.shields.io/github/stars/liukelin/canal_mysql_nosql_sync.svg" alt="Github stars"></a></li>
+                <li><a href="#alibabacanalhttpsgithubcomalibabacanal-github-starshttpsimgshieldsiogithubstarsalibabacanalsvg"><a href="https://github.com/alibaba/canal">alibaba/canal</a> <img src="https://img.shields.io/github/stars/alibaba/canal.svg" alt="Github stars"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1291,6 +1335,29 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="redis">Redis</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">redis-cli -h host -p port -a password
+</code></pre></div><h2 id="设置密码">设置密码</h2>
+<p>打开文件 <code>/etc/redis.conf</code>，
+找到其中的 <code># requirepass foobared</code>，去掉前面的 <code>#</code>，
+并把 <code>foobared</code> 改成你的密码。</p>
+<p>ps:
+如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？
+答案是：可以</p>
+<h2 id="为什么-redis-默认端口是-6379">为什么 Redis 默认端口是 6379</h2>
+<p>6379 在是手机按键上 MERZ 对应的号码，而 MERZ 取自意大利歌女 Alessia Merz 的名字。
+MERZ 长期以来被 antirez 及其朋友当作愚蠢的代名词。</p>
+<p>参考：http://oldblog.antirez.com/post/redis-as-LRU-cache.html</p>
+<h2 id="问答">问答</h2>
+<h3 id="mysql-和-redis-如何保持数据的一致性">MySQL 和 Redis 如何保持数据的一致性？</h3>
+<p>MySQL binlog 增量订阅消费 + 消息队列 + 处理并把数据更新到 redis</p>
+<p>参考：</p>
+<h4 id="liukelincanal_mysql_nosql_synchttpsgithubcomliukelincanal_mysql_nosql_sync-github-starshttpsimgshieldsiogithubstarsliukelincanal_mysql_nosql_syncsvg"><a href="https://github.com/liukelin/canal_mysql_nosql_sync">liukelin/canal_mysql_nosql_sync</a> <img src="https://img.shields.io/github/stars/liukelin/canal_mysql_nosql_sync.svg" alt="Github stars" /></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511130648.png" alt="" /></p>
+<h4 id="alibabacanalhttpsgithubcomalibabacanal-github-starshttpsimgshieldsiogithubstarsalibabacanalsvg"><a href="https://github.com/alibaba/canal">alibaba/canal</a> <img src="https://img.shields.io/github/stars/alibaba/canal.svg" alt="Github stars" /></h4>
+<p>阿里巴巴 MySQL binlog 增量订阅 &amp; 消费组件</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/36413559">分布式的环境下， MySQL 和 Redis 如何保持数据的一致性？</a></li>
+</ul>
 </article>
  
       
@@ -1340,7 +1407,22 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#redis">Redis</a></li>
+    <li><a href="#redis">Redis</a>
+      <ul>
+        <li><a href="#设置密码">设置密码</a></li>
+        <li><a href="#为什么-redis-默认端口是-6379">为什么 Redis 默认端口是 6379</a></li>
+        <li><a href="#问答">问答</a>
+          <ul>
+            <li><a href="#mysql-和-redis-如何保持数据的一致性">MySQL 和 Redis 如何保持数据的一致性？</a>
+              <ul>
+                <li><a href="#liukelincanal_mysql_nosql_synchttpsgithubcomliukelincanal_mysql_nosql_sync-github-starshttpsimgshieldsiogithubstarsliukelincanal_mysql_nosql_syncsvg"><a href="https://github.com/liukelin/canal_mysql_nosql_sync">liukelin/canal_mysql_nosql_sync</a> <img src="https://img.shields.io/github/stars/liukelin/canal_mysql_nosql_sync.svg" alt="Github stars"></a></li>
+                <li><a href="#alibabacanalhttpsgithubcomalibabacanal-github-starshttpsimgshieldsiogithubstarsalibabacanalsvg"><a href="https://github.com/alibaba/canal">alibaba/canal</a> <img src="https://img.shields.io/github/stars/alibaba/canal.svg" alt="Github stars"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
