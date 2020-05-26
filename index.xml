@@ -1189,6 +1189,24 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     </item>
     
     <item>
+      <title>GoLand</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</guid>
+      <description>GoLand </description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</guid>
+      <description>IntelliJ Idea 插件 Alibaba Java Coding Guidelines </description>
+    </item>
+    
+    <item>
       <title>5G 边缘计算</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1556,15 +1574,6 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
     </item>
     
     <item>
-      <title>raft 算法</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/ds/raft/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/ds/raft/</guid>
-      <description>raft 算法 </description>
-    </item>
-    
-    <item>
       <title>tmux</title>
       <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/tmux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1715,7 +1724,14 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</guid>
-      <description>Cloud Foundry </description>
+      <description>Cloud Foundry Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
+组件 cloudfoundry/bosh  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
+cloudfoundry/cli  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
+cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
+ Cloud Foundry 缺点 诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
+而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。
+参考：
+ Kubernetes 如何打赢容器之战？  </description>
     </item>
     
     <item>
@@ -1738,10 +1754,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title>一致性哈希</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/ds/consistent-hashing/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/ds/consistent-hashing/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</guid>
       <description>一致性哈希 这篇论文中提出了一致性 hash 的概念。
 incubator-brpc doc - 一致性哈希
 一致性 hash 满足以下四个性质：
@@ -1835,7 +1851,8 @@ php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
       <description>关注 cncf/landscape  The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets. https://l.cncf.io
 Trail Map CNCF Cloud Native Landscape 
 CNCF Serverless Landscape 
- </description>
+ dragonflyoss/Dragonfly  Dragonfly is an intelligent P2P based image and file distribution system.
+https://d7y.io</description>
     </item>
     
     <item>

@@ -7,9 +7,7 @@
 <meta name="description" content="CAP P 是前提 在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&rsquo;s theorem），它指出对于一个distributed data store 来说，不可能同时满足以下三点：
  一致性（Consistency）  每次读取要么获得最近写入的数据，要么获得一个错误。   可用性（Availability）  每次请求都能获得一个非错误响应，但不保证返回的是最新写入的数据。   分区容错性（Partition tolerance）  以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。 尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。    一般选 AP 也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。
 比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，
- 如果 A 不写，保持一致性，那么我们就失去了 A 的服务， 但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。  这里的一致性（Consistency）是强一致性，意思是 AB 的数据时刻都是同步的，
-如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。
-如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。
+ 如果 A 不写，保持一致性，那么我们就失去了 A 的服务， 但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。  这里的一致性（Consistency）是强一致性，意思是 AB 的数据时刻都是同步的， 如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。
 现实中的 CAP CAP 对实际工作缺乏指导性。"><meta property="og:title" content="CAP" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -22,7 +20,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.dacae561acf6d7d12cb77a608906c8e477d2904a4895a8be78d5a9f1d2ffaf01.js" integrity="sha256-2srlYaz219Est3pgiQbI5HfSkEpIlai&#43;eNWp8dL/rwE="></script>
+<script defer src="/note-cs/en.search.min.d245f3793e3d24184c9313f636cb23549b2ea4c7464ba2d06060dab0e756e8c0.js" integrity="sha256-0kXzeT49JBhMkxP2NssjVJsupMdGS6LQYGDasOdW6MA="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/arch/principle/cap/index.xml" title="计算机学习笔记" />
 <!--
@@ -1005,8 +1003,8 @@ https://github.com/alex-shpak/hugo-book
 <li>如果 A 不写，保持一致性，那么我们就失去了 A 的服务，</li>
 <li>但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。</li>
 </ul>
-<p>这里的一致性（<a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29">Consistency</a>）是<strong>强一致性</strong>，意思是 AB 的数据时刻都是同步的，<br>
-如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。<br>
+<p>这里的一致性（<a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29">Consistency</a>）是<strong>强一致性</strong>，意思是 AB 的数据时刻都是同步的，
+如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。
 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。</p>
 <h2 id="现实中的-cap">现实中的 CAP</h2>
 <p>CAP 对实际工作缺乏指导性。</p>

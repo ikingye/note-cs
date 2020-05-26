@@ -4,8 +4,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Cloud Foundry "><meta property="og:title" content="Cloud Foundry" />
-<meta property="og:description" content="Cloud Foundry " />
+<meta name="description" content="Cloud Foundry Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
+组件 cloudfoundry/bosh  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
+cloudfoundry/cli  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
+cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
+ Cloud Foundry 缺点 诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
+而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。
+参考：
+ Kubernetes 如何打赢容器之战？  "><meta property="og:title" content="Cloud Foundry" />
+<meta property="og:description" content="Cloud Foundry Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
+组件 cloudfoundry/bosh  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
+cloudfoundry/cli  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
+cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
+ Cloud Foundry 缺点 诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
+而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。
+参考：
+ Kubernetes 如何打赢容器之战？  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/" />
 <meta property="article:modified_time" content="2020-04-19T23:53:21+08:00" />
@@ -16,7 +30,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.dacae561acf6d7d12cb77a608906c8e477d2904a4895a8be78d5a9f1d2ffaf01.js" integrity="sha256-2srlYaz219Est3pgiQbI5HfSkEpIlai&#43;eNWp8dL/rwE="></script>
+<script defer src="/note-cs/en.search.min.d245f3793e3d24184c9313f636cb23549b2ea4c7464ba2d06060dab0e756e8c0.js" integrity="sha256-0kXzeT49JBhMkxP2NssjVJsupMdGS6LQYGDasOdW6MA="></script>
 
 <!--
 Made with Book Theme
@@ -1251,7 +1265,18 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#cloud-foundry">Cloud Foundry</a></li>
+    <li><a href="#cloud-foundry">Cloud Foundry</a>
+      <ul>
+        <li><a href="#组件">组件</a>
+          <ul>
+            <li><a href="#cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg"><a href="https://github.com/cloudfoundry/bosh">cloudfoundry/bosh</a> <img src="https://img.shields.io/github/stars/cloudfoundry/bosh.svg" alt="Github stars"></a></li>
+            <li><a href="#cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg"><a href="https://github.com/cloudfoundry/cli">cloudfoundry/cli</a> <img src="https://img.shields.io/github/stars/cloudfoundry/cli.svg" alt="Github stars"></a></li>
+            <li><a href="#cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg"><a href="https://github.com/cloudfoundry/uaa">cloudfoundry/uaa</a> <img src="https://img.shields.io/github/stars/cloudfoundry/uaa.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#cloud-foundry-缺点">Cloud Foundry 缺点</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1264,6 +1289,24 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="cloud-foundry">Cloud Foundry</h1>
+<p>Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。</p>
+<h2 id="组件">组件</h2>
+<h3 id="cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg"><a href="https://github.com/cloudfoundry/bosh">cloudfoundry/bosh</a> <img src="https://img.shields.io/github/stars/cloudfoundry/bosh.svg" alt="Github stars" /></h3>
+<p>Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.</p>
+<h3 id="cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg"><a href="https://github.com/cloudfoundry/cli">cloudfoundry/cli</a> <img src="https://img.shields.io/github/stars/cloudfoundry/cli.svg" alt="Github stars" /></h3>
+<p>The official command line client for Cloud Foundry
+<a href="https://docs.cloudfoundry.org/cf-cli">https://docs.cloudfoundry.org/cf-cli</a></p>
+<h3 id="cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg"><a href="https://github.com/cloudfoundry/uaa">cloudfoundry/uaa</a> <img src="https://img.shields.io/github/stars/cloudfoundry/uaa.svg" alt="Github stars" /></h3>
+<p>CloudFoundry User Account and Authentication (UAA) Server</p>
+<hr>
+<h2 id="cloud-foundry-缺点">Cloud Foundry 缺点</h2>
+<p>诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。
+而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。</p>
+<p>而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/60657997">Kubernetes 如何打赢容器之战？</a></li>
+</ul>
 </article>
  
       
@@ -1313,7 +1356,18 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#cloud-foundry">Cloud Foundry</a></li>
+    <li><a href="#cloud-foundry">Cloud Foundry</a>
+      <ul>
+        <li><a href="#组件">组件</a>
+          <ul>
+            <li><a href="#cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg"><a href="https://github.com/cloudfoundry/bosh">cloudfoundry/bosh</a> <img src="https://img.shields.io/github/stars/cloudfoundry/bosh.svg" alt="Github stars"></a></li>
+            <li><a href="#cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg"><a href="https://github.com/cloudfoundry/cli">cloudfoundry/cli</a> <img src="https://img.shields.io/github/stars/cloudfoundry/cli.svg" alt="Github stars"></a></li>
+            <li><a href="#cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg"><a href="https://github.com/cloudfoundry/uaa">cloudfoundry/uaa</a> <img src="https://img.shields.io/github/stars/cloudfoundry/uaa.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
+        <li><a href="#cloud-foundry-缺点">Cloud Foundry 缺点</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
