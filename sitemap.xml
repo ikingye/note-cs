@@ -1873,10 +1873,12 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</loc>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</loc>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -1940,13 +1942,21 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bgw/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/principle/cap/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -2036,6 +2046,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/paxos/</loc>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -2540,6 +2551,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/raft/</loc>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -3018,7 +3030,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</loc>
-    <lastmod>2020-04-19T23:53:21+08:00</lastmod>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -3118,6 +3130,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/tidb/</loc>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -3127,10 +3140,12 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</loc>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/</loc>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -3160,7 +3175,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/db/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -3280,7 +3295,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</loc>
-    <lastmod>2020-05-21T09:57:22+08:00</lastmod>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -3434,7 +3449,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-05-26T00:50:07+08:00</lastmod>
+    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
