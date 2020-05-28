@@ -21,5 +21,19 @@ incubator-brpc doc - 一致性哈希
  平衡性 (Balance) : 每个节点被选到的概率是 O (1/n)。 单调性 (Monotonicity) : 当新节点加入时， 不会有请求在老节点间移动， 只会从老节点移动到新节点。当有节点被删除时，也不会影响落在别的节点上的请求。 分散性 (Spread) : 当上游的机器看到不同的下游列表时 (在上线时及不稳定的网络中比较常见), 同一个请求尽量映射到少量的节点中。 负载 (Load) : 当上游的机器看到不同的下游列表的时候， 保证每台下游分到的请求数量尽量一致。  </description>
     </item>
     
+    <item>
+      <title>分布式事务</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</guid>
+      <description>分布式事务 微服务化带来的分布式事务问题 每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
+解决方案 分布式事务的实现主要有以下 5 种方案：
+ XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  开源实现 seata/seata  TXC/GTS/Fescar/Seata 一脉相承
+ 2014 年，阿里中间件团队发布 TXC（Taobao Transaction Constructor），为集团内应用提供分布式事务服务。 2016 年，TXC 经过产品化改造，以 GTS（Global Transaction Service） 的身份登陆阿里云，成为当时业界唯一一款云上分布式事务产品，在阿云里的公有云、专有云解决方案中，开始服务于众多外部客户。 2019 年起，基于 TXC 和 GTS 的技术积累，阿里中间件团队发起了开源项目 Fescar（Fast &amp;amp; EaSy Commit And Rollback, FESCAR），和社区一起建设这个分布式事务解决方案。 开源分布式事务 Fescar 更名为 Seata  华为 DTM 分布式事务管理中间件（Distributed Transaction Management）是一款用于解决分布式环境下事务一致性问题的产品。在复杂环境下，事务可能会出现的各种异常，DTM 能够将开发者从处理这种异常中解放出来，聚焦于业务逻辑本身。
+DTM 支持 TCC（Try-Confirm-Cancel）事务模型，支持以注解的方式定义事务信息，实现事务高效便捷的接入。此外，DTM 具有处理高并发事务请求的能力，支持自动部署、弹性伸缩等全生命周期运维管控能力。
+参考  如何理解 TCC 分布式事务？  </description>
+    </item>
+    
   </channel>
 </rss>

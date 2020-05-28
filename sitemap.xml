@@ -14,7 +14,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</loc>
-    <lastmod>2020-05-21T09:57:22+08:00</lastmod>
   </url>
   
   <url>
@@ -1943,10 +1942,12 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/</loc>
+    <lastmod>2020-05-27T15:10:02+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bgw/</loc>
+    <lastmod>2020-05-27T15:10:02+08:00</lastmod>
   </url>
   
   <url>
@@ -1956,7 +1957,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/arch/principle/cap/</loc>
-    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url>
   
   <url>
@@ -1985,8 +1985,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/grpc/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/grpc/</loc>
   </url>
   
   <url>
@@ -2090,8 +2089,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/xml/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/xml/</loc>
   </url>
   
   <url>
@@ -2380,8 +2378,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/spring-cloud/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/</loc>
   </url>
   
   <url>
@@ -2455,8 +2452,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/rpc/brpc/</loc>
-    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</loc>
   </url>
   
   <url>
@@ -2465,8 +2461,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/dubbo/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/dubbo/</loc>
   </url>
   
   <url>
@@ -2480,18 +2475,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/rpc/grpc/</loc>
-    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/http/</loc>
-    <lastmod>2020-04-28T15:08:01+08:00</lastmod>
   </url>
   
   <url>
@@ -2545,8 +2530,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/rpc/protobuf/</loc>
-    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</loc>
   </url>
   
   <url>
@@ -2560,13 +2544,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/rpc/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/</loc>
   </url>
   
   <url>
@@ -2730,8 +2708,11 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/thrift/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/servicecomb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/thrift/</loc>
   </url>
   
   <url>
@@ -2864,8 +2845,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/soap/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/soap/</loc>
   </url>
   
   <url>
@@ -3049,13 +3029,15 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/tars/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/tars/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/wsdl/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/wsdl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/</loc>
   </url>
   
   <url>
@@ -3104,8 +3086,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/rpc/motan/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/motan/</loc>
   </url>
   
   <url>
@@ -3134,13 +3115,16 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/uudi/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/uudi/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</loc>
     <lastmod>2020-05-26T18:09:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</loc>
   </url>
   
   <url>
@@ -3389,11 +3373,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/standard/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
@@ -3449,7 +3428,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-05-26T18:09:45+08:00</lastmod>
+    <lastmod>2020-05-27T15:10:02+08:00</lastmod>
   </url>
   
   <url>

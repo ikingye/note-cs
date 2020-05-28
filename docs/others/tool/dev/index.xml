@@ -10,6 +10,21 @@
     
     
     <item>
+      <title>GitHub</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</guid>
+      <description>GitHub 学习 Github Github Learning Lab Introduction to GitHub  Github 工具 cli/cli  GitHub’s official command line tool https://cli.github.com
+github/hub  A command-line tool that makes git easier to use with GitHub. https://hub.github.com/
+ 开源库 素材 / 规范 徽章 shields.io 如：
+参考：
+  用 [Substats] 和 Shields.io 为你的个人主页定制动态数据小牌子
+spencerwooo/Substats    Github star 历史 timqian/star-history  https://star-history.t9t.io/
+vesoft-inc/github-statistics  A react static app for displaying github repo statistiscs like Star History, Fork History and more.</description>
+    </item>
+    
+    <item>
       <title>HHKB</title>
       <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/hhkb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -19,6 +19,21 @@
     </item>
     
     <item>
+      <title>GitHub</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</guid>
+      <description>GitHub 学习 Github Github Learning Lab Introduction to GitHub  Github 工具 cli/cli  GitHub’s official command line tool https://cli.github.com
+github/hub  A command-line tool that makes git easier to use with GitHub. https://hub.github.com/
+ 开源库 素材 / 规范 徽章 shields.io 如：
+参考：
+  用 [Substats] 和 Shields.io 为你的个人主页定制动态数据小牌子
+spencerwooo/Substats    Github star 历史 timqian/star-history  https://star-history.t9t.io/
+vesoft-inc/github-statistics  A react static app for displaying github repo statistiscs like Star History, Fork History and more.</description>
+    </item>
+    
+    <item>
       <title>Vim 实用技巧（第 2 版）</title>
       <link>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/zh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1261,6 +1276,19 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
     </item>
     
     <item>
+      <title>CAP</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/arch/principle/cap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/principle/cap/</guid>
+      <description>CAP P 是前提 在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个distributed data store 来说，不可能同时满足以下三点：
+ 一致性（Consistency）  每次读取要么获得最近写入的数据，要么获得一个错误。   可用性（Availability）  每次请求都能获得一个非错误响应，但不保证返回的是最新写入的数据。   分区容错性（Partition tolerance）  以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。 尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。    一般选 AP 也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。
+比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，
+ 如果 A 不写，保持一致性，那么我们就失去了 A 的服务， 但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。  这里的一致性（Consistency）是强一致性，意思是 AB 的数据时刻都是同步的， 如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。
+现实中的 CAP CAP 对实际工作缺乏指导性。</description>
+    </item>
+    
+    <item>
       <title>config</title>
       <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1544,10 +1572,10 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
     
     <item>
       <title>brpc</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/rpc/brpc/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/rpc/brpc/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</guid>
       <description>brpc  </description>
     </item>
     
@@ -1558,15 +1586,6 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</guid>
       <description>CDS </description>
-    </item>
-    
-    <item>
-      <title>grpc</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/rpc/grpc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/rpc/grpc/</guid>
-      <description>grpc  quick start </description>
     </item>
     
     <item>
@@ -1599,10 +1618,10 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
     
     <item>
       <title>protobuf</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/rpc/protobuf/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/rpc/protobuf/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid>
       <description>protobuf  </description>
     </item>
     
@@ -1798,6 +1817,20 @@ incubator-brpc doc - 一致性哈希
     </item>
     
     <item>
+      <title>分布式事务</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</guid>
+      <description>分布式事务 微服务化带来的分布式事务问题 每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
+解决方案 分布式事务的实现主要有以下 5 种方案：
+ XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  开源实现 seata/seata  TXC/GTS/Fescar/Seata 一脉相承
+ 2014 年，阿里中间件团队发布 TXC（Taobao Transaction Constructor），为集团内应用提供分布式事务服务。 2016 年，TXC 经过产品化改造，以 GTS（Global Transaction Service） 的身份登陆阿里云，成为当时业界唯一一款云上分布式事务产品，在阿云里的公有云、专有云解决方案中，开始服务于众多外部客户。 2019 年起，基于 TXC 和 GTS 的技术积累，阿里中间件团队发起了开源项目 Fescar（Fast &amp;amp; EaSy Commit And Rollback, FESCAR），和社区一起建设这个分布式事务解决方案。 开源分布式事务 Fescar 更名为 Seata  华为 DTM 分布式事务管理中间件（Distributed Transaction Management）是一款用于解决分布式环境下事务一致性问题的产品。在复杂环境下，事务可能会出现的各种异常，DTM 能够将开发者从处理这种异常中解放出来，聚焦于业务逻辑本身。
+DTM 支持 TCC（Try-Confirm-Cancel）事务模型，支持以注解的方式定义事务信息，实现事务高效便捷的接入。此外，DTM 具有处理高并发事务请求的能力，支持自动部署、弹性伸缩等全生命周期运维管控能力。
+参考  如何理解 TCC 分布式事务？  </description>
+    </item>
+    
+    <item>
       <title>在线编程</title>
       <link>https://ikingye.github.io/note-cs/docs/others/tool/study/coding-online/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1822,13 +1855,13 @@ incubator-brpc doc - 一致性哈希
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 基础 [video]shuhuai007/machine-learning-session  【机器学习】【白板推导系列】【合集 1 ～ 23】
+      <description>教程 基础 [book]dod-o/statistical-learning-method_code  手写实现李航《统计学习方法》书中全部算法
+[video]shuhuai007/machine-learning-session  【机器学习】【白板推导系列】【合集 1 ～ 23】
 tsyw/MachineLearningNotes  My personal notes
 Bilibili - 机器学习白板系列
  [video]机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
  ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
- fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库
- eriklindernoren/ML-From-Scratch  Machine Learning From Scratch.</description>
+ fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库</description>
     </item>
     
     <item>
