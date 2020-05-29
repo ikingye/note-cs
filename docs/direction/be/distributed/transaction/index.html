@@ -6,16 +6,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="分布式事务 微服务化带来的分布式事务问题 每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
 解决方案 分布式事务的实现主要有以下 5 种方案：
- XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  开源实现 seata/seata  TXC/GTS/Fescar/Seata 一脉相承
- 2014 年，阿里中间件团队发布 TXC（Taobao Transaction Constructor），为集团内应用提供分布式事务服务。 2016 年，TXC 经过产品化改造，以 GTS（Global Transaction Service） 的身份登陆阿里云，成为当时业界唯一一款云上分布式事务产品，在阿云里的公有云、专有云解决方案中，开始服务于众多外部客户。 2019 年起，基于 TXC 和 GTS 的技术积累，阿里中间件团队发起了开源项目 Fescar（Fast &amp; EaSy Commit And Rollback, FESCAR），和社区一起建设这个分布式事务解决方案。 开源分布式事务 Fescar 更名为 Seata  华为 DTM 分布式事务管理中间件（Distributed Transaction Management）是一款用于解决分布式环境下事务一致性问题的产品。在复杂环境下，事务可能会出现的各种异常，DTM 能够将开发者从处理这种异常中解放出来，聚焦于业务逻辑本身。
-DTM 支持 TCC（Try-Confirm-Cancel）事务模型，支持以注解的方式定义事务信息，实现事务高效便捷的接入。此外，DTM 具有处理高并发事务请求的能力，支持自动部署、弹性伸缩等全生命周期运维管控能力。
-参考  如何理解 TCC 分布式事务？  "><meta property="og:title" content="分布式事务" />
+ XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。
+你找一个严格资金要求绝对不能错的场景，你可以说你是用的 TCC 方案；如果是一般的分布式事务场景，订单插入之后要调用库存服务更新库存，库存数据没有资金那么的敏感，可以用可靠消息最终一致性方案。
+友情提示一下，RocketMQ 3.2.6 之前的版本，是可以按照上面的思路来的，但是之后接口做了一些改变，我这里不再赘述了。
+当然如果你愿意，你可以参考可靠消息最终一致性方案来自己实现一套分布式事务，比如基于 RocketMQ 来玩儿。
+参考：
+ 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 两阶段提交方案
+有一个事务管理器的概念，负责协调多个数据库（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？ 如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。
+这种分布式事务方案，比较适合单块应用里，跨多个库的分布式事务，而且因为严重依赖于数据库层面来搞定复杂的事务，效率很低，绝对不适合高并发的场景。
+如果要玩儿，那么基于 Spring &#43; JTA 就可以搞定，自己随便搜个 demo 看看就知道了。
+这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。
+ TCC 这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
+比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。
+而且最好是你的各个业务执行的时间都比较短。
+TCC 分布式事务框架，比如国内开源的
+ ByteTCC himly tcc-transaction  Try 首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。
+这个操作，一般都是锁定某个资源，设置一个预备类的状态，冻结部分数据，等等，大概都是这类操作。
+Confirm Cancel 参考："><meta property="og:title" content="分布式事务" />
 <meta property="og:description" content="分布式事务 微服务化带来的分布式事务问题 每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
 解决方案 分布式事务的实现主要有以下 5 种方案：
- XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  开源实现 seata/seata  TXC/GTS/Fescar/Seata 一脉相承
- 2014 年，阿里中间件团队发布 TXC（Taobao Transaction Constructor），为集团内应用提供分布式事务服务。 2016 年，TXC 经过产品化改造，以 GTS（Global Transaction Service） 的身份登陆阿里云，成为当时业界唯一一款云上分布式事务产品，在阿云里的公有云、专有云解决方案中，开始服务于众多外部客户。 2019 年起，基于 TXC 和 GTS 的技术积累，阿里中间件团队发起了开源项目 Fescar（Fast &amp; EaSy Commit And Rollback, FESCAR），和社区一起建设这个分布式事务解决方案。 开源分布式事务 Fescar 更名为 Seata  华为 DTM 分布式事务管理中间件（Distributed Transaction Management）是一款用于解决分布式环境下事务一致性问题的产品。在复杂环境下，事务可能会出现的各种异常，DTM 能够将开发者从处理这种异常中解放出来，聚焦于业务逻辑本身。
-DTM 支持 TCC（Try-Confirm-Cancel）事务模型，支持以注解的方式定义事务信息，实现事务高效便捷的接入。此外，DTM 具有处理高并发事务请求的能力，支持自动部署、弹性伸缩等全生命周期运维管控能力。
-参考  如何理解 TCC 分布式事务？  " />
+ XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。
+你找一个严格资金要求绝对不能错的场景，你可以说你是用的 TCC 方案；如果是一般的分布式事务场景，订单插入之后要调用库存服务更新库存，库存数据没有资金那么的敏感，可以用可靠消息最终一致性方案。
+友情提示一下，RocketMQ 3.2.6 之前的版本，是可以按照上面的思路来的，但是之后接口做了一些改变，我这里不再赘述了。
+当然如果你愿意，你可以参考可靠消息最终一致性方案来自己实现一套分布式事务，比如基于 RocketMQ 来玩儿。
+参考：
+ 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 两阶段提交方案
+有一个事务管理器的概念，负责协调多个数据库（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？ 如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。
+这种分布式事务方案，比较适合单块应用里，跨多个库的分布式事务，而且因为严重依赖于数据库层面来搞定复杂的事务，效率很低，绝对不适合高并发的场景。
+如果要玩儿，那么基于 Spring &#43; JTA 就可以搞定，自己随便搜个 demo 看看就知道了。
+这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。
+ TCC 这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
+比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。
+而且最好是你的各个业务执行的时间都比较短。
+TCC 分布式事务框架，比如国内开源的
+ ByteTCC himly tcc-transaction  Try 首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。
+这个操作，一般都是锁定某个资源，设置一个预备类的状态，冻结部分数据，等等，大概都是这类操作。
+Confirm Cancel 参考：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/" />
 <meta property="article:modified_time" content="2020-05-28T16:18:30+08:00" />
@@ -26,7 +52,7 @@ DTM 支持 TCC（Try-Confirm-Cancel）事务模型，支持以注解的方式定
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.8203b012fd9a6e050e002c101a52f01486556138e973965bd71c980bd4615cfa.js" integrity="sha256-ggOwEv2abgUOACwQGlLwFIZVYTjpc5Zb1xyYC9RhXPo="></script>
+<script defer src="/note-cs/en.search.min.74ab8d40e65f95e34eaf5de98a8d56e19a5fb1132d4848d307cd8f80cf0f4175.js" integrity="sha256-dKuNQOZfleNOr13pio1W4ZpfsRMtSEjTB82PgM8PQXU="></script>
 
 <!--
 Made with Book Theme
@@ -1062,8 +1088,19 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#分布式事务">分布式事务</a>
       <ul>
         <li><a href="#微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</a></li>
-        <li><a href="#解决方案">解决方案</a>
+        <li><a href="#解决方案">解决方案</a></li>
+        <li><a href="#xa-方案">XA 方案</a>
           <ul>
+            <li><a href="#tcc">TCC</a>
+              <ul>
+                <li><a href="#try">Try</a></li>
+                <li><a href="#confirm">Confirm</a></li>
+                <li><a href="#cancel">Cancel</a></li>
+              </ul>
+            </li>
+            <li><a href="#本地消息表">本地消息表</a></li>
+            <li><a href="#可靠消息最终一致性方案">可靠消息最终一致性方案</a></li>
+            <li><a href="#最大努力通知方案">最大努力通知方案</a></li>
             <li><a href="#开源实现">开源实现</a>
               <ul>
                 <li><a href="#seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars"></a></li>
@@ -1099,6 +1136,78 @@ https://github.com/alex-shpak/hugo-book
 <li>可靠消息最终一致性方案</li>
 <li>最大努力通知方案</li>
 </ul>
+<p>如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。</p>
+<p>你找一个严格资金要求绝对不能错的场景，你可以说你是用的 TCC 方案；如果是一般的分布式事务场景，订单插入之后要调用库存服务更新库存，库存数据没有资金那么的敏感，可以用可靠消息最终一致性方案。</p>
+<p>友情提示一下，RocketMQ 3.2.6 之前的版本，是可以按照上面的思路来的，但是之后接口做了一些改变，我这里不再赘述了。</p>
+<p>当然如果你愿意，你可以参考可靠消息最终一致性方案来自己实现一套分布式事务，比如基于 RocketMQ 来玩儿。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://github.com/doocs/advanced-java/blob/master/docs/distributed-system/distributed-transaction.md">分布式事务了解吗？你们是如何解决分布式事务问题的？</a></li>
+</ul>
+<h2 id="xa-方案">XA 方案</h2>
+<p>两阶段提交方案</p>
+<p>有一个事务管理器的概念，负责<strong>协调多个数据库</strong>（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？
+如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。</p>
+<p>这种分布式事务方案，比较适合单块应用里，跨多个库的分布式事务，而且因为严重依赖于数据库层面来搞定复杂的事务，效率很低，绝对不适合高并发的场景。</p>
+<p>如果要玩儿，那么基于 <code>Spring + JTA</code> 就可以搞定，自己随便搜个 demo 看看就知道了。</p>
+<p>这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。</p>
+<hr>
+<h3 id="tcc">TCC</h3>
+<p>这种方案说实话几乎很少人使用，
+因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。</p>
+<p>比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。</p>
+<p>而且最好是你的各个业务执行的时间都比较短。</p>
+<p>TCC 分布式事务框架，比如国内开源的</p>
+<ul>
+<li>ByteTCC</li>
+<li>himly</li>
+<li>tcc-transaction</li>
+</ul>
+<h4 id="try">Try</h4>
+<p>首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。</p>
+<p>这个操作，一般都是锁定某个资源，设置一个预备类的状态，冻结部分数据，等等，大概都是这类操作。</p>
+<h4 id="confirm">Confirm</h4>
+<h4 id="cancel">Cancel</h4>
+<p>参考：</p>
+<ul>
+<li><a href="https://juejin.im/post/5bf201f7f265da610f63528a">拜托，面试请不要再问我 TCC 分布式事务的实现原理！</a></li>
+</ul>
+<hr>
+<h3 id="本地消息表">本地消息表</h3>
+<p>本地消息表其实是国外的 ebay 搞出来的这么一套思想。</p>
+<p>这个大概意思是这样的：</p>
+<ol>
+<li>A 系统在自己本地一个事务里操作同时，插入一条数据到消息表；</li>
+<li>接着 A 系统将这个消息发送到 MQ 中去；</li>
+<li>B 系统接收到消息之后，在一个事务里，往自己本地消息表里插入一条数据，同时执行其他的业务操作，如果这个消息已经被处理过了，那么此时这个事务会回滚，这样保证不会重复处理消息；</li>
+<li>B 系统执行成功之后，就会更新自己本地消息表的状态以及 A 系统消息表的状态；</li>
+<li>如果 B 系统处理失败了，那么就不会更新消息表状态，那么此时 A 系统会定时扫描自己的消息表，如果有未处理的消息，会再次发送到 MQ 中去，让 B 再次处理；</li>
+<li>这个方案保证了最终一致性，哪怕 B 事务失败了，但是 A 会不断重发消息，直到 B 那边成功为止。</li>
+</ol>
+<p>这个方案说实话最大的问题就在于严重依赖于数据库的消息表来管理事务啥的，如果是高并发场景咋办呢？咋扩展呢？所以一般确实很少用。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200529150152.png" alt="" /></p>
+<hr>
+<h3 id="可靠消息最终一致性方案">可靠消息最终一致性方案</h3>
+<p>这个的意思，就是干脆不要用本地的消息表了，直接基于 MQ 来实现事务。比如阿里的 <code>RocketMQ</code> 就支持消息事务。</p>
+<p>大概的意思就是：</p>
+<ol>
+<li>A 系统先发送一个 prepared 消息到 mq，如果这个 prepared 消息发送失败那么就直接取消操作别执行了；</li>
+<li>如果这个消息发送成功过了，那么接着执行本地事务，如果成功就告诉 mq 发送确认消息，如果失败就告诉 mq 回滚消息；</li>
+<li>如果发送了确认消息，那么此时 B 系统会接收到确认消息，然后执行本地的事务；</li>
+<li>mq 会自动定时轮询所有 prepared 消息回调你的接口，问你，这个消息是不是本地事务处理失败了，所以没发送确认的消息，是继续重试还是回滚？一般来说这里你就可以查下数据库看之前本地事务是否执行，如果回滚了，那么这里也回滚吧。这个就是避免可能本地事务执行成功了，而确认消息却发送失败了。</li>
+<li>这个方案里，要是系统 B 的事务失败了咋办？重试咯，自动不断重试直到成功，如果实在是不行，要么就是针对重要的资金类业务进行回滚，比如 B 系统本地回滚后，想办法通知系统 A 也回滚；或者是发送报警由人工来手工回滚和补偿。</li>
+<li>这个还是比较合适的，目前国内互联网公司大都是这么玩儿的，要不你就用 <code>RocketMQ</code> 支持的，要不你就自己基于类似 <code>ActiveMQ</code>？<code>RabbitMQ</code>？自己封装一套类似的逻辑出来，总之思路就是这样子的。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200529150059.png" alt="" /></p>
+<hr>
+<h3 id="最大努力通知方案">最大努力通知方案</h3>
+<p>这个方案的大致意思就是：</p>
+<ol>
+<li>系统 A 本地事务执行完之后，发送个消息到 MQ；</li>
+<li>这里会有个专门消费 MQ 的最大努力通知服务，这个服务会消费 MQ 然后写入数据库中记录下来，或者是放入个内存队列也可以，接着调用系统 B 的接口；</li>
+<li>要是系统 B 执行成功就 ok 了；要是系统 B 执行失败了，那么最大努力通知服务就定时尝试重新调用系统 B，反复 N 次，最后还是不行就放弃。</li>
+</ol>
+<hr>
 <h3 id="开源实现">开源实现</h3>
 <h4 id="seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars" /></h4>
 <p><code>TXC</code>/<code>GTS</code>/<code>Fescar</code>/<code>Seata</code> 一脉相承</p>
@@ -1169,8 +1278,19 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#分布式事务">分布式事务</a>
       <ul>
         <li><a href="#微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</a></li>
-        <li><a href="#解决方案">解决方案</a>
+        <li><a href="#解决方案">解决方案</a></li>
+        <li><a href="#xa-方案">XA 方案</a>
           <ul>
+            <li><a href="#tcc">TCC</a>
+              <ul>
+                <li><a href="#try">Try</a></li>
+                <li><a href="#confirm">Confirm</a></li>
+                <li><a href="#cancel">Cancel</a></li>
+              </ul>
+            </li>
+            <li><a href="#本地消息表">本地消息表</a></li>
+            <li><a href="#可靠消息最终一致性方案">可靠消息最终一致性方案</a></li>
+            <li><a href="#最大努力通知方案">最大努力通知方案</a></li>
             <li><a href="#开源实现">开源实现</a>
               <ul>
                 <li><a href="#seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars"></a></li>

@@ -7,8 +7,10 @@
 <meta name="description" content="ACID  In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
   ACID，是指数据库管理系统（DBMS）在写入或更新资料的过程中，为保证事务（transaction）是正确可靠的，所必须具备的四个特性：
  原子性（Atomicity 又称不可分割性）  一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。   一致性（Consistency）  在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。   隔离性（isolation，又称独立性）  数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括未提交读（Read uncommitted）、提交读（read committed）、可重复读（repeatable read）和串行化（Serializable）。   持久性（Durability）  事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。     ACID 是追求 CAP 的一致性 "><meta property="og:title" content="ACID" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
+<meta property="og:description" content="ACID  In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
+  ACID，是指数据库管理系统（DBMS）在写入或更新资料的过程中，为保证事务（transaction）是正确可靠的，所必须具备的四个特性：
+ 原子性（Atomicity 又称不可分割性）  一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。   一致性（Consistency）  在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。   隔离性（isolation，又称独立性）  数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括未提交读（Read uncommitted）、提交读（read committed）、可重复读（repeatable read）和串行化（Serializable）。   持久性（Durability）  事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。     ACID 是追求 CAP 的一致性 " />
+<meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/arch/principle/acid/" />
 
 <title>ACID | 计算机学习笔记</title>
@@ -18,9 +20,8 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.8203b012fd9a6e050e002c101a52f01486556138e973965bd71c980bd4615cfa.js" integrity="sha256-ggOwEv2abgUOACwQGlLwFIZVYTjpc5Zb1xyYC9RhXPo="></script>
+<script defer src="/note-cs/en.search.min.74ab8d40e65f95e34eaf5de98a8d56e19a5fb1132d4848d307cd8f80cf0f4175.js" integrity="sha256-dKuNQOZfleNOr13pio1W4ZpfsRMtSEjTB82PgM8PQXU="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/arch/principle/acid/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -503,55 +504,23 @@ https://github.com/alex-shpak/hugo-book
       
     
       
-        
-
-  <li>
-    
+        <li>
 
   
-  <a href="/note-cs/docs/direction/arch/principle/acid/" class="collapsed active">ACID</a>
+  <a href="/note-cs/docs/direction/arch/principle/acid/" class="active">ACID</a>
   
 
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
+</li>
       
     
       
-        
-
-  <li>
-    
+        <li>
 
   
-  <a href="/note-cs/docs/direction/arch/principle/base/" class="collapsed ">BASE</a>
+  <a href="/note-cs/docs/direction/arch/principle/base/" class="">BASE</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
+</li>
       
     
   </ul>
@@ -998,14 +967,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
-
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/2fbf215ad5387ac52fcac289c2469ed44d2309ad" title='Last modified by yewang | 2020-04-17' target="_blank" rel="noopener">
-      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-04-17</span>
-    </a>
-  </div>
 
 
 
