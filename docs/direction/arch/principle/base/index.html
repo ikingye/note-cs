@@ -12,7 +12,7 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
 基本可用  流量削峰  在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值   延迟响应  在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果   体验降级  比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。   过载保护  把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。    最终的一致  读时修复：在读取数据时，检测数据的不一致，进行修复。  比如 Cassandra 的 Read Repair 实现，具体来说，在向 Cassandra 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。   写时修复：在写入数据，检测数据的不一致时，进行修复。  比如 Cassandra 的 Hinted Handoff 实现。具体来说，Cassandra 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。 写时修复不需要做数据一致性对比，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。   异步修复：这个是最常用的方式，通过定时对账检测副本数据的一致性，并修复。   BASE 是追求 CAP 的可用性 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/arch/principle/base/" />
-
+<meta property="article:modified_time" content="2020-05-29T15:19:21+08:00" />
 <title>BASE | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -20,7 +20,7 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.74ab8d40e65f95e34eaf5de98a8d56e19a5fb1132d4848d307cd8f80cf0f4175.js" integrity="sha256-dKuNQOZfleNOr13pio1W4ZpfsRMtSEjTB82PgM8PQXU="></script>
+<script defer src="/note-cs/en.search.min.71283359e70fd7cf27954240515417290f97982fca71aa3e48f6af00ec3a2f82.js" integrity="sha256-cSgzWecP188nlUJAUVQXKQ&#43;XmC/Kcao&#43;SPavAOw6L4I="></script>
 
 <!--
 Made with Book Theme
@@ -982,6 +982,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/18da3d4ed80ed84f1382b6a54c6e64ce7c099d19" title='Last modified by yewang | 2020-05-29' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-05-29</span>
+    </a>
+  </div>
 
 
 

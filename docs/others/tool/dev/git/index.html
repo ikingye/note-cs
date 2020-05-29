@@ -17,7 +17,7 @@ squash merge # 切换到目标分支 $ git checkout master # 以 squash 的形�
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.74ab8d40e65f95e34eaf5de98a8d56e19a5fb1132d4848d307cd8f80cf0f4175.js" integrity="sha256-dKuNQOZfleNOr13pio1W4ZpfsRMtSEjTB82PgM8PQXU="></script>
+<script defer src="/note-cs/en.search.min.71283359e70fd7cf27954240515417290f97982fca71aa3e48f6af00ec3a2f82.js" integrity="sha256-cSgzWecP188nlUJAUVQXKQ&#43;XmC/Kcao&#43;SPavAOw6L4I="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/git/index.xml" title="计算机学习笔记" />
 <!--
@@ -1061,6 +1061,7 @@ https://github.com/alex-shpak/hugo-book
           </ul>
         </li>
         <li><a href="#合并-git-commit">合并 git commit</a></li>
+        <li><a href="#git-branch-与-git-tag-同名">git branch 与 git tag 同名</a></li>
       </ul>
     </li>
   </ul>
@@ -1136,6 +1137,18 @@ $ git merge
 <ul>
 <li><a href="https://stackoverflow.com/questions/2302736/trimming-git-commits-squashing-git-history">Trimming Git Commits/Squashing Git History</a></li>
 </ul>
+<hr>
+<h2 id="git-branch-与-git-tag-同名">git branch 与 git tag 同名</h2>
+<p>需要使用完整路径</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout refs/heads/v1.5.2
+
+git checkout refs/tags/v1.5.2
+
+git push -u origin refs/heads/v4.8.0
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://softwareengineering.stackexchange.com/questions/230438/in-git-is-it-a-bad-idea-to-create-a-tag-with-the-same-name-as-a-deleted-branch">In git, is it a bad idea to create a tag with the same name as a deleted branch?</a></li>
+</ul>
 </article>
  
       
@@ -1195,6 +1208,7 @@ $ git merge
           </ul>
         </li>
         <li><a href="#合并-git-commit">合并 git commit</a></li>
+        <li><a href="#git-branch-与-git-tag-同名">git branch 与 git tag 同名</a></li>
       </ul>
     </li>
   </ul>
