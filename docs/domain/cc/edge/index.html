@@ -4,7 +4,29 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="边缘计算 "><meta property="og:title" content="边缘计算" />
+<meta name="description" content="边缘计算 边缘计算的业务本质是云计算在数据中心之外边缘节点的延伸和演进， 以“边云协同”和“边缘智能”为核心能力发展方向；
+软件平台需要考虑导入云理念、云架构、云技术，提供端到端实时和协同式智能、可信赖、可动态重置等能力；
+硬件平台需要考虑异构计算能力，如鲲鹏、昇腾、ARM、X86、GPU、NPU、FPGA 等。
+边缘计算系统的落地形态 边缘计算产业联盟（ECC）将边缘计算系统的落地形态归纳为以下三种：
+ 云边缘 边缘云 边缘网关  云边缘 云边缘形态的边缘计算，是云服务在边缘侧的延伸，逻辑上仍是云服务， 主要的能力提供依赖于云服务或需要与云服务紧密协同。
+主要应用在公有云场景，如华为云提供的 IEF 解决方案、AWS 提供的 Greengrass 解决方案等均属于此类。
+Intelligent EdgeFabric 智能边缘平台
+边缘云 边缘云形态的边缘计算，是在边缘侧构建中小规模云服务能力， 边缘服务能力主要由边缘云提供；
+边缘云的管理调度能力由部署在中心云的系统完成。 如运营商 MEC、CDN 等均属于此类。
+边缘网关 边缘网关形态的边缘计算，以云化技术与能力重构原有嵌入式网关系统， 边缘网关在边缘侧提供协议/接口转换、边缘计算等能力， 部署在云侧的控制器提供边缘节点的资源调度、应用管理与业务编排等能力。
+边缘网关主要应用在工业联网和车联网等场景中。
+ 边缘计算的 CROSS 价值 Connection 联接的海量(Connection)
+网络是系统互联与数据采集传输的基石。 伴随联接设备数量的剧增，网络灵活扩展、低成本运维和可靠性保障面临巨大挑战。
+Real-time 业务的实时性(Real-time)
+工业系统检测、控制、执行，新兴的 VR/AR 等应用的实时性高， 部分场景实时性要求在 10ms 以内甚至更低，如果数据分析和处理全部在云端实现，难以满足业务的实时性要求，严重影响终端客户的业务体验。
+Optimization 数据的优化(Optimization)
+当前工业现场与物联网末端存在大量的多样化异构数据，需要通过数据优化实现数据的聚合、数据的统一呈现与开放，以灵活高效地服务于边缘应用的智能。
+Smart 应用的智能性(Smart)
+业务流程优化、运维自动化与业务创新驱动应用走向智能，边缘侧智能能够带来显著的效率与成本优势。
+Security 安全与隐私保护(Security)
+安全跨越云计算和边缘计算之间的纵深，需要实施端到端防护。 网络边缘侧由于更贴近万物互联的设备，访问控制与威胁防护的广度和难度因此大幅提升。 边缘侧安全主要包含设备安全、网络安全、数据安全与应用安全。 此外，关键数据的完整性、保密性，大量生产或人身隐私数据的保护也是安全领域需要重点关注的内容。
+ 边缘计算在网络中的位置 为实现边缘计算，需要在更底层的网络节点增加计算和转发能力，运营商组网结构将逐步演进，边缘计算能力持续提升。
+边缘计算节点部署方式  MEC 网络的四大挑战 现场 MEC 现场 MEC（部署在企业园区）是 5G MEC 带来的一个新应用场景"><meta property="og:title" content="边缘计算" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/edge/" />
@@ -16,7 +38,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.71283359e70fd7cf27954240515417290f97982fca71aa3e48f6af00ec3a2f82.js" integrity="sha256-cSgzWecP188nlUJAUVQXKQ&#43;XmC/Kcao&#43;SPavAOw6L4I="></script>
+<script defer src="/note-cs/en.search.min.4d6f5ef9e36428d3deb072bce0c98bd5c4144427c2b73ea0967f8eb447842068.js" integrity="sha256-TW9e&#43;eNkKNPesHK84MmL1cQURCfCtz6gln&#43;OtEeEIGg="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cc/edge/index.xml" title="计算机学习笔记" />
 <!--
@@ -1139,7 +1161,48 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#边缘计算">边缘计算</a></li>
+    <li><a href="#边缘计算">边缘计算</a>
+      <ul>
+        <li><a href="#边缘计算系统的落地形态">边缘计算系统的落地形态</a>
+          <ul>
+            <li><a href="#云边缘">云边缘</a></li>
+            <li><a href="#边缘云">边缘云</a></li>
+            <li><a href="#边缘网关">边缘网关</a></li>
+          </ul>
+        </li>
+        <li><a href="#边缘计算的-cross-价值">边缘计算的 CROSS 价值</a>
+          <ul>
+            <li><a href="#connection">Connection</a></li>
+            <li><a href="#real-time">Real-time</a></li>
+            <li><a href="#optimization">Optimization</a></li>
+            <li><a href="#smart">Smart</a></li>
+            <li><a href="#security">Security</a></li>
+          </ul>
+        </li>
+        <li><a href="#边缘计算在网络中的位置">边缘计算在网络中的位置</a></li>
+        <li><a href="#边缘计算节点部署方式">边缘计算节点部署方式</a></li>
+        <li><a href="#mec-网络的四大挑战">MEC 网络的四大挑战</a>
+          <ul>
+            <li><a href="#现场-mec"><code>现场 MEC</code></a></li>
+            <li><a href="#5g-核心网下移">5G 核心网下移</a></li>
+            <li><a href="#边云协同">边云协同</a></li>
+            <li><a href="#mec-的无缝-fmc-业务">MEC 的无缝 FMC 业务</a></li>
+          </ul>
+        </li>
+        <li><a href="#运营商网络的边缘计算破局关键点">运营商网络的边缘计算破局关键点</a>
+          <ul>
+            <li><a href="#ecni-的边缘计算网络模型">ECNI 的边缘计算网络模型</a></li>
+            <li><a href="#eca最短路径">ECA：最短路径</a></li>
+            <li><a href="#eca-和-eci低延迟切片">ECA 和 ECI：低延迟切片</a></li>
+            <li><a href="#eci灵活多点通信">ECI：灵活多点通信</a></li>
+            <li><a href="#ecn集成网络架构">ECN：集成网络架构</a></li>
+            <li><a href="#运营商网和企业网mec-安全和互通">运营商网和企业网：MEC 安全和互通</a></li>
+            <li><a href="#网络支持云边协同">网络支持云边协同</a></li>
+          </ul>
+        </li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1152,6 +1215,147 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="边缘计算">边缘计算</h1>
+<p>边缘计算的业务本质是云计算在数据中心之外边缘节点的延伸和演进，
+以“边云协同”和“边缘智能”为核心能力发展方向；</p>
+<p>软件平台需要考虑导入云理念、云架构、云技术，提供端到端实时和协同式智能、可信赖、可动态重置等能力；</p>
+<p>硬件平台需要考虑异构计算能力，如鲲鹏、昇腾、ARM、X86、GPU、NPU、FPGA 等。</p>
+<h2 id="边缘计算系统的落地形态">边缘计算系统的落地形态</h2>
+<p>边缘计算产业联盟（<code>ECC</code>）将边缘计算系统的落地形态归纳为以下三种：</p>
+<ul>
+<li>云边缘</li>
+<li>边缘云</li>
+<li>边缘网关</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530203709.png" alt="" /></p>
+<h3 id="云边缘">云边缘</h3>
+<p>云边缘形态的边缘计算，是<strong>云服务在边缘侧的延伸</strong>，逻辑上仍是云服务，
+主要的能力提供依赖于云服务或需要与云服务紧密协同。</p>
+<p>主要应用在公有云场景，如华为云提供的 <code>IEF</code> 解决方案、AWS 提供的 <code>Greengrass</code> 解决方案等均属于此类。</p>
+<p><a href="https://www.huaweicloud.com/product/ief.html">Intelligent EdgeFabric</a> 智能边缘平台</p>
+<h3 id="边缘云">边缘云</h3>
+<p>边缘云形态的边缘计算，是在边缘侧构建<strong>中小规模</strong>云服务能力，
+边缘服务能力主要由边缘云提供；</p>
+<p>边缘云的管理调度能力由部署在中心云的系统完成。
+如<code>运营商 MEC</code>、<code>CDN</code> 等均属于此类。</p>
+<h3 id="边缘网关">边缘网关</h3>
+<p>边缘网关形态的边缘计算，以云化技术与能力<strong>重构原有嵌入式网关系统</strong>，
+边缘网关在边缘侧提供协议/接口转换、边缘计算等能力，
+部署在云侧的控制器提供边缘节点的资源调度、应用管理与业务编排等能力。</p>
+<p>边缘网关主要应用在<strong>工业联网</strong>和<strong>车联网</strong>等场景中。</p>
+<hr>
+<h2 id="边缘计算的-cross-价值">边缘计算的 CROSS 价值</h2>
+<h3 id="connection">Connection</h3>
+<p>联接的海量(Connection)</p>
+<p>网络是系统互联与数据采集传输的基石。
+伴随联接设备数量的剧增，网络灵活扩展、低成本运维和可靠性保障面临巨大挑战。</p>
+<h3 id="real-time">Real-time</h3>
+<p>业务的实时性(Real-time)</p>
+<p>工业系统检测、控制、执行，新兴的 VR/AR 等应用的实时性高，
+部分场景实时性要求在 10ms 以内甚至更低，如果数据分析和处理全部在云端实现，难以满足业务的实时性要求，严重影响终端客户的业务体验。</p>
+<h3 id="optimization">Optimization</h3>
+<p>数据的优化(Optimization)</p>
+<p>当前工业现场与物联网末端存在大量的多样化<strong>异构数据</strong>，需要通过数据优化实现数据的聚合、数据的统一呈现与开放，以灵活高效地服务于边缘应用的智能。</p>
+<h3 id="smart">Smart</h3>
+<p>应用的智能性(Smart)</p>
+<p>业务流程优化、运维自动化与业务创新驱动应用走向智能，边缘侧智能能够带来显著的效率与成本优势。</p>
+<h3 id="security">Security</h3>
+<p>安全与隐私保护(Security)</p>
+<p>安全跨越云计算和边缘计算之间的纵深，需要实施端到端防护。
+网络边缘侧由于更贴近万物互联的设备，访问控制与威胁防护的广度和难度因此大幅提升。
+边缘侧安全主要包含设备安全、网络安全、数据安全与应用安全。
+此外，关键数据的完整性、保密性，大量生产或人身隐私数据的保护也是安全领域需要重点关注的内容。</p>
+<hr>
+<h2 id="边缘计算在网络中的位置">边缘计算在网络中的位置</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093944.png" alt="" /></p>
+<p>为实现边缘计算，需要在更底层的网络节点增加计算和转发能力，运营商组网结构将逐步演进，边缘计算能力持续提升。</p>
+<h2 id="边缘计算节点部署方式">边缘计算节点部署方式</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418094331.png" alt="" /></p>
+<hr>
+<h2 id="mec-网络的四大挑战">MEC 网络的四大挑战</h2>
+<h3 id="现场-mec"><code>现场 MEC</code></h3>
+<p><code>现场 MEC</code>（部署在企业园区）是 5G MEC 带来的一个新应用场景</p>
+<p>5G MEC 位于企业园区机房里面，一般为运营商代建和代维。</p>
+<p>企业借助 5G MEC 系统进行生产控制、远程监控、物流管理和智慧安防等生产活动。</p>
+<p>很多生产业务对延迟有严格要求，
+如远程塔吊控制信息流的端到端延迟要小于 18ms，
+即生产设备（塔吊等）通过无线基站，IP RAN 网络，5G MEC 系统到企业应用系统（远程控制）的端到端通信要保证低延迟。
+对运营商网络的要求是，企业园区内的 5G 基站和 5G MEC 系统之间的网络，以及 5G MEC 到企业网的连接都要保证低时延。</p>
+<p>现场 MEC 场景对运营商的接入网提出了新的挑战，需要接入网提供<strong>低延迟 SLA 保证</strong>和<strong>数据不出园区</strong>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530222628.png" alt="" /></p>
+<h3 id="5g-核心网下移">5G 核心网下移</h3>
+<p>UPF 随 MEC 下移，带动 UPF 相关业务端口下移（如 N4，N6，N9, 5GC OAM 等接口）到 5G 移动承载网。</p>
+<p>4G 核心网是集中部署在省或国家骨干网上，
+4G 核心网网元间接口是由骨干网提供 VPN 来互通的，和 4G 移动承载网（IP RAN）没有关系。</p>
+<p>5G UPF 业务接口对外可靠通信是 5G MEC 对移动承载网（IP RAN）的新要求。
+有些运营商采用 5GC 控制面集中到大区域的部署方案，这导致一些业务接口（如 N4 和 5GC OAM 接口）通信需要跨越移动承载网和骨干网两个网段。
+由于 UPF 的大量分布式部署，以及 UPF 业务接口互通关系的复杂性，
+增加了 5G 移动承载网的业务流量模型复杂度和多点通信的网络覆盖范围（基本上是全网范围），
+在 4G 时代的 L2+L3 网络设计是在汇聚层以上提供多点通信能力的。
+同时，一些业务接口有传输延迟要求，如 N6，N9 这样的数据接口，这需要承载网提供 SLA 保证。</p>
+<p>5G 核心网下移使<strong>无线核心网承载</strong>从<strong>骨干网</strong>延伸到<strong>移动承载网</strong>，
+对运营商 5G MEC 移动承载网络提出了支持复杂多点通信和 SLA 保证的新挑战。</p>
+<h3 id="边云协同">边云协同</h3>
+<p>5G MEC 包括下沉的 5G 核心网网元 UPF，和（云）计算应用。</p>
+<p>5G MEC 的 UPF 需要和中心云里 5G 核心网的控制面和管理应用系统通信</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530225056.png" alt="" /></p>
+<h3 id="mec-的无缝-fmc-业务">MEC 的无缝 FMC 业务</h3>
+<p>MEC 连接设备和应用系统的接入方式是多样的，可以是 5G 接入，也可以是固网接入（包括 xPON，专线，WiFi 等），通信目标是连接所有相关应用部件，共同提供一个完整的 MEC 应用，即提供无缝的 FMC（固移融合）业务应用。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530225230.png" alt="" /></p>
+<p>MEC 的接入网就可能包括移动承载网和固定承载网，需要连接两个城域网网络平面。</p>
+<p>同时，MEC 和中心云（5GC，运营商云，第三方云）及相关业务云（可能部署在固网 MAN 上）间的通信，
+有些会通过移动承载网，有些会通过固定承载网。
+MEC 网络不局限于移动承载网，MEC 网络连接可能会涉及移动承载和固网承载两个城域网平面，以及 IP 骨干网。</p>
+<p>MEC 对网络提出了 FMC 通信新挑战，特别对于拥有移动承载城域网和固定承载城域网双平面的运营商，
+在网络架构和网络互通方面都提出了新挑战。
+中国三大运营商都有两个<strong>城域网平面</strong>。</p>
+<hr>
+<h2 id="运营商网络的边缘计算破局关键点">运营商网络的边缘计算破局关键点</h2>
+<h3 id="ecni-的边缘计算网络模型">ECNI 的边缘计算网络模型</h3>
+<p>边缘计算产业联盟 ECC 在 2019 年和网络 5.0 联合成立了边缘计算网络基础设施联合工作组（<code>ECNI</code>），
+是业界第一个聚焦边缘计算网络的产业组织。</p>
+<p>2019 年 11 月，ECNI 发布了“运营商边缘计算网络技术白皮书”，是业界首个有关运营商边缘计算网络的白皮书。
+此白皮书提出了一个新的边缘计算网络抽象模型，
+将边缘计算网络分为三个逻辑网段来描述</p>
+<ul>
+<li>
+<p>ECA（Edge Computing Access，边缘计算接入网络）</p>
+<p>从用户系统到 MEC 所经过的网络基础设施；</p>
+</li>
+<li>
+<p>ECN（Edge Computing Network，边缘计算内部网络）</p>
+<p>MEC 内部网络基础设施</p>
+</li>
+<li>
+<p>ECI（Edge Computing Interconnect，边缘计算互联网络）</p>
+<p>从 MEC 到云计算系统（如公有云、私有云、通信云、用户自建云等）、其它 MEC、各类数据中心所经过的网络基础设施；</p>
+</li>
+</ul>
+<p>MEC 在物理网络中的位置不同，ECA 和 ECI 在物理网络中的映射也不一样；ECI 可能跨运营商多个网段。因此，ECA/ECN/ECI 网络模式能更好地描述复杂的 MEC 网络和多样性物理网络间的关系，本文后续都会采用该抽象模型来表述 MEC 网络问题。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530231641.png" alt="" /></p>
+<h3 id="eca最短路径">ECA：最短路径</h3>
+<p>运营商应该为从基站到 MEC UPF 的 N3 业务流提供最短传输路径，特别是在现场 MEC 场景，
+N3 业务流应该通过在园区里的移动承载网路由器直接把业务流转发给 MEC UPF，而不应该让 N3 业务流在运营商的网络中绕行。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530231800.png" alt="" /></p>
+<h3 id="eca-和-eci低延迟切片">ECA 和 ECI：低延迟切片</h3>
+<p>ECA 切片：完整的接入网切片系统包括无线基站、移动承载网（基站到 EC 间）和 UPF 系统，即企业业务流到 MEC 所经过的所有网元，涉及 5G 无线网、网络和 5G 核心网。ECA 切片是基站到 MEC 间的 IP 网络切片。</p>
+<p>ECI 切片：MEC 系统和企业网、中心云和其它 MEC 系统间，由于业务需要保证 SLA 和安全可靠，需要切片网络来进行互连，有可能跨多网段。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530231859.png" alt="" /></p>
+<h3 id="eci灵活多点通信">ECI：灵活多点通信</h3>
+<p>ECI 网络需要支持 5G MEC 和 5G 核心网（N4，OAM）、其它 MEC 系统（N6，N9）、互联网出口（N6）、锚点 UPF（N9）、运营商云、企业网、第三方云（OTT）等进行业务通信。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530231959.png" alt="" /></p>
+<h3 id="ecn集成网络架构">ECN：集成网络架构</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530232033.png" alt="" /></p>
+<h3 id="运营商网和企业网mec-安全和互通">运营商网和企业网：MEC 安全和互通</h3>
+<p>运营商角度，5G MEC 里面有非运营商的应用和网络连接，如 MEC 直接和企业网互通，不是电信安全域；同时 MEC 改变了原来移动承载网 IP RAN 的业务承载封闭性。企业角度，业务数据和业务应用经过外网和外部 IT 系统，即经过了企业非安全区，并且企业网增加了和运营商网络的互通点。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530232137.png" alt="" /></p>
+<h3 id="网络支持云边协同">网络支持云边协同</h3>
+<p>5G MEC 网络需要支持 5G UPF 的自动部署和在线扩缩容，比如 UPF VNF 增加 VM 数量来提高性能，MEC 网络能动态接受业务需求，自动下发网络配置，保证 UPF 的快速在线扩容，即网络支持云边协同。在 MEP 平台上部署的边缘计算应用，如果和中心云相关，也需要边云协同通信。另外，按业务要求快速打通云边间 VPN 通道是支持云边协同的基本通信需求。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530232202.png" alt="" /></p>
+<hr>
+<h2 id="参考">参考</h2>
+<ul>
+<li>[pdf]<a href="https://carrier.huawei.com/~/media/CNBGV2/download/program/5G-MEC-IP-Network-White-Paper-cn-v2.pdf">5g mec ip 网络白皮书 - huawei carrier</a></li>
+</ul>
 </article>
  
       
@@ -1201,7 +1405,48 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#边缘计算">边缘计算</a></li>
+    <li><a href="#边缘计算">边缘计算</a>
+      <ul>
+        <li><a href="#边缘计算系统的落地形态">边缘计算系统的落地形态</a>
+          <ul>
+            <li><a href="#云边缘">云边缘</a></li>
+            <li><a href="#边缘云">边缘云</a></li>
+            <li><a href="#边缘网关">边缘网关</a></li>
+          </ul>
+        </li>
+        <li><a href="#边缘计算的-cross-价值">边缘计算的 CROSS 价值</a>
+          <ul>
+            <li><a href="#connection">Connection</a></li>
+            <li><a href="#real-time">Real-time</a></li>
+            <li><a href="#optimization">Optimization</a></li>
+            <li><a href="#smart">Smart</a></li>
+            <li><a href="#security">Security</a></li>
+          </ul>
+        </li>
+        <li><a href="#边缘计算在网络中的位置">边缘计算在网络中的位置</a></li>
+        <li><a href="#边缘计算节点部署方式">边缘计算节点部署方式</a></li>
+        <li><a href="#mec-网络的四大挑战">MEC 网络的四大挑战</a>
+          <ul>
+            <li><a href="#现场-mec"><code>现场 MEC</code></a></li>
+            <li><a href="#5g-核心网下移">5G 核心网下移</a></li>
+            <li><a href="#边云协同">边云协同</a></li>
+            <li><a href="#mec-的无缝-fmc-业务">MEC 的无缝 FMC 业务</a></li>
+          </ul>
+        </li>
+        <li><a href="#运营商网络的边缘计算破局关键点">运营商网络的边缘计算破局关键点</a>
+          <ul>
+            <li><a href="#ecni-的边缘计算网络模型">ECNI 的边缘计算网络模型</a></li>
+            <li><a href="#eca最短路径">ECA：最短路径</a></li>
+            <li><a href="#eca-和-eci低延迟切片">ECA 和 ECI：低延迟切片</a></li>
+            <li><a href="#eci灵活多点通信">ECI：灵活多点通信</a></li>
+            <li><a href="#ecn集成网络架构">ECN：集成网络架构</a></li>
+            <li><a href="#运营商网和企业网mec-安全和互通">运营商网和企业网：MEC 安全和互通</a></li>
+            <li><a href="#网络支持云边协同">网络支持云边协同</a></li>
+          </ul>
+        </li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

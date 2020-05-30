@@ -6,30 +6,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="5G 边缘计算 5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思
 简单说，5G 就是第五代移动通信系统
-5G 5G 速度 世界上最快的 4G 网速（挪威，63.13Mbps）
-最快的宽带网速（新加坡，189Mbps）
-2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
-在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
-5G 应用场景 国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
- 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
-超可靠低时延通信（uRLLC） mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
-海量大规模连接物联网（mMTC） uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
-5G 技术 5G 承载网 在无线侧有大量新技术实现对不同应用场景的支撑，但传输网络侧，硬件技术提升有限的情况下，需要对网络架构进行革新。
-5G 承载整体要求 5G 承载组网架构 多样化网络需求 边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一
-在靠近接入网的机房增加计算能力，将能够"><meta property="og:title" content="5G 边缘计算" />
+5G 与边缘计算有什么关系？ 5G 通信网络更加去中心化，需要在网络边缘部署小规模或者便携式数据中心，进行终端请求的本地化处理，以满足 URLLC 和 mMTC 的超低延时需求，因此边缘计算是 5G 核心技术之一。
+5G 的三大典型应用场景对网络性能的要求有显著差异，但为控制成本，运营商必然选择一张承载网 &#43; 网络切片 / 边缘计算技术，实现在最少的资本投入下最丰富的网络功能。
+在 5G 时代，承载网的带宽瓶颈、时延抖动等性能瓶颈难以突破，引入边缘计算后将大量业务在网络边缘终结。
+5G 与边缘计算的关系 5G 为边缘计算产业的落地和发展提供了良好的网络基础， 主要体现在三大场景（eMBB，uRLLC 和 mMTC）的支持、核心网用户面功能的灵活部署以及 5G 网络能力开放等方面。
+“5G &#43; MEC &#43; AI”是 5G 在网络边缘更好使能各行各业的关键； 是运营商助力垂直行业数字化和智能化的新模式； 是运营商进入垂直行业的触点和重点场景； 也是 5G 应用是否成功的一个重要标志。
+5G 支持将网络能力开放给边缘应用。 无线网络信息服务、位置服务、QoS服务等网络能力，可以封装成边缘计算 PaaS 平台的 API，开放给应用。 5G 与边缘计算结合，是运营商使能边缘计算的新核心竞争力和最大独特优势。 同时，边缘计算也成为 5G 服务垂直行业，充分发挥 5G 新网络特性的重要利器之一。
+5G MEC 将云计算和 5G 核心网带到网络边缘，带来了新的流量模型和部署模型。 如果运营商还继续采用 4G 移动承载网的设计思路，在 5G 时代，运营商网络将面临边缘计算的困局。"><meta property="og:title" content="5G 边缘计算" />
 <meta property="og:description" content="5G 边缘计算 5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思
 简单说，5G 就是第五代移动通信系统
-5G 5G 速度 世界上最快的 4G 网速（挪威，63.13Mbps）
-最快的宽带网速（新加坡，189Mbps）
-2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
-在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
-5G 应用场景 国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
- 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
-超可靠低时延通信（uRLLC） mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
-海量大规模连接物联网（mMTC） uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
-5G 技术 5G 承载网 在无线侧有大量新技术实现对不同应用场景的支撑，但传输网络侧，硬件技术提升有限的情况下，需要对网络架构进行革新。
-5G 承载整体要求 5G 承载组网架构 多样化网络需求 边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一
-在靠近接入网的机房增加计算能力，将能够" />
+5G 与边缘计算有什么关系？ 5G 通信网络更加去中心化，需要在网络边缘部署小规模或者便携式数据中心，进行终端请求的本地化处理，以满足 URLLC 和 mMTC 的超低延时需求，因此边缘计算是 5G 核心技术之一。
+5G 的三大典型应用场景对网络性能的要求有显著差异，但为控制成本，运营商必然选择一张承载网 &#43; 网络切片 / 边缘计算技术，实现在最少的资本投入下最丰富的网络功能。
+在 5G 时代，承载网的带宽瓶颈、时延抖动等性能瓶颈难以突破，引入边缘计算后将大量业务在网络边缘终结。
+5G 与边缘计算的关系 5G 为边缘计算产业的落地和发展提供了良好的网络基础， 主要体现在三大场景（eMBB，uRLLC 和 mMTC）的支持、核心网用户面功能的灵活部署以及 5G 网络能力开放等方面。
+“5G &#43; MEC &#43; AI”是 5G 在网络边缘更好使能各行各业的关键； 是运营商助力垂直行业数字化和智能化的新模式； 是运营商进入垂直行业的触点和重点场景； 也是 5G 应用是否成功的一个重要标志。
+5G 支持将网络能力开放给边缘应用。 无线网络信息服务、位置服务、QoS服务等网络能力，可以封装成边缘计算 PaaS 平台的 API，开放给应用。 5G 与边缘计算结合，是运营商使能边缘计算的新核心竞争力和最大独特优势。 同时，边缘计算也成为 5G 服务垂直行业，充分发挥 5G 新网络特性的重要利器之一。
+5G MEC 将云计算和 5G 核心网带到网络边缘，带来了新的流量模型和部署模型。 如果运营商还继续采用 4G 移动承载网的设计思路，在 5G 时代，运营商网络将面临边缘计算的困局。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/" />
 <meta property="article:modified_time" content="2020-04-19T23:53:21+08:00" />
@@ -40,7 +32,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.71283359e70fd7cf27954240515417290f97982fca71aa3e48f6af00ec3a2f82.js" integrity="sha256-cSgzWecP188nlUJAUVQXKQ&#43;XmC/Kcao&#43;SPavAOw6L4I="></script>
+<script defer src="/note-cs/en.search.min.4d6f5ef9e36428d3deb072bce0c98bd5c4144427c2b73ea0967f8eb447842068.js" integrity="sha256-TW9e&#43;eNkKNPesHK84MmL1cQURCfCtz6gln&#43;OtEeEIGg="></script>
 
 <!--
 Made with Book Theme
@@ -1164,37 +1156,28 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#5g-边缘计算">5G 边缘计算</a>
       <ul>
-        <li><a href="#5g">5G</a>
-          <ul>
-            <li><a href="#5g-速度">5G 速度</a></li>
-            <li><a href="#5g-应用场景">5G 应用场景</a>
-              <ul>
-                <li><a href="#增强型移动宽带embb">增强型移动宽带（eMBB）</a></li>
-                <li><a href="#超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</a></li>
-                <li><a href="#海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</a></li>
-              </ul>
-            </li>
-            <li><a href="#5g-技术">5G 技术</a>
-              <ul>
-                <li><a href="#5g-承载网">5G 承载网</a>
-                  <ul>
-                    <li><a href="#5g-承载整体要求">5G 承载整体要求</a></li>
-                    <li><a href="#5g-承载组网架构">5G 承载组网架构</a></li>
-                  </ul>
-                </li>
-                <li><a href="#多样化网络需求">多样化网络需求</a></li>
-              </ul>
-            </li>
-            <li><a href="#5g-应用">5G 应用</a></li>
-          </ul>
-        </li>
-        <li><a href="#边缘计算">边缘计算</a>
-          <ul>
-            <li><a href="#边缘计算在网络中的位置">边缘计算在网络中的位置</a></li>
-            <li><a href="#边缘计算节点部署方式">边缘计算节点部署方式</a></li>
-          </ul>
-        </li>
         <li><a href="#5g-与边缘计算有什么关系">5G 与边缘计算有什么关系？</a></li>
+        <li><a href="#5g-与边缘计算的关系">5G 与边缘计算的关系</a>
+          <ul>
+            <li><a href="#核心网-upf-下移到企业园区">核心网 UPF 下移到企业园区</a></li>
+            <li><a href="#开放-5g-通信服务的能力">开放 5G 通信服务的能力</a></li>
+            <li><a href="#和企业网直接互联互通">和企业网直接互联互通</a></li>
+            <li><a href="#embb"><code>eMBB</code></a>
+              <ul>
+                <li><a href="#cloud-vr">Cloud VR</a></li>
+              </ul>
+            </li>
+            <li><a href="#urllc"><code>uRLLC</code></a>
+              <ul>
+                <li><a href="#tsn">TSN</a></li>
+                <li><a href="#奇速播">奇速播</a></li>
+              </ul>
+            </li>
+            <li><a href="#mmtc"><code>mMTC</code></a></li>
+          </ul>
+        </li>
+        <li><a href="#5g-mec-网络规划建议和网络架构参考模型">5G MEC 网络规划建议和网络架构参考模型</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>
@@ -1211,59 +1194,73 @@ https://github.com/alex-shpak/hugo-book
   <article class="markdown"><h1 id="5g-边缘计算">5G 边缘计算</h1>
 <p>5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思</p>
 <p>简单说，5G 就是第五代移动通信系统</p>
-<h2 id="5g">5G</h2>
-<h3 id="5g-速度">5G 速度</h3>
-<p>世界上最快的 4G 网速（挪威，63.13Mbps）</p>
-<p>最快的宽带网速（新加坡，189Mbps）</p>
-<p>2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000</p>
-<p>在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍</p>
-<h3 id="5g-应用场景">5G 应用场景</h3>
-<p>国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：</p>
-<ul>
-<li>增强型移动宽带（eMBB）</li>
-<li>超可靠低时延通信（uRLLC）</li>
-<li>海量大规模连接物联网（mMTC）</li>
-</ul>
-<h4 id="增强型移动宽带embb">增强型移动宽带（eMBB）</h4>
-<p>eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务</p>
-<h4 id="超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</h4>
-<p>mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务</p>
-<h4 id="海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</h4>
-<p>uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。</p>
-<h3 id="5g-技术">5G 技术</h3>
-<h4 id="5g-承载网">5G 承载网</h4>
-<p>在无线侧有大量新技术实现对不同应用场景的支撑，但<strong>传输网络</strong>侧，硬件技术提升有限的情况下，需要对<strong>网络架构</strong>进行革新。</p>
-<h5 id="5g-承载整体要求">5G 承载整体要求</h5>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418092832.png" alt="" /></p>
-<h5 id="5g-承载组网架构">5G 承载组网架构</h5>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093220.png" alt="" /></p>
-<h4 id="多样化网络需求">多样化网络需求</h4>
-<p>边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一</p>
-<p>在靠近接入网的机房增加计算能力，将能够</p>
-<ul>
-<li>大幅降低业务时延</li>
-<li>减少对传输网的带宽压力降低传输成本</li>
-<li>进一步提高内容分发效率提升用户体验</li>
-</ul>
-<p>传统网络结构中，信息的处理主要位于<strong>核心网</strong>的<strong>数据中心机房</strong>内，所有信息必须从<strong>网络边缘</strong>传输到核心网进行处理之后再返回网络边缘。</p>
-<p>5G 时代，<strong>传输网</strong>架构中引入边缘计算技术，在靠近<strong>接入侧</strong>的边缘机房部署网关、服务器等设备，增加计算能力，将低时延业务、局域性数据、低价值量数据等数据在边缘机房进行处理和传输，不需要通过<strong>传输网</strong>返回<strong>核心网</strong>，进而降低时延、减少回传压力、提升用户体验。</p>
-<hr>
-<h3 id="5g-应用">5G 应用</h3>
-<p>底层网络进步带来应用和商业模式的升级</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093445.png" alt="" /></p>
-<hr>
-<h2 id="边缘计算">边缘计算</h2>
-<h3 id="边缘计算在网络中的位置">边缘计算在网络中的位置</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093944.png" alt="" /></p>
-<p>为实现边缘计算，需要在更底层的网络节点增加计算和转发能力，运营商组网结构将逐步演进，边缘计算能力持续提升。</p>
-<h3 id="边缘计算节点部署方式">边缘计算节点部署方式</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418094331.png" alt="" /></p>
-<hr>
 <h2 id="5g-与边缘计算有什么关系">5G 与边缘计算有什么关系？</h2>
 <p>5G 通信网络更加<strong>去中心化</strong>，需要在网络边缘部署小规模或者便携式数据中心，进行<strong>终端请求的本地化处理</strong>，以满足 URLLC 和 mMTC 的超低延时需求，因此边缘计算是 5G 核心技术之一。</p>
 <p>5G 的三大典型应用场景<strong>对网络性能的要求有显著差异</strong>，但为控制成本，运营商必然选择<strong>一张承载网</strong> + <strong>网络切片 / 边缘计算</strong>技术，实现在最少的资本投入下最丰富的网络功能。</p>
 <p>在 5G 时代，承载网的带<strong>宽瓶颈</strong>、<strong>时延抖动</strong>等性能瓶颈难以突破，引入边缘计算后将大量业务在网络边缘终结。</p>
-<p>参考：</p>
+<h2 id="5g-与边缘计算的关系">5G 与边缘计算的关系</h2>
+<p>5G 为边缘计算产业的落地和发展提供了良好的网络基础，
+主要体现在三大场景（<code>eMBB</code>，<code>uRLLC</code> 和 <code>mMTC</code>）的支持、核心网用户面功能的灵活部署以及 5G 网络能力开放等方面。</p>
+<p>“5G + MEC + AI”是 5G 在网络边缘更好使能各行各业的关键；
+是运营商助力垂直行业数字化和智能化的新模式；
+是运营商进入垂直行业的触点和重点场景；
+也是 5G 应用是否成功的一个重要标志。</p>
+<p>5G 支持将网络能力开放给边缘应用。
+无线网络信息服务、位置服务、<code>QoS</code>服务等网络能力，可以封装成边缘计算 PaaS 平台的 API，开放给应用。
+5G 与边缘计算结合，是运营商使能边缘计算的新核心竞争力和最大独特优势。
+同时，边缘计算也成为 5G 服务垂直行业，充分发挥 5G 新网络特性的重要利器之一。</p>
+<p>5G MEC 将云计算和 5G 核心网带到网络边缘，带来了新的流量模型和部署模型。
+如果运营商还继续采用 4G 移动承载网的设计思路，在 5G 时代，运营商网络将面临边缘计算的困局。</p>
+<p>QoS（Quality of Service，服务质量）指一个网络能够利用各种基础技术，为指定的网络通信提供更好的服务能力，是网络的一种安全机制， 是用来解决网络延迟和阻塞等问题的一种技术。</p>
+<h3 id="核心网-upf-下移到企业园区">核心网 UPF 下移到企业园区</h3>
+<p>关键业务数据不出园区，更易提供低延迟承载方案；
+运营商可以为每个用户配置单独的 UPF，给企业用户定制 5G 服务。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530210735.png" alt="" /></p>
+<h3 id="开放-5g-通信服务的能力">开放 5G 通信服务的能力</h3>
+<p>运营商以 API 模式开放的 5G 通信服务可编程能力（如定位，无线通信能力，带宽管理等），
+可以集成到企业生产业务系统中，企业可以定制自己的 5G 创新应用。</p>
+<h3 id="和企业网直接互联互通">和企业网直接互联互通</h3>
+<p>下沉的 5G MEC 系统和企业网直接互联互通，使分布在企业和运营商两个网络系统上的业务系统可以实时地集成拉通，
+加上 5G 新的面向行业应用的通信功能（低延迟 uRLLC、物联网 mMTC、无线超级上行和业务连续性等），
+各行业可以做出很多创新应用。</p>
+<h3 id="embb"><code>eMBB</code></h3>
+<p>Enhanced Mobile Broadband</p>
+<p>eMBB（特别是超级上行技术）增强移动带宽</p>
+<p>对于带宽要求较高的 AR/VR、直播</p>
+<h4 id="cloud-vr">Cloud VR</h4>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530223926.png" alt="" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530223945.png" alt="" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530224009.png" alt="" /></p>
+<h3 id="urllc"><code>uRLLC</code></h3>
+<p>ultra-Reliable and Low Latency Communications 超高可靠性低时延业务</p>
+<p>对于时延要求极高的工业控制</p>
+<h4 id="tsn">TSN</h4>
+<p>TSN（时间敏感网络）</p>
+<p>TSN 的主要目标是通过 IEEE 802（以太网）有线网络提供确定性服务。这意味着低时延、小抖动、低丢包率、有保证的数据包传输。</p>
+<p>5G 和 TSN 进行融合，5G 作为 TSN 网络的 bridge</p>
+<p>实现 TSN 网络 controller 和 5G AF 的协同</p>
+<p>低时延只是一方面吧，更重要的是时延确定；
+工业通信（大部分是有线通信）会有这样的要求，5G 是想把工业通信的场景也 cover 进来</p>
+<h4 id="奇速播">奇速播</h4>
+<p>奇速播是专门应用于酒店、商场等场所，改善公共 WiFi 用户视频体验的新概念服务，为酒店、商场公共网络环境中的用户带来极致的超高清视频体验</p>
+<p>带宽 max 300MB；时延&lt;20ms</p>
+<h3 id="mmtc"><code>mMTC</code></h3>
+<p>massive Machine Type Communications 大物联业务</p>
+<p>海量机器类通信，可以分别支持不同需求的边缘计算场景</p>
+<p>对于海量连接需求高的 IoT 设备接入</p>
+<hr>
+<h2 id="5g-mec-网络规划建议和网络架构参考模型">5G MEC 网络规划建议和网络架构参考模型</h2>
+<p>5G MEC 网络规划建议，供运营商网络设计时参考。</p>
+<ol>
+<li>建议采用 ECA、ECN 和 ECI 模型分段设计网络，ECA 和 ECI 可以部署在不同的物理网络上（如两个运营商共享共建 5G 承载网）。</li>
+<li>MEC 业务和网络隔离：MEC 内部的业务变化（如部署新的 UPF）和网络连接变化（如增加服务器），尽量少或不影响外部网络，即 MEC 系统和外部网络隔离。</li>
+<li>网络方案规划要和运营商内部网络运维团队的界面分工相匹配，减少不同运维团队间的工作交叉，例如，如果 ECN 和 IP RAN 的运维是两个数通团队，网络功能设计就要尽量保持两个团队的专业运维界面清晰。</li>
+<li>网络设计要满足 5G MEC 按需建设的增量模式，即增量部署 5G MEC 系统，要尽量减少对网络的影响。</li>
+<li>建议 ECI 按逻辑网络来构建，统一控制管理，在跨越多个网络时也能保证快速建立网络连接和保证 SLA，支持 5G MEC 业务的迅速部署。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530232242.png" alt="" /></p>
+<hr>
+<h2 id="参考">参考</h2>
 <ul>
 <li><a href="https://zhuanlan.zhihu.com/p/60790035">终于有人把 5G 和边缘计算的关系说清楚了</a></li>
 <li><a href="https://medium.com/@bonuscloud/%E7%9F%A5%E8%AF%86%E7%A7%91%E6%99%AE%E5%A4%A9%E5%A4%A9%E6%8A%8A-5g-%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97-%E6%8C%82%E5%98%B4%E8%BE%B9-%E8%BF%99%E5%88%B0%E5%BA%95%E8%B7%9F%E6%88%91%E4%BB%AC%E6%9C%89%E5%87%A0%E6%AF%9B%E9%92%B1%E5%85%B3%E7%B3%BB-e92999b82ef1">5G 边缘计算跟我们有什么关系？</a></li>
@@ -1319,37 +1316,28 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#5g-边缘计算">5G 边缘计算</a>
       <ul>
-        <li><a href="#5g">5G</a>
-          <ul>
-            <li><a href="#5g-速度">5G 速度</a></li>
-            <li><a href="#5g-应用场景">5G 应用场景</a>
-              <ul>
-                <li><a href="#增强型移动宽带embb">增强型移动宽带（eMBB）</a></li>
-                <li><a href="#超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</a></li>
-                <li><a href="#海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</a></li>
-              </ul>
-            </li>
-            <li><a href="#5g-技术">5G 技术</a>
-              <ul>
-                <li><a href="#5g-承载网">5G 承载网</a>
-                  <ul>
-                    <li><a href="#5g-承载整体要求">5G 承载整体要求</a></li>
-                    <li><a href="#5g-承载组网架构">5G 承载组网架构</a></li>
-                  </ul>
-                </li>
-                <li><a href="#多样化网络需求">多样化网络需求</a></li>
-              </ul>
-            </li>
-            <li><a href="#5g-应用">5G 应用</a></li>
-          </ul>
-        </li>
-        <li><a href="#边缘计算">边缘计算</a>
-          <ul>
-            <li><a href="#边缘计算在网络中的位置">边缘计算在网络中的位置</a></li>
-            <li><a href="#边缘计算节点部署方式">边缘计算节点部署方式</a></li>
-          </ul>
-        </li>
         <li><a href="#5g-与边缘计算有什么关系">5G 与边缘计算有什么关系？</a></li>
+        <li><a href="#5g-与边缘计算的关系">5G 与边缘计算的关系</a>
+          <ul>
+            <li><a href="#核心网-upf-下移到企业园区">核心网 UPF 下移到企业园区</a></li>
+            <li><a href="#开放-5g-通信服务的能力">开放 5G 通信服务的能力</a></li>
+            <li><a href="#和企业网直接互联互通">和企业网直接互联互通</a></li>
+            <li><a href="#embb"><code>eMBB</code></a>
+              <ul>
+                <li><a href="#cloud-vr">Cloud VR</a></li>
+              </ul>
+            </li>
+            <li><a href="#urllc"><code>uRLLC</code></a>
+              <ul>
+                <li><a href="#tsn">TSN</a></li>
+                <li><a href="#奇速播">奇速播</a></li>
+              </ul>
+            </li>
+            <li><a href="#mmtc"><code>mMTC</code></a></li>
+          </ul>
+        </li>
+        <li><a href="#5g-mec-网络规划建议和网络架构参考模型">5G MEC 网络规划建议和网络架构参考模型</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>
