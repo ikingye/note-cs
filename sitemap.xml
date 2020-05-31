@@ -1918,7 +1918,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</loc>
-    <lastmod>2020-04-19T23:53:21+08:00</lastmod>
+    <lastmod>2020-05-30T23:58:44+08:00</lastmod>
   </url>
   
   <url>
@@ -2323,7 +2323,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/edge/</loc>
-    <lastmod>2020-04-19T23:53:21+08:00</lastmod>
+    <lastmod>2020-05-30T23:58:44+08:00</lastmod>
   </url>
   
   <url>
@@ -2423,6 +2423,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/communication/4g/</loc>
+    <lastmod>2020-05-30T23:58:44+08:00</lastmod>
   </url>
   
   <url>
@@ -2437,6 +2438,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/communication/5g/</loc>
+    <lastmod>2020-05-30T23:58:44+08:00</lastmod>
   </url>
   
   <url>
@@ -2814,8 +2816,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/</loc>
-    <lastmod>2020-04-28T15:08:01+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/istio/</loc>
   </url>
   
   <url>
@@ -2856,6 +2857,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/rocketmq/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/</loc>
   </url>
   
   <url>
@@ -3454,7 +3459,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-05-29T16:29:10+08:00</lastmod>
+    <lastmod>2020-05-30T23:58:44+08:00</lastmod>
   </url>
   
   <url>
