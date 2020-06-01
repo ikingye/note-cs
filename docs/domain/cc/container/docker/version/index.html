@@ -5,24 +5,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Docker 版本 查看版本 docker -v
- 版本说明 Docker Engine（0.1.0 到 1.13.1） Docker CE 在 17.03 版本之前叫 Docker Engine 。
-版本说明参考 Docker Engine release notes (Previous versions)，
-可以看到 Docker Engine 的版本号范围: 0.1.0 (2013-03-23) ~ 1.13.1 (2017-02-08)
-Docker CE: Docker Engine release notes
-Docker CE 和 Docker EE（17.03） 在 2017 年 3 月 2 日，docker 团队宣布企业版 Docker Enterprise Edition (EE) 发布。
-为了一致，免费的 Docker Engine 改名为 Docker Community Edition (CE), 并且采用基于时间的版本号方案。
-就在这一天，Docker EE 和 Docker CE 的 17."><meta property="og:title" content="版本" />
+ 版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base."><meta property="og:title" content="版本" />
 <meta property="og:description" content="Docker 版本 查看版本 docker -v
- 版本说明 Docker Engine（0.1.0 到 1.13.1） Docker CE 在 17.03 版本之前叫 Docker Engine 。
-版本说明参考 Docker Engine release notes (Previous versions)，
-可以看到 Docker Engine 的版本号范围: 0.1.0 (2013-03-23) ~ 1.13.1 (2017-02-08)
-Docker CE: Docker Engine release notes
-Docker CE 和 Docker EE（17.03） 在 2017 年 3 月 2 日，docker 团队宣布企业版 Docker Enterprise Edition (EE) 发布。
-为了一致，免费的 Docker Engine 改名为 Docker Community Edition (CE), 并且采用基于时间的版本号方案。
-就在这一天，Docker EE 和 Docker CE 的 17." />
+ 版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/version/" />
-
+<meta property="article:modified_time" content="2020-06-01T13:12:52+08:00" />
 <title>版本 | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -30,7 +18,7 @@ Docker CE 和 Docker EE（17.03） 在 2017 年 3 月 2 日，docker 团队宣�
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.724b2554dd3225808ea9998cb549c3060034ff6ef12286c21e17143b377a2ac7.js" integrity="sha256-ckslVN0yJYCOqZmMtUnDBgA0/27xIobCHhcUOzd6Ksc="></script>
+<script defer src="/note-cs/en.search.min.3128b3ca13d29deea836f24573f2b742698d7ed4d2e75cce260b4adf2826998b.js" integrity="sha256-MSizyhPSne6oNvJFc/K3QmmNftTS51zOJgtK3ygmmYs="></script>
 
 <!--
 Made with Book Theme
@@ -1281,13 +1269,25 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#docker-版本httpsdocsdockercomenginerelease-notes"><a href="https://docs.docker.com/engine/release-notes/">Docker 版本</a></a>
       <ul>
         <li><a href="#查看版本">查看版本</a></li>
-        <li><a href="#版本说明">版本说明</a>
+        <li><a href="#版本变更">版本变更</a>
           <ul>
-            <li><a href="#docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</a></li>
-            <li><a href="#docker-ce-和-docker-ee1703">Docker CE 和 Docker EE（17.03）</a></li>
-            <li><a href="#docker-合并版本号18090">Docker 合并版本号（18.09.0）</a>
+            <li><a href="#最新版本httpsdocsdockercomenginerelease-notes"><a href="https://docs.docker.com/engine/release-notes/">最新版本</a></a></li>
+            <li><a href="#1903httpsdocsdockercomenginerelease-notes1903-2019-07-22"><a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)</a></li>
+            <li><a href="#1809httpsdocsdockercomenginerelease-notes1809-2018-11-08"><a href="https://docs.docker.com/engine/release-notes/18.09/">18.09</a> (2018-11-08)</a>
               <ul>
+                <li><a href="#docker-合并版本号">Docker 合并版本号</a></li>
                 <li><a href="#分拆-client-与-daemon">分拆 client 与 daemon</a></li>
+              </ul>
+            </li>
+            <li><a href="#1806httpsdocsdockercomenginerelease-notes1806-2018-07-18"><a href="https://docs.docker.com/engine/release-notes/18.06/">18.06</a> (2018-07-18)</a></li>
+            <li><a href="#1703httpsdocsdockercomenginerelease-notes1703-2017-03-01"><a href="https://docs.docker.com/engine/release-notes/17.03/">17.03</a> (2017-03-01)</a>
+              <ul>
+                <li><a href="#docker-ce-和-docker-ee1703">Docker CE 和 Docker EE（17.03）</a></li>
+              </ul>
+            </li>
+            <li><a href="#1131-之前httpsdocsdockercomenginerelease-notesprior-releases"><a href="https://docs.docker.com/engine/release-notes/prior-releases/">1.13.1 之前</a></a>
+              <ul>
+                <li><a href="#docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</a></li>
               </ul>
             </li>
           </ul>
@@ -1309,32 +1309,39 @@ https://github.com/alex-shpak/hugo-book
 <h2 id="查看版本">查看版本</h2>
 <p><code>docker -v</code></p>
 <hr>
-<h2 id="版本说明">版本说明</h2>
-<h3 id="docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</h3>
-<p><code>Docker CE</code> 在 17.03 版本之前叫 <code>Docker Engine</code> 。</p>
-<p>版本说明参考 <a href="https://docs.docker.com/engine/release-notes/prior-releases/">Docker Engine release notes (Previous versions)</a>，</p>
-<p>可以看到 Docker Engine 的版本号范围: 0.1.0 (2013-03-23) <strong>~</strong> 1.13.1 (2017-02-08)</p>
-<p>Docker CE: <a href="https://docs.docker.com/engine/release-notes/">Docker Engine release notes</a></p>
-<h3 id="docker-ce-和-docker-ee1703">Docker CE 和 Docker EE（17.03）</h3>
-<p>在 2017 年 3 月 2 日，docker 团队宣布企业版 Docker Enterprise Edition (EE) 发布。</p>
-<p>为了一致，免费的 Docker Engine 改名为 Docker Community Edition (CE), 并且采用基于时间的版本号方案。</p>
+<h2 id="版本变更">版本变更</h2>
+<h3 id="最新版本httpsdocsdockercomenginerelease-notes"><a href="https://docs.docker.com/engine/release-notes/">最新版本</a></h3>
+<h3 id="1903httpsdocsdockercomenginerelease-notes1903-2019-07-22"><a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)</h3>
+<h3 id="1809httpsdocsdockercomenginerelease-notes1809-2018-11-08"><a href="https://docs.docker.com/engine/release-notes/18.09/">18.09</a> (2018-11-08)</h3>
+<h4 id="docker-合并版本号">Docker 合并版本号</h4>
+<p>New in 18.09 is an aligned release model for <strong>Docker Engine - Community</strong> and <strong>Docker Engine - Enterprise</strong>.
+The new versioning scheme is YY.MM.x where x is an incrementing patch version.
+The enterprise engine is a superset of the community engine.
+They will ship concurrently with the same x patch version based on the same code base.</p>
+<h4 id="分拆-client-与-daemon">分拆 client 与 daemon</h4>
+<p><strong>The client</strong> and <strong>container runtime</strong> are now in separate packages from the daemon in Docker Engine 18.09.
+Users should install and update all three packages at the same time to get the latest patch releases.</p>
+<p>For example, on Ubuntu:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt install docker-ce docker-ce-cli containerd.io
+</code></pre></div><h3 id="1806httpsdocsdockercomenginerelease-notes1806-2018-07-18"><a href="https://docs.docker.com/engine/release-notes/18.06/">18.06</a> (2018-07-18)</h3>
+<h3 id="1703httpsdocsdockercomenginerelease-notes1703-2017-03-01"><a href="https://docs.docker.com/engine/release-notes/17.03/">17.03</a> (2017-03-01)</h3>
+<h4 id="docker-ce-和-docker-ee1703">Docker CE 和 Docker EE（17.03）</h4>
+<p>新版本: <a href="https://docs.docker.com/engine/release-notes/">Docker Engine release notes</a></p>
+<p>在 2017 年 3 月 2 日，docker 团队宣布企业版 <code>Docker Enterprise Edition (EE)</code> 发布。</p>
+<p>为了一致，免费的 Docker Engine 改名为 <code>Docker Community Edition (CE)</code>, 并且采用基于时间的版本号方案。</p>
 <p>就在这一天，Docker EE 和 Docker CE 的 17.03 版本发布，这也是第一个采用新的版本号方案的版本。</p>
-<p>Docker CE/EE 每个季度发布一次 <strong>季度版本</strong> , 也就是说每年会发布 4 个季度版本，17.03, 17.06, 17.09, 17.12 就是 2017 年的 4 个季度版本的版本号。</p>
-<p>同时 Docker CE 每个月还会发布一个 EDGE 版本，比如 17.04, 17.05, 17.07, 17.08, 17.10, 17.11。</p>
-<p>Docker CE 季度版本自发布后会有 <strong>4 个月</strong>的维护期。</p>
+<p><code>Docker CE/EE</code> 每个季度发布一次 <strong>季度版本</strong> , 也就是说每年会发布 4 个季度版本，17.03, 17.06, 17.09, 17.12 就是 2017 年的 4 个季度版本的版本号。</p>
+<p>同时 Docker CE 每个月还会发布一个 <code>EDGE 版本</code>，比如 17.04, 17.05, 17.07, 17.08, 17.10, 17.11。</p>
+<p>Docker CE <code>季度版本</code>自发布后会有 <strong>4 个月</strong>的维护期。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200506152504.png" alt="" /></p>
 <p>在基于时间的发布方案中，版本号格式为: YY.MM.<patch>，YY.MM 代表年月，patch 代表补丁号，从 0 开始，</p>
 <p>在季度版本 (如 17.03) 的维护期内，bug 修复相关的更新会以 patch 递增的方式发布，</p>
 <p>比如 17.03.0 -&gt; 17.03.1 -&gt; 17.03.2.</p>
-<h3 id="docker-合并版本号18090">Docker 合并版本号（18.09.0）</h3>
-<p>New in 18.09 is an aligned release model for <strong>Docker Engine - Community</strong> and <strong>Docker Engine - Enterprise</strong>. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base.</p>
-<p>参考：<a href="https://docs.docker.com/engine/release-notes/">https://docs.docker.com/engine/release-notes/</a></p>
-<p>18.09 (2018-11-08)</p>
-<p>19.03 (2019-07-22)</p>
-<h4 id="分拆-client-与-daemon">分拆 client 与 daemon</h4>
-<p><strong>The client</strong> and <strong>container runtime</strong> are now in separate packages from the daemon in Docker Engine 18.09. Users should install and update all three packages at the same time to get the latest patch releases.</p>
-<p>For example, on Ubuntu:</p>
-<p><code>sudo apt install docker-ce docker-ce-cli containerd.io</code></p>
+<h3 id="1131-之前httpsdocsdockercomenginerelease-notesprior-releases"><a href="https://docs.docker.com/engine/release-notes/prior-releases/">1.13.1 之前</a></h3>
+<h4 id="docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</h4>
+<p><code>Docker CE</code> 在 1.13.1 及之前版本叫 <code>Docker Engine</code> 。</p>
+<p>版本说明参考：<a href="https://docs.docker.com/engine/release-notes/prior-releases/">Docker Engine release notes (Previous versions)</a>，</p>
+<p>可以看到 Docker Engine 的版本号范围: <code>0.1.0 (2013-03-23) ~ 1.13.1 (2017-02-08)</code></p>
 </article>
  
       
@@ -1344,6 +1351,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/cb41f7f33aa63969516e8a88e2f88f75b00f7d2a" title='Last modified by yewang | 2020-06-01' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-06-01</span>
+    </a>
+  </div>
 
 
 
@@ -1379,13 +1394,25 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#docker-版本httpsdocsdockercomenginerelease-notes"><a href="https://docs.docker.com/engine/release-notes/">Docker 版本</a></a>
       <ul>
         <li><a href="#查看版本">查看版本</a></li>
-        <li><a href="#版本说明">版本说明</a>
+        <li><a href="#版本变更">版本变更</a>
           <ul>
-            <li><a href="#docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</a></li>
-            <li><a href="#docker-ce-和-docker-ee1703">Docker CE 和 Docker EE（17.03）</a></li>
-            <li><a href="#docker-合并版本号18090">Docker 合并版本号（18.09.0）</a>
+            <li><a href="#最新版本httpsdocsdockercomenginerelease-notes"><a href="https://docs.docker.com/engine/release-notes/">最新版本</a></a></li>
+            <li><a href="#1903httpsdocsdockercomenginerelease-notes1903-2019-07-22"><a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)</a></li>
+            <li><a href="#1809httpsdocsdockercomenginerelease-notes1809-2018-11-08"><a href="https://docs.docker.com/engine/release-notes/18.09/">18.09</a> (2018-11-08)</a>
               <ul>
+                <li><a href="#docker-合并版本号">Docker 合并版本号</a></li>
                 <li><a href="#分拆-client-与-daemon">分拆 client 与 daemon</a></li>
+              </ul>
+            </li>
+            <li><a href="#1806httpsdocsdockercomenginerelease-notes1806-2018-07-18"><a href="https://docs.docker.com/engine/release-notes/18.06/">18.06</a> (2018-07-18)</a></li>
+            <li><a href="#1703httpsdocsdockercomenginerelease-notes1703-2017-03-01"><a href="https://docs.docker.com/engine/release-notes/17.03/">17.03</a> (2017-03-01)</a>
+              <ul>
+                <li><a href="#docker-ce-和-docker-ee1703">Docker CE 和 Docker EE（17.03）</a></li>
+              </ul>
+            </li>
+            <li><a href="#1131-之前httpsdocsdockercomenginerelease-notesprior-releases"><a href="https://docs.docker.com/engine/release-notes/prior-releases/">1.13.1 之前</a></a>
+              <ul>
+                <li><a href="#docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</a></li>
               </ul>
             </li>
           </ul>
