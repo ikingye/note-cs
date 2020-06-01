@@ -22,6 +22,22 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
     </item>
     
     <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/version/</guid>
+      <description>Docker 版本 查看版本 docker -v
+ 版本说明 Docker Engine（0.1.0 到 1.13.1） Docker CE 在 17.03 版本之前叫 Docker Engine 。
+版本说明参考 Docker Engine release notes (Previous versions)，
+可以看到 Docker Engine 的版本号范围: 0.1.0 (2013-03-23) ~ 1.13.1 (2017-02-08)
+Docker CE: Docker Engine release notes
+Docker CE 和 Docker EE（17.03） 在 2017 年 3 月 2 日，docker 团队宣布企业版 Docker Enterprise Edition (EE) 发布。
+为了一致，免费的 Docker Engine 改名为 Docker Community Edition (CE), 并且采用基于时间的版本号方案。
+就在这一天，Docker EE 和 Docker CE 的 17.</description>
+    </item>
+    
+    <item>
       <title>端口</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/port/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

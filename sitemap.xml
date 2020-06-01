@@ -2222,6 +2222,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/version/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/port/</loc>
     <lastmod>2020-05-11T21:57:57+08:00</lastmod>
   </url>
@@ -2817,6 +2821,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/istio/</loc>
+    <lastmod>2020-05-31T22:33:55+08:00</lastmod>
   </url>
   
   <url>
@@ -2861,6 +2866,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/</loc>
+    <lastmod>2020-05-31T22:33:55+08:00</lastmod>
   </url>
   
   <url>
@@ -3459,7 +3465,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-05-30T23:58:44+08:00</lastmod>
+    <lastmod>2020-05-31T22:33:55+08:00</lastmod>
   </url>
   
   <url>
