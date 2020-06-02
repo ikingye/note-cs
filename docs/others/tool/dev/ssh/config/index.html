@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa Host gitcafe HostName e.coding.net User git IdentityFile ~/.ssh/id_rsa Host gitee HostName gitee.com User git IdentityFile ~/."><meta property="og:title" content="config" />
-<meta property="og:description" content="config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa Host gitcafe HostName e.coding.net User git IdentityFile ~/.ssh/id_rsa Host gitee HostName gitee.com User git IdentityFile ~/." />
+<meta name="description" content="config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/."><meta property="og:title" content="config" />
+<meta property="og:description" content="config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/" />
 <meta property="article:modified_time" content="2020-04-23T19:39:33+08:00" />
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.ef81cbc0fc991757e8a51a8db342442e3f7b18302b1b8b3f177e8c2acb482fad.js" integrity="sha256-74HLwPyZF1fopRqNs0JELj97GDArG4s/F36MKstIL60="></script>
+<script defer src="/note-cs/en.search.min.7dbb78884985702b8528bbbca851652a05161a83a5241f9efc2bf19c7db86142.js" integrity="sha256-fbt4iEmFcCuFKLu8qFFlKgUWGoOlJB&#43;e/CvxnH24YUI="></script>
 
 <!--
 Made with Book Theme
@@ -654,29 +654,6 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/others/communication/" class="collapsed ">通信技术</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
   <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
   
 
@@ -697,29 +674,6 @@ https://github.com/alex-shpak/hugo-book
   
 
 </li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
       
     
       
@@ -932,6 +886,29 @@ https://github.com/alex-shpak/hugo-book
 
       
     
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
   </ul>
   
 
@@ -1098,14 +1075,17 @@ Host github
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_rsa
+    ProxyCommand nc -v -x 127.0.0.1:1081 %h %p
 Host gitlab
     HostName gitlab.com
     User git
     IdentityFile ~/.ssh/id_rsa
+    ProxyCommand nc -v -x 127.0.0.1:1081 %h %p
 Host bitbucket
     HostName bitbucket.org
     User git
     IdentityFile ~/.ssh/id_rsa
+    ProxyCommand nc -v -x 127.0.0.1:1081 %h %p
 Host gitcafe
     HostName e.coding.net
     User git
@@ -1131,6 +1111,11 @@ Host *
     <span style="color:#75715e"># PreferredAuthentications publickey</span>
     <span style="color:#75715e"># TCPKeepAlive no</span>
     <span style="color:#75715e"># Compression yes</span>
+
+    <span style="color:#75715e"># 走 HTTP 代理</span>
+    <span style="color:#75715e"># ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=8081</span>
+    <span style="color:#75715e"># 走 socks5 代理（如 Shadowsocks）</span>
+    <span style="color:#75715e"># ProxyCommand nc -v -x 127.0.0.1:1080 %h %p</span>
 </code></pre></div></article>
  
       

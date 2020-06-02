@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ssh ssh-keygen "><meta property="og:title" content="ssh" />
+<meta name="description" content="ssh ssh-keygen 代理 ssh -o ProxyCommand=&#39;socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody&#39; user@host # SOCKS5 ssh -o ProxyCommand=&#39;socat - &#34;SOCKS5:%h:%p|tcp:myproxy:1080&#34;&#39; user@host # http ssh -o ProxyCommand=&#39;socat - &#34;PROXY:%h:%p|tcp:myproxy:80&#34;&#39; user@host 参考：
+ Connecting to host by SSH client in Linux by proxy  "><meta property="og:title" content="ssh" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/" />
@@ -16,7 +17,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.ef81cbc0fc991757e8a51a8db342442e3f7b18302b1b8b3f177e8c2acb482fad.js" integrity="sha256-74HLwPyZF1fopRqNs0JELj97GDArG4s/F36MKstIL60="></script>
+<script defer src="/note-cs/en.search.min.7dbb78884985702b8528bbbca851652a05161a83a5241f9efc2bf19c7db86142.js" integrity="sha256-fbt4iEmFcCuFKLu8qFFlKgUWGoOlJB&#43;e/CvxnH24YUI="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/index.xml" title="计算机学习笔记" />
 <!--
@@ -655,29 +656,6 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/others/communication/" class="collapsed ">通信技术</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
   <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
   
 
@@ -698,29 +676,6 @@ https://github.com/alex-shpak/hugo-book
   
 
 </li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
       
     
       
@@ -933,6 +888,29 @@ https://github.com/alex-shpak/hugo-book
 
       
     
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
   </ul>
   
 
@@ -1063,6 +1041,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#ssh">ssh</a>
       <ul>
         <li><a href="#ssh-keygen">ssh-keygen</a></li>
+        <li><a href="#代理">代理</a></li>
       </ul>
     </li>
   </ul>
@@ -1078,6 +1057,18 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="ssh">ssh</h1>
 <h2 id="ssh-keygen">ssh-keygen</h2>
+<h2 id="代理">代理</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh -o ProxyCommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody&#39;</span> user@host
+
+<span style="color:#75715e"># SOCKS5</span>
+ssh -o ProxyCommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;socat - &#34;SOCKS5:%h:%p|tcp:myproxy:1080&#34;&#39;</span> user@host
+
+<span style="color:#75715e"># http</span>
+ssh -o ProxyCommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;socat - &#34;PROXY:%h:%p|tcp:myproxy:80&#34;&#39;</span> user@host
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://unix.stackexchange.com/questions/68826/connecting-to-host-by-ssh-client-in-linux-by-proxy">Connecting to host by SSH client in Linux by proxy</a></li>
+</ul>
 </article>
  
       
@@ -1130,6 +1121,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#ssh">ssh</a>
       <ul>
         <li><a href="#ssh-keygen">ssh-keygen</a></li>
+        <li><a href="#代理">代理</a></li>
       </ul>
     </li>
   </ul>

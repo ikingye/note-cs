@@ -24,13 +24,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</guid>
-      <description>GitHub 学习 Github Github Learning Lab Introduction to GitHub  Github 工具 cli/cli  GitHub’s official command line tool https://cli.github.com
-github/hub  A command-line tool that makes git easier to use with GitHub. https://hub.github.com/
- 开源库 素材 / 规范 徽章 shields.io 如：
-参考：
-  用 [Substats] 和 Shields.io 为你的个人主页定制动态数据小牌子
-spencerwooo/Substats    Github star 历史 timqian/star-history  https://star-history.t9t.io/
-vesoft-inc/github-statistics  A react static app for displaying github repo statistiscs like Star History, Fork History and more.</description>
+      <description>GitHub 设置代理 git config --global http.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; git config --global https.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; git config --global https.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github Github Learning Lab Introduction to GitHub  Github 工具 cli/cli  GitHub’s official command line tool https://cli.github.com
+github/hub  A command-line tool that makes git easier to use with GitHub.</description>
     </item>
     
     <item>
@@ -1207,6 +1202,15 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
     </item>
     
     <item>
+      <title>推荐软件</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</guid>
+      <description>推荐软件 MacOS 开发 iTerm Keyboard Maestro  参考  jaywcjlove/awesome-mac  Windows todoiOS todoAndroid todoLinux todo </description>
+    </item>
+    
+    <item>
       <title>百度</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1232,7 +1236,13 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</guid>
-      <description>GoLand </description>
+      <description>GoLand 快捷键 查询  当前文件查询 cmd + F 当前文件替换 cmd + R 所有文件查询 shift + cmd + F 所有文件替换 shift + cmd + R    复制当前行内容到下一行 cmd + D
+  删除当前行 cmd + delete
+  格式化代码 option + cmd + L
+  跳转   指定行 cmd + L
+  指定文件 shift + cmd + O
+  在当前行下一行增加空行 shift + enter
+  在当前行上一行增加空行 option + cmd + enter</description>
     </item>
     
     <item>
@@ -1241,7 +1251,7 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</guid>
-      <description>IntelliJ Idea 插件 Alibaba Java Coding Guidelines </description>
+      <description>IntelliJ Idea 插件 Alibaba Java Coding Guidelines  教程 xiaoxiunique/tool-tips  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
     </item>
     
     <item>
@@ -1313,7 +1323,7 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</guid>
-      <description>config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa Host gitcafe HostName e.coding.net User git IdentityFile ~/.ssh/id_rsa Host gitee HostName gitee.com User git IdentityFile ~/.</description>
+      <description>config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.</description>
     </item>
     
     <item>
@@ -1495,15 +1505,6 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
     </item>
     
     <item>
-      <title>推荐软件</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</guid>
-      <description>推荐软件 MacOS 开发 iTerm Keyboard Maestro  参考  jaywcjlove/awesome-mac  Windows todoiOS todoAndroid todoLinux todo </description>
-    </item>
-    
-    <item>
       <title>版本</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1532,6 +1533,17 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
 WS-Discovery 模式 WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
 Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode.</description>
+    </item>
+    
+    <item>
+      <title>通过例子学 Golang</title>
+      <link>https://ikingye.github.io/note-cs/docs/course/basic/pl/gobyexample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/gobyexample/</guid>
+      <description>通过例子学 Golang mmcgrana/gobyexample 点击阅读：Go by Example
+中文翻译 gobyexample-cn/gobyexample 点击阅读：通过例子学 Golang
+学习进度  Hello World 值 变量 常量 For 循环 If/Else 分支 Switch 分支结构 数组 切片 Map Range 遍历 函数 多返回值 变参函数 闭包 递归 指针 结构体 方法 接口 错误处理 协程 通道 通道缓冲 通道同步 通道方向 通道选择器 超时处理 非阻塞通道操作 通道的关闭 通道遍历 Timer Ticker 工作池 WaitGroup 速率限制 原子计数器 互斥锁 状态协程 排序 使用函数自定义排序 Panic Defer 组合函数 字符串函数 字符串格式化 正则表达式 JSON XML 时间 时间戳 时间的格式化和解析 随机数 数字解析 URL 解析 SHA1 哈希 Base64 编码 读文件 写文件 行过滤器 文件路径 目录 临时文件和目录 单元测试 命令行参数 命令行标志 命令行子命令 环境变量 HTTP 客户端 HTTP 服务端 Context 生成进程 执行进程 信号 退出  </description>
     </item>
     
     <item>
@@ -1590,19 +1602,19 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
     
     <item>
       <title>4G</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/communication/4g/</link>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/communication/4g/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/communication/4g/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/communication/4g/</guid>
       <description>4G </description>
     </item>
     
     <item>
       <title>5G</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/communication/5g/</link>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/communication/5g/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/communication/5g/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/communication/5g/</guid>
       <description>5G 5G 速度 世界上最快的 4G 网速（挪威，63.13Mbps）
 最快的宽带网速（新加坡，189Mbps）
 2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
@@ -2164,6 +2176,21 @@ Under the hood DIND or Docker-in-Docker is used to give the effect of multiple V
 系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
 这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
  进阶 </description>
+    </item>
+    
+    <item>
+      <title>GB28181 协议解析</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</guid>
+      <description>GB28181 协议解析 名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
+SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
+联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
+SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
+注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
+中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。
+组成中心信令控制的逻辑实体包括代理服务器、注册服务器、重定向服务器、背靠背用户代理等的一种或者几种，是负责核心 SIP 信令应用处理的 SIP 服务器。</description>
     </item>
     
     <item>

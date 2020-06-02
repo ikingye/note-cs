@@ -10,7 +10,7 @@ GB28181 报文 国标 IPC 的 IP 为 192.168.10.8， IPC 本地 SIP 端口为 60
 SIP 服务器的 IP 为 192.168.10.10， SIP 服务器的端口为 57030， SIP ID 为 34020000002000000001。
 整个国标信令部分基于 UDP 协议进行传输。
 开发基于 resiprocate/resiprocate 注册（REGISTER） 注销（REGISTER） 心跳（Keepalive） INVITE 云台控制（PTZ）  GB28181 协议版本 2012 年，GB/T-28181 的第一版标准 国家为了规范安防行业的设备平台互联互通，在 2012 年出台了 GB/T-28181 的第一版标准
-协议对流媒体的规范还是比较好（H.264&#43;G711 封装成 PS 流，再经过 RTP 协议进行实时传输），但是控制方面有很多不足，相对于当前流行的 ONVIF 协议在控制信令上还是有很多不足。"><meta property="og:title" content="GB28181" />
+协议对流媒体的规范还是比较好（H.264 &#43; G711 封装成 PS 流，再经过 RTP 协议进行实时传输），但是控制方面有很多不足，相对于当前流行的 ONVIF 协议在控制信令上还是有很多不足。"><meta property="og:title" content="GB28181" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/" />
@@ -22,7 +22,7 @@ SIP 服务器的 IP 为 192.168.10.10， SIP 服务器的端口为 57030， SIP 
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.ef81cbc0fc991757e8a51a8db342442e3f7b18302b1b8b3f177e8c2acb482fad.js" integrity="sha256-74HLwPyZF1fopRqNs0JELj97GDArG4s/F36MKstIL60="></script>
+<script defer src="/note-cs/en.search.min.7dbb78884985702b8528bbbca851652a05161a83a5241f9efc2bf19c7db86142.js" integrity="sha256-fbt4iEmFcCuFKLu8qFFlKgUWGoOlJB&#43;e/CvxnH24YUI="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/index.xml" title="计算机学习笔记" />
 <!--
@@ -657,6 +657,29 @@ https://github.com/alex-shpak/hugo-book
     
 
   
+  <a href="/note-cs/docs/others/skill/communication/" class="collapsed ">通信技术</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
   <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
   
 
@@ -715,6 +738,16 @@ https://github.com/alex-shpak/hugo-book
   
   <ul>
     
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/gb28181/protocal/" class="">GB28181 协议解析</a>
+  
+
+</li>
+      
+    
   </ul>
   
 
@@ -750,29 +783,6 @@ https://github.com/alex-shpak/hugo-book
     
   </ul>
   
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/communication/" class="collapsed ">通信技术</a>
-  
-
-
-    
-
-
-
 
 
 
@@ -989,12 +999,12 @@ SIP ID 为 34020000002000000001。</p>
 <h2 id="gb28181-协议版本">GB28181 协议版本</h2>
 <h3 id="2012-年gbt-28181-的第一版标准">2012 年，GB/T-28181 的第一版标准</h3>
 <p>国家为了规范安防行业的设备平台互联互通，在 2012 年出台了 GB/T-28181 的第一版标准</p>
-<p>协议对流媒体的规范还是比较好（H.264+G711 封装成 PS 流，再经过 RTP 协议进行实时传输），但是控制方面有很多不足，相对于当前流行的 ONVIF 协议在控制信令上还是有很多不足。</p>
+<p>协议对流媒体的规范还是比较好（<code>H.264 + G711</code> 封装成 PS 流，再经过 RTP 协议进行实时传输），但是控制方面有很多不足，相对于当前流行的 ONVIF 协议在控制信令上还是有很多不足。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525154618.png" alt="" /></p>
 <h3 id="2014-年修改补充文件">2014 年，修改补充文件</h3>
 <p>后续公安一所又感觉 2011 版本的协议不能满足方方面面的信令需求，于是增加了修改补充协议
-这次的补充，完善之前协议各地方说辞有误或是不清晰的地方，还增加了不少的信令需求，如：回放、下载、配置、传输协议、设备控制（拉宽放大、缩小）等待一系列的功能。
-<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525154704.png" alt="" /></p>
+这次的补充，完善之前协议各地方说辞有误或是不清晰的地方，还增加了不少的信令需求，如：回放、下载、配置、传输协议、设备控制（拉宽放大、缩小）等待一系列的功能。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525154704.png" alt="" /></p>
 <h3 id="2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</h3>
 <p>2016 年公安部一所又推出了 GB/T-28181 - 2016 版本，此版本就是对之前的 2011 版和修改补充版进行合并，并增加一些信令，说明制定协议的同志们一直都在努力。</p>
 <p>这次的版本应该算是阶段性的版本了，短时间内应该不会修改了。</p>
@@ -1005,11 +1015,11 @@ SIP ID 为 34020000002000000001。</p>
 </ul>
 <hr>
 <h2 id="gb28181-的协议栈实现">GB28181 的协议栈实现</h2>
-<p>GB/T-28181 协议其实就是在国际上通用的 SIP 协议进行私有化定制，
+<p>GB/T-28181 协议其实就是在国际上通用的 <code>SIP 协议进行私有化定制</code>，
 流媒体方面就是在国际最流行的编码上进行封装（当然也有我们国家的编码标准 <code>SVAC</code>）。</p>
-<p>libosip+libexosip+libxml 来实现 IPC 和平台协议功能，前面两者负责 sip 协议的实现，libxml 用来封装和解析实体信令。通过 3~4 年的市场应用感觉挺稳定的。</p>
-<p>流媒体方面：从编码中获取的 h.264+g711 的视音频帧，进行 PS 媒体协议封装（自己写的 PS 封装协议），再经过 RTP 传输协议（自己实现）发送至平台。</p>
-<p>平台对收到的 RTP 流媒体进行解 RTP, 解 PS，再进行 h.264+g711 的解码。</p>
+<p><code>libosip + libexosip + libxml</code> 来实现 IPC 和平台协议功能，前面两者负责 sip 协议的实现，libxml 用来封装和解析实体信令。通过 3~4 年的市场应用感觉挺稳定的。</p>
+<p>流媒体方面：从编码中获取的 <code>h.264 + g711</code> 的视音频帧，进行 PS 媒体协议封装（自己写的 PS 封装协议），再经过 RTP 传输协议（自己实现）发送至平台。</p>
+<p>平台对收到的 RTP 流媒体进行解 RTP, 解 PS，再进行 <code>h.264 + g711</code> 的解码。</p>
 <hr>
 <h2 id="sip-协议httpswwwwikiwandcomensession_initiation_protocol"><a href="https://www.wikiwand.com/en/Session_Initiation_Protocol">SIP 协议</a></h2>
 <p>会话初始协议</p>
