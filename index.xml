@@ -34,6 +34,16 @@ vesoft-inc/github-statistics  A react static app for displaying github repo stat
     </item>
     
     <item>
+      <title>Quick Start</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/quick-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/quick-start/</guid>
+      <description>Quick Start Mysql Client /etc/my.cnf
+Mysql Server </description>
+    </item>
+    
+    <item>
       <title>Vim 实用技巧（第 2 版）</title>
       <link>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/zh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1164,6 +1174,19 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
     </item>
     
     <item>
+      <title>Quick Start</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/quick-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/quick-start/</guid>
+      <description>Quick Start redis-cli -h host -p port -a password 安装 开机自启 sudo vi /usr/lib/systemd/system/redis.service
+[Unit] Description=Redis persistent key-value database After=network.target After=network-online.target Wants=network-online.target [Service] ExecStart=/usr/bin/redis-server /etc/redis.conf --supervised systemd ExecStop=/usr/libexec/redis-shutdown Type=notify User=redis Group=redis RuntimeDirectory=redis RuntimeDirectoryMode=0755 [Install] WantedBy=multi-user.target 保存退出，执行 sudo systemctl daemon-reload 启动服务 sudo systemctl start redis.service 设置开机自启动 sudo systemctl enable redis.service
+设置密码 打开文件 /etc/redis.conf， 找到其中的 # requirepass foobared，去掉前面的 #， 并把 foobared 改成你的密码。
+ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？ 答案是：可以
+为什么 Redis 默认端口是 6379 6379 在是手机按键上 MERZ 对应的号码，而 MERZ 取自意大利歌女 Alessia Merz 的名字。 MERZ 长期以来被 antirez 及其朋友当作愚蠢的代名词。</description>
+    </item>
+    
+    <item>
       <title>关键字</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/keyword/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1486,8 +1509,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/version/</guid>
-      <description>Docker 版本 查看版本 docker -v
- 版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base.</description>
+      <description>Docker 版本 查看版本 docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base.</description>
     </item>
     
     <item>
@@ -1644,12 +1666,33 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
     </item>
     
     <item>
+      <title>Elasticsearch</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/search/elasticsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/search/elasticsearch/</guid>
+      <description>Elasticsearch Open Source, Distributed, RESTful Search Engine https://www.elastic.co/products/elasticsearch</description>
+    </item>
+    
+    <item>
       <title>Heroku</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</guid>
       <description>Heroku </description>
+    </item>
+    
+    <item>
+      <title>Lucene</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/search/lucene/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/search/lucene/</guid>
+      <description>Lucene https://lucene.apache.org/
+apache/lucene-solr  Apache Lucene is a high-performance, full featured text search engine library written in Java.
+Apache Solr is an enterprise search platform written using Apache Lucene. Major features include full-text search, index replication and sharding, and result faceting and highlighting.
+ 教程 zzboy/lucene  lucene 技术细节</description>
     </item>
     
     <item>
@@ -1857,6 +1900,78 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</guid>
       <description>AppFog </description>
+    </item>
+    
+    <item>
+      <title>Consul</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consul/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consul/</guid>
+      <description>Consul </description>
+    </item>
+    
+    <item>
+      <title>Etcd</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</guid>
+      <description>Etcd </description>
+    </item>
+    
+    <item>
+      <title>Flink</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/flink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/flink/</guid>
+      <description>Flink </description>
+    </item>
+    
+    <item>
+      <title>HBase</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hbase/</guid>
+      <description>HBase </description>
+    </item>
+    
+    <item>
+      <title>HDFS</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hdfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hdfs/</guid>
+      <description>HDFS </description>
+    </item>
+    
+    <item>
+      <title>MapReduce</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/mapreduce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/mapreduce/</guid>
+      <description>MapReduce </description>
+    </item>
+    
+    <item>
+      <title>Spark</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/spark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/spark/</guid>
+      <description>Spark </description>
+    </item>
+    
+    <item>
+      <title>Zookeeper</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</guid>
+      <description>Zookeeper </description>
     </item>
     
     <item>

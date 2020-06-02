@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hadoop on 计算机学习笔记</title>
+    <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/</link>
+    <description>Recent content in Hadoop on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HBase</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hbase/</guid>
+      <description>HBase </description>
+    </item>
+    
+    <item>
+      <title>HDFS</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hdfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hdfs/</guid>
+      <description>HDFS </description>
+    </item>
+    
+    <item>
+      <title>MapReduce</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/mapreduce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/mapreduce/</guid>
+      <description>MapReduce </description>
+    </item>
+    
+  </channel>
+</rss>

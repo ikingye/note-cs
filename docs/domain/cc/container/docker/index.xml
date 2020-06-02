@@ -27,8 +27,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/version/</guid>
-      <description>Docker 版本 查看版本 docker -v
- 版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base.</description>
+      <description>Docker 版本 查看版本 docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base.</description>
     </item>
     
     <item>

@@ -4,7 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Spring Cloud TarsCloud/Tars 国外 Pivotal 公司 2014 年对外开源的 RPC 框架，仅支持 Java 语言。"><meta property="og:title" content="Spring Cloud" />
+<meta name="description" content="Spring Cloud TarsCloud/Tars 国外 Pivotal 公司 2014 年对外开源的 RPC 框架，仅支持 Java 语言。
+ Eureka：各个服务启动时，Eureka Client 都会将服务注册到 Eureka Server，并且 Eureka Client 还可以反过来从 Eureka Server 拉取注册表，从而知道其他服务在哪里 Ribbon：服务间发起请求的时候，基于 Ribbon 做负载均衡，从一个服务的多台机器中选择一台 Feign：基于 Feign 的动态代理机制，根据注解和选择的机器，拼接请求 URL 地址，发起请求 Hystrix：发起请求是通过 Hystrix 的线程池来走的，不同的服务走不同的线程池，实现了不同服务调用的隔离，避免了服务雪崩的问题 Zuul：如果前端、移动端要调用后端系统，统一从 Zuul 网关进入，由 Zuul 网关转发请求给对应的服务  Eureka Eureka 是微服务架构中的注册中心，专门负责服务的注册与发现。
+ Eureka Client：负责将这个服务的信息注册到 Eureka Server 中 Eureka Server：注册中心，里面有一个注册表，保存了各个服务所在的机器和端口号  Feign Feign 的一个关键机制就是使用了动态代理。
+Ribbon 负载均衡
+Ribbon 的负载均衡默认使用的最经典的 Round Robin 轮询算法
+Hystrix Hystrix 是隔离、熔断以及降级的一个框架。
+Hystrix 会搞很多个小小的线程池， 比如订单服务请求库存服务是一个线程池，请求仓储服务是一个线程池，请求积分服务是一个线程池。 每个线程池里的线程就仅仅用于请求那个服务。"><meta property="og:title" content="Spring Cloud" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/" />
@@ -16,7 +22,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.3128b3ca13d29deea836f24573f2b742698d7ed4d2e75cce260b4adf2826998b.js" integrity="sha256-MSizyhPSne6oNvJFc/K3QmmNftTS51zOJgtK3ygmmYs="></script>
+<script defer src="/note-cs/en.search.min.bb3b52123a3d97db3a34190dd8b7074f82a16120f65a5590712a2cfc439619f8.js" integrity="sha256-uztSEjo9l9s6NBkN2LcHT4KhYSD2WlWQcSos/EOWGfg="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/index.xml" title="计算机学习笔记" />
 <!--
@@ -364,6 +370,29 @@ https://github.com/alex-shpak/hugo-book
 
   
   <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索</a>
   
 
 
@@ -1230,7 +1259,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#spring-cloud">Spring Cloud</a></li>
+    <li><a href="#spring-cloud">Spring Cloud</a>
+      <ul>
+        <li><a href="#eureka">Eureka</a></li>
+        <li><a href="#feign">Feign</a></li>
+        <li><a href="#ribbon">Ribbon</a></li>
+        <li><a href="#hystrix">Hystrix</a></li>
+        <li><a href="#zuul">Zuul</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1245,6 +1282,47 @@ https://github.com/alex-shpak/hugo-book
   <article class="markdown"><h1 id="spring-cloud">Spring Cloud</h1>
 <p><a href="https://github.com/TarsCloud/Tars">TarsCloud/Tars</a> <img src="https://img.shields.io/github/stars/TarsCloud/Tars.svg" alt="Github stars" /></p>
 <p>国外 Pivotal 公司 2014 年对外开源的 RPC 框架，仅支持 Java 语言。</p>
+<ul>
+<li>Eureka：各个服务启动时，Eureka Client 都会将服务注册到 Eureka Server，并且 Eureka Client 还可以反过来从 Eureka Server 拉取注册表，从而知道其他服务在哪里</li>
+<li>Ribbon：服务间发起请求的时候，基于 Ribbon 做负载均衡，从一个服务的多台机器中选择一台</li>
+<li>Feign：基于 Feign 的动态代理机制，根据注解和选择的机器，拼接请求 URL 地址，发起请求</li>
+<li>Hystrix：发起请求是通过 Hystrix 的线程池来走的，不同的服务走不同的线程池，实现了不同服务调用的隔离，避免了服务雪崩的问题</li>
+<li>Zuul：如果前端、移动端要调用后端系统，统一从 Zuul 网关进入，由 Zuul 网关转发请求给对应的服务</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528201147.png" alt="" /></p>
+<h2 id="eureka">Eureka</h2>
+<p>Eureka 是微服务架构中的注册中心，专门负责服务的注册与发现。</p>
+<ul>
+<li>Eureka Client：负责将这个服务的信息注册到 Eureka Server 中</li>
+<li>Eureka Server：注册中心，里面有一个注册表，保存了各个服务所在的机器和端口号</li>
+</ul>
+<h2 id="feign">Feign</h2>
+<p>Feign 的一个关键机制就是使用了动态代理。</p>
+<h2 id="ribbon">Ribbon</h2>
+<p>负载均衡</p>
+<p>Ribbon 的负载均衡默认使用的最经典的 <code>Round Robin</code> 轮询算法</p>
+<h2 id="hystrix">Hystrix</h2>
+<p>Hystrix 是隔离、熔断以及降级的一个框架。</p>
+<p>Hystrix 会搞很多个小小的线程池，
+比如订单服务请求库存服务是一个线程池，请求仓储服务是一个线程池，请求积分服务是一个线程池。
+每个线程池里的线程就仅仅用于请求那个服务。</p>
+<p>解决<strong>服务雪崩</strong>：</p>
+<ul>
+<li>
+<p>熔断</p>
+<p>比如在 5 分钟内请求积分服务直接就返回了，不要去走网络请求卡住几秒钟。
+这个过程，就是所谓的熔断！</p>
+</li>
+<li>
+<p>降级</p>
+<p>每次调用积分服务，你就在数据库里记录一条消息，说给某某用户增加了多少积分，因为积分服务挂了，导致没增加成功！这样等积分服务恢复了，你可以根据这些记录手工加一下积分。
+这个过程，就是所谓的降级。</p>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528200848.png" alt="" /></p>
+<h2 id="zuul">Zuul</h2>
+<p>微服务网关</p>
+<p>可以做统一的降级、限流、认证授权、安全等等</p>
 </article>
  
       
@@ -1294,7 +1372,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#spring-cloud">Spring Cloud</a></li>
+    <li><a href="#spring-cloud">Spring Cloud</a>
+      <ul>
+        <li><a href="#eureka">Eureka</a></li>
+        <li><a href="#feign">Feign</a></li>
+        <li><a href="#ribbon">Ribbon</a></li>
+        <li><a href="#hystrix">Hystrix</a></li>
+        <li><a href="#zuul">Zuul</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
