@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="GB28181 协议解析 名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
+<meta name="description" content="GB28181 协议解析 点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
+名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
 SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
 联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
 SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
 注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
-中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。
-组成中心信令控制的逻辑实体包括代理服务器、注册服务器、重定向服务器、背靠背用户代理等的一种或者几种，是负责核心 SIP 信令应用处理的 SIP 服务器。"><meta property="og:title" content="GB28181 协议解析" />
-<meta property="og:description" content="GB28181 协议解析 名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
+中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。"><meta property="og:title" content="GB28181 协议解析" />
+<meta property="og:description" content="GB28181 协议解析 点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
+名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
 SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
 联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
 SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
 注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
-中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。
-组成中心信令控制的逻辑实体包括代理服务器、注册服务器、重定向服务器、背靠背用户代理等的一种或者几种，是负责核心 SIP 信令应用处理的 SIP 服务器。" />
+中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/" />
 <meta property="article:modified_time" content="2020-06-03T00:57:48+08:00" />
@@ -28,7 +28,7 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.f206785c870c8cddca3f029da7b538f4a78ac8131325830f65b7b6f5d8762506.js" integrity="sha256-8gZ4XIcMjN3KPwKdp7U49KeKyBMTJYMPZbe29dh2JQY="></script>
+<script defer src="/note-cs/en.search.min.36a4c944e971977602cead5998a81d27d6595f8e14bfcfcc9f98585ea06793b8.js" integrity="sha256-NqTJROlxl3YCzq1ZmKgdJ9ZZX44Uv8/Mn5hYXqBnk7g="></script>
 
 <!--
 Made with Book Theme
@@ -753,6 +753,26 @@ https://github.com/alex-shpak/hugo-book
 </li>
       
     
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/gb28181/sdp/" class="">SDP</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/gb28181/sip/" class="">SIP</a>
+  
+
+</li>
+      
+    
   </ul>
   
 
@@ -965,6 +985,7 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="gb28181-协议解析">GB28181 协议解析</h1>
+<p>点击在线查看标准完整文本： <a href="http://c.gb688.cn/bzgk/gb/showGb?type=online&amp;hcno=469659DC56B9B8187671FF08748CEC89">公共安全视频监控联网系统信息传输、交换、控制技术要求。</a></p>
 <h2 id="名词解释">名词解释</h2>
 <h3 id="sip-服务器">SIP 服务器</h3>
 <h3 id="sip-client">SIP client</h3>

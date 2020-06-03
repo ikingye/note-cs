@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="实践 "><meta property="og:title" content="实践" />
+<meta name="description" content="实践  注意点 用 SET, 别用 SETNX, SETEX, PSETEX Since the SET command options can replace SETNX, SETEX, PSETEX, it is possible that in future versions of Redis these three commands will be deprecated and finally removed."><meta property="og:title" content="实践" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/practice/" />
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.f206785c870c8cddca3f029da7b538f4a78ac8131325830f65b7b6f5d8762506.js" integrity="sha256-8gZ4XIcMjN3KPwKdp7U49KeKyBMTJYMPZbe29dh2JQY="></script>
+<script defer src="/note-cs/en.search.min.36a4c944e971977602cead5998a81d27d6595f8e14bfcfcc9f98585ea06793b8.js" integrity="sha256-NqTJROlxl3YCzq1ZmKgdJ9ZZX44Uv8/Mn5hYXqBnk7g="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/practice/index.xml" title="计算机学习笔记" />
 <!--
@@ -1323,7 +1323,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#实践">实践</a></li>
+    <li><a href="#实践">实践</a>
+      <ul>
+        <li><a href="#注意点">注意点</a>
+          <ul>
+            <li><a href="#用-sethttpsredisiocommandsset-别用-setnx-setex-psetex">用 <a href="https://redis.io/commands/set">SET</a>, 别用 <code>SETNX, SETEX, PSETEX</code></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1336,6 +1344,11 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="实践">实践</h1>
+<hr>
+<h2 id="注意点">注意点</h2>
+<h3 id="用-sethttpsredisiocommandsset-别用-setnx-setex-psetex">用 <a href="https://redis.io/commands/set">SET</a>, 别用 <code>SETNX, SETEX, PSETEX</code></h3>
+<p>Since the <code>SET</code> command options can replace <code>SETNX, SETEX, PSETEX</code>,
+it is possible that in future versions of Redis these three commands will be deprecated and finally removed.</p>
 </article>
  
       
@@ -1385,7 +1398,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#实践">实践</a></li>
+    <li><a href="#实践">实践</a>
+      <ul>
+        <li><a href="#注意点">注意点</a>
+          <ul>
+            <li><a href="#用-sethttpsredisiocommandsset-别用-setnx-setex-psetex">用 <a href="https://redis.io/commands/set">SET</a>, 别用 <code>SETNX, SETEX, PSETEX</code></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

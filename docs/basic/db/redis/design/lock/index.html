@@ -8,12 +8,14 @@
 -- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&#39;get&#39;, KEYS[1]) == ARGV[1] then -- 执行删除操作 return redis.call(&#39;del&#39;, KEYS[1]) else -- 不成功，返回0 return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
 就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。
 那么既然这么麻烦，有没有比较好的工具呢？就要说到 redisson 了。
-redLock redisson "><meta property="og:title" content="锁" />
+redLock 并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。
+redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。"><meta property="og:title" content="锁" />
 <meta property="og:description" content="锁 setnx  setnx msetnx hsetnx  SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL] 那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：
 -- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&#39;get&#39;, KEYS[1]) == ARGV[1] then -- 执行删除操作 return redis.call(&#39;del&#39;, KEYS[1]) else -- 不成功，返回0 return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
 就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。
 那么既然这么麻烦，有没有比较好的工具呢？就要说到 redisson 了。
-redLock redisson " />
+redLock 并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。
+redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/db/redis/design/lock/" />
 <meta property="article:modified_time" content="2020-06-03T15:20:10+08:00" />
@@ -24,7 +26,7 @@ redLock redisson " />
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.f206785c870c8cddca3f029da7b538f4a78ac8131325830f65b7b6f5d8762506.js" integrity="sha256-8gZ4XIcMjN3KPwKdp7U49KeKyBMTJYMPZbe29dh2JQY="></script>
+<script defer src="/note-cs/en.search.min.36a4c944e971977602cead5998a81d27d6595f8e14bfcfcc9f98585ea06793b8.js" integrity="sha256-NqTJROlxl3YCzq1ZmKgdJ9ZZX44Uv8/Mn5hYXqBnk7g="></script>
 
 <!--
 Made with Book Theme
@@ -1372,7 +1374,10 @@ https://github.com/alex-shpak/hugo-book
 <p>就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。</p>
 <p>那么既然这么麻烦，有没有比较好的工具呢？就要说到 <code>redisson</code> 了。</p>
 <h2 id="redlock">redLock</h2>
+<p>并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。</p>
 <h2 id="redisson">redisson</h2>
+<p>Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。</p>
+<p>redisson 就实现了 redLock 版本的锁。也就是说除了 getLock 方法，还有 getRedLock 方法。</p>
 </article>
  
       
