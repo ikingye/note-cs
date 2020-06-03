@@ -54,7 +54,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.7dbb78884985702b8528bbbca851652a05161a83a5241f9efc2bf19c7db86142.js" integrity="sha256-fbt4iEmFcCuFKLu8qFFlKgUWGoOlJB&#43;e/CvxnH24YUI="></script>
+<script defer src="/note-cs/en.search.min.16bd55b4a75d3d4ea8f7db3b26a8e2c63569030131ec62fac0a62792d8178f35.js" integrity="sha256-Fr1VtKddPU6o99s7JqjixjVpAwEx7GL6wKYnktgXjzU="></script>
 
 <!--
 Made with Book Theme
@@ -385,295 +385,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第一部分 基础入门</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/java/basic/grammar/" class="">基本语法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/basic/pl/java/basic/grammar/keyword/" class="">关键字</a>
-  
-
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/basic/pl/java/basic/grammar/datastruct/" class="">数据结构</a>
-  
-
-</li>
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/java/basic/practice/" class="">实践</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/java/basic/practice/spec/" class="collapsed ">编程规范</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/basic/pl/java/basic/practice/package/" class="">常用 package</a>
-  
-
-</li>
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 设计</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 源码实现</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 附录</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/basic/pl/java/appendix/tutorial/" class="">教程</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/java/appendix/interview/" class="collapsed ">面试题</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/java/appendix/snippet/" class="collapsed ">代码片段</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
 
 
 
@@ -2073,15 +1784,15 @@ https://github.com/alex-shpak/hugo-book
 <p>示例：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#75715e">// good
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">files</span>: <span style="color:#66d9ef">string</span>[];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tokens</span>: <span style="color:#66d9ef">Array</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">string</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">number</span><span style="color:#f92672">&gt;</span>;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tokens</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">string</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">number</span>&gt;;
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">buffer</span>: <span style="color:#66d9ef">Buffer</span>[];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">responses</span>: <span style="color:#66d9ef">Array</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Promise</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">number</span><span style="color:#f92672">&gt;&gt;</span>;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">responses</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">Promise</span><span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#a6e22e">number</span>&gt;<span style="color:#f92672">&gt;</span>;
 
 <span style="color:#75715e">// bad
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">files</span>: <span style="color:#66d9ef">Array</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">string</span><span style="color:#f92672">&gt;</span>;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">files</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">string</span>&gt;;
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tokens</span><span style="color:#f92672">:</span> (<span style="color:#66d9ef">string</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">number</span>)[];
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">buffer</span>: <span style="color:#66d9ef">Array</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Buffer</span><span style="color:#f92672">&gt;</span>;
-<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">responses</span>: <span style="color:#66d9ef">Promise</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">number</span><span style="color:#f92672">&gt;</span>[];
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">buffer</span>: <span style="color:#66d9ef">Array</span>&lt;<span style="color:#f92672">Buffer</span>&gt;;
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">responses</span>: <span style="color:#66d9ef">Promise</span>&lt;<span style="color:#f92672">number</span>&gt;[];
 </code></pre></div><h5 id="强制-不使用--声明对象属性非空">[强制] 不使用 <code>!</code> 声明对象属性非空。</h5>
 <p>示例：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#75715e">// good
@@ -2096,7 +1807,7 @@ https://github.com/alex-shpak/hugo-book
 </code></pre></div><h5 id="建议-不使用-any-声明类型">[建议] 不使用 <code>any</code> 声明类型。</h5>
 <p>示例：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#75715e">// good
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">identity</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">T</span><span style="color:#f92672">&gt;</span>(<span style="color:#a6e22e">x</span>: <span style="color:#66d9ef">T</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">x</span>;
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">identity</span> <span style="color:#f92672">=</span> &lt;<span style="color:#f92672">T</span>&gt;(<span style="color:#a6e22e">x</span>: <span style="color:#66d9ef">T</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">x</span>;
 
 <span style="color:#75715e">// bad
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">identity</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span>: <span style="color:#66d9ef">any</span>) <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">x</span>;
@@ -2106,7 +1817,7 @@ https://github.com/alex-shpak/hugo-book
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">root</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;root&#34;</span>) <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">HTMLDivElement</span>;
 
 <span style="color:#75715e">// bad
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">root</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">HTMLDivElement</span><span style="color:#f92672">&gt;</span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;root&#34;</span>);
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">root</span> <span style="color:#f92672">=</span> &lt;<span style="color:#f92672">HTMLDivElement</span>&gt;document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;root&#34;</span>);
 </code></pre></div><h5 id="强制-接口不应为空">[强制] 接口不应为空。</h5>
 <h5 id="强制-接口中同一函数重载的类型声明需相邻">[强制] 接口中同一函数重载的类型声明需相邻。</h5>
 <p>示例：</p>
@@ -2216,7 +1927,7 @@ https://github.com/alex-shpak/hugo-book
 <h5 id="建议-类成员之间使用空行隔开">[建议] 类成员之间使用空行隔开。</h5>
 <p>示例：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#75715e">// good
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Button</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">PureComponent</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ButtonProps</span>, <span style="color:#a6e22e">ButtonState</span><span style="color:#f92672">&gt;</span> {
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Button</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">PureComponent</span>&lt;<span style="color:#f92672">ButtonProps</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ButtonState</span>&gt; {
   <span style="color:#a6e22e">readonly</span> <span style="color:#a6e22e">state</span>: <span style="color:#66d9ef">ButtonState</span> <span style="color:#f92672">=</span> {
     <span style="color:#a6e22e">clicked</span>: <span style="color:#66d9ef">false</span>
   };
@@ -2227,7 +1938,7 @@ https://github.com/alex-shpak/hugo-book
 }
 
 <span style="color:#75715e">// bad
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Button</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">PureComponent</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">ButtonProps</span>, <span style="color:#a6e22e">ButtonState</span><span style="color:#f92672">&gt;</span> {
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Button</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">PureComponent</span>&lt;<span style="color:#f92672">ButtonProps</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">ButtonState</span>&gt; {
   <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">state</span>: <span style="color:#66d9ef">ButtonState</span> <span style="color:#f92672">=</span> {
     <span style="color:#a6e22e">clicked</span>: <span style="color:#66d9ef">false</span>
   };
@@ -2290,8 +2001,8 @@ https://github.com/alex-shpak/hugo-book
 
 
 <span style="color:#75715e">// bad
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">any</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;./Button.scss&#39;</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">logo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">string</span><span style="color:#f92672">&gt;</span>(<span style="color:#e6db74">&#39;./logo.png&#39;</span>);
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>&lt;<span style="color:#f92672">any</span>&gt;(<span style="color:#e6db74">&#39;./Button.scss&#39;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">logo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>&lt;<span style="color:#f92672">string</span>&gt;(<span style="color:#e6db74">&#39;./logo.png&#39;</span>);
 </code></pre></div></article>
  
       
