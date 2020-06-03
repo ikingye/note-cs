@@ -4,11 +4,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="git submodule "><meta property="og:title" content="submodule" />
-<meta property="og:description" content="git submodule " />
+<meta name="description" content="git submodule 拉取 submodule git submodule init git submodule update --remote git submodule add -b 参考：
+ How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url  edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
+delete submodule  Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add ."><meta property="og:title" content="submodule" />
+<meta property="og:description" content="git submodule 拉取 submodule git submodule init git submodule update --remote git submodule add -b 参考：
+ How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url  edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
+delete submodule  Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/tool/dev/git/submodule/" />
-
+<meta property="article:modified_time" content="2020-06-03T15:20:10+08:00" />
 <title>submodule | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -16,7 +20,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.16bd55b4a75d3d4ea8f7db3b26a8e2c63569030131ec62fac0a62792d8178f35.js" integrity="sha256-Fr1VtKddPU6o99s7JqjixjVpAwEx7GL6wKYnktgXjzU="></script>
+<script defer src="/note-cs/en.search.min.f206785c870c8cddca3f029da7b538f4a78ac8131325830f65b7b6f5d8762506.js" integrity="sha256-8gZ4XIcMjN3KPwKdp7U49KeKyBMTJYMPZbe29dh2JQY="></script>
 
 <!--
 Made with Book Theme
@@ -1036,7 +1040,14 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#git-submodule">git submodule</a></li>
+    <li><a href="#git-submodule">git submodule</a>
+      <ul>
+        <li><a href="#拉取-submodule">拉取 submodule</a></li>
+        <li><a href="#git-submodule-add--b"><code>git submodule add -b</code></a></li>
+        <li><a href="#submodule-修改-url">submodule 修改 url</a></li>
+        <li><a href="#delete-submodule">delete submodule</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1049,6 +1060,31 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="git-submodule">git submodule</h1>
+<h2 id="拉取-submodule">拉取 submodule</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git submodule init
+git submodule update --remote
+</code></pre></div><h2 id="git-submodule-add--b"><code>git submodule add -b</code></h2>
+<p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/1777854/how-can-i-specify-a-branch-tag-when-adding-a-git-submodule">How can I specify a branch/tag when adding a Git submodule?</a></li>
+</ul>
+<h2 id="submodule-修改-url">submodule 修改 url</h2>
+<ul>
+<li>edit the <code>.gitmodules</code> file to update the URL</li>
+<li><code>git submodule sync</code></li>
+</ul>
+<p>参考：
+<a href="https://stackoverflow.com/questions/913701/how-to-change-the-remote-repository-for-a-git-submodule">How to change the remote repository for a git submodule?</a></p>
+<h2 id="delete-submodule">delete submodule</h2>
+<ul>
+<li>Delete the relevant section from the .gitmodules file.</li>
+<li>Stage the .gitmodules changes <code>git add .gitmodules</code></li>
+<li>Delete the relevant section from <code>.git/config</code>.</li>
+<li>Run <code>git rm --cached path_to_submodule</code> (no trailing slash).</li>
+<li>Run <code>rm -rf .git/modules/path_to_submodule</code> (no trailing slash).</li>
+<li>Commit git commit -m &ldquo;Removed submodule &quot;</li>
+<li>Delete the now untracked submodule files <code>rm -rf path_to_submodule</code></li>
+</ul>
 </article>
  
       
@@ -1058,6 +1094,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/ae0077155fefd33f90920186b2ab63d247fdda77" title='Last modified by yewang | 2020-06-03' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-06-03</span>
+    </a>
+  </div>
 
 
 
@@ -1090,7 +1134,14 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#git-submodule">git submodule</a></li>
+    <li><a href="#git-submodule">git submodule</a>
+      <ul>
+        <li><a href="#拉取-submodule">拉取 submodule</a></li>
+        <li><a href="#git-submodule-add--b"><code>git submodule add -b</code></a></li>
+        <li><a href="#submodule-修改-url">submodule 修改 url</a></li>
+        <li><a href="#delete-submodule">delete submodule</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

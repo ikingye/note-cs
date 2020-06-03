@@ -15,7 +15,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/submodule/</guid>
-      <description>git submodule </description>
+      <description>git submodule 拉取 submodule git submodule init git submodule update --remote git submodule add -b 参考：
+ How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url  edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
+delete submodule  Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .</description>
     </item>
     
   </channel>
