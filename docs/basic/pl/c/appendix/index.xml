@@ -9,5 +9,15 @@
 	<atom:link href="https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</guid>
+      <description>关注 torvalds/linux  Linux kernel source tree
+antirez/redis  Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps. http://redis.io</description>
+    </item>
+    
   </channel>
 </rss>

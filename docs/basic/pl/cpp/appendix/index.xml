@@ -18,5 +18,16 @@
       <description>教程 基础  learn c++ in y minutes  进阶 高阶 综合  C++ 后台开发有哪些练基础的开源项目？  yedf/handy     </description>
     </item>
     
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/attention/</guid>
+      <description>关注 google/glog  C++ implementation of the Google logging module
+gRPC  gRPC is a modern, open source, high-performance remote procedure call (RPC) framework that can run anywhere. gRPC enables client and server applications to communicate transparently, and simplifies the building of connected systems.
+grpc.io</description>
+    </item>
+    
   </channel>
 </rss>

@@ -49,15 +49,6 @@ Mysql Server </description>
     </item>
     
     <item>
-      <title>关键字</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/grammar/keyword/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/grammar/keyword/</guid>
-      <description>Java 关键字 </description>
-    </item>
-    
-    <item>
       <title>快速上手</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/quick-start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -139,20 +130,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/java/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/appendix/tutorial/</guid>
-      <description>Java 教程 基础  进阶 doocs/advanced-java  互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识，后端同学必看，前端同学也可学习 https://doocs.github.io/advanced-java
-Snailclimb/JavaGuide  【Java 学习 + 面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。
-Effective Java  第 3 版中文版：sjsdfg.github.io/effective-java-3rd-chinese   Java 编程思想  第 5 版中文版：lingcoder.github.io/OnJava8   redspider1/concurrent  Java 多线程系列文章 在线阅读
-高阶 源码阅读 seaswalker/spring-analysis  Spring 源码阅读
-seaswalker/JDK  JDK 源码阅读笔记
- 综合 博客  farmerjohngit/myblog    sorenduan/awesome-java-books  Java 技术书籍大全</description>
     </item>
     
     <item>
@@ -239,15 +216,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</guid>
       <description>百度 C++ 编程规范 </description>
-    </item>
-    
-    <item>
-      <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/practice/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/practice/spec/baidu/</guid>
-      <description>百度 Java 编码规范 V1.3 </description>
     </item>
     
     <item>
@@ -587,24 +555,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>常用 package</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/practice/package/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/practice/package/</guid>
-      <description>Java 常用 package </description>
-    </item>
-    
-    <item>
-      <title>数据结构</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/grammar/datastruct/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/basic/grammar/datastruct/</guid>
-      <description>Java 语言数据结构 </description>
     </item>
     
     <item>
@@ -2082,6 +2032,27 @@ Bilibili - 机器学习白板系列
  [video]机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
  ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
  fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库</description>
+    </item>
+    
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</guid>
+      <description>关注 torvalds/linux  Linux kernel source tree
+antirez/redis  Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps. http://redis.io</description>
+    </item>
+    
+    <item>
+      <title>关注</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/attention/</guid>
+      <description>关注 google/glog  C++ implementation of the Google logging module
+gRPC  gRPC is a modern, open source, high-performance remote procedure call (RPC) framework that can run anywhere. gRPC enables client and server applications to communicate transparently, and simplifies the building of connected systems.
+grpc.io</description>
     </item>
     
     <item>
