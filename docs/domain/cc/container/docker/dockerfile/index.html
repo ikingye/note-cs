@@ -18,7 +18,7 @@ Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生�
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.a6e253ea8ed463b83a1c89375f503dceb84c1d28ccffa2fa9f3c076963950d64.js" integrity="sha256-puJT6o7UY7g6HIk3X1A9zrhMHSjM/6L6nzwHaWOVDWQ="></script>
+<script defer src="/note-cs/en.search.min.3f977bc1e47ed44aeb2ba7a18688e49297a8cd1486c653f7cf4a8ef5b80fc0ae.js" integrity="sha256-P5d7weR&#43;1ErrK6ehhojkkpeozRSGxlP3z0qO9bgPwK4="></script>
 
 <!--
 Made with Book Theme
@@ -1422,7 +1422,8 @@ CMD <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;npm&#34
 </li>
 <li>
 <p>在 entrypoint 脚本中使用 exec</p>
-<p>在前文的 entrypoint 脚本中，我使用了 exec 命令运行 node 应用。不使用 exec 的话，我们则不能顺利地关闭容器，因为 SIGTERM 信号会被 bash 脚本进程吞没。exec 命令启动的进程可以取代脚本进程，因此所有的信号都会正常工作。</p>
+<p>在前文的 entrypoint 脚本中，我使用了 exec 命令运行 node 应用。
+不使用 exec 的话，我们则不能顺利地关闭容器，因为 <code>SIGTERM</code> 信号会被 bash 脚本进程吞没。exec 命令启动的进程可以取代脚本进程，因此所有的信号都会正常工作。</p>
 </li>
 </ul>
 <ul>
