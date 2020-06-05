@@ -30,7 +30,9 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sdp/</guid>
-      <description>SDP 媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
+      <description>SDP Session Description Protocol
+SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。
+媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
 SDP 协议的具体内容参看：RFC2327</description>
     </item>
     
@@ -42,6 +44,15 @@ SDP 协议的具体内容参看：RFC2327</description>
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/</guid>
       <description>SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n </description>
+    </item>
+    
+    <item>
+      <title>源码实现</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</guid>
+      <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段  </description>
     </item>
     
   </channel>
