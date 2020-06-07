@@ -116,20 +116,20 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</guid>
       <description>教程 基础  learn c++ in y minutes  进阶 高阶 综合  C++ 后台开发有哪些练基础的开源项目？  yedf/handy     </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
@@ -207,6 +207,15 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>最佳实践</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c#/basic/practice/best/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c#/basic/practice/best/</guid>
+      <description>C# 最佳实践 </description>
     </item>
     
     <item>
@@ -361,6 +370,15 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     
     <item>
       <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -374,15 +392,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -558,6 +567,15 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     </item>
     
     <item>
+      <title>常用库</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c#/basic/lib/common/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c#/basic/lib/common/</guid>
+      <description>常用库 </description>
+    </item>
+    
+    <item>
       <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -631,6 +649,15 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     
     <item>
       <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -648,15 +675,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
 class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound(){ //...  } }; 因为 C++ 的编译与链接模型是 &amp;ldquo;分离&amp;rdquo; 的 (至少是部分原因吧)。
 从 Unix/C 开始，一个 C/C++ 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。 一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。 同时，virtual function 的实现大多利用了一个 &amp;ldquo;虚函数表&amp;rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。 所以，由上面的矛盾可知，C++ 的 member function 不能既是 template 又是 virtual 的。
 参考：https://www.zhihu.com/question/60911582/answer/182045051</description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
     </item>
     
     <item>
@@ -913,6 +931,15 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
     
     <item>
       <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -926,15 +953,6 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
@@ -1392,11 +1410,11 @@ delete submodule  Delete the relevant section from the .gitmodules file. Stage t
     
     <item>
       <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife </description>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c#/appendix/attention/</guid>
+      <description>关注 其他 dotnet/runtime </description>
     </item>
     
     <item>
