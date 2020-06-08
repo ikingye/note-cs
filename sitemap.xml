@@ -1802,6 +1802,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/dotnet/asp/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/nodejs/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -1892,6 +1896,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/doc/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/</loc>
     <lastmod>2020-05-27T15:10:02+08:00</lastmod>
   </url>
@@ -1969,6 +1977,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/debug/lldb/tutorial/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/multipass/</loc>
   </url>
   
   <url>
