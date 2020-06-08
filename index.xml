@@ -1209,13 +1209,16 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</guid>
-      <description>GoLand 快捷键 查询  当前文件查询 cmd + F 当前文件替换 cmd + R 所有文件查询 shift + cmd + F 所有文件替换 shift + cmd + R    复制当前行内容到下一行 cmd + D
+      <description>GoLand 快捷键 查询   函数列表 cmd + f12
+  当前文件查询 cmd + F
+  当前文件替换 cmd + R
+  所有文件查询 shift + cmd + F
+  所有文件替换 shift + cmd + R
+    复制当前行内容到下一行 cmd + D
   删除当前行 cmd + delete
   格式化代码 option + cmd + L
   跳转   指定行 cmd + L
-  指定文件 shift + cmd + O
-  在当前行下一行增加空行 shift + enter
-  在当前行上一行增加空行 option + cmd + enter</description>
+  指定文件 shift + cmd + O</description>
     </item>
     
     <item>
