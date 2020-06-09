@@ -1282,10 +1282,10 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
     
     <item>
       <title>CAP</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/principle/cap/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/cap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/principle/cap/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/cap/</guid>
       <description>CAP P 是前提 在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个 distributed data store 来说，不可能同时满足以下三点：
  一致性（Consistency）  每次读取要么获得最近写入的数据，要么获得一个错误。   可用性（Availability）  每次请求都能获得一个非错误响应，但不保证返回的是最新写入的数据。   分区容错性（Partition tolerance）  以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。 尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。    一般选 AP 也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。
 比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，
@@ -1452,10 +1452,10 @@ dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building 
     
     <item>
       <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/attention/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/circuit-breaker/attention/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</guid>
       <description>关注 其他 resilience4j/resilience4j ehcache/ehcache3  ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库， ehcache 提供了用内存，磁盘文件存储，以及分布式存储方式等多种灵活的 cache 管理方案。 http://www.ehcache.org
 Netflix/Hystrix Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
 Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。</description>
@@ -1628,10 +1628,10 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
     
     <item>
       <title>ACID</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/principle/acid/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/acid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/principle/acid/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/acid/</guid>
       <description>ACID  In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
   ACID，是指数据库管理系统（DBMS）在写入或更新资料的过程中，为保证事务（transaction）是正确可靠的，所必须具备的四个特性：
  原子性（Atomicity 又称不可分割性）  一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。   一致性（Consistency）  在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。   隔离性（Isolation，又称独立性）  数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括未提交读（Read uncommitted）、提交读（read committed）、可重复读（repeatable read）和串行化（Serializable）。   持久性（Durability）  事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。     ACID 是追求 CAP 的一致性 </description>
@@ -1649,10 +1649,10 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
     
     <item>
       <title>BASE</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/principle/base/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/principle/base/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/base/</guid>
       <description>BASE Basically Available, Soft state, Eventual consistency
 BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。
 基本可用  流量削峰  在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值   延迟响应  在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果   体验降级  比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。   过载保护  把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。    最终的一致  读时修复：在读取数据时，检测数据的不一致，进行修复。  比如 Cassandra 的 Read Repair 实现，具体来说，在向 Cassandra 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。   写时修复：在写入数据，检测数据的不一致时，进行修复。  比如 Cassandra 的 Hinted Handoff 实现。具体来说，Cassandra 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。 写时修复不需要做数据一致性对比，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。   异步修复：这个是最常用的方式，通过定时对账检测副本数据的一致性，并修复。   BASE 是追求 CAP 的可用性 </description>
@@ -1822,10 +1822,10 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
     
     <item>
       <title>A/B 测试</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/ab-testing/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/ab-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/ab-testing/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/ab-testing/</guid>
       <description>A/B 测试 A/B testing
  参考 </description>
     </item>
@@ -1880,10 +1880,10 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     
     <item>
       <title>金丝雀发布</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/canary-rollouts/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/canary-rollouts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/release/canary-rollouts/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/canary-rollouts/</guid>
       <description>金丝雀发布 canary rollouts
  参考 </description>
     </item>
@@ -2147,10 +2147,10 @@ https://d7y.io</description>
     
     <item>
       <title>缓存</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/scene/cache/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/cache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/scene/cache/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/cache/</guid>
       <description>缓存 热点数据集中失效问题
  设置不同的失效时间 互斥锁  缓存穿透 查询不存在的数据
 缓存雪崩 当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
@@ -2162,10 +2162,10 @@ https://d7y.io</description>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/arch/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/arch/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/tutorial/</guid>
       <description>教程 基础 系统设计入门  学习如何设计可扩展的系统将会有助于你成为一个更好的工程师。
 系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
 这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
@@ -2201,10 +2201,7 @@ Under the hood DIND or Docker-in-Docker is used to give the effect of multiple V
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/tutorial/</guid>
-      <description>教程 基础 系统设计入门  学习如何设计可扩展的系统将会有助于你成为一个更好的工程师。
-系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
-这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
- 进阶 </description>
+      <description>教程 基础  进阶 </description>
     </item>
     
     <item>
@@ -2265,7 +2262,7 @@ SDP 作用 SDP 作用包括以下一些方面
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</guid>
-      <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段  </description>
+      <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段   开源实现 go  StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  gossip go-sip sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C  pjsip/pjproject   C#  GB28181/GB28181.Solution   C++  ossrs/srs  xiongziliang/ZLMediaKit   Node.js  kirm/sip.js   二进制（前端开源，后端不开源）  livegbs/GB28181-Server   </description>
     </item>
     
     <item>

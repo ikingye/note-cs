@@ -67,7 +67,7 @@ SDP 作用 SDP 作用包括以下一些方面
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</guid>
-      <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段  </description>
+      <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段   开源实现 go  StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  gossip go-sip sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C  pjsip/pjproject   C#  GB28181/GB28181.Solution   C++  ossrs/srs  xiongziliang/ZLMediaKit   Node.js  kirm/sip.js   二进制（前端开源，后端不开源）  livegbs/GB28181-Server   </description>
     </item>
     
   </channel>
