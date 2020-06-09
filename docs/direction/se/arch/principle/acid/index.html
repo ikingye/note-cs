@@ -12,7 +12,7 @@
  原子性（Atomicity 又称不可分割性）  一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。   一致性（Consistency）  在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。   隔离性（Isolation，又称独立性）  数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括未提交读（Read uncommitted）、提交读（read committed）、可重复读（repeatable read）和串行化（Serializable）。   持久性（Durability）  事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。     ACID 是追求 CAP 的一致性 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/acid/" />
-
+<meta property="article:modified_time" content="2020-06-09T20:36:07+08:00" />
 <title>ACID | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.7b44da7a32d5c6165b0edcab1d7054586d487c9182266d0b76252c816f4d6b32.js" integrity="sha256-e0TaejLVxhZbDtyrHXBUWG1IfJGCJm0LdiUsgW9NazI="></script>
+<script defer src="/note-cs/en.search.min.157076e3c35373c69432620b95ca02d2009f3b5bd912a62935ebe0b6eb095a61.js" integrity="sha256-FXB248NTc8aUMmILlcoC0gCfO1vZEqYpNevgtusJWmE="></script>
 
 <!--
 Made with Book Theme
@@ -993,6 +993,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b8b77cebc8b57eaaaa4f3fad7eea51ae1907e6a4" title='Last modified by yewang | 2020-06-09' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-06-09</span>
+    </a>
+  </div>
 
 
 
