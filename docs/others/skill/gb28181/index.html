@@ -22,7 +22,7 @@ SIP 服务器的 IP 为 192.168.10.10， SIP 服务器的端口为 57030， SIP 
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.46120bdb5f37c3a1887482871ef3c43439e100f4dc649faa39dc380c97848c58.js" integrity="sha256-RhIL2183w6GIdIKHHvPENDnhAPTcZJ&#43;qOdw4DJeEjFg="></script>
+<script defer src="/note-cs/en.search.min.8eca9f845903f4db0295b8f3260a884c7d9ce5e5295fa5de75665e6a8798a3df.js" integrity="sha256-jsqfhFkD9NsClbjzJgqITH2c5eUpX6XedWZeaoeYo98="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/index.xml" title="计算机学习笔记" />
 <!--
@@ -1023,9 +1023,12 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#pjsiphttpswwwpjsiporg"><a href="https://www.pjsip.org/">pjsip</a></a></li>
         <li><a href="#开源实现">开源实现</a>
           <ul>
-            <li><a href="#标准">标准</a></li>
-            <li><a href="#服务端">服务端</a></li>
-            <li><a href="#客户端">客户端</a></li>
+            <li><a href="#go">go</a></li>
+            <li><a href="#c">C</a></li>
+            <li><a href="#c-1"><code>C#</code></a></li>
+            <li><a href="#c-2">C++</a></li>
+            <li><a href="#nodejs">Node.js</a></li>
+            <li><a href="#二进制前端开源后端不开源">二进制（前端开源，后端不开源）</a></li>
           </ul>
         </li>
       </ul>
@@ -1117,22 +1120,48 @@ SIP ID 为 34020000002000000001。</p>
 <p>PJSIP 由 Benny Prijono、Perry Ismangil 在 2005 年创建，之后不久，Nanang Izzuddin、Sauw Ming 加入开发团队。2006 年成立 Teluu Ltd.，成为开发和维护 PJSIP 的公司。PJSIP 采用双 License：GPLv2 以及商业许可证，开发者可以根据需要选择不同的 License。</p>
 <hr>
 <h2 id="开源实现">开源实现</h2>
-<h3 id="标准">标准</h3>
+<h3 id="go">go</h3>
+<ul>
+<li><a href="https://github.com/StefanKopieczek/gossip">StefanKopieczek/gossip</a> <img src="https://img.shields.io/github/stars/StefanKopieczek/gossip.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/rainliu/gosips">rainliu/gosips</a> <img src="https://img.shields.io/github/stars/rainliu/gosips.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/1lann/go-sip">1lann/go-sip</a> <img src="https://img.shields.io/github/stars/1lann/go-sip.svg" alt="Github stars" /></li>
+<li><a href="https://github.com/ghettovoice/gosip">ghettovoice/gosip</a> <img src="https://img.shields.io/github/stars/ghettovoice/gosip.svg" alt="Github stars" />
+Inspired by:
+<ul>
+<li><a href="https://github.com/StefanKopieczek/gossip">gossip</a></li>
+<li><a href="https://github.com/1lann/go-sip">go-sip</a></li>
+<li><a href="https://github.com/kirm/sip.js">sip.js</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/cloudwebrtc/go-sip-ua">cloudwebrtc/go-sip-ua</a> <img src="https://img.shields.io/github/stars/cloudwebrtc/go-sip-ua.svg" alt="Github stars" />
+Dependencies
+<ul>
+<li><a href="https://github.com/ghettovoice/gosip">ghettovoice/gosip</a> SIP stack</li>
+<li><a href="https://github.com/c-bata/go-prompt">c-bata/go-prompt</a> Console for b2bua</li>
+<li><a href="https://github.com/pixelbender/go-sdp">pixelbender/go-sdp</a> SDP</li>
+</ul>
+</li>
+</ul>
+<h3 id="c">C</h3>
+<ul>
+<li><a href="https://github.com/pjsip/pjproject">pjsip/pjproject</a> <img src="https://img.shields.io/github/stars/pjsip/pjproject.svg" alt="Github stars" /></li>
+</ul>
+<h3 id="c-1"><code>C#</code></h3>
 <ul>
 <li><a href="https://github.com/GB28181/GB28181.Solution">GB28181/GB28181.Solution</a> <img src="https://img.shields.io/github/stars/GB28181/GB28181.Solution.svg" alt="Github stars" /></li>
 </ul>
-<h3 id="服务端">服务端</h3>
+<h3 id="c-2">C++</h3>
 <ul>
 <li><a href="https://github.com/ossrs/srs">ossrs/srs</a> <img src="https://img.shields.io/github/stars/ossrs/srs.svg" alt="Github stars" /></li>
 <li><a href="https://github.com/xiongziliang/ZLMediaKit">xiongziliang/ZLMediaKit</a> <img src="https://img.shields.io/github/stars/xiongziliang/ZLMediaKit.svg" alt="Github stars" /></li>
-<li><a href="https://github.com/livegbs/GB28181-Server">livegbs/GB28181-Server</a> <img src="https://img.shields.io/github/stars/livegbs/GB28181-Server.svg" alt="Github stars" /></li>
 </ul>
-<h3 id="客户端">客户端</h3>
+<h3 id="nodejs">Node.js</h3>
 <ul>
-<li><a href="https://github.com/pjsip/pjproject">pjsip/pjproject</a> <img src="https://img.shields.io/github/stars/pjsip/pjproject.svg" alt="Github stars" /></li>
-<li><a href="https://github.com/ghettovoice/gosip">ghettovoice/gosip</a> <img src="https://img.shields.io/github/stars/ghettovoice/gosip.svg" alt="Github stars" /></li>
-<li><a href="https://github.com/StefanKopieczek/gossip">StefanKopieczek/gossip</a> <img src="https://img.shields.io/github/stars/StefanKopieczek/gossip.svg" alt="Github stars" /></li>
 <li><a href="https://github.com/kirm/sip.js">kirm/sip.js</a> <img src="https://img.shields.io/github/stars/kirm/sip.js.svg" alt="Github stars" /></li>
+</ul>
+<h3 id="二进制前端开源后端不开源">二进制（前端开源，后端不开源）</h3>
+<ul>
+<li><a href="https://github.com/livegbs/GB28181-Server">livegbs/GB28181-Server</a> <img src="https://img.shields.io/github/stars/livegbs/GB28181-Server.svg" alt="Github stars" /></li>
 </ul>
 </article>
  
@@ -1212,9 +1241,12 @@ SIP ID 为 34020000002000000001。</p>
         <li><a href="#pjsiphttpswwwpjsiporg"><a href="https://www.pjsip.org/">pjsip</a></a></li>
         <li><a href="#开源实现">开源实现</a>
           <ul>
-            <li><a href="#标准">标准</a></li>
-            <li><a href="#服务端">服务端</a></li>
-            <li><a href="#客户端">客户端</a></li>
+            <li><a href="#go">go</a></li>
+            <li><a href="#c">C</a></li>
+            <li><a href="#c-1"><code>C#</code></a></li>
+            <li><a href="#c-2">C++</a></li>
+            <li><a href="#nodejs">Node.js</a></li>
+            <li><a href="#二进制前端开源后端不开源">二进制（前端开源，后端不开源）</a></li>
           </ul>
         </li>
       </ul>

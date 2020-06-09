@@ -35,8 +35,11 @@ SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以�
 媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
 SDP 协议的具体内容参看：RFC2327
 由于 Web 端、IOS、Android、PC、MAC 端的差异性导致它们对音视频的支持能力不同， 所以我们进行一些音视频会话之前，需要交互下彼此的音视频编解码能力、网络带宽和传输协议等信息， 这些需要协商的信息需要用 SDP 来描述。
-协议包格式 Protocol: SIP/SDP
-Frame 238: 633 bytes on wire (5064 bits), 633 bytes captured (5064 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (200) Status-Line: SIP/2.</description>
+SDP 并不是传输协议，需要用 RTSP、SIP、HTTP 等协议进行承载传输、交换， 如果大家协调好了之后，就可以建立会话，完成真实的音视频码流传输，再完成解码和播放。
+SDP 一般用在媒体会话建立之前，可以适用于实时流媒体、点播、直播等领域，特别在音视频通话、视频会议、VoIP、视频监控等领域应用较多。 媒体码流一般基于 RTP 传输，服务质量用 RTCP 协议保障。
+但是 SDP 的交互不是所有音视频会话建立时都是必须的，假如双方提前约定好这些音视频会话创建需要的信息就不用这个步骤来交互彼此的 SDP 信息， 比如 HTTP-FLV、RTMP-FLV 直播和点播方案，因为一旦采用了这套方案，这些音视频会话建立需要的信息都是确定的， 但是这样会降低或者说没有充分发挥端到端的音视频能力，协商显得更加灵活点。
+SDP 作用 SDP 作用包括以下一些方面
+ 建立会话的详细信息，包括名称，网络，带宽等信息 包含在会话中的媒体信息，包括：  媒体类型 (video, audio, etc) 传输协议 (RTP/UDP/IP, H.320, etc) 媒体格式 (H.261 video, MPEG video, etc) 多播或远端（单播）地址和端口   为接收媒体而需的信息 使用的带宽信息 可信赖的接洽信息  如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 WebRTC 就在 SDP 的基础上进行了继续拓展</description>
     </item>
     
     <item>

@@ -17,7 +17,7 @@ squash merge # 切换到目标分支 $ git checkout master # 以 squash 的形�
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.46120bdb5f37c3a1887482871ef3c43439e100f4dc649faa39dc380c97848c58.js" integrity="sha256-RhIL2183w6GIdIKHHvPENDnhAPTcZJ&#43;qOdw4DJeEjFg="></script>
+<script defer src="/note-cs/en.search.min.8eca9f845903f4db0295b8f3260a884c7d9ce5e5295fa5de75665e6a8798a3df.js" integrity="sha256-jsqfhFkD9NsClbjzJgqITH2c5eUpX6XedWZeaoeYo98="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/git/index.xml" title="计算机学习笔记" />
 <!--
@@ -1049,6 +1049,7 @@ https://github.com/alex-shpak/hugo-book
         </li>
         <li><a href="#合并-git-commit">合并 git commit</a></li>
         <li><a href="#git-branch-与-git-tag-同名">git branch 与 git tag 同名</a></li>
+        <li><a href="#git-pull-force">git pull force</a></li>
       </ul>
     </li>
   </ul>
@@ -1136,6 +1137,16 @@ git push -u origin refs/heads/v4.8.0
 <ul>
 <li><a href="https://softwareengineering.stackexchange.com/questions/230438/in-git-is-it-a-bad-idea-to-create-a-tag-with-the-same-name-as-a-deleted-branch">In git, is it a bad idea to create a tag with the same name as a deleted branch?</a></li>
 </ul>
+<hr>
+<h2 id="git-pull-force">git pull force</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git fetch --all
+
+<span style="color:#75715e"># git reset --hard origin/&lt;branch_name&gt;</span>
+git reset --hard origin/master
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files">How do I force “git pull” to overwrite local files?</a></li>
+</ul>
 </article>
  
       
@@ -1196,6 +1207,7 @@ git push -u origin refs/heads/v4.8.0
         </li>
         <li><a href="#合并-git-commit">合并 git commit</a></li>
         <li><a href="#git-branch-与-git-tag-同名">git branch 与 git tag 同名</a></li>
+        <li><a href="#git-pull-force">git pull force</a></li>
       </ul>
     </li>
   </ul>
