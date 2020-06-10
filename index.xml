@@ -140,6 +140,8 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/turorial/</guid>
       <description>教程 基础 ruanyf/jstraining  全栈工程师培训材料，帮助学习者掌握 JavaScript 全栈开发的基本知识，承担简单 Web 应用的前后端开发。
 一共四讲，适合两天的训练营。
+denysdovhan/wtfjs  A list of funny and tricky JavaScript examples
+nefe/You-Dont-Need-jQuery  使用原生方法实现 jQuery API 功能（暂时只支持 IE10 以上浏览器）。
  进阶  高阶 </description>
     </item>
     
@@ -1732,6 +1734,33 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid>
       <description>protobuf  </description>
+    </item>
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-boot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-boot/</guid>
+      <description>Spring Boot 教程 ityouknow/spring-boot-examples  Spring Boot 教程、技术栈示例代码，快速简单上手教程。</description>
+    </item>
+    
+    <item>
+      <title>Spring Cloud</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</guid>
+      <description>Spring Cloud 教程 ityouknow/spring-cloud-examples  Spring Cloud 学习案例，服务发现、服务治理、链路追踪、服务监控等</description>
+    </item>
+    
+    <item>
+      <title>Spring MVC</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</guid>
+      <description>Spring MVC </description>
     </item>
     
     <item>
