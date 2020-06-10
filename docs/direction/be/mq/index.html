@@ -8,7 +8,12 @@
 RabbitMQ 支持 AMQP（二进制），STOMP（文本），MQTT（二进制），HTTP（里面包装其他协议）等协议。Kafka 使用自己的协议。
 Kafka 自身服务和消费者都需要依赖 Zookeeper。
 RabbitMQ 在有大量消息堆积的情况下性能会下降，Kafka 不会。毕竟 AMQP 设计的初衷不是用来持久化海量消息的，而 Kafka 一开始是用来处理海量日志的。
-参考  RabbitMQ, ZeroMQ, Kafka 是一个层级的东西吗？  "><meta property="og:title" content="消息队列" />
+ 常见消息队列实现 apache/kafka  apache/rocketmq  阿里 RocketMQ 是站在巨人的肩膀上（kafka）
+rabbitmq/rabbitmq-server  apache/activemq   ZeroMQ zeromq/libzmq  ZeroMQ core engine in C&#43;&#43;, implements ZMTP/3.1
+zeromq/jeromq  Pure Java ZeroMQ
+zeromq/netmq  A 100% native C# implementation of ZeroMQ for .NET
+zeromq/pyzmq  PyZMQ: Python bindings for zeromq
+ 参考  RabbitMQ, ZeroMQ, Kafka 是一个层级的东西吗？  "><meta property="og:title" content="消息队列" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/mq/" />
@@ -20,7 +25,7 @@ RabbitMQ 在有大量消息堆积的情况下性能会下降，Kafka 不会。�
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.37a7a245524bd96ca98634aba18013e2fae0b58400a2241f9d9bdba40ca41bcd.js" integrity="sha256-N6eiRVJL2WyphjSroYAT4vrgtYQAoiQfnZvbpAykG80="></script>
+<script defer src="/note-cs/en.search.min.edc0035f6151cf77e25ef4159e792cfcf11161d79741c5ddc0adf9c72afc01bf.js" integrity="sha256-7cADX2FRz3fiXvQVnnks/PERYdeXQcXdwK35xyr8Ab8="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/mq/index.xml" title="计算机学习笔记" />
 <!--
@@ -413,7 +418,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索</a>
+  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
   
 
 
@@ -1193,6 +1198,22 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#消息队列">消息队列</a>
       <ul>
+        <li><a href="#常见消息队列实现">常见消息队列实现</a>
+          <ul>
+            <li><a href="#apachekafkahttpsgithubcomapachekafka-github-starshttpsimgshieldsiogithubstarsapachekafkasvg"><a href="https://github.com/apache/kafka">apache/kafka</a> <img src="https://img.shields.io/github/stars/apache/kafka.svg" alt="Github stars"></a></li>
+            <li><a href="#apacherocketmqhttpsgithubcomapacherocketmq-github-starshttpsimgshieldsiogithubstarsapacherocketmqsvg"><a href="https://github.com/apache/rocketmq">apache/rocketmq</a> <img src="https://img.shields.io/github/stars/apache/rocketmq.svg" alt="Github stars"></a></li>
+            <li><a href="#rabbitmqrabbitmq-serverhttpsgithubcomrabbitmqrabbitmq-server-github-starshttpsimgshieldsiogithubstarsrabbitmqrabbitmq-serversvg"><a href="https://github.com/rabbitmq/rabbitmq-server">rabbitmq/rabbitmq-server</a> <img src="https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg" alt="Github stars"></a></li>
+            <li><a href="#apacheactivemqhttpsgithubcomapacheactivemq-github-starshttpsimgshieldsiogithubstarsapacheactivemqsvg"><a href="https://github.com/apache/activemq">apache/activemq</a> <img src="https://img.shields.io/github/stars/apache/activemq.svg" alt="Github stars"></a></li>
+            <li><a href="#zeromq">ZeroMQ</a>
+              <ul>
+                <li><a href="#zeromqlibzmqhttpsgithubcomzeromqlibzmq-github-starshttpsimgshieldsiogithubstarszeromqlibzmqsvg"><a href="https://github.com/zeromq/libzmq">zeromq/libzmq</a> <img src="https://img.shields.io/github/stars/zeromq/libzmq.svg" alt="Github stars"></a></li>
+                <li><a href="#zeromqjeromqhttpsgithubcomzeromqjeromq-github-starshttpsimgshieldsiogithubstarszeromqjeromqsvg"><a href="https://github.com/zeromq/jeromq">zeromq/jeromq</a> <img src="https://img.shields.io/github/stars/zeromq/jeromq.svg" alt="Github stars"></a></li>
+                <li><a href="#zeromqnetmqhttpsgithubcomzeromqnetmq-github-starshttpsimgshieldsiogithubstarszeromqnetmqsvg"><a href="https://github.com/zeromq/netmq">zeromq/netmq</a> <img src="https://img.shields.io/github/stars/zeromq/netmq.svg" alt="Github stars"></a></li>
+                <li><a href="#zeromqpyzmqhttpsgithubcomzeromqpyzmq-github-starshttpsimgshieldsiogithubstarszeromqpyzmqsvg"><a href="https://github.com/zeromq/pyzmq">zeromq/pyzmq</a> <img src="https://img.shields.io/github/stars/zeromq/pyzmq.svg" alt="Github stars"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a href="#参考">参考</a></li>
       </ul>
     </li>
@@ -1212,6 +1233,24 @@ https://github.com/alex-shpak/hugo-book
 <p>RabbitMQ 支持 AMQP（二进制），STOMP（文本），MQTT（二进制），HTTP（里面包装其他协议）等协议。Kafka 使用自己的协议。</p>
 <p>Kafka 自身服务和消费者都需要依赖 Zookeeper。</p>
 <p>RabbitMQ 在有大量消息堆积的情况下性能会下降，Kafka 不会。毕竟 AMQP 设计的初衷不是用来持久化海量消息的，而 Kafka 一开始是用来处理海量日志的。</p>
+<hr>
+<h2 id="常见消息队列实现">常见消息队列实现</h2>
+<h3 id="apachekafkahttpsgithubcomapachekafka-github-starshttpsimgshieldsiogithubstarsapachekafkasvg"><a href="https://github.com/apache/kafka">apache/kafka</a> <img src="https://img.shields.io/github/stars/apache/kafka.svg" alt="Github stars" /></h3>
+<h3 id="apacherocketmqhttpsgithubcomapacherocketmq-github-starshttpsimgshieldsiogithubstarsapacherocketmqsvg"><a href="https://github.com/apache/rocketmq">apache/rocketmq</a> <img src="https://img.shields.io/github/stars/apache/rocketmq.svg" alt="Github stars" /></h3>
+<p>阿里 RocketMQ 是站在巨人的肩膀上（kafka）</p>
+<h3 id="rabbitmqrabbitmq-serverhttpsgithubcomrabbitmqrabbitmq-server-github-starshttpsimgshieldsiogithubstarsrabbitmqrabbitmq-serversvg"><a href="https://github.com/rabbitmq/rabbitmq-server">rabbitmq/rabbitmq-server</a> <img src="https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg" alt="Github stars" /></h3>
+<h3 id="apacheactivemqhttpsgithubcomapacheactivemq-github-starshttpsimgshieldsiogithubstarsapacheactivemqsvg"><a href="https://github.com/apache/activemq">apache/activemq</a> <img src="https://img.shields.io/github/stars/apache/activemq.svg" alt="Github stars" /></h3>
+<hr>
+<h3 id="zeromq">ZeroMQ</h3>
+<h4 id="zeromqlibzmqhttpsgithubcomzeromqlibzmq-github-starshttpsimgshieldsiogithubstarszeromqlibzmqsvg"><a href="https://github.com/zeromq/libzmq">zeromq/libzmq</a> <img src="https://img.shields.io/github/stars/zeromq/libzmq.svg" alt="Github stars" /></h4>
+<p>ZeroMQ core engine in C++, implements ZMTP/3.1</p>
+<h4 id="zeromqjeromqhttpsgithubcomzeromqjeromq-github-starshttpsimgshieldsiogithubstarszeromqjeromqsvg"><a href="https://github.com/zeromq/jeromq">zeromq/jeromq</a> <img src="https://img.shields.io/github/stars/zeromq/jeromq.svg" alt="Github stars" /></h4>
+<p>Pure Java ZeroMQ</p>
+<h4 id="zeromqnetmqhttpsgithubcomzeromqnetmq-github-starshttpsimgshieldsiogithubstarszeromqnetmqsvg"><a href="https://github.com/zeromq/netmq">zeromq/netmq</a> <img src="https://img.shields.io/github/stars/zeromq/netmq.svg" alt="Github stars" /></h4>
+<p>A 100% native C# implementation of ZeroMQ for .NET</p>
+<h4 id="zeromqpyzmqhttpsgithubcomzeromqpyzmq-github-starshttpsimgshieldsiogithubstarszeromqpyzmqsvg"><a href="https://github.com/zeromq/pyzmq">zeromq/pyzmq</a> <img src="https://img.shields.io/github/stars/zeromq/pyzmq.svg" alt="Github stars" /></h4>
+<p>PyZMQ: Python bindings for zeromq</p>
+<hr>
 <h2 id="参考">参考</h2>
 <ul>
 <li><a href="https://www.zhihu.com/question/22480085">RabbitMQ, ZeroMQ, Kafka 是一个层级的东西吗？</a></li>
@@ -1267,6 +1306,22 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#消息队列">消息队列</a>
       <ul>
+        <li><a href="#常见消息队列实现">常见消息队列实现</a>
+          <ul>
+            <li><a href="#apachekafkahttpsgithubcomapachekafka-github-starshttpsimgshieldsiogithubstarsapachekafkasvg"><a href="https://github.com/apache/kafka">apache/kafka</a> <img src="https://img.shields.io/github/stars/apache/kafka.svg" alt="Github stars"></a></li>
+            <li><a href="#apacherocketmqhttpsgithubcomapacherocketmq-github-starshttpsimgshieldsiogithubstarsapacherocketmqsvg"><a href="https://github.com/apache/rocketmq">apache/rocketmq</a> <img src="https://img.shields.io/github/stars/apache/rocketmq.svg" alt="Github stars"></a></li>
+            <li><a href="#rabbitmqrabbitmq-serverhttpsgithubcomrabbitmqrabbitmq-server-github-starshttpsimgshieldsiogithubstarsrabbitmqrabbitmq-serversvg"><a href="https://github.com/rabbitmq/rabbitmq-server">rabbitmq/rabbitmq-server</a> <img src="https://img.shields.io/github/stars/rabbitmq/rabbitmq-server.svg" alt="Github stars"></a></li>
+            <li><a href="#apacheactivemqhttpsgithubcomapacheactivemq-github-starshttpsimgshieldsiogithubstarsapacheactivemqsvg"><a href="https://github.com/apache/activemq">apache/activemq</a> <img src="https://img.shields.io/github/stars/apache/activemq.svg" alt="Github stars"></a></li>
+            <li><a href="#zeromq">ZeroMQ</a>
+              <ul>
+                <li><a href="#zeromqlibzmqhttpsgithubcomzeromqlibzmq-github-starshttpsimgshieldsiogithubstarszeromqlibzmqsvg"><a href="https://github.com/zeromq/libzmq">zeromq/libzmq</a> <img src="https://img.shields.io/github/stars/zeromq/libzmq.svg" alt="Github stars"></a></li>
+                <li><a href="#zeromqjeromqhttpsgithubcomzeromqjeromq-github-starshttpsimgshieldsiogithubstarszeromqjeromqsvg"><a href="https://github.com/zeromq/jeromq">zeromq/jeromq</a> <img src="https://img.shields.io/github/stars/zeromq/jeromq.svg" alt="Github stars"></a></li>
+                <li><a href="#zeromqnetmqhttpsgithubcomzeromqnetmq-github-starshttpsimgshieldsiogithubstarszeromqnetmqsvg"><a href="https://github.com/zeromq/netmq">zeromq/netmq</a> <img src="https://img.shields.io/github/stars/zeromq/netmq.svg" alt="Github stars"></a></li>
+                <li><a href="#zeromqpyzmqhttpsgithubcomzeromqpyzmq-github-starshttpsimgshieldsiogithubstarszeromqpyzmqsvg"><a href="https://github.com/zeromq/pyzmq">zeromq/pyzmq</a> <img src="https://img.shields.io/github/stars/zeromq/pyzmq.svg" alt="Github stars"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a href="#参考">参考</a></li>
       </ul>
     </li>
