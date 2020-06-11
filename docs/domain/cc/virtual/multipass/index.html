@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Multipass canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run
-# 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name k3s --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell k3s # 在其上安装 k3s curl -sfL https://get.k3s.io | sh – 网络 使用的是桥接模式，因为
+# 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name k3s --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell k3s # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code # 在其上安装 k3s curl -sfL https://get.k3s.io | sh – 网络 使用的是桥接模式，因为
  主机可以 ping 通虚拟机  所以不是 NAT   虚拟机之间可以 ping 通  所以不是 NAT   虚拟机可以上网  所以不是 Host-Only    "><meta property="og:title" content="Multipass" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.edc0035f6151cf77e25ef4159e792cfcf11161d79741c5ddc0adf9c72afc01bf.js" integrity="sha256-7cADX2FRz3fiXvQVnnks/PERYdeXQcXdwK35xyr8Ab8="></script>
+<script defer src="/note-cs/en.search.min.eb41385ce1622fa24c083e63c639c9b0fdb901267ae72c25c2d2f4c34afe0cc2.js" integrity="sha256-60E4XOFiL6JMCD5jxjnJsP25ASZ65ywlwtL0w0r&#43;DMI="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cc/virtual/multipass/index.xml" title="计算机学习笔记" />
 <!--
@@ -1254,6 +1254,9 @@ multipass launch --name k3s --mem 1G --disk 5G
 
 <span style="color:#75715e"># 为 VM 启动一个 shell</span>
 multipass shell k3s
+
+<span style="color:#75715e"># 挂载</span>
+multipass mount ~/code myvm:/home/ubuntu/yewang/code
 
 <span style="color:#75715e"># 在其上安装 k3s</span>
 curl -sfL https://get.k3s.io | sh –

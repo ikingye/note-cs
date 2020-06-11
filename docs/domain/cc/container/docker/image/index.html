@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Docker 镜像 docker push 上传到 私有仓库 docker build -t human-attribute:20200415_1585818439123 . docker tag human-attribute:20200415_1585818439123 ote-harbor.baidu.com/aiedge/human-attribute:20200415_1585818439123 docker push ote-harbor.baidu.com/aiedge/human-attribute:20200415_1585818439123 "><meta property="og:title" content="镜像" />
+<meta name="description" content="Docker 镜像 dangling 镜像 未被任何镜像引用的镜像
+ docker push 上传到 私有仓库 docker build -t human-attribute:20200415_1585818439123 . docker tag human-attribute:20200415_1585818439123 ote-harbor.baidu.com/aiedge/human-attribute:20200415_1585818439123 docker push ote-harbor.baidu.com/aiedge/human-attribute:20200415_1585818439123 "><meta property="og:title" content="镜像" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/image/" />
@@ -16,7 +17,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.edc0035f6151cf77e25ef4159e792cfcf11161d79741c5ddc0adf9c72afc01bf.js" integrity="sha256-7cADX2FRz3fiXvQVnnks/PERYdeXQcXdwK35xyr8Ab8="></script>
+<script defer src="/note-cs/en.search.min.eb41385ce1622fa24c083e63c639c9b0fdb901267ae72c25c2d2f4c34afe0cc2.js" integrity="sha256-60E4XOFiL6JMCD5jxjnJsP25ASZ65ywlwtL0w0r&#43;DMI="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/image/index.xml" title="计算机学习笔记" />
 <!--
@@ -589,6 +590,16 @@ https://github.com/alex-shpak/hugo-book
 
   
   <ul>
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/domain/cc/container/docker/quick/" class="">Docker 快速上手</a>
+  
+
+</li>
+      
     
       
         <li>
@@ -1237,6 +1248,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#docker-镜像">Docker 镜像</a>
       <ul>
+        <li><a href="#dangling-镜像">dangling 镜像</a></li>
         <li><a href="#docker-push">docker push</a>
           <ul>
             <li><a href="#上传到-私有仓库">上传到 私有仓库</a></li>
@@ -1256,6 +1268,9 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="docker-镜像">Docker 镜像</h1>
+<h2 id="dangling-镜像">dangling 镜像</h2>
+<p>未被任何镜像引用的镜像</p>
+<hr>
 <h2 id="docker-push">docker push</h2>
 <h3 id="上传到-私有仓库">上传到 私有仓库</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker build -t human-attribute:20200415_1585818439123 .
@@ -1314,6 +1329,7 @@ docker push ote-harbor.baidu.com/aiedge/human-attribute:20200415_1585818439123
   <ul>
     <li><a href="#docker-镜像">Docker 镜像</a>
       <ul>
+        <li><a href="#dangling-镜像">dangling 镜像</a></li>
         <li><a href="#docker-push">docker push</a>
           <ul>
             <li><a href="#上传到-私有仓库">上传到 私有仓库</a></li>

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Docker 基础 "><meta property="og:title" content="Docker" />
+<meta name="description" content="Docker 基础 docker 资源  docker container ls：默认只列出正在运行的容器，-a 选项会列出包括停止的所有容器。 docker image ls：列出镜像信息，-a 选项会列出 intermediate 镜像 (就是其它镜像依赖的层)。 docker volume ls：列出数据卷。 docker network ls：列出 network。 docker info：显示系统级别的信息，比如容器和镜像的数量等。  清理 docker 资源 删除那些已停止的容器、dangling 镜像、未被容器引用的 network 和构建过程中的 cache
+docker system prune # 默认不会删除那些未被任何容器引用的数据卷，需要使用 --volumes 进行删除 docker system prune --volumes # 直接删除，没有确认过程 docker system prune --all --force --volumes docker container prune # 删除所有退出状态的容器 docker volume prune # 删除未被使用的数据卷 docker image prune # 删除 dangling 或所有未被使用的镜像 docker container rm $(docker container ls -a -q) # 删除容器 docker image rm $(docker image ls -a -q) # 删除镜像 docker volume rm $(docker volume ls -q) # 删除数据卷 docker network rm $(docker network ls -q) # 删除 network # 列出所有容器 docker container ls -a -q # 停止所有容器 docker container stop $(docker container ls -a -q) # 删除所有资源 docker container stop $(docker container ls -a -q) &amp;&amp; docker system prune --all --force --volumns 参考："><meta property="og:title" content="Docker" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/" />
@@ -16,7 +17,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.edc0035f6151cf77e25ef4159e792cfcf11161d79741c5ddc0adf9c72afc01bf.js" integrity="sha256-7cADX2FRz3fiXvQVnnks/PERYdeXQcXdwK35xyr8Ab8="></script>
+<script defer src="/note-cs/en.search.min.eb41385ce1622fa24c083e63c639c9b0fdb901267ae72c25c2d2f4c34afe0cc2.js" integrity="sha256-60E4XOFiL6JMCD5jxjnJsP25ASZ65ywlwtL0w0r&#43;DMI="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cc/container/docker/index.xml" title="计算机学习笔记" />
 <!--
@@ -589,6 +590,16 @@ https://github.com/alex-shpak/hugo-book
 
   
   <ul>
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/domain/cc/container/docker/quick/" class="">Docker 快速上手</a>
+  
+
+</li>
+      
     
       
         <li>
@@ -1219,7 +1230,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#docker-基础">Docker 基础</a></li>
+    <li><a href="#docker-基础">Docker 基础</a>
+      <ul>
+        <li><a href="#docker-资源">docker 资源</a>
+          <ul>
+            <li><a href="#清理-docker-资源">清理 docker 资源</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1232,6 +1251,43 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="docker-基础">Docker 基础</h1>
+<h2 id="docker-资源">docker 资源</h2>
+<ul>
+<li><code>docker container ls</code>：默认只列出正在运行的容器，<code>-a</code> 选项会列出包括停止的所有容器。</li>
+<li><code>docker image ls</code>：列出镜像信息，<code>-a</code> 选项会列出 intermediate 镜像 (就是其它镜像依赖的层)。</li>
+<li><code>docker volume ls</code>：列出数据卷。</li>
+<li><code>docker network ls</code>：列出 network。</li>
+<li><code>docker info</code>：显示系统级别的信息，比如容器和镜像的数量等。</li>
+</ul>
+<h3 id="清理-docker-资源">清理 docker 资源</h3>
+<p>删除那些已停止的容器、dangling 镜像、未被容器引用的 network 和构建过程中的 cache</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker system prune
+
+<span style="color:#75715e"># 默认不会删除那些未被任何容器引用的数据卷，需要使用 --volumes 进行删除</span>
+docker system prune --volumes
+
+<span style="color:#75715e"># 直接删除，没有确认过程</span>
+docker system prune --all --force --volumes
+
+docker container prune <span style="color:#75715e"># 删除所有退出状态的容器</span>
+docker volume prune <span style="color:#75715e"># 删除未被使用的数据卷</span>
+docker image prune <span style="color:#75715e"># 删除 dangling 或所有未被使用的镜像</span>
+
+docker container rm <span style="color:#66d9ef">$(</span>docker container ls -a -q<span style="color:#66d9ef">)</span> <span style="color:#75715e"># 删除容器</span>
+docker image rm <span style="color:#66d9ef">$(</span>docker image ls -a -q<span style="color:#66d9ef">)</span> <span style="color:#75715e"># 删除镜像</span>
+docker volume rm <span style="color:#66d9ef">$(</span>docker volume ls -q<span style="color:#66d9ef">)</span> <span style="color:#75715e"># 删除数据卷</span>
+docker network rm <span style="color:#66d9ef">$(</span>docker network ls -q<span style="color:#66d9ef">)</span> <span style="color:#75715e"># 删除 network</span>
+
+<span style="color:#75715e"># 列出所有容器</span>
+docker container ls -a -q
+<span style="color:#75715e"># 停止所有容器</span>
+docker container stop <span style="color:#66d9ef">$(</span>docker container ls -a -q<span style="color:#66d9ef">)</span>
+<span style="color:#75715e"># 删除所有资源</span>
+docker container stop <span style="color:#66d9ef">$(</span>docker container ls -a -q<span style="color:#66d9ef">)</span> <span style="color:#f92672">&amp;&amp;</span> docker system prune --all --force --volumns
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/sparkdev/p/9177283.html">如何快速清理 docker 资源</a></li>
+</ul>
 </article>
  
       
@@ -1281,7 +1337,15 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#docker-基础">Docker 基础</a></li>
+    <li><a href="#docker-基础">Docker 基础</a>
+      <ul>
+        <li><a href="#docker-资源">docker 资源</a>
+          <ul>
+            <li><a href="#清理-docker-资源">清理 docker 资源</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

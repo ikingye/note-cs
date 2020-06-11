@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Node.js 版本 版本控制 nvm-sh/nvm  Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
-安装 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash export NVM_DIR=&#34;$([ -z &#34;${XDG_CONFIG_HOME-}&#34; ] &amp;&amp; printf %s &#34;${HOME}/.nvm&#34; || printf %s &#34;${XDG_CONFIG_HOME}/nvm&#34;)&#34; [ -s &#34;$NVM_DIR/nvm.sh&#34; ] &amp;&amp; \. &#34;$NVM_DIR/nvm.sh&#34; # This loads nvm 基础命令  install  nvm install node  &ldquo;node&rdquo; is an alias for the latest version   nvm install --lts    其他命令："><meta property="og:title" content="版本" />
+安装 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash export NVM_DIR=&#34;$([ -z &#34;${XDG_CONFIG_HOME-}&#34; ] &amp;&amp; printf %s &#34;${HOME}/.nvm&#34; || printf %s &#34;${XDG_CONFIG_HOME}/nvm&#34;)&#34; [ -s &#34;$NVM_DIR/nvm.sh&#34; ] &amp;&amp; \. &#34;$NVM_DIR/nvm.sh&#34; # This loads nvm 基础命令 # 安装最新版 nvm install node # 安装最新 LTS 版本 nvm install --lts # 设置默认版本 nvm alias default lts/* # 查看本地版本列表 nvm ls # 查看全部版本列表 nvm ls-remote nvm ls-remote --lts # 使用最新版本 LTS nvm use lts/* # 查看安装路径 nvm which node nvm which v12."><meta property="og:title" content="版本" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/basic/version/" />
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.edc0035f6151cf77e25ef4159e792cfcf11161d79741c5ddc0adf9c72afc01bf.js" integrity="sha256-7cADX2FRz3fiXvQVnnks/PERYdeXQcXdwK35xyr8Ab8="></script>
+<script defer src="/note-cs/en.search.min.eb41385ce1622fa24c083e63c639c9b0fdb901267ae72c25c2d2f4c34afe0cc2.js" integrity="sha256-60E4XOFiL6JMCD5jxjnJsP25ASZ65ywlwtL0w0r&#43;DMI="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/basic/version/index.xml" title="计算机学习笔记" />
 <!--
@@ -620,7 +620,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <span>第二部分 原理</span>
+  <span>第二部分 设计</span>
   
 
 
@@ -1383,25 +1383,27 @@ https://github.com/alex-shpak/hugo-book
 export NVM_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span><span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME-<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.nvm&#34;</span> <span style="color:#f92672">||</span> printf %s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>XDG_CONFIG_HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/nvm&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 <span style="color:#f92672">[</span> -s <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\.</span> <span style="color:#e6db74">&#34;</span>$NVM_DIR<span style="color:#e6db74">/nvm.sh&#34;</span> <span style="color:#75715e"># This loads nvm</span>
 </code></pre></div><h4 id="基础命令">基础命令</h4>
-<ul>
-<li><code>install</code>
-<ul>
-<li><code>nvm install node</code>
-<ul>
-<li>&ldquo;node&rdquo; is an alias for the latest version</li>
-</ul>
-</li>
-<li><code>nvm install --lts</code></li>
-</ul>
-</li>
-</ul>
-<p>其他命令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">nvm ls-remote
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 安装最新版</span>
+nvm install node
 
-nvm use node
+<span style="color:#75715e"># 安装最新 LTS 版本</span>
+nvm install --lts
 
-<span style="color:#75715e"># get the path to the executable to where it was installed</span>
-nvm which 5.0
+<span style="color:#75715e"># 设置默认版本</span>
+nvm alias default lts/*
+
+<span style="color:#75715e"># 查看本地版本列表</span>
+nvm ls
+<span style="color:#75715e"># 查看全部版本列表</span>
+nvm ls-remote
+nvm ls-remote --lts
+
+<span style="color:#75715e"># 使用最新版本 LTS</span>
+nvm use lts/*
+
+<span style="color:#75715e"># 查看安装路径</span>
+nvm which node
+nvm which v12.14.1
 </code></pre></div></article>
  
       

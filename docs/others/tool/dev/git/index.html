@@ -17,7 +17,7 @@ squash merge # 切换到目标分支 $ git checkout master # 以 squash 的形�
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.edc0035f6151cf77e25ef4159e792cfcf11161d79741c5ddc0adf9c72afc01bf.js" integrity="sha256-7cADX2FRz3fiXvQVnnks/PERYdeXQcXdwK35xyr8Ab8="></script>
+<script defer src="/note-cs/en.search.min.eb41385ce1622fa24c083e63c639c9b0fdb901267ae72c25c2d2f4c34afe0cc2.js" integrity="sha256-60E4XOFiL6JMCD5jxjnJsP25ASZ65ywlwtL0w0r&#43;DMI="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/git/index.xml" title="计算机学习笔记" />
 <!--
@@ -753,6 +753,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/note-cs/docs/others/tool/dev/git/config/" class="">git config</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/note-cs/docs/others/tool/dev/git/submodule/" class="">submodule</a>
   
 
@@ -1027,6 +1037,9 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#合并-git-commit">合并 git commit</a></li>
         <li><a href="#git-branch-与-git-tag-同名">git branch 与 git tag 同名</a></li>
         <li><a href="#git-pull-force">git pull force</a></li>
+        <li><a href="#hard-reset-vs-mixed-reset-vs-soft-reset"><code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code></a></li>
+        <li><a href="#git-reflog">git reflog</a></li>
+        <li><a href="#git-回退">git 回退</a></li>
       </ul>
     </li>
   </ul>
@@ -1124,6 +1137,37 @@ git reset --hard origin/master
 <ul>
 <li><a href="https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files">How do I force “git pull” to overwrite local files?</a></li>
 </ul>
+<hr>
+<h2 id="hard-reset-vs-mixed-reset-vs-soft-reset"><code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 回到 reset 版本，之后的文件都属于 git add 的状态</span>
+git reset --soft
+
+<span style="color:#75715e"># git reset 默认就是 --mixed</span>
+<span style="color:#75715e"># 回到 reset 版本，之后的文件都属于 git add 前的状态</span>
+git reset --mixed
+
+<span style="color:#75715e"># 回到 reset 版本，之后文件都丢弃（使用 git reflog 可以找回来）</span>
+git reset --hard
+
+</code></pre></div><h2 id="git-reflog">git reflog</h2>
+<p><code>reflog</code> 是 Git 操作的一道安全保障，它能够记录几乎所有本地仓库的改变。</p>
+<p>包括所有分支 commit 提交，已经删除的 <code>commit</code>（其实并未被实际删除）都会被记录。</p>
+<p>只要 HEAD 发生变化，就可以通过 <code>reflog</code> 查看到。</p>
+<h2 id="git-回退">git 回退</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 文件放弃本地修改</span>
+git checkout -- &lt;file&gt;
+
+<span style="color:#75715e"># 文件回退到版本</span>
+git reset --hard commit-id &lt;file&gt;
+
+<span style="color:#75715e"># 目录 回退版本</span>
+git checkout commit-id &lt;path&gt;
+
+git reset -- &lt;path&gt;
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/11200839/why-git-cant-do-hard-soft-resets-by-path">Why git can&rsquo;t do hard/soft resets by path?</a></li>
+</ul>
 </article>
  
       
@@ -1185,6 +1229,9 @@ git reset --hard origin/master
         <li><a href="#合并-git-commit">合并 git commit</a></li>
         <li><a href="#git-branch-与-git-tag-同名">git branch 与 git tag 同名</a></li>
         <li><a href="#git-pull-force">git pull force</a></li>
+        <li><a href="#hard-reset-vs-mixed-reset-vs-soft-reset"><code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code></a></li>
+        <li><a href="#git-reflog">git reflog</a></li>
+        <li><a href="#git-回退">git 回退</a></li>
       </ul>
     </li>
   </ul>
