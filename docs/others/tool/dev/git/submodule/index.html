@@ -20,7 +20,7 @@ delete submodule  Delete the relevant section from the .gitmodules file. Stage t
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.641173d84c90c3acd490af57cded8af5a95fd2faca91e5f11fc20a98b6e494b6.js" integrity="sha256-ZBFz2EyQw6zUkK9Xze2K9alf0vrKkeXxH8IKmLbklLY="></script>
+<script defer src="/note-cs/en.search.min.d54e21f8d8e603ea56f4e78698debf5a8ea12e8b110bf60763a31a20bb463e08.js" integrity="sha256-1U4h&#43;NjmA&#43;pW9OeGmN6/Wo6hLosRC/YHY6MaILtGPgg="></script>
 
 <!--
 Made with Book Theme
@@ -1032,7 +1032,11 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#拉取-submodule">拉取 submodule</a></li>
         <li><a href="#git-submodule-add--b"><code>git submodule add -b</code></a></li>
         <li><a href="#submodule-修改-url">submodule 修改 url</a></li>
-        <li><a href="#delete-submodule">delete submodule</a></li>
+        <li><a href="#delete-submodule">delete submodule</a>
+          <ul>
+            <li><a href="#untracked-status">untracked status</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -1071,6 +1075,15 @@ git submodule update --remote
 <li>Run <code>rm -rf .git/modules/path_to_submodule</code> (no trailing slash).</li>
 <li>Commit git commit -m &ldquo;Removed submodule &quot;</li>
 <li>Delete the now untracked submodule files <code>rm -rf path_to_submodule</code></li>
+</ul>
+<hr>
+<h3 id="untracked-status">untracked status</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">]</span>
+    path <span style="color:#f92672">=</span> example
+    url <span style="color:#f92672">=</span> git://github.com/ikingye/example.git
+    ignore <span style="color:#f92672">=</span> dirty
+</code></pre></div><ul>
+<li><a href="https://stackoverflow.com/questions/5126765/how-to-get-rid-of-git-submodules-untracked-status">How to get rid of Git submodules untracked status?</a></li>
 </ul>
 </article>
  
@@ -1126,7 +1139,11 @@ git submodule update --remote
         <li><a href="#拉取-submodule">拉取 submodule</a></li>
         <li><a href="#git-submodule-add--b"><code>git submodule add -b</code></a></li>
         <li><a href="#submodule-修改-url">submodule 修改 url</a></li>
-        <li><a href="#delete-submodule">delete submodule</a></li>
+        <li><a href="#delete-submodule">delete submodule</a>
+          <ul>
+            <li><a href="#untracked-status">untracked status</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
