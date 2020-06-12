@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="class 建议：
- class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  class vs struct  默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。"><meta property="og:title" content="class" />
+ class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  // 简单的数据聚合，没有动作 struct Coordinate { int x; int y; int z; }; // 有动作的对象 class Cat { public: void meow(); private: ... }; class vs struct  默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。"><meta property="og:title" content="class" />
 <meta property="og:description" content="class 建议：
- class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  class vs struct  默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。" />
+ class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  // 简单的数据聚合，没有动作 struct Coordinate { int x; int y; int z; }; // 有动作的对象 class Cat { public: void meow(); private: ... }; class vs struct  默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/class/" />
-
+<meta property="article:modified_time" content="2020-06-11T20:08:25+08:00" />
 <title>class | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.eb41385ce1622fa24c083e63c639c9b0fdb901267ae72c25c2d2f4c34afe0cc2.js" integrity="sha256-60E4XOFiL6JMCD5jxjnJsP25ASZ65ywlwtL0w0r&#43;DMI="></script>
+<script defer src="/note-cs/en.search.min.641173d84c90c3acd490af57cded8af5a95fd2faca91e5f11fc20a98b6e494b6.js" integrity="sha256-ZBFz2EyQw6zUkK9Xze2K9alf0vrKkeXxH8IKmLbklLY="></script>
 
 <!--
 Made with Book Theme
@@ -308,7 +308,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <span>第一部分 基础入门</span>
+  <a href="/note-cs/docs/basic/pl/cpp/basic/" class="">第一部分 基础入门</a>
   
 
 
@@ -1536,7 +1536,21 @@ https://github.com/alex-shpak/hugo-book
 <li>class 表示被封装的用户自定义类型，<strong>不公开定义非静态</strong>数据成员，一般通过成员方法进行交互。</li>
 <li>struct 表示<strong>数据的简单集合</strong>，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，<code>initialize()</code>, <code>reset()</code>, <code>validate()</code>)。</li>
 </ul>
-<h2 id="class-vs-struct">class vs struct</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// 简单的数据聚合，没有动作
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Coordinate</span> {
+    <span style="color:#66d9ef">int</span> x;
+    <span style="color:#66d9ef">int</span> y;
+    <span style="color:#66d9ef">int</span> z;
+};
+
+<span style="color:#75715e">// 有动作的对象
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Cat</span> {
+<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">void</span> meow();
+<span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+    ...
+};
+</code></pre></div><h2 id="class-vs-struct">class vs struct</h2>
 <ul>
 <li>默认继承权限
 <ul>
@@ -1561,6 +1575,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/a0fa9f0af81dc48adf9b9649254ba37f9cb6c28c" title='Last modified by yewang | 2020-06-11' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-06-11</span>
+    </a>
+  </div>
 
 
 

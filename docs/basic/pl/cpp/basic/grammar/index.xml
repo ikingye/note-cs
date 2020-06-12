@@ -27,7 +27,7 @@
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/class/</guid>
       <description>class 建议：
- class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  class vs struct  默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。</description>
+ class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  // 简单的数据聚合，没有动作 struct Coordinate { int x; int y; int z; }; // 有动作的对象 class Cat { public: void meow(); private: ... }; class vs struct  默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。</description>
     </item>
     
     <item>
