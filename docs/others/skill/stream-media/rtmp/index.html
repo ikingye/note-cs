@@ -4,11 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="RTMP Real-Time Messaging Protocol"><meta property="og:title" content="RTMP" />
-<meta property="og:description" content="RTMP Real-Time Messaging Protocol" />
+<meta name="description" content="RTMP Real-Time Messaging Protocol
+RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
+ 直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。 国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。 网络中的路由器或防火墙可能对 RTSP 端口不开放。  参考：
+ 为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？  "><meta property="og:title" content="RTMP" />
+<meta property="og:description" content="RTMP Real-Time Messaging Protocol
+RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
+ 直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。 国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。 网络中的路由器或防火墙可能对 RTSP 端口不开放。  参考：
+ 为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/" />
-
+<meta property="article:modified_time" content="2020-06-15T17:07:42+08:00" />
 <title>RTMP | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -16,7 +22,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.c59e9b78f8522e2f1bf1076f14efd2f765cbda6a2c4c34fa24a0618a19faa700.js" integrity="sha256-xZ6bePhSLi8b8QdvFO/S92XL2mosTDT6JKBhihn6pwA="></script>
+<script defer src="/note-cs/en.search.min.e91781627631984b8d525292734188d86a34a46a74e5d8b22ab305ce01decd33.js" integrity="sha256-6ReBYnYxmEuNUlKSc0GI2Go0pGp05diyKrMFzgHezTM="></script>
 
 <!--
 Made with Book Theme
@@ -829,6 +835,46 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/note-cs/docs/others/skill/stream-media/http-flv/" class="">HTTP FLV</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/stream-media/mpeg/" class="">MPEG</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/stream-media/ps/" class="">PS</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/stream-media/live-tech/" class="">直播技术</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/note-cs/docs/others/skill/stream-media/video-codec/" class="">视频编码</a>
   
 
@@ -995,7 +1041,11 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></a></li>
+    <li><a href="#rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></a>
+      <ul>
+        <li><a href="#rtmp-vs-rtsp">RTMP vs RTSP</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1009,6 +1059,17 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></h1>
 <p>Real-Time Messaging Protocol</p>
+<h2 id="rtmp-vs-rtsp">RTMP vs RTSP</h2>
+<p>目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.</p>
+<ol>
+<li>直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。</li>
+<li>国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。</li>
+<li>网络中的路由器或防火墙可能对 RTSP 端口不开放。</li>
+</ol>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/58633763">为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？</a></li>
+</ul>
 </article>
  
       
@@ -1018,6 +1079,14 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/3a02c4640cc0bc3f9ec3d09f2ed7da2ad86b8f8e" title='Last modified by yewang | 2020-06-15' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-06-15</span>
+    </a>
+  </div>
 
 
 
@@ -1050,7 +1119,11 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></a></li>
+    <li><a href="#rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></a>
+      <ul>
+        <li><a href="#rtmp-vs-rtsp">RTMP vs RTSP</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

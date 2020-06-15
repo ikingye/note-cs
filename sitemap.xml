@@ -2038,14 +2038,17 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>
@@ -2085,6 +2088,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/webrtc/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>
@@ -2509,11 +2513,16 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/http-flv/</loc>
   </url>
   
   <url>
@@ -2557,6 +2566,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/mpeg/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/parallels/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -2579,6 +2592,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</loc>
     <lastmod>2020-05-28T16:18:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/</loc>
   </url>
   
   <url>
@@ -3537,6 +3554,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/ffmpeg/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>
@@ -3576,10 +3594,16 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/live-tech/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</loc>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>
@@ -3618,7 +3642,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-06-12T17:13:05+08:00</lastmod>
+    <lastmod>2020-06-15T17:07:42+08:00</lastmod>
   </url>
   
   <url>

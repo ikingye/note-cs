@@ -15,7 +15,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</guid>
-      <description>RTMP Real-Time Messaging Protocol</description>
+      <description>RTMP Real-Time Messaging Protocol
+RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
+ 直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。 国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。 网络中的路由器或防火墙可能对 RTSP 端口不开放。  参考：
+ 为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？  </description>
     </item>
     
     <item>
@@ -62,6 +65,49 @@ AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在
 H264 码流可以分为两层
  VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NAL Units
 NALU 组成</description>
+    </item>
+    
+    <item>
+      <title>HTTP FLV</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/http-flv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/http-flv/</guid>
+      <description>HTTP FLV Bilibili/flv.js  HTML5 FLV Player</description>
+    </item>
+    
+    <item>
+      <title>MPEG</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/mpeg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/mpeg/</guid>
+      <description>MPEG  MPEG-1：第一个官方的视讯音频压缩标准，随后在 Video CD 中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称 MP3，成为比较流行的音频压缩格式。 MPEG-2：广播质量的视讯、音频和传输协议。被用于无线 数字电视 - ATSC、DVB 以及 ISDB、数字卫星电视（例如 DirecTV）、数字 有线电视信号，以及 DVD 视频光盘技术中。 MPEG-3：原本目标是为 高清晰度电视（ HDTV）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。 MPEG-4：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和 数字版权管理（Digital Rights Management），其中第 10 部分由 ISO/IEC 和 ITU-T 联合发布，称为 H.264/MPEG-4 Part 10。 MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。 MPEG-21：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。  </description>
+    </item>
+    
+    <item>
+      <title>PS</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/</guid>
+      <description>PS Program stream
+PS 流的包结构是可变长度的。
+一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
+在信道环境较好，传输误码较低时，一般采用 PS 码流。
+TS MPEG transport stream (MPEG-TS, MTS)
+TS 流的包结构是固定长度的，
+当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
+在信道环境较为恶劣，传输误码较高时，一般采用 TS 码流。</description>
+    </item>
+    
+    <item>
+      <title>直播技术</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/live-tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/live-tech/</guid>
+      <description>直播技术  摄像头视频采集，原始视频数据：RGB/YUV 话筒音频采集，原始音频数据：PCM 视频文件编码，RGB/YUV -&amp;gt; H.264/H.265 音频文件编码，PCM -&amp;gt; AAC 编码为有流媒体特性的多媒体容器格式（Multimedia Container Format）， 如 FLV/TS/RTMP Package 推流到流媒体服务器  应用层：HLS/RTSP/RTMP 传输层：RTP/RTCP 网络层：RSVP   服务端处理  转码/录制/截图/鉴黄 生成拉流 URL   拉流到客户端  应用层：HLS/RTMP 传输层：RTP/RTCP 网络层：RSVP   解复用，多媒体容器格式（FLV/TS/RTMP Package）的流 -&amp;gt; 音视频数据（H.264/AAC） 解码视频文件为 YUV/RGB，解码音频文件为 PCM  硬解码（GPU 解码，CPU 辅助） 软解码（CPU 解码）   音画同步 视频数据（YUV/RGB）发送到视频输出设备，音频数据（PCM）发送到音频输出设备  </description>
     </item>
     
     <item>

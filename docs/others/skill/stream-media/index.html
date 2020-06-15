@@ -6,11 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="流媒体技术 视频编码  H.264 H.265 H.266 Apple Pro Res (MOV 格式的专用编码)  音频编码  AAC MP3 WAV FLAC（无损） APE（无损）  参考：
  音频编码格式的比较  视频容器 / 视频格式 一个格式却可以有不同的编码
- AVI (Audio Video Interleaved 音视频交错格式) RMVB FLV (Flash Video) MOV WMV (Windows Media Video) MP4 MKV  MKV MKV 格式是民间流行的一种视频格式，以它兼容众多视频编码见长，可以是 DivX、XviD、RealVideo、H264、MPEG2、VC1 等等。但是由于是民间格式，没有版权限制，又易于播放，所以官方发布的视频影片都不采用 mkv，网上制作下载常见。
- 视频传输协议  RTP/RTCP RTMP HLS (HTTP Live Streaming)   流媒体传输协议 流媒体协议的作用：流同步，播放控制，质量控制，多端跨平台播放等 直播三要素：低延时，高可用，质量反馈和检测
-常见流媒体协议类型
-常见流媒体协议适用场景
-RTP/RTCP/RTSP 封装："><meta property="og:title" content="流媒体技术" />
+ AVI (Audio Video Interleaved 音视频交错格式) RMVB FLV (Flash Video) MOV WMV (Windows Media Video) MP4 MKV  MP4 MP4 或称 MPEG-4 第 14 部分（英语：MPEG-4 Part 14）是一种标准的数字多媒体容器格式。MPEG-4 第 14 部分的扩展名为.mp4，以存储数字音频及数字视频为主，但也可以存储字幕和静止图像。因其可容纳支持比特流的视频流（如高级视频编码），MP4 可以在网络传输时使用流式传输。
+MKV MKV 格式是民间流行的一种视频格式，以它兼容众多视频编码见长，可以是 DivX、XviD、RealVideo、H264、MPEG2、VC1 等等。但是由于是民间格式，没有版权限制，又易于播放，所以官方发布的视频影片都不采用 mkv，网上制作下载常见。
+ 视频传输协议  RTP/RTCP RTMP HLS (HTTP Live Streaming)   流媒体传输协议 流媒体协议的作用：流同步，播放控制，质量控制，多端跨平台播放等 直播三要素：低延时，高可用，质量反馈和检测"><meta property="og:title" content="流媒体技术" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/" />
@@ -22,7 +20,7 @@ RTP/RTCP/RTSP 封装："><meta property="og:title" content="流媒体技术" />
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.c59e9b78f8522e2f1bf1076f14efd2f765cbda6a2c4c34fa24a0618a19faa700.js" integrity="sha256-xZ6bePhSLi8b8QdvFO/S92XL2mosTDT6JKBhihn6pwA="></script>
+<script defer src="/note-cs/en.search.min.e91781627631984b8d525292734188d86a34a46a74e5d8b22ab305ce01decd33.js" integrity="sha256-6ReBYnYxmEuNUlKSc0GI2Go0pGp05diyKrMFzgHezTM="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/index.xml" title="计算机学习笔记" />
 <!--
@@ -836,6 +834,46 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/note-cs/docs/others/skill/stream-media/http-flv/" class="">HTTP FLV</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/stream-media/mpeg/" class="">MPEG</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/stream-media/ps/" class="">PS</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/stream-media/live-tech/" class="">直播技术</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/note-cs/docs/others/skill/stream-media/video-codec/" class="">视频编码</a>
   
 
@@ -1008,6 +1046,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#音频编码">音频编码</a></li>
         <li><a href="#视频容器--视频格式">视频容器 / 视频格式</a>
           <ul>
+            <li><a href="#mp4httpswwwwikiwandcomzh-cnmp4"><a href="https://www.wikiwand.com/zh-cn/MP4">MP4</a></a></li>
             <li><a href="#mkv">MKV</a></li>
           </ul>
         </li>
@@ -1081,6 +1120,8 @@ https://github.com/alex-shpak/hugo-book
 <li>MP4</li>
 <li>MKV</li>
 </ul>
+<h3 id="mp4httpswwwwikiwandcomzh-cnmp4"><a href="https://www.wikiwand.com/zh-cn/MP4">MP4</a></h3>
+<p>MP4  或称  <a href="https://www.wikiwand.com/zh-cn/MPEG-4">MPEG-4</a>  第 14 部分（英语：MPEG-4 Part 14）是一种标准的数字<a href="https://www.wikiwand.com/zh-cn/%E5%A4%9A%E5%AA%92%E9%AB%94" title="多媒体">多媒体</a>容器格式。MPEG-4 第 14 部分的扩展名为<code>.mp4</code>，以存储<a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E9%9F%B3%E8%A8%8A">数字音频</a>及<a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E5%BD%B1%E7%89%87">数字视频</a>为主，但也可以存储<a href="https://www.wikiwand.com/zh-cn/%E5%AD%97%E5%B9%95">字幕</a>和静止图像。因其可容纳支持<a href="https://www.wikiwand.com/zh-cn/%E4%BD%8D%E5%85%83%E6%B5%81" title="比特流">比特流</a>的视频流（如<a href="https://www.wikiwand.com/zh-cn/H.264/MPEG-4_AVC">高级视频编码</a>），MP4 可以在网络传输时使用<a href="https://www.wikiwand.com/zh-cn/%E4%B8%B2%E6%B5%81%E5%AA%92%E9%AB%94" title="流媒体">流式传输</a>。</p>
 <h3 id="mkv">MKV</h3>
 <p>MKV 格式是民间流行的一种视频格式，以它兼容众多视频编码见长，可以是 DivX、XviD、RealVideo、H264、MPEG2、VC1 等等。但是由于是民间格式，没有版权限制，又易于播放，所以官方发布的视频影片都不采用 mkv，网上制作下载常见。</p>
 <hr>
@@ -1194,6 +1235,14 @@ It is recommended to dynamically assigned port numbers, although port numbers 50
 
 
 
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/3a02c4640cc0bc3f9ec3d09f2ed7da2ad86b8f8e" title='Last modified by yewang | 2020-06-15' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-06-15</span>
+    </a>
+  </div>
+
 
 
 </div>
@@ -1231,6 +1280,7 @@ It is recommended to dynamically assigned port numbers, although port numbers 50
         <li><a href="#音频编码">音频编码</a></li>
         <li><a href="#视频容器--视频格式">视频容器 / 视频格式</a>
           <ul>
+            <li><a href="#mp4httpswwwwikiwandcomzh-cnmp4"><a href="https://www.wikiwand.com/zh-cn/MP4">MP4</a></a></li>
             <li><a href="#mkv">MKV</a></li>
           </ul>
         </li>
