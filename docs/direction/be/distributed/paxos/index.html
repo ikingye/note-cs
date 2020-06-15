@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Paxos "><meta property="og:title" content="Paxos" />
+<meta name="description" content="Paxos Paxos 算法是分布式技术大师 Lamport 提出的，主要目的是通过这个算法，让参与分布式处理的每个参与者逐步达成一致意见。
+Lamport 为了讲述这个算法，假想了一个叫做 Paxos 的希腊城邦进行选举的情景，这个算法也是因此而得名。 由于城邦的居民没有人愿意把全部时间和精力放在这种事情上，所以他们只能不定时的来参加提议，不定时来了解提议、投票进展，不定时的表达自己的投票意见。 Paxos 算法的目标就是让他们按照少数服从多数的方式，最终达成一致意见。
+算法过程  先明确哪个 “提议者” 是意见领袖有权提出提议，未来，“接受者” 们就主要处理这个 “提议者” 的提议了 选出的意见领袖提出提议，“接受者” 反馈意见。如果多数 “接受者” 接受了一个提议，那么提议就通过了   参考  如何浅显易懂地解说 Paxos 的算法？  "><meta property="og:title" content="Paxos" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/distributed/paxos/" />
@@ -16,7 +18,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.e91781627631984b8d525292734188d86a34a46a74e5d8b22ab305ce01decd33.js" integrity="sha256-6ReBYnYxmEuNUlKSc0GI2Go0pGp05diyKrMFzgHezTM="></script>
+<script defer src="/note-cs/en.search.min.d0a0ea2d781237de2a91baa7eeedf26a08e444d6356afe48c0ce8a716132a0f0.js" integrity="sha256-0KDqLXgSN94qkbqn7u3yagjkRNY1av5IwM6KcWEyoPA="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/distributed/paxos/index.xml" title="计算机学习笔记" />
 <!--
@@ -1084,7 +1086,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#paxos">Paxos</a></li>
+    <li><a href="#paxos">Paxos</a>
+      <ul>
+        <li><a href="#算法过程">算法过程</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1097,6 +1104,20 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="paxos">Paxos</h1>
+<p><code>Paxos</code> 算法是分布式技术大师 <code>Lamport</code> 提出的，主要目的是通过这个算法，让参与分布式处理的每个参与者逐步达成一致意见。</p>
+<p><code>Lamport</code> 为了讲述这个算法，假想了一个叫做 <code>Paxos</code> 的希腊城邦进行选举的情景，这个算法也是因此而得名。
+由于城邦的居民没有人愿意把全部时间和精力放在这种事情上，所以他们只能<strong>不定时</strong>的来参加提议，不定时来了解提议、投票进展，不定时的表达自己的投票意见。
+Paxos 算法的目标就是让他们按照<strong>少数服从多数</strong>的方式，最终达成一致意见。</p>
+<h2 id="算法过程">算法过程</h2>
+<ol>
+<li>先明确哪个 “提议者” 是意见领袖有权提出提议，未来，“接受者” 们就主要处理这个 “提议者” 的提议了</li>
+<li>选出的意见领袖提出提议，“接受者” 反馈意见。如果多数 “接受者” 接受了一个提议，那么提议就通过了</li>
+</ol>
+<hr>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://www.zhihu.com/question/19787937">如何浅显易懂地解说 Paxos 的算法？</a></li>
+</ul>
 </article>
  
       
@@ -1146,7 +1167,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#paxos">Paxos</a></li>
+    <li><a href="#paxos">Paxos</a>
+      <ul>
+        <li><a href="#算法过程">算法过程</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

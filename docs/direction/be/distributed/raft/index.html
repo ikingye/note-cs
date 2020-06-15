@@ -7,7 +7,9 @@
 <meta name="description" content="Raft https://raft.github.io
 由于 Paxos 难以理解，所以才有了 Raft
 Raft 以可理解性和易于实现为目标：
- Leader 选举（Leader election） 日志同步（Log replication） 安全性（Safety） 日志压缩（Log compaction） 成员变更（Membership change）  关注 baidu/braft  "><meta property="og:title" content="Raft" />
+ Leader 选举（Leader election） 日志同步（Log replication） 安全性（Safety） 日志压缩（Log compaction） 成员变更（Membership change）   教程 maemual/raft-zh_cn   关注 baidu/braft  tikv/raft-rs  Raft distributed consensus algorithm implemented in Rust.
+hashicorp/raft  Golang implementation of the Raft consensus protocol
+etcd-io/etcd  Distributed reliable key-value store for the most critical data of a distributed system"><meta property="og:title" content="Raft" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/distributed/raft/" />
@@ -19,7 +21,7 @@ Raft 以可理解性和易于实现为目标：
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.e91781627631984b8d525292734188d86a34a46a74e5d8b22ab305ce01decd33.js" integrity="sha256-6ReBYnYxmEuNUlKSc0GI2Go0pGp05diyKrMFzgHezTM="></script>
+<script defer src="/note-cs/en.search.min.d0a0ea2d781237de2a91baa7eeedf26a08e444d6356afe48c0ce8a716132a0f0.js" integrity="sha256-0KDqLXgSN94qkbqn7u3yagjkRNY1av5IwM6KcWEyoPA="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/distributed/raft/index.xml" title="计算机学习笔记" />
 <!--
@@ -1089,9 +1091,17 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#raft">Raft</a>
       <ul>
+        <li><a href="#教程">教程</a>
+          <ul>
+            <li><a href="#maemualraft-zh_cnhttpsgithubcommaemualraft-zh_cn-github-starshttpsimgshieldsiogithubstarsmaemualraft-zh_cnsvg"><a href="https://github.com/maemual/raft-zh_cn">maemual/raft-zh_cn</a> <img src="https://img.shields.io/github/stars/maemual/raft-zh_cn.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
         <li><a href="#关注">关注</a>
           <ul>
             <li><a href="#baidubrafthttpsgithubcombaidubraft-github-starshttpsimgshieldsiogithubstarsbaidubraftsvg"><a href="https://github.com/baidu/braft">baidu/braft</a> <img src="https://img.shields.io/github/stars/baidu/braft.svg" alt="Github stars"></a></li>
+            <li><a href="#tikvraft-rshttpsgithubcomtikvraft-rs-github-starshttpsimgshieldsiogithubstarstikvraft-rssvg"><a href="https://github.com/tikv/raft-rs">tikv/raft-rs</a> <img src="https://img.shields.io/github/stars/tikv/raft-rs.svg" alt="Github stars"></a></li>
+            <li><a href="#hashicorprafthttpsgithubcomhashicorpraft-github-starshttpsimgshieldsiogithubstarshashicorpraftsvg"><a href="https://github.com/hashicorp/raft">hashicorp/raft</a> <img src="https://img.shields.io/github/stars/hashicorp/raft.svg" alt="Github stars"></a></li>
+            <li><a href="#etcd-ioetcdhttpsgithubcometcd-ioetcd-github-starshttpsimgshieldsiogithubstarsetcd-ioetcdsvg-go-versionhttpsimgshieldsiogithubgo-modgo-versionetcd-ioetcd"><a href="https://github.com/etcd-io/etcd">etcd-io/etcd</a> <img src="https://img.shields.io/github/stars/etcd-io/etcd.svg" alt="Github stars"> <img src="https://img.shields.io/github/go-mod/go-version/etcd-io/etcd" alt="Go version"></a></li>
           </ul>
         </li>
       </ul>
@@ -1118,8 +1128,18 @@ https://github.com/alex-shpak/hugo-book
 <li>日志压缩（Log compaction）</li>
 <li>成员变更（Membership change）</li>
 </ul>
+<hr>
+<h2 id="教程">教程</h2>
+<h3 id="maemualraft-zh_cnhttpsgithubcommaemualraft-zh_cn-github-starshttpsimgshieldsiogithubstarsmaemualraft-zh_cnsvg"><a href="https://github.com/maemual/raft-zh_cn">maemual/raft-zh_cn</a> <img src="https://img.shields.io/github/stars/maemual/raft-zh_cn.svg" alt="Github stars" /></h3>
+<hr>
 <h2 id="关注">关注</h2>
 <h3 id="baidubrafthttpsgithubcombaidubraft-github-starshttpsimgshieldsiogithubstarsbaidubraftsvg"><a href="https://github.com/baidu/braft">baidu/braft</a> <img src="https://img.shields.io/github/stars/baidu/braft.svg" alt="Github stars" /></h3>
+<h3 id="tikvraft-rshttpsgithubcomtikvraft-rs-github-starshttpsimgshieldsiogithubstarstikvraft-rssvg"><a href="https://github.com/tikv/raft-rs">tikv/raft-rs</a> <img src="https://img.shields.io/github/stars/tikv/raft-rs.svg" alt="Github stars" /></h3>
+<p>Raft distributed consensus algorithm implemented in Rust.</p>
+<h3 id="hashicorprafthttpsgithubcomhashicorpraft-github-starshttpsimgshieldsiogithubstarshashicorpraftsvg"><a href="https://github.com/hashicorp/raft">hashicorp/raft</a> <img src="https://img.shields.io/github/stars/hashicorp/raft.svg" alt="Github stars" /></h3>
+<p>Golang implementation of the Raft consensus protocol</p>
+<h3 id="etcd-ioetcdhttpsgithubcometcd-ioetcd-github-starshttpsimgshieldsiogithubstarsetcd-ioetcdsvg-go-versionhttpsimgshieldsiogithubgo-modgo-versionetcd-ioetcd"><a href="https://github.com/etcd-io/etcd">etcd-io/etcd</a> <img src="https://img.shields.io/github/stars/etcd-io/etcd.svg" alt="Github stars" /> <img src="https://img.shields.io/github/go-mod/go-version/etcd-io/etcd" alt="Go version" /></h3>
+<p>Distributed reliable key-value store for the most critical data of a distributed system</p>
 </article>
  
       
@@ -1171,9 +1191,17 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#raft">Raft</a>
       <ul>
+        <li><a href="#教程">教程</a>
+          <ul>
+            <li><a href="#maemualraft-zh_cnhttpsgithubcommaemualraft-zh_cn-github-starshttpsimgshieldsiogithubstarsmaemualraft-zh_cnsvg"><a href="https://github.com/maemual/raft-zh_cn">maemual/raft-zh_cn</a> <img src="https://img.shields.io/github/stars/maemual/raft-zh_cn.svg" alt="Github stars"></a></li>
+          </ul>
+        </li>
         <li><a href="#关注">关注</a>
           <ul>
             <li><a href="#baidubrafthttpsgithubcombaidubraft-github-starshttpsimgshieldsiogithubstarsbaidubraftsvg"><a href="https://github.com/baidu/braft">baidu/braft</a> <img src="https://img.shields.io/github/stars/baidu/braft.svg" alt="Github stars"></a></li>
+            <li><a href="#tikvraft-rshttpsgithubcomtikvraft-rs-github-starshttpsimgshieldsiogithubstarstikvraft-rssvg"><a href="https://github.com/tikv/raft-rs">tikv/raft-rs</a> <img src="https://img.shields.io/github/stars/tikv/raft-rs.svg" alt="Github stars"></a></li>
+            <li><a href="#hashicorprafthttpsgithubcomhashicorpraft-github-starshttpsimgshieldsiogithubstarshashicorpraftsvg"><a href="https://github.com/hashicorp/raft">hashicorp/raft</a> <img src="https://img.shields.io/github/stars/hashicorp/raft.svg" alt="Github stars"></a></li>
+            <li><a href="#etcd-ioetcdhttpsgithubcometcd-ioetcd-github-starshttpsimgshieldsiogithubstarsetcd-ioetcdsvg-go-versionhttpsimgshieldsiogithubgo-modgo-versionetcd-ioetcd"><a href="https://github.com/etcd-io/etcd">etcd-io/etcd</a> <img src="https://img.shields.io/github/stars/etcd-io/etcd.svg" alt="Github stars"> <img src="https://img.shields.io/github/go-mod/go-version/etcd-io/etcd" alt="Go version"></a></li>
           </ul>
         </li>
       </ul>
