@@ -1386,6 +1386,36 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
     </item>
     
     <item>
+      <title>RTMP</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</guid>
+      <description>RTMP Real-Time Messaging Protocol</description>
+    </item>
+    
+    <item>
+      <title>RTP</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</guid>
+      <description>RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
+PS 包 进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。
+系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。
+RTP 包 首条数据结构：RTP Header + PS Header + PS System Header + PSM + PESV（Header + Payload）</description>
+    </item>
+    
+    <item>
+      <title>RTSP</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</guid>
+      <description>RTSP Real Time Streaming Protocol</description>
+    </item>
+    
+    <item>
       <title>Salesforce</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/salesforce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1415,6 +1445,16 @@ delete submodule  Delete the relevant section from the .gitmodules file. Stage t
   USER GUIDE - Debugging
   Debug C++ in Visual Studio Code
   </description>
+    </item>
+    
+    <item>
+      <title>WebRTC</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/webrtc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/webrtc/</guid>
+      <description>WebRTC Web Real-Time Communication
+支持网页浏览器进行实时语音对话或视频对话的 API</description>
     </item>
     
     <item>
@@ -1720,6 +1760,21 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/search/elasticsearch/</guid>
       <description>Elasticsearch Open Source, Distributed, RESTful Search Engine https://www.elastic.co/products/elasticsearch</description>
+    </item>
+    
+    <item>
+      <title>H264</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/</guid>
+      <description>H264 H.264，又称为 MPEG-4 第 10 部分，高级视频编码（英语： MPEG-4 Part 10, Advanced Video Coding ，缩写为 MPEG-4 AVC）是一种面向块，基于运动补偿的视频编码标准（英语：Advanced Video Coding） 。
+AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在技术特性上比属于 MPEG-4 Part2 的 XviD 要先进。
+它和 ITU-T H.264 标准是一致的，故又称为 H.264。
+裸流 H.264 原始码流（又称为 “裸流”）是由一个一个的 NALU 组成的。
+H264 码流可以分为两层
+ VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NAL Units
+NALU 组成</description>
     </item>
     
     <item>
@@ -2328,6 +2383,15 @@ SDP 作用 SDP 作用包括以下一些方面
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</guid>
       <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段   开源实现 go  StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  gossip go-sip sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C  pjsip/pjproject   C#  GB28181/GB28181.Solution   C++  ossrs/srs  xiongziliang/ZLMediaKit   Node.js  kirm/sip.js   二进制（前端开源，后端不开源）  livegbs/GB28181-Server   </description>
+    </item>
+    
+    <item>
+      <title>视频编码</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</guid>
+      <description>视频编码     年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H.</description>
     </item>
     
     <item>

@@ -2037,6 +2037,18 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/salesforce/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url>
@@ -2069,6 +2081,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/webrtc/</loc>
   </url>
   
   <url>
@@ -2489,6 +2505,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/go/</loc>
     <lastmod>2020-04-28T15:08:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/</loc>
   </url>
   
   <url>
@@ -3516,6 +3536,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/ffmpeg/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url>
@@ -3551,8 +3575,11 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/others/skill/webrtc/</loc>
-    <lastmod>2020-06-09T13:11:39+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</loc>
   </url>
   
   <url>
