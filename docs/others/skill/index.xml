@@ -9,5 +9,16 @@
 	<atom:link href="https://ikingye.github.io/note-cs/docs/others/skill/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>EasyDarwin</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/easydarwin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/easydarwin/</guid>
+      <description>EasyDarwin EasyDarwin 是基于 Apple 的开源项目 Darwin Streaming Server 衍生而来的， Darwin 本身支持的是 RTSP 流媒体协议
+macosforge/dss  Darwin Streaming Server is Apple&amp;rsquo;s open source version of the QuickTime Streaming Server technology allowing you to send streaming media across the Internet using the industry standard RTP and RTSP protocols.
+ EasyDarwin 生态  EasyDarwin 开源流媒体服务器：www.EasyDarwin.org EasyDSS 商用流媒体解决方案：www.EasyDSS.com, 点播与直播服务器  EasyBMS EasyRMS, 录播服务器   EasyNVR 无插件直播方案：www.EasyNVR.com, 摄像机互联网直播服务  EasyGB28181Server EasyNVR 采用的是 Onvif 协议接入云平台， 而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台</description>
+    </item>
+    
   </channel>
 </rss>

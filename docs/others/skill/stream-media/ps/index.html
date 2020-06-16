@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="PS Program stream
-PS 流的包结构是可变长度的。
-一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
+PS 流的包结构是可变长度的， 一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
 在信道环境较好，传输误码较低时，一般采用 PS 码流。
-TS MPEG transport stream (MPEG-TS, MTS)
-TS 流的包结构是固定长度的，
-当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
-在信道环境较为恶劣，传输误码较高时，一般采用 TS 码流。"><meta property="og:title" content="PS" />
+ TS MPEG transport stream (MPEG-TS, MTS)
+传输流，是由固定长度为 188 字节的包组成， 含有一个或多个 program, 一个 program 可以包含多个视频、音频、和文字信息的 ES 流； 每个 ES 流会有不同的 PID 标示。
+而又为了可以分析这些 ES 流，TS 有一些固定的 PID 用来间隔发送 program 和 ES 流信息的表格:
+ PAT PMT 表  TS 流的包结构是固定长度的， 当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
+在信道环境较为恶劣，传输误码较高时，一般采用 TS 码流。
+TS 流解码过程  获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以知道当前网络中传输的视频（音频）类型（H264），相应的 PID，PCR 的 PID 等信息。 设置 demux 模块的视频 Filter 为相应视频的 PID 和 stream type 等。 从视频 Demux Filter 后得到的 TS 数据包中的 payload 数据就是 one piece of PES， 在 TS header 中有一些关于此 payload 属于哪个 PES 的 第多少个数据包。 因此软件中应该将此 payload 中的数据 copy 到 PES 的 buffer 中，用于拼接一个 PES 包。 拼接好的 PES 包的包头会有 PTS，DTS 信息，去掉 PES 的 header 就是 ES。 直接将被拔掉 PES 包头的 ES 包送给 decoder 就可以进行解码。 解码出来的数据就是一帧一帧的视频数据，这些数据至少应当与 PES 中的 PTS 关联一下，以便进行视音频同步。   ES Elementary Stream"><meta property="og:title" content="PS" />
 <meta property="og:description" content="PS Program stream
-PS 流的包结构是可变长度的。
-一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
+PS 流的包结构是可变长度的， 一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
 在信道环境较好，传输误码较低时，一般采用 PS 码流。
-TS MPEG transport stream (MPEG-TS, MTS)
-TS 流的包结构是固定长度的，
-当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
-在信道环境较为恶劣，传输误码较高时，一般采用 TS 码流。" />
+ TS MPEG transport stream (MPEG-TS, MTS)
+传输流，是由固定长度为 188 字节的包组成， 含有一个或多个 program, 一个 program 可以包含多个视频、音频、和文字信息的 ES 流； 每个 ES 流会有不同的 PID 标示。
+而又为了可以分析这些 ES 流，TS 有一些固定的 PID 用来间隔发送 program 和 ES 流信息的表格:
+ PAT PMT 表  TS 流的包结构是固定长度的， 当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
+在信道环境较为恶劣，传输误码较高时，一般采用 TS 码流。
+TS 流解码过程  获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以知道当前网络中传输的视频（音频）类型（H264），相应的 PID，PCR 的 PID 等信息。 设置 demux 模块的视频 Filter 为相应视频的 PID 和 stream type 等。 从视频 Demux Filter 后得到的 TS 数据包中的 payload 数据就是 one piece of PES， 在 TS header 中有一些关于此 payload 属于哪个 PES 的 第多少个数据包。 因此软件中应该将此 payload 中的数据 copy 到 PES 的 buffer 中，用于拼接一个 PES 包。 拼接好的 PES 包的包头会有 PTS，DTS 信息，去掉 PES 的 header 就是 ES。 直接将被拔掉 PES 包头的 ES 包送给 decoder 就可以进行解码。 解码出来的数据就是一帧一帧的视频数据，这些数据至少应当与 PES 中的 PTS 关联一下，以便进行视音频同步。   ES Elementary Stream" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/" />
 <meta property="article:modified_time" content="2020-06-15T20:25:07+08:00" />
@@ -30,7 +32,7 @@ TS 流的包结构是固定长度的，
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.d0a0ea2d781237de2a91baa7eeedf26a08e444d6356afe48c0ce8a716132a0f0.js" integrity="sha256-0KDqLXgSN94qkbqn7u3yagjkRNY1av5IwM6KcWEyoPA="></script>
+<script defer src="/note-cs/en.search.min.a650829ed05d415bfc2e26e15be9ea77e2b5264c0d8dfe3637a9b7e09aa81db6.js" integrity="sha256-plCCntBdQVv8LibhW&#43;nqd&#43;K1JkwNjf42N6m34JqoHbY="></script>
 
 <!--
 Made with Book Theme
@@ -771,6 +773,16 @@ https://github.com/alex-shpak/hugo-book
       
     
       
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/easydarwin/" class="">EasyDarwin</a>
+  
+
+</li>
+      
+    
+      
         
 
   <li>
@@ -1051,7 +1063,13 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#ps">PS</a>
       <ul>
-        <li><a href="#tshttpswwwwikiwandcomenmpeg_transport_stream"><a href="https://www.wikiwand.com/en/MPEG_transport_stream">TS</a></a></li>
+        <li><a href="#tshttpswwwwikiwandcomenmpeg_transport_stream"><a href="https://www.wikiwand.com/en/MPEG_transport_stream">TS</a></a>
+          <ul>
+            <li><a href="#ts-流解码过程">TS 流解码过程</a></li>
+          </ul>
+        </li>
+        <li><a href="#es">ES</a></li>
+        <li><a href="#pes">PES</a></li>
       </ul>
     </li>
   </ul>
@@ -1067,14 +1085,46 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="ps">PS</h1>
 <p><code>Program stream</code></p>
-<p>PS 流的包结构是<strong>可变长度</strong>的。</p>
-<p>一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。</p>
+<p>PS 流的包结构是<strong>可变长度</strong>的，
+一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。</p>
 <p>在<strong>信道环境较好</strong>，传输误码较低时，一般采用 PS 码流。</p>
+<hr>
 <h2 id="tshttpswwwwikiwandcomenmpeg_transport_stream"><a href="https://www.wikiwand.com/en/MPEG_transport_stream">TS</a></h2>
 <p>MPEG transport stream (MPEG-TS, MTS)</p>
-<p>TS 流的包结构是<strong>固定长度</strong>的，</p>
-<p>当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。</p>
+<p>传输流，是由固定长度为 188 字节的包组成，
+含有一个或多个 program, 一个 program 可以包含多个视频、音频、和文字信息的 ES 流；
+每个 ES 流会有不同的 PID 标示。</p>
+<p>而又为了可以分析这些 ES 流，TS 有一些固定的 PID 用来间隔发送 program 和 ES 流信息的表格:</p>
+<ul>
+<li>PAT</li>
+<li>PMT 表</li>
+</ul>
+<p>TS 流的包结构是<strong>固定长度</strong>的，
+当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。</p>
 <p>在<strong>信道环境较为恶劣</strong>，传输误码较高时，一般采用 TS 码流。</p>
+<h3 id="ts-流解码过程">TS 流解码过程</h3>
+<ol>
+<li>获取 TS 中的 <code>PAT</code></li>
+<li>获取 TS 中的 <code>PMT</code></li>
+<li>根据 PMT 可以知道当前网络中传输的视频（音频）类型（H264），相应的 PID，<code>PCR</code> 的 PID 等信息。</li>
+<li>设置 demux 模块的视频 Filter 为相应视频的 PID 和 stream type 等。</li>
+<li>从视频 Demux Filter 后得到的 TS 数据包中的 payload 数据就是 one piece of PES，
+在 TS header 中有一些关于此 payload 属于哪个 PES 的 第多少个数据包。
+因此软件中应该将此 payload 中的数据 copy 到 PES 的 buffer 中，用于<strong>拼接一个 PES 包</strong>。</li>
+<li>拼接好的 PES 包的包头会有 <code>PTS</code>，<code>DTS</code> 信息，去掉 PES 的 header 就是 <code>ES</code>。</li>
+<li>直接将被拔掉 PES 包头的 ES 包送给 <code>decoder</code> 就可以进行解码。
+解码出来的数据就是一帧一帧的视频数据，这些数据至少应当与 PES 中的 <code>PTS</code> 关联一下，以便进行<strong>视音频同步</strong>。</li>
+</ol>
+<hr>
+<h2 id="es">ES</h2>
+<p>Elementary Stream</p>
+<p>基本码流，包含视频、音频或数据的连续码流。</p>
+<p>ES -&gt; PES -&gt; PS/TS</p>
+<hr>
+<h2 id="pes">PES</h2>
+<p>Packet Elementary Stream</p>
+<p>打包的基本码流</p>
+<p>将基本的码流 ES 流根据需要分成长度不等的数据包，并加上<strong>包头</strong>就形成了打包的基本码流 PES 流。</p>
 </article>
  
       
@@ -1126,7 +1176,13 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#ps">PS</a>
       <ul>
-        <li><a href="#tshttpswwwwikiwandcomenmpeg_transport_stream"><a href="https://www.wikiwand.com/en/MPEG_transport_stream">TS</a></a></li>
+        <li><a href="#tshttpswwwwikiwandcomenmpeg_transport_stream"><a href="https://www.wikiwand.com/en/MPEG_transport_stream">TS</a></a>
+          <ul>
+            <li><a href="#ts-流解码过程">TS 流解码过程</a></li>
+          </ul>
+        </li>
+        <li><a href="#es">ES</a></li>
+        <li><a href="#pes">PES</a></li>
       </ul>
     </li>
   </ul>
