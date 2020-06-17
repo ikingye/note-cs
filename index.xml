@@ -1417,7 +1417,11 @@ RTP 包 首条数据结构：RTP Header + PS Header + PS System Header + PSM + P
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</guid>
       <description>RTSP Real Time Streaming Protocol
-默认端口 554</description>
+默认端口：554
+方法 一般的顺序是：
+ OPTIONS DESCRIBE SETUP PLAY TEARDOWN  OPTIONS 请求返回服务器将接受的请求类型。
+C-&amp;gt;S: OPTIONS rtsp://example.com/media.mp4 RTSP/1.0 CSeq: 1 Require: implicit-play Proxy-Require: gzipped-messages S-&amp;gt;C: RTSP/1.0 200 OK CSeq: 1 Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE DESCRIBE SETUP TEARDOWN PLAY PAUSE  包详情 海康摄像头
+OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22) # OPTIONS ：这个是选项，问下服务器我到底有啥本领技能？ RTSP/1.0 200 OK CSeq: 2 Public: OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER Date: Tue, May 23 2017 16:08:47 GMT # 服务器回复你，你有这么多技能：OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER DESCRIBE rtsp://172.</description>
     </item>
     
     <item>
