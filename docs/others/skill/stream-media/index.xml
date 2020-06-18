@@ -16,8 +16,8 @@
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</guid>
       <description>RTMP Real-Time Messaging Protocol
-默认端口 1935
-RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
+默认端口：1935
+握手 复杂握手  RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
  直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。 国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。 网络中的路由器或防火墙可能对 RTSP 端口不开放。  参考：
  为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？  </description>
     </item>
@@ -69,8 +69,7 @@ AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在
 它和 ITU-T H.264 标准是一致的，故又称为 H.264。
 裸流 H.264 原始码流（又称为 “裸流”）是由一个一个的 NALU 组成的。
 H264 码流可以分为两层
- VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NAL Units
-NALU 组成</description>
+ VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NALU (NAL Units) 组成</description>
     </item>
     
     <item>

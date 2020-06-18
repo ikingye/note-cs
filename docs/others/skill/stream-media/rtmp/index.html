@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="RTMP Real-Time Messaging Protocol
-默认端口 1935
-RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
+默认端口：1935
+握手 复杂握手  RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
  直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。 国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。 网络中的路由器或防火墙可能对 RTSP 端口不开放。  参考：
  为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？  "><meta property="og:title" content="RTMP" />
 <meta property="og:description" content="RTMP Real-Time Messaging Protocol
-默认端口 1935
-RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
+默认端口：1935
+握手 复杂握手  RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
  直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。 国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。 网络中的路由器或防火墙可能对 RTSP 端口不开放。  参考：
  为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？  " />
 <meta property="og:type" content="article" />
@@ -24,7 +24,7 @@ RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-fl
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.9190d2c761fedcf1deabe3ffbd35a6d1ef4da0ba4302b4ec04e340ef14aa50dd.js" integrity="sha256-kZDSx2H&#43;3PHeq&#43;P/vTWm0e9NoLpDArTsBONA7xSqUN0="></script>
+<script defer src="/note-cs/en.search.min.9a8343e4189f8866f3601b2b29ddbed42288f500b12ee820076f6f08f733572f.js" integrity="sha256-moND5BifiGbzYBsrKd2&#43;1CKI9QCxLuggB29vCPczVy8="></script>
 
 <!--
 Made with Book Theme
@@ -1055,7 +1055,11 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></a>
       <ul>
-        <li><a href="#默认端口">默认端口</a></li>
+        <li><a href="#握手">握手</a>
+          <ul>
+            <li><a href="#复杂握手">复杂握手</a></li>
+          </ul>
+        </li>
         <li><a href="#rtmp-vs-rtsp">RTMP vs RTSP</a></li>
       </ul>
     </li>
@@ -1072,8 +1076,10 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></h1>
 <p>Real-Time Messaging Protocol</p>
-<h2 id="默认端口">默认端口</h2>
-<p>1935</p>
+<p>默认端口：1935</p>
+<h2 id="握手">握手</h2>
+<h3 id="复杂握手">复杂握手</h3>
+<hr>
 <h2 id="rtmp-vs-rtsp">RTMP vs RTSP</h2>
 <p>目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.</p>
 <ol>
@@ -1136,7 +1142,11 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae"><a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP</a></a>
       <ul>
-        <li><a href="#默认端口">默认端口</a></li>
+        <li><a href="#握手">握手</a>
+          <ul>
+            <li><a href="#复杂握手">复杂握手</a></li>
+          </ul>
+        </li>
         <li><a href="#rtmp-vs-rtsp">RTMP vs RTSP</a></li>
       </ul>
     </li>

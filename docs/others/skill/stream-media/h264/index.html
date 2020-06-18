@@ -9,15 +9,13 @@ AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在
 它和 ITU-T H.264 标准是一致的，故又称为 H.264。
 裸流 H.264 原始码流（又称为 “裸流”）是由一个一个的 NALU 组成的。
 H264 码流可以分为两层
- VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NAL Units
-NALU 组成"><meta property="og:title" content="H264" />
+ VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NALU (NAL Units) 组成"><meta property="og:title" content="H264" />
 <meta property="og:description" content="H264 H.264，又称为 MPEG-4 第 10 部分，高级视频编码（英语： MPEG-4 Part 10, Advanced Video Coding ，缩写为 MPEG-4 AVC）是一种面向块，基于运动补偿的视频编码标准（英语：Advanced Video Coding） 。
 AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在技术特性上比属于 MPEG-4 Part2 的 XviD 要先进。
 它和 ITU-T H.264 标准是一致的，故又称为 H.264。
 裸流 H.264 原始码流（又称为 “裸流”）是由一个一个的 NALU 组成的。
 H264 码流可以分为两层
- VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NAL Units
-NALU 组成" />
+ VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NALU (NAL Units) 组成" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/" />
 <meta property="article:modified_time" content="2020-06-15T17:07:42+08:00" />
@@ -28,7 +26,7 @@ NALU 组成" />
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.9190d2c761fedcf1deabe3ffbd35a6d1ef4da0ba4302b4ec04e340ef14aa50dd.js" integrity="sha256-kZDSx2H&#43;3PHeq&#43;P/vTWm0e9NoLpDArTsBONA7xSqUN0="></script>
+<script defer src="/note-cs/en.search.min.9a8343e4189f8866f3601b2b29ddbed42288f500b12ee820076f6f08f733572f.js" integrity="sha256-moND5BifiGbzYBsrKd2&#43;1CKI9QCxLuggB29vCPczVy8="></script>
 
 <!--
 Made with Book Theme
@@ -1099,8 +1097,7 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615170039.png" alt="" /></p>
 <h3 id="nalu"><code>NALU</code></h3>
-<p><code>NAL Units</code></p>
-<p><code>NALU</code> 组成</p>
+<p><code>NALU</code> (<code>NAL Units</code>) 组成</p>
 <ul>
 <li><code>NALU</code> 头（<code>00 00 00 01</code> 或者 <code>00 00 01</code>）</li>
 <li>sps (序列参数集)</li>
