@@ -22,7 +22,7 @@ RTP 包 首条数据结构：RTP Header &#43; PS Header &#43; PS System Header &
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.9a8343e4189f8866f3601b2b29ddbed42288f500b12ee820076f6f08f733572f.js" integrity="sha256-moND5BifiGbzYBsrKd2&#43;1CKI9QCxLuggB29vCPczVy8="></script>
+<script defer src="/note-cs/en.search.min.5b138807acfde3d83bf5f9c3c4943431f89ae326a96f4e9fcfd14497b7276c45.js" integrity="sha256-WxOIB6z949g79fnDxJQ0Mfia4yapb06fz9FEl7cnbEU="></script>
 
 <!--
 Made with Book Theme
@@ -845,6 +845,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/note-cs/docs/others/skill/stream-media/hls/" class="">HLS</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/note-cs/docs/others/skill/stream-media/http-flv/" class="">HTTP FLV</a>
   
 
@@ -1068,6 +1078,8 @@ https://github.com/alex-shpak/hugo-book
             </li>
           </ul>
         </li>
+        <li><a href="#rtp---rtsprtmp">RTP -&gt; RTSP/RTMP</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>
@@ -1160,7 +1172,32 @@ https://github.com/alex-shpak/hugo-book
 <li><code>CSRC</code>: <code>Contributing source</code></li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200610202502.png" alt="" /></p>
+<hr>
+<h2 id="rtp---rtsprtmp">RTP -&gt; RTSP/RTMP</h2>
+<blockquote>
+<p>需要遇到 <code>sps</code> <code>pps</code> <code>idr</code> 才能生成</p>
+</blockquote>
+<p><code>NALU</code> (<code>NAL Units</code>) 组成</p>
+<ul>
+<li><code>NALU</code> 头（<code>00 00 00 01</code> 或者 <code>00 00 01</code>）</li>
+<li>sps (序列参数集)</li>
+<li>pps (图像参数集合)</li>
+<li>slice</li>
+<li>sei</li>
+<li>IDR 帧</li>
+<li>I 帧（在图像运动变化较少时，I 帧后面是 7 个 P 帧，如果图像运动变化大时，一个序列就短了，I 帧后面可能是 3 个或者 4 个 P 帧）</li>
+<li>P 帧</li>
+<li>B 帧等数据。</li>
+</ul>
+<p>一个完整的 <code>NALU</code> 单元结构图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615144617.png" alt="" /></p>
 <p>参考：</p>
+<ul>
+<li><a href="https://github.com/xiongziliang/ZLMediaKit/issues/332">RTP 接收 28281 的收流生成流媒体的时间很长</a></li>
+<li><a href="https://juejin.im/post/5a8fe66b6fb9a0633e51eadc">H.264 码流结构 (H.264 Data Structure)</a></li>
+</ul>
+<hr>
+<h2 id="参考">参考</h2>
 <ul>
 <li><a href="https://blog.yasking.org/a/hikvision-rtp-ps-stream-parser.html">海康摄像头 PS 流格式解析（RTP/PS/H264）</a></li>
 <li><a href="https://blog.yasking.org/a/hikvision-nvr-playback-with-gb28181.html">基于 GB28181 从海康 NVR 获取目录 / 点播 / 回播信令备忘</a></li>
@@ -1232,6 +1269,8 @@ https://github.com/alex-shpak/hugo-book
             </li>
           </ul>
         </li>
+        <li><a href="#rtp---rtsprtmp">RTP -&gt; RTSP/RTMP</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>

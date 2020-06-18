@@ -22,7 +22,7 @@ SIP 服务器的 IP 为 192.168.10.10， SIP 服务器的端口为 57030， SIP 
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.9a8343e4189f8866f3601b2b29ddbed42288f500b12ee820076f6f08f733572f.js" integrity="sha256-moND5BifiGbzYBsrKd2&#43;1CKI9QCxLuggB29vCPczVy8="></script>
+<script defer src="/note-cs/en.search.min.5b138807acfde3d83bf5f9c3c4943431f89ae326a96f4e9fcfd14497b7276c45.js" integrity="sha256-WxOIB6z949g79fnDxJQ0Mfia4yapb06fz9FEl7cnbEU="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/index.xml" title="计算机学习笔记" />
 <!--
@@ -1017,7 +1017,17 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#2012-年gbt-28181-的第一版标准">2012 年，GB/T-28181 的第一版标准</a></li>
             <li><a href="#2014-年修改补充文件">2014 年，修改补充文件</a></li>
-            <li><a href="#2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</a></li>
+            <li><a href="#2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</a>
+              <ul>
+                <li><a href="#udp-vs-tcp-主动-vs-tcp-被动"><code>UDP</code> vs <code>TCP 主动</code> vs <code>TCP 被动</code></a>
+                  <ul>
+                    <li><a href="#udp">UDP</a></li>
+                    <li><a href="#tcp-被动">TCP 被动</a></li>
+                    <li><a href="#tcp-主动">TCP 主动</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#gb28181-的协议栈实现">GB28181 的协议栈实现</a></li>
@@ -1073,6 +1083,25 @@ SIP ID 为 34020000002000000001。</p>
 <p>2016 年公安部一所又推出了 GB/T-28181 - 2016 版本，此版本就是对之前的 2011 版和修改补充版进行合并，并增加一些信令，说明制定协议的同志们一直都在努力。</p>
 <p>这次的版本应该算是阶段性的版本了，短时间内应该不会修改了。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200525154847.png" alt="" /></p>
+<h4 id="udp-vs-tcp-主动-vs-tcp-被动"><code>UDP</code> vs <code>TCP 主动</code> vs <code>TCP 被动</code></h4>
+<p>在 GB28181 的 2016 版中，对于媒体流的传输在原有 UDP 传输的基础中，增加了主动 tcp 和被动 tcp 的方式。</p>
+<p><code>RTP over UDP</code> vs <code>RTP over TCP</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 默认 UDP</span>
+m<span style="color:#f92672">=</span>audio <span style="color:#ae81ff">6000</span> RTP/AVP <span style="color:#ae81ff">8</span>
+
+<span style="color:#75715e"># 指定 TCP</span>
+m<span style="color:#f92672">=</span>video <span style="color:#ae81ff">6000</span> TCP/RTP/AVP <span style="color:#ae81ff">96</span>
+</code></pre></div><p><code>主动 TCP</code> vs <code>被动 TCP</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">a<span style="color:#f92672">=</span>setup:active
+
+a<span style="color:#f92672">=</span>setup:passive
+</code></pre></div><h5 id="udp">UDP</h5>
+<p>这个是普遍的传输方式</p>
+<p>GB28181 服务端在发 invite 时，在携带的 SDP 中包含了接收媒体的端口，设备端（被呼叫端）收到 invite 后，解析该端口，通过 UDP 将媒体流发向该端口。</p>
+<h5 id="tcp-被动">TCP 被动</h5>
+<p>GB28181 服务端在发 invite 时，在携带的 SDP 中包含了接收媒体的端口，并监听该端口的媒体数据，设备端（被呼叫端）收到 invite 后，解析该端口，通过 TCP 将媒体流发向该端口。</p>
+<h5 id="tcp-主动">TCP 主动</h5>
+<p>设备端（被呼叫端）告知服务端自己的媒体流 tcp 端口，服务端主动去连接设备端（被呼叫端）的该端口，获取数据。</p>
 <p>参考：</p>
 <ul>
 <li><a href="https://blog.csdn.net/Zhu__/article/details/62215134">GB28181 协议实现简介</a></li>
@@ -1180,7 +1209,17 @@ SIP ID 为 34020000002000000001。</p>
           <ul>
             <li><a href="#2012-年gbt-28181-的第一版标准">2012 年，GB/T-28181 的第一版标准</a></li>
             <li><a href="#2014-年修改补充文件">2014 年，修改补充文件</a></li>
-            <li><a href="#2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</a></li>
+            <li><a href="#2016-年gbt-28181---2016-版本">2016 年，GB/T-28181 - 2016 版本</a>
+              <ul>
+                <li><a href="#udp-vs-tcp-主动-vs-tcp-被动"><code>UDP</code> vs <code>TCP 主动</code> vs <code>TCP 被动</code></a>
+                  <ul>
+                    <li><a href="#udp">UDP</a></li>
+                    <li><a href="#tcp-被动">TCP 被动</a></li>
+                    <li><a href="#tcp-主动">TCP 主动</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#gb28181-的协议栈实现">GB28181 的协议栈实现</a></li>
