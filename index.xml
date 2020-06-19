@@ -2438,6 +2438,17 @@ SDP 作用 SDP 作用包括以下一些方面
     </item>
     
     <item>
+      <title>gsoap 生成 onvif 框架</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/onvif/gsoap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/onvif/gsoap/</guid>
+      <description>gsoap 生成 onvif 框架 生成参数 wsdl2h -O4 aggressively optimizes the output by &amp;ldquo;schema slicing&amp;rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
+-P don&amp;rsquo;t create polymorphic types inherited from xsd__anyType;
+removes the base class xsd__anyType from the generated C++ classes, which are normally added by wsdl2h if the xsd:anyType XSD type is used somewhere in a WSDL.</description>
+    </item>
+    
+    <item>
       <title>EasyDarwin</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/easydarwin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
