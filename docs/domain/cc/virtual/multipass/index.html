@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Multipass canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run
-# 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name k3s --mem 1G --disk 5G # 为 VM 启动一个 shell multipass shell k3s # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code # 在其上安装 k3s curl -sfL https://get.k3s.io | sh – 网络 使用的是桥接模式，因为
+# 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name k3s --mem 1G --disk 5G # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img # 为 VM 启动一个 shell multipass shell k3s # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code # 在其上安装 k3s curl -sfL https://get.k3s.io | sh – 网络 使用的是桥接模式，因为
  主机可以 ping 通虚拟机  所以不是 NAT   虚拟机之间可以 ping 通  所以不是 NAT   虚拟机可以上网  所以不是 Host-Only    "><meta property="og:title" content="Multipass" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.7cab08e93ba1efbfff07551a46005e2f82a94c95828eabd54a4932c9d81dd32c.js" integrity="sha256-fKsI6Tuh77//B1UaRgBeL4KpTJWCjqvVSkkyydgd0yw="></script>
+<script defer src="/note-cs/en.search.min.a274f26479ad64de74797a760c0090026a62c75672e4e4d41ccac78842ed8d29.js" integrity="sha256-onTyZHmtZN50eXp2DACQAmpix1Zy5OTUHMrHiELtjSk="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cc/virtual/multipass/index.xml" title="计算机学习笔记" />
 <!--
@@ -1249,6 +1249,9 @@ https://github.com/alex-shpak/hugo-book
 <a href="https://multipass.run">https://multipass.run</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 创建一个 VM, 1GB 内存和 5GB 磁盘</span>
 multipass launch --name k3s --mem 1G --disk 5G
+
+<span style="color:#75715e"># 使用本地 image</span>
+multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img
 
 <span style="color:#75715e"># 为 VM 启动一个 shell</span>
 multipass shell k3s
