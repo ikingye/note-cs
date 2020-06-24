@@ -9,5 +9,15 @@
 	<atom:link href="https://ikingye.github.io/note-cs/docs/others/skill/lorawan/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>CLAA</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/claa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/claa/</guid>
+      <description>CLAA The China LoRa Application Alliance
+CLAA IoT Ecosystem</description>
+    </item>
+    
   </channel>
 </rss>
