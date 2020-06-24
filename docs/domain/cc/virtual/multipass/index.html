@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Multipass canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run
-# 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name k3s --mem 1G --disk 5G # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img # 为 VM 启动一个 shell multipass shell k3s # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code # 在其上安装 k3s curl -sfL https://get.k3s.io | sh – 网络 使用的是桥接模式，因为
- 主机可以 ping 通虚拟机  所以不是 NAT   虚拟机之间可以 ping 通  所以不是 NAT   虚拟机可以上网  所以不是 Host-Only    "><meta property="og:title" content="Multipass" />
+# 创建一个 VM, 1GB 内存和 5GB 磁盘 multipass launch --name k3s --mem 1G --disk 5G # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img # 为 VM 启动一个 shell multipass shell k3s # 挂载 multipass mount ~/code myvm:/home/ubuntu/yewang/code # 设置代理 export http_proxy=&#34;http://192.168.64.1:8081&#34;; export HTTP_PROXY=&#34;http://192.168.64.1:8081&#34;; export https_proxy=&#34;http://192.168.64.1:8081&#34;; export HTTPS_PROXY=&#34;http://192.168.64.1:8081&#34; # 在其上安装 k3s curl -sfL https://get.k3s.io | sh – 网络 使用的是桥接模式，因为"><meta property="og:title" content="Multipass" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/virtual/multipass/" />
@@ -18,7 +17,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.1d966edc41c2da0270951f2187b761e5ce0d67c9c48cd8791a387a663cfd5165.js" integrity="sha256-HZZu3EHC2gJwlR8hh7dh5c4NZ8nEjNh5Gjh6Zjz9UWU="></script>
+<script defer src="/note-cs/en.search.min.227f677d8575de0e4c818b670a6218835c2dfddeeec88538df6c3aa284f91331.js" integrity="sha256-In9nfYV13g5MgYtnCmIYg1wt/d7uyIU432w6ooT5EzE="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cc/virtual/multipass/index.xml" title="计算机学习笔记" />
 <!--
@@ -1258,6 +1257,10 @@ multipass shell k3s
 
 <span style="color:#75715e"># 挂载</span>
 multipass mount ~/code myvm:/home/ubuntu/yewang/code
+
+<span style="color:#75715e"># 设置代理</span>
+
+export http_proxy<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://192.168.64.1:8081&#34;</span>; export HTTP_PROXY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://192.168.64.1:8081&#34;</span>; export https_proxy<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://192.168.64.1:8081&#34;</span>; export HTTPS_PROXY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://192.168.64.1:8081&#34;</span>
 
 <span style="color:#75715e"># 在其上安装 k3s</span>
 curl -sfL https://get.k3s.io | sh –

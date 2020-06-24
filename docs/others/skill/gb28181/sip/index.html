@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
-包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n "><meta property="og:title" content="SIP" />
+包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n  SIP Proxy SIP Proxy 有分为两种模式，一种是状态代理模式，另外一种是无状态代理模式。
+SIP 代理自己本身不能发起 INVITE 或者 BYE 请求，这样就不能满足 IP 语音通信的基本呼叫功能。
+双方终端通过多个 Proxy 代理以后，根据 Route Set 返回处理流程。 但是，在一些情况下，如果终端忽略了 Route Set 以后，直接通过呼叫方和被呼叫方，双方可能进行非法呼叫， 它们跳过了代理服务器，导致业务控制层很难对其进行管理。"><meta property="og:title" content="SIP" />
 <meta property="og:description" content="SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
-包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n " />
+包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n  SIP Proxy SIP Proxy 有分为两种模式，一种是状态代理模式，另外一种是无状态代理模式。
+SIP 代理自己本身不能发起 INVITE 或者 BYE 请求，这样就不能满足 IP 语音通信的基本呼叫功能。
+双方终端通过多个 Proxy 代理以后，根据 Route Set 返回处理流程。 但是，在一些情况下，如果终端忽略了 Route Set 以后，直接通过呼叫方和被呼叫方，双方可能进行非法呼叫， 它们跳过了代理服务器，导致业务控制层很难对其进行管理。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/" />
 <meta property="article:modified_time" content="2020-06-04T00:18:44+08:00" />
@@ -18,7 +22,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.1d966edc41c2da0270951f2187b761e5ce0d67c9c48cd8791a387a663cfd5165.js" integrity="sha256-HZZu3EHC2gJwlR8hh7dh5c4NZ8nEjNh5Gjh6Zjz9UWU="></script>
+<script defer src="/note-cs/en.search.min.227f677d8575de0e4c818b670a6218835c2dfddeeec88538df6c3aa284f91331.js" integrity="sha256-In9nfYV13g5MgYtnCmIYg1wt/d7uyIU432w6ooT5EzE="></script>
 
 <!--
 Made with Book Theme
@@ -792,6 +796,16 @@ https://github.com/alex-shpak/hugo-book
       
     
       
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/voip/" class="">VoIP</a>
+  
+
+</li>
+      
+    
+      
         
 
   <li>
@@ -1014,6 +1028,23 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#message">Message</a></li>
           </ul>
         </li>
+        <li><a href="#sip-proxy">SIP Proxy</a>
+          <ul>
+            <li><a href="#开源实现">开源实现</a>
+              <ul>
+                <li><a href="#kamalio">Kamalio</a></li>
+                <li><a href="#opensips">OpenSIPS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#b2bua">B2BUA</a>
+          <ul>
+            <li><a href="#为什么需要-b2bua">为什么需要 B2BUA</a></li>
+          </ul>
+        </li>
+        <li><a href="#教程">教程</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>
@@ -1053,7 +1084,51 @@ https://github.com/alex-shpak/hugo-book
         &lt;Info&gt;<span style="color:#ae81ff">\n</span>
         &lt;/Info&gt;<span style="color:#ae81ff">\n</span>
         &lt;/Notify&gt;<span style="color:#ae81ff">\n</span>
-</code></pre></div></article>
+</code></pre></div><hr>
+<h2 id="sip-proxy">SIP Proxy</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200623175311.png" alt="" /></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200623180002.png" alt="" /></p>
+<p>SIP Proxy 有分为两种模式，一种是状态代理模式，另外一种是无状态代理模式。</p>
+<p>SIP 代理自己本身不能发起 <code>INVITE</code> 或者 <code>BYE</code> 请求，这样就不能满足 IP 语音通信的基本呼叫功能。</p>
+<p>双方终端通过多个 Proxy 代理以后，根据 <code>Route Set</code> 返回处理流程。
+但是，在一些情况下，如果终端忽略了 <code>Route Set</code> 以后，直接通过呼叫方和被呼叫方，双方可能进行非法呼叫，
+它们跳过了代理服务器，导致业务控制层很难对其进行管理。</p>
+<p>为了解决这个问题，引入了 <code>B2BUA</code> 机制，通过背靠背的方式来实现业务能力的管理和会话的管理</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200623175847.png" alt="" /></p>
+<h3 id="开源实现">开源实现</h3>
+<h4 id="kamalio">Kamalio</h4>
+<p><a href="https://github.com/kamailio/kamailio">kamailio/kamailio</a> <img src="https://img.shields.io/github/stars/kamailio/kamailio.svg" alt="Github stars" /></p>
+<h4 id="opensips">OpenSIPS</h4>
+<p><a href="https://github.com/OpenSIPS/opensips">OpenSIPS/opensips</a> <img src="https://img.shields.io/github/stars/OpenSIPS/opensips.svg" alt="Github stars" /></p>
+<hr>
+<h2 id="b2bua">B2BUA</h2>
+<p>B2BUA 是一个逻辑实体，它由一个 UAS 和一个 UAC 两个部分构成，分别负责接收请求，处理请求和生成请求。
+B2BUA 和 SIP 代理不同，它必须保持在 dialog 中所有创建的请求。只有这样，B2BUA 才能完全控制所有需要管理的会话。</p>
+<p>B2BUA 具体的构成如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200623180051.png" alt="" /></p>
+<p>B2BUA 介于两个终端之间</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200624103643.png" alt="" /></p>
+<ol>
+<li>UAC 对 B2BUA 发起一个 INVITE 请求，在 B2BUA 端，B2BUA 是一个 UAS 来接收这个请求，创建了第一个会话来管理这个请求。双方保存了彼此的 Route Set 记录消息。</li>
+<li>为了对另外一个终端发起 INVITE 请求，B2BUA 同时也扮演了一个 UAC 的角色，它创建了第二个会话，并且再次对下游终端发起 INVITE 请求。这里，UAC 需要从 UAS 端拷贝 SDP 消息和其他必要消息内容。然后，UAC 对下游终端发起 INVITE 请求。终端接收了 INVITE 请求，并且保存了 Route Set 数据记录。</li>
+<li>为了响应 INVITE 请求，这里，下游终端就会变成一个 UAS 回复 B2BUA 200 OK。B2BUA 再次拷贝 200 OK 的消息，然后通过 UAS 再次返回到 UAC 终端。</li>
+<li>UAC 终端收到 200 OK 以后，保存为 Route Set 数据内容。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200624103829.png" alt="" /></p>
+<h3 id="为什么需要-b2bua">为什么需要 B2BUA</h3>
+<p>如果计费模块检测到双方呼叫费用出现超额的时候，这时，B2BUA 会切换成 UAC/UAC 的状态，同时对终端发送 BYE 消息。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200624103935.png" alt="" /></p>
+<hr>
+<h2 id="教程">教程</h2>
+<ul>
+<li><a href="https://www.tutorialspoint.com/session_initiation_protocol/index.htm">Session Initiation Protocol Tutorial (by tutorialspoint)</a></li>
+</ul>
+<hr>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="http://www.hiastar.com/2019/04/26/b2buasbcproxy%E7%9A%84sip%E6%B6%88%E6%81%AF%E9%87%8D%E6%9E%84%E5%92%8Crfc7092%E8%AF%A6%E8%A7%A3/">B2BUA/SBC/Proxy 的 SIP 消息重构和 RFC7092 详解</a></li>
+</ul>
+</article>
  
       
 
@@ -1109,6 +1184,23 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#message">Message</a></li>
           </ul>
         </li>
+        <li><a href="#sip-proxy">SIP Proxy</a>
+          <ul>
+            <li><a href="#开源实现">开源实现</a>
+              <ul>
+                <li><a href="#kamalio">Kamalio</a></li>
+                <li><a href="#opensips">OpenSIPS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#b2bua">B2BUA</a>
+          <ul>
+            <li><a href="#为什么需要-b2bua">为什么需要 B2BUA</a></li>
+          </ul>
+        </li>
+        <li><a href="#教程">教程</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>
