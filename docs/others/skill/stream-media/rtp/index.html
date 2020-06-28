@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
+<meta name="description" content="RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header 前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
+ RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
 PS 包 进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。
-系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。
-RTP 包 首条数据结构：RTP Header &#43; PS Header &#43; PS System Header &#43; PSM &#43; PESV（Header &#43; Payload）"><meta property="og:title" content="RTP" />
-<meta property="og:description" content="RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
+系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。"><meta property="og:title" content="RTP" />
+<meta property="og:description" content="RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header 前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
+ RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
 PS 包 进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。
-系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。
-RTP 包 首条数据结构：RTP Header &#43; PS Header &#43; PS System Header &#43; PSM &#43; PESV（Header &#43; Payload）" />
+系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/" />
 <meta property="article:modified_time" content="2020-06-19T00:13:58+08:00" />
@@ -22,7 +22,7 @@ RTP 包 首条数据结构：RTP Header &#43; PS Header &#43; PS System Header &
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.535fa20cb587610c6bc11318ef9eb431e46e3ff7a78aa619f08731febedde0dc.js" integrity="sha256-U1&#43;iDLWHYQxrwRMY7560MeRuP/eniqYZ8Icx/r7d4Nw="></script>
+<script defer src="/note-cs/en.search.min.95b50671411e14700cdd5bd8075b6fb1da73c84ebabaffd332d8e0a2eb018f91.js" integrity="sha256-lbUGcUEeFHAM3VvYB1tvsdpzyE66uv/TMtjgousBj5E="></script>
 
 <!--
 Made with Book Theme
@@ -786,6 +786,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/note-cs/docs/others/skill/srs/" class="">SRS</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/note-cs/docs/others/skill/zlmediakit/" class="">ZLMediaKit</a>
   
 
@@ -1085,6 +1095,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#报文结构">报文结构</a>
           <ul>
+            <li><a href="#rtp-header">RTP Header</a></li>
             <li><a href="#rtppsh264"><code>RTP</code>/<code>PS</code>/<code>H.264</code></a>
               <ul>
                 <li><a href="#ps-包">PS 包</a></li>
@@ -1125,6 +1136,9 @@ https://github.com/alex-shpak/hugo-book
 <li>PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。</li>
 <li>SSRC 是同步化来源。</li>
 </ul>
+<h3 id="rtp-header">RTP Header</h3>
+<p>前 12 个字节出现在每个 <code>RTP</code> 包中，仅仅在被混合器插入时，才出现 <code>CSRC</code> 识别符列表。</p>
+<hr>
 <h3 id="rtppsh264"><code>RTP</code>/<code>PS</code>/<code>H.264</code></h3>
 <p>基于 RTP 的 <code>PS 封装</code>
 首先按照 <code>ISO/IEC 13818-1:2000</code> 将视音频封装成 <strong>PS 包</strong>，
@@ -1137,10 +1151,12 @@ https://github.com/alex-shpak/hugo-book
 <h4 id="rtp-包">RTP 包</h4>
 <p><strong>首条</strong>数据结构：<code>RTP Header</code> + <code>PS Header</code> + <strong><code>PS System Header</code> + <code>PSM</code></strong> + <code>PESV</code>（<code>Header + Payload</code>）</p>
 <p><strong>非首条</strong>数据结构：<code>RTP Header</code> + <code>PS Header</code> + <code>PESV</code>（<code>Header + Payload</code>）</p>
+<p>少了 <code>PS System Header</code> + <code>PSM</code></p>
 <ul>
 <li><code>PESV</code>: 视频</li>
 <li><code>PESA</code>: 音频</li>
 </ul>
+<hr>
 <p>知道了 <code>PS 包</code>的结构，就可以用处理程序解析数据，
 从而把原始流 <code>ES</code>（H264）从 <code>PES</code> 包中解析出来</p>
 <p><strong><code>PES Payload</code> 就是 H264 数据</strong></p>
@@ -1188,8 +1204,16 @@ https://github.com/alex-shpak/hugo-book
 <hr>
 <ul>
 <li><code>payload type</code>: <code>PS</code> (96)</li>
-<li><code>SSRC</code>: <code>Synchronization source</code></li>
-<li><code>CSRC</code>: <code>Contributing source</code></li>
+<li><code>SSRC</code>: <code>Synchronization source</code>
+<ul>
+<li><code>Synchronization Source identifier</code> (32 bits)</li>
+</ul>
+</li>
+<li><code>CSRC</code>: <code>Contributing source</code>
+<ul>
+<li><code>Contributing source IDs</code> (32 bits each)</li>
+</ul>
+</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200610202502.png" alt="" /></p>
 <hr>
@@ -1276,6 +1300,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#报文结构">报文结构</a>
           <ul>
+            <li><a href="#rtp-header">RTP Header</a></li>
             <li><a href="#rtppsh264"><code>RTP</code>/<code>PS</code>/<code>H.264</code></a>
               <ul>
                 <li><a href="#ps-包">PS 包</a></li>

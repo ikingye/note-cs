@@ -28,10 +28,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</guid>
-      <description>RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
+      <description>RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header 前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
+ RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
 PS 包 进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。
-系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。
-RTP 包 首条数据结构：RTP Header + PS Header + PS System Header + PSM + PESV（Header + Payload）</description>
+系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。</description>
     </item>
     
     <item>
