@@ -2387,21 +2387,6 @@ CLAA IoT Ecosystem</description>
     </item>
     
     <item>
-      <title>GB28181 协议解析</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</guid>
-      <description>GB28181 协议解析 点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
-名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
-SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
-联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
-SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
-注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
-中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。</description>
-    </item>
-    
-    <item>
       <title>SDP</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sdp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2438,6 +2423,21 @@ SDP 作用 SDP 作用包括以下一些方面
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/voip/</guid>
       <description>VoIP VoIP vs SIP In simple terms, VoIP means making or receiving phone calls over the internet or internal networks. SIP, on the other hand, is an application layer protocol that is used to establish, modify and terminate multimedia sessions such as VoIP calls.
 A major difference between VoIP and SIP is their scope. VoIP is not a discrete technology in its own right. Rather, it is actually a family of technologies used within modern telecommunication networks, whereas SIP is a signalling protocol used within the VoIP umbrella.</description>
+    </item>
+    
+    <item>
+      <title>协议详情</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</guid>
+      <description>GB28181 协议解析 点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
+名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
+SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
+联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
+SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
+注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
+中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。</description>
     </item>
     
     <item>
@@ -2486,7 +2486,8 @@ macosforge/dss  Darwin Streaming Server is Apple&amp;rsquo;s open source version
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/srs/</guid>
-      <description>SRS ossrs/srs SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable and simple.</description>
+      <description>SRS ossrs/srs SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable and simple.
+配置信息 </description>
     </item>
     
     <item>

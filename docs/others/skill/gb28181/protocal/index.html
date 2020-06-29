@@ -10,7 +10,7 @@ SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解
 联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
 SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
 注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
-中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。"><meta property="og:title" content="GB28181 协议解析" />
+中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。"><meta property="og:title" content="协议详情" />
 <meta property="og:description" content="GB28181 协议解析 点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
 名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
 SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
@@ -21,14 +21,14 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/" />
 <meta property="article:modified_time" content="2020-06-24T11:36:04+08:00" />
-<title>GB28181 协议解析 | 计算机学习笔记</title>
+<title>协议详情 | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.95b50671411e14700cdd5bd8075b6fb1da73c84ebabaffd332d8e0a2eb018f91.js" integrity="sha256-lbUGcUEeFHAM3VvYB1tvsdpzyE66uv/TMtjgousBj5E="></script>
+<script defer src="/note-cs/en.search.min.34a92251393a98fcdf90d20388b1c5229544636b281da821556cb214ead67694.js" integrity="sha256-NKkiUTk6mPzfkNIDiLHFIpVEY2soHaghVWyyFOrWdpQ="></script>
 
 <!--
 Made with Book Theme
@@ -745,16 +745,6 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/note-cs/docs/others/skill/gb28181/protocal/" class="active">GB28181 协议解析</a>
-  
-
-</li>
-      
-    
-      
-        <li>
-
-  
   <a href="/note-cs/docs/others/skill/gb28181/sdp/" class="">SDP</a>
   
 
@@ -766,6 +756,16 @@ https://github.com/alex-shpak/hugo-book
 
   
   <a href="/note-cs/docs/others/skill/gb28181/sip/" class="">SIP</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/note-cs/docs/others/skill/gb28181/protocal/" class="active">协议详情</a>
   
 
 </li>
@@ -1023,7 +1023,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>GB28181 协议解析</strong>
+  <strong>协议详情</strong>
 
   <label for="toc-control">
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -1057,6 +1057,11 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#客户端主动发起">客户端主动发起</a></li>
             <li><a href="#第三方呼叫控制">第三方呼叫控制</a></li>
+          </ul>
+        </li>
+        <li><a href="#编码规则">编码规则</a>
+          <ul>
+            <li><a href="#设备-id-通道-id"><code>设备 ID</code>, <code>通道 ID</code></a></li>
           </ul>
         </li>
       </ul>
@@ -1106,6 +1111,16 @@ https://github.com/alex-shpak/hugo-book
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200605174748.png" alt="" /></p>
 <h3 id="第三方呼叫控制">第三方呼叫控制</h3>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200605171610.png" alt="" /></p>
+<hr>
+<h2 id="编码规则">编码规则</h2>
+<h3 id="设备-id-通道-id"><code>设备 ID</code>, <code>通道 ID</code></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 一共 20 位</span>
+<span style="color:#ae81ff">34020000001320000001</span>
+省 市  区 单位 行业 设备类型 网络标识 设备序号
+<span style="color:#ae81ff">34</span> <span style="color:#ae81ff">02</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span>   <span style="color:#ae81ff">00</span>   <span style="color:#ae81ff">132</span>      <span style="color:#ae81ff">0</span>    <span style="color:#ae81ff">000001</span>
+</code></pre></div><p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200629104922.png" alt="" />
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200629105015.png" alt="" />
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200629105039.png" alt="" /></p>
 </article>
  
       
@@ -1175,6 +1190,11 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#客户端主动发起">客户端主动发起</a></li>
             <li><a href="#第三方呼叫控制">第三方呼叫控制</a></li>
+          </ul>
+        </li>
+        <li><a href="#编码规则">编码规则</a>
+          <ul>
+            <li><a href="#设备-id-通道-id"><code>设备 ID</code>, <code>通道 ID</code></a></li>
           </ul>
         </li>
       </ul>
