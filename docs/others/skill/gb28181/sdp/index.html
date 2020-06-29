@@ -34,7 +34,7 @@ SDP 作用 SDP 作用包括以下一些方面
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.34a92251393a98fcdf90d20388b1c5229544636b281da821556cb214ead67694.js" integrity="sha256-NKkiUTk6mPzfkNIDiLHFIpVEY2soHaghVWyyFOrWdpQ="></script>
+<script defer src="/note-cs/en.search.min.3f07b1ead0fe40ca3b7ff471571660d2bdd2b7792d1557ef0b7747a215e6e278.js" integrity="sha256-Pwex6tD&#43;QMo7f/RxVxZg0r3St3ktFVfvC3dHohXm4ng="></script>
 
 <!--
 Made with Book Theme
@@ -1052,6 +1052,7 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#session-name-s">Session Name (s)</a></li>
             <li><a href="#media-description-name-and-address-m">Media Description, name and address (m)</a></li>
             <li><a href="#media-attribute-a">Media Attribute (a)</a></li>
+            <li><a href="#y">y</a></li>
           </ul>
         </li>
       </ul>
@@ -1138,6 +1139,14 @@ Session Initiation Protocol <span style="color:#f92672">(</span>200<span style="
 <h3 id="session-name-s">Session Name (s)</h3>
 <h3 id="media-description-name-and-address-m">Media Description, name and address (m)</h3>
 <h3 id="media-attribute-a">Media Attribute (a)</h3>
+<h3 id="y">y</h3>
+<p>GB28181 规定，
+<code>y</code> 用 <code>10 位十进制数</code>来表示 <code>32 bit</code> 的 <code>SSRC</code></p>
+<ul>
+<li>第 1 位为历史或者实时媒体流的标识位，0 为实时，1 为历史；</li>
+<li>第 2 位到第 6 位取 20 位 SIP 监控域 ID 之中的 4-8 位作为域标识；</li>
+<li>第 7-10 位作为域内媒体流标识，是一个与当前域内产生的媒体流 SSRC 值后 4 位不充分的四位十进制整数；</li>
+</ul>
 </article>
  
       
@@ -1196,6 +1205,7 @@ Session Initiation Protocol <span style="color:#f92672">(</span>200<span style="
             <li><a href="#session-name-s">Session Name (s)</a></li>
             <li><a href="#media-description-name-and-address-m">Media Description, name and address (m)</a></li>
             <li><a href="#media-attribute-a">Media Attribute (a)</a></li>
+            <li><a href="#y">y</a></li>
           </ul>
         </li>
       </ul>
