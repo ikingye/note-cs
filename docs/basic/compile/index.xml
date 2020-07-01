@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1.7 编译原理 on 计算机学习笔记</title>
+    <title>1.6 编译原理 on 计算机学习笔记</title>
     <link>https://ikingye.github.io/note-cs/docs/basic/compile/</link>
-    <description>Recent content in 1.7 编译原理 on 计算机学习笔记</description>
+    <description>Recent content in 1.6 编译原理 on 计算机学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://ikingye.github.io/note-cs/docs/basic/compile/index.xml" rel="self" type="application/rss+xml" />

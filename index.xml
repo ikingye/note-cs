@@ -40,10 +40,10 @@ github/hub  A command-line tool that makes git easier to use with GitHub.</descr
     
     <item>
       <title>Quick Start</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/quick-start/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/quick-start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/basic/quick-start/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/quick-start/</guid>
       <description>Quick Start Mysql Client /etc/my.cnf
 Mysql Server </description>
     </item>
@@ -60,23 +60,14 @@ Mysql Server </description>
     
     <item>
       <title>快速上手</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/quick-start/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/quick-start/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid>
       <description>PostgreSQL 快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
 默认 psql
 user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l 使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
  创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?</description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
@@ -222,6 +213,15 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     </item>
     
     <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
       <title>百度</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -297,33 +297,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</guid>
       <description>makefile 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。创建这一工具的目标是 减少不必要的编译或者任务。传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
 基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &amp;lt;target&amp;gt; 生成 target  重命名：make -f &amp;quot;filename&amp;quot; &amp;lt;target&amp;gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2.</description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/basic/</guid>
-      <description>基础面试题 Redis 有哪些数据类型，分别适合什么场景？ Redis 如何做持久化？ Redis 如何实现高可用？ Redis 如何与 Mysql 做一致性同步？ </description>
     </item>
     
     <item>
@@ -481,6 +454,33 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     
     <item>
       <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/basic/</guid>
+      <description>基础面试题 </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/basic/</guid>
+      <description>基础面试题 Redis 有哪些数据类型，分别适合什么场景？ Redis 如何做持久化？ Redis 如何实现高可用？ Redis 如何与 Mysql 做一致性同步？ </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -576,33 +576,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/common/</guid>
       <description>常用库 </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
     </item>
     
     <item>
@@ -763,6 +736,33 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
     
     <item>
       <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/advanced/</guid>
+      <description>进阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -858,33 +858,6 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</guid>
       <description>cmake </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/mysql/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
     </item>
     
     <item>
@@ -1042,6 +1015,33 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
     
     <item>
       <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/expert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/expert/</guid>
+      <description>高阶面试题 </description>
+    </item>
+    
+    <item>
+      <title>高阶</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1141,10 +1141,10 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
     
     <item>
       <title>Quick Start</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/quick-start/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/basic/quick-start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/basic/quick-start/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/basic/quick-start/</guid>
       <description>Quick Start redis-cli -h host -p port -a password 安装 开机自启 sudo vi /usr/lib/systemd/system/redis.service
 [Unit] Description=Redis persistent key-value database After=network.target After=network-online.target Wants=network-online.target [Service] ExecStart=/usr/bin/redis-server /etc/redis.conf --supervised systemd ExecStop=/usr/libexec/redis-shutdown Type=notify User=redis Group=redis RuntimeDirectory=redis RuntimeDirectoryMode=0755 [Install] WantedBy=multi-user.target 保存退出，执行 sudo systemctl daemon-reload 启动服务 sudo systemctl start redis.service 设置开机自启动 sudo systemctl enable redis.service
 设置密码 打开文件 /etc/redis.conf， 找到其中的 # requirepass foobared，去掉前面的 #， 并把 foobared 改成你的密码。
@@ -1169,7 +1169,7 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</guid>
-      <description>VScode 快捷键 MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 cmd + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
+      <description>VScode 快捷键 MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
     </item>
     
     <item>
@@ -1203,10 +1203,10 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     
     <item>
       <title>锁</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/redis/design/lock/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/lock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/redis/design/lock/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/lock/</guid>
       <description>锁 setnx  setnx msetnx hsetnx  SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL] 那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：
 -- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&amp;#39;get&amp;#39;, KEYS[1]) == ARGV[1] then -- 执行删除操作 return redis.call(&amp;#39;del&amp;#39;, KEYS[1]) else -- 不成功，返回0 return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
 就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。
@@ -1236,6 +1236,15 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</guid>
       <description>IntelliJ Idea 插件 Alibaba Java Coding Guidelines  教程 xiaoxiunique/tool-tips  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
+    </item>
+    
+    <item>
+      <title>2.2.5.1.1 protobuf</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid>
+      <description>protobuf  </description>
     </item>
     
     <item>
@@ -1338,15 +1347,6 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
       <description>git config config 权限 问题： Bad owner or permissions on ~/.ssh/config
 解决：
 chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
-    </item>
-    
-    <item>
-      <title>Jquery</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/fe/lib/jquery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/lib/jquery/</guid>
-      <description>Jquery </description>
     </item>
     
     <item>
@@ -1741,15 +1741,6 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
     </item>
     
     <item>
-      <title>brpc</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</guid>
-      <description>brpc  </description>
-    </item>
-    
-    <item>
       <title>CDS</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1849,15 +1840,6 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
     </item>
     
     <item>
-      <title>protobuf</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid>
-      <description>protobuf  </description>
-    </item>
-    
-    <item>
       <title>PS</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1938,10 +1920,10 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
     
     <item>
       <title>常见错误</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/practice/error/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/practice/error/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/practice/error/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/practice/error/</guid>
       <description>PostgreSQL 常见错误 权限 permission denied for relation 解决 1:
  以 superUser 进入数据库  psql -U postgres -d postgres   切换到 mydb 数据库  \c mydb   赋予所有表的所有权限给 xiaoming  GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO xiaoming;   赋予 wechart 用户，tuser 表的所有权限  GRANT ALL PRIVILEGES ON tuser TO wechart;    解决 2：
 ERROR: permission denied for relation hycom 权限被拒绝
@@ -1980,11 +1962,20 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
     
     <item>
       <title>版本</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/version/</link>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/db/postgresql/basic/version/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</guid>
       <description>PostgreSQL 版本 12 12.2  </description>
+    </item>
+    
+    <item>
+      <title>2.2.4.3 Zookeeper</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</guid>
+      <description>Zookeeper </description>
     </item>
     
     <item>
@@ -2056,6 +2047,15 @@ Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿
     </item>
     
     <item>
+      <title>2.2.4.4 Etcd</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</guid>
+      <description>Etcd </description>
+    </item>
+    
+    <item>
       <title>Cloud Foundry</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2081,16 +2081,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
     </item>
     
     <item>
-      <title>AppFog</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</guid>
-      <description>AppFog </description>
-    </item>
-    
-    <item>
-      <title>Consul</title>
+      <title>2.2.4.5 Consul</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consul/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2099,12 +2090,12 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
     </item>
     
     <item>
-      <title>Etcd</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</link>
+      <title>AppFog</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</guid>
-      <description>Etcd </description>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</guid>
+      <description>AppFog </description>
     </item>
     
     <item>
@@ -2150,15 +2141,6 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/spark/</guid>
       <description>Spark </description>
-    </item>
-    
-    <item>
-      <title>Zookeeper</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</guid>
-      <description>Zookeeper </description>
     </item>
     
     <item>
@@ -2329,15 +2311,21 @@ https://d7y.io</description>
     </item>
     
     <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/tutorial/</link>
+      <title>brpc</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/tutorial/</guid>
-      <description>教程 基础 系统设计入门  学习如何设计可扩展的系统将会有助于你成为一个更好的工程师。
-系统设计是一个很宽泛的话题。在互联网上，关于系统设计原则的资源也是多如牛毛。
-这个仓库就是这些资源的组织收集，它可以帮助你学习如何构建可扩展的系统。
- 进阶 </description>
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</guid>
+      <description>brpc  </description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/fe/frame/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/jquery/</guid>
+      <description>Jquery </description>
     </item>
     
     <item>
@@ -2361,15 +2349,6 @@ A live version is available at: http://play-with-docker.com/</description>
 docker/docker-ce  Docker CE https://www.docker.com/community-edition
 play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
 Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.</description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/se/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/se/tutorial/</guid>
-      <description>教程 基础  进阶 </description>
     </item>
     
     <item>

@@ -10,19 +10,19 @@
 Ribbon 负载均衡
 Ribbon 的负载均衡默认使用的最经典的 Round Robin 轮询算法
 Hystrix Hystrix 是隔离、熔断以及降级的一个框架。
-Hystrix 会搞很多个小小的线程池， 比如订单服务请求库存服务是一个线程池，请求仓储服务是一个线程池，请求积分服务是一个线程池。 每个线程池里的线程就仅仅用于请求那个服务。"><meta property="og:title" content="Spring Cloud" />
+Hystrix 会搞很多个小小的线程池， 比如订单服务请求库存服务是一个线程池，请求仓储服务是一个线程池，请求积分服务是一个线程池。 每个线程池里的线程就仅仅用于请求那个服务。"><meta property="og:title" content="2.2.5.1.4 Spring Cloud" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/" />
 
-<title>Spring Cloud | 计算机学习笔记</title>
+<title>2.2.5.1.4 Spring Cloud | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.d2b0d95df430f11868ed456ac7e54e72291eab1b5594472821cfb4dcd09485c2.js" integrity="sha256-0rDZXfQw8Rho7UVqx&#43;VOcikeqxtVlEcoIc&#43;03NCUhcI="></script>
+<script defer src="/note-cs/en.search.min.5838485f08886067a63d50922a47a7f9cc7255210e84d47a35f28be066a54933.js" integrity="sha256-WDhIXwiIYGemPVCSKken&#43;cxyVSEOhNR6NfKL4GalSTM="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/index.xml" title="计算机学习笔记" />
 <!--
@@ -250,30 +250,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/basic/db/" class="collapsed ">1.6 数据库</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.7 编译原理</a>
+  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
   
 
 
@@ -325,7 +302,30 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.1 后端</a>
+  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
 
@@ -344,7 +344,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
+  <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
   
 
 
@@ -367,7 +367,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+  <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
   
 
 
@@ -390,7 +390,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
+  <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
   
 
 
@@ -413,7 +413,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
+  <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
   
 
 
@@ -436,7 +436,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">微服务</a>
+  <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
   
 
 
@@ -455,7 +455,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/" class="collapsed ">RPC</a>
+  <a href="/note-cs/docs/direction/be/microservices/rpc/" class="collapsed ">2.2.5.1 RPC</a>
   
 
 
@@ -468,13 +468,23 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
+        <li>
+
+  
+  <a href="/note-cs/docs/direction/be/microservices/rpc/protobuf/" class="">2.2.5.1.1 protobuf</a>
+  
+
+</li>
+      
+    
+      
         
 
   <li>
     
 
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/grpc/" class="">gRPC</a>
+  <a href="/note-cs/docs/direction/be/microservices/rpc/grpc/" class="">2.2.5.1.2 gRPC</a>
   
 
 
@@ -503,7 +513,36 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/spring-cloud/" class="active">Spring Cloud</a>
+  <a href="/note-cs/docs/direction/be/microservices/rpc/dubbo/" class="">2.2.5.1.3 Dubbo</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/microservices/rpc/spring-cloud/" class="active">2.2.5.1.4 Spring Cloud</a>
   
 
 
@@ -542,46 +581,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/dubbo/" class="">Dubbo</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/direction/be/microservices/rpc/protobuf/" class="">protobuf</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/microservices/rpc/thrift/" class="">Thrift</a>
+  <a href="/note-cs/docs/direction/be/microservices/rpc/motan/" class="">Motan</a>
   
 
 
@@ -639,7 +639,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/motan/" class="">Motan</a>
+  <a href="/note-cs/docs/direction/be/microservices/rpc/thrift/" class="">Thrift</a>
   
 
 
@@ -711,52 +711,6 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">消息队列</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">分布式系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
   <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
   
 
@@ -780,7 +734,76 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">框架</a>
+  <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
   
 
 
@@ -813,7 +836,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.2 前端</a>
+  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
 
 
@@ -836,7 +859,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.3 客户端</a>
+  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
   
 
 
@@ -859,7 +882,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.4 嵌入式</a>
+  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
   
 
 
@@ -882,7 +905,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.5 安全</a>
+  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
   
 
 
@@ -905,30 +928,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.6 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.8 软件工程</a>
+  <a href="/note-cs/docs/direction/mp/" class="collapsed ">中台</a>
   
 
 
@@ -1220,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Spring Cloud</strong>
+  <strong>2.2.5.1.4 Spring Cloud</strong>
 
   <label for="toc-control">
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
