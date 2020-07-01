@@ -2112,6 +2112,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/basic/xss/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/vs-c/</loc>
     <lastmod>2020-06-11T20:08:25+08:00</lastmod>
   </url>
@@ -2519,6 +2523,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</loc>
     <lastmod>2020-04-23T19:39:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/security/basic/csrf/</loc>
   </url>
   
   <url>
