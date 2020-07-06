@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="makefile make 不跟参数，只会执行 makefile 中第一条（带冒号的语句）
+<meta name="description" content="makefile make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2."><meta property="og:title" content="makefile" />
-<meta property="og:description" content="makefile make 不跟参数，只会执行 makefile 中第一条（带冒号的语句）
+基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2."><meta property="og:title" content="makefile" />
+<meta property="og:description" content="makefile make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
+基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/" />
-<meta property="article:modified_time" content="2020-03-29T14:03:40+08:00" />
+<meta property="article:modified_time" content="2020-07-06T16:30:05+08:00" />
 <title>makefile | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.7731cd76d5d91aaa409d9ebf7ba4cde617be716738bce2946dc8eecb506a57b0.js" integrity="sha256-dzHNdtXZGqpAnZ6/e6TN5he&#43;cWc4vOKUbcjuy1BqV7A="></script>
+<script defer src="/note-cs/en.search.min.b36411a0589c3c9c76daa716a5d41994291a5691c640db5ecf365231f6a3a444.js" integrity="sha256-s2QRoFicPJx22qcWpdQZlCkaVpHGQNtezzZSMfajpEQ="></script>
 
 <!--
 Made with Book Theme
@@ -835,6 +835,7 @@ https://github.com/alex-shpak/hugo-book
                 </li>
                 <li><a href="#变量与通配符">变量与通配符</a></li>
                 <li><a href="#模式匹配">模式匹配</a></li>
+                <li><a href="#竖线">竖线</a></li>
                 <li><a href="#变量">变量</a></li>
                 <li><a href="#函数">函数</a></li>
                 <li><a href="#指令">指令</a></li>
@@ -863,7 +864,7 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="makefile">makefile</h1>
-<p>make 不跟参数，只会执行 makefile 中第一条（带冒号的语句）</p>
+<p>make 不带参数，只会执行 makefile 中第一条 <code>target 声明</code>（带冒号的语句）</p>
 <h2 id="简介">简介</h2>
 <p>Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。
 创建这一工具的目标是 减少不必要的编译或者任务。
@@ -900,7 +901,11 @@ https://github.com/alex-shpak/hugo-book
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">targets </span><span style="color:#f92672">:</span> prerequisites
     recipe
 </code></pre></div><ul>
-<li><code>prerequisites</code>(依赖) 是可选的, <code>recipe</code>(做法) 也可以多个或者不给</li>
+<li><code>prerequisites</code>(依赖) 是可选的, <code>recipe</code>(做法) 也可以多个或者不给
+<ul>
+<li>没有给 prerequisites, 只会在目标文件文件不存在时执行</li>
+</ul>
+</li>
 <li>targets 和 prerequisites 都可以是多个, 以空格分割
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">file2.txt file3.txt</span><span style="color:#f92672">:</span> file0.txt file1.txt
     touch file2.txt
@@ -945,7 +950,8 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><code>$^</code>: 代表 prerequisites
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 即便分开定义依赖, $^ 依然能拿到
-</span><span style="color:#75715e"># 非常智能的, ex1.txt 会被找到, file0.txt 会被去重
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> file*.txt
+<span style="color:#75715e"># 非常智能的, ex1.txt 会被找到, file0.txt 会被去重
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> ex1.txt file0.txt
   @echo $^
 </code></pre></div></li>
@@ -976,6 +982,22 @@ https://github.com/alex-shpak/hugo-book
 <li>make 已经有一些内置的规则, 比如从 _.c 到 _.o</li>
 </ul>
 <hr>
+<h4 id="竖线">竖线</h4>
+<ul>
+<li>竖线左边为：正常前提目标（<code>Normal Prerequisites</code>）
+<ul>
+<li>当正常前提目标变化时，target 重新生成</li>
+<li>可以为空</li>
+</ul>
+</li>
+<li>竖线右边为：命令前提目标（<code>order-only Prerequisites</code>）
+<ul>
+<li>当命令前提目标变化时，target <strong>不</strong>重新生成</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> file*.txt | dir/a.foo.b
+</code></pre></div><hr>
 <h4 id="变量">变量</h4>
 <ul>
 <li>
@@ -1085,9 +1107,9 @@ var4 <span style="color:#f92672">:=</span> good night
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/61d29f693382678b4f413f6b6a48887a8ad4e28a" title='Last modified by yewang | 2020-03-29' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/5e2ae2168d81ab075bd00ef60a4a491094275f84" title='Last modified by yewang | 2020-07-06' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-29</span>
+      <span>2020-07-06</span>
     </a>
   </div>
 
@@ -1136,6 +1158,7 @@ var4 <span style="color:#f92672">:=</span> good night
                 </li>
                 <li><a href="#变量与通配符">变量与通配符</a></li>
                 <li><a href="#模式匹配">模式匹配</a></li>
+                <li><a href="#竖线">竖线</a></li>
                 <li><a href="#变量">变量</a></li>
                 <li><a href="#函数">函数</a></li>
                 <li><a href="#指令">指令</a></li>
