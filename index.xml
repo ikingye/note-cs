@@ -295,7 +295,8 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</guid>
-      <description>makefile 简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。创建这一工具的目标是 减少不必要的编译或者任务。传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+      <description>makefile make 不跟参数，只会执行 makefile 中第一条（带冒号的语句）
+简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
 基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &amp;lt;target&amp;gt; 生成 target  重命名：make -f &amp;quot;filename&amp;quot; &amp;lt;target&amp;gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 targets 和 prerequisites 都可以是多个, 以空格分割 file2.</description>
     </item>
     
@@ -1945,7 +1946,7 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/memory/</guid>
-      <description>内存 进程虚拟地址空间 </description>
+      <description>内存 </description>
     </item>
     
     <item>
@@ -2006,6 +2007,18 @@ const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</guid>
       <description>PostgreSQL 版本 12 12.2  </description>
+    </item>
+    
+    <item>
+      <title>线程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/os/thread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/os/thread/</guid>
+      <description>线程 栈通常是连续增长的，由于每个进程中的各个线程共享虚拟内存空间，当有多个线程时，就需要为每个线程分配不同起始地址的栈。 这就需要在分配栈之前先预估每个线程栈的大小。
+如果线程数量非常多，就很容易栈溢出。
+Split Stacks 为了解决这个问题，就有了 Split Stacks 技术： 创建栈时，只分配一块比较小的内存，如果进行某次函数调用导致栈空间不足时，就会在其他地方分配一块新的栈空间。 新的空间不需要和老的栈空间连续。函数调用的参数会拷贝到新的栈空间中，接下来的函数执行都在新栈空间中进行。
+Golang 连续栈 Golang 的栈管理方式与此类似，但是为了更高的效率，使用了 Golang 连续栈。 实现方式也是先分配一块固定大小的栈，在栈空间不足时，分配一块更大的栈，并把旧的栈全部拷贝到新栈中。 这样避免了 Split Stacks 方法可能导致的频繁内存分配和释放。</description>
     </item>
     
     <item>
