@@ -2447,8 +2447,9 @@ SDP 作用 SDP 作用包括以下一些方面
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/</guid>
       <description>SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
-包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n  包字段 SN（命令序列号） MANSCDP 消息中的 SN 值用于与请求命令的匹配处理,响应命令中的 SN 值应使用请求命令中的 SN 值。
- SIP Proxy SIP Proxy 有分为两种模式，一种是状态代理模式，另外一种是无状态代理模式。</description>
+CALL-ID SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
+CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
+ 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n  包字段 SN（命令序列号） MANSCDP 消息中的 SN 值用于与请求命令的匹配处理,响应命令中的 SN 值应使用请求命令中的 SN 值。</description>
     </item>
     
     <item>
