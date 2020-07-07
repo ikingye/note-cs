@@ -7,14 +7,18 @@
 <meta name="description" content="SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
 CALL-ID SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
- 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n  包字段 SN（命令序列号） MANSCDP 消息中的 SN 值用于与请求命令的匹配处理,响应命令中的 SN 值应使用请求命令中的 SN 值。"><meta property="og:title" content="SIP" />
+ 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n Bye 同一个会话，CSeq 要 &#43;1
+Invite-&gt;100-&gt;200-&gt;Ack -&gt;Bye-&gt;200
+Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要一致"><meta property="og:title" content="SIP" />
 <meta property="og:description" content="SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
 CALL-ID SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
- 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n  包字段 SN（命令序列号） MANSCDP 消息中的 SN 值用于与请求命令的匹配处理,响应命令中的 SN 值应使用请求命令中的 SN 值。" />
+ 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n Bye 同一个会话，CSeq 要 &#43;1
+Invite-&gt;100-&gt;200-&gt;Ack -&gt;Bye-&gt;200
+Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要一致" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/" />
-<meta property="article:modified_time" content="2020-06-24T23:58:59+08:00" />
+<meta property="article:modified_time" content="2020-07-07T16:36:15+08:00" />
 <title>SIP | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -22,7 +26,7 @@ CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.b688c38325629cbf5620757a35e59cd89bd157d5853e995c36b7b59f47dbbe54.js" integrity="sha256-tojDgyVinL9WIHV6NeWc2JvRV9WFPplcNre1n0fbvlQ="></script>
+<script defer src="/note-cs/en.search.min.1565e4a32071cf433ef1071ccb6f04184406fd5942d65bc2b5ad793da39a030e.js" integrity="sha256-FWXkoyBxz0M&#43;8Qccy28EGEQG/VlC1lvCta15PaOaAw4="></script>
 
 <!--
 Made with Book Theme
@@ -1014,6 +1018,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#包内容">包内容</a>
           <ul>
             <li><a href="#message">Message</a></li>
+            <li><a href="#bye">Bye</a></li>
             <li><a href="#包字段">包字段</a>
               <ul>
                 <li><a href="#sn命令序列号">SN（命令序列号）</a></li>
@@ -1081,7 +1086,11 @@ https://github.com/alex-shpak/hugo-book
         &lt;Info&gt;<span style="color:#ae81ff">\n</span>
         &lt;/Info&gt;<span style="color:#ae81ff">\n</span>
         &lt;/Notify&gt;<span style="color:#ae81ff">\n</span>
-</code></pre></div><hr>
+</code></pre></div><h3 id="bye">Bye</h3>
+<p><strong>同一个会话，CSeq 要 +1</strong></p>
+<p><code>Invite-&gt;100-&gt;200-&gt;Ack -&gt;Bye-&gt;200</code></p>
+<p>Bye 的包，From 和 To 要和 Ack 的一致（包括 <code>tag</code>），Call-ID 也要一致</p>
+<hr>
 <h3 id="包字段">包字段</h3>
 <h4 id="sn命令序列号">SN（命令序列号）</h4>
 <p>MANSCDP 消息中的 SN 值用于与请求命令的匹配处理,响应命令中的 SN 值应使用请求命令中的 SN 值。</p>
@@ -1141,9 +1150,9 @@ B2BUA 和 SIP 代理不同，它必须保持在 dialog 中所有创建的请求�
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/743594b69f113937a596960ca5fbf32c43c6841f" title='Last modified by yewang | 2020-06-24' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/0e6f79c5a9610470080082a6d91f59b075c8bea0" title='Last modified by yewang | 2020-07-07' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-06-24</span>
+      <span>2020-07-07</span>
     </a>
   </div>
 
@@ -1184,6 +1193,7 @@ B2BUA 和 SIP 代理不同，它必须保持在 dialog 中所有创建的请求�
         <li><a href="#包内容">包内容</a>
           <ul>
             <li><a href="#message">Message</a></li>
+            <li><a href="#bye">Bye</a></li>
             <li><a href="#包字段">包字段</a>
               <ul>
                 <li><a href="#sn命令序列号">SN（命令序列号）</a></li>
