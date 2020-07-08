@@ -8,7 +8,7 @@
 <meta property="og:description" content="Docker 端口 端口映射  -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/docker/port/" />
-
+<meta property="article:modified_time" content="2020-07-08T16:42:54+08:00" />
 <title>端口 | 计算机学习笔记</title>
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.570f6bd975512f63d2a9e40c93166602efc11dfd558951164f3c7ac90536dc93.js" integrity="sha256-Vw9r2XVRL2PSqeQMkxZmAu/BHf1ViVEWTzx6yQU23JM="></script>
+<script defer src="/note-cs/en.search.min.07c77e850fcb02142193d90a8879962ba1d73433de4f79e81480e7941ec01f57.js" integrity="sha256-B8d&#43;hQ/LAhQhk9kKiHmWK6HXNDPeT3noFIDnlB7AH1c="></script>
 
 <!--
 Made with Book Theme
@@ -1337,6 +1337,14 @@ systemctl restart network
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/84c4f0184842694c5b45bb5670a1e21314245ad3" title='Last modified by yewang | 2020-07-08' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-07-08</span>
+    </a>
+  </div>
 
 
 
