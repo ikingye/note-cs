@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="代码片段 "><meta property="og:title" content="代码片段" />
+<meta name="description" content="代码片段 sleep async function test() { console.log(&#34;Hello&#34;); await sleep(1000); console.log(&#34;world!&#34;); } function sleep(ms) { return new Promise((resolve) =&gt; setTimeout(resolve, ms)); } test(); 参考：
+ Javascript 如何能简短优雅地实现 sleep 函数？  "><meta property="og:title" content="代码片段" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/snippet/" />
@@ -16,7 +17,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
 
 
-<script defer src="/note-cs/en.search.min.07c77e850fcb02142193d90a8879962ba1d73433de4f79e81480e7941ec01f57.js" integrity="sha256-B8d&#43;hQ/LAhQhk9kKiHmWK6HXNDPeT3noFIDnlB7AH1c="></script>
+<script defer src="/note-cs/en.search.min.2ee011ff299fa8aa0ff165f00f8e528c3d6137b5137598977f08273b24358415.js" integrity="sha256-LuAR/ymfqKoP8WXwD45SjD1hN7UTdZiXfwgnOyQ1hBU="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/snippet/index.xml" title="计算机学习笔记" />
 <!--
@@ -1355,7 +1356,11 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#代码片段">代码片段</a></li>
+    <li><a href="#代码片段">代码片段</a>
+      <ul>
+        <li><a href="#sleep">sleep</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1368,6 +1373,22 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="代码片段">代码片段</h1>
+<h2 id="sleep">sleep</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">test</span>() {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>);
+  <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">1000</span>);
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;world!&#34;</span>);
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sleep</span>(<span style="color:#a6e22e">ms</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise((<span style="color:#a6e22e">resolve</span>) =&gt; <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">ms</span>));
+}
+
+<span style="color:#a6e22e">test</span>();
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/31636244">Javascript 如何能简短优雅地实现 sleep 函数？</a></li>
+</ul>
 </article>
  
       
@@ -1417,7 +1438,11 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#代码片段">代码片段</a></li>
+    <li><a href="#代码片段">代码片段</a>
+      <ul>
+        <li><a href="#sleep">sleep</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
