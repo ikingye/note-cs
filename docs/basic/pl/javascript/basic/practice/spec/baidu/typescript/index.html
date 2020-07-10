@@ -51,7 +51,7 @@
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
+<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
 
 
 <script defer src="/note-cs/en.search.min.e7b0fdd9c22a809c83409183d791f2a29f86f5116720c9d1101890cc9ebfb72e.js" integrity="sha256-57D92cIqgJyDQJGD15Hyop&#43;G9RFnIMnREBiQzJ6/ty4="></script>
@@ -1491,146 +1491,142 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#typescript-编码规范">TypeScript 编码规范</a>
+    <li><a href="#1-前言">1 前言</a></li>
+    <li><a href="#2-代码风格">2 代码风格</a>
       <ul>
-        <li><a href="#1-前言">1 前言</a></li>
-        <li><a href="#2-代码风格">2 代码风格</a>
+        <li><a href="#21-环境">2.1 环境</a>
           <ul>
-            <li><a href="#21-环境">2.1 环境</a>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-typescript-文件使用-ts-扩展名含-jsx-语法的-typescript-文件使用-tsx-扩展名">[强制] TypeScript 文件使用 <code>.ts</code> 扩展名。含 JSX 语法的 TypeScript 文件使用 <code>.tsx</code> 扩展名。</a></li>
-                    <li><a href="#建议-tsconfigjson-配置文件应开启-strictnoimplicitreturnsnounusedlocals-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>strict</code>、<code>noImplicitReturns</code>、<code>noUnusedLocals</code> 选项。</a></li>
-                    <li><a href="#建议-tsconfigjson-配置文件应开启-allowsyntheticdefaultimports-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>allowSyntheticDefaultImports</code> 选项。</a></li>
-                    <li><a href="#建议-使用-vs-codehttpscodevisualstudiocom-编写-typescript">[建议] 使用 <a href="https://code.visualstudio.com/"><code>VS Code</code></a> 编写 TypeScript。</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#22-文件">2.2 文件</a>
-              <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-在文件结尾处保留一个空行">[强制] 在文件结尾处，保留一个空行。</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#23-命名">2.3 命名</a>
-              <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-接口-使用-pascal-命名法">[强制] <code>接口</code> 使用 <code>Pascal</code> 命名法。</a></li>
-                    <li><a href="#强制-接口名-不使用-i-作为前缀">[强制] <code>接口名</code> 不使用 <code>I</code> 作为前缀。</a></li>
-                    <li><a href="#强制-类型别名-使用-pascal-命名法">[强制] <code>类型别名</code> 使用 <code>Pascal</code> 命名法。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-typescript-文件使用-ts-扩展名含-jsx-语法的-typescript-文件使用-tsx-扩展名">[强制] TypeScript 文件使用 <code>.ts</code> 扩展名。含 JSX 语法的 TypeScript 文件使用 <code>.tsx</code> 扩展名。</a></li>
+                <li><a href="#建议-tsconfigjson-配置文件应开启-strictnoimplicitreturnsnounusedlocals-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>strict</code>、<code>noImplicitReturns</code>、<code>noUnusedLocals</code> 选项。</a></li>
+                <li><a href="#建议-tsconfigjson-配置文件应开启-allowsyntheticdefaultimports-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>allowSyntheticDefaultImports</code> 选项。</a></li>
+                <li><a href="#建议-使用-vs-codehttpscodevisualstudiocom-编写-typescript">[建议] 使用 <a href="https://code.visualstudio.com/"><code>VS Code</code></a> 编写 TypeScript。</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="#3-语言特性">3 语言特性</a>
+        <li><a href="#22-文件">2.2 文件</a>
           <ul>
-            <li><a href="#31-变量">3.1 变量</a>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用-const-声明-枚举-">[强制] 使用 <code>const</code> 声明 <code>枚举</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-在文件结尾处保留一个空行">[强制] 在文件结尾处，保留一个空行。</a></li>
               </ul>
             </li>
-            <li><a href="#32-类型">3.2 类型</a>
+          </ul>
+        </li>
+        <li><a href="#23-命名">2.3 命名</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-不应显式声明可以自动推导的类型">[强制] 不应显式声明可以自动推导的类型。</a></li>
-                    <li><a href="#强制-使用-string--number--boolean-声明基本类型不使用-string--number--boolean">[强制] 使用 <code>string / number / boolean</code> 声明基本类型，不使用 <code>String / Number / Boolean</code>。</a></li>
-                    <li><a href="#强制-不使用-object--function-声明类型">[强制] 不使用 <code>Object / Function</code> 声明类型。</a></li>
-                    <li><a href="#强制-数组元素为简单类型非匿名且不含泛型时使用-t-声明类型否则应使用-arrayt">[强制] 数组元素为简单类型（非匿名且不含泛型）时，使用 <code>T[]</code> 声明类型，否则应使用 <code>Array&lt;T&gt;</code>。</a></li>
-                    <li><a href="#建议-数组元素为不可变数据时使用-readonlyarrayt-声明类型">[建议] 数组元素为不可变数据时，使用 <code>ReadonlyArray&lt;T&gt;</code> 声明类型。</a></li>
-                    <li><a href="#强制-不使用--声明对象属性非空">[强制] 不使用 <code>!</code> 声明对象属性非空。</a></li>
-                    <li><a href="#建议-不使用-any-声明类型">[建议] 不使用 <code>any</code> 声明类型。</a></li>
-                    <li><a href="#强制-使用-as-进行类型声明转换不使用--">[强制] 使用 <code>as</code> 进行类型声明转换，不使用 <code>&lt;&gt;</code> 。</a></li>
-                    <li><a href="#强制-接口不应为空">[强制] 接口不应为空。</a></li>
-                    <li><a href="#强制-接口中同一函数重载的类型声明需相邻">[强制] 接口中同一函数重载的类型声明需相邻。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-接口-使用-pascal-命名法">[强制] <code>接口</code> 使用 <code>Pascal</code> 命名法。</a></li>
+                <li><a href="#强制-接口名-不使用-i-作为前缀">[强制] <code>接口名</code> 不使用 <code>I</code> 作为前缀。</a></li>
+                <li><a href="#强制-类型别名-使用-pascal-命名法">[强制] <code>类型别名</code> 使用 <code>Pascal</code> 命名法。</a></li>
               </ul>
             </li>
-            <li><a href="#33-条件">3.3 条件</a>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#3-语言特性">3 语言特性</a>
+      <ul>
+        <li><a href="#31-变量">3.1 变量</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用--或--判断相等性不使用--或-">[强制] 使用 <code>===</code> 或 <code>!==</code> 判断相等性，不使用 <code>==</code> 或 <code>!=</code>。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-使用-const-声明-枚举-">[强制] 使用 <code>const</code> 声明 <code>枚举</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#34-循环">3.4 循环</a>
+          </ul>
+        </li>
+        <li><a href="#32-类型">3.2 类型</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#建议-使用-objectkeys--objectvalues--objectentries--objectgetownpropertynames-遍历对象不使用-for--in-">[建议] 使用 <code>Object.keys / Object.values / Object.entries / Object.getOwnPropertyNames</code> 遍历对象，不使用 <code>for .. in</code> 。</a></li>
-                    <li><a href="#建议-索引仅用于获取数组当前被迭代的项时使用-for--of-遍历数组不使用-for-">[建议] 索引仅用于获取数组当前被迭代的项时，使用 <code>for .. of</code> 遍历数组，不使用 <code>for</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-不应显式声明可以自动推导的类型">[强制] 不应显式声明可以自动推导的类型。</a></li>
+                <li><a href="#强制-使用-string--number--boolean-声明基本类型不使用-string--number--boolean">[强制] 使用 <code>string / number / boolean</code> 声明基本类型，不使用 <code>String / Number / Boolean</code>。</a></li>
+                <li><a href="#强制-不使用-object--function-声明类型">[强制] 不使用 <code>Object / Function</code> 声明类型。</a></li>
+                <li><a href="#强制-数组元素为简单类型非匿名且不含泛型时使用-t-声明类型否则应使用-arrayt">[强制] 数组元素为简单类型（非匿名且不含泛型）时，使用 <code>T[]</code> 声明类型，否则应使用 <code>Array&lt;T&gt;</code>。</a></li>
+                <li><a href="#建议-数组元素为不可变数据时使用-readonlyarrayt-声明类型">[建议] 数组元素为不可变数据时，使用 <code>ReadonlyArray&lt;T&gt;</code> 声明类型。</a></li>
+                <li><a href="#强制-不使用--声明对象属性非空">[强制] 不使用 <code>!</code> 声明对象属性非空。</a></li>
+                <li><a href="#建议-不使用-any-声明类型">[建议] 不使用 <code>any</code> 声明类型。</a></li>
+                <li><a href="#强制-使用-as-进行类型声明转换不使用--">[强制] 使用 <code>as</code> 进行类型声明转换，不使用 <code>&lt;&gt;</code> 。</a></li>
+                <li><a href="#强制-接口不应为空">[强制] 接口不应为空。</a></li>
+                <li><a href="#强制-接口中同一函数重载的类型声明需相邻">[强制] 接口中同一函数重载的类型声明需相邻。</a></li>
               </ul>
             </li>
-            <li><a href="#35-数组">3.5 数组</a>
+          </ul>
+        </li>
+        <li><a href="#33-条件">3.3 条件</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#建议-使用--进行数组浅拷贝不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 进行数组浅拷贝，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
-                    <li><a href="#建议-使用--将类数组对象转化为数组不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 将类数组对象转化为数组，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-使用--或--判断相等性不使用--或-">[强制] 使用 <code>===</code> 或 <code>!==</code> 判断相等性，不使用 <code>==</code> 或 <code>!=</code>。</a></li>
               </ul>
             </li>
-            <li><a href="#36-对象">3.6 对象</a>
+          </ul>
+        </li>
+        <li><a href="#34-循环">3.4 循环</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用--进行对象浅拷贝不使用-objectassign-">[强制] 使用 <code>...</code> 进行对象浅拷贝，不使用 <code>Object.assign</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#建议-使用-objectkeys--objectvalues--objectentries--objectgetownpropertynames-遍历对象不使用-for--in-">[建议] 使用 <code>Object.keys / Object.values / Object.entries / Object.getOwnPropertyNames</code> 遍历对象，不使用 <code>for .. in</code> 。</a></li>
+                <li><a href="#建议-索引仅用于获取数组当前被迭代的项时使用-for--of-遍历数组不使用-for-">[建议] 索引仅用于获取数组当前被迭代的项时，使用 <code>for .. of</code> 遍历数组，不使用 <code>for</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#37-函数">3.7 函数</a>
+          </ul>
+        </li>
+        <li><a href="#35-数组">3.5 数组</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-避免-return-undefined-应直接-return">[强制] 避免 <code>return undefined</code> ，应直接 <code>return</code>。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#建议-使用--进行数组浅拷贝不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 进行数组浅拷贝，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
+                <li><a href="#建议-使用--将类数组对象转化为数组不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 将类数组对象转化为数组，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#38-类">3.8 类</a>
+          </ul>
+        </li>
+        <li><a href="#36-对象">3.6 对象</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#建议-每个文件中最多声明一个类">[建议] 每个文件中最多声明一个类。</a></li>
-                    <li><a href="#强制-类成员的可访问性为-public-时不应显式声明">[强制] 类成员的可访问性为 <code>public</code> 时，不应显式声明。</a></li>
-                    <li><a href="#建议-构造函数可忽略时应忽略">[建议] 构造函数可忽略时，应忽略。</a></li>
-                    <li><a href="#建议-类成员之间使用空行隔开">[建议] 类成员之间使用空行隔开。</a></li>
-                    <li><a href="#建议-构造函数初始化实例属性时应尽量使用参数属性">[建议] 构造函数初始化实例属性时，应尽量使用参数属性。</a></li>
-                    <li><a href="#建议-构造函数的参数中作为属性的参数应排列于其他参数前">[建议] 构造函数的参数中，作为属性的参数应排列于其他参数前。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-使用--进行对象浅拷贝不使用-objectassign-">[强制] 使用 <code>...</code> 进行对象浅拷贝，不使用 <code>Object.assign</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#39-模块">3.9 模块</a>
+          </ul>
+        </li>
+        <li><a href="#37-函数">3.7 函数</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用-ecmascript-2015-标准的模块系统">[强制] 使用 <code>ECMAScript 2015</code> 标准的模块系统。</a></li>
-                    <li><a href="#强制-除类型声明文件外不使用-module--namespace-关键字">[强制] 除类型声明文件外，不使用 <code>module / namespace</code> 关键字。</a></li>
-                    <li><a href="#强制-不使用--reference-path--">[强制] 不使用 <code>/// &lt;reference path= &gt;</code> 。</a></li>
-                    <li><a href="#强制-对于同一个模块路径仅-import-一次">[强制] 对于同一个模块路径，仅 <code>import</code> 一次。</a></li>
-                    <li><a href="#建议-对于使用-webpack-等构建工具的项目在模块中引入其他资源如样式图片等时为资源编写类型声明文件或使用合适的-loader-生成类型声明文件">[建议] 对于使用 <code>webpack</code> 等构建工具的项目，在模块中引入其他资源（如样式、图片等）时，为资源编写类型声明文件，或使用合适的 <code>loader</code> 生成类型声明文件。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-避免-return-undefined-应直接-return">[强制] 避免 <code>return undefined</code> ，应直接 <code>return</code>。</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#38-类">3.8 类</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#建议-每个文件中最多声明一个类">[建议] 每个文件中最多声明一个类。</a></li>
+                <li><a href="#强制-类成员的可访问性为-public-时不应显式声明">[强制] 类成员的可访问性为 <code>public</code> 时，不应显式声明。</a></li>
+                <li><a href="#建议-构造函数可忽略时应忽略">[建议] 构造函数可忽略时，应忽略。</a></li>
+                <li><a href="#建议-类成员之间使用空行隔开">[建议] 类成员之间使用空行隔开。</a></li>
+                <li><a href="#建议-构造函数初始化实例属性时应尽量使用参数属性">[建议] 构造函数初始化实例属性时，应尽量使用参数属性。</a></li>
+                <li><a href="#建议-构造函数的参数中作为属性的参数应排列于其他参数前">[建议] 构造函数的参数中，作为属性的参数应排列于其他参数前。</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#39-模块">3.9 模块</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#强制-使用-ecmascript-2015-标准的模块系统">[强制] 使用 <code>ECMAScript 2015</code> 标准的模块系统。</a></li>
+                <li><a href="#强制-除类型声明文件外不使用-module--namespace-关键字">[强制] 除类型声明文件外，不使用 <code>module / namespace</code> 关键字。</a></li>
+                <li><a href="#强制-不使用--reference-path--">[强制] 不使用 <code>/// &lt;reference path= &gt;</code> 。</a></li>
+                <li><a href="#强制-对于同一个模块路径仅-import-一次">[强制] 对于同一个模块路径，仅 <code>import</code> 一次。</a></li>
+                <li><a href="#建议-对于使用-webpack-等构建工具的项目在模块中引入其他资源如样式图片等时为资源编写类型声明文件或使用合适的-loader-生成类型声明文件">[建议] 对于使用 <code>webpack</code> 等构建工具的项目，在模块中引入其他资源（如样式、图片等）时，为资源编写类型声明文件，或使用合适的 <code>loader</code> 生成类型声明文件。</a></li>
               </ul>
             </li>
           </ul>
@@ -2016,146 +2012,142 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#typescript-编码规范">TypeScript 编码规范</a>
+    <li><a href="#1-前言">1 前言</a></li>
+    <li><a href="#2-代码风格">2 代码风格</a>
       <ul>
-        <li><a href="#1-前言">1 前言</a></li>
-        <li><a href="#2-代码风格">2 代码风格</a>
+        <li><a href="#21-环境">2.1 环境</a>
           <ul>
-            <li><a href="#21-环境">2.1 环境</a>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-typescript-文件使用-ts-扩展名含-jsx-语法的-typescript-文件使用-tsx-扩展名">[强制] TypeScript 文件使用 <code>.ts</code> 扩展名。含 JSX 语法的 TypeScript 文件使用 <code>.tsx</code> 扩展名。</a></li>
-                    <li><a href="#建议-tsconfigjson-配置文件应开启-strictnoimplicitreturnsnounusedlocals-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>strict</code>、<code>noImplicitReturns</code>、<code>noUnusedLocals</code> 选项。</a></li>
-                    <li><a href="#建议-tsconfigjson-配置文件应开启-allowsyntheticdefaultimports-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>allowSyntheticDefaultImports</code> 选项。</a></li>
-                    <li><a href="#建议-使用-vs-codehttpscodevisualstudiocom-编写-typescript">[建议] 使用 <a href="https://code.visualstudio.com/"><code>VS Code</code></a> 编写 TypeScript。</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#22-文件">2.2 文件</a>
-              <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-在文件结尾处保留一个空行">[强制] 在文件结尾处，保留一个空行。</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#23-命名">2.3 命名</a>
-              <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-接口-使用-pascal-命名法">[强制] <code>接口</code> 使用 <code>Pascal</code> 命名法。</a></li>
-                    <li><a href="#强制-接口名-不使用-i-作为前缀">[强制] <code>接口名</code> 不使用 <code>I</code> 作为前缀。</a></li>
-                    <li><a href="#强制-类型别名-使用-pascal-命名法">[强制] <code>类型别名</code> 使用 <code>Pascal</code> 命名法。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-typescript-文件使用-ts-扩展名含-jsx-语法的-typescript-文件使用-tsx-扩展名">[强制] TypeScript 文件使用 <code>.ts</code> 扩展名。含 JSX 语法的 TypeScript 文件使用 <code>.tsx</code> 扩展名。</a></li>
+                <li><a href="#建议-tsconfigjson-配置文件应开启-strictnoimplicitreturnsnounusedlocals-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>strict</code>、<code>noImplicitReturns</code>、<code>noUnusedLocals</code> 选项。</a></li>
+                <li><a href="#建议-tsconfigjson-配置文件应开启-allowsyntheticdefaultimports-选项">[建议] <code>tsconfig.json</code> 配置文件应开启 <code>allowSyntheticDefaultImports</code> 选项。</a></li>
+                <li><a href="#建议-使用-vs-codehttpscodevisualstudiocom-编写-typescript">[建议] 使用 <a href="https://code.visualstudio.com/"><code>VS Code</code></a> 编写 TypeScript。</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="#3-语言特性">3 语言特性</a>
+        <li><a href="#22-文件">2.2 文件</a>
           <ul>
-            <li><a href="#31-变量">3.1 变量</a>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用-const-声明-枚举-">[强制] 使用 <code>const</code> 声明 <code>枚举</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-在文件结尾处保留一个空行">[强制] 在文件结尾处，保留一个空行。</a></li>
               </ul>
             </li>
-            <li><a href="#32-类型">3.2 类型</a>
+          </ul>
+        </li>
+        <li><a href="#23-命名">2.3 命名</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-不应显式声明可以自动推导的类型">[强制] 不应显式声明可以自动推导的类型。</a></li>
-                    <li><a href="#强制-使用-string--number--boolean-声明基本类型不使用-string--number--boolean">[强制] 使用 <code>string / number / boolean</code> 声明基本类型，不使用 <code>String / Number / Boolean</code>。</a></li>
-                    <li><a href="#强制-不使用-object--function-声明类型">[强制] 不使用 <code>Object / Function</code> 声明类型。</a></li>
-                    <li><a href="#强制-数组元素为简单类型非匿名且不含泛型时使用-t-声明类型否则应使用-arrayt">[强制] 数组元素为简单类型（非匿名且不含泛型）时，使用 <code>T[]</code> 声明类型，否则应使用 <code>Array&lt;T&gt;</code>。</a></li>
-                    <li><a href="#建议-数组元素为不可变数据时使用-readonlyarrayt-声明类型">[建议] 数组元素为不可变数据时，使用 <code>ReadonlyArray&lt;T&gt;</code> 声明类型。</a></li>
-                    <li><a href="#强制-不使用--声明对象属性非空">[强制] 不使用 <code>!</code> 声明对象属性非空。</a></li>
-                    <li><a href="#建议-不使用-any-声明类型">[建议] 不使用 <code>any</code> 声明类型。</a></li>
-                    <li><a href="#强制-使用-as-进行类型声明转换不使用--">[强制] 使用 <code>as</code> 进行类型声明转换，不使用 <code>&lt;&gt;</code> 。</a></li>
-                    <li><a href="#强制-接口不应为空">[强制] 接口不应为空。</a></li>
-                    <li><a href="#强制-接口中同一函数重载的类型声明需相邻">[强制] 接口中同一函数重载的类型声明需相邻。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-接口-使用-pascal-命名法">[强制] <code>接口</code> 使用 <code>Pascal</code> 命名法。</a></li>
+                <li><a href="#强制-接口名-不使用-i-作为前缀">[强制] <code>接口名</code> 不使用 <code>I</code> 作为前缀。</a></li>
+                <li><a href="#强制-类型别名-使用-pascal-命名法">[强制] <code>类型别名</code> 使用 <code>Pascal</code> 命名法。</a></li>
               </ul>
             </li>
-            <li><a href="#33-条件">3.3 条件</a>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#3-语言特性">3 语言特性</a>
+      <ul>
+        <li><a href="#31-变量">3.1 变量</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用--或--判断相等性不使用--或-">[强制] 使用 <code>===</code> 或 <code>!==</code> 判断相等性，不使用 <code>==</code> 或 <code>!=</code>。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-使用-const-声明-枚举-">[强制] 使用 <code>const</code> 声明 <code>枚举</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#34-循环">3.4 循环</a>
+          </ul>
+        </li>
+        <li><a href="#32-类型">3.2 类型</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#建议-使用-objectkeys--objectvalues--objectentries--objectgetownpropertynames-遍历对象不使用-for--in-">[建议] 使用 <code>Object.keys / Object.values / Object.entries / Object.getOwnPropertyNames</code> 遍历对象，不使用 <code>for .. in</code> 。</a></li>
-                    <li><a href="#建议-索引仅用于获取数组当前被迭代的项时使用-for--of-遍历数组不使用-for-">[建议] 索引仅用于获取数组当前被迭代的项时，使用 <code>for .. of</code> 遍历数组，不使用 <code>for</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-不应显式声明可以自动推导的类型">[强制] 不应显式声明可以自动推导的类型。</a></li>
+                <li><a href="#强制-使用-string--number--boolean-声明基本类型不使用-string--number--boolean">[强制] 使用 <code>string / number / boolean</code> 声明基本类型，不使用 <code>String / Number / Boolean</code>。</a></li>
+                <li><a href="#强制-不使用-object--function-声明类型">[强制] 不使用 <code>Object / Function</code> 声明类型。</a></li>
+                <li><a href="#强制-数组元素为简单类型非匿名且不含泛型时使用-t-声明类型否则应使用-arrayt">[强制] 数组元素为简单类型（非匿名且不含泛型）时，使用 <code>T[]</code> 声明类型，否则应使用 <code>Array&lt;T&gt;</code>。</a></li>
+                <li><a href="#建议-数组元素为不可变数据时使用-readonlyarrayt-声明类型">[建议] 数组元素为不可变数据时，使用 <code>ReadonlyArray&lt;T&gt;</code> 声明类型。</a></li>
+                <li><a href="#强制-不使用--声明对象属性非空">[强制] 不使用 <code>!</code> 声明对象属性非空。</a></li>
+                <li><a href="#建议-不使用-any-声明类型">[建议] 不使用 <code>any</code> 声明类型。</a></li>
+                <li><a href="#强制-使用-as-进行类型声明转换不使用--">[强制] 使用 <code>as</code> 进行类型声明转换，不使用 <code>&lt;&gt;</code> 。</a></li>
+                <li><a href="#强制-接口不应为空">[强制] 接口不应为空。</a></li>
+                <li><a href="#强制-接口中同一函数重载的类型声明需相邻">[强制] 接口中同一函数重载的类型声明需相邻。</a></li>
               </ul>
             </li>
-            <li><a href="#35-数组">3.5 数组</a>
+          </ul>
+        </li>
+        <li><a href="#33-条件">3.3 条件</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#建议-使用--进行数组浅拷贝不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 进行数组浅拷贝，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
-                    <li><a href="#建议-使用--将类数组对象转化为数组不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 将类数组对象转化为数组，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-使用--或--判断相等性不使用--或-">[强制] 使用 <code>===</code> 或 <code>!==</code> 判断相等性，不使用 <code>==</code> 或 <code>!=</code>。</a></li>
               </ul>
             </li>
-            <li><a href="#36-对象">3.6 对象</a>
+          </ul>
+        </li>
+        <li><a href="#34-循环">3.4 循环</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用--进行对象浅拷贝不使用-objectassign-">[强制] 使用 <code>...</code> 进行对象浅拷贝，不使用 <code>Object.assign</code> 。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#建议-使用-objectkeys--objectvalues--objectentries--objectgetownpropertynames-遍历对象不使用-for--in-">[建议] 使用 <code>Object.keys / Object.values / Object.entries / Object.getOwnPropertyNames</code> 遍历对象，不使用 <code>for .. in</code> 。</a></li>
+                <li><a href="#建议-索引仅用于获取数组当前被迭代的项时使用-for--of-遍历数组不使用-for-">[建议] 索引仅用于获取数组当前被迭代的项时，使用 <code>for .. of</code> 遍历数组，不使用 <code>for</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#37-函数">3.7 函数</a>
+          </ul>
+        </li>
+        <li><a href="#35-数组">3.5 数组</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-避免-return-undefined-应直接-return">[强制] 避免 <code>return undefined</code> ，应直接 <code>return</code>。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#建议-使用--进行数组浅拷贝不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 进行数组浅拷贝，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
+                <li><a href="#建议-使用--将类数组对象转化为数组不使用-arrayfrom--arrayprototypeslice-">[建议] 使用 <code>...</code> 将类数组对象转化为数组，不使用 <code>Array.from / Array.prototype.slice</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#38-类">3.8 类</a>
+          </ul>
+        </li>
+        <li><a href="#36-对象">3.6 对象</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#建议-每个文件中最多声明一个类">[建议] 每个文件中最多声明一个类。</a></li>
-                    <li><a href="#强制-类成员的可访问性为-public-时不应显式声明">[强制] 类成员的可访问性为 <code>public</code> 时，不应显式声明。</a></li>
-                    <li><a href="#建议-构造函数可忽略时应忽略">[建议] 构造函数可忽略时，应忽略。</a></li>
-                    <li><a href="#建议-类成员之间使用空行隔开">[建议] 类成员之间使用空行隔开。</a></li>
-                    <li><a href="#建议-构造函数初始化实例属性时应尽量使用参数属性">[建议] 构造函数初始化实例属性时，应尽量使用参数属性。</a></li>
-                    <li><a href="#建议-构造函数的参数中作为属性的参数应排列于其他参数前">[建议] 构造函数的参数中，作为属性的参数应排列于其他参数前。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-使用--进行对象浅拷贝不使用-objectassign-">[强制] 使用 <code>...</code> 进行对象浅拷贝，不使用 <code>Object.assign</code> 。</a></li>
               </ul>
             </li>
-            <li><a href="#39-模块">3.9 模块</a>
+          </ul>
+        </li>
+        <li><a href="#37-函数">3.7 函数</a>
+          <ul>
+            <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#强制-使用-ecmascript-2015-标准的模块系统">[强制] 使用 <code>ECMAScript 2015</code> 标准的模块系统。</a></li>
-                    <li><a href="#强制-除类型声明文件外不使用-module--namespace-关键字">[强制] 除类型声明文件外，不使用 <code>module / namespace</code> 关键字。</a></li>
-                    <li><a href="#强制-不使用--reference-path--">[强制] 不使用 <code>/// &lt;reference path= &gt;</code> 。</a></li>
-                    <li><a href="#强制-对于同一个模块路径仅-import-一次">[强制] 对于同一个模块路径，仅 <code>import</code> 一次。</a></li>
-                    <li><a href="#建议-对于使用-webpack-等构建工具的项目在模块中引入其他资源如样式图片等时为资源编写类型声明文件或使用合适的-loader-生成类型声明文件">[建议] 对于使用 <code>webpack</code> 等构建工具的项目，在模块中引入其他资源（如样式、图片等）时，为资源编写类型声明文件，或使用合适的 <code>loader</code> 生成类型声明文件。</a></li>
-                  </ul>
-                </li>
+                <li><a href="#强制-避免-return-undefined-应直接-return">[强制] 避免 <code>return undefined</code> ，应直接 <code>return</code>。</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#38-类">3.8 类</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#建议-每个文件中最多声明一个类">[建议] 每个文件中最多声明一个类。</a></li>
+                <li><a href="#强制-类成员的可访问性为-public-时不应显式声明">[强制] 类成员的可访问性为 <code>public</code> 时，不应显式声明。</a></li>
+                <li><a href="#建议-构造函数可忽略时应忽略">[建议] 构造函数可忽略时，应忽略。</a></li>
+                <li><a href="#建议-类成员之间使用空行隔开">[建议] 类成员之间使用空行隔开。</a></li>
+                <li><a href="#建议-构造函数初始化实例属性时应尽量使用参数属性">[建议] 构造函数初始化实例属性时，应尽量使用参数属性。</a></li>
+                <li><a href="#建议-构造函数的参数中作为属性的参数应排列于其他参数前">[建议] 构造函数的参数中，作为属性的参数应排列于其他参数前。</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#39-模块">3.9 模块</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#强制-使用-ecmascript-2015-标准的模块系统">[强制] 使用 <code>ECMAScript 2015</code> 标准的模块系统。</a></li>
+                <li><a href="#强制-除类型声明文件外不使用-module--namespace-关键字">[强制] 除类型声明文件外，不使用 <code>module / namespace</code> 关键字。</a></li>
+                <li><a href="#强制-不使用--reference-path--">[强制] 不使用 <code>/// &lt;reference path= &gt;</code> 。</a></li>
+                <li><a href="#强制-对于同一个模块路径仅-import-一次">[强制] 对于同一个模块路径，仅 <code>import</code> 一次。</a></li>
+                <li><a href="#建议-对于使用-webpack-等构建工具的项目在模块中引入其他资源如样式图片等时为资源编写类型声明文件或使用合适的-loader-生成类型声明文件">[建议] 对于使用 <code>webpack</code> 等构建工具的项目，在模块中引入其他资源（如样式、图片等）时，为资源编写类型声明文件，或使用合适的 <code>loader</code> 生成类型声明文件。</a></li>
               </ul>
             </li>
           </ul>

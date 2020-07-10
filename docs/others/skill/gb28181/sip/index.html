@@ -23,7 +23,7 @@ Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要�
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
+<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
 
 
 <script defer src="/note-cs/en.search.min.e7b0fdd9c22a809c83409183d791f2a29f86f5116720c9d1101890cc9ebfb72e.js" integrity="sha256-57D92cIqgJyDQJGD15Hyop&#43;G9RFnIMnREBiQzJ6/ty4="></script>
@@ -1012,39 +1012,35 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#sip">SIP</a>
+    <li><a href="#call-id">CALL-ID</a></li>
+    <li><a href="#包内容">包内容</a>
       <ul>
-        <li><a href="#call-id">CALL-ID</a></li>
-        <li><a href="#包内容">包内容</a>
+        <li><a href="#message">Message</a></li>
+        <li><a href="#bye">Bye</a></li>
+        <li><a href="#包字段">包字段</a>
           <ul>
-            <li><a href="#message">Message</a></li>
-            <li><a href="#bye">Bye</a></li>
-            <li><a href="#包字段">包字段</a>
-              <ul>
-                <li><a href="#sn命令序列号">SN（命令序列号）</a></li>
-              </ul>
-            </li>
+            <li><a href="#sn命令序列号">SN（命令序列号）</a></li>
           </ul>
         </li>
-        <li><a href="#sip-proxy">SIP Proxy</a>
-          <ul>
-            <li><a href="#开源实现">开源实现</a>
-              <ul>
-                <li><a href="#kamalio">Kamalio</a></li>
-                <li><a href="#opensips">OpenSIPS</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#b2bua">B2BUA</a>
-          <ul>
-            <li><a href="#为什么需要-b2bua">为什么需要 B2BUA</a></li>
-          </ul>
-        </li>
-        <li><a href="#教程">教程</a></li>
-        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
+    <li><a href="#sip-proxy">SIP Proxy</a>
+      <ul>
+        <li><a href="#开源实现">开源实现</a>
+          <ul>
+            <li><a href="#kamalio">Kamalio</a></li>
+            <li><a href="#opensips">OpenSIPS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#b2bua">B2BUA</a>
+      <ul>
+        <li><a href="#为什么需要-b2bua">为什么需要 B2BUA</a></li>
+      </ul>
+    </li>
+    <li><a href="#教程">教程</a></li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
 
@@ -1187,39 +1183,35 @@ B2BUA 和 SIP 代理不同，它必须保持在 dialog 中所有创建的请求�
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#sip">SIP</a>
+    <li><a href="#call-id">CALL-ID</a></li>
+    <li><a href="#包内容">包内容</a>
       <ul>
-        <li><a href="#call-id">CALL-ID</a></li>
-        <li><a href="#包内容">包内容</a>
+        <li><a href="#message">Message</a></li>
+        <li><a href="#bye">Bye</a></li>
+        <li><a href="#包字段">包字段</a>
           <ul>
-            <li><a href="#message">Message</a></li>
-            <li><a href="#bye">Bye</a></li>
-            <li><a href="#包字段">包字段</a>
-              <ul>
-                <li><a href="#sn命令序列号">SN（命令序列号）</a></li>
-              </ul>
-            </li>
+            <li><a href="#sn命令序列号">SN（命令序列号）</a></li>
           </ul>
         </li>
-        <li><a href="#sip-proxy">SIP Proxy</a>
-          <ul>
-            <li><a href="#开源实现">开源实现</a>
-              <ul>
-                <li><a href="#kamalio">Kamalio</a></li>
-                <li><a href="#opensips">OpenSIPS</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#b2bua">B2BUA</a>
-          <ul>
-            <li><a href="#为什么需要-b2bua">为什么需要 B2BUA</a></li>
-          </ul>
-        </li>
-        <li><a href="#教程">教程</a></li>
-        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
+    <li><a href="#sip-proxy">SIP Proxy</a>
+      <ul>
+        <li><a href="#开源实现">开源实现</a>
+          <ul>
+            <li><a href="#kamalio">Kamalio</a></li>
+            <li><a href="#opensips">OpenSIPS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#b2bua">B2BUA</a>
+      <ul>
+        <li><a href="#为什么需要-b2bua">为什么需要 B2BUA</a></li>
+      </ul>
+    </li>
+    <li><a href="#教程">教程</a></li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
 

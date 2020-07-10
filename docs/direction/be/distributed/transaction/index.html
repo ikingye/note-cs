@@ -49,7 +49,7 @@ Confirm Cancel 参考：" />
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
+<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
 
 
 <script defer src="/note-cs/en.search.min.e7b0fdd9c22a809c83409183d791f2a29f86f5116720c9d1101890cc9ebfb72e.js" integrity="sha256-57D92cIqgJyDQJGD15Hyop&#43;G9RFnIMnREBiQzJ6/ty4="></script>
@@ -1113,33 +1113,29 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#分布式事务">分布式事务</a>
+    <li><a href="#微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</a></li>
+    <li><a href="#解决方案">解决方案</a></li>
+    <li><a href="#xa-方案">XA 方案</a>
       <ul>
-        <li><a href="#微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</a></li>
-        <li><a href="#解决方案">解决方案</a></li>
-        <li><a href="#xa-方案">XA 方案</a>
+        <li><a href="#tcc">TCC</a>
           <ul>
-            <li><a href="#tcc">TCC</a>
-              <ul>
-                <li><a href="#try">Try</a></li>
-                <li><a href="#confirm">Confirm</a></li>
-                <li><a href="#cancel">Cancel</a></li>
-              </ul>
-            </li>
-            <li><a href="#本地消息表">本地消息表</a></li>
-            <li><a href="#可靠消息最终一致性方案">可靠消息最终一致性方案</a></li>
-            <li><a href="#最大努力通知方案">最大努力通知方案</a></li>
-            <li><a href="#开源实现">开源实现</a>
-              <ul>
-                <li><a href="#seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars"></a></li>
-                <li><a href="#华为-dtm">华为 DTM</a></li>
-              </ul>
-            </li>
+            <li><a href="#try">Try</a></li>
+            <li><a href="#confirm">Confirm</a></li>
+            <li><a href="#cancel">Cancel</a></li>
           </ul>
         </li>
-        <li><a href="#参考">参考</a></li>
+        <li><a href="#本地消息表">本地消息表</a></li>
+        <li><a href="#可靠消息最终一致性方案">可靠消息最终一致性方案</a></li>
+        <li><a href="#最大努力通知方案">最大努力通知方案</a></li>
+        <li><a href="#开源实现">开源实现</a>
+          <ul>
+            <li><a href="#seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars"></a></li>
+            <li><a href="#华为-dtm">华为 DTM</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
 
@@ -1303,33 +1299,29 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#分布式事务">分布式事务</a>
+    <li><a href="#微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</a></li>
+    <li><a href="#解决方案">解决方案</a></li>
+    <li><a href="#xa-方案">XA 方案</a>
       <ul>
-        <li><a href="#微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</a></li>
-        <li><a href="#解决方案">解决方案</a></li>
-        <li><a href="#xa-方案">XA 方案</a>
+        <li><a href="#tcc">TCC</a>
           <ul>
-            <li><a href="#tcc">TCC</a>
-              <ul>
-                <li><a href="#try">Try</a></li>
-                <li><a href="#confirm">Confirm</a></li>
-                <li><a href="#cancel">Cancel</a></li>
-              </ul>
-            </li>
-            <li><a href="#本地消息表">本地消息表</a></li>
-            <li><a href="#可靠消息最终一致性方案">可靠消息最终一致性方案</a></li>
-            <li><a href="#最大努力通知方案">最大努力通知方案</a></li>
-            <li><a href="#开源实现">开源实现</a>
-              <ul>
-                <li><a href="#seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars"></a></li>
-                <li><a href="#华为-dtm">华为 DTM</a></li>
-              </ul>
-            </li>
+            <li><a href="#try">Try</a></li>
+            <li><a href="#confirm">Confirm</a></li>
+            <li><a href="#cancel">Cancel</a></li>
           </ul>
         </li>
-        <li><a href="#参考">参考</a></li>
+        <li><a href="#本地消息表">本地消息表</a></li>
+        <li><a href="#可靠消息最终一致性方案">可靠消息最终一致性方案</a></li>
+        <li><a href="#最大努力通知方案">最大努力通知方案</a></li>
+        <li><a href="#开源实现">开源实现</a>
+          <ul>
+            <li><a href="#seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars"></a></li>
+            <li><a href="#华为-dtm">华为 DTM</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
 

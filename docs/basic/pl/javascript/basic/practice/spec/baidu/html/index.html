@@ -59,7 +59,7 @@
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/note-cs/book.min.f4b9d5273a44ceb8244e6fb74f9c854fbeac86646cbd4889c01eb78337b6042f.css" integrity="sha256-9LnVJzpEzrgkTm&#43;3T5yFT76shmRsvUiJwB63gze2BC8=">
+<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
 
 
 <script defer src="/note-cs/en.search.min.e7b0fdd9c22a809c83409183d791f2a29f86f5116720c9d1101890cc9ebfb72e.js" integrity="sha256-57D92cIqgJyDQJGD15Hyop&#43;G9RFnIMnREBiQzJ6/ty4="></script>
@@ -1499,157 +1499,153 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#html-编码规范">HTML 编码规范</a>
+    <li><a href="#1-前言">1 前言</a></li>
+    <li><a href="#2-代码风格">2 代码风格</a>
       <ul>
-        <li><a href="#1-前言">1 前言</a></li>
-        <li><a href="#2-代码风格">2 代码风格</a>
+        <li><a href="#21-缩进与换行">2.1 缩进与换行</a>
           <ul>
-            <li><a href="#21-缩进与换行">2.1 缩进与换行</a>
-              <ul>
-                <li><a href="#强制-使用-4-个空格做为一个缩进层级不允许使用-2-个空格-或-tab-字符">[强制] 使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符。</a></li>
-                <li><a href="#建议-每行不得超过-120-个字符">[建议] 每行不得超过 <code>120</code> 个字符。</a></li>
-              </ul>
-            </li>
-            <li><a href="#22-命名">2.2 命名</a>
-              <ul>
-                <li><a href="#强制-class-必须单词全字母小写单词间以---分隔">[强制] <code>class</code> 必须单词全字母小写，单词间以 <code>-</code> 分隔。</a></li>
-                <li><a href="#强制-class-必须代表相应模块或部件的内容或功能不得以样式信息进行命名">[强制] <code>class</code> 必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。</a></li>
-                <li><a href="#强制-元素-id-必须保证页面唯一">[强制] 元素 <code>id</code> 必须保证页面唯一。</a></li>
-                <li><a href="#建议-id-建议单词全字母小写单词间以---分隔同项目必须保持风格一致">[建议] <code>id</code> 建议单词全字母小写，单词间以 <code>-</code> 分隔。同项目必须保持风格一致。</a></li>
-                <li><a href="#建议-idclass-命名在避免冲突并描述清楚的前提下尽可能短">[建议] <code>id</code>、<code>class</code> 命名，在避免冲突并描述清楚的前提下尽可能短。</a></li>
-                <li><a href="#强制-禁止为了-hook-脚本创建无样式信息的-class">[强制] 禁止为了 <code>hook 脚本</code>，创建无样式信息的 <code>class</code>。</a></li>
-                <li><a href="#强制-同一页面应避免使用相同的-name-与-id">[强制] 同一页面，应避免使用相同的 <code>name</code> 与 <code>id</code>。</a></li>
-              </ul>
-            </li>
-            <li><a href="#23-标签">2.3 标签</a>
-              <ul>
-                <li><a href="#强制-标签名必须使用小写字母">[强制] 标签名必须使用小写字母。</a></li>
-                <li><a href="#强制-对于无需自闭合的标签不允许自闭合">[强制] 对于无需自闭合的标签，不允许自闭合。</a></li>
-                <li><a href="#强制-对-html5-中规定允许省略的闭合标签不允许省略闭合标签">[强制] 对 <code>HTML5</code> 中规定允许省略的闭合标签，不允许省略闭合标签。</a></li>
-                <li><a href="#强制-标签使用必须符合标签嵌套规则">[强制] 标签使用必须符合标签嵌套规则。</a></li>
-                <li><a href="#建议-html-标签的使用应该遵循标签的语义">[建议] HTML 标签的使用应该遵循标签的语义。</a></li>
-                <li><a href="#建议-在-css-可以实现相同需求的情况下不得使用表格进行布局">[建议] 在 CSS 可以实现相同需求的情况下不得使用表格进行布局。</a></li>
-                <li><a href="#建议-标签的使用应尽量简洁减少不必要的标签">[建议] 标签的使用应尽量简洁，减少不必要的标签。</a></li>
-              </ul>
-            </li>
-            <li><a href="#24-属性">2.4 属性</a>
-              <ul>
-                <li><a href="#强制-属性名必须使用小写字母">[强制] 属性名必须使用小写字母。</a></li>
-                <li><a href="#强制-属性值必须用双引号包围">[强制] 属性值必须用双引号包围。</a></li>
-                <li><a href="#强制-属性名与属性值中间不得存在空格">[强制] 属性名与属性值中间不得存在空格。</a></li>
-                <li><a href="#建议-布尔类型的属性建议不添加属性值">[建议] 布尔类型的属性，建议不添加属性值。</a></li>
-                <li><a href="#建议-自定义属性建议以-xxx--为前缀推荐使用-data-">[建议] 自定义属性建议以 <code>xxx-</code> 为前缀，推荐使用 <code>data-</code>。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-使用-4-个空格做为一个缩进层级不允许使用-2-个空格-或-tab-字符">[强制] 使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符。</a></li>
+            <li><a href="#建议-每行不得超过-120-个字符">[建议] 每行不得超过 <code>120</code> 个字符。</a></li>
           </ul>
         </li>
-        <li><a href="#3-通用">3 通用</a>
+        <li><a href="#22-命名">2.2 命名</a>
           <ul>
-            <li><a href="#31-doctype">3.1 DOCTYPE</a>
-              <ul>
-                <li><a href="#强制-使用-html5-的-doctype-来启用标准模式建议使用大写的-doctype">[强制] 使用 <code>HTML5</code> 的 <code>doctype</code> 来启用标准模式，建议使用大写的 <code>DOCTYPE</code>。</a></li>
-                <li><a href="#建议-启用-ie-edge-模式">[建议] 启用 IE Edge 模式。</a></li>
-                <li><a href="#建议-在-html-标签上设置正确的-lang-属性">[建议] 在 <code>html</code> 标签上设置正确的 <code>lang</code> 属性。</a></li>
-              </ul>
-            </li>
-            <li><a href="#32-编码">3.2 编码</a>
-              <ul>
-                <li><a href="#强制-页面必须使用精简形式明确指定字符编码指定字符编码的-meta-必须是-head-的第一个直接子元素">[强制] 页面必须使用精简形式，明确指定字符编码。指定字符编码的 <code>meta</code> 必须是 <code>head</code> 的第一个直接子元素。</a></li>
-                <li><a href="#建议-html-文件使用无-bom-的-utf-8-编码">[建议] <code>HTML</code> 文件使用无 <code>BOM</code> 的 <code>UTF-8</code> 编码。</a></li>
-              </ul>
-            </li>
-            <li><a href="#33-css-和-javascript-引入">3.3 CSS 和 JavaScript 引入</a>
-              <ul>
-                <li><a href="#强制-引入-css-时必须指明-relstylesheet">[强制] 引入 <code>CSS</code> 时必须指明 <code>rel=&quot;stylesheet&quot;</code>。</a></li>
-                <li><a href="#建议-引入-css-和-javascript-时无须指明-type-属性">[建议] 引入 <code>CSS</code> 和 <code>JavaScript</code> 时无须指明 <code>type</code> 属性。</a></li>
-                <li><a href="#建议-展现定义放置于外部-css-中行为定义放置于外部-javascript-中">[建议] 展现定义放置于外部 <code>CSS</code> 中，行为定义放置于外部 <code>JavaScript</code> 中。</a></li>
-                <li><a href="#建议-在-head-中引入页面需要的所有-css-资源">[建议] 在 <code>head</code> 中引入页面需要的所有 <code>CSS</code> 资源。</a></li>
-                <li><a href="#建议-javascript-应当放在页面末尾或采用异步加载">[建议] <code>JavaScript</code> 应当放在页面末尾，或采用异步加载。</a></li>
-                <li><a href="#建议-移动环境或只针对现代浏览器设计的-web-应用如果引用外部资源的-url-协议部分与页面相同建议省略协议前缀">[建议] 移动环境或只针对现代浏览器设计的 Web 应用，如果引用外部资源的 <code>URL</code> 协议部分与页面相同，建议省略协议前缀。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-class-必须单词全字母小写单词间以---分隔">[强制] <code>class</code> 必须单词全字母小写，单词间以 <code>-</code> 分隔。</a></li>
+            <li><a href="#强制-class-必须代表相应模块或部件的内容或功能不得以样式信息进行命名">[强制] <code>class</code> 必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。</a></li>
+            <li><a href="#强制-元素-id-必须保证页面唯一">[强制] 元素 <code>id</code> 必须保证页面唯一。</a></li>
+            <li><a href="#建议-id-建议单词全字母小写单词间以---分隔同项目必须保持风格一致">[建议] <code>id</code> 建议单词全字母小写，单词间以 <code>-</code> 分隔。同项目必须保持风格一致。</a></li>
+            <li><a href="#建议-idclass-命名在避免冲突并描述清楚的前提下尽可能短">[建议] <code>id</code>、<code>class</code> 命名，在避免冲突并描述清楚的前提下尽可能短。</a></li>
+            <li><a href="#强制-禁止为了-hook-脚本创建无样式信息的-class">[强制] 禁止为了 <code>hook 脚本</code>，创建无样式信息的 <code>class</code>。</a></li>
+            <li><a href="#强制-同一页面应避免使用相同的-name-与-id">[强制] 同一页面，应避免使用相同的 <code>name</code> 与 <code>id</code>。</a></li>
           </ul>
         </li>
-        <li><a href="#4-head">4 head</a>
+        <li><a href="#23-标签">2.3 标签</a>
           <ul>
-            <li><a href="#41-title">4.1 title</a>
-              <ul>
-                <li><a href="#强制-页面必须包含-title-标签声明标题">[强制] 页面必须包含 <code>title</code> 标签声明标题。</a></li>
-                <li><a href="#强制-title-必须作为-head-的直接子元素并紧随-charset-声明之后">[强制] <code>title</code> 必须作为 <code>head</code> 的直接子元素，并紧随 <code>charset</code> 声明之后。</a></li>
-              </ul>
-            </li>
-            <li><a href="#42-favicon">4.2 favicon</a>
-              <ul>
-                <li><a href="#强制-保证-favicon-可访问">[强制] 保证 <code>favicon</code> 可访问。</a></li>
-              </ul>
-            </li>
-            <li><a href="#43-viewport">4.3 viewport</a>
-              <ul>
-                <li><a href="#建议-若页面欲对移动设备友好需指定页面的-viewport">[建议] 若页面欲对移动设备友好，需指定页面的 <code>viewport</code>。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-标签名必须使用小写字母">[强制] 标签名必须使用小写字母。</a></li>
+            <li><a href="#强制-对于无需自闭合的标签不允许自闭合">[强制] 对于无需自闭合的标签，不允许自闭合。</a></li>
+            <li><a href="#强制-对-html5-中规定允许省略的闭合标签不允许省略闭合标签">[强制] 对 <code>HTML5</code> 中规定允许省略的闭合标签，不允许省略闭合标签。</a></li>
+            <li><a href="#强制-标签使用必须符合标签嵌套规则">[强制] 标签使用必须符合标签嵌套规则。</a></li>
+            <li><a href="#建议-html-标签的使用应该遵循标签的语义">[建议] HTML 标签的使用应该遵循标签的语义。</a></li>
+            <li><a href="#建议-在-css-可以实现相同需求的情况下不得使用表格进行布局">[建议] 在 CSS 可以实现相同需求的情况下不得使用表格进行布局。</a></li>
+            <li><a href="#建议-标签的使用应尽量简洁减少不必要的标签">[建议] 标签的使用应尽量简洁，减少不必要的标签。</a></li>
           </ul>
         </li>
-        <li><a href="#5-图片">5 图片</a>
+        <li><a href="#24-属性">2.4 属性</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#强制-禁止-img-的-src-取值为空延迟加载的图片也要增加默认的-src">[强制] 禁止 <code>img</code> 的 <code>src</code> 取值为空。延迟加载的图片也要增加默认的 <code>src</code>。</a></li>
-                <li><a href="#建议-避免为-img-添加不必要的-title-属性">[建议] 避免为 <code>img</code> 添加不必要的 <code>title</code> 属性。</a></li>
-                <li><a href="#建议-为重要图片添加-alt-属性">[建议] 为重要图片添加 <code>alt</code> 属性。</a></li>
-                <li><a href="#建议-添加-width-和-height-属性以避免页面抖动">[建议] 添加 <code>width</code> 和 <code>height</code> 属性，以避免页面抖动。</a></li>
-                <li><a href="#建议-有下载需求的图片采用-img-标签实现无下载需求的图片采用-css-背景图实现">[建议] 有下载需求的图片采用 <code>img</code> 标签实现，无下载需求的图片采用 CSS 背景图实现。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-属性名必须使用小写字母">[强制] 属性名必须使用小写字母。</a></li>
+            <li><a href="#强制-属性值必须用双引号包围">[强制] 属性值必须用双引号包围。</a></li>
+            <li><a href="#强制-属性名与属性值中间不得存在空格">[强制] 属性名与属性值中间不得存在空格。</a></li>
+            <li><a href="#建议-布尔类型的属性建议不添加属性值">[建议] 布尔类型的属性，建议不添加属性值。</a></li>
+            <li><a href="#建议-自定义属性建议以-xxx--为前缀推荐使用-data-">[建议] 自定义属性建议以 <code>xxx-</code> 为前缀，推荐使用 <code>data-</code>。</a></li>
           </ul>
         </li>
-        <li><a href="#6-表单">6 表单</a>
+      </ul>
+    </li>
+    <li><a href="#3-通用">3 通用</a>
+      <ul>
+        <li><a href="#31-doctype">3.1 DOCTYPE</a>
           <ul>
-            <li><a href="#61-控件标题">6.1 控件标题</a>
-              <ul>
-                <li><a href="#强制-有文本标题的控件必须使用-label-标签将其与其标题相关联">[强制] 有文本标题的控件必须使用 <code>label</code> 标签将其与其标题相关联。</a></li>
-              </ul>
-            </li>
-            <li><a href="#62-按钮">6.2 按钮</a>
-              <ul>
-                <li><a href="#强制-使用-button-元素时必须指明-type-属性值">[强制] 使用 <code>button</code> 元素时必须指明 <code>type</code> 属性值。</a></li>
-                <li><a href="#建议-尽量不要使用按钮类元素的-name-属性">[建议] 尽量不要使用按钮类元素的 <code>name</code> 属性。</a></li>
-              </ul>
-            </li>
-            <li><a href="#63-可访问性-a11y">6.3 可访问性 (A11Y)</a>
-              <ul>
-                <li><a href="#建议-负责主要功能的按钮在-dom-中的顺序应靠前">[建议] 负责主要功能的按钮在 DOM 中的顺序应靠前。</a></li>
-                <li><a href="#建议-当使用-javascript-进行表单提交时如果条件允许应使原生提交功能正常工作">[建议] 当使用 JavaScript 进行表单提交时，如果条件允许，应使原生提交功能正常工作。</a></li>
-                <li><a href="#建议-在针对移动设备开发的页面时根据内容类型指定输入框的-type-属性">[建议] 在针对移动设备开发的页面时，根据内容类型指定输入框的 <code>type</code> 属性。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-使用-html5-的-doctype-来启用标准模式建议使用大写的-doctype">[强制] 使用 <code>HTML5</code> 的 <code>doctype</code> 来启用标准模式，建议使用大写的 <code>DOCTYPE</code>。</a></li>
+            <li><a href="#建议-启用-ie-edge-模式">[建议] 启用 IE Edge 模式。</a></li>
+            <li><a href="#建议-在-html-标签上设置正确的-lang-属性">[建议] 在 <code>html</code> 标签上设置正确的 <code>lang</code> 属性。</a></li>
           </ul>
         </li>
-        <li><a href="#7-多媒体">7 多媒体</a>
+        <li><a href="#32-编码">3.2 编码</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#建议-当在现代浏览器中使用-audio-以及-video-标签来播放音频视频时应当注意格式">[建议] 当在现代浏览器中使用 <code>audio</code> 以及 <code>video</code> 标签来播放音频、视频时，应当注意格式。</a></li>
-                <li><a href="#建议-在支持-html5-的浏览器中优先使用-audio-和-video-标签来定义音视频元素">[建议] 在支持 <code>HTML5</code> 的浏览器中优先使用 <code>audio</code> 和 <code>video</code> 标签来定义音视频元素。</a></li>
-                <li><a href="#建议-使用退化到插件的方式来对多浏览器进行支持">[建议] 使用退化到插件的方式来对多浏览器进行支持。</a></li>
-                <li><a href="#建议-只在必要的时候开启音视频的自动播放">[建议] 只在必要的时候开启音视频的自动播放。</a></li>
-                <li><a href="#建议-在-object-标签内部提供指示浏览器不支持该标签的说明">[建议] 在 <code>object</code> 标签内部提供指示浏览器不支持该标签的说明。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-页面必须使用精简形式明确指定字符编码指定字符编码的-meta-必须是-head-的第一个直接子元素">[强制] 页面必须使用精简形式，明确指定字符编码。指定字符编码的 <code>meta</code> 必须是 <code>head</code> 的第一个直接子元素。</a></li>
+            <li><a href="#建议-html-文件使用无-bom-的-utf-8-编码">[建议] <code>HTML</code> 文件使用无 <code>BOM</code> 的 <code>UTF-8</code> 编码。</a></li>
           </ul>
         </li>
-        <li><a href="#8-模板中的-html">8 模板中的 HTML</a>
+        <li><a href="#33-css-和-javascript-引入">3.3 CSS 和 JavaScript 引入</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#建议-模板代码的缩进优先保证-html-代码的缩进规则">[建议] 模板代码的缩进优先保证 HTML 代码的缩进规则。</a></li>
-                <li><a href="#建议-模板代码应以保证-html-单个标签语法的正确性为基本原则">[建议] 模板代码应以保证 HTML 单个标签语法的正确性为基本原则。</a></li>
-                <li><a href="#建议-在循环处理模板数据构造表格时若要求每行输出固定的个数建议先将数据分组之后再循环输出">[建议] 在循环处理模板数据构造表格时，若要求每行输出固定的个数，建议先将数据分组，之后再循环输出。</a></li>
-              </ul>
-            </li>
-            <li><a href="#建议-新窗口标签页打开的链接需要按业务需要添加安全相关的-rel-属性值-noopener">[建议] 新窗口/标签页打开的链接需要按业务需要添加安全相关的 <code>rel</code> 属性值 <code>noopener</code>。</a></li>
+            <li><a href="#强制-引入-css-时必须指明-relstylesheet">[强制] 引入 <code>CSS</code> 时必须指明 <code>rel=&quot;stylesheet&quot;</code>。</a></li>
+            <li><a href="#建议-引入-css-和-javascript-时无须指明-type-属性">[建议] 引入 <code>CSS</code> 和 <code>JavaScript</code> 时无须指明 <code>type</code> 属性。</a></li>
+            <li><a href="#建议-展现定义放置于外部-css-中行为定义放置于外部-javascript-中">[建议] 展现定义放置于外部 <code>CSS</code> 中，行为定义放置于外部 <code>JavaScript</code> 中。</a></li>
+            <li><a href="#建议-在-head-中引入页面需要的所有-css-资源">[建议] 在 <code>head</code> 中引入页面需要的所有 <code>CSS</code> 资源。</a></li>
+            <li><a href="#建议-javascript-应当放在页面末尾或采用异步加载">[建议] <code>JavaScript</code> 应当放在页面末尾，或采用异步加载。</a></li>
+            <li><a href="#建议-移动环境或只针对现代浏览器设计的-web-应用如果引用外部资源的-url-协议部分与页面相同建议省略协议前缀">[建议] 移动环境或只针对现代浏览器设计的 Web 应用，如果引用外部资源的 <code>URL</code> 协议部分与页面相同，建议省略协议前缀。</a></li>
           </ul>
         </li>
+      </ul>
+    </li>
+    <li><a href="#4-head">4 head</a>
+      <ul>
+        <li><a href="#41-title">4.1 title</a>
+          <ul>
+            <li><a href="#强制-页面必须包含-title-标签声明标题">[强制] 页面必须包含 <code>title</code> 标签声明标题。</a></li>
+            <li><a href="#强制-title-必须作为-head-的直接子元素并紧随-charset-声明之后">[强制] <code>title</code> 必须作为 <code>head</code> 的直接子元素，并紧随 <code>charset</code> 声明之后。</a></li>
+          </ul>
+        </li>
+        <li><a href="#42-favicon">4.2 favicon</a>
+          <ul>
+            <li><a href="#强制-保证-favicon-可访问">[强制] 保证 <code>favicon</code> 可访问。</a></li>
+          </ul>
+        </li>
+        <li><a href="#43-viewport">4.3 viewport</a>
+          <ul>
+            <li><a href="#建议-若页面欲对移动设备友好需指定页面的-viewport">[建议] 若页面欲对移动设备友好，需指定页面的 <code>viewport</code>。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#5-图片">5 图片</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#强制-禁止-img-的-src-取值为空延迟加载的图片也要增加默认的-src">[强制] 禁止 <code>img</code> 的 <code>src</code> 取值为空。延迟加载的图片也要增加默认的 <code>src</code>。</a></li>
+            <li><a href="#建议-避免为-img-添加不必要的-title-属性">[建议] 避免为 <code>img</code> 添加不必要的 <code>title</code> 属性。</a></li>
+            <li><a href="#建议-为重要图片添加-alt-属性">[建议] 为重要图片添加 <code>alt</code> 属性。</a></li>
+            <li><a href="#建议-添加-width-和-height-属性以避免页面抖动">[建议] 添加 <code>width</code> 和 <code>height</code> 属性，以避免页面抖动。</a></li>
+            <li><a href="#建议-有下载需求的图片采用-img-标签实现无下载需求的图片采用-css-背景图实现">[建议] 有下载需求的图片采用 <code>img</code> 标签实现，无下载需求的图片采用 CSS 背景图实现。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#6-表单">6 表单</a>
+      <ul>
+        <li><a href="#61-控件标题">6.1 控件标题</a>
+          <ul>
+            <li><a href="#强制-有文本标题的控件必须使用-label-标签将其与其标题相关联">[强制] 有文本标题的控件必须使用 <code>label</code> 标签将其与其标题相关联。</a></li>
+          </ul>
+        </li>
+        <li><a href="#62-按钮">6.2 按钮</a>
+          <ul>
+            <li><a href="#强制-使用-button-元素时必须指明-type-属性值">[强制] 使用 <code>button</code> 元素时必须指明 <code>type</code> 属性值。</a></li>
+            <li><a href="#建议-尽量不要使用按钮类元素的-name-属性">[建议] 尽量不要使用按钮类元素的 <code>name</code> 属性。</a></li>
+          </ul>
+        </li>
+        <li><a href="#63-可访问性-a11y">6.3 可访问性 (A11Y)</a>
+          <ul>
+            <li><a href="#建议-负责主要功能的按钮在-dom-中的顺序应靠前">[建议] 负责主要功能的按钮在 DOM 中的顺序应靠前。</a></li>
+            <li><a href="#建议-当使用-javascript-进行表单提交时如果条件允许应使原生提交功能正常工作">[建议] 当使用 JavaScript 进行表单提交时，如果条件允许，应使原生提交功能正常工作。</a></li>
+            <li><a href="#建议-在针对移动设备开发的页面时根据内容类型指定输入框的-type-属性">[建议] 在针对移动设备开发的页面时，根据内容类型指定输入框的 <code>type</code> 属性。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#7-多媒体">7 多媒体</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#建议-当在现代浏览器中使用-audio-以及-video-标签来播放音频视频时应当注意格式">[建议] 当在现代浏览器中使用 <code>audio</code> 以及 <code>video</code> 标签来播放音频、视频时，应当注意格式。</a></li>
+            <li><a href="#建议-在支持-html5-的浏览器中优先使用-audio-和-video-标签来定义音视频元素">[建议] 在支持 <code>HTML5</code> 的浏览器中优先使用 <code>audio</code> 和 <code>video</code> 标签来定义音视频元素。</a></li>
+            <li><a href="#建议-使用退化到插件的方式来对多浏览器进行支持">[建议] 使用退化到插件的方式来对多浏览器进行支持。</a></li>
+            <li><a href="#建议-只在必要的时候开启音视频的自动播放">[建议] 只在必要的时候开启音视频的自动播放。</a></li>
+            <li><a href="#建议-在-object-标签内部提供指示浏览器不支持该标签的说明">[建议] 在 <code>object</code> 标签内部提供指示浏览器不支持该标签的说明。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#8-模板中的-html">8 模板中的 HTML</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#建议-模板代码的缩进优先保证-html-代码的缩进规则">[建议] 模板代码的缩进优先保证 HTML 代码的缩进规则。</a></li>
+            <li><a href="#建议-模板代码应以保证-html-单个标签语法的正确性为基本原则">[建议] 模板代码应以保证 HTML 单个标签语法的正确性为基本原则。</a></li>
+            <li><a href="#建议-在循环处理模板数据构造表格时若要求每行输出固定的个数建议先将数据分组之后再循环输出">[建议] 在循环处理模板数据构造表格时，若要求每行输出固定的个数，建议先将数据分组，之后再循环输出。</a></li>
+          </ul>
+        </li>
+        <li><a href="#建议-新窗口标签页打开的链接需要按业务需要添加安全相关的-rel-属性值-noopener">[建议] 新窗口/标签页打开的链接需要按业务需要添加安全相关的 <code>rel</code> 属性值 <code>noopener</code>。</a></li>
       </ul>
     </li>
   </ul>
@@ -2202,157 +2198,153 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#html-编码规范">HTML 编码规范</a>
+    <li><a href="#1-前言">1 前言</a></li>
+    <li><a href="#2-代码风格">2 代码风格</a>
       <ul>
-        <li><a href="#1-前言">1 前言</a></li>
-        <li><a href="#2-代码风格">2 代码风格</a>
+        <li><a href="#21-缩进与换行">2.1 缩进与换行</a>
           <ul>
-            <li><a href="#21-缩进与换行">2.1 缩进与换行</a>
-              <ul>
-                <li><a href="#强制-使用-4-个空格做为一个缩进层级不允许使用-2-个空格-或-tab-字符">[强制] 使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符。</a></li>
-                <li><a href="#建议-每行不得超过-120-个字符">[建议] 每行不得超过 <code>120</code> 个字符。</a></li>
-              </ul>
-            </li>
-            <li><a href="#22-命名">2.2 命名</a>
-              <ul>
-                <li><a href="#强制-class-必须单词全字母小写单词间以---分隔">[强制] <code>class</code> 必须单词全字母小写，单词间以 <code>-</code> 分隔。</a></li>
-                <li><a href="#强制-class-必须代表相应模块或部件的内容或功能不得以样式信息进行命名">[强制] <code>class</code> 必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。</a></li>
-                <li><a href="#强制-元素-id-必须保证页面唯一">[强制] 元素 <code>id</code> 必须保证页面唯一。</a></li>
-                <li><a href="#建议-id-建议单词全字母小写单词间以---分隔同项目必须保持风格一致">[建议] <code>id</code> 建议单词全字母小写，单词间以 <code>-</code> 分隔。同项目必须保持风格一致。</a></li>
-                <li><a href="#建议-idclass-命名在避免冲突并描述清楚的前提下尽可能短">[建议] <code>id</code>、<code>class</code> 命名，在避免冲突并描述清楚的前提下尽可能短。</a></li>
-                <li><a href="#强制-禁止为了-hook-脚本创建无样式信息的-class">[强制] 禁止为了 <code>hook 脚本</code>，创建无样式信息的 <code>class</code>。</a></li>
-                <li><a href="#强制-同一页面应避免使用相同的-name-与-id">[强制] 同一页面，应避免使用相同的 <code>name</code> 与 <code>id</code>。</a></li>
-              </ul>
-            </li>
-            <li><a href="#23-标签">2.3 标签</a>
-              <ul>
-                <li><a href="#强制-标签名必须使用小写字母">[强制] 标签名必须使用小写字母。</a></li>
-                <li><a href="#强制-对于无需自闭合的标签不允许自闭合">[强制] 对于无需自闭合的标签，不允许自闭合。</a></li>
-                <li><a href="#强制-对-html5-中规定允许省略的闭合标签不允许省略闭合标签">[强制] 对 <code>HTML5</code> 中规定允许省略的闭合标签，不允许省略闭合标签。</a></li>
-                <li><a href="#强制-标签使用必须符合标签嵌套规则">[强制] 标签使用必须符合标签嵌套规则。</a></li>
-                <li><a href="#建议-html-标签的使用应该遵循标签的语义">[建议] HTML 标签的使用应该遵循标签的语义。</a></li>
-                <li><a href="#建议-在-css-可以实现相同需求的情况下不得使用表格进行布局">[建议] 在 CSS 可以实现相同需求的情况下不得使用表格进行布局。</a></li>
-                <li><a href="#建议-标签的使用应尽量简洁减少不必要的标签">[建议] 标签的使用应尽量简洁，减少不必要的标签。</a></li>
-              </ul>
-            </li>
-            <li><a href="#24-属性">2.4 属性</a>
-              <ul>
-                <li><a href="#强制-属性名必须使用小写字母">[强制] 属性名必须使用小写字母。</a></li>
-                <li><a href="#强制-属性值必须用双引号包围">[强制] 属性值必须用双引号包围。</a></li>
-                <li><a href="#强制-属性名与属性值中间不得存在空格">[强制] 属性名与属性值中间不得存在空格。</a></li>
-                <li><a href="#建议-布尔类型的属性建议不添加属性值">[建议] 布尔类型的属性，建议不添加属性值。</a></li>
-                <li><a href="#建议-自定义属性建议以-xxx--为前缀推荐使用-data-">[建议] 自定义属性建议以 <code>xxx-</code> 为前缀，推荐使用 <code>data-</code>。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-使用-4-个空格做为一个缩进层级不允许使用-2-个空格-或-tab-字符">[强制] 使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符。</a></li>
+            <li><a href="#建议-每行不得超过-120-个字符">[建议] 每行不得超过 <code>120</code> 个字符。</a></li>
           </ul>
         </li>
-        <li><a href="#3-通用">3 通用</a>
+        <li><a href="#22-命名">2.2 命名</a>
           <ul>
-            <li><a href="#31-doctype">3.1 DOCTYPE</a>
-              <ul>
-                <li><a href="#强制-使用-html5-的-doctype-来启用标准模式建议使用大写的-doctype">[强制] 使用 <code>HTML5</code> 的 <code>doctype</code> 来启用标准模式，建议使用大写的 <code>DOCTYPE</code>。</a></li>
-                <li><a href="#建议-启用-ie-edge-模式">[建议] 启用 IE Edge 模式。</a></li>
-                <li><a href="#建议-在-html-标签上设置正确的-lang-属性">[建议] 在 <code>html</code> 标签上设置正确的 <code>lang</code> 属性。</a></li>
-              </ul>
-            </li>
-            <li><a href="#32-编码">3.2 编码</a>
-              <ul>
-                <li><a href="#强制-页面必须使用精简形式明确指定字符编码指定字符编码的-meta-必须是-head-的第一个直接子元素">[强制] 页面必须使用精简形式，明确指定字符编码。指定字符编码的 <code>meta</code> 必须是 <code>head</code> 的第一个直接子元素。</a></li>
-                <li><a href="#建议-html-文件使用无-bom-的-utf-8-编码">[建议] <code>HTML</code> 文件使用无 <code>BOM</code> 的 <code>UTF-8</code> 编码。</a></li>
-              </ul>
-            </li>
-            <li><a href="#33-css-和-javascript-引入">3.3 CSS 和 JavaScript 引入</a>
-              <ul>
-                <li><a href="#强制-引入-css-时必须指明-relstylesheet">[强制] 引入 <code>CSS</code> 时必须指明 <code>rel=&quot;stylesheet&quot;</code>。</a></li>
-                <li><a href="#建议-引入-css-和-javascript-时无须指明-type-属性">[建议] 引入 <code>CSS</code> 和 <code>JavaScript</code> 时无须指明 <code>type</code> 属性。</a></li>
-                <li><a href="#建议-展现定义放置于外部-css-中行为定义放置于外部-javascript-中">[建议] 展现定义放置于外部 <code>CSS</code> 中，行为定义放置于外部 <code>JavaScript</code> 中。</a></li>
-                <li><a href="#建议-在-head-中引入页面需要的所有-css-资源">[建议] 在 <code>head</code> 中引入页面需要的所有 <code>CSS</code> 资源。</a></li>
-                <li><a href="#建议-javascript-应当放在页面末尾或采用异步加载">[建议] <code>JavaScript</code> 应当放在页面末尾，或采用异步加载。</a></li>
-                <li><a href="#建议-移动环境或只针对现代浏览器设计的-web-应用如果引用外部资源的-url-协议部分与页面相同建议省略协议前缀">[建议] 移动环境或只针对现代浏览器设计的 Web 应用，如果引用外部资源的 <code>URL</code> 协议部分与页面相同，建议省略协议前缀。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-class-必须单词全字母小写单词间以---分隔">[强制] <code>class</code> 必须单词全字母小写，单词间以 <code>-</code> 分隔。</a></li>
+            <li><a href="#强制-class-必须代表相应模块或部件的内容或功能不得以样式信息进行命名">[强制] <code>class</code> 必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。</a></li>
+            <li><a href="#强制-元素-id-必须保证页面唯一">[强制] 元素 <code>id</code> 必须保证页面唯一。</a></li>
+            <li><a href="#建议-id-建议单词全字母小写单词间以---分隔同项目必须保持风格一致">[建议] <code>id</code> 建议单词全字母小写，单词间以 <code>-</code> 分隔。同项目必须保持风格一致。</a></li>
+            <li><a href="#建议-idclass-命名在避免冲突并描述清楚的前提下尽可能短">[建议] <code>id</code>、<code>class</code> 命名，在避免冲突并描述清楚的前提下尽可能短。</a></li>
+            <li><a href="#强制-禁止为了-hook-脚本创建无样式信息的-class">[强制] 禁止为了 <code>hook 脚本</code>，创建无样式信息的 <code>class</code>。</a></li>
+            <li><a href="#强制-同一页面应避免使用相同的-name-与-id">[强制] 同一页面，应避免使用相同的 <code>name</code> 与 <code>id</code>。</a></li>
           </ul>
         </li>
-        <li><a href="#4-head">4 head</a>
+        <li><a href="#23-标签">2.3 标签</a>
           <ul>
-            <li><a href="#41-title">4.1 title</a>
-              <ul>
-                <li><a href="#强制-页面必须包含-title-标签声明标题">[强制] 页面必须包含 <code>title</code> 标签声明标题。</a></li>
-                <li><a href="#强制-title-必须作为-head-的直接子元素并紧随-charset-声明之后">[强制] <code>title</code> 必须作为 <code>head</code> 的直接子元素，并紧随 <code>charset</code> 声明之后。</a></li>
-              </ul>
-            </li>
-            <li><a href="#42-favicon">4.2 favicon</a>
-              <ul>
-                <li><a href="#强制-保证-favicon-可访问">[强制] 保证 <code>favicon</code> 可访问。</a></li>
-              </ul>
-            </li>
-            <li><a href="#43-viewport">4.3 viewport</a>
-              <ul>
-                <li><a href="#建议-若页面欲对移动设备友好需指定页面的-viewport">[建议] 若页面欲对移动设备友好，需指定页面的 <code>viewport</code>。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-标签名必须使用小写字母">[强制] 标签名必须使用小写字母。</a></li>
+            <li><a href="#强制-对于无需自闭合的标签不允许自闭合">[强制] 对于无需自闭合的标签，不允许自闭合。</a></li>
+            <li><a href="#强制-对-html5-中规定允许省略的闭合标签不允许省略闭合标签">[强制] 对 <code>HTML5</code> 中规定允许省略的闭合标签，不允许省略闭合标签。</a></li>
+            <li><a href="#强制-标签使用必须符合标签嵌套规则">[强制] 标签使用必须符合标签嵌套规则。</a></li>
+            <li><a href="#建议-html-标签的使用应该遵循标签的语义">[建议] HTML 标签的使用应该遵循标签的语义。</a></li>
+            <li><a href="#建议-在-css-可以实现相同需求的情况下不得使用表格进行布局">[建议] 在 CSS 可以实现相同需求的情况下不得使用表格进行布局。</a></li>
+            <li><a href="#建议-标签的使用应尽量简洁减少不必要的标签">[建议] 标签的使用应尽量简洁，减少不必要的标签。</a></li>
           </ul>
         </li>
-        <li><a href="#5-图片">5 图片</a>
+        <li><a href="#24-属性">2.4 属性</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#强制-禁止-img-的-src-取值为空延迟加载的图片也要增加默认的-src">[强制] 禁止 <code>img</code> 的 <code>src</code> 取值为空。延迟加载的图片也要增加默认的 <code>src</code>。</a></li>
-                <li><a href="#建议-避免为-img-添加不必要的-title-属性">[建议] 避免为 <code>img</code> 添加不必要的 <code>title</code> 属性。</a></li>
-                <li><a href="#建议-为重要图片添加-alt-属性">[建议] 为重要图片添加 <code>alt</code> 属性。</a></li>
-                <li><a href="#建议-添加-width-和-height-属性以避免页面抖动">[建议] 添加 <code>width</code> 和 <code>height</code> 属性，以避免页面抖动。</a></li>
-                <li><a href="#建议-有下载需求的图片采用-img-标签实现无下载需求的图片采用-css-背景图实现">[建议] 有下载需求的图片采用 <code>img</code> 标签实现，无下载需求的图片采用 CSS 背景图实现。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-属性名必须使用小写字母">[强制] 属性名必须使用小写字母。</a></li>
+            <li><a href="#强制-属性值必须用双引号包围">[强制] 属性值必须用双引号包围。</a></li>
+            <li><a href="#强制-属性名与属性值中间不得存在空格">[强制] 属性名与属性值中间不得存在空格。</a></li>
+            <li><a href="#建议-布尔类型的属性建议不添加属性值">[建议] 布尔类型的属性，建议不添加属性值。</a></li>
+            <li><a href="#建议-自定义属性建议以-xxx--为前缀推荐使用-data-">[建议] 自定义属性建议以 <code>xxx-</code> 为前缀，推荐使用 <code>data-</code>。</a></li>
           </ul>
         </li>
-        <li><a href="#6-表单">6 表单</a>
+      </ul>
+    </li>
+    <li><a href="#3-通用">3 通用</a>
+      <ul>
+        <li><a href="#31-doctype">3.1 DOCTYPE</a>
           <ul>
-            <li><a href="#61-控件标题">6.1 控件标题</a>
-              <ul>
-                <li><a href="#强制-有文本标题的控件必须使用-label-标签将其与其标题相关联">[强制] 有文本标题的控件必须使用 <code>label</code> 标签将其与其标题相关联。</a></li>
-              </ul>
-            </li>
-            <li><a href="#62-按钮">6.2 按钮</a>
-              <ul>
-                <li><a href="#强制-使用-button-元素时必须指明-type-属性值">[强制] 使用 <code>button</code> 元素时必须指明 <code>type</code> 属性值。</a></li>
-                <li><a href="#建议-尽量不要使用按钮类元素的-name-属性">[建议] 尽量不要使用按钮类元素的 <code>name</code> 属性。</a></li>
-              </ul>
-            </li>
-            <li><a href="#63-可访问性-a11y">6.3 可访问性 (A11Y)</a>
-              <ul>
-                <li><a href="#建议-负责主要功能的按钮在-dom-中的顺序应靠前">[建议] 负责主要功能的按钮在 DOM 中的顺序应靠前。</a></li>
-                <li><a href="#建议-当使用-javascript-进行表单提交时如果条件允许应使原生提交功能正常工作">[建议] 当使用 JavaScript 进行表单提交时，如果条件允许，应使原生提交功能正常工作。</a></li>
-                <li><a href="#建议-在针对移动设备开发的页面时根据内容类型指定输入框的-type-属性">[建议] 在针对移动设备开发的页面时，根据内容类型指定输入框的 <code>type</code> 属性。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-使用-html5-的-doctype-来启用标准模式建议使用大写的-doctype">[强制] 使用 <code>HTML5</code> 的 <code>doctype</code> 来启用标准模式，建议使用大写的 <code>DOCTYPE</code>。</a></li>
+            <li><a href="#建议-启用-ie-edge-模式">[建议] 启用 IE Edge 模式。</a></li>
+            <li><a href="#建议-在-html-标签上设置正确的-lang-属性">[建议] 在 <code>html</code> 标签上设置正确的 <code>lang</code> 属性。</a></li>
           </ul>
         </li>
-        <li><a href="#7-多媒体">7 多媒体</a>
+        <li><a href="#32-编码">3.2 编码</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#建议-当在现代浏览器中使用-audio-以及-video-标签来播放音频视频时应当注意格式">[建议] 当在现代浏览器中使用 <code>audio</code> 以及 <code>video</code> 标签来播放音频、视频时，应当注意格式。</a></li>
-                <li><a href="#建议-在支持-html5-的浏览器中优先使用-audio-和-video-标签来定义音视频元素">[建议] 在支持 <code>HTML5</code> 的浏览器中优先使用 <code>audio</code> 和 <code>video</code> 标签来定义音视频元素。</a></li>
-                <li><a href="#建议-使用退化到插件的方式来对多浏览器进行支持">[建议] 使用退化到插件的方式来对多浏览器进行支持。</a></li>
-                <li><a href="#建议-只在必要的时候开启音视频的自动播放">[建议] 只在必要的时候开启音视频的自动播放。</a></li>
-                <li><a href="#建议-在-object-标签内部提供指示浏览器不支持该标签的说明">[建议] 在 <code>object</code> 标签内部提供指示浏览器不支持该标签的说明。</a></li>
-              </ul>
-            </li>
+            <li><a href="#强制-页面必须使用精简形式明确指定字符编码指定字符编码的-meta-必须是-head-的第一个直接子元素">[强制] 页面必须使用精简形式，明确指定字符编码。指定字符编码的 <code>meta</code> 必须是 <code>head</code> 的第一个直接子元素。</a></li>
+            <li><a href="#建议-html-文件使用无-bom-的-utf-8-编码">[建议] <code>HTML</code> 文件使用无 <code>BOM</code> 的 <code>UTF-8</code> 编码。</a></li>
           </ul>
         </li>
-        <li><a href="#8-模板中的-html">8 模板中的 HTML</a>
+        <li><a href="#33-css-和-javascript-引入">3.3 CSS 和 JavaScript 引入</a>
           <ul>
-            <li>
-              <ul>
-                <li><a href="#建议-模板代码的缩进优先保证-html-代码的缩进规则">[建议] 模板代码的缩进优先保证 HTML 代码的缩进规则。</a></li>
-                <li><a href="#建议-模板代码应以保证-html-单个标签语法的正确性为基本原则">[建议] 模板代码应以保证 HTML 单个标签语法的正确性为基本原则。</a></li>
-                <li><a href="#建议-在循环处理模板数据构造表格时若要求每行输出固定的个数建议先将数据分组之后再循环输出">[建议] 在循环处理模板数据构造表格时，若要求每行输出固定的个数，建议先将数据分组，之后再循环输出。</a></li>
-              </ul>
-            </li>
-            <li><a href="#建议-新窗口标签页打开的链接需要按业务需要添加安全相关的-rel-属性值-noopener">[建议] 新窗口/标签页打开的链接需要按业务需要添加安全相关的 <code>rel</code> 属性值 <code>noopener</code>。</a></li>
+            <li><a href="#强制-引入-css-时必须指明-relstylesheet">[强制] 引入 <code>CSS</code> 时必须指明 <code>rel=&quot;stylesheet&quot;</code>。</a></li>
+            <li><a href="#建议-引入-css-和-javascript-时无须指明-type-属性">[建议] 引入 <code>CSS</code> 和 <code>JavaScript</code> 时无须指明 <code>type</code> 属性。</a></li>
+            <li><a href="#建议-展现定义放置于外部-css-中行为定义放置于外部-javascript-中">[建议] 展现定义放置于外部 <code>CSS</code> 中，行为定义放置于外部 <code>JavaScript</code> 中。</a></li>
+            <li><a href="#建议-在-head-中引入页面需要的所有-css-资源">[建议] 在 <code>head</code> 中引入页面需要的所有 <code>CSS</code> 资源。</a></li>
+            <li><a href="#建议-javascript-应当放在页面末尾或采用异步加载">[建议] <code>JavaScript</code> 应当放在页面末尾，或采用异步加载。</a></li>
+            <li><a href="#建议-移动环境或只针对现代浏览器设计的-web-应用如果引用外部资源的-url-协议部分与页面相同建议省略协议前缀">[建议] 移动环境或只针对现代浏览器设计的 Web 应用，如果引用外部资源的 <code>URL</code> 协议部分与页面相同，建议省略协议前缀。</a></li>
           </ul>
         </li>
+      </ul>
+    </li>
+    <li><a href="#4-head">4 head</a>
+      <ul>
+        <li><a href="#41-title">4.1 title</a>
+          <ul>
+            <li><a href="#强制-页面必须包含-title-标签声明标题">[强制] 页面必须包含 <code>title</code> 标签声明标题。</a></li>
+            <li><a href="#强制-title-必须作为-head-的直接子元素并紧随-charset-声明之后">[强制] <code>title</code> 必须作为 <code>head</code> 的直接子元素，并紧随 <code>charset</code> 声明之后。</a></li>
+          </ul>
+        </li>
+        <li><a href="#42-favicon">4.2 favicon</a>
+          <ul>
+            <li><a href="#强制-保证-favicon-可访问">[强制] 保证 <code>favicon</code> 可访问。</a></li>
+          </ul>
+        </li>
+        <li><a href="#43-viewport">4.3 viewport</a>
+          <ul>
+            <li><a href="#建议-若页面欲对移动设备友好需指定页面的-viewport">[建议] 若页面欲对移动设备友好，需指定页面的 <code>viewport</code>。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#5-图片">5 图片</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#强制-禁止-img-的-src-取值为空延迟加载的图片也要增加默认的-src">[强制] 禁止 <code>img</code> 的 <code>src</code> 取值为空。延迟加载的图片也要增加默认的 <code>src</code>。</a></li>
+            <li><a href="#建议-避免为-img-添加不必要的-title-属性">[建议] 避免为 <code>img</code> 添加不必要的 <code>title</code> 属性。</a></li>
+            <li><a href="#建议-为重要图片添加-alt-属性">[建议] 为重要图片添加 <code>alt</code> 属性。</a></li>
+            <li><a href="#建议-添加-width-和-height-属性以避免页面抖动">[建议] 添加 <code>width</code> 和 <code>height</code> 属性，以避免页面抖动。</a></li>
+            <li><a href="#建议-有下载需求的图片采用-img-标签实现无下载需求的图片采用-css-背景图实现">[建议] 有下载需求的图片采用 <code>img</code> 标签实现，无下载需求的图片采用 CSS 背景图实现。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#6-表单">6 表单</a>
+      <ul>
+        <li><a href="#61-控件标题">6.1 控件标题</a>
+          <ul>
+            <li><a href="#强制-有文本标题的控件必须使用-label-标签将其与其标题相关联">[强制] 有文本标题的控件必须使用 <code>label</code> 标签将其与其标题相关联。</a></li>
+          </ul>
+        </li>
+        <li><a href="#62-按钮">6.2 按钮</a>
+          <ul>
+            <li><a href="#强制-使用-button-元素时必须指明-type-属性值">[强制] 使用 <code>button</code> 元素时必须指明 <code>type</code> 属性值。</a></li>
+            <li><a href="#建议-尽量不要使用按钮类元素的-name-属性">[建议] 尽量不要使用按钮类元素的 <code>name</code> 属性。</a></li>
+          </ul>
+        </li>
+        <li><a href="#63-可访问性-a11y">6.3 可访问性 (A11Y)</a>
+          <ul>
+            <li><a href="#建议-负责主要功能的按钮在-dom-中的顺序应靠前">[建议] 负责主要功能的按钮在 DOM 中的顺序应靠前。</a></li>
+            <li><a href="#建议-当使用-javascript-进行表单提交时如果条件允许应使原生提交功能正常工作">[建议] 当使用 JavaScript 进行表单提交时，如果条件允许，应使原生提交功能正常工作。</a></li>
+            <li><a href="#建议-在针对移动设备开发的页面时根据内容类型指定输入框的-type-属性">[建议] 在针对移动设备开发的页面时，根据内容类型指定输入框的 <code>type</code> 属性。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#7-多媒体">7 多媒体</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#建议-当在现代浏览器中使用-audio-以及-video-标签来播放音频视频时应当注意格式">[建议] 当在现代浏览器中使用 <code>audio</code> 以及 <code>video</code> 标签来播放音频、视频时，应当注意格式。</a></li>
+            <li><a href="#建议-在支持-html5-的浏览器中优先使用-audio-和-video-标签来定义音视频元素">[建议] 在支持 <code>HTML5</code> 的浏览器中优先使用 <code>audio</code> 和 <code>video</code> 标签来定义音视频元素。</a></li>
+            <li><a href="#建议-使用退化到插件的方式来对多浏览器进行支持">[建议] 使用退化到插件的方式来对多浏览器进行支持。</a></li>
+            <li><a href="#建议-只在必要的时候开启音视频的自动播放">[建议] 只在必要的时候开启音视频的自动播放。</a></li>
+            <li><a href="#建议-在-object-标签内部提供指示浏览器不支持该标签的说明">[建议] 在 <code>object</code> 标签内部提供指示浏览器不支持该标签的说明。</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#8-模板中的-html">8 模板中的 HTML</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#建议-模板代码的缩进优先保证-html-代码的缩进规则">[建议] 模板代码的缩进优先保证 HTML 代码的缩进规则。</a></li>
+            <li><a href="#建议-模板代码应以保证-html-单个标签语法的正确性为基本原则">[建议] 模板代码应以保证 HTML 单个标签语法的正确性为基本原则。</a></li>
+            <li><a href="#建议-在循环处理模板数据构造表格时若要求每行输出固定的个数建议先将数据分组之后再循环输出">[建议] 在循环处理模板数据构造表格时，若要求每行输出固定的个数，建议先将数据分组，之后再循环输出。</a></li>
+          </ul>
+        </li>
+        <li><a href="#建议-新窗口标签页打开的链接需要按业务需要添加安全相关的-rel-属性值-noopener">[建议] 新窗口/标签页打开的链接需要按业务需要添加安全相关的 <code>rel</code> 属性值 <code>noopener</code>。</a></li>
       </ul>
     </li>
   </ul>
