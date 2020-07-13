@@ -281,15 +281,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     </item>
     
     <item>
-      <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/basic/practice/spec/baidu/</guid>
-      <description>百度 PHP 编码规范 (201904 版) </description>
-    </item>
-    
-    <item>
       <title>makefile</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -405,15 +396,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -692,15 +674,6 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -966,15 +939,6 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/interview/expert/</guid>
       <description>高阶面试题 </description>
     </item>
     
@@ -2066,15 +2030,6 @@ Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生�
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</guid>
       <description>EDS </description>
-    </item>
-    
-    <item>
-      <title>Markdown 文件生成 TOC</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/snippet/simple-php-github-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/appendix/snippet/simple-php-github-toc/</guid>
-      <description>生成 Github Readme 文件 TOC 目录 的简单脚本 &amp;lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &amp;lt; 2){ exit(&amp;#34;Please input github file url, eg &amp;#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&amp;#39;.\n&amp;#34;); } $url = $argv[1]; #$url = &amp;#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&amp;#34;;  function get_anchor($content){ preg_match_all(&amp;#34;/href=\&amp;#34;(.*)\&amp;#34;&amp;gt;/iUs&amp;#34;, $content, $anchor_arr); if(count($anchor_arr) &amp;gt; 0){ return $anchor_arr[1][0]; } return &amp;#34;&amp;#34;; } function get_title($content){ preg_match_all(&amp;#34;/a\&amp;gt;(.*)$/iUs&amp;#34;, $content, $title_arr); if(count($title_arr) &amp;gt; 0){ return trim($title_arr[1][0]); } return &amp;#34;&amp;#34;; } $content = file_get_contents($url); preg_match_all(&amp;#34;/&amp;lt;article(.*)&amp;lt;\/article&amp;gt;/iUs&amp;#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&amp;#34;/&amp;lt;h([1-6])&amp;gt;(.</description>
     </item>
     
     <item>
