@@ -33,9 +33,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</guid>
-      <description>OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform. OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
+      <description>OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform.
+OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
 Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。
-Openshift 没有 root 权限 参考：openshift 和普通 vps 的区别在哪儿？</description>
+Openshift 没有 root 权限
+参考：
+ openshift 和普通 vps 的区别在哪儿？  </description>
     </item>
     
     <item>
