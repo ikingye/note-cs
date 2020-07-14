@@ -10,7 +10,7 @@
     
     
     <item>
-      <title>教程</title>
+      <title>4.1 教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,12 +22,12 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     </item>
     
     <item>
-      <title>关注</title>
+      <title>4.3 关注项目</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/attention/</guid>
-      <description>关注 rust-lang/rust  Empowering everyone to build reliable and efficient software. https://www.rust-lang.org
+      <description>关注项目 rust-lang/rust  Empowering everyone to build reliable and efficient software. https://www.rust-lang.org
 redox-os/redox  Redox is an operating system written in Rust
 servo/servo  The Servo Browser Engine https://servo.org/
 rajasekarv/vega  A new arguably faster implementation of Apache Spark from scratch in Rust

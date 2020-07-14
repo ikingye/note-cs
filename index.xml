@@ -72,60 +72,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/turorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -135,81 +81,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
 denysdovhan/wtfjs  A list of funny and tricky JavaScript examples
 nefe/You-Dont-Need-jQuery  使用原生方法实现 jQuery API 功能（暂时只支持 IE10 以上浏览器）。
  进阶  高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/tutorial/</guid>
-      <description>教程 经典 The Rust Programming Language The most comprehensive resource for learning Rust, but a bit theoretical sometimes. You will be using this along with Rustlings!
-Rust by Example Learn Rust by solving little exercises! It&amp;rsquo;s almost like rustlings, but online.
-rust-lang/rustlings  Small exercises to get you used to reading and writing Rust code!
- 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
     </item>
     
     <item>
@@ -1154,6 +1025,135 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
     </item>
     
     <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/tutorial/</guid>
+      <description>教程 经典 The Rust Programming Language The most comprehensive resource for learning Rust, but a bit theoretical sometimes. You will be using this along with Rustlings!
+Rust by Example Learn Rust by solving little exercises! It&amp;rsquo;s almost like rustlings, but online.
+rust-lang/rustlings  Small exercises to get you used to reading and writing Rust code!
+ 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</guid>
+      <description>教程 基础 进阶 高阶 </description>
+    </item>
+    
+    <item>
       <title>5G 边缘计算</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1880,6 +1880,73 @@ Golang 连续栈 Golang 的栈管理方式与此类似，但是为了更高的�
     </item>
     
     <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</guid>
+      <description>关注项目 torvalds/linux  Linux kernel source tree
+antirez/redis  Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps. http://redis.io</description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</guid>
+      <description>关注项目 octokit/rest.js  GitHub REST API client for JavaScript https://octokit.github.io/rest.js/</description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/attention/</guid>
+      <description>关注项目 rust-lang/rust  Empowering everyone to build reliable and efficient software. https://www.rust-lang.org
+redox-os/redox  Redox is an operating system written in Rust
+servo/servo  The Servo Browser Engine https://servo.org/
+rajasekarv/vega  A new arguably faster implementation of Apache Spark from scratch in Rust
+ web framework yewstack/yew  Rust / Wasm framework for building client web apps https://yew.rs
+SergioBenitez/Rocket  A web framework for Rust. https://rocket.rs
+actix/actix-web  Actix web is a small, pragmatic, and extremely fast rust web framework.</description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</guid>
+      <description>关注项目 akka/akka  Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</guid>
+      <description>关注项目 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
+php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
+ 深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</guid>
+      <description>关注项目 cncf/landscape  The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets. https://l.cncf.io
+Trail Map CNCF Cloud Native Landscape 
+CNCF Serverless Landscape 
+ dragonflyoss/Dragonfly  Dragonfly is an intelligent P2P based image and file distribution system.
+https://d7y.io</description>
+    </item>
+    
+    <item>
       <title>A/B 测试</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/ab-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2109,73 +2176,6 @@ Bilibili - 机器学习白板系列
  [video]机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
  ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
  fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</guid>
-      <description>关注 torvalds/linux  Linux kernel source tree
-antirez/redis  Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps. http://redis.io</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</guid>
-      <description>关注 octokit/rest.js  GitHub REST API client for JavaScript https://octokit.github.io/rest.js/</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/appendix/attention/</guid>
-      <description>关注 rust-lang/rust  Empowering everyone to build reliable and efficient software. https://www.rust-lang.org
-redox-os/redox  Redox is an operating system written in Rust
-servo/servo  The Servo Browser Engine https://servo.org/
-rajasekarv/vega  A new arguably faster implementation of Apache Spark from scratch in Rust
- web framework yewstack/yew  Rust / Wasm framework for building client web apps https://yew.rs
-SergioBenitez/Rocket  A web framework for Rust. https://rocket.rs
-actix/actix-web  Actix web is a small, pragmatic, and extremely fast rust web framework.</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</guid>
-      <description>关注 akka/akka  Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</guid>
-      <description>关注 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
-php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
- 深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</guid>
-      <description>关注 cncf/landscape  The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets. https://l.cncf.io
-Trail Map CNCF Cloud Native Landscape 
-CNCF Serverless Landscape 
- dragonflyoss/Dragonfly  Dragonfly is an intelligent P2P based image and file distribution system.
-https://d7y.io</description>
     </item>
     
     <item>

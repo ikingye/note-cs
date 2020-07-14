@@ -23,12 +23,12 @@ nefe/You-Dont-Need-jQuery  使用原生方法实现 jQuery API 功能（暂时�
     </item>
     
     <item>
-      <title>关注</title>
+      <title>4.3 关注项目</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/appendix/attention/</guid>
-      <description>关注 octokit/rest.js  GitHub REST API client for JavaScript https://octokit.github.io/rest.js/</description>
+      <description>关注项目 octokit/rest.js  GitHub REST API client for JavaScript https://octokit.github.io/rest.js/</description>
     </item>
     
   </channel>
