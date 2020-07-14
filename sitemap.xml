@@ -147,11 +147,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</loc>
-    <lastmod>2020-06-12T10:40:21+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</loc>
     <lastmod>2020-06-07T14:19:38+08:00</lastmod>
   </url>
@@ -267,11 +262,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/baidu/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -324,11 +314,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/</loc>
-    <lastmod>2020-06-12T10:40:21+08:00</lastmod>
   </url>
   
   <url>
@@ -442,11 +427,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/basic/practice/spec/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -532,11 +512,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</loc>
     <lastmod>2020-07-06T17:34:38+08:00</lastmod>
   </url>
@@ -568,11 +543,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/basic/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/basic/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
   
@@ -767,11 +737,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/design/</loc>
-    <lastmod>2020-05-04T19:15:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/design/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -869,11 +834,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/advanced/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/advanced/</loc>
-    <lastmod>2020-05-04T19:15:35+08:00</lastmod>
   </url>
   
   <url>
@@ -1157,11 +1117,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/source/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/source/</loc>
     <lastmod>2020-06-07T14:19:38+08:00</lastmod>
   </url>
@@ -1303,11 +1258,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/expert/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/expert/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
   
@@ -1463,11 +1413,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
@@ -1669,11 +1614,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/basic/practice/snippet/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/keyword/</loc>
-    <lastmod>2020-06-11T20:08:25+08:00</lastmod>
   </url>
   
   <url>
@@ -1907,11 +1847,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/class/</loc>
-    <lastmod>2020-06-12T10:40:21+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</loc>
     <lastmod>2020-06-03T00:57:48+08:00</lastmod>
   </url>
@@ -2057,11 +1992,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/vs-c/</loc>
-    <lastmod>2020-06-11T20:08:25+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/vs-cpp/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -2102,11 +2032,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/</loc>
     <lastmod>2020-07-10T15:45:38+08:00</lastmod>
   </url>
@@ -2114,11 +2039,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/docker/command/</loc>
     <lastmod>2020-07-08T16:42:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
   
   <url>
@@ -2157,28 +2077,13 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/pointer/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/design/standard/</loc>
-    <lastmod>2020-05-04T19:15:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/version/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
   
   <url>
@@ -2617,11 +2522,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/namespace/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/practice/error/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
@@ -2629,11 +2529,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/</loc>
     <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/reference/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
   <url>
@@ -2674,11 +2569,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/process/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/</loc>
-    <lastmod>2020-05-04T19:15:35+08:00</lastmod>
   </url>
   
   <url>
@@ -3191,11 +3081,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/snippet/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/snippet/</loc>
     <lastmod>2020-06-07T14:19:38+08:00</lastmod>
   </url>
@@ -3348,11 +3233,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</loc>
     <lastmod>2020-06-04T17:55:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/attention/</loc>
-    <lastmod>2020-06-10T01:25:01+08:00</lastmod>
   </url>
   
   <url>

@@ -117,15 +117,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/tutorial/</guid>
-      <description>教程 基础  learn c++ in y minutes   C++ 后台开发有哪些练基础的开源项目？  yedf/handy     进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -219,15 +210,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</guid>
       <description>教程 基础 进阶 高阶 </description>
-    </item>
-    
-    <item>
-      <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/practice/spec/baidu/</guid>
-      <description>百度 C++ 编程规范 </description>
     </item>
     
     <item>
@@ -342,15 +324,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/basic/</guid>
       <description>基础面试题 </description>
     </item>
     
@@ -617,18 +590,6 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
     
     <item>
       <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/advanced/</guid>
-      <description>进阶面试题 为什么 C++ 的 member function template 不能是 virtual 的 比如，下面的代码是不合法的：
-class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound(){ //...  } }; 因为 C++ 的编译与链接模型是 &amp;ldquo;分离&amp;rdquo; 的 (至少是部分原因吧)。
-从 Unix/C 开始，一个 C/C++ 程序就可以被分开编译，然后用一个 linker 链接起来。这种模型有一个问题，就是各个编译单元可能对另一个编译单元一无所知。 一个 function template 最后到底会被 instantiate 为多少个函数，要等整个程序 (所有的编译单元) 全部被编译完成才知道。 同时，virtual function 的实现大多利用了一个 &amp;ldquo;虚函数表&amp;rdquo; 的东西，这种实现中，一个类的内存布局 (或者说虚函数表的内存布局) 需要在这个类编译完成的时候就被完全确定。 所以，由上面的矛盾可知，C++ 的 member function 不能既是 template 又是 virtual 的。
-参考：https://www.zhihu.com/question/60911582/answer/182045051</description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -890,15 +851,6 @@ class Animal{ public: template&amp;lt;typename T&amp;gt; virtual void make_sound
     
     <item>
       <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1118,17 +1070,6 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
     </item>
     
     <item>
-      <title>关键字</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/keyword/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/keyword/</guid>
-      <description>C++ 关键字 这是 C++ 中的保留字列表。因为它们为语言所用，故这些关键词不可用于重定义或重载。
-注意 and、bitor、or、xor、compl、bitand、and_eq、or_eq、xor_eq、not 及 not_eq（还有双标符 &amp;lt;%、%&amp;gt;、&amp;lt;:、:&amp;gt;、%: 及 %:%:）提供标准记号的代用表示方法。
-参考：C++ 参考手册</description>
-    </item>
-    
-    <item>
       <title>快捷键</title>
       <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1273,16 +1214,6 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
 比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，
  如果 A 不写，保持一致性，那么我们就失去了 A 的服务， 但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。  这里的一致性（Consistency）是强一致性，意思是 AB 的数据时刻都是同步的， 如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。
 现实中的 CAP CAP 对实际工作缺乏指导性。</description>
-    </item>
-    
-    <item>
-      <title>class</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/class/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/class/</guid>
-      <description>class 建议：
- class 表示被封装的用户自定义类型，不公开定义非静态数据成员，一般通过成员方法进行交互。 struct 表示数据的简单集合，公开定义数据成员，只定义用于初始化数据成员的方法 (比如：构造 / 析构函数，initialize(), reset(), validate())。  // 简单的数据聚合，没有动作 struct Coordinate { int x; int y; int z; }; // 有动作的对象 class Cat { public: void meow(); private: ... }; class vs struct  默认继承权限  class: private struct: public   成员的默认访问权限  class: private struct: public    除了这两点，class 和 struct 基本就是一个东西。</description>
     </item>
     
     <item>
@@ -1440,19 +1371,6 @@ XSS 发生的原因 没有将用户输入的文本进行合适的过滤，就贸
     </item>
     
     <item>
-      <title>与 C 的差异</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/vs-c/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/vs-c/</guid>
-      <description>C++ 与 C 语言的差异   字符字面量的大小
-// 在C++中，字符字面量的大小是一个字节。 sizeof(&amp;#39;c&amp;#39;) == 1 // 在C语言中，字符字面量的大小与int相同。 sizeof(&amp;#39;c&amp;#39;) == sizeof(10)   函数原型与函数定义匹配
-// C++ 的函数原型与函数定义是严格匹配的 void func(); // 这个函数不能接受任何参数  // 而在C语言中 void func(); // 这个函数能接受任意数量的参数   NULL vs nullptr
-// 在 C++ 中，用 nullptr 代替 C 语言中的 NULL int* ip = nullptr;   同文件
-// C++ 也可以使用 C 语言的标准头文件， // 但是需要加上前缀 “c” 并去掉末尾的 “.h”。 #include &amp;lt;cstdio&amp;gt;  </description>
-    </item>
-    
-    <item>
       <title>与 C&#43;&#43; 的差异</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/vs-cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1521,16 +1439,6 @@ Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情�
     </item>
     
     <item>
-      <title>函数</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/function/</guid>
-      <description>函数 函数参数 参数默认值
-// 你可以为函数的参数指定默认值， // 默认参数必须放在所有的常规参数之后。 void doSomethingWithInts(int a, int b = 1, int c = 4) { } 函数重载 // C++支持函数重载，你可以定义一组名称相同而参数不同的函数 void print(char const* myString) { printf(&amp;#34;String %s\n&amp;#34;, myString); } void print(int myInt) { printf(&amp;#34;My int is %d&amp;#34;, myInt); } int main() { print(&amp;#34;Hello&amp;#34;); // 解析为 void print(const char*)  print(15); // 解析为 void print(int) } </description>
-    </item>
-    
-    <item>
       <title>命令</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/docker/command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1549,17 +1457,6 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/quick/</guid>
       <description>快速开始 安装 Run apps - Runtime Build apps - SDK MacOS MacOS Linux Linux Windows Windows  .NET Core SDK 包括运行时。   </description>
-    </item>
-    
-    <item>
-      <title>指针</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/pointer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/pointer/</guid>
-      <description>C++ 指针 智能指针    指针类别 支持 备注     unique_ptr C++ 11 拥有独有对象所有权语义的智能指针   shared_ptr C++ 11 拥有共享对象所有权语义的智能指针   weak_ptr C++ 11 到 std::shared_ptr 所管理对象的弱引用   auto_ptr C++ 17 中移除 拥有严格对象所有权语义的智能指针    unique_ptr std::unique_ptr 是通过指针占有并管理另一对象，并在 unique_ptr 离开作用域时释放该对象的智能指针。在下列两者之一发生时用关联的删除器释放对象：
- 销毁了管理的 unique_ptr 对象 通过 operator= 或 reset () 赋值另一指针给管理的 unique_ptr 对象。  shared_ptr std::shared_ptr 是通过指针保持对象共享所有权的智能指针。多个 shared_ptr 对象可占有同一对象。下列情况之一出现时销毁对象并解分配其内存：
- 最后剩下的占有对象的 shared_ptr 被销毁； 最后剩下的占有对象的 shared_ptr 被通过 operator= 或 reset () 赋值为另一指针。  有两种方式创建 shared_ptr ：</description>
     </item>
     
     <item>
@@ -1914,15 +1811,6 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
     </item>
     
     <item>
-      <title>命名空间</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/namespace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/namespace/</guid>
-      <description>C++ 命名空间 // 命名空间为变量、函数和其他声明提供了分离的的作用域。 // 命名空间可以嵌套使用。  namespace First { namespace Nested { void foo() { printf(&amp;#34;This is First::Nested::foo\n&amp;#34;); } } // 结束嵌套的命名空间Nested } // 结束命名空间First  namespace Second { void foo() { printf(&amp;#34;This is Second::foo\n&amp;#34;) } } void foo() { printf(&amp;#34;This is global foo\n&amp;#34;); } int main() { // 如果没有特别指定，就从“Second”中取得所需的内容。  using namespace Second; foo(); // 显示“This is Second::foo”  First::Nested::foo(); // 显示“This is First::Nested::foo”  ::foo(); // 显示“This is global foo” } </description>
-    </item>
-    
-    <item>
       <title>常见错误</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/practice/error/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1932,18 +1820,6 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
  以 superUser 进入数据库  psql -U postgres -d postgres   切换到 mydb 数据库  \c mydb   赋予所有表的所有权限给 xiaoming  GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO xiaoming;   赋予 wechart 用户，tuser 表的所有权限  GRANT ALL PRIVILEGES ON tuser TO wechart;    解决 2：
 ERROR: permission denied for relation hycom 权限被拒绝
  检查数据库连接 检查数据库拥有者和配置的是否一样 访问不同的数据库分区 @TableName (&amp;ldquo;分区名。表名&amp;rdquo;) @TableField (exist = false) 取消数据库映射  </description>
-    </item>
-    
-    <item>
-      <title>引用</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/reference/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/basic/grammar/reference/</guid>
-      <description>C++ 引用   引用是一种特殊的指针类型，一旦被定义就不能重新赋值，并且不能被设置为空值。
-  使用引用时的语法与原变量相同
- 对引用类型进行解引用时，不需要使用 * 赋值时也不需要用 &amp;amp; 来取地址  using namespace std; string foo = &amp;#34;I am foo&amp;#34;; string bar = &amp;#34;I am bar&amp;#34;; string&amp;amp; fooRef = foo; // 建立了一个对foo的引用。 fooRef += &amp;#34;. Hi!&amp;#34;; // 通过引用来修改foo的值 cout &amp;lt;&amp;lt; fooRef; // &amp;#34;I am foo. Hi!&amp;#34; // 这句话的并不会改变fooRef的指向，其效果与“foo = bar”相同。 // 也就是说，在执行这条语句之后，foo == &amp;#34;I am bar&amp;#34;。 fooRef = bar;   不能修改一个常量引用的值
-const string&amp;amp; barRef = bar; // 建立指向bar的常量引用。 // 和C语言中一样，（指针和引用）声明为常量时，对应的值不能被修改。 barRef += &amp;#34;.</description>
     </item>
     
     <item>
@@ -2243,18 +2119,6 @@ Bilibili - 机器学习白板系列
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/appendix/attention/</guid>
       <description>关注 torvalds/linux  Linux kernel source tree
 antirez/redis  Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps. http://redis.io</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/appendix/attention/</guid>
-      <description>关注 google/glog  C++ implementation of the Google logging module
-gRPC  gRPC is a modern, open source, high-performance remote procedure call (RPC) framework that can run anywhere. gRPC enables client and server applications to communicate transparently, and simplifies the building of connected systems.
-grpc.io
- web ipkn/crow  Crow is very fast and easy to use C++ micro web framework (inspired by Python Flask)</description>
     </item>
     
     <item>
