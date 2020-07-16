@@ -80,7 +80,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
 一共四讲，适合两天的训练营。
 denysdovhan/wtfjs  A list of funny and tricky JavaScript examples
 nefe/You-Dont-Need-jQuery  使用原生方法实现 jQuery API 功能（暂时只支持 IE10 以上浏览器）。
- 进阶  高阶 </description>
+ 进阶  </description>
     </item>
     
     <item>
@@ -1030,7 +1030,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1039,7 +1039,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1048,7 +1048,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1057,7 +1057,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1066,7 +1066,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1075,7 +1075,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1084,7 +1084,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1093,7 +1093,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1102,7 +1102,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1111,7 +1111,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1123,7 +1123,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <description>教程 经典 The Rust Programming Language The most comprehensive resource for learning Rust, but a bit theoretical sometimes. You will be using this along with Rustlings!
 Rust by Example Learn Rust by solving little exercises! It&amp;rsquo;s almost like rustlings, but online.
 rust-lang/rustlings  Small exercises to get you used to reading and writing Rust code!
- 基础 进阶 高阶 </description>
+ 基础 进阶 </description>
     </item>
     
     <item>
@@ -1132,7 +1132,7 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1141,7 +1141,7 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
     </item>
     
     <item>
@@ -1150,7 +1150,66 @@ rust-lang/rustlings  Small exercises to get you used to reading and writing Rust
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 高阶 </description>
+      <description>教程 基础 进阶 </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</guid>
+      <description>关注 核心 dotnet/core  Home repository for .NET Core
+dotnet/coreclr  CoreCLR is the runtime for .NET Core. It includes the garbage collector, JIT compiler, primitive data types and low-level classes. https://docs.microsoft.com/dotnet/core/
+dotnet/roslyn  The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. https://docs.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/
+dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux. https://asp.</description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</guid>
+      <description>关注 其他 octocat/Spoon-Knife  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
+      <description>关注 其他 octocat/Spoon-Knife  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</guid>
+      <description>关注 其他 octocat/Spoon-Knife  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</guid>
+      <description>关注 其他 octocat/Spoon-Knife  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</guid>
+      <description>关注 其他 resilience4j/resilience4j ehcache/ehcache3  ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库， ehcache 提供了用内存，磁盘文件存储，以及分布式存储方式等多种灵活的 cache 管理方案。 http://www.ehcache.org
+Netflix/Hystrix Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
+Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。</description>
     </item>
     
     <item>
@@ -1377,65 +1436,6 @@ XSS 发生的原因 没有将用户输入的文本进行合适的过滤，就贸
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/basic/grammar/vs-cpp/</guid>
       <description>C 语言与 C++ 的差异 参考：C++ 学习笔记</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</guid>
-      <description>关注 核心 dotnet/core  Home repository for .NET Core
-dotnet/coreclr  CoreCLR is the runtime for .NET Core. It includes the garbage collector, JIT compiler, primitive data types and low-level classes. https://docs.microsoft.com/dotnet/core/
-dotnet/roslyn  The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. https://docs.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/
-dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux. https://asp.</description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
-    </item>
-    
-    <item>
-      <title>关注</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</guid>
-      <description>关注 其他 resilience4j/resilience4j ehcache/ehcache3  ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库， ehcache 提供了用内存，磁盘文件存储，以及分布式存储方式等多种灵活的 cache 管理方案。 http://www.ehcache.org
-Netflix/Hystrix Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
-Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。</description>
     </item>
     
     <item>
@@ -2160,7 +2160,7 @@ Confirm Cancel 参考：</description>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/tutorial/</guid>
       <description>教程 基础 《深度学习》(花书) MingchaoZhu/DeepLearning  Python for《Deep Learning》，该书为《深度学习》(花书) 数学推导、原理剖析与源码级别代码实现
- 进阶  高阶 </description>
+ 进阶  </description>
     </item>
     
     <item>
@@ -2223,16 +2223,7 @@ A live version is available at: http://play-with-docker.com/</description>
     </item>
     
     <item>
-      <title>build</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/docker/build/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/build/</guid>
-      <description>build </description>
-    </item>
-    
-    <item>
-      <title>关注</title>
+      <title>4.3 关注项目</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/docker/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2241,6 +2232,15 @@ A live version is available at: http://play-with-docker.com/</description>
 docker/docker-ce  Docker CE https://www.docker.com/community-edition
 play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
 Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.</description>
+    </item>
+    
+    <item>
+      <title>build</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/docker/build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/build/</guid>
+      <description>build </description>
     </item>
     
     <item>
