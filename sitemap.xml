@@ -1787,6 +1787,14 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/go-wiki/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/hyperkit/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -2072,8 +2080,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/gobyexample/</loc>
-    <lastmod>2020-06-19T00:47:16+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/gobyexample/</loc>
   </url>
   
   <url>
@@ -3231,6 +3238,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/mp/</loc>
+    <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/basic/compile/</loc>
     <lastmod>2020-05-06T22:01:05+08:00</lastmod>
   </url>
@@ -3327,11 +3339,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/</loc>
-    <lastmod>2020-07-02T00:05:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/mp/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
   

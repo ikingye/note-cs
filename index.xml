@@ -1305,6 +1305,15 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
     </item>
     
     <item>
+      <title>go wiki</title>
+      <link>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/go-wiki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/go-wiki/</guid>
+      <description>go wiki 学习进度  Getting started with Go    Working with Go    Learning more about Go  Learning Go - A collection of resources for learning Go - beginner to advanced.  Best Practices for a New Go Developer - Insights from Go community members. Server programming - Building web, mobile, and API servers. More on concurrency More on error handling More on testing More on mobile - Android and iOS   Books - A list of Go books that have been published (ebook, paper) Blogs - Blogs about Go  Podcasts - Podcasts and episodes featuring Go   Videos, Talks and Presentations  GopherVids is a searchable index of videos about Go.</description>
+    </item>
+    
+    <item>
       <title>LDS</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/lds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1492,10 +1501,10 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
     
     <item>
       <title>通过例子学 Golang</title>
-      <link>https://ikingye.github.io/note-cs/docs/course/basic/pl/gobyexample/</link>
+      <link>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/gobyexample/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/gobyexample/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/gobyexample/</guid>
       <description>通过例子学 Golang mmcgrana/gobyexample 点击阅读：Go by Example
 中文翻译 gobyexample-cn/gobyexample 点击阅读：通过例子学 Golang
 学习进度  Hello World 值 变量 常量 For 循环 If/Else 分支 Switch 分支结构 数组 切片 Map Range 遍历 函数 多返回值 变参函数 闭包 递归 指针 结构体 方法 接口 错误处理 协程 通道 通道缓冲 通道同步 通道方向 通道选择器 超时处理 非阻塞通道操作 通道的关闭 通道遍历 Timer Ticker 工作池 WaitGroup 速率限制 原子计数器 互斥锁 状态协程 排序 使用函数自定义排序 Panic Defer 组合函数 字符串函数 字符串格式化 正则表达式 JSON XML 时间 时间戳 时间的格式化和解析 随机数 数字解析 URL 解析 SHA1 哈希 Base64 编码 读文件 写文件 行过滤器 文件路径 目录 临时文件和目录 单元测试 命令行参数 命令行标志 命令行子命令 环境变量 HTTP 客户端 HTTP 服务端 Context 生成进程 执行进程 信号 退出  </description>
