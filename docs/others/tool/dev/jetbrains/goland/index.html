@@ -4,18 +4,24 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="GoLand 快捷键 查询   函数列表 cmd &#43; f12
+<meta name="description" content="GoLand 快捷键 跳转   指定行 cmd &#43; L
+  指定文件 shift &#43; cmd &#43; O
+  返回光标上一个位置 cmd &#43; opt &#43; 方向键
+   查询   函数列表 cmd &#43; f12
   当前文件查询 cmd &#43; F
   当前文件替换 cmd &#43; R
   所有文件查询 shift &#43; cmd &#43; F
   所有文件替换 shift &#43; cmd &#43; R
-   选择  选中下一个相同内容 ctrl &#43; G 选中所有相同内容 ctrl &#43; G   展开所有代码块 shift &#43; cmd &#43; = 折叠所有代码块 shift &#43; cmd &#43; - 折叠或展开当前代码块 cmd &#43; .   修改  复制当前行内容到下一行 cmd &#43; D 删除当前行 cmd &#43; delete 格式化代码 option &#43; cmd &#43; L   在当前行下一行增加空行 shift &#43; enter 在当前行上一行增加空行 option &#43; cmd &#43; enter   跳转   指定行 cmd &#43; L"><meta property="og:title" content="GoLand" />
-<meta property="og:description" content="GoLand 快捷键 查询   函数列表 cmd &#43; f12
+   选择  选中下一个相同内容 ctrl &#43; G 选中所有相同内容 ctrl &#43; G   展开所有代码块 shift &#43; cmd &#43; = 折叠所有代码块 shift &#43; cmd &#43; - 折叠或展开当前代码块 cmd &#43; ."><meta property="og:title" content="GoLand" />
+<meta property="og:description" content="GoLand 快捷键 跳转   指定行 cmd &#43; L
+  指定文件 shift &#43; cmd &#43; O
+  返回光标上一个位置 cmd &#43; opt &#43; 方向键
+   查询   函数列表 cmd &#43; f12
   当前文件查询 cmd &#43; F
   当前文件替换 cmd &#43; R
   所有文件查询 shift &#43; cmd &#43; F
   所有文件替换 shift &#43; cmd &#43; R
-   选择  选中下一个相同内容 ctrl &#43; G 选中所有相同内容 ctrl &#43; G   展开所有代码块 shift &#43; cmd &#43; = 折叠所有代码块 shift &#43; cmd &#43; - 折叠或展开当前代码块 cmd &#43; .   修改  复制当前行内容到下一行 cmd &#43; D 删除当前行 cmd &#43; delete 格式化代码 option &#43; cmd &#43; L   在当前行下一行增加空行 shift &#43; enter 在当前行上一行增加空行 option &#43; cmd &#43; enter   跳转   指定行 cmd &#43; L" />
+   选择  选中下一个相同内容 ctrl &#43; G 选中所有相同内容 ctrl &#43; G   展开所有代码块 shift &#43; cmd &#43; = 折叠所有代码块 shift &#43; cmd &#43; - 折叠或展开当前代码块 cmd &#43; ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/" />
 <meta property="article:modified_time" content="2020-07-01T10:25:48+08:00" />
@@ -26,7 +32,7 @@
 <link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
 
 
-<script defer src="/note-cs/en.search.min.9ff2559457e160f6b1c1dbe925b86a96588c7252bba2c323ee6238797cfda8a9.js" integrity="sha256-n/JVlFfhYPaxwdvpJbhqlliMclK7osMj7mI4eXz9qKk="></script>
+<script defer src="/note-cs/en.search.min.9ed82ced14b35d209b30d5a317f407b8b6e8fe6f0e91631277ec6bc3143bc39a.js" integrity="sha256-ntgs7RSzXSCbMNWjF/QHuLbo/m8OkWMSd&#43;xrwxQ7w5o="></script>
 
 <!--
 Made with Book Theme
@@ -1011,10 +1017,10 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#快捷键">快捷键</a>
       <ul>
+        <li><a href="#跳转">跳转</a></li>
         <li><a href="#查询">查询</a></li>
         <li><a href="#选择">选择</a></li>
         <li><a href="#修改">修改</a></li>
-        <li><a href="#跳转">跳转</a></li>
       </ul>
     </li>
   </ul>
@@ -1030,6 +1036,19 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="goland">GoLand</h1>
 <h2 id="快捷键">快捷键</h2>
+<h3 id="跳转">跳转</h3>
+<ul>
+<li>
+<p>指定行 <code>cmd + L</code></p>
+</li>
+<li>
+<p>指定文件 <code>shift + cmd + O</code></p>
+</li>
+<li>
+<p>返回光标上一个位置 <code>cmd + opt + 方向键</code></p>
+</li>
+</ul>
+<hr>
 <h3 id="查询">查询</h3>
 <ul>
 <li>
@@ -1071,15 +1090,6 @@ https://github.com/alex-shpak/hugo-book
 <li>在当前行<strong>上一行</strong>增加空行 <code>option + cmd + enter</code></li>
 </ul>
 <hr>
-<h3 id="跳转">跳转</h3>
-<ul>
-<li>
-<p>指定行 <code>cmd + L</code></p>
-</li>
-<li>
-<p>指定文件 <code>shift + cmd + O</code></p>
-</li>
-</ul>
 </article>
  
       
@@ -1131,10 +1141,10 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#快捷键">快捷键</a>
       <ul>
+        <li><a href="#跳转">跳转</a></li>
         <li><a href="#查询">查询</a></li>
         <li><a href="#选择">选择</a></li>
         <li><a href="#修改">修改</a></li>
-        <li><a href="#跳转">跳转</a></li>
       </ul>
     </li>
   </ul>
