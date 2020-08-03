@@ -2190,13 +2190,14 @@ Confirm Cancel 参考：</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 基础 [book]dod-o/statistical-learning-method_code  手写实现李航《统计学习方法》书中全部算法
+      <description>教程 基础 [book]d2l-ai/d2l-en  dive into deep learning
+[book]d2l-ai/d2l-zh  动手学深度学习
+[book]dod-o/statistical-learning-method_code  手写实现李航《统计学习方法》书中全部算法
 [video]shuhuai007/machine-learning-session  【机器学习】【白板推导系列】【合集 1 ～ 23】
 tsyw/MachineLearningNotes  My personal notes
 Bilibili - 机器学习白板系列
  [video]机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
- ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.
- fighting41love/funNLP  NLP 民工的乐园：几乎最全的中文 NLP 资源库</description>
+ ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.</description>
     </item>
     
     <item>
