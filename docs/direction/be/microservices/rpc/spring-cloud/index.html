@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Spring Cloud TarsCloud/Tars 国外 Pivotal 公司 2014 年对外开源的 RPC 框架，仅支持 Java 语言。
- Eureka：各个服务启动时，Eureka Client 都会将服务注册到 Eureka Server，并且 Eureka Client 还可以反过来从 Eureka Server 拉取注册表，从而知道其他服务在哪里 Ribbon：服务间发起请求的时候，基于 Ribbon 做负载均衡，从一个服务的多台机器中选择一台 Feign：基于 Feign 的动态代理机制，根据注解和选择的机器，拼接请求 URL 地址，发起请求 Hystrix：发起请求是通过 Hystrix 的线程池来走的，不同的服务走不同的线程池，实现了不同服务调用的隔离，避免了服务雪崩的问题 Zuul：如果前端、移动端要调用后端系统，统一从 Zuul 网关进入，由 Zuul 网关转发请求给对应的服务  Eureka Eureka 是微服务架构中的注册中心，专门负责服务的注册与发现。
- Eureka Client：负责将这个服务的信息注册到 Eureka Server 中 Eureka Server：注册中心，里面有一个注册表，保存了各个服务所在的机器和端口号  Feign Feign 的一个关键机制就是使用了动态代理。
-Ribbon 负载均衡
-Ribbon 的负载均衡默认使用的最经典的 Round Robin 轮询算法
-Hystrix Hystrix 是隔离、熔断以及降级的一个框架。
-Hystrix 会搞很多个小小的线程池， 比如订单服务请求库存服务是一个线程池，请求仓储服务是一个线程池，请求积分服务是一个线程池。 每个线程池里的线程就仅仅用于请求那个服务。"><meta property="og:title" content="2.2.5.1.4 Spring Cloud" />
+<meta name="description" content="Spring Cloud #  TarsCloud/Tars 国外 Pivotal 公司 2014 年对外开源的 RPC 框架，仅支持 Java 语言。
+ Eureka：各个服务启动时，Eureka Client 都会将服务注册到 Eureka Server，并且 Eureka Client 还可以反过来从 Eureka Server 拉取注册表，从而知道其他服务在哪里 Ribbon：服务间发起请求的时候，基于 Ribbon 做负载均衡，从一个服务的多台机器中选择一台 Feign：基于 Feign 的动态代理机制，根据注解和选择的机器，拼接请求 URL 地址，发起请求 Hystrix：发起请求是通过 Hystrix 的线程池来走的，不同的服务走不同的线程池，实现了不同服务调用的隔离，避免了服务雪崩的问题 Zuul：如果前端、移动端要调用后端系统，统一从 Zuul 网关进入，由 Zuul 网关转发请求给对应的服务  Eureka #  Eureka 是微服务架构中的注册中心，专门负责服务的注册与发现。
+ Eureka Client：负责将这个服务的信息注册到 Eureka Server 中 Eureka Server：注册中心，里面有一个注册表，保存了各个服务所在的机器和端口号  Feign #  Feign 的一个关键机制就是使用了动态代理。
+Ribbon #  负载均衡
+Ribbon 的负载均衡默认使用的最经典的 Round Robin 轮询算法">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="2.2.5.1.4 Spring Cloud" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/" />
 
 <title>2.2.5.1.4 Spring Cloud | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -33,8 +28,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -47,7 +43,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -75,424 +71,42 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
 
 
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
   
-  <span>第一部分 基础</span>
   
-
-
-    
-
-
-
-
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/microservices/rpc/" class="collapsed ">2.2.5.1 RPC</a>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/protobuf/" class="">2.2.5.1.1 protobuf</a>
-  
-
-</li>
-      
+  <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/grpc/" class="">2.2.5.1.2 gRPC</a>
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -500,96 +114,37 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/microservices/rpc/dubbo/" class="">2.2.5.1.3 Dubbo</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/microservices/rpc/spring-cloud/" class="active">2.2.5.1.4 Spring Cloud</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/brpc/" class="">brpc</a>
-  
 
-</li>
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/motan/" class="">Motan</a>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -597,28 +152,20 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/tars/" class="">Tars</a>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -626,28 +173,215 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/thrift/" class="">Thrift</a>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/" class="collapsed ">2.2.5.1 RPC</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/protobuf/" class="">2.2.5.1.1 protobuf</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/grpc/" class="">2.2.5.1.2 gRPC</a>
+  
+
+          
+  
+  
+  
 
   
   <ul>
@@ -655,532 +389,498 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/dubbo/" class="">2.2.5.1.3 Dubbo</a>
+  
 
+          
+  
+  
+  
 
-  </li>
+  
+  <ul>
+    
+  </ul>
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/spring-cloud/" class="active">2.2.5.1.4 Spring Cloud</a>
+  
 
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/brpc/" class="">brpc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/motan/" class="">Motan</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/tars/" class="">Tars</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/rpc/thrift/" class="">Thrift</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/servicecomb/" class="collapsed ">ServiceComb</a>
+    <a href="/note-cs/docs/direction/be/microservices/servicecomb/" class="collapsed ">ServiceComb</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
+    <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
+    <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
+    <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+    <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
+    <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第三部分 领域</span>
+    <span>第三部分 领域</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第四部分 其他</span>
+    <span>第四部分 其他</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
-
-
-
-  
-
 
 
 
@@ -1224,15 +924,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>2.2.5.1.4 Spring Cloud</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#eureka">Eureka</a></li>
@@ -1244,14 +945,17 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="spring-cloud">Spring Cloud</h1>
+  <article class="markdown"><h1 id="spring-cloud">
+  Spring Cloud
+  <a class="anchor" href="#spring-cloud">#</a>
+</h1>
 <p><a href="https://github.com/TarsCloud/Tars">TarsCloud/Tars</a> <img src="https://img.shields.io/github/stars/TarsCloud/Tars.svg" alt="Github stars" /></p>
 <p>国外 Pivotal 公司 2014 年对外开源的 RPC 框架，仅支持 Java 语言。</p>
 <ul>
@@ -1262,18 +966,30 @@ https://github.com/alex-shpak/hugo-book
 <li>Zuul：如果前端、移动端要调用后端系统，统一从 Zuul 网关进入，由 Zuul 网关转发请求给对应的服务</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528201147.png" alt="" /></p>
-<h2 id="eureka">Eureka</h2>
+<h2 id="eureka">
+  Eureka
+  <a class="anchor" href="#eureka">#</a>
+</h2>
 <p>Eureka 是微服务架构中的注册中心，专门负责服务的注册与发现。</p>
 <ul>
 <li>Eureka Client：负责将这个服务的信息注册到 Eureka Server 中</li>
 <li>Eureka Server：注册中心，里面有一个注册表，保存了各个服务所在的机器和端口号</li>
 </ul>
-<h2 id="feign">Feign</h2>
+<h2 id="feign">
+  Feign
+  <a class="anchor" href="#feign">#</a>
+</h2>
 <p>Feign 的一个关键机制就是使用了动态代理。</p>
-<h2 id="ribbon">Ribbon</h2>
+<h2 id="ribbon">
+  Ribbon
+  <a class="anchor" href="#ribbon">#</a>
+</h2>
 <p>负载均衡</p>
 <p>Ribbon 的负载均衡默认使用的最经典的 <code>Round Robin</code> 轮询算法</p>
-<h2 id="hystrix">Hystrix</h2>
+<h2 id="hystrix">
+  Hystrix
+  <a class="anchor" href="#hystrix">#</a>
+</h2>
 <p>Hystrix 是隔离、熔断以及降级的一个框架。</p>
 <p>Hystrix 会搞很多个小小的线程池，
 比如订单服务请求库存服务是一个线程池，请求仓储服务是一个线程池，请求积分服务是一个线程池。
@@ -1292,7 +1008,10 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528200848.png" alt="" /></p>
-<h2 id="zuul">Zuul</h2>
+<h2 id="zuul">
+  Zuul
+  <a class="anchor" href="#zuul">#</a>
+</h2>
 <p>微服务网关</p>
 <p>可以做统一的降级、限流、认证授权、安全等等</p>
 </article>
@@ -1301,13 +1020,11 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/e85f653fa5e224e851bc50035ab77f4284d55c95" title='Last modified by yewang | 2020-07-02' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/e85f653fa5e224e851bc50035ab77f4284d55c95" title='Last modified by yewang | 2020-07-02' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-07-02</span>
     </a>

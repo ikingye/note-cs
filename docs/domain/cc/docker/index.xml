@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/quick/</guid>
-      <description>Docker 快速上手 安装 MacOS 下载: https://download.docker.com/mac/stable/Docker.dmgLinux Windows  镜像加速 阿里云 获取你的加速地址：https://cr.console.aliyun.com/undefined/instances/mirrors
+      <description>Docker 快速上手 #  安装 #  MacOS 下载: https://download.docker.com/mac/stable/Docker.dmgLinux Windows  镜像加速 #  阿里云 获取你的加速地址：https://cr.console.aliyun.com/undefined/instances/mirrors
 针对安装了 Docker for Mac 的用户，您可以参考以下配置步骤： 右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Daemon 标签（Docker 17.03 之前版本为 Advanced 标签）下的 Registry mirrors 列表中将 https://pjuig8sx.mirror.aliyuncs.com 加到 &amp;ldquo;registry-mirrors&amp;rdquo; 的数组里，点击 Apply &amp;amp; Restart 按钮，等待 Docker 重启并应用配置的镜像加速器。</description>
     </item>
     
@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/command/</guid>
-      <description>Docker 命令 docker ps docker ps vs docker container ls Management Commands vs Commands
+      <description>Docker 命令 #  docker ps #  docker ps vs docker container ls #  Management Commands vs Commands
 Docker 1.13+ introduced grouped commands to help organize a bunch of Docker commands. Both commands do the same thing.
 For example docker container ls is the new way to do docker ps.
 Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, now you can run docker image ls, docker network ls or docker volume ls.</description>
@@ -37,7 +37,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/version/</guid>
-      <description>Docker 版本 查看版本 docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base.</description>
+      <description>Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 #  最新版本 #  19.03 (2019-07-22) #  18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version.</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/port/</guid>
-      <description>Docker 端口 端口映射  -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192.</description>
+      <description>Docker 端口 #  端口映射 #   -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 #  # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 #  # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192.</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/container/</guid>
-      <description>Docker 容器 </description>
+      <description>Docker 容器 #  </description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/repository/</guid>
-      <description>Docker 仓库 </description>
+      <description>Docker 仓库 #  </description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/volume/</guid>
-      <description>Docker 数据卷 </description>
+      <description>Docker 数据卷 #  </description>
     </item>
     
     <item>
@@ -82,8 +82,8 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/dockerfile/</guid>
-      <description>Dockerfile 教程 CMD # exec form, preferredCMD [&amp;#34;executable&amp;#34;,&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# shell formCMD command param1 param2# as default parameters to ENTRYPOINTCMD [&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# 下面两者是等价的CMD echo &amp;#34;hello cmd!&amp;#34;CMD [&amp;#34;/bin/bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;echo &amp;#39;hello cmd!&amp;#39;&amp;#34;]docker run 时指定了命令或者有 ENTRYPOINT，那么 CMD 就会被覆盖
-Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生效。  ENTRYPOINT  docker run 使用 --entrypoint，则覆盖 Dockerfile 的 ENTRYPOINT 如何 ENTRYPOINT 使用中括号形式  docker run 带了参数，则参数会加给 ENTRYPOINT 定义了 CMD，则 CMD 的参数会加给 ENTRYPOINT    # exec form, preferredENTRYPOINT [&amp;#34;executable&amp;#34;, &amp;#34;param1&amp;#34;, &amp;#34;param2&amp;#34;]# shell formENTRYPOINT command param1 param2# ENTRYPOINT 使用中括号时，也可以直接指定命令# 而 CMD 不行，必须带上 shell 命令做前缀ENTRYPOINT [&amp;#34;/start.</description>
+      <description>Dockerfile #  教程 #  CMD #  # exec form, preferredCMD [&amp;#34;executable&amp;#34;,&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# shell formCMD command param1 param2# as default parameters to ENTRYPOINTCMD [&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# 下面两者是等价的CMD echo &amp;#34;hello cmd!&amp;#34;CMD [&amp;#34;/bin/bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;echo &amp;#39;hello cmd!&amp;#39;&amp;#34;]docker run 时指定了命令或者有 ENTRYPOINT，那么 CMD 就会被覆盖
+Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生效。  ENTRYPOINT #   docker run 使用 --entrypoint，则覆盖 Dockerfile 的 ENTRYPOINT 如何 ENTRYPOINT 使用中括号形式  docker run 带了参数，则参数会加给 ENTRYPOINT 定义了 CMD，则 CMD 的参数会加给 ENTRYPOINT    # exec form, preferredENTRYPOINT [&amp;#34;executable&amp;#34;, &amp;#34;param1&amp;#34;, &amp;#34;param2&amp;#34;]# shell formENTRYPOINT command param1 param2# ENTRYPOINT 使用中括号时，也可以直接指定命令# 而 CMD 不行，必须带上 shell 命令做前缀ENTRYPOINT [&amp;#34;/start.</description>
     </item>
     
     <item>
@@ -92,7 +92,7 @@ Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/tutorial/</guid>
-      <description>Docker 教程 play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
+      <description>Docker 教程 #  play-with-docker/play-with-docker #  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
 Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.
 A live version is available at: http://play-with-docker.com/</description>
     </item>
@@ -103,9 +103,9 @@ A live version is available at: http://play-with-docker.com/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/attention/</guid>
-      <description>关注 moby/moby  Moby Project - a collaborative project for the container ecosystem to assemble container-based systems https://mobyproject.org/
-docker/docker-ce  Docker CE https://www.docker.com/community-edition
-play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
+      <description>关注 #  moby/moby #  Moby Project - a collaborative project for the container ecosystem to assemble container-based systems https://mobyproject.org/
+docker/docker-ce #  Docker CE https://www.docker.com/community-edition
+play-with-docker/play-with-docker #  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
 Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.</description>
     </item>
     
@@ -115,7 +115,7 @@ Under the hood DIND or Docker-in-Docker is used to give the effect of multiple V
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/build/</guid>
-      <description>build </description>
+      <description>build #  </description>
     </item>
     
   </channel>

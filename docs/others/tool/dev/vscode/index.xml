@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</guid>
-      <description>VScode 快捷键 MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
+      <description>VScode 快捷键 #  MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
     </item>
     
     <item>
@@ -24,7 +24,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/debug/</guid>
-      <description>VSCode Debug 参考：
+      <description>VSCode Debug #  参考：
   USER GUIDE - Debugging
   Debug C++ in Visual Studio Code
   </description>

@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="OAuth 版本 2.0 OAuth 2.0 协议参考 rfc6749
-1.0 参考：
- OAuth 1.0，1.0a 和 2.0 的之间的区别有哪些？   授权方式  授权码（authorization-code） 隐藏式（implicit） 密码式（password）： 客户端凭证（client credentials）  参考：
- 一口气说出 OAuth2.0 的四种授权方式   问答 为什么需要 Refresh Token 这样的处理是为了职责的分离：
- refresh token 负责身份认证 access token 负责请求资源。   参考   Choosing an SSO Strategy: SAML vs OAuth2
-  rfc6749
-  为什么 OAuth2 里面在获取 access token 之前一定要先获取 code，然后再用 code 去获取 access token？"><meta property="og:title" content="OAuth" />
+<meta name="description" content="OAuth #  版本 #  2.0 #  OAuth 2.0 协议参考 rfc6749
+1.0 #  参考：
+ OAuth 1.0，1.0a 和 2.0 的之间的区别有哪些？   授权方式 #   授权码（authorization-code） 隐藏式（implicit） 密码式（password）： 客户端凭证（client credentials）  参考：
+ 一口气说出 OAuth2.0 的四种授权方式   问答 #  为什么需要 Refresh Token #  这样的处理是为了职责的分离：
+ refresh token 负责身份认证 access token 负责请求资源。   参考 #    Choosing an SSO Strategy: SAML vs OAuth2">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="OAuth" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/auth/oauth/" />
 
 <title>OAuth | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/auth/oauth/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -33,8 +28,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -47,7 +43,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -75,57 +71,42 @@ https://github.com/alex-shpak/hugo-book
 
   
 
+
+
   
   
-
-
-
-
-
- 
   
-    
-
-
-
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第一部分 基础</span>
+    <span>第一部分 基础</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -133,51 +114,37 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -185,28 +152,20 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -214,279 +173,207 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第二部分 方向</span>
+    <span>第二部分 方向</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
+    <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
+    <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
+    <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
+    <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
+    <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
+    <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/auth/oauth/" class="collapsed active">OAuth</a>
+    <a href="/note-cs/docs/direction/be/auth/oauth/" class="collapsed active">OAuth</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -494,545 +381,394 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/auth/openid/" class="collapsed ">OpenID</a>
+    <a href="/note-cs/docs/direction/be/auth/openid/" class="collapsed ">OpenID</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/auth/jwt/" class="collapsed ">JWT</a>
+    <a href="/note-cs/docs/direction/be/auth/jwt/" class="collapsed ">JWT</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/auth/sso/" class="collapsed ">SSO</a>
+    <a href="/note-cs/docs/direction/be/auth/sso/" class="collapsed ">SSO</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
+    <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
+    <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+    <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
+    <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第三部分 领域</span>
+    <span>第三部分 领域</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第四部分 其他</span>
+    <span>第四部分 其他</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
-
-
-
-  
-
 
 
 
@@ -1076,15 +812,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>OAuth</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#版本">版本</a>
@@ -1104,25 +841,40 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="oauth">OAuth</h1>
-<h2 id="版本">版本</h2>
-<h3 id="20">2.0</h3>
+  <article class="markdown"><h1 id="oauth">
+  OAuth
+  <a class="anchor" href="#oauth">#</a>
+</h1>
+<h2 id="版本">
+  版本
+  <a class="anchor" href="#%e7%89%88%e6%9c%ac">#</a>
+</h2>
+<h3 id="20">
+  2.0
+  <a class="anchor" href="#20">#</a>
+</h3>
 <p>OAuth 2.0 协议参考 <a href="https://tools.ietf.org/html/rfc6749">rfc6749</a></p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200401141347.png" alt="" /></p>
-<h3 id="10">1.0</h3>
+<h3 id="10">
+  1.0
+  <a class="anchor" href="#10">#</a>
+</h3>
 <p>参考：</p>
 <ul>
 <li><a href="https://www.zhihu.com/question/19851243">OAuth 1.0，1.0a 和 2.0 的之间的区别有哪些？</a></li>
 </ul>
 <hr>
-<h2 id="授权方式">授权方式</h2>
+<h2 id="授权方式">
+  授权方式
+  <a class="anchor" href="#%e6%8e%88%e6%9d%83%e6%96%b9%e5%bc%8f">#</a>
+</h2>
 <ul>
 <li>授权码（authorization-code）</li>
 <li>隐藏式（implicit）</li>
@@ -1134,15 +886,24 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="https://zhuanlan.zhihu.com/p/157545994">一口气说出 OAuth2.0 的四种授权方式</a></li>
 </ul>
 <hr>
-<h2 id="问答">问答</h2>
-<h3 id="为什么需要-refresh-token">为什么需要 Refresh Token</h3>
+<h2 id="问答">
+  问答
+  <a class="anchor" href="#%e9%97%ae%e7%ad%94">#</a>
+</h2>
+<h3 id="为什么需要-refresh-token">
+  为什么需要 Refresh Token
+  <a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81-refresh-token">#</a>
+</h3>
 <p>这样的处理是为了职责的分离：</p>
 <ul>
 <li><code>refresh token</code> 负责身份认证</li>
 <li><code>access token</code> 负责请求资源。</li>
 </ul>
 <hr>
-<h2 id="参考">参考</h2>
+<h2 id="参考">
+  参考
+  <a class="anchor" href="#%e5%8f%82%e8%80%83">#</a>
+</h2>
 <ul>
 <li>
 <p><a href="https://www.mutuallyhuman.com/blog/choosing-an-sso-strategy-saml-vs-oauth2/">Choosing an SSO Strategy: SAML vs OAuth2</a></p>
@@ -1167,13 +928,11 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/5afbc3e4c10c84cbfdae47e899cfcc43660b69f2" title='Last modified by yewang | 2020-07-16' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/5afbc3e4c10c84cbfdae47e899cfcc43660b69f2" title='Last modified by yewang | 2020-07-16' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-07-16</span>
     </a>

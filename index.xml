@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/image/alpine/</guid>
-      <description>alpine 安装 telnet apk add busybox-extras</description>
+      <description>alpine #  安装 telnet #  apk add busybox-extras</description>
     </item>
     
     <item>
@@ -24,7 +24,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/quick/</guid>
-      <description>Docker 快速上手 安装 MacOS 下载: https://download.docker.com/mac/stable/Docker.dmgLinux Windows  镜像加速 阿里云 获取你的加速地址：https://cr.console.aliyun.com/undefined/instances/mirrors
+      <description>Docker 快速上手 #  安装 #  MacOS 下载: https://download.docker.com/mac/stable/Docker.dmgLinux Windows  镜像加速 #  阿里云 获取你的加速地址：https://cr.console.aliyun.com/undefined/instances/mirrors
 针对安装了 Docker for Mac 的用户，您可以参考以下配置步骤： 右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Daemon 标签（Docker 17.03 之前版本为 Advanced 标签）下的 Registry mirrors 列表中将 https://pjuig8sx.mirror.aliyuncs.com 加到 &amp;ldquo;registry-mirrors&amp;rdquo; 的数组里，点击 Apply &amp;amp; Restart 按钮，等待 Docker 重启并应用配置的镜像加速器。</description>
     </item>
     
@@ -34,8 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</guid>
-      <description>GitHub 设置代理 git config --global http.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; git config --global https.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; git config --global https.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github Github Learning Lab Introduction to GitHub  Github 工具 cli/cli  GitHub’s official command line tool https://cli.github.com
-github/hub  A command-line tool that makes git easier to use with GitHub.</description>
+      <description>GitHub #  设置代理 #  git config --global http.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; git config --global https.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; git config --global https.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github #  Github Learning Lab #  Introduction to GitHub #   Github 工具 #  cli/cli #  GitHub’s official command line tool https://cli.</description>
     </item>
     
     <item>
@@ -44,8 +43,8 @@ github/hub  A command-line tool that makes git easier to use with GitHub.</descr
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/quick-start/</guid>
-      <description>Quick Start Mysql Client /etc/my.cnf
-Mysql Server </description>
+      <description>Quick Start #  Mysql Client #  /etc/my.cnf
+Mysql Server #  </description>
     </item>
     
     <item>
@@ -54,8 +53,8 @@ Mysql Server </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/zh/</guid>
-      <description>Vim 实用技巧（第 2 版） 
-译者 杨源 / 车文隆</description>
+      <description>Vim 实用技巧（第 2 版） #  
+译者 #  杨源 / 车文隆</description>
     </item>
     
     <item>
@@ -64,10 +63,10 @@ Mysql Server </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid>
-      <description>PostgreSQL 快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
+      <description>PostgreSQL 快速上手 #  安装 #  MacOS #   安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 #  登录 PostgreSQL 控制台：psql #  psql -U [user] -d [database] -h [host] -p [port]
 默认 psql
-user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l 使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
- 创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?</description>
+user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l #  使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
+ 创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 #  \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?</description>
     </item>
     
     <item>
@@ -76,7 +75,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</guid>
-      <description>百度 Objective-C 编码规范 (2019 版) </description>
+      <description>百度 Objective-C 编码规范 (2019 版) #  </description>
     </item>
     
     <item>
@@ -85,9 +84,9 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</guid>
-      <description>makefile make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
-简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &amp;lt;target&amp;gt; 生成 target  重命名：make -f &amp;quot;filename&amp;quot; &amp;lt;target&amp;gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2.</description>
+      <description>makefile #  make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
+简介 #  Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &amp;lt;target&amp;gt; 生成 target  重命名：make -f &amp;quot;filename&amp;quot; &amp;lt;target&amp;gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明 #   创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2.</description>
     </item>
     
     <item>
@@ -96,7 +95,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -105,7 +104,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -114,7 +113,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -123,7 +122,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -132,7 +131,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -141,7 +140,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -150,7 +149,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -159,7 +158,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -168,7 +167,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -177,7 +176,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -186,7 +185,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -195,7 +194,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -204,7 +203,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -213,7 +212,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -222,7 +221,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/basic/</guid>
-      <description>基础面试题 Redis 有哪些数据类型，分别适合什么场景？ Redis 如何做持久化？ Redis 如何实现高可用？ Redis 如何与 Mysql 做一致性同步？ </description>
+      <description>基础面试题 #  Redis 有哪些数据类型，分别适合什么场景？ #  Redis 如何做持久化？ #  Redis 如何实现高可用？ #  Redis 如何与 Mysql 做一致性同步？ #  </description>
     </item>
     
     <item>
@@ -231,7 +230,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -240,7 +239,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -249,7 +248,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -258,7 +257,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -267,7 +266,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -276,7 +275,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -285,7 +284,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -294,7 +293,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -303,7 +302,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -312,7 +311,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/basic/</guid>
-      <description>基础面试题 </description>
+      <description>基础面试题 #  </description>
     </item>
     
     <item>
@@ -321,7 +320,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/common/</guid>
-      <description>常用库 </description>
+      <description>常用库 #  </description>
     </item>
     
     <item>
@@ -330,7 +329,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -339,7 +338,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -348,7 +347,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -357,7 +356,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -366,7 +365,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -375,7 +374,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -384,7 +383,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -393,7 +392,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -402,7 +401,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -411,7 +410,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -420,7 +419,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -429,7 +428,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -438,7 +437,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -447,7 +446,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -456,7 +455,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -465,7 +464,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -474,7 +473,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -483,7 +482,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -492,7 +491,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -501,7 +500,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -510,7 +509,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -519,7 +518,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -528,7 +527,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -537,7 +536,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -546,7 +545,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/advanced/</guid>
-      <description>进阶面试题 </description>
+      <description>进阶面试题 #  </description>
     </item>
     
     <item>
@@ -555,7 +554,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</guid>
-      <description>cmake </description>
+      <description>cmake #  </description>
     </item>
     
     <item>
@@ -564,7 +563,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -573,7 +572,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -582,7 +581,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -591,7 +590,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -600,7 +599,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -609,7 +608,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -618,7 +617,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -627,7 +626,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -636,7 +635,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -645,7 +644,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -654,7 +653,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -663,7 +662,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -672,7 +671,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -681,7 +680,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -690,7 +689,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -699,7 +698,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -708,7 +707,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/android/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -717,7 +716,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/ios/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -726,7 +725,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -735,7 +734,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/embedded/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -744,7 +743,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/angular/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -753,7 +752,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/react/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -762,7 +761,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/vue/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -771,7 +770,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -780,7 +779,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/interview/expert/</guid>
-      <description>高阶面试题 </description>
+      <description>高阶面试题 #  </description>
     </item>
     
     <item>
@@ -789,7 +788,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/basic/build/gulp/</guid>
-      <description>gulp 类似与 make 参考：https://learnxinyminutes.com/docs/zh-cn/make-cn/</description>
+      <description>gulp #  类似与 make 参考：https://learnxinyminutes.com/docs/zh-cn/make-cn/</description>
     </item>
     
     <item>
@@ -798,11 +797,10 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/basic/quick-start/</guid>
-      <description>Quick Start redis-cli -h host -p port -a password 安装 开机自启 sudo vi /usr/lib/systemd/system/redis.service
+      <description>Quick Start #  redis-cli -h host -p port -a password 安装 #  开机自启 #  sudo vi /usr/lib/systemd/system/redis.service
 [Unit] Description=Redis persistent key-value database After=network.target After=network-online.target Wants=network-online.target [Service] ExecStart=/usr/bin/redis-server /etc/redis.conf --supervised systemd ExecStop=/usr/libexec/redis-shutdown Type=notify User=redis Group=redis RuntimeDirectory=redis RuntimeDirectoryMode=0755 [Install] WantedBy=multi-user.target 保存退出，执行 sudo systemctl daemon-reload 启动服务 sudo systemctl start redis.service 设置开机自启动 sudo systemctl enable redis.service
-设置密码 打开文件 /etc/redis.conf， 找到其中的 # requirepass foobared，去掉前面的 #， 并把 foobared 改成你的密码。
-ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？ 答案是：可以
-为什么 Redis 默认端口是 6379 6379 在是手机按键上 MERZ 对应的号码，而 MERZ 取自意大利歌女 Alessia Merz 的名字。 MERZ 长期以来被 antirez 及其朋友当作愚蠢的代名词。</description>
+设置密码 #  打开文件 /etc/redis.conf， 找到其中的 # requirepass foobared，去掉前面的 #， 并把 foobared 改成你的密码。
+ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？ 答案是：可以</description>
     </item>
     
     <item>
@@ -811,7 +809,7 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</guid>
-      <description>VScode 快捷键 MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
+      <description>VScode 快捷键 #  MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
     </item>
     
     <item>
@@ -820,7 +818,7 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</guid>
-      <description>推荐软件 MacOS 开发 iTerm Keyboard Maestro  参考  jaywcjlove/awesome-mac   Windows todoiOS todoAndroid todoLinux todo </description>
+      <description>推荐软件 #  MacOS 开发 iTerm Keyboard Maestro  参考  jaywcjlove/awesome-mac   Windows todoiOS todoAndroid todoLinux todo </description>
     </item>
     
     <item>
@@ -829,7 +827,7 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/baidu/</guid>
-      <description>百度 Scala 编码规范 前言 就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
+      <description>百度 Scala 编码规范 #  前言 #  就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
  Apache Spark 开源社区 Scala 编程指南:
 Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  </description>
     </item>
@@ -840,7 +838,7 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/study/tutorial/</guid>
-      <description>编程学习网站 基础 Codecademy Programiz  算法 Codewars  进阶 Codeplace 通过实际应用来学习编程。</description>
+      <description>编程学习网站 #  基础 #  Codecademy #  Programiz #   算法 #  Codewars #   进阶 #  Codeplace #  通过实际应用来学习编程。</description>
     </item>
     
     <item>
@@ -849,12 +847,12 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/lock/</guid>
-      <description>锁 setnx  setnx msetnx hsetnx  SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL] 那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：
+      <description>锁 #  setnx #   setnx msetnx hsetnx  SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL] 那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：
 -- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&amp;#39;get&amp;#39;, KEYS[1]) == ARGV[1] then -- 执行删除操作 return redis.call(&amp;#39;del&amp;#39;, KEYS[1]) else -- 不成功，返回0 return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
 就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。
 那么既然这么麻烦，有没有比较好的工具呢？就要说到 redisson 了。
-redLock 并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。
-redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。</description>
+redLock #  并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。
+redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。</description>
     </item>
     
     <item>
@@ -863,15 +861,14 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</guid>
-      <description>GoLand 快捷键 跳转   指定行 cmd + L
+      <description>GoLand #  快捷键 #  跳转 #    指定行 cmd + L
   指定文件 shift + cmd + O
   返回光标上一个位置 cmd + opt + 方向键
-   查询   函数列表 cmd + f12
+   查询 #    函数列表 cmd + f12
   当前文件查询 cmd + F
   当前文件替换 cmd + R
   所有文件查询 shift + cmd + F
-  所有文件替换 shift + cmd + R
-   选择  选中下一个相同内容 ctrl + G 选中所有相同内容 ctrl + G   展开所有代码块 shift + cmd + = 折叠所有代码块 shift + cmd + - 折叠或展开当前代码块 cmd + .</description>
+  所有文件替换 shift + cmd + R</description>
     </item>
     
     <item>
@@ -880,7 +877,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</guid>
-      <description>IntelliJ Idea 插件 Alibaba Java Coding Guidelines  教程 xiaoxiunique/tool-tips  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
+      <description>IntelliJ Idea #  插件 #  Alibaba Java Coding Guidelines #   教程 #  xiaoxiunique/tool-tips #  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
     </item>
     
     <item>
@@ -889,7 +886,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid>
-      <description>protobuf  </description>
+      <description>protobuf #  </description>
     </item>
     
     <item>
@@ -898,7 +895,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -907,7 +904,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -916,7 +913,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/macos/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -925,7 +922,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -934,7 +931,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -943,7 +940,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -952,7 +949,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -961,7 +958,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -970,7 +967,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -979,7 +976,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -988,7 +985,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -997,7 +994,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -1006,7 +1003,7 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</guid>
-      <description>教程 基础 进阶 </description>
+      <description>教程 #  基础 #  进阶 #  </description>
     </item>
     
     <item>
@@ -1015,10 +1012,10 @@ redisson Redisson 是 java 的 redis 客户端之一，提供了一些 api 方�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</guid>
-      <description>关注 核心 dotnet/core  Home repository for .NET Core
-dotnet/coreclr  CoreCLR is the runtime for .NET Core. It includes the garbage collector, JIT compiler, primitive data types and low-level classes. https://docs.microsoft.com/dotnet/core/
-dotnet/roslyn  The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. https://docs.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/
-dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux. https://asp.</description>
+      <description>关注 #  核心 #  dotnet/core #  Home repository for .NET Core
+dotnet/coreclr #  CoreCLR is the runtime for .NET Core. It includes the garbage collector, JIT compiler, primitive data types and low-level classes. https://docs.microsoft.com/dotnet/core/
+dotnet/roslyn #  The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. https://docs.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/
+dotnet/aspnetcore #  ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.</description>
     </item>
     
     <item>
@@ -1027,7 +1024,7 @@ dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
+      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
     </item>
     
     <item>
@@ -1036,7 +1033,7 @@ dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
+      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
     </item>
     
     <item>
@@ -1045,7 +1042,7 @@ dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
+      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
     </item>
     
     <item>
@@ -1054,7 +1051,7 @@ dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</guid>
-      <description>关注 其他 octocat/Spoon-Knife  </description>
+      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
     </item>
     
     <item>
@@ -1063,8 +1060,8 @@ dotnet/aspnetcore  ASP.NET Core is a cross-platform .NET framework for building 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</guid>
-      <description>关注 其他 resilience4j/resilience4j ehcache/ehcache3  ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库， ehcache 提供了用内存，磁盘文件存储，以及分布式存储方式等多种灵活的 cache 管理方案。 http://www.ehcache.org
-Netflix/Hystrix Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
+      <description>关注 #  其他 #  resilience4j/resilience4j #  ehcache/ehcache3 #  ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库， ehcache 提供了用内存，磁盘文件存储，以及分布式存储方式等多种灵活的 cache 管理方案。 http://www.ehcache.org
+Netflix/Hystrix #  Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，
 Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。</description>
     </item>
     
@@ -1074,15 +1071,14 @@ Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</guid>
-      <description>5G 边缘计算 5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思
+      <description>5G 边缘计算 #  5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思
 简单说，5G 就是第五代移动通信系统
-5G 与边缘计算有什么关系？ 5G 通信网络更加去中心化，需要在网络边缘部署小规模或者便携式数据中心，进行终端请求的本地化处理，以满足 URLLC 和 mMTC 的超低延时需求，因此边缘计算是 5G 核心技术之一。
+5G 与边缘计算有什么关系？ #  5G 通信网络更加去中心化，需要在网络边缘部署小规模或者便携式数据中心，进行终端请求的本地化处理，以满足 URLLC 和 mMTC 的超低延时需求，因此边缘计算是 5G 核心技术之一。
 5G 的三大典型应用场景对网络性能的要求有显著差异，但为控制成本，运营商必然选择一张承载网 + 网络切片 / 边缘计算技术，实现在最少的资本投入下最丰富的网络功能。
 在 5G 时代，承载网的带宽瓶颈、时延抖动等性能瓶颈难以突破，引入边缘计算后将大量业务在网络边缘终结。
-5G 与边缘计算的关系 5G 为边缘计算产业的落地和发展提供了良好的网络基础， 主要体现在三大场景（eMBB，uRLLC 和 mMTC）的支持、核心网用户面功能的灵活部署以及 5G 网络能力开放等方面。
+5G 与边缘计算的关系 #  5G 为边缘计算产业的落地和发展提供了良好的网络基础， 主要体现在三大场景（eMBB，uRLLC 和 mMTC）的支持、核心网用户面功能的灵活部署以及 5G 网络能力开放等方面。
 “5G + MEC + AI”是 5G 在网络边缘更好使能各行各业的关键； 是运营商助力垂直行业数字化和智能化的新模式； 是运营商进入垂直行业的触点和重点场景； 也是 5G 应用是否成功的一个重要标志。
-5G 支持将网络能力开放给边缘应用。 无线网络信息服务、位置服务、QoS服务等网络能力，可以封装成边缘计算 PaaS 平台的 API，开放给应用。 5G 与边缘计算结合，是运营商使能边缘计算的新核心竞争力和最大独特优势。 同时，边缘计算也成为 5G 服务垂直行业，充分发挥 5G 新网络特性的重要利器之一。
-5G MEC 将云计算和 5G 核心网带到网络边缘，带来了新的流量模型和部署模型。 如果运营商还继续采用 4G 移动承载网的设计思路，在 5G 时代，运营商网络将面临边缘计算的困局。</description>
+5G 支持将网络能力开放给边缘应用。 无线网络信息服务、位置服务、QoS服务等网络能力，可以封装成边缘计算 PaaS 平台的 API，开放给应用。 5G 与边缘计算结合，是运营商使能边缘计算的新核心竞争力和最大独特优势。 同时，边缘计算也成为 5G 服务垂直行业，充分发挥 5G 新网络特性的重要利器之一。</description>
     </item>
     
     <item>
@@ -1091,18 +1087,16 @@ Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/</guid>
-      <description>BFE baidu/bfe Baidu Front End 百度统一前端
+      <description>BFE #  baidu/bfe Baidu Front End 百度统一前端
 统一的百度七层（HTTP）流量接入平台
-BFE 之前的百度前端接入架构 流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
-开发成本高 如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。
-维护成本高 不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。
-数据和策略共享的成本高 产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。
-技术积累难 由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。
- BFE 架构 BFE 是一个七层接入系统。 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。
+BFE 之前的百度前端接入架构 #  流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
+开发成本高 #  如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。
+维护成本高 #  不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。
+数据和策略共享的成本高 #  产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。
+技术积累难 #  由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。
+ BFE 架构 #  BFE 是一个七层接入系统。 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。
 BFE 最基本的工作就是从 BGW/BVS 接入流量并将流量转发给产品线的前端 webserver 或者其他接入模块，最后接收后端 server 的内容并回复给外部用户。
-反向代理服务器 BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有一百多万。 在如此大的流量压力环境中，服务器的处理性能至关重要。 BFE 采用现在业界流行的多进程全异步非阻塞事件驱动模型， 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 nginx, squid, varnish 的性能都很难满足需求。 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。
-能够在任意阶段处理用户请求 从接收用户请求的时候起，BFE 就能对数据进行完全的解析和过滤，能够在读取、解析、连接、写后端等的任一阶段对数据进行修改、增加、删除、丢弃等操作。
-分流策略非常高效 NGINX 和大部分通用的网络服务器在多个正则规则和复杂策略组合下的分流效率比较低，BFE 通过反解正则规则及嵌套分流策略实现了时间复杂度为 O(1) 的分流。</description>
+反向代理服务器 #  BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有一百多万。 在如此大的流量压力环境中，服务器的处理性能至关重要。 BFE 采用现在业界流行的多进程全异步非阻塞事件驱动模型， 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 nginx, squid, varnish 的性能都很难满足需求。 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。</description>
     </item>
     
     <item>
@@ -1111,10 +1105,10 @@ BFE 最基本的工作就是从 BGW/BVS 接入流量并将流量转发给产品�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bgw/</guid>
-      <description>BGW Baidu Gate Way 百度智能网关 是一种用软件实现的负载均衡设备。
+      <description>BGW #  Baidu Gate Way 百度智能网关 是一种用软件实现的负载均衡设备。
 BGW 将多台 server（即 RealServer）虚拟化成了一台 server，提供统一的 VIP（即 virtual ip），用户只需和 VIP 进行通讯，就能访问 RealServer 上的服务。
 最终， 从 client 的角度看到，自己和一台 server 机器（确切说是一个 ip）在通讯，感觉不到 RealServer 的存在； 从 RealServer 的角度看到，自己和 client 在通讯，没有感觉到 BGW 的存在。
-TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到的源 IP 将是 BGW 的后端 IP，而不是客户端的真实 IP， 而现实中有许多业务需要知道客户端的真实 IP。
+TTM 模块 #  BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到的源 IP 将是 BGW 的后端 IP，而不是客户端的真实 IP， 而现实中有许多业务需要知道客户端的真实 IP。
 为了解决这个问题，RS 需要在内核加载一个 TTM 模块，即可将该选项携带的真实 IP 信息获取出来， 该过程对于用户态应用程序来说是完全透明的，用户态应用程序所看到的是从客户端真实 IP，实现 BGW 的透明。</description>
     </item>
     
@@ -1124,7 +1118,7 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/cpp/cpp-faq/</guid>
-      <description>C++ FAQ 学习进度  Copying permissions On-line sites that distribute this document C++-FAQ-Book versus (on-line) C++-FAQ Recent changes to this document Netiquette when posting to comp.lang.c++ Big Picture Issues Classes and objects References Inline functions Constructors Destructors Assignment operators Operator overloading Friends Input/output via &amp;lt;iostream&amp;gt; and &amp;lt;cstdio&amp;gt; Freestore management Exceptions and error handling Const correctness Inheritance &amp;mdash; basics Inheritance &amp;mdash; virtual functions Inheritance &amp;mdash; proper inheritance and substitutability Inheritance &amp;mdash; abstract base classes (ABCs) Inheritance &amp;mdash; what your mother never told you Inheritance &amp;mdash; private and protected inheritance Inheritance &amp;mdash; multiple and virtual inheritance Built-in / intrinsic / primitive data types Coding standards Learning OO/C++ Newbie Questions / Answers Learning C++ if you already know Smalltalk Reference and value semantics How to mix C and C++ Pointers to member functions Container classes Templates Serialization and Unserialization Class libraries Compiler dependencies Miscellaneous technical issues Miscellaneous environmental issues  </description>
+      <description>C++ FAQ #  学习进度 #   Copying permissions On-line sites that distribute this document C++-FAQ-Book versus (on-line) C++-FAQ Recent changes to this document Netiquette when posting to comp.lang.c++ Big Picture Issues Classes and objects References Inline functions Constructors Destructors Assignment operators Operator overloading Friends Input/output via &amp;lt;iostream&amp;gt; and &amp;lt;cstdio&amp;gt; Freestore management Exceptions and error handling Const correctness Inheritance &amp;mdash; basics Inheritance &amp;mdash; virtual functions Inheritance &amp;mdash; proper inheritance and substitutability Inheritance &amp;mdash; abstract base classes (ABCs) Inheritance &amp;mdash; what your mother never told you Inheritance &amp;mdash; private and protected inheritance Inheritance &amp;mdash; multiple and virtual inheritance Built-in / intrinsic / primitive data types Coding standards Learning OO/C++ Newbie Questions / Answers Learning C++ if you already know Smalltalk Reference and value semantics How to mix C and C++ Pointers to member functions Container classes Templates Serialization and Unserialization Class libraries Compiler dependencies Miscellaneous technical issues Miscellaneous environmental issues  </description>
     </item>
     
     <item>
@@ -1133,11 +1127,10 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/cap/</guid>
-      <description>CAP P 是前提 在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个 distributed data store 来说，不可能同时满足以下三点：
- 一致性（Consistency）  每次读取要么获得最近写入的数据，要么获得一个错误。   可用性（Availability）  每次请求都能获得一个非错误响应，但不保证返回的是最新写入的数据。   分区容错性（Partition tolerance）  以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。 尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。 分区指网络分区，通信的两台服务器之间网络断开，就发生了网络分区    一般选 AP 也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。
+      <description>CAP #  P 是前提 #  在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个 distributed data store 来说，不可能同时满足以下三点：
+ 一致性（Consistency）  每次读取要么获得最近写入的数据，要么获得一个错误。   可用性（Availability）  每次请求都能获得一个非错误响应，但不保证返回的是最新写入的数据。   分区容错性（Partition tolerance）  以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。 尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。 分区指网络分区，通信的两台服务器之间网络断开，就发生了网络分区    一般选 AP #  也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。
 比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，
- 如果 A 不写，保持一致性，那么我们就失去了 A 的服务， 但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。  这里的一致性（Consistency）是强一致性，意思是 AB 的数据时刻都是同步的， 如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。
-现实中的 CAP CAP 对实际工作缺乏指导性。</description>
+ 如果 A 不写，保持一致性，那么我们就失去了 A 的服务， 但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。  这里的一致性（Consistency）是强一致性，意思是 AB 的数据时刻都是同步的， 如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。</description>
     </item>
     
     <item>
@@ -1146,7 +1139,7 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</guid>
-      <description>config my config ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.</description>
+      <description>config #  my config #  ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.</description>
     </item>
     
     <item>
@@ -1155,7 +1148,7 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/tutorial/</guid>
-      <description>GDB 教程 </description>
+      <description>GDB 教程 #  </description>
     </item>
     
     <item>
@@ -1164,7 +1157,7 @@ TTM 模块 BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/config/</guid>
-      <description>git config config 权限 问题： Bad owner or permissions on ~/.ssh/config
+      <description>git config #  config 权限 #  问题： Bad owner or permissions on ~/.ssh/config
 解决：
 chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
     </item>
@@ -1175,7 +1168,7 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/go-wiki/</guid>
-      <description>go wiki 学习进度  Getting started with Go    Working with Go    Learning more about Go  Learning Go - A collection of resources for learning Go - beginner to advanced.  Best Practices for a New Go Developer - Insights from Go community members. Server programming - Building web, mobile, and API servers. More on concurrency More on error handling More on testing More on mobile - Android and iOS   Books - A list of Go books that have been published (ebook, paper) Blogs - Blogs about Go  Podcasts - Podcasts and episodes featuring Go   Videos, Talks and Presentations  GopherVids is a searchable index of videos about Go.</description>
+      <description>go wiki #  学习进度 #   Getting started with Go    Working with Go    Learning more about Go  Learning Go - A collection of resources for learning Go - beginner to advanced.  Best Practices for a New Go Developer - Insights from Go community members. Server programming - Building web, mobile, and API servers. More on concurrency More on error handling More on testing More on mobile - Android and iOS   Books - A list of Go books that have been published (ebook, paper) Blogs - Blogs about Go  Podcasts - Podcasts and episodes featuring Go   Videos, Talks and Presentations  GopherVids is a searchable index of videos about Go.</description>
     </item>
     
     <item>
@@ -1184,7 +1177,7 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/lds/</guid>
-      <description>LDS 监听器发现服务（LDS）是一个可选的 API，Envoy 将调用它来动态获取监听器。Envoy 将协调 API 响应，并根据需要添加、修改或删除已知的监听器。
+      <description>LDS #  监听器发现服务（LDS）是一个可选的 API，Envoy 将调用它来动态获取监听器。Envoy 将协调 API 响应，并根据需要添加、修改或删除已知的监听器。
 监听器更新的语义如下：
  每个监听器必须有一个独特的名字。如果没有提供名称，Envoy 将创建一个 UUID。要动态更新的监听器，管理服务必须提供监听器的唯一名称。 当一个监听器被添加，在参与连接处理之前，会先进入 “预热” 阶段。例如，如果监听器引用 RDS 配置，那么在监听器迁移到 “active” 之前，将会解析并提取该配置。 监听器一旦创建，实际上就会保持不变。因此，更新监听器时，会创建一个全新的监听器（使用相同的侦听套接字）。新增加的监听者都会通过上面所描述的相同 “预热” 过程。 当更新或删除监听器时，旧的监听器将被置于 “draining（逐出）” 状态，就像整个服务重新启动时一样。监听器移除之后，该监听器所拥有的连接，经过一段时间优雅地关闭（如果可能的话）剩余的连接。逐出时间通过 --drain-time-s 选项设置。  注意
  任何在 Envoy 配置中静态定义的监听器都不能通过 LDS API 进行修改或删除。
@@ -1197,7 +1190,7 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/debug/lldb/tutorial/</guid>
-      <description>LLDB 教程 </description>
+      <description>LLDB 教程 #  </description>
     </item>
     
     <item>
@@ -1206,8 +1199,8 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/network/</guid>
-      <description>ChirpStack Network Server ChirpStack Network Server is an open-source LoRaWAN network-server. https://www.chirpstack.io
-数据库    Schema Name Type Owner     public code_migration table chirpstack_ns   public device table chirpstack_ns   public device_activation table chirpstack_ns   public device_activation_id_seq sequence chirpstack_ns   public device_multicast_group table chirpstack_ns   public device_profile table chirpstack_ns   public device_queue table chirpstack_ns   public device_queue_id_seq sequence chirpstack_ns   public gateway table chirpstack_ns   public gateway_board table chirpstack_ns   public gateway_profile table chirpstack_ns   public gateway_profile_extra_channel table chirpstack_ns   public gateway_profile_extra_channel_id_seq sequence chirpstack_ns   public gateway_stats table chirpstack_ns   public gateway_stats_id_seq sequence chirpstack_ns   public gorp_migrations table chirpstack_ns   public multicast_group table chirpstack_ns   public multicast_queue table chirpstack_ns   public multicast_queue_id_seq sequence chirpstack_ns   public routing_profile table chirpstack_ns   public service_profile table chirpstack_ns    (21 rows)</description>
+      <description>ChirpStack Network Server #  ChirpStack Network Server is an open-source LoRaWAN network-server. https://www.chirpstack.io
+数据库 #     Schema Name Type Owner     public code_migration table chirpstack_ns   public device table chirpstack_ns   public device_activation table chirpstack_ns   public device_activation_id_seq sequence chirpstack_ns   public device_multicast_group table chirpstack_ns   public device_profile table chirpstack_ns   public device_queue table chirpstack_ns   public device_queue_id_seq sequence chirpstack_ns   public gateway table chirpstack_ns   public gateway_board table chirpstack_ns   public gateway_profile table chirpstack_ns   public gateway_profile_extra_channel table chirpstack_ns   public gateway_profile_extra_channel_id_seq sequence chirpstack_ns   public gateway_stats table chirpstack_ns   public gateway_stats_id_seq sequence chirpstack_ns   public gorp_migrations table chirpstack_ns   public multicast_group table chirpstack_ns   public multicast_queue table chirpstack_ns   public multicast_queue_id_seq sequence chirpstack_ns   public routing_profile table chirpstack_ns   public service_profile table chirpstack_ns    (21 rows)</description>
     </item>
     
     <item>
@@ -1216,9 +1209,9 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</guid>
-      <description>RTMP Real-Time Messaging Protocol
+      <description>RTMP #  Real-Time Messaging Protocol
 默认端口：1935
-握手 复杂握手  RTMP vs RTSP 目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
+握手 #  复杂握手 #   RTMP vs RTSP #  目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
  直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。 国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。 网络中的路由器或防火墙可能对 RTSP 端口不开放。  参考：
  为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？  </description>
     </item>
@@ -1229,10 +1222,9 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</guid>
-      <description>RTP 报文结构  Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header 前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
- RTP/PS/H.264 基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
-PS 包 进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。
-系统头和 PSM 放置于 PS 包头之后，第一个 PES 包之前。</description>
+      <description>RTP #  报文结构 #   Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header #  前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
+ RTP/PS/H.264 #  基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
+PS 包 #  进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。</description>
     </item>
     
     <item>
@@ -1241,12 +1233,12 @@ PS 包 进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</guid>
-      <description>RTSP Real Time Streaming Protocol
+      <description>RTSP #  Real Time Streaming Protocol
 默认端口：554
-方法 一般的顺序是：
- OPTIONS DESCRIBE SETUP PLAY TEARDOWN  OPTIONS 请求返回服务器将接受的请求类型。
-C-&amp;gt;S: OPTIONS rtsp://example.com/media.mp4 RTSP/1.0 CSeq: 1 Require: implicit-play Proxy-Require: gzipped-messages S-&amp;gt;C: RTSP/1.0 200 OK CSeq: 1 Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE DESCRIBE SETUP TEARDOWN PLAY PAUSE  包详情 海康摄像头
-OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-Agent: LibVLC/2.2.4 (LIVE555 Streaming Media v2016.02.22) # OPTIONS ：这个是选项，问下服务器我到底有啥本领技能？ RTSP/1.0 200 OK CSeq: 2 Public: OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER Date: Tue, May 23 2017 16:08:47 GMT # 服务器回复你，你有这么多技能：OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER DESCRIBE rtsp://172.</description>
+方法 #  一般的顺序是：
+ OPTIONS DESCRIBE SETUP PLAY TEARDOWN  OPTIONS #  请求返回服务器将接受的请求类型。
+C-&amp;gt;S: OPTIONS rtsp://example.com/media.mp4 RTSP/1.0 CSeq: 1 Require: implicit-play Proxy-Require: gzipped-messages S-&amp;gt;C: RTSP/1.0 200 OK CSeq: 1 Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE DESCRIBE #  SETUP #  TEARDOWN #  PLAY #  PAUSE #   包详情 #  海康摄像头
+OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-Agent: LibVLC/2.</description>
     </item>
     
     <item>
@@ -1255,7 +1247,7 @@ OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-A
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/salesforce/</guid>
-      <description>Salesforce </description>
+      <description>Salesforce #  </description>
     </item>
     
     <item>
@@ -1264,9 +1256,9 @@ OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-A
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/submodule/</guid>
-      <description>git submodule 拉取 submodule git submodule init git submodule update --remote git submodule add -b 参考：
- How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url  edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
-delete submodule  Delete the relevant section from the .gitmodules file. Stage the .gitmodules changes git add .</description>
+      <description>git submodule #  拉取 submodule #  git submodule init git submodule update --remote git submodule add -b #  参考：
+ How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url #   edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
+delete submodule #   Delete the relevant section from the .</description>
     </item>
     
     <item>
@@ -1275,7 +1267,7 @@ delete submodule  Delete the relevant section from the .gitmodules file. Stage t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/debug/</guid>
-      <description>VSCode Debug 参考：
+      <description>VSCode Debug #  参考：
   USER GUIDE - Debugging
   Debug C++ in Visual Studio Code
   </description>
@@ -1287,7 +1279,7 @@ delete submodule  Delete the relevant section from the .gitmodules file. Stage t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/webrtc/</guid>
-      <description>WebRTC Web Real-Time Communication
+      <description>WebRTC #  Web Real-Time Communication
 支持网页浏览器进行实时语音对话或视频对话的 API</description>
     </item>
     
@@ -1297,10 +1289,10 @@ delete submodule  Delete the relevant section from the .gitmodules file. Stage t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/security/basic/xss/</guid>
-      <description>XSS Cross-site scripting 跨站脚本 (wiki)
-XSS 发生的原因 没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
+      <description>XSS #  Cross-site scripting 跨站脚本 (wiki)
+XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
 不仅仅是业务上的 “用户的 UGC 内容” 可以进行注入，包括 URL 上的参数等都可以是攻击的来源。在处理输入时，以下内容都不可信：
- 来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法  在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&amp;quot;javascript:...&amp;quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 存储型 存储型 XSS 的攻击步骤：</description>
+ 来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法 #   在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&amp;quot;javascript:...&amp;quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 #  存储型 #  存储型 XSS 的攻击步骤：</description>
     </item>
     
     <item>
@@ -1309,7 +1301,7 @@ XSS 发生的原因 没有将用户输入的文本进行合适的过滤，就贸
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/command/</guid>
-      <description>Docker 命令 docker ps docker ps vs docker container ls Management Commands vs Commands
+      <description>Docker 命令 #  docker ps #  docker ps vs docker container ls #  Management Commands vs Commands
 Docker 1.13+ introduced grouped commands to help organize a bunch of Docker commands. Both commands do the same thing.
 For example docker container ls is the new way to do docker ps.
 Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, now you can run docker image ls, docker network ls or docker volume ls.</description>
@@ -1321,7 +1313,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/quick/</guid>
-      <description>快速开始 安装 Run apps - Runtime Build apps - SDK MacOS MacOS Linux Linux Windows Windows  .NET Core SDK 包括运行时。   </description>
+      <description>快速开始 #  安装 #  Run apps - Runtime #  Build apps - SDK #  MacOS MacOS Linux Linux Windows Windows  .NET Core SDK 包括运行时。   </description>
     </item>
     
     <item>
@@ -1330,7 +1322,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/version/</guid>
-      <description>Docker 版本 查看版本 docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 最新版本 19.03 (2019-07-22) 18.09 (2018-11-08) Docker 合并版本号 New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version. The enterprise engine is a superset of the community engine. They will ship concurrently with the same x patch version based on the same code base.</description>
+      <description>Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 #  最新版本 #  19.03 (2019-07-22) #  18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version.</description>
     </item>
     
     <item>
@@ -1339,7 +1331,7 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/port/</guid>
-      <description>Docker 端口 端口映射  -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192.</description>
+      <description>Docker 端口 #  端口映射 #   -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 #  # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 #  # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192.</description>
     </item>
     
     <item>
@@ -1348,11 +1340,11 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/onvif/discovery/</guid>
-      <description>设备发现 我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
+      <description>设备发现 #  我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
 那如果客户端预先不知道目标服务的地址该怎么办？
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
-WS-Discovery 模式 WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
-Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式  Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode.</description>
+WS-Discovery 模式 #  WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
+Ad hoc 模式 #   Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式 #   Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode.</description>
     </item>
     
     <item>
@@ -1361,9 +1353,9 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/gobyexample/</guid>
-      <description>通过例子学 Golang mmcgrana/gobyexample 点击阅读：Go by Example
-中文翻译 gobyexample-cn/gobyexample 点击阅读：通过例子学 Golang
-学习进度  Hello World 值 变量 常量 For 循环 If/Else 分支 Switch 分支结构 数组 切片 Map Range 遍历 函数 多返回值 变参函数 闭包 递归 指针 结构体 方法 接口 错误处理 协程 通道 通道缓冲 通道同步 通道方向 通道选择器 超时处理 非阻塞通道操作 通道的关闭 通道遍历 Timer Ticker 工作池 WaitGroup 速率限制 原子计数器 互斥锁 状态协程 排序 使用函数自定义排序 Panic Defer 组合函数 字符串函数 字符串格式化 正则表达式 JSON XML 时间 时间戳 时间的格式化和解析 随机数 数字解析 URL 解析 SHA1 哈希 Base64 编码 读文件 写文件 行过滤器 文件路径 目录 临时文件和目录 单元测试 命令行参数 命令行标志 命令行子命令 环境变量 HTTP 客户端 HTTP 服务端 Context 生成进程 执行进程 信号 退出  </description>
+      <description>通过例子学 Golang #  mmcgrana/gobyexample 点击阅读：Go by Example
+中文翻译 #  gobyexample-cn/gobyexample 点击阅读：通过例子学 Golang
+学习进度 #   Hello World 值 变量 常量 For 循环 If/Else 分支 Switch 分支结构 数组 切片 Map Range 遍历 函数 多返回值 变参函数 闭包 递归 指针 结构体 方法 接口 错误处理 协程 通道 通道缓冲 通道同步 通道方向 通道选择器 超时处理 非阻塞通道操作 通道的关闭 通道遍历 Timer Ticker 工作池 WaitGroup 速率限制 原子计数器 互斥锁 状态协程 排序 使用函数自定义排序 Panic Defer 组合函数 字符串函数 字符串格式化 正则表达式 JSON XML 时间 时间戳 时间的格式化和解析 随机数 数字解析 URL 解析 SHA1 哈希 Base64 编码 读文件 写文件 行过滤器 文件路径 目录 临时文件和目录 单元测试 命令行参数 命令行标志 命令行子命令 环境变量 HTTP 客户端 HTTP 服务端 Context 生成进程 执行进程 信号 退出  </description>
     </item>
     
     <item>
@@ -1372,7 +1364,7 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/container/</guid>
-      <description>Docker 容器 </description>
+      <description>Docker 容器 #  </description>
     </item>
     
     <item>
@@ -1381,7 +1373,7 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/repository/</guid>
-      <description>Docker 仓库 </description>
+      <description>Docker 仓库 #  </description>
     </item>
     
     <item>
@@ -1390,7 +1382,7 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/gae/</guid>
-      <description>Google App Engine </description>
+      <description>Google App Engine #  </description>
     </item>
     
     <item>
@@ -1399,15 +1391,15 @@ Ad hoc 模式  Ad hoc 模式：客户端以多播 (multicast) 的形式往多播
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/brew/</guid>
-      <description>Homebrew tap brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
+      <description>Homebrew #  tap #  brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
 如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件
 tap 命令的仓库源默认来至于 Github，但是这个命令也不限制于这一个地方
-brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 tapped 的仓库
+brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经 tapped 的仓库
 # URL 默认是 https://github.com/user/homebrew-repo brew tap &amp;lt;user&amp;gt;/&amp;lt;repo&amp;gt; brew tap &amp;lt;user&amp;gt;/&amp;lt;homebrew-repo&amp;gt; # URL 可以是任何位置，任何协议 brew tap &amp;lt;user&amp;gt;/&amp;lt;repo&amp;gt; URL homebrew/core 默认是最高优先级
 可以使用 brew tap-pin username/repo 使这个仓库优先级高于 core
 使用 brew-tap-unpin username/repo 取消
 当你使用 brew install foo 这个命令时，brew 将按照下面的顺序去查找哪个 formula(tap) 将被使用:
- pinned taps core formulae other taps   镜像加速 清华大学镜像 替换现有上游</description>
+ pinned taps core formulae other taps   镜像加速 #  清华大学镜像 #  替换现有上游</description>
     </item>
     
     <item>
@@ -1416,8 +1408,8 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/hhkb/</guid>
-      <description>HHKB 键盘 Happy Hacking Keyboard
-使用 方向键 右侧的 Fn 键 + [ / ; &#39;</description>
+      <description>HHKB 键盘 #  Happy Hacking Keyboard
+使用 #  方向键 #  右侧的 Fn 键 + [ / ; &#39;</description>
     </item>
     
     <item>
@@ -1426,7 +1418,7 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/communication/4g/</guid>
-      <description>4G </description>
+      <description>4G #  </description>
     </item>
     
     <item>
@@ -1435,16 +1427,15 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/communication/5g/</guid>
-      <description>5G 5G 速度 世界上最快的 4G 网速（挪威，63.13Mbps）
+      <description>5G #  5G 速度 #  世界上最快的 4G 网速（挪威，63.13Mbps）
 最快的宽带网速（新加坡，189Mbps）
 2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
 在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
-5G 应用场景 国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
- 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
-超可靠低时延通信（uRLLC） mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
-海量大规模连接物联网（mMTC） uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
- 5G 架构 5G 核心网采用控制面（SMF：Session Management Function）和用户面 UPF 分离的 CUPS（Control and User Plane Separation ）架构
-5G 控制面集中部署，一个控制面（SMF）可以同时管理很多个 UPF 而不影响 5G 核心网的性能； 5G 用户面分散部署，UPF 可以按需灵活分布部署，部署到网络边缘支持边缘计算。</description>
+5G 应用场景 #  国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
+ 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） #  eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
+超可靠低时延通信（uRLLC） #  mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
+海量大规模连接物联网（mMTC） #  uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
+ 5G 架构 #  5G 核心网采用控制面（SMF：Session Management Function）和用户面 UPF 分离的 CUPS（Control and User Plane Separation ）架构</description>
     </item>
     
     <item>
@@ -1453,7 +1444,7 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/acid/</guid>
-      <description>ACID  In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
+      <description>ACID #   In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
   ACID，是指数据库管理系统（DBMS）在写入或更新资料的过程中，为保证事务（transaction）是正确可靠的，所必须具备的四个特性：
  原子性（Atomicity 又称不可分割性）  一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。   一致性（Consistency）  在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。   隔离性（Isolation，又称独立性）  数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括未提交读（Read uncommitted）、提交读（read committed）、可重复读（repeatable read）和串行化（Serializable）。   持久性（Durability）  事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。     </description>
     </item>
@@ -1464,8 +1455,8 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/application/</guid>
-      <description>ChirpStack Application Server ChirpStack Application Server is an open-source LoRaWAN application-server. https://www.chirpstack.io
-数据库    Schema Name Type Owner     public application table chirpstack_as   public application_id_seq sequence chirpstack_as   public code_migration table chirpstack_as   public device table chirpstack_as   public device_activation table chirpstack_as   public device_activation_id_seq sequence chirpstack_as   public device_keys table chirpstack_as   public device_multicast_group table chirpstack_as   public device_profile table chirpstack_as   public fuota_deployment table chirpstack_as   public fuota_deployment_device table chirpstack_as   public gateway table chirpstack_as   public gateway_ping table chirpstack_as   public gateway_ping_id_seq sequence chirpstack_as   public gateway_ping_rx table chirpstack_as   public gateway_ping_rx_id_seq sequence chirpstack_as   public gateway_profile table chirpstack_as   public gorp_migrations table chirpstack_as   public integration table chirpstack_as   public integration_id_seq sequence chirpstack_as   public multicast_group table chirpstack_as   public network_server table chirpstack_as   public network_server_id_seq sequence chirpstack_as   public organization table chirpstack_as   public organization_id_seq sequence chirpstack_as   public organization_user table chirpstack_as   public organization_user_id_seq sequence chirpstack_as   public remote_fragmentation_session table chirpstack_as   public remote_multicast_class_c_session table chirpstack_as   public remote_multicast_setup table chirpstack_as   public service_profile table chirpstack_as   public user table chirpstack_as   public user_id_seq sequence chirpstack_as    (33 rows)</description>
+      <description>ChirpStack Application Server #  ChirpStack Application Server is an open-source LoRaWAN application-server. https://www.chirpstack.io
+数据库 #     Schema Name Type Owner     public application table chirpstack_as   public application_id_seq sequence chirpstack_as   public code_migration table chirpstack_as   public device table chirpstack_as   public device_activation table chirpstack_as   public device_activation_id_seq sequence chirpstack_as   public device_keys table chirpstack_as   public device_multicast_group table chirpstack_as   public device_profile table chirpstack_as   public fuota_deployment table chirpstack_as   public fuota_deployment_device table chirpstack_as   public gateway table chirpstack_as   public gateway_ping table chirpstack_as   public gateway_ping_id_seq sequence chirpstack_as   public gateway_ping_rx table chirpstack_as   public gateway_ping_rx_id_seq sequence chirpstack_as   public gateway_profile table chirpstack_as   public gorp_migrations table chirpstack_as   public integration table chirpstack_as   public integration_id_seq sequence chirpstack_as   public multicast_group table chirpstack_as   public network_server table chirpstack_as   public network_server_id_seq sequence chirpstack_as   public organization table chirpstack_as   public organization_id_seq sequence chirpstack_as   public organization_user table chirpstack_as   public organization_user_id_seq sequence chirpstack_as   public remote_fragmentation_session table chirpstack_as   public remote_multicast_class_c_session table chirpstack_as   public remote_multicast_setup table chirpstack_as   public service_profile table chirpstack_as   public user table chirpstack_as   public user_id_seq sequence chirpstack_as    (33 rows)</description>
     </item>
     
     <item>
@@ -1474,9 +1465,9 @@ brew tap 没有参数会自动更新已经存在的 tap 并列出当前已经 ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/base/</guid>
-      <description>BASE Basically Available, Soft state, Eventual consistency
+      <description>BASE #  Basically Available, Soft state, Eventual consistency
 BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。
-基本可用  流量削峰  在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值   延迟响应  在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果   体验降级  比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。   过载保护  把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。    最终的一致  读时修复：在读取数据时，检测数据的不一致，进行修复。  比如 Cassandra 的 Read Repair 实现，具体来说，在向 Cassandra 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。   写时修复：在写入数据，检测数据的不一致时，进行修复。  比如 Cassandra 的 Hinted Handoff 实现。具体来说，Cassandra 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。 写时修复不需要做数据一致性对比，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。   异步修复：这个是最常用的方式，通过定时对账检测副本数据的一致性，并修复。   </description>
+基本可用 #   流量削峰  在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值   延迟响应  在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果   体验降级  比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。   过载保护  把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。    最终的一致 #   读时修复：在读取数据时，检测数据的不一致，进行修复。  比如 Cassandra 的 Read Repair 实现，具体来说，在向 Cassandra 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。   写时修复：在写入数据，检测数据的不一致时，进行修复。  比如 Cassandra 的 Hinted Handoff 实现。具体来说，Cassandra 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。 写时修复不需要做数据一致性对比，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。   异步修复：这个是最常用的方式，通过定时对账检测副本数据的一致性，并修复。   </description>
     </item>
     
     <item>
@@ -1485,7 +1476,7 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</guid>
-      <description>CDS </description>
+      <description>CDS #  </description>
     </item>
     
     <item>
@@ -1494,7 +1485,7 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/cpu/</guid>
-      <description>CPU L1 Cache Intel Core i7 的组织结构：</description>
+      <description>CPU #  L1 Cache #  Intel Core i7 的组织结构：</description>
     </item>
     
     <item>
@@ -1503,7 +1494,7 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/security/basic/csrf/</guid>
-      <description>CSRF  参考  前端安全系列（二）：如何防止 CSRF 攻击？  </description>
+      <description>CSRF #   参考 #   前端安全系列（二）：如何防止 CSRF 攻击？  </description>
     </item>
     
     <item>
@@ -1512,7 +1503,7 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/search/elasticsearch/</guid>
-      <description>Elasticsearch Open Source, Distributed, RESTful Search Engine https://www.elastic.co/products/elasticsearch</description>
+      <description>Elasticsearch #  Open Source, Distributed, RESTful Search Engine https://www.elastic.co/products/elasticsearch</description>
     </item>
     
     <item>
@@ -1521,12 +1512,12 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/</guid>
-      <description>H264 H.264，又称为 MPEG-4 第 10 部分，高级视频编码（英语： MPEG-4 Part 10, Advanced Video Coding ，缩写为 MPEG-4 AVC）是一种面向块，基于运动补偿的视频编码标准（英语：Advanced Video Coding） 。
+      <description>H264 #  H.264，又称为 MPEG-4 第 10 部分，高级视频编码（英语： MPEG-4 Part 10, Advanced Video Coding ，缩写为 MPEG-4 AVC）是一种面向块，基于运动补偿的视频编码标准（英语：Advanced Video Coding） 。
 AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在技术特性上比属于 MPEG-4 Part2 的 XviD 要先进。
 它和 ITU-T H.264 标准是一致的，故又称为 H.264。
-裸流 H.264 原始码流（又称为 “裸流”）是由一个一个的 NALU 组成的。
+裸流 #  H.264 原始码流（又称为 “裸流”）是由一个一个的 NALU 组成的。
 H264 码流可以分为两层
- VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU NALU (NAL Units) 组成</description>
+ VCL 层 NAL 层（Network abstraction layer, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息  NAL 层由多个单元 NALU 组成    NALU #  NALU (NAL Units) 组成</description>
     </item>
     
     <item>
@@ -1535,7 +1526,7 @@ H264 码流可以分为两层
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</guid>
-      <description>Heroku </description>
+      <description>Heroku #  </description>
     </item>
     
     <item>
@@ -1544,7 +1535,7 @@ H264 码流可以分为两层
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/hls/</guid>
-      <description>HLS HTTP Live Streaming</description>
+      <description>HLS #  HTTP Live Streaming</description>
     </item>
     
     <item>
@@ -1553,7 +1544,7 @@ H264 码流可以分为两层
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/http-flv/</guid>
-      <description>HTTP FLV Bilibili/flv.js  HTML5 FLV Player</description>
+      <description>HTTP FLV #  Bilibili/flv.js #  HTML5 FLV Player</description>
     </item>
     
     <item>
@@ -1562,10 +1553,10 @@ H264 码流可以分为两层
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/search/lucene/</guid>
-      <description>Lucene https://lucene.apache.org/
-apache/lucene-solr  Apache Lucene is a high-performance, full featured text search engine library written in Java.
+      <description>Lucene #  https://lucene.apache.org/
+apache/lucene-solr #  Apache Lucene is a high-performance, full featured text search engine library written in Java.
 Apache Solr is an enterprise search platform written using Apache Lucene. Major features include full-text search, index replication and sharding, and result faceting and highlighting.
- 教程 zzboy/lucene  lucene 技术细节</description>
+ 教程 #  zzboy/lucene #  lucene 技术细节</description>
     </item>
     
     <item>
@@ -1574,7 +1565,7 @@ Apache Solr is an enterprise search platform written using Apache Lucene. Major 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/mas/</guid>
-      <description>mas-cli/mas  Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.
+      <description>mas-cli/mas #  Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.
 $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
     </item>
     
@@ -1584,7 +1575,7 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/mpeg/</guid>
-      <description>MPEG  MPEG-1：第一个官方的视讯音频压缩标准，随后在 Video CD 中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称 MP3，成为比较流行的音频压缩格式。 MPEG-2：广播质量的视讯、音频和传输协议。被用于无线 数字电视 - ATSC、DVB 以及 ISDB、数字卫星电视（例如 DirecTV）、数字 有线电视信号，以及 DVD 视频光盘技术中。 MPEG-3：原本目标是为 高清晰度电视（ HDTV）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。 MPEG-4：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和 数字版权管理（Digital Rights Management），其中第 10 部分由 ISO/IEC 和 ITU-T 联合发布，称为 H.264/MPEG-4 Part 10。 MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。 MPEG-21：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。  </description>
+      <description>MPEG #   MPEG-1：第一个官方的视讯音频压缩标准，随后在 Video CD 中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称 MP3，成为比较流行的音频压缩格式。 MPEG-2：广播质量的视讯、音频和传输协议。被用于无线 数字电视 - ATSC、DVB 以及 ISDB、数字卫星电视（例如 DirecTV）、数字 有线电视信号，以及 DVD 视频光盘技术中。 MPEG-3：原本目标是为 高清晰度电视（ HDTV）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。 MPEG-4：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和 数字版权管理（Digital Rights Management），其中第 10 部分由 ISO/IEC 和 ITU-T 联合发布，称为 H.264/MPEG-4 Part 10。 MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。 MPEG-21：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。  </description>
     </item>
     
     <item>
@@ -1593,7 +1584,7 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/picgo/</guid>
-      <description>picgo CLI 命令 PicGo/PicGo-Core  Molunerfinn/PicGo  </description>
+      <description>picgo #  CLI 命令 #  PicGo/PicGo-Core #  Molunerfinn/PicGo #  </description>
     </item>
     
     <item>
@@ -1602,15 +1593,15 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/</guid>
-      <description>PS Program stream
+      <description>PS #  Program stream
 PS 流的包结构是可变长度的， 一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
 在信道环境较好，传输误码较低时，一般采用 PS 码流。
- TS MPEG transport stream (MPEG-TS, MTS)
+ TS #  MPEG transport stream (MPEG-TS, MTS)
 传输流，是由固定长度为 188 字节的包组成， 含有一个或多个 program, 一个 program 可以包含多个视频、音频、和文字信息的 ES 流； 每个 ES 流会有不同的 PID 标示。
 而又为了可以分析这些 ES 流，TS 有一些固定的 PID 用来间隔发送 program 和 ES 流信息的表格:
  PAT PMT 表  TS 流的包结构是固定长度的， 当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
 在信道环境较为恶劣，传输误码较高时，一般采用 TS 码流。
-TS 流解码过程  获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以知道当前网络中传输的视频（音频）类型（H264），相应的 PID，PCR 的 PID 等信息。 设置 demux 模块的视频 Filter 为相应视频的 PID 和 stream type 等。 从视频 Demux Filter 后得到的 TS 数据包中的 payload 数据就是 one piece of PES， 在 TS header 中有一些关于此 payload 属于哪个 PES 的 第多少个数据包。 因此软件中应该将此 payload 中的数据 copy 到 PES 的 buffer 中，用于拼接一个 PES 包。 拼接好的 PES 包的包头会有 PTS，DTS 信息，去掉 PES 的 header 就是 ES。 直接将被拔掉 PES 包头的 ES 包送给 decoder 就可以进行解码。 解码出来的数据就是一帧一帧的视频数据，这些数据至少应当与 PES 中的 PTS 关联一下，以便进行视音频同步。   ES Elementary Stream</description>
+TS 流解码过程 #   获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以知道当前网络中传输的视频（音频）类型（H264），相应的 PID，PCR 的 PID 等信息。 设置 demux 模块的视频 Filter 为相应视频的 PID 和 stream type 等。 从视频 Demux Filter 后得到的 TS 数据包中的 payload 数据就是 one piece of PES， 在 TS header 中有一些关于此 payload 属于哪个 PES 的 第多少个数据包。 因此软件中应该将此 payload 中的数据 copy 到 PES 的 buffer 中，用于拼接一个 PES 包。 拼接好的 PES 包的包头会有 PTS，DTS 信息，去掉 PES 的 header 就是 ES。 直接将被拔掉 PES 包头的 ES 包送给 decoder 就可以进行解码。 解码出来的数据就是一帧一帧的视频数据，这些数据至少应当与 PES 中的 PTS 关联一下，以便进行视音频同步。   ES #  Elementary Stream</description>
     </item>
     
     <item>
@@ -1619,7 +1610,7 @@ TS 流解码过程  获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-boot/</guid>
-      <description>Spring Boot 教程 ityouknow/spring-boot-examples  Spring Boot 教程、技术栈示例代码，快速简单上手教程。</description>
+      <description>Spring Boot #  教程 #  ityouknow/spring-boot-examples #  Spring Boot 教程、技术栈示例代码，快速简单上手教程。</description>
     </item>
     
     <item>
@@ -1628,7 +1619,7 @@ TS 流解码过程  获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</guid>
-      <description>Spring Cloud 教程 ityouknow/spring-cloud-examples  Spring Cloud 学习案例，服务发现、服务治理、链路追踪、服务监控等</description>
+      <description>Spring Cloud #  教程 #  ityouknow/spring-cloud-examples #  Spring Cloud 学习案例，服务发现、服务治理、链路追踪、服务监控等</description>
     </item>
     
     <item>
@@ -1637,7 +1628,7 @@ TS 流解码过程  获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</guid>
-      <description>Spring MVC </description>
+      <description>Spring MVC #  </description>
     </item>
     
     <item>
@@ -1646,10 +1637,10 @@ TS 流解码过程  获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可以�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/tmux/</guid>
-      <description>tmux 配置 ChrisJohnsen/tmux-MacOSX-pasteboard  Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.
+      <description>tmux #  配置 #  ChrisJohnsen/tmux-MacOSX-pasteboard #  Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.
 Other services and unpatched builds of screen are also affected.
-gpakosz/.tmux  Oh My Tmux!
-cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .tmux/.tmux.conf.local .  教程 tmux 2: Productive Mouse-Free Development by @bphogan. </description>
+gpakosz/.tmux #  Oh My Tmux!
+cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .tmux/.tmux.conf.local .  教程 #  tmux 2: Productive Mouse-Free Development by @bphogan. #  </description>
     </item>
     
     <item>
@@ -1658,12 +1649,11 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/uml/</guid>
-      <description>UML 泛化关系 (generalization)  is-a 最终代码中，泛化关系表现为继承非抽象类  带空心三角形箭头的直线
-实现关系 (realize)  最终代码中，实现关系表现为继承抽象类  带空心三角形箭头的虚线
-聚合关系 (aggregation)  表示整体由部分构成的语义  例如一个部门由多个员工组成   整体和部分不是强依赖的，即使整体不存在了，部分仍然存在  例如， 部门撤销了，人员不会消失，他们依然存在    带空心菱形箭头的直线
-组合关系 (composition)  表示整体由部分构成的语义  比如公司由多个部门组成   是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了  例如， 公司不存在了，部门也将不存在了    带实心菱形箭头直线
-关联关系 (association)  它一般用来定义对象之间静态的、天然的结构；通常与运行状态无关 所以，关联关系是一种 &amp;ldquo;强关联&amp;rdquo; 的关系  比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系   在最终代码中，关联对象通常是以成员变量的形式实现的  带箭头的直线
-依赖关系 (dependency)  描述一个对象在运行期间会用到另一个对象的关系 是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化，依赖关系也可能发生变化 在最终代码中，依赖关系体现为类构造方法及类方法的传入参数，箭头的指向为调用关系  依赖关系除了临时知道对方外，还是 &amp;ldquo;使用&amp;rdquo; 对方的方法和属性；    带箭头的虚线</description>
+      <description>UML #  泛化关系 (generalization) #   is-a 最终代码中，泛化关系表现为继承非抽象类  带空心三角形箭头的直线
+实现关系 (realize) #   最终代码中，实现关系表现为继承抽象类  带空心三角形箭头的虚线
+聚合关系 (aggregation) #   表示整体由部分构成的语义  例如一个部门由多个员工组成   整体和部分不是强依赖的，即使整体不存在了，部分仍然存在  例如， 部门撤销了，人员不会消失，他们依然存在    带空心菱形箭头的直线
+组合关系 (composition) #   表示整体由部分构成的语义  比如公司由多个部门组成   是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了  例如， 公司不存在了，部门也将不存在了    带实心菱形箭头直线
+关联关系 (association) #   它一般用来定义对象之间静态的、天然的结构；通常与运行状态无关 所以，关联关系是一种 &amp;ldquo;强关联&amp;rdquo; 的关系  比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系   在最终代码中，关联对象通常是以成员变量的形式实现的  带箭头的直线</description>
     </item>
     
     <item>
@@ -1672,7 +1662,7 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/memory/</guid>
-      <description>内存 </description>
+      <description>内存 #  </description>
     </item>
     
     <item>
@@ -1681,10 +1671,9 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/practice/error/</guid>
-      <description>PostgreSQL 常见错误 权限 permission denied for relation 解决 1:
+      <description>PostgreSQL 常见错误 #  权限 #  permission denied for relation #  解决 1:
  以 superUser 进入数据库  psql -U postgres -d postgres   切换到 mydb 数据库  \c mydb   赋予所有表的所有权限给 xiaoming  GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO xiaoming;   赋予 wechart 用户，tuser 表的所有权限  GRANT ALL PRIVILEGES ON tuser TO wechart;    解决 2：
-ERROR: permission denied for relation hycom 权限被拒绝
- 检查数据库连接 检查数据库拥有者和配置的是否一样 访问不同的数据库分区 @TableName (&amp;ldquo;分区名。表名&amp;rdquo;) @TableField (exist = false) 取消数据库映射  </description>
+ERROR: permission denied for relation hycom 权限被拒绝</description>
     </item>
     
     <item>
@@ -1693,7 +1682,7 @@ ERROR: permission denied for relation hycom 权限被拒绝
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/volume/</guid>
-      <description>Docker 数据卷 </description>
+      <description>Docker 数据卷 #  </description>
     </item>
     
     <item>
@@ -1702,7 +1691,7 @@ ERROR: permission denied for relation hycom 权限被拒绝
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/best/</guid>
-      <description>C# 最佳实践 </description>
+      <description>C# 最佳实践 #  </description>
     </item>
     
     <item>
@@ -1711,7 +1700,7 @@ ERROR: permission denied for relation hycom 权限被拒绝
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</guid>
-      <description>PostgreSQL 版本 12 12.2  </description>
+      <description>PostgreSQL 版本 #  12 #  12.2 #   </description>
     </item>
     
     <item>
@@ -1720,10 +1709,10 @@ ERROR: permission denied for relation hycom 权限被拒绝
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/thread/</guid>
-      <description>线程 栈通常是连续增长的，由于每个进程中的各个线程共享虚拟内存空间，当有多个线程时，就需要为每个线程分配不同起始地址的栈。 这就需要在分配栈之前先预估每个线程栈的大小。
+      <description>线程 #  栈通常是连续增长的，由于每个进程中的各个线程共享虚拟内存空间，当有多个线程时，就需要为每个线程分配不同起始地址的栈。 这就需要在分配栈之前先预估每个线程栈的大小。
 如果线程数量非常多，就很容易栈溢出。
-Split Stacks 为了解决这个问题，就有了 Split Stacks 技术： 创建栈时，只分配一块比较小的内存，如果进行某次函数调用导致栈空间不足时，就会在其他地方分配一块新的栈空间。 新的空间不需要和老的栈空间连续。函数调用的参数会拷贝到新的栈空间中，接下来的函数执行都在新栈空间中进行。
-Golang 连续栈 Golang 的栈管理方式与此类似，但是为了更高的效率，使用了 Golang 连续栈。 实现方式也是先分配一块固定大小的栈，在栈空间不足时，分配一块更大的栈，并把旧的栈全部拷贝到新栈中。 这样避免了 Split Stacks 方法可能导致的频繁内存分配和释放。</description>
+Split Stacks #  为了解决这个问题，就有了 Split Stacks 技术： 创建栈时，只分配一块比较小的内存，如果进行某次函数调用导致栈空间不足时，就会在其他地方分配一块新的栈空间。 新的空间不需要和老的栈空间连续。函数调用的参数会拷贝到新的栈空间中，接下来的函数执行都在新栈空间中进行。
+Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高的效率，使用了 Golang 连续栈。 实现方式也是先分配一块固定大小的栈，在栈空间不足时，分配一块更大的栈，并把旧的栈全部拷贝到新栈中。 这样避免了 Split Stacks 方法可能导致的频繁内存分配和释放。</description>
     </item>
     
     <item>
@@ -1732,7 +1721,7 @@ Golang 连续栈 Golang 的栈管理方式与此类似，但是为了更高的�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/process/</guid>
-      <description>进程 进程虚拟地址空间  </description>
+      <description>进程 #  进程虚拟地址空间 #   </description>
     </item>
     
     <item>
@@ -1741,7 +1730,7 @@ Golang 连续栈 Golang 的栈管理方式与此类似，但是为了更高的�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</guid>
-      <description>Zookeeper </description>
+      <description>Zookeeper #  </description>
     </item>
     
     <item>
@@ -1750,7 +1739,7 @@ Golang 连续栈 Golang 的栈管理方式与此类似，但是为了更高的�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</guid>
-      <description>关注项目 akka/akka  Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
+      <description>关注项目 #  akka/akka #  Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
     </item>
     
     <item>
@@ -1759,9 +1748,9 @@ Golang 连续栈 Golang 的栈管理方式与此类似，但是为了更高的�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</guid>
-      <description>关注项目 机器学习 tensorflow/tensorflow  scikit-learn/scikit-learn  scikit-learn: machine learning in Python https://scikit-learn.org
-php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
- 深度学习 paddlepaddle/paddle   机器人 gunthercox/ChatterBot  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
+      <description>关注项目 #  机器学习 #  tensorflow/tensorflow #  scikit-learn/scikit-learn #  scikit-learn: machine learning in Python https://scikit-learn.org
+php-ai/php-ml #  PHP-ML - Machine Learning library for PHP https://php-ml.org/
+ 深度学习 #  paddlepaddle/paddle #   机器人 #  gunthercox/ChatterBot #  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
     </item>
     
     <item>
@@ -1770,11 +1759,10 @@ php-ai/php-ml  PHP-ML - Machine Learning library for PHP https://php-ml.org/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</guid>
-      <description>关注项目 cncf/landscape  The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets. https://l.cncf.io
-Trail Map CNCF Cloud Native Landscape 
-CNCF Serverless Landscape 
- dragonflyoss/Dragonfly  Dragonfly is an intelligent P2P based image and file distribution system.
-https://d7y.io</description>
+      <description>关注项目 #  cncf/landscape #  The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets. https://l.cncf.io
+Trail Map #  CNCF Cloud Native Landscape #  
+CNCF Serverless Landscape #  
+ dragonflyoss/Dragonfly #  Dragonfly is an intelligent P2P based image and file distribution system.</description>
     </item>
     
     <item>
@@ -1783,8 +1771,8 @@ https://d7y.io</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/ab-testing/</guid>
-      <description>A/B 测试 A/B testing
- 参考 </description>
+      <description>A/B 测试 #  A/B testing
+ 参考 #  </description>
     </item>
     
     <item>
@@ -1793,8 +1781,8 @@ https://d7y.io</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/dockerfile/</guid>
-      <description>Dockerfile 教程 CMD # exec form, preferredCMD [&amp;#34;executable&amp;#34;,&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# shell formCMD command param1 param2# as default parameters to ENTRYPOINTCMD [&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# 下面两者是等价的CMD echo &amp;#34;hello cmd!&amp;#34;CMD [&amp;#34;/bin/bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;echo &amp;#39;hello cmd!&amp;#39;&amp;#34;]docker run 时指定了命令或者有 ENTRYPOINT，那么 CMD 就会被覆盖
-Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生效。  ENTRYPOINT  docker run 使用 --entrypoint，则覆盖 Dockerfile 的 ENTRYPOINT 如何 ENTRYPOINT 使用中括号形式  docker run 带了参数，则参数会加给 ENTRYPOINT 定义了 CMD，则 CMD 的参数会加给 ENTRYPOINT    # exec form, preferredENTRYPOINT [&amp;#34;executable&amp;#34;, &amp;#34;param1&amp;#34;, &amp;#34;param2&amp;#34;]# shell formENTRYPOINT command param1 param2# ENTRYPOINT 使用中括号时，也可以直接指定命令# 而 CMD 不行，必须带上 shell 命令做前缀ENTRYPOINT [&amp;#34;/start.</description>
+      <description>Dockerfile #  教程 #  CMD #  # exec form, preferredCMD [&amp;#34;executable&amp;#34;,&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# shell formCMD command param1 param2# as default parameters to ENTRYPOINTCMD [&amp;#34;param1&amp;#34;,&amp;#34;param2&amp;#34;]# 下面两者是等价的CMD echo &amp;#34;hello cmd!&amp;#34;CMD [&amp;#34;/bin/bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;echo &amp;#39;hello cmd!&amp;#39;&amp;#34;]docker run 时指定了命令或者有 ENTRYPOINT，那么 CMD 就会被覆盖
+Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生效。  ENTRYPOINT #   docker run 使用 --entrypoint，则覆盖 Dockerfile 的 ENTRYPOINT 如何 ENTRYPOINT 使用中括号形式  docker run 带了参数，则参数会加给 ENTRYPOINT 定义了 CMD，则 CMD 的参数会加给 ENTRYPOINT    # exec form, preferredENTRYPOINT [&amp;#34;executable&amp;#34;, &amp;#34;param1&amp;#34;, &amp;#34;param2&amp;#34;]# shell formENTRYPOINT command param1 param2# ENTRYPOINT 使用中括号时，也可以直接指定命令# 而 CMD 不行，必须带上 shell 命令做前缀ENTRYPOINT [&amp;#34;/start.</description>
     </item>
     
     <item>
@@ -1803,7 +1791,7 @@ Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</guid>
-      <description>EDS </description>
+      <description>EDS #  </description>
     </item>
     
     <item>
@@ -1812,7 +1800,7 @@ Dockerfile 文件中可以存在多个 CMD 指令，但仅有最后一个会生�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</guid>
-      <description>OpenShift Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform.
+      <description>OpenShift #  Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform.
 OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。
 Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。
 Openshift 没有 root 权限
@@ -1826,7 +1814,7 @@ Openshift 没有 root 权限
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/practice/baidu/</guid>
-      <description>百度 Scala 最佳实践 </description>
+      <description>百度 Scala 最佳实践 #  </description>
     </item>
     
     <item>
@@ -1835,8 +1823,8 @@ Openshift 没有 root 权限
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/canary-rollouts/</guid>
-      <description>金丝雀发布 canary rollouts
- 参考 </description>
+      <description>金丝雀发布 #  canary rollouts
+ 参考 #  </description>
     </item>
     
     <item>
@@ -1845,7 +1833,7 @@ Openshift 没有 root 权限
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</guid>
-      <description>Etcd </description>
+      <description>Etcd #  </description>
     </item>
     
     <item>
@@ -1854,14 +1842,12 @@ Openshift 没有 root 权限
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</guid>
-      <description>Cloud Foundry Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
-组件 cloudfoundry/bosh  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
-cloudfoundry/cli  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
-cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
- Cloud Foundry 缺点 诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
-而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。
-参考：
- Kubernetes 如何打赢容器之战？  </description>
+      <description>Cloud Foundry #  Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
+组件 #  cloudfoundry/bosh #  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
+cloudfoundry/cli #  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
+cloudfoundry/uaa #  CloudFoundry User Account and Authentication (UAA) Server
+ Cloud Foundry 缺点 #  诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
+而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。</description>
     </item>
     
     <item>
@@ -1870,7 +1856,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/rds/</guid>
-      <description>RDS </description>
+      <description>RDS #  </description>
     </item>
     
     <item>
@@ -1879,7 +1865,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consul/</guid>
-      <description>Consul </description>
+      <description>Consul #  </description>
     </item>
     
     <item>
@@ -1888,7 +1874,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</guid>
-      <description>AppFog </description>
+      <description>AppFog #  </description>
     </item>
     
     <item>
@@ -1897,7 +1883,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/flink/</guid>
-      <description>Flink </description>
+      <description>Flink #  </description>
     </item>
     
     <item>
@@ -1906,7 +1892,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hbase/</guid>
-      <description>HBase </description>
+      <description>HBase #  </description>
     </item>
     
     <item>
@@ -1915,7 +1901,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hdfs/</guid>
-      <description>HDFS </description>
+      <description>HDFS #  </description>
     </item>
     
     <item>
@@ -1924,7 +1910,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/mapreduce/</guid>
-      <description>MapReduce </description>
+      <description>MapReduce #  </description>
     </item>
     
     <item>
@@ -1933,7 +1919,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/bigdata/spark/</guid>
-      <description>Spark </description>
+      <description>Spark #  </description>
     </item>
     
     <item>
@@ -1942,7 +1928,7 @@ cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</guid>
-      <description>一致性哈希 这篇论文中提出了一致性 hash 的概念。
+      <description>一致性哈希 #  这篇论文中提出了一致性 hash 的概念。
 incubator-brpc doc - 一致性哈希
 一致性 hash 满足以下四个性质：
  平衡性 (Balance) : 每个节点被选到的概率是 O (1/n)。 单调性 (Monotonicity) : 当新节点加入时， 不会有请求在老节点间移动， 只会从老节点移动到新节点。当有节点被删除时，也不会影响落在别的节点上的请求。 分散性 (Spread) : 当上游的机器看到不同的下游列表时 (在上线时及不稳定的网络中比较常见), 同一个请求尽量映射到少量的节点中。 负载 (Load) : 当上游的机器看到不同的下游列表的时候， 保证每台下游分到的请求数量尽量一致。  </description>
@@ -1954,25 +1940,23 @@ incubator-brpc doc - 一致性哈希
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</guid>
-      <description>分布式事务 微服务化带来的分布式事务问题 每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
-解决方案 分布式事务的实现主要有以下 5 种方案：
+      <description>分布式事务 #  微服务化带来的分布式事务问题 #  每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
+解决方案 #  分布式事务的实现主要有以下 5 种方案：
  XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。
 你找一个严格资金要求绝对不能错的场景，你可以说你是用的 TCC 方案；如果是一般的分布式事务场景，订单插入之后要调用库存服务更新库存，库存数据没有资金那么的敏感，可以用可靠消息最终一致性方案。
 友情提示一下，RocketMQ 3.2.6 之前的版本，是可以按照上面的思路来的，但是之后接口做了一些改变，我这里不再赘述了。
 当然如果你愿意，你可以参考可靠消息最终一致性方案来自己实现一套分布式事务，比如基于 RocketMQ 来玩儿。
 参考：
- 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 两阶段提交方案
+ 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 #  两阶段提交方案
 有一个事务管理器的概念，负责协调多个数据库（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？ 如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。
 这种分布式事务方案，比较适合单块应用里，跨多个库的分布式事务，而且因为严重依赖于数据库层面来搞定复杂的事务，效率很低，绝对不适合高并发的场景。
 如果要玩儿，那么基于 Spring + JTA 就可以搞定，自己随便搜个 demo 看看就知道了。
 这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。
- TCC 这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
+ TCC #  这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
 比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。
 而且最好是你的各个业务执行的时间都比较短。
 TCC 分布式事务框架，比如国内开源的
- ByteTCC himly tcc-transaction  Try 首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。
-这个操作，一般都是锁定某个资源，设置一个预备类的状态，冻结部分数据，等等，大概都是这类操作。
-Confirm Cancel 参考：</description>
+ ByteTCC himly tcc-transaction  Try #  首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。</description>
     </item>
     
     <item>
@@ -1981,7 +1965,7 @@ Confirm Cancel 参考：</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/study/coding-online/</guid>
-      <description>在线编程 </description>
+      <description>在线编程 #  </description>
     </item>
     
     <item>
@@ -1990,8 +1974,8 @@ Confirm Cancel 参考：</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/tutorial/</guid>
-      <description>教程 基础 《深度学习》(花书) MingchaoZhu/DeepLearning  Python for《Deep Learning》，该书为《深度学习》(花书) 数学推导、原理剖析与源码级别代码实现
- 进阶  </description>
+      <description>教程 #  基础 #  《深度学习》(花书) #  MingchaoZhu/DeepLearning #  Python for《Deep Learning》，该书为《深度学习》(花书) 数学推导、原理剖析与源码级别代码实现
+ 进阶 #   </description>
     </item>
     
     <item>
@@ -2000,14 +1984,14 @@ Confirm Cancel 参考：</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 基础 [book]d2l-ai/d2l-en  dive into deep learning
-[book]d2l-ai/d2l-zh  动手学深度学习
-[book]dod-o/statistical-learning-method_code  手写实现李航《统计学习方法》书中全部算法
-[video]shuhuai007/machine-learning-session  【机器学习】【白板推导系列】【合集 1 ～ 23】
-tsyw/MachineLearningNotes  My personal notes
+      <description>教程 #  基础 #  [book]d2l-ai/d2l-en #  dive into deep learning
+[book]d2l-ai/d2l-zh #  动手学深度学习
+[book]dod-o/statistical-learning-method_code #  手写实现李航《统计学习方法》书中全部算法
+[video]shuhuai007/machine-learning-session #  【机器学习】【白板推导系列】【合集 1 ～ 23】
+tsyw/MachineLearningNotes #  My personal notes
 Bilibili - 机器学习白板系列
- [video]机器学习教程（小象学院）  josephmisiti/awesome-machine-learning   ZuzooVn/machine-learning-for-software-engineers  A complete daily plan for studying to become a machine learning engineer.
- ageron/handson-ml  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.</description>
+ [video]机器学习教程（小象学院） #   josephmisiti/awesome-machine-learning #   ZuzooVn/machine-learning-for-software-engineers #  A complete daily plan for studying to become a machine learning engineer.
+ ageron/handson-ml #  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.</description>
     </item>
     
     <item>
@@ -2016,13 +2000,13 @@ Bilibili - 机器学习白板系列
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/cache/</guid>
-      <description>缓存 热点数据集中失效问题
- 设置不同的失效时间 互斥锁  缓存穿透 查询不存在的数据
-缓存雪崩 当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
-解决  事前：使用集群缓存，保证缓存服务的高可用 事中：ehcache 本地缓存 + Hystrix 限流 &amp;amp; 降级，避免 MySQL 被打死 事后：开启 Redis 持久化机制，尽快恢复缓存集群  参考：
- ehcache/ehcache3    缓存击穿 在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了， 就会导致大量的请求都打到数据库上面去。
+      <description>缓存 #  热点数据集中失效问题
+ 设置不同的失效时间 互斥锁  缓存穿透 #  查询不存在的数据
+缓存雪崩 #  当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
+解决 #   事前：使用集群缓存，保证缓存服务的高可用 事中：ehcache 本地缓存 + Hystrix 限流 &amp;amp; 降级，避免 MySQL 被打死 事后：开启 Redis 持久化机制，尽快恢复缓存集群  参考：
+ ehcache/ehcache3    缓存击穿 #  在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了， 就会导致大量的请求都打到数据库上面去。
 缓存击穿实际上是缓存雪崩的一个特例
-解决 问题是多个线程同时去查询数据库的这条数据， 我们可以在第一个查询数据的请求上使用一个互斥锁来锁住它。 其他的线程走到这一步拿不到锁就等着，等第一个线程查询到了数据，然后做缓存。 后面的线程进来发现已经有缓存了，就直接走缓存。</description>
+解决 #  问题是多个线程同时去查询数据库的这条数据， 我们可以在第一个查询数据的请求上使用一个互斥锁来锁住它。 其他的线程走到这一步拿不到锁就等着，等第一个线程查询到了数据，然后做缓存。 后面的线程进来发现已经有缓存了，就直接走缓存。</description>
     </item>
     
     <item>
@@ -2031,7 +2015,7 @@ Bilibili - 机器学习白板系列
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</guid>
-      <description>brpc  </description>
+      <description>brpc #  </description>
     </item>
     
     <item>
@@ -2040,7 +2024,7 @@ Bilibili - 机器学习白板系列
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/fe/frame/jquery/</guid>
-      <description>Jquery </description>
+      <description>Jquery #  </description>
     </item>
     
     <item>
@@ -2049,7 +2033,7 @@ Bilibili - 机器学习白板系列
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/tutorial/</guid>
-      <description>Docker 教程 play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
+      <description>Docker 教程 #  play-with-docker/play-with-docker #  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
 Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.
 A live version is available at: http://play-with-docker.com/</description>
     </item>
@@ -2060,9 +2044,9 @@ A live version is available at: http://play-with-docker.com/</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/attention/</guid>
-      <description>关注 moby/moby  Moby Project - a collaborative project for the container ecosystem to assemble container-based systems https://mobyproject.org/
-docker/docker-ce  Docker CE https://www.docker.com/community-edition
-play-with-docker/play-with-docker  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
+      <description>关注 #  moby/moby #  Moby Project - a collaborative project for the container ecosystem to assemble container-based systems https://mobyproject.org/
+docker/docker-ce #  Docker CE https://www.docker.com/community-edition
+play-with-docker/play-with-docker #  Play With Docker gives you the experience of having a free Alpine Linux Virtual Machine in the cloud where you can build and run Docker containers and even create clusters with Docker features like Swarm Mode.
 Under the hood DIND or Docker-in-Docker is used to give the effect of multiple VMs/PCs.</description>
     </item>
     
@@ -2072,7 +2056,7 @@ Under the hood DIND or Docker-in-Docker is used to give the effect of multiple V
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/build/</guid>
-      <description>build </description>
+      <description>build #  </description>
     </item>
     
     <item>
@@ -2081,7 +2065,7 @@ Under the hood DIND or Docker-in-Docker is used to give the effect of multiple V
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/claa/</guid>
-      <description>CLAA The China LoRa Application Alliance
+      <description>CLAA #  The China LoRa Application Alliance
 CLAA IoT Ecosystem</description>
     </item>
     
@@ -2091,7 +2075,7 @@ CLAA IoT Ecosystem</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sdp/</guid>
-      <description>SDP Session Description Protocol
+      <description>SDP #  Session Description Protocol
 SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。
 媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
 SDP 协议的具体内容参看：RFC2327
@@ -2099,7 +2083,7 @@ SDP 协议的具体内容参看：RFC2327
 SDP 并不是传输协议，需要用 RTSP、SIP、HTTP 等协议进行承载传输、交换， 如果大家协调好了之后，就可以建立会话，完成真实的音视频码流传输，再完成解码和播放。
 SDP 一般用在媒体会话建立之前，可以适用于实时流媒体、点播、直播等领域，特别在音视频通话、视频会议、VoIP、视频监控等领域应用较多。 媒体码流一般基于 RTP 传输，服务质量用 RTCP 协议保障。
 但是 SDP 的交互不是所有音视频会话建立时都是必须的，假如双方提前约定好这些音视频会话创建需要的信息就不用这个步骤来交互彼此的 SDP 信息， 比如 HTTP-FLV、RTMP-FLV 直播和点播方案，因为一旦采用了这套方案，这些音视频会话建立需要的信息都是确定的， 但是这样会降低或者说没有充分发挥端到端的音视频能力，协商显得更加灵活点。
-SDP 作用 SDP 作用包括以下一些方面
+SDP 作用 #  SDP 作用包括以下一些方面
  建立会话的详细信息，包括名称，网络，带宽等信息 包含在会话中的媒体信息，包括：  媒体类型 (video, audio, etc) 传输协议 (RTP/UDP/IP, H.320, etc) 媒体格式 (H.261 video, MPEG video, etc) 多播或远端（单播）地址和端口   为接收媒体而需的信息 使用的带宽信息 可信赖的接洽信息  如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 WebRTC 就在 SDP 的基础上进行了继续拓展</description>
     </item>
     
@@ -2109,12 +2093,10 @@ SDP 作用 SDP 作用包括以下一些方面
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/</guid>
-      <description>SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
-CALL-ID SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
+      <description>SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
+CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
- 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n Bye 同一个会话，CSeq 要 +1
-Invite-&amp;gt;100-&amp;gt;200-&amp;gt;Ack -&amp;gt;Bye-&amp;gt;200
-Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要一致</description>
+ 包内容 #  Message #  Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n Bye #  同一个会话，CSeq 要 +1</description>
     </item>
     
     <item>
@@ -2123,7 +2105,7 @@ Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/voip/</guid>
-      <description>VoIP VoIP vs SIP In simple terms, VoIP means making or receiving phone calls over the internet or internal networks. SIP, on the other hand, is an application layer protocol that is used to establish, modify and terminate multimedia sessions such as VoIP calls.
+      <description>VoIP #  VoIP vs SIP #  In simple terms, VoIP means making or receiving phone calls over the internet or internal networks. SIP, on the other hand, is an application layer protocol that is used to establish, modify and terminate multimedia sessions such as VoIP calls.
 A major difference between VoIP and SIP is their scope. VoIP is not a discrete technology in its own right. Rather, it is actually a family of technologies used within modern telecommunication networks, whereas SIP is a signalling protocol used within the VoIP umbrella.</description>
     </item>
     
@@ -2133,13 +2115,12 @@ A major difference between VoIP and SIP is their scope. VoIP is not a discrete t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</guid>
-      <description>GB28181 协议解析 点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
-名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
-SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
+      <description>GB28181 协议解析 #  点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
+名词解释 #  SIP 服务器 #  SIP client #  具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
+SIP device #  具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
 联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
-SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
-注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
-中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。</description>
+SIP 监控域 SIP surveil lance realm #  支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
+注册服务器 register server #  IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。</description>
     </item>
     
     <item>
@@ -2148,7 +2129,7 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/packet/</guid>
-      <description>数据包 Register request: Register (no auth) Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.</description>
+      <description>数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.</description>
     </item>
     
     <item>
@@ -2157,7 +2138,7 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</guid>
-      <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段   开源实现 go  StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  StefanKopieczek/gossip 1lann/go-sip kirm/sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C  pjsip/pjproject   C#  GB28181/GB28181.Solution   C++  ossrs/srs  xiongziliang/ZLMediaKit   Node.js  kirm/sip.js   二进制（前端开源，后端不开源）  livegbs/GB28181-Server   </description>
+      <description>源码实现 #  名词解释 #   AOR：Address Of Record 是 header 中的 From 字段   开源实现 #  go #   StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  StefanKopieczek/gossip 1lann/go-sip kirm/sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C #   pjsip/pjproject   C# #   GB28181/GB28181.Solution   C++ #   ossrs/srs  xiongziliang/ZLMediaKit   Node.</description>
     </item>
     
     <item>
@@ -2166,8 +2147,8 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/onvif/gsoap/</guid>
-      <description>gsoap 生成 onvif 框架 生成参数 wsdl2h -O4 aggressively optimizes the output by &amp;ldquo;schema slicing&amp;rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
--P don&amp;rsquo;t create polymorphic types inherited from xsd__anyType;
+      <description>gsoap 生成 onvif 框架 #  生成参数 #  wsdl2h #  -O4 #  aggressively optimizes the output by &amp;ldquo;schema slicing&amp;rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
+-P #  don&amp;rsquo;t create polymorphic types inherited from xsd__anyType;
 removes the base class xsd__anyType from the generated C++ classes, which are normally added by wsdl2h if the xsd:anyType XSD type is used somewhere in a WSDL.</description>
     </item>
     
@@ -2177,9 +2158,9 @@ removes the base class xsd__anyType from the generated C++ classes, which are 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/easydarwin/</guid>
-      <description>EasyDarwin EasyDarwin 是基于 Apple 的开源项目 Darwin Streaming Server 衍生而来的， Darwin 本身支持的是 RTSP 流媒体协议
-macosforge/dss  Darwin Streaming Server is Apple&amp;rsquo;s open source version of the QuickTime Streaming Server technology allowing you to send streaming media across the Internet using the industry standard RTP and RTSP protocols.
- EasyDarwin 生态  EasyDarwin 开源流媒体服务器：www.EasyDarwin.org EasyDSS 商用流媒体解决方案：www.EasyDSS.com, 点播与直播服务器  EasyBMS EasyRMS, 录播服务器   EasyNVR 无插件直播方案：www.EasyNVR.com, 摄像机互联网直播服务  EasyGB28181Server EasyNVR 采用的是 Onvif 协议接入云平台， 而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台</description>
+      <description>EasyDarwin #  EasyDarwin 是基于 Apple 的开源项目 Darwin Streaming Server 衍生而来的， Darwin 本身支持的是 RTSP 流媒体协议
+macosforge/dss #  Darwin Streaming Server is Apple&amp;rsquo;s open source version of the QuickTime Streaming Server technology allowing you to send streaming media across the Internet using the industry standard RTP and RTSP protocols.
+ EasyDarwin 生态 #   EasyDarwin 开源流媒体服务器：www.EasyDarwin.org EasyDSS 商用流媒体解决方案：www.EasyDSS.com, 点播与直播服务器  EasyBMS EasyRMS, 录播服务器   EasyNVR 无插件直播方案：www.EasyNVR.com, 摄像机互联网直播服务  EasyGB28181Server #  EasyNVR 采用的是 Onvif 协议接入云平台， 而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台</description>
     </item>
     
     <item>
@@ -2188,8 +2169,8 @@ macosforge/dss  Darwin Streaming Server is Apple&amp;rsquo;s open source version
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/srs/</guid>
-      <description>SRS ossrs/srs SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable and simple.
-配置信息 </description>
+      <description>SRS #  ossrs/srs SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable and simple.
+配置信息 #  </description>
     </item>
     
     <item>
@@ -2198,7 +2179,7 @@ macosforge/dss  Darwin Streaming Server is Apple&amp;rsquo;s open source version
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/zlmediakit/</guid>
-      <description>ZLMediaKit xiongziliang/ZLMediaKit # h264推流 ffmpeg -re -i &amp;#34;/path/to/test.mp4&amp;#34; -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test ffmpeg -re -stream_loop -1 -i carbrand.MOV -vcodec h264 -acodec aac -f rtp_mpegts rtp://127.0.0.1:10000 rtsp __defaultVhost__ rtp 55667788 CodecH264[1920/1080/50] rtsp://127.0.0.1/rtp/55667788 </description>
+      <description>ZLMediaKit #  xiongziliang/ZLMediaKit # h264推流 ffmpeg -re -i &amp;#34;/path/to/test.mp4&amp;#34; -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test ffmpeg -re -stream_loop -1 -i carbrand.MOV -vcodec h264 -acodec aac -f rtp_mpegts rtp://127.0.0.1:10000 rtsp __defaultVhost__ rtp 55667788 CodecH264[1920/1080/50] rtsp://127.0.0.1/rtp/55667788 </description>
     </item>
     
     <item>
@@ -2207,7 +2188,7 @@ macosforge/dss  Darwin Streaming Server is Apple&amp;rsquo;s open source version
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/live-tech/</guid>
-      <description>直播技术  摄像头视频采集，原始视频数据：RGB/YUV 话筒音频采集，原始音频数据：PCM 视频文件编码，RGB/YUV -&amp;gt; H.264/H.265 音频文件编码，PCM -&amp;gt; AAC 编码为有流媒体特性的多媒体容器格式（Multimedia Container Format）， 如 FLV/TS/RTMP Package 推流到流媒体服务器  应用层：HLS/RTSP/RTMP 传输层：RTP/RTCP 网络层：RSVP   服务端处理  转码/录制/截图/鉴黄 生成拉流 URL   拉流到客户端  应用层：HLS/RTMP 传输层：RTP/RTCP 网络层：RSVP   解复用，多媒体容器格式（FLV/TS/RTMP Package）的流 -&amp;gt; 音视频数据（H.264/AAC） 解码视频文件为 YUV/RGB，解码音频文件为 PCM  硬解码（GPU 解码，CPU 辅助） 软解码（CPU 解码）   音画同步 视频数据（YUV/RGB）发送到视频输出设备，音频数据（PCM）发送到音频输出设备  </description>
+      <description>直播技术 #   摄像头视频采集，原始视频数据：RGB/YUV 话筒音频采集，原始音频数据：PCM 视频文件编码，RGB/YUV -&amp;gt; H.264/H.265 音频文件编码，PCM -&amp;gt; AAC 编码为有流媒体特性的多媒体容器格式（Multimedia Container Format）， 如 FLV/TS/RTMP Package 推流到流媒体服务器  应用层：HLS/RTSP/RTMP 传输层：RTP/RTCP 网络层：RSVP   服务端处理  转码/录制/截图/鉴黄 生成拉流 URL   拉流到客户端  应用层：HLS/RTMP 传输层：RTP/RTCP 网络层：RSVP   解复用，多媒体容器格式（FLV/TS/RTMP Package）的流 -&amp;gt; 音视频数据（H.264/AAC） 解码视频文件为 YUV/RGB，解码音频文件为 PCM  硬解码（GPU 解码，CPU 辅助） 软解码（CPU 解码）   音画同步 视频数据（YUV/RGB）发送到视频输出设备，音频数据（PCM）发送到音频输出设备  </description>
     </item>
     
     <item>
@@ -2216,7 +2197,7 @@ macosforge/dss  Darwin Streaming Server is Apple&amp;rsquo;s open source version
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</guid>
-      <description>视频编码     年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H.</description>
+      <description>视频编码 #      年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H.</description>
     </item>
     
   </channel>

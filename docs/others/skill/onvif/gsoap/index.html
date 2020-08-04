@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="gsoap 生成 onvif 框架 生成参数 wsdl2h -O4 aggressively optimizes the output by &ldquo;schema slicing&rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
--P don&rsquo;t create polymorphic types inherited from xsd__anyType;
-removes the base class xsd__anyType from the generated C&#43;&#43; classes, which are normally added by wsdl2h if the xsd:anyType XSD type is used somewhere in a WSDL."><meta property="og:title" content="gsoap 生成 onvif 框架" />
-<meta property="og:description" content="gsoap 生成 onvif 框架 生成参数 wsdl2h -O4 aggressively optimizes the output by &ldquo;schema slicing&rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
--P don&rsquo;t create polymorphic types inherited from xsd__anyType;
+<meta name="description" content="gsoap 生成 onvif 框架 #  生成参数 #  wsdl2h #  -O4 #  aggressively optimizes the output by &ldquo;schema slicing&rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
+-P #  don&rsquo;t create polymorphic types inherited from xsd__anyType;
+removes the base class xsd__anyType from the generated C&#43;&#43; classes, which are normally added by wsdl2h if the xsd:anyType XSD type is used somewhere in a WSDL.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="gsoap 生成 onvif 框架" />
+<meta property="og:description" content="gsoap 生成 onvif 框架 #  生成参数 #  wsdl2h #  -O4 #  aggressively optimizes the output by &ldquo;schema slicing&rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
+-P #  don&rsquo;t create polymorphic types inherited from xsd__anyType;
 removes the base class xsd__anyType from the generated C&#43;&#43; classes, which are normally added by wsdl2h if the xsd:anyType XSD type is used somewhere in a WSDL." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/onvif/gsoap/" />
 <meta property="article:modified_time" content="2020-06-19T17:36:03+08:00" />
 <title>gsoap 生成 onvif 框架 | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -30,8 +27,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -44,7 +42,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -72,857 +70,641 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第一部分 基础</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
 
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <span>第四部分 其他</span>
   
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/communication/" class="collapsed ">通信技术</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/ffmpeg/" class="collapsed ">FFmpeg</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/gb28181/" class="collapsed ">GB28181</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/others/skill/voip/" class="">VoIP</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/onvif/discovery/" class="">设备发现</a>
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/onvif/gsoap/" class="active">gsoap 生成 onvif 框架</a>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/easydarwin/" class="">EasyDarwin</a>
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/srs/" class="">SRS</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/zlmediakit/" class="">ZLMediaKit</a>
-  
 
-</li>
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/stream-media/" class="collapsed ">流媒体技术</a>
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
 
+          
+  
+  
+  
 
+  
 
-  </li>
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <span>第三部分 领域</span>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
+          
+  
+  
   
 
-
-
-  </li>
-
-
-      
+  
+  <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
 
+          
+  
+  
+  
 
+  
 
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
 
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/onvif/discovery/" class="">设备发现</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/onvif/gsoap/" class="active">gsoap 生成 onvif 框架</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -966,15 +748,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>gsoap 生成 onvif 框架</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#生成参数">生成参数</a>
@@ -1012,23 +795,41 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="gsoap-生成-onvif-框架">gsoap 生成 onvif 框架</h1>
-<h2 id="生成参数">生成参数</h2>
-<h3 id="wsdl2h">wsdl2h</h3>
-<h4 id="-o4">-O4</h4>
+  <article class="markdown"><h1 id="gsoap-生成-onvif-框架">
+  gsoap 生成 onvif 框架
+  <a class="anchor" href="#gsoap-%e7%94%9f%e6%88%90-onvif-%e6%a1%86%e6%9e%b6">#</a>
+</h1>
+<h2 id="生成参数">
+  生成参数
+  <a class="anchor" href="#%e7%94%9f%e6%88%90%e5%8f%82%e6%95%b0">#</a>
+</h2>
+<h3 id="wsdl2h">
+  wsdl2h
+  <a class="anchor" href="#wsdl2h">#</a>
+</h3>
+<h4 id="-o4">
+  -O4
+  <a class="anchor" href="#-o4">#</a>
+</h4>
 <p>aggressively optimizes the output by &ldquo;schema slicing&rdquo; to remove unused schema components, see our article <a href="https://www.genivia.com/slicing.html">Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services</a> for details;</p>
-<h4 id="-p">-P</h4>
+<h4 id="-p">
+  -P
+  <a class="anchor" href="#-p">#</a>
+</h4>
 <p>don&rsquo;t create polymorphic types inherited from xsd__anyType;</p>
 <p>removes the base class <code>xsd__anyType</code> from the generated C++ classes, which are normally added by wsdl2h if the <em><code>xsd:anyType</code></em> XSD type is used somewhere in a WSDL.</p>
 <p>However, for the ONVIF protocols we do not need to inherit the <code>xsd__anyType</code> class and we can reduce the generated code size accordingly;</p>
-<h4 id="-x">-x</h4>
+<h4 id="-x">
+  -x
+  <a class="anchor" href="#-x">#</a>
+</h4>
 <p>don&rsquo;t generate _XML any/anyAttribute extensibility elements;</p>
 <p>removes the unnecessary generated code for the extensibility elements <em><code>xsd:any</code></em> and attributes <em><code>xsd:anyAttribue</code></em>, since we do not need to support these in general, except for some specific cases see further below. An alternative is to use option <code>-d</code> to generate embedded DOM code which allows you to add any XML content via the generated <code>xsd__anyType __any</code> members that are DOM nodes;</p>
 <p>wsdl2h 其他参数：</p>
@@ -1037,10 +838,19 @@ https://github.com/alex-shpak/hugo-book
 <li>-s : don&rsquo;t generate STL code (no std::string and no std::vector)</li>
 <li>-t : typemapfile</li>
 </ul>
-<h3 id="soapcpp2">soapcpp2</h3>
-<h4 id="-2">-2</h4>
+<h3 id="soapcpp2">
+  soapcpp2
+  <a class="anchor" href="#soapcpp2">#</a>
+</h3>
+<h4 id="-2">
+  -2
+  <a class="anchor" href="#-2">#</a>
+</h4>
 <p>forces SOAP 1.2, which is required by ONVIF;</p>
-<h4 id="-j">-j</h4>
+<h4 id="-j">
+  -j
+  <a class="anchor" href="#-j">#</a>
+</h4>
 <p>For C++ projects you should generate C++ proxy classes using soapcpp2 option <code>-j</code>. Proxy classes are** easier to use** than the global functions that are generated without this option.</p>
 <p>soapcpp2 其他参数:</p>
 <ul>
@@ -1052,15 +862,24 @@ https://github.com/alex-shpak/hugo-book
 <li>-L: don&rsquo;t generate soapClientLib/soapServerLib</li>
 <li>-I : use path(s) for #import (paths separated with &lsquo;:')</li>
 </ul>
-<h2 id="生成过程要做的事情">生成过程要做的事情</h2>
-<h3 id="执行前">执行前</h3>
+<h2 id="生成过程要做的事情">
+  生成过程要做的事情
+  <a class="anchor" href="#%e7%94%9f%e6%88%90%e8%bf%87%e7%a8%8b%e8%a6%81%e5%81%9a%e7%9a%84%e4%ba%8b%e6%83%85">#</a>
+</h2>
+<h3 id="执行前">
+  执行前
+  <a class="anchor" href="#%e6%89%a7%e8%a1%8c%e5%89%8d">#</a>
+</h3>
 <p>修改  typemap.dat</p>
 <p>duration.h 毫秒级 （选了这个）</p>
 <p>chrono_duration.h 纳秒级</p>
 <p>To automatically enable the first choice of serializer for <em><code>xsd:duration</code></em>, add the following line to <code>typemap.dat</code> if not already there:</p>
 <p><code>xsd__duration = #``import</code> <code>&quot;custom/duration.h&quot;</code> <code>| xsd__duration</code></p>
 <p><strong>This imports <code>custom/duration.h</code> into the wsdl2h-generated <code>onvif.h</code> binding interface.</strong></p>
-<h3 id="执行-wsdl2h-后">执行 wsdl2h 后</h3>
+<h3 id="执行-wsdl2h-后">
+  执行 wsdl2h 后
+  <a class="anchor" href="#%e6%89%a7%e8%a1%8c-wsdl2h-%e5%90%8e">#</a>
+</h3>
 <ol>
 <li></li>
 </ol>
@@ -1070,11 +889,17 @@ https://github.com/alex-shpak/hugo-book
 <li></li>
 </ol>
 <p>添加  #import &ldquo;wsse.h&rdquo;</p>
-<h3 id="执行-soapcpp2-后">执行 soapcpp2 后</h3>
+<h3 id="执行-soapcpp2-后">
+  执行 soapcpp2 后
+  <a class="anchor" href="#%e6%89%a7%e8%a1%8c-soapcpp2-%e5%90%8e">#</a>
+</h3>
 <ol>
 <li></li>
 </ol>
-<h4 id="using-ws-security">Using WS-Security</h4>
+<h4 id="using-ws-security">
+  Using WS-Security
+  <a class="anchor" href="#using-ws-security">#</a>
+</h4>
 <ul>
 <li>
 <p>include</p>
@@ -1107,7 +932,10 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ul>
 <p><code>2.</code></p>
-<h4 id="usingws-discovery">Using WS-Discovery</h4>
+<h4 id="usingws-discovery">
+  Using WS-Discovery
+  <a class="anchor" href="#usingws-discovery">#</a>
+</h4>
 <p>When the ONVIF remotediscovery WSDL is used to build an ONVIF application, WS-Discovery is required.</p>
 <ul>
 <li>include
@@ -1127,7 +955,10 @@ https://github.com/alex-shpak/hugo-book
 <p>To support client-side WS-Discovery operations, we run soapcpp2 as follows as documented here:</p>
 <p><code>soapcpp2 -a -x -L -pwsdd -I ~/gsoap-``2.8``/gsoap/``import</code> <code>~/gsoap-``2.8``/gsoap/``import``/wsdd5.h</code></p>
 <p>This generates wsddClient.cpp, which we will use later to compile with the project.</p>
-<h2 id="编译参数">编译参数</h2>
+<h2 id="编译参数">
+  编译参数
+  <a class="anchor" href="#%e7%bc%96%e8%af%91%e5%8f%82%e6%95%b0">#</a>
+</h2>
 <p>makefile</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">CC <span style="color:#f92672">=</span> g++
 CPPFLAG <span style="color:#f92672">=</span> -Wall -g -std<span style="color:#f92672">=</span>c++11 -w -fPIC -DWITH_NONAMESPACES -fno-use-cxa-atexit -fexceptions -DWITH_DOM  -DWITH_OPENSSL -DSOAP_DEBUG
@@ -1168,7 +999,10 @@ clean:
 <p>后面找到是 gsoap 的 struct_timeval.c 中实现的，加入编译后，问题解决。</p>
 <p>参考：<a href="https://www.genivia.com/examples/onvif/index.html">https://www.genivia.com/examples/onvif/index.html</a></p>
 <hr>
-<h2 id="生成过程详情">生成过程详情</h2>
+<h2 id="生成过程详情">
+  生成过程详情
+  <a class="anchor" href="#%e7%94%9f%e6%88%90%e8%bf%87%e7%a8%8b%e8%af%a6%e6%83%85">#</a>
+</h2>
 <p>1. 修改 typemap.dat，取消注释</p>
 <p>xsd<strong>duration = #import &ldquo;custom/duration.h&rdquo; | xsd</strong>duration</p>
 <p>2. 执行 wsdl2h 生成 onvif.h</p>
@@ -1194,13 +1028,11 @@ soapcpp2 -a -x -L -pwsdd -I ~/code/onvif/app-gsoap-2.8.98/gsoap/import ~/code/on
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/04b63ee7538e8cd75ec433090be508d18f43d342" title='Last modified by yewang | 2020-06-19' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/04b63ee7538e8cd75ec433090be508d18f43d342" title='Last modified by yewang | 2020-06-19' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-06-19</span>
     </a>

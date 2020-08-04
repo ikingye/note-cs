@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="包管理工具 Linux Ubuntu apt sudo apt install # download .deb package sudo dpkg -i fd_8.0.0_amd64.deb # adapt version number and architecture Debian apt-get sudo apt-get install Fedora dnf dnf install dnf copr dnf copr enable keefle/fd dnf install fd Alpine Linux apk apk add Arch Linux pacman pacman -S Gentoo Linux emerge emerge -av openSUSE Linux zypper zypper in Void Linux xbps-install xbps-install -S FreeBSD pkg pkg install  Mac Homebrew MacPorts  Windows Scoop Chocolatey 其他 NixOS / via Nix Nix package manager nix-env -i Node."><meta property="og:title" content="包管理工具" />
+<meta name="description" content="包管理工具 #  Linux #  Ubuntu #  apt #  sudo apt install # download .deb package sudo dpkg -i fd_8.0.0_amd64.deb # adapt version number and architecture Debian #  apt-get #  sudo apt-get install Fedora #  dnf #  dnf install dnf copr #  dnf copr enable keefle/fd dnf install fd Alpine Linux #  apk #  apk add Arch Linux #  pacman #  pacman -S Gentoo Linux #  emerge #  emerge -av openSUSE Linux #  zypper #  zypper in Void Linux #  xbps-install #  xbps-install -S FreeBSD #  pkg #  pkg install  Mac #  Homebrew #  MacPorts #   Windows #  Scoop #  Chocolatey #  其他 #  NixOS / via Nix #  Nix package manager #  nix-env -i Node.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="包管理工具" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/" />
 
 <title>包管理工具 | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -27,8 +24,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -41,7 +39,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -69,873 +67,655 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
 
 
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
   
-  <span>第一部分 基础</span>
   
-
-
-    
-
-
-
-
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/others/tool/recommend/" class="">推荐软件</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/dev/" class="collapsed ">开发者工具</a>
+    <span>第一部分 基础</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/github/" class="">GitHub</a>
+  <ul>
+    
+  </ul>
   
 
-</li>
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/vscode/" class="collapsed ">VSCode</a>
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/jetbrains/" class="collapsed ">Jetbrains</a>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+  </ul>
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/git/" class="collapsed ">git</a>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+  </ul>
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/ssh/" class="collapsed ">ssh</a>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/package-manager/" class="collapsed active">包管理工具</a>
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+  </ul>
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
 
-
+          
+  
+  
+  
 
   
   <ul>
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/others/tool/dev/package-manager/brew/" class="">homebrew</a>
-  
-
-</li>
-      
-    
-  </ul>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
+  
 
-  </li>
-
-
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/hhkb/" class="">HHKB</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/mas/" class="">Mas</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/picgo/" class="">picgo</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/tmux/" class="">tmux</a>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
+    <span>第三部分 领域</span>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
-
-
-
-
-
-
-  </li>
-
-
       
-    
-  </ul>
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
   
 
-
-
-  </li>
-
-
-      
-    
-  </ul>
+          
+  
+  
   
 
+  
 
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
 
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/recommend/" class="">推荐软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/" class="collapsed ">开发者工具</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/github/" class="">GitHub</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/vscode/" class="collapsed ">VSCode</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/jetbrains/" class="collapsed ">Jetbrains</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/git/" class="collapsed ">git</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/ssh/" class="collapsed ">ssh</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/package-manager/" class="collapsed active">包管理工具</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/package-manager/brew/" class="">homebrew</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/hhkb/" class="">HHKB</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/mas/" class="">Mas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/picgo/" class="">picgo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/tmux/" class="">tmux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -979,15 +759,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>包管理工具</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#linux">Linux</a>
@@ -1078,66 +859,168 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="包管理工具">包管理工具</h1>
-<h2 id="linux">Linux</h2>
-<h3 id="ubuntu">Ubuntu</h3>
-<h4 id="apt">apt</h4>
+  <article class="markdown"><h1 id="包管理工具">
+  包管理工具
+  <a class="anchor" href="#%e5%8c%85%e7%ae%a1%e7%90%86%e5%b7%a5%e5%85%b7">#</a>
+</h1>
+<h2 id="linux">
+  Linux
+  <a class="anchor" href="#linux">#</a>
+</h2>
+<h3 id="ubuntu">
+  Ubuntu
+  <a class="anchor" href="#ubuntu">#</a>
+</h3>
+<h4 id="apt">
+  apt
+  <a class="anchor" href="#apt">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt install
 
 <span style="color:#75715e"># download .deb package</span>
 sudo dpkg -i fd_8.0.0_amd64.deb  <span style="color:#75715e"># adapt version number and architecture</span>
-</code></pre></div><h3 id="debian">Debian</h3>
-<h4 id="apt-get">apt-get</h4>
+</code></pre></div><h3 id="debian">
+  Debian
+  <a class="anchor" href="#debian">#</a>
+</h3>
+<h4 id="apt-get">
+  apt-get
+  <a class="anchor" href="#apt-get">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install
-</code></pre></div><h3 id="fedora">Fedora</h3>
-<h4 id="dnf">dnf</h4>
+</code></pre></div><h3 id="fedora">
+  Fedora
+  <a class="anchor" href="#fedora">#</a>
+</h3>
+<h4 id="dnf">
+  dnf
+  <a class="anchor" href="#dnf">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dnf install
-</code></pre></div><h5 id="dnf-copr">dnf copr</h5>
+</code></pre></div><h5 id="dnf-copr">
+  dnf copr
+  <a class="anchor" href="#dnf-copr">#</a>
+</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dnf copr enable keefle/fd
 dnf install fd
-</code></pre></div><h3 id="alpine-linux">Alpine Linux</h3>
-<h4 id="apk">apk</h4>
+</code></pre></div><h3 id="alpine-linux">
+  Alpine Linux
+  <a class="anchor" href="#alpine-linux">#</a>
+</h3>
+<h4 id="apk">
+  apk
+  <a class="anchor" href="#apk">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">apk add
-</code></pre></div><h3 id="arch-linux">Arch Linux</h3>
-<h4 id="pacman">pacman</h4>
+</code></pre></div><h3 id="arch-linux">
+  Arch Linux
+  <a class="anchor" href="#arch-linux">#</a>
+</h3>
+<h4 id="pacman">
+  pacman
+  <a class="anchor" href="#pacman">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pacman -S
-</code></pre></div><h3 id="gentoo-linux">Gentoo Linux</h3>
-<h4 id="emerge">emerge</h4>
+</code></pre></div><h3 id="gentoo-linux">
+  Gentoo Linux
+  <a class="anchor" href="#gentoo-linux">#</a>
+</h3>
+<h4 id="emerge">
+  emerge
+  <a class="anchor" href="#emerge">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">emerge -av
-</code></pre></div><h3 id="opensuse-linux">openSUSE Linux</h3>
-<h4 id="zypper">zypper</h4>
+</code></pre></div><h3 id="opensuse-linux">
+  openSUSE Linux
+  <a class="anchor" href="#opensuse-linux">#</a>
+</h3>
+<h4 id="zypper">
+  zypper
+  <a class="anchor" href="#zypper">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">zypper in
-</code></pre></div><h3 id="void-linux">Void Linux</h3>
-<h4 id="xbps-install">xbps-install</h4>
+</code></pre></div><h3 id="void-linux">
+  Void Linux
+  <a class="anchor" href="#void-linux">#</a>
+</h3>
+<h4 id="xbps-install">
+  xbps-install
+  <a class="anchor" href="#xbps-install">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">xbps-install -S
-</code></pre></div><h3 id="freebsd">FreeBSD</h3>
-<h4 id="pkg">pkg</h4>
+</code></pre></div><h3 id="freebsd">
+  FreeBSD
+  <a class="anchor" href="#freebsd">#</a>
+</h3>
+<h4 id="pkg">
+  pkg
+  <a class="anchor" href="#pkg">#</a>
+</h4>
 <pre><code>pkg install
 </code></pre><hr>
-<h2 id="mac">Mac</h2>
-<h3 id="homebrew">Homebrew</h3>
-<h3 id="macports">MacPorts</h3>
+<h2 id="mac">
+  Mac
+  <a class="anchor" href="#mac">#</a>
+</h2>
+<h3 id="homebrew">
+  Homebrew
+  <a class="anchor" href="#homebrew">#</a>
+</h3>
+<h3 id="macports">
+  MacPorts
+  <a class="anchor" href="#macports">#</a>
+</h3>
 <hr>
-<h2 id="windows">Windows</h2>
-<h3 id="scoophttpscoopsh"><a href="http://scoop.sh/">Scoop</a></h3>
-<h3 id="chocolateyhttpschocolateyorg"><a href="https://chocolatey.org/">Chocolatey</a></h3>
-<h2 id="其他">其他</h2>
-<h3 id="nixos--via-nix">NixOS / via Nix</h3>
-<h4 id="nix-package-managerhttpsnixosorgnix"><a href="https://nixos.org/nix/">Nix package manager</a></h4>
+<h2 id="windows">
+  Windows
+  <a class="anchor" href="#windows">#</a>
+</h2>
+<h3 id="scoophttpscoopsh">
+  <a href="http://scoop.sh/">Scoop</a>
+  <a class="anchor" href="#scoophttpscoopsh">#</a>
+</h3>
+<h3 id="chocolateyhttpschocolateyorg">
+  <a href="https://chocolatey.org/">Chocolatey</a>
+  <a class="anchor" href="#chocolateyhttpschocolateyorg">#</a>
+</h3>
+<h2 id="其他">
+  其他
+  <a class="anchor" href="#%e5%85%b6%e4%bb%96">#</a>
+</h2>
+<h3 id="nixos--via-nix">
+  NixOS / via Nix
+  <a class="anchor" href="#nixos--via-nix">#</a>
+</h3>
+<h4 id="nix-package-managerhttpsnixosorgnix">
+  <a href="https://nixos.org/nix/">Nix package manager</a>
+  <a class="anchor" href="#nix-package-managerhttpsnixosorgnix">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">nix-env -i
-</code></pre></div><h3 id="nodejs">Node.js</h3>
-<h4 id="npm">NPM</h4>
+</code></pre></div><h3 id="nodejs">
+  Node.js
+  <a class="anchor" href="#nodejs">#</a>
+</h3>
+<h4 id="npm">
+  NPM
+  <a class="anchor" href="#npm">#</a>
+</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># On linux and macOS</span>
 npm install -g
-</code></pre></div><h3 id="rust">Rust</h3>
-<h4 id="cargo">cargo</h4>
+</code></pre></div><h3 id="rust">
+  Rust
+  <a class="anchor" href="#rust">#</a>
+</h3>
+<h4 id="cargo">
+  cargo
+  <a class="anchor" href="#cargo">#</a>
+</h4>
 <pre><code>cargo install
 </code></pre></article>
  
@@ -1145,13 +1028,11 @@ npm install -g
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/76fec0711fccc3e1a3a4a662c45e16a24ea1e08a" title='Last modified by yewang | 2020-05-17' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/76fec0711fccc3e1a3a4a662c45e16a24ea1e08a" title='Last modified by yewang | 2020-05-17' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-05-17</span>
     </a>

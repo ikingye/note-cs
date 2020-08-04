@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="makefile make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
-简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2."><meta property="og:title" content="makefile" />
-<meta property="og:description" content="makefile make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
-简介 Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 语法  注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明  创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
+<meta name="description" content="makefile #  make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
+简介 #  Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明 #   创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="makefile" />
+<meta property="og:description" content="makefile #  make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
+简介 #  Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系    target 声明 #   创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/" />
 <meta property="article:modified_time" content="2020-07-06T17:34:38+08:00" />
 <title>makefile | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -30,8 +27,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -44,7 +42,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -72,702 +70,516 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
 
 
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
   
-  <span>第一部分 基础</span>
   
-
-
-    
-
-
-
-
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/gcc/" class="collapsed ">gcc</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/make/" class="collapsed ">make</a>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/basic/compile/make/makefile/" class="active">makefile</a>
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/basic/compile/make/cmake/" class="">cmake</a>
-  
 
-</li>
+        </li>
       
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
     
   </ul>
   
 
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第二部分 方向</span>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
 
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+    <a href="/note-cs/docs/basic/compile/gcc/" class="collapsed ">gcc</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+    <a href="/note-cs/docs/basic/compile/make/" class="collapsed ">make</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
+          
   
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+    <a href="/note-cs/docs/basic/compile/make/makefile/" class="active">makefile</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+    <a href="/note-cs/docs/basic/compile/make/cmake/" class="">cmake</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+  </ul>
+  
 
+        </li>
+      
+    
+  </ul>
+  
 
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第四部分 其他</span>
+    <span>第二部分 方向</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
 
+          
+  
+  
+  
 
+  
 
-  </li>
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <span>第三部分 领域</span>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
 
+          
+  
+  
+  
 
+  
 
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
 
+          
+  
+  
+  
 
+  
 
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
 
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -811,15 +623,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>makefile</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#简介">简介</a></li>
@@ -853,21 +666,33 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="makefile">makefile</h1>
+  <article class="markdown"><h1 id="makefile">
+  makefile
+  <a class="anchor" href="#makefile">#</a>
+</h1>
 <p>make 不带参数，只会执行 makefile 中第一条 <code>target 声明</code>（带冒号的语句）</p>
-<h2 id="简介">简介</h2>
+<h2 id="简介">
+  简介
+  <a class="anchor" href="#%e7%ae%80%e4%bb%8b">#</a>
+</h2>
 <p>Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。
 创建这一工具的目标是 减少不必要的编译或者任务。
 传说 <a href="https://en.wikipedia.org/wiki/Stuart_Feldman">Stuart Feldman</a> 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。</p>
-<h2 id="基础">基础</h2>
-<h3 id="语法">语法</h3>
+<h2 id="基础">
+  基础
+  <a class="anchor" href="#%e5%9f%ba%e7%a1%80">#</a>
+</h2>
+<h3 id="语法">
+  语法
+  <a class="anchor" href="#%e8%af%ad%e6%b3%95">#</a>
+</h3>
 <ul>
 <li>注释：<code>#</code></li>
 <li>文件名： 必须是 <code>Makefile</code>
@@ -892,7 +717,10 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<h4 id="target-声明">target 声明</h4>
+<h4 id="target-声明">
+  target 声明
+  <a class="anchor" href="#target-%e5%a3%b0%e6%98%8e">#</a>
+</h4>
 <ul>
 <li>创建一个 <code>target</code>：
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">targets </span><span style="color:#f92672">:</span> prerequisites
@@ -935,7 +763,10 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<h5 id="常用-phony-target">常用 phony target</h5>
+<h5 id="常用-phony-target">
+  常用 phony target
+  <a class="anchor" href="#%e5%b8%b8%e7%94%a8-phony-target">#</a>
+</h5>
 <ul>
 <li><code>all</code></li>
 <li><code>clean</code></li>
@@ -943,7 +774,10 @@ https://github.com/alex-shpak/hugo-book
 <li><code>uninstall</code></li>
 </ul>
 <hr>
-<h4 id="变量与通配符">变量与通配符</h4>
+<h4 id="变量与通配符">
+  变量与通配符
+  <a class="anchor" href="#%e5%8f%98%e9%87%8f%e4%b8%8e%e9%80%9a%e9%85%8d%e7%ac%a6">#</a>
+</h4>
 <ul>
 <li><code>$^</code>: 代表 prerequisites
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 即便分开定义依赖, $^ 依然能拿到
@@ -964,7 +798,10 @@ https://github.com/alex-shpak/hugo-book
 </code></pre></div></li>
 </ul>
 <hr>
-<h4 id="模式匹配">模式匹配</h4>
+<h4 id="模式匹配">
+  模式匹配
+  <a class="anchor" href="#%e6%a8%a1%e5%bc%8f%e5%8c%b9%e9%85%8d">#</a>
+</h4>
 <ul>
 <li>make 会找到最具体的匹配
 <ul>
@@ -979,7 +816,10 @@ https://github.com/alex-shpak/hugo-book
 <li>make 已经有一些内置的规则, 比如从 _.c 到 _.o</li>
 </ul>
 <hr>
-<h4 id="竖线">竖线</h4>
+<h4 id="竖线">
+  竖线
+  <a class="anchor" href="#%e7%ab%96%e7%ba%bf">#</a>
+</h4>
 <ul>
 <li>竖线左边为：正常前提目标（<code>Normal Prerequisites</code>）
 <ul>
@@ -995,7 +835,10 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> file*.txt | dir/a.foo.b
 </code></pre></div><hr>
-<h4 id="变量">变量</h4>
+<h4 id="变量">
+  变量
+  <a class="anchor" href="#%e5%8f%98%e9%87%8f">#</a>
+</h4>
 <ul>
 <li>
 <p>变量都是字符串类型</p>
@@ -1054,7 +897,10 @@ var4 <span style="color:#f92672">:=</span> good night
 </code></pre></div></li>
 </ul>
 <hr>
-<h4 id="函数">函数</h4>
+<h4 id="函数">
+  函数
+  <a class="anchor" href="#%e5%87%bd%e6%95%b0">#</a>
+</h4>
 <ul>
 <li>
 <p>函数调用格式</p>
@@ -1071,7 +917,10 @@ var4 <span style="color:#f92672">:=</span> good night
 </code></pre></div></li>
 </ul>
 <hr>
-<h4 id="指令">指令</h4>
+<h4 id="指令">
+  指令
+  <a class="anchor" href="#%e6%8c%87%e4%bb%a4">#</a>
+</h4>
 <ul>
 <li>include：引入别的 Makefile 文件</li>
 <li>流程控制语句<strong>顶格写</strong>
@@ -1086,25 +935,35 @@ var4 <span style="color:#f92672">:=</span> good night
 </code></pre></div></li>
 </ul>
 <hr>
-<h3 id="分支和变体">分支和变体</h3>
-<h4 id="gnu-make">GNU make</h4>
+<h3 id="分支和变体">
+  分支和变体
+  <a class="anchor" href="#%e5%88%86%e6%94%af%e5%92%8c%e5%8f%98%e4%bd%93">#</a>
+</h3>
+<h4 id="gnu-make">
+  GNU make
+  <a class="anchor" href="#gnu-make">#</a>
+</h4>
 <hr>
-<h2 id="进阶">进阶</h2>
+<h2 id="进阶">
+  进阶
+  <a class="anchor" href="#%e8%bf%9b%e9%98%b6">#</a>
+</h2>
 <hr>
-<h2 id="原理">原理</h2>
+<h2 id="原理">
+  原理
+  <a class="anchor" href="#%e5%8e%9f%e7%90%86">#</a>
+</h2>
 </article>
  
       
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/64a8188a5852e111208e64307e785ca45298f796" title='Last modified by yewang | 2020-07-06' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/64a8188a5852e111208e64307e785ca45298f796" title='Last modified by yewang | 2020-07-06' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-07-06</span>
     </a>

@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="XSS Cross-site scripting 跨站脚本 (wiki)
-XSS 发生的原因 没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
+<meta name="description" content="XSS #  Cross-site scripting 跨站脚本 (wiki)
+XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
 不仅仅是业务上的 “用户的 UGC 内容” 可以进行注入，包括 URL 上的参数等都可以是攻击的来源。在处理输入时，以下内容都不可信：
- 来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法  在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&quot;javascript:...&quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 存储型 存储型 XSS 的攻击步骤："><meta property="og:title" content="XSS" />
-<meta property="og:description" content="XSS Cross-site scripting 跨站脚本 (wiki)
-XSS 发生的原因 没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
+ 来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法 #   在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&quot;javascript:...&quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 #  存储型 #  存储型 XSS 的攻击步骤：">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="XSS" />
+<meta property="og:description" content="XSS #  Cross-site scripting 跨站脚本 (wiki)
+XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
 不仅仅是业务上的 “用户的 UGC 内容” 可以进行注入，包括 URL 上的参数等都可以是攻击的来源。在处理输入时，以下内容都不可信：
- 来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法  在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&quot;javascript:...&quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 存储型 存储型 XSS 的攻击步骤：" />
+ 来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法 #   在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&quot;javascript:...&quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 #  存储型 #  存储型 XSS 的攻击步骤：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/security/basic/xss/" />
 <meta property="article:modified_time" content="2020-07-02T01:34:57+08:00" />
 <title>XSS | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -32,8 +29,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -46,7 +44,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -74,477 +72,80 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
 
 
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
   
-  <span>第一部分 基础</span>
   
-
-
-    
-
-
-
-
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第一部分 基础入门</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/direction/security/basic/xss/" class="active">XSS</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/basic/practice/" class="">实践</a>
+    <span>第一部分 基础</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/security/basic/practice/spec/" class="collapsed ">编程规范</a>
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
+          
+  
+  
+  
 
-    
-
-
-
-
-
-
-  </li>
-
-
-      
+  
+  <ul>
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/direction/security/basic/csrf/" class="">CSRF</a>
-  
-
-</li>
-      
-    
-  </ul>
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
   
 
+          
+  
+  
+  
 
+  
 
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第二部分 设计</span>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -552,28 +153,20 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第三部分 源码实现</span>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -581,357 +174,532 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第四部分 附录</span>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/security/appendix/tutorial/" class="collapsed ">4.1 教程</a>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/security/appendix/interview/" class="collapsed ">4.2 面试题</a>
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
+          
+  
+  
   
 
-
-
-  </li>
-
-
-      
-    
-  </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
+          
+  
+  
   
 
+  
 
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第三部分 领域</span>
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+    <span>第一部分 基础入门</span>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
+          
   
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/direction/security/basic/xss/" class="active">XSS</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/direction/security/basic/practice/" class="">实践</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/basic/practice/spec/" class="collapsed ">编程规范</a>
+  
 
+          
+  
+  
+  
 
+  
 
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/direction/security/basic/csrf/" class="">CSRF</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 设计</span>
+  
 
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 源码实现</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 附录</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/appendix/tutorial/" class="collapsed ">4.1 教程</a>
+  
+
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/appendix/interview/" class="collapsed ">4.2 面试题</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -975,15 +743,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>XSS</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#xss-发生的原因">XSS 发生的原因</a>
@@ -1028,18 +797,24 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="xss">XSS</h1>
+  <article class="markdown"><h1 id="xss">
+  XSS
+  <a class="anchor" href="#xss">#</a>
+</h1>
 <p><code>Cross-site scripting</code>
 跨站脚本
 (<a href="https://www.wikiwand.com/zh-cn/%E8%B7%A8%E7%B6%B2%E7%AB%99%E6%8C%87%E4%BB%A4%E7%A2%BC">wiki</a>)</p>
-<h2 id="xss-发生的原因">XSS 发生的原因</h2>
+<h2 id="xss-发生的原因">
+  XSS 发生的原因
+  <a class="anchor" href="#xss-%e5%8f%91%e7%94%9f%e7%9a%84%e5%8e%9f%e5%9b%a0">#</a>
+</h2>
 <p>没有将<strong>用户输入的文本</strong>进行合适的<strong>过滤</strong>，就贸然插入到 HTML 中，这很容易造成注入漏洞。
 攻击者可以利用漏洞，构造出恶意的<strong>代码指令</strong>，进而利用恶意代码危害数据安全。</p>
 <p>不仅仅是业务上的 “用户的 UGC 内容” 可以进行注入，包括 URL 上的参数等都可以是攻击的来源。在处理输入时，以下内容都不可信：</p>
@@ -1051,7 +826,10 @@ https://github.com/alex-shpak/hugo-book
 <li><code>Referer</code> （可能来自不可信的来源）</li>
 <li><code>Cookie</code> （可能来自<strong>其他子域</strong>注入）</li>
 </ul>
-<h3 id="xss-有哪些注入的方法">XSS 有哪些注入的方法</h3>
+<h3 id="xss-有哪些注入的方法">
+  XSS 有哪些注入的方法
+  <a class="anchor" href="#xss-%e6%9c%89%e5%93%aa%e4%ba%9b%e6%b3%a8%e5%85%a5%e7%9a%84%e6%96%b9%e6%b3%95">#</a>
+</h3>
 <ul>
 <li>在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。</li>
 <li>在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。</li>
@@ -1062,8 +840,14 @@ https://github.com/alex-shpak/hugo-book
 <li>在 style 属性和标签中，包含类似 <code>expression(...)</code> 的 CSS 表达式代码（新版本浏览器已经可以防范）。</li>
 </ul>
 <hr>
-<h2 id="xss-分类">XSS 分类</h2>
-<h3 id="存储型">存储型</h3>
+<h2 id="xss-分类">
+  XSS 分类
+  <a class="anchor" href="#xss-%e5%88%86%e7%b1%bb">#</a>
+</h2>
+<h3 id="存储型">
+  存储型
+  <a class="anchor" href="#%e5%ad%98%e5%82%a8%e5%9e%8b">#</a>
+</h3>
 <p>存储型 XSS 的攻击步骤：</p>
 <ol>
 <li>攻击者将恶意代码提交到目标网站的数据库中。</li>
@@ -1072,7 +856,10 @@ https://github.com/alex-shpak/hugo-book
 <li>恶意代码窃取用户数据并发送到攻击者的网站，或者冒充用户的行为，调用目标网站接口执行攻击者指定的操作。</li>
 </ol>
 <p>这种攻击常见于带有用户保存数据的网站功能，如论坛发帖、商品评论、用户私信等。</p>
-<h3 id="反射型">反射型</h3>
+<h3 id="反射型">
+  反射型
+  <a class="anchor" href="#%e5%8f%8d%e5%b0%84%e5%9e%8b">#</a>
+</h3>
 <p>反射型 XSS 的攻击步骤：</p>
 <ol>
 <li>攻击者构造出特殊的 URL，其中包含恶意代码。</li>
@@ -1088,7 +875,10 @@ https://github.com/alex-shpak/hugo-book
 <p>反射型 XSS 漏洞常见于通过 URL 传递参数的功能，如网站搜索、跳转等。</p>
 <p>由于需要用户主动打开恶意的 URL 才能生效，攻击者往往会结合多种手段诱导用户点击。</p>
 <p>POST 的内容也可以触发反射型 XSS，只不过其触发条件比较苛刻（需要构造表单提交页面，并引导用户点击），所以非常少见。</p>
-<h3 id="dom-型">DOM 型</h3>
+<h3 id="dom-型">
+  DOM 型
+  <a class="anchor" href="#dom-%e5%9e%8b">#</a>
+</h3>
 <p>DOM 型 XSS 的攻击步骤：</p>
 <ol>
 <li>攻击者构造出特殊的 URL，其中包含恶意代码。</li>
@@ -1102,12 +892,21 @@ https://github.com/alex-shpak/hugo-book
 <li>其他两种 XSS 都属于<strong>服务端</strong>的安全漏洞。</li>
 </ul>
 <hr>
-<h2 id="防止-xss">防止 XSS</h2>
-<h3 id="输入过滤">输入过滤</h3>
+<h2 id="防止-xss">
+  防止 XSS
+  <a class="anchor" href="#%e9%98%b2%e6%ad%a2-xss">#</a>
+</h2>
+<h3 id="输入过滤">
+  输入过滤
+  <a class="anchor" href="#%e8%be%93%e5%85%a5%e8%bf%87%e6%bb%a4">#</a>
+</h3>
 <p>输入侧过滤能够在某些情况下解决特定的 XSS 问题，但会引入很大的不确定性和<strong>乱码</strong>问题。
 在防范 XSS 攻击时应避免此类方法。</p>
 <p>当然，对于明确的输入类型，例如数字、URL、电话号码、邮件地址等等内容，进行输入过滤还是必要的。</p>
-<h3 id="纯前端渲染">纯前端渲染</h3>
+<h3 id="纯前端渲染">
+  纯前端渲染
+  <a class="anchor" href="#%e7%ba%af%e5%89%8d%e7%ab%af%e6%b8%b2%e6%9f%93">#</a>
+</h3>
 <p>纯前端渲染，把代码和数据分隔开</p>
 <p>纯前端渲染的过程：</p>
 <ol>
@@ -1121,7 +920,10 @@ https://github.com/alex-shpak/hugo-book
 <p>但纯前端渲染还需注意避免 DOM 型 XSS 漏洞（例如 <code>onload</code> 事件和 <code>href</code> 中的 <code>javascript:xxx</code> 等）。</p>
 <p>在很多内部、管理系统中，采用纯前端渲染是非常合适的。
 但对于<strong>性能</strong>要求高，或有 <strong>SEO 需求</strong>的页面，我们仍然要面对拼接 HTML 的问题。</p>
-<h3 id="对-html-做充分转义">对 HTML 做充分转义</h3>
+<h3 id="对-html-做充分转义">
+  对 HTML 做充分转义
+  <a class="anchor" href="#%e5%af%b9-html-%e5%81%9a%e5%85%85%e5%88%86%e8%bd%ac%e4%b9%89">#</a>
+</h3>
 <p>对插入到页面中的数据进行<strong>转义</strong>，
 通常是把 <code>&amp; &lt; &gt; &quot; ' /</code> 这几个字符转义掉，
 确实能起到一定的 XSS 防护作用，但要完善 XSS 防护措施，我们要使用更完善更细致的<strong>转义策略</strong>。</p>
@@ -1129,7 +931,10 @@ https://github.com/alex-shpak/hugo-book
 应当尽量避免自己写转义库，而应当采用成熟的、业界通用的<strong>转义库</strong>。</p>
 <p>常用的模板引擎，如 <code>doT.js</code>、<code>ejs</code>、<code>FreeMarker</code> 等，
 Java 工程里，常用的转义库为 <code>org.owasp.encoder</code>。</p>
-<h4 id="验证-href-的值">验证 href 的值</h4>
+<h4 id="验证-href-的值">
+  验证 href 的值
+  <a class="anchor" href="#%e9%aa%8c%e8%af%81-href-%e7%9a%84%e5%80%bc">#</a>
+</h4>
 <p>对于<strong>链接跳转</strong>，如 <code>&lt;a href=&quot;xxx&quot;</code> 或 <code>location.href=&quot;xxx&quot;</code>，要检验其内容，禁止以 <code>javascript:</code> 开头的链接，和其他非法的 <code>scheme</code>。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 根据项目情况进行过滤，禁止掉 &#34;javascript:&#34; 链接、非法 scheme 等
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">allowSchemes</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;http&#34;</span>, <span style="color:#e6db74">&#34;https&#34;</span>];
@@ -1145,13 +950,19 @@ Java 工程里，常用的转义库为 <code>org.owasp.encoder</code>。</p>
     <span style="color:#a6e22e">跳转</span>...
   <span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/a&gt;</span>
 }
-</code></pre></div><h5 id="不区分大小写可以带空格">不区分大小写，可以带空格</h5>
+</code></pre></div><h5 id="不区分大小写可以带空格">
+  不区分大小写，可以带空格
+  <a class="anchor" href="#%e4%b8%8d%e5%8c%ba%e5%88%86%e5%a4%a7%e5%b0%8f%e5%86%99%e5%8f%af%e4%bb%a5%e5%b8%a6%e7%a9%ba%e6%a0%bc">#</a>
+</h5>
 <ul>
 <li>JavaScript 不区分大小写： <code>jAvascRipt:alert('XSS')</code></li>
 <li>可以带空格 <code>%20</code>： <code>%20javascript:alert('XSS')</code></li>
 </ul>
 <hr>
-<h4 id="escapeembedjson">escapeEmbedJSON</h4>
+<h4 id="escapeembedjson">
+  escapeEmbedJSON
+  <a class="anchor" href="#escapeembedjson">#</a>
+</h4>
 <p>插入 JSON 的地方不能使用 <code>escapeHTML()</code>，因为转义 <code>&quot;</code> 后，JSON 格式会被破坏。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;
   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">initData</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;%=</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">toJSON</span>() <span style="color:#f92672">%&gt;</span>
@@ -1166,7 +977,10 @@ Java 工程里，常用的转义库为 <code>org.owasp.encoder</code>。</p>
 </span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">initData</span> <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;%=</span> <span style="color:#a6e22e">escapeEmbedJSON</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">toJSON</span>()) <span style="color:#f92672">%&gt;</span>
 &lt;/<span style="color:#f92672">script</span>&gt;
 </code></pre></div><hr>
-<h3 id="预防-dom-型-xss-攻击">预防 DOM 型 XSS 攻击</h3>
+<h3 id="预防-dom-型-xss-攻击">
+  预防 DOM 型 XSS 攻击
+  <a class="anchor" href="#%e9%a2%84%e9%98%b2-dom-%e5%9e%8b-xss-%e6%94%bb%e5%87%bb">#</a>
+</h3>
 <p>在使用 <code>.innerHTML</code>、<code>.outerHTML</code>、<code>document.write()</code> 时要特别小心，不要把不可信的数据作为 HTML 插到页面上，
 而应尽量使用 <code>.textContent</code>、<code>.setAttribute()</code> 等。</p>
 <p>如果用 Vue/React 技术栈，并且不使用 <code>v-html</code>/<code>dangerouslySetInnerHTML</code> 功能，
@@ -1193,7 +1007,10 @@ JavaScript 的 <code>eval()</code>、<code>setTimeout()</code>、<code>setInterv
 </span><span style="color:#75715e"></span>  eval(<span style="color:#e6db74">&#34;UNTRUSTED&#34;</span>);
 &lt;/<span style="color:#f92672">script</span>&gt;
 </code></pre></div><hr>
-<h3 id="content-security-policy">Content Security Policy</h3>
+<h3 id="content-security-policy">
+  Content Security Policy
+  <a class="anchor" href="#content-security-policy">#</a>
+</h3>
 <p>严格的 CSP 在 XSS 的防范中可以起到以下的作用：</p>
 <ul>
 <li>禁止加载外域代码，防止复杂的攻击逻辑。</li>
@@ -1202,29 +1019,44 @@ JavaScript 的 <code>eval()</code>、<code>setTimeout()</code>、<code>setInterv
 <li>禁止未授权的脚本执行（新特性，Google Map 移动版在使用）。</li>
 <li>合理使用上报可以及时发现 XSS，利于尽快修复问题。</li>
 </ul>
-<h3 id="输入内容长度控制">输入内容长度控制</h3>
+<h3 id="输入内容长度控制">
+  输入内容长度控制
+  <a class="anchor" href="#%e8%be%93%e5%85%a5%e5%86%85%e5%ae%b9%e9%95%bf%e5%ba%a6%e6%8e%a7%e5%88%b6">#</a>
+</h3>
 <p>对于不受信任的输入，都应该限定一个合理的长度。
 虽然无法完全防止 XSS 发生，但可以增加 XSS 攻击的难度。</p>
-<h3 id="其他安全措施">其他安全措施</h3>
+<h3 id="其他安全措施">
+  其他安全措施
+  <a class="anchor" href="#%e5%85%b6%e4%bb%96%e5%ae%89%e5%85%a8%e6%8e%aa%e6%96%bd">#</a>
+</h3>
 <ul>
 <li><code>HTTP-only Cookie</code>: 禁止 JavaScript 读取某些敏感 Cookie，攻击者完成 XSS 注入后也无法窃取此 Cookie。</li>
 <li>验证码：防止脚本冒充用户提交危险操作。</li>
 </ul>
 <hr>
-<h2 id="xss-的检测">XSS 的检测</h2>
+<h2 id="xss-的检测">
+  XSS 的检测
+  <a class="anchor" href="#xss-%e7%9a%84%e6%a3%80%e6%b5%8b">#</a>
+</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">jaVasCript:/*-/*<span style="color:#e6db74">`</span>/*<span style="color:#ae81ff">\`</span>/*<span style="color:#960050;background-color:#1e0010">&#39;</span>/*<span style="color:#e6db74">&#34;/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//&lt;/stYle/&lt;/titLe/&lt;/teXtarEa/&lt;/scRipt/--!&gt;\x3csVg/&lt;sVg/oNloAd=alert()//&gt;\x3e
 </span></code></pre></div><p>只要在网站的各输入框中提交这个字符串，或者把它拼接到 URL 参数上，就可以进行检测了。</p>
 <p>能够检测到存在于 HTML 属性、HTML 文字内容、HTML 注释、跳转链接、内联 JavaScript 字符串、内联 CSS 样式表等多种上下文中的 XSS 漏洞，
 也能检测 eval()、setTimeout()、setInterval()、Function()、innerHTML、document.write() 等 DOM 型 XSS 漏洞，
 并且能绕过一些 XSS 过滤器。</p>
-<h3 id="自动扫描工具">自动扫描工具</h3>
+<h3 id="自动扫描工具">
+  自动扫描工具
+  <a class="anchor" href="#%e8%87%aa%e5%8a%a8%e6%89%ab%e6%8f%8f%e5%b7%a5%e5%85%b7">#</a>
+</h3>
 <ul>
 <li><a href="https://github.com/Arachni/arachni">Arachni</a></li>
 <li><a href="https://github.com/mozilla/http-observatory/">Mozilla HTTP Observatory</a></li>
 <li><a href="https://github.com/andresriancho/w3af">w3af</a></li>
 </ul>
 <hr>
-<h2 id="参考">参考</h2>
+<h2 id="参考">
+  参考
+  <a class="anchor" href="#%e5%8f%82%e8%80%83">#</a>
+</h2>
 <ul>
 <li><a href="https://www.zhihu.com/question/21745144">在学习 XSS 前应该学习什么？</a></li>
 <li><a href="https://tech.meituan.com/2018/09/27/fe-security.html">前端安全系列（一）：如何防止 XSS 攻击？</a></li>
@@ -1235,13 +1067,11 @@ JavaScript 的 <code>eval()</code>、<code>setTimeout()</code>、<code>setInterv
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/d44e2270aece45127cf790a3c8d8b316177d8da4" title='Last modified by yewang | 2020-07-02' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/d44e2270aece45127cf790a3c8d8b316177d8da4" title='Last modified by yewang | 2020-07-02' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-07-02</span>
     </a>

@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ServiceComb 子项目 ServiceComb 目前拥有三个主要的子项目
-apache/servicecomb-java-chassis  开箱即用 Java 语言 微服务 SDK，含服务契约、编程模型、运行模型与通信模型四个部分，具备负载均衡、容错熔断、限流降级、调用链追踪等全面微服务治理能力，服务治理能力与业务逻辑隔离。
-apache/servicecomb-service-center  基于 Etcd 的高性能、高可用、无状态的 Golang 版分布式服务注册与发现中心，可实时服务实例注册、实时服务实例推送和服务间契约测试等。
-apache/servicecomb-pack  Apache ServiceComb Pack (原 ServiceComb Saga) 是提供了分布式事务最终一致性解决方案，用户只需要通过注解方式定义事务的执行方法以及撤销方法，ServiceComb Pack 框架会自动保证分布式事务执行的最终一致性。
-其他 apache/servicecomb-mesher  A high performance service mesh implementation written in go
-servicecomb-saga-actuator  Apache ServiceComb Saga Actuator https://servicecomb.apache.org/
+<meta name="description" content="ServiceComb #  子项目 #  ServiceComb 目前拥有三个主要的子项目
+apache/servicecomb-java-chassis #  开箱即用 Java 语言 微服务 SDK，含服务契约、编程模型、运行模型与通信模型四个部分，具备负载均衡、容错熔断、限流降级、调用链追踪等全面微服务治理能力，服务治理能力与业务逻辑隔离。
+apache/servicecomb-service-center #  基于 Etcd 的高性能、高可用、无状态的 Golang 版分布式服务注册与发现中心，可实时服务实例注册、实时服务实例推送和服务间契约测试等。
+apache/servicecomb-pack #  Apache ServiceComb Pack (原 ServiceComb Saga) 是提供了分布式事务最终一致性解决方案，用户只需要通过注解方式定义事务的执行方法以及撤销方法，ServiceComb Pack 框架会自动保证分布式事务执行的最终一致性。
+其他 #  apache/servicecomb-mesher #  A high performance service mesh implementation written in go
+servicecomb-saga-actuator #  Apache ServiceComb Saga Actuator https://servicecomb.apache.org/
 参考：
- 如何评价华为新开源的 ServiceComb 微服务框架？  "><meta property="og:title" content="ServiceComb" />
+ 如何评价华为新开源的 ServiceComb 微服务框架？  ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="ServiceComb" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/microservices/servicecomb/" />
 
 <title>ServiceComb | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/direction/be/microservices/servicecomb/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -34,8 +31,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -48,7 +46,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -76,57 +74,42 @@ https://github.com/alex-shpak/hugo-book
 
   
 
+
+
   
   
-
-
-
-
-
- 
   
-    
-
-
-
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第一部分 基础</span>
+    <span>第一部分 基础</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -134,51 +117,37 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -186,28 +155,20 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -215,279 +176,207 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第二部分 方向</span>
+    <span>第二部分 方向</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
+    <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
+    <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
+    <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
+    <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
+    <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/rpc/" class="collapsed ">2.2.5.1 RPC</a>
+    <a href="/note-cs/docs/direction/be/microservices/rpc/" class="collapsed ">2.2.5.1 RPC</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/servicecomb/" class="collapsed active">ServiceComb</a>
+    <a href="/note-cs/docs/direction/be/microservices/servicecomb/" class="collapsed active">ServiceComb</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -495,499 +384,360 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
+    <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
+    <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
+    <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+    <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
+    <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第三部分 领域</span>
+    <span>第三部分 领域</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第四部分 其他</span>
+    <span>第四部分 其他</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
-
-
-
-  
-
 
 
 
@@ -1031,15 +781,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>ServiceComb</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#子项目">子项目</a>
@@ -1059,26 +810,50 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="servicecomb">ServiceComb</h1>
-<h2 id="子项目">子项目</h2>
+  <article class="markdown"><h1 id="servicecomb">
+  ServiceComb
+  <a class="anchor" href="#servicecomb">#</a>
+</h1>
+<h2 id="子项目">
+  子项目
+  <a class="anchor" href="#%e5%ad%90%e9%a1%b9%e7%9b%ae">#</a>
+</h2>
 <p>ServiceComb 目前拥有三个主要的子项目</p>
-<h3 id="apacheservicecomb-java-chassishttpsgithubcomapacheservicecomb-java-chassis-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-java-chassissvg"><a href="https://github.com/apache/servicecomb-java-chassis">apache/servicecomb-java-chassis</a> <img src="https://img.shields.io/github/stars/apache/servicecomb-java-chassis.svg" alt="Github stars" /></h3>
+<a href="https://github.com/apache/servicecomb-java-chassis">apache/servicecomb-java-chassis</a> <h3 id="apacheservicecomb-java-chassishttpsgithubcomapacheservicecomb-java-chassis-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-java-chassissvg">
+  <img src="https://img.shields.io/github/stars/apache/servicecomb-java-chassis.svg" alt="Github stars" />
+  <a class="anchor" href="#apacheservicecomb-java-chassishttpsgithubcomapacheservicecomb-java-chassis-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-java-chassissvg">#</a>
+</h3>
 <p>开箱即用 Java 语言 微服务 SDK，含服务契约、编程模型、运行模型与通信模型四个部分，具备负载均衡、容错熔断、限流降级、调用链追踪等全面微服务治理能力，服务治理能力与业务逻辑隔离。</p>
-<h3 id="apacheservicecomb-service-centerhttpsgithubcomapacheservicecomb-service-center-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-service-centersvg"><a href="https://github.com/apache/servicecomb-service-center">apache/servicecomb-service-center</a> <img src="https://img.shields.io/github/stars/apache/servicecomb-service-center.svg" alt="Github stars" /></h3>
+<a href="https://github.com/apache/servicecomb-service-center">apache/servicecomb-service-center</a> <h3 id="apacheservicecomb-service-centerhttpsgithubcomapacheservicecomb-service-center-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-service-centersvg">
+  <img src="https://img.shields.io/github/stars/apache/servicecomb-service-center.svg" alt="Github stars" />
+  <a class="anchor" href="#apacheservicecomb-service-centerhttpsgithubcomapacheservicecomb-service-center-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-service-centersvg">#</a>
+</h3>
 <p>基于 Etcd 的高性能、高可用、无状态的 Golang 版分布式服务注册与发现中心，可实时服务实例注册、实时服务实例推送和服务间契约测试等。</p>
-<h3 id="apacheservicecomb-packhttpsgithubcomapacheservicecomb-pack-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-packsvg"><a href="https://github.com/apache/servicecomb-pack">apache/servicecomb-pack</a> <img src="https://img.shields.io/github/stars/apache/servicecomb-pack.svg" alt="Github stars" /></h3>
+<a href="https://github.com/apache/servicecomb-pack">apache/servicecomb-pack</a> <h3 id="apacheservicecomb-packhttpsgithubcomapacheservicecomb-pack-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-packsvg">
+  <img src="https://img.shields.io/github/stars/apache/servicecomb-pack.svg" alt="Github stars" />
+  <a class="anchor" href="#apacheservicecomb-packhttpsgithubcomapacheservicecomb-pack-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-packsvg">#</a>
+</h3>
 <p>Apache ServiceComb Pack (原 <code>ServiceComb Saga</code>) 是提供了分布式事务最终一致性解决方案，用户只需要通过注解方式定义事务的执行方法以及撤销方法，<code>ServiceComb Pack</code> 框架会自动保证分布式事务执行的最终一致性。</p>
-<h2 id="其他">其他</h2>
-<h3 id="apacheservicecomb-mesherhttpsgithubcomapacheservicecomb-mesher-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-meshersvg"><a href="https://github.com/apache/servicecomb-mesher">apache/servicecomb-mesher</a> <img src="https://img.shields.io/github/stars/apache/servicecomb-mesher.svg" alt="Github stars" /></h3>
+<h2 id="其他">
+  其他
+  <a class="anchor" href="#%e5%85%b6%e4%bb%96">#</a>
+</h2>
+<a href="https://github.com/apache/servicecomb-mesher">apache/servicecomb-mesher</a> <h3 id="apacheservicecomb-mesherhttpsgithubcomapacheservicecomb-mesher-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-meshersvg">
+  <img src="https://img.shields.io/github/stars/apache/servicecomb-mesher.svg" alt="Github stars" />
+  <a class="anchor" href="#apacheservicecomb-mesherhttpsgithubcomapacheservicecomb-mesher-github-starshttpsimgshieldsiogithubstarsapacheservicecomb-meshersvg">#</a>
+</h3>
 <p>A high performance service mesh implementation written in go</p>
-<h3 id="servicecomb-saga-actuatorhttpsgithubcomservicecomb-saga-actuator-github-starshttpsimgshieldsiogithubstarsservicecomb-saga-actuatorsvg"><a href="https://github.com/servicecomb-saga-actuator">servicecomb-saga-actuator</a> <img src="https://img.shields.io/github/stars/servicecomb-saga-actuator.svg" alt="Github stars" /></h3>
+<a href="https://github.com/servicecomb-saga-actuator">servicecomb-saga-actuator</a> <h3 id="servicecomb-saga-actuatorhttpsgithubcomservicecomb-saga-actuator-github-starshttpsimgshieldsiogithubstarsservicecomb-saga-actuatorsvg">
+  <img src="https://img.shields.io/github/stars/servicecomb-saga-actuator.svg" alt="Github stars" />
+  <a class="anchor" href="#servicecomb-saga-actuatorhttpsgithubcomservicecomb-saga-actuator-github-starshttpsimgshieldsiogithubstarsservicecomb-saga-actuatorsvg">#</a>
+</h3>
 <p>Apache ServiceComb Saga Actuator
 <a href="https://servicecomb.apache.org/">https://servicecomb.apache.org/</a></p>
 <p>参考：</p>
@@ -1091,13 +866,11 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/13db1474559e8ccc83c849cbe94177b94cd123a9" title='Last modified by yewang | 2020-05-28' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/13db1474559e8ccc83c849cbe94177b94cd123a9" title='Last modified by yewang | 2020-05-28' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-05-28</span>
     </a>

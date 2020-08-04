@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
-CALL-ID SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
+<meta name="description" content="SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
+CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
- 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n Bye 同一个会话，CSeq 要 &#43;1
-Invite-&gt;100-&gt;200-&gt;Ack -&gt;Bye-&gt;200
-Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要一致"><meta property="og:title" content="SIP" />
-<meta property="og:description" content="SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
-CALL-ID SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
+ 包内容 #  Message #  Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n Bye #  同一个会话，CSeq 要 &#43;1">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="SIP" />
+<meta property="og:description" content="SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
+CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
- 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n Bye 同一个会话，CSeq 要 &#43;1
-Invite-&gt;100-&gt;200-&gt;Ack -&gt;Bye-&gt;200
-Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要一致" />
+ 包内容 #  Message #  Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n Bye #  同一个会话，CSeq 要 &#43;1" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/" />
 <meta property="article:modified_time" content="2020-07-07T23:53:37+08:00" />
 <title>SIP | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -36,8 +29,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -50,7 +44,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -78,887 +72,671 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第一部分 基础</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
 
-      
-    
-      
-        
 
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/communication/" class="collapsed ">通信技术</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/others/skill/ffmpeg/" class="collapsed ">FFmpeg</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/others/skill/gb28181/" class="collapsed ">GB28181</a>
   
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/gb28181/sdp/" class="">SDP</a>
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/gb28181/sip/" class="active">SIP</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/gb28181/protocal/" class="">协议详情</a>
+  <ul>
+    
+  </ul>
   
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/gb28181/packet/" class="">数据包</a>
+  <ul>
+    
+  </ul>
   
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/gb28181/code/" class="">源码实现</a>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/voip/" class="">VoIP</a>
-  
-
-</li>
-      
+  <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/easydarwin/" class="">EasyDarwin</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/srs/" class="">SRS</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/zlmediakit/" class="">ZLMediaKit</a>
-  
 
-</li>
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/stream-media/" class="collapsed ">流媒体技术</a>
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
 
+          
+  
+  
+  
 
+  
 
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <span>第三部分 领域</span>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
+          
+  
+  
   
 
-
-
-  </li>
-
-
-      
+  
+  <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
 
+          
+  
+  
+  
 
+  
 
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
 
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/sdp/" class="">SDP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/sip/" class="active">SIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/protocal/" class="">协议详情</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/packet/" class="">数据包</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/code/" class="">源码实现</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -1002,15 +780,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>SIP</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#call-id">CALL-ID</a></li>
@@ -1046,21 +825,33 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="sip">SIP</h1>
+  <article class="markdown"><h1 id="sip">
+  SIP
+  <a class="anchor" href="#sip">#</a>
+</h1>
 <p>SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。</p>
-<h2 id="call-id">CALL-ID</h2>
+<h2 id="call-id">
+  CALL-ID
+  <a class="anchor" href="#call-id">#</a>
+</h2>
 <p>SIP 的一次通话，可以通过 <code>From</code>, <code>To</code>, <code>Call-ID</code> 三元组来区分。</p>
 <p>CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）</p>
 <hr>
-<h2 id="包内容">包内容</h2>
-<h3 id="message">Message</h3>
+<h2 id="包内容">
+  包内容
+  <a class="anchor" href="#%e5%8c%85%e5%86%85%e5%ae%b9">#</a>
+</h2>
+<h3 id="message">
+  Message
+  <a class="anchor" href="#message">#</a>
+</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Session Initiation Protocol <span style="color:#f92672">(</span>MESSAGE<span style="color:#f92672">)</span>
     Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0
     Message Header
@@ -1083,16 +874,28 @@ https://github.com/alex-shpak/hugo-book
         &lt;Info&gt;<span style="color:#ae81ff">\n</span>
         &lt;/Info&gt;<span style="color:#ae81ff">\n</span>
         &lt;/Notify&gt;<span style="color:#ae81ff">\n</span>
-</code></pre></div><h3 id="bye">Bye</h3>
+</code></pre></div><h3 id="bye">
+  Bye
+  <a class="anchor" href="#bye">#</a>
+</h3>
 <p><strong>同一个会话，CSeq 要 +1</strong></p>
 <p><code>Invite-&gt;100-&gt;200-&gt;Ack -&gt;Bye-&gt;200</code></p>
 <p>Bye 的包，From 和 To 要和 Ack 的一致（包括 <code>tag</code>），Call-ID 也要一致</p>
 <hr>
-<h3 id="包字段">包字段</h3>
-<h4 id="sn命令序列号">SN（命令序列号）</h4>
+<h3 id="包字段">
+  包字段
+  <a class="anchor" href="#%e5%8c%85%e5%ad%97%e6%ae%b5">#</a>
+</h3>
+<h4 id="sn命令序列号">
+  SN（命令序列号）
+  <a class="anchor" href="#sn%e5%91%bd%e4%bb%a4%e5%ba%8f%e5%88%97%e5%8f%b7">#</a>
+</h4>
 <p>MANSCDP 消息中的 SN 值用于与请求命令的匹配处理,响应命令中的 SN 值应使用请求命令中的 SN 值。</p>
 <hr>
-<h2 id="sip-proxy">SIP Proxy</h2>
+<h2 id="sip-proxy">
+  SIP Proxy
+  <a class="anchor" href="#sip-proxy">#</a>
+</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200623175311.png" alt="" /></p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200623180002.png" alt="" /></p>
 <p>SIP Proxy 有分为两种模式，一种是状态代理模式，另外一种是无状态代理模式。</p>
@@ -1102,13 +905,25 @@ https://github.com/alex-shpak/hugo-book
 它们跳过了代理服务器，导致业务控制层很难对其进行管理。</p>
 <p>为了解决这个问题，引入了 <code>B2BUA</code> 机制，通过背靠背的方式来实现业务能力的管理和会话的管理</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200623175847.png" alt="" /></p>
-<h3 id="开源实现">开源实现</h3>
-<h4 id="kamalio">Kamalio</h4>
+<h3 id="开源实现">
+  开源实现
+  <a class="anchor" href="#%e5%bc%80%e6%ba%90%e5%ae%9e%e7%8e%b0">#</a>
+</h3>
+<h4 id="kamalio">
+  Kamalio
+  <a class="anchor" href="#kamalio">#</a>
+</h4>
 <p><a href="https://github.com/kamailio/kamailio">kamailio/kamailio</a> <img src="https://img.shields.io/github/stars/kamailio/kamailio.svg" alt="Github stars" /></p>
-<h4 id="opensips">OpenSIPS</h4>
+<h4 id="opensips">
+  OpenSIPS
+  <a class="anchor" href="#opensips">#</a>
+</h4>
 <p><a href="https://github.com/OpenSIPS/opensips">OpenSIPS/opensips</a> <img src="https://img.shields.io/github/stars/OpenSIPS/opensips.svg" alt="Github stars" /></p>
 <hr>
-<h2 id="b2bua">B2BUA</h2>
+<h2 id="b2bua">
+  B2BUA
+  <a class="anchor" href="#b2bua">#</a>
+</h2>
 <p>B2BUA 是一个逻辑实体，它由一个 UAS 和一个 UAC 两个部分构成，分别负责接收请求，处理请求和生成请求。
 B2BUA 和 SIP 代理不同，它必须保持在 dialog 中所有创建的请求。只有这样，B2BUA 才能完全控制所有需要管理的会话。</p>
 <p>B2BUA 具体的构成如下：</p>
@@ -1122,16 +937,25 @@ B2BUA 和 SIP 代理不同，它必须保持在 dialog 中所有创建的请求�
 <li>UAC 终端收到 200 OK 以后，保存为 Route Set 数据内容。</li>
 </ol>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200624103829.png" alt="" /></p>
-<h3 id="为什么需要-b2bua">为什么需要 B2BUA</h3>
+<h3 id="为什么需要-b2bua">
+  为什么需要 B2BUA
+  <a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e9%9c%80%e8%a6%81-b2bua">#</a>
+</h3>
 <p>如果计费模块检测到双方呼叫费用出现超额的时候，这时，B2BUA 会切换成 UAC/UAC 的状态，同时对终端发送 BYE 消息。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200624103935.png" alt="" /></p>
 <hr>
-<h2 id="教程">教程</h2>
+<h2 id="教程">
+  教程
+  <a class="anchor" href="#%e6%95%99%e7%a8%8b">#</a>
+</h2>
 <ul>
 <li><a href="https://www.tutorialspoint.com/session_initiation_protocol/index.htm">Session Initiation Protocol Tutorial (by tutorialspoint)</a></li>
 </ul>
 <hr>
-<h2 id="参考">参考</h2>
+<h2 id="参考">
+  参考
+  <a class="anchor" href="#%e5%8f%82%e8%80%83">#</a>
+</h2>
 <ul>
 <li><a href="http://www.hiastar.com/2019/04/26/b2buasbcproxy%E7%9A%84sip%E6%B6%88%E6%81%AF%E9%87%8D%E6%9E%84%E5%92%8Crfc7092%E8%AF%A6%E8%A7%A3/">B2BUA/SBC/Proxy 的 SIP 消息重构和 RFC7092 详解</a></li>
 </ul>
@@ -1141,13 +965,11 @@ B2BUA 和 SIP 代理不同，它必须保持在 dialog 中所有创建的请求�
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/54dd78e3120b9b0183ed085062748734f9ff9e76" title='Last modified by yewang | 2020-07-07' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/54dd78e3120b9b0183ed085062748734f9ff9e76" title='Last modified by yewang | 2020-07-07' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-07-07</span>
     </a>

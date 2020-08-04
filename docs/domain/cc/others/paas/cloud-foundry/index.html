@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Cloud Foundry Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
-组件 cloudfoundry/bosh  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
-cloudfoundry/cli  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
-cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
- Cloud Foundry 缺点 诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
-而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。
-参考：
- Kubernetes 如何打赢容器之战？  "><meta property="og:title" content="Cloud Foundry" />
-<meta property="og:description" content="Cloud Foundry Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
-组件 cloudfoundry/bosh  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
-cloudfoundry/cli  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
-cloudfoundry/uaa  CloudFoundry User Account and Authentication (UAA) Server
- Cloud Foundry 缺点 诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
-而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。
-参考：
- Kubernetes 如何打赢容器之战？  " />
+<meta name="description" content="Cloud Foundry #  Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
+组件 #  cloudfoundry/bosh #  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
+cloudfoundry/cli #  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
+cloudfoundry/uaa #  CloudFoundry User Account and Authentication (UAA) Server
+ Cloud Foundry 缺点 #  诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
+而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Cloud Foundry" />
+<meta property="og:description" content="Cloud Foundry #  Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。
+组件 #  cloudfoundry/bosh #  Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.
+cloudfoundry/cli #  The official command line client for Cloud Foundry https://docs.cloudfoundry.org/cf-cli
+cloudfoundry/uaa #  CloudFoundry User Account and Authentication (UAA) Server
+ Cloud Foundry 缺点 #  诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
+而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/" />
 <meta property="article:modified_time" content="2020-05-26T18:09:45+08:00" />
 <title>Cloud Foundry | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -40,8 +33,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -54,7 +48,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -82,1038 +76,770 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第一部分 基础</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/docker/" class="collapsed ">Docker</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/helm/" class="">Helm</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/cn/" class="collapsed ">云原生</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/edge/" class="collapsed ">边缘计算</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/knative/" class="collapsed ">Knative</a>
-  
-
-
-    
-
-
-
-
-
 
-  </li>
 
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/kong/" class="">Kong</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/kubernetes/" class="">Kubernetes</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/oam/" class="">OAM</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/service-mesh/" class="collapsed ">Service Mesh</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/virtual/" class="collapsed ">虚拟化</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/others/" class="collapsed ">其他</a>
   
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/others/iaas/" class="collapsed ">IaaS</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/domain/cc/others/paas/" class="collapsed ">PaaS</a>
   
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/domain/cc/others/paas/gae/" class="">GAE</a>
-  
-
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/domain/cc/others/paas/heroku/" class="">Heroku</a>
+    <span>第一部分 基础</span>
   
 
-</li>
-      
-    
-      
-        <li>
-
+          
   
-  <a href="/note-cs/docs/domain/cc/others/paas/openshift/" class="">OpenShift</a>
   
-
-</li>
-      
-    
-      
-        <li>
-
   
-  <a href="/note-cs/docs/domain/cc/others/paas/cloud-foundry/" class="active">Cloud Foundry</a>
-  
-
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/domain/cc/others/paas/appfog/" class="">AppFog</a>
-  
-
-</li>
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/others/saas/" class="collapsed ">SaaS</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+  </ul>
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
 
+          
+  
+  
+  
 
+  
+  <ul>
+    
+  </ul>
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
 
+          
+  
+  
+  
 
+  
+  <ul>
+    
+  </ul>
+  
 
-  </li>
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <span>第二部分 方向</span>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
 
+          
+  
+  
+  
 
+  
 
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
 
+          
+  
+  
+  
 
+  
 
-  </li>
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
 
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/docker/" class="collapsed ">Docker</a>
+  
+
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/helm/" class="">Helm</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/cn/" class="collapsed ">云原生</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/edge/" class="collapsed ">边缘计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/knative/" class="collapsed ">Knative</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/kong/" class="">Kong</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/kubernetes/" class="">Kubernetes</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/oam/" class="">OAM</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/service-mesh/" class="collapsed ">Service Mesh</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/virtual/" class="collapsed ">虚拟化</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/" class="collapsed ">其他</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/iaas/" class="collapsed ">IaaS</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/paas/" class="collapsed ">PaaS</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/paas/gae/" class="">GAE</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/paas/heroku/" class="">Heroku</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/paas/openshift/" class="">OpenShift</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/paas/cloud-foundry/" class="active">Cloud Foundry</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/paas/appfog/" class="">AppFog</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/others/saas/" class="collapsed ">SaaS</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -1157,15 +883,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>Cloud Foundry</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#组件">组件</a>
@@ -1180,25 +907,43 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="cloud-foundry">Cloud Foundry</h1>
+  <article class="markdown"><h1 id="cloud-foundry">
+  Cloud Foundry
+  <a class="anchor" href="#cloud-foundry">#</a>
+</h1>
 <p>Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。</p>
-<h2 id="组件">组件</h2>
-<h3 id="cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg"><a href="https://github.com/cloudfoundry/bosh">cloudfoundry/bosh</a> <img src="https://img.shields.io/github/stars/cloudfoundry/bosh.svg" alt="Github stars" /></h3>
+<h2 id="组件">
+  组件
+  <a class="anchor" href="#%e7%bb%84%e4%bb%b6">#</a>
+</h2>
+<a href="https://github.com/cloudfoundry/bosh">cloudfoundry/bosh</a> <h3 id="cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg">
+  <img src="https://img.shields.io/github/stars/cloudfoundry/bosh.svg" alt="Github stars" />
+  <a class="anchor" href="#cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg">#</a>
+</h3>
 <p>Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.</p>
-<h3 id="cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg"><a href="https://github.com/cloudfoundry/cli">cloudfoundry/cli</a> <img src="https://img.shields.io/github/stars/cloudfoundry/cli.svg" alt="Github stars" /></h3>
+<a href="https://github.com/cloudfoundry/cli">cloudfoundry/cli</a> <h3 id="cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg">
+  <img src="https://img.shields.io/github/stars/cloudfoundry/cli.svg" alt="Github stars" />
+  <a class="anchor" href="#cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg">#</a>
+</h3>
 <p>The official command line client for Cloud Foundry
 <a href="https://docs.cloudfoundry.org/cf-cli">https://docs.cloudfoundry.org/cf-cli</a></p>
-<h3 id="cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg"><a href="https://github.com/cloudfoundry/uaa">cloudfoundry/uaa</a> <img src="https://img.shields.io/github/stars/cloudfoundry/uaa.svg" alt="Github stars" /></h3>
+<a href="https://github.com/cloudfoundry/uaa">cloudfoundry/uaa</a> <h3 id="cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg">
+  <img src="https://img.shields.io/github/stars/cloudfoundry/uaa.svg" alt="Github stars" />
+  <a class="anchor" href="#cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg">#</a>
+</h3>
 <p>CloudFoundry User Account and Authentication (UAA) Server</p>
 <hr>
-<h2 id="cloud-foundry-缺点">Cloud Foundry 缺点</h2>
+<h2 id="cloud-foundry-缺点">
+  Cloud Foundry 缺点
+  <a class="anchor" href="#cloud-foundry-%e7%bc%ba%e7%82%b9">#</a>
+</h2>
 <p>诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。
 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。</p>
 <p>而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。</p>
@@ -1212,13 +957,11 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/2e3dd2a80051c407fc5235ff8b167add101169da" title='Last modified by yewang | 2020-05-26' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/2e3dd2a80051c407fc5235ff8b167add101169da" title='Last modified by yewang | 2020-05-26' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-05-26</span>
     </a>

@@ -15,10 +15,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid>
-      <description>PostgreSQL 快速上手 安装 MacOS  安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 登录 PostgreSQL 控制台：psql psql -U [user] -d [database] -h [host] -p [port]
+      <description>PostgreSQL 快速上手 #  安装 #  MacOS #   安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 #  登录 PostgreSQL 控制台：psql #  psql -U [user] -d [database] -h [host] -p [port]
 默认 psql
-user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l 使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
- 创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?</description>
+user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l #  使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
+ 创建 postgres 用户：CREATE USER postgres WITH PASSWORD &#39;password&#39;; 删除默认生成的 postgres 数据库：DROP DATABASE postgres; 创建属于 postgres 用户的 postgres 数据库：CREATE DATABASE postgres OWNER postgres; 将数据库所有权限赋予 postgres 用户：GRANT ALL PRIVILEGES ON DATABASE postgres to postgres; 给 postgres 用户添加创建数据库的属性：ALTER ROLE postgres CREATEDB;  常用控制台命令 #  \password：设置当前登录用户的密码 \h：查看SQL命令的解释，比如\h select。 \?</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</guid>
-      <description>PostgreSQL 版本 12 12.2  </description>
+      <description>PostgreSQL 版本 #  12 #  12.2 #   </description>
     </item>
     
   </channel>

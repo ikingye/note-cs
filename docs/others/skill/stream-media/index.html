@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="流媒体技术 视频编码  H.264 H.265 H.266 Apple Pro Res (MOV 格式的专用编码)  音频编码  AAC MP3 WAV FLAC（无损） APE（无损）  参考：
- 音频编码格式的比较  视频容器 / 视频格式 一个格式却可以有不同的编码
- AVI (Audio Video Interleaved 音视频交错格式) RMVB FLV (Flash Video) MOV WMV (Windows Media Video) MP4 MKV  MP4 MP4 或称 MPEG-4 第 14 部分（英语：MPEG-4 Part 14）是一种标准的数字多媒体容器格式。MPEG-4 第 14 部分的扩展名为.mp4，以存储数字音频及数字视频为主，但也可以存储字幕和静止图像。因其可容纳支持比特流的视频流（如高级视频编码），MP4 可以在网络传输时使用流式传输。
-MKV MKV 格式是民间流行的一种视频格式，以它兼容众多视频编码见长，可以是 DivX、XviD、RealVideo、H264、MPEG2、VC1 等等。但是由于是民间格式，没有版权限制，又易于播放，所以官方发布的视频影片都不采用 mkv，网上制作下载常见。
- 视频传输协议  RTP/RTCP RTMP HLS (HTTP Live Streaming)   流媒体传输协议 流媒体协议的作用：流同步，播放控制，质量控制，多端跨平台播放等 直播三要素：低延时，高可用，质量反馈和检测"><meta property="og:title" content="流媒体技术" />
+<meta name="description" content="流媒体技术 #  视频编码 #   H.264 H.265 H.266 Apple Pro Res (MOV 格式的专用编码)  音频编码 #   AAC MP3 WAV FLAC（无损） APE（无损）  参考：
+ 音频编码格式的比较  视频容器 / 视频格式 #  一个格式却可以有不同的编码
+ AVI (Audio Video Interleaved 音视频交错格式) RMVB FLV (Flash Video) MOV WMV (Windows Media Video) MP4 MKV  MP4 #  MP4 或称 MPEG-4 第 14 部分（英语：MPEG-4 Part 14）是一种标准的数字多媒体容器格式。MPEG-4 第 14 部分的扩展名为.mp4，以存储数字音频及数字视频为主，但也可以存储字幕和静止图像。因其可容纳支持比特流的视频流（如高级视频编码），MP4 可以在网络传输时使用流式传输。
+MKV #  MKV 格式是民间流行的一种视频格式，以它兼容众多视频编码见长，可以是 DivX、XviD、RealVideo、H264、MPEG2、VC1 等等。但是由于是民间格式，没有版权限制，又易于播放，所以官方发布的视频影片都不采用 mkv，网上制作下载常见。">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="流媒体技术" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/" />
 
 <title>流媒体技术 | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/stream-media/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -31,8 +27,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -45,7 +42,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -73,57 +70,42 @@ https://github.com/alex-shpak/hugo-book
 
   
 
+
+
   
   
-
-
-
-
-
- 
   
-    
-
-
-
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第一部分 基础</span>
+    <span>第一部分 基础</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -131,51 +113,37 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -183,28 +151,20 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -212,808 +172,629 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/communication/" class="collapsed ">通信技术</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/ffmpeg/" class="collapsed ">FFmpeg</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/gb28181/" class="collapsed ">GB28181</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/others/skill/voip/" class="">VoIP</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
+    <span>第二部分 方向</span>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        <li>
-
+          
   
-  <a href="/note-cs/docs/others/skill/easydarwin/" class="">EasyDarwin</a>
   
-
-</li>
-      
-    
-      
-        <li>
-
   
-  <a href="/note-cs/docs/others/skill/srs/" class="">SRS</a>
-  
-
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/others/skill/zlmediakit/" class="">ZLMediaKit</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/stream-media/" class="collapsed active">流媒体技术</a>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/stream-media/rtmp/" class="">RTMP</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/stream-media/rtp/" class="">RTP</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/stream-media/rtsp/" class="">RTSP</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/stream-media/webrtc/" class="">WebRTC</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/stream-media/h264/" class="">H264</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/skill/stream-media/hls/" class="">HLS</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/others/skill/stream-media/http-flv/" class="">HTTP FLV</a>
-  
-
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/others/skill/stream-media/mpeg/" class="">MPEG</a>
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
   
 
-</li>
-      
-    
-      
-        <li>
-
+          
   
-  <a href="/note-cs/docs/others/skill/stream-media/ps/" class="">PS</a>
+  
   
 
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/others/skill/stream-media/live-tech/" class="">直播技术</a>
   
 
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/others/skill/stream-media/video-codec/" class="">视频编码</a>
-  
-
-</li>
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
 
+          
+  
+  
+  
 
-  </li>
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <span>第四部分 其他</span>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
 
+          
+  
+  
+  
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/communication/" class="collapsed ">通信技术</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/debug/" class="collapsed ">Debug</a>
+  
 
-  </li>
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/" class="collapsed active">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/rtmp/" class="">RTMP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/rtp/" class="">RTP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/rtsp/" class="">RTSP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/webrtc/" class="">WebRTC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/h264/" class="">H264</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/hls/" class="">HLS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/http-flv/" class="">HTTP FLV</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/mpeg/" class="">MPEG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/ps/" class="">PS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/live-tech/" class="">直播技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/stream-media/video-codec/" class="">视频编码</a>
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
 
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -1057,15 +838,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>流媒体技术</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#视频编码">视频编码</a></li>
@@ -1106,22 +888,31 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="流媒体技术">流媒体技术</h1>
-<h2 id="视频编码">视频编码</h2>
+  <article class="markdown"><h1 id="流媒体技术">
+  流媒体技术
+  <a class="anchor" href="#%e6%b5%81%e5%aa%92%e4%bd%93%e6%8a%80%e6%9c%af">#</a>
+</h1>
+<h2 id="视频编码">
+  视频编码
+  <a class="anchor" href="#%e8%a7%86%e9%a2%91%e7%bc%96%e7%a0%81">#</a>
+</h2>
 <ul>
 <li>H.264</li>
 <li>H.265</li>
 <li>H.266</li>
 <li>Apple Pro Res (<code>MOV</code> 格式的专用编码)</li>
 </ul>
-<h2 id="音频编码">音频编码</h2>
+<h2 id="音频编码">
+  音频编码
+  <a class="anchor" href="#%e9%9f%b3%e9%a2%91%e7%bc%96%e7%a0%81">#</a>
+</h2>
 <ul>
 <li>AAC</li>
 <li>MP3</li>
@@ -1133,7 +924,10 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><a href="https://www.wikiwand.com/zh-cn/%E9%9F%B3%E9%A2%91%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F%E7%9A%84%E6%AF%94%E8%BE%83">音频编码格式的比较</a></li>
 </ul>
-<h2 id="视频容器--视频格式">视频容器 / 视频格式</h2>
+<h2 id="视频容器--视频格式">
+  视频容器 / 视频格式
+  <a class="anchor" href="#%e8%a7%86%e9%a2%91%e5%ae%b9%e5%99%a8--%e8%a7%86%e9%a2%91%e6%a0%bc%e5%bc%8f">#</a>
+</h2>
 <p>一个格式却可以有不同的编码</p>
 <ul>
 <li>AVI (Audio Video Interleaved 音视频交错格式)</li>
@@ -1144,26 +938,41 @@ https://github.com/alex-shpak/hugo-book
 <li>MP4</li>
 <li>MKV</li>
 </ul>
-<h3 id="mp4httpswwwwikiwandcomzh-cnmp4"><a href="https://www.wikiwand.com/zh-cn/MP4">MP4</a></h3>
+<h3 id="mp4httpswwwwikiwandcomzh-cnmp4">
+  <a href="https://www.wikiwand.com/zh-cn/MP4">MP4</a>
+  <a class="anchor" href="#mp4httpswwwwikiwandcomzh-cnmp4">#</a>
+</h3>
 <p>MP4  或称  <a href="https://www.wikiwand.com/zh-cn/MPEG-4">MPEG-4</a>  第 14 部分（英语：MPEG-4 Part 14）是一种标准的数字<a href="https://www.wikiwand.com/zh-cn/%E5%A4%9A%E5%AA%92%E9%AB%94" title="多媒体">多媒体</a>容器格式。MPEG-4 第 14 部分的扩展名为<code>.mp4</code>，以存储<a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E9%9F%B3%E8%A8%8A">数字音频</a>及<a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E5%BD%B1%E7%89%87">数字视频</a>为主，但也可以存储<a href="https://www.wikiwand.com/zh-cn/%E5%AD%97%E5%B9%95">字幕</a>和静止图像。因其可容纳支持<a href="https://www.wikiwand.com/zh-cn/%E4%BD%8D%E5%85%83%E6%B5%81" title="比特流">比特流</a>的视频流（如<a href="https://www.wikiwand.com/zh-cn/H.264/MPEG-4_AVC">高级视频编码</a>），MP4 可以在网络传输时使用<a href="https://www.wikiwand.com/zh-cn/%E4%B8%B2%E6%B5%81%E5%AA%92%E9%AB%94" title="流媒体">流式传输</a>。</p>
-<h3 id="mkv">MKV</h3>
+<h3 id="mkv">
+  MKV
+  <a class="anchor" href="#mkv">#</a>
+</h3>
 <p>MKV 格式是民间流行的一种视频格式，以它兼容众多视频编码见长，可以是 DivX、XviD、RealVideo、H264、MPEG2、VC1 等等。但是由于是民间格式，没有版权限制，又易于播放，所以官方发布的视频影片都不采用 mkv，网上制作下载常见。</p>
 <hr>
-<h2 id="视频传输协议">视频传输协议</h2>
+<h2 id="视频传输协议">
+  视频传输协议
+  <a class="anchor" href="#%e8%a7%86%e9%a2%91%e4%bc%a0%e8%be%93%e5%8d%8f%e8%ae%ae">#</a>
+</h2>
 <ul>
 <li>RTP/RTCP</li>
 <li>RTMP</li>
 <li>HLS (<code>HTTP Live Streaming</code>)</li>
 </ul>
 <hr>
-<h3 id="流媒体传输协议">流媒体传输协议</h3>
+<h3 id="流媒体传输协议">
+  流媒体传输协议
+  <a class="anchor" href="#%e6%b5%81%e5%aa%92%e4%bd%93%e4%bc%a0%e8%be%93%e5%8d%8f%e8%ae%ae">#</a>
+</h3>
 <p>流媒体协议的作用：流同步，播放控制，质量控制，多端跨平台播放等
 直播三要素：低延时，高可用，质量反馈和检测</p>
 <p>常见流媒体协议类型</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609145228.png" alt="" /></p>
 <p>常见流媒体协议适用场景</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609145308.png" alt="" /></p>
-<h4 id="rtprtcprtsp">RTP/RTCP/RTSP</h4>
+<h4 id="rtprtcprtsp">
+  RTP/RTCP/RTSP
+  <a class="anchor" href="#rtprtcprtsp">#</a>
+</h4>
 <p>封装：</p>
 <ul>
 <li>ps</li>
@@ -1192,7 +1001,10 @@ https://github.com/alex-shpak/hugo-book
 <li>基于 UDP</li>
 </ul>
 <hr>
-<h4 id="rtmp">RTMP</h4>
+<h4 id="rtmp">
+  RTMP
+  <a class="anchor" href="#rtmp">#</a>
+</h4>
 <p><code>Real-Time Messaging Protocol</code></p>
 <ul>
 <li>Adobe 的私有协议，性能相对 HTTP 比较低下。</li>
@@ -1202,7 +1014,10 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609145714.png" alt="" /></p>
 <hr>
-<h4 id="hls">HLS</h4>
+<h4 id="hls">
+  HLS
+  <a class="anchor" href="#hls">#</a>
+</h4>
 <p><code>HTTP Live Streaming</code></p>
 <ul>
 <li>基于 HTTP，性能不错</li>
@@ -1212,7 +1027,10 @@ https://github.com/alex-shpak/hugo-book
 <p><code>HLS</code> 是由<a href="https://www.wikiwand.com/zh-cn/%E8%8B%B9%E6%9E%9C%E5%85%AC%E5%8F%B8" title="苹果公司">苹果公司</a>提出基于  <a href="https://www.wikiwand.com/zh-cn/HTTP" title="HTTP">HTTP</a>  的  <a href="https://www.wikiwand.com/zh-cn/%E6%B5%81%E5%AA%92%E4%BD%93">流媒体</a><a href="https://www.wikiwand.com/zh-cn/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE" title="网络传输协议">网络传输协议</a>。是苹果公司 QuickTime X 和  <a href="https://www.wikiwand.com/zh-cn/IPhone" title="IPhone">iPhone</a>  软件系统的一部分。它的工作原理是把整个流分成一个个小的基于 HTTP 的文件来下载，每次只下载一些。当媒体流正在播放时，客户端可以选择从许多不同的备用源中以不同的速率下载同样的资源，允许流媒体会话适应不同的数据速率。在开始一个流媒体会话时，客户端会下载一个包含元数据的 extended M3U (<code>m3u8</code>) playlist 文件，用于寻找可用的媒体流。</p>
 <p>HLS 只请求基本的 HTTP 报文，与<a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE">实时传输协议（RTP）</a>不同，HLS 可以穿过任何允许 HTTP 数据通过的<a href="https://www.wikiwand.com/zh-cn/%E9%98%B2%E7%81%AB%E5%A2%99">防火墙</a>或者<a href="https://www.wikiwand.com/zh-cn/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8" title="代理服务器">代理服务器</a>。它也很容易使用<a href="https://www.wikiwand.com/zh-cn/%E5%85%A7%E5%AE%B9%E5%88%86%E7%99%BC%E7%B6%B2%E7%B5%A1">内容分发网络</a>来传输媒体流。</p>
 <p>HLS 基于 HTTP 协议实现，传输内容包括两部分，一是 M3U8 描述文件，二是 TS 媒体文件。</p>
-<h5 id="为什么要用-ts-而不是-mp4">为什么要用 TS 而不是 MP4？</h5>
+<h5 id="为什么要用-ts-而不是-mp4">
+  为什么要用 TS 而不是 MP4？
+  <a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e7%94%a8-ts-%e8%80%8c%e4%b8%8d%e6%98%af-mp4">#</a>
+</h5>
 <p>这是因为两个 TS 片段可以无缝拼接，播放器能连续播放，
 而 MP4 文件由于编码方式的原因，两段 MP4 不能无缝拼接，播放器连续播放两个 MP4 文件会出现破音和画面间断，影响用户体验。</p>
 <p>而且如果要在一段长达一小时的视频中跳转，如果使用单个 MP4 格式的视频文件，并且也是用 HTTP 协议，那么需要代理服务器支持 <code>HTTP range request</code> 获取大文件中的一部分。
@@ -1221,22 +1039,46 @@ https://github.com/alex-shpak/hugo-book
 不需要 range request，对代理服务器的要求小很多。
 所有代理服务器都支持小文件的高效缓存。</p>
 <hr>
-<h3 id="流媒体协议">流媒体协议</h3>
-<h4 id="rtprtcp">RTP/RTCP</h4>
+<h3 id="流媒体协议">
+  流媒体协议
+  <a class="anchor" href="#%e6%b5%81%e5%aa%92%e4%bd%93%e5%8d%8f%e8%ae%ae">#</a>
+</h3>
+<h4 id="rtprtcp">
+  RTP/RTCP
+  <a class="anchor" href="#rtprtcp">#</a>
+</h4>
 <p>RTP(Real-time Transport Protocol) 是用于 Internet 上针对多媒体数据流的一种传输协议。</p>
 <p>RTCP 为 RTP 媒体流提供信道外控制。
 RTCP 定期在流多媒体会话参加者之间传输控制数据。
 RTCP 的主要功能是为 RTP 所提供的服务质量提供反馈。</p>
 <p>RTP 使用一个 偶数 UDP port，
 而 RTCP 则使用 RTP 的下一个 port，也就是一个奇数 port。</p>
-<h4 id="rtsp">RTSP</h4>
-<h4 id="rtmp-1">RTMP</h4>
-<h4 id="h264">H264</h4>
-<h4 id="h265">H265</h4>
-<h4 id="ts">TS</h4>
+<h4 id="rtsp">
+  RTSP
+  <a class="anchor" href="#rtsp">#</a>
+</h4>
+<h4 id="rtmp-1">
+  RTMP
+  <a class="anchor" href="#rtmp-1">#</a>
+</h4>
+<h4 id="h264">
+  H264
+  <a class="anchor" href="#h264">#</a>
+</h4>
+<h4 id="h265">
+  H265
+  <a class="anchor" href="#h265">#</a>
+</h4>
+<h4 id="ts">
+  TS
+  <a class="anchor" href="#ts">#</a>
+</h4>
 <p><code>MPEG2-TS</code> 传输流 （MPEG-2 <code>Transport Stream</code>；又称 MPEG-TS、MTS、TS）
 是一种传输和存储包含视频、音频与通信协议各种数据的标准格式，用于数字电视广播系统，如 DVB、ATSC、ISDB、IPTV 等等。</p>
-<h3 id="rtp-payload-type">RTP Payload type</h3>
+<h3 id="rtp-payload-type">
+  RTP Payload type
+  <a class="anchor" href="#rtp-payload-type">#</a>
+</h3>
 <p>有效负载 (载荷) 类型</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615143346.png" alt="" /></p>
 <p>有些负载类型由于诞生的较晚，没有具体的 PT 值，只能使用动态（dynamic）PT 值，即 96 到 127，
@@ -1255,13 +1097,11 @@ It is recommended to dynamically assigned port numbers, although port numbers 50
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/cff888fcca55ef9a25ed2c560bb77ae5fa5ca1dd" title='Last modified by yewang | 2020-06-19' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/cff888fcca55ef9a25ed2c560bb77ae5fa5ca1dd" title='Last modified by yewang | 2020-06-19' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-06-19</span>
     </a>

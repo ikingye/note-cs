@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="git git module git submodule foreach git reset --hard HEAD git submodule update git submodule foreach &#34;git checkout master; git pull&#34; git submodule foreach git clean -f  merge vs squash vs rebase merge 不能保持 master 分支干净，但是保持了所有的 commit history，大多数情况下都是不好的，个别情况挺好 squash 也可以保持 master 分支干净，但是 master 中 author 都是 maintainer，而不是原 owner rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 author
-squash merge # 切换到目标分支 $ git checkout master # 以 squash 的形式 merge $ git merge --squash devel # it does not produce a commit right away: you need an additional commit $ git commit -m &#34;squash branch&#34;  你会发现，在 master 分支上居然有未提交的修改，然后你就需要在 master 上主动提交了修改， 注意，这里是你 commit 的，也就是改变了 commit 的 author。 git merge has a &ndash;commit option, but it cannot be used with &ndash;squash."><meta property="og:title" content="git" />
+<meta name="description" content="git #  git module #  git submodule foreach git reset --hard HEAD git submodule update git submodule foreach &#34;git checkout master; git pull&#34; git submodule foreach git clean -f  merge vs squash vs rebase #  merge 不能保持 master 分支干净，但是保持了所有的 commit history，大多数情况下都是不好的，个别情况挺好 squash 也可以保持 master 分支干净，但是 master 中 author 都是 maintainer，而不是原 owner rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 author
+squash merge #  # 切换到目标分支 $ git checkout master # 以 squash 的形式 merge $ git merge --squash devel # it does not produce a commit right away: you need an additional commit $ git commit -m &#34;squash branch&#34;  你会发现，在 master 分支上居然有未提交的修改，然后你就需要在 master 上主动提交了修改， 注意，这里是你 commit 的，也就是改变了 commit 的 author。 git merge has a &ndash;commit option, but it cannot be used with &ndash;squash.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="git" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/others/tool/dev/git/" />
 
 <title>git | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/tool/dev/git/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -28,8 +25,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -42,7 +40,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -70,883 +68,665 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
 
 
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
   
-  <span>第一部分 基础</span>
   
-
-
-    
-
-
-
-
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/others/tool/recommend/" class="">推荐软件</a>
-  
-
-</li>
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/dev/" class="collapsed ">开发者工具</a>
+    <span>第一部分 基础</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/github/" class="">GitHub</a>
+  <ul>
+    
+  </ul>
   
 
-</li>
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/vscode/" class="collapsed ">VSCode</a>
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/jetbrains/" class="collapsed ">Jetbrains</a>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+  </ul>
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/dev/git/" class="collapsed active">git</a>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+  </ul>
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
 
   
   <ul>
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/git/config/" class="">git config</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/git/submodule/" class="">submodule</a>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/dev/ssh/" class="collapsed ">ssh</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/others/tool/dev/package-manager/" class="collapsed ">包管理工具</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/hhkb/" class="">HHKB</a>
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/others/tool/dev/mas/" class="">Mas</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/note-cs/docs/others/tool/dev/picgo/" class="">picgo</a>
-  
-
-</li>
-      
-    
-      
-        <li>
-
-  
-  <a href="/note-cs/docs/others/tool/dev/tmux/" class="">tmux</a>
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
+    <span>第四部分 其他</span>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
 
+          
+  
+  
+  
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/recommend/" class="">推荐软件</a>
+  
 
-  </li>
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/" class="collapsed ">开发者工具</a>
+  
 
+          
+  
+  
+  
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/github/" class="">GitHub</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/vscode/" class="collapsed ">VSCode</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/jetbrains/" class="collapsed ">Jetbrains</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/git/" class="collapsed active">git</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/git/config/" class="">git config</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/git/submodule/" class="">submodule</a>
+  
+
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/ssh/" class="collapsed ">ssh</a>
+  
 
+          
+  
+  
+  
 
-  </li>
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/package-manager/" class="collapsed ">包管理工具</a>
+  
 
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/hhkb/" class="">HHKB</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/mas/" class="">Mas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/picgo/" class="">picgo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/dev/tmux/" class="">tmux</a>
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/others/tool/study/" class="collapsed ">计算机学习</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
   
 
+  
 
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+  </ul>
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -990,15 +770,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>git</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#git-module">git module</a></li>
@@ -1018,25 +799,37 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="git">git</h1>
-<h2 id="git-module">git module</h2>
+  <article class="markdown"><h1 id="git">
+  git
+  <a class="anchor" href="#git">#</a>
+</h1>
+<h2 id="git-module">
+  git module
+  <a class="anchor" href="#git-module">#</a>
+</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule foreach git reset --hard HEAD
 git submodule update
 git submodule foreach <span style="color:#e6db74">&#34;git checkout master; git pull&#34;</span>
 git submodule foreach git clean -f
 </code></pre></div><hr>
-<h2 id="merge-vs-squash-vs-rebase">merge vs squash vs rebase</h2>
+<h2 id="merge-vs-squash-vs-rebase">
+  merge vs squash vs rebase
+  <a class="anchor" href="#merge-vs-squash-vs-rebase">#</a>
+</h2>
 <p>merge 不能保持 master 分支干净，但是保持了所有的 commit history，大多数情况下都是不好的，个别情况挺好
 squash 也可以保持 master 分支干净，但是 master 中 author 都是 maintainer，而不是原 owner
 rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 author</p>
-<h3 id="squash-merge">squash merge</h3>
+<h3 id="squash-merge">
+  squash merge
+  <a class="anchor" href="#squash-merge">#</a>
+</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 切换到目标分支</span>
 $ git checkout master
 
@@ -1055,7 +848,10 @@ $ git commit -m <span style="color:#e6db74">&#34;squash branch&#34;</span>
 <ul>
 <li><a href="https://stackoverflow.com/questions/2427238/in-git-what-is-the-difference-between-merge-squash-and-rebase">In git, what is the difference between merge &ndash;squash and rebase?</a></li>
 </ul>
-<h3 id="rebase-merge">rebase merge</h3>
+<h3 id="rebase-merge">
+  rebase merge
+  <a class="anchor" href="#rebase-merge">#</a>
+</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 先切换到 devel 分支（不一样咯）</span>
 $ git checkout devel
 
@@ -1082,13 +878,19 @@ $ git merge
 <li>这个时候别人将我们这个 commit 合并到 master 也只会在 master 上留下一个 commit 记录</li>
 </ul>
 <hr>
-<h2 id="合并-git-commit">合并 git commit</h2>
+<h2 id="合并-git-commit">
+  合并 git commit
+  <a class="anchor" href="#%e5%90%88%e5%b9%b6-git-commit">#</a>
+</h2>
 <p>参考：</p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/2302736/trimming-git-commits-squashing-git-history">Trimming Git Commits/Squashing Git History</a></li>
 </ul>
 <hr>
-<h2 id="git-branch-与-git-tag-同名">git branch 与 git tag 同名</h2>
+<h2 id="git-branch-与-git-tag-同名">
+  git branch 与 git tag 同名
+  <a class="anchor" href="#git-branch-%e4%b8%8e-git-tag-%e5%90%8c%e5%90%8d">#</a>
+</h2>
 <p>需要使用完整路径</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout refs/heads/v1.5.2
 
@@ -1100,7 +902,10 @@ git push -u origin refs/heads/v4.8.0
 <li><a href="https://softwareengineering.stackexchange.com/questions/230438/in-git-is-it-a-bad-idea-to-create-a-tag-with-the-same-name-as-a-deleted-branch">In git, is it a bad idea to create a tag with the same name as a deleted branch?</a></li>
 </ul>
 <hr>
-<h2 id="git-pull-force">git pull force</h2>
+<h2 id="git-pull-force">
+  git pull force
+  <a class="anchor" href="#git-pull-force">#</a>
+</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git fetch --all
 
 <span style="color:#75715e"># git reset --hard origin/&lt;branch_name&gt;</span>
@@ -1110,7 +915,10 @@ git reset --hard origin/master
 <li><a href="https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files">How do I force “git pull” to overwrite local files?</a></li>
 </ul>
 <hr>
-<h2 id="hard-reset-vs-mixed-reset-vs-soft-reset"><code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code></h2>
+<h2 id="hard-reset-vs-mixed-reset-vs-soft-reset">
+  <code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code>
+  <a class="anchor" href="#hard-reset-vs-mixed-reset-vs-soft-reset">#</a>
+</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 回到 reset 版本，之后的文件都属于 git add 的状态</span>
 git reset --soft
 
@@ -1121,11 +929,17 @@ git reset --mixed
 <span style="color:#75715e"># 回到 reset 版本，之后文件都丢弃（使用 git reflog 可以找回来）</span>
 git reset --hard
 
-</code></pre></div><h2 id="git-reflog">git reflog</h2>
+</code></pre></div><h2 id="git-reflog">
+  git reflog
+  <a class="anchor" href="#git-reflog">#</a>
+</h2>
 <p><code>reflog</code> 是 Git 操作的一道安全保障，它能够记录几乎所有本地仓库的改变。</p>
 <p>包括所有分支 commit 提交，已经删除的 <code>commit</code>（其实并未被实际删除）都会被记录。</p>
 <p>只要 HEAD 发生变化，就可以通过 <code>reflog</code> 查看到。</p>
-<h2 id="git-回退">git 回退</h2>
+<h2 id="git-回退">
+  git 回退
+  <a class="anchor" href="#git-%e5%9b%9e%e9%80%80">#</a>
+</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 文件放弃本地修改</span>
 git checkout -- &lt;file&gt;
 
@@ -1142,13 +956,11 @@ git reset -- &lt;path&gt;
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/ff16d378190c2367a905605e06219e0743e7164a" title='Last modified by yewang | 2020-06-24' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/ff16d378190c2367a905605e06219e0743e7164a" title='Last modified by yewang | 2020-06-24' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-06-24</span>
     </a>

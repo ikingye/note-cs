@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="BFE baidu/bfe Baidu Front End 百度统一前端
+<meta name="description" content="BFE #  baidu/bfe Baidu Front End 百度统一前端
 统一的百度七层（HTTP）流量接入平台
-BFE 之前的百度前端接入架构 流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
-开发成本高 如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。
-维护成本高 不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。
-数据和策略共享的成本高 产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。
-技术积累难 由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。
- BFE 架构 BFE 是一个七层接入系统。 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。
+BFE 之前的百度前端接入架构 #  流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
+开发成本高 #  如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。
+维护成本高 #  不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。
+数据和策略共享的成本高 #  产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。
+技术积累难 #  由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。
+ BFE 架构 #  BFE 是一个七层接入系统。 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。
 BFE 最基本的工作就是从 BGW/BVS 接入流量并将流量转发给产品线的前端 webserver 或者其他接入模块，最后接收后端 server 的内容并回复给外部用户。
-反向代理服务器 BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有一百多万。 在如此大的流量压力环境中，服务器的处理性能至关重要。 BFE 采用现在业界流行的多进程全异步非阻塞事件驱动模型， 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 nginx, squid, varnish 的性能都很难满足需求。 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。
-能够在任意阶段处理用户请求 从接收用户请求的时候起，BFE 就能对数据进行完全的解析和过滤，能够在读取、解析、连接、写后端等的任一阶段对数据进行修改、增加、删除、丢弃等操作。
-分流策略非常高效 NGINX 和大部分通用的网络服务器在多个正则规则和复杂策略组合下的分流效率比较低，BFE 通过反解正则规则及嵌套分流策略实现了时间复杂度为 O(1) 的分流。"><meta property="og:title" content="BFE" />
-<meta property="og:description" content="BFE baidu/bfe Baidu Front End 百度统一前端
+反向代理服务器 #  BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有一百多万。 在如此大的流量压力环境中，服务器的处理性能至关重要。 BFE 采用现在业界流行的多进程全异步非阻塞事件驱动模型， 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 nginx, squid, varnish 的性能都很难满足需求。 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="BFE" />
+<meta property="og:description" content="BFE #  baidu/bfe Baidu Front End 百度统一前端
 统一的百度七层（HTTP）流量接入平台
-BFE 之前的百度前端接入架构 流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
-开发成本高 如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。
-维护成本高 不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。
-数据和策略共享的成本高 产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。
-技术积累难 由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。
- BFE 架构 BFE 是一个七层接入系统。 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。
+BFE 之前的百度前端接入架构 #  流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
+开发成本高 #  如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。
+维护成本高 #  不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。
+数据和策略共享的成本高 #  产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。
+技术积累难 #  由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。
+ BFE 架构 #  BFE 是一个七层接入系统。 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。
 BFE 最基本的工作就是从 BGW/BVS 接入流量并将流量转发给产品线的前端 webserver 或者其他接入模块，最后接收后端 server 的内容并回复给外部用户。
-反向代理服务器 BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有一百多万。 在如此大的流量压力环境中，服务器的处理性能至关重要。 BFE 采用现在业界流行的多进程全异步非阻塞事件驱动模型， 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 nginx, squid, varnish 的性能都很难满足需求。 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。
-能够在任意阶段处理用户请求 从接收用户请求的时候起，BFE 就能对数据进行完全的解析和过滤，能够在读取、解析、连接、写后端等的任一阶段对数据进行修改、增加、删除、丢弃等操作。
-分流策略非常高效 NGINX 和大部分通用的网络服务器在多个正则规则和复杂策略组合下的分流效率比较低，BFE 通过反解正则规则及嵌套分流策略实现了时间复杂度为 O(1) 的分流。" />
+反向代理服务器 #  BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有一百多万。 在如此大的流量压力环境中，服务器的处理性能至关重要。 BFE 采用现在业界流行的多进程全异步非阻塞事件驱动模型， 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 nginx, squid, varnish 的性能都很难满足需求。 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/" />
 <meta property="article:modified_time" content="2020-05-27T15:10:02+08:00" />
 <title>BFE | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -48,8 +41,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -62,7 +56,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -90,978 +84,720 @@ https://github.com/alex-shpak/hugo-book
 
   
 
-  
-  
-
-
-
-
-
- 
-  
-    
-
-
 
 
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
   
-  <span>第一部分 基础</span>
   
-
-
-    
-
-
-
-
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/proxy/bfe/" class="active">BFE</a>
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-</li>
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/proxy/bgw/" class="">BGW</a>
-  
 
-</li>
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/proxy/nginx/" class="collapsed ">Nginx</a>
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+  </ul>
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/proxy/haproxy/" class="collapsed ">HAProxy</a>
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
   
 
+          
+  
+  
+  
 
+  
+  <ul>
     
+  </ul>
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/proxy/envoy/" class="collapsed ">Envoy</a>
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/proxy/mosn/" class="collapsed ">MOSN</a>
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
+    <span>第二部分 方向</span>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
+          
   
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
+          
   
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
   
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
+  
 
+          
+  
+  
+  
 
+  
 
-  </li>
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/bfe/" class="active">BFE</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/bgw/" class="">BGW</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/nginx/" class="collapsed ">Nginx</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/haproxy/" class="collapsed ">HAProxy</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/envoy/" class="collapsed ">Envoy</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/mosn/" class="collapsed ">MOSN</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
   
 
+  
 
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
 
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -1105,15 +841,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>BFE</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#bfe-之前的百度前端接入架构">BFE 之前的百度前端接入架构</a>
@@ -1192,62 +929,104 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="bfe">BFE</h1>
+  <article class="markdown"><h1 id="bfe">
+  BFE
+  <a class="anchor" href="#bfe">#</a>
+</h1>
 <p><a href="https://github.com/baidu/bfe">baidu/bfe</a> <img src="https://img.shields.io/github/stars/baidu/bfe.svg" alt="Github stars" /></p>
 <p>Baidu Front End
 百度统一前端</p>
 <p>统一的百度七层（HTTP）流量接入平台</p>
-<h2 id="bfe-之前的百度前端接入架构">BFE 之前的百度前端接入架构</h2>
+<h2 id="bfe-之前的百度前端接入架构">
+  BFE 之前的百度前端接入架构
+  <a class="anchor" href="#bfe-%e4%b9%8b%e5%89%8d%e7%9a%84%e7%99%be%e5%ba%a6%e5%89%8d%e7%ab%af%e6%8e%a5%e5%85%a5%e6%9e%b6%e6%9e%84">#</a>
+</h2>
 <p>流量从 BGW 接入之后直接到达了产品线的前端服务器，
 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等，
 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200527103350.png" alt="" /></p>
-<h3 id="开发成本高">开发成本高</h3>
+<h3 id="开发成本高">
+  开发成本高
+  <a class="anchor" href="#%e5%bc%80%e5%8f%91%e6%88%90%e6%9c%ac%e9%ab%98">#</a>
+</h3>
 <p>如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。</p>
-<h3 id="维护成本高">维护成本高</h3>
+<h3 id="维护成本高">
+  维护成本高
+  <a class="anchor" href="#%e7%bb%b4%e6%8a%a4%e6%88%90%e6%9c%ac%e9%ab%98">#</a>
+</h3>
 <p>不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。</p>
-<h3 id="数据和策略共享的成本高">数据和策略共享的成本高</h3>
+<h3 id="数据和策略共享的成本高">
+  数据和策略共享的成本高
+  <a class="anchor" href="#%e6%95%b0%e6%8d%ae%e5%92%8c%e7%ad%96%e7%95%a5%e5%85%b1%e4%ba%ab%e7%9a%84%e6%88%90%e6%9c%ac%e9%ab%98">#</a>
+</h3>
 <p>产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。</p>
-<h3 id="技术积累难">技术积累难</h3>
+<h3 id="技术积累难">
+  技术积累难
+  <a class="anchor" href="#%e6%8a%80%e6%9c%af%e7%a7%af%e7%b4%af%e9%9a%be">#</a>
+</h3>
 <p>由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。</p>
 <hr>
-<h2 id="bfe-架构">BFE 架构</h2>
+<h2 id="bfe-架构">
+  BFE 架构
+  <a class="anchor" href="#bfe-%e6%9e%b6%e6%9e%84">#</a>
+</h2>
 <p>BFE 是一个七层接入系统。
 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。</p>
 <p>BFE 最基本的工作就是从 <code>BGW</code>/<code>BVS</code> 接入流量并将流量转发给产品线的<strong>前端 webserver</strong> 或者其他<strong>接入模块</strong>，最后接收后端 server 的内容并回复给外部用户。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200527104845.png" alt="" /></p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200527112854.png" alt="" /></p>
-<h3 id="反向代理服务器">反向代理服务器</h3>
+<h3 id="反向代理服务器">
+  反向代理服务器
+  <a class="anchor" href="#%e5%8f%8d%e5%90%91%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e5%99%a8">#</a>
+</h3>
 <p>BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有<strong>一百多万</strong>。
 在如此大的流量压力环境中，服务器的处理性能至关重要。
 BFE 采用现在业界流行的<strong>多进程全异步非阻塞事件驱动模型</strong>，
 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 <code>nginx</code>, <code>squid</code>, <code>varnish</code> 的性能都很难满足需求。
 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。</p>
-<h4 id="能够在任意阶段处理用户请求">能够在<code>任意阶段处理</code>用户请求</h4>
+<h4 id="能够在任意阶段处理用户请求">
+  能够在<code>任意阶段处理</code>用户请求
+  <a class="anchor" href="#%e8%83%bd%e5%a4%9f%e5%9c%a8%e4%bb%bb%e6%84%8f%e9%98%b6%e6%ae%b5%e5%a4%84%e7%90%86%e7%94%a8%e6%88%b7%e8%af%b7%e6%b1%82">#</a>
+</h4>
 <p>从接收用户请求的时候起，BFE 就能对数据进行完全的解析和过滤，能够在读取、解析、连接、写后端等的任一阶段对数据进行修改、增加、删除、丢弃等操作。</p>
-<h4 id="分流策略非常高效"><code>分流策略</code>非常高效</h4>
+<h4 id="分流策略非常高效">
+  <code>分流策略</code>非常高效
+  <a class="anchor" href="#%e5%88%86%e6%b5%81%e7%ad%96%e7%95%a5%e9%9d%9e%e5%b8%b8%e9%ab%98%e6%95%88">#</a>
+</h4>
 <p>NGINX 和大部分通用的网络服务器在<code>多个正则规则</code>和<code>复杂策略组合</code>下的分流效率比较低，BFE 通过<code>反解正则规则</code>及<code>嵌套分流策略</code>实现了时间复杂度为 <code>O(1)</code> 的分流。</p>
-<h4 id="bfe-提供统一缓存">BFE 提供统一<code>缓存</code></h4>
+<h4 id="bfe-提供统一缓存">
+  BFE 提供统一<code>缓存</code>
+  <a class="anchor" href="#bfe-%e6%8f%90%e4%be%9b%e7%bb%9f%e4%b8%80%e7%bc%93%e5%ad%98">#</a>
+</h4>
 <p>BFE 提供统一缓存，用户请求可以不经过后端处理由 BFE 直接返回。</p>
 <p>BFE 提供灵活的缓存策略，对于 css 及不宜存放 CDN 的静态资源，BFE 缓存。</p>
-<h4 id="提升超长距离的数据传输效率和响应时间">提升<code>超长距离</code>的数据传输效率和响应时间</h4>
+<h4 id="提升超长距离的数据传输效率和响应时间">
+  提升<code>超长距离</code>的数据传输效率和响应时间
+  <a class="anchor" href="#%e6%8f%90%e5%8d%87%e8%b6%85%e9%95%bf%e8%b7%9d%e7%a6%bb%e7%9a%84%e6%95%b0%e6%8d%ae%e4%bc%a0%e8%be%93%e6%95%88%e7%8e%87%e5%92%8c%e5%93%8d%e5%ba%94%e6%97%b6%e9%97%b4">#</a>
+</h4>
 <p>BFE 和 BFE 级联后可以启用 tcp fast open 及任意时间的长连接，提升超长距离的数据传输效率和响应时间。</p>
 <hr>
-<h3 id="防攻击系统">防攻击系统</h3>
+<h3 id="防攻击系统">
+  防攻击系统
+  <a class="anchor" href="#%e9%98%b2%e6%94%bb%e5%87%bb%e7%b3%bb%e7%bb%9f">#</a>
+</h3>
 <p>产品线各自为战的防攻击很被动，</p>
 <ol>
 <li>各个产品线需要<strong>重复</strong>去做防御</li>
 <li>同一个防御策略，不同的接入服务器和架构需要不同的代码和逻辑实现</li>
 <li>公司的防攻击策略很多都是直接从产品线<strong>日志</strong>进行挖掘的，不同的服务器日志有不同的格式，众多产品线有各自的部署机房，日志传输延时大并且计算成本高，导致部分防攻击策略时延很大，无法有效<strong>实时</strong>防止外部攻击。</li>
 </ol>
-<h4 id="bfe-防攻击系统的优点">BFE 防攻击系统的优点：</h4>
+<h4 id="bfe-防攻击系统的优点">
+  BFE 防攻击系统的优点：
+  <a class="anchor" href="#bfe-%e9%98%b2%e6%94%bb%e5%87%bb%e7%b3%bb%e7%bb%9f%e7%9a%84%e4%bc%98%e7%82%b9">#</a>
+</h4>
 <ol>
 <li>
 <p>全局性防御</p>
@@ -1263,7 +1042,10 @@ BFE 本身也需要不断优化，降低系统资源开销，提升处理性能�
 此外，BFE 的统一防攻击系统 BDS 还在进行实时的全局攻击特征计算，对于同时符合多种封禁规则的外部请求实行封禁。</p>
 </li>
 </ol>
-<h4 id="百度防攻击系统bds">百度防攻击系统（BDS）</h4>
+<h4 id="百度防攻击系统bds">
+  百度防攻击系统（BDS）
+  <a class="anchor" href="#%e7%99%be%e5%ba%a6%e9%98%b2%e6%94%bb%e5%87%bb%e7%b3%bb%e7%bb%9fbds">#</a>
+</h4>
 <p>BDS 是百度接入端全局防攻击系统，负责对接入端流量进行全局、旁路、常态的特征分析和防御处理。
 主要由三个子系统组成：</p>
 <ul>
@@ -1273,8 +1055,14 @@ BFE 本身也需要不断优化，降低系统资源开销，提升处理性能�
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200527111744.png" alt="" /></p>
 <hr>
-<h3 id="流量调度及均衡系统">流量调度及均衡系统</h3>
-<h4 id="内网流量调度及均衡系统gslb">内网流量调度及均衡系统（GSLB）</h4>
+<h3 id="流量调度及均衡系统">
+  流量调度及均衡系统
+  <a class="anchor" href="#%e6%b5%81%e9%87%8f%e8%b0%83%e5%ba%a6%e5%8f%8a%e5%9d%87%e8%a1%a1%e7%b3%bb%e7%bb%9f">#</a>
+</h3>
+<h4 id="内网流量调度及均衡系统gslb">
+  内网流量调度及均衡系统（GSLB）
+  <a class="anchor" href="#%e5%86%85%e7%bd%91%e6%b5%81%e9%87%8f%e8%b0%83%e5%ba%a6%e5%8f%8a%e5%9d%87%e8%a1%a1%e7%b3%bb%e7%bb%9fgslb">#</a>
+</h4>
 <p>GSLB（global service load balance）即内网流量调度系统，
 主要针对百度 IDC 内部的流量进行调度。</p>
 <p>它的主要目标是感知内网流量和产品线容量变化并自动地均衡调度流量。</p>
@@ -1291,14 +1079,23 @@ BFE 本身也需要不断优化，降低系统资源开销，提升处理性能�
 <p>工作原理简述如下：</p>
 <p>调度模块根据流量采集模块采集到的实时流量数据和容量管理模块提供的容量数据实时计算出权重并将权重数据下发给 BFE，
 BFE 根据权重数据分配流量，实现快速的流量切换和负载均衡。</p>
-<h4 id="外网流量调度及均衡系统-gtc">外网流量调度及均衡系统 (GTC)</h4>
+<h4 id="外网流量调度及均衡系统-gtc">
+  外网流量调度及均衡系统 (GTC)
+  <a class="anchor" href="#%e5%a4%96%e7%bd%91%e6%b5%81%e9%87%8f%e8%b0%83%e5%ba%a6%e5%8f%8a%e5%9d%87%e8%a1%a1%e7%b3%bb%e7%bb%9f-gtc">#</a>
+</h4>
 <p>GTC（global service control）主要针对外网流量调度。</p>
 <p>由于网络运营商、带宽资源、网络质量等的限制，即使同一个用户访问同一个百度服务的不同 VIP，也会带来不同的访问延时。</p>
 <p>GTC 要解决的主要问题是：</p>
 <p>对每个用户群，选择唯一的 vip，希望总延迟较小。</p>
 <hr>
-<h3 id="流量分析及展现">流量分析及展现</h3>
-<h4 id="流量分析">流量分析</h4>
+<h3 id="流量分析及展现">
+  流量分析及展现
+  <a class="anchor" href="#%e6%b5%81%e9%87%8f%e5%88%86%e6%9e%90%e5%8f%8a%e5%b1%95%e7%8e%b0">#</a>
+</h3>
+<h4 id="流量分析">
+  流量分析
+  <a class="anchor" href="#%e6%b5%81%e9%87%8f%e5%88%86%e6%9e%90">#</a>
+</h4>
 <p>BFE 拥有各个产品线访问日志，目前整个集群的天访问日志量有 30 多 T。包括最基本的 URI、HTTP 状态码、用户 IP、cookie、响应时间等， BFE 通过这些日志能挖掘出哪些价值？流量分析主要在以下几个方面开展工作：</p>
 <ul>
 <li>
@@ -1315,24 +1112,51 @@ BFE 的异常检测主要分析访问日志中出现的各种特征数据，判�
 <p>服务质量的变化都会反映在访问日志里，响应时间上升，建立连接和重试时间增多都是服务质量下降的具体表现。BFE 希望能通过日志分析数据监控和提前预警产品线服务质量的变化。</p>
 </li>
 </ul>
-<h4 id="流量展现">流量展现</h4>
+<h4 id="流量展现">
+  流量展现
+  <a class="anchor" href="#%e6%b5%81%e9%87%8f%e5%b1%95%e7%8e%b0">#</a>
+</h4>
 <p>BFE 希望能够实时、准确地展现全百度各条产品线的流量概况，包括总流量趋势、响应时间、状态码变化、地域统计等。
 但是在大流量大压力环境下，保证日志传输，数据计算的实时性、稳定性也是个非常有挑战的难题。</p>
 <hr>
-<h2 id="其他">其他</h2>
-<h3 id="bgw">BGW</h3>
-<h3 id="bvs">BVS</h3>
-<h3 id="ubs-日志">UBS 日志</h3>
-<h3 id="911-防攻击系统">911 防攻击系统</h3>
+<h2 id="其他">
+  其他
+  <a class="anchor" href="#%e5%85%b6%e4%bb%96">#</a>
+</h2>
+<h3 id="bgw">
+  BGW
+  <a class="anchor" href="#bgw">#</a>
+</h3>
+<h3 id="bvs">
+  BVS
+  <a class="anchor" href="#bvs">#</a>
+</h3>
+<h3 id="ubs-日志">
+  UBS 日志
+  <a class="anchor" href="#ubs-%e6%97%a5%e5%bf%97">#</a>
+</h3>
+<h3 id="911-防攻击系统">
+  911 防攻击系统
+  <a class="anchor" href="#911-%e9%98%b2%e6%94%bb%e5%87%bb%e7%b3%bb%e7%bb%9f">#</a>
+</h3>
 <p>公司最主要的防攻击系统就是 911</p>
 <p>911 运行在内核态并且主要针对四层攻击</p>
-<h4 id="不支持长时间的流量清洗">不支持长时间的流量清洗</h4>
+<h4 id="不支持长时间的流量清洗">
+  不支持长时间的流量清洗
+  <a class="anchor" href="#%e4%b8%8d%e6%94%af%e6%8c%81%e9%95%bf%e6%97%b6%e9%97%b4%e7%9a%84%e6%b5%81%e9%87%8f%e6%b8%85%e6%b4%97">#</a>
+</h4>
 <p>因为长时间内核态运行很容易产生稳定性问题。</p>
-<h4 id="不支持应用层协议的复杂防御">不支持应用层协议的复杂防御</h4>
+<h4 id="不支持应用层协议的复杂防御">
+  不支持应用层协议的复杂防御
+  <a class="anchor" href="#%e4%b8%8d%e6%94%af%e6%8c%81%e5%ba%94%e7%94%a8%e5%b1%82%e5%8d%8f%e8%ae%ae%e7%9a%84%e5%a4%8d%e6%9d%82%e9%98%b2%e5%be%a1">#</a>
+</h4>
 <p>911 主要定位于四层防攻击，如果对七层协议进行分析和策略组合防御，性能消耗非常大。
 所以无法防御很多常见的 HTTP 攻击，比如恶意 header（<code>重定向攻击</code>，<code>cookie 攻击</code>）, <code>XSS 攻击</code>，<code>sql 注入</code>等。</p>
 <hr>
-<h3 id="bfe-未来工作by-2014-02">BFE 未来工作（by 2014-02）</h3>
+<h3 id="bfe-未来工作by-2014-02">
+  BFE 未来工作（by 2014-02）
+  <a class="anchor" href="#bfe-%e6%9c%aa%e6%9d%a5%e5%b7%a5%e4%bd%9cby-2014-02">#</a>
+</h3>
 <p>BFE 的未来工作依然围绕四个核心模块进行：</p>
 <ul>
 <li>高性能网络服务器技术</li>
@@ -1340,27 +1164,60 @@ BFE 的异常检测主要分析访问日志中出现的各种特征数据，判�
 <li>流量调度及均衡</li>
 <li>流量分析及展现</li>
 </ul>
-<h4 id="高性能网络服务器技术">高性能网络服务器技术</h4>
-<h5 id="优化网络协议">优化网络协议</h5>
+<h4 id="高性能网络服务器技术">
+  高性能网络服务器技术
+  <a class="anchor" href="#%e9%ab%98%e6%80%a7%e8%83%bd%e7%bd%91%e7%bb%9c%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%8a%80%e6%9c%af">#</a>
+</h4>
+<h5 id="优化网络协议">
+  优化网络协议
+  <a class="anchor" href="#%e4%bc%98%e5%8c%96%e7%bd%91%e7%bb%9c%e5%8d%8f%e8%ae%ae">#</a>
+</h5>
 <p>BFE 需要研究和应用业界最先进和成熟的网络优化协议，最主要的就是 TCP 和 HTTP。BFE 目前应用了 tcp fast open 技术，能有效减少 TCP 建立连接三次握手带来的延迟，在第一个 syn 包发出时就能开始传输数据。</p>
 <p>BFE 目前只支持 HTTP1.0\1.1 协议，HTTP1.1 1999 年发布之后几乎没有很大更新。随着因特网的发展，HTTP1.1 协议的一些缺陷也遭受越来越多的诟病，比如网络连接的复用少，头部冗余数据等。做为下一代 HTTP 协议的 HTTP2.0（主要基于 SPDY 协议）草案正在讨论，预计于 2014 年提交 IETF。BFE 目前也在研究 HTTP2.0 协议内容及在 BFE 上的实现方式。</p>
-<h5 id="优化并发连接处理模型">优化并发连接处理模型</h5>
+<h5 id="优化并发连接处理模型">
+  优化并发连接处理模型
+  <a class="anchor" href="#%e4%bc%98%e5%8c%96%e5%b9%b6%e5%8f%91%e8%bf%9e%e6%8e%a5%e5%a4%84%e7%90%86%e6%a8%a1%e5%9e%8b">#</a>
+</h5>
 <p>BFE 采用异步事件驱动实现高并发。但事件驱动的性能到底有多高？是否有新的模型支持实现百万甚至千万级的并发？这是业界广泛讨论和思考的问题。</p>
 <p>但事件模型也有很多缺陷，比如事件状态机的处理很复杂，事件不好管理，超时管理消耗资源等。BFE 需要考虑改进事件模型或者采用新的模型实现更高的并发。</p>
-<h5 id="分流策略及计算优化">分流策略及计算优化</h5>
+<h5 id="分流策略及计算优化">
+  分流策略及计算优化
+  <a class="anchor" href="#%e5%88%86%e6%b5%81%e7%ad%96%e7%95%a5%e5%8f%8a%e8%ae%a1%e7%ae%97%e4%bc%98%e5%8c%96">#</a>
+</h5>
 <p>BFE 分流策略非常复杂，一条简单的请求往往要通过几十个规则的过滤才能到达产品线后端，怎样降低时间复杂度？减少规则计算？随着接入产品线越来越多，规则越来越复杂，BFE 需要通过优化分流策略来提升处理性能。</p>
-<h4 id="防攻击技术">防攻击技术</h4>
-<h5 id="防攻击系统管理查询平台化接口化">防攻击系统管理、查询平台化、接口化。</h5>
+<h4 id="防攻击技术">
+  防攻击技术
+  <a class="anchor" href="#%e9%98%b2%e6%94%bb%e5%87%bb%e6%8a%80%e6%9c%af">#</a>
+</h4>
+<h5 id="防攻击系统管理查询平台化接口化">
+  防攻击系统管理、查询平台化、接口化。
+  <a class="anchor" href="#%e9%98%b2%e6%94%bb%e5%87%bb%e7%b3%bb%e7%bb%9f%e7%ae%a1%e7%90%86%e6%9f%a5%e8%af%a2%e5%b9%b3%e5%8f%b0%e5%8c%96%e6%8e%a5%e5%8f%a3%e5%8c%96">#</a>
+</h5>
 <p>包括配置修改、策略修改及查询、防攻击数据查询等需求，全部实现接口化。</p>
-<h5 id="waf-研究">WAF 研究</h5>
+<h5 id="waf-研究">
+  WAF 研究
+  <a class="anchor" href="#waf-%e7%a0%94%e7%a9%b6">#</a>
+</h5>
 <p><code>Waf</code> 即 <code>Web Application Firewall</code>，是通过执行一系列针对 HTTP/HTTPS 的安全策略来专门为 Web 应用提供保护的系统。</p>
-<h5 id="性能优化">性能优化</h5>
-<h5 id="复杂防攻击策略定制">复杂防攻击策略定制。</h5>
-<h4 id="流量调度及均衡">流量调度及均衡</h4>
+<h5 id="性能优化">
+  性能优化
+  <a class="anchor" href="#%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96">#</a>
+</h5>
+<h5 id="复杂防攻击策略定制">
+  复杂防攻击策略定制。
+  <a class="anchor" href="#%e5%a4%8d%e6%9d%82%e9%98%b2%e6%94%bb%e5%87%bb%e7%ad%96%e7%95%a5%e5%ae%9a%e5%88%b6">#</a>
+</h5>
+<h4 id="流量调度及均衡">
+  流量调度及均衡
+  <a class="anchor" href="#%e6%b5%81%e9%87%8f%e8%b0%83%e5%ba%a6%e5%8f%8a%e5%9d%87%e8%a1%a1">#</a>
+</h4>
 <p>加强流量调度结果的可视化</p>
 <p>在外网调度中支持更多的调度策略（比如：增加对带宽成本的考虑）</p>
 <p>在内网调度中，增加对更复杂内网环境的考虑（目前只考虑下游服务机群的故障）</p>
-<h4 id="流量分析-1">流量分析</h4>
+<h4 id="流量分析-1">
+  流量分析
+  <a class="anchor" href="#%e6%b5%81%e9%87%8f%e5%88%86%e6%9e%90-1">#</a>
+</h4>
 <p>流量分析争取在异常检测和服务质量监控取方面取得突破。</p>
 </article>
  
@@ -1368,13 +1225,11 @@ BFE 的异常检测主要分析访问日志中出现的各种特征数据，判�
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/e2a787a8a214755f2bdc2070297a3db427ae9f01" title='Last modified by yewang | 2020-05-27' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/e2a787a8a214755f2bdc2070297a3db427ae9f01" title='Last modified by yewang | 2020-05-27' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-05-27</span>
     </a>

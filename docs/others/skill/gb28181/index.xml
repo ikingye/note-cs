@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sdp/</guid>
-      <description>SDP Session Description Protocol
+      <description>SDP #  Session Description Protocol
 SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。
 媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
 SDP 协议的具体内容参看：RFC2327
@@ -23,7 +23,7 @@ SDP 协议的具体内容参看：RFC2327
 SDP 并不是传输协议，需要用 RTSP、SIP、HTTP 等协议进行承载传输、交换， 如果大家协调好了之后，就可以建立会话，完成真实的音视频码流传输，再完成解码和播放。
 SDP 一般用在媒体会话建立之前，可以适用于实时流媒体、点播、直播等领域，特别在音视频通话、视频会议、VoIP、视频监控等领域应用较多。 媒体码流一般基于 RTP 传输，服务质量用 RTCP 协议保障。
 但是 SDP 的交互不是所有音视频会话建立时都是必须的，假如双方提前约定好这些音视频会话创建需要的信息就不用这个步骤来交互彼此的 SDP 信息， 比如 HTTP-FLV、RTMP-FLV 直播和点播方案，因为一旦采用了这套方案，这些音视频会话建立需要的信息都是确定的， 但是这样会降低或者说没有充分发挥端到端的音视频能力，协商显得更加灵活点。
-SDP 作用 SDP 作用包括以下一些方面
+SDP 作用 #  SDP 作用包括以下一些方面
  建立会话的详细信息，包括名称，网络，带宽等信息 包含在会话中的媒体信息，包括：  媒体类型 (video, audio, etc) 传输协议 (RTP/UDP/IP, H.320, etc) 媒体格式 (H.261 video, MPEG video, etc) 多播或远端（单播）地址和端口   为接收媒体而需的信息 使用的带宽信息 可信赖的接洽信息  如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 WebRTC 就在 SDP 的基础上进行了继续拓展</description>
     </item>
     
@@ -33,12 +33,10 @@ SDP 作用 SDP 作用包括以下一些方面
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/</guid>
-      <description>SIP SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
-CALL-ID SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
+      <description>SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
+CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
- 包内容 Message Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n Bye 同一个会话，CSeq 要 +1
-Invite-&amp;gt;100-&amp;gt;200-&amp;gt;Ack -&amp;gt;Bye-&amp;gt;200
-Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要一致</description>
+ 包内容 #  Message #  Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n Bye #  同一个会话，CSeq 要 +1</description>
     </item>
     
     <item>
@@ -47,13 +45,12 @@ Bye 的包，From 和 To 要和 Ack 的一致（包括 tag），Call-ID 也要�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</guid>
-      <description>GB28181 协议解析 点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
-名词解释 SIP 服务器 SIP client 具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
-SIP device 具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
+      <description>GB28181 协议解析 #  点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
+名词解释 #  SIP 服务器 #  SIP client #  具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
+SIP device #  具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
 联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。
-SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
-注册服务器 register server IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。
-中心信令控制服务器 center control server 具有向 SIP 客户端、SIP 设备、媒体服务器和网关提供注册、路由选择以及逻辑控制功能，并且提供接口与应用服务器通信。</description>
+SIP 监控域 SIP surveil lance realm #  支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。
+注册服务器 register server #  IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。</description>
     </item>
     
     <item>
@@ -62,7 +59,7 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/packet/</guid>
-      <description>数据包 Register request: Register (no auth) Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.</description>
+      <description>数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.</description>
     </item>
     
     <item>
@@ -71,7 +68,7 @@ SIP 监控域 SIP surveil lance realm 支持本标准规定的通信协议的监
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</guid>
-      <description>源码实现 名词解释  AOR：Address Of Record 是 header 中的 From 字段   开源实现 go  StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  StefanKopieczek/gossip 1lann/go-sip kirm/sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C  pjsip/pjproject   C#  GB28181/GB28181.Solution   C++  ossrs/srs  xiongziliang/ZLMediaKit   Node.js  kirm/sip.js   二进制（前端开源，后端不开源）  livegbs/GB28181-Server   </description>
+      <description>源码实现 #  名词解释 #   AOR：Address Of Record 是 header 中的 From 字段   开源实现 #  go #   StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  StefanKopieczek/gossip 1lann/go-sip kirm/sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C #   pjsip/pjproject   C# #   GB28181/GB28181.Solution   C++ #   ossrs/srs  xiongziliang/ZLMediaKit   Node.</description>
     </item>
     
   </channel>

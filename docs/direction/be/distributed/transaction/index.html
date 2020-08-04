@@ -1,59 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="分布式事务 微服务化带来的分布式事务问题 每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
-解决方案 分布式事务的实现主要有以下 5 种方案：
+<meta name="description" content="分布式事务 #  微服务化带来的分布式事务问题 #  每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
+解决方案 #  分布式事务的实现主要有以下 5 种方案：
  XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。
 你找一个严格资金要求绝对不能错的场景，你可以说你是用的 TCC 方案；如果是一般的分布式事务场景，订单插入之后要调用库存服务更新库存，库存数据没有资金那么的敏感，可以用可靠消息最终一致性方案。
 友情提示一下，RocketMQ 3.2.6 之前的版本，是可以按照上面的思路来的，但是之后接口做了一些改变，我这里不再赘述了。
 当然如果你愿意，你可以参考可靠消息最终一致性方案来自己实现一套分布式事务，比如基于 RocketMQ 来玩儿。
 参考：
- 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 两阶段提交方案
+ 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 #  两阶段提交方案
 有一个事务管理器的概念，负责协调多个数据库（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？ 如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。
 这种分布式事务方案，比较适合单块应用里，跨多个库的分布式事务，而且因为严重依赖于数据库层面来搞定复杂的事务，效率很低，绝对不适合高并发的场景。
 如果要玩儿，那么基于 Spring &#43; JTA 就可以搞定，自己随便搜个 demo 看看就知道了。
 这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。
- TCC 这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
+ TCC #  这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
 比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。
 而且最好是你的各个业务执行的时间都比较短。
 TCC 分布式事务框架，比如国内开源的
- ByteTCC himly tcc-transaction  Try 首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。
-这个操作，一般都是锁定某个资源，设置一个预备类的状态，冻结部分数据，等等，大概都是这类操作。
-Confirm Cancel 参考："><meta property="og:title" content="分布式事务" />
-<meta property="og:description" content="分布式事务 微服务化带来的分布式事务问题 每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
-解决方案 分布式事务的实现主要有以下 5 种方案：
+ ByteTCC himly tcc-transaction  Try #  首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="分布式事务" />
+<meta property="og:description" content="分布式事务 #  微服务化带来的分布式事务问题 #  每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
+解决方案 #  分布式事务的实现主要有以下 5 种方案：
  XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。
 你找一个严格资金要求绝对不能错的场景，你可以说你是用的 TCC 方案；如果是一般的分布式事务场景，订单插入之后要调用库存服务更新库存，库存数据没有资金那么的敏感，可以用可靠消息最终一致性方案。
 友情提示一下，RocketMQ 3.2.6 之前的版本，是可以按照上面的思路来的，但是之后接口做了一些改变，我这里不再赘述了。
 当然如果你愿意，你可以参考可靠消息最终一致性方案来自己实现一套分布式事务，比如基于 RocketMQ 来玩儿。
 参考：
- 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 两阶段提交方案
+ 分布式事务了解吗？你们是如何解决分布式事务问题的？  XA 方案 #  两阶段提交方案
 有一个事务管理器的概念，负责协调多个数据库（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？ 如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。
 这种分布式事务方案，比较适合单块应用里，跨多个库的分布式事务，而且因为严重依赖于数据库层面来搞定复杂的事务，效率很低，绝对不适合高并发的场景。
 如果要玩儿，那么基于 Spring &#43; JTA 就可以搞定，自己随便搜个 demo 看看就知道了。
 这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。
- TCC 这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
+ TCC #  这种方案说实话几乎很少人使用， 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。
 比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。
 而且最好是你的各个业务执行的时间都比较短。
 TCC 分布式事务框架，比如国内开源的
- ByteTCC himly tcc-transaction  Try 首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。
-这个操作，一般都是锁定某个资源，设置一个预备类的状态，冻结部分数据，等等，大概都是这类操作。
-Confirm Cancel 参考：" />
+ ByteTCC himly tcc-transaction  Try #  首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/" />
 <meta property="article:modified_time" content="2020-05-29T15:19:21+08:00" />
 <title>分布式事务 | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/note-cs/book.min.fdfc554c603ded12f3eed031329bc54fba81945ce272e5de4a34659187fc8c78.css" integrity="sha256-/fxVTGA97RLz7tAxMpvFT7qBlFzicuXeSjRlkYf8jHg=">
-
-
-<script defer src="/note-cs/en.search.min.b8b96a42d0761b31e75df4a595f78a49cd93fffe7058a1dcec4500bb3600142b.js" integrity="sha256-uLlqQtB2GzHnXfSllfeKSc2T//5wWKHc7EUAuzYAFCs="></script>
-
+<link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
+<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -62,8 +55,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -76,7 +70,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -104,57 +98,42 @@ https://github.com/alex-shpak/hugo-book
 
   
 
+
+
   
   
-
-
-
-
-
- 
   
-    
-
-
-
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第一部分 基础</span>
+    <span>第一部分 基础</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -162,904 +141,673 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第二部分 方向</span>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
-  
-
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/distributed/raft/" class="collapsed ">2.2.4.1 Raft</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/distributed/paxos/" class="collapsed ">2.2.4.2 Paxos</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/distributed/zookeeper/" class="">2.2.4.3 Zookeeper</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/distributed/etcd/" class="">2.2.4.4 Etcd</a>
+  <ul>
+    
+  </ul>
   
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/distributed/consul/" class="">2.2.4.5 Consul</a>
+  <ul>
+    
+  </ul>
   
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/distributed/consistent-hashing/" class="">一致性哈希</a>
-  
 
-</li>
+        </li>
       
     
       
         <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/note-cs/docs/direction/be/distributed/transaction/" class="active">分布式事务</a>
-  
 
-</li>
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
+    <span>第二部分 方向</span>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
+          
   
-  <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
-  
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第三部分 领域</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
   
 
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
+          
   
-  <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
   
-
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
   
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li>
-    
-
-  
-  <span>第四部分 其他</span>
-  
-
-
-    
-
-
-
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+    <a href="/note-cs/docs/direction/be/db/" class="collapsed ">2.2.1 数据库</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+    <a href="/note-cs/docs/direction/be/mq/" class="collapsed ">2.2.2 消息队列</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/frame/" class="collapsed ">2.2.3 后端框架</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/" class="collapsed ">2.2.4 分布式系统</a>
+  
 
+          
+  
+  
+  
 
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/raft/" class="collapsed ">2.2.4.1 Raft</a>
+  
 
-  </li>
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/paxos/" class="collapsed ">2.2.4.2 Paxos</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/zookeeper/" class="">2.2.4.3 Zookeeper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/etcd/" class="">2.2.4.4 Etcd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/consul/" class="">2.2.4.5 Consul</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/consistent-hashing/" class="">一致性哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/distributed/transaction/" class="active">分布式事务</a>
+  
+
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+    <a href="/note-cs/docs/direction/be/microservices/" class="collapsed ">2.2.5 微服务</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+    <a href="/note-cs/docs/direction/be/auth/" class="collapsed ">认证与授权</a>
   
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
     
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/web-service/" class="collapsed ">Web Service</a>
+  
 
+          
+  
+  
+  
 
+  
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/platform/" class="collapsed ">平台</a>
+  
 
+          
+  
+  
+  
 
+  
 
-  </li>
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/proxy/" class="collapsed ">代理</a>
+  
 
+          
+  
+  
+  
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/search/" class="collapsed ">搜索引擎</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
       
     
   </ul>
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
 
+          
+  
+  
+  
 
   
 
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 其他</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/skill/" class="collapsed ">4.2 技能树</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/others/tool/" class="collapsed ">4.3 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
 
 
@@ -1103,15 +851,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>分布式事务</strong>
 
   <label for="toc-control">
+    
     <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</a></li>
@@ -1141,18 +890,27 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="分布式事务">分布式事务</h1>
-<h2 id="微服务化带来的分布式事务问题">微服务化带来的分布式事务问题</h2>
+  <article class="markdown"><h1 id="分布式事务">
+  分布式事务
+  <a class="anchor" href="#%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1">#</a>
+</h1>
+<h2 id="微服务化带来的分布式事务问题">
+  微服务化带来的分布式事务问题
+  <a class="anchor" href="#%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%8c%96%e5%b8%a6%e6%9d%a5%e7%9a%84%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e9%97%ae%e9%a2%98">#</a>
+</h2>
 <p>每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528160805.png" alt="" /></p>
-<h2 id="解决方案">解决方案</h2>
+<h2 id="解决方案">
+  解决方案
+  <a class="anchor" href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88">#</a>
+</h2>
 <p>分布式事务的实现主要有以下 5 种方案：</p>
 <ul>
 <li>XA 方案</li>
@@ -1169,7 +927,10 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><a href="https://github.com/doocs/advanced-java/blob/master/docs/distributed-system/distributed-transaction.md">分布式事务了解吗？你们是如何解决分布式事务问题的？</a></li>
 </ul>
-<h2 id="xa-方案">XA 方案</h2>
+<h2 id="xa-方案">
+  XA 方案
+  <a class="anchor" href="#xa-%e6%96%b9%e6%a1%88">#</a>
+</h2>
 <p>两阶段提交方案</p>
 <p>有一个事务管理器的概念，负责<strong>协调多个数据库</strong>（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？
 如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。</p>
@@ -1177,7 +938,10 @@ https://github.com/alex-shpak/hugo-book
 <p>如果要玩儿，那么基于 <code>Spring + JTA</code> 就可以搞定，自己随便搜个 demo 看看就知道了。</p>
 <p>这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。</p>
 <hr>
-<h3 id="tcc">TCC</h3>
+<h3 id="tcc">
+  TCC
+  <a class="anchor" href="#tcc">#</a>
+</h3>
 <p>这种方案说实话几乎很少人使用，
 因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。</p>
 <p>比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。</p>
@@ -1188,17 +952,29 @@ https://github.com/alex-shpak/hugo-book
 <li>himly</li>
 <li>tcc-transaction</li>
 </ul>
-<h4 id="try">Try</h4>
+<h4 id="try">
+  Try
+  <a class="anchor" href="#try">#</a>
+</h4>
 <p>首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。</p>
 <p>这个操作，一般都是锁定某个资源，设置一个预备类的状态，冻结部分数据，等等，大概都是这类操作。</p>
-<h4 id="confirm">Confirm</h4>
-<h4 id="cancel">Cancel</h4>
+<h4 id="confirm">
+  Confirm
+  <a class="anchor" href="#confirm">#</a>
+</h4>
+<h4 id="cancel">
+  Cancel
+  <a class="anchor" href="#cancel">#</a>
+</h4>
 <p>参考：</p>
 <ul>
 <li><a href="https://juejin.im/post/5bf201f7f265da610f63528a">拜托，面试请不要再问我 TCC 分布式事务的实现原理！</a></li>
 </ul>
 <hr>
-<h3 id="本地消息表">本地消息表</h3>
+<h3 id="本地消息表">
+  本地消息表
+  <a class="anchor" href="#%e6%9c%ac%e5%9c%b0%e6%b6%88%e6%81%af%e8%a1%a8">#</a>
+</h3>
 <p>本地消息表其实是国外的 ebay 搞出来的这么一套思想。</p>
 <p>这个大概意思是这样的：</p>
 <ol>
@@ -1212,7 +988,10 @@ https://github.com/alex-shpak/hugo-book
 <p>这个方案说实话最大的问题就在于严重依赖于数据库的消息表来管理事务啥的，如果是高并发场景咋办呢？咋扩展呢？所以一般确实很少用。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200529150152.png" alt="" /></p>
 <hr>
-<h3 id="可靠消息最终一致性方案">可靠消息最终一致性方案</h3>
+<h3 id="可靠消息最终一致性方案">
+  可靠消息最终一致性方案
+  <a class="anchor" href="#%e5%8f%af%e9%9d%a0%e6%b6%88%e6%81%af%e6%9c%80%e7%bb%88%e4%b8%80%e8%87%b4%e6%80%a7%e6%96%b9%e6%a1%88">#</a>
+</h3>
 <p>这个的意思，就是干脆不要用本地的消息表了，直接基于 MQ 来实现事务。比如阿里的 <code>RocketMQ</code> 就支持消息事务。</p>
 <p>大概的意思就是：</p>
 <ol>
@@ -1225,7 +1004,10 @@ https://github.com/alex-shpak/hugo-book
 </ol>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200529150059.png" alt="" /></p>
 <hr>
-<h3 id="最大努力通知方案">最大努力通知方案</h3>
+<h3 id="最大努力通知方案">
+  最大努力通知方案
+  <a class="anchor" href="#%e6%9c%80%e5%a4%a7%e5%8a%aa%e5%8a%9b%e9%80%9a%e7%9f%a5%e6%96%b9%e6%a1%88">#</a>
+</h3>
 <p>这个方案的大致意思就是：</p>
 <ol>
 <li>系统 A 本地事务执行完之后，发送个消息到 MQ；</li>
@@ -1233,8 +1015,14 @@ https://github.com/alex-shpak/hugo-book
 <li>要是系统 B 执行成功就 ok 了；要是系统 B 执行失败了，那么最大努力通知服务就定时尝试重新调用系统 B，反复 N 次，最后还是不行就放弃。</li>
 </ol>
 <hr>
-<h3 id="开源实现">开源实现</h3>
-<h4 id="seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg"><a href="https://github.com/seata/seata">seata/seata</a> <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars" /></h4>
+<h3 id="开源实现">
+  开源实现
+  <a class="anchor" href="#%e5%bc%80%e6%ba%90%e5%ae%9e%e7%8e%b0">#</a>
+</h3>
+<a href="https://github.com/seata/seata">seata/seata</a> <h4 id="seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg">
+  <img src="https://img.shields.io/github/stars/seata/seata.svg" alt="Github stars" />
+  <a class="anchor" href="#seataseatahttpsgithubcomseataseata-github-starshttpsimgshieldsiogithubstarsseataseatasvg">#</a>
+</h4>
 <p><code>TXC</code>/<code>GTS</code>/<code>Fescar</code>/<code>Seata</code> 一脉相承</p>
 <ul>
 <li>2014 年，阿里中间件团队发布 <strong>TXC（Taobao Transaction Constructor）</strong>，为集团内应用提供分布式事务服务。</li>
@@ -1244,10 +1032,16 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528161405.png" alt="" /></p>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528161427.png" alt="" /></p>
-<h4 id="华为-dtm">华为 DTM</h4>
+<h4 id="华为-dtm">
+  华为 DTM
+  <a class="anchor" href="#%e5%8d%8e%e4%b8%ba-dtm">#</a>
+</h4>
 <p>分布式事务管理中间件（<code>Distributed Transaction Management</code>）是一款用于解决分布式环境下事务一致性问题的产品。在复杂环境下，事务可能会出现的各种异常，DTM 能够将开发者从处理这种异常中解放出来，聚焦于业务逻辑本身。</p>
 <p>DTM 支持 TCC（Try-Confirm-Cancel）事务模型，支持以注解的方式定义事务信息，实现事务高效便捷的接入。此外，DTM 具有处理高并发事务请求的能力，支持自动部署、弹性伸缩等全生命周期运维管控能力。</p>
-<h2 id="参考">参考</h2>
+<h2 id="参考">
+  参考
+  <a class="anchor" href="#%e5%8f%82%e8%80%83">#</a>
+</h2>
 <ul>
 <li><a href="https://www.zhihu.com/question/48627764">如何理解 TCC 分布式事务？</a></li>
 </ul>
@@ -1257,13 +1051,11 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/18da3d4ed80ed84f1382b6a54c6e64ce7c099d19" title='Last modified by yewang | 2020-05-29' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/18da3d4ed80ed84f1382b6a54c6e64ce7c099d19" title='Last modified by yewang | 2020-05-29' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-05-29</span>
     </a>
