@@ -8,7 +8,7 @@
  官网：https://helm.sh
 Helm is a tool for managing Charts. Charts are packages of pre-configured Kubernetes resources.
 Use Helm to:
- Find and use popular software packaged as Helm Charts to run in Kubernetes Share your own applications as Helm Charts Create reproducible builds of your Kubernetes applications Intelligently manage your Kubernetes manifest files Manage releases of Helm packages  开源镜像 #  BurdenBear/kube-charts-mirror #  # 删除默认的源 helm repo remove stable helm repo remove incubator # 增加新的国内镜像源 helm repo add stable http://mirror.">
+ Find and use popular software packaged as Helm Charts to run in Kubernetes Share your own applications as Helm Charts Create reproducible builds of your Kubernetes applications Intelligently manage your Kubernetes manifest files Manage releases of Helm packages   命令 #  completion generate autocompletions script for the specified shell create create a new chart with the given name dependency manage a chart&#39;s dependencies env helm client environment information get download extended information of a named release help Help about any command history fetch release history install install a chart lint examine a chart for possible issues list list releases package package a chart directory into a chart archive plugin install, list, or uninstall Helm plugins pull download a chart from a repository and (optionally) unpack it in local directory repo add, list, remove, update, and index chart repositories rollback roll back a release to a previous revision search search for a keyword in charts show show information of a chart status display the status of the named release template locally render templates test run tests for a release uninstall uninstall a release upgrade upgrade a release verify verify that a chart at the given path has been signed and is valid version print the client version information  开源镜像 #  BurdenBear/kube-charts-mirror #  # 删除默认的源 helm repo remove stable helm repo remove incubator # 增加新的国内镜像源 helm repo add stable http://mirror.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Helm" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@ Use Helm to:
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
-<script defer src="/note-cs/en.search.min.e58b03d6298af99dfa3919369d537c216947e0948e91b3653ae4769b26c08eff.js" integrity="sha256-5YsD1imK&#43;Z36ORk2nVN8IWlH4JSOkbNlOuR2mybAjv8="></script>
+<script defer src="/note-cs/en.search.min.9c0987ab1c5f3f93f642d2156c3bc1ca3498815d62b1f2cce68e2bc303f05a32.js" integrity="sha256-nAmHqxxfP5P2QtIVbDvByjSYgV1isfLM5o4rwwPwWjI="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/domain/cc/helm/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -781,6 +781,7 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
+    <li><a href="#命令">命令</a></li>
     <li><a href="#开源镜像">开源镜像</a>
       <ul>
         <li><a href="#burdenbearkube-charts-mirrorhttpsgithubcomburdenbearkube-charts-mirror-github-starshttpsimgshieldsiogithubstarsburdenbearkube-charts-mirrorsvg"><a href="https://github.com/BurdenBear/kube-charts-mirror">BurdenBear/kube-charts-mirror</a> <img src="https://img.shields.io/github/stars/BurdenBear/kube-charts-mirror.svg" alt="Github stars"></a></li>
@@ -814,6 +815,36 @@ https://github.com/alex-shpak/hugo-book
 <li>Intelligently manage your Kubernetes manifest files</li>
 <li>Manage releases of Helm packages</li>
 </ul>
+<hr>
+<h2 id="命令">
+  命令
+  <a class="anchor" href="#%e5%91%bd%e4%bb%a4">#</a>
+</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  completion  generate autocompletions script <span style="color:#66d9ef">for</span> the specified shell
+  create      create a new chart with the given name
+  dependency  manage a chart<span style="color:#960050;background-color:#1e0010">&#39;</span>s dependencies
+  env         helm client environment information
+  get         download extended information of a named release
+  help        Help about any command
+  history     fetch release history
+  install     install a chart
+  lint        examine a chart <span style="color:#66d9ef">for</span> possible issues
+  list        list releases
+  package     package a chart directory into a chart archive
+  plugin      install, list, or uninstall Helm plugins
+  pull        download a chart from a repository and <span style="color:#f92672">(</span>optionally<span style="color:#f92672">)</span> unpack it in local directory
+  repo        add, list, remove, update, and index chart repositories
+  rollback    roll back a release to a previous revision
+  search      search <span style="color:#66d9ef">for</span> a keyword in charts
+  show        show information of a chart
+  status      display the status of the named release
+  template    locally render templates
+  test        run tests <span style="color:#66d9ef">for</span> a release
+  uninstall   uninstall a release
+  upgrade     upgrade a release
+  verify      verify that a chart at the given path has been signed and is valid
+  version     print the client version information
+</code></pre></div><hr>
 <h2 id="开源镜像">
   开源镜像
   <a class="anchor" href="#%e5%bc%80%e6%ba%90%e9%95%9c%e5%83%8f">#</a>
@@ -833,7 +864,7 @@ helm repo add incubator http://mirror.azure.cn/kubernetes/charts-incubator/
 
 helm repo list
 
-helm search mysql
+helm search repo mysql
 </code></pre></div></article>
  
       
@@ -881,6 +912,7 @@ helm search mysql
       
   <nav id="TableOfContents">
   <ul>
+    <li><a href="#命令">命令</a></li>
     <li><a href="#开源镜像">开源镜像</a>
       <ul>
         <li><a href="#burdenbearkube-charts-mirrorhttpsgithubcomburdenbearkube-charts-mirror-github-starshttpsimgshieldsiogithubstarsburdenbearkube-charts-mirrorsvg"><a href="https://github.com/BurdenBear/kube-charts-mirror">BurdenBear/kube-charts-mirror</a> <img src="https://img.shields.io/github/stars/BurdenBear/kube-charts-mirror.svg" alt="Github stars"></a></li>
