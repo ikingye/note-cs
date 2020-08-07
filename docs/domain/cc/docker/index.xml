@@ -37,7 +37,8 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/version/</guid>
-      <description>Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 #  最新版本 #  19.03 (2019-07-22) #  18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version.</description>
+      <description>Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  历史版本 #  最新版本
+19.03 (2019-07-22) #  19.03.12 (2020-06-18) #   18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version.</description>
     </item>
     
     <item>
@@ -47,6 +48,15 @@ Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, 
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/port/</guid>
       <description>Docker 端口 #  端口映射 #   -P（大写）：将容器内部开放的网络端口随机映射到宿主机的一个端口上 -p（小写）：指定要映射的端口，一个指定端口上只可以绑定一个容器  可以有多个 -p    端口映射格式 #  # 指定 ip、指定宿主机 port、指定容器 port ip:hostport:containerport # 指定 ip、未指定宿主机 port（随机）、指定容器 port ip::containerport # 未指定 ip、指定宿主机 port、指定容器 port hostport:containerport 端口映射命令 #  # 将容器暴露的所有端口，都随机映射到宿主机上（不推荐） docker run -P -it ubuntu /bin/bash # 将容器指定端口随机映射到宿主机一个随机端口 docker run -P 80 -it ubuntu /bin/bash # 将容器指定端口，随机映射到宿主机的指定 ip 的随机端口 # 有两个冒号 : docker run -P 192.168.0.100::80 -it ubuntu /bin/bash # 将容器指定端口指定映射到宿主机的指定端口上 docker run -p 8000:80 -it ubuntu /bin/bash # 将容器指定端口，指定映射到宿主机指定 ip 和端口 # 只能访问 192.</description>
+    </item>
+    
+    <item>
+      <title>containerd</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/cc/docker/containerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/docker/containerd/</guid>
+      <description>containerd #  </description>
     </item>
     
     <item>

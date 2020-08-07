@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 #  最新版本 #  19.03 (2019-07-22) #  18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version.">
+<meta name="description" content="Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  历史版本 #  最新版本
+19.03 (2019-07-22) #  19.03.12 (2020-06-18) #   18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="版本" />
-<meta property="og:description" content="Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  版本变更 #  最新版本 #  19.03 (2019-07-22) #  18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version." />
+<meta property="og:description" content="Docker 版本 #  查看版本 #  docker -v docker --version #查看版本 docker-compose --version #查看版本 docker-machine --version #查看版本 docker version #查看client和server端版本，并可以查看是否开启体验功能  历史版本 #  最新版本
+19.03 (2019-07-22) #  19.03.12 (2020-06-18) #   18.09 (2018-11-08) #  Docker 合并版本号 #  New in 18.09 is an aligned release model for Docker Engine - Community and Docker Engine - Enterprise. The new versioning scheme is YY.MM.x where x is an incrementing patch version." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/domain/cc/docker/version/" />
 <meta property="article:modified_time" content="2020-07-08T16:42:54+08:00" />
@@ -14,7 +16,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
-<script defer src="/note-cs/en.search.min.9c0987ab1c5f3f93f642d2156c3bc1ca3498815d62b1f2cce68e2bc303f05a32.js" integrity="sha256-nAmHqxxfP5P2QtIVbDvByjSYgV1isfLM5o4rwwPwWjI="></script>
+<script defer src="/note-cs/en.search.min.2e71f08ec3b07d15245387d38e22038a0265cdbe00f5f5e4c870d4094a93ae96.js" integrity="sha256-LnHwjsOwfRUkU4fTjiIDigJlzb4A9fXkyHDUCUqTrpY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -448,6 +450,16 @@ https://github.com/alex-shpak/hugo-book
   
   
 
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/docker/containerd/" class="">containerd</a>
   
 
         </li>
@@ -925,10 +937,13 @@ https://github.com/alex-shpak/hugo-book
   <nav id="TableOfContents">
   <ul>
     <li><a href="#查看版本">查看版本</a></li>
-    <li><a href="#版本变更">版本变更</a>
+    <li><a href="#历史版本">历史版本</a>
       <ul>
-        <li><a href="#最新版本httpsdocsdockercomenginerelease-notes"><a href="https://docs.docker.com/engine/release-notes/">最新版本</a></a></li>
-        <li><a href="#1903httpsdocsdockercomenginerelease-notes1903-2019-07-22"><a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)</a></li>
+        <li><a href="#1903httpsdocsdockercomenginerelease-notes1903-2019-07-22"><a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)</a>
+          <ul>
+            <li><a href="#190312-2020-06-18">19.03.12 (2020-06-18)</a></li>
+          </ul>
+        </li>
         <li><a href="#1809httpsdocsdockercomenginerelease-notes1809-2018-11-08"><a href="https://docs.docker.com/engine/release-notes/18.09/">18.09</a> (2018-11-08)</a>
           <ul>
             <li><a href="#docker-合并版本号">Docker 合并版本号</a></li>
@@ -946,6 +961,9 @@ https://github.com/alex-shpak/hugo-book
             <li><a href="#docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</a></li>
           </ul>
         </li>
+        <li><a href="#111">1.11</a></li>
+        <li><a href="#18">1.8</a></li>
+        <li><a href="#17">1.7</a></li>
       </ul>
     </li>
   </ul>
@@ -974,18 +992,20 @@ docker-machine --version #查看版本
 docker version #查看client和server端版本，并可以查看是否开启体验功能
 </code></pre><p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200601161256.png" alt="" /></p>
 <hr>
-<h2 id="版本变更">
-  版本变更
-  <a class="anchor" href="#%e7%89%88%e6%9c%ac%e5%8f%98%e6%9b%b4">#</a>
+<h2 id="历史版本">
+  历史版本
+  <a class="anchor" href="#%e5%8e%86%e5%8f%b2%e7%89%88%e6%9c%ac">#</a>
 </h2>
-<h3 id="最新版本httpsdocsdockercomenginerelease-notes">
-  <a href="https://docs.docker.com/engine/release-notes/">最新版本</a>
-  <a class="anchor" href="#%e6%9c%80%e6%96%b0%e7%89%88%e6%9c%achttpsdocsdockercomenginerelease-notes">#</a>
-</h3>
+<p><a href="https://docs.docker.com/engine/release-notes/">最新版本</a></p>
 <h3 id="1903httpsdocsdockercomenginerelease-notes1903-2019-07-22">
   <a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)
   <a class="anchor" href="#1903httpsdocsdockercomenginerelease-notes1903-2019-07-22">#</a>
 </h3>
+<h4 id="190312-2020-06-18">
+  19.03.12 (2020-06-18)
+  <a class="anchor" href="#190312-2020-06-18">#</a>
+</h4>
+<hr>
 <h3 id="1809httpsdocsdockercomenginerelease-notes1809-2018-11-08">
   <a href="https://docs.docker.com/engine/release-notes/18.09/">18.09</a> (2018-11-08)
   <a class="anchor" href="#1809httpsdocsdockercomenginerelease-notes1809-2018-11-08">#</a>
@@ -1040,6 +1060,25 @@ Users should install and update all three packages at the same time to get the l
 <p><code>Docker CE</code> 在 1.13.1 及之前版本叫 <code>Docker Engine</code> 。</p>
 <p>版本说明参考：<a href="https://docs.docker.com/engine/release-notes/prior-releases/">Docker Engine release notes (Previous versions)</a>，</p>
 <p>可以看到 Docker Engine 的版本号范围: <code>0.1.0 (2013-03-23) ~ 1.13.1 (2017-02-08)</code></p>
+<hr>
+<h3 id="111">
+  1.11
+  <a class="anchor" href="#111">#</a>
+</h3>
+<p>Docker 守护进程启动命令：</p>
+<ul>
+<li><code>1.7</code>: <code>docker -d</code></li>
+<li><code>1.8</code>: <code>docker daemon</code></li>
+<li><code>1.11</code>: <code>dockerd</code></li>
+</ul>
+<h3 id="18">
+  1.8
+  <a class="anchor" href="#18">#</a>
+</h3>
+<h3 id="17">
+  1.7
+  <a class="anchor" href="#17">#</a>
+</h3>
 </article>
  
       
@@ -1088,10 +1127,13 @@ Users should install and update all three packages at the same time to get the l
   <nav id="TableOfContents">
   <ul>
     <li><a href="#查看版本">查看版本</a></li>
-    <li><a href="#版本变更">版本变更</a>
+    <li><a href="#历史版本">历史版本</a>
       <ul>
-        <li><a href="#最新版本httpsdocsdockercomenginerelease-notes"><a href="https://docs.docker.com/engine/release-notes/">最新版本</a></a></li>
-        <li><a href="#1903httpsdocsdockercomenginerelease-notes1903-2019-07-22"><a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)</a></li>
+        <li><a href="#1903httpsdocsdockercomenginerelease-notes1903-2019-07-22"><a href="https://docs.docker.com/engine/release-notes/19.03/">19.03</a> (2019-07-22)</a>
+          <ul>
+            <li><a href="#190312-2020-06-18">19.03.12 (2020-06-18)</a></li>
+          </ul>
+        </li>
         <li><a href="#1809httpsdocsdockercomenginerelease-notes1809-2018-11-08"><a href="https://docs.docker.com/engine/release-notes/18.09/">18.09</a> (2018-11-08)</a>
           <ul>
             <li><a href="#docker-合并版本号">Docker 合并版本号</a></li>
@@ -1109,6 +1151,9 @@ Users should install and update all three packages at the same time to get the l
             <li><a href="#docker-engine010-到-1131">Docker Engine（0.1.0 到 1.13.1）</a></li>
           </ul>
         </li>
+        <li><a href="#111">1.11</a></li>
+        <li><a href="#18">1.8</a></li>
+        <li><a href="#17">1.7</a></li>
       </ul>
     </li>
   </ul>
