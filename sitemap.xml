@@ -47,11 +47,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/practice/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
@@ -107,13 +102,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/std/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</loc>
   </url>
   
   <url>
@@ -152,6 +141,14 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
@@ -164,6 +161,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/</loc>
   </url>
   
   <url>
@@ -244,11 +245,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/basic/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
   <url>
@@ -352,6 +348,14 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/basic/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/basic/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
@@ -364,6 +368,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/interview/basic/</loc>
   </url>
   
   <url>
@@ -447,11 +455,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/common/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/priciple/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url>
@@ -474,41 +477,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/priciple/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/priciple/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/priciple/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/priciple/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/priciple/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/priciple/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/priciple/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/priciple/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
   
   <url>
@@ -582,6 +550,46 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/advanced/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url>
@@ -612,6 +620,14 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/advanced/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/advanced/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
@@ -624,6 +640,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/interview/advanced/</loc>
   </url>
   
   <url>
@@ -757,41 +777,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/source/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/source/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/source/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/source/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/source/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/source/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/source/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/source/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
@@ -857,6 +842,46 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/code/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/code/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -884,41 +909,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/interview/expert/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/expert/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/expert/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/expert/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/expert/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/expert/</loc>
-    <lastmod>2020-04-17T00:55:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/expert/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
   
   <url>
@@ -1032,6 +1022,14 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
@@ -1044,6 +1042,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/</loc>
   </url>
   
   <url>
@@ -1154,11 +1156,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/basic/quick-start/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/snippet/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
   
   <url>
@@ -1282,6 +1279,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</loc>
+    <lastmod>2020-07-14T15:34:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
   </url>
@@ -1319,6 +1321,131 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/computer-composition/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/grammar/</loc>
+    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/grammar/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/grammar/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/grammar/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/grammar/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/grammar/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/grammar/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/pattern/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/pattern/</loc>
   </url>
   
   <url>
@@ -1382,6 +1509,46 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/code/type/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/code/type/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
@@ -1412,6 +1579,14 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/tutorial/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
@@ -1424,6 +1599,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/tutorial/</loc>
   </url>
   
   <url>
@@ -1503,31 +1682,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/knative/appendix/tutorial/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
   
@@ -1802,11 +1956,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/quick/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url>
@@ -1852,57 +2001,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/spec/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/spec/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/spec/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/spec/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/onvif/discovery/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/grammar/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/grammar/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/grammar/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/grammar/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/grammar/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
   
@@ -1957,8 +2056,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</loc>
-    <lastmod>2020-07-14T15:34:25+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/</loc>
   </url>
   
   <url>
@@ -1982,6 +2080,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/</loc>
     <lastmod>2020-05-17T14:33:35+08:00</lastmod>
   </url>
@@ -1992,8 +2094,88 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/grammar/keyword/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/std/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/std/</loc>
   </url>
   
   <url>
@@ -2004,6 +2186,46 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/algs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/algs/</loc>
   </url>
   
   <url>
@@ -2047,6 +2269,46 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/code/keyword/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/code/keyword/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
   </url>
@@ -2082,12 +2344,49 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/interview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
   
@@ -2362,18 +2661,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/docker/volume/</loc>
     <lastmod>2020-07-08T16:42:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/best/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
   </url>
   
   <url>
@@ -2407,28 +2696,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/</loc>
   </url>
   
   <url>
@@ -2453,6 +2721,52 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/algs/</loc>
     <lastmod>2020-04-28T15:08:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/spec/</loc>
+    <lastmod>2020-06-07T13:35:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/spec/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/spec/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/spec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/spec/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/</loc>
+    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/spec/</loc>
+    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url>
   
   <url>
@@ -2496,13 +2810,134 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/pkg/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/pkg/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/</loc>
     <lastmod>2020-05-21T09:57:22+08:00</lastmod>
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/code/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/attention/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/attention/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/attention/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/attention/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</loc>
     <lastmod>2020-07-14T23:45:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</loc>
+    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
   
   <url>
@@ -2651,36 +3086,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/practice/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/practice/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/practice/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/practice/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/practice/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -2688,16 +3093,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/frame/</loc>
     <lastmod>2020-04-03T18:28:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/practice/baidu/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/spec/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
   </url>
   
   <url>
@@ -2726,6 +3121,46 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/network/</loc>
     <lastmod>2020-04-28T15:08:01+08:00</lastmod>
   </url>
@@ -2743,6 +3178,46 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/spring-cloud/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/snippet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/snippet/</loc>
   </url>
   
   <url>
@@ -2818,6 +3293,46 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/test/</loc>
   </url>
   
   <url>
@@ -2926,36 +3441,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/snippet/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/snippet/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/snippet/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/snippet/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/snippet/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/snippet/</loc>
-    <lastmod>2020-06-07T14:19:38+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</loc>
     <lastmod>2020-05-29T15:19:21+08:00</lastmod>
   </url>
@@ -2963,6 +3448,46 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/tool/study/coding-online/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/others/version/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/version/</loc>
   </url>
   
   <url>
@@ -2988,6 +3513,46 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/prof/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/prof/</loc>
   </url>
   
   <url>
@@ -3043,6 +3608,46 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/mp/</loc>
     <lastmod>2020-07-26T09:52:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/advanced/frame/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/frame/</loc>
   </url>
   
   <url>

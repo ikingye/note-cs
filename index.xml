@@ -71,10 +71,10 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</link>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/practice/spec/baidu/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</guid>
       <description>百度 Objective-C 编码规范 (2019 版) #  </description>
     </item>
     
@@ -145,6 +145,24 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/interview/basic/</guid>
+      <description>基础面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/basic/</guid>
+      <description>基础面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -167,6 +185,15 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/basic/</guid>
+      <description>基础面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/interview/basic/</guid>
       <description>基础面试题 #  </description>
     </item>
     
@@ -315,15 +342,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     </item>
     
     <item>
-      <title>常用库</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/common/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/lib/common/</guid>
-      <description>常用库 #  </description>
-    </item>
-    
-    <item>
       <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -379,6 +397,24 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/interview/advanced/</guid>
+      <description>进阶面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/advanced/</guid>
+      <description>进阶面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -401,6 +437,15 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/advanced/</guid>
+      <description>进阶面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/interview/advanced/</guid>
       <description>进阶面试题 #  </description>
     </item>
     
@@ -599,69 +644,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/appendix/interview/expert/</guid>
-      <description>高阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/interview/expert/</guid>
-      <description>高阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/expert/</guid>
-      <description>高阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/expert/</guid>
-      <description>高阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/interview/expert/</guid>
-      <description>高阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/interview/expert/</guid>
-      <description>高阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/interview/expert/</guid>
-      <description>高阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>高阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/expert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/interview/expert/</guid>
       <description>高阶面试题 #  </description>
     </item>
     
@@ -940,7 +922,25 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/tutorial/</guid>
+      <description>教程 #  基础 #   进阶 #  </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/tutorial/</guid>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -949,7 +949,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -958,7 +958,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -967,7 +967,16 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/tutorial/</guid>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -976,7 +985,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -985,7 +994,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -994,7 +1003,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -1004,54 +1013,6 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/appendix/tutorial/</guid>
       <description>教程 #  基础 #  进阶 #  </description>
-    </item>
-    
-    <item>
-      <title>4.3 关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</guid>
-      <description>关注 #  核心 #  dotnet/core #  Home repository for .NET Core
-dotnet/coreclr #  CoreCLR is the runtime for .NET Core. It includes the garbage collector, JIT compiler, primitive data types and low-level classes. https://docs.microsoft.com/dotnet/core/
-dotnet/roslyn #  The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. https://docs.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/
-dotnet/aspnetcore #  ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.</description>
-    </item>
-    
-    <item>
-      <title>4.3 关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</guid>
-      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
-    </item>
-    
-    <item>
-      <title>4.3 关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
-      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
-    </item>
-    
-    <item>
-      <title>4.3 关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</guid>
-      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
-    </item>
-    
-    <item>
-      <title>4.3 关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</guid>
-      <description>关注 #  其他 #  octocat/Spoon-Knife #  </description>
     </item>
     
     <item>
@@ -1305,15 +1266,6 @@ XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就
 Docker 1.13+ introduced grouped commands to help organize a bunch of Docker commands. Both commands do the same thing.
 For example docker container ls is the new way to do docker ps.
 Sure it’s more typing, but it’s a lot more clear on what it does. Likewise, now you can run docker image ls, docker network ls or docker volume ls.</description>
-    </item>
-    
-    <item>
-      <title>快速开始</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/quick/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/quick/</guid>
-      <description>快速开始 #  安装 #  Run apps - Runtime #  Build apps - SDK #  MacOS MacOS Linux Linux Windows Windows  .NET Core SDK 包括运行时。   </description>
     </item>
     
     <item>
@@ -1696,15 +1648,6 @@ ERROR: permission denied for relation hycom 权限被拒绝</description>
     </item>
     
     <item>
-      <title>最佳实践</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/best/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/practice/best/</guid>
-      <description>C# 最佳实践 #  </description>
-    </item>
-    
-    <item>
       <title>版本</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1745,11 +1688,92 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
     
     <item>
       <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/r/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/appendix/attention/</guid>
-      <description>关注项目 #  akka/akka #  Build highly concurrent, distributed, and resilient message-driven applications on the JVM https://akka.io</description>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/appendix/attention/</guid>
+      <description>关注项目 #  </description>
     </item>
     
     <item>
@@ -1816,15 +1840,6 @@ Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经�
 Openshift 没有 root 权限
 参考：
  openshift 和普通 vps 的区别在哪儿？  </description>
-    </item>
-    
-    <item>
-      <title>百度</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/practice/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/practice/baidu/</guid>
-      <description>百度 Scala 最佳实践 #  </description>
     </item>
     
     <item>
@@ -1976,6 +1991,96 @@ TCC 分布式事务框架，比如国内开源的
       
       <guid>https://ikingye.github.io/note-cs/docs/others/tool/study/coding-online/</guid>
       <description>在线编程 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/erlang/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/r/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
     </item>
     
     <item>

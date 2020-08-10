@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/tutorial/</guid>
-      <description>教程 #  基础 #  进阶 #  </description>
+      <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
     <item>
@@ -24,10 +24,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/appendix/attention/</guid>
-      <description>关注 #  核心 #  dotnet/core #  Home repository for .NET Core
-dotnet/coreclr #  CoreCLR is the runtime for .NET Core. It includes the garbage collector, JIT compiler, primitive data types and low-level classes. https://docs.microsoft.com/dotnet/core/
-dotnet/roslyn #  The Roslyn .NET compiler provides C# and Visual Basic languages with rich code analysis APIs. https://docs.microsoft.com/zh-cn/dotnet/csharp/roslyn-sdk/
-dotnet/aspnetcore #  ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.</description>
+      <description>关注项目 #  </description>
     </item>
     
   </channel>
