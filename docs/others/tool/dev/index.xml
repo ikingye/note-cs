@@ -59,5 +59,14 @@ gpakosz/.tmux #  Oh My Tmux!
 cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .tmux/.tmux.conf.local .  教程 #  tmux 2: Productive Mouse-Free Development by @bphogan. #  </description>
     </item>
     
+    <item>
+      <title>vim</title>
+      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vim/</guid>
+      <description>vim #   教程 #  iggredible/Learn-Vim #  A book for learning the Vim editor the smart way.</description>
+    </item>
+    
   </channel>
 </rss>
