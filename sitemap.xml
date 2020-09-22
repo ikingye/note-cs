@@ -3586,6 +3586,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
@@ -3768,6 +3772,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/cassandra/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/prometheus/</loc>
   </url>
   
   <url>
@@ -3968,6 +3976,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</loc>
     <lastmod>2020-06-15T20:25:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/ansible/</loc>
   </url>
   
   <url>

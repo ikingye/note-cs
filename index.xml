@@ -2187,5 +2187,14 @@ macosforge/dss #  Darwin Streaming Server is Apple&amp;rsquo;s open source versi
       <description>视频编码 #      年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/devops/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/devops/ansible/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
