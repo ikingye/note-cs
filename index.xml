@@ -19,6 +19,15 @@
     </item>
     
     <item>
+      <title>ps</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/ps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/ps/</guid>
+      <description>ps #  </description>
+    </item>
+    
+    <item>
       <title>Quick Start</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/quick-start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -26,6 +35,15 @@
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/quick-start/</guid>
       <description>Quick Start #  Mysql Client #  /etc/my.cnf
 Mysql Server #  </description>
+    </item>
+    
+    <item>
+      <title>sh</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/sh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/sh/</guid>
+      <description>sh #  标记为 #!/bin/sh 的脚本不应使用任何 POSIX 没有规定的特性 (如 let 等命令，但 #!/bin/bash 可以)。</description>
     </item>
     
     <item>
@@ -57,6 +75,15 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</guid>
       <description>百度 Objective-C 编码规范 (2019 版) #  </description>
+    </item>
+    
+    <item>
+      <title>Bash</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/bash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/bash/</guid>
+      <description>Bash #  </description>
     </item>
     
     <item>
@@ -566,6 +593,45 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     </item>
     
     <item>
+      <title>kill</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/kill/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/kill/</guid>
+      <description>kill #  kill -9 与 kill 的区别 #   kill 等于 kill -15，是安全的  TERM   kill -9 是不安全的  SIGKILL    kill aka kill -TERM aka kill -15 is the safe and correct way of terminating a process. It&amp;rsquo;s equivalent to safely shutting down a computer.
+kill -9 is the unsafe way of brutally murdering a process. It&amp;rsquo;s equivalent to pulling the power cord, and may cause data corruption.</description>
+    </item>
+    
+    <item>
+      <title>netcat</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/netcat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/netcat/</guid>
+      <description>netcat #  netcat -u 127.0.0.1 9502 </description>
+    </item>
+    
+    <item>
+      <title>netstat</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/netstat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/netstat/</guid>
+      <description>netstat #  </description>
+    </item>
+    
+    <item>
+      <title>telnet</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/telnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/telnet/</guid>
+      <description>telnet #  只能测试 tcp 端口连接
+无法测试 udp 端口连接（可以用 netcat）
+telnet domain/ip [port] telnet 退出 #   按 CTRL + ] 然后输入 quit  </description>
+    </item>
+    
+    <item>
       <title>高阶</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -737,6 +803,15 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
 [Unit] Description=Redis persistent key-value database After=network.target After=network-online.target Wants=network-online.target [Service] ExecStart=/usr/bin/redis-server /etc/redis.conf --supervised systemd ExecStop=/usr/libexec/redis-shutdown Type=notify User=redis Group=redis RuntimeDirectory=redis RuntimeDirectoryMode=0755 [Install] WantedBy=multi-user.target 保存退出，执行 sudo systemctl daemon-reload 启动服务 sudo systemctl start redis.service 设置开机自启动 sudo systemctl enable redis.service
 设置密码 #  打开文件 /etc/redis.conf， 找到其中的 # requirepass foobared，去掉前面的 #， 并把 foobared 改成你的密码。
 ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？ 答案是：可以</description>
+    </item>
+    
+    <item>
+      <title>Zsh</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/zsh/</guid>
+      <description>Zsh #  </description>
     </item>
     
     <item>
@@ -1058,6 +1133,25 @@ TTM 模块 #  BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看�
     </item>
     
     <item>
+      <title>Dash</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/dash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/dash/</guid>
+      <description>Dash #  Dash 与 Bash 的区别 #   定义函数  bash: function 在 bash 中为关键字
+dash: dash 中没有 function 这个关键字
+2.select var in list; do command; done
+bash: 支持
+dash: 不支持，替代方法：采用 while+read+case 来实现
+echo {0..10}  bash: 支持 {n..m} 展开
+dash: 不支持，替代方法，采用 seq 外部命令
+here string  bash: 支持 here string
+dash: 不支持，替代方法：可采用 here documents
+  &amp;amp;word 重定向标准输出和标准错误
+   bash: 当 word 为非数字时，&amp;gt;&amp;amp;word 变成重定向标准错误和标准输出到文件 word</description>
+    </item>
+    
+    <item>
       <title>GDB 教程</title>
       <link>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1199,6 +1293,19 @@ delete submodule #   Delete the relevant section from the .</description>
     </item>
     
     <item>
+      <title>xargs</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/xargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/xargs/</guid>
+      <description>xargs #  xargs 命令的作用，是将标准输入转为命令行参数
+-L #  xargs -L 1 xargs --max-lines=1 # synonym for the -L option -L 参数指定多少行作为一个命令行参数。
+执行子目录里所有的 deploy.sh find . -name deploy.sh | xargs -L 1 sh
+-n #  -L 参数虽然解决了多行的问题，但是有时用户会在同一行输入多项。 -n 参数指定每次将多少项，作为命令行参数。
+参考 #   阮一峰 xargs 命令教程  </description>
+    </item>
+    
+    <item>
       <title>XSS</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/security/basic/xss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1217,6 +1324,19 @@ XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/frame/rainls/version/</guid>
       <description>版本 #  历史版本 #  v6.0 #   v5.0 #  v5.2 #   v4.0 #   v3.0 #   v2.0 #  </description>
+    </item>
+    
+    <item>
+      <title>百度 Shell 编程规范</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/spec/baidu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/spec/baidu/</guid>
+      <description>百度 Shell 编程规范 #    本文档适用于 Bash 3.0 及以上版本，不包括 4.0 新增特性
+  文档是 Bash 编程规范，不是 POSIX Shell 编程规范
+  章节分类和内容组织依据 Google Shell Style Guide
+  参考文档
+ Google Shell Style Guide Chromium Project Shell Style Guidelines     </description>
     </item>
     
     <item>
