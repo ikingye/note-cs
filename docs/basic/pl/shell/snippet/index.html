@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="代码片段 #  if item in list #  list1=( a b c ) list2=(b) # isIn $item $list function isIn() { [[ $2 =~ (^|[[:space:]])$1($|[[:space:]]) ]] } for item in ${list1[*]}; do if isIn $item $list2; then echo $item fi done  锁文件 #   [建议] 使用 pid 生成锁文件，并用 set -C 来做逻辑判断  lockfile=/tmp/mylock if (set -C;echo $$ &gt;$lockfile) 2&gt;/dev/null; then # set -C 使已存在的文件不能再被写 # echo 不旦生成了锁文件，而且还将pid放入其中 # 当此lock文件存在时，if返回失败，跳到else trap &#39;rm $lockfile; exit $?">
+<meta name="description" content="代码片段 #  if item in list #  list1=( a b c d ) list2=( b c ) # isIn $item $list function isIn() { item=$1 list=&#34;${@:2}&#34; for i in ${list[*]}; do if [[ $i == $item ]]; then return 0 fi done return 1 } for item in ${list1[*]}; do if isIn $item ${list2[*]}; then echo $item fi done  锁文件 #   [建议] 使用 pid 生成锁文件，并用 set -C 来做逻辑判断  lockfile=/tmp/mylock if (set -C;echo $$ &gt;$lockfile) 2&gt;/dev/null; then # set -C 使已存在的文件不能再被写 # echo 不旦生成了锁文件，而且还将pid放入其中 # 当此lock文件存在时，if返回失败，跳到else trap &#39;rm $lockfile; exit $?">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.3.3 代码片段" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -14,7 +14,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
-<script defer src="/note-cs/en.search.min.3430a3038718d8c7522444064d30f5f867be6fc4eea0ccd9affaf1e9d638adda.js" integrity="sha256-NDCjA4cY2MdSJEQGTTD1&#43;Ge&#43;b8TuoMzZr/rx6dY4rdo="></script>
+<script defer src="/note-cs/en.search.min.e02b3c7e8e5fdb99ef039616d8b72eb391d78adf9622a5f7366f16c254fc98e6.js" integrity="sha256-4Cs8fo5f25nvA5YW2Lcus5HXit&#43;WIqX3Nm8WwlT8mOY="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/basic/pl/shell/snippet/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -542,6 +542,23 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
+    <a href="/note-cs/docs/basic/pl/shell/grammer/" class="collapsed ">语法</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
     <a href="/note-cs/docs/basic/pl/shell/spec/" class="collapsed ">1.3.2 编程规范</a>
   
 
@@ -1028,16 +1045,28 @@ https://github.com/alex-shpak/hugo-book
     a
     b
     c
+    d
 <span style="color:#f92672">)</span>
-list2<span style="color:#f92672">=(</span>b<span style="color:#f92672">)</span>
+list2<span style="color:#f92672">=(</span>
+    b
+    c
+<span style="color:#f92672">)</span>
 
 <span style="color:#75715e"># isIn $item $list</span>
 <span style="color:#66d9ef">function</span> isIn<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    <span style="color:#f92672">[[</span> $2 <span style="color:#f92672">=</span>~ <span style="color:#f92672">(</span>^|<span style="color:#f92672">[[</span>:space:<span style="color:#f92672">]])</span>$1<span style="color:#f92672">(</span>$|<span style="color:#f92672">[[</span>:space:<span style="color:#f92672">]])</span> <span style="color:#f92672">]]</span>
+    item<span style="color:#f92672">=</span>$1
+    list<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>@:2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">${</span>list[*]<span style="color:#e6db74">}</span>; <span style="color:#66d9ef">do</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> $i <span style="color:#f92672">==</span> $item <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">fi</span>
+    <span style="color:#66d9ef">done</span>
+
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
 <span style="color:#f92672">}</span>
 
 <span style="color:#66d9ef">for</span> item in <span style="color:#e6db74">${</span>list1[*]<span style="color:#e6db74">}</span>; <span style="color:#66d9ef">do</span>
-    <span style="color:#66d9ef">if</span> isIn $item $list2; <span style="color:#66d9ef">then</span>
+    <span style="color:#66d9ef">if</span> isIn $item <span style="color:#e6db74">${</span>list2[*]<span style="color:#e6db74">}</span>; <span style="color:#66d9ef">then</span>
         echo $item
     <span style="color:#66d9ef">fi</span>
 <span style="color:#66d9ef">done</span>
@@ -1077,6 +1106,12 @@ fi
   <div class="flex flex-wrap justify-between">
 
 
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/30e10dec5de7a7d9d834667feba28be06f5934e3" title='Last modified by yewang | 2020-09-23' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-09-23</span>
+    </a>
+  </div>
 
 
 
