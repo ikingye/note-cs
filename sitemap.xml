@@ -1307,6 +1307,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/activity/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/basic/cmd/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
@@ -3136,8 +3140,16 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/course/cc/kubernetes/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/kubernetes/</loc>
     <lastmod>2020-08-04T23:50:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/activity/kubernetes-scheduler/</loc>
   </url>
   
   <url>
@@ -3178,6 +3190,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/frame/tensorflow/</loc>
     <lastmod>2020-06-10T15:17:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/activity/csapp/</loc>
   </url>
   
   <url>
@@ -3233,6 +3249,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.17/</loc>
   </url>
   
   <url>
@@ -3406,8 +3426,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.16/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.13/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
   </url>
   
   <url>
