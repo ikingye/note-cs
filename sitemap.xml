@@ -448,7 +448,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/basic/cc/csapp/</loc>
-    <lastmod>2020-09-16T09:00:27+08:00</lastmod>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -1308,6 +1308,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/activity/</loc>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -2612,7 +2613,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -2743,6 +2744,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/virtualbox/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/activity/istio-handbook/</loc>
   </url>
   
   <url>
@@ -3141,6 +3146,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/course/cc/kubernetes/</loc>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -3150,6 +3156,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/activity/kubernetes-scheduler/</loc>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -3194,6 +3201,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/activity/csapp/</loc>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -3253,6 +3261,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.17/</loc>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -3427,10 +3436,12 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.16/</loc>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.13/</loc>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -3670,7 +3681,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -4099,7 +4110,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-10-10T16:08:10+08:00</lastmod>
+    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
