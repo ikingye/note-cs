@@ -1712,6 +1712,16 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
     </item>
     
     <item>
+      <title>零基础实践深度学习</title>
+      <link>https://ikingye.github.io/note-cs/docs/course/ai/baidu-aistudio/deep-learning-from-beginning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/course/ai/baidu-aistudio/deep-learning-from-beginning/</guid>
+      <description>百度架构师手把手带你零基础实践深度学习 #  https://aistudio.baidu.com/aistudio/course/introduce/1297
+课程列表 #   预习课程  深度学习常用数学知识   第一章：零基础入门深度学习 第二章：一个案例吃透深度学习 第三章：深度学习实践应用 —— 计算机视觉 第四章：目标检测 YoloV3 第五章：深度学习实践应用 —— 自然语言处理 第六章：情感分类 第七章：深度学习实践应用 —— 推荐系统 第八章：深度学习高阶导入 拓展：【AI 实战案例项目集】  </description>
+    </item>
+    
+    <item>
       <title>2.2.4.3 Zookeeper</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
