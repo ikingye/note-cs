@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="GDB #  # 启动时不显示提示信息 $ gdb -q # 显示 gdb 版本信息 (gdb) show version # 查看 gdb 版权相关信息 (gdb) show copying ">
+<meta name="description" content="GDB #  GDB 的主要功能就是监控程序的执行流程，
+只有当源程序文件编译为可执行文件并执行时，GDB 才会派上用场。
+# -g Generate source-level debug information $ gcc -g main.c -o main # 启动时不显示提示信息 # -q, --quiet, --silent $ gdb -q # 显示 gdb 版本信息 (gdb) show version # 查看 gdb 版权相关信息 (gdb) show copying # 输出信息多时不会暂停输出 (gdb) set pagination off # 列出函数的名字 (gdb) info functions (gdb) info functions regex GDB 常用的调试指令 #     调试指令 作 用     (gdb) break xxx (gdb) b xxx 在源代码指定的某一行设置断点，其中 xxx 用于指定具体打断点的位置。   (gdb) run (gdb) r 执行被调试的程序，其会自动在第一个断点处暂停执行。   (gdb) continue (gdb) c 当程序在某一断点处停止运行后，使用该指令可以继续执行，直至遇到下一个断点或者程序结束。   (gdb) next (gdb) n 令程序一行代码一行代码的执行。   (gdb) print xxx (gdb) p xxx 打印指定变量的值，其中 xxx 指的就是某一变量名。   (gdb) list (gdb) l 显示源程序代码的内容，包括各行代码所在的行号。   (gdb) quit (gdb) q 终止调试。     问题 #  解决 GDB 在 Mac 下不能调试的问题 #  Darwin 内核在你没有特殊权限的情况下，不允许调试其它进程。 调试某个进程，意味着你对这个进程有完全的控制权限，所以为了防止被恶意利用，它是默认禁止的。允许 gdb 控制其它进程最好的方法就是用系统信任的证书对它进行签名。">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="GDB" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -14,7 +16,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
-<script defer src="/note-cs/en.search.min.7fe48e5037165f37fb23a7be2529c2329754d1734b22a3fb7efd0d1415e8ad4a.js" integrity="sha256-f&#43;SOUDcWXzf7I6e&#43;JSnCMpdU0XNLIqP7fv0NFBXorUo="></script>
+<script defer src="/note-cs/en.search.min.5373f2f0e441ae7f3e88fd8747086ebdc6d3efae528ba54a04b33a487da7c232.js" integrity="sha256-U3Py8ORBrn8&#43;iP2HRwhuvcbT765Si6VKBLM6SH2nwjI="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -798,7 +800,22 @@ https://github.com/alex-shpak/hugo-book
   
   <aside class="hidden clearfix">
     
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gdb-常用的调试指令">GDB 常用的调试指令</a></li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#解决-gdb-在-mac-下不能调试的问题">解决 GDB 在 Mac 下不能调试的问题</a>
+          <ul>
+            <li><a href="#创建代码签名的证书">创建代码签名的证书</a></li>
+            <li><a href="#签名">签名</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#工具">工具</a></li>
+  </ul>
+</nav>
 
 
   </aside>
@@ -812,8 +829,14 @@ https://github.com/alex-shpak/hugo-book
   GDB
   <a class="anchor" href="#gdb">#</a>
 </h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
+<p>GDB 的主要功能就是监控程序的执行流程，</p>
+<p>只有当源程序文件编译为可执行文件并执行时，GDB 才会派上用场。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># -g  Generate source-level debug information</span>
+$ gcc -g main.c -o main
+
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
 <span style="color:#75715e"># 启动时不显示提示信息</span>
+<span style="color:#75715e"># -q, --quiet, --silent</span>
 $ gdb -q
 
 <span style="color:#75715e"># 显示 gdb 版本信息</span>
@@ -821,7 +844,120 @@ $ gdb -q
 <span style="color:#75715e"># 查看 gdb 版权相关信息</span>
 <span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> show copying
 
-</code></pre></div></article>
+<span style="color:#75715e"># 输出信息多时不会暂停输出</span>
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> set pagination off
+
+<span style="color:#75715e"># 列出函数的名字</span>
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> info functions
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> info functions regex
+
+</code></pre></div><h2 id="gdb-常用的调试指令">
+  GDB 常用的调试指令
+  <a class="anchor" href="#gdb-%e5%b8%b8%e7%94%a8%e7%9a%84%e8%b0%83%e8%af%95%e6%8c%87%e4%bb%a4">#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>调试指令</th>
+<th>作 用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(gdb) break xxx <br>(gdb) b xxx</td>
+<td>在源代码指定的某一行设置断点，其中 xxx 用于指定具体打断点的位置。</td>
+</tr>
+<tr>
+<td>(gdb) run <br>(gdb) r</td>
+<td>执行被调试的程序，其会自动在第一个断点处暂停执行。</td>
+</tr>
+<tr>
+<td>(gdb) continue <br>(gdb) c</td>
+<td>当程序在某一断点处停止运行后，使用该指令可以继续执行，直至遇到下一个断点或者程序结束。</td>
+</tr>
+<tr>
+<td>(gdb) next <br>(gdb) n</td>
+<td>令程序一行代码一行代码的执行。</td>
+</tr>
+<tr>
+<td>(gdb) print xxx <br>(gdb) p xxx</td>
+<td>打印指定变量的值，其中 xxx 指的就是某一变量名。</td>
+</tr>
+<tr>
+<td>(gdb) list <br>(gdb) l</td>
+<td>显示源程序代码的内容，包括各行代码所在的行号。</td>
+</tr>
+<tr>
+<td>(gdb) quit <br>(gdb) q</td>
+<td>终止调试。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="问题">
+  问题
+  <a class="anchor" href="#%e9%97%ae%e9%a2%98">#</a>
+</h2>
+<h3 id="解决-gdb-在-mac-下不能调试的问题">
+  解决 GDB 在 Mac 下不能调试的问题
+  <a class="anchor" href="#%e8%a7%a3%e5%86%b3-gdb-%e5%9c%a8-mac-%e4%b8%8b%e4%b8%8d%e8%83%bd%e8%b0%83%e8%af%95%e7%9a%84%e9%97%ae%e9%a2%98">#</a>
+</h3>
+<p>Darwin 内核在你没有特殊权限的情况下，不允许调试其它进程。
+调试某个进程，意味着你对这个进程有完全的控制权限，所以为了防止被恶意利用，它是默认禁止的。允许 gdb 控制其它进程最好的方法就是用系统信任的证书对它进行签名。</p>
+<h4 id="创建代码签名的证书">
+  创建代码签名的证书
+  <a class="anchor" href="#%e5%88%9b%e5%bb%ba%e4%bb%a3%e7%a0%81%e7%ad%be%e5%90%8d%e7%9a%84%e8%af%81%e4%b9%a6">#</a>
+</h4>
+<ol>
+<li>打开 Keychain Access 应用程序（/Applications/Utilities/Keychain Access.app）</li>
+<li>执行菜单   钥匙串访问  -&gt;  证书助理  -&gt;  创建证书</li>
+<li>填写如下信息：
+<ul>
+<li>名称：gdb_codesign</li>
+<li>身份类型：自签名根证书</li>
+<li>证书类型：代码签名</li>
+<li>钩选：让我覆盖这些默认设置<br>
+<img src="http://7xnua6.com1.z0.glb.clouddn.com/2015/gdb_codesigin_new.png" alt="" /></li>
+</ul>
+</li>
+<li>一路确定，直到指定证书位置的步骤，选择系统<br>
+<img src="http://7xnua6.com1.z0.glb.clouddn.com/2015/gdb_codesign_location.png" alt="" /></li>
+<li>点击 &ldquo;创建&rdquo;，会提示用输入系统登录密码，创建完成</li>
+<li>在钥匙串访问程序中，选择左侧栏的系统和我的证书，找到你刚刚创建的  gdb_codesign  证书并双击打开证书信息窗口，展开   信任项，设置使用此证书时：为始终信任。<br>
+<img src="http://7xnua6.com1.z0.glb.clouddn.com/2015/gdb_codesign_trust.jpg" alt="" /></li>
+<li>关闭证书信息窗口，系统会再次要求输入系统登录密码。</li>
+</ol>
+<h4 id="签名">
+  签名
+  <a class="anchor" href="#%e7%ad%be%e5%90%8d">#</a>
+</h4>
+<p>如果是之前的系统，直接执行：<br>
+<code>codesign -fs gdb-cert $(which gdb)</code></p>
+<p>如果是 Mojave (10.14) 之后的系统，<br>
+先创建一个文件  <code>gdb-entitlement.xml</code>，内容为:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+    &lt;key&gt;com.apple.security.cs.debugger&lt;/key&gt;
+    &lt;true/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+&lt;/pre&gt;
+</code></pre><p>再执行:<br>
+<code>codesign --entitlements gdb-entitlement.xml -fs gdb-cert $(which gdb)</code></p>
+<p>具体参考这里：<a href="https://sourceware.org/gdb/wiki/PermissionsDarwin">https://sourceware.org/gdb/wi&hellip;</a></p>
+<p>参考：</p>
+<ul>
+<li><a href="https://segmentfault.com/q/1010000004136334">解决 GDB 在 Mac 下不能调试的问题</a></li>
+</ul>
+<hr>
+<h2 id="工具">
+  工具
+  <a class="anchor" href="#%e5%b7%a5%e5%85%b7">#</a>
+</h2>
+<p><a href="https://github.com/cyrus-and/gdb-dashboard">cyrus-and/gdb-dashboard</a> <img src="https://img.shields.io/github/stars/cyrus-and/gdb-dashboard.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/cyrus-and/gdb-dashboard.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/cyrus-and/gdb-dashboard.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/cyrus-and/gdb-dashboard.svg" alt="Last commit" /></p>
+</article>
  
       
 
@@ -831,9 +967,9 @@ $ gdb -q
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/87215b63e95ffe309a042656a4a381ca942abba9" title='Last modified by yewang | 2020-10-16' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/d6ad162a80e20e12ca1cb331ee295c4ccb84661e" title='Last modified by yewang | 2020-10-18' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-10-16</span>
+      <span>2020-10-18</span>
     </a>
   </div>
 
@@ -879,7 +1015,22 @@ $ gdb -q
     
     <aside class="book-toc">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gdb-常用的调试指令">GDB 常用的调试指令</a></li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#解决-gdb-在-mac-下不能调试的问题">解决 GDB 在 Mac 下不能调试的问题</a>
+          <ul>
+            <li><a href="#创建代码签名的证书">创建代码签名的证书</a></li>
+            <li><a href="#签名">签名</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#工具">工具</a></li>
+  </ul>
+</nav>
 
  
     </aside>
