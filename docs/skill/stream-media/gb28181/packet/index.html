@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="数据包" />
+<meta property="og:description" content="数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/packet/" />
+<meta property="article:modified_time" content="2020-10-20T17:53:15+08:00" />
+<title>数据包 | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
+<script defer src="/note-cs/en.search.min.bcea5950fb4993db954130b1f7c8da153d43ad721aa22a89b5dafae42f9ded05.js" integrity="sha256-vOpZUPtJk9uVQTCx98jaFT1DrXIaoiqJtdr65C&#43;d7QU="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 技能树</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/tool/" class="collapsed ">4.1 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/" class="collapsed ">4.5 流媒体</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/sdp/" class="">SDP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/sip/" class="">SIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/protocal/" class="">协议详情</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/packet/" class="active">数据包</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/code/" class="">源码实现</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/type/" class="collapsed ">文档类型</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/activity/" class="collapsed ">第七部分 学习活动</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>数据包</strong>
+
+  <label for="toc-control">
+    
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#register">Register</a>
+      <ul>
+        <li><a href="#request-register-no-auth">request: Register (no auth)</a></li>
+        <li><a href="#response-401">response: 401</a></li>
+        <li><a href="#request-register-auth">request: register (auth)</a></li>
+        <li><a href="#response-200">response: 200</a></li>
+        <li><a href="#remove-1-binding">remove 1 binding</a></li>
+      </ul>
+    </li>
+    <li><a href="#message">Message</a>
+      <ul>
+        <li><a href="#request-sip-server---ipc">request: sip server -&gt; ipc</a></li>
+        <li><a href="#response-ipc---sip-server">response: ipc -&gt; sip server</a></li>
+        <li><a href="#request-ipc---sip-server">request: ipc -&gt; sip server</a></li>
+        <li><a href="#request-sip-server---ipc-1">request: sip server -&gt; ipc</a></li>
+      </ul>
+    </li>
+    <li><a href="#invite">Invite</a>
+      <ul>
+        <li><a href="#request-sip-server---ipc-sipsdp">request: sip server -&gt; ipc (SIP/SDP)</a></li>
+        <li><a href="#response-100-trying-ipc---sip-server-sip">response: 100 Trying (ipc -&gt; sip server, SIP)</a></li>
+        <li><a href="#response-200-ipc---sip-server-sipsdp">response: 200 (ipc -&gt; sip server, SIP/SDP)</a></li>
+      </ul>
+    </li>
+    <li><a href="#ack">ACK</a>
+      <ul>
+        <li><a href="#request-sip-server---ipc-sip">request: sip server -&gt; ipc (SIP)</a></li>
+      </ul>
+    </li>
+    <li><a href="#rtp">RTP</a>
+      <ul>
+        <li><a href="#ipc---sip-server">ipc -&gt; sip server</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="数据包">
+  数据包
+  <a class="anchor" href="#%e6%95%b0%e6%8d%ae%e5%8c%85">#</a>
+</h1>
+<h2 id="register">
+  Register
+  <a class="anchor" href="#register">#</a>
+</h2>
+<h3 id="request-register-no-auth">
+  request: Register (no auth)
+  <a class="anchor" href="#request-register-no-auth">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2117: <span style="color:#ae81ff">442</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">3536</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">442</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">3536</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>REGISTER<span style="color:#f92672">)</span>
+    Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:34020000002000000001@3402000000
+        <span style="color:#f92672">[</span>Resent Packet: True<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Suspected resend of frame: 1613<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch<span style="color:#f92672">=</span>z9hG4bK1935014795
+        From: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">496441511</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;
+        Call-ID: <span style="color:#ae81ff">1188137981</span>
+        CSeq: <span style="color:#ae81ff">1</span> REGISTER
+        Contact: &lt;sip:34020000001320000001@192.168.137.109:5060&gt;
+        Max-Forwards: <span style="color:#ae81ff">70</span>
+        User-Agent: IP Camera
+        Expires: <span style="color:#ae81ff">3600</span>
+        Content-Length: <span style="color:#ae81ff">0</span>
+</code></pre></div><h3 id="response-401">
+  response: 401
+  <a class="anchor" href="#response-401">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2121: <span style="color:#ae81ff">524</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">4192</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">524</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">4192</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>, Dst: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.105, Dst: 192.168.137.109
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>401<span style="color:#f92672">)</span>
+    Status-Line: SIP/2.0 <span style="color:#ae81ff">401</span> Unauthorized
+        Status-Code: <span style="color:#ae81ff">401</span>
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 1613<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 15594<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.137.109:5060;rport<span style="color:#f92672">=</span>47918;received<span style="color:#f92672">=</span>192.168.64.3;branch<span style="color:#f92672">=</span>z9hG4bK1935014795
+        From: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">496441511</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">697042285</span>
+        CSeq: <span style="color:#ae81ff">1</span> REGISTER
+        Call-ID: <span style="color:#ae81ff">1188137981</span>
+        User-Agent: LiveGBS v200603
+        Contact: &lt;sip:34020000002000000001@192.168.64.3:15060&gt;
+        Content-Length: <span style="color:#ae81ff">0</span>
+        WWW-Authenticate: Digest realm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3402000000&#34;</span>,qop<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auth&#34;</span>,nonce<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a1b6ba00d8cbaa8ce99d1d39b2905d12&#34;</span>
+</code></pre></div><h3 id="request-register-auth">
+  request: register (auth)
+  <a class="anchor" href="#request-register-auth">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2122: <span style="color:#ae81ff">704</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">5632</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">704</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">5632</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>REGISTER<span style="color:#f92672">)</span>
+    Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0
+        Method: REGISTER
+        Request-URI: sip:34020000002000000001@3402000000
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch<span style="color:#f92672">=</span>z9hG4bK2038639153
+        From: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">496441511</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;
+        Call-ID: <span style="color:#ae81ff">1188137981</span>
+        CSeq: <span style="color:#ae81ff">2</span> REGISTER
+        Contact: &lt;sip:34020000001320000001@192.168.137.109:5060&gt;
+         <span style="color:#f92672">[</span>truncated<span style="color:#f92672">]</span>Authorization: Digest username<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;34020000001320000001&#34;</span>, realm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3402000000&#34;</span>, nonce<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;a1b6ba00d8cbaa8ce99d1d39b2905d12&#34;</span>, uri<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sip:34020000002000000001@3402000000&#34;</span>, response<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;487b46591eae35a8d8f684db454ec471&#34;</span>, algorithm<span style="color:#f92672">=</span>MD5, cnonce
+        Max-Forwards: <span style="color:#ae81ff">70</span>
+        User-Agent: IP Camera
+        Expires: <span style="color:#ae81ff">3600</span>
+        Content-Length: <span style="color:#ae81ff">0</span>
+</code></pre></div><p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609141735.png" alt="" /></p>
+<h3 id="response-200">
+  response: 200
+  <a class="anchor" href="#response-200">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2123: <span style="color:#ae81ff">463</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">3704</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">463</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">3704</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>, Dst: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.105, Dst: 192.168.137.109
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>200<span style="color:#f92672">)</span>
+    Status-Line: SIP/2.0 <span style="color:#ae81ff">200</span> OK
+        Status-Code: <span style="color:#ae81ff">200</span>
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 2122<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 17<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.137.109:5060;rport<span style="color:#f92672">=</span>60954;received<span style="color:#f92672">=</span>192.168.64.3;branch<span style="color:#f92672">=</span>z9hG4bK2038639153
+        From: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">496441511</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">410042311</span>
+        CSeq: <span style="color:#ae81ff">2</span> REGISTER
+        Call-ID: <span style="color:#ae81ff">1188137981</span>
+        User-Agent: LiveGBS v200603
+        Contact: &lt;sip:34020000002000000001@192.168.64.3:15060&gt;
+        Content-Length: <span style="color:#ae81ff">0</span>
+        Date: 2020-06-09T14:09:01.830
+        Expires: <span style="color:#ae81ff">3600</span>
+</code></pre></div><h3 id="remove-1-binding">
+  remove 1 binding
+  <a class="anchor" href="#remove-1-binding">#</a>
+</h3>
+<p>有 remove 1 binding, 然后重新 register 的现象</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609142346.png" alt="" /></p>
+<p>Message Header：</p>
+<ul>
+<li>CSeq 加 1，</li>
+<li>Contact 的 <code>expires=0</code></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609142442.png" alt="" /></p>
+<hr>
+<h2 id="message">
+  Message
+  <a class="anchor" href="#message">#</a>
+</h2>
+<h3 id="request-sip-server---ipc">
+  request: sip server -&gt; ipc
+  <a class="anchor" href="#request-sip-server---ipc">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2136: <span style="color:#ae81ff">571</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">4568</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">571</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">4568</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>, Dst: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.105, Dst: 192.168.137.109
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>MESSAGE<span style="color:#f92672">)</span>
+    Request-Line: MESSAGE sip:34020000001320000001@3402000000 SIP/2.0
+        Method: MESSAGE
+        Request-URI: sip:34020000001320000001@3402000000
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.64.3:15060;rport;branch<span style="color:#f92672">=</span>z9hG4bK268043391
+        From: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">181043391</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;
+        Call-ID: <span style="color:#ae81ff">44043391</span>
+        CSeq: <span style="color:#ae81ff">1</span> MESSAGE
+        Content-Type: Application/MANSCDP+xml
+        Max-Forwards: <span style="color:#ae81ff">70</span>
+        User-Agent: LiveGBS v200603
+        Content-Length: <span style="color:#ae81ff">162</span>
+    Message Body
+        &lt;?xml version<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.0&#34;</span> encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>?&gt;<span style="color:#ae81ff">\r\n</span>
+        &lt;Query&gt;<span style="color:#ae81ff">\r\n</span>
+            &lt;CmdType&gt;Catalog&lt;/CmdType&gt;<span style="color:#ae81ff">\r\n</span>
+            &lt;SN&gt;445043391&lt;/SN&gt;<span style="color:#ae81ff">\r\n</span>
+            &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;<span style="color:#ae81ff">\r\n</span>
+        &lt;/Query&gt;<span style="color:#ae81ff">\r\n</span>
+</code></pre></div><h3 id="response-ipc---sip-server">
+  response: ipc -&gt; sip server
+  <a class="anchor" href="#response-ipc---sip-server">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2137: <span style="color:#ae81ff">352</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">2816</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">352</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">2816</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>200<span style="color:#f92672">)</span>
+    Status-Line: SIP/2.0 <span style="color:#ae81ff">200</span> OK
+        Status-Code: <span style="color:#ae81ff">200</span>
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 2136<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 5<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.64.3:15060;rport<span style="color:#f92672">=</span>5060;branch<span style="color:#f92672">=</span>z9hG4bK268043391;received<span style="color:#f92672">=</span>192.168.137.105
+        From: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">181043391</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">2000290983</span>
+        Call-ID: <span style="color:#ae81ff">44043391</span>
+        CSeq: <span style="color:#ae81ff">1</span> MESSAGE
+        User-Agent: IP Camera
+        Content-Length: <span style="color:#ae81ff">0</span>
+</code></pre></div><h3 id="request-ipc---sip-server">
+  request: ipc -&gt; sip server
+  <a class="anchor" href="#request-ipc---sip-server">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2138: <span style="color:#ae81ff">1001</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">8008</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">1001</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">8008</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>MESSAGE<span style="color:#f92672">)</span>
+    Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0
+        Method: MESSAGE
+        Request-URI: sip:34020000002000000001@3402000000
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch<span style="color:#f92672">=</span>z9hG4bK461606833
+        From: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">106117409</span>
+        To: &lt;sip:34020000002000000001@3402000000&gt;
+        Call-ID: <span style="color:#ae81ff">2113631911</span>
+        CSeq: <span style="color:#ae81ff">20</span> MESSAGE
+        Content-Type: Application/MANSCDP+xml
+        Max-Forwards: <span style="color:#ae81ff">70</span>
+        User-Agent: IP Camera
+        Content-Length:   <span style="color:#ae81ff">591</span>
+    Message Body
+        &lt;?xml version<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.0&#34;</span> encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GB2312&#34;</span>?&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Response&gt;<span style="color:#ae81ff">\n</span>
+        &lt;CmdType&gt;Catalog&lt;/CmdType&gt;<span style="color:#ae81ff">\n</span>
+        &lt;SN&gt;445043391&lt;/SN&gt;<span style="color:#ae81ff">\n</span>
+        &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;<span style="color:#ae81ff">\n</span>
+        &lt;SumNum&gt;1&lt;/SumNum&gt;<span style="color:#ae81ff">\n</span>
+        &lt;DeviceList Num<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Item&gt;<span style="color:#ae81ff">\n</span>
+        &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Name&gt;Camera 01&lt;/Name&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Manufacturer&gt;Hikvision&lt;/Manufacturer&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Model&gt;IP Camera&lt;/Model&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Owner&gt;Owner&lt;/Owner&gt;<span style="color:#ae81ff">\n</span>
+        &lt;CivilCode&gt;3402000000&lt;/CivilCode&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Address&gt;Address&lt;/Address&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Parental&gt;0&lt;/Parental&gt;<span style="color:#ae81ff">\n</span>
+        &lt;ParentID&gt;34020000002000000001&lt;/ParentID&gt;<span style="color:#ae81ff">\n</span>
+        &lt;SafetyWay&gt;0&lt;/SafetyWay&gt;<span style="color:#ae81ff">\n</span>
+        &lt;RegisterWay&gt;1&lt;/RegisterWay&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Secrecy&gt;0&lt;/Secrecy&gt;<span style="color:#ae81ff">\n</span>
+        &lt;Status&gt;ON&lt;/Status&gt;<span style="color:#ae81ff">\n</span>
+        &lt;/Item&gt;<span style="color:#ae81ff">\n</span>
+        &lt;/DeviceList&gt;<span style="color:#ae81ff">\n</span>
+        &lt;/Response&gt;<span style="color:#ae81ff">\n</span>
+</code></pre></div><h3 id="request-sip-server---ipc-1">
+  request: sip server -&gt; ipc
+  <a class="anchor" href="#request-sip-server---ipc-1">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 2139: <span style="color:#ae81ff">360</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">2880</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">360</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">2880</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>, Dst: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.105, Dst: 192.168.137.109
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>200<span style="color:#f92672">)</span>
+    Status-Line: SIP/2.0 <span style="color:#ae81ff">200</span> OK
+        Status-Code: <span style="color:#ae81ff">200</span>
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 2138<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 16<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.137.109:5060;rport<span style="color:#f92672">=</span>60954;received<span style="color:#f92672">=</span>192.168.64.3;branch<span style="color:#f92672">=</span>z9hG4bK461606833
+        From: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">106117409</span>
+        To: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">443043407</span>
+        CSeq: <span style="color:#ae81ff">20</span> MESSAGE
+        Call-ID: <span style="color:#ae81ff">2113631911</span>
+        User-Agent: LiveGBS v200603
+        Content-Length: <span style="color:#ae81ff">0</span>
+</code></pre></div><hr>
+<h2 id="invite">
+  Invite
+  <a class="anchor" href="#invite">#</a>
+</h2>
+<h3 id="request-sip-server---ipc-sipsdp">
+  request: sip server -&gt; ipc (SIP/SDP)
+  <a class="anchor" href="#request-sip-server---ipc-sipsdp">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 288: <span style="color:#ae81ff">746</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">5968</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">746</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">5968</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>, Dst: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.105, Dst: 192.168.137.109
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>INVITE<span style="color:#f92672">)</span>
+    Request-Line: INVITE sip:34020000001320000001@3402000000 SIP/2.0
+        Method: INVITE
+        Request-URI: sip:34020000001320000001@3402000000
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.64.3:15060;rport;branch<span style="color:#f92672">=</span>z9hG4bK685516389
+        From: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">171516389</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;
+        Call-ID: <span style="color:#ae81ff">16516245</span>
+        CSeq: <span style="color:#ae81ff">4</span> INVITE
+        Content-Type: APPLICATION/SDP
+        Contact: &lt;sip:34020000002000000001@192.168.64.3:15060&gt;
+        Max-Forwards: <span style="color:#ae81ff">70</span>
+        User-Agent: LiveGBS v200603
+        Subject: 34020000001320000001:0200000001,34020000002020000001:0
+        Content-Length: <span style="color:#ae81ff">226</span>
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version <span style="color:#f92672">(</span>v<span style="color:#f92672">)</span>: <span style="color:#ae81ff">0</span>
+            Owner/Creator, Session Id <span style="color:#f92672">(</span>o<span style="color:#f92672">)</span>: <span style="color:#ae81ff">34020000002000000001</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> IN IP4 192.168.137.105
+            Session Name <span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>: Play
+            Connection Information <span style="color:#f92672">(</span>c<span style="color:#f92672">)</span>: IN IP4 192.168.137.105
+            Time Description, active time <span style="color:#f92672">(</span>t<span style="color:#f92672">)</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+            Media Description, name and address <span style="color:#f92672">(</span>m<span style="color:#f92672">)</span>: video <span style="color:#ae81ff">30000</span> RTP/AVP <span style="color:#ae81ff">96</span> <span style="color:#ae81ff">97</span> <span style="color:#ae81ff">98</span>
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: recvonly
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: rtpmap:96 PS/90000
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: rtpmap:97 MPEG4/90000
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: rtpmap:98 H264/90000
+            Unknown: y<span style="color:#f92672">=</span><span style="color:#ae81ff">0200000001</span>
+</code></pre></div><h3 id="response-100-trying-ipc---sip-server-sip">
+  response: 100 Trying (ipc -&gt; sip server, SIP)
+  <a class="anchor" href="#response-100-trying-ipc---sip-server-sip">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 295: <span style="color:#ae81ff">340</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">2720</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">340</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">2720</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>100<span style="color:#f92672">)</span>
+    Status-Line: SIP/2.0 <span style="color:#ae81ff">100</span> Trying
+        Status-Code: <span style="color:#ae81ff">100</span>
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 288<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 16<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.64.3:15060;rport<span style="color:#f92672">=</span>5060;branch<span style="color:#f92672">=</span>z9hG4bK685516389;received<span style="color:#f92672">=</span>192.168.137.105
+        From: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">171516389</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;
+        Call-ID: <span style="color:#ae81ff">16516245</span>
+        CSeq: <span style="color:#ae81ff">4</span> INVITE
+        User-Agent: IP Camera
+        Content-Length: <span style="color:#ae81ff">0</span>
+</code></pre></div><h3 id="response-200-ipc---sip-server-sipsdp">
+  response: 200 (ipc -&gt; sip server, SIP/SDP)
+  <a class="anchor" href="#response-200-ipc---sip-server-sipsdp">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 297: <span style="color:#ae81ff">632</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">5056</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">632</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">5056</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>200<span style="color:#f92672">)</span>
+    Status-Line: SIP/2.0 <span style="color:#ae81ff">200</span> OK
+        Status-Code: <span style="color:#ae81ff">200</span>
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 288<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 20<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.64.3:15060;rport<span style="color:#f92672">=</span>5060;branch<span style="color:#f92672">=</span>z9hG4bK685516389;received<span style="color:#f92672">=</span>192.168.137.105
+        From: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">171516389</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">614786748</span>
+        Call-ID: <span style="color:#ae81ff">16516245</span>
+        CSeq: <span style="color:#ae81ff">4</span> INVITE
+        Contact: &lt;sip:34020000001320000001@192.168.64.3:55302&gt;
+        Content-Type: application/sdp
+        User-Agent: IP Camera
+        Content-Length:   <span style="color:#ae81ff">191</span>
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version <span style="color:#f92672">(</span>v<span style="color:#f92672">)</span>: <span style="color:#ae81ff">0</span>
+            Owner/Creator, Session Id <span style="color:#f92672">(</span>o<span style="color:#f92672">)</span>: <span style="color:#ae81ff">34020000001320000001</span> <span style="color:#ae81ff">2346</span> <span style="color:#ae81ff">2346</span> IN IP4 192.168.137.109
+            Session Name <span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>: Play
+            Connection Information <span style="color:#f92672">(</span>c<span style="color:#f92672">)</span>: IN IP4 192.168.137.109
+            Time Description, active time <span style="color:#f92672">(</span>t<span style="color:#f92672">)</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+            Media Description, name and address <span style="color:#f92672">(</span>m<span style="color:#f92672">)</span>: video <span style="color:#ae81ff">15060</span> RTP/AVP <span style="color:#ae81ff">96</span>
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: sendonly
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: rtpmap:96 PS/90000
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: filesize:0
+            Unknown: y<span style="color:#f92672">=</span><span style="color:#ae81ff">0200000001</span>
+</code></pre></div><hr>
+<h2 id="ack">
+  ACK
+  <a class="anchor" href="#ack">#</a>
+</h2>
+<h3 id="request-sip-server---ipc-sip">
+  request: sip server -&gt; ipc (SIP)
+  <a class="anchor" href="#request-sip-server---ipc-sip">#</a>
+</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 298: <span style="color:#ae81ff">430</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">3440</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">430</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">3440</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>, Dst: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.105, Dst: 192.168.137.109
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>ACK<span style="color:#f92672">)</span>
+    Request-Line: ACK sip:34020000001320000001@3402000000 SIP/2.0
+        Method: ACK
+        Request-URI: sip:34020000001320000001@3402000000
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 288<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 61<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.64.3:15060;rport;branch<span style="color:#f92672">=</span>z9hG4bK193516446
+        From: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">171516389</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">614786748</span>
+        Call-ID: <span style="color:#ae81ff">16516245</span>
+        CSeq: <span style="color:#ae81ff">4</span> ACK
+        Contact: &lt;sip:34020000002000000001@192.168.64.3:15060&gt;
+        Max-Forwards: <span style="color:#ae81ff">70</span>
+        User-Agent: LiveGBS v200603
+        Content-Length: <span style="color:#ae81ff">0</span>
+</code></pre></div><hr>
+<h2 id="rtp">
+  RTP
+  <a class="anchor" href="#rtp">#</a>
+</h2>
+<h3 id="ipc---sip-server">
+  ipc -&gt; sip server
+  <a class="anchor" href="#ipc---sip-server">#</a>
+</h3>
+<p><code>Sequence number</code> 递增</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609143948.png" alt="" /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 299: <span style="color:#ae81ff">1454</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">11632</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">1454</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">11632</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 15060, Dst Port: <span style="color:#ae81ff">30000</span>
+Real-Time Transport Protocol
+    <span style="color:#f92672">[</span>Stream setup by SDP <span style="color:#f92672">(</span>frame 288<span style="color:#f92672">)]</span>
+    10.. .... <span style="color:#f92672">=</span> Version: RFC <span style="color:#ae81ff">1889</span> Version <span style="color:#f92672">(</span>2<span style="color:#f92672">)</span>
+    ..0. .... <span style="color:#f92672">=</span> Padding: False
+    ...0 .... <span style="color:#f92672">=</span> Extension: False
+    .... 0000 <span style="color:#f92672">=</span> Contributing source identifiers count: <span style="color:#ae81ff">0</span>
+    0... .... <span style="color:#f92672">=</span> Marker: False
+    Payload type: PS <span style="color:#f92672">(</span>96<span style="color:#f92672">)</span>
+    Sequence number: <span style="color:#ae81ff">0</span>
+    <span style="color:#f92672">[</span>Extended sequence number: 65536<span style="color:#f92672">]</span>
+    Timestamp: <span style="color:#ae81ff">0</span>
+    Synchronization Source identifier: 0x0bebc201 <span style="color:#f92672">(</span>200000001<span style="color:#f92672">)</span>
+    Payload: 000001ba6e617c97940107599ffeffff01f2c2b4000001bb...
+</code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1299bc26acf7f6b1dceaa2eab19115218871261" title='Last modified by yewang | 2020-10-20' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-10-20</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2020
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#register">Register</a>
+      <ul>
+        <li><a href="#request-register-no-auth">request: Register (no auth)</a></li>
+        <li><a href="#response-401">response: 401</a></li>
+        <li><a href="#request-register-auth">request: register (auth)</a></li>
+        <li><a href="#response-200">response: 200</a></li>
+        <li><a href="#remove-1-binding">remove 1 binding</a></li>
+      </ul>
+    </li>
+    <li><a href="#message">Message</a>
+      <ul>
+        <li><a href="#request-sip-server---ipc">request: sip server -&gt; ipc</a></li>
+        <li><a href="#response-ipc---sip-server">response: ipc -&gt; sip server</a></li>
+        <li><a href="#request-ipc---sip-server">request: ipc -&gt; sip server</a></li>
+        <li><a href="#request-sip-server---ipc-1">request: sip server -&gt; ipc</a></li>
+      </ul>
+    </li>
+    <li><a href="#invite">Invite</a>
+      <ul>
+        <li><a href="#request-sip-server---ipc-sipsdp">request: sip server -&gt; ipc (SIP/SDP)</a></li>
+        <li><a href="#response-100-trying-ipc---sip-server-sip">response: 100 Trying (ipc -&gt; sip server, SIP)</a></li>
+        <li><a href="#response-200-ipc---sip-server-sipsdp">response: 200 (ipc -&gt; sip server, SIP/SDP)</a></li>
+      </ul>
+    </li>
+    <li><a href="#ack">ACK</a>
+      <ul>
+        <li><a href="#request-sip-server---ipc-sip">request: sip server -&gt; ipc (SIP)</a></li>
+      </ul>
+    </li>
+    <li><a href="#rtp">RTP</a>
+      <ul>
+        <li><a href="#ipc---sip-server">ipc -&gt; sip server</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

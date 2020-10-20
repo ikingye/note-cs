@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SDP #  Session Description Protocol
+SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。
+媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
+SDP 协议的具体内容参看：RFC2327
+由于 Web 端、IOS、Android、PC、MAC 端的差异性导致它们对音视频的支持能力不同， 所以我们进行一些音视频会话之前，需要交互下彼此的音视频编解码能力、网络带宽和传输协议等信息， 这些需要协商的信息需要用 SDP 来描述。
+SDP 并不是传输协议，需要用 RTSP、SIP、HTTP 等协议进行承载传输、交换， 如果大家协调好了之后，就可以建立会话，完成真实的音视频码流传输，再完成解码和播放。
+SDP 一般用在媒体会话建立之前，可以适用于实时流媒体、点播、直播等领域，特别在音视频通话、视频会议、VoIP、视频监控等领域应用较多。 媒体码流一般基于 RTP 传输，服务质量用 RTCP 协议保障。
+但是 SDP 的交互不是所有音视频会话建立时都是必须的，假如双方提前约定好这些音视频会话创建需要的信息就不用这个步骤来交互彼此的 SDP 信息， 比如 HTTP-FLV、RTMP-FLV 直播和点播方案，因为一旦采用了这套方案，这些音视频会话建立需要的信息都是确定的， 但是这样会降低或者说没有充分发挥端到端的音视频能力，协商显得更加灵活点。
+SDP 作用 #  SDP 作用包括以下一些方面
+ 建立会话的详细信息，包括名称，网络，带宽等信息 包含在会话中的媒体信息，包括：  媒体类型 (video, audio, etc) 传输协议 (RTP/UDP/IP, H.320, etc) 媒体格式 (H.261 video, MPEG video, etc) 多播或远端（单播）地址和端口   为接收媒体而需的信息 使用的带宽信息 可信赖的接洽信息  如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 WebRTC 就在 SDP 的基础上进行了继续拓展">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="SDP" />
+<meta property="og:description" content="SDP #  Session Description Protocol
+SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。
+媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
+SDP 协议的具体内容参看：RFC2327
+由于 Web 端、IOS、Android、PC、MAC 端的差异性导致它们对音视频的支持能力不同， 所以我们进行一些音视频会话之前，需要交互下彼此的音视频编解码能力、网络带宽和传输协议等信息， 这些需要协商的信息需要用 SDP 来描述。
+SDP 并不是传输协议，需要用 RTSP、SIP、HTTP 等协议进行承载传输、交换， 如果大家协调好了之后，就可以建立会话，完成真实的音视频码流传输，再完成解码和播放。
+SDP 一般用在媒体会话建立之前，可以适用于实时流媒体、点播、直播等领域，特别在音视频通话、视频会议、VoIP、视频监控等领域应用较多。 媒体码流一般基于 RTP 传输，服务质量用 RTCP 协议保障。
+但是 SDP 的交互不是所有音视频会话建立时都是必须的，假如双方提前约定好这些音视频会话创建需要的信息就不用这个步骤来交互彼此的 SDP 信息， 比如 HTTP-FLV、RTMP-FLV 直播和点播方案，因为一旦采用了这套方案，这些音视频会话建立需要的信息都是确定的， 但是这样会降低或者说没有充分发挥端到端的音视频能力，协商显得更加灵活点。
+SDP 作用 #  SDP 作用包括以下一些方面
+ 建立会话的详细信息，包括名称，网络，带宽等信息 包含在会话中的媒体信息，包括：  媒体类型 (video, audio, etc) 传输协议 (RTP/UDP/IP, H.320, etc) 媒体格式 (H.261 video, MPEG video, etc) 多播或远端（单播）地址和端口   为接收媒体而需的信息 使用的带宽信息 可信赖的接洽信息  如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 WebRTC 就在 SDP 的基础上进行了继续拓展" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sdp/" />
+<meta property="article:modified_time" content="2020-10-20T17:53:15+08:00" />
+<title>SDP | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
+<script defer src="/note-cs/en.search.min.bcea5950fb4993db954130b1f7c8da153d43ad721aa22a89b5dafae42f9ded05.js" integrity="sha256-vOpZUPtJk9uVQTCx98jaFT1DrXIaoiqJtdr65C&#43;d7QU="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 技能树</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/tool/" class="collapsed ">4.1 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/" class="collapsed ">4.5 流媒体</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/sdp/" class="active">SDP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/sip/" class="">SIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/protocal/" class="">协议详情</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/packet/" class="">数据包</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/code/" class="">源码实现</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/type/" class="collapsed ">文档类型</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/activity/" class="collapsed ">第七部分 学习活动</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>SDP</strong>
+
+  <label for="toc-control">
+    
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sdp-作用">SDP 作用</a></li>
+    <li><a href="#协议包格式">协议包格式</a>
+      <ul>
+        <li><a href="#version-v">Version (v)</a></li>
+        <li><a href="#session-name-s">Session Name (s)</a></li>
+        <li><a href="#media-description-name-and-address-m">Media Description, name and address (m)</a></li>
+        <li><a href="#media-attribute-a">Media Attribute (a)</a></li>
+        <li><a href="#y">y</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="sdp">
+  SDP
+  <a class="anchor" href="#sdp">#</a>
+</h1>
+<p>Session Description Protocol</p>
+<p>SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。</p>
+<p>媒体传输相关的协议在 SIP 消息 SDP 段携带，
+在服务器和客户端之间进行商议。</p>
+<p>SDP 协议的具体内容参看：<a href="https://www.ietf.org/rfc/rfc2327.txt">RFC2327</a></p>
+<p>由于 Web 端、IOS、Android、PC、MAC 端的差异性导致它们对音视频的支持能力不同，
+所以我们进行一些音视频会话之前，需要交互下彼此的音视频编解码能力、网络带宽和传输协议等信息，
+这些需要协商的信息需要用 SDP 来描述。</p>
+<p>SDP 并不是传输协议，需要用 RTSP、SIP、HTTP 等协议进行承载传输、交换，
+如果大家协调好了之后，就可以建立会话，完成真实的音视频码流传输，再完成解码和播放。</p>
+<p>SDP 一般用在媒体会话建立之前，可以适用于实时流媒体、点播、直播等领域，特别在音视频通话、视频会议、VoIP、视频监控等领域应用较多。
+媒体码流一般基于 RTP 传输，服务质量用 RTCP 协议保障。</p>
+<p>但是 SDP 的交互不是所有音视频会话建立时都是必须的，假如双方提前约定好这些音视频会话创建需要的信息就不用这个步骤来交互彼此的 SDP 信息，
+比如 HTTP-FLV、RTMP-FLV 直播和点播方案，因为一旦采用了这套方案，这些音视频会话建立需要的信息都是确定的，
+但是这样会降低或者说没有充分发挥端到端的音视频能力，协商显得更加灵活点。</p>
+<h2 id="sdp-作用">
+  SDP 作用
+  <a class="anchor" href="#sdp-%e4%bd%9c%e7%94%a8">#</a>
+</h2>
+<p>SDP 作用包括以下一些方面</p>
+<ul>
+<li>建立会话的详细信息，包括名称，网络，带宽等信息</li>
+<li>包含在会话中的媒体信息，包括：
+<ul>
+<li>媒体类型 (video, audio, etc)</li>
+<li>传输协议 (RTP/UDP/IP, H.320, etc)</li>
+<li>媒体格式 (H.261 video, MPEG video, etc)</li>
+<li>多播或远端（单播）地址和端口</li>
+</ul>
+</li>
+<li>为接收媒体而需的信息</li>
+<li>使用的带宽信息</li>
+<li>可信赖的接洽信息</li>
+</ul>
+<p>如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 <code>WebRTC</code> 就在 SDP 的基础上进行了继续拓展</p>
+<h2 id="协议包格式">
+  协议包格式
+  <a class="anchor" href="#%e5%8d%8f%e8%ae%ae%e5%8c%85%e6%a0%bc%e5%bc%8f">#</a>
+</h2>
+<p>Protocol: <code>SIP/SDP</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Frame 238: <span style="color:#ae81ff">633</span> bytes on wire <span style="color:#f92672">(</span><span style="color:#ae81ff">5064</span> bits<span style="color:#f92672">)</span>, <span style="color:#ae81ff">633</span> bytes captured <span style="color:#f92672">(</span><span style="color:#ae81ff">5064</span> bits<span style="color:#f92672">)</span> on interface <span style="color:#ae81ff">0</span>
+Ethernet II, Src: 98:df:82:6d:9e:52 <span style="color:#f92672">(</span>98:df:82:6d:9e:52<span style="color:#f92672">)</span>, Dst: Apple_70:23:0d <span style="color:#f92672">(</span>88:e9:fe:70:23:0d<span style="color:#f92672">)</span>
+Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105
+User Datagram Protocol, Src Port: 5060, Dst Port: <span style="color:#ae81ff">5060</span>
+Session Initiation Protocol <span style="color:#f92672">(</span>200<span style="color:#f92672">)</span>
+    Status-Line: SIP/2.0 <span style="color:#ae81ff">200</span> OK
+        Status-Code: <span style="color:#ae81ff">200</span>
+        <span style="color:#f92672">[</span>Resent Packet: False<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Request Frame: 234<span style="color:#f92672">]</span>
+        <span style="color:#f92672">[</span>Response Time <span style="color:#f92672">(</span>ms<span style="color:#f92672">)</span>: 17<span style="color:#f92672">]</span>
+    Message Header
+        Via: SIP/2.0/UDP 192.168.64.3:15060;rport<span style="color:#f92672">=</span>5060;branch<span style="color:#f92672">=</span>z9hG4bK575396672;received<span style="color:#f92672">=</span>192.168.137.105
+        From: &lt;sip:34020000002000000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">139396672</span>
+        To: &lt;sip:34020000001320000001@3402000000&gt;;tag<span style="color:#f92672">=</span><span style="color:#ae81ff">403895202</span>
+        Call-ID: <span style="color:#ae81ff">325396492</span>
+        CSeq: <span style="color:#ae81ff">3</span> INVITE
+        Contact: &lt;sip:34020000001320000001@192.168.64.3:41073&gt;
+        Content-Type: application/sdp
+        User-Agent: IP Camera
+        Content-Length:   <span style="color:#ae81ff">191</span>
+    Message Body
+        Session Description Protocol
+            Session Description Protocol Version <span style="color:#f92672">(</span>v<span style="color:#f92672">)</span>: <span style="color:#ae81ff">0</span>
+            Owner/Creator, Session Id <span style="color:#f92672">(</span>o<span style="color:#f92672">)</span>: <span style="color:#ae81ff">34020000001320000001</span> <span style="color:#ae81ff">1136</span> <span style="color:#ae81ff">1136</span> IN IP4 192.168.137.109
+            Session Name <span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>: Play
+            Connection Information <span style="color:#f92672">(</span>c<span style="color:#f92672">)</span>: IN IP4 192.168.137.109
+            Time Description, active time <span style="color:#f92672">(</span>t<span style="color:#f92672">)</span>: <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>
+            Media Description, name and address <span style="color:#f92672">(</span>m<span style="color:#f92672">)</span>: video <span style="color:#ae81ff">15060</span> RTP/AVP <span style="color:#ae81ff">96</span>
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: sendonly
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: rtpmap:96 PS/90000
+            Media Attribute <span style="color:#f92672">(</span>a<span style="color:#f92672">)</span>: filesize:0
+            Unknown: y<span style="color:#f92672">=</span><span style="color:#ae81ff">0200000001</span>
+</code></pre></div><h3 id="version-v">
+  Version (v)
+  <a class="anchor" href="#version-v">#</a>
+</h3>
+<h3 id="session-name-s">
+  Session Name (s)
+  <a class="anchor" href="#session-name-s">#</a>
+</h3>
+<h3 id="media-description-name-and-address-m">
+  Media Description, name and address (m)
+  <a class="anchor" href="#media-description-name-and-address-m">#</a>
+</h3>
+<h3 id="media-attribute-a">
+  Media Attribute (a)
+  <a class="anchor" href="#media-attribute-a">#</a>
+</h3>
+<h3 id="y">
+  y
+  <a class="anchor" href="#y">#</a>
+</h3>
+<p>GB28181 规定，
+<code>y</code> 用 <code>10 位十进制数</code>来表示 <code>32 bit</code> 的 <code>SSRC</code></p>
+<ul>
+<li>第 1 位为历史或者实时媒体流的标识位，0 为实时，1 为历史；</li>
+<li>第 2 位到第 6 位取 20 位 SIP 监控域 ID 之中的 4-8 位作为域标识；</li>
+<li>第 7-10 位作为域内媒体流标识，是一个与当前域内产生的媒体流 SSRC 值后 4 位不重复的四位十进制整数；</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1299bc26acf7f6b1dceaa2eab19115218871261" title='Last modified by yewang | 2020-10-20' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-10-20</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2020
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sdp-作用">SDP 作用</a></li>
+    <li><a href="#协议包格式">协议包格式</a>
+      <ul>
+        <li><a href="#version-v">Version (v)</a></li>
+        <li><a href="#session-name-s">Session Name (s)</a></li>
+        <li><a href="#media-description-name-and-address-m">Media Description, name and address (m)</a></li>
+        <li><a href="#media-attribute-a">Media Attribute (a)</a></li>
+        <li><a href="#y">y</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

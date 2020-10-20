@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="设备发现 #  我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
+那如果客户端预先不知道目标服务的地址该怎么办？
+WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
+WS-Discovery 模式 #  WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
+Ad hoc 模式 #   Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式 #   Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="设备发现" />
+<meta property="og:description" content="设备发现 #  我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
+那如果客户端预先不知道目标服务的地址该怎么办？
+WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
+WS-Discovery 模式 #  WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。
+Ad hoc 模式 #   Ad hoc 模式：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。  Message Exchanges in an ad hoc mode. Message exchanges in an ad hoc mode in the presence of a Discovery Proxy. Managed 模式 #   Managed 模式：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。  Message exchanges in a managed mode." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/discovery/" />
+<meta property="article:modified_time" content="2020-10-20T17:53:15+08:00" />
+<title>设备发现 | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
+<script defer src="/note-cs/en.search.min.bcea5950fb4993db954130b1f7c8da153d43ad721aa22a89b5dafae42f9ded05.js" integrity="sha256-vOpZUPtJk9uVQTCx98jaFT1DrXIaoiqJtdr65C&#43;d7QU="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 技能树</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/tool/" class="collapsed ">4.1 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/" class="collapsed ">4.5 流媒体</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/discovery/" class="active">设备发现</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/gsoap/" class="">gsoap 生成 onvif 框架</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/type/" class="collapsed ">文档类型</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/activity/" class="collapsed ">第七部分 学习活动</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>设备发现</strong>
+
+  <label for="toc-control">
+    
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ws-discovery-模式">WS-Discovery 模式</a>
+      <ul>
+        <li><a href="#ad-hoc-模式">Ad hoc 模式</a></li>
+        <li><a href="#managed-模式">Managed 模式</a></li>
+      </ul>
+    </li>
+    <li><a href="#传输方式">传输方式</a></li>
+    <li><a href="#单播-unicast">单播 Unicast</a></li>
+    <li><a href="#多播-multicast">多播 Multicast</a></li>
+    <li><a href="#广播-broadcast">广播 Broadcast</a></li>
+    <li><a href="#ipc-搜索实现">IPC 搜索实现</a></li>
+    <li><a href="#组播-ip-地址">组播 IP 地址</a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="设备发现">
+  设备发现
+  <a class="anchor" href="#%e8%ae%be%e5%a4%87%e5%8f%91%e7%8e%b0">#</a>
+</h1>
+<p>我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。</p>
+<p>那如果客户端预先不知道目标服务的地址该怎么办？</p>
+<p>WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。</p>
+<h2 id="ws-discovery-模式">
+  WS-Discovery 模式
+  <a class="anchor" href="#ws-discovery-%e6%a8%a1%e5%bc%8f">#</a>
+</h2>
+<p>WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。</p>
+<h3 id="ad-hoc-模式">
+  Ad hoc 模式
+  <a class="anchor" href="#ad-hoc-%e6%a8%a1%e5%bc%8f">#</a>
+</h3>
+<ul>
+<li><strong>Ad hoc 模式</strong>：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。</li>
+</ul>
+<p>Message Exchanges in an ad hoc mode.
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153821.png" alt="" /></p>
+<p>Message exchanges in an ad hoc mode in the presence of a Discovery Proxy.
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153835.png" alt="" /></p>
+<h3 id="managed-模式">
+  Managed 模式
+  <a class="anchor" href="#managed-%e6%a8%a1%e5%bc%8f">#</a>
+</h3>
+<ul>
+<li><strong>Managed 模式</strong>：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。</li>
+</ul>
+<p>Message exchanges in a managed mode.
+<img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153754.png" alt="" /></p>
+<p>官方技术规范：http://docs.oasis-open.org/ws-dd/discovery/1.1/os/wsdd-discovery-1.1-spec-os.html</p>
+<hr>
+<h2 id="传输方式">
+  传输方式
+  <a class="anchor" href="#%e4%bc%a0%e8%be%93%e6%96%b9%e5%bc%8f">#</a>
+</h2>
+<p>TCP/IP 有三种传输方式：单播 (Unicast)、多播 (Multicast) 和广播 (Broadcast)，在 IPv6 领域还有另一种方式：任播 (Anycast)。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200319174214.png" alt="" /></p>
+<h2 id="单播-unicast">
+  单播 Unicast
+  <a class="anchor" href="#%e5%8d%95%e6%92%ad-unicast">#</a>
+</h2>
+<p>单播 (Unicast)：一对一，双向通信，目的地址是对方主机地址。网络上绝大部分的数据都是以单播的形式传输的。如收发邮件、浏览网页等。</p>
+<h2 id="多播-multicast">
+  多播 Multicast
+  <a class="anchor" href="#%e5%a4%9a%e6%92%ad-multicast">#</a>
+</h2>
+<p>多播 (Multicast)：也叫组播，一对多，单向通信，目的地址是多播地址，主机可以通过 IGMP 协议请求加入或退出某个多播组 (multicast group)，数据只会转发给有需要（已加入组）的主机，不影响其他不需要（未加入组）的主机。如网上视频会议、网上视频点播、IPTV 等。</p>
+<p>多播地址（Multicast Address）有很多，各个行业都不一样，IPC 摄像头用的是 <code>239.255.255.250</code>（端口 <code>3702</code>）。</p>
+<p>多播地址的范围和分类可以见官方 <a href="https://www.iana.org/">IANA（互联网地址分配机构）</a> 的说明：<a href="https://www.iana.org/assignments/multicast-addresses/multicast-addresses.xhtml">IPv4 Multicast Address Space Registry</a>。</p>
+<p>WS-Discovery 协议用到了多播。</p>
+<h2 id="广播-broadcast">
+  广播 Broadcast
+  <a class="anchor" href="#%e5%b9%bf%e6%92%ad-broadcast">#</a>
+</h2>
+<p>广播 (Broadcast)：一对所有，单向通信，目的地址是广播地址，整个网络中所有主机均可以收到（不管你是否需要），如 ARP 地址解析、GARP 数据包等。广播会被限制在局域网范围内，禁止广播数据穿过路由器，防止广播数据影响大面积的主机。</p>
+<p>参考：<a href="https://blog.csdn.net/wangerge/article/details/3931491">单播、多播（组播）和广播的区别</a></p>
+<hr>
+<h2 id="ipc-搜索实现">
+  IPC 搜索实现
+  <a class="anchor" href="#ipc-%e6%90%9c%e7%b4%a2%e5%ae%9e%e7%8e%b0">#</a>
+</h2>
+<p>实现 socket 编程（UDP），通过 <code>sendto</code> 往多播地址发送探测消息（<code>Probe</code>），再使用 <code>recvfrom</code> 接收 IPC 的应答消息（<code>ProbeMatch</code>）</p>
+<h2 id="组播-ip-地址">
+  组播 IP 地址
+  <a class="anchor" href="#%e7%bb%84%e6%92%ad-ip-%e5%9c%b0%e5%9d%80">#</a>
+</h2>
+<p>组播也是一种 IP 包，也有源 IP 地址，目的 IP 地址，</p>
+<ul>
+<li>源 IP 地址为<strong>组播源</strong>的服务器 IP 地址，</li>
+<li>目的地址为一个特殊的 IP 地址，</li>
+<li>它位于 <code>224.0.0.0</code> - <code>239.255.255.255</code> 中，
+<ul>
+<li>由于 224.0.0.0/24 用于本地链路，即一跳的组播，</li>
+<li>239.0.0.0/8 为私有组播地址，</li>
+<li>所以实际的可用于在互联网上组播地址是 <code>225.0.0.0/8</code> - <code>238.0.0.0/8</code></li>
+</ul>
+</li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/27233903">组播 IP 地址到底是谁的 IP？</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1299bc26acf7f6b1dceaa2eab19115218871261" title='Last modified by yewang | 2020-10-20' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-10-20</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2020
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ws-discovery-模式">WS-Discovery 模式</a>
+      <ul>
+        <li><a href="#ad-hoc-模式">Ad hoc 模式</a></li>
+        <li><a href="#managed-模式">Managed 模式</a></li>
+      </ul>
+    </li>
+    <li><a href="#传输方式">传输方式</a></li>
+    <li><a href="#单播-unicast">单播 Unicast</a></li>
+    <li><a href="#多播-multicast">多播 Multicast</a></li>
+    <li><a href="#广播-broadcast">广播 Broadcast</a></li>
+    <li><a href="#ipc-搜索实现">IPC 搜索实现</a></li>
+    <li><a href="#组播-ip-地址">组播 IP 地址</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

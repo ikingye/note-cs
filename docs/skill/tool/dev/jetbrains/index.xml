@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jetbrains on 计算机学习笔记</title>
+    <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/</link>
+    <description>Recent content in Jetbrains on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GoLand</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/goland/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/goland/</guid>
+      <description>GoLand #  快捷键 #  跳转 #    指定行 cmd + L
+  指定文件 shift + cmd + O
+  返回光标上一个位置 cmd + opt + 方向键
+   查询 #    函数列表 cmd + f12
+  当前文件查询 cmd + F
+  当前文件替换 cmd + R
+  所有文件查询 shift + cmd + F
+  所有文件替换 shift + cmd + R</description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/idea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/idea/</guid>
+      <description>IntelliJ Idea #  插件 #  Alibaba Java Coding Guidelines #   教程 #  xiaoxiunique/tool-tips #  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
+    </item>
+    
+  </channel>
+</rss>

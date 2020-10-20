@@ -11,10 +11,10 @@
     
     <item>
       <title>GitHub</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/github/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/github/</guid>
       <description>GitHub #  设置代理 #  git config --global http.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; git config --global https.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; git config --global https.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github #  Github Learning Lab #  Introduction to GitHub #   Github 工具 #  cli/cli #  GitHub’s official command line tool https://cli.</description>
     </item>
     
@@ -84,6 +84,15 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/bash/</guid>
       <description>Bash #  </description>
+    </item>
+    
+    <item>
+      <title>hugo-academic</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/theme/academic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/theme/academic/</guid>
+      <description>Academic #  配置 #  写博客 #  hugo new &amp;ndash;kind post post/my-post</description>
     </item>
     
     <item>
@@ -584,12 +593,30 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     </item>
     
     <item>
+      <title>配置</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/config/</guid>
+      <description>Hugo 配置 #  参考：https://themes.gohugo.io/hugo-book</description>
+    </item>
+    
+    <item>
       <title>cmake</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</guid>
       <description>cmake #  </description>
+    </item>
+    
+    <item>
+      <title>hugo-book</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/theme/hugo-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/theme/hugo-book/</guid>
+      <description>hugo-book #  配置 #  Site Configuration #   点击查看配置详情 ...  # (Optional) Set Google Analytics if you use it to track your website. # Always put it on the top of the configuration file, otherwise it won&amp;#39;t work googleAnalytics = &amp;#34;UA-XXXXXXXXX-X&amp;#34; # (Optional) If you provide a Disqus shortname, comments will be enabled on # all pages. disqusShortname = &amp;#34;my-site&amp;#34; # (Optional) Set this to true if you use capital letters in file names disablePathToLower = true # (Optional) Set this to true to enable &amp;#39;Last Modified by&amp;#39; date and git author # information on &amp;#39;doc&amp;#39; type pages.</description>
     </item>
     
     <item>
@@ -785,6 +812,15 @@ telnet domain/ip [port] telnet 退出 #   按 CTRL + ] 然后输入 quit  </desc
     </item>
     
     <item>
+      <title>C</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/</guid>
+      <description>C 学习笔记 #  见：C 学习笔记</description>
+    </item>
+    
+    <item>
       <title>gulp</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/basic/build/gulp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -816,19 +852,19 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
     
     <item>
       <title>快捷键</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/shortcuts/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/shortcuts/</guid>
       <description>VScode 快捷键 #  MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
     </item>
     
     <item>
       <title>推荐软件</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/recommend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/recommend/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/recommend/</guid>
       <description>推荐软件 #  MacOS 开发 iTerm Keyboard Maestro  参考  jaywcjlove/awesome-mac   Windows todoiOS todoAndroid todoLinux todo </description>
     </item>
     
@@ -845,10 +881,10 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
     
     <item>
       <title>编程学习网站</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/study/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/study/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/study/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/study/tutorial/</guid>
       <description>编程学习网站 #  基础 #  Codecademy #  Programiz #   算法 #  Codewars #   进阶 #  Codeplace #  通过实际应用来学习编程。</description>
     </item>
     
@@ -868,10 +904,10 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
     
     <item>
       <title>GoLand</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/goland/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/goland/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/goland/</guid>
       <description>GoLand #  快捷键 #  跳转 #    指定行 cmd + L
   指定文件 shift + cmd + O
   返回光标上一个位置 cmd + opt + 方向键
@@ -884,10 +920,10 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
     
     <item>
       <title>Idea</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/idea/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/jetbrains/idea/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/idea/</guid>
       <description>IntelliJ Idea #  插件 #  Alibaba Java Coding Guidelines #   教程 #  xiaoxiunique/tool-tips #  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
     </item>
     
@@ -1125,10 +1161,10 @@ TTM 模块 #  BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看�
     
     <item>
       <title>config</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/ssh/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/ssh/config/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/ssh/config/</guid>
       <description>config #  my config #  ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.</description>
     </item>
     
@@ -1153,19 +1189,19 @@ dash: 不支持，替代方法：可采用 here documents
     
     <item>
       <title>GDB 教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/debug/gdb/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/tutorial/</guid>
       <description>GDB 教程 #  </description>
     </item>
     
     <item>
       <title>git config</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/config/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/config/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/config/</guid>
       <description>git config #  config 权限 #  问题： Bad owner or permissions on ~/.ssh/config
 解决：
 chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
@@ -1178,6 +1214,16 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       
       <guid>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/go-wiki/</guid>
       <description>go wiki #  学习进度 #   Getting started with Go    Working with Go    Learning more about Go  Learning Go - A collection of resources for learning Go - beginner to advanced.  Best Practices for a New Go Developer - Insights from Go community members. Server programming - Building web, mobile, and API servers. More on concurrency More on error handling More on testing More on mobile - Android and iOS   Books - A list of Go books that have been published (ebook, paper) Blogs - Blogs about Go  Podcasts - Podcasts and episodes featuring Go   Videos, Talks and Presentations  GopherVids is a searchable index of videos about Go.</description>
+    </item>
+    
+    <item>
+      <title>Jupyter</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/note/jupyter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/note/jupyter/</guid>
+      <description>Jupyter #  Jupyter kernel #  Go #  gopherdata/gophernotes #  $ go get -u github.com/gopherdata/gophernotes $ mkdir -p ~/Library/Jupyter/kernels/gophernotes $ cp $GOPATH/src/github.com/gopherdata/gophernotes/kernel/* ~/Library/Jupyter/kernels/gophernotes  Java #  SpencerPark/IJava #  A Jupyter kernel for executing Java code.
+ PHP #  Litipk/Jupyter-PHP #   要安装 zmq  php72 -m | grep   phpto72 php jupyter-php-installer.phar install -vvv  使用 -vvv 查看详细信息     编辑器 #  nteract/nteract #  The interactive computing suite for you!</description>
     </item>
     
     <item>
@@ -1195,29 +1241,29 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
     
     <item>
       <title>LLDB 教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/debug/lldb/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/lldb/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/debug/lldb/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/lldb/tutorial/</guid>
       <description>LLDB 教程 #  </description>
     </item>
     
     <item>
       <title>Network</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/network/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/network/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/network/</guid>
       <description>ChirpStack Network Server #  ChirpStack Network Server is an open-source LoRaWAN network-server. https://www.chirpstack.io
 数据库 #     Schema Name Type Owner     public code_migration table chirpstack_ns   public device table chirpstack_ns   public device_activation table chirpstack_ns   public device_activation_id_seq sequence chirpstack_ns   public device_multicast_group table chirpstack_ns   public device_profile table chirpstack_ns   public device_queue table chirpstack_ns   public device_queue_id_seq sequence chirpstack_ns   public gateway table chirpstack_ns   public gateway_board table chirpstack_ns   public gateway_profile table chirpstack_ns   public gateway_profile_extra_channel table chirpstack_ns   public gateway_profile_extra_channel_id_seq sequence chirpstack_ns   public gateway_stats table chirpstack_ns   public gateway_stats_id_seq sequence chirpstack_ns   public gorp_migrations table chirpstack_ns   public multicast_group table chirpstack_ns   public multicast_queue table chirpstack_ns   public multicast_queue_id_seq sequence chirpstack_ns   public routing_profile table chirpstack_ns   public service_profile table chirpstack_ns    (21 rows)</description>
     </item>
     
     <item>
       <title>RTMP</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtmp/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtmp/</guid>
       <description>RTMP #  Real-Time Messaging Protocol
 默认端口：1935
 握手 #  复杂握手 #   RTMP vs RTSP #  目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
@@ -1227,10 +1273,10 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
     
     <item>
       <title>RTP</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtp/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtp/</guid>
       <description>RTP #  报文结构 #   Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header #  前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
  RTP/PS/H.264 #  基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
 PS 包 #  进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。</description>
@@ -1238,10 +1284,10 @@ PS 包 #  进行 PS 封装时，将每个视频帧封装为一个PS 包， 且�
     
     <item>
       <title>RTSP</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtsp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/rtsp/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtsp/</guid>
       <description>RTSP #  Real Time Streaming Protocol
 默认端口：554
 方法 #  一般的顺序是：
@@ -1261,10 +1307,10 @@ OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-A
     
     <item>
       <title>submodule</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/submodule/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/submodule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/git/submodule/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/submodule/</guid>
       <description>git submodule #  拉取 submodule #  git submodule init git submodule update --remote git submodule add -b #  参考：
  How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url #   edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
 delete submodule #   Delete the relevant section from the .</description>
@@ -1272,10 +1318,10 @@ delete submodule #   Delete the relevant section from the .</description>
     
     <item>
       <title>VSCode Debug</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/debug/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/debug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vscode/debug/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/debug/</guid>
       <description>VSCode Debug #  参考：
   USER GUIDE - Debugging
   Debug C++ in Visual Studio Code
@@ -1284,10 +1330,10 @@ delete submodule #   Delete the relevant section from the .</description>
     
     <item>
       <title>WebRTC</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/webrtc/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/webrtc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/webrtc/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/webrtc/</guid>
       <description>WebRTC #  Web Real-Time Communication
 支持网页浏览器进行实时语音对话或视频对话的 API</description>
     </item>
@@ -1341,10 +1387,10 @@ XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就
     
     <item>
       <title>设备发现</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/onvif/discovery/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/discovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/onvif/discovery/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/discovery/</guid>
       <description>设备发现 #  我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
 那如果客户端预先不知道目标服务的地址该怎么办？
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
@@ -1374,10 +1420,10 @@ Ad hoc 模式 #   Ad hoc 模式：客户端以多播 (multicast) 的形式往多
     
     <item>
       <title>homebrew</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/brew/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/package-manager/brew/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/package-manager/brew/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/package-manager/brew/</guid>
       <description>Homebrew #  tap #  brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
 如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件
 tap 命令的仓库源默认来至于 Github，但是这个命令也不限制于这一个地方
@@ -1391,29 +1437,29 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
     
     <item>
       <title>HHKB</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/hhkb/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/hhkb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/hhkb/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/hhkb/</guid>
       <description>HHKB 键盘 #  Happy Hacking Keyboard
 使用 #  方向键 #  右侧的 Fn 键 + [ / ; &#39;</description>
     </item>
     
     <item>
       <title>4G</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/communication/4g/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/4g/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/communication/4g/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/4g/</guid>
       <description>4G #  </description>
     </item>
     
     <item>
       <title>5G</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/communication/5g/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/5g/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/communication/5g/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/5g/</guid>
       <description>5G #  5G 速度 #  世界上最快的 4G 网速（挪威，63.13Mbps）
 最快的宽带网速（新加坡，189Mbps）
 2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
@@ -1438,10 +1484,10 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
     
     <item>
       <title>Application</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/application/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/application/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/chirpstack/application/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/application/</guid>
       <description>ChirpStack Application Server #  ChirpStack Application Server is an open-source LoRaWAN application-server. https://www.chirpstack.io
 数据库 #     Schema Name Type Owner     public application table chirpstack_as   public application_id_seq sequence chirpstack_as   public code_migration table chirpstack_as   public device table chirpstack_as   public device_activation table chirpstack_as   public device_activation_id_seq sequence chirpstack_as   public device_keys table chirpstack_as   public device_multicast_group table chirpstack_as   public device_profile table chirpstack_as   public fuota_deployment table chirpstack_as   public fuota_deployment_device table chirpstack_as   public gateway table chirpstack_as   public gateway_ping table chirpstack_as   public gateway_ping_id_seq sequence chirpstack_as   public gateway_ping_rx table chirpstack_as   public gateway_ping_rx_id_seq sequence chirpstack_as   public gateway_profile table chirpstack_as   public gorp_migrations table chirpstack_as   public integration table chirpstack_as   public integration_id_seq sequence chirpstack_as   public multicast_group table chirpstack_as   public network_server table chirpstack_as   public network_server_id_seq sequence chirpstack_as   public organization table chirpstack_as   public organization_id_seq sequence chirpstack_as   public organization_user table chirpstack_as   public organization_user_id_seq sequence chirpstack_as   public remote_fragmentation_session table chirpstack_as   public remote_multicast_class_c_session table chirpstack_as   public remote_multicast_setup table chirpstack_as   public service_profile table chirpstack_as   public user table chirpstack_as   public user_id_seq sequence chirpstack_as    (33 rows)</description>
     </item>
@@ -1495,10 +1541,10 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
     
     <item>
       <title>H264</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/h264/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/h264/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/h264/</guid>
       <description>H264 #  H.264，又称为 MPEG-4 第 10 部分，高级视频编码（英语： MPEG-4 Part 10, Advanced Video Coding ，缩写为 MPEG-4 AVC）是一种面向块，基于运动补偿的视频编码标准（英语：Advanced Video Coding） 。
 AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在技术特性上比属于 MPEG-4 Part2 的 XviD 要先进。
 它和 ITU-T H.264 标准是一致的，故又称为 H.264。
@@ -1518,19 +1564,19 @@ H264 码流可以分为两层
     
     <item>
       <title>HLS</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/hls/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/hls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/hls/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/hls/</guid>
       <description>HLS #  HTTP Live Streaming</description>
     </item>
     
     <item>
       <title>HTTP FLV</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/http-flv/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/http-flv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/http-flv/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/http-flv/</guid>
       <description>HTTP FLV #  Bilibili/flv.js #  HTML5 FLV Player</description>
     </item>
     
@@ -1548,38 +1594,38 @@ Apache Solr is an enterprise search platform written using Apache Lucene. Major 
     
     <item>
       <title>Mas</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/mas/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/mas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/mas/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/mas/</guid>
       <description>mas-cli/mas #  Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.
 $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
     </item>
     
     <item>
       <title>MPEG</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/mpeg/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/mpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/mpeg/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/mpeg/</guid>
       <description>MPEG #   MPEG-1：第一个官方的视讯音频压缩标准，随后在 Video CD 中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称 MP3，成为比较流行的音频压缩格式。 MPEG-2：广播质量的视讯、音频和传输协议。被用于无线 数字电视 - ATSC、DVB 以及 ISDB、数字卫星电视（例如 DirecTV）、数字 有线电视信号，以及 DVD 视频光盘技术中。 MPEG-3：原本目标是为 高清晰度电视（ HDTV）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。 MPEG-4：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和 数字版权管理（Digital Rights Management），其中第 10 部分由 ISO/IEC 和 ITU-T 联合发布，称为 H.264/MPEG-4 Part 10。 MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。 MPEG-21：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。  </description>
     </item>
     
     <item>
       <title>picgo</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/picgo/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/picgo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/picgo/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/picgo/</guid>
       <description>picgo #  CLI 命令 #  PicGo/PicGo-Core #  Molunerfinn/PicGo #  </description>
     </item>
     
     <item>
       <title>PS</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/ps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/ps/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/ps/</guid>
       <description>PS #  Program stream
 PS 流的包结构是可变长度的， 一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
 在信道环境较好，传输误码较低时，一般采用 PS 码流。
@@ -1620,10 +1666,10 @@ TS 流解码过程 #   获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可�
     
     <item>
       <title>tmux</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/tmux/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/tmux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/tmux/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/tmux/</guid>
       <description>tmux #  配置 #  ChrisJohnsen/tmux-MacOSX-pasteboard #  Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.
 Other services and unpatched builds of screen are also affected.
 gpakosz/.tmux #  Oh My Tmux!
@@ -1645,10 +1691,10 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
     
     <item>
       <title>vim</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/dev/vim/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/dev/vim/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vim/</guid>
       <description>vim #   教程 #  iggredible/Learn-Vim #  A book for learning the Vim editor the smart way.</description>
     </item>
     
@@ -2047,10 +2093,10 @@ TCC 分布式事务框架，比如国内开源的
     
     <item>
       <title>在线编程</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/tool/study/coding-online/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/study/coding-online/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/tool/study/coding-online/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/study/coding-online/</guid>
       <description>在线编程 #  </description>
     </item>
     
@@ -2215,20 +2261,20 @@ Automate everything from code deployment to network configuration to cloud manag
     
     <item>
       <title>CLAA</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/claa/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/claa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/lorawan/claa/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/claa/</guid>
       <description>CLAA #  The China LoRa Application Alliance
 CLAA IoT Ecosystem</description>
     </item>
     
     <item>
       <title>SDP</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sdp/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sdp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sdp/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sdp/</guid>
       <description>SDP #  Session Description Protocol
 SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。
 媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
@@ -2243,10 +2289,10 @@ SDP 作用 #  SDP 作用包括以下一些方面
     
     <item>
       <title>SIP</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/sip/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sip/</guid>
       <description>SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
 CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
@@ -2255,20 +2301,20 @@ CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有
     
     <item>
       <title>VoIP</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/voip/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/voip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/voip/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/voip/</guid>
       <description>VoIP #  VoIP vs SIP #  In simple terms, VoIP means making or receiving phone calls over the internet or internal networks. SIP, on the other hand, is an application layer protocol that is used to establish, modify and terminate multimedia sessions such as VoIP calls.
 A major difference between VoIP and SIP is their scope. VoIP is not a discrete technology in its own right. Rather, it is actually a family of technologies used within modern telecommunication networks, whereas SIP is a signalling protocol used within the VoIP umbrella.</description>
     </item>
     
     <item>
       <title>协议详情</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/protocal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/protocal/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/protocal/</guid>
       <description>GB28181 协议解析 #  点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
 名词解释 #  SIP 服务器 #  SIP client #  具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
 SIP device #  具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
@@ -2279,28 +2325,28 @@ SIP 监控域 SIP surveil lance realm #  支持本标准规定的通信协议的
     
     <item>
       <title>数据包</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/packet/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/packet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/packet/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/packet/</guid>
       <description>数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.</description>
     </item>
     
     <item>
       <title>源码实现</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/gb28181/code/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/code/</guid>
       <description>源码实现 #  名词解释 #   AOR：Address Of Record 是 header 中的 From 字段   开源实现 #  go #   StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  StefanKopieczek/gossip 1lann/go-sip kirm/sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C #   pjsip/pjproject   C# #   GB28181/GB28181.Solution   C++ #   ossrs/srs  xiongziliang/ZLMediaKit   Node.</description>
     </item>
     
     <item>
       <title>gsoap 生成 onvif 框架</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/onvif/gsoap/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/gsoap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/onvif/gsoap/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/gsoap/</guid>
       <description>gsoap 生成 onvif 框架 #  生成参数 #  wsdl2h #  -O4 #  aggressively optimizes the output by &amp;ldquo;schema slicing&amp;rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
 -P #  don&amp;rsquo;t create polymorphic types inherited from xsd__anyType;
 removes the base class xsd__anyType from the generated C++ classes, which are normally added by wsdl2h if the xsd:anyType XSD type is used somewhere in a WSDL.</description>
@@ -2308,10 +2354,10 @@ removes the base class xsd__anyType from the generated C++ classes, which are 
     
     <item>
       <title>EasyDarwin</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/easydarwin/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/easydarwin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/easydarwin/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/easydarwin/</guid>
       <description>EasyDarwin #  EasyDarwin 是基于 Apple 的开源项目 Darwin Streaming Server 衍生而来的， Darwin 本身支持的是 RTSP 流媒体协议
 macosforge/dss #  Darwin Streaming Server is Apple&amp;rsquo;s open source version of the QuickTime Streaming Server technology allowing you to send streaming media across the Internet using the industry standard RTP and RTSP protocols.
  EasyDarwin 生态 #   EasyDarwin 开源流媒体服务器：www.EasyDarwin.org EasyDSS 商用流媒体解决方案：www.EasyDSS.com, 点播与直播服务器  EasyBMS EasyRMS, 录播服务器   EasyNVR 无插件直播方案：www.EasyNVR.com, 摄像机互联网直播服务  EasyGB28181Server #  EasyNVR 采用的是 Onvif 协议接入云平台， 而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台</description>
@@ -2319,38 +2365,38 @@ macosforge/dss #  Darwin Streaming Server is Apple&amp;rsquo;s open source versi
     
     <item>
       <title>SRS</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/srs/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/srs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/srs/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/srs/</guid>
       <description>SRS #  ossrs/srs SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable and simple.
 配置信息 #  </description>
     </item>
     
     <item>
       <title>ZLMediaKit</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/zlmediakit/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/zlmediakit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/zlmediakit/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/zlmediakit/</guid>
       <description>ZLMediaKit #  xiongziliang/ZLMediaKit # h264推流 ffmpeg -re -i &amp;#34;/path/to/test.mp4&amp;#34; -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test ffmpeg -re -stream_loop -1 -i carbrand.MOV -vcodec h264 -acodec aac -f rtp_mpegts rtp://127.0.0.1:10000 rtsp __defaultVhost__ rtp 55667788 CodecH264[1920/1080/50] rtsp://127.0.0.1/rtp/55667788 </description>
     </item>
     
     <item>
       <title>直播技术</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/live-tech/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/live-tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/live-tech/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/live-tech/</guid>
       <description>直播技术 #   摄像头视频采集，原始视频数据：RGB/YUV 话筒音频采集，原始音频数据：PCM 视频文件编码，RGB/YUV -&amp;gt; H.264/H.265 音频文件编码，PCM -&amp;gt; AAC 编码为有流媒体特性的多媒体容器格式（Multimedia Container Format）， 如 FLV/TS/RTMP Package 推流到流媒体服务器  应用层：HLS/RTSP/RTMP 传输层：RTP/RTCP 网络层：RSVP   服务端处理  转码/录制/截图/鉴黄 生成拉流 URL   拉流到客户端  应用层：HLS/RTMP 传输层：RTP/RTCP 网络层：RSVP   解复用，多媒体容器格式（FLV/TS/RTMP Package）的流 -&amp;gt; 音视频数据（H.264/AAC） 解码视频文件为 YUV/RGB，解码音频文件为 PCM  硬解码（GPU 解码，CPU 辅助） 软解码（CPU 解码）   音画同步 视频数据（YUV/RGB）发送到视频输出设备，音频数据（PCM）发送到音频输出设备  </description>
     </item>
     
     <item>
       <title>视频编码</title>
-      <link>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/video-codec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/others/skill/stream-media/video-codec/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/video-codec/</guid>
       <description>视频编码 #      年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H.</description>
     </item>
     

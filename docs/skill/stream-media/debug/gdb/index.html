@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GDB #  GDB 的主要功能就是监控程序的执行流程，
+只有当源程序文件编译为可执行文件并执行时，GDB 才会派上用场。
+# -g Generate source-level debug information $ gcc -g main.c -o main # 启动时不显示提示信息 # -q, --quiet, --silent $ gdb -q # 显示 gdb 版本信息 (gdb) show version # 查看 gdb 版权相关信息 (gdb) show copying # 输出信息多时不会暂停输出 (gdb) set pagination off # 列出函数的名字 (gdb) info functions (gdb) info functions regex GDB 常用的调试指令 #     调试指令 作 用     (gdb) break xxx (gdb) b xxx 在源代码指定的某一行设置断点，其中 xxx 用于指定具体打断点的位置。   (gdb) run (gdb) r 执行被调试的程序，其会自动在第一个断点处暂停执行。   (gdb) continue (gdb) c 当程序在某一断点处停止运行后，使用该指令可以继续执行，直至遇到下一个断点或者程序结束。   (gdb) next (gdb) n 令程序一行代码一行代码的执行。   (gdb) print xxx (gdb) p xxx 打印指定变量的值，其中 xxx 指的就是某一变量名。   (gdb) list (gdb) l 显示源程序代码的内容，包括各行代码所在的行号。   (gdb) quit (gdb) q 终止调试。     问题 #  解决 GDB 在 Mac 下不能调试的问题 #  Darwin 内核在你没有特殊权限的情况下，不允许调试其它进程。 调试某个进程，意味着你对这个进程有完全的控制权限，所以为了防止被恶意利用，它是默认禁止的。允许 gdb 控制其它进程最好的方法就是用系统信任的证书对它进行签名。">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="GDB" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/" />
+
+<title>GDB | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
+<script defer src="/note-cs/en.search.min.bcea5950fb4993db954130b1f7c8da153d43ad721aa22a89b5dafae42f9ded05.js" integrity="sha256-vOpZUPtJk9uVQTCx98jaFT1DrXIaoiqJtdr65C&#43;d7QU="></script>
+<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/index.xml" title="计算机学习笔记" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 技能树</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/tool/" class="collapsed ">4.1 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/" class="collapsed ">4.5 流媒体</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/gdb/" class="collapsed active">GDB</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/gdb/tutorial/" class="">GDB 教程</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/lldb/" class="collapsed ">LLDB</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/type/" class="collapsed ">文档类型</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/activity/" class="collapsed ">第七部分 学习活动</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>GDB</strong>
+
+  <label for="toc-control">
+    
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gdb-常用的调试指令">GDB 常用的调试指令</a></li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#解决-gdb-在-mac-下不能调试的问题">解决 GDB 在 Mac 下不能调试的问题</a>
+          <ul>
+            <li><a href="#创建代码签名的证书">创建代码签名的证书</a></li>
+            <li><a href="#签名">签名</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#工具">工具</a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="gdb">
+  GDB
+  <a class="anchor" href="#gdb">#</a>
+</h1>
+<p>GDB 的主要功能就是监控程序的执行流程，</p>
+<p>只有当源程序文件编译为可执行文件并执行时，GDB 才会派上用场。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># -g  Generate source-level debug information</span>
+$ gcc -g main.c -o main
+
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">
+<span style="color:#75715e"># 启动时不显示提示信息</span>
+<span style="color:#75715e"># -q, --quiet, --silent</span>
+$ gdb -q
+
+<span style="color:#75715e"># 显示 gdb 版本信息</span>
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> show version
+<span style="color:#75715e"># 查看 gdb 版权相关信息</span>
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> show copying
+
+<span style="color:#75715e"># 输出信息多时不会暂停输出</span>
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> set pagination off
+
+<span style="color:#75715e"># 列出函数的名字</span>
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> info functions
+<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> info functions regex
+
+</code></pre></div><h2 id="gdb-常用的调试指令">
+  GDB 常用的调试指令
+  <a class="anchor" href="#gdb-%e5%b8%b8%e7%94%a8%e7%9a%84%e8%b0%83%e8%af%95%e6%8c%87%e4%bb%a4">#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>调试指令</th>
+<th>作 用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(gdb) break xxx <br>(gdb) b xxx</td>
+<td>在源代码指定的某一行设置断点，其中 xxx 用于指定具体打断点的位置。</td>
+</tr>
+<tr>
+<td>(gdb) run <br>(gdb) r</td>
+<td>执行被调试的程序，其会自动在第一个断点处暂停执行。</td>
+</tr>
+<tr>
+<td>(gdb) continue <br>(gdb) c</td>
+<td>当程序在某一断点处停止运行后，使用该指令可以继续执行，直至遇到下一个断点或者程序结束。</td>
+</tr>
+<tr>
+<td>(gdb) next <br>(gdb) n</td>
+<td>令程序一行代码一行代码的执行。</td>
+</tr>
+<tr>
+<td>(gdb) print xxx <br>(gdb) p xxx</td>
+<td>打印指定变量的值，其中 xxx 指的就是某一变量名。</td>
+</tr>
+<tr>
+<td>(gdb) list <br>(gdb) l</td>
+<td>显示源程序代码的内容，包括各行代码所在的行号。</td>
+</tr>
+<tr>
+<td>(gdb) quit <br>(gdb) q</td>
+<td>终止调试。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="问题">
+  问题
+  <a class="anchor" href="#%e9%97%ae%e9%a2%98">#</a>
+</h2>
+<h3 id="解决-gdb-在-mac-下不能调试的问题">
+  解决 GDB 在 Mac 下不能调试的问题
+  <a class="anchor" href="#%e8%a7%a3%e5%86%b3-gdb-%e5%9c%a8-mac-%e4%b8%8b%e4%b8%8d%e8%83%bd%e8%b0%83%e8%af%95%e7%9a%84%e9%97%ae%e9%a2%98">#</a>
+</h3>
+<p>Darwin 内核在你没有特殊权限的情况下，不允许调试其它进程。
+调试某个进程，意味着你对这个进程有完全的控制权限，所以为了防止被恶意利用，它是默认禁止的。允许 gdb 控制其它进程最好的方法就是用系统信任的证书对它进行签名。</p>
+<h4 id="创建代码签名的证书">
+  创建代码签名的证书
+  <a class="anchor" href="#%e5%88%9b%e5%bb%ba%e4%bb%a3%e7%a0%81%e7%ad%be%e5%90%8d%e7%9a%84%e8%af%81%e4%b9%a6">#</a>
+</h4>
+<ol>
+<li>打开 Keychain Access 应用程序（/Applications/Utilities/Keychain Access.app）</li>
+<li>执行菜单   钥匙串访问  -&gt;  证书助理  -&gt;  创建证书</li>
+<li>填写如下信息：
+<ul>
+<li>名称：gdb_codesign</li>
+<li>身份类型：自签名根证书</li>
+<li>证书类型：代码签名</li>
+<li>钩选：让我覆盖这些默认设置<br>
+<img src="http://7xnua6.com1.z0.glb.clouddn.com/2015/gdb_codesigin_new.png" alt="" /></li>
+</ul>
+</li>
+<li>一路确定，直到指定证书位置的步骤，选择系统<br>
+<img src="http://7xnua6.com1.z0.glb.clouddn.com/2015/gdb_codesign_location.png" alt="" /></li>
+<li>点击 &ldquo;创建&rdquo;，会提示用输入系统登录密码，创建完成</li>
+<li>在钥匙串访问程序中，选择左侧栏的系统和我的证书，找到你刚刚创建的  gdb_codesign  证书并双击打开证书信息窗口，展开   信任项，设置使用此证书时：为始终信任。<br>
+<img src="http://7xnua6.com1.z0.glb.clouddn.com/2015/gdb_codesign_trust.jpg" alt="" /></li>
+<li>关闭证书信息窗口，系统会再次要求输入系统登录密码。</li>
+</ol>
+<h4 id="签名">
+  签名
+  <a class="anchor" href="#%e7%ad%be%e5%90%8d">#</a>
+</h4>
+<p>如果是之前的系统，直接执行：<br>
+<code>codesign -fs gdb-cert $(which gdb)</code></p>
+<p>如果是 Mojave (10.14) 之后的系统，<br>
+先创建一个文件  <code>gdb-entitlement.xml</code>，内容为:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+    &lt;key&gt;com.apple.security.cs.debugger&lt;/key&gt;
+    &lt;true/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+&lt;/pre&gt;
+</code></pre><p>再执行:<br>
+<code>codesign --entitlements gdb-entitlement.xml -fs gdb-cert $(which gdb)</code></p>
+<p>具体参考这里：<a href="https://sourceware.org/gdb/wiki/PermissionsDarwin">https://sourceware.org/gdb/wi&hellip;</a></p>
+<p>参考：</p>
+<ul>
+<li><a href="https://segmentfault.com/q/1010000004136334">解决 GDB 在 Mac 下不能调试的问题</a></li>
+</ul>
+<hr>
+<h2 id="工具">
+  工具
+  <a class="anchor" href="#%e5%b7%a5%e5%85%b7">#</a>
+</h2>
+<p><a href="https://github.com/cyrus-and/gdb-dashboard">cyrus-and/gdb-dashboard</a> <img src="https://img.shields.io/github/stars/cyrus-and/gdb-dashboard.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/cyrus-and/gdb-dashboard.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/cyrus-and/gdb-dashboard.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/cyrus-and/gdb-dashboard.svg" alt="Last commit" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1299bc26acf7f6b1dceaa2eab19115218871261" title='Last modified by yewang | 2020-10-20' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-10-20</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2020
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#gdb-常用的调试指令">GDB 常用的调试指令</a></li>
+    <li><a href="#问题">问题</a>
+      <ul>
+        <li><a href="#解决-gdb-在-mac-下不能调试的问题">解决 GDB 在 Mac 下不能调试的问题</a>
+          <ul>
+            <li><a href="#创建代码签名的证书">创建代码签名的证书</a></li>
+            <li><a href="#签名">签名</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#工具">工具</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

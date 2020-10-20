@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="视频编码 #      年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="视频编码" />
+<meta property="og:description" content="视频编码 #      年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/video-codec/" />
+<meta property="article:modified_time" content="2020-10-20T17:53:15+08:00" />
+<title>视频编码 | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
+<script defer src="/note-cs/en.search.min.bcea5950fb4993db954130b1f7c8da153d43ad721aa22a89b5dafae42f9ded05.js" integrity="sha256-vOpZUPtJk9uVQTCx98jaFT1DrXIaoiqJtdr65C&#43;d7QU="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 技能树</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/tool/" class="collapsed ">4.1 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/" class="collapsed ">4.5 流媒体</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/rtmp/" class="">RTMP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/rtp/" class="">RTP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/rtsp/" class="">RTSP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/webrtc/" class="">WebRTC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/h264/" class="">H264</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/hls/" class="">HLS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/http-flv/" class="">HTTP FLV</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/mpeg/" class="">MPEG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/ps/" class="">PS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/live-tech/" class="">直播技术</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/video-codec/" class="active">视频编码</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/type/" class="collapsed ">文档类型</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/activity/" class="collapsed ">第七部分 学习活动</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>视频编码</strong>
+
+  <label for="toc-control">
+    
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#avc-h264"><code>AVC</code> (H.264)</a></li>
+    <li><a href="#hevc-h265"><code>HEVC</code> (H.265)</a></li>
+    <li><a href="#vvc-h266"><code>VVC</code> (H.266)</a></li>
+    <li><a href="#应用">应用</a>
+      <ul>
+        <li><a href="#cd">CD</a></li>
+        <li><a href="#vcd">VCD</a></li>
+        <li><a href="#dvdhttpswwwwikiwandcomzh-cne695b8e7a2bce5a49ae58a9fe883bde5bdb1e99fb3e58589e7a29f"><a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E7%A2%BC%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%BD%B1%E9%9F%B3%E5%85%89%E7%A2%9F">DVD</a></a></li>
+        <li><a href="#hd-dvdhttpswwwwikiwandcomzh-cnhd_dvd"><a href="https://www.wikiwand.com/zh-cn/HD_DVD">HD DVD</a></a></li>
+        <li><a href="#bd-蓝光光盘httpswwwwikiwandcomzh-cne8978de58589e58589e7a29f"><a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F">BD 蓝光光盘</a></a></li>
+        <li><a href="#uhd-bd">UHD-BD</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="视频编码">
+  视频编码
+  <a class="anchor" href="#%e8%a7%86%e9%a2%91%e7%bc%96%e7%a0%81">#</a>
+</h1>
+<hr>
+<table>
+<thead>
+<tr>
+<th>年份</th>
+<th>标准</th>
+<th>制定组织</th>
+<th>解除著作权保护（<a href="https://www.wikiwand.com/zh-cn/%E6%95%B0%E5%AD%97%E7%89%88%E6%9D%83%E7%AE%A1%E7%90%86#%E2%80%9CDRM-Free%E2%80%9D">DRM-free</a>）</th>
+<th>主要应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1984</td>
+<td>H.120</td>
+<td><a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T</a></td>
+<td>是</td>
+<td></td>
+</tr>
+<tr>
+<td>1990</td>
+<td><a href="https://www.wikiwand.com/zh-cn/H.261" title="H.261">H.261</a></td>
+<td><a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T</a></td>
+<td>是</td>
+<td><a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E6%9C%83%E8%AD%B0">视频会议</a>、<a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E9%80%9A%E8%A9%B1">视频通话</a></td>
+</tr>
+<tr>
+<td>1993</td>
+<td><a href="https://www.wikiwand.com/zh-cn/MPEG-1" title="MPEG-1">MPEG-1 第二部分</a></td>
+<td><a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO</a>／<a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC</a></td>
+<td>是</td>
+<td>影音光盘（<a href="https://www.wikiwand.com/zh-cn/VCD" title="VCD">VCD</a>）</td>
+</tr>
+<tr>
+<td>1995</td>
+<td><a href="https://www.wikiwand.com/zh-cn/MPEG-2" title="MPEG-2">H.262/MPEG-2 第二部分</a></td>
+<td><a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO</a>／<a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC</a>、<a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T</a></td>
+<td>否</td>
+<td>DVD 影碟（<a href="https://www.wikiwand.com/zh-cn/DVD-Video" title="DVD-Video">DVD-Video</a>）、 <a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89">蓝光</a>（ <a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F">Blu-Ray</a>）影碟、数字视频广播（<a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB">DVB</a>）、<a href="https://www.wikiwand.com/zh-cn/SVCD" title="SVCD">SVCD</a></td>
+</tr>
+<tr>
+<td>1996</td>
+<td><a href="https://www.wikiwand.com/zh-cn/H.263" title="H.263">H.263</a></td>
+<td><a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T</a></td>
+<td></td>
+<td><a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E6%9C%83%E8%AD%B0" title="视频会议">视频会议</a>、<a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E9%80%9A%E8%A9%B1" title="视频通话">视频通话</a>、 <a href="https://www.wikiwand.com/zh-cn/3G">3G</a>  手机视频（<a href="https://www.wikiwand.com/zh-cn/3GP" title="3GP">3GP</a>）</td>
+</tr>
+<tr>
+<td>1999</td>
+<td><a href="https://www.wikiwand.com/zh-cn/MPEG-4" title="MPEG-4">MPEG-4 第二部分</a></td>
+<td><a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO</a>／<a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC</a></td>
+<td>否</td>
+<td></td>
+</tr>
+<tr>
+<td>2003</td>
+<td><a href="https://www.wikiwand.com/zh-cn/H.264/MPEG-4_AVC" title="H.264/MPEG-4 AVC">H.264/MPEG-4 AVC</a></td>
+<td><a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO</a>／<a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC</a>、<a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T</a></td>
+<td>否</td>
+<td><a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89">蓝光</a>（ <a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F">Blu-Ray</a>）影碟、数字视频广播（<a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB">DVB</a>）、<a href="https://www.wikiwand.com/zh-cn/IPod" title="IPod">iPod</a>  视频、 <a href="https://www.wikiwand.com/zh-cn/%E9%AB%98%E7%95%AB%E8%B3%AADVD" title="高清DVD">高清 DVD</a>（<a href="https://www.wikiwand.com/zh-cn/HD_DVD" title="HD DVD">HD DVD</a>）</td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://www.wikiwand.com/zh-cn/High_Efficiency_Video_Coding">H.265/High Efficiency Video Coding</a></td>
+<td><a href="https://www.wikiwand.com/zh-cn/ISO">ISO</a>/<a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC</a>、<a href="https://www.wikiwand.com/zh-cn/ITU-T">ITU-T</a></td>
+<td>否</td>
+<td>尚未普及</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="avc-h264">
+  <code>AVC</code> (H.264)
+  <a class="anchor" href="#avc-h264">#</a>
+</h2>
+<p>H.264，又称为  <code>MPEG-4 第 10 部分</code>，高级视频编码（英语： <code>MPEG-4 Part 10</code>, <code>Advanced Video Coding</code> ，缩写为 <code>MPEG-4 AVC</code>）是一种面向块，基于<a href="https://www.wikiwand.com/zh-cn/%E8%BF%90%E5%8A%A8%E8%A1%A5%E5%81%BF">运动补偿</a>的视频编码标准（英语：<a href="https://www.wikiwand.com/en/Video_coding_format" title="en:Video coding format">Advanced Video Coding</a>） 。</p>
+<hr>
+<h2 id="hevc-h265">
+  <code>HEVC</code> (H.265)
+  <a class="anchor" href="#hevc-h265">#</a>
+</h2>
+<p>高效率视频编码（ High Efficiency Video Coding，简称  HEVC），又称为  H.265  和  <a href="https://www.wikiwand.com/zh-cn/MPEG-H" title="MPEG-H">MPEG-H</a>  <code>第 2 部分</code>，是一种<a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E5%A3%93%E7%B8%AE" title="视频压缩">视频压缩</a><a href="https://www.wikiwand.com/zh-cn/%E6%A0%87%E5%87%86" title="标准">标准</a>，被视为是  <a href="https://www.wikiwand.com/zh-cn/H.264/MPEG-4_AVC" title="H.264/MPEG-4 AVC">ITU-T H.264/MPEG-4 AVC</a>  标准的继任者。</p>
+<p>比起 H.264/AVC，H.265/HEVC 提供了更多不同的工具来降低码率，
+以编码单位来说，H.264 中每个宏块（macroblock/MB）大小都是固定的 16x16 像素，而 H.265 的编码单位可以选择从最小的 8x8 到最大的 64x64。
+那么，在相同的图象质量下，相比于 H.264，通过 H.265 编码的视频大小将减少大约 <code>39%-44%</code>；</p>
+<h2 id="vvc-h266">
+  <code>VVC</code> (H.266)
+  <a class="anchor" href="#vvc-h266">#</a>
+</h2>
+<p><a href="https://www.wikiwand.com/en/Versatile_Video_Coding">Versatile Video Coding</a>, MPEG-I Part 3</p>
+<hr>
+<h2 id="应用">
+  应用
+  <a class="anchor" href="#%e5%ba%94%e7%94%a8">#</a>
+</h2>
+<h3 id="cd">
+  CD
+  <a class="anchor" href="#cd">#</a>
+</h3>
+<p>Compact Disc</p>
+<p>激光唱片，镭射唱片</p>
+<p>CD 在 1982 年面世，至今仍然是商业录音的标准存储设备。</p>
+<p>在 CD 尚未发明之前，音响系统都是属于模拟信号，
+音乐的来源大多是 30 公分直径的密纹唱片、收音机以及录音机等，CD 发明之前没有数字音响。</p>
+<h3 id="vcd">
+  VCD
+  <a class="anchor" href="#vcd">#</a>
+</h3>
+<p>Video Compact Disc</p>
+<p>影音光盘，又称影音压缩光盘，是一种在光盘（<code>Compact Disc</code>）上存储视频信息的标准。</p>
+<p>VCD 标准由索尼、飞利浦、 JVC、 松下电器等电器生产厂商联合于 1993 年制定，属于数字光盘的白皮书标准。</p>
+<h3 id="dvdhttpswwwwikiwandcomzh-cne695b8e7a2bce5a49ae58a9fe883bde5bdb1e99fb3e58589e7a29f">
+  <a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E7%A2%BC%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%BD%B1%E9%9F%B3%E5%85%89%E7%A2%9F">DVD</a>
+  <a class="anchor" href="#dvdhttpswwwwikiwandcomzh-cne695b8e7a2bce5a49ae58a9fe883bde5bdb1e99fb3e58589e7a29f">#</a>
+</h3>
+<p>Digital Versatile Disc</p>
+<p>DVD 原是 <code>Digital Video Disc</code>（数字视频光盘）的首字母缩略字，因初推出时大多厂商只针对视频方面的宣传及推出产品，而且当时的电脑产业对高容量的存储媒体没有太大需求。
+后因定位更改，于 1995 年规格正式确立时，重新定义为 <code>Digital Versatile Disc</code>（数字多用途光盘），但旧称的 Digital Video Disc 也有人继续沿用。现在一般都只以 “DVD” 作为其称呼。</p>
+<h3 id="hd-dvdhttpswwwwikiwandcomzh-cnhd_dvd">
+  <a href="https://www.wikiwand.com/zh-cn/HD_DVD">HD DVD</a>
+  <a class="anchor" href="#hd-dvdhttpswwwwikiwandcomzh-cnhd_dvd">#</a>
+</h3>
+<p><code>High Definition Digital Versatile Disc</code></p>
+<p>HD DVD（英语：High Definition DVD ，“高清晰度 DVD” 或 “高清 DVD”）是一种以蓝光镭射技术存储数字格式信息于光盘上的产品，现已发展成高清晰度 DVD 标准，由 HD DVD 推广协会负责制定及开发。HD DVD 与其竞争对手 Blu-ray Disc（简写为 “BD”，蓝光光盘）有些许些相似之处，光盘均是和 CD 同样大小（直径 120mm）的光学数字格式存储介质，使用 405 纳米波长的蓝色镭射。</p>
+<p>HD DVD 由东芝、 NEC、 三洋电机等企业组成的 HD DVD 推广协会负责推广，惠普（同时支持 BD）、 微软及英特尔等相继加入 HD DVD 阵营，其中的主流片厂环球影业亦是成员之一。</p>
+<p>但在 2008 年，随着原先支持 HD DVD 的华纳公司宣布脱离 HD DVD，以及美国数家连锁卖场决定支持蓝光产品，东芝公司终在 2008 年 2 月 19 日正式宣布将终止 HD DVD 事业。</p>
+<h3 id="bd-蓝光光盘httpswwwwikiwandcomzh-cne8978de58589e58589e7a29f">
+  <a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F">BD 蓝光光盘</a>
+  <a class="anchor" href="#bd-%e8%93%9d%e5%85%89%e5%85%89%e7%9b%98httpswwwwikiwandcomzh-cne8978de58589e58589e7a29f">#</a>
+</h3>
+<p>Blu-ray Disc</p>
+<p>蓝光光盘是由索尼及松下电器等企业组成的蓝光光盘联盟（Blu-ray Disc Association）策划的次世代光盘规格，并以索尼为首于 2006 年开始全面推动相关产品。</p>
+<h3 id="uhd-bd">
+  UHD-BD
+  <a class="anchor" href="#uhd-bd">#</a>
+</h3>
+<p>超高清蓝光光盘（英语： Ultra HD Blu-ray ）是改良型蓝光光盘的数字光盘数据存储格式。
+超高清蓝光光盘的碟片尺寸规格虽与传统的 CD、DVD 及现有的蓝光光盘相同，并且采用和传统蓝光盘相似的碟片和光头。
+但影音的格式有出入而专用的播放器的软硬件不兼容，需使用支持读取超高清蓝光光盘播放器才可播放，而以新的格式可以用和传统蓝光相同容量下，播放更高清晰度的影片或延长播放时间。
+超高清蓝光光盘支持 4KUHD（分辨率：3840×2160）视频，帧速率高达每秒 60 帧，使用高效率视频编码（<code>H.265</code>）进行编码。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1299bc26acf7f6b1dceaa2eab19115218871261" title='Last modified by yewang | 2020-10-20' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-10-20</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2020
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#avc-h264"><code>AVC</code> (H.264)</a></li>
+    <li><a href="#hevc-h265"><code>HEVC</code> (H.265)</a></li>
+    <li><a href="#vvc-h266"><code>VVC</code> (H.266)</a></li>
+    <li><a href="#应用">应用</a>
+      <ul>
+        <li><a href="#cd">CD</a></li>
+        <li><a href="#vcd">VCD</a></li>
+        <li><a href="#dvdhttpswwwwikiwandcomzh-cne695b8e7a2bce5a49ae58a9fe883bde5bdb1e99fb3e58589e7a29f"><a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E7%A2%BC%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%BD%B1%E9%9F%B3%E5%85%89%E7%A2%9F">DVD</a></a></li>
+        <li><a href="#hd-dvdhttpswwwwikiwandcomzh-cnhd_dvd"><a href="https://www.wikiwand.com/zh-cn/HD_DVD">HD DVD</a></a></li>
+        <li><a href="#bd-蓝光光盘httpswwwwikiwandcomzh-cne8978de58589e58589e7a29f"><a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F">BD 蓝光光盘</a></a></li>
+        <li><a href="#uhd-bd">UHD-BD</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

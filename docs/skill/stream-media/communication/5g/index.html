@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="5G #  5G 速度 #  世界上最快的 4G 网速（挪威，63.13Mbps）
+最快的宽带网速（新加坡，189Mbps）
+2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
+在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
+5G 应用场景 #  国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
+ 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） #  eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
+超可靠低时延通信（uRLLC） #  mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
+海量大规模连接物联网（mMTC） #  uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
+ 5G 架构 #  5G 核心网采用控制面（SMF：Session Management Function）和用户面 UPF 分离的 CUPS（Control and User Plane Separation ）架构">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="5G" />
+<meta property="og:description" content="5G #  5G 速度 #  世界上最快的 4G 网速（挪威，63.13Mbps）
+最快的宽带网速（新加坡，189Mbps）
+2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000
+在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍
+5G 应用场景 #  国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：
+ 增强型移动宽带（eMBB） 超可靠低时延通信（uRLLC） 海量大规模连接物联网（mMTC）  增强型移动宽带（eMBB） #  eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务
+超可靠低时延通信（uRLLC） #  mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务
+海量大规模连接物联网（mMTC） #  uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。
+ 5G 架构 #  5G 核心网采用控制面（SMF：Session Management Function）和用户面 UPF 分离的 CUPS（Control and User Plane Separation ）架构" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/5g/" />
+<meta property="article:modified_time" content="2020-10-20T17:53:15+08:00" />
+<title>5G | 计算机学习笔记</title>
+<link rel="manifest" href="/note-cs/manifest.json">
+<link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
+<script defer src="/note-cs/en.search.min.bcea5950fb4993db954130b1f7c8da153d43ad721aa22a89b5dafae42f9ded05.js" integrity="sha256-vOpZUPtJk9uVQTCx98jaFT1DrXIaoiqJtdr65C&#43;d7QU="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/note-cs"><span>计算机学习笔记</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+<ul>
+  <li><a href="https://kingye.me" target="_blank" rel="noopener noreferrer">博客</a></li>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png" target="_blank" rel="noopener noreferrer">公众号</a></li>
+  <li><a href="https://github.com/ikingye" target="_blank" rel="noopener noreferrer">Github</a></li>
+  <li><a href="https://weibo.com/kingyip15215" target="_blank" rel="noopener noreferrer">微博</a></li>
+  <li><a href="https://www.zhihu.com/people/wutongyip" target="_blank" rel="noopener noreferrer">知乎</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>第一部分 基础</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/os/" class="collapsed ">1.2 操作系统</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/algs/" class="">1.3 数据结构与算法</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/network/" class="">1.4 计算机网络</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/pl/" class="collapsed ">1.5 编程语言</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/basic/compile/" class="collapsed ">1.6 编译原理</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第二部分 方向</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/se/" class="collapsed ">2.1 软件工程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/be/" class="collapsed ">2.2 后端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/fe/" class="collapsed ">2.3 前端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/client/" class="collapsed ">2.4 客户端</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/embedded/" class="collapsed ">2.5 嵌入式</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/security/" class="collapsed ">2.6 安全</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/direction/mp/" class="collapsed ">2.7 中台</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第三部分 领域</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/cc/" class="collapsed ">3.1 云计算</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/bigdata/" class="collapsed ">3.2 大数据</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/domain/ai/" class="collapsed ">3.3 人工智能</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>第四部分 技能树</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/tool/" class="collapsed ">4.1 工具</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/" class="collapsed ">4.5 流媒体</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/" class="collapsed ">通信技术</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/4g/" class="">4G</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/communication/5g/" class="active">5G</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/debug/" class="collapsed ">Debug</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/lorawan/" class="collapsed ">LoRaWan</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/ffmpeg/" class="collapsed ">FFmpeg</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/gb28181/" class="collapsed ">GB28181</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/voip/" class="">VoIP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/onvif/" class="collapsed ">ONVIF</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/easydarwin/" class="">EasyDarwin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/srs/" class="">SRS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/zlmediakit/" class="">ZLMediaKit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/stream-media/stream-media/" class="collapsed ">流媒体技术</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/skill/type/" class="collapsed ">文档类型</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/book/" class="collapsed ">第五部分 读书</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/course/" class="collapsed ">第六部分 课程</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/note-cs/docs/activity/" class="collapsed ">第七部分 学习活动</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+<ul>
+  <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
+  <li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target="_blank" rel="noopener noreferrer"><img src="//pub.idqqimg.com/wpa/images/group.png"></a></li>
+</ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>5G</strong>
+
+  <label for="toc-control">
+    
+    <img src="/note-cs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#5g-速度">5G 速度</a></li>
+    <li><a href="#5g-应用场景">5G 应用场景</a>
+      <ul>
+        <li><a href="#增强型移动宽带embb">增强型移动宽带（eMBB）</a></li>
+        <li><a href="#超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</a></li>
+        <li><a href="#海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</a></li>
+      </ul>
+    </li>
+    <li><a href="#5g-架构">5G 架构</a>
+      <ul>
+        <li><a href="#smf">SMF</a></li>
+        <li><a href="#upf">UPF</a></li>
+        <li><a href="#cups">CUPS</a></li>
+        <li><a href="#mep"><code>MEP</code></a></li>
+        <li><a href="#etsi"><code>ETSI</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#5g-技术">5G 技术</a>
+      <ul>
+        <li><a href="#5g-承载网">5G 承载网</a>
+          <ul>
+            <li><a href="#5g-承载整体要求">5G 承载整体要求</a></li>
+            <li><a href="#5g-承载组网架构">5G 承载组网架构</a></li>
+          </ul>
+        </li>
+        <li><a href="#多样化网络需求">多样化网络需求</a></li>
+      </ul>
+    </li>
+    <li><a href="#5g-应用">5G 应用</a></li>
+    <li><a href="#4g-vs-5g">4G vs 5G</a></li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="5g">
+  5G
+  <a class="anchor" href="#5g">#</a>
+</h1>
+<h2 id="5g-速度">
+  5G 速度
+  <a class="anchor" href="#5g-%e9%80%9f%e5%ba%a6">#</a>
+</h2>
+<p>世界上最快的 4G 网速（挪威，63.13Mbps）</p>
+<p>最快的宽带网速（新加坡，189Mbps）</p>
+<p>2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000</p>
+<p>在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍</p>
+<h2 id="5g-应用场景">
+  5G 应用场景
+  <a class="anchor" href="#5g-%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af">#</a>
+</h2>
+<p>国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：</p>
+<ul>
+<li>增强型移动宽带（eMBB）</li>
+<li>超可靠低时延通信（uRLLC）</li>
+<li>海量大规模连接物联网（mMTC）</li>
+</ul>
+<h3 id="增强型移动宽带embb">
+  增强型移动宽带（eMBB）
+  <a class="anchor" href="#%e5%a2%9e%e5%bc%ba%e5%9e%8b%e7%a7%bb%e5%8a%a8%e5%ae%bd%e5%b8%a6embb">#</a>
+</h3>
+<p>eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务</p>
+<h3 id="超可靠低时延通信urllc">
+  超可靠低时延通信（uRLLC）
+  <a class="anchor" href="#%e8%b6%85%e5%8f%af%e9%9d%a0%e4%bd%8e%e6%97%b6%e5%bb%b6%e9%80%9a%e4%bf%a1urllc">#</a>
+</h3>
+<p>mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务</p>
+<h3 id="海量大规模连接物联网mmtc">
+  海量大规模连接物联网（mMTC）
+  <a class="anchor" href="#%e6%b5%b7%e9%87%8f%e5%a4%a7%e8%a7%84%e6%a8%a1%e8%bf%9e%e6%8e%a5%e7%89%a9%e8%81%94%e7%bd%91mmtc">#</a>
+</h3>
+<p>uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。</p>
+<hr>
+<h2 id="5g-架构">
+  5G 架构
+  <a class="anchor" href="#5g-%e6%9e%b6%e6%9e%84">#</a>
+</h2>
+<p>5G 核心网采用控制面（SMF：<code>Session Management Function</code>）和用户面 UPF 分离的
+CUPS（<code>Control and User Plane Separation</code> ）架构</p>
+<p>5G 控制面集中部署，一个控制面（SMF）可以同时管理很多个 UPF 而不影响 5G 核心网的性能；
+5G 用户面分散部署，UPF 可以按需灵活分布部署，部署到网络边缘支持边缘计算。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530210459.png" alt="" /></p>
+<p>UE 的不同业务，可以引导到本地 UPF（比如企业应用），或直接引导到锚点 UPF（普通的上网业务），
+中间可以动态插入 <code>UL CL</code> 进行按需动态分流。</p>
+<p>因此，在企业园区里面的基站，是可以同时支持本地企业应用和个人普通上网应用。</p>
+<ul>
+<li><code>UL CL</code> (<code>Uplink Classifier</code> 上行链路分类器)</li>
+</ul>
+<h3 id="smf">
+  SMF
+  <a class="anchor" href="#smf">#</a>
+</h3>
+<p>Session Management Function</p>
+<h3 id="upf">
+  UPF
+  <a class="anchor" href="#upf">#</a>
+</h3>
+<p>5G 用户面 UPF（<code>User Plane Function</code>）的下沉和灵活部署实现了<strong>数据流量本地卸载</strong>。</p>
+<h3 id="cups">
+  CUPS
+  <a class="anchor" href="#cups">#</a>
+</h3>
+<h3 id="mep">
+  <code>MEP</code>
+  <a class="anchor" href="#mep">#</a>
+</h3>
+<p>5G MEC 给运营商进入垂直行业带来了新的业务场景和商业模式。
+运营商一般是用代建代维方式，
+将 5G MEC 部署到企业园区，提供边缘云计算服务，
+包括 IaaS，PaaS（即 <code>MEP</code> 平台），以及 SaaS（结合运营商的云计算服务）等更多的增值服务，</p>
+<p>收益从<strong>管道</strong>转向<strong>软件和服务</strong>。</p>
+<p>这样，运营商能深入垂直行业的 ICT 系统及应用领域，更好地为企业数字化、网络化和智能化提供全套的 ICT 服务和云计算应用，提供的业务比传统的企业专线业务，更深入全面和有客户粘性。
+这就是为什么运营商都在积极拓展 5G MEC 企业业务的原因，得 5G MEC 服务者得企业客户。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530202019.png" alt="" /></p>
+<h3 id="etsi">
+  <code>ETSI</code>
+  <a class="anchor" href="#etsi">#</a>
+</h3>
+<p>欧洲电信标准研究所（<code>ETSI</code>）在 2014 年成立 MEC 工业专业组，关注运营商边缘计算的标准和工业使能，
+并且在 2016 年，将 MEC 的定义从移动边缘计算（Mobile Edge Computing）改为外延更广的多接入边缘计算（Multi-Access Edge Computing）；
+在运营商领域，MEC 一般被用来指代边缘计算系统。
+在 5G 时代，MEC 是运营商助力垂直行业数字化和智能化的新应用模式。</p>
+<hr>
+<h2 id="5g-技术">
+  5G 技术
+  <a class="anchor" href="#5g-%e6%8a%80%e6%9c%af">#</a>
+</h2>
+<h3 id="5g-承载网">
+  5G 承载网
+  <a class="anchor" href="#5g-%e6%89%bf%e8%bd%bd%e7%bd%91">#</a>
+</h3>
+<p>在无线侧有大量新技术实现对不同应用场景的支撑，但<strong>传输网络</strong>侧，硬件技术提升有限的情况下，需要对<strong>网络架构</strong>进行革新。</p>
+<h4 id="5g-承载整体要求">
+  5G 承载整体要求
+  <a class="anchor" href="#5g-%e6%89%bf%e8%bd%bd%e6%95%b4%e4%bd%93%e8%a6%81%e6%b1%82">#</a>
+</h4>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418092832.png" alt="" /></p>
+<h4 id="5g-承载组网架构">
+  5G 承载组网架构
+  <a class="anchor" href="#5g-%e6%89%bf%e8%bd%bd%e7%bb%84%e7%bd%91%e6%9e%b6%e6%9e%84">#</a>
+</h4>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093220.png" alt="" /></p>
+<h3 id="多样化网络需求">
+  多样化网络需求
+  <a class="anchor" href="#%e5%a4%9a%e6%a0%b7%e5%8c%96%e7%bd%91%e7%bb%9c%e9%9c%80%e6%b1%82">#</a>
+</h3>
+<p>边缘计算技术就是解决不同应用带来的多样化网络需求的核心技术之一</p>
+<p>在靠近接入网的机房增加计算能力，将能够</p>
+<ul>
+<li>大幅降低业务时延</li>
+<li>减少对传输网的带宽压力降低传输成本</li>
+<li>进一步提高内容分发效率提升用户体验</li>
+</ul>
+<p>传统网络结构中，信息的处理主要位于<strong>核心网</strong>的<strong>数据中心机房</strong>内，所有信息必须从<strong>网络边缘</strong>传输到核心网进行处理之后再返回网络边缘。</p>
+<p>5G 时代，<strong>传输网</strong>架构中引入边缘计算技术，在靠近<strong>接入侧</strong>的边缘机房部署网关、服务器等设备，增加计算能力，将低时延业务、局域性数据、低价值量数据等数据在边缘机房进行处理和传输，不需要通过<strong>传输网</strong>返回<strong>核心网</strong>，进而降低时延、减少回传压力、提升用户体验。</p>
+<hr>
+<h2 id="5g-应用">
+  5G 应用
+  <a class="anchor" href="#5g-%e5%ba%94%e7%94%a8">#</a>
+</h2>
+<p>底层网络进步带来应用和商业模式的升级</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200418093445.png" alt="" /></p>
+<hr>
+<h2 id="4g-vs-5g">
+  4G vs 5G
+  <a class="anchor" href="#4g-vs-5g">#</a>
+</h2>
+<p>4G 核心网是集中部署模式，一般是一个省（或大区）部署一个 4G 核心网，
+所以 4G 承载网的流量模型是<strong>南北向</strong>为主，
+运营商倾向于采用比较简单的接入网设计，
+如很多运营商采用 L2（VPN）+L3（VPN）组网模式，即接入网采用相对简单的 L2 VPN 网络。</p>
+<p>在 4G 时代，这些无线核心网流量是在 IP 骨干网上而不是在移动承载网上来承载的。</p>
+<p>5G 核心网是 CUPS 架构，
+<strong>控制面集中部署</strong>，一般是一个省或一个大区部署一个，
+而 <strong>UPF 是分布式部署</strong>的，一般一个城市会部署一个锚点 UPF（<code>Anchor UPF</code>）和很多 <code>MEC UPF</code>。</p>
+<p>5G MEC 经常连接到接入网（如现场 MEC），增加了对 5G 移动承载网接入网的功能要求</p>
+<p>5G MEC 网络需要一个功能更强大、支持企业业务的网络架构和方案，不能是 4G 现有移动承载网架构的简单带宽升级。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200530222719.png" alt="" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1299bc26acf7f6b1dceaa2eab19115218871261" title='Last modified by yewang | 2020-10-20' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-10-20</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+
+      </footer>
+
+      
+  
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/note-cs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2020
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#5g-速度">5G 速度</a></li>
+    <li><a href="#5g-应用场景">5G 应用场景</a>
+      <ul>
+        <li><a href="#增强型移动宽带embb">增强型移动宽带（eMBB）</a></li>
+        <li><a href="#超可靠低时延通信urllc">超可靠低时延通信（uRLLC）</a></li>
+        <li><a href="#海量大规模连接物联网mmtc">海量大规模连接物联网（mMTC）</a></li>
+      </ul>
+    </li>
+    <li><a href="#5g-架构">5G 架构</a>
+      <ul>
+        <li><a href="#smf">SMF</a></li>
+        <li><a href="#upf">UPF</a></li>
+        <li><a href="#cups">CUPS</a></li>
+        <li><a href="#mep"><code>MEP</code></a></li>
+        <li><a href="#etsi"><code>ETSI</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#5g-技术">5G 技术</a>
+      <ul>
+        <li><a href="#5g-承载网">5G 承载网</a>
+          <ul>
+            <li><a href="#5g-承载整体要求">5G 承载整体要求</a></li>
+            <li><a href="#5g-承载组网架构">5G 承载组网架构</a></li>
+          </ul>
+        </li>
+        <li><a href="#多样化网络需求">多样化网络需求</a></li>
+      </ul>
+    </li>
+    <li><a href="#5g-应用">5G 应用</a></li>
+    <li><a href="#4g-vs-5g">4G vs 5G</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+<a href="https://github.com/ikingye/note-cs"
+class="github-corner" aria-label="View source on GitHub">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+</svg></a>
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
