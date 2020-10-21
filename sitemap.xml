@@ -3,8 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/github/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/github/</loc>
   </url>
   
   <url>
@@ -37,8 +36,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/</loc>
   </url>
   
   <url>
@@ -104,11 +102,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url>
   
   <url>
@@ -1262,13 +1255,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/shortcuts/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/recommend/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/shortcuts/</loc>
   </url>
   
   <url>
@@ -1357,13 +1344,11 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/goland/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/goland/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/idea/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/idea/</loc>
   </url>
   
   <url>
@@ -1372,8 +1357,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/</loc>
   </url>
   
   <url>
@@ -1792,6 +1776,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
@@ -1872,8 +1860,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/ssh/config/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/ssh/config/</loc>
   </url>
   
   <url>
@@ -1897,13 +1884,11 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/config/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/config/</loc>
   </url>
   
   <url>
@@ -2007,8 +1992,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/ssh/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/ssh/</loc>
   </url>
   
   <url>
@@ -2017,8 +2001,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/submodule/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/submodule/</loc>
   </url>
   
   <url>
@@ -2027,8 +2010,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/debug/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/debug/</loc>
   </url>
   
   <url>
@@ -2062,11 +2044,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/draw/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/</loc>
     <lastmod>2020-07-10T15:45:38+08:00</lastmod>
   </url>
@@ -2087,13 +2064,28 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/</loc>
+    <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/</loc>
-    <lastmod>2020-07-06T13:17:19+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/flowchart/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/graphviz/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/latex/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/mermaid/tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/plantuml/tutorial/</loc>
   </url>
   
   <url>
@@ -2202,8 +2194,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/package-manager/brew/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/package-manager/brew/</loc>
   </url>
   
   <url>
@@ -2212,13 +2203,11 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/package-manager/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/package-manager/</loc>
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/hhkb/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/hhkb/</loc>
   </url>
   
   <url>
@@ -2487,6 +2476,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url>
@@ -2682,11 +2675,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/draw/draw.io/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/search/elasticsearch/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
   </url>
@@ -2742,11 +2730,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/draw/latex/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/source/type/list/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
@@ -2757,13 +2740,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/mas/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/draw/mermaid/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/mas/</loc>
   </url>
   
   <url>
@@ -2787,13 +2764,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/picgo/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/draw/processon/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/picgo/</loc>
   </url>
   
   <url>
@@ -2827,8 +2798,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/tmux/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/tmux/</loc>
   </url>
   
   <url>
@@ -2837,18 +2807,12 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vim/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/app/vim/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/virtualbox/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/draw/visio/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url>
   
   <url>
@@ -2899,11 +2863,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/network/</loc>
     <lastmod>2020-06-08T16:15:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/study/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url>
   
   <url>
@@ -3276,6 +3235,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/latex/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/oam/</loc>
     <lastmod>2020-05-21T09:57:22+08:00</lastmod>
   </url>
@@ -3288,6 +3251,10 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/frame/paddlepaddle/</loc>
     <lastmod>2020-04-28T14:53:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/plantuml/</loc>
   </url>
   
   <url>
@@ -3541,6 +3508,10 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/mermaid/</loc>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url>
@@ -3668,6 +3639,14 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/flink/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/flowchart/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/graphviz/</loc>
   </url>
   
   <url>
@@ -3808,6 +3787,16 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/</loc>
     <lastmod>2020-10-13T22:45:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/</loc>
+    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/study/</loc>
+    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url>
   
   <url>

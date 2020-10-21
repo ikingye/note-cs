@@ -11,10 +11,10 @@
     
     <item>
       <title>GitHub</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/github/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/github/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/github/</guid>
       <description>GitHub #  设置代理 #  git config --global http.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; git config --global https.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; git config --global https.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github #  Github Learning Lab #  Introduction to GitHub #   Github 工具 #  cli/cli #  GitHub’s official command line tool https://cli.</description>
     </item>
     
@@ -852,20 +852,11 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
     
     <item>
       <title>快捷键</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/shortcuts/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/shortcuts/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/shortcuts/</guid>
       <description>VScode 快捷键 #  MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
-    </item>
-    
-    <item>
-      <title>推荐软件</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/recommend/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/recommend/</guid>
-      <description>推荐软件 #  MacOS 开发 iTerm Keyboard Maestro  参考  jaywcjlove/awesome-mac   Windows todoiOS todoAndroid todoLinux todo </description>
     </item>
     
     <item>
@@ -904,10 +895,10 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
     
     <item>
       <title>GoLand</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/goland/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/goland/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/goland/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/goland/</guid>
       <description>GoLand #  快捷键 #  跳转 #    指定行 cmd + L
   指定文件 shift + cmd + O
   返回光标上一个位置 cmd + opt + 方向键
@@ -920,10 +911,10 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
     
     <item>
       <title>Idea</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/idea/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/idea/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/jetbrains/idea/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/idea/</guid>
       <description>IntelliJ Idea #  插件 #  Alibaba Java Coding Guidelines #   教程 #  xiaoxiunique/tool-tips #  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
     </item>
     
@@ -1161,10 +1152,10 @@ TTM 模块 #  BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看�
     
     <item>
       <title>config</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/ssh/config/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/ssh/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/ssh/config/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/ssh/config/</guid>
       <description>config #  my config #  ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.</description>
     </item>
     
@@ -1198,10 +1189,10 @@ dash: 不支持，替代方法：可采用 here documents
     
     <item>
       <title>git config</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/config/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/config/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/config/</guid>
       <description>git config #  config 权限 #  问题： Bad owner or permissions on ~/.ssh/config
 解决：
 chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
@@ -1307,10 +1298,10 @@ OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-A
     
     <item>
       <title>submodule</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/submodule/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/submodule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/git/submodule/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/submodule/</guid>
       <description>git submodule #  拉取 submodule #  git submodule init git submodule update --remote git submodule add -b #  参考：
  How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url #   edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
 delete submodule #   Delete the relevant section from the .</description>
@@ -1318,10 +1309,10 @@ delete submodule #   Delete the relevant section from the .</description>
     
     <item>
       <title>VSCode Debug</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/debug/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/debug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vscode/debug/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/debug/</guid>
       <description>VSCode Debug #  参考：
   USER GUIDE - Debugging
   Debug C++ in Visual Studio Code
@@ -1361,6 +1352,51 @@ delete submodule #   Delete the relevant section from the .</description>
 XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
 不仅仅是业务上的 “用户的 UGC 内容” 可以进行注入，包括 URL 上的参数等都可以是攻击的来源。在处理输入时，以下内容都不可信：
  来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法 #   在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&amp;quot;javascript:...&amp;quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 #  存储型 #  存储型 XSS 的攻击步骤：</description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/flowchart/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/flowchart/tutorial/</guid>
+      <description>Flowchart 教程 #  </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/graphviz/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/graphviz/tutorial/</guid>
+      <description>Graphviz 教程 #  http://www.graphviz.org/documentation/</description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/latex/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/latex/tutorial/</guid>
+      <description>LaTeX 教程 #  基础 #  dspinellis/latex-advice #  </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/mermaid/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/mermaid/tutorial/</guid>
+      <description>Mermaid 教程 #  基础 #  </description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/plantuml/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/plantuml/tutorial/</guid>
+      <description>PlantUML 教程 #  </description>
     </item>
     
     <item>
@@ -1420,10 +1456,10 @@ Ad hoc 模式 #   Ad hoc 模式：客户端以多播 (multicast) 的形式往多
     
     <item>
       <title>homebrew</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/package-manager/brew/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/package-manager/brew/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/package-manager/brew/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/package-manager/brew/</guid>
       <description>Homebrew #  tap #  brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
 如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件
 tap 命令的仓库源默认来至于 Github，但是这个命令也不限制于这一个地方
@@ -1437,10 +1473,10 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
     
     <item>
       <title>HHKB</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/hhkb/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/hhkb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/hhkb/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/hhkb/</guid>
       <description>HHKB 键盘 #  Happy Hacking Keyboard
 使用 #  方向键 #  右侧的 Fn 键 + [ / ; &#39;</description>
     </item>
@@ -1594,10 +1630,10 @@ Apache Solr is an enterprise search platform written using Apache Lucene. Major 
     
     <item>
       <title>Mas</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/mas/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/mas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/mas/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/mas/</guid>
       <description>mas-cli/mas #  Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.
 $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
     </item>
@@ -1613,10 +1649,10 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search X
     
     <item>
       <title>picgo</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/picgo/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/picgo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/picgo/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/picgo/</guid>
       <description>picgo #  CLI 命令 #  PicGo/PicGo-Core #  Molunerfinn/PicGo #  </description>
     </item>
     
@@ -1666,10 +1702,10 @@ TS 流解码过程 #   获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可�
     
     <item>
       <title>tmux</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/tmux/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/tmux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/tmux/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/tmux/</guid>
       <description>tmux #  配置 #  ChrisJohnsen/tmux-MacOSX-pasteboard #  Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.
 Other services and unpatched builds of screen are also affected.
 gpakosz/.tmux #  Oh My Tmux!
@@ -1691,10 +1727,10 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
     
     <item>
       <title>vim</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vim/</link>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/dev/vim/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/vim/</guid>
       <description>vim #   教程 #  iggredible/Learn-Vim #  A book for learning the Vim editor the smart way.</description>
     </item>
     
