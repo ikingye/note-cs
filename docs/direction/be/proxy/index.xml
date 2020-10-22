@@ -46,7 +46,8 @@ TTM 模块 #  BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/openresty/</guid>
-      <description>OpenResty #  openresty/openresty  教程 #  参考：
+      <description>OpenResty #  openresty/openresty 参考：
+ OpenResty 究竟解决了什么痛点？   教程 #  参考：
  Programming OpenResty - 章亦春 OpenResty 最佳实践  </description>
     </item>
     
