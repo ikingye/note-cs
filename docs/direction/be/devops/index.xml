@@ -46,15 +46,6 @@
     </item>
     
     <item>
-      <title>Consul</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/devops/consul/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/devops/consul/</guid>
-      <description>Consul #  hashicorp/consul Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure. https://www.consul.io/</description>
-    </item>
-    
-    <item>
       <title>Jenkins</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/devops/Jenkins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -1827,16 +1827,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/</loc>
-    <lastmod>2020-05-27T15:10:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bgw/</loc>
-    <lastmod>2020-05-27T15:10:02+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/</loc>
     <lastmod>2020-06-07T14:19:38+08:00</lastmod>
   </url>
@@ -1932,11 +1922,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/lds/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/lldb/</loc>
     <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url>
@@ -1957,11 +1942,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/nginx/</loc>
-    <lastmod>2020-10-07T00:32:15+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/oauth/</loc>
     <lastmod>2020-07-16T00:26:43+08:00</lastmod>
   </url>
@@ -1969,11 +1949,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/openid/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/openresty/</loc>
-    <lastmod>2020-10-22T17:16:42+08:00</lastmod>
   </url>
   
   <url>
@@ -2039,11 +2014,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/xargs/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
   </url>
   
   <url>
@@ -2209,11 +2179,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-advanced-programming/</loc>
     <lastmod>2020-09-15T20:45:39+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/haproxy/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
   </url>
   
   <url>
@@ -2687,11 +2652,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/cpu/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url>
@@ -2704,11 +2664,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/search/elasticsearch/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/</loc>
-    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -2914,11 +2869,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/mosn/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
   </url>
   
   <url>
@@ -3236,11 +3186,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/gitbook/</loc>
     <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url>
@@ -3383,11 +3328,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.17/</loc>
-    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -3566,23 +3506,8 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/rds/</loc>
-    <lastmod>2020-04-23T19:39:33+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web-service/wsdl/</loc>
     <lastmod>2020-05-28T16:18:30+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.16/</loc>
-    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.13/</loc>
-    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -3697,7 +3622,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/graphviz/</loc>
-    <lastmod>2020-10-21T11:51:25+08:00</lastmod>
+    <lastmod>2020-10-27T11:49:13+08:00</lastmod>
   </url>
   
   <url>
@@ -3838,11 +3763,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/version/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/</loc>
-    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
   </url>
   
   <url>
@@ -4111,11 +4031,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/consul/</loc>
-    <lastmod>2020-10-21T18:39:49+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/Jenkins/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
   </url>
@@ -4193,11 +4108,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/saml/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/be/proxy/</loc>
-    <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url>
   
   <url>
@@ -4316,7 +4226,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2020-10-25T01:20:59+08:00</lastmod>
+    <lastmod>2020-10-27T11:49:13+08:00</lastmod>
   </url>
   
   <url>

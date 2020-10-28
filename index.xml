@@ -1099,37 +1099,6 @@ Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情�
     </item>
     
     <item>
-      <title>BFE</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bfe/</guid>
-      <description>BFE #  baidu/bfe Baidu Front End 百度统一前端
-统一的百度七层（HTTP）流量接入平台
-BFE 之前的百度前端接入架构 #  流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
-开发成本高 #  如果前端多个产品线需要实现一个通用功能，比如防攻击或者 IP 地域识别，需要开发不同的 webserver 模块，虽然每个模块的功能一样，但实现方式完全不同，所以存在一定的重复开发和人力资源浪费。
-维护成本高 #  不同的产品线和模块都需要一定的人力来维护。前端接入服务器类型多样，实现和原理各异，出现问题的概率大，Nginx, apache 等服务器比较稳定，高效，但是如果产品线出现强烈的个性化业务需求或者严重 BUG，开源社区很难提供及时有效的技术支持。
-数据和策略共享的成本高 #  产品线间维护不同的前端接入模块，策略和经验很难做到有效的分享。
-技术积累难 #  由于产品线间沟通和分享的成本大，很多经验和成果并没有得到有效的积累。
- BFE 架构 #  BFE 是一个七层接入系统。 它的最基本工作就是接收用户数据，解析 HTTP 请求，对内容进行过滤和分析之后再转发给后端产品线。
-BFE 最基本的工作就是从 BGW/BVS 接入流量并将流量转发给产品线的前端 webserver 或者其他接入模块，最后接收后端 server 的内容并回复给外部用户。
-反向代理服务器 #  BFE 本质上是一个反向代理服务器，每天承接百度数百亿的流量，高峰期的集群 QPS 有一百多万。 在如此大的流量压力环境中，服务器的处理性能至关重要。 BFE 采用现在业界流行的多进程全异步非阻塞事件驱动模型， 但由于业务功能繁多，产品线策略及规则复杂，任何一个开源的代理服务器比如 nginx, squid, varnish 的性能都很难满足需求。 BFE 本身也需要不断优化，降低系统资源开销，提升处理性能。</description>
-    </item>
-    
-    <item>
-      <title>BGW</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bgw/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/bgw/</guid>
-      <description>BGW #  Baidu Gate Way 百度智能网关 是一种用软件实现的负载均衡设备。
-BGW 将多台 server（即 RealServer）虚拟化成了一台 server，提供统一的 VIP（即 virtual ip），用户只需和 VIP 进行通讯，就能访问 RealServer 上的服务。
-最终， 从 client 的角度看到，自己和一台 server 机器（确切说是一个 ip）在通讯，感觉不到 RealServer 的存在； 从 RealServer 的角度看到，自己和 client 在通讯，没有感觉到 BGW 的存在。
-TTM 模块 #  BGW 会对报文做 SNAT 和 DNAT，这样 RS（RealServer）看到的源 IP 将是 BGW 的后端 IP，而不是客户端的真实 IP， 而现实中有许多业务需要知道客户端的真实 IP。
-为了解决这个问题，RS 需要在内核加载一个 TTM 模块，即可将该选项携带的真实 IP 信息获取出来， 该过程对于用户态应用程序来说是完全透明的，用户态应用程序所看到的是从客户端真实 IP，实现 BGW 的透明。</description>
-    </item>
-    
-    <item>
       <title>C&#43;&#43; FAQ</title>
       <link>https://ikingye.github.io/note-cs/docs/course/basic/pl/cpp/cpp-faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1218,19 +1187,6 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
     </item>
     
     <item>
-      <title>LDS</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/lds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/lds/</guid>
-      <description>LDS #  监听器发现服务（LDS）是一个可选的 API，Envoy 将调用它来动态获取监听器。Envoy 将协调 API 响应，并根据需要添加、修改或删除已知的监听器。
-监听器更新的语义如下：
- 每个监听器必须有一个独特的名字。如果没有提供名称，Envoy 将创建一个 UUID。要动态更新的监听器，管理服务必须提供监听器的唯一名称。 当一个监听器被添加，在参与连接处理之前，会先进入 “预热” 阶段。例如，如果监听器引用 RDS 配置，那么在监听器迁移到 “active” 之前，将会解析并提取该配置。 监听器一旦创建，实际上就会保持不变。因此，更新监听器时，会创建一个全新的监听器（使用相同的侦听套接字）。新增加的监听者都会通过上面所描述的相同 “预热” 过程。 当更新或删除监听器时，旧的监听器将被置于 “draining（逐出）” 状态，就像整个服务重新启动时一样。监听器移除之后，该监听器所拥有的连接，经过一段时间优雅地关闭（如果可能的话）剩余的连接。逐出时间通过 --drain-time-s 选项设置。  注意
- 任何在 Envoy 配置中静态定义的监听器都不能通过 LDS API 进行修改或删除。
- </description>
-    </item>
-    
-    <item>
       <title>LLDB 教程</title>
       <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/lldb/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1247,17 +1203,6 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/network/</guid>
       <description>ChirpStack Network Server #  ChirpStack Network Server is an open-source LoRaWAN network-server. https://www.chirpstack.io
 数据库 #     Schema Name Type Owner     public code_migration table chirpstack_ns   public device table chirpstack_ns   public device_activation table chirpstack_ns   public device_activation_id_seq sequence chirpstack_ns   public device_multicast_group table chirpstack_ns   public device_profile table chirpstack_ns   public device_queue table chirpstack_ns   public device_queue_id_seq sequence chirpstack_ns   public gateway table chirpstack_ns   public gateway_board table chirpstack_ns   public gateway_profile table chirpstack_ns   public gateway_profile_extra_channel table chirpstack_ns   public gateway_profile_extra_channel_id_seq sequence chirpstack_ns   public gateway_stats table chirpstack_ns   public gateway_stats_id_seq sequence chirpstack_ns   public gorp_migrations table chirpstack_ns   public multicast_group table chirpstack_ns   public multicast_queue table chirpstack_ns   public multicast_queue_id_seq sequence chirpstack_ns   public routing_profile table chirpstack_ns   public service_profile table chirpstack_ns    (21 rows)</description>
-    </item>
-    
-    <item>
-      <title>OpenResty</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/openresty/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/openresty/</guid>
-      <description>OpenResty #  openresty/openresty 参考：
- OpenResty 究竟解决了什么痛点？   教程 #  参考：
- Programming OpenResty - 章亦春 OpenResty 最佳实践  </description>
     </item>
     
     <item>
@@ -1548,15 +1493,6 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
       <description>BASE #  Basically Available, Soft state, Eventual consistency
 BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。
 基本可用 #   流量削峰  在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值   延迟响应  在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果   体验降级  比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。   过载保护  把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。    最终的一致 #   读时修复：在读取数据时，检测数据的不一致，进行修复。  比如 Cassandra 的 Read Repair 实现，具体来说，在向 Cassandra 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。   写时修复：在写入数据，检测数据的不一致时，进行修复。  比如 Cassandra 的 Hinted Handoff 实现。具体来说，Cassandra 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。 写时修复不需要做数据一致性对比，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。   异步修复：这个是最常用的方式，通过定时对账检测副本数据的一致性，并修复。   </description>
-    </item>
-    
-    <item>
-      <title>CDS</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/cds/</guid>
-      <description>CDS #  </description>
     </item>
     
     <item>
@@ -1947,15 +1883,6 @@ CNCF Serverless Landscape #
     </item>
     
     <item>
-      <title>EDS</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/eds/</guid>
-      <description>EDS #  </description>
-    </item>
-    
-    <item>
       <title>OpenShift</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1989,15 +1916,6 @@ Openshift 没有 root 权限
     </item>
     
     <item>
-      <title>1.17</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.17/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.17/</guid>
-      <description>1.17 #  </description>
-    </item>
-    
-    <item>
       <title>2.2.4.4 Etcd</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2027,33 +1945,6 @@ cloudfoundry/cli #  The official command line client for Cloud Foundry https://d
 cloudfoundry/uaa #  CloudFoundry User Account and Authentication (UAA) Server
  Cloud Foundry 缺点 #  诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
 而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。</description>
-    </item>
-    
-    <item>
-      <title>RDS</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/rds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/xds/rds/</guid>
-      <description>RDS #  </description>
-    </item>
-    
-    <item>
-      <title>1.16</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.16/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.16/</guid>
-      <description>1.16 #  </description>
-    </item>
-    
-    <item>
-      <title>1.13</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.13/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/proxy/envoy/version/1.13/</guid>
-      <description>1.13 #  </description>
     </item>
     
     <item>
@@ -2321,15 +2212,6 @@ Bilibili - 机器学习白板系列
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/devops/chef/</guid>
       <description>Chef #  chef/chef Chef Infra, a powerful automation platform that transforms infrastructure into code automating how infrastructure is configured, deployed and managed across any environment, at any scale http://www.chef.io/chef/</description>
-    </item>
-    
-    <item>
-      <title>Consul</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/devops/consul/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/devops/consul/</guid>
-      <description>Consul #  hashicorp/consul Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure. https://www.consul.io/</description>
     </item>
     
     <item>
