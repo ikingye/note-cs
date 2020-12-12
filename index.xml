@@ -1014,7 +1014,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
-      <description>教程 #  基础 #   进阶 #  </description>
+      <description>教程 #  基础 #   X 分钟速成 Lua  -- 单行注释以两个连字符开头 --[[ 多行注释 --]]  进阶 #  </description>
     </item>
     
     <item>
@@ -2189,7 +2189,7 @@ Bilibili - 机器学习白板系列
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/cache/</guid>
       <description>缓存 #  热点数据集中失效问题
  设置不同的失效时间 互斥锁  缓存穿透 #  查询不存在的数据
-缓存雪崩 #  当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
+ 布隆过滤器 把这个空结果进行缓存。  缓存雪崩 #  当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
 解决 #   事前：使用集群缓存，保证缓存服务的高可用 事中：ehcache 本地缓存 + Hystrix 限流 &amp;amp; 降级，避免 MySQL 被打死 事后：开启 Redis 持久化机制，尽快恢复缓存集群  参考：
  ehcache/ehcache3    缓存击穿 #  在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了， 就会导致大量的请求都打到数据库上面去。
 缓存击穿实际上是缓存雪崩的一个特例

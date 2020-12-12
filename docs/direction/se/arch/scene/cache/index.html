@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="缓存 #  热点数据集中失效问题
  设置不同的失效时间 互斥锁  缓存穿透 #  查询不存在的数据
-缓存雪崩 #  当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
+ 布隆过滤器 把这个空结果进行缓存。  缓存雪崩 #  当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
 解决 #   事前：使用集群缓存，保证缓存服务的高可用 事中：ehcache 本地缓存 &#43; Hystrix 限流 &amp; 降级，避免 MySQL 被打死 事后：开启 Redis 持久化机制，尽快恢复缓存集群  参考：
  ehcache/ehcache3    缓存击穿 #  在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了， 就会导致大量的请求都打到数据库上面去。
 缓存击穿实际上是缓存雪崩的一个特例
@@ -14,19 +14,19 @@
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="缓存" />
 <meta property="og:description" content="缓存 #  热点数据集中失效问题
  设置不同的失效时间 互斥锁  缓存穿透 #  查询不存在的数据
-缓存雪崩 #  当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
+ 布隆过滤器 把这个空结果进行缓存。  缓存雪崩 #  当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。
 解决 #   事前：使用集群缓存，保证缓存服务的高可用 事中：ehcache 本地缓存 &#43; Hystrix 限流 &amp; 降级，避免 MySQL 被打死 事后：开启 Redis 持久化机制，尽快恢复缓存集群  参考：
  ehcache/ehcache3    缓存击穿 #  在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了， 就会导致大量的请求都打到数据库上面去。
 缓存击穿实际上是缓存雪崩的一个特例
 解决 #  问题是多个线程同时去查询数据库的这条数据， 我们可以在第一个查询数据的请求上使用一个互斥锁来锁住它。 其他的线程走到这一步拿不到锁就等着，等第一个线程查询到了数据，然后做缓存。 后面的线程进来发现已经有缓存了，就直接走缓存。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/cache/" />
-<meta property="article:modified_time" content="2020-06-09T20:36:07+08:00" />
+<meta property="article:modified_time" content="2020-11-01T16:38:19+08:00" />
 <title>缓存 | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
-<script defer src="/note-cs/en.search.min.83f85a3cc25af744b3d8f1145a4992e79d73b2b780b3ec4c24c30679b3d3c106.js" integrity="sha256-g/haPMJa90Sz2PEUWkmS551zsreAs&#43;xMJMMGebPTwQY="></script>
+<script defer src="/note-cs/en.search.min.2c36b08600ec8e2f43a2f911b91e855f590d78f5dddf3e070374edf669697492.js" integrity="sha256-LDawhgDsji9DovkRuR6FX1kNePXd3z4HA3Tt9mlpdJI="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -804,6 +804,10 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#%e7%bc%93%e5%ad%98%e7%a9%bf%e9%80%8f">#</a>
 </h2>
 <p>查询不存在的数据</p>
+<ul>
+<li>布隆过滤器</li>
+<li>把这个空结果进行缓存。</li>
+</ul>
 <h2 id="缓存雪崩">
   缓存雪崩
   <a class="anchor" href="#%e7%bc%93%e5%ad%98%e9%9b%aa%e5%b4%a9">#</a>
@@ -848,9 +852,9 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b8b77cebc8b57eaaaa4f3fad7eea51ae1907e6a4" title='Last modified by yewang | 2020-06-09' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/9240648713b5d77b3359bb319a750a971ff13197" title='Last modified by yewang | 2020-11-01' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-06-09</span>
+      <span>2020-11-01</span>
     </a>
   </div>
 
@@ -859,7 +863,15 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
  
-        
+        <div>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <p><span id="busuanzi_container_page_pv">本文访问量 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span> 次</span></p>
+    <p><span id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span> 人次</span></p>
+</div>
+
 
       </footer>
 
