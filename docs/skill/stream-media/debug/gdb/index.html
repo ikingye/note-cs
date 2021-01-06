@@ -16,7 +16,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
-<script defer src="/note-cs/en.search.min.2c36b08600ec8e2f43a2f911b91e855f590d78f5dddf3e070374edf669697492.js" integrity="sha256-LDawhgDsji9DovkRuR6FX1kNePXd3z4HA3Tt9mlpdJI="></script>
+<script defer src="/note-cs/en.search.min.589fad7d83735be900dd7a610c71aedfe5f414201c088bbc54d5d0de1b108c9f.js" integrity="sha256-WJ&#43;tfYNzW&#43;kA3XphDHGu3&#43;X0FCAcCIu8VNXQ3hsQjJ8="></script>
 <link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -952,16 +952,16 @@ $ gdb -q
 <code>codesign -fs gdb-cert $(which gdb)</code></p>
 <p>如果是 Mojave (10.14) 之后的系统，<br>
 先创建一个文件  <code>gdb-entitlement.xml</code>，内容为:</p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
-&lt;plist version=&quot;1.0&quot;&gt;
-&lt;dict&gt;
-    &lt;key&gt;com.apple.security.cs.debugger&lt;/key&gt;
-    &lt;true/&gt;
-&lt;/dict&gt;
-&lt;/plist&gt;
-&lt;/pre&gt;
-</code></pre><p>再执行:<br>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#75715e">&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;</span>
+<span style="color:#f92672">&lt;plist</span> <span style="color:#a6e22e">version=</span><span style="color:#e6db74">&#34;1.0&#34;</span><span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&lt;dict&gt;</span>
+    <span style="color:#f92672">&lt;key&gt;</span>com.apple.security.cs.debugger<span style="color:#f92672">&lt;/key&gt;</span>
+    <span style="color:#f92672">&lt;true/&gt;</span>
+<span style="color:#f92672">&lt;/dict&gt;</span>
+<span style="color:#f92672">&lt;/plist&gt;</span>
+<span style="color:#f92672">&lt;/pre&gt;</span>
+</code></pre></div><p>再执行:<br>
 <code>codesign --entitlements gdb-entitlement.xml -fs gdb-cert $(which gdb)</code></p>
 <p>具体参考这里：<a href="https://sourceware.org/gdb/wiki/PermissionsDarwin">https://sourceware.org/gdb/wi&hellip;</a></p>
 <p>参考：</p>
