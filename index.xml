@@ -1495,6 +1495,16 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
     </item>
     
     <item>
+      <title>Axure</title>
+      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/axure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/axure/</guid>
+      <description>Axure RP #  Rapid Prototyping 快速原型
+快捷键 #   cmd + D: 副本 cmd + R: 替换  </description>
+    </item>
+    
+    <item>
       <title>BASE</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/base/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
