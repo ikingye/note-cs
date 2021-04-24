@@ -10,21 +10,14 @@
     
     
     <item>
-      <title>4.1 教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
-      <description>教程 #  基础 #   X 分钟速成 Lua  -- 单行注释以两个连字符开头 --[[ 多行注释 --]]  进阶 #  </description>
-    </item>
-    
-    <item>
       <title>4.3 关注项目</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
-      <description>关注项目 #  </description>
+      <description>关注项目 #  ngx_http_lua_module #  openresty/lua-nginx-module ngx_http_lua_module - Embed the power of Lua into Nginx HTTP Servers.
+This module is a core component of OpenResty. If you are using this module, then you are essentially using OpenResty.
+Turbo.lua #  kernelsauce/turbo Turbo is a framework built for LuaJIT 2 to simplify the task of building fast and scalable network applications. It uses a event-driven, non-blocking, no thread design to deliver excellent performance and minimal footprint to high-load applications while also providing excellent support for embedded uses.</description>
     </item>
     
   </channel>

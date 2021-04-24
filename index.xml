@@ -10,15 +10,6 @@
     
     
     <item>
-      <title>GitHub</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/github/</guid>
-      <description>GitHub #  设置代理 #  git config --global http.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; git config --global https.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; git config --global https.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy  学习 Github #  Github Learning Lab #  Introduction to GitHub #   Github 工具 #  cli/cli #  GitHub’s official command line tool https://cli.</description>
-    </item>
-    
-    <item>
       <title>ps</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/ps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -851,15 +842,6 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
     </item>
     
     <item>
-      <title>快捷键</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/shortcuts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/shortcuts/</guid>
-      <description>VScode 快捷键 #  MacOS 选择  选中所有同一个词 cmd + shift + L  跳转  左右括号跳转 cmd + shift + \ 跳到定义 cmd + 鼠标左键单击 返回光标上一个位置 ctrl + -  编辑  格式化 opt + shift + f  Windows 选择  选中所有同一个词 ctrl + shift + L  跳转  左右括号跳转 ctrl + shift + \ 跳到定义 ctrl + 鼠标左键单击 返回光标上一个位置 alt + ←   </description>
-    </item>
-    
-    <item>
       <title>百度</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/baidu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -876,7 +858,7 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/skill/tool/study/tutorial/</guid>
-      <description>编程学习网站 #  基础 #  Codecademy #  Programiz #   算法 #  Codewars #   进阶 #  Codeplace #  通过实际应用来学习编程。</description>
+      <description></description>
     </item>
     
     <item>
@@ -891,31 +873,6 @@ Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大�
 那么既然这么麻烦，有没有比较好的工具呢？就要说到 redisson 了。
 redLock #  并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。
 redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。</description>
-    </item>
-    
-    <item>
-      <title>GoLand</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/goland/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/goland/</guid>
-      <description>GoLand #  快捷键 #  跳转 #    指定行 cmd + L
-  指定文件 shift + cmd + O
-  返回光标上一个位置 cmd + opt + 方向键
-   查询 #    函数列表 cmd + f12
-  当前文件查询 cmd + F
-  当前文件替换 cmd + R
-  所有文件查询 shift + cmd + F
-  所有文件替换 shift + cmd + R</description>
-    </item>
-    
-    <item>
-      <title>Idea</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/idea/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/jetbrains/idea/</guid>
-      <description>IntelliJ Idea #  插件 #  Alibaba Java Coding Guidelines #   教程 #  xiaoxiunique/tool-tips #  idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
     </item>
     
     <item>
@@ -1006,15 +963,6 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</guid>
       <description>教程 #  基础 #   进阶 #  </description>
-    </item>
-    
-    <item>
-      <title>4.1 教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</guid>
-      <description>教程 #  基础 #   X 分钟速成 Lua  -- 单行注释以两个连字符开头 --[[ 多行注释 --]]  进阶 #  </description>
     </item>
     
     <item>
@@ -1120,15 +1068,6 @@ Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情�
     </item>
     
     <item>
-      <title>config</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/ssh/config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/ssh/config/</guid>
-      <description>config #  my config #  ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.</description>
-    </item>
-    
-    <item>
       <title>Dash</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/dash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1157,17 +1096,6 @@ dash: 不支持，替代方法：可采用 here documents
     </item>
     
     <item>
-      <title>git config</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/config/</guid>
-      <description>git config #  config 权限 #  问题： Bad owner or permissions on ~/.ssh/config
-解决：
-chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
-    </item>
-    
-    <item>
       <title>go wiki</title>
       <link>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/go-wiki/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1182,8 +1110,8 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/skill/tool/note/jupyter/</guid>
-      <description>Jupyter #  Jupyter kernel #  Go #  gopherdata/gophernotes #  $ go get -u github.com/gopherdata/gophernotes $ mkdir -p ~/Library/Jupyter/kernels/gophernotes $ cp $GOPATH/src/github.com/gopherdata/gophernotes/kernel/* ~/Library/Jupyter/kernels/gophernotes  Java #  SpencerPark/IJava #  A Jupyter kernel for executing Java code.
- PHP #  Litipk/Jupyter-PHP #   要安装 zmq  php72 -m | grep   phpto72 php jupyter-php-installer.phar install -vvv  使用 -vvv 查看详细信息     编辑器 #  nteract/nteract #  The interactive computing suite for you!</description>
+      <description>Jupyter #  pipenv install jupyterlab 参考：
+ JupyterLab Installation  Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.  Jupyter Notebook 原名 IPython Notebook (version 3 or earlier)     Jupyter kernel #  Go #  gopherdata/gophernotes #  $ go get -u github.</description>
     </item>
     
     <item>
@@ -1253,29 +1181,6 @@ OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-A
     </item>
     
     <item>
-      <title>submodule</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/submodule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/git/submodule/</guid>
-      <description>git submodule #  拉取 submodule #  git submodule init git submodule update --remote git submodule add -b #  参考：
- How can I specify a branch/tag when adding a Git submodule?  submodule 修改 url #   edit the .gitmodules file to update the URL git submodule sync  参考： How to change the remote repository for a git submodule?
-delete submodule #   Delete the relevant section from the .</description>
-    </item>
-    
-    <item>
-      <title>VSCode Debug</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/debug/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/debug/</guid>
-      <description>VSCode Debug #  参考：
-  USER GUIDE - Debugging
-  Debug C++ in Visual Studio Code
-  </description>
-    </item>
-    
-    <item>
       <title>WebRTC</title>
       <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/webrtc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1283,6 +1188,15 @@ delete submodule #   Delete the relevant section from the .</description>
       <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/webrtc/</guid>
       <description>WebRTC #  Web Real-Time Communication
 支持网页浏览器进行实时语音对话或视频对话的 API</description>
+    </item>
+    
+    <item>
+      <title>X 分钟速成 Lua</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/learn-lua-in-x-minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/learn-lua-in-x-minutes/</guid>
+      <description>X 分钟速成 Lua #  -- 单行注释以两个连字符开头 --[[ 多行注释 --]] ---------------------------------------------------- -- 1. 变量和流程控制 ---------------------------------------------------- num = 42 -- 所有的数字都是双精度浮点型。 -- 别害怕，64位的双精度浮点型数字中有52位用于 -- 保存精确的整型值; 对于52位以内的整型值， -- 不用担心精度问题。 s = &amp;#39;walternate&amp;#39; -- 和Python一样，字符串不可变。 t = &amp;#34;也可以用双引号&amp;#34; u = [[ 多行的字符串 以两个方括号 开始和结尾。]] t = nil -- 撤销t的定义; Lua 支持垃圾回收。 -- 块使用do/end之类的关键字标识： while num &amp;lt; 50 do num = num + 1 -- 不支持 ++ 或 += 运算符。 end -- If语句： if num &amp;gt; 40 then print(&amp;#39;over 40&amp;#39;) elseif s ~= &amp;#39;walternate&amp;#39; then -- ~= 表示不等于。 -- 像Python一样，用 == 检查是否相等 ；字符串同样适用。 io.</description>
     </item>
     
     <item>
@@ -1308,51 +1222,6 @@ delete submodule #   Delete the relevant section from the .</description>
 XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就贸然插入到 HTML 中，这很容易造成注入漏洞。 攻击者可以利用漏洞，构造出恶意的代码指令，进而利用恶意代码危害数据安全。
 不仅仅是业务上的 “用户的 UGC 内容” 可以进行注入，包括 URL 上的参数等都可以是攻击的来源。在处理输入时，以下内容都不可信：
  来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法 #   在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&amp;quot;javascript:...&amp;quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 #  存储型 #  存储型 XSS 的攻击步骤：</description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/flowchart/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/flowchart/tutorial/</guid>
-      <description>Flowchart 教程 #  </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/graphviz/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/graphviz/tutorial/</guid>
-      <description>Graphviz 教程 #  http://www.graphviz.org/documentation/</description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/latex/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/latex/tutorial/</guid>
-      <description>LaTeX 教程 #  基础 #  dspinellis/latex-advice #  </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/mermaid/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/mermaid/tutorial/</guid>
-      <description>Mermaid 教程 #  基础 #  </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/plantuml/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/text-diagram/plantuml/tutorial/</guid>
-      <description>PlantUML 教程 #  </description>
     </item>
     
     <item>
@@ -1402,49 +1271,12 @@ Ad hoc 模式 #   Ad hoc 模式：客户端以多播 (multicast) 的形式往多
     </item>
     
     <item>
-      <title>配置</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/vscode/config/</guid>
-      <description>VSCode 配置 #  settings.json
-{ &amp;#34;gitlens.advanced.messages&amp;#34;: { &amp;#34;suppressShowKeyBindingsNotice&amp;#34;: true }, &amp;#34;gitlens.historyExplorer.enabled&amp;#34;: true, &amp;#34;java.errors.incompleteClasspath.severity&amp;#34;: &amp;#34;ignore&amp;#34;, &amp;#34;materialTheme.autoApplyIcons&amp;#34;: true, &amp;#34;workbench.colorCustomizations&amp;#34;: {}, &amp;#34;materialTheme.accentPrevious&amp;#34;: &amp;#34;Breaking Bad&amp;#34;, &amp;#34;workbench.colorTheme&amp;#34;: &amp;#34;Material Theme&amp;#34;, &amp;#34;materialTheme.fixIconsRunning&amp;#34;: false, // Controls the font family. &amp;#34;editor.fontFamily&amp;#34;: &amp;#34;Consolas&amp;#34;, &amp;#34;editor.lineHeight&amp;#34;: 22, &amp;#34;window.zoomLevel&amp;#34;: 0, &amp;#34;editor.fontSize&amp;#34;: 14, &amp;#34;workbench.startupEditor&amp;#34;: &amp;#34;newUntitledFile&amp;#34;, &amp;#34;editor.suggestSelection&amp;#34;: &amp;#34;first&amp;#34;, &amp;#34;vsintellicode.modify.editor.suggestSelection&amp;#34;: &amp;#34;automaticallyOverrodeDefaultValue&amp;#34;, &amp;#34;python.jediEnabled&amp;#34;: false, &amp;#34;leetcode.endpoint&amp;#34;: &amp;#34;leetcode-cn&amp;#34;, &amp;#34;python.linting.pylintEnabled&amp;#34;: true, &amp;#34;leetcode.defaultLanguage&amp;#34;: &amp;#34;golang&amp;#34;, &amp;#34;leetcode.hint.configWebviewMarkdown&amp;#34;: false, &amp;#34;leetcode.hint.commentDescription&amp;#34;: false, &amp;#34;go.useLanguageServer&amp;#34;: true, &amp;#34;[go]&amp;#34;: { &amp;#34;editor.formatOnSave&amp;#34;: true, &amp;#34;editor.codeActionsOnSave&amp;#34;: { &amp;#34;source.organizeImports&amp;#34;: true }, // Optional: Disable snippets, as they conflict with completion ranking.</description>
-    </item>
-    
-    <item>
       <title>GAE</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/gae/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/gae/</guid>
       <description>Google App Engine #  </description>
-    </item>
-    
-    <item>
-      <title>homebrew</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/package-manager/brew/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/package-manager/brew/</guid>
-      <description>Homebrew #  tap #  brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
-如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件
-tap 命令的仓库源默认来至于 Github，但是这个命令也不限制于这一个地方
-brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经 tapped 的仓库
-# URL 默认是 https://github.com/user/homebrew-repo brew tap &amp;lt;user&amp;gt;/&amp;lt;repo&amp;gt; brew tap &amp;lt;user&amp;gt;/&amp;lt;homebrew-repo&amp;gt; # URL 可以是任何位置，任何协议 brew tap &amp;lt;user&amp;gt;/&amp;lt;repo&amp;gt; URL homebrew/core 默认是最高优先级
-可以使用 brew tap-pin username/repo 使这个仓库优先级高于 core
-使用 brew-tap-unpin username/repo 取消
-当你使用 brew install foo 这个命令时，brew 将按照下面的顺序去查找哪个 formula(tap) 将被使用:
- pinned taps core formulae other taps   镜像加速 #  清华大学镜像 #  替换现有上游</description>
-    </item>
-    
-    <item>
-      <title>HHKB</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/hhkb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/hhkb/</guid>
-      <description>HHKB 键盘 #  Happy Hacking Keyboard
-使用 #  方向键 #  右侧的 Fn 键 + [ / ; &#39;</description>
     </item>
     
     <item>
@@ -1492,16 +1324,6 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
       <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/application/</guid>
       <description>ChirpStack Application Server #  ChirpStack Application Server is an open-source LoRaWAN application-server. https://www.chirpstack.io
 数据库 #     Schema Name Type Owner     public application table chirpstack_as   public application_id_seq sequence chirpstack_as   public code_migration table chirpstack_as   public device table chirpstack_as   public device_activation table chirpstack_as   public device_activation_id_seq sequence chirpstack_as   public device_keys table chirpstack_as   public device_multicast_group table chirpstack_as   public device_profile table chirpstack_as   public fuota_deployment table chirpstack_as   public fuota_deployment_device table chirpstack_as   public gateway table chirpstack_as   public gateway_ping table chirpstack_as   public gateway_ping_id_seq sequence chirpstack_as   public gateway_ping_rx table chirpstack_as   public gateway_ping_rx_id_seq sequence chirpstack_as   public gateway_profile table chirpstack_as   public gorp_migrations table chirpstack_as   public integration table chirpstack_as   public integration_id_seq sequence chirpstack_as   public multicast_group table chirpstack_as   public network_server table chirpstack_as   public network_server_id_seq sequence chirpstack_as   public organization table chirpstack_as   public organization_id_seq sequence chirpstack_as   public organization_user table chirpstack_as   public organization_user_id_seq sequence chirpstack_as   public remote_fragmentation_session table chirpstack_as   public remote_multicast_class_c_session table chirpstack_as   public remote_multicast_setup table chirpstack_as   public service_profile table chirpstack_as   public user table chirpstack_as   public user_id_seq sequence chirpstack_as    (33 rows)</description>
-    </item>
-    
-    <item>
-      <title>Axure</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/axure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/axure/</guid>
-      <description>Axure RP #  Rapid Prototyping 快速原型
-快捷键 #   cmd + D: 副本 cmd + R: 替换  </description>
     </item>
     
     <item>
@@ -1596,31 +1418,12 @@ Apache Solr is an enterprise search platform written using Apache Lucene. Major 
     </item>
     
     <item>
-      <title>Mas</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/mas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/mas/</guid>
-      <description>mas-cli/mas #  Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.
-$ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
-    </item>
-    
-    <item>
       <title>MPEG</title>
       <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/mpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/mpeg/</guid>
       <description>MPEG #   MPEG-1：第一个官方的视讯音频压缩标准，随后在 Video CD 中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称 MP3，成为比较流行的音频压缩格式。 MPEG-2：广播质量的视讯、音频和传输协议。被用于无线 数字电视 - ATSC、DVB 以及 ISDB、数字卫星电视（例如 DirecTV）、数字 有线电视信号，以及 DVD 视频光盘技术中。 MPEG-3：原本目标是为 高清晰度电视（ HDTV）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。 MPEG-4：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和 数字版权管理（Digital Rights Management），其中第 10 部分由 ISO/IEC 和 ITU-T 联合发布，称为 H.264/MPEG-4 Part 10。 MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。 MPEG-21：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。  </description>
-    </item>
-    
-    <item>
-      <title>picgo</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/picgo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/picgo/</guid>
-      <description>picgo #  CLI 命令 #  PicGo/PicGo-Core #  Molunerfinn/PicGo #  </description>
     </item>
     
     <item>
@@ -1668,18 +1471,6 @@ TS 流解码过程 #   获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可�
     </item>
     
     <item>
-      <title>tmux</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/tmux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/tmux/</guid>
-      <description>tmux #  配置 #  ChrisJohnsen/tmux-MacOSX-pasteboard #  Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.
-Other services and unpatched builds of screen are also affected.
-gpakosz/.tmux #  Oh My Tmux!
-cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .tmux/.tmux.conf.local .  教程 #  tmux 2: Productive Mouse-Free Development by @bphogan. #  </description>
-    </item>
-    
-    <item>
       <title>UML</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/se/uml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1690,15 +1481,6 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
 聚合关系 (aggregation) #   表示整体由部分构成的语义  例如一个部门由多个员工组成   整体和部分不是强依赖的，即使整体不存在了，部分仍然存在  例如， 部门撤销了，人员不会消失，他们依然存在    带空心菱形箭头的直线
 组合关系 (composition) #   表示整体由部分构成的语义  比如公司由多个部门组成   是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了  例如， 公司不存在了，部门也将不存在了    带实心菱形箭头直线
 关联关系 (association) #   它一般用来定义对象之间静态的、天然的结构；通常与运行状态无关 所以，关联关系是一种 &amp;ldquo;强关联&amp;rdquo; 的关系  比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系   在最终代码中，关联对象通常是以成员变量的形式实现的  带箭头的直线</description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>https://ikingye.github.io/note-cs/docs/skill/tool/app/vim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/skill/tool/app/vim/</guid>
-      <description>vim #   教程 #  iggredible/Learn-Vim #  A book for learning the Vim editor the smart way.</description>
     </item>
     
     <item>
@@ -1821,7 +1603,9 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
-      <description>关注项目 #  </description>
+      <description>关注项目 #  ngx_http_lua_module #  openresty/lua-nginx-module ngx_http_lua_module - Embed the power of Lua into Nginx HTTP Servers.
+This module is a core component of OpenResty. If you are using this module, then you are essentially using OpenResty.
+Turbo.lua #  kernelsauce/turbo Turbo is a framework built for LuaJIT 2 to simplify the task of building fast and scalable network applications. It uses a event-driven, non-blocking, no thread design to deliver excellent performance and minimal footprint to high-load applications while also providing excellent support for embedded uses.</description>
     </item>
     
     <item>
@@ -1871,17 +1655,6 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
     
     <item>
       <title>4.3 关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/attention/</guid>
-      <description>关注项目 #  机器学习 #  tensorflow/tensorflow #  scikit-learn/scikit-learn #  scikit-learn: machine learning in Python https://scikit-learn.org
-php-ai/php-ml #  PHP-ML - Machine Learning library for PHP https://php-ml.org/
- 深度学习 #  paddlepaddle/paddle #   机器人 #  gunthercox/ChatterBot #  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
-    </item>
-    
-    <item>
-      <title>4.3 关注项目</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1926,6 +1699,17 @@ Openshift 没有 root 权限
     </item>
     
     <item>
+      <title>关注项目</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/ml/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/ml/attention/</guid>
+      <description>关注项目 #  机器学习 #  tensorflow/tensorflow #  scikit-learn/scikit-learn #  scikit-learn: machine learning in Python https://scikit-learn.org
+php-ai/php-ml #  PHP-ML - Machine Learning library for PHP https://php-ml.org/
+ 深度学习 #  paddlepaddle/paddle #   机器人 #  gunthercox/ChatterBot #  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
+    </item>
+    
+    <item>
       <title>金丝雀发布</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/canary-rollouts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1965,15 +1749,6 @@ cloudfoundry/cli #  The official command line client for Cloud Foundry https://d
 cloudfoundry/uaa #  CloudFoundry User Account and Authentication (UAA) Server
  Cloud Foundry 缺点 #  诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。 而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。
 而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。</description>
-    </item>
-    
-    <item>
-      <title>2.2.4.5 Consul</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consul/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consul/</guid>
-      <description>Consul #  </description>
     </item>
     
     <item>
@@ -2177,27 +1952,23 @@ TCC 分布式事务框架，比如国内开源的
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/dl/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/deep-learning/tutorial/</guid>
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/dl/tutorial/</guid>
       <description>教程 #  基础 #  《深度学习》(花书) #  MingchaoZhu/DeepLearning #  Python for《Deep Learning》，该书为《深度学习》(花书) 数学推导、原理剖析与源码级别代码实现
  进阶 #   </description>
     </item>
     
     <item>
       <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</link>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/ml/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/tutorial/</guid>
-      <description>教程 #  基础 #  [book]d2l-ai/d2l-en #  dive into deep learning
-[book]d2l-ai/d2l-zh #  动手学深度学习
-[book]dod-o/statistical-learning-method_code #  手写实现李航《统计学习方法》书中全部算法
-[video]shuhuai007/machine-learning-session #  【机器学习】【白板推导系列】【合集 1 ～ 23】
-tsyw/MachineLearningNotes #  My personal notes
-Bilibili - 机器学习白板系列
- [video]机器学习教程（小象学院） #   josephmisiti/awesome-machine-learning #   ZuzooVn/machine-learning-for-software-engineers #  A complete daily plan for studying to become a machine learning engineer.
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/ml/tutorial/</guid>
+      <description>教程 #  基础 #  dive into deep learning #  d2l-ai/d2l-en 动手学深度学习 #  d2l-ai/d2l-zh  手写实现李航《统计学习方法》书中全部算法 #  dod-o/statistical-learning-method_code  机器学习白板推导系列 #  shuhuai007/machine-learning-session 【机器学习】【白板推导系列】【合集 1 ～ 23】
+机器学习白板系列 笔记 #  tsyw/MachineLearningNotes Bilibili - 机器学习白板系列
+ 机器学习教程（小象学院） #   josephmisiti/awesome-machine-learning #   ZuzooVn/machine-learning-for-software-engineers #  A complete daily plan for studying to become a machine learning engineer.
  ageron/handson-ml #  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.</description>
     </item>
     

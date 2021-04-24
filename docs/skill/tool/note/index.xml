@@ -15,8 +15,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/skill/tool/note/jupyter/</guid>
-      <description>Jupyter #  Jupyter kernel #  Go #  gopherdata/gophernotes #  $ go get -u github.com/gopherdata/gophernotes $ mkdir -p ~/Library/Jupyter/kernels/gophernotes $ cp $GOPATH/src/github.com/gopherdata/gophernotes/kernel/* ~/Library/Jupyter/kernels/gophernotes  Java #  SpencerPark/IJava #  A Jupyter kernel for executing Java code.
- PHP #  Litipk/Jupyter-PHP #   要安装 zmq  php72 -m | grep   phpto72 php jupyter-php-installer.phar install -vvv  使用 -vvv 查看详细信息     编辑器 #  nteract/nteract #  The interactive computing suite for you!</description>
+      <description>Jupyter #  pipenv install jupyterlab 参考：
+ JupyterLab Installation  Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.  Jupyter Notebook 原名 IPython Notebook (version 3 or earlier)     Jupyter kernel #  Go #  gopherdata/gophernotes #  $ go get -u github.</description>
     </item>
     
   </channel>
