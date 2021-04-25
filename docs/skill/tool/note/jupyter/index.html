@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jupyter #  pipenv install jupyterlab alias python-jupyter=&#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&#34; alias jupyter=&#34;python-jupyter -m jupyter lab&#34; alias j=&#34;jupyter&#34; 参考：
- JupyterLab Installation  Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.  Jupyter Notebook 原名 IPython Notebook (version 3 or earlier)     Jupyter kernel #  Go #  gopherdata/gophernotes #  $ go get -u github.">
+<meta name="description" content="Jupyter #  pipenv install jupyterlab alias python-jupyter=&#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&#34; alias jupyter=&#34;python-jupyter -m jupyter&#34; alias jlab=&#34;jupyter lab&#34; alias jlist=&#34;jupyter kernelspec list&#34; 参考：
+ JupyterLab Installation  配置 #  # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &#39;/Users/yewang/note/kingye/jupyter&#39; Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Jupyter" />
-<meta property="og:description" content="Jupyter #  pipenv install jupyterlab alias python-jupyter=&#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&#34; alias jupyter=&#34;python-jupyter -m jupyter lab&#34; alias j=&#34;jupyter&#34; 参考：
- JupyterLab Installation  Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.  Jupyter Notebook 原名 IPython Notebook (version 3 or earlier)     Jupyter kernel #  Go #  gopherdata/gophernotes #  $ go get -u github." />
+<meta property="og:description" content="Jupyter #  pipenv install jupyterlab alias python-jupyter=&#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&#34; alias jupyter=&#34;python-jupyter -m jupyter&#34; alias jlab=&#34;jupyter lab&#34; alias jlist=&#34;jupyter kernelspec list&#34; 参考：
+ JupyterLab Installation  配置 #  # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &#39;/Users/yewang/note/kingye/jupyter&#39; Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/tool/note/jupyter/" />
-<meta property="article:modified_time" content="2021-04-24T21:51:22+08:00" />
+<meta property="article:modified_time" content="2021-04-24T22:23:34+08:00" />
 <title>Jupyter | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.a05275973bc10933f75e45cfddc943bf308da7e5ac2206875045620e6c605584.css" integrity="sha256-oFJ1lzvBCTP3XkXP3clDvzCNp&#43;WsIgaHUEViDmxgVYQ=">
-<script defer src="/note-cs/en.search.min.52e7dbc72b7b090dd8b66596aafef754fc2388f02f0cedc037d543d85697de45.js" integrity="sha256-Uufbxyt7CQ3YtmWWqv73VPwjiPAvDO3AN9VD2FaX3kU="></script>
+<script defer src="/note-cs/en.search.min.9473722c76f36f9aa2457c3ee24a5a68cfe17e4f7ccfffe6bc4b2b507526012c.js" integrity="sha256-lHNyLHbzb5qiRXw&#43;4kpaaM/hfk98z//mvEsrUHUmASw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -740,6 +740,7 @@ https://github.com/alex-shpak/hugo-book
     
   <nav id="TableOfContents">
   <ul>
+    <li><a href="#配置">配置</a></li>
     <li><a href="#jupyter-notebook-vs-jupyter-lab"><code>Jupyter Notebook</code> vs <code>Jupyter Lab</code></a></li>
     <li><a href="#jupyter-kernel">Jupyter kernel</a>
       <ul>
@@ -788,13 +789,21 @@ https://github.com/alex-shpak/hugo-book
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pipenv install jupyterlab
 
 alias python-jupyter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&#34;</span>
-alias jupyter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;python-jupyter -m jupyter lab&#34;</span>
-alias j<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jupyter&#34;</span>
+alias jupyter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;python-jupyter -m jupyter&#34;</span>
+alias jlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jupyter lab&#34;</span>
+alias jlist<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jupyter kernelspec list&#34;</span>
 </code></pre></div><p>参考：</p>
 <ul>
 <li><a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">JupyterLab Installation</a></li>
 </ul>
-<h2 id="jupyter-notebook-vs-jupyter-lab">
+<h2 id="配置">
+  配置
+  <a class="anchor" href="#%e9%85%8d%e7%bd%ae">#</a>
+</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># vi ~/.jupyter/jupyter_notebook_config.py</span>
+<span style="color:#75715e"># 绝对路径</span>
+c.NotebookApp.notebook_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/Users/yewang/note/kingye/jupyter&#39;</span>
+</code></pre></div><h2 id="jupyter-notebook-vs-jupyter-lab">
   <code>Jupyter Notebook</code> vs <code>Jupyter Lab</code>
   <a class="anchor" href="#jupyter-notebook-vs-jupyter-lab">#</a>
 </h2>
@@ -811,6 +820,13 @@ alias j<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jupy
   Jupyter kernel
   <a class="anchor" href="#jupyter-kernel">#</a>
 </h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">jupyter kernelspec list
+
+jupyter kernelspec uninstall
+</code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/49299574/how-to-list-all-installed-jupyter-kernels">How to list all installed Jupyter kernels?</a></li>
+</ul>
 <h3 id="go">
   Go
   <a class="anchor" href="#go">#</a>
@@ -819,9 +835,10 @@ alias j<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jupy
   <img src="https://img.shields.io/github/stars/gopherdata/gophernotes.svg" alt="Github stars" />
   <a class="anchor" href="#gopherdatagophernoteshttpsgithubcomgopherdatagophernotes-github-starshttpsimgshieldsiogithubstarsgopherdatagophernotessvg">#</a>
 </h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ go get -u github.com/gopherdata/gophernotes
-$ mkdir -p ~/Library/Jupyter/kernels/gophernotes
-$ cp $GOPATH/src/github.com/gopherdata/gophernotes/kernel/* ~/Library/Jupyter/kernels/gophernotes
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">go get -u github.com/gopherdata/gophernotes
+mkdir -p ~/Library/Jupyter/kernels/gophernotes
+<span style="color:#75715e"># cp $GOPATH/src/github.com/gopherdata/gophernotes/kernel/* ~/Library/Jupyter/kernels/gophernotes</span>
+cp /Users/yewang/.gvm/pkgsets/go1.15.10/global/pkg/mod/github.com/gopherdata/gophernotes@v0.7.2/kernel/* ~/Library/Jupyter/kernels/gophernotes
 </code></pre></div><hr>
 <h3 id="java">
   Java
@@ -889,7 +906,7 @@ $ cp $GOPATH/src/github.com/gopherdata/gophernotes/kernel/* ~/Library/Jupyter/ke
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/5f24bbed7a2a3daf8ad23ceb7624f42dd254d5c3" title='Last modified by yewang | 2021-04-24' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/f4f4389bf473f68ccde2c4a945098958ac65476d" title='Last modified by yewang | 2021-04-24' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2021-04-24</span>
     </a>
@@ -947,6 +964,7 @@ $ cp $GOPATH/src/github.com/gopherdata/gophernotes/kernel/* ~/Library/Jupyter/ke
       
   <nav id="TableOfContents">
   <ul>
+    <li><a href="#配置">配置</a></li>
     <li><a href="#jupyter-notebook-vs-jupyter-lab"><code>Jupyter Notebook</code> vs <code>Jupyter Lab</code></a></li>
     <li><a href="#jupyter-kernel">Jupyter kernel</a>
       <ul>
