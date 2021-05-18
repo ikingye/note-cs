@@ -1937,6 +1937,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/tensorflow/</loc>
+    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/vmware/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -2627,6 +2632,11 @@
   </url>
   
   <url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/paddlepaddle/</loc>
+    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/parallels/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -3096,8 +3106,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/paddlepaddle/</loc>
-    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/pytorch/</loc>
   </url>
   
   <url>
@@ -3118,11 +3127,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/tensorflow/</loc>
-    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
   </url>
   
   <url>

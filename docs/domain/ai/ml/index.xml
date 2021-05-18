@@ -26,10 +26,9 @@ php-ai/php-ml #  PHP-ML - Machine Learning library for PHP https://php-ml.org/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/ml/tutorial/</guid>
-      <description>教程 #  基础 #  dive into deep learning #  d2l-ai/d2l-en 动手学深度学习 #  d2l-ai/d2l-zh  手写实现李航《统计学习方法》书中全部算法 #  dod-o/statistical-learning-method_code  机器学习白板推导系列 #  shuhuai007/machine-learning-session 【机器学习】【白板推导系列】【合集 1 ～ 23】
+      <description>教程 #  基础 #  dive into deep learning #  d2l-ai/d2l-en 动手学深度学习 #  d2l-ai/d2l-zh 将《动手学深度学习》(Dive into Deep Learning)原书中的 MXNet 实现改为 TensorFlow 2.0 实现 #  TrickyGo/Dive-into-DL-TensorFlow2.0 《动手学深度学习》(Dive into Deep Learning) 原书中的 MXNet 实现改为 PyTorch 实现 #  ShusenTang/Dive-into-DL-PyTorch  手写实现李航《统计学习方法》书中全部算法 #  dod-o/statistical-learning-method_code  机器学习白板推导系列 #  shuhuai007/machine-learning-session 【机器学习】【白板推导系列】【合集 1 ～ 23】
 机器学习白板系列 笔记 #  tsyw/MachineLearningNotes Bilibili - 机器学习白板系列
- 机器学习教程（小象学院） #   josephmisiti/awesome-machine-learning #   ZuzooVn/machine-learning-for-software-engineers #  A complete daily plan for studying to become a machine learning engineer.
- ageron/handson-ml #  A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.</description>
+ 机器学习教程（小象学院） #   josephmisiti/awesome-machine-learning #   ZuzooVn/machine-learning-for-software-engineers #  A complete daily plan for studying to become a machine learning engineer.</description>
     </item>
     
   </channel>
