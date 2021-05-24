@@ -1504,6 +1504,15 @@ ERROR: permission denied for relation hycom 权限被拒绝</description>
     </item>
     
     <item>
+      <title>机器学习</title>
+      <link>https://ikingye.github.io/note-cs/docs/domain/ai/ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/ml/</guid>
+      <description>机器学习 #  见：Machine Learning 学习笔记</description>
+    </item>
+    
+    <item>
       <title>版本</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1696,17 +1705,6 @@ Openshift 没有 root 权限
       
       <guid>https://ikingye.github.io/note-cs/docs/direction/be/devops/terraform/</guid>
       <description>Terraform #  hashicorp/terraform Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned. https://www.terraform.io/</description>
-    </item>
-    
-    <item>
-      <title>关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/ml/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/ml/attention/</guid>
-      <description>关注项目 #  机器学习 #  tensorflow/tensorflow #  scikit-learn/scikit-learn #  scikit-learn: machine learning in Python https://scikit-learn.org
-php-ai/php-ml #  PHP-ML - Machine Learning library for PHP https://php-ml.org/
- 深度学习 #  paddlepaddle/paddle #   机器人 #  gunthercox/ChatterBot #  ChatterBot is a machine learning, conversational dialog engine for creating chat bots https://chatterbot.readthedocs.io</description>
     </item>
     
     <item>
@@ -1948,27 +1946,6 @@ TCC 分布式事务框架，比如国内开源的
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/version/</guid>
       <description>版本 #  版本历史 #  </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/dl/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/dl/tutorial/</guid>
-      <description>教程 #  基础 #  《深度学习》(花书) #  MingchaoZhu/DeepLearning #  Python for《Deep Learning》，该书为《深度学习》(花书) 数学推导、原理剖析与源码级别代码实现
- 进阶 #   </description>
-    </item>
-    
-    <item>
-      <title>教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/ai/ml/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/domain/ai/ml/tutorial/</guid>
-      <description>教程 #  基础 #  dive into deep learning #  d2l-ai/d2l-en 动手学深度学习 #  d2l-ai/d2l-zh 将《动手学深度学习》(Dive into Deep Learning)原书中的 MXNet 实现改为 TensorFlow 2.0 实现 #  TrickyGo/Dive-into-DL-TensorFlow2.0 《动手学深度学习》(Dive into Deep Learning) 原书中的 MXNet 实现改为 PyTorch 实现 #  ShusenTang/Dive-into-DL-PyTorch  手写实现李航《统计学习方法》书中全部算法 #  dod-o/statistical-learning-method_code  机器学习白板推导系列 #  shuhuai007/machine-learning-session 【机器学习】【白板推导系列】【合集 1 ～ 23】
-机器学习白板系列 笔记 #  tsyw/MachineLearningNotes Bilibili - 机器学习白板系列
- 机器学习教程（小象学院） #   josephmisiti/awesome-machine-learning #   ZuzooVn/machine-learning-for-software-engineers #  A complete daily plan for studying to become a machine learning engineer.</description>
     </item>
     
     <item>

@@ -1937,11 +1937,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/tensorflow/</loc>
-    <lastmod>2021-05-18T20:24:55+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/vmware/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -2632,11 +2627,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/paddlepaddle/</loc>
-    <lastmod>2021-05-18T20:24:55+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/parallels/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url>
@@ -2713,12 +2703,6 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/</loc>
-    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/dl/</loc>
-    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
   </url>
   
   <url>
@@ -3061,11 +3045,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/</loc>
-    <lastmod>2021-05-18T20:24:55+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/</loc>
     <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url>
@@ -3106,11 +3085,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/frame/pytorch/</loc>
-    <lastmod>2021-05-18T20:24:55+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/</loc>
     <lastmod>2020-05-31T22:33:55+08:00</lastmod>
   </url>
@@ -3138,11 +3112,6 @@
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/activity/csapp/</loc>
     <lastmod>2020-10-13T22:45:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/attention/</loc>
-    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
   </url>
   
   <url>
@@ -3731,16 +3700,6 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/dl/tutorial/</loc>
-    <lastmod>2021-04-04T14:11:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/tutorial/</loc>
-    <lastmod>2021-05-18T20:24:55+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/seckill/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url>
@@ -4076,7 +4035,7 @@
   
   <url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2021-05-18T20:24:55+08:00</lastmod>
+    <lastmod>2021-05-06T13:43:36+08:00</lastmod>
   </url>
   
   <url>
