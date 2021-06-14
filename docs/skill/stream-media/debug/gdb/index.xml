@@ -4,11 +4,7 @@
     <title>GDB on 计算机学习笔记</title>
     <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/</link>
     <description>Recent content in GDB on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GDB 教程</title>
       <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/tutorial/</link>

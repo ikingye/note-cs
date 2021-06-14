@@ -4,11 +4,7 @@
     <title>2.2.4 分布式系统 on 计算机学习笔记</title>
     <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/</link>
     <description>Recent content in 2.2.4 分布式系统 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/distributed/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/distributed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2.2.4.3 Zookeeper</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</link>

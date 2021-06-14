@@ -4,10 +4,6 @@
     <title>《深入理解计算机系统》学习 on 计算机学习笔记</title>
     <link>https://ikingye.github.io/note-cs/docs/activity/csapp/</link>
     <description>Recent content in 《深入理解计算机系统》学习 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://ikingye.github.io/note-cs/docs/activity/csapp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/activity/csapp/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.71.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="ACID #   In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
@@ -13,13 +13,15 @@
   ACID，是指数据库管理系统（DBMS）在写入或更新资料的过程中，为保证事务（transaction）是正确可靠的，所必须具备的四个特性：
  原子性（Atomicity 又称不可分割性）  一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。   一致性（Consistency）  在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。   隔离性（Isolation，又称独立性）  数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括未提交读（Read uncommitted）、提交读（read committed）、可重复读（repeatable read）和串行化（Serializable）。   持久性（Durability）  事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。     " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/acid/" />
-<meta property="article:modified_time" content="2020-07-10T15:45:38+08:00" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/acid/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2020-07-10T15:45:38&#43;08:00" />
+
 <title>ACID | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/note-cs/book.min.47e4577a72cc9340ba815ebf8200a2e1642b6e7a28caf0622c921ba9d7c4478e.css" integrity="sha256-R&#43;RXenLMk0C6gV6/ggCi4WQrbnooyvBiLJIbqdfER44=">
-<script defer src="/note-cs/en.search.min.589f25dc869ddfe608bfa631b6f045c81c65036279c44ed6486e660d859b3c13.js" integrity="sha256-WJ8l3Iad3&#43;YIv6YxtvBFyBxlA2J5xE7WSG5mDYWbPBM="></script>
+<link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
+<script defer src="/note-cs/en.search.min.88a3f457789ae42e1cf8496b1f5762bd4e9b7869ec84c27c7a6391ca60e4c71e.js" integrity="sha256-iKP0V3ia5C4c&#43;ElrH1divU6beGnshMJ8emORymDkxx4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15077,7 +15079,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  

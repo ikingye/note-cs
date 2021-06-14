@@ -2,20 +2,22 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.71.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="X 分钟速成 Lua #  -- 单行注释以两个连字符开头 --[[ 多行注释 --]] ---------------------------------------------------- -- 1. 变量和流程控制 ---------------------------------------------------- num = 42 -- 所有的数字都是双精度浮点型。 -- 别害怕，64位的双精度浮点型数字中有52位用于 -- 保存精确的整型值; 对于52位以内的整型值， -- 不用担心精度问题。 s = &#39;walternate&#39; -- 和Python一样，字符串不可变。 t = &#34;也可以用双引号&#34; u = [[ 多行的字符串 以两个方括号 开始和结尾。]] t = nil -- 撤销t的定义; Lua 支持垃圾回收。 -- 块使用do/end之类的关键字标识： while num &lt; 50 do num = num &#43; 1 -- 不支持 &#43;&#43; 或 &#43;= 运算符。 end -- If语句： if num &gt; 40 then print(&#39;over 40&#39;) elseif s ~= &#39;walternate&#39; then -- ~= 表示不等于。 -- 像Python一样，用 == 检查是否相等 ；字符串同样适用。 io.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="X 分钟速成 Lua" />
 <meta property="og:description" content="X 分钟速成 Lua #  -- 单行注释以两个连字符开头 --[[ 多行注释 --]] ---------------------------------------------------- -- 1. 变量和流程控制 ---------------------------------------------------- num = 42 -- 所有的数字都是双精度浮点型。 -- 别害怕，64位的双精度浮点型数字中有52位用于 -- 保存精确的整型值; 对于52位以内的整型值， -- 不用担心精度问题。 s = &#39;walternate&#39; -- 和Python一样，字符串不可变。 t = &#34;也可以用双引号&#34; u = [[ 多行的字符串 以两个方括号 开始和结尾。]] t = nil -- 撤销t的定义; Lua 支持垃圾回收。 -- 块使用do/end之类的关键字标识： while num &lt; 50 do num = num &#43; 1 -- 不支持 &#43;&#43; 或 &#43;= 运算符。 end -- If语句： if num &gt; 40 then print(&#39;over 40&#39;) elseif s ~= &#39;walternate&#39; then -- ~= 表示不等于。 -- 像Python一样，用 == 检查是否相等 ；字符串同样适用。 io." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/learn-lua-in-x-minutes/" />
-<meta property="article:modified_time" content="2021-02-13T16:29:07+08:00" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/learn-lua-in-x-minutes/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2021-02-13T16:29:07&#43;08:00" />
+
 <title>X 分钟速成 Lua | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/note-cs/book.min.47e4577a72cc9340ba815ebf8200a2e1642b6e7a28caf0622c921ba9d7c4478e.css" integrity="sha256-R&#43;RXenLMk0C6gV6/ggCi4WQrbnooyvBiLJIbqdfER44=">
-<script defer src="/note-cs/en.search.min.589f25dc869ddfe608bfa631b6f045c81c65036279c44ed6486e660d859b3c13.js" integrity="sha256-WJ8l3Iad3&#43;YIv6YxtvBFyBxlA2J5xE7WSG5mDYWbPBM="></script>
+<link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
+<script defer src="/note-cs/en.search.min.88a3f457789ae42e1cf8496b1f5762bd4e9b7869ec84c27c7a6391ca60e4c71e.js" integrity="sha256-iKP0V3ia5C4c&#43;ElrH1divU6beGnshMJ8emORymDkxx4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15073,7 +15075,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  

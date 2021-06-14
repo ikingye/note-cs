@@ -4,11 +4,7 @@
     <title>第二部分 设计 on 计算机学习笔记</title>
     <link>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/</link>
     <description>Recent content in 第二部分 设计 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>锁</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/lock/</link>

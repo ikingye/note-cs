@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.71.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="XSS #  Cross-site scripting 跨站脚本 (wiki)
@@ -15,13 +15,15 @@ XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就
 不仅仅是业务上的 “用户的 UGC 内容” 可以进行注入，包括 URL 上的参数等都可以是攻击的来源。在处理输入时，以下内容都不可信：
  来自用户的 UGC 信息 来自第三方的链接 URL 参数 POST 参数 Referer （可能来自不可信的来源） Cookie （可能来自其他子域注入）  XSS 有哪些注入的方法 #   在 HTML 中内嵌的文本中，恶意内容以 script 标签形成注入。 在内联的 JavaScript 中，拼接的数据突破了原本的限制（字符串，变量，方法名等）。 在标签属性中，恶意内容包含引号，从而突破属性值的限制，注入其他属性或者标签。 在标签的 href、src 等属性中，包含 javascript: 等可执行代码。 在 onload、onerror、onclick 等事件中，注入不受控制代码。 在 style 属性和标签中，包含类似 background-image:url(&quot;javascript:...&quot;); 的代码（新版本浏览器已经可以防范）。 在 style 属性和标签中，包含类似 expression(...) 的 CSS 表达式代码（新版本浏览器已经可以防范）。   XSS 分类 #  存储型 #  存储型 XSS 的攻击步骤：" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/security/basic/xss/" />
-<meta property="article:modified_time" content="2020-07-02T01:34:57+08:00" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/direction/security/basic/xss/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2020-07-02T01:34:57&#43;08:00" />
+
 <title>XSS | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/note-cs/book.min.47e4577a72cc9340ba815ebf8200a2e1642b6e7a28caf0622c921ba9d7c4478e.css" integrity="sha256-R&#43;RXenLMk0C6gV6/ggCi4WQrbnooyvBiLJIbqdfER44=">
-<script defer src="/note-cs/en.search.min.589f25dc869ddfe608bfa631b6f045c81c65036279c44ed6486e660d859b3c13.js" integrity="sha256-WJ8l3Iad3&#43;YIv6YxtvBFyBxlA2J5xE7WSG5mDYWbPBM="></script>
+<link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
+<script defer src="/note-cs/en.search.min.88a3f457789ae42e1cf8496b1f5762bd4e9b7869ec84c27c7a6391ca60e4c71e.js" integrity="sha256-iKP0V3ia5C4c&#43;ElrH1divU6beGnshMJ8emORymDkxx4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15079,7 +15081,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  

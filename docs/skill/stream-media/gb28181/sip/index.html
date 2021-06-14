@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.71.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
@@ -15,13 +15,15 @@ CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区�
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
  包内容 #  Message #  Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &lt;sip:34020000001320000001@3402000000&gt;;tag=676399389 To: &lt;sip:34020000002000000001@3402000000&gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP&#43;xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &lt;?xml version=&#34;1.0&#34; encoding=&#34;GB2312&#34;?&gt;\n &lt;Notify&gt;\n &lt;CmdType&gt;Keepalive&lt;/CmdType&gt;\n &lt;SN&gt;123&lt;/SN&gt;\n &lt;DeviceID&gt;34020000001320000001&lt;/DeviceID&gt;\n &lt;Status&gt;OK&lt;/Status&gt;\n &lt;Info&gt;\n &lt;/Info&gt;\n &lt;/Notify&gt;\n Bye #  同一个会话，CSeq 要 &#43;1" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sip/" />
-<meta property="article:modified_time" content="2020-10-20T17:53:15+08:00" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sip/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2020-10-20T17:53:15&#43;08:00" />
+
 <title>SIP | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/note-cs/book.min.47e4577a72cc9340ba815ebf8200a2e1642b6e7a28caf0622c921ba9d7c4478e.css" integrity="sha256-R&#43;RXenLMk0C6gV6/ggCi4WQrbnooyvBiLJIbqdfER44=">
-<script defer src="/note-cs/en.search.min.589f25dc869ddfe608bfa631b6f045c81c65036279c44ed6486e660d859b3c13.js" integrity="sha256-WJ8l3Iad3&#43;YIv6YxtvBFyBxlA2J5xE7WSG5mDYWbPBM="></script>
+<link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
+<script defer src="/note-cs/en.search.min.88a3f457789ae42e1cf8496b1f5762bd4e9b7869ec84c27c7a6391ca60e4c71e.js" integrity="sha256-iKP0V3ia5C4c&#43;ElrH1divU6beGnshMJ8emORymDkxx4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15079,7 +15081,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  

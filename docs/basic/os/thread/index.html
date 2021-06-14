@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.71.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="线程 #  栈通常是连续增长的，由于每个进程中的各个线程共享虚拟内存空间，当有多个线程时，就需要为每个线程分配不同起始地址的栈。 这就需要在分配栈之前先预估每个线程栈的大小。
@@ -15,13 +15,15 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
 Split Stacks #  为了解决这个问题，就有了 Split Stacks 技术： 创建栈时，只分配一块比较小的内存，如果进行某次函数调用导致栈空间不足时，就会在其他地方分配一块新的栈空间。 新的空间不需要和老的栈空间连续。函数调用的参数会拷贝到新的栈空间中，接下来的函数执行都在新栈空间中进行。
 Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高的效率，使用了 Golang 连续栈。 实现方式也是先分配一块固定大小的栈，在栈空间不足时，分配一块更大的栈，并把旧的栈全部拷贝到新栈中。 这样避免了 Split Stacks 方法可能导致的频繁内存分配和释放。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/os/thread/" />
-<meta property="article:modified_time" content="2020-07-06T16:30:05+08:00" />
+<meta property="og:url" content="https://ikingye.github.io/note-cs/docs/basic/os/thread/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2020-07-06T16:30:05&#43;08:00" />
+
 <title>线程 | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/note-cs/book.min.47e4577a72cc9340ba815ebf8200a2e1642b6e7a28caf0622c921ba9d7c4478e.css" integrity="sha256-R&#43;RXenLMk0C6gV6/ggCi4WQrbnooyvBiLJIbqdfER44=">
-<script defer src="/note-cs/en.search.min.589f25dc869ddfe608bfa631b6f045c81c65036279c44ed6486e660d859b3c13.js" integrity="sha256-WJ8l3Iad3&#43;YIv6YxtvBFyBxlA2J5xE7WSG5mDYWbPBM="></script>
+<link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
+<script defer src="/note-cs/en.search.min.88a3f457789ae42e1cf8496b1f5762bd4e9b7869ec84c27c7a6391ca60e4c71e.js" integrity="sha256-iKP0V3ia5C4c&#43;ElrH1divU6beGnshMJ8emORymDkxx4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15079,7 +15081,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  

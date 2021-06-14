@@ -4,11 +4,7 @@
     <title>3.2 大数据 on 计算机学习笔记</title>
     <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/</link>
     <description>Recent content in 3.2 大数据 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://ikingye.github.io/note-cs/docs/domain/bigdata/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/domain/bigdata/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flink</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/flink/</link>

@@ -4,11 +4,7 @@
     <title>ONVIF on 计算机学习笔记</title>
     <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/</link>
     <description>Recent content in ONVIF on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>设备发现</title>
       <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/discovery/</link>
