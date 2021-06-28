@@ -19,7 +19,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.88a3f457789ae42e1cf8496b1f5762bd4e9b7869ec84c27c7a6391ca60e4c71e.js" integrity="sha256-iKP0V3ia5C4c&#43;ElrH1divU6beGnshMJ8emORymDkxx4="></script>
+<script defer src="/note-cs/en.search.min.da2b4a1d034d0d4b74407cebc478bb04d40a21808814053c4b9561c2c4c14ec4.js" integrity="sha256-2itKHQNNDUt0QHzrxHi7BNQKIYCIFAU8S5VhwsTBTsQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15233,12 +15233,26 @@ cp /Users/yewang/.gvm/pkgsets/go1.15.10/global/pkg/mod/github.com/gopherdata/gop
   <a class="anchor" href="#litipkjupyter-phphttpsgithubcomlitipkjupyter-php-github-starshttpsimgshieldsiogithubstarslitipkjupyter-phpsvg">#</a>
 </h4>
 <ul>
-<li>要安装 zmq
+<li>先安装 zmq
 <ul>
-<li><code>php72 -m | grep</code></li>
+<li>查看扩展是否存在：<code>php74 -m | grep zmq</code></li>
+<li>不存在就需要安装
+<a href="https://github.com/Litipk/Jupyter-PHP">Litipk/Jupyter-PHP</a> <img src="https://img.shields.io/github/stars/Litipk/Jupyter-PHP.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/Litipk/Jupyter-PHP.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/Litipk/Jupyter-PHP.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/Litipk/Jupyter-PHP.svg" alt="Last commit" />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone git://github.com/mkoppanen/php-zmq.git
+cd php-zmq
+phpize74 <span style="color:#f92672">&amp;&amp;</span> configure74
+make <span style="color:#f92672">&amp;&amp;</span> make install
+</code></pre></div><ul>
+<li>修改 <code>php.ini</code>，添加 <code>extension=zmq</code>
+<ul>
+<li><code>php -ini</code> 查看 <code>php.ini</code> 文件位置</li>
 </ul>
 </li>
-<li><code>phpto72</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>phpto74</code></li>
 <li><code>php jupyter-php-installer.phar install -vvv</code>
 <ul>
 <li>使用 <code>-vvv</code> 查看详细信息</li>
