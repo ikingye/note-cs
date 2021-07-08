@@ -167,15 +167,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>基础</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/basic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/basic/</guid>
-      <description>基础面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>基础</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -405,15 +396,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/advanced/</guid>
-      <description>进阶面试题 #  </description>
-    </item>
-    
-    <item>
-      <title>进阶</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/advanced/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/advanced/</guid>
       <description>进阶面试题 #  </description>
     </item>
     
@@ -872,6 +854,15 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
     </item>
     
     <item>
+      <title>C&#43;&#43;</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</guid>
+      <description>C++ 学习笔记 #  见：C++ 学习笔记</description>
+    </item>
+    
+    <item>
       <title>2.2.5.1.1 protobuf</title>
       <link>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/protobuf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -949,15 +940,6 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/tutorial/</guid>
-      <description>教程 #  基础 #   进阶 #  </description>
-    </item>
-    
-    <item>
-      <title>4.1 教程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</guid>
       <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
@@ -1361,6 +1343,15 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
     </item>
     
     <item>
+      <title>Go</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/go/</guid>
+      <description>Go 学习笔记 #  见：Go 学习笔记</description>
+    </item>
+    
+    <item>
       <title>H264</title>
       <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/h264/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1595,15 +1586,6 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
     
     <item>
       <title>4.3 关注项目</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</guid>
-      <description>关注项目 #  </description>
-    </item>
-    
-    <item>
-      <title>4.3 关注项目</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1681,6 +1663,15 @@ CNCF Serverless Landscape #
     </item>
     
     <item>
+      <title>Java</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/</guid>
+      <description>Java #  见：Java 学习笔记</description>
+    </item>
+    
+    <item>
       <title>OpenShift</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1711,6 +1702,24 @@ Openshift 没有 root 权限
       <guid>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/canary-rollouts/</guid>
       <description>金丝雀发布 #  canary rollouts
  参考 #  </description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/</guid>
+      <description>JavaScript #  见：JavaScript 学习笔记</description>
+    </item>
+    
+    <item>
+      <title>Kotlin</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/</guid>
+      <description>Kotlin 学习笔记 #  见：Kotlin 学习笔记</description>
     </item>
     
     <item>
@@ -1800,6 +1809,15 @@ cloudfoundry/uaa #  CloudFoundry User Account and Authentication (UAA) Server
     </item>
     
     <item>
+      <title>PHP</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/</guid>
+      <description>PHP #  见：PHP 学习笔记</description>
+    </item>
+    
+    <item>
       <title>Spark</title>
       <link>https://ikingye.github.io/note-cs/docs/domain/bigdata/spark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1883,15 +1901,6 @@ TCC 分布式事务框架，比如国内开源的
     
     <item>
       <title>版本</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/version/</guid>
-      <description>版本 #  版本历史 #  </description>
-    </item>
-    
-    <item>
-      <title>版本</title>
       <link>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/others/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1942,6 +1951,24 @@ TCC 分布式事务框架，比如国内开源的
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/version/</guid>
       <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/python/</guid>
+      <description>Python #  见：Python 学习笔记</description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://ikingye.github.io/note-cs/docs/basic/pl/rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/</guid>
+      <description>Rust #  见：Rust 学习笔记</description>
     </item>
     
     <item>

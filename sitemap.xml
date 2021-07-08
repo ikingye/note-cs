@@ -85,9 +85,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/</loc>
-    <lastmod>2020-07-16T20:45:25+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
@@ -214,9 +211,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/basic/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/basic/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/basic/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -337,9 +331,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -381,9 +372,6 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/advanced/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/advanced/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/advanced/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
@@ -532,9 +520,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/</loc>
     <lastmod>2021-03-11T20:32:59+08:00</lastmod>
   </url><url>
@@ -639,9 +624,6 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
@@ -785,7 +767,6 @@
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
@@ -817,9 +798,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/grammar/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/grammar/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/grammar/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -845,9 +823,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/grammar/type/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/grammar/type/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/grammar/type/</loc>
@@ -878,9 +853,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/pattern/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/pattern/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/pattern/</loc>
@@ -946,9 +918,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/type/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/type/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/type/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -992,9 +961,6 @@
     <lastmod>2020-12-28T20:51:26+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/tutorial/</loc>
-    <lastmod>2020-12-28T20:51:26+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/tutorial/</loc>
     <lastmod>2020-12-28T20:51:26+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/</loc>
@@ -1270,9 +1236,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/grammar/keyword/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/grammar/keyword/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/grammar/keyword/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -1301,9 +1264,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/std/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/std/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/std/</loc>
@@ -1340,9 +1300,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/algs/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/algs/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/algs/</loc>
@@ -1396,9 +1353,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/keyword/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/keyword/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/keyword/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -1442,9 +1396,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/interview/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/interview/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/interview/</loc>
@@ -1541,7 +1492,6 @@
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/go/</loc>
-    <lastmod>2020-04-28T15:08:01+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/h264/</loc>
     <lastmod>2020-10-20T17:53:15+08:00</lastmod>
@@ -1668,9 +1618,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/spec/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/spec/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/spec/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -1725,9 +1672,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/pkg/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/pkg/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/pkg/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -1758,9 +1702,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/code/runtime/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/code/runtime/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/code/runtime/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -1786,9 +1727,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/appendix/attention/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/appendix/attention/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/attention/</loc>
@@ -1837,7 +1775,6 @@
     <lastmod>2020-10-10T16:08:10+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/java/</loc>
-    <lastmod>2020-06-28T23:53:53+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/course/cc/kubernetes/</loc>
     <lastmod>2020-12-09T21:18:05+08:00</lastmod>
@@ -1894,10 +1831,8 @@
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/</loc>
-    <lastmod>2020-08-04T23:50:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/</loc>
-    <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/</loc>
     <lastmod>2021-03-11T20:32:59+08:00</lastmod>
@@ -1912,9 +1847,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/others/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/others/</loc>
@@ -1957,9 +1889,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/snippet/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/snippet/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/snippet/</loc>
@@ -2008,7 +1937,7 @@
     <lastmod>2021-01-31T23:35:20+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/</loc>
-    <lastmod>2020-04-28T14:53:39+08:00</lastmod>
+    <lastmod>2021-07-08T00:54:11+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -2023,9 +1952,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/test/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/test/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/test/</loc>
@@ -2083,7 +2009,6 @@
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/</loc>
-    <lastmod>2020-07-13T20:08:02+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/spark/</loc>
     <lastmod>2020-10-04T00:15:37+08:00</lastmod>
@@ -2130,9 +2055,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/basic/others/version/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/basic/others/version/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/basic/others/version/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
@@ -2158,7 +2080,6 @@
     <lastmod>2020-10-21T11:51:25+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/python/</loc>
-    <lastmod>2020-06-28T23:53:53+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
@@ -2179,9 +2100,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/prof/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/prof/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/prof/</loc>
@@ -2215,7 +2133,6 @@
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/</loc>
-    <lastmod>2020-08-04T23:50:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
@@ -2233,9 +2150,6 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/advanced/frame/</loc>
-    <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/advanced/frame/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/advanced/frame/</loc>
@@ -2421,7 +2335,7 @@
     <loc>https://ikingye.github.io/note-cs/categories/</loc>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2021-07-07T20:23:31+08:00</lastmod>
+    <lastmod>2021-07-08T00:54:11+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/tags/</loc>
   </url><url>
