@@ -5,7 +5,7 @@
     <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/zh/</loc>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/linux/</loc>
-    <lastmod>2020-10-10T16:08:10+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/ps/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
@@ -680,7 +680,7 @@
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/gcc/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
@@ -767,6 +767,7 @@
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
@@ -877,7 +878,7 @@
     <lastmod>2021-07-07T14:53:11+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/</loc>
-    <lastmod>2021-02-13T17:23:39+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/html/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -1492,6 +1493,7 @@
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/go/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/h264/</loc>
     <lastmod>2020-10-20T17:53:15+08:00</lastmod>
@@ -1572,7 +1574,7 @@
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/</loc>
-    <lastmod>2021-05-24T20:33:48+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -1607,7 +1609,7 @@
     <lastmod>2020-05-11T21:57:57+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/algs/</loc>
-    <lastmod>2020-04-28T15:08:01+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/spec/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1772,15 +1774,16 @@
     <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/istio/</loc>
-    <lastmod>2020-10-10T16:08:10+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/java/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/course/cc/kubernetes/</loc>
     <lastmod>2020-12-09T21:18:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/kubernetes/</loc>
-    <lastmod>2020-08-04T23:50:32+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/activity/kubernetes-scheduler/</loc>
     <lastmod>2020-10-13T22:45:58+08:00</lastmod>
@@ -1831,8 +1834,10 @@
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/</loc>
     <lastmod>2021-03-11T20:32:59+08:00</lastmod>
@@ -1868,7 +1873,7 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/network/</loc>
-    <lastmod>2020-04-28T15:08:01+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/pulsar/</loc>
     <lastmod>2021-02-28T14:38:57+08:00</lastmod>
@@ -2009,6 +2014,7 @@
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/php/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/spark/</loc>
     <lastmod>2020-10-04T00:15:37+08:00</lastmod>
@@ -2080,6 +2086,7 @@
     <lastmod>2020-10-21T11:51:25+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/python/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
@@ -2133,6 +2140,7 @@
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/</loc>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
@@ -2255,7 +2263,7 @@
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web/</loc>
-    <lastmod>2021-01-31T23:35:20+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -2335,7 +2343,7 @@
     <loc>https://ikingye.github.io/note-cs/categories/</loc>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2021-07-08T00:54:11+08:00</lastmod>
+    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/tags/</loc>
   </url><url>

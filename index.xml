@@ -786,7 +786,7 @@ telnet domain/ip [port] telnet 退出 #   按 CTRL + ] 然后输入 quit  </desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/c/</guid>
-      <description>C 学习笔记 #  见：C 学习笔记</description>
+      <description>C 学习笔记 #  更多内容见：C 学习笔记</description>
     </item>
     
     <item>
@@ -859,7 +859,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/cpp/</guid>
-      <description>C++ 学习笔记 #  见：C++ 学习笔记</description>
+      <description>C++ 学习笔记 #  更多内容见：C++ 学习笔记</description>
     </item>
     
     <item>
@@ -1348,7 +1348,7 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/go/</guid>
-      <description>Go 学习笔记 #  见：Go 学习笔记</description>
+      <description>Go 学习笔记 #  更多内容见：Go 学习笔记</description>
     </item>
     
     <item>
@@ -1496,7 +1496,7 @@ ERROR: permission denied for relation hycom 权限被拒绝</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/domain/ai/ml/</guid>
-      <description>机器学习 #  见：Machine Learning 学习笔记</description>
+      <description>机器学习 #  更多内容见：Machine Learning 学习笔记</description>
     </item>
     
     <item>
@@ -1668,7 +1668,7 @@ CNCF Serverless Landscape #
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/java/</guid>
-      <description>Java #  见：Java 学习笔记</description>
+      <description>Java #  更多内容见：Java 学习笔记</description>
     </item>
     
     <item>
@@ -1710,7 +1710,7 @@ Openshift 没有 root 权限
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/javascript/</guid>
-      <description>JavaScript #  见：JavaScript 学习笔记</description>
+      <description>JavaScript #  更多内容见：JavaScript 学习笔记</description>
     </item>
     
     <item>
@@ -1719,7 +1719,7 @@ Openshift 没有 root 权限
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/kotlin/</guid>
-      <description>Kotlin 学习笔记 #  见：Kotlin 学习笔记</description>
+      <description>Kotlin 学习笔记 #  更多内容见：Kotlin 学习笔记</description>
     </item>
     
     <item>
@@ -1814,7 +1814,7 @@ cloudfoundry/uaa #  CloudFoundry User Account and Authentication (UAA) Server
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/php/</guid>
-      <description>PHP #  见：PHP 学习笔记</description>
+      <description>PHP #  更多内容见：PHP 学习笔记</description>
     </item>
     
     <item>
@@ -1959,7 +1959,7 @@ TCC 分布式事务框架，比如国内开源的
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/python/</guid>
-      <description>Python #  见：Python 学习笔记</description>
+      <description>Python #  更多内容见：Python 学习笔记</description>
     </item>
     
     <item>
@@ -1968,7 +1968,7 @@ TCC 分布式事务框架，比如国内开源的
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/note-cs/docs/basic/pl/rust/</guid>
-      <description>Rust #  见：Rust 学习笔记</description>
+      <description>Rust #  更多内容见：Rust 学习笔记</description>
     </item>
     
     <item>
