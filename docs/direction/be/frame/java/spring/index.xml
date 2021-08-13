@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring on 计算机学习笔记</title>
+    <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/</link>
+    <description>Recent content in Spring on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring Boot</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-boot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-boot/</guid>
+      <description>Spring Boot #  教程 #  ityouknow/spring-boot-examples #  Spring Boot 教程、技术栈示例代码，快速简单上手教程。</description>
+    </item>
+    
+    <item>
+      <title>Spring Cloud</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</guid>
+      <description>Spring Cloud #  教程 #  ityouknow/spring-cloud-examples #  Spring Cloud 学习案例，服务发现、服务治理、链路追踪、服务监控等</description>
+    </item>
+    
+    <item>
+      <title>Spring MVC</title>
+      <link>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</guid>
+      <description>Spring MVC #  </description>
+    </item>
+    
+  </channel>
+</rss>
