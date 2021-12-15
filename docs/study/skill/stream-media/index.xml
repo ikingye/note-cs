@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.5 流媒体 on 计算机学习笔记</title>
+    <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/</link>
+    <description>Recent content in 4.5 流媒体 on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/study/skill/stream-media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VoIP</title>
+      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/voip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/voip/</guid>
+      <description>VoIP #  VoIP vs SIP #  In simple terms, VoIP means making or receiving phone calls over the internet or internal networks. SIP, on the other hand, is an application layer protocol that is used to establish, modify and terminate multimedia sessions such as VoIP calls.
+A major difference between VoIP and SIP is their scope. VoIP is not a discrete technology in its own right. Rather, it is actually a family of technologies used within modern telecommunication networks, whereas SIP is a signalling protocol used within the VoIP umbrella.</description>
+    </item>
+    
+    <item>
+      <title>EasyDarwin</title>
+      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/easydarwin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/easydarwin/</guid>
+      <description>EasyDarwin #  EasyDarwin 是基于 Apple 的开源项目 Darwin Streaming Server 衍生而来的， Darwin 本身支持的是 RTSP 流媒体协议
+macosforge/dss #  Darwin Streaming Server is Apple&amp;rsquo;s open source version of the QuickTime Streaming Server technology allowing you to send streaming media across the Internet using the industry standard RTP and RTSP protocols.
+ EasyDarwin 生态 #   EasyDarwin 开源流媒体服务器：www.EasyDarwin.org EasyDSS 商用流媒体解决方案：www.EasyDSS.com, 点播与直播服务器  EasyBMS EasyRMS, 录播服务器   EasyNVR 无插件直播方案：www.EasyNVR.com, 摄像机互联网直播服务  EasyGB28181Server #  EasyNVR 采用的是 Onvif 协议接入云平台， 而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台</description>
+    </item>
+    
+    <item>
+      <title>SRS</title>
+      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/srs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/srs/</guid>
+      <description>SRS #  ossrs/srs SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable and simple.
+配置信息 #  </description>
+    </item>
+    
+    <item>
+      <title>ZLMediaKit</title>
+      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/zlmediakit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/zlmediakit/</guid>
+      <description>ZLMediaKit #  xiongziliang/ZLMediaKit # h264推流 ffmpeg -re -i &amp;#34;/path/to/test.mp4&amp;#34; -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test ffmpeg -re -stream_loop -1 -i carbrand.MOV -vcodec h264 -acodec aac -f rtp_mpegts rtp://127.0.0.1:10000 rtsp __defaultVhost__ rtp 55667788 CodecH264[1920/1080/50] rtsp://127.0.0.1/rtp/55667788 </description>
+    </item>
+    
+  </channel>
+</rss>

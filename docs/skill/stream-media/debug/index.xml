@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Debug on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/</link>
-    <description>Recent content in Debug on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>

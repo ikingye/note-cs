@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/zh/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/github/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/pl/go-in-action/zh/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/linux/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
@@ -16,11 +20,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/sh/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/zh/</loc>
-    <lastmod>2020-05-11T21:57:57+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/others/practical-vim/zh/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/storage/imagehost/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/storage/imagehost/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/deploy/install/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/practice/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -57,9 +64,6 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/basic/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/basic/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
@@ -139,6 +143,9 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/basic/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/basic/practice/spec/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
@@ -178,14 +185,17 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/bash/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/theme/academic/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/hugo/theme/academic/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/makefile/</loc>
     <lastmod>2020-09-01T15:17:23+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/type/markdown/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/type/markdown/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/basic/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -265,8 +275,8 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/basic/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/cc/csapp/</loc>
-    <lastmod>2020-12-11T20:51:54+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/cc/csapp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/priciple/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -282,9 +292,6 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/priciple/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/direction/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mysql/design/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -348,6 +355,9 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/advanced/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -427,17 +437,17 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/advanced/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/config/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/hugo/config/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/cmake/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/be/Designing-Data-Intensive-Applications/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/be/Designing-Data-Intensive-Applications/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/theme/hugo-book/</loc>
-    <lastmod>2021-05-06T13:43:36+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/hugo/theme/hugo-book/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/kill/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
@@ -451,14 +461,17 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/netstat/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/telnet/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/theme/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/hugo/theme/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/source/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -538,8 +551,8 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/code/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/expert/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -592,14 +605,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/expert/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/mqtt/mosquitto/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/unix/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
@@ -679,17 +692,26 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/appendix/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/c/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/gcc/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/</loc>
-    <lastmod>2021-01-06T17:53:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/debug/gdb/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/basic/build/gulp/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/concept/crd/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/compile/make/</loc>
     <lastmod>2020-03-29T14:03:40+08:00</lastmod>
@@ -742,20 +764,17 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/basic/spec/baidu/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/</loc>
-    <lastmod>2020-09-22T14:19:35+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/study/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/study/tutorial/</loc>
-    <lastmod>2021-02-28T15:54:53+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/cc/sicp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/cc/sicp/</loc>
-    <lastmod>2020-09-16T09:00:27+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/principle/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/design/lock/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/dotnet/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
@@ -772,9 +791,6 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/nodejs/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/activity/</loc>
-    <lastmod>2020-10-13T22:56:41+08:00</lastmod>
-  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/basic/cmd/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
@@ -784,8 +800,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/ios/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/type/pdf/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/type/pdf/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/source/1.0.0/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/quick/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/computer-composition/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
@@ -877,8 +899,11 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/</loc>
     <lastmod>2021-07-07T14:53:11+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/deploy/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/</loc>
-    <lastmod>2021-07-26T17:18:22+08:00</lastmod>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/html/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -906,6 +931,9 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/android/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/istio/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
@@ -937,8 +965,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/code/type/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/istio/structure/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/tutorial/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
@@ -1018,23 +1052,26 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/tutorial/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/appendix/tutorial/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/cc/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/cc/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/edge/5g-edge/</loc>
     <lastmod>2020-05-30T23:58:44+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/cc/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/cc/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -1045,11 +1082,11 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/</loc>
     <lastmod>2020-06-07T14:19:38+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/cpp/</loc>
-    <lastmod>2020-07-30T15:13:18+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/pl/cpp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/cpp/cpp-faq/</loc>
-    <lastmod>2020-07-30T15:13:18+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/pl/cpp/cpp-faq/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/cap/</loc>
     <lastmod>2020-07-10T15:45:38+08:00</lastmod>
@@ -1057,8 +1094,11 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/sso/cas/</loc>
     <lastmod>2020-08-04T11:48:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/codelabs/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/codelabs/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/ssh/config/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
@@ -1066,20 +1106,35 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/type/dash/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/type/epub/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/gdb/tutorial/</loc>
-    <lastmod>2021-01-06T17:53:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/api/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/</loc>
-    <lastmod>2020-07-26T09:52:12+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/filter/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/go-wiki/</loc>
-    <lastmod>2020-07-26T09:52:12+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/type/epub/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/hugo/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/debug/gdb/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/git/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/git/config/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/pl/go/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/pl/go/go-wiki/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/hugo/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/hyperkit/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
@@ -1087,20 +1142,32 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/iaas/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/jupyter/</loc>
-    <lastmod>2021-06-28T15:27:25+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/jaeger/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/lldb/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/jupyter/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/lldb/tutorial/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kong-ingress/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/multipass/</loc>
-    <lastmod>2020-11-05T11:26:13+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/network/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/debug/lldb/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/debug/lldb/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/network/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/nginx/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/oauth/</loc>
     <lastmod>2020-07-16T00:26:43+08:00</lastmod>
@@ -1108,17 +1175,23 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/openid/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/openresty/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/istio/pilot/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web/rest/</loc>
     <lastmod>2021-01-31T23:35:20+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtmp/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtp/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/rtsp/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/ruby/advanced/frame/rainls/</loc>
     <lastmod>2020-08-31T14:16:34+08:00</lastmod>
@@ -1126,20 +1199,32 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/crm/salesforce/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/ssh/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/source/type/string/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/git/submodule/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/vmware/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/webrtc/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/5/vscode/</loc>
+    <lastmod>2021-12-10T14:12:44+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/lua/appendix/tutorial/learn-lua-in-x-minutes/</loc>
     <lastmod>2021-02-13T16:29:07+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/command/xargs/</loc>
     <lastmod>2021-03-11T12:47:57+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web/xml/</loc>
     <lastmod>2021-01-31T23:35:20+08:00</lastmod>
@@ -1150,8 +1235,20 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/cn/</loc>
     <lastmod>2020-11-26T11:16:50+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/5/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/creational/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/principle/srp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/</loc>
     <lastmod>2020-07-10T15:45:38+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/quick/install/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/basic/practice/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -1162,8 +1259,26 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/basic/practice/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/flowchart/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/graphviz/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/latex/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/mermaid/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/plantuml/tutorial/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/circuit-breaker/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
@@ -1173,6 +1288,9 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/spec/baidu/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/basic/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/basic/spec/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -1189,8 +1307,8 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/windows/basic/spec/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/discovery/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/discovery/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/grammer/</loc>
     <lastmod>2020-09-25T11:27:18+08:00</lastmod>
@@ -1198,20 +1316,23 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/edge/</loc>
     <lastmod>2020-05-30T23:58:44+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/adapter/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/go/gobyexample/</loc>
-    <lastmod>2020-07-26T09:52:12+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/type/mobi/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/pl/go/gobyexample/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/type/mobi/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/type/azw3/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/type/azw3/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/saas/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
@@ -1222,11 +1343,20 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/gae/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-advanced-programming/</loc>
-    <lastmod>2021-04-08T11:52:23+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/pl/go-advanced-programming/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/package-manager/brew/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/r/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/package-manager/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/hhkb/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/grammar/keyword/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1256,7 +1386,7 @@
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/</loc>
-    <lastmod>2020-07-06T13:17:19+08:00</lastmod>
+    <lastmod>2021-09-13T14:18:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/std/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1285,6 +1415,9 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/std/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/concept/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/spec/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
   </url><url>
@@ -1293,6 +1426,9 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/</loc>
     <lastmod>2021-07-07T20:23:31+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/tool/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/algs/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1375,6 +1511,9 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/</loc>
     <lastmod>2021-08-01T12:20:58+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/appendix/interview/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
@@ -1453,32 +1592,50 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/security/appendix/interview/</loc>
     <lastmod>2020-07-16T20:45:25+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/4g/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/appendix/interview/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/os/</loc>
-    <lastmod>2020-05-06T22:01:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/4g/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/be/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/os/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/communication/5g/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/be/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/os/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/5g/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/be/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/os/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/be/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/acid/</loc>
     <lastmod>2020-07-10T15:45:38+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/application/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ambassador/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/concept/api-resources/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/application/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/axure/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/principle/base/</loc>
     <lastmod>2020-07-10T15:45:38+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/linux/4/cargo/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/cpu/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -1495,17 +1652,20 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/go/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/h264/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/5/goland/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/h264/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/heroku/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/hls/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/hls/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/http-flv/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/</loc>
     <lastmod>2020-06-10T15:17:31+08:00</lastmod>
@@ -1513,8 +1673,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/jwt/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/linux/4/k3d/</loc>
+    <lastmod>2021-11-01T20:49:55+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/php/laravel/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/linux/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/redis/source/type/list/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -1522,11 +1688,20 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/search/lucene/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/mpeg/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/mas/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/onenote/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/linux/4/microk8s/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/linux/4/multipass/</loc>
+    <lastmod>2021-12-10T14:12:44+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/onenote/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/parallels/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
@@ -1534,11 +1709,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/php/</loc>
     <lastmod>2020-05-21T09:57:22+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/picgo/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/prometheus/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/ps/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/ps/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/python/</loc>
     <lastmod>2020-06-10T01:25:01+08:00</lastmod>
@@ -1555,26 +1733,59 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</loc>
     <lastmod>2020-06-10T15:17:31+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/tmux/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/traefik/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/uml/</loc>
     <lastmod>2020-05-11T23:32:11+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/vim/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/virtualbox/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/activity/istio-handbook/</loc>
-    <lastmod>2020-10-13T22:56:41+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/activity/istio-handbook/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/memory/</loc>
     <lastmod>2020-07-06T16:30:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/storage/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/command/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/linux/4/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/storage/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/practice/error/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/other/concurrency/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/principle/ocp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/ai/ml/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/creational/builder/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/bridge/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -1582,8 +1793,11 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/spec/baidu/</loc>
     <lastmod>2020-08-27T16:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/ai/baidu-aistudio/</loc>
-    <lastmod>2020-10-15T06:01:54+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/ai/baidu-aistudio/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/thread/</loc>
     <lastmod>2020-07-06T16:30:05+08:00</lastmod>
@@ -1594,8 +1808,8 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/process/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/ai/baidu-aistudio/deep-learning-from-beginning/</loc>
-    <lastmod>2020-10-15T06:01:54+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/ai/baidu-aistudio/deep-learning-from-beginning/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/haskell/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1603,13 +1817,17 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/servicecomb/</loc>
     <lastmod>2020-10-25T01:20:59+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/go-in-action/</loc>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/pl/go-in-action/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/others/practical-vim/</loc>
-    <lastmod>2020-05-11T21:57:57+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/others/practical-vim/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/algs/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/spec/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1664,6 +1882,9 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/feature/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/pkg/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1752,47 +1973,86 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/cn/attention/</loc>
     <lastmod>2020-07-14T23:45:15+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/algs/</loc>
-    <lastmod>2020-05-06T22:01:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/appendix/attention/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/fe/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/algs/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/algs/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/fe/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/fe/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/algs/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/fe/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/ab-testing/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/debug/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/contour/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/gitbook/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/debug/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/gitbook/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/5/idea/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/istio/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/java/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
-  </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/cc/kubernetes/</loc>
-    <lastmod>2020-12-09T21:18:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/kubernetes/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/activity/kubernetes-scheduler/</loc>
-    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/cc/kubernetes/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/activity/kubernetes-scheduler/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/latex/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/linkerd/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/openshift/</loc>
     <lastmod>2020-07-13T17:36:09+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/plantuml/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/service-mesh/</loc>
     <lastmod>2020-05-31T22:33:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/skywalking/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web/soa/</loc>
     <lastmod>2021-01-31T23:35:20+08:00</lastmod>
@@ -1806,8 +2066,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/terraform/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/activity/csapp/</loc>
-    <lastmod>2020-10-13T22:45:58+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/windows/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/activity/csapp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/basic/practice/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -1827,8 +2093,29 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/xiaochengxu/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/creational/factory-method/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/composite/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/interpreter/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/virtual/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/principle/lsp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/canary-rollouts/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
@@ -1871,6 +2158,9 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/other/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/network/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
@@ -1917,17 +2207,20 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/client/</loc>
     <lastmod>2021-05-27T10:41:36+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/network/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/activity/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/security/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/network/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/network/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/security/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/security/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/network/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/security/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/ansible/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
@@ -1935,11 +2228,50 @@
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/cloud-foundry/</loc>
     <lastmod>2020-10-30T11:05:35+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/gloo/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/ios/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/mermaid/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/objective-c/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web/wsdl/</loc>
     <lastmod>2021-01-31T23:35:20+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/zipkin/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/principle/dip/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/creational/prototype/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/envoy/version/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/other/version/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/decorator/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/iterator/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/</loc>
     <lastmod>2021-07-08T00:54:11+08:00</lastmod>
@@ -1949,6 +2281,9 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/embedded/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/debug/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/advanced/test/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -1977,26 +2312,41 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/test/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/pl/</loc>
-    <lastmod>2020-05-06T22:01:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/se/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/pl/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/pl/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/se/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/se/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/pl/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/se/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/android/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/apisix/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/cc/others/paas/appfog/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/flink/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/flowchart/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/apps/macos/4/graphviz/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
@@ -2006,6 +2356,15 @@
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/hdfs/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/istio-ingress/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/kong/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ingress-nginx/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/domain/bigdata/hadoop/mapreduce/</loc>
     <lastmod>2020-06-02T11:45:38+08:00</lastmod>
@@ -2031,6 +2390,9 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</loc>
     <lastmod>2020-05-26T18:09:45+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/mediator/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/os/type/android/basic/snippet/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url><url>
@@ -2049,8 +2411,17 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</loc>
     <lastmod>2020-05-29T15:19:21+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/study/coding-online/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/creational/singleton/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/study/coding-online/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/facade/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/principle/isp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/csharp/basic/others/version/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
@@ -2079,11 +2450,14 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/basic/others/version/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/note/</loc>
-    <lastmod>2020-10-21T11:51:25+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/note/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/tool/study/</loc>
-    <lastmod>2020-10-21T11:51:25+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/other/simple-factory/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/tool/study/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/python/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
@@ -2127,26 +2501,50 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/prof/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/db/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/prof/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/cc/</loc>
-    <lastmod>2020-12-09T21:18:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/db/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/db/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/cc/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/cc/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/db/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/cc/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/haproxy/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/haproxy-ingress/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/mosn/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/rust/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/flyweight/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/release/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/memento/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/seckill/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/chain-of-responsibility/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/principle/lod/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/mp/</loc>
     <lastmod>2020-07-26T09:52:12+08:00</lastmod>
@@ -2178,20 +2576,29 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/advanced/frame/</loc>
     <lastmod>2020-08-10T17:53:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/basic/compile/</loc>
-    <lastmod>2020-05-06T22:01:05+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/test/test/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/bigdata/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/basic/compile/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/basic/compile/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/bigdata/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/bigdata/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/basic/compile/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/bigdata/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/cassandra/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/dapr/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/lightstep/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/db/mongodb/</loc>
     <lastmod>2020-10-20T11:41:11+08:00</lastmod>
@@ -2199,11 +2606,17 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/scala/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/structural/proxy/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/se/arch/scene/cache/</loc>
     <lastmod>2020-11-01T16:38:19+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/observer/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/shell/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
@@ -2211,20 +2624,32 @@
     <loc>https://ikingye.github.io/note-cs/docs/basic/pl/swift/</loc>
     <lastmod>2020-04-26T23:25:34+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/ai/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/ai/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/ai/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/ai/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/activemq/</loc>
     <lastmod>2020-10-16T18:18:24+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/bfe/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/brpc/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/chef/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/cilium/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/consul/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/Jenkins/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
@@ -2238,23 +2663,35 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/devops/saltstack/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/traefik-mesh/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/zeromq/</loc>
     <lastmod>2020-10-16T18:18:24+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/state/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/auth/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/book/others/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/code/source/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/course/others/</loc>
-    <lastmod>2020-04-16T22:39:44+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/book/others/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/course/others/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/fe/frame/jquery/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/motan/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kubernetes-ingress/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/microservices/rpc/tars/</loc>
     <lastmod>2020-09-23T11:22:05+08:00</lastmod>
@@ -2265,8 +2702,23 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/web/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/other/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/platform/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/strategy/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/quick/faq/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/quick/kiali/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/mq/mqtt/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
@@ -2280,74 +2732,83 @@
     <loc>https://ikingye.github.io/note-cs/docs/direction/be/search/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/type/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/type/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/chirpstack/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/claa/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/lorawan/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/lorawan/claa/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/ffmpeg/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/lorawan/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/direction/se/design-pattern/behavioral/visitor/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sdp/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/easegress/</loc>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/sip/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/ffmpeg/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/voip/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/protocal/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/sdp/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/packet/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/sip/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/gb28181/code/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/voip/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/gsoap/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/protocal/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/onvif/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/packet/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/easydarwin/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/code/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/srs/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/gsoap/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/zlmediakit/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/easydarwin/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/live-tech/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/srs/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://ikingye.github.io/note-cs/docs/skill/stream-media/stream-media/video-codec/</loc>
-    <lastmod>2020-10-20T17:53:15+08:00</lastmod>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/zlmediakit/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</loc>
+    <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/categories/</loc>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/docs/</loc>
-    <lastmod>2021-08-01T12:20:58+08:00</lastmod>
+    <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/tags/</loc>
   </url><url>
     <loc>https://ikingye.github.io/note-cs/</loc>
-    <lastmod>2020-03-01T13:33:41+08:00</lastmod>
+    <lastmod>2021-09-13T14:18:55+08:00</lastmod>
   </url>
 </urlset>
