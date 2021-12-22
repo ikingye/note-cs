@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>流媒体技术 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/</link>
+    <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/</link>
     <description>Recent content in 流媒体技术 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RTMP</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</guid>
       <description>RTMP #  Real-Time Messaging Protocol
 默认端口：1935
 握手 #  复杂握手 #   RTMP vs RTSP #  目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.
@@ -20,10 +20,10 @@
     
     <item>
       <title>RTP</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtp/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtp/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</guid>
       <description>RTP #  报文结构 #   Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header #  前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
  RTP/PS/H.264 #  基于 RTP 的 PS 封装 首先按照 ISO/IEC 13818-1:2000 将视音频封装成 PS 包， 再将 PS 包以负载的方式封装成 RTP 包。
 PS 包 #  进行 PS 封装时，将每个视频帧封装为一个PS 包， 且每个关键帧的 PS 包中包含系统头（System Header）和 PSM（Program Stream Map）。</description>
@@ -31,10 +31,10 @@ PS 包 #  进行 PS 封装时，将每个视频帧封装为一个PS 包， 且�
     
     <item>
       <title>RTSP</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</guid>
       <description>RTSP #  Real Time Streaming Protocol
 默认端口：554
 方法 #  一般的顺序是：
@@ -45,20 +45,20 @@ OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-A
     
     <item>
       <title>WebRTC</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</guid>
       <description>WebRTC #  Web Real-Time Communication
 支持网页浏览器进行实时语音对话或视频对话的 API</description>
     </item>
     
     <item>
       <title>H264</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/h264/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid>
       <description>H264 #  H.264，又称为 MPEG-4 第 10 部分，高级视频编码（英语： MPEG-4 Part 10, Advanced Video Coding ，缩写为 MPEG-4 AVC）是一种面向块，基于运动补偿的视频编码标准（英语：Advanced Video Coding） 。
 AVC 和 XviD 都属于 MPEG-4 编码，但由于 AVC 属于 MPEG-4 Part 10，在技术特性上比属于 MPEG-4 Part2 的 XviD 要先进。
 它和 ITU-T H.264 标准是一致的，故又称为 H.264。
@@ -69,37 +69,37 @@ H264 码流可以分为两层
     
     <item>
       <title>HLS</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/hls/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/hls/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</guid>
       <description>HLS #  HTTP Live Streaming</description>
     </item>
     
     <item>
       <title>HTTP FLV</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</guid>
       <description>HTTP FLV #  Bilibili/flv.js #  HTML5 FLV Player</description>
     </item>
     
     <item>
       <title>MPEG</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</guid>
       <description>MPEG #   MPEG-1：第一个官方的视讯音频压缩标准，随后在 Video CD 中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称 MP3，成为比较流行的音频压缩格式。 MPEG-2：广播质量的视讯、音频和传输协议。被用于无线 数字电视 - ATSC、DVB 以及 ISDB、数字卫星电视（例如 DirecTV）、数字 有线电视信号，以及 DVD 视频光盘技术中。 MPEG-3：原本目标是为 高清晰度电视（ HDTV）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。 MPEG-4：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和 数字版权管理（Digital Rights Management），其中第 10 部分由 ISO/IEC 和 ITU-T 联合发布，称为 H.264/MPEG-4 Part 10。 MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。 MPEG-21：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。  </description>
     </item>
     
     <item>
       <title>PS</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/ps/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/ps/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</guid>
       <description>PS #  Program stream
 PS 流的包结构是可变长度的， 一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
 在信道环境较好，传输误码较低时，一般采用 PS 码流。
@@ -113,19 +113,19 @@ TS 流解码过程 #   获取 TS 中的 PAT 获取 TS 中的 PMT 根据 PMT 可�
     
     <item>
       <title>直播技术</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</guid>
       <description>直播技术 #   摄像头视频采集，原始视频数据：RGB/YUV 话筒音频采集，原始音频数据：PCM 视频文件编码，RGB/YUV -&amp;gt; H.264/H.265 音频文件编码，PCM -&amp;gt; AAC 编码为有流媒体特性的多媒体容器格式（Multimedia Container Format）， 如 FLV/TS/RTMP Package 推流到流媒体服务器  应用层：HLS/RTSP/RTMP 传输层：RTP/RTCP 网络层：RSVP   服务端处理  转码/录制/截图/鉴黄 生成拉流 URL   拉流到客户端  应用层：HLS/RTMP 传输层：RTP/RTCP 网络层：RSVP   解复用，多媒体容器格式（FLV/TS/RTMP Package）的流 -&amp;gt; 音视频数据（H.264/AAC） 解码视频文件为 YUV/RGB，解码音频文件为 PCM  硬解码（GPU 解码，CPU 辅助） 软解码（CPU 解码）   音画同步 视频数据（YUV/RGB）发送到视频输出设备，音频数据（PCM）发送到音频输出设备  </description>
     </item>
     
     <item>
       <title>视频编码</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</guid>
       <description>视频编码 #      年份 标准 制定组织 解除著作权保护（DRM-free） 主要应用     1984 H.120 ITU-T 是    1990 H.261 ITU-T 是 视频会议、视频通话   1993 MPEG-1 第二部分 ISO／IEC 是 影音光盘（VCD）   1995 H.262/MPEG-2 第二部分 ISO／IEC、ITU-T 否 DVD 影碟（DVD-Video）、 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、SVCD   1996 H.263 ITU-T  视频会议、视频通话、 3G 手机视频（3GP）   1999 MPEG-4 第二部分 ISO／IEC 否    2003 H.264/MPEG-4 AVC ISO／IEC、ITU-T 否 蓝光（ Blu-Ray）影碟、数字视频广播（DVB）、iPod 视频、 高清 DVD（HD DVD）   2013 H.</description>
     </item>
     

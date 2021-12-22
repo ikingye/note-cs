@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>其他 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/</link>
+    <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/</link>
     <description>Recent content in 其他 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gloo</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/gloo/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/gloo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/gloo/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/gloo/</guid>
       <description>Gloo #  solo-io/gloo The Feature-rich, Kubernetes-native, Next-Generation API Gateway Built on Envoy</description>
     </item>
     
     <item>
       <title>haproxy</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/haproxy/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/haproxy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/haproxy/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/haproxy/</guid>
       <description>Haproxy #  haproxy/haproxy HAProxy Load Balancer&amp;rsquo;s development branch (mirror of git.haproxy.org) https://git.haproxy.org/</description>
     </item>
     
     <item>
       <title>MOSN</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/mosn/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/mosn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/mosn/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/mosn/</guid>
       <description>MOSN #  mosn/mosn MOSN is a cloud native proxy for edge or service mesh. https://mosn.io</description>
     </item>
     
     <item>
       <title>Dapr</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/dapr/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/dapr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/dapr/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/dapr/</guid>
       <description>Dapr #  Distributed Application Runtime
 dapr/dapr Dapr is a portable, serverless, event-driven runtime that makes it easy for developers to build resilient, stateless and stateful microservices that run on the cloud and edge and embraces the diversity of languages and developer frameworks.</description>
     </item>
     
     <item>
       <title>BFE</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/bfe/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/bfe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/bfe/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/bfe/</guid>
       <description>BFE #  baidu/bfe Baidu Front End 百度统一前端
 统一的百度七层（HTTP）流量接入平台
 BFE 之前的百度前端接入架构 #  流量从 BGW 接入之后直接到达了产品线的前端服务器， 这些服务器种类繁多，几乎包涵了现在流行的各种 webserver，比如 nginx,apache,lighttpd 等， 不同的服务器经过后端不同业务逻辑的处理之后打印日志内容并且将响应发送给用户。
@@ -62,37 +62,37 @@ BFE 最基本的工作就是从 BGW/BVS 接入流量并将流量转发给产品�
     
     <item>
       <title>Cilium</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/cilium/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/cilium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/cilium/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/cilium/</guid>
       <description>Cilium #  cilium/cilium eBPF-based Networking, Security, and Observability</description>
     </item>
     
     <item>
       <title>Consul</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/consul/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/consul/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/consul/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/consul/</guid>
       <description>Consul #  hashicorp/consul Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure. https://www.consul.io/</description>
     </item>
     
     <item>
       <title>Traefik Mesh</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/traefik-mesh/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/traefik-mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/traefik-mesh/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/traefik-mesh/</guid>
       <description>Traefik Mesh #  traefik/mesh Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure. https://www.consul.io/</description>
     </item>
     
     <item>
       <title>Easegress</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/easegress/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/easegress/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/advanced/eco/other/easegress/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/easegress/</guid>
       <description>Easegress #  megaease/easegress A Cloud Native traffic orchestration system</description>
     </item>
     

@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>组件 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/</link>
+    <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/</link>
     <description>Recent content in 组件 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mixer</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</guid>
       <description>Mixer 基础 #  Mixer 已弃用。
 Mixer 所提供的功能已迁移至 Envoy 代理中。 在 Istio 中对 Mixer 的支持将截止到 Istio 1.7 发行版。
 请参考 Telemetry V2，它取代了 Mixer 遥测。</description>
@@ -18,29 +18,29 @@ Mixer 所提供的功能已迁移至 Envoy 代理中。 在 Istio 中对 Mixer �
     
     <item>
       <title>Pilot</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</guid>
       <description>Pilot 基础 #  参考：
  深入理解 Istio 核心组件之 Pilot 深入解读 Service Mesh 背后的技术细节  </description>
     </item>
     
     <item>
       <title>Citadel</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</guid>
       <description>Citadel #  </description>
     </item>
     
     <item>
       <title>Galley</title>
-      <link>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</link>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</guid>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</guid>
       <description>Galley 基础 #  </description>
     </item>
     

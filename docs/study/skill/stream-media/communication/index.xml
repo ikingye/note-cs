@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>通信技术 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/</link>
+    <link>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/</link>
     <description>Recent content in 通信技术 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/communication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>4G</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/4g/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/4g/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/4g/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/4g/</guid>
       <description>4G #  </description>
     </item>
     
     <item>
       <title>5G</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/5g/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/5g/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/communication/5g/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/5g/</guid>
       <description>5G #  5G 速度 #  世界上最快的 4G 网速（挪威，63.13Mbps）
 最快的宽带网速（新加坡，189Mbps）
 2019 年 1 月 24 日，华为发布业界标杆 5G 多模终端芯片巴龙 5000

@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1.2 操作系统 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/basic/os/</link>
+    <link>https://kingye.me/note-cs/docs/basic/os/</link>
     <description>Recent content in 1.2 操作系统 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/basic/os/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/basic/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CPU</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/cpu/</link>
+      <link>https://kingye.me/note-cs/docs/basic/os/cpu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/cpu/</guid>
+      <guid>https://kingye.me/note-cs/docs/basic/os/cpu/</guid>
       <description>CPU #  L1 Cache #  Intel Core i7 的组织结构：</description>
     </item>
     
     <item>
       <title>内存</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/memory/</link>
+      <link>https://kingye.me/note-cs/docs/basic/os/memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/memory/</guid>
+      <guid>https://kingye.me/note-cs/docs/basic/os/memory/</guid>
       <description>内存 #  </description>
     </item>
     
     <item>
       <title>线程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/thread/</link>
+      <link>https://kingye.me/note-cs/docs/basic/os/thread/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/thread/</guid>
+      <guid>https://kingye.me/note-cs/docs/basic/os/thread/</guid>
       <description>线程 #  栈通常是连续增长的，由于每个进程中的各个线程共享虚拟内存空间，当有多个线程时，就需要为每个线程分配不同起始地址的栈。 这就需要在分配栈之前先预估每个线程栈的大小。
 如果线程数量非常多，就很容易栈溢出。
 Split Stacks #  为了解决这个问题，就有了 Split Stacks 技术： 创建栈时，只分配一块比较小的内存，如果进行某次函数调用导致栈空间不足时，就会在其他地方分配一块新的栈空间。 新的空间不需要和老的栈空间连续。函数调用的参数会拷贝到新的栈空间中，接下来的函数执行都在新栈空间中进行。
@@ -37,10 +37,10 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
     
     <item>
       <title>进程</title>
-      <link>https://ikingye.github.io/note-cs/docs/basic/os/process/</link>
+      <link>https://kingye.me/note-cs/docs/basic/os/process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/basic/os/process/</guid>
+      <guid>https://kingye.me/note-cs/docs/basic/os/process/</guid>
       <description>进程 #  进程虚拟地址空间 #   </description>
     </item>
     

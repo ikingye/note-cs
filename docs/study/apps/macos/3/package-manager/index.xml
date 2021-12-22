@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>包管理工具 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/package-manager/</link>
+    <link>https://kingye.me/note-cs/docs/study/apps/macos/3/package-manager/</link>
     <description>Recent content in 包管理工具 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/study/apps/macos/3/package-manager/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/study/apps/macos/3/package-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>homebrew</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/package-manager/brew/</link>
+      <link>https://kingye.me/note-cs/docs/study/apps/macos/3/package-manager/brew/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/apps/macos/3/package-manager/brew/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/apps/macos/3/package-manager/brew/</guid>
       <description>Homebrew #  tap #  brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
 如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件
 tap 命令的仓库源默认来至于 Github，但是这个命令也不限制于这一个地方

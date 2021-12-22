@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ONVIF on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/</link>
+    <link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/</link>
     <description>Recent content in ONVIF on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>设备发现</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/discovery/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/discovery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/discovery/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/discovery/</guid>
       <description>设备发现 #  我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。
 那如果客户端预先不知道目标服务的地址该怎么办？
 WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。
@@ -20,10 +20,10 @@ Ad hoc 模式 #   Ad hoc 模式：客户端以多播 (multicast) 的形式往多
     
     <item>
       <title>gsoap 生成 onvif 框架</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/gsoap/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/gsoap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/onvif/gsoap/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/gsoap/</guid>
       <description>gsoap 生成 onvif 框架 #  生成参数 #  wsdl2h #  -O4 #  aggressively optimizes the output by &amp;ldquo;schema slicing&amp;rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
 -P #  don&amp;rsquo;t create polymorphic types inherited from xsd__anyType;
 removes the base class xsd__anyType from the generated C++ classes, which are normally added by wsdl2h if the xsd:anyType XSD type is used somewhere in a WSDL.</description>

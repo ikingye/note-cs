@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GB28181 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/</link>
+    <link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/</link>
     <description>Recent content in GB28181 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SDP</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/sdp/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sdp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/sdp/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sdp/</guid>
       <description>SDP #  Session Description Protocol
 SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。
 媒体传输相关的协议在 SIP 消息 SDP 段携带， 在服务器和客户端之间进行商议。
@@ -25,10 +25,10 @@ SDP 作用 #  SDP 作用包括以下一些方面
     
     <item>
       <title>SIP</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/sip/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/sip/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sip/</guid>
       <description>SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
 CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
@@ -37,10 +37,10 @@ CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有
     
     <item>
       <title>协议详情</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/protocal/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/protocal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/protocal/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/protocal/</guid>
       <description>GB28181 协议解析 #  点击在线查看标准完整文本： 公共安全视频监控联网系统信息传输、交换、控制技术要求。
 名词解释 #  SIP 服务器 #  SIP client #  具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。
 SIP device #  具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。
@@ -51,19 +51,19 @@ SIP 监控域 SIP surveil lance realm #  支持本标准规定的通信协议的
     
     <item>
       <title>数据包</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/packet/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/packet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/packet/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/packet/</guid>
       <description>数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.</description>
     </item>
     
     <item>
       <title>源码实现</title>
-      <link>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/code/</link>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/study/skill/stream-media/gb28181/code/</guid>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/code/</guid>
       <description>源码实现 #  名词解释 #   AOR：Address Of Record 是 header 中的 From 字段   开源实现 #  go #   StefanKopieczek/gossip  rainliu/gosips  1lann/go-sip  ghettovoice/gosip Inspired by:  StefanKopieczek/gossip 1lann/go-sip kirm/sip.js   cloudwebrtc/go-sip-ua Dependencies  ghettovoice/gosip SIP stack c-bata/go-prompt Console for b2bua pixelbender/go-sdp SDP    C #   pjsip/pjproject   C# #   GB28181/GB28181.Solution   C++ #   ossrs/srs  xiongziliang/ZLMediaKit   Node.</description>
     </item>
     

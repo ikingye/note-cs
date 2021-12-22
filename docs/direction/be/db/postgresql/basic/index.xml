@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>第一部分 基础入门 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/</link>
+    <link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/</link>
     <description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>快速上手</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</link>
+      <link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid>
+      <guid>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid>
       <description>PostgreSQL 快速上手 #  安装 #  MacOS #   安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 #  登录 PostgreSQL 控制台：psql #  psql -U [user] -d [database] -h [host] -p [port]
 默认 psql
 user：当前mac用户 database：用户同名数据库 主机：localhost 端口号：5432，postgresql的默认端口是5432 \l #  使用 \l 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。 但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。
@@ -19,10 +19,10 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     
     <item>
       <title>版本</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</link>
+      <link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/db/postgresql/basic/version/</guid>
+      <guid>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/version/</guid>
       <description>PostgreSQL 版本 #  12 #  12.2 #   </description>
     </item>
     

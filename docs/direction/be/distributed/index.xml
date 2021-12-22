@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2.2.4 分布式系统 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/</link>
+    <link>https://kingye.me/note-cs/docs/direction/be/distributed/</link>
     <description>Recent content in 2.2.4 分布式系统 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/direction/be/distributed/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/direction/be/distributed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2.2.4.3 Zookeeper</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</link>
+      <link>https://kingye.me/note-cs/docs/direction/be/distributed/zookeeper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/zookeeper/</guid>
+      <guid>https://kingye.me/note-cs/docs/direction/be/distributed/zookeeper/</guid>
       <description>Zookeeper #  </description>
     </item>
     
     <item>
       <title>2.2.4.4 Etcd</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</link>
+      <link>https://kingye.me/note-cs/docs/direction/be/distributed/etcd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/etcd/</guid>
+      <guid>https://kingye.me/note-cs/docs/direction/be/distributed/etcd/</guid>
       <description>Etcd #  </description>
     </item>
     
     <item>
       <title>一致性哈希</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</link>
+      <link>https://kingye.me/note-cs/docs/direction/be/distributed/consistent-hashing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/consistent-hashing/</guid>
+      <guid>https://kingye.me/note-cs/docs/direction/be/distributed/consistent-hashing/</guid>
       <description>一致性哈希 #  这篇论文中提出了一致性 hash 的概念。
 incubator-brpc doc - 一致性哈希
 一致性 hash 满足以下四个性质：
@@ -37,10 +37,10 @@ incubator-brpc doc - 一致性哈希
     
     <item>
       <title>分布式事务</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</link>
+      <link>https://kingye.me/note-cs/docs/direction/be/distributed/transaction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/be/distributed/transaction/</guid>
+      <guid>https://kingye.me/note-cs/docs/direction/be/distributed/transaction/</guid>
       <description>分布式事务 #  微服务化带来的分布式事务问题 #  每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？
 解决方案 #  分布式事务的实现主要有以下 5 种方案：
  XA 方案 TCC 方案 本地消息表 可靠消息最终一致性方案 最大努力通知方案  如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。

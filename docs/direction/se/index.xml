@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2.1 软件工程 on 计算机学习笔记</title>
-    <link>https://ikingye.github.io/note-cs/docs/direction/se/</link>
+    <link>https://kingye.me/note-cs/docs/direction/se/</link>
     <description>Recent content in 2.1 软件工程 on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/note-cs/docs/direction/se/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/direction/se/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UML</title>
-      <link>https://ikingye.github.io/note-cs/docs/direction/se/uml/</link>
+      <link>https://kingye.me/note-cs/docs/direction/se/uml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/note-cs/docs/direction/se/uml/</guid>
+      <guid>https://kingye.me/note-cs/docs/direction/se/uml/</guid>
       <description>UML #  泛化关系 (generalization) #   is-a 最终代码中，泛化关系表现为继承非抽象类  带空心三角形箭头的直线
 实现关系 (realize) #   最终代码中，实现关系表现为继承抽象类  带空心三角形箭头的虚线
 聚合关系 (aggregation) #   表示整体由部分构成的语义  例如一个部门由多个员工组成   整体和部分不是强依赖的，即使整体不存在了，部分仍然存在  例如， 部门撤销了，人员不会消失，他们依然存在    带空心菱形箭头的直线
