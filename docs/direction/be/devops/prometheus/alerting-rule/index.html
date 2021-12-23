@@ -5,19 +5,19 @@
   <meta name="generator" content="Hugo 0.87.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="告警规则 #  ">
+<meta name="description" content="告警规则 #  groups: - name: example rules: - alert: HighRequestLatency expr: job:request_latency_seconds:mean5m{job=&#34;myjob&#34;} &gt; 0.5 for: 10m labels: severity: page annotations: summary: High request latency groups: - name: example rules: - record: job:http_inprogress_requests:sum expr: sum(http_inprogress_requests) by (job) ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="告警规则" />
-<meta property="og:description" content="告警规则 #  " />
+<meta property="og:description" content="告警规则 #  groups: - name: example rules: - alert: HighRequestLatency expr: job:request_latency_seconds:mean5m{job=&#34;myjob&#34;} &gt; 0.5 for: 10m labels: severity: page annotations: summary: High request latency groups: - name: example rules: - record: job:http_inprogress_requests:sum expr: sum(http_inprogress_requests) by (job) " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/direction/be/devops/prometheus/alerting-rule/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2021-12-22T14:34:02+08:00" />
 
 <title>告警规则 | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.1948150eec0e0ee3abb13fea92f5c6107d63861a0601695f5f0bd6680744f4f4.js" integrity="sha256-GUgVDuwODuOrsT/qkvXGEH1jhhoGAWlfXwvWaAdE9PQ="></script>
+<script defer src="/note-cs/en.search.min.f1c2f4d6ff2a225c667feb69c50a30e2481564524914882ca92dc11dc5ffc886.js" integrity="sha256-8cL01v8qIlxmf&#43;tpxQow4kgVZFJJFIgsqS3BHcX/yIY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -17171,7 +17171,23 @@ https://github.com/alex-shpak/hugo-book
   告警规则
   <a class="anchor" href="#%e5%91%8a%e8%ad%a6%e8%a7%84%e5%88%99">#</a>
 </h1>
-</article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">groups</span>:
+- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">example</span>
+  <span style="color:#f92672">rules</span>:
+  - <span style="color:#f92672">alert</span>: <span style="color:#ae81ff">HighRequestLatency</span>
+    <span style="color:#f92672">expr</span>: <span style="color:#ae81ff">job:request_latency_seconds:mean5m{job=&#34;myjob&#34;} &gt; 0.5</span>
+    <span style="color:#f92672">for</span>: <span style="color:#ae81ff">10m</span>
+    <span style="color:#f92672">labels</span>:
+      <span style="color:#f92672">severity</span>: <span style="color:#ae81ff">page</span>
+    <span style="color:#f92672">annotations</span>:
+      <span style="color:#f92672">summary</span>: <span style="color:#ae81ff">High request latency</span>
+
+<span style="color:#f92672">groups</span>:
+- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">example</span>
+  <span style="color:#f92672">rules</span>:
+  - <span style="color:#f92672">record</span>: <span style="color:#ae81ff">job:http_inprogress_requests:sum</span>
+    <span style="color:#f92672">expr</span>: <span style="color:#ae81ff">sum(http_inprogress_requests) by (job)</span>
+</code></pre></div></article>
  
       
 
@@ -17180,6 +17196,12 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1351fc8e8f2a658035aa1a4e62e6ae721a0399e" title='Last modified by yewang | 2021-12-22' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2021-12-22</span>
+    </a>
+  </div>
 
 
 

@@ -5,7 +5,7 @@
   <meta name="generator" content="Hugo 0.87.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Prometheus #  prometheus/prometheus Prometheus 证书 #  $ tree /etc/kubernetes/pki /etc/kubernetes/pki ├── apiserver.crt ├── apiserver-etcd-client.crt ├── apiserver-etcd-client.key ├── apiserver.key ├── apiserver-kubelet-client.crt ├── apiserver-kubelet-client.key ├── ca.crt ├── ca.key ├── etcd │ ├── ca.crt │ ├── ca.key │ ├── healthcheck-client.crt │ ├── healthcheck-client.key │ ├── peer.crt │ ├── peer.key │ ├── server.crt │ └── server.key ├── front-proxy-ca.crt ├── front-proxy-ca.key ├── front-proxy-client.crt ├── front-proxy-client.key ├── sa.key └── sa.pub 1 directory, 22 files service account #  token 和 ca.">
+<meta name="description" content="Prometheus #  prometheus/prometheus quick-start #  $ docker run --name prometheus -d -p 8015:9090 quay.io/prometheus/prometheus $ cat /etc/prometheus/prometheus.yml # my global config global: scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute. evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute. # scrape_timeout is set to the global default (10s). # Alertmanager configuration alerting: alertmanagers: - static_configs: - targets: # - alertmanager:9093 # Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Prometheus" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.1948150eec0e0ee3abb13fea92f5c6107d63861a0601695f5f0bd6680744f4f4.js" integrity="sha256-GUgVDuwODuOrsT/qkvXGEH1jhhoGAWlfXwvWaAdE9PQ="></script>
+<script defer src="/note-cs/en.search.min.f1c2f4d6ff2a225c667feb69c50a30e2481564524914882ca92dc11dc5ffc886.js" integrity="sha256-8cL01v8qIlxmf&#43;tpxQow4kgVZFJJFIgsqS3BHcX/yIY="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/direction/be/devops/prometheus/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -17152,6 +17152,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#quick-start">quick-start</a></li>
     <li><a href="#prometheus-证书">Prometheus 证书</a>
       <ul>
         <li><a href="#service-account">service account</a></li>
@@ -17184,7 +17185,44 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#prometheus">#</a>
 </h1>
 <p><a href="https://github.com/prometheus/prometheus">prometheus/prometheus</a> <img src="https://img.shields.io/github/stars/prometheus/prometheus.svg" alt="Github stars" /> <img src="https://img.shields.io/github/languages/top/prometheus/prometheus.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/prometheus/prometheus.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/prometheus/prometheus.svg" alt="Last commit" /></p>
-<h2 id="prometheus-证书">
+<h2 id="quick-start">
+  quick-start
+  <a class="anchor" href="#quick-start">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ docker run --name prometheus -d -p 8015:9090 quay.io/prometheus/prometheus
+
+$ cat /etc/prometheus/prometheus.yml
+
+<span style="color:#75715e"># my global config</span>
+global:
+  scrape_interval: 15s <span style="color:#75715e"># Set the scrape interval to every 15 seconds. Default is every 1 minute.</span>
+  evaluation_interval: 15s <span style="color:#75715e"># Evaluate rules every 15 seconds. The default is every 1 minute.</span>
+  <span style="color:#75715e"># scrape_timeout is set to the global default (10s).</span>
+
+<span style="color:#75715e"># Alertmanager configuration</span>
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          <span style="color:#75715e"># - alertmanager:9093</span>
+
+<span style="color:#75715e"># Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.</span>
+rule_files:
+  <span style="color:#75715e"># - &#34;first_rules.yml&#34;</span>
+  <span style="color:#75715e"># - &#34;second_rules.yml&#34;</span>
+
+<span style="color:#75715e"># A scrape configuration containing exactly one endpoint to scrape:</span>
+<span style="color:#75715e"># Here it&#39;s Prometheus itself.</span>
+scrape_configs:
+  <span style="color:#75715e"># The job name is added as a label `job=&lt;job_name&gt;` to any timeseries scraped from this config.</span>
+  - job_name: <span style="color:#e6db74">&#34;prometheus&#34;</span>
+
+    <span style="color:#75715e"># metrics_path defaults to &#39;/metrics&#39;</span>
+    <span style="color:#75715e"># scheme defaults to &#39;http&#39;.</span>
+
+    static_configs:
+      - targets: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;localhost:9090&#34;</span><span style="color:#f92672">]</span>
+</code></pre></div><h2 id="prometheus-证书">
   Prometheus 证书
   <a class="anchor" href="#prometheus-%e8%af%81%e4%b9%a6">#</a>
 </h2>
@@ -17273,9 +17311,9 @@ bash-5.0#
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/2f23ff99c50c8d918bb39e32b05e00b3707e900d" title='Last modified by yewang | 2020-10-21' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b1351fc8e8f2a658035aa1a4e62e6ae721a0399e" title='Last modified by yewang | 2021-12-22' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-10-21</span>
+      <span>2021-12-22</span>
     </a>
   </div>
 
@@ -17336,6 +17374,7 @@ bash-5.0#
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#quick-start">quick-start</a></li>
     <li><a href="#prometheus-证书">Prometheus 证书</a>
       <ul>
         <li><a href="#service-account">service account</a></li>
