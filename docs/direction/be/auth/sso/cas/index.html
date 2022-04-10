@@ -8,7 +8,7 @@
 <meta name="description" content="CAS #  简介 #  集中式认证服务（英语：Central Authentication Service，缩写 CAS）是一种针对万维网的单点登录协议。它的目的是允许一个用户访问多个应用程序，而只需提供一次凭证（如用户名和密码）。它还允许 web 应用程序在没有获得用户的安全凭据（如密码）的情况下对用户进行身份验证。&ldquo;CAS&rdquo; 也指实现了该协议的软件包。
 CAS 是由耶鲁大学 的 Shawn Bayern 创始的，后来由耶鲁大学的 Drew Mazurek 维护。CAS1.0 实现了单点登录。 CAS2.0 引入了多级代理认证（Multi-tier proxy authentication）。CAS 其他几个版本已经有了新的功能。
 2004 年 12 月，CAS 成为 Jasig（英语：Jasig）的一个项目，2008 年该组织负责 CAS 的维护和发展。CAS 原名 &ldquo;耶鲁大学 CAS&rdquo;，现在则被称为 &ldquo;Jasig CAS&rdquo;。
-原理 #  Cas Server #   mermaid.initialize({ &#34;flowchart&#34;: { &#34;useMaxWidth&#34;:true }, &#34;theme&#34;: &#34;default&#34; } ) sequenceDiagram participant c as Client (The browser) participant ws as Web Server participant cs as CAS Server c-ws: 访问网站地址 Note over ws: 尝试从 cookie 获取 pToken 和 sToken alt pToken 和 sToken 同时存在 ws--cs: /validate 验证合法性 alt 正常登录 cs--ws: 返回用户信息 ws-c: 返回用户请求内容 else 不正常 cs--ws: 返回状态码 204 ws-c: 返回重定向到 CAS 登录接口 Note over c, cs: 后面流程参考底下 Loop 循环 end else 不同时存在 ws-c: 返回重定向到 CAS 登录接口 loop 访问 CAS 登录页面 c-cs: 登录 alt 登录成功 cs-c: 返回带 ticket 的重定向，并在浏览器写入 pToken 的 cookie c-ws: 带有 ticket 的请求 ws--cs: 使用 ticket 置换 sToken alt 合法 ticket cs--ws: 返回 sToken ws-c: 返回用户请求内容，并在浏览器写入 sToken 的 cookie else 非法 ticket ws-c: 返回重定向到 CAS 登录接口 end else 登录失败 cs-c: 返回错误提示页面 end end end Session Server &#43; Cas Server #  sequenceDiagram participant c as Client (The browser) participant ws as Web Server participant cs as CAS Server participant ss as Session Server c-ws: 访问网站地址 Note over ws: 尝试从 cookie 获取 pToken 和 sToken alt pToken 和 sToken 同时存在 ws--ss: /validate 验证合法性 alt 正常登录 ss--ws: 返回用户信息 ws-c: 返回用户请求内容 else 不正常 ss--ws: 返回状态码 204 ws-c: 返回重定向到 CAS 登录接口 Note over c, ss: 后面流程参考底下 Loop 循环 end else 不同时存在 ws-c: 返回重定向到 CAS 登录接口 loop 访问 CAS 登录页面 c-cs: 登录 alt 登录成功 cs-c: 返回带 ticket 的重定向，并在浏览器写入 pToken 的 cookie c-ws: 带有 ticket 的请求 ws--cs: 使用 ticket 置换 sToken alt 合法 ticket cs--ws: 返回 sToken ws-c: 返回用户请求内容，并在浏览器写入 sToken 的 cookie else 非法 ticket ws-c: 返回重定向到 CAS 登录接口 end else 登录失败 ss-c: 返回错误提示页面 end end end 百度 UUAP #    用户访问接入 uuap 的下游系统 xx.">
+原理 #  Cas Server #   mermaid.initialize({ &#34;flowchart&#34;: { &#34;useMaxWidth&#34;:true }, &#34;theme&#34;: &#34;default&#34; } ) sequenceDiagram participant c as Client (The browser) participant ws as Web Server participant cs as CAS Server c-ws: 访问网站地址 Note over ws: 尝试从 cookie 获取 pToken 和 sToken alt pToken 和 sToken 同时存在 ws--cs: /validate 验证合法性 alt 正常登录 cs--ws: 返回用户信息 ws-c: 返回用户请求内容 else 不正常 cs--ws: 返回状态码 204 ws-c: 返回重定向到 CAS 登录接口 Note over c, cs: 后面流程参考底下 Loop 循环 end else 不同时存在 ws-c: 返回重定向到 CAS 登录接口 loop 访问 CAS 登录页面 c-cs: 登录 alt 登录成功 cs-c: 返回带 ticket 的重定向，并在浏览器写入 pToken 的 cookie c-ws: 带有 ticket 的请求 ws--cs: 使用 ticket 置换 sToken alt 合法 ticket cs--ws: 返回 sToken ws-c: 返回用户请求内容，并在浏览器写入 sToken 的 cookie else 非法 ticket ws-c: 返回重定向到 CAS 登录接口 end else 登录失败 cs-c: 返回错误提示页面 end end end Session Server &#43; Cas Server #  sequenceDiagram participant c as Client (The browser) participant ws as Web Server participant cs as CAS Server participant ss as Session Server c-ws: 访问网站地址 Note over ws: 尝试从 cookie 获取 pToken 和 sToken alt pToken 和 sToken 同时存在 ws--ss: /validate 验证合法性 alt 正常登录 ss--ws: 返回用户信息 ws-c: 返回用户请求内容 else 不正常 ss--ws: 返回状态码 204 ws-c: 返回重定向到 CAS 登录接口 Note over c, ss: 后面流程参考底下 Loop 循环 end else 不同时存在 ws-c: 返回重定向到 CAS 登录接口 loop 访问 CAS 登录页面 c-cs: 登录 alt 登录成功 cs-c: 返回带 ticket 的重定向，并在浏览器写入 pToken 的 cookie c-ws: 带有 ticket 的请求 ws--cs: 使用 ticket 置换 sToken alt 合法 ticket cs--ws: 返回 sToken ws-c: 返回用户请求内容，并在浏览器写入 sToken 的 cookie else 非法 ticket ws-c: 返回重定向到 CAS 登录接口 end else 登录失败 ss-c: 返回错误提示页面 end end end  参考 #   mermaid  ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CAS" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@ CAS 是由耶鲁大学 的 Shawn Bayern 创始的，后来由耶鲁大学的 Dre
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.04345a0e39107ddcdc395b0c5bd04ae26fb6cffde31bb9a9c0c96e0d6145a9ea.js" integrity="sha256-BDRaDjkQfdzcOVsMW9BK4m&#43;2z/3jG7mpwMluDWFFqeo="></script>
+<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/direction/be/auth/sso/cas/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -4303,19 +4303,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/" class="">百度</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -5446,19 +5433,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/pl/scala/basic/spec/baidu/" class="">百度</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -6009,19 +5983,6 @@ https://github.com/alex-shpak/hugo-book
           
   <ul>
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/pl/shell/spec/baidu/" class="">百度 Shell 编程规范</a>
-  
-
-        </li>
-      
-    
   </ul>
 
         </li>
@@ -6254,22 +6215,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-8a76959509e4394978198febec0457bd" class="toggle"  />
-    <label for="section-8a76959509e4394978198febec0457bd" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/basic/pl/swift/basic/spec/baidu/" class="">百度 Swift 编程规范</a>
-    </label>
-  
-
-        </li>
-      
     
   </ul>
 
@@ -17162,7 +17107,6 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#session-server--cas-server">Session Server + Cas Server</a></li>
       </ul>
     </li>
-    <li><a href="#百度-uuap">百度 UUAP</a></li>
     <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
@@ -17305,52 +17249,6 @@ end
 end
 </p>
 
-<h2 id="百度-uuap">
-  百度 UUAP
-  <a class="anchor" href="#%e7%99%be%e5%ba%a6-uuap">#</a>
-</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200329233743.png" alt="" /></p>
-<ol>
-<li>
-<p>用户访问接入 uuap 的下游系统 xx.baidu.com，例如 family.baidu.com。</p>
-</li>
-<li>
-<p>下游系统后端 server 从 cookie 中获取  pToken  及  sToken，校验是否同时存在，不同时存在直接重定向用户到  uuap 登录接口认证。</p>
-<blockquote>
-<p>pToken：存在于  baidu.com（baidu-int.com）域名下，cookie 的名字为  UUAP_P_TOKEN，线下环境统一为  UUAP_P_TOKEN_OFFLINE
-sToken：存在于下游系统的域名下面、该值为 uuap 认证成功后签发的 ticket 参数、下游系统获取后将其存入您的域名下，有效期 30 天、该值通用名称为  UUAP_S_TOKEN</p>
-</blockquote>
-</li>
-<li>
-<p>pToken 与 sToken</p>
-<ul>
-<li>如果 pToken 与 sToken 同时存在，则将 pToken、sToken 及您的 appKey 作为参数，发送 POST 请求到 UUAP-SESSION 的  Session 登录校验校验用户是否正常登录，如果正常登录返回登录用户的基本信息，未正常登录则返回状态码 204，重定向用户到  uuap 登录接口认证</li>
-<li>如果 pToken 与 sToken 不是同时存在，下游系统直接重定向用户到  uuap 登录接口认证。</li>
-</ul>
-</li>
-<li>
-<p>如果 UUAP-SESSION 返回用户登录成功并且返回登录用户的基本信息，下游系统可允许用户访问受保护的内容。</p>
-</li>
-<li>
-<p>如果 UUAP-SESSION 返回状态码 204，则按照 3-2 的步骤，下游系统直接通知前端跳转 UUAP-SSO 认证服务器认证。</p>
-</li>
-<li>
-<p>下游系统携带 service 及 appKey 参数，访问 UUAP-SSO 的  uuap 登录接口接口请求用户认证。</p>
-<blockquote>
-<p>service：第 1 步中用户访问的下游系统的 url，请对该 url 进行 urlencode
-appKey：uuap 签发的下游系统唯一 id</p>
-</blockquote>
-</li>
-<li>
-<p>UUAP-SSO 认证服务器认证通过会在 baidu 的根域名下植入 pToken 的 cookie，并且会在用户传递的 service 回调地址后面追加 ticket 参数通知用户跳转，下游系统 server 可获取该参数，调用  SToken 置换接口获取 SToken，将其以 cookie 的形式存入你们的域名下，该值就是 sToken。</p>
-<ul>
-<li>cookie 植入成功后要在之前访问 url 的基础上去除 ticket 参数让用户重新 302 访问一次，这样就能防止 server 看到访问 url 中存在 ticket 参数关键字陷入反复植入 sToken 的死循环，跳转后用户重新从第 1 步执行。</li>
-</ul>
-</li>
-<li>
-<p>认证失败，跳转错误页面。</p>
-</li>
-</ol>
 <hr>
 <h2 id="参考">
   参考
@@ -17439,7 +17337,6 @@ appKey：uuap 签发的下游系统唯一 id</p>
         <li><a href="#session-server--cas-server">Session Server + Cas Server</a></li>
       </ul>
     </li>
-    <li><a href="#百度-uuap">百度 UUAP</a></li>
     <li><a href="#参考">参考</a></li>
   </ul>
 </nav>

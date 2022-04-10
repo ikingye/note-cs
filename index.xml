@@ -65,15 +65,6 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     </item>
     
     <item>
-      <title>百度</title>
-      <link>https://kingye.me/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/basic/pl/objective-c/basic/spec/baidu/</guid>
-      <description>百度 Objective-C 编码规范 (2019 版) #  </description>
-    </item>
-    
-    <item>
       <title>Bash</title>
       <link>https://kingye.me/note-cs/docs/basic/pl/shell/type/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -868,17 +859,6 @@ ps: 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗
     </item>
     
     <item>
-      <title>百度</title>
-      <link>https://kingye.me/note-cs/docs/basic/pl/scala/basic/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/basic/pl/scala/basic/spec/baidu/</guid>
-      <description>百度 Scala 编码规范 #  前言 #  就目前 Baidu 内部情况 (2018.10)，Scala 这门语言主要用于计算团队内部的和 Spark 相关项目研发、社区贡献工作以及公司的 Spark 用户使用 Scala API 编写 Spark 作业三个用途，所以本文主体沿用如下两部分并稍作修改：
- Apache Spark 开源社区 Scala 编程指南:
-Apache Spark 有超过 1000 位贡献者，就我们所知，应该是目前大数据领域里最大的开源项目且是最活跃的 Scala 项目，结合 Baidu 内部现状，本文主体沿用此部分中和 Spark 社区相关内容，去除部分项目专用细节。 scala 官方 style guide 里的格式部分已包含在 Spark 项目文档中，这里摘录部分官方 style guide 作为 Apache Spark 社区的编程指南补充。  </description>
-    </item>
-    
-    <item>
       <title>编程学习网站</title>
       <link>https://kingye.me/note-cs/docs/study/skill/tool/study/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1117,7 +1097,7 @@ Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/study/apps/macos/3/ssh/config/</guid>
-      <description>config #  my config #  ################ vps ################ Host bcc HostName 106.13.4.39 User root IdentityFile ~/.ssh/id_rsa Host vultr HostName 149.28.142.246 User root IdentityFile ~/.ssh/id_rsa ################ baidu ################ Host baidu HostName relay.baidu-int.com User yewang ################ git ################ Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.</description>
+      <description>config #  my config #  Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitee HostName gitee.com User git IdentityFile ~/.ssh/id_rsa ################ others ################ Host * # 复用之前已经建立的连接 ControlMaster auto # 在最后一个连接关闭之后也不真正的关掉连接 ControlPersist yes # 指定了这个连接的 socket 保存的路径 ControlPath ~/.</description>
     </item>
     
     <item>
@@ -1463,19 +1443,6 @@ XSS 发生的原因 #  没有将用户输入的文本进行合适的过滤，就
       
       <guid>https://kingye.me/note-cs/docs/basic/pl/ruby/advanced/frame/rainls/version/</guid>
       <description>版本 #  历史版本 #  v6.0 #   v5.0 #  v5.2 #   v4.0 #   v3.0 #   v2.0 #  </description>
-    </item>
-    
-    <item>
-      <title>百度 Shell 编程规范</title>
-      <link>https://kingye.me/note-cs/docs/basic/pl/shell/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/basic/pl/shell/spec/baidu/</guid>
-      <description>百度 Shell 编程规范 #    本文档适用于 Bash 3.0 及以上版本，不包括 4.0 新增特性
-  文档是 Bash 编程规范，不是 POSIX Shell 编程规范
-  章节分类和内容组织依据 Google Shell Style Guide
-  参考文档
- Google Shell Style Guide Chromium Project Shell Style Guidelines     </description>
     </item>
     
     <item>
@@ -1995,15 +1962,6 @@ ERROR: permission denied for relation hycom 权限被拒绝</description>
       
       <guid>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/version/</guid>
       <description>PostgreSQL 版本 #  12 #  12.2 #   </description>
-    </item>
-    
-    <item>
-      <title>百度 Swift 编程规范</title>
-      <link>https://kingye.me/note-cs/docs/basic/pl/swift/basic/spec/baidu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/basic/pl/swift/basic/spec/baidu/</guid>
-      <description>百度 Swift 编程规范 #  </description>
     </item>
     
     <item>
