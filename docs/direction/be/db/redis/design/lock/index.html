@@ -2,22 +2,20 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="锁 #  setnx #   setnx msetnx hsetnx  SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL] 那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：
--- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&#39;get&#39;, KEYS[1]) == ARGV[1] then -- 执行删除操作 return redis.call(&#39;del&#39;, KEYS[1]) else -- 不成功，返回0 return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
+-- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&#39;get&#39;, KEYS[1]) == ARGV[1]  then  -- 执行删除操作  return redis.call(&#39;del&#39;, KEYS[1])  else  -- 不成功，返回0  return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
 就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。
 那么既然这么麻烦，有没有比较好的工具呢？就要说到 redisson 了。
-redLock #  并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。
-redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。">
+redLock #  并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="锁" />
 <meta property="og:description" content="锁 #  setnx #   setnx msetnx hsetnx  SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL] 那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：
--- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&#39;get&#39;, KEYS[1]) == ARGV[1] then -- 执行删除操作 return redis.call(&#39;del&#39;, KEYS[1]) else -- 不成功，返回0 return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
+-- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&#39;get&#39;, KEYS[1]) == ARGV[1]  then  -- 执行删除操作  return redis.call(&#39;del&#39;, KEYS[1])  else  -- 不成功，返回0  return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
 就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。
 那么既然这么麻烦，有没有比较好的工具呢？就要说到 redisson 了。
-redLock #  并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。
-redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api 方便操作 redis。" />
+redLock #  并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/direction/be/db/redis/design/lock/" /><meta property="article:section" content="docs" />
 
@@ -27,7 +25,7 @@ redisson #  Redisson 是 java 的 redis 客户端之一，提供了一些 api �
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -16296,9 +16294,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16317,9 +16315,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17077,7 +17075,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17148,20 +17146,20 @@ https://github.com/alex-shpak/hugo-book
 <li>msetnx</li>
 <li>hsetnx</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">SET key value <span style="color:#f92672">[</span>EX seconds|PX milliseconds<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>NX|XX<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>KEEPTTL<span style="color:#f92672">]</span>
-</code></pre></div><p>那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#75715e">-- lua删除锁：</span>
-<span style="color:#75715e">-- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。</span>
-<span style="color:#75715e">-- 如果对应的value等于传入的uuid。</span>
-<span style="color:#66d9ef">if</span> redis.call(<span style="color:#e6db74">&#39;get&#39;</span>, KEYS[<span style="color:#ae81ff">1</span>]) <span style="color:#f92672">==</span> ARGV[<span style="color:#ae81ff">1</span>]
-    <span style="color:#66d9ef">then</span>
- <span style="color:#75715e">-- 执行删除操作</span>
-        <span style="color:#66d9ef">return</span> redis.call(<span style="color:#e6db74">&#39;del&#39;</span>, KEYS[<span style="color:#ae81ff">1</span>])
-    <span style="color:#66d9ef">else</span>
- <span style="color:#75715e">-- 不成功，返回0</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">end</span>
-</code></pre></div><p>通过 lua 脚本能保证原子性的原因说的通俗一点：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>SET key value <span style="color:#f92672">[</span>EX seconds|PX milliseconds<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>NX|XX<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>KEEPTTL<span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">-- lua删除锁：</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- 如果对应的value等于传入的uuid。</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> redis.call(<span style="color:#e6db74">&#39;get&#39;</span>, KEYS[<span style="color:#ae81ff">1</span>]) <span style="color:#f92672">==</span> ARGV[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">-- 执行删除操作</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> redis.call(<span style="color:#e6db74">&#39;del&#39;</span>, KEYS[<span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span> <span style="color:#75715e">-- 不成功，返回0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>通过 lua 脚本能保证原子性的原因说的通俗一点：</p>
 <p>就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。</p>
 <p>那么既然这么麻烦，有没有比较好的工具呢？就要说到 <code>redisson</code> 了。</p>
 <h2 id="redlock">

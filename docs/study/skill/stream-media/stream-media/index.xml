@@ -39,8 +39,7 @@ PS 包 #  进行 PS 封装时，将每个视频帧封装为一个PS 包， 且�
 默认端口：554
 方法 #  一般的顺序是：
  OPTIONS DESCRIBE SETUP PLAY TEARDOWN  OPTIONS #  请求返回服务器将接受的请求类型。
-C-&amp;gt;S: OPTIONS rtsp://example.com/media.mp4 RTSP/1.0 CSeq: 1 Require: implicit-play Proxy-Require: gzipped-messages S-&amp;gt;C: RTSP/1.0 200 OK CSeq: 1 Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE DESCRIBE #  SETUP #  TEARDOWN #  PLAY #  PAUSE #   包详情 #  海康摄像头
-OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0 CSeq: 2 User-Agent: LibVLC/2.</description>
+C-&amp;gt;S: OPTIONS rtsp://example.com/media.mp4 RTSP/1.0  CSeq: 1  Require: implicit-play  Proxy-Require: gzipped-messages  S-&amp;gt;C: RTSP/1.0 200 OK  CSeq: 1  Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE DESCRIBE #  SETUP #  TEARDOWN #  PLAY #  PAUSE #   包详情 #  海康摄像头</description>
     </item>
     
     <item>

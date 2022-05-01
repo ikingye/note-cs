@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="包管理工具 #  Linux #  Ubuntu #  apt #  sudo apt install # download .deb package sudo dpkg -i fd_8.0.0_amd64.deb # adapt version number and architecture Debian #  apt-get #  sudo apt-get install Fedora #  dnf #  dnf install dnf copr #  dnf copr enable keefle/fd dnf install fd Alpine Linux #  apk #  apk add Arch Linux #  pacman #  pacman -S Gentoo Linux #  emerge #  emerge -av openSUSE Linux #  zypper #  zypper in Void Linux #  xbps-install #  xbps-install -S FreeBSD #  pkg #  pkg install  Mac #  Homebrew #  MacPorts #   Windows #  Scoop #  Chocolatey #  其他 #  NixOS / via Nix #  Nix package manager #  nix-env -i Node.">
+<meta name="description" content="包管理工具 #  Linux #  Ubuntu #  apt #  sudo apt install  # download .deb package sudo dpkg -i fd_8.0.0_amd64.deb # adapt version number and architecture Debian #  apt-get #  sudo apt-get install Fedora #  dnf #  dnf install dnf copr #  dnf copr enable keefle/fd dnf install fd Alpine Linux #  apk #  apk add Arch Linux #  pacman #  pacman -S Gentoo Linux #  emerge #  emerge -av openSUSE Linux #  zypper #  zypper in Void Linux #  xbps-install #  xbps-install -S FreeBSD #  pkg #  pkg install  Mac #  Homebrew #  MacPorts #   Windows #  Scoop #  Chocolatey #  其他 #  NixOS / via Nix #  Nix package manager #  nix-env -i Node.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="包管理工具" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/study/apps/macos/3/package-manager/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -16285,9 +16285,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16306,9 +16306,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17066,7 +17066,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17221,11 +17221,11 @@ https://github.com/alex-shpak/hugo-book
   apt
   <a class="anchor" href="#apt">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt install
-
-<span style="color:#75715e"># download .deb package</span>
-sudo dpkg -i fd_8.0.0_amd64.deb  <span style="color:#75715e"># adapt version number and architecture</span>
-</code></pre></div><h3 id="debian">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># download .deb package</span>
+</span></span><span style="display:flex;"><span>sudo dpkg -i fd_8.0.0_amd64.deb  <span style="color:#75715e"># adapt version number and architecture</span>
+</span></span></code></pre></div><h3 id="debian">
   Debian
   <a class="anchor" href="#debian">#</a>
 </h3>
@@ -17233,8 +17233,8 @@ sudo dpkg -i fd_8.0.0_amd64.deb  <span style="color:#75715e"># adapt version num
   apt-get
   <a class="anchor" href="#apt-get">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt-get install
-</code></pre></div><h3 id="fedora">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt-get install
+</span></span></code></pre></div><h3 id="fedora">
   Fedora
   <a class="anchor" href="#fedora">#</a>
 </h3>
@@ -17242,14 +17242,14 @@ sudo dpkg -i fd_8.0.0_amd64.deb  <span style="color:#75715e"># adapt version num
   dnf
   <a class="anchor" href="#dnf">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dnf install
-</code></pre></div><h5 id="dnf-copr">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dnf install
+</span></span></code></pre></div><h5 id="dnf-copr">
   dnf copr
   <a class="anchor" href="#dnf-copr">#</a>
 </h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dnf copr enable keefle/fd
-dnf install fd
-</code></pre></div><h3 id="alpine-linux">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dnf copr enable keefle/fd
+</span></span><span style="display:flex;"><span>dnf install fd
+</span></span></code></pre></div><h3 id="alpine-linux">
   Alpine Linux
   <a class="anchor" href="#alpine-linux">#</a>
 </h3>
@@ -17257,8 +17257,8 @@ dnf install fd
   apk
   <a class="anchor" href="#apk">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">apk add
-</code></pre></div><h3 id="arch-linux">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apk add
+</span></span></code></pre></div><h3 id="arch-linux">
   Arch Linux
   <a class="anchor" href="#arch-linux">#</a>
 </h3>
@@ -17266,8 +17266,8 @@ dnf install fd
   pacman
   <a class="anchor" href="#pacman">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pacman -S
-</code></pre></div><h3 id="gentoo-linux">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pacman -S
+</span></span></code></pre></div><h3 id="gentoo-linux">
   Gentoo Linux
   <a class="anchor" href="#gentoo-linux">#</a>
 </h3>
@@ -17275,8 +17275,8 @@ dnf install fd
   emerge
   <a class="anchor" href="#emerge">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">emerge -av
-</code></pre></div><h3 id="opensuse-linux">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>emerge -av
+</span></span></code></pre></div><h3 id="opensuse-linux">
   openSUSE Linux
   <a class="anchor" href="#opensuse-linux">#</a>
 </h3>
@@ -17284,8 +17284,8 @@ dnf install fd
   zypper
   <a class="anchor" href="#zypper">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">zypper in
-</code></pre></div><h3 id="void-linux">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>zypper in
+</span></span></code></pre></div><h3 id="void-linux">
   Void Linux
   <a class="anchor" href="#void-linux">#</a>
 </h3>
@@ -17293,8 +17293,8 @@ dnf install fd
   xbps-install
   <a class="anchor" href="#xbps-install">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">xbps-install -S
-</code></pre></div><h3 id="freebsd">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>xbps-install -S
+</span></span></code></pre></div><h3 id="freebsd">
   FreeBSD
   <a class="anchor" href="#freebsd">#</a>
 </h3>
@@ -17302,7 +17302,7 @@ dnf install fd
   pkg
   <a class="anchor" href="#pkg">#</a>
 </h4>
-<pre><code>pkg install
+<pre tabindex="0"><code>pkg install
 </code></pre><hr>
 <h2 id="mac">
   Mac
@@ -17341,8 +17341,8 @@ dnf install fd
   <a href="https://nixos.org/nix/">Nix package manager</a>
   <a class="anchor" href="#nix-package-managerhttpsnixosorgnix">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">nix-env -i
-</code></pre></div><h3 id="nodejs">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>nix-env -i
+</span></span></code></pre></div><h3 id="nodejs">
   Node.js
   <a class="anchor" href="#nodejs">#</a>
 </h3>
@@ -17350,9 +17350,9 @@ dnf install fd
   NPM
   <a class="anchor" href="#npm">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># On linux and macOS</span>
-npm install -g
-</code></pre></div><h3 id="rust">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># On linux and macOS</span>
+</span></span><span style="display:flex;"><span>npm install -g
+</span></span></code></pre></div><h3 id="rust">
   Rust
   <a class="anchor" href="#rust">#</a>
 </h3>
@@ -17360,7 +17360,7 @@ npm install -g
   cargo
   <a class="anchor" href="#cargo">#</a>
 </h4>
-<pre><code>cargo install
+<pre tabindex="0"><code>cargo install
 </code></pre></article>
  
       

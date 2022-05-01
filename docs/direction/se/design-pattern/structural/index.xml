@@ -13,7 +13,7 @@
       <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/</guid>
       <description>适配器模式 #  Adapter
 适配器 Adapter 继承自 Adaptee，同时又实现了目标(Target)接口。
-public interface Target { // 这是源类Adapteee没有的方法  public void Request(); } public class Adaptee { public void SpecificRequest() { } } // 适配器Adapter继承自Adaptee，同时又实现了目标(Target)接口。 public class Adapter extends Adaptee implements Target { // 目标接口要求调用Request()这个方法名，但源类Adaptee没有方法Request()  // 因此适配器补充上这个方法名  // 但实际上Request()只是调用源类Adaptee的SpecificRequest()方法的内容  // 所以适配器只是将SpecificRequest()方法作了一层封装，封装成Target可以调用的Request()而已  @Override public void Request() { this.SpecificRequest(); } } public class AdapterPattern { public static void main(String[] args){ Target mAdapter = new Adapter()； mAdapter.</description>
+public interface Target {  // 这是源类Adapteee没有的方法  public void Request(); }  public class Adaptee {  public void SpecificRequest() {  } }  // 适配器Adapter继承自Adaptee，同时又实现了目标(Target)接口。 public class Adapter extends Adaptee implements Target {  // 目标接口要求调用Request()这个方法名，但源类Adaptee没有方法Request()  // 因此适配器补充上这个方法名  // 但实际上Request()只是调用源类Adaptee的SpecificRequest()方法的内容  // 所以适配器只是将SpecificRequest()方法作了一层封装，封装成Target可以调用的Request()而已  @Override  public void Request() {  this.SpecificRequest();  } }  public class AdapterPattern {  public static void main(String[] args){  Target mAdapter = new Adapter()；  mAdapter.</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ public interface Target { // 这是源类Adapteee没有的方法  public void Re
       
       <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</guid>
       <description>外观模式 #  Facade
- 适配器是将接口转换为不同接口 外观模式是提供一个统一的接口来简化接口  public class Facade Pattern { public static void main(String[] args) { //实例化电器类  SubSystemA_Light light = new SubSystemA_Light(); SubSystemB_Television television = new SubSystemB_Television(); SubSystemC_Aircondition aircondition = new SubSystemC_Aircondition(); //传参  Facade facade = new Facade(light,television,aircondition); //客户端直接与外观对象进行交互  facade.on; System.out.prinln(&amp;#34;可以看电视了&amp;#34;)； facade.off; System.out.prinln(&amp;#34;可以睡觉了&amp;#34;)； } } 代码示例 #  C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript  </description>
+ 适配器是将接口转换为不同接口 外观模式是提供一个统一的接口来简化接口  public class Facade Pattern {  public static void main(String[] args) {  //实例化电器类  SubSystemA_Light light = new SubSystemA_Light();  SubSystemB_Television television = new SubSystemB_Television();  SubSystemC_Aircondition aircondition = new SubSystemC_Aircondition();   //传参  Facade facade = new Facade(light,television,aircondition);   //客户端直接与外观对象进行交互  facade.on;  System.out.prinln(&amp;#34;可以看电视了&amp;#34;)；  facade.off;  System.out.prinln(&amp;#34;可以睡觉了&amp;#34;)；  } } 代码示例 #  C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript  </description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ public interface Target { // 这是源类Adapteee没有的方法  public void Re
       
       <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</guid>
       <description>代理模式 #  Proxy
-public interface Subject { public void buyMac(); } public class RealSubject implement Subject { @Override public void buyMac() { System.out.println(&amp;#34;买一台Mac&amp;#34;); } } public class Proxy implements Subject { @Override public void buyMac { //引用并创建真实对象实例，即&amp;#34;我&amp;#34;  RealSubject realSubject = new RealSubject(); //调用真实对象的方法，进行代理购买Mac  realSubject.buyMac(); //代理对象额外做的操作  this.WrapMac(); } public void WrapMac() { System.out.println(&amp;#34;用盒子包装好Mac&amp;#34;); } } public class ProxyPattern { public static void main(String[] args) { Subject proxy = new Proxy(); proxy.</description>
+public interface Subject {  public void buyMac(); }  public class RealSubject implement Subject {  @Override  public void buyMac() {  System.out.println(&amp;#34;买一台Mac&amp;#34;);  } }  public class Proxy implements Subject {  @Override  public void buyMac {  //引用并创建真实对象实例，即&amp;#34;我&amp;#34;  RealSubject realSubject = new RealSubject();   //调用真实对象的方法，进行代理购买Mac  realSubject.buyMac();  //代理对象额外做的操作  this.WrapMac();  }   public void WrapMac() {  System.</description>
     </item>
     
   </channel>

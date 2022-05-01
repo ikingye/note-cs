@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="RTP #  报文结构 #   Ver.（2 bits）是目前协议的版本号码，目前版号是 2。 P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。 X（1 bit）是否在使用延伸空间于报文之中。 CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。 M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。 PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。 SSRC 是同步化来源。  RTP Header #  前 12 个字节出现在每个 RTP 包中，仅仅在被混合器插入时，才出现 CSRC 识别符列表。
@@ -21,7 +21,7 @@ PS 包 #  进行 PS 封装时，将每个视频帧封装为一个PS 包， 且�
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -16290,9 +16290,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16311,9 +16311,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17071,7 +17071,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="JWT #  JSON Web Tokens
@@ -10,8 +10,8 @@
 const token = base64urlEncoding(header) &#43; &#39;.&#39; &#43; base64urlEncoding(payload) &#43; &#39;.&#39; &#43; base64urlEncoding(signature)
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dnZWRJbkFzIjoiYWRtaW4iLCJpYXQiOjE0MjI3Nzk2Mzh9.gzSraSYS8EXBxLN_oWnFSRgCzcmJmMjLiuyu5CSpyHI
   Header
-{ &quot;alg&quot; : &quot;HS256&quot;, &quot;typ&quot; : &quot;JWT&quot; }   Payload
-{ &quot;loggedInAs&quot; : &quot;admin&quot;, &quot;iat&quot; : 1422779638 }   Signature
+{ &#34;alg&#34; : &#34;HS256&#34;, &#34;typ&#34; : &#34;JWT&#34; }   Payload
+{ &#34;loggedInAs&#34; : &#34;admin&#34;, &#34;iat&#34; : 1422779638 }   Signature
 HMAC-SHA256( base64urlEncoding(header) &#43; &#39;.&#39; &#43; base64urlEncoding(payload), secret )   Authorization: Bearer eyJhbGci.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="JWT" />
 <meta property="og:description" content="" />
@@ -22,7 +22,7 @@ HMAC-SHA256( base64urlEncoding(header) &#43; &#39;.&#39; &#43; base64urlEncoding
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/direction/be/auth/jwt/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -16292,9 +16292,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16313,9 +16313,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17073,7 +17073,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17166,22 +17166,22 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>
 <p>Header</p>
-<pre><code>{
-    &quot;alg&quot; : &quot;HS256&quot;,
-    &quot;typ&quot; : &quot;JWT&quot;
+<pre tabindex="0"><code>{
+    &#34;alg&#34; : &#34;HS256&#34;,
+    &#34;typ&#34; : &#34;JWT&#34;
 }
 </code></pre></li>
 <li>
 <p>Payload</p>
-<pre><code>{
-    &quot;loggedInAs&quot; : &quot;admin&quot;,
-    &quot;iat&quot; : 1422779638
+<pre tabindex="0"><code>{
+    &#34;loggedInAs&#34; : &#34;admin&#34;,
+    &#34;iat&#34; : 1422779638
 }
 </code></pre></li>
 <li>
 <p>Signature</p>
-<pre><code>HMAC-SHA256(
-    base64urlEncoding(header) + '.' +
+<pre tabindex="0"><code>HMAC-SHA256(
+    base64urlEncoding(header) + &#39;.&#39; +
     base64urlEncoding(payload),
     secret
 )

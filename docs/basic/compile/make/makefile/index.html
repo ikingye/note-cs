@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="makefile #  make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
 简介 #  Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系   $$  $ 是 make 变量 $$ 是 shell 变量    target 声明 #   创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2.">
+基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系   $$  $ 是 make 变量 $$ 是 shell 变量    target 声明 #   创建一个 target： targets : prerequisites  recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="makefile" />
 <meta property="og:description" content="makefile #  make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
 简介 #  Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系   $$  $ 是 make 变量 $$ 是 shell 变量    target 声明 #   创建一个 target： targets : prerequisites recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
+基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系   $$  $ 是 make 变量 $$ 是 shell 变量    target 声明 #   创建一个 target： targets : prerequisites  recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/basic/compile/make/makefile/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -16290,9 +16290,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16311,9 +16311,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17071,7 +17071,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17209,19 +17209,19 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <ul>
 <li>创建一个 <code>target</code>：
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">targets </span><span style="color:#f92672">:</span> prerequisites
-    recipe
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">targets </span><span style="color:#f92672">:</span> prerequisites
+</span></span><span style="display:flex;"><span>    recipe
+</span></span></code></pre></div><ul>
 <li><code>prerequisites</code>(依赖) 是可选的, <code>recipe</code>(做法) 也可以多个或者不给
 <ul>
 <li>没有给 prerequisites, 只会在目标文件文件不存在时执行</li>
 </ul>
 </li>
 <li>targets 和 prerequisites 都可以是多个, 以空格分割
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">file2.txt file3.txt</span><span style="color:#f92672">:</span> file0.txt file1.txt
-    touch file2.txt
-    touch file3.txt
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">file2.txt file3.txt</span><span style="color:#f92672">:</span> file0.txt file1.txt
+</span></span><span style="display:flex;"><span>    touch file2.txt
+</span></span><span style="display:flex;"><span>    touch file3.txt
+</span></span></code></pre></div></li>
 </ul>
 </li>
 <li>target 的<strong>声明顺序不重要</strong>
@@ -17232,8 +17232,8 @@ https://github.com/alex-shpak/hugo-book
 <li>如果声明重复的 <code>target</code>，make 会给一个 warning，<strong>后面会覆盖前面的</strong>
 <ul>
 <li>但是如果<strong>不定义任何 recipe</strong>, 就不会冲突, 只是多了依赖关系
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">file2.txt</span><span style="color:#f92672">:</span> file0.txt file3.txt
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">file2.txt</span><span style="color:#f92672">:</span> file0.txt file3.txt
+</span></span></code></pre></div></li>
 </ul>
 </li>
 <li><code>Phony</code>(假的) Targets
@@ -17266,22 +17266,22 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <ul>
 <li><code>$^</code>: 代表 prerequisites
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 即便分开定义依赖, $^ 依然能拿到
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> file*.txt
-<span style="color:#75715e"># 非常智能的, ex1.txt 会被找到, file0.txt 会被去重
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> ex1.txt file0.txt
-  @echo $^
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># 即便分开定义依赖, $^ 依然能拿到
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> file*.txt
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 非常智能的, ex1.txt 会被找到, file0.txt 会被去重
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> ex1.txt file0.txt
+</span></span><span style="display:flex;"><span>  @echo $^
+</span></span></code></pre></div></li>
 <li><code>$@</code>: 代表 target, 如果 target 为多个, <code>$@</code> 代表当前执行的那个</li>
 <li><code>$&lt;</code>: prerequisite 中的第一个</li>
 <li><code>$?</code>: 需要更新的 prerequisite 文件列表</li>
 <li><code>$+</code>: 所有依赖, 包括重复的</li>
 <li><code>$|</code>: 竖线后面的 <code>order-only prerequisites</code></li>
 <li><code>$*</code>: <code>target</code> <code>%</code> 那部分, 包括路径
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">a.%.b</span><span style="color:#f92672">:</span>
-    <span style="color:#75715e"># $* match 的target % 那部分, 包括路径, 比如 `make dir/a.foo.b` 会打出 `dir/foo`</span>
-    @echo $*
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">a.%.b</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># $* match 的target % 那部分, 包括路径, 比如 `make dir/a.foo.b` 会打出 `dir/foo`</span>
+</span></span><span style="display:flex;"><span>    @echo $*
+</span></span></code></pre></div></li>
 </ul>
 <hr>
 <h4 id="模式匹配">
@@ -17292,11 +17292,11 @@ https://github.com/alex-shpak/hugo-book
 <li>make 会找到最具体的匹配
 <ul>
 <li><code>make small/foo.png</code> 则会匹配下面这个规则（在这之前要先有 small/foo.svg 这个文件）
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">%.png</span><span style="color:#f92672">:</span> %.svg
-    inkscape --export-png $^
-<span style="color:#a6e22e">small/%.png</span><span style="color:#f92672">:</span> %.svg
-    inkscape --export-png --export-dpi <span style="color:#ae81ff">30</span> $^
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">%.png</span><span style="color:#f92672">:</span> %.svg
+</span></span><span style="display:flex;"><span>    inkscape --export-png $^
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">small/%.png</span><span style="color:#f92672">:</span> %.svg
+</span></span><span style="display:flex;"><span>    inkscape --export-png --export-dpi <span style="color:#ae81ff">30</span> $^
+</span></span></code></pre></div></li>
 </ul>
 </li>
 <li>make 已经有一些内置的规则, 比如从 _.c 到 _.o</li>
@@ -17319,8 +17319,8 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> file*.txt | dir/a.foo.b
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">process</span><span style="color:#f92672">:</span> file*.txt | dir/a.foo.b
+</span></span></code></pre></div><hr>
 <h4 id="变量">
   变量
   <a class="anchor" href="#%e5%8f%98%e9%87%8f">#</a>
@@ -17328,10 +17328,10 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li>
 <p>变量都是字符串类型</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 这俩是一样一样的
-</span><span style="color:#75715e"></span>name <span style="color:#f92672">=</span> Ted
-name2<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sarah&#34;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># 这俩是一样一样的
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>name <span style="color:#f92672">=</span> Ted
+</span></span><span style="display:flex;"><span>name2<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sarah&#34;</span>
+</span></span></code></pre></div></li>
 <li>
 <p>设置变量，按以下顺序由高到低:</p>
 <ol>
@@ -17343,44 +17343,44 @@ name2<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sarah&
 </li>
 <li>
 <p><code>?=</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 如果 name 被设置过了, 就不设置了
-</span><span style="color:#75715e"></span>name <span style="color:#f92672">?=</span> Jean
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># 如果 name 被设置过了, 就不设置了
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>name <span style="color:#f92672">?=</span> Jean
+</span></span></code></pre></div></li>
 <li>
 <p><code>override</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 用 override 可以防止命令行参数设置的覆盖
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">override</span> name <span style="color:#f92672">=</span> David
-<span style="color:#960050;background-color:#1e0010">``</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># 用 override 可以防止命令行参数设置的覆盖
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">override</span> name <span style="color:#f92672">=</span> David
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">``</span>
+</span></span></code></pre></div></li>
 <li>
 <p><code>+</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 用加号可以连接 (中间用空格分割)
-</span><span style="color:#75715e"></span>name4 <span style="color:#f92672">+=</span>grey
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># 用加号可以连接 (中间用空格分割)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>name4 <span style="color:#f92672">+=</span>grey
+</span></span></code></pre></div></li>
 <li>
 <p>内置的变量</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">echo_inbuilt</span><span style="color:#f92672">:</span>
-    echo <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span>
-    echo <span style="color:#e6db74">${</span>CXX)<span style="color:#e6db74">}</span>
-    echo <span style="color:#66d9ef">$(</span>FC<span style="color:#66d9ef">)</span>
-    echo <span style="color:#e6db74">${</span>CFLAGS)<span style="color:#e6db74">}</span>
-    echo <span style="color:#66d9ef">$(</span>CPPFLAGS<span style="color:#66d9ef">)</span>
-    echo <span style="color:#e6db74">${</span>CXXFLAGS<span style="color:#e6db74">}</span>
-    echo <span style="color:#66d9ef">$(</span>LDFLAGS<span style="color:#66d9ef">)</span>
-    echo <span style="color:#e6db74">${</span>LDLIBS<span style="color:#e6db74">}</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">echo_inbuilt</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">${</span>CXX)<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#66d9ef">$(</span>FC<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">${</span>CFLAGS)<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#66d9ef">$(</span>CPPFLAGS<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">${</span>CXXFLAGS<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#66d9ef">$(</span>LDFLAGS<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">${</span>LDLIBS<span style="color:#e6db74">}</span>
+</span></span></code></pre></div></li>
 <li>
 <p><code>:=</code></p>
 <ul>
 <li>等号声明时 recursively expanded 递归扩展</li>
 <li>加个冒号可以声明 Simply expanded variables 即时扩展变量, 即只在声明时扩展一次</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># var3 声明时找不到 var4, var3 会扩展成 `and good luck`，直接忽视 var4
-</span><span style="color:#75715e"></span>var3 <span style="color:#f92672">:=</span> <span style="color:#66d9ef">$(</span>var4<span style="color:#66d9ef">)</span> and good luck
-<span style="color:#75715e"># var5 是正常的，扩展为 `good night and good luck`
-</span><span style="color:#75715e"></span>var5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>var4<span style="color:#66d9ef">)</span> and good luck
-var4 <span style="color:#f92672">:=</span> good night
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># var3 声明时找不到 var4, var3 会扩展成 `and good luck`，直接忽视 var4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>var3 <span style="color:#f92672">:=</span> <span style="color:#66d9ef">$(</span>var4<span style="color:#66d9ef">)</span> and good luck
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># var5 是正常的，扩展为 `good night and good luck`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>var5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>var4<span style="color:#66d9ef">)</span> and good luck
+</span></span><span style="display:flex;"><span>var4 <span style="color:#f92672">:=</span> good night
+</span></span></code></pre></div></li>
 </ul>
 <hr>
 <h4 id="函数">
@@ -17390,17 +17390,17 @@ var4 <span style="color:#f92672">:=</span> good night
 <ul>
 <li>
 <p>函数调用格式</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#66d9ef">$(</span>func arg0,arg1,arg2...<span style="color:#66d9ef">)</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#66d9ef">$(</span>func arg0,arg1,arg2...<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div></li>
 <li>
 <p>wildcard：将后面的<strong>通配符</strong>变成一串文件路径</p>
 </li>
 <li>
 <p>patsubst：做替换</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#75715e"># 把所有 markdown 后缀的文件重命名为 md 后缀
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">substitue</span><span style="color:#f92672">:</span> *
-    @echo <span style="color:#66d9ef">$(</span>patsubst %.markdown,%.md,$* $^<span style="color:#66d9ef">)</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#75715e"># 把所有 markdown 后缀的文件重命名为 md 后缀
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">substitue</span><span style="color:#f92672">:</span> *
+</span></span><span style="display:flex;"><span>    @echo <span style="color:#66d9ef">$(</span>patsubst %.markdown,%.md,$* $^<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div></li>
 </ul>
 <hr>
 <h4 id="指令">
@@ -17410,15 +17410,15 @@ var4 <span style="color:#f92672">:=</span> good night
 <ul>
 <li>include：引入别的 Makefile 文件</li>
 <li>流程控制语句<strong>顶格写</strong>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile">sport <span style="color:#f92672">=</span> tennis
-<span style="color:#75715e"># 流程控制语句 (如if else 等等) 顶格写
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">report</span><span style="color:#f92672">:</span>
-<span style="color:#960050;background-color:#1e0010">ifeq</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#66d9ef">$(</span>sport<span style="color:#66d9ef">)</span><span style="color:#960050;background-color:#1e0010">,tennis)</span>
-    <span style="color:#960050;background-color:#1e0010">@echo</span> <span style="color:#e6db74">&#39;game, set, match&#39;</span>
-<span style="color:#960050;background-color:#1e0010">else</span>
-    <span style="color:#960050;background-color:#1e0010">@echo</span> <span style="color:#e6db74">&#34;They think it&#39;s all over; it is now&#34;</span>
-<span style="color:#960050;background-color:#1e0010">endif</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span>sport <span style="color:#f92672">=</span> tennis
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 流程控制语句 (如if else 等等) 顶格写
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">report</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">ifeq</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#66d9ef">$(</span>sport<span style="color:#66d9ef">)</span><span style="color:#960050;background-color:#1e0010">,tennis)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">@echo</span> <span style="color:#e6db74">&#39;game, set, match&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">else</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">@echo</span> <span style="color:#e6db74">&#34;They think it&#39;s all over; it is now&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">endif</span>
+</span></span></code></pre></div></li>
 </ul>
 <hr>
 <h3 id="分支和变体">

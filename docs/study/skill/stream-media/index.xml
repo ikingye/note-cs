@@ -42,7 +42,7 @@ macosforge/dss #  Darwin Streaming Server is Apple&amp;rsquo;s open source versi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/zlmediakit/</guid>
-      <description>ZLMediaKit #  xiongziliang/ZLMediaKit # h264推流 ffmpeg -re -i &amp;#34;/path/to/test.mp4&amp;#34; -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test ffmpeg -re -stream_loop -1 -i carbrand.MOV -vcodec h264 -acodec aac -f rtp_mpegts rtp://127.0.0.1:10000 rtsp __defaultVhost__ rtp 55667788 CodecH264[1920/1080/50] rtsp://127.0.0.1/rtp/55667788 </description>
+      <description>ZLMediaKit #  xiongziliang/ZLMediaKit # h264推流 ffmpeg -re -i &amp;#34;/path/to/test.mp4&amp;#34; -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test  ffmpeg -re -stream_loop -1 -i carbrand.MOV -vcodec h264 -acodec aac -f rtp_mpegts rtp://127.0.0.1:10000  rtsp __defaultVhost__ rtp 55667788 CodecH264[1920/1080/50]  rtsp://127.0.0.1/rtp/55667788 </description>
     </item>
     
   </channel>

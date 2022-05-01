@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="gsoap 生成 onvif 框架 #  生成参数 #  wsdl2h #  -O4 #  aggressively optimizes the output by &ldquo;schema slicing&rdquo; to remove unused schema components, see our article Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services for details;
@@ -21,7 +21,7 @@ removes the base class xsd__anyType from the generated C&#43;&#43; classes, wh
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -16290,9 +16290,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16311,9 +16311,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17071,7 +17071,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17215,7 +17215,7 @@ https://github.com/alex-shpak/hugo-book
 <li>-p: save files with new prefix name instead of &lsquo;soap&rsquo;</li>
 <li>-C: generate client-side source code only</li>
 <li>-L: don&rsquo;t generate soapClientLib/soapServerLib</li>
-<li>-I : use path(s) for #import (paths separated with &lsquo;:')</li>
+<li>-I : use path(s) for #import (paths separated with &lsquo;:&rsquo;)</li>
 </ul>
 <h2 id="生成过程要做的事情">
   生成过程要做的事情
@@ -17315,42 +17315,42 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#%e7%bc%96%e8%af%91%e5%8f%82%e6%95%b0">#</a>
 </h2>
 <p>makefile</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">CC <span style="color:#f92672">=</span> g++
-CPPFLAG <span style="color:#f92672">=</span> -Wall -g -std<span style="color:#f92672">=</span>c++11 -w -fPIC -DWITH_NONAMESPACES -fno-use-cxa-atexit -fexceptions -DWITH_DOM  -DWITH_OPENSSL -DSOAP_DEBUG
-
-
-BASE_DIR <span style="color:#f92672">=</span> .
-INCLUDE <span style="color:#f92672">+=</span> -I<span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span> -I<span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/onvif -I<span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/gsoap -I/usr/local/opt/openssl@1.0/include
-LIB <span style="color:#f92672">=</span> -lssl -lcrypto -L/usr/local/opt/openssl@1.0/lib
-GsoapSOURCE <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/gsoap
-GsoapOBJ <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/wsaapi.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/wsseapi.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/threads.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/duration.o <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>          <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/smdevp.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/mecevp.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/dom.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/struct_timeval.o
-OnvifSOURCE <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/onvif
-OnvifOBJ <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapAdvancedSecurityServiceBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapDeviceBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapDeviceIOBindingProxy.o <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>         <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapImagingBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapMediaBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapPTZBindingProxy.o <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>         <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapPullPointSubscriptionBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapRemoteDiscoveryBindingProxy.o
-SRC <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/stdsoap2.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapC.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/wsddClient.o <span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/main.o <span style="color:#66d9ef">$(</span>GsoapOBJ<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>OnvifOBJ<span style="color:#66d9ef">)</span>
-OBJECTS <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>patsubst %.cpp,%.o,<span style="color:#66d9ef">$(</span>SRC<span style="color:#66d9ef">))</span>
-TARGET <span style="color:#f92672">=</span> starry-eyes
-all: <span style="color:#66d9ef">$(</span>TARGET<span style="color:#66d9ef">)</span>
-<span style="color:#66d9ef">$(</span>TARGET<span style="color:#66d9ef">)</span>:<span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>
-    <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>CPPFLAG<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>  <span style="color:#66d9ef">$(</span>INCLUDE<span style="color:#66d9ef">)</span>  <span style="color:#66d9ef">$(</span>LIB<span style="color:#66d9ef">)</span> -o <span style="color:#66d9ef">$(</span>TARGET<span style="color:#66d9ef">)</span>
-<span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>:%.o : %.cpp
-    <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span> -c <span style="color:#66d9ef">$(</span>CPPFLAG<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>INCLUDE<span style="color:#66d9ef">)</span> $&lt; -o $@
-clean:
-    rm -rf  <span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>
-</code></pre></div><p>遇到的主要问题是这个错误：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Undefined symbols <span style="color:#66d9ef">for</span> architecture x86_64:
-  <span style="color:#e6db74">&#34;soap_s2xsd__dateTime(soap*, char const*, timeval*)&#34;</span>, referenced from:
-      soap_in_saml2__AuthnStatementType<span style="color:#f92672">(</span>soap*, char const*, saml2__AuthnStatementType*, char const*<span style="color:#f92672">)</span> in soapC.o
-      soap_in_saml2__ConditionsType<span style="color:#f92672">(</span>soap*, char const*, saml2__ConditionsType*, char const*<span style="color:#f92672">)</span> in soapC.o
-      soap_in_saml2__SubjectConfirmationDataType<span style="color:#f92672">(</span>soap*, char const*, saml2__SubjectConfirmationDataType*, char const*<span style="color:#f92672">)</span> in soapC.o
-      soap_in_saml2__AssertionType<span style="color:#f92672">(</span>soap*, char const*, saml2__AssertionType*, char const*<span style="color:#f92672">)</span> in soapC.o
-      soap_in_saml1__AuthenticationStatementType<span style="color:#f92672">(</span>soap*, char const*, saml1__AuthenticationStatementType*, char const*<span style="color:#f92672">)</span> in soapC.o
-      soap_in_saml1__ConditionsType<span style="color:#f92672">(</span>soap*, char const*, saml1__ConditionsType*, char const*<span style="color:#f92672">)</span> in soapC.o
-      soap_in_saml1__AssertionType<span style="color:#f92672">(</span>soap*, char const*, saml1__AssertionType*, char const*<span style="color:#f92672">)</span> in soapC.o
-      ...
-</code></pre></div><p><code>soap_s2xsd__dateTime</code> 这个函数在框架生成的 soapC.cpp 中有多次调用，之前 onvif wsdl 生成的框架里是没有的。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>CC <span style="color:#f92672">=</span> g++
+</span></span><span style="display:flex;"><span>CPPFLAG <span style="color:#f92672">=</span> -Wall -g -std<span style="color:#f92672">=</span>c++11 -w -fPIC -DWITH_NONAMESPACES -fno-use-cxa-atexit -fexceptions -DWITH_DOM  -DWITH_OPENSSL -DSOAP_DEBUG
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>BASE_DIR <span style="color:#f92672">=</span> .
+</span></span><span style="display:flex;"><span>INCLUDE <span style="color:#f92672">+=</span> -I<span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span> -I<span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/onvif -I<span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/gsoap -I/usr/local/opt/openssl@1.0/include
+</span></span><span style="display:flex;"><span>LIB <span style="color:#f92672">=</span> -lssl -lcrypto -L/usr/local/opt/openssl@1.0/lib
+</span></span><span style="display:flex;"><span>GsoapSOURCE <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/gsoap
+</span></span><span style="display:flex;"><span>GsoapOBJ <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/wsaapi.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/wsseapi.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/threads.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/duration.o <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>          <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/smdevp.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/mecevp.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/dom.o <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/struct_timeval.o
+</span></span><span style="display:flex;"><span>OnvifSOURCE <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/onvif
+</span></span><span style="display:flex;"><span>OnvifOBJ <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapAdvancedSecurityServiceBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapDeviceBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapDeviceIOBindingProxy.o <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>         <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapImagingBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapMediaBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapPTZBindingProxy.o <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>         <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapPullPointSubscriptionBindingProxy.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapRemoteDiscoveryBindingProxy.o
+</span></span><span style="display:flex;"><span>SRC <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>GsoapSOURCE<span style="color:#66d9ef">)</span>/stdsoap2.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/soapC.o <span style="color:#66d9ef">$(</span>OnvifSOURCE<span style="color:#66d9ef">)</span>/wsddClient.o <span style="color:#66d9ef">$(</span>BASE_DIR<span style="color:#66d9ef">)</span>/main.o <span style="color:#66d9ef">$(</span>GsoapOBJ<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>OnvifOBJ<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>OBJECTS <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>patsubst %.cpp,%.o,<span style="color:#66d9ef">$(</span>SRC<span style="color:#66d9ef">))</span>
+</span></span><span style="display:flex;"><span>TARGET <span style="color:#f92672">=</span> starry-eyes
+</span></span><span style="display:flex;"><span>all: <span style="color:#66d9ef">$(</span>TARGET<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">$(</span>TARGET<span style="color:#66d9ef">)</span>:<span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>CPPFLAG<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>  <span style="color:#66d9ef">$(</span>INCLUDE<span style="color:#66d9ef">)</span>  <span style="color:#66d9ef">$(</span>LIB<span style="color:#66d9ef">)</span> -o <span style="color:#66d9ef">$(</span>TARGET<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>:%.o : %.cpp
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">$(</span>CC<span style="color:#66d9ef">)</span> -c <span style="color:#66d9ef">$(</span>CPPFLAG<span style="color:#66d9ef">)</span> <span style="color:#66d9ef">$(</span>INCLUDE<span style="color:#66d9ef">)</span> $&lt; -o $@
+</span></span><span style="display:flex;"><span>clean:
+</span></span><span style="display:flex;"><span>    rm -rf  <span style="color:#66d9ef">$(</span>OBJECTS<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div><p>遇到的主要问题是这个错误：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Undefined symbols <span style="color:#66d9ef">for</span> architecture x86_64:
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;soap_s2xsd__dateTime(soap*, char const*, timeval*)&#34;</span>, referenced from:
+</span></span><span style="display:flex;"><span>      soap_in_saml2__AuthnStatementType<span style="color:#f92672">(</span>soap*, char const*, saml2__AuthnStatementType*, char const*<span style="color:#f92672">)</span> in soapC.o
+</span></span><span style="display:flex;"><span>      soap_in_saml2__ConditionsType<span style="color:#f92672">(</span>soap*, char const*, saml2__ConditionsType*, char const*<span style="color:#f92672">)</span> in soapC.o
+</span></span><span style="display:flex;"><span>      soap_in_saml2__SubjectConfirmationDataType<span style="color:#f92672">(</span>soap*, char const*, saml2__SubjectConfirmationDataType*, char const*<span style="color:#f92672">)</span> in soapC.o
+</span></span><span style="display:flex;"><span>      soap_in_saml2__AssertionType<span style="color:#f92672">(</span>soap*, char const*, saml2__AssertionType*, char const*<span style="color:#f92672">)</span> in soapC.o
+</span></span><span style="display:flex;"><span>      soap_in_saml1__AuthenticationStatementType<span style="color:#f92672">(</span>soap*, char const*, saml1__AuthenticationStatementType*, char const*<span style="color:#f92672">)</span> in soapC.o
+</span></span><span style="display:flex;"><span>      soap_in_saml1__ConditionsType<span style="color:#f92672">(</span>soap*, char const*, saml1__ConditionsType*, char const*<span style="color:#f92672">)</span> in soapC.o
+</span></span><span style="display:flex;"><span>      soap_in_saml1__AssertionType<span style="color:#f92672">(</span>soap*, char const*, saml1__AssertionType*, char const*<span style="color:#f92672">)</span> in soapC.o
+</span></span><span style="display:flex;"><span>      ...
+</span></span></code></pre></div><p><code>soap_s2xsd__dateTime</code> 这个函数在框架生成的 soapC.cpp 中有多次调用，之前 onvif wsdl 生成的框架里是没有的。</p>
 <p>后面找到是 gsoap 的 struct_timeval.c 中实现的，加入编译后，问题解决。</p>
 <p>参考：<a href="https://www.genivia.com/examples/onvif/index.html">https://www.genivia.com/examples/onvif/index.html</a></p>
 <hr>
@@ -17361,23 +17361,23 @@ clean:
 <p>1. 修改 typemap.dat，取消注释</p>
 <p>xsd<strong>duration = #import &ldquo;custom/duration.h&rdquo; | xsd</strong>duration</p>
 <p>2. 执行 wsdl2h 生成 onvif.h</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">wsdl2h -O4 -P -x -o onvif.h <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/device/wsdl/devicemgmt.wsdl <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/events/wsdl/event.wsdl <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/deviceio.wsdl <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver20/imaging/wsdl/imaging.wsdl <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/media/wsdl/media.wsdl <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver20/ptz/wsdl/ptz.wsdl <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/network/wsdl/remotediscovery.wsdl <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  http://www.onvif.org/ver10/advancedsecurity/wsdl/advancedsecurity.wsdl
-</code></pre></div><p>3. 修改 onvif.h，change <code>#import &quot;wsdd10.h&quot;</code> to <code>#import &quot;wsdd5.h</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wsdl2h -O4 -P -x -o onvif.h <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/device/wsdl/devicemgmt.wsdl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/events/wsdl/event.wsdl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/deviceio.wsdl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver20/imaging/wsdl/imaging.wsdl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/media/wsdl/media.wsdl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver20/ptz/wsdl/ptz.wsdl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/onvif/ver10/network/wsdl/remotediscovery.wsdl <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  http://www.onvif.org/ver10/advancedsecurity/wsdl/advancedsecurity.wsdl
+</span></span></code></pre></div><p>3. 修改 onvif.h，change <code>#import &quot;wsdd10.h&quot;</code> to <code>#import &quot;wsdd5.h</code></p>
 <p>4. 修改 onvif.h，添加 #import &ldquo;wsse.h&rdquo;</p>
 <p>5. 执行 soapcpp2 生成框架代码</p>
 <p>6. 执行  soapcpp2 -pwsdd 生成  wsddClient.cpp</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">soapcpp2 -2 -C -j -x  -I ~/code/onvif/app-gsoap-2.8.98/gsoap:~/code/onvif/app-gsoap-2.8.98/gsoap/import:~/code/onvif/app-gsoap-2.8.98/gsoap/custom onvif.h -d onvif/
-
-soapcpp2 -a -x -L -pwsdd -I ~/code/onvif/app-gsoap-2.8.98/gsoap/import ~/code/onvif/app-gsoap-2.8.98/gsoap/import/wsdd5.h -d onvif/
-</code></pre></div></article>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>soapcpp2 -2 -C -j -x  -I ~/code/onvif/app-gsoap-2.8.98/gsoap:~/code/onvif/app-gsoap-2.8.98/gsoap/import:~/code/onvif/app-gsoap-2.8.98/gsoap/custom onvif.h -d onvif/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>soapcpp2 -a -x -L -pwsdd -I ~/code/onvif/app-gsoap-2.8.98/gsoap/import ~/code/onvif/app-gsoap-2.8.98/gsoap/import/wsdd5.h -d onvif/
+</span></span></code></pre></div></article>
  
       
 

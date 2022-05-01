@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="git #  git module #  git submodule foreach git reset --hard HEAD git submodule update git submodule foreach &#34;git checkout master; git pull&#34; git submodule foreach git clean -f 更新 submodule #  git submodule update --init git submodule update --remote  merge vs squash vs rebase #  merge 不能保持 master 分支干净，但是保持了所有的 commit history，大多数情况下都是不好的，个别情况挺好 squash 也可以保持 master 分支干净，但是 master 中 author 都是 maintainer，而不是原 owner rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 author">
+<meta name="description" content="git #  git module #  git submodule foreach git reset --hard HEAD git submodule update git submodule foreach &#34;git checkout master; git pull&#34; git submodule foreach git clean -f 更新 submodule #  git submodule update --init  git submodule update --remote  merge vs squash vs rebase #  merge 不能保持 master 分支干净，但是保持了所有的 commit history，大多数情况下都是不好的，个别情况挺好 squash 也可以保持 master 分支干净，但是 master 中 author 都是 maintainer，而不是原 owner rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 author">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="git" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/study/apps/macos/3/git/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -16285,9 +16285,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16306,9 +16306,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17066,7 +17066,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17146,19 +17146,18 @@ https://github.com/alex-shpak/hugo-book
   git module
   <a class="anchor" href="#git-module">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule foreach git reset --hard HEAD
-git submodule update
-git submodule foreach <span style="color:#e6db74">&#34;git checkout master; git pull&#34;</span>
-git submodule foreach git clean -f
-
-</code></pre></div><h3 id="更新-submodule">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule foreach git reset --hard HEAD
+</span></span><span style="display:flex;"><span>git submodule update
+</span></span><span style="display:flex;"><span>git submodule foreach <span style="color:#e6db74">&#34;git checkout master; git pull&#34;</span>
+</span></span><span style="display:flex;"><span>git submodule foreach git clean -f
+</span></span></code></pre></div><h3 id="更新-submodule">
   更新 submodule
   <a class="anchor" href="#%e6%9b%b4%e6%96%b0-submodule">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule update --init
-
-git submodule update --remote
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule update --init
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git submodule update --remote
+</span></span></code></pre></div><hr>
 <h2 id="merge-vs-squash-vs-rebase">
   merge vs squash vs rebase
   <a class="anchor" href="#merge-vs-squash-vs-rebase">#</a>
@@ -17170,15 +17169,15 @@ rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 auth
   squash merge
   <a class="anchor" href="#squash-merge">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 切换到目标分支</span>
-$ git checkout master
-
-<span style="color:#75715e"># 以 squash 的形式 merge</span>
-$ git merge --squash devel
-
-<span style="color:#75715e"># it does not produce a commit right away: you need an additional commit</span>
-$ git commit -m <span style="color:#e6db74">&#34;squash branch&#34;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 切换到目标分支</span>
+</span></span><span style="display:flex;"><span>$ git checkout master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 以 squash 的形式 merge</span>
+</span></span><span style="display:flex;"><span>$ git merge --squash devel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># it does not produce a commit right away: you need an additional commit</span>
+</span></span><span style="display:flex;"><span>$ git commit -m <span style="color:#e6db74">&#34;squash branch&#34;</span>
+</span></span></code></pre></div><ul>
 <li>你会发现，在 master 分支上居然有未提交的修改，然后你就需要在 master 上主动提交了修改，</li>
 <li>注意，这里是你 commit 的，也就是改变了 commit 的 author。</li>
 <li>git merge has a &ndash;commit option, but it cannot be used with &ndash;squash.</li>
@@ -17192,18 +17191,18 @@ $ git commit -m <span style="color:#e6db74">&#34;squash branch&#34;</span>
   rebase merge
   <a class="anchor" href="#rebase-merge">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 先切换到 devel 分支（不一样咯）</span>
-$ git checkout devel
-
-<span style="color:#75715e"># 变基</span>
-$ git rebase -i master
-
-<span style="color:#75715e"># 切换回目标分支</span>
-$ git checkout master
-
-<span style="color:#75715e"># 合并</span>
-$ git merge
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 先切换到 devel 分支（不一样咯）</span>
+</span></span><span style="display:flex;"><span>$ git checkout devel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 变基</span>
+</span></span><span style="display:flex;"><span>$ git rebase -i master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 切换回目标分支</span>
+</span></span><span style="display:flex;"><span>$ git checkout master
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 合并</span>
+</span></span><span style="display:flex;"><span>$ git merge
+</span></span></code></pre></div><ul>
 <li>我们在 devel 里面对照 master 进行了变基
 <ul>
 <li>所谓的变基其实就是找到两个分支共同的祖先</li>
@@ -17232,12 +17231,12 @@ $ git merge
   <a class="anchor" href="#git-branch-%e4%b8%8e-git-tag-%e5%90%8c%e5%90%8d">#</a>
 </h2>
 <p>需要使用完整路径</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git checkout refs/heads/v1.5.2
-
-git checkout refs/tags/v1.5.2
-
-git push -u origin refs/heads/v4.8.0
-</code></pre></div><p>参考：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git checkout refs/heads/v1.5.2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout refs/tags/v1.5.2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git push -u origin refs/heads/v4.8.0
+</span></span></code></pre></div><p>参考：</p>
 <ul>
 <li><a href="https://softwareengineering.stackexchange.com/questions/230438/in-git-is-it-a-bad-idea-to-create-a-tag-with-the-same-name-as-a-deleted-branch">In git, is it a bad idea to create a tag with the same name as a deleted branch?</a></li>
 </ul>
@@ -17246,11 +17245,11 @@ git push -u origin refs/heads/v4.8.0
   git pull force
   <a class="anchor" href="#git-pull-force">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git fetch --all
-
-<span style="color:#75715e"># git reset --hard origin/&lt;branch_name&gt;</span>
-git reset --hard origin/master
-</code></pre></div><p>参考：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git fetch --all
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># git reset --hard origin/&lt;branch_name&gt;</span>
+</span></span><span style="display:flex;"><span>git reset --hard origin/master
+</span></span></code></pre></div><p>参考：</p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files">How do I force “git pull” to overwrite local files?</a></li>
 </ul>
@@ -17259,17 +17258,16 @@ git reset --hard origin/master
   <code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code>
   <a class="anchor" href="#hard-reset-vs-mixed-reset-vs-soft-reset">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 回到 reset 版本，之后的文件都属于 git add 的状态</span>
-git reset --soft
-
-<span style="color:#75715e"># git reset 默认就是 --mixed</span>
-<span style="color:#75715e"># 回到 reset 版本，之后的文件都属于 git add 前的状态</span>
-git reset --mixed
-
-<span style="color:#75715e"># 回到 reset 版本，之后文件都丢弃（使用 git reflog 可以找回来）</span>
-git reset --hard
-
-</code></pre></div><h2 id="git-reflog">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 回到 reset 版本，之后的文件都属于 git add 的状态</span>
+</span></span><span style="display:flex;"><span>git reset --soft
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># git reset 默认就是 --mixed</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 回到 reset 版本，之后的文件都属于 git add 前的状态</span>
+</span></span><span style="display:flex;"><span>git reset --mixed
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 回到 reset 版本，之后文件都丢弃（使用 git reflog 可以找回来）</span>
+</span></span><span style="display:flex;"><span>git reset --hard
+</span></span></code></pre></div><h2 id="git-reflog">
   git reflog
   <a class="anchor" href="#git-reflog">#</a>
 </h2>
@@ -17280,13 +17278,13 @@ git reset --hard
   git 回退
   <a class="anchor" href="#git-%e5%9b%9e%e9%80%80">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 文件放弃本地修改</span>
-git checkout -- &lt;file&gt;
-
-<span style="color:#75715e"># 回退到某个版本</span>
-git checkout commit-id &lt;path&gt;
-git reset -- &lt;path&gt;
-</code></pre></div><p>参考：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 文件放弃本地修改</span>
+</span></span><span style="display:flex;"><span>git checkout -- &lt;file&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 回退到某个版本</span>
+</span></span><span style="display:flex;"><span>git checkout commit-id &lt;path&gt;
+</span></span><span style="display:flex;"><span>git reset -- &lt;path&gt;
+</span></span></code></pre></div><p>参考：</p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/11200839/why-git-cant-do-hard-soft-resets-by-path">Why git can&rsquo;t do hard/soft resets by path?</a></li>
 </ul>

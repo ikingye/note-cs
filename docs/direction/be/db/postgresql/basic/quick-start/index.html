@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="PostgreSQL 快速上手 #  安装 #  MacOS #   安装：brew install postgresql 启动：brew services start postgresql 创建用户名数据库：createdb  基础命令 #  登录 PostgreSQL 控制台：psql #  psql -U [user] -d [database] -h [host] -p [port]
@@ -23,7 +23,7 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -16292,9 +16292,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16313,9 +16313,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17073,7 +17073,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17177,7 +17177,7 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <p><code>psql -U [user] -d [database] -h [host] -p [port]</code></p>
 <p>默认 <code>psql</code></p>
-<pre><code>user：当前mac用户
+<pre tabindex="0"><code>user：当前mac用户
 database：用户同名数据库
 主机：localhost
 端口号：5432，postgresql的默认端口是5432
@@ -17198,19 +17198,19 @@ database：用户同名数据库
   常用控制台命令
   <a class="anchor" href="#%e5%b8%b8%e7%94%a8%e6%8e%a7%e5%88%b6%e5%8f%b0%e5%91%bd%e4%bb%a4">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#960050;background-color:#1e0010">\</span>password<span style="color:#960050;background-color:#1e0010">：设置当前登录用户的密码</span>
-<span style="color:#960050;background-color:#1e0010">\</span>h<span style="color:#960050;background-color:#1e0010">：查看</span>SQL命令的解释<span style="color:#960050;background-color:#1e0010">，比如\</span>h <span style="color:#66d9ef">select</span><span style="color:#960050;background-color:#1e0010">。</span>
-<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">?</span><span style="color:#960050;background-color:#1e0010">：查看</span>psql命令列表<span style="color:#960050;background-color:#1e0010">。</span>
-<span style="color:#960050;background-color:#1e0010">\</span>l<span style="color:#960050;background-color:#1e0010">：列出所有数据库。</span>
-<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#66d9ef">c</span> [database_name]<span style="color:#960050;background-color:#1e0010">：连接其他数据库。</span>
-<span style="color:#960050;background-color:#1e0010">\</span>d<span style="color:#960050;background-color:#1e0010">：列出当前数据库的所有表格。</span>
-<span style="color:#960050;background-color:#1e0010">\</span>d [<span style="color:#66d9ef">table_name</span>]<span style="color:#960050;background-color:#1e0010">：列出某一张表格的结构。</span>
-<span style="color:#960050;background-color:#1e0010">\</span>du<span style="color:#960050;background-color:#1e0010">：列出所有用户。</span>
-<span style="color:#960050;background-color:#1e0010">\</span>e<span style="color:#960050;background-color:#1e0010">：打开文本编辑器。</span>
-<span style="color:#960050;background-color:#1e0010">\</span>conninfo<span style="color:#960050;background-color:#1e0010">：列出当前数据库和连接的信息。</span>
-<span style="color:#960050;background-color:#1e0010">\</span>password [<span style="color:#66d9ef">user</span>]: <span style="color:#960050;background-color:#1e0010">修改用户密码</span>
-<span style="color:#960050;background-color:#1e0010">\</span>q<span style="color:#960050;background-color:#1e0010">：退出</span>
-</code></pre></div><h2 id="查询">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>password<span style="color:#960050;background-color:#1e0010">：设置当前登录用户的密码</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>h<span style="color:#960050;background-color:#1e0010">：查看</span>SQL命令的解释<span style="color:#960050;background-color:#1e0010">，比如\</span>h <span style="color:#66d9ef">select</span><span style="color:#960050;background-color:#1e0010">。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">?</span><span style="color:#960050;background-color:#1e0010">：查看</span>psql命令列表<span style="color:#960050;background-color:#1e0010">。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>l<span style="color:#960050;background-color:#1e0010">：列出所有数据库。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#66d9ef">c</span> [database_name]<span style="color:#960050;background-color:#1e0010">：连接其他数据库。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>d<span style="color:#960050;background-color:#1e0010">：列出当前数据库的所有表格。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>d [<span style="color:#66d9ef">table_name</span>]<span style="color:#960050;background-color:#1e0010">：列出某一张表格的结构。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>du<span style="color:#960050;background-color:#1e0010">：列出所有用户。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>e<span style="color:#960050;background-color:#1e0010">：打开文本编辑器。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>conninfo<span style="color:#960050;background-color:#1e0010">：列出当前数据库和连接的信息。</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>password [<span style="color:#66d9ef">user</span>]: <span style="color:#960050;background-color:#1e0010">修改用户密码</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">\</span>q<span style="color:#960050;background-color:#1e0010">：退出</span>
+</span></span></code></pre></div><h2 id="查询">
   查询
   <a class="anchor" href="#%e6%9f%a5%e8%af%a2">#</a>
 </h2>
@@ -17219,11 +17219,11 @@ database：用户同名数据库
   <a class="anchor" href="#x">#</a>
 </h3>
 <p>类似 mysql 的 \G</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">#</span> <span style="color:#960050;background-color:#1e0010">\</span>x
-Expanded display <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">on</span>.
-<span style="color:#f92672">#</span> <span style="color:#960050;background-color:#1e0010">\</span>x
-Expanded display <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">off</span>.
-</code></pre></div><p>参考：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">#</span> <span style="color:#960050;background-color:#1e0010">\</span>x
+</span></span><span style="display:flex;"><span>Expanded display <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">on</span>.
+</span></span><span style="display:flex;"><span><span style="color:#f92672">#</span> <span style="color:#960050;background-color:#1e0010">\</span>x
+</span></span><span style="display:flex;"><span>Expanded display <span style="color:#66d9ef">is</span> <span style="color:#66d9ef">off</span>.
+</span></span></code></pre></div><p>参考：</p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/22407860/display-select-results-vertically-in-psql-as-is-done-by-mysqls-g">Display select results vertically in psql, as is done by MySQL&rsquo;s \G</a></li>
 </ul>
@@ -17238,8 +17238,8 @@ Expanded display <span style="color:#66d9ef">is</span> <span style="color:#66d9e
 </h3>
 <p>GRANT on the <strong>database</strong> is not what you need. Grant on the <strong>tables</strong> directly.</p>
 <p>Granting privileges on the database mostly is used to grant or revoke connect privileges. This allows you to specify who may do stuff in the database if they have sufficient other permissions.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#66d9ef">TABLE</span> side_adzone <span style="color:#66d9ef">TO</span> jerry;
-</code></pre></div><p>参考：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> <span style="color:#66d9ef">TABLE</span> side_adzone <span style="color:#66d9ef">TO</span> jerry;
+</span></span></code></pre></div><p>参考：</p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/15520361/permission-denied-for-relation">Permission denied for relation</a></li>
 </ul>

@@ -32,7 +32,7 @@ SDP 作用 #  SDP 作用包括以下一些方面
       <description>SIP #  SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。
 CALL-ID #  SIP 的一次通话，可以通过 From, To, Call-ID 三元组来区分。
 CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）
- 包内容 #  Message #  Session Initiation Protocol (MESSAGE) Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0 Message Header Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823 From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389 To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt; Call-ID: 1119613114 CSeq: 20 MESSAGE Content-Type: Application/MANSCDP+xml Max-Forwards: 70 User-Agent: IP Camera Content-Length: 178 Message Body &amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;GB2312&amp;#34;?&amp;gt;\n &amp;lt;Notify&amp;gt;\n &amp;lt;CmdType&amp;gt;Keepalive&amp;lt;/CmdType&amp;gt;\n &amp;lt;SN&amp;gt;123&amp;lt;/SN&amp;gt;\n &amp;lt;DeviceID&amp;gt;34020000001320000001&amp;lt;/DeviceID&amp;gt;\n &amp;lt;Status&amp;gt;OK&amp;lt;/Status&amp;gt;\n &amp;lt;Info&amp;gt;\n &amp;lt;/Info&amp;gt;\n &amp;lt;/Notify&amp;gt;\n Bye #  同一个会话，CSeq 要 +1</description>
+ 包内容 #  Message #  Session Initiation Protocol (MESSAGE)  Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0  Message Header  Via: SIP/2.0/UDP 192.168.137.109:5060;rport;branch=z9hG4bK1013136823  From: &amp;lt;sip:34020000001320000001@3402000000&amp;gt;;tag=676399389  To: &amp;lt;sip:34020000002000000001@3402000000&amp;gt;  Call-ID: 1119613114  CSeq: 20 MESSAGE  Content-Type: Application/MANSCDP+xml  Max-Forwards: 70  User-Agent: IP Camera  Content-Length: 178  Message Body  &amp;lt;?</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ SIP 监控域 SIP surveil lance realm #  支持本标准规定的通信协议的
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/packet/</guid>
-      <description>数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER) Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0 Method: REGISTER Request-URI: sip:34020000002000000001@3402000000 [Resent Packet: True] [Suspected resend of frame: 1613] Message Header Via: SIP/2.</description>
+      <description>数据包 #  Register #  request: Register (no auth) #  Frame 2117: 442 bytes on wire (3536 bits), 442 bytes captured (3536 bits) on interface 0 Ethernet II, Src: 98:df:82:6d:9e:52 (98:df:82:6d:9e:52), Dst: Apple_70:23:0d (88:e9:fe:70:23:0d) Internet Protocol Version 4, Src: 192.168.137.109, Dst: 192.168.137.105 User Datagram Protocol, Src Port: 5060, Dst Port: 5060 Session Initiation Protocol (REGISTER)  Request-Line: REGISTER sip:34020000002000000001@3402000000 SIP/2.0  Method: REGISTER  Request-URI: sip:34020000002000000001@3402000000  [Resent Packet: True]  [Suspected resend of frame: 1613]  Message Header  Via: SIP/2.</description>
     </item>
     
     <item>

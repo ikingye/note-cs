@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Prometheus #  prometheus/prometheus quick-start #  $ docker run --name prometheus -d -p 8015:9090 quay.io/prometheus/prometheus $ cat /etc/prometheus/prometheus.yml # my global config global: scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute. evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute. # scrape_timeout is set to the global default (10s). # Alertmanager configuration alerting: alertmanagers: - static_configs: - targets: # - alertmanager:9093 # Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.">
+<meta name="description" content="Prometheus #  prometheus/prometheus quick-start #  $ docker run --name prometheus -d -p 8015:9090 quay.io/prometheus/prometheus  $ cat /etc/prometheus/prometheus.yml  # my global config global:  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.  # scrape_timeout is set to the global default (10s).  # Alertmanager configuration alerting:  alertmanagers:  - static_configs:  - targets:  # - alertmanager:9093  # Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Prometheus" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/direction/be/devops/prometheus/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -16285,9 +16285,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16306,9 +16306,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17066,7 +17066,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17141,77 +17141,77 @@ https://github.com/alex-shpak/hugo-book
   quick-start
   <a class="anchor" href="#quick-start">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ docker run --name prometheus -d -p 8015:9090 quay.io/prometheus/prometheus
-
-$ cat /etc/prometheus/prometheus.yml
-
-<span style="color:#75715e"># my global config</span>
-global:
-  scrape_interval: 15s <span style="color:#75715e"># Set the scrape interval to every 15 seconds. Default is every 1 minute.</span>
-  evaluation_interval: 15s <span style="color:#75715e"># Evaluate rules every 15 seconds. The default is every 1 minute.</span>
-  <span style="color:#75715e"># scrape_timeout is set to the global default (10s).</span>
-
-<span style="color:#75715e"># Alertmanager configuration</span>
-alerting:
-  alertmanagers:
-    - static_configs:
-        - targets:
-          <span style="color:#75715e"># - alertmanager:9093</span>
-
-<span style="color:#75715e"># Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.</span>
-rule_files:
-  <span style="color:#75715e"># - &#34;first_rules.yml&#34;</span>
-  <span style="color:#75715e"># - &#34;second_rules.yml&#34;</span>
-
-<span style="color:#75715e"># A scrape configuration containing exactly one endpoint to scrape:</span>
-<span style="color:#75715e"># Here it&#39;s Prometheus itself.</span>
-scrape_configs:
-  <span style="color:#75715e"># The job name is added as a label `job=&lt;job_name&gt;` to any timeseries scraped from this config.</span>
-  - job_name: <span style="color:#e6db74">&#34;prometheus&#34;</span>
-
-    <span style="color:#75715e"># metrics_path defaults to &#39;/metrics&#39;</span>
-    <span style="color:#75715e"># scheme defaults to &#39;http&#39;.</span>
-
-    static_configs:
-      - targets: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;localhost:9090&#34;</span><span style="color:#f92672">]</span>
-</code></pre></div><h2 id="prometheus-证书">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ docker run --name prometheus -d -p 8015:9090 quay.io/prometheus/prometheus
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ cat /etc/prometheus/prometheus.yml
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># my global config</span>
+</span></span><span style="display:flex;"><span>global:
+</span></span><span style="display:flex;"><span>  scrape_interval: 15s <span style="color:#75715e"># Set the scrape interval to every 15 seconds. Default is every 1 minute.</span>
+</span></span><span style="display:flex;"><span>  evaluation_interval: 15s <span style="color:#75715e"># Evaluate rules every 15 seconds. The default is every 1 minute.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># scrape_timeout is set to the global default (10s).</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Alertmanager configuration</span>
+</span></span><span style="display:flex;"><span>alerting:
+</span></span><span style="display:flex;"><span>  alertmanagers:
+</span></span><span style="display:flex;"><span>    - static_configs:
+</span></span><span style="display:flex;"><span>        - targets:
+</span></span><span style="display:flex;"><span>          <span style="color:#75715e"># - alertmanager:9093</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.</span>
+</span></span><span style="display:flex;"><span>rule_files:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># - &#34;first_rules.yml&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># - &#34;second_rules.yml&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># A scrape configuration containing exactly one endpoint to scrape:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Here it&#39;s Prometheus itself.</span>
+</span></span><span style="display:flex;"><span>scrape_configs:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># The job name is added as a label `job=&lt;job_name&gt;` to any timeseries scraped from this config.</span>
+</span></span><span style="display:flex;"><span>  - job_name: <span style="color:#e6db74">&#34;prometheus&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># metrics_path defaults to &#39;/metrics&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># scheme defaults to &#39;http&#39;.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    static_configs:
+</span></span><span style="display:flex;"><span>      - targets: <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;localhost:9090&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><h2 id="prometheus-证书">
   Prometheus 证书
   <a class="anchor" href="#prometheus-%e8%af%81%e4%b9%a6">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ tree /etc/kubernetes/pki
-
-/etc/kubernetes/pki
-├── apiserver.crt
-├── apiserver-etcd-client.crt
-├── apiserver-etcd-client.key
-├── apiserver.key
-├── apiserver-kubelet-client.crt
-├── apiserver-kubelet-client.key
-├── ca.crt
-├── ca.key
-├── etcd
-│  ├── ca.crt
-│  ├── ca.key
-│  ├── healthcheck-client.crt
-│  ├── healthcheck-client.key
-│  ├── peer.crt
-│  ├── peer.key
-│  ├── server.crt
-│  └── server.key
-├── front-proxy-ca.crt
-├── front-proxy-ca.key
-├── front-proxy-client.crt
-├── front-proxy-client.key
-├── sa.key
-└── sa.pub
-
-<span style="color:#ae81ff">1</span> directory, <span style="color:#ae81ff">22</span> files
-</code></pre></div><h3 id="service-account">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ tree /etc/kubernetes/pki
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/etc/kubernetes/pki
+</span></span><span style="display:flex;"><span>├── apiserver.crt
+</span></span><span style="display:flex;"><span>├── apiserver-etcd-client.crt
+</span></span><span style="display:flex;"><span>├── apiserver-etcd-client.key
+</span></span><span style="display:flex;"><span>├── apiserver.key
+</span></span><span style="display:flex;"><span>├── apiserver-kubelet-client.crt
+</span></span><span style="display:flex;"><span>├── apiserver-kubelet-client.key
+</span></span><span style="display:flex;"><span>├── ca.crt
+</span></span><span style="display:flex;"><span>├── ca.key
+</span></span><span style="display:flex;"><span>├── etcd
+</span></span><span style="display:flex;"><span>│  ├── ca.crt
+</span></span><span style="display:flex;"><span>│  ├── ca.key
+</span></span><span style="display:flex;"><span>│  ├── healthcheck-client.crt
+</span></span><span style="display:flex;"><span>│  ├── healthcheck-client.key
+</span></span><span style="display:flex;"><span>│  ├── peer.crt
+</span></span><span style="display:flex;"><span>│  ├── peer.key
+</span></span><span style="display:flex;"><span>│  ├── server.crt
+</span></span><span style="display:flex;"><span>│  └── server.key
+</span></span><span style="display:flex;"><span>├── front-proxy-ca.crt
+</span></span><span style="display:flex;"><span>├── front-proxy-ca.key
+</span></span><span style="display:flex;"><span>├── front-proxy-client.crt
+</span></span><span style="display:flex;"><span>├── front-proxy-client.key
+</span></span><span style="display:flex;"><span>├── sa.key
+</span></span><span style="display:flex;"><span>└── sa.pub
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> directory, <span style="color:#ae81ff">22</span> files
+</span></span></code></pre></div><h3 id="service-account">
   service account
   <a class="anchor" href="#service-account">#</a>
 </h3>
 <p>token 和 <code>ca.crt</code> 挂载到 <code>/var/run/secrets/kubernetes.io/serviceaccount/</code></p>
-<pre><code>- name: kube-api-access-&lt;random-suffix&gt;
+<pre tabindex="0"><code>- name: kube-api-access-&lt;random-suffix&gt;
   projected:
     defaultMode: 420 # 0644
     sources:
@@ -17230,14 +17230,14 @@ scrape_configs:
                 fieldPath: metadata.namespace
               path: namespace
 </code></pre><p>这里的 <code>ca.crt</code> 就是 <code>/etc/kubernetes/pki/ca.crt</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bash-5.0# cd /var/run/secrets/kubernetes.io/serviceaccount/
-bash-5.0# ls -l
-total <span style="color:#ae81ff">0</span>
-lrwxrwxrwx    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">13</span> Oct  <span style="color:#ae81ff">8</span> 10:41 ca.crt -&gt; ..data/ca.crt
-lrwxrwxrwx    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">16</span> Oct  <span style="color:#ae81ff">8</span> 10:41 namespace -&gt; ..data/namespace
-lrwxrwxrwx    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">12</span> Oct  <span style="color:#ae81ff">8</span> 10:41 token -&gt; ..data/token
-bash-5.0#
-</code></pre></div><p>参考：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>bash-5.0# cd /var/run/secrets/kubernetes.io/serviceaccount/
+</span></span><span style="display:flex;"><span>bash-5.0# ls -l
+</span></span><span style="display:flex;"><span>total <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>lrwxrwxrwx    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">13</span> Oct  <span style="color:#ae81ff">8</span> 10:41 ca.crt -&gt; ..data/ca.crt
+</span></span><span style="display:flex;"><span>lrwxrwxrwx    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">16</span> Oct  <span style="color:#ae81ff">8</span> 10:41 namespace -&gt; ..data/namespace
+</span></span><span style="display:flex;"><span>lrwxrwxrwx    <span style="color:#ae81ff">1</span> root     root            <span style="color:#ae81ff">12</span> Oct  <span style="color:#ae81ff">8</span> 10:41 token -&gt; ..data/token
+</span></span><span style="display:flex;"><span>bash-5.0#
+</span></span></code></pre></div><p>参考：</p>
 <ul>
 <li><a href="https://zhaohuabing.com/post/2020-05-19-k8s-certificate/">一文带你彻底厘清 Kubernetes 中的证书工作机制</a></li>
 <li><a href="https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/#bound-service-account-token-volume">Bound Service Account Token Volume</a></li>
@@ -17247,8 +17247,8 @@ bash-5.0#
   教程
   <a class="anchor" href="#%e6%95%99%e7%a8%8b">#</a>
 </h2>
-<a href="https://github.com/yunlzheng/prometheus-book">yunlzheng/prometheus-book</a> <h3 id="yunlzhengprometheus-bookhttpsgithubcomyunlzhengprometheus-book-github-starshttpsimgshieldsiogithubstarsyunlzhengprometheus-booksvg">
-  <img src="https://img.shields.io/github/stars/yunlzheng/prometheus-book.svg" alt="Github stars" />
+<h3 id="yunlzhengprometheus-bookhttpsgithubcomyunlzhengprometheus-book-github-starshttpsimgshieldsiogithubstarsyunlzhengprometheus-booksvg">
+  <a href="https://github.com/yunlzheng/prometheus-book">yunlzheng/prometheus-book</a> <img src="https://img.shields.io/github/stars/yunlzheng/prometheus-book.svg" alt="Github stars" />
   <a class="anchor" href="#yunlzhengprometheus-bookhttpsgithubcomyunlzhengprometheus-book-github-starshttpsimgshieldsiogithubstarsyunlzhengprometheus-booksvg">#</a>
 </h3>
 <p>Prometheus 操作指南

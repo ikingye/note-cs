@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Redis String 类型实现 #  Redis 中的字符串是一种 动态字符串，这意味着使用者可以修改，它的底层实现有点类似于 Java 中的 ArrayList，有一个字符数组，从源码的 sds.h/sdshdr 文件 中可以看到 Redis 底层对于字符串的定义 SDS，即 Simple Dynamic String 结构：
-/* Note: sdshdr5 is never used, we just access the flags byte directly. * However is here to document the layout of type 5 SDS strings. */ struct __attribute__ ((__packed__)) sdshdr5 { unsigned char flags; /* 3 lsb of type, and 5 msb of string length */ char buf[]; }; struct __attribute__ ((__packed__)) sdshdr8 { uint8_t len; /* used */ uint8_t alloc; /* excluding the header and null terminator */ unsigned char flags; /* 3 lsb of type, 5 unused bits */ char buf[]; }; struct __attribute__ ((__packed__)) sdshdr16 { uint16_t len; /* used */ uint16_t alloc; /* excluding the header and null terminator */ unsigned char flags; /* 3 lsb of type, 5 unused bits */ char buf[]; }; struct __attribute__ ((__packed__)) sdshdr32 { uint32_t len; /* used */ uint32_t alloc; /* excluding the header and null terminator */ unsigned char flags; /* 3 lsb of type, 5 unused bits */ char buf[]; }; struct __attribute__ ((__packed__)) sdshdr64 { uint64_t len; /* used */ uint64_t alloc; /* excluding the header and null terminator */ unsigned char flags; /* 3 lsb of type, 5 unused bits */ char buf[]; }; 你会发现同样一组结构 Redis 使用泛型定义了好多次，为什么不直接使用 int 类型呢？">
+/* Note: sdshdr5 is never used, we just access the flags byte directly. * However is here to document the layout of type 5 SDS strings. */ struct __attribute__ ((__packed__)) sdshdr5 {  unsigned char flags; /* 3 lsb of type, and 5 msb of string length */  char buf[]; }; struct __attribute__ ((__packed__)) sdshdr8 {  uint8_t len; /* used */  uint8_t alloc; /* excluding the header and null terminator */  unsigned char flags; /* 3 lsb of type, 5 unused bits */  char buf[]; }; struct __attribute__ ((__packed__)) sdshdr16 {  uint16_t len; /* used */  uint16_t alloc; /* excluding the header and null terminator */  unsigned char flags; /* 3 lsb of type, 5 unused bits */  char buf[]; }; struct __attribute__ ((__packed__)) sdshdr32 {  uint32_t len; /* used */  uint32_t alloc; /* excluding the header and null terminator */  unsigned char flags; /* 3 lsb of type, 5 unused bits */  char buf[]; }; struct __attribute__ ((__packed__)) sdshdr64 {  uint64_t len; /* used */  uint64_t alloc; /* excluding the header and null terminator */  unsigned char flags; /* 3 lsb of type, 5 unused bits */  char buf[]; }; 你会发现同样一组结构 Redis 使用泛型定义了好多次，为什么不直接使用 int 类型呢？">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="String 实现" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -16,7 +16,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/direction/be/db/redis/source/type/string/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -16286,9 +16286,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16307,9 +16307,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17067,7 +17067,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17133,37 +17133,37 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#redis-string-%e7%b1%bb%e5%9e%8b%e5%ae%9e%e7%8e%b0">#</a>
 </h1>
 <p>Redis 中的字符串是一种 动态字符串，这意味着使用者可以修改，它的底层实现有点类似于 Java 中的 ArrayList，有一个字符数组，从源码的 sds.h/sdshdr 文件 中可以看到 Redis 底层对于字符串的定义 SDS，即 Simple Dynamic String 结构：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">/* Note: sdshdr5 is never used, we just access the flags byte directly.
-</span><span style="color:#75715e"> * However is here to document the layout of type 5 SDS strings. */</span>
-<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr5 {
-    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, and 5 msb of string length */</span>
-    <span style="color:#66d9ef">char</span> buf[];
-};
-<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr8 {
-    <span style="color:#66d9ef">uint8_t</span> len; <span style="color:#75715e">/* used */</span>
-    <span style="color:#66d9ef">uint8_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
-    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
-    <span style="color:#66d9ef">char</span> buf[];
-};
-<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr16 {
-    <span style="color:#66d9ef">uint16_t</span> len; <span style="color:#75715e">/* used */</span>
-    <span style="color:#66d9ef">uint16_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
-    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
-    <span style="color:#66d9ef">char</span> buf[];
-};
-<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr32 {
-    <span style="color:#66d9ef">uint32_t</span> len; <span style="color:#75715e">/* used */</span>
-    <span style="color:#66d9ef">uint32_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
-    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
-    <span style="color:#66d9ef">char</span> buf[];
-};
-<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr64 {
-    <span style="color:#66d9ef">uint64_t</span> len; <span style="color:#75715e">/* used */</span>
-    <span style="color:#66d9ef">uint64_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
-    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
-    <span style="color:#66d9ef">char</span> buf[];
-};
-</code></pre></div><p>你会发现同样一组结构 Redis 使用泛型定义了好多次，为什么不直接使用 int 类型呢？</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* Note: sdshdr5 is never used, we just access the flags byte directly.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * However is here to document the layout of type 5 SDS strings. */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr5 {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, and 5 msb of string length */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> buf[];
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr8 {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint8_t</span> len; <span style="color:#75715e">/* used */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint8_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> buf[];
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr16 {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint16_t</span> len; <span style="color:#75715e">/* used */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint16_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> buf[];
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr32 {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint32_t</span> len; <span style="color:#75715e">/* used */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint32_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> buf[];
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">__attribute__</span> ((__packed__)) sdshdr64 {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint64_t</span> len; <span style="color:#75715e">/* used */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">uint64_t</span> alloc; <span style="color:#75715e">/* excluding the header and null terminator */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> flags; <span style="color:#75715e">/* 3 lsb of type, 5 unused bits */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> buf[];
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>你会发现同样一组结构 Redis 使用泛型定义了好多次，为什么不直接使用 int 类型呢？</p>
 <p>因为当字符串比较短的时候，len 和 alloc 可以使用 byte 和 short 来表示，Redis 为了对内存做极致的优化，不同长度的字符串使用不同的结构体来表示。</p>
 <h2 id="sds-与-c-字符串的区别">
   SDS 与 C 字符串的区别
@@ -17183,24 +17183,24 @@ https://github.com/alex-shpak/hugo-book
 <li>C 字符串 只能保存文本数据 → 因为 C 语言中的字符串必须符合某种编码（比如 ASCII），例如中间出现的 &lsquo;\0&rsquo; 可能会被判定为提前结束的字符串而识别不了；</li>
 </ul>
 <p>以追加字符串的操作举例，Redis 源码如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">/* Append the specified binary-safe string pointed by &#39;t&#39; of &#39;len&#39; bytes to the
-</span><span style="color:#75715e"> * end of the specified sds string &#39;s&#39;.
-</span><span style="color:#75715e"> *
-</span><span style="color:#75715e"> * After the call, the passed sds string is no longer valid and all the
-</span><span style="color:#75715e"> * references must be substituted with the new pointer returned by the call. */</span>
-sds <span style="color:#a6e22e">sdscatlen</span>(sds s, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>t, size_t len) {
-    <span style="color:#75715e">// 获取原字符串的长度
-</span><span style="color:#75715e"></span>    size_t curlen <span style="color:#f92672">=</span> sdslen(s);
-
-    <span style="color:#75715e">// 按需调整空间，如果容量不够容纳追加的内容，就会重新分配字节数组并复制原字符串的内容到新数组中
-</span><span style="color:#75715e"></span>    s <span style="color:#f92672">=</span> sdsMakeRoomFor(s,len);
-    <span style="color:#66d9ef">if</span> (s <span style="color:#f92672">==</span> NULL) <span style="color:#66d9ef">return</span> NULL;   <span style="color:#75715e">// 内存不足
-</span><span style="color:#75715e"></span>    memcpy(s<span style="color:#f92672">+</span>curlen, t, len);     <span style="color:#75715e">// 追加目标字符串到字节数组中
-</span><span style="color:#75715e"></span>    sdssetlen(s, curlen<span style="color:#f92672">+</span>len);     <span style="color:#75715e">// 设置追加后的长度
-</span><span style="color:#75715e"></span>    s[curlen<span style="color:#f92672">+</span>len] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;\0&#39;</span>;         <span style="color:#75715e">// 让字符串以 \0 结尾，便于调试打印
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> s;
-}
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">/* Append the specified binary-safe string pointed by &#39;t&#39; of &#39;len&#39; bytes to the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * end of the specified sds string &#39;s&#39;.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * After the call, the passed sds string is no longer valid and all the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * references must be substituted with the new pointer returned by the call. */</span>
+</span></span><span style="display:flex;"><span>sds <span style="color:#a6e22e">sdscatlen</span>(sds s, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>t, size_t len) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 获取原字符串的长度
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    size_t curlen <span style="color:#f92672">=</span> sdslen(s);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 按需调整空间，如果容量不够容纳追加的内容，就会重新分配字节数组并复制原字符串的内容到新数组中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    s <span style="color:#f92672">=</span> sdsMakeRoomFor(s,len);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (s <span style="color:#f92672">==</span> NULL) <span style="color:#66d9ef">return</span> NULL;   <span style="color:#75715e">// 内存不足
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    memcpy(s<span style="color:#f92672">+</span>curlen, t, len);     <span style="color:#75715e">// 追加目标字符串到字节数组中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    sdssetlen(s, curlen<span style="color:#f92672">+</span>len);     <span style="color:#75715e">// 设置追加后的长度
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    s[curlen<span style="color:#f92672">+</span>len] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;\0&#39;</span>;         <span style="color:#75715e">// 让字符串以 \0 结尾，便于调试打印
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> s;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
 <h2 id="参考">
   参考
   <a class="anchor" href="#%e5%8f%82%e8%80%83">#</a>

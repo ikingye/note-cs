@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Multipass #  canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run
-# 安装 snap install multipass # Find available images multipass find # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3 # 安装需要的 sudo su apt update apt install net-tools selinux-utils # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 #  使用的是桥接模式，因为：">
+# 安装 snap install multipass  # Find available images multipass find  # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img  # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G  # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host  # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3  # 安装需要的 sudo su apt update apt install net-tools selinux-utils  # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 #  使用的是桥接模式，因为：">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Multipass" />
 <meta property="og:description" content="Multipass #  canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run
-# 安装 snap install multipass # Find available images multipass find # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3 # 安装需要的 sudo su apt update apt install net-tools selinux-utils # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 #  使用的是桥接模式，因为：" />
+# 安装 snap install multipass  # Find available images multipass find  # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img  # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G  # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host  # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3  # 安装需要的 sudo su apt update apt install net-tools selinux-utils  # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 #  使用的是桥接模式，因为：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/study/apps/linux/4/multipass/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.2c7bcb636915f50986cad98a54ba161d4b56c8d457e697f1e19b440d0f893450.js" integrity="sha256-LHvLY2kV9QmGytmKVLoWHUtWyNRX5pfx4ZtEDQ&#43;JNFA="></script>
+<script defer src="/note-cs/en.search.min.20241fa66c35bb471b684ef427cbd4cdcc26c8e4608a17cabd3f2164d88e84d3.js" integrity="sha256-ICQfpmw1u0cbaE70J8vUzcwmyORgihfKvT8hZNiOhNM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -16288,9 +16288,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
-    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
+    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
+    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
     </label>
   
 
@@ -16309,9 +16309,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-22ff62fb19970237a6c2732824122cec" class="toggle"  />
-    <label for="section-22ff62fb19970237a6c2732824122cec" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/activity/csapp/" class="">《深入理解计算机系统》学习</a>
+    <input type="checkbox" id="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="toggle"  />
+    <label for="section-1b72b3d3d255feece5a62a0d6dc5ab8a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/activity/kubernetes-scheduler/" class="">Kubernetes 调度器源码学习</a>
     </label>
   
 
@@ -17069,7 +17069,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -17132,49 +17132,49 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="https://github.com/canonical/multipass">canonical/multipass</a> <img src="https://img.shields.io/github/stars/canonical/multipass.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/canonical/multipass.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/canonical/multipass.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/canonical/multipass.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/canonical/multipass.svg" alt="Last commit" /></p>
 <p>Multipass orchestrates virtual Ubuntu instances
 <a href="https://multipass.run">https://multipass.run</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 安装</span>
-snap install multipass
-
-<span style="color:#75715e"># Find available images</span>
-multipass find
-
-<span style="color:#75715e"># 使用本地 image</span>
-multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img
-
-<span style="color:#75715e"># 默认就是 cpus 1, mem 1G, disk 5G</span>
-<span style="color:#75715e"># 参考：https://multipass.run/docs/launch-command</span>
-multipass launch --name rd-node-1 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
-multipass launch --name rd-node-2 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
-multipass launch --name qa-node-1 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
-multipass launch --name qa-node-2 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
-multipass launch --name qa-node-3 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
-
-<span style="color:#75715e"># 挂载</span>
-multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host
-multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host
-multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host
-multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host
-multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host
-
-<span style="color:#75715e"># 为 VM 启动一个 shell</span>
-multipass shell rd-node-1
-multipass shell rd-node-2
-multipass shell qa-node-1
-multipass shell qa-node-2
-multipass shell qa-node-3
-
-<span style="color:#75715e"># 安装需要的</span>
-sudo su
-apt update
-apt install net-tools selinux-utils
-
-<span style="color:#75715e"># 删除</span>
-<span style="color:#75715e"># Delete instances</span>
-multipass delete ecsp-node-1
-multipass delete ecsp-node-2
-<span style="color:#75715e"># Purge all deleted instances permanently</span>
-multipass purge
-</code></pre></div><h2 id="网络">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 安装</span>
+</span></span><span style="display:flex;"><span>snap install multipass
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Find available images</span>
+</span></span><span style="display:flex;"><span>multipass find
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用本地 image</span>
+</span></span><span style="display:flex;"><span>multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 默认就是 cpus 1, mem 1G, disk 5G</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 参考：https://multipass.run/docs/launch-command</span>
+</span></span><span style="display:flex;"><span>multipass launch --name rd-node-1 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
+</span></span><span style="display:flex;"><span>multipass launch --name rd-node-2 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
+</span></span><span style="display:flex;"><span>multipass launch --name qa-node-1 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
+</span></span><span style="display:flex;"><span>multipass launch --name qa-node-2 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
+</span></span><span style="display:flex;"><span>multipass launch --name qa-node-3 --cpus <span style="color:#ae81ff">10</span> --mem 20G --disk 20G
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 挂载</span>
+</span></span><span style="display:flex;"><span>multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host
+</span></span><span style="display:flex;"><span>multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host
+</span></span><span style="display:flex;"><span>multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host
+</span></span><span style="display:flex;"><span>multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host
+</span></span><span style="display:flex;"><span>multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 为 VM 启动一个 shell</span>
+</span></span><span style="display:flex;"><span>multipass shell rd-node-1
+</span></span><span style="display:flex;"><span>multipass shell rd-node-2
+</span></span><span style="display:flex;"><span>multipass shell qa-node-1
+</span></span><span style="display:flex;"><span>multipass shell qa-node-2
+</span></span><span style="display:flex;"><span>multipass shell qa-node-3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 安装需要的</span>
+</span></span><span style="display:flex;"><span>sudo su
+</span></span><span style="display:flex;"><span>apt update
+</span></span><span style="display:flex;"><span>apt install net-tools selinux-utils
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 删除</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Delete instances</span>
+</span></span><span style="display:flex;"><span>multipass delete ecsp-node-1
+</span></span><span style="display:flex;"><span>multipass delete ecsp-node-2
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Purge all deleted instances permanently</span>
+</span></span><span style="display:flex;"><span>multipass purge
+</span></span></code></pre></div><h2 id="网络">
   网络
   <a class="anchor" href="#%e7%bd%91%e7%bb%9c">#</a>
 </h2>
