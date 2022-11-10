@@ -151,6 +151,15 @@ Mixer 所提供的功能已迁移至 Envoy 代理中。 在 Istio 中对 Mixer �
     
     <item>
       <title>基础</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/interview/basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/interview/basic/</guid>
+      <description>基础面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>基础</title>
       <link>https://kingye.me/note-cs/docs/basic/pl/csharp/appendix/interview/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -385,6 +394,15 @@ Mixer 所提供的功能已迁移至 Envoy 代理中。 在 Istio 中对 Mixer �
     
     <item>
       <title>进阶</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/interview/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/interview/advanced/</guid>
+      <description>进阶面试题 #  </description>
+    </item>
+    
+    <item>
+      <title>进阶</title>
       <link>https://kingye.me/note-cs/docs/basic/pl/csharp/appendix/interview/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -587,7 +605,9 @@ Mixer 所提供的功能已迁移至 Envoy 代理中。 在 Istio 中对 Mixer �
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/basic/compile/make/cmake/</guid>
-      <description>cmake #  </description>
+      <description>cmake #  推荐 xmake
+参考：
+ CMake 是不是阻碍了 C++的发展?  </description>
     </item>
     
     <item>
@@ -954,6 +974,15 @@ redLock #  并非是一个工具，而是 redis 官方提出的一种分布式�
     
     <item>
       <title>4.1 教程</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/tutorial/</guid>
+      <description>教程 #  基础 #  NASM 程序设计 - 雨痕 #   进阶 #  </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
       <link>https://kingye.me/note-cs/docs/basic/pl/csharp/appendix/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -976,7 +1005,7 @@ redLock #  并非是一个工具，而是 redis 官方提出的一种分布式�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/basic/pl/haskell/appendix/tutorial/</guid>
-      <description>教程 #  基础 #   进阶 #  </description>
+      <description>教程 #  基础 #  Real World Haskell 中文版 #  huangz1990/real-world-haskell-cn  进阶 #  </description>
     </item>
     
     <item>
@@ -1021,6 +1050,15 @@ redLock #  并非是一个工具，而是 redis 官方提出的一种分布式�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/basic/pl/swift/appendix/tutorial/</guid>
+      <description>教程 #  基础 #   进阶 #  </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/zig/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/zig/appendix/tutorial/</guid>
       <description>教程 #  基础 #   进阶 #  </description>
     </item>
     
@@ -1516,6 +1554,15 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
     
     <item>
       <title>4.2 面试题</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/zig/appendix/interview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/zig/appendix/interview/</guid>
+      <description>面试题 #  基础题 #  进阶题 #  </description>
+    </item>
+    
+    <item>
+      <title>4.2 面试题</title>
       <link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/interview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1732,6 +1779,21 @@ H264 码流可以分为两层
 apache/lucene-solr #  Apache Lucene is a high-performance, full featured text search engine library written in Java.
 Apache Solr is an enterprise search platform written using Apache Lucene. Major features include full-text search, index replication and sharding, and result faceting and highlighting.
  教程 #  zzboy/lucene #  lucene 技术细节</description>
+    </item>
+    
+    <item>
+      <title>macOS 版本</title>
+      <link>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/version/</guid>
+      <description>macOS 版本 #  参考：macOS wikipedia
+macOS 13: Ventura #  2022 年
+ macOS 12: Monterey #  2021 年 10 月 25 日
+ macOS 11: Big Sur #  2020 年 11 月 12 日
+ macOS 10.15: Catalina #  2019 年 10 月 7 日
+ macOS 10.14: Mojave #  2018 年 9 月 25 日
+macOS 10.13: High Sierra #  2017 年 9 月 25 日</description>
     </item>
     
     <item>
@@ -2013,6 +2075,15 @@ Golang 连续栈 #  Golang 的栈管理方式与此类似，但是为了更高�
     
     <item>
       <title>4.3 关注项目</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/assembly/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
       <link>https://kingye.me/note-cs/docs/basic/pl/csharp/appendix/attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2092,6 +2163,15 @@ Turbo.lua #  kernelsauce/turbo Turbo is a framework built for LuaJIT 2 to simpli
       
       <guid>https://kingye.me/note-cs/docs/basic/pl/swift/appendix/attention/</guid>
       <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/zig/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/zig/appendix/attention/</guid>
+      <description>关注项目 #  代表项目 #  oven-sh/bun #   推荐练手项目 #  </description>
     </item>
     
     <item>
@@ -2582,6 +2662,15 @@ TCC 分布式事务框架，比如国内开源的
     
     <item>
       <title>版本</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/assembly/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/assembly/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
       <link>https://kingye.me/note-cs/docs/basic/pl/csharp/basic/others/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2658,6 +2747,15 @@ TCC 分布式事务框架，比如国内开源的
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/basic/pl/swift/basic/others/version/</guid>
+      <description>版本 #  版本历史 #  </description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/zig/basic/others/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/zig/basic/others/version/</guid>
       <description>版本 #  版本历史 #  </description>
     </item>
     

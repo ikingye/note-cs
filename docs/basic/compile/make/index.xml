@@ -22,7 +22,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/basic/compile/make/cmake/</guid>
-      <description>cmake #  </description>
+      <description>cmake #  推荐 xmake
+参考：
+ CMake 是不是阻碍了 C++的发展?  </description>
     </item>
     
   </channel>
