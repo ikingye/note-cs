@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.1 快速上手 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/</link>
+    <description>Recent content in 1.1 快速上手 on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装</title>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/install/</guid>
+      <description>Istio 安装 #  快速安装（适合新人） #   Download and install Istio Deploy the sample application Open the application to outside traffic View the dashboard  使用 Istioctl 进行安装 #  下载 Istio release #  [完成平台设置](platform-specific setup) #  Check the Requirements for Pods and Services #  Install Istio using the default profile #  export INGRESS_HOST=$(kubectl get po -l istio=ingressgateway -n istio-system -o jsonpath=&amp;#39;{.items[0].status.hostIP}&amp;#39;) export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath=&amp;#39;{.</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/faq/</guid>
+      <description>FAQ #  Istio 如何实现 Sidecar 注入？ #  Istio 如何实现流量管理？ #  如何拦截流量 intercept traffic
+Istio 是在哪一层实现流量管理？为什么要在那一层？ #  Layer7 routing
+Istio 如何实现 mTLS 认证？ #  </description>
+    </item>
+    
+    <item>
+      <title>Kiali</title>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</guid>
+      <description>Kiali #  kiali/kiali Kiali project, observability for the Istio service mesh</description>
+    </item>
+    
+  </channel>
+</rss>
