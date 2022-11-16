@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>HyperKit on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/domain/cc/virtual/hyperkit/</link>
-    <description>Recent content in HyperKit on 计算机学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/domain/cc/virtual/hyperkit/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
