@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>第二部分 设计 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/direction/be/db/redis/design/</link>
+    <description>Recent content in 第二部分 设计 on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/redis/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>锁</title>
+      <link>https://kingye.me/note-cs/docs/direction/be/db/redis/design/lock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/be/db/redis/design/lock/</guid>
+      <description>锁 #  setnx #   setnx msetnx hsetnx  SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL] 那么删除锁的正确姿势之一，就是可以使用 lua 脚本，通过 redis 的 eval/evalsha 命令来运行：
+-- lua删除锁： -- KEYS和ARGV分别是以集合方式传入的参数，对应上文的Test和uuid。 -- 如果对应的value等于传入的uuid。 if redis.call(&amp;#39;get&amp;#39;, KEYS[1]) == ARGV[1]  then  -- 执行删除操作  return redis.call(&amp;#39;del&amp;#39;, KEYS[1])  else  -- 不成功，返回0  return 0 end 通过 lua 脚本能保证原子性的原因说的通俗一点：
+就算你在 lua 里写出花，执行也是一个命令 (eval/evalsha) 去执行的，一条命令没执行完，其他客户端是看不到的。
+那么既然这么麻烦，有没有比较好的工具呢？就要说到 redisson 了。
+redLock #  并非是一个工具，而是 redis 官方提出的一种分布式锁的算法。</description>
+    </item>
+    
+  </channel>
+</rss>
