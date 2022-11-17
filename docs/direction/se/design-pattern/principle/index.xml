@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>设计原则 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/</link>
+    <description>Recent content in 设计原则 on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>单一职责原则</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/srp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/srp/</guid>
+      <description>单一职责原则 #  就一个类而言，应该仅有一个引起它变化的原因。</description>
+    </item>
+    
+    <item>
+      <title>开闭原则</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/ocp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/ocp/</guid>
+      <description>开闭原则 #  程序中的对象应该对扩展是开放的，对修改是封闭的。
+当一个类实现了一个功能的时候，如果想要改变这个功能不是去修改代码，而是通过扩展的方式去实现。 实现该类提供的接口方法，然后注入到该类中，通过这种方法去实现功能的改变。</description>
+    </item>
+    
+    <item>
+      <title>里氏替换原则</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/lsp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/lsp/</guid>
+      <description>里氏替换原则 #   所有引用基类的地方必须能透明的使用其子类对象。 只要父类能出现的地方子类就可以出现，替换为子类也不会产生任何的错误。 开闭原则一般可以通过里氏替换实现对扩展开放，对修改关闭的效果。  </description>
+    </item>
+    
+    <item>
+      <title>依赖倒置原则</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/dip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/dip/</guid>
+      <description>依赖倒置原则 #   模块间的依赖通过抽象发生，实现类之间不发生直接的依赖关系，其依赖关系是通过接口或抽象类产生的。 即依赖抽象，而不依赖具体的实现。  </description>
+    </item>
+    
+    <item>
+      <title>接口隔离原则</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/isp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/isp/</guid>
+      <description>接口隔离原则 #   客户端不应该依赖它不需要的接口。 目的是解开系统的耦合，从而容易重构更改。  </description>
+    </item>
+    
+    <item>
+      <title>迪米特原则</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/lod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/principle/lod/</guid>
+      <description>迪米特原则 #   一个对象应该对其他对象有最少的了解 一个类应该对自己需要耦合或调用的类知道的越少越好，类的内部如何实现与调用者或依赖者没关系。  </description>
+    </item>
+    
+  </channel>
+</rss>

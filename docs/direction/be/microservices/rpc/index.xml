@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.2.5.1 RPC on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/</link>
+    <description>Recent content in 2.2.5.1 RPC on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/direction/be/microservices/rpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.2.5.1.1 protobuf</title>
+      <link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/protobuf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid>
+      <description>protobuf #  </description>
+    </item>
+    
+    <item>
+      <title>brpc</title>
+      <link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/brpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/brpc/</guid>
+      <description>brpc #  </description>
+    </item>
+    
+  </channel>
+</rss>
