@@ -7,17 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MicroK8s #  ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-常用命令 #  microk8s enable dns 安装配置 #  # microk8s kubelet service 配置文件 vi /etc/systemd/system/snap.microk8s.daemon-kubelet.service  # 查看状态 systemctl status snap.microk8s.daemon-kubelet 代理 #  vi /etc/environment
-HTTPS_PROXY=http://your-proxy-server:8215 HTTP_PROXY=http://your-proxy-server:8215 NO_PROXY=10.0.0.0/8,172.16.0.0/12,192.168/16 https_proxy=http://your-proxy-server:8215 http_proxy=http://your-proxy-server:8215 no_proxy=10.0.0.0/8,172.16.0.0/12,192.168/16 然后重启
-microk8s stop microk8s start 参考：
- Installing behind a proxy  ">
+安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s enable dashboard dns ingress  echo &#34;alias k=kubectl&#34; &gt;&gt; ~/.zshrc echo &#34;export PATH=\$PATH:/snap/bin&#34; &gt;&gt; ~/.zshrc zsh  mkdir -p ~/.kube microk8s config &gt; ~/.kube/config  snap install kubectl --classic --channel=1.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="MicroK8s" />
 <meta property="og:description" content="MicroK8s #  ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-常用命令 #  microk8s enable dns 安装配置 #  # microk8s kubelet service 配置文件 vi /etc/systemd/system/snap.microk8s.daemon-kubelet.service  # 查看状态 systemctl status snap.microk8s.daemon-kubelet 代理 #  vi /etc/environment
-HTTPS_PROXY=http://your-proxy-server:8215 HTTP_PROXY=http://your-proxy-server:8215 NO_PROXY=10.0.0.0/8,172.16.0.0/12,192.168/16 https_proxy=http://your-proxy-server:8215 http_proxy=http://your-proxy-server:8215 no_proxy=10.0.0.0/8,172.16.0.0/12,192.168/16 然后重启
-microk8s stop microk8s start 参考：
- Installing behind a proxy  " />
+安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s enable dashboard dns ingress  echo &#34;alias k=kubectl&#34; &gt;&gt; ~/.zshrc echo &#34;export PATH=\$PATH:/snap/bin&#34; &gt;&gt; ~/.zshrc zsh  mkdir -p ~/.kube microk8s config &gt; ~/.kube/config  snap install kubectl --classic --channel=1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/" /><meta property="article:section" content="docs" />
 
@@ -27,7 +21,7 @@ microk8s stop microk8s start 参考：
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.7a3cb87d84deb14b65c180bef26ad36b20e2849ad1661fa388802489b3db3889.js" integrity="sha256-ejy4fYTesUtlwYC&#43;8mrTayDihJrRZh&#43;jiIAkibPbOIk="></script>
+<script defer src="/note-cs/en.search.min.e78b67ba933142514b6a46f6c3c4c13d9d1dd9599d1fd945bc7df269b20065d9.js" integrity="sha256-54tnupMxQlFLakb2w8TBPZ0d2VmdH9lFvH3yabIAZdk="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -16037,6 +16031,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-a3bcecb7db1be4695b58d96bea117949" class="toggle"  />
+    <label for="section-a3bcecb7db1be4695b58d96bea117949" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/" class="">KubeSphere</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-057a4ff02ceb66b65d44717125e33aa4" class="toggle" checked />
     <label for="section-057a4ff02ceb66b65d44717125e33aa4" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/" class="active">MicroK8s</a>
@@ -18189,6 +18199,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#安装">安装</a></li>
     <li><a href="#常用命令">常用命令</a></li>
     <li><a href="#安装配置">安装配置</a>
       <ul>
@@ -18225,6 +18236,34 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="https://github.com/ubuntu/microk8s">ubuntu/microk8s</a> <img src="https://img.shields.io/github/stars/ubuntu/microk8s.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/ubuntu/microk8s.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/ubuntu/microk8s.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/ubuntu/microk8s.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/ubuntu/microk8s.svg" alt="Last commit" /></p>
 <p>MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.</p>
 <p><a href="https://microk8s.io">https://microk8s.io</a></p>
+<h2 id="安装">
+  安装
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># snap install microk8s --classic</span>
+</span></span><span style="display:flex;"><span>snap install microk8s --classic --channel<span style="color:#f92672">=</span>1.23/stable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 拉镜像</span>
+</span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1
+</span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>microk8s enable dashboard dns ingress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;alias k=kubectl&#34;</span> &gt;&gt; ~/.zshrc
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;export PATH=\$PATH:/snap/bin&#34;</span> &gt;&gt; ~/.zshrc
+</span></span><span style="display:flex;"><span>zsh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p ~/.kube
+</span></span><span style="display:flex;"><span>microk8s config &gt; ~/.kube/config
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>snap install kubectl --classic --channel<span style="color:#f92672">=</span>1.23/stable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0
+</span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 k8s.gcr.io/ingress-nginx/controller:v1.2.0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/metrics-server:v0.5.2
+</span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/metrics-server:v0.5.2 k8s.gcr.io/metrics-server/metrics-server:v0.5.2
+</span></span></code></pre></div><hr>
 <h2 id="常用命令">
   常用命令
   <a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4">#</a>
@@ -18330,6 +18369,7 @@ no_proxy=10.0.0.0/8,172.16.0.0/12,192.168/16
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#安装">安装</a></li>
     <li><a href="#常用命令">常用命令</a></li>
     <li><a href="#安装配置">安装配置</a>
       <ul>

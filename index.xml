@@ -2998,6 +2998,15 @@ Istio 如何实现 mTLS 认证？ #  </description>
     </item>
     
     <item>
+      <title>KubeSphere</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid>
+      <description>KubeSphere #   kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;: {&amp;#34;annotations&amp;#34;:{&amp;#34;storageclass.kubernetes.io/is-default-class&amp;#34;:&amp;#34;true&amp;#34;}}}&amp;#39; </description>
+    </item>
+    
+    <item>
       <title>Mas</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/mas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3015,10 +3024,7 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode  $ mas search 
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid>
       <description>MicroK8s #  ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-常用命令 #  microk8s enable dns 安装配置 #  # microk8s kubelet service 配置文件 vi /etc/systemd/system/snap.microk8s.daemon-kubelet.service  # 查看状态 systemctl status snap.microk8s.daemon-kubelet 代理 #  vi /etc/environment
-HTTPS_PROXY=http://your-proxy-server:8215 HTTP_PROXY=http://your-proxy-server:8215 NO_PROXY=10.0.0.0/8,172.16.0.0/12,192.168/16 https_proxy=http://your-proxy-server:8215 http_proxy=http://your-proxy-server:8215 no_proxy=10.0.0.0/8,172.16.0.0/12,192.168/16 然后重启
-microk8s stop microk8s start 参考：
- Installing behind a proxy  </description>
+安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s enable dashboard dns ingress  echo &amp;#34;alias k=kubectl&amp;#34; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#34;export PATH=\$PATH:/snap/bin&amp;#34; &amp;gt;&amp;gt; ~/.zshrc zsh  mkdir -p ~/.kube microk8s config &amp;gt; ~/.kube/config  snap install kubectl --classic --channel=1.</description>
     </item>
     
     <item>
