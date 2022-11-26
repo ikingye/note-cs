@@ -5,5 +5,14 @@
     <link>https://kingye.me/note-cs/docs/study/skill/</link>
     <description>Recent content in 4.1 技能树 on 计算机学习笔记</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/study/skill/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CUDA</title>
+      <link>https://kingye.me/note-cs/docs/study/skill/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/study/skill/cuda/</guid>
+      <description>CUDA #  Hello World for CUDA #  // This is the REAL &amp;#34;hello world&amp;#34; for CUDA! // It takes the string &amp;#34;Hello &amp;#34;, prints it, then passes it to CUDA // with an array of offsets. Then the offsets are added in parallel // to produce the string &amp;#34;World!&amp;#34; // By Ingemar Ragnemalm 2010  // nvcc hello-world.cu -L /usr/local/cuda/lib -lcudart -o hello-world  #include &amp;lt;stdio.h&amp;gt; const int N = 16; const int blocksize = 16;  __global__ void hello(char *a, int *b) {  a[threadIdx.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -6,6 +6,15 @@
     <description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>apt</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid>
+      <description>apt #   apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令</description>
+    </item>
+    
+    <item>
       <title>Cargo</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -14,6 +23,16 @@
       <description>Cargo #  常用命令 #  安装配置 #  curl https://sh.rustup.rs -sSf | sh
 参考：
  The Cargo Book  </description>
+    </item>
+    
+    <item>
+      <title>CUDA</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/</guid>
+      <description>CUDA #  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
+ CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit </description>
     </item>
     
     <item>
