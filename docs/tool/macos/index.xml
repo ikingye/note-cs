@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>Capslock</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/capslock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/macos/capslock/</guid>
+      <description>Capslock #  Vonng/Capslock 让 Capslock 再次伟大！</description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -38,6 +47,20 @@
   当前文件替换 cmd + R
   所有文件查询 shift + cmd + F
   所有文件替换 shift + cmd + R</description>
+    </item>
+    
+    <item>
+      <title>gvm</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/gvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/macos/gvm/</guid>
+      <description>gvm #  moovweb/gvm 安装：
+zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) mac m1 #  mac m1 使用 gvm 安装 arm64 版本的 go
+file ~/.gvm/gos/go1.16.15/bin/go ~/.gvm/gos/go1.16.15/bin/go: Mach-O 64-bit executable arm64 参考：https://github.com/moovweb/gvm/issues/406
+ RROR: Couldn&#39;t remove pkgsets #  gvm use go1.11.1 go clean -modcache gvm use go1.11.4 gvm uninstall go1.11.1 也可以手动删除
+rm -rf ~/.gvm/pkgsets/go1.11.1 gvm uninstall go1.11.1 参考：
+ ERROR: Couldn&amp;rsquo;t remove pkgsets  </description>
     </item>
     
     <item>

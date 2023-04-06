@@ -85,6 +85,15 @@ user：当前mac用户 database：用户同名数据库 主机：localhost 端�
     </item>
     
     <item>
+      <title>markdown</title>
+      <link>https://kingye.me/note-cs/docs/study/skill/type/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/study/skill/type/markdown/</guid>
+      <description>markdown #  图片大小设置 &amp;lt;img src=&amp;quot;xxx&amp;quot; width=&amp;quot;30%&amp;quot; height=&amp;quot;30%&amp;quot;&amp;gt;</description>
+    </item>
+    
+    <item>
       <title>Mixer</title>
       <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -636,6 +645,15 @@ kill -9 is the unsafe way of brutally murdering a process. It&amp;rsquo;s equiva
       
       <guid>https://kingye.me/note-cs/docs/basic/pl/shell/command/netstat/</guid>
       <description>netstat #  </description>
+    </item>
+    
+    <item>
+      <title>Pattern Recognition and Machine Learning</title>
+      <link>https://kingye.me/note-cs/docs/study/book/ai/prml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/study/book/ai/prml/</guid>
+      <description>Pattern Recognition and Machine Learning #  </description>
     </item>
     
     <item>
@@ -1203,16 +1221,6 @@ chown $USER ~/.ssh/config chmod 644 ~/.ssh/config </description>
       <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/jaeger/</guid>
       <description>Jaeger #  Jaeger \ˈyā-gər\
 jaegertracing/jaeger CNCF Jaeger, a Distributed Tracing Platform https://www.jaegertracing.io/</description>
-    </item>
-    
-    <item>
-      <title>Jupyter</title>
-      <link>https://kingye.me/note-cs/docs/tool/macos/tool/note/jupyter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/tool/macos/tool/note/jupyter/</guid>
-      <description>Jupyter #  pipenv install jupyterlab  alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：
- JupyterLab Installation  配置 #  # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39; Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.</description>
     </item>
     
     <item>
@@ -2904,12 +2912,32 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
     </item>
     
     <item>
+      <title>Anaconda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/</guid>
+      <description>Anaconda #   conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda  miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。    使用教程 #  # 清理缓存 conda clean -a   # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False  镜像源 #  阿里云 #  cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
+    </item>
+    
+    <item>
       <title>apt</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid>
       <description>apt #   apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令</description>
+    </item>
+    
+    <item>
+      <title>AsciiDoc</title>
+      <link>https://kingye.me/note-cs/docs/study/skill/type/asciidoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/study/skill/type/asciidoc/</guid>
+      <description>AsciiDoc #  表格内无序列表 #  | 前面加个 a
+参考：
+ Format Content by Cell  教程 #   AsciiDoc 指引  </description>
     </item>
     
     <item>
@@ -2923,6 +2951,15 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
     </item>
     
     <item>
+      <title>Capslock</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/capslock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/macos/capslock/</guid>
+      <description>Capslock #  Vonng/Capslock 让 Capslock 再次伟大！</description>
+    </item>
+    
+    <item>
       <title>Cargo</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2931,6 +2968,37 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
       <description>Cargo #  常用命令 #  安装配置 #  curl https://sh.rustup.rs -sSf | sh
 参考：
  The Cargo Book  </description>
+    </item>
+    
+    <item>
+      <title>Containerd</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</guid>
+      <description>Containerd #  # 生成一个默认的配置 mkdir /etc/containerd containerd config default &amp;gt; /etc/containerd/config.toml 配置 #  disabled_plugins = [] imports = [] oom_score = 0 plugin_dir = &amp;#34;&amp;#34; required_plugins = [] root = &amp;#34;/var/lib/containerd&amp;#34; state = &amp;#34;/run/containerd&amp;#34; temp = &amp;#34;&amp;#34; version = 2  [cgroup]  path = &amp;#34;&amp;#34;  [debug]  address = &amp;#34;&amp;#34; format = &amp;#34;&amp;#34; gid = 0 level = &amp;#34;&amp;#34; uid = 0  [grpc]  address = &amp;#34;/run/containerd/containerd.</description>
+    </item>
+    
+    <item>
+      <title>crictl</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</guid>
+      <description>crictl #    crictl 不支持改镜像 tag
+  crictl 不支持 load 镜像文件
+  需要用 ctr
+# namespace 为 k8s.io ctr -n=k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 ctr -n=k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6   参考：
+ Crictl not support load images? Manually Loading Container Images with containerD   安装 #  VERSION=&amp;#34;v1.26.0&amp;#34; wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin # rm -f crictl-$VERSION-linux-amd64.tar.gz   # 默认是使用 docker # 配置使用 containerd cat &amp;lt;&amp;lt; EOF &amp;gt; /etc/crictl.</description>
+    </item>
+    
+    <item>
+      <title>ctr</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</guid>
+      <description>ctr #   ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（crictl image 才能看到）  ctr -n k8s.io image list ctr -n k8s.io image pull     # namespace ctr ns ls  # 删除镜像 ctr -n k8s.io i rm $(ctr -n k8s.io i ls -q) # 删除容器 ctr -n k8s.io c rm $(ctr -n k8s.io c ls -q)   ctr -n k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 # tag 重命名 ctr -n k8s.</description>
     </item>
     
     <item>
@@ -2948,8 +3016,17 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/</guid>
-      <description>CUDA #  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
- CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit </description>
+      <description>CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
+ CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit 安装 cuda 11.4 #  Cleaning remaining files #  # Deleting any NVIDIA/CUDA packages you may already have installed sudo rm /etc/apt/sources.</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</guid>
+      <description>Docker #  使用 #  # 停止 docker systemctl stop docker.socket 安装 #  # Uninstall old versions sudo apt-get remove docker docker-engine docker.io containerd runc  # Update the apt package index and install packages to allow apt to use a repository over HTTPS sudo apt-get update sudo apt-get install -y \  ca-certificates \  curl \  gnupg \  lsb-release   # Add Docker’s official GPG key sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download.</description>
     </item>
     
     <item>
@@ -2989,6 +3066,31 @@ Istio 如何实现 mTLS 认证？ #  </description>
     </item>
     
     <item>
+      <title>gvm</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</guid>
+      <description>gvm #  moovweb/gvm 安装：
+zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) 使用：
+$ gvm listall $ gvm list  apt-get install bison make gcc -y # 使用二进制安装 gvm install go1.15.15 -B gvm install go1.16.15 -B gvm install go1.17.13 -B gvm install go1.18.9 -B gvm install go1.19.4 -B  $ gvm use go1.15 $ gvm uninstall go1.15  # 使用二进制安装 $ gvm install go1.15 -B  $ gvm install -h Invalid version: -h Usage: gvm install [version] [options]  -s, --source=SOURCE Install Go from specified source.</description>
+    </item>
+    
+    <item>
+      <title>gvm</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/gvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/macos/gvm/</guid>
+      <description>gvm #  moovweb/gvm 安装：
+zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) mac m1 #  mac m1 使用 gvm 安装 arm64 版本的 go
+file ~/.gvm/gos/go1.16.15/bin/go ~/.gvm/gos/go1.16.15/bin/go: Mach-O 64-bit executable arm64 参考：https://github.com/moovweb/gvm/issues/406
+ RROR: Couldn&#39;t remove pkgsets #  gvm use go1.11.1 go clean -modcache gvm use go1.11.4 gvm uninstall go1.11.1 也可以手动删除
+rm -rf ~/.gvm/pkgsets/go1.11.1 gvm uninstall go1.11.1 参考：
+ ERROR: Couldn&amp;rsquo;t remove pkgsets  </description>
+    </item>
+    
+    <item>
       <title>HHKB</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/hhkb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3008,6 +3110,25 @@ Istio 如何实现 mTLS 认证？ #  </description>
     </item>
     
     <item>
+      <title>Java</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</guid>
+      <description>Java #  apt install default-jdk  # lts version sudo apt install -y openjdk-8-jdk sudo apt install -y openjdk-11-jdk sudo apt install -y openjdk-17-jdk  # list java versions update-java-alternatives --list # java-1.8.0-openjdk-amd64 1081 /usr/lib/jvm/java-1.8.0-openjdk-amd64 # java-1.11.0-openjdk-amd64 1111 /usr/lib/jvm/java-1.11.0-openjdk-amd64 # java-1.17.0-openjdk-amd64 1711 /usr/lib/jvm/java-1.17.0-openjdk-amd64   cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc # switch java version alias javato8=&amp;#34;update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64&amp;#34; alias javato11=&amp;#34;update-java-alternatives --set /usr/lib/jvm/java-1.11.0-openjdk-amd64&amp;#34; alias javato17=&amp;#34;update-java-alternatives --set /usr/lib/jvm/java-1.17.0-openjdk-amd64&amp;#34; EOF  zsh </description>
+    </item>
+    
+    <item>
+      <title>Jupyter</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</guid>
+      <description>Jupyter #  pipenv install jupyterlab  alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：
+ JupyterLab Installation  配置 #  # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39; Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.</description>
+    </item>
+    
+    <item>
       <title>k3d</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3023,6 +3144,15 @@ Istio 如何实现 mTLS 认证？ #  </description>
       
       <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</guid>
       <description>Kiali #  kiali/kiali Kiali project, observability for the Istio service mesh</description>
+    </item>
+    
+    <item>
+      <title>KubeEdge</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</guid>
+      <description>KubeEdge #  部署 #   # ime-study3 keadm init --advertise-address=&amp;#34;120.241.124.226&amp;#34; --profile version=v1.13.0 --kube-config=/root/.kube/config  kubectl get all -n kubeedge  keadm gettoken  # ime-study4 # namespace 必须是 k8s.io，containerd 才能使用，crictl image 才能看到 ctr -n=k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 ctr -n=k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6  rm -rf /etc/kubeedge/ keadm join --cloudcore-ipport=&amp;#34;120.241.124.226:10000&amp;#34; --token=f76a721023f724ae4ff872c8ec9e04e672d4eb93d1327638526389267084629b.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzU3Mjk0MDl9.TrcHtDra2gwuBw-9Aa8aDkDK99n1JoxwYYz8Kv4ugPo --kubeedge-version=v1.13.0 </description>
     </item>
     
     <item>
@@ -3052,7 +3182,16 @@ $ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode  $ mas search 
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid>
       <description>MicroK8s #  ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s enable dashboard dns ingress  echo &amp;#34;alias k=kubectl&amp;#34; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#34;export PATH=\$PATH:/snap/bin&amp;#34; &amp;gt;&amp;gt; ~/.zshrc zsh  mkdir -p ~/.kube microk8s config &amp;gt; ~/.kube/config  snap install kubectl --classic --channel=1.</description>
+安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable snap install kubectl --classic --channel=1.23/stable  microk8s enable dashboard dns ingress  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 k8s.gcr.io/ingress-nginx/controller:v1.2.0  microk8s ctr image pull registry.</description>
+    </item>
+    
+    <item>
+      <title>Mosquitto</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid>
+      <description>Mosquitto #  eclipse/mosquitto 安装 #  apt install mosquitto -y apt install mosquitto-clients -y 使用 #  # mosquitto_pub version 1.6.9 running on libmosquitto 1.6.9.  mosquitto_pub {[-h host] [-p port] [-u username] [-P password] -t topic | -L URL}  {-f file | -l | -n | -m message}  [-c] [-k keepalive] [-q qos] [-r] [--repeat N] [--repeat-delay time]  [-A bind_address]  [-i id] [-I id_prefix]  [-d] [--quiet]  [-M max_inflight]  [-u username [-P password]]  [--will-topic [--will-payload payload] [--will-qos qos] [--will-retain]]  [{--cafile file | --capath dir} [--cert file] [--key file]  [--ciphers ciphers] [--insecure]  [--tls-alpn protocol]  [--tls-engine engine] [--keyform keyform] [--tls-engine-kpass-sha1]]  [--psk hex-key --psk-identity identity [--ciphers ciphers]]  [--proxy socks-url]  [--property command identifier value]  [-D command identifier value] </description>
     </item>
     
     <item>
@@ -3063,6 +3202,15 @@ https://microk8s.io
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</guid>
       <description>Multipass #  canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run
 # 安装 snap install multipass  # Find available images multipass find  # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img  # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G  # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host  # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3  # 安装需要的 sudo su apt update apt install net-tools selinux-utils  # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 #  使用的是桥接模式，因为：</description>
+    </item>
+    
+    <item>
+      <title>Nvidia</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/</guid>
+      <description>Nvidia #  apt install ubuntu-drivers-common  # 查询推荐的 nvidia 驱动 ubuntu-drivers devices  # 按推荐安装驱动 apt install -y nvidia-driver-450  # CUDA Toolkit: 12.0 # Driver Version: 525.60.13 # Release Date: 2022.12.5 curl -LO https://us.download.nvidia.com/tesla/525.60.13/NVIDIA-Linux-x86_64-525.60.13.run bash NVIDIA-Linux-x86_64-525.60.13.run  # CUDA Toolkit: 11.7 # Driver Version: 515.86.01 # Release Date: 2022.11.22 curl -LO https://us.download.nvidia.com/tesla/515.86.01/NVIDIA-Linux-x86_64-515.86.01.run bash NVIDIA-Linux-x86_64-515.86.01.run  # CUDA Toolkit: 11.6 # Driver Version: 510.108.03 # Release Date: 2022.11.22 curl -LO https://us.</description>
     </item>
     
     <item>
@@ -3080,7 +3228,7 @@ https://microk8s.io
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid>
-      <description>pyenv/pyenv 安装 #  git clone https://github.com/pyenv/pyenv.git ~/.pyenv  echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;command -v pyenv &amp;gt;/dev/null || export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc  # 使用 taobao 的 npm 源 cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 #  之后才能编译 python 成功
+      <description>pyenv #  pyenv/pyenv 安装 #  git clone https://github.com/pyenv/pyenv.git ~/.pyenv  echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;command -v pyenv &amp;gt;/dev/null || export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc  # 使用 taobao 的 npm 源 cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 #  之后才能编译 python 成功
 sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  # 安装 pyenv install 3.</description>
     </item>
     
@@ -3091,6 +3239,15 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
       
       <guid>https://kingye.me/note-cs/docs/tool/macos/pyenv/</guid>
       <description>pyenv/pyenv 安装 #  使用 #  </description>
+    </item>
+    
+    <item>
+      <title>pytorch</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</guid>
+      <description>pytorch #  # cuda 11.4 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch </description>
     </item>
     
     <item>
@@ -3131,7 +3288,7 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid>
       <description>zsh #  oh-my-zsh #  安装
-sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF </description>
+apt install -y git zsh  sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh </description>
     </item>
     
     <item>

@@ -5,10 +5,9 @@
   <meta name="generator" content="Hugo 0.99.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="mosquitto #  物联网（Internet of Things，IoT）最近曝光率越来越高。虽然 HTTP 是网页的事实标准，不过机器之间（Machine-to-Machine，M2M）的大规模沟通需要不同的模式：之前的请求 / 回答（Request/Response）模式不再合适，取而代之的是发布 / 订阅（Publish/Subscribe）模式。这就是轻量级、可扩展的 MQTT（Message Queuing Telemetry Transport）可以施展拳脚的舞台。
+<meta name="description" content="mosquitto #  eclipse/mosquitto 物联网（Internet of Things，IoT）最近曝光率越来越高。虽然 HTTP 是网页的事实标准，不过机器之间（Machine-to-Machine，M2M）的大规模沟通需要不同的模式：之前的请求 / 回答（Request/Response）模式不再合适，取而代之的是发布 / 订阅（Publish/Subscribe）模式。这就是轻量级、可扩展的 MQTT（Message Queuing Telemetry Transport）可以施展拳脚的舞台。
 MQTT 是基于二进制消息的发布 / 订阅编程模式的消息协议，最早由 IBM 提出的，如今已经成为 OASIS 规范。由于规范很简单，非常适合需要低功耗和网络带宽有限的 IoT 场景，比如：
- 遥感数据 汽车 智能家居 智慧城市 医疗医护  安装 #  MacOS #  brew install mosquitto
-参考：https://mosquitto.org/download/">
+ 遥感数据 汽车 智能家居 智慧城市 医疗医护  mosquitto_pub #  mosquitto_pub {[-h host] [-p port] [-u username] [-P password] -t topic | -L URL}  {-f file | -l | -n | -m message}  [-c] [-k keepalive] [-q qos] [-r] [--repeat N] [--repeat-delay time]  [-A bind_address]  [-i id] [-I id_prefix]  [-d] [--quiet]  [-M max_inflight]  [-u username [-P password]]  [--will-topic [--will-payload payload] [--will-qos qos] [--will-retain]]  [{--cafile file | --capath dir} [--cert file] [--key file]  [--ciphers ciphers] [--insecure]  [--tls-alpn protocol]  [--tls-engine engine] [--keyform keyform] [--tls-engine-kpass-sha1]]  [--psk hex-key --psk-identity identity [--ciphers ciphers]]  [--proxy socks-url]  [--property command identifier value]  [-D command identifier value] mosquitto_pub -t &lsquo;application/1/device/ffffff100000d143/rx&rsquo; -m &lsquo;{&ldquo;applicationID&rdquo;:&ldquo;1&rdquo;,&ldquo;applicationName&rdquo;:&ldquo;0000000000000001&rdquo;,&ldquo;deviceName&rdquo;:&ldquo;d143-K5-out&rdquo;,&ldquo;devEUI&rdquo;:&ldquo;ffffff100000d143&rdquo;,&ldquo;txInfo&rdquo;:{&ldquo;frequency&rdquo;:481700000,&ldquo;dr&rdquo;:2},&ldquo;adr&rdquo;:false,&ldquo;fCnt&rdquo;:68570,&ldquo;fPort&rdquo;:44,&ldquo;data&rdquo;:&ldquo;BQEA&rdquo;}&rsquo;">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="mosquitto" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -18,7 +17,7 @@ MQTT 是基于二进制消息的发布 / 订阅编程模式的消息协议，最
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.9b82e106be687e9eaf4caa02dcdf505e345dd39bd4e7aeb0c0a11b52227dfa6a.js" integrity="sha256-m4LhBr5ofp6vTKoC3N9QXjRd05vU566wwKEbUiJ9&#43;mo="></script>
+<script defer src="/note-cs/en.search.min.956fb2c92122cf2b262168624c29d6491e876ba5e1a7d904f9546e0e89c0eb13.js" integrity="sha256-lW&#43;yySEizysmIWhiTCnWSR6Ha6Xhp9kE&#43;VRuDonA6xM="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/direction/be/mq/mqtt/mosquitto/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -15244,6 +15243,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-d86abead9c3976145ddb8bd9d4f1c843" class="toggle"  />
+    <label for="section-d86abead9c3976145ddb8bd9d4f1c843" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/capslock/" class="">Capslock</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="https://kingye.me/note-cs/docs/tool/macos/flowchart/" class="">Flowchart</a>
   
 
@@ -15380,6 +15395,22 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee2ef9116da78ff7595870fb67b916cf" class="toggle"  />
+    <label for="section-ee2ef9116da78ff7595870fb67b916cf" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/gvm/" class="">gvm</a>
+    </label>
+  
 
         </li>
       
@@ -15814,22 +15845,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-fa5098fa6ee6d66bbd1a19573c68a127" class="toggle"  />
-    <label for="section-fa5098fa6ee6d66bbd1a19573c68a127" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/jupyter/" class="">Jupyter</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <input type="checkbox" id="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="toggle"  />
     <label for="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/onenote/" class="">OneNote</a>
@@ -15965,10 +15980,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-9d4333390afee1960eee786b3839585a" class="toggle"  />
-    <label for="section-9d4333390afee1960eee786b3839585a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/linux/" class="">4.2 Linux</a>
-    </label>
+    <a href="https://kingye.me/note-cs/docs/tool/linux/" class="">4.2 Linux</a>
   
 
           
@@ -15989,6 +16001,22 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-909a54d6150d15e95ffecc12cb7714d1" class="toggle"  />
+    <label for="section-909a54d6150d15e95ffecc12cb7714d1" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/" class="">Anaconda</a>
+    </label>
+  
+
+        </li>
+      
     
       
         <li>
@@ -16029,6 +16057,54 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-a90f092c1aa7df86f06c919a1f3658a8" class="toggle"  />
+    <label for="section-a90f092c1aa7df86f06c919a1f3658a8" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/" class="">Containerd</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-11f88689692d59ed51bc3593e3c8e16e" class="toggle"  />
+    <label for="section-11f88689692d59ed51bc3593e3c8e16e" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/" class="">crictl</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58913fdb8fbdb95780586a128cf6ffb6" class="toggle"  />
+    <label for="section-58913fdb8fbdb95780586a128cf6ffb6" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/" class="">ctr</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-5b6be2d46b41aced359087ac2e647fa0" class="toggle"  />
     <label for="section-5b6be2d46b41aced359087ac2e647fa0" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/" class="">CUDA</a>
@@ -16045,9 +16121,89 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-52cf868c699d42feb6bd61a54e5b0b40" class="toggle"  />
+    <label for="section-52cf868c699d42feb6bd61a54e5b0b40" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/" class="">Docker</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-56feac5b374f61a5c5d7d9da088f3029" class="toggle"  />
+    <label for="section-56feac5b374f61a5c5d7d9da088f3029" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/" class="">gvm</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-71eb4be76c85488e111908ff901c0d86" class="toggle"  />
+    <label for="section-71eb4be76c85488e111908ff901c0d86" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/" class="">Java</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bd07369338bce1bf70005b10893bbf64" class="toggle"  />
+    <label for="section-bd07369338bce1bf70005b10893bbf64" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/" class="">Jupyter</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-f8c849429a4afea6f16f61b9c2f0b647" class="toggle"  />
     <label for="section-f8c849429a4afea6f16f61b9c2f0b647" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/" class="">k3d</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cfc3413df35599422829e55a09dfc392" class="toggle"  />
+    <label for="section-cfc3413df35599422829e55a09dfc392" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/" class="">KubeEdge</a>
     </label>
   
 
@@ -16093,6 +16249,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-6b72373c873308b5aff7e217fb07e3c5" class="toggle"  />
+    <label for="section-6b72373c873308b5aff7e217fb07e3c5" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/" class="">Mosquitto</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-de92dc960e76e5e4f704c6cf52b3bdc3" class="toggle"  />
     <label for="section-de92dc960e76e5e4f704c6cf52b3bdc3" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/" class="">Multipass</a>
@@ -16109,9 +16281,41 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-2f3419b09918a3f70d93da60a72753a2" class="toggle"  />
+    <label for="section-2f3419b09918a3f70d93da60a72753a2" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/" class="">Nvidia</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-0be1bdac20b2c8741647e1372246ef3b" class="toggle"  />
     <label for="section-0be1bdac20b2c8741647e1372246ef3b" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/" class="">pyenv</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6a03125864a4dba92fed280a9a470ce7" class="toggle"  />
+    <label for="section-6a03125864a4dba92fed280a9a470ce7" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/" class="">pytorch</a>
     </label>
   
 
@@ -16169,7 +16373,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c3726826e3d1464cd27e6c65e6bb3bac" class="toggle"  />
     <label for="section-c3726826e3d1464cd27e6c65e6bb3bac" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/linux/debian/" class="">Debian</a>
+      <a href="https://kingye.me/note-cs/docs/tool/linux/debian/" class="">4.2.3 Debian</a>
     </label>
   
 
@@ -17014,11 +17218,6 @@ https://github.com/alex-shpak/hugo-book
     <a href="https://kingye.me/note-cs/docs/study/skill/type/markdown/" class="">markdown</a>
   
 
-          
-  <ul>
-    
-  </ul>
-
         </li>
       
     
@@ -17090,6 +17289,19 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/study/skill/type/asciidoc/" class="">AsciiDoc</a>
+  
 
         </li>
       
@@ -17537,6 +17749,22 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4f8aca002f820abd93f1c5c1b67a92cb" class="toggle"  />
+    <label for="section-4f8aca002f820abd93f1c5c1b67a92cb" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/book/ai/prml/" class="">Pattern Recognition and Machine Learning</a>
+    </label>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -18245,6 +18473,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#mosquitto_pub">mosquitto_pub</a></li>
+    <li><a href="#mosquitto_sub">mosquitto_sub</a></li>
     <li><a href="#安装">安装</a>
       <ul>
         <li><a href="#macos">MacOS</a></li>
@@ -18277,6 +18507,7 @@ https://github.com/alex-shpak/hugo-book
   mosquitto
   <a class="anchor" href="#mosquitto">#</a>
 </h1>
+<p><a href="https://github.com/eclipse/mosquitto">eclipse/mosquitto</a> <img src="https://img.shields.io/github/stars/eclipse/mosquitto.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/eclipse/mosquitto.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/eclipse/mosquitto.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/eclipse/mosquitto.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/eclipse/mosquitto.svg" alt="Last commit" /></p>
 <p>物联网（Internet of Things，IoT）最近曝光率越来越高。虽然 HTTP 是网页的事实标准，不过机器之间（Machine-to-Machine，M2M）的大规模沟通需要不同的模式：之前的请求 / 回答（Request/Response）模式不再合适，取而代之的是发布 / 订阅（Publish/Subscribe）模式。这就是轻量级、可扩展的 MQTT（Message Queuing Telemetry Transport）可以施展拳脚的舞台。</p>
 <p>MQTT 是基于二进制消息的发布 / 订阅编程模式的消息协议，最早由 IBM 提出的，如今已经成为 OASIS 规范。由于规范很简单，非常适合需要低功耗和网络带宽有限的 IoT 场景，比如：</p>
 <ul>
@@ -18286,6 +18517,35 @@ https://github.com/alex-shpak/hugo-book
 <li>智慧城市</li>
 <li>医疗医护</li>
 </ul>
+<h2 id="mosquitto_pub">
+  mosquitto_pub
+  <a class="anchor" href="#mosquitto_pub">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mosquitto_pub <span style="color:#f92672">{[</span>-h host<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-p port<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-u username<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-P password<span style="color:#f92672">]</span> -t topic | -L URL<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">{</span>-f file | -l | -n | -m message<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-c<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-k keepalive<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-q qos<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-r<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--repeat N<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--repeat-delay time<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-A bind_address<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-i id<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-I id_prefix<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-d<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--quiet<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-M max_inflight<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-u username <span style="color:#f92672">[</span>-P password<span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--will-topic <span style="color:#f92672">[</span>--will-payload payload<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--will-qos qos<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--will-retain<span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[{</span>--cafile file | --capath dir<span style="color:#f92672">}</span> <span style="color:#f92672">[</span>--cert file<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--key file<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                       <span style="color:#f92672">[</span>--ciphers ciphers<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--insecure<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                       <span style="color:#f92672">[</span>--tls-alpn protocol<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                       <span style="color:#f92672">[</span>--tls-engine engine<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--keyform keyform<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--tls-engine-kpass-sha1<span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--psk hex-key --psk-identity identity <span style="color:#f92672">[</span>--ciphers ciphers<span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--proxy socks-url<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--property command identifier value<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-D command identifier value<span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>mosquitto_pub -t &lsquo;application/1/device/ffffff100000d143/rx&rsquo; -m &lsquo;{&ldquo;applicationID&rdquo;:&ldquo;1&rdquo;,&ldquo;applicationName&rdquo;:&ldquo;0000000000000001&rdquo;,&ldquo;deviceName&rdquo;:&ldquo;d143-K5-out&rdquo;,&ldquo;devEUI&rdquo;:&ldquo;ffffff100000d143&rdquo;,&ldquo;txInfo&rdquo;:{&ldquo;frequency&rdquo;:481700000,&ldquo;dr&rdquo;:2},&ldquo;adr&rdquo;:false,&ldquo;fCnt&rdquo;:68570,&ldquo;fPort&rdquo;:44,&ldquo;data&rdquo;:&ldquo;BQEA&rdquo;}&rsquo;</p>
+<p>mosquitto_pub -t &lsquo;application/1/device/ffffff100000d143/rx&rsquo; -m &lsquo;{&ldquo;applicationID&rdquo;:&ldquo;1&rdquo;}&rsquo;</p>
+<h2 id="mosquitto_sub">
+  mosquitto_sub
+  <a class="anchor" href="#mosquitto_sub">#</a>
+</h2>
+<p>mosquitto_sub -t &lsquo;application/1/device/ffffff100000d143/rx&rsquo;
+mosquitto_sub -h 120.241.124.226 -t &lsquo;application/1/device/ffffff100000d143/rx&rsquo;</p>
 <h2 id="安装">
   安装
   <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
@@ -18369,6 +18629,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#mosquitto_pub">mosquitto_pub</a></li>
+    <li><a href="#mosquitto_sub">mosquitto_sub</a></li>
     <li><a href="#安装">安装</a>
       <ul>
         <li><a href="#macos">MacOS</a></li>

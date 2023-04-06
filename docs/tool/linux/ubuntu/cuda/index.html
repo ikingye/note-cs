@@ -5,21 +5,21 @@
   <meta name="generator" content="Hugo 0.99.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CUDA #  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
- CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit ">
+<meta name="description" content="CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
+ CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit 安装 cuda 11.4 #  Cleaning remaining files #  # Deleting any NVIDIA/CUDA packages you may already have installed sudo rm /etc/apt/sources.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CUDA" />
-<meta property="og:description" content="CUDA #  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
- CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit " />
+<meta property="og:description" content="CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
+ CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit 安装 cuda 11.4 #  Cleaning remaining files #  # Deleting any NVIDIA/CUDA packages you may already have installed sudo rm /etc/apt/sources." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2022-11-27T04:59:16+08:00" />
 
 <title>CUDA | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.9b82e106be687e9eaf4caa02dcdf505e345dd39bd4e7aeb0c0a11b52227dfa6a.js" integrity="sha256-m4LhBr5ofp6vTKoC3N9QXjRd05vU566wwKEbUiJ9&#43;mo="></script>
+<script defer src="/note-cs/en.search.min.956fb2c92122cf2b262168624c29d6491e876ba5e1a7d904f9546e0e89c0eb13.js" integrity="sha256-lW&#43;yySEizysmIWhiTCnWSR6Ha6Xhp9kE&#43;VRuDonA6xM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15244,6 +15244,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-d86abead9c3976145ddb8bd9d4f1c843" class="toggle"  />
+    <label for="section-d86abead9c3976145ddb8bd9d4f1c843" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/capslock/" class="">Capslock</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="https://kingye.me/note-cs/docs/tool/macos/flowchart/" class="">Flowchart</a>
   
 
@@ -15380,6 +15396,22 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ee2ef9116da78ff7595870fb67b916cf" class="toggle"  />
+    <label for="section-ee2ef9116da78ff7595870fb67b916cf" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/gvm/" class="">gvm</a>
+    </label>
+  
 
         </li>
       
@@ -15814,22 +15846,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-fa5098fa6ee6d66bbd1a19573c68a127" class="toggle"  />
-    <label for="section-fa5098fa6ee6d66bbd1a19573c68a127" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/jupyter/" class="">Jupyter</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <input type="checkbox" id="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="toggle"  />
     <label for="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/onenote/" class="">OneNote</a>
@@ -15965,10 +15981,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-9d4333390afee1960eee786b3839585a" class="toggle" checked />
-    <label for="section-9d4333390afee1960eee786b3839585a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/linux/" class="">4.2 Linux</a>
-    </label>
+    <a href="https://kingye.me/note-cs/docs/tool/linux/" class="">4.2 Linux</a>
   
 
           
@@ -15989,6 +16002,22 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-909a54d6150d15e95ffecc12cb7714d1" class="toggle"  />
+    <label for="section-909a54d6150d15e95ffecc12cb7714d1" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/" class="">Anaconda</a>
+    </label>
+  
+
+        </li>
+      
     
       
         <li>
@@ -16029,6 +16058,54 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-a90f092c1aa7df86f06c919a1f3658a8" class="toggle"  />
+    <label for="section-a90f092c1aa7df86f06c919a1f3658a8" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/" class="">Containerd</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-11f88689692d59ed51bc3593e3c8e16e" class="toggle"  />
+    <label for="section-11f88689692d59ed51bc3593e3c8e16e" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/" class="">crictl</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-58913fdb8fbdb95780586a128cf6ffb6" class="toggle"  />
+    <label for="section-58913fdb8fbdb95780586a128cf6ffb6" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/" class="">ctr</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-5b6be2d46b41aced359087ac2e647fa0" class="toggle" checked />
     <label for="section-5b6be2d46b41aced359087ac2e647fa0" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/" class="active">CUDA</a>
@@ -16045,9 +16122,89 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-52cf868c699d42feb6bd61a54e5b0b40" class="toggle"  />
+    <label for="section-52cf868c699d42feb6bd61a54e5b0b40" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/" class="">Docker</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-56feac5b374f61a5c5d7d9da088f3029" class="toggle"  />
+    <label for="section-56feac5b374f61a5c5d7d9da088f3029" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/" class="">gvm</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-71eb4be76c85488e111908ff901c0d86" class="toggle"  />
+    <label for="section-71eb4be76c85488e111908ff901c0d86" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/" class="">Java</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bd07369338bce1bf70005b10893bbf64" class="toggle"  />
+    <label for="section-bd07369338bce1bf70005b10893bbf64" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/" class="">Jupyter</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-f8c849429a4afea6f16f61b9c2f0b647" class="toggle"  />
     <label for="section-f8c849429a4afea6f16f61b9c2f0b647" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/" class="">k3d</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cfc3413df35599422829e55a09dfc392" class="toggle"  />
+    <label for="section-cfc3413df35599422829e55a09dfc392" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/" class="">KubeEdge</a>
     </label>
   
 
@@ -16093,6 +16250,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-6b72373c873308b5aff7e217fb07e3c5" class="toggle"  />
+    <label for="section-6b72373c873308b5aff7e217fb07e3c5" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/" class="">Mosquitto</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-de92dc960e76e5e4f704c6cf52b3bdc3" class="toggle"  />
     <label for="section-de92dc960e76e5e4f704c6cf52b3bdc3" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/" class="">Multipass</a>
@@ -16109,9 +16282,41 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-2f3419b09918a3f70d93da60a72753a2" class="toggle"  />
+    <label for="section-2f3419b09918a3f70d93da60a72753a2" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/" class="">Nvidia</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-0be1bdac20b2c8741647e1372246ef3b" class="toggle"  />
     <label for="section-0be1bdac20b2c8741647e1372246ef3b" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/" class="">pyenv</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6a03125864a4dba92fed280a9a470ce7" class="toggle"  />
+    <label for="section-6a03125864a4dba92fed280a9a470ce7" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/" class="">pytorch</a>
     </label>
   
 
@@ -16169,7 +16374,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c3726826e3d1464cd27e6c65e6bb3bac" class="toggle"  />
     <label for="section-c3726826e3d1464cd27e6c65e6bb3bac" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/linux/debian/" class="">Debian</a>
+      <a href="https://kingye.me/note-cs/docs/tool/linux/debian/" class="">4.2.3 Debian</a>
     </label>
   
 
@@ -17014,11 +17219,6 @@ https://github.com/alex-shpak/hugo-book
     <a href="https://kingye.me/note-cs/docs/study/skill/type/markdown/" class="">markdown</a>
   
 
-          
-  <ul>
-    
-  </ul>
-
         </li>
       
     
@@ -17090,6 +17290,19 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/study/skill/type/asciidoc/" class="">AsciiDoc</a>
+  
 
         </li>
       
@@ -17537,6 +17750,22 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4f8aca002f820abd93f1c5c1b67a92cb" class="toggle"  />
+    <label for="section-4f8aca002f820abd93f1c5c1b67a92cb" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/study/book/ai/prml/" class="">Pattern Recognition and Machine Learning</a>
+    </label>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -18248,8 +18477,14 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#安装">安装</a>
       <ul>
         <li><a href="#安装-nvcc">安装 nvcc</a></li>
+        <li><a href="#安装-cuda-114">安装 cuda 11.4</a>
+          <ul>
+            <li><a href="#cleaning-remaining-files">Cleaning remaining files</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
+    <li><a href="#测试-cuda">测试 cuda</a></li>
   </ul>
 </nav>
 <hr />
@@ -18277,6 +18512,10 @@ https://github.com/alex-shpak/hugo-book
   CUDA
   <a class="anchor" href="#cuda">#</a>
 </h1>
+<ul>
+<li>nvidia-smi 显示的是支持的最高版本的 cuda</li>
+<li>nvcc -V 显示的当前安装的 cuda 版本</li>
+</ul>
 <h2 id="安装">
   安装
   <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
@@ -18297,6 +18536,121 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#%e5%ae%89%e8%a3%85-nvcc">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt install nvidia-cuda-toolkit
+</span></span></code></pre></div><h3 id="安装-cuda-114">
+  安装 cuda 11.4
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85-cuda-114">#</a>
+</h3>
+<h4 id="cleaning-remaining-files">
+  Cleaning remaining files
+  <a class="anchor" href="#cleaning-remaining-files">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Deleting any NVIDIA/CUDA packages you may already have installed</span>
+</span></span><span style="display:flex;"><span>sudo rm /etc/apt/sources.list.d/cuda*
+</span></span><span style="display:flex;"><span>sudo apt remove --autoremove nvidia-cuda-toolkit
+</span></span><span style="display:flex;"><span>sudo apt remove --autoremove nvidia-*
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deleting any remaining Cuda files on /usr/local/</span>
+</span></span><span style="display:flex;"><span>sudo rm -rf /usr/local/cuda*
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Purge any remaining NVIDIA configuration files</span>
+</span></span><span style="display:flex;"><span>sudo apt-get purge nvidia*
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># updating and deleting unnecessary dependencies.</span>
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get autoremove
+</span></span><span style="display:flex;"><span>sudo apt-get autoclean
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># For 18.04</span>
+</span></span><span style="display:flex;"><span>wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
+</span></span><span style="display:flex;"><span>sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+</span></span><span style="display:flex;"><span>wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda-repo-ubuntu1804-11-4-local_11.4.0-470.42.01-1_amd64.deb
+</span></span><span style="display:flex;"><span>sudo dpkg -i cuda-repo-ubuntu1804-11-4-local_11.4.0-470.42.01-1_amd64.deb
+</span></span><span style="display:flex;"><span>sudo apt-key add /var/cuda-repo-ubuntu1804-11-4-local/7fa2af80.pub
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get -y install cuda
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># For 20.04</span>
+</span></span><span style="display:flex;"><span>wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+</span></span><span style="display:flex;"><span>sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+</span></span><span style="display:flex;"><span>wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda-repo-ubuntu2004-11-4-local_11.4.0-470.42.01-1_amd64.deb
+</span></span><span style="display:flex;"><span>sudo dpkg -i cuda-repo-ubuntu2004-11-4-local_11.4.0-470.42.01-1_amd64.deb
+</span></span><span style="display:flex;"><span>sudo apt-key add /var/cuda-repo-ubuntu2004-11-4-local/7fa2af80.pub
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get -y install cuda
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 配置 path</span>
+</span></span><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; EOF &gt;&gt; ~/.zshrc
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># set PATH for cuda 11.4 installation
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">if [ -d &#34;/usr/local/cuda-11.4/bin/&#34; ]; then
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">fi
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>zsh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># check</span>
+</span></span><span style="display:flex;"><span>nvidia-smi
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nvcc --version
+</span></span></code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://medium.com/@anarmammadli/how-to-install-cuda-11-4-on-ubuntu-18-04-or-20-04-63f3dee2099">How to install Cuda 11.4 on ubuntu</a></li>
+</ul>
+<h2 id="测试-cuda">
+  测试 cuda
+  <a class="anchor" href="#%e6%b5%8b%e8%af%95-cuda">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vi kernel.cu
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nvcc -o kernel kernel.cu
+</span></span><span style="display:flex;"><span>./kernel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 输出</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Max error: 0.000000</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>__global__
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">saxpy</span>(<span style="color:#66d9ef">int</span> n, <span style="color:#66d9ef">float</span> a, <span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>x, <span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>y)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> blockIdx.x<span style="color:#f92672">*</span>blockDim.x <span style="color:#f92672">+</span> threadIdx.x;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">&lt;</span> n) y[i] <span style="color:#f92672">=</span> a<span style="color:#f92672">*</span>x[i] <span style="color:#f92672">+</span> y[i];
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> N <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;&lt;</span><span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>x, <span style="color:#f92672">*</span>y, <span style="color:#f92672">*</span>d_x, <span style="color:#f92672">*</span>d_y;
+</span></span><span style="display:flex;"><span>  x <span style="color:#f92672">=</span> (<span style="color:#66d9ef">float</span><span style="color:#f92672">*</span>)malloc(N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>));
+</span></span><span style="display:flex;"><span>  y <span style="color:#f92672">=</span> (<span style="color:#66d9ef">float</span><span style="color:#f92672">*</span>)malloc(N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  cudaMalloc(<span style="color:#f92672">&amp;</span>d_x, N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>));
+</span></span><span style="display:flex;"><span>  cudaMalloc(<span style="color:#f92672">&amp;</span>d_y, N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> N; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    x[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0f</span>;
+</span></span><span style="display:flex;"><span>    y[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0f</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  cudaMemcpy(d_x, x, N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>), cudaMemcpyHostToDevice);
+</span></span><span style="display:flex;"><span>  cudaMemcpy(d_y, y, N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>), cudaMemcpyHostToDevice);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Perform SAXPY on 1M elements
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  saxpy<span style="color:#f92672">&lt;&lt;&lt;</span>(N<span style="color:#f92672">+</span><span style="color:#ae81ff">255</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">256</span>, <span style="color:#ae81ff">256</span><span style="color:#f92672">&gt;&gt;&gt;</span>(N, <span style="color:#ae81ff">2.0f</span>, d_x, d_y);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  cudaMemcpy(y, d_y, N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">float</span>), cudaMemcpyDeviceToHost);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">float</span> maxError <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0f</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> N; i<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span>    maxError <span style="color:#f92672">=</span> max(maxError, abs(y[i]<span style="color:#f92672">-</span><span style="color:#ae81ff">4.0f</span>));
+</span></span><span style="display:flex;"><span>  printf(<span style="color:#e6db74">&#34;Max error: %f</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, maxError);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  cudaFree(d_x);
+</span></span><span style="display:flex;"><span>  cudaFree(d_y);
+</span></span><span style="display:flex;"><span>  free(x);
+</span></span><span style="display:flex;"><span>  free(y);
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div></article>
  
       
@@ -18306,6 +18660,12 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/4eef1ec8da5795614ab4cf435180d4b96f94e01f" title='Last modified by yewang | 2022-11-27' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2022-11-27</span>
+    </a>
+  </div>
 
 
 
@@ -18367,8 +18727,14 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#安装">安装</a>
       <ul>
         <li><a href="#安装-nvcc">安装 nvcc</a></li>
+        <li><a href="#安装-cuda-114">安装 cuda 11.4</a>
+          <ul>
+            <li><a href="#cleaning-remaining-files">Cleaning remaining files</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
+    <li><a href="#测试-cuda">测试 cuda</a></li>
   </ul>
 </nav>
 <hr />
