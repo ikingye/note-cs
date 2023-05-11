@@ -1653,6 +1653,17 @@ BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式
     </item>
     
     <item>
+      <title>gem</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/ruby/basic/others/gem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/pl/ruby/basic/others/gem/</guid>
+      <description>RubyGems #  安装 #  ruby setup.rb
+参考：https://rubygems.org/pages/download
+RubyGems installed the following executables:  /opt/homebrew/Cellar/ruby/3.2.2/bin/gem  /opt/homebrew/Cellar/ruby/3.2.2/bin/bundle  /opt/homebrew/Cellar/ruby/3.2.2/bin/bundler  Ruby Interactive (ri) documentation was installed. ri is kind of like man pages for Ruby libraries. You may access it like this:  ri Classname  ri Classname.class_method  ri Classname#instance_method </description>
+    </item>
+    
+    <item>
       <title>Go</title>
       <link>https://kingye.me/note-cs/docs/basic/pl/go/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3219,7 +3230,7 @@ https://microk8s.io
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/macos/picgo/</guid>
-      <description>picgo #  CLI 命令 #  PicGo/PicGo-Core #  Molunerfinn/PicGo #  </description>
+      <description>picgo #  CLI 命令 #  PicGo/PicGo-Core #  Molunerfinn/PicGo #   picgo vscode 快捷键 #   Windows/Unix  Uploading an image from clipoard: Ctrl + Alt + U Uploading images from explorer: Ctrl + Alt + E Uploading an image from input box: Ctrl + Alt + O   OsX  Uploading an image from clipboard: Cmd + Opt + U Uploading images from explorer: Cmd + Opt + E Uploading an image from input box: Cmd + Opt + O    </description>
     </item>
     
     <item>
@@ -3248,6 +3259,16 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</guid>
       <description>pytorch #  # cuda 11.4 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch </description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/ruby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/macos/ruby/</guid>
+      <description>ruby #  安装 #  brew install ruby
+If you need to have ruby first in your PATH, run:  echo &amp;#39;export PATH=&amp;#34;/opt/homebrew/opt/ruby/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc  For compilers to find ruby you may need to set:  export LDFLAGS=&amp;#34;-L/opt/homebrew/opt/ruby/lib&amp;#34;  export CPPFLAGS=&amp;#34;-I/opt/homebrew/opt/ruby/include&amp;#34;  For pkg-config to find ruby you may need to set:  export PKG_CONFIG_PATH=&amp;#34;/opt/homebrew/opt/ruby/lib/pkgconfig&amp;#34; </description>
     </item>
     
     <item>
