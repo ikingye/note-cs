@@ -1582,8 +1582,7 @@ brew tap #  没有参数会自动更新已经存在的 tap 并列出当前已经
       
       <guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</guid>
       <description>ACID #   In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
-  ACID，是指数据库管理系统（DBMS）在写入或更新资料的过程中，为保证事务（transaction）是正确可靠的，所必须具备的四个特性：
- 原子性（Atomicity 又称不可分割性）  一个事务（transaction）中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。即，事务不可分割、不可约简。   一致性（Consistency）  在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设约束、触发器、级联回滚等。   隔离性（Isolation，又称独立性）  数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括未提交读（Read uncommitted）、提交读（read committed）、可重复读（repeatable read）和串行化（Serializable）。   持久性（Durability）  事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。     </description>
+  ACID 是追求 CAP (Consistency, Availability, Partition tolerance) 的一致性 (C)</description>
     </item>
     
     <item>
@@ -2758,6 +2757,16 @@ lightstep-tracer-go #  lightstep/lightstep-tracer-go </description>
     </item>
     
     <item>
+      <title>MinIO</title>
+      <link>https://kingye.me/note-cs/docs/direction/be/db/minio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/be/db/minio/</guid>
+      <description>MinIO #  MinIO 是开源 (AGPL v3.0 协议) 高性能对象存储，提供了 Amazon S3 云存储服务兼容的 API，可以用于处理非结构化数据，例如图片、视频、日志文件，备份和容器镜像。最大支持 5TB 对象。
+ 专注于高性能，但简化了架构 (相比较 GlusterFS 和 Ceph)，所以不支持动态扩展 (提供有限的扩展运维能力)  </description>
+    </item>
+    
+    <item>
       <title>代理</title>
       <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2923,21 +2932,13 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
     </item>
     
     <item>
-      <title>Anaconda</title>
-      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/</guid>
-      <description>Anaconda #   conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda  miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。    使用教程 #  # 清理缓存 conda clean -a   # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False  镜像源 #  阿里云 #  cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
-    </item>
-    
-    <item>
       <title>apt</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid>
-      <description>apt #   apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令</description>
+      <description>apt #  apt vs apt-get #  Advanced Package Tool，又名 apt-get，是一款适用于 Unix 和 Linux 系统的应用程序管理器
+ apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令</description>
     </item>
     
     <item>
@@ -2982,6 +2983,15 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
     </item>
     
     <item>
+      <title>Conda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid>
+      <description>Conda #   conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda  miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。    使用教程 #  # 清理缓存 conda clean -a  # The base environment is activated by default conda config --set auto_activate_base True  # The base environment is not activated by default conda config --set auto_activate_base False   # 查看已创建的conda环境 conda info --envs  # 激活环境 conda activate base  # 退出环境 conda deactivate  镜像源 #  阿里云 #  cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
+    </item>
+    
+    <item>
       <title>Containerd</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2996,11 +3006,11 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</guid>
-      <description>crictl #    crictl 不支持改镜像 tag
+      <description>crictl #   crictl 是 CRI 兼容的容器运行时命令行接口，用来检查和调试 Kubernetes 节点上的容器运行时和应用程序  kubernetes-sigs/cri-tools       crictl 不支持改镜像 tag
   crictl 不支持 load 镜像文件
   需要用 ctr
 # namespace 为 k8s.io ctr -n=k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 ctr -n=k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6   参考：
- Crictl not support load images? Manually Loading Container Images with containerD   安装 #  VERSION=&amp;#34;v1.26.0&amp;#34; wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin # rm -f crictl-$VERSION-linux-amd64.tar.gz   # 默认是使用 docker # 配置使用 containerd cat &amp;lt;&amp;lt; EOF &amp;gt; /etc/crictl.</description>
+ Crictl not support load images? Manually Loading Container Images with containerD   安装 #  VERSION=&amp;#34;v1.26.0&amp;#34; wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz sudo tar zxvf crictl-$VERSION-linux-amd64.</description>
     </item>
     
     <item>
@@ -3009,7 +3019,7 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</guid>
-      <description>ctr #   ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（crictl image 才能看到）  ctr -n k8s.io image list ctr -n k8s.io image pull     # namespace ctr ns ls  # 删除镜像 ctr -n k8s.io i rm $(ctr -n k8s.io i ls -q) # 删除容器 ctr -n k8s.io c rm $(ctr -n k8s.io c ls -q)   ctr -n k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 # tag 重命名 ctr -n k8s.</description>
+      <description>ctr #   ctr 是 containerd 自带的 CLI 命令行工具   ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（crictl image 才能看到）  ctr -n k8s.io image list ctr -n k8s.io image pull     # namespace ctr ns ls  # 删除镜像 ctr -n k8s.io i rm $(ctr -n k8s.io i ls -q) # 删除容器 ctr -n k8s.io c rm $(ctr -n k8s.io c ls -q)   ctr -n k8s.</description>
     </item>
     
     <item>
@@ -3027,8 +3037,16 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/</guid>
-      <description>CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
- CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit 安装 cuda 11.4 #  Cleaning remaining files #  # Deleting any NVIDIA/CUDA packages you may already have installed sudo rm /etc/apt/sources.</description>
+      <description>CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  nvcc: NVIDIA (R) Cuda compiler driver   我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动  cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本   cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作  nvidia driver 和 cuda toolkit 版本兼容性 #   CUDA Toolkit  runtime, libraries, tools   Nvidia Display Driver Package  CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia.</description>
+    </item>
+    
+    <item>
+      <title>Dash</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</guid>
+      <description>Dash #  </description>
     </item>
     
     <item>
@@ -3049,6 +3067,17 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
       <description>FAQ #  Istio 如何实现 Sidecar 注入？ #  Istio 如何实现流量管理？ #  如何拦截流量 intercept traffic
 Istio 是在哪一层实现流量管理？为什么要在那一层？ #  Layer7 routing
 Istio 如何实现 mTLS 认证？ #  </description>
+    </item>
+    
+    <item>
+      <title>feh</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid>
+      <description>feh #  feh: image viewer and cataloguer
+安装 #  sudo apt install feh feh ERROR: Can&amp;rsquo;t open X display. #   lsix #  hackerb9/lsix Like &amp;ldquo;ls&amp;rdquo;, but for images. Shows thumbnails in terminal using sixel graphics.
+# 安装 sudo apt-get install imagemagick  sudo curl -Lo /usr/local/bin/lsix https://github.com/hackerb9/lsix/blob/1.8/lsix chmod +x /usr/local/bin/lsix </description>
     </item>
     
     <item>
@@ -3074,6 +3103,15 @@ Istio 如何实现 mTLS 认证？ #  </description>
   当前文件替换 cmd + R
   所有文件查询 shift + cmd + F
   所有文件替换 shift + cmd + R</description>
+    </item>
+    
+    <item>
+      <title>Gradio</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</guid>
+      <description>Gradio #  import gradio as gr  def greet(name):  return &amp;#34;Hello &amp;#34; + name + &amp;#34;!&amp;#34;  with gr.Blocks() as demo:  output = gr.Textbox(label=&amp;#34;Output Box&amp;#34;)  name = gr.Textbox(label=&amp;#34;Name&amp;#34;)  greet_btn = gr.Button(&amp;#34;Greet&amp;#34;)  greet_btn.click(fn=greet, inputs=name, outputs=output)  demo.launch(share=True, server_name=&amp;#34;0.0.0.0&amp;#34;, server_port=8722) </description>
     </item>
     
     <item>
@@ -3135,7 +3173,8 @@ rm -rf ~/.gvm/pkgsets/go1.11.1 gvm uninstall go1.11.1 参考：
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</guid>
-      <description>Jupyter #  pipenv install jupyterlab  alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：
+      <description>Jupyter #  JupyterLab 包含了 Jupyter Notebook 所有功能，并升级增加了很多功能
+pipenv install jupyterlab  alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：
  JupyterLab Installation  配置 #  # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39; Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.</description>
     </item>
     
@@ -3173,6 +3212,15 @@ rm -rf ~/.gvm/pkgsets/go1.11.1 gvm uninstall go1.11.1 参考：
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid>
       <description>KubeSphere #   kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;: {&amp;#34;annotations&amp;#34;:{&amp;#34;storageclass.kubernetes.io/is-default-class&amp;#34;:&amp;#34;true&amp;#34;}}}&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title>langflow</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</guid>
+      <description>langflow #  langflow --host &amp;#34;0.0.0.0&amp;#34; --port 7865 </description>
     </item>
     
     <item>
@@ -3221,7 +3269,7 @@ https://microk8s.io
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/</guid>
-      <description>Nvidia #  apt install ubuntu-drivers-common  # 查询推荐的 nvidia 驱动 ubuntu-drivers devices  # 按推荐安装驱动 apt install -y nvidia-driver-450  # CUDA Toolkit: 12.0 # Driver Version: 525.60.13 # Release Date: 2022.12.5 curl -LO https://us.download.nvidia.com/tesla/525.60.13/NVIDIA-Linux-x86_64-525.60.13.run bash NVIDIA-Linux-x86_64-525.60.13.run  # CUDA Toolkit: 11.7 # Driver Version: 515.86.01 # Release Date: 2022.11.22 curl -LO https://us.download.nvidia.com/tesla/515.86.01/NVIDIA-Linux-x86_64-515.86.01.run bash NVIDIA-Linux-x86_64-515.86.01.run  # CUDA Toolkit: 11.6 # Driver Version: 510.108.03 # Release Date: 2022.11.22 curl -LO https://us.</description>
+      <description>Nvidia #  apt install ubuntu-drivers-common  # 查询推荐的 nvidia 驱动 ubuntu-drivers devices  # 按推荐安装驱动 apt install -y nvidia-driver-450  # CUDA Toolkit: 12.2 # Driver Version: 535.54.03 # Release Date: 2023.6.26 curl -LO https://us.download.nvidia.com/tesla/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run bash NVIDIA-Linux-x86_64-535.54.03.run  # CUDA Toolkit: 12.0 # Driver Version: 525.60.13 # Release Date: 2022.12.5 curl -LO https://us.download.nvidia.com/tesla/525.60.13/NVIDIA-Linux-x86_64-525.60.13.run bash NVIDIA-Linux-x86_64-525.60.13.run  # CUDA Toolkit: 11.7 # Driver Version: 515.86.01 # Release Date: 2022.11.22 curl -LO https://us.</description>
     </item>
     
     <item>
@@ -3234,13 +3282,33 @@ https://microk8s.io
     </item>
     
     <item>
+      <title>pip</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</guid>
+      <description>pip #  # 设置 python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip # python -m pip install --upgrade pip pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple   # 临时安装 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx </description>
+    </item>
+    
+    <item>
+      <title>pipenv</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid>
+      <description>pipenv #  pypa/pipenv # 进入虚拟环境 $ pipenv shell $ pipenv shell --python=3.9.  # 退出虚拟环境 $ exit 设置镜像源 #  # vim Pipfile [[source]] # url 替换成这个源 url = &amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34; 如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python
+ Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.
+ </description>
+    </item>
+    
+    <item>
       <title>pyenv</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid>
       <description>pyenv #  pyenv/pyenv 安装 #  git clone https://github.com/pyenv/pyenv.git ~/.pyenv  echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;command -v pyenv &amp;gt;/dev/null || export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc  # 使用 taobao 的 npm 源 cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 #  之后才能编译 python 成功
-sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  # 安装 pyenv install 3.</description>
+sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv  # 安装 pyenv install 3.</description>
     </item>
     
     <item>
@@ -3262,6 +3330,16 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
     </item>
     
     <item>
+      <title>RoCE 网络</title>
+      <link>https://kingye.me/note-cs/docs/basic/network/roce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/network/roce/</guid>
+      <description>RoCE 网络 #  分布式存储中常用的网络协议
+ Infiniband（IB）：常用于 DPC 场景中的存储前端网络 RoCE：常用于存储后端网络 TCP/IP：常用于业务网络  RDMA #   传统的 TCP/IP 网络通信是通过内核发送消息，这种通信方式存在很高的数据移动和数据复制的开销。 RDMA (RemoteDirect Memory Access) 技术全称远程直接内存访问，就是为了解决网络传输中服务器端数据处理的延迟而产生的。  RDMA 技术能直接通过网络接口访问内存数据，无需操作系统内核的介入。这允许高吞吐、低延迟的网络通信，尤其适合在大规模并行计算机集群中使用。   目前有三种 RDMA 网络，分别是 Infiniband（IB）、RoCE (RDMA over Converged Ethernet)、iWARP  Infiniband 是一种专为 RDMA 设计的网络，从硬件级别保证可靠传输 ，技术先进，但是成本高昂 RoCE 和 iWARP 都是基于以太网的 RDMA 技术，这使高速、超低延时、极低 CPU 使用率的 RDMA 技术得以部署在目前使用最广泛的以太网上     InfiniBand：设计之初就考虑了 RDMA，从硬件级别保证可靠传输，提供更高的带宽和更低的时延。但是成本高，需要支持 IB 网卡和交换机。 iWARP：基于 TCP 的 RDMA 网络，利用 TCP 达到可靠传输。相比 RoCE，在大型组网的情况下，iWARP 的大量 TCP 连接会占用大量的内存资源，对系统规格要求更高。可以使用普通的以太网交换机，但是需要支持 iWARP 的网卡。 RoCE：基于 Ethernet 做 RDMA，消耗的资源比 iWARP 少，支持的特性比 iWARP 多。可以使用普通的以太网交换机，但是需要支持 RoCE 的网卡。      InfiniBand iWARP RoCE     成本 高 中 低   性能 最好 稍差（受 TCP 影响） 与 InfiniBand 相当   稳定性 好 差 较好   交换机 IB 交换机 以太网交换机 以太网交换机     RoCE #  RoCE 协议有 RoCEv1 和 RoCEv2 两个版本</description>
+    </item>
+    
+    <item>
       <title>ruby</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/ruby/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3269,6 +3347,24 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
       <guid>https://kingye.me/note-cs/docs/tool/macos/ruby/</guid>
       <description>ruby #  安装 #  brew install ruby
 If you need to have ruby first in your PATH, run:  echo &amp;#39;export PATH=&amp;#34;/opt/homebrew/opt/ruby/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc  For compilers to find ruby you may need to set:  export LDFLAGS=&amp;#34;-L/opt/homebrew/opt/ruby/lib&amp;#34;  export CPPFLAGS=&amp;#34;-I/opt/homebrew/opt/ruby/include&amp;#34;  For pkg-config to find ruby you may need to set:  export PKG_CONFIG_PATH=&amp;#34;/opt/homebrew/opt/ruby/lib/pkgconfig&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Streamlit</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</guid>
+      <description>Streamlit #  streamlit run xxx.py --server.address &amp;#34;0.0.0.0&amp;#34; --server.port 7865 </description>
+    </item>
+    
+    <item>
+      <title>systemd</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</guid>
+      <description>systemd #  systemctl #  systemctl list-units --type=service --state=active | grep ray </description>
     </item>
     
     <item>
@@ -3281,6 +3377,15 @@ If you need to have ruby first in your PATH, run:  echo &amp;#39;export PATH=&am
 Other services and unpatched builds of screen are also affected.
 gpakosz/.tmux #  Oh My Tmux!
 cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .tmux/.tmux.conf.local .  教程 #   tmux 2: Productive Mouse-Free Development by @bphogan. 手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频] 让你的 tmux 起死回生！[视频]  </description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</guid>
+      <description>v2ray #   docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restart unless-stopped amirdaaee/cloudflare-warp:latest   curl -x &amp;#34;socks5://127.0.0.1:7081&amp;#34; ipinfo.io   cat &amp;lt;&amp;lt; EOF &amp;gt; /usr/local/etc/xray/config.json { &amp;#34;log&amp;#34;: { &amp;#34;access&amp;#34;: &amp;#34;/var/log/xray/access.log&amp;#34;, &amp;#34;error&amp;#34;: &amp;#34;/var/log/xray/error.log&amp;#34;, &amp;#34;loglevel&amp;#34;: &amp;#34;warning&amp;#34; }, &amp;#34;inbounds&amp;#34;: [ { &amp;#34;port&amp;#34;: 40833, &amp;#34;listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;, &amp;#34;tag&amp;#34;: &amp;#34;VLESS-in&amp;#34;, &amp;#34;protocol&amp;#34;: &amp;#34;VLESS&amp;#34;, &amp;#34;settings&amp;#34;: { &amp;#34;clients&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;fa232059-8a60-4e52-9dda-95ed9e95375f&amp;#34;, &amp;#34;alterId&amp;#34;: 0 } ], &amp;#34;decryption&amp;#34;: &amp;#34;none&amp;#34; }, &amp;#34;streamSettings&amp;#34;: { &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;, &amp;#34;wsSettings&amp;#34;: { &amp;#34;path&amp;#34;: &amp;#34;/065b7d27/&amp;#34; } } } ], &amp;#34;outbounds&amp;#34;: [ { &amp;#34;protocol&amp;#34;: &amp;#34;blackhole&amp;#34;, &amp;#34;settings&amp;#34;: {}, &amp;#34;tag&amp;#34;: &amp;#34;blocked&amp;#34; }, { &amp;#34;protocol&amp;#34;: &amp;#34;freedom&amp;#34;, &amp;#34;settings&amp;#34;: {}, &amp;#34;tag&amp;#34;: &amp;#34;direct&amp;#34; }, { &amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;, &amp;#34;settings&amp;#34;: { &amp;#34;servers&amp;#34;: [ { &amp;#34;address&amp;#34;: &amp;#34;127.</description>
     </item>
     
     <item>
@@ -3303,13 +3408,37 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
     </item>
     
     <item>
+      <title>XDM</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/xdm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/macos/xdm/</guid>
+      <description>XDM #  下载</description>
+    </item>
+    
+    <item>
       <title>zsh</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid>
       <description>zsh #  oh-my-zsh #  安装
-apt install -y git zsh  sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh </description>
+apt install -y git zsh  sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh   # 设置默认为 zsh sudo chsh -s /usr/bin/zsh yewang </description>
+    </item>
+    
+    <item>
+      <title>存储卡</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/cc/memory-card/</guid>
+      <description>存储卡 #  memory card 存储卡，快闪存储卡、闪卡
+  miniSD
+ 首次于 2003 年的 CeBIT 展览中由 SanDisk 公布 MiniSD 卡由 SD 卡发展派生而来    记忆棒，Memory Stick，由日本索尼公司最先研发出来的移动存储媒体
+  XD 卡，全称为 XD Picture Card，XD 取自于“Extreme Digital”
+ XD 卡是由日本奥林巴斯株式会社和富士有限公司联合推出    微硬盘（Microdrive）
+ 由 IBM 公司开发的一款超级迷你硬盘机产品    华为 NM 存储卡（Nano Memory Card，简称 NM 卡）
+ 是华为自创的一种超微型存储卡，与 MicroSD 存储卡相比，体积减小 45%，和 Nano SIM 卡的规格几乎完全相同。    CF 卡（Compact Flash）</description>
     </item>
     
     <item>

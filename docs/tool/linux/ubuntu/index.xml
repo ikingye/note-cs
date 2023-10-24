@@ -6,21 +6,13 @@
     <description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Anaconda</title>
-      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/</guid>
-      <description>Anaconda #   conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda  miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。    使用教程 #  # 清理缓存 conda clean -a   # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False  镜像源 #  阿里云 #  cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
-    </item>
-    
-    <item>
       <title>apt</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid>
-      <description>apt #   apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令</description>
+      <description>apt #  apt vs apt-get #  Advanced Package Tool，又名 apt-get，是一款适用于 Unix 和 Linux 系统的应用程序管理器
+ apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令</description>
     </item>
     
     <item>
@@ -32,6 +24,15 @@
       <description>Cargo #  常用命令 #  安装配置 #  curl https://sh.rustup.rs -sSf | sh
 参考：
  The Cargo Book  </description>
+    </item>
+    
+    <item>
+      <title>Conda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid>
+      <description>Conda #   conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda  miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。    使用教程 #  # 清理缓存 conda clean -a  # The base environment is activated by default conda config --set auto_activate_base True  # The base environment is not activated by default conda config --set auto_activate_base False   # 查看已创建的conda环境 conda info --envs  # 激活环境 conda activate base  # 退出环境 conda deactivate  镜像源 #  阿里云 #  cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
     </item>
     
     <item>
@@ -49,11 +50,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</guid>
-      <description>crictl #    crictl 不支持改镜像 tag
+      <description>crictl #   crictl 是 CRI 兼容的容器运行时命令行接口，用来检查和调试 Kubernetes 节点上的容器运行时和应用程序  kubernetes-sigs/cri-tools       crictl 不支持改镜像 tag
   crictl 不支持 load 镜像文件
   需要用 ctr
 # namespace 为 k8s.io ctr -n=k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 ctr -n=k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6   参考：
- Crictl not support load images? Manually Loading Container Images with containerD   安装 #  VERSION=&amp;#34;v1.26.0&amp;#34; wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin # rm -f crictl-$VERSION-linux-amd64.tar.gz   # 默认是使用 docker # 配置使用 containerd cat &amp;lt;&amp;lt; EOF &amp;gt; /etc/crictl.</description>
+ Crictl not support load images? Manually Loading Container Images with containerD   安装 #  VERSION=&amp;#34;v1.26.0&amp;#34; wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz sudo tar zxvf crictl-$VERSION-linux-amd64.</description>
     </item>
     
     <item>
@@ -62,7 +63,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</guid>
-      <description>ctr #   ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（crictl image 才能看到）  ctr -n k8s.io image list ctr -n k8s.io image pull     # namespace ctr ns ls  # 删除镜像 ctr -n k8s.io i rm $(ctr -n k8s.io i ls -q) # 删除容器 ctr -n k8s.io c rm $(ctr -n k8s.io c ls -q)   ctr -n k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 # tag 重命名 ctr -n k8s.</description>
+      <description>ctr #   ctr 是 containerd 自带的 CLI 命令行工具   ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（crictl image 才能看到）  ctr -n k8s.io image list ctr -n k8s.io image pull     # namespace ctr ns ls  # 删除镜像 ctr -n k8s.io i rm $(ctr -n k8s.io i ls -q) # 删除容器 ctr -n k8s.io c rm $(ctr -n k8s.io c ls -q)   ctr -n k8s.</description>
     </item>
     
     <item>
@@ -71,8 +72,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/</guid>
-      <description>CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
- CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit 安装 cuda 11.4 #  Cleaning remaining files #  # Deleting any NVIDIA/CUDA packages you may already have installed sudo rm /etc/apt/sources.</description>
+      <description>CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  nvcc: NVIDIA (R) Cuda compiler driver   我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动  cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本   cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作  nvidia driver 和 cuda toolkit 版本兼容性 #   CUDA Toolkit  runtime, libraries, tools   Nvidia Display Driver Package  CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia.</description>
+    </item>
+    
+    <item>
+      <title>Dash</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</guid>
+      <description>Dash #  </description>
     </item>
     
     <item>
@@ -82,6 +91,26 @@
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</guid>
       <description>Docker #  使用 #  # 停止 docker systemctl stop docker.socket 安装 #  # Uninstall old versions sudo apt-get remove docker docker-engine docker.io containerd runc  # Update the apt package index and install packages to allow apt to use a repository over HTTPS sudo apt-get update sudo apt-get install -y \  ca-certificates \  curl \  gnupg \  lsb-release   # Add Docker’s official GPG key sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download.</description>
+    </item>
+    
+    <item>
+      <title>feh</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid>
+      <description>feh #  feh: image viewer and cataloguer
+安装 #  sudo apt install feh feh ERROR: Can&amp;rsquo;t open X display. #   lsix #  hackerb9/lsix Like &amp;ldquo;ls&amp;rdquo;, but for images. Shows thumbnails in terminal using sixel graphics.
+# 安装 sudo apt-get install imagemagick  sudo curl -Lo /usr/local/bin/lsix https://github.com/hackerb9/lsix/blob/1.8/lsix chmod +x /usr/local/bin/lsix </description>
+    </item>
+    
+    <item>
+      <title>Gradio</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</guid>
+      <description>Gradio #  import gradio as gr  def greet(name):  return &amp;#34;Hello &amp;#34; + name + &amp;#34;!&amp;#34;  with gr.Blocks() as demo:  output = gr.Textbox(label=&amp;#34;Output Box&amp;#34;)  name = gr.Textbox(label=&amp;#34;Name&amp;#34;)  greet_btn = gr.Button(&amp;#34;Greet&amp;#34;)  greet_btn.click(fn=greet, inputs=name, outputs=output)  demo.launch(share=True, server_name=&amp;#34;0.0.0.0&amp;#34;, server_port=8722) </description>
     </item>
     
     <item>
@@ -110,7 +139,8 @@ $ gvm listall $ gvm list  apt-get install bison make gcc -y # 使用二进制安
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</guid>
-      <description>Jupyter #  pipenv install jupyterlab  alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：
+      <description>Jupyter #  JupyterLab 包含了 Jupyter Notebook 所有功能，并升级增加了很多功能
+pipenv install jupyterlab  alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：
  JupyterLab Installation  配置 #  # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39; Jupyter Notebook vs Jupyter Lab #   Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.</description>
     </item>
     
@@ -139,6 +169,15 @@ $ gvm listall $ gvm list  apt-get install bison make gcc -y # 使用二进制安
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid>
       <description>KubeSphere #   kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;: {&amp;#34;annotations&amp;#34;:{&amp;#34;storageclass.kubernetes.io/is-default-class&amp;#34;:&amp;#34;true&amp;#34;}}}&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title>langflow</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</guid>
+      <description>langflow #  langflow --host &amp;#34;0.0.0.0&amp;#34; --port 7865 </description>
     </item>
     
     <item>
@@ -177,7 +216,27 @@ https://microk8s.io
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/</guid>
-      <description>Nvidia #  apt install ubuntu-drivers-common  # 查询推荐的 nvidia 驱动 ubuntu-drivers devices  # 按推荐安装驱动 apt install -y nvidia-driver-450  # CUDA Toolkit: 12.0 # Driver Version: 525.60.13 # Release Date: 2022.12.5 curl -LO https://us.download.nvidia.com/tesla/525.60.13/NVIDIA-Linux-x86_64-525.60.13.run bash NVIDIA-Linux-x86_64-525.60.13.run  # CUDA Toolkit: 11.7 # Driver Version: 515.86.01 # Release Date: 2022.11.22 curl -LO https://us.download.nvidia.com/tesla/515.86.01/NVIDIA-Linux-x86_64-515.86.01.run bash NVIDIA-Linux-x86_64-515.86.01.run  # CUDA Toolkit: 11.6 # Driver Version: 510.108.03 # Release Date: 2022.11.22 curl -LO https://us.</description>
+      <description>Nvidia #  apt install ubuntu-drivers-common  # 查询推荐的 nvidia 驱动 ubuntu-drivers devices  # 按推荐安装驱动 apt install -y nvidia-driver-450  # CUDA Toolkit: 12.2 # Driver Version: 535.54.03 # Release Date: 2023.6.26 curl -LO https://us.download.nvidia.com/tesla/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run bash NVIDIA-Linux-x86_64-535.54.03.run  # CUDA Toolkit: 12.0 # Driver Version: 525.60.13 # Release Date: 2022.12.5 curl -LO https://us.download.nvidia.com/tesla/525.60.13/NVIDIA-Linux-x86_64-525.60.13.run bash NVIDIA-Linux-x86_64-525.60.13.run  # CUDA Toolkit: 11.7 # Driver Version: 515.86.01 # Release Date: 2022.11.22 curl -LO https://us.</description>
+    </item>
+    
+    <item>
+      <title>pip</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</guid>
+      <description>pip #  # 设置 python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip # python -m pip install --upgrade pip pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple   # 临时安装 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx </description>
+    </item>
+    
+    <item>
+      <title>pipenv</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid>
+      <description>pipenv #  pypa/pipenv # 进入虚拟环境 $ pipenv shell $ pipenv shell --python=3.9.  # 退出虚拟环境 $ exit 设置镜像源 #  # vim Pipfile [[source]] # url 替换成这个源 url = &amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34; 如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python
+ Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.
+ </description>
     </item>
     
     <item>
@@ -187,7 +246,7 @@ https://microk8s.io
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid>
       <description>pyenv #  pyenv/pyenv 安装 #  git clone https://github.com/pyenv/pyenv.git ~/.pyenv  echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;command -v pyenv &amp;gt;/dev/null || export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc  # 使用 taobao 的 npm 源 cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 #  之后才能编译 python 成功
-sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  # 安装 pyenv install 3.</description>
+sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv  # 安装 pyenv install 3.</description>
     </item>
     
     <item>
@@ -200,13 +259,40 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
     </item>
     
     <item>
+      <title>Streamlit</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</guid>
+      <description>Streamlit #  streamlit run xxx.py --server.address &amp;#34;0.0.0.0&amp;#34; --server.port 7865 </description>
+    </item>
+    
+    <item>
+      <title>systemd</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</guid>
+      <description>systemd #  systemctl #  systemctl list-units --type=service --state=active | grep ray </description>
+    </item>
+    
+    <item>
+      <title>v2ray</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</guid>
+      <description>v2ray #   docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restart unless-stopped amirdaaee/cloudflare-warp:latest   curl -x &amp;#34;socks5://127.0.0.1:7081&amp;#34; ipinfo.io   cat &amp;lt;&amp;lt; EOF &amp;gt; /usr/local/etc/xray/config.json { &amp;#34;log&amp;#34;: { &amp;#34;access&amp;#34;: &amp;#34;/var/log/xray/access.log&amp;#34;, &amp;#34;error&amp;#34;: &amp;#34;/var/log/xray/error.log&amp;#34;, &amp;#34;loglevel&amp;#34;: &amp;#34;warning&amp;#34; }, &amp;#34;inbounds&amp;#34;: [ { &amp;#34;port&amp;#34;: 40833, &amp;#34;listen&amp;#34;: &amp;#34;127.0.0.1&amp;#34;, &amp;#34;tag&amp;#34;: &amp;#34;VLESS-in&amp;#34;, &amp;#34;protocol&amp;#34;: &amp;#34;VLESS&amp;#34;, &amp;#34;settings&amp;#34;: { &amp;#34;clients&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;fa232059-8a60-4e52-9dda-95ed9e95375f&amp;#34;, &amp;#34;alterId&amp;#34;: 0 } ], &amp;#34;decryption&amp;#34;: &amp;#34;none&amp;#34; }, &amp;#34;streamSettings&amp;#34;: { &amp;#34;network&amp;#34;: &amp;#34;ws&amp;#34;, &amp;#34;wsSettings&amp;#34;: { &amp;#34;path&amp;#34;: &amp;#34;/065b7d27/&amp;#34; } } } ], &amp;#34;outbounds&amp;#34;: [ { &amp;#34;protocol&amp;#34;: &amp;#34;blackhole&amp;#34;, &amp;#34;settings&amp;#34;: {}, &amp;#34;tag&amp;#34;: &amp;#34;blocked&amp;#34; }, { &amp;#34;protocol&amp;#34;: &amp;#34;freedom&amp;#34;, &amp;#34;settings&amp;#34;: {}, &amp;#34;tag&amp;#34;: &amp;#34;direct&amp;#34; }, { &amp;#34;protocol&amp;#34;: &amp;#34;socks&amp;#34;, &amp;#34;settings&amp;#34;: { &amp;#34;servers&amp;#34;: [ { &amp;#34;address&amp;#34;: &amp;#34;127.</description>
+    </item>
+    
+    <item>
       <title>zsh</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid>
       <description>zsh #  oh-my-zsh #  安装
-apt install -y git zsh  sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh </description>
+apt install -y git zsh  sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh   # 设置默认为 zsh sudo chsh -s /usr/bin/zsh yewang </description>
     </item>
     
   </channel>

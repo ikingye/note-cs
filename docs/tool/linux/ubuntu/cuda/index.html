@@ -5,11 +5,9 @@
   <meta name="generator" content="Hugo 0.99.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
- CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit 安装 cuda 11.4 #  Cleaning remaining files #  # Deleting any NVIDIA/CUDA packages you may already have installed sudo rm /etc/apt/sources.">
+<meta name="description" content="CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  nvcc: NVIDIA (R) Cuda compiler driver   我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动  cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本   cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作  nvidia driver 和 cuda toolkit 版本兼容性 #   CUDA Toolkit  runtime, libraries, tools   Nvidia Display Driver Package  CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CUDA" />
-<meta property="og:description" content="CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  安装 #  # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.0-1_all.deb sudo apt-get update sudo apt-get -y install cuda 参考：
- CUDA Toolkit Downloads   apt install linux-headers-$(uname -r) 安装 nvcc #  apt install nvidia-cuda-toolkit 安装 cuda 11.4 #  Cleaning remaining files #  # Deleting any NVIDIA/CUDA packages you may already have installed sudo rm /etc/apt/sources." />
+<meta property="og:description" content="CUDA #   nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本  nvcc: NVIDIA (R) Cuda compiler driver   我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动  cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本   cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作  nvidia driver 和 cuda toolkit 版本兼容性 #   CUDA Toolkit  runtime, libraries, tools   Nvidia Display Driver Package  CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/cuda/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.ffdfd0eec199cf99d895ec44d2dd7963b3b77cc47137b0f2c0291d600f74da72.js" integrity="sha256-/9/Q7sGZz5nYlexE0t15Y7O3fMRxN7DywCkdYA902nI="></script>
+<script defer src="/note-cs/en.search.min.06a5dbf68a6fdf934854627b6bb121b85b374479ffedd9b58f037fd7826cdd18.js" integrity="sha256-BqXb9opv35NIVGJ7a7EhuFs3RHn/7dm1jwN/14Js3Rg="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -93,11 +91,24 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://kingye.me/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+    <a href="https://kingye.me/note-cs/docs/basic/cc/" class="">1.1 计算机组成原理</a>
   
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/basic/cc/memory-card/" class="">存储卡</a>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -1368,6 +1379,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/basic/network/roce/" class="">RoCE 网络</a>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -7727,7 +7751,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <span>第二部分 方向</span>
+    <a href="https://kingye.me/note-cs/docs/direction/" class="">第二部分 方向</a>
   
 
           
@@ -9576,6 +9600,22 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-566bc82e0de9db4873c99554e672eba1" class="toggle"  />
+    <label for="section-566bc82e0de9db4873c99554e672eba1" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/direction/be/db/minio/" class="">MinIO</a>
+    </label>
+  
 
         </li>
       
@@ -15713,6 +15753,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-40f1e4ffd0e9d32abe36cf58b941885e" class="toggle"  />
+    <label for="section-40f1e4ffd0e9d32abe36cf58b941885e" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/xdm/" class="">XDM</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-ab2b2ccf896945932ce70c4f2b792694" class="toggle"  />
     <label for="section-ab2b2ccf896945932ce70c4f2b792694" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/package-manager/" class="">包管理工具</a>
@@ -16042,22 +16098,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-909a54d6150d15e95ffecc12cb7714d1" class="toggle"  />
-    <label for="section-909a54d6150d15e95ffecc12cb7714d1" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/" class="">Anaconda</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <input type="checkbox" id="section-69ce0d3c042e07c393da6bdb7a64f527" class="toggle"  />
     <label for="section-69ce0d3c042e07c393da6bdb7a64f527" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/" class="">apt</a>
@@ -16077,6 +16117,22 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" id="section-9ff2d13fd66473de0c2d48b8b1fb38c3" class="toggle"  />
     <label for="section-9ff2d13fd66473de0c2d48b8b1fb38c3" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/" class="">Cargo</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-afdb22ccf7accd4fcd505c202acc80f9" class="toggle"  />
+    <label for="section-afdb22ccf7accd4fcd505c202acc80f9" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/" class="">Conda</a>
     </label>
   
 
@@ -16154,9 +16210,57 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-ec789eb3dbc1d283b6c912268c1d252e" class="toggle"  />
+    <label for="section-ec789eb3dbc1d283b6c912268c1d252e" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/" class="">Dash</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-52cf868c699d42feb6bd61a54e5b0b40" class="toggle"  />
     <label for="section-52cf868c699d42feb6bd61a54e5b0b40" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/" class="">Docker</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b5803b744a89264b238e8dc7f72e401c" class="toggle"  />
+    <label for="section-b5803b744a89264b238e8dc7f72e401c" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/" class="">feh</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-902995c1945dd1388ddd1efdba5fed2c" class="toggle"  />
+    <label for="section-902995c1945dd1388ddd1efdba5fed2c" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/" class="">Gradio</a>
     </label>
   
 
@@ -16266,6 +16370,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-2639cf9651535ff91f3c3065c6eb4f3a" class="toggle"  />
+    <label for="section-2639cf9651535ff91f3c3065c6eb4f3a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/" class="">langflow</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-057a4ff02ceb66b65d44717125e33aa4" class="toggle"  />
     <label for="section-057a4ff02ceb66b65d44717125e33aa4" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/" class="">MicroK8s</a>
@@ -16330,6 +16450,38 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-7a321aae4852087762f3727f9a3338a2" class="toggle"  />
+    <label for="section-7a321aae4852087762f3727f9a3338a2" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/" class="">pip</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6468f9e8c96dd3d11944dc5d5e666954" class="toggle"  />
+    <label for="section-6468f9e8c96dd3d11944dc5d5e666954" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/" class="">pipenv</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-0be1bdac20b2c8741647e1372246ef3b" class="toggle"  />
     <label for="section-0be1bdac20b2c8741647e1372246ef3b" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/" class="">pyenv</a>
@@ -16349,6 +16501,54 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" id="section-6a03125864a4dba92fed280a9a470ce7" class="toggle"  />
     <label for="section-6a03125864a4dba92fed280a9a470ce7" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/" class="">pytorch</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f48fab987f31a66361d0f4ac05f237ac" class="toggle"  />
+    <label for="section-f48fab987f31a66361d0f4ac05f237ac" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/" class="">Streamlit</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3a583f0a262e3dde3a3c233742061be" class="toggle"  />
+    <label for="section-d3a583f0a262e3dde3a3c233742061be" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/" class="">systemd</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1ce47986ca6b4e7e1af5a33709a1f63d" class="toggle"  />
+    <label for="section-1ce47986ca6b4e7e1af5a33709a1f63d" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/" class="">v2ray</a>
     </label>
   
 
@@ -18506,8 +18706,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#nvidia-driver-和-cuda-toolkit-版本兼容性">nvidia driver 和 cuda toolkit 版本兼容性</a></li>
     <li><a href="#安装">安装</a>
       <ul>
+        <li><a href="#升级-cuda">升级 cuda</a></li>
         <li><a href="#安装-nvcc">安装 nvcc</a></li>
         <li><a href="#安装-cuda-114">安装 cuda 11.4</a>
           <ul>
@@ -18545,9 +18747,39 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#cuda">#</a>
 </h1>
 <ul>
-<li>nvidia-smi 显示的是支持的最高版本的 cuda</li>
-<li>nvcc -V 显示的当前安装的 cuda 版本</li>
+<li>nvidia-smi 显示的是支持的<em>最高版本</em>的 cuda</li>
+<li>nvcc -V 显示的当前安装的 cuda 版本
+<ul>
+<li>nvcc: <code>NVIDIA (R) Cuda compiler driver</code></li>
 </ul>
+</li>
+<li>我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动
+<ul>
+<li>cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本</li>
+</ul>
+</li>
+<li>cuda 每个版本都对应一个最低版本的显卡驱动程序</li>
+<li>cuda 程序是<em>向后兼容</em>的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作</li>
+</ul>
+<h2 id="nvidia-driver-和-cuda-toolkit-版本兼容性">
+  nvidia driver 和 cuda toolkit 版本兼容性
+  <a class="anchor" href="#nvidia-driver-%e5%92%8c-cuda-toolkit-%e7%89%88%e6%9c%ac%e5%85%bc%e5%ae%b9%e6%80%a7">#</a>
+</h2>
+<ul>
+<li>CUDA Toolkit
+<ul>
+<li>runtime, libraries, tools</li>
+</ul>
+</li>
+<li>Nvidia Display Driver Package
+<ul>
+<li>CUDA user-mode driver (libcuda.so)</li>
+<li>GPU kernel-mode driver (nvidia.ko)</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://docs.nvidia.com/deploy/cuda-compatibility/graphics/CUDA-components.png" alt="" /></p>
+<p>参考：<a href="https://docs.nvidia.com/deploy/cuda-compatibility/index.html">CUDA Compatibility</a></p>
 <h2 id="安装">
   安装
   <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
@@ -18563,7 +18795,22 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>apt install linux-headers-<span style="color:#66d9ef">$(</span>uname -r<span style="color:#66d9ef">)</span>
-</span></span></code></pre></div><h3 id="安装-nvcc">
+</span></span></code></pre></div><hr>
+<h3 id="升级-cuda">
+  升级 cuda
+  <a class="anchor" href="#%e5%8d%87%e7%ba%a7-cuda">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+</span></span><span style="display:flex;"><span>sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+</span></span><span style="display:flex;"><span>sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+</span></span><span style="display:flex;"><span>sudo add-apt-repository <span style="color:#e6db74">&#34;deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /&#34;</span>
+</span></span><span style="display:flex;"><span>wget https://developer.download.nvidia.com/compute/cuda/12.0.0/local_installers/cuda-repo-ubuntu2004-12-0-local_12.0.0-525.60.13-1_amd64.deb
+</span></span><span style="display:flex;"><span>sudo dpkg -i cuda-repo-ubuntu2004-12-0-local_12.0.0-525.60.13-1_amd64.deb
+</span></span><span style="display:flex;"><span>sudo cp /var/cuda-repo-ubuntu2004-12-0-local/cuda-*-keyring.gpg /usr/share/keyrings/
+</span></span><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get -y install cuda
+</span></span></code></pre></div><hr>
+<h3 id="安装-nvcc">
   安装 nvcc
   <a class="anchor" href="#%e5%ae%89%e8%a3%85-nvcc">#</a>
 </h3>
@@ -18756,8 +19003,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#nvidia-driver-和-cuda-toolkit-版本兼容性">nvidia driver 和 cuda toolkit 版本兼容性</a></li>
     <li><a href="#安装">安装</a>
       <ul>
+        <li><a href="#升级-cuda">升级 cuda</a></li>
         <li><a href="#安装-nvcc">安装 nvcc</a></li>
         <li><a href="#安装-cuda-114">安装 cuda 11.4</a>
           <ul>

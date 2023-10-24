@@ -5,9 +5,11 @@
   <meta name="generator" content="Hugo 0.99.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="apt #   apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令">
+<meta name="description" content="apt #  apt vs apt-get #  Advanced Package Tool，又名 apt-get，是一款适用于 Unix 和 Linux 系统的应用程序管理器
+ apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="apt" />
-<meta property="og:description" content="apt #   apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令" />
+<meta property="og:description" content="apt #  apt vs apt-get #  Advanced Package Tool，又名 apt-get，是一款适用于 Unix 和 Linux 系统的应用程序管理器
+ apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项  可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get   作为普通用户，可以首先使用 apt     apt 命令 取代的命令 命令的功能     apt install apt-get install 安装软件包   apt remove apt-get remove 移除软件包   apt purge apt-get purge 移除软件包及配置文件   apt update apt-get update 刷新存储库索引   apt upgrade apt-get upgrade 升级所有可升级的软件包   apt autoremove apt-get autoremove 自动删除不需要的包   apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系   apt search apt-cache search 搜索应用程序   apt show apt-cache show 显示装细节    apt 还有一些自己的命令" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +19,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.ffdfd0eec199cf99d895ec44d2dd7963b3b77cc47137b0f2c0291d600f74da72.js" integrity="sha256-/9/Q7sGZz5nYlexE0t15Y7O3fMRxN7DywCkdYA902nI="></script>
+<script defer src="/note-cs/en.search.min.06a5dbf68a6fdf934854627b6bb121b85b374479ffedd9b58f037fd7826cdd18.js" integrity="sha256-BqXb9opv35NIVGJ7a7EhuFs3RHn/7dm1jwN/14Js3Rg="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -91,11 +93,24 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://kingye.me/note-cs/docs/basic/computer-composition/" class="">1.1 计算机组成原理</a>
+    <a href="https://kingye.me/note-cs/docs/basic/cc/" class="">1.1 计算机组成原理</a>
   
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/basic/cc/memory-card/" class="">存储卡</a>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -1366,6 +1381,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/basic/network/roce/" class="">RoCE 网络</a>
+  
+
+        </li>
+      
     
   </ul>
 
@@ -7725,7 +7753,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <span>第二部分 方向</span>
+    <a href="https://kingye.me/note-cs/docs/direction/" class="">第二部分 方向</a>
   
 
           
@@ -9574,6 +9602,22 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-566bc82e0de9db4873c99554e672eba1" class="toggle"  />
+    <label for="section-566bc82e0de9db4873c99554e672eba1" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/direction/be/db/minio/" class="">MinIO</a>
+    </label>
+  
 
         </li>
       
@@ -15711,6 +15755,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-40f1e4ffd0e9d32abe36cf58b941885e" class="toggle"  />
+    <label for="section-40f1e4ffd0e9d32abe36cf58b941885e" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/xdm/" class="">XDM</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-ab2b2ccf896945932ce70c4f2b792694" class="toggle"  />
     <label for="section-ab2b2ccf896945932ce70c4f2b792694" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/package-manager/" class="">包管理工具</a>
@@ -16040,22 +16100,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-909a54d6150d15e95ffecc12cb7714d1" class="toggle"  />
-    <label for="section-909a54d6150d15e95ffecc12cb7714d1" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/annoconda/" class="">Anaconda</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <input type="checkbox" id="section-69ce0d3c042e07c393da6bdb7a64f527" class="toggle" checked />
     <label for="section-69ce0d3c042e07c393da6bdb7a64f527" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/" class="active">apt</a>
@@ -16075,6 +16119,22 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" id="section-9ff2d13fd66473de0c2d48b8b1fb38c3" class="toggle"  />
     <label for="section-9ff2d13fd66473de0c2d48b8b1fb38c3" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/" class="">Cargo</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-afdb22ccf7accd4fcd505c202acc80f9" class="toggle"  />
+    <label for="section-afdb22ccf7accd4fcd505c202acc80f9" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/" class="">Conda</a>
     </label>
   
 
@@ -16152,9 +16212,57 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-ec789eb3dbc1d283b6c912268c1d252e" class="toggle"  />
+    <label for="section-ec789eb3dbc1d283b6c912268c1d252e" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/" class="">Dash</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-52cf868c699d42feb6bd61a54e5b0b40" class="toggle"  />
     <label for="section-52cf868c699d42feb6bd61a54e5b0b40" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/" class="">Docker</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b5803b744a89264b238e8dc7f72e401c" class="toggle"  />
+    <label for="section-b5803b744a89264b238e8dc7f72e401c" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/" class="">feh</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-902995c1945dd1388ddd1efdba5fed2c" class="toggle"  />
+    <label for="section-902995c1945dd1388ddd1efdba5fed2c" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/" class="">Gradio</a>
     </label>
   
 
@@ -16264,6 +16372,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-2639cf9651535ff91f3c3065c6eb4f3a" class="toggle"  />
+    <label for="section-2639cf9651535ff91f3c3065c6eb4f3a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/" class="">langflow</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-057a4ff02ceb66b65d44717125e33aa4" class="toggle"  />
     <label for="section-057a4ff02ceb66b65d44717125e33aa4" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/" class="">MicroK8s</a>
@@ -16328,6 +16452,38 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-7a321aae4852087762f3727f9a3338a2" class="toggle"  />
+    <label for="section-7a321aae4852087762f3727f9a3338a2" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/" class="">pip</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6468f9e8c96dd3d11944dc5d5e666954" class="toggle"  />
+    <label for="section-6468f9e8c96dd3d11944dc5d5e666954" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/" class="">pipenv</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-0be1bdac20b2c8741647e1372246ef3b" class="toggle"  />
     <label for="section-0be1bdac20b2c8741647e1372246ef3b" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/" class="">pyenv</a>
@@ -16347,6 +16503,54 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" id="section-6a03125864a4dba92fed280a9a470ce7" class="toggle"  />
     <label for="section-6a03125864a4dba92fed280a9a470ce7" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/" class="">pytorch</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f48fab987f31a66361d0f4ac05f237ac" class="toggle"  />
+    <label for="section-f48fab987f31a66361d0f4ac05f237ac" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/" class="">Streamlit</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3a583f0a262e3dde3a3c233742061be" class="toggle"  />
+    <label for="section-d3a583f0a262e3dde3a3c233742061be" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/" class="">systemd</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1ce47986ca6b4e7e1af5a33709a1f63d" class="toggle"  />
+    <label for="section-1ce47986ca6b4e7e1af5a33709a1f63d" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/" class="">v2ray</a>
     </label>
   
 
@@ -18502,7 +18706,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#apt-vs-apt-get">apt vs <code>apt-get</code></a></li>
+  </ul>
+</nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
@@ -18528,6 +18736,11 @@ https://github.com/alex-shpak/hugo-book
   apt
   <a class="anchor" href="#apt">#</a>
 </h1>
+<h2 id="apt-vs-apt-get">
+  apt vs <code>apt-get</code>
+  <a class="anchor" href="#apt-vs-apt-get">#</a>
+</h2>
+<p>Advanced Package Tool，又名 apt-get，是一款适用于 Unix 和 Linux 系统的应用程序管理器</p>
 <ul>
 <li>apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项
 <ul>
@@ -18605,6 +18818,7 @@ https://github.com/alex-shpak/hugo-book
 </table>
 <p>apt 还有一些自己的命令</p>
 <ul>
+<li>apt update 命令不仅更新存储库索引，还告知存储库中是否可用软件以及有多少新版本可用</li>
 <li>apt list: 列出包含条件的包（已安装，可升级等）</li>
 <li>apt edit-sources: 编辑源列表</li>
 </ul>
@@ -18679,7 +18893,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#apt-vs-apt-get">apt vs <code>apt-get</code></a></li>
+  </ul>
+</nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>

@@ -151,5 +151,14 @@ cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .
 {  &amp;#34;gitlens.advanced.messages&amp;#34;: {  &amp;#34;suppressShowKeyBindingsNotice&amp;#34;: true  },  &amp;#34;gitlens.historyExplorer.enabled&amp;#34;: true,  &amp;#34;java.errors.incompleteClasspath.severity&amp;#34;: &amp;#34;ignore&amp;#34;,  &amp;#34;materialTheme.autoApplyIcons&amp;#34;: true,  &amp;#34;workbench.colorCustomizations&amp;#34;: {},  &amp;#34;materialTheme.accentPrevious&amp;#34;: &amp;#34;Breaking Bad&amp;#34;,  &amp;#34;materialTheme.fixIconsRunning&amp;#34;: false,  // Controls the font family.  &amp;#34;editor.fontFamily&amp;#34;: &amp;#34;Consolas, &amp;#39;微软雅黑&amp;#39;, Dengxian, Menlo, Monaco, &amp;#39;Courier New&amp;#39;, monospace&amp;#34;,  // &amp;#34;editor.fontFamily&amp;#34;: &amp;#34;Inconsolata, Consolas, &amp;#39;微软雅黑&amp;#39;, Dengxian, Menlo, Monaco, &amp;#39;Courier New&amp;#39;, monospace&amp;#34;,  &amp;#34;editor.</description>
     </item>
     
+    <item>
+      <title>XDM</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/xdm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/macos/xdm/</guid>
+      <description>XDM #  下载</description>
+    </item>
+    
   </channel>
 </rss>
