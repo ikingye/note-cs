@@ -6,6 +6,16 @@
     <description>Recent content in 1.1 计算机组成原理 on 计算机学习笔记</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/basic/cc/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CPU</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/cpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/cc/cpu/</guid>
+      <description>CPU #  参考：
+ 史上最全桌面级 CPU 天梯图  </description>
+    </item>
+    
+    <item>
       <title>存储卡</title>
       <link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
