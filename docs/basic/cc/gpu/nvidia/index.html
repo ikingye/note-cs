@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.7358611239a3a45ecbc25d0a8eede81c77ae60737e258435a81acb73694ae480.js" integrity="sha256-c1hhEjmjpF7Lwl0Kju3oHHeuYHN&#43;JYQ1qBrLc2lK5IA="></script>
+<script defer src="/note-cs/en.search.min.b79189b059c12f4dc940d7c78ad64a20708b1aebd14f971a01022654f217f461.js" integrity="sha256-t5GJsFnBL03JQNfHitZKIHCLGuvRT5caAQImVPIX9GE="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18776,6 +18776,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#nvidia-显卡系列">Nvidia 显卡系列</a>
+      <ul>
+        <li><a href="#teslahttpswwwwikiwandcomennvidia_tesla-专业级显卡"><a href="https://www.wikiwand.com/en/Nvidia_Tesla">Tesla</a>: 专业级显卡</a></li>
+        <li><a href="#quadrohttpswwwwikiwandcomenquadro-专业级显卡"><a href="https://www.wikiwand.com/en/Quadro">Quadro</a>: 专业级显卡</a></li>
+        <li><a href="#geforcehttpswwwwikiwandcomengeforce-普通消费级显卡"><a href="https://www.wikiwand.com/en/GeForce">GeForce</a>: 普通消费级显卡</a></li>
+        <li><a href="#tegrahttpswwwwikiwandcomennvidia_tegra"><a href="https://www.wikiwand.com/en/Nvidia_Tegra">Tegra</a></a></li>
+      </ul>
+    </li>
     <li><a href="#nvida-系列">Nvida 系列</a>
       <ul>
         <li><a href="#nvidia-hgx">Nvidia HGX</a></li>
@@ -18785,14 +18793,25 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#产品">产品</a></li>
     <li><a href="#gpu-架构">GPU 架构</a>
       <ul>
-        <li><a href="#12-amperehttpswwwwikiwandcomenampere_microarchitecture">12. <a href="https://www.wikiwand.com/en/Ampere_(microarchitecture)">Ampere</a></a></li>
-        <li><a href="#11-turing-vs-volta">11. Turing vs Volta</a>
+        <li><a href="#14-blackwell">14. Blackwell</a></li>
+        <li><a href="#13-ada-lovelace-vs-hopper">13. <code>Ada Lovelace</code> vs Hopper</a>
           <ul>
-            <li><a href="#turinghttpswwwwikiwandcomzh-cne59bbee781b5e5beaee69eb6e69e84消费"><a href="https://www.wikiwand.com/zh-cn/%E5%9B%BE%E7%81%B5%E5%BE%AE%E6%9E%B6%E6%9E%84">Turing</a>（消费）</a></li>
-            <li><a href="#voltahttpswwwwikiwandcomzh-cne4bc8fe68993e5beaee69eb6e6a78b专业"><a href="https://www.wikiwand.com/zh-cn/%E4%BC%8F%E6%89%93%E5%BE%AE%E6%9E%B6%E6%A7%8B">Volta</a>（专业）</a></li>
+            <li><a href="#ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer"><a href="https://www.wikiwand.com/en/Ada_Lovelace_(microarchitecture)">Ada Lovelace</a> (consumer)</a></li>
+            <li><a href="#hopperhttpswwwwikiwandcomenhopper_microarchitecture-professional"><a href="https://www.wikiwand.com/en/Hopper_(microarchitecture)">Hopper</a> (professional)</a></li>
           </ul>
         </li>
-        <li><a href="#10-帕斯卡httpswwwwikiwandcomzh-cne5b895e696afe58da1e5beaee69eb6e69e84">10 <a href="https://www.wikiwand.com/zh-cn/%E5%B8%95%E6%96%AF%E5%8D%A1%E5%BE%AE%E6%9E%B6%E6%9E%84">帕斯卡</a></a></li>
+        <li><a href="#12-amperehttpswwwwikiwandcomenampere_microarchitecture-consumer-professional">12. <a href="https://www.wikiwand.com/en/Ampere_(microarchitecture)">Ampere</a> (consumer, professional)</a>
+          <ul>
+            <li><a href="#products-using-ampere">Products using Ampere</a></li>
+          </ul>
+        </li>
+        <li><a href="#11-turing-vs-volta">11. Turing vs Volta</a>
+          <ul>
+            <li><a href="#turinghttpswwwwikiwandcomenturing_microarchitectureconsumer-消费"><a href="https://www.wikiwand.com/en/Turing_(microarchitecture)">Turing</a>（consumer 消费）</a></li>
+            <li><a href="#voltahttpswwwwikiwandcomenvolta_microarchitecture-professional-专业"><a href="https://www.wikiwand.com/en/Volta_(microarchitecture)">Volta</a>（ professional 专业）</a></li>
+          </ul>
+        </li>
+        <li><a href="#10-pascalhttpswwwwikiwandcomenpascal_microarchitecture">10 <a href="https://www.wikiwand.com/en/Pascal_(microarchitecture)">Pascal</a></a></li>
         <li><a href="#9-maxwellhttpswwwwikiwandcomenmaxwell20microarchitecture">9. <a href="https://www.wikiwand.com/en/Maxwell%20(microarchitecture)">Maxwell</a></a></li>
         <li><a href="#8-keplerhttpswwwwikiwandcomenkepler_microarchitecture">8. <a href="https://www.wikiwand.com/en/Kepler_(microarchitecture)">Kepler</a></a></li>
         <li><a href="#7-fermihttpswwwwikiwandcomenfermi_microarchitecture">7. <a href="https://www.wikiwand.com/en/Fermi_(microarchitecture)">Fermi</a></a></li>
@@ -18919,6 +18938,132 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="https://developer.nvidia.com/nsight-visual-studio-edition-supported-gpus-full-list">[Nvidia] General GPU Support</a></li>
 </ul>
 <hr>
+<h2 id="nvidia-显卡系列">
+  Nvidia 显卡系列
+  <a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97">#</a>
+</h2>
+<h3 id="teslahttpswwwwikiwandcomennvidia_tesla-专业级显卡">
+  <a href="https://www.wikiwand.com/en/Nvidia_Tesla">Tesla</a>: 专业级显卡
+  <a class="anchor" href="#teslahttpswwwwikiwandcomennvidia_tesla-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
+</h3>
+<ul>
+<li>用于对抗 AMD 的 <a href="https://www.wikiwand.com/zh-cn/FireStream">FireStream</a> 系列</li>
+</ul>
+<h3 id="quadrohttpswwwwikiwandcomenquadro-专业级显卡">
+  <a href="https://www.wikiwand.com/en/Quadro">Quadro</a>: 专业级显卡
+  <a class="anchor" href="#quadrohttpswwwwikiwandcomenquadro-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
+</h3>
+<h3 id="geforcehttpswwwwikiwandcomengeforce-普通消费级显卡">
+  <a href="https://www.wikiwand.com/en/GeForce">GeForce</a>: 普通消费级显卡
+  <a class="anchor" href="#geforcehttpswwwwikiwandcomengeforce-%e6%99%ae%e9%80%9a%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
+</h3>
+<ul>
+<li>1999
+<ul>
+<li>GeForce 256</li>
+</ul>
+</li>
+<li>2000
+<ul>
+<li>GeForce 2 series</li>
+</ul>
+</li>
+<li>2001
+<ul>
+<li>GeForce 3 series</li>
+</ul>
+</li>
+<li>2002
+<ul>
+<li>GeForce 4 series</li>
+</ul>
+</li>
+<li>2003
+<ul>
+<li>GeForce FX series</li>
+</ul>
+</li>
+<li>2004
+<ul>
+<li>GeForce 6 series</li>
+</ul>
+</li>
+<li>2005
+<ul>
+<li>GeForce 7 series</li>
+</ul>
+</li>
+<li>2006
+<ul>
+<li>GeForce 8 series</li>
+</ul>
+</li>
+<li>2008
+<ul>
+<li>GeForce 9 series</li>
+<li>GeForce 200 series</li>
+</ul>
+</li>
+<li>2009
+<ul>
+<li>GeForce 100 series</li>
+<li>GeForce 300 series</li>
+</ul>
+</li>
+<li>2010
+<ul>
+<li>GeForce 400 series</li>
+<li>GeForce 500 series</li>
+</ul>
+</li>
+<li>2012
+<ul>
+<li>GeForce 600 series</li>
+</ul>
+</li>
+<li>2013
+<ul>
+<li>GeForce 700 series</li>
+</ul>
+</li>
+<li>2014
+<ul>
+<li>GeForce 800M series</li>
+<li>GeForce 900 series</li>
+</ul>
+</li>
+<li>2016
+<ul>
+<li>GeForce 10 series</li>
+</ul>
+</li>
+<li>2018
+<ul>
+<li>GeForce 20 series</li>
+</ul>
+</li>
+<li>2019
+<ul>
+<li>GeForce 16 series</li>
+</ul>
+</li>
+<li>2020
+<ul>
+<li>GeForce 30 series</li>
+</ul>
+</li>
+<li>2022
+<ul>
+<li>GeForce 40 series</li>
+</ul>
+</li>
+</ul>
+<h3 id="tegrahttpswwwwikiwandcomennvidia_tegra">
+  <a href="https://www.wikiwand.com/en/Nvidia_Tegra">Tegra</a>
+  <a class="anchor" href="#tegrahttpswwwwikiwandcomennvidia_tegra">#</a>
+</h3>
+<p>Tegra（中国大陆官方中文名称：“图睿”）是由 NVIDIA 开发的系统单芯片系列产品，2008 年 6 月 1 日正式发表，替代之前的 GoForce 系列。主要用于手持式装置。Tegra 可搭配 NVIDIA 专为智能手机及平板电脑开发的 NVIDIA Icera 系列芯片组。Tegra 的主要竞争对手是高通和德州仪器的对应产品。</p>
+<hr>
 <h2 id="nvida-系列">
   Nvida 系列
   <a class="anchor" href="#nvida-%e7%b3%bb%e5%88%97">#</a>
@@ -18948,6 +19093,7 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#%e4%ba%a7%e5%93%81">#</a>
 </h2>
 <ul>
+<li>GeForce RTX 4090</li>
 <li>NVIDIA H100 CNX</li>
 <li>NVIDIA H100</li>
 <li>NVIDIA A100</li>
@@ -18990,18 +19136,24 @@ https://github.com/alex-shpak/hugo-book
 <li>Hopper: H100</li>
 <li>Ada Lovelace: 4090</li>
 </ul>
-<h3 id="12-amperehttpswwwwikiwandcomenampere_microarchitecture">
-  12. <a href="https://www.wikiwand.com/en/Ampere_%28microarchitecture%29">Ampere</a>
-  <a class="anchor" href="#12-amperehttpswwwwikiwandcomenampere_microarchitecture">#</a>
+<h3 id="14-blackwell">
+  14. Blackwell
+  <a class="anchor" href="#14-blackwell">#</a>
 </h3>
-<p>安培微架构（Ampere）是 NVIDIA 于 2020 年 5 月发布的一个 GPU 架构。用以取代图灵微架构（Turing microarchitecture）。命名为“安培”以向法国物理学家安德烈-马里·安培（<code>André-Marie Ampère</code>）致敬。Ampere 架构拥有晶体管达 540 亿，是三星 8nm 级芯片。是世界上晶体管最多的芯片，直到后来被苹果 M1 Max 击败。</p>
+<h3 id="13-ada-lovelace-vs-hopper">
+  13. <code>Ada Lovelace</code> vs Hopper
+  <a class="anchor" href="#13-ada-lovelace-vs-hopper">#</a>
+</h3>
+<h4 id="ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer">
+  <a href="https://www.wikiwand.com/en/Ada_Lovelace_%28microarchitecture%29">Ada Lovelace</a> (consumer)
+  <a class="anchor" href="#ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer">#</a>
+</h4>
+<p>officially announced on <code>2022-09-20</code></p>
+<h4 id="hopperhttpswwwwikiwandcomenhopper_microarchitecture-professional">
+  <a href="https://www.wikiwand.com/en/Hopper_%28microarchitecture%29">Hopper</a> (professional)
+  <a class="anchor" href="#hopperhttpswwwwikiwandcomenhopper_microarchitecture-professional">#</a>
+</h4>
 <ul>
-<li>NVIDIA A100 Tensor Core GPU
-<ul>
-<li>基于 NVIDIA Ampere 架构，是针对 AI、数据分析和 HPC 的 GPU。</li>
-<li>NVIDIA A800（NVIDIA A100 平替）</li>
-</ul>
-</li>
 <li>H100
 <ul>
 <li>今年 3 月，英伟达发布了新一代基于 4nm 工艺，拥有 800 亿个晶体管、18432 个核心的 H100 GPU</li>
@@ -19009,6 +19161,12 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
+<h3 id="12-amperehttpswwwwikiwandcomenampere_microarchitecture-consumer-professional">
+  12. <a href="https://www.wikiwand.com/en/Ampere_%28microarchitecture%29">Ampere</a> (consumer, professional)
+  <a class="anchor" href="#12-amperehttpswwwwikiwandcomenampere_microarchitecture-consumer-professional">#</a>
+</h3>
+<p>2020</p>
+<p>安培微架构（Ampere）是 NVIDIA 于 2020 年 5 月发布的一个 GPU 架构。用以取代图灵微架构（Turing microarchitecture）。命名为“安培”以向法国物理学家安德烈-马里·安培（<code>André-Marie Ampère</code>）致敬。Ampere 架构拥有晶体管达 540 亿，是三星 8nm 级芯片。是世界上晶体管最多的芯片，直到后来被苹果 M1 Max 击败。</p>
 <hr>
 <p>据统计 NVIDIA 当前在售的 AI 加速卡至少有 9 款型号，其中高性能的有 4 款，分别是 V100、A800、A100 及 H100。价格方面，</p>
 <ul>
@@ -19022,43 +19180,126 @@ https://github.com/alex-shpak/hugo-book
 <li>H100 加速卡是 NVIDIA 当前最强的，售价 3.65 万美元，约合 26.4 万元人民币</li>
 </ul>
 <hr>
+<h4 id="products-using-ampere">
+  Products using Ampere
+  <a class="anchor" href="#products-using-ampere">#</a>
+</h4>
+<ul>
+<li>GeForce MX series
+<ul>
+<li>GeForce MX570 (mobile) (GA107)</li>
+</ul>
+</li>
+<li>GeForce 20 series
+<ul>
+<li>GeForce RTX 2050 (mobile) (GA107)</li>
+</ul>
+</li>
+<li>GeForce 30 series
+<ul>
+<li>GeForce RTX 3050 Laptop GPU (GA107)</li>
+<li>GeForce RTX 3050 (GA106 or GA107)</li>
+<li>GeForce RTX 3050 Ti Laptop GPU (GA107)</li>
+<li>GeForce RTX 3060 Laptop GPU (GA106)</li>
+<li>GeForce RTX 3060 (GA106 or GA104)</li>
+<li>GeForce RTX 3060 Ti (GA104 or GA103)</li>
+<li>GeForce RTX 3070 Laptop GPU (GA104)</li>
+<li>GeForce RTX 3070 (GA104)</li>
+<li>GeForce RTX 3070 Ti Laptop GPU (GA104)</li>
+<li>GeForce RTX 3070 Ti (GA104 or GA102)</li>
+<li>GeForce RTX 3080 Laptop GPU (GA104)</li>
+<li>GeForce RTX 3080 (GA102)</li>
+<li>GeForce RTX 3080 12GB (GA102)</li>
+<li>GeForce RTX 3080 Ti Laptop GPU (GA103)</li>
+<li>GeForce RTX 3080 Ti (GA102)</li>
+<li>GeForce RTX 3090 (GA102)</li>
+<li>GeForce RTX 3090 Ti (GA102)</li>
+</ul>
+</li>
+<li>Nvidia Workstation GPUs (formerly Quadro)
+<ul>
+<li>RTX A1000 (mobile) (GA107)</li>
+<li>RTX A2000 (mobile) (GA107)</li>
+<li>RTX A2000 (GA106)</li>
+<li>RTX A3000 (mobile) (GA104)</li>
+<li>RTX A4000 (mobile) (GA104)</li>
+<li>RTX A4000 (GA104)</li>
+<li>RTX A4500 (GA102)</li>
+<li>RTX A5000 (mobile) (GA104)</li>
+<li>RTX A5000 (GA102)</li>
+<li>RTX A5500 (GA102)</li>
+<li>RTX A6000 (GA102)</li>
+</ul>
+</li>
+<li>Nvidia Data Center GPUs (formerly Tesla)
+<ul>
+<li>Nvidia A2 (GA107)</li>
+<li>Nvidia A10 (GA102)</li>
+<li>Nvidia A16 (4 × GA107)</li>
+<li>Nvidia A30 (GA100)</li>
+<li>Nvidia A40 (GA102)</li>
+<li>Nvidia A100 (GA100)
+<ul>
+<li>NVIDIA A100 Tensor Core GPU</li>
+<li>基于 NVIDIA Ampere 架构，是针对 AI、数据分析和 HPC 的 GPU。</li>
+<li>NVIDIA A800（NVIDIA A100 平替）</li>
+</ul>
+</li>
+<li>Nvidia A100 80GB (GA100)</li>
+</ul>
+</li>
+</ul>
 <h3 id="11-turing-vs-volta">
   11. Turing vs Volta
   <a class="anchor" href="#11-turing-vs-volta">#</a>
 </h3>
-<h4 id="turinghttpswwwwikiwandcomzh-cne59bbee781b5e5beaee69eb6e69e84消费">
-  <a href="https://www.wikiwand.com/zh-cn/%E5%9B%BE%E7%81%B5%E5%BE%AE%E6%9E%B6%E6%9E%84">Turing</a>（消费）
-  <a class="anchor" href="#turinghttpswwwwikiwandcomzh-cne59bbee781b5e5beaee69eb6e69e84%e6%b6%88%e8%b4%b9">#</a>
+<h4 id="turinghttpswwwwikiwandcomenturing_microarchitectureconsumer-消费">
+  <a href="https://www.wikiwand.com/en/Turing_%28microarchitecture%29">Turing</a>（consumer 消费）
+  <a class="anchor" href="#turinghttpswwwwikiwandcomenturing_microarchitectureconsumer-%e6%b6%88%e8%b4%b9">#</a>
 </h4>
-<h4 id="voltahttpswwwwikiwandcomzh-cne4bc8fe68993e5beaee69eb6e6a78b专业">
-  <a href="https://www.wikiwand.com/zh-cn/%E4%BC%8F%E6%89%93%E5%BE%AE%E6%9E%B6%E6%A7%8B">Volta</a>（专业）
-  <a class="anchor" href="#voltahttpswwwwikiwandcomzh-cne4bc8fe68993e5beaee69eb6e6a78b%e4%b8%93%e4%b8%9a">#</a>
+<p>2018</p>
+<h4 id="voltahttpswwwwikiwandcomenvolta_microarchitecture-professional-专业">
+  <a href="https://www.wikiwand.com/en/Volta_%28microarchitecture%29">Volta</a>（ professional 专业）
+  <a class="anchor" href="#voltahttpswwwwikiwandcomenvolta_microarchitecture-professional-%e4%b8%93%e4%b8%9a">#</a>
 </h4>
+<p>2017</p>
+<ul>
+<li>V100 32GB</li>
+<li>V100 16GB</li>
+</ul>
 <hr>
-<h3 id="10-帕斯卡httpswwwwikiwandcomzh-cne5b895e696afe58da1e5beaee69eb6e69e84">
-  10 <a href="https://www.wikiwand.com/zh-cn/%E5%B8%95%E6%96%AF%E5%8D%A1%E5%BE%AE%E6%9E%B6%E6%9E%84">帕斯卡</a>
-  <a class="anchor" href="#10-%e5%b8%95%e6%96%af%e5%8d%a1httpswwwwikiwandcomzh-cne5b895e696afe58da1e5beaee69eb6e69e84">#</a>
+<h3 id="10-pascalhttpswwwwikiwandcomenpascal_microarchitecture">
+  10 <a href="https://www.wikiwand.com/en/Pascal_%28microarchitecture%29">Pascal</a>
+  <a class="anchor" href="#10-pascalhttpswwwwikiwandcomenpascal_microarchitecture">#</a>
 </h3>
+<p>2016</p>
+<ul>
+<li>P100</li>
+</ul>
 <hr>
 <h3 id="9-maxwellhttpswwwwikiwandcomenmaxwell20microarchitecture">
   9. <a href="https://www.wikiwand.com/en/Maxwell%20%28microarchitecture%29">Maxwell</a>
   <a class="anchor" href="#9-maxwellhttpswwwwikiwandcomenmaxwell20microarchitecture">#</a>
 </h3>
+<p>2014</p>
 <hr>
 <h3 id="8-keplerhttpswwwwikiwandcomenkepler_microarchitecture">
   8. <a href="https://www.wikiwand.com/en/Kepler_%28microarchitecture%29">Kepler</a>
   <a class="anchor" href="#8-keplerhttpswwwwikiwandcomenkepler_microarchitecture">#</a>
 </h3>
+<p>2012</p>
 <hr>
 <h3 id="7-fermihttpswwwwikiwandcomenfermi_microarchitecture">
   7. <a href="https://www.wikiwand.com/en/Fermi_%28microarchitecture%29">Fermi</a>
   <a class="anchor" href="#7-fermihttpswwwwikiwandcomenfermi_microarchitecture">#</a>
 </h3>
+<p>2010</p>
 <hr>
 <h3 id="6-teslahttpswwwwikiwandcomentesla_microarchitecture">
   6. <a href="https://www.wikiwand.com/en/Tesla_%28microarchitecture%29">Tesla</a>
   <a class="anchor" href="#6-teslahttpswwwwikiwandcomentesla_microarchitecture">#</a>
 </h3>
+<p>2008</p>
 <hr>
 <h3 id="5-curiehttpswwwwikiwandcomencurie_microarchitecture">
   5. <a href="https://www.wikiwand.com/en/Curie_%28microarchitecture%29">Curie</a>
@@ -19105,7 +19346,7 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ul>
 </li>
-<li>NVLink比PCIe信号线多8倍，而且NVLink的带宽是指双向带宽，PCIe通常是说单向带宽。</li>
+<li>NVLink 比 PCIe 信号线多 8 倍，而且 NVLink 的带宽是指双向带宽，PCIe 通常是说单向带宽。</li>
 </ul>
 </article>
  
@@ -19180,6 +19421,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#nvidia-显卡系列">Nvidia 显卡系列</a>
+      <ul>
+        <li><a href="#teslahttpswwwwikiwandcomennvidia_tesla-专业级显卡"><a href="https://www.wikiwand.com/en/Nvidia_Tesla">Tesla</a>: 专业级显卡</a></li>
+        <li><a href="#quadrohttpswwwwikiwandcomenquadro-专业级显卡"><a href="https://www.wikiwand.com/en/Quadro">Quadro</a>: 专业级显卡</a></li>
+        <li><a href="#geforcehttpswwwwikiwandcomengeforce-普通消费级显卡"><a href="https://www.wikiwand.com/en/GeForce">GeForce</a>: 普通消费级显卡</a></li>
+        <li><a href="#tegrahttpswwwwikiwandcomennvidia_tegra"><a href="https://www.wikiwand.com/en/Nvidia_Tegra">Tegra</a></a></li>
+      </ul>
+    </li>
     <li><a href="#nvida-系列">Nvida 系列</a>
       <ul>
         <li><a href="#nvidia-hgx">Nvidia HGX</a></li>
@@ -19189,14 +19438,25 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#产品">产品</a></li>
     <li><a href="#gpu-架构">GPU 架构</a>
       <ul>
-        <li><a href="#12-amperehttpswwwwikiwandcomenampere_microarchitecture">12. <a href="https://www.wikiwand.com/en/Ampere_(microarchitecture)">Ampere</a></a></li>
-        <li><a href="#11-turing-vs-volta">11. Turing vs Volta</a>
+        <li><a href="#14-blackwell">14. Blackwell</a></li>
+        <li><a href="#13-ada-lovelace-vs-hopper">13. <code>Ada Lovelace</code> vs Hopper</a>
           <ul>
-            <li><a href="#turinghttpswwwwikiwandcomzh-cne59bbee781b5e5beaee69eb6e69e84消费"><a href="https://www.wikiwand.com/zh-cn/%E5%9B%BE%E7%81%B5%E5%BE%AE%E6%9E%B6%E6%9E%84">Turing</a>（消费）</a></li>
-            <li><a href="#voltahttpswwwwikiwandcomzh-cne4bc8fe68993e5beaee69eb6e6a78b专业"><a href="https://www.wikiwand.com/zh-cn/%E4%BC%8F%E6%89%93%E5%BE%AE%E6%9E%B6%E6%A7%8B">Volta</a>（专业）</a></li>
+            <li><a href="#ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer"><a href="https://www.wikiwand.com/en/Ada_Lovelace_(microarchitecture)">Ada Lovelace</a> (consumer)</a></li>
+            <li><a href="#hopperhttpswwwwikiwandcomenhopper_microarchitecture-professional"><a href="https://www.wikiwand.com/en/Hopper_(microarchitecture)">Hopper</a> (professional)</a></li>
           </ul>
         </li>
-        <li><a href="#10-帕斯卡httpswwwwikiwandcomzh-cne5b895e696afe58da1e5beaee69eb6e69e84">10 <a href="https://www.wikiwand.com/zh-cn/%E5%B8%95%E6%96%AF%E5%8D%A1%E5%BE%AE%E6%9E%B6%E6%9E%84">帕斯卡</a></a></li>
+        <li><a href="#12-amperehttpswwwwikiwandcomenampere_microarchitecture-consumer-professional">12. <a href="https://www.wikiwand.com/en/Ampere_(microarchitecture)">Ampere</a> (consumer, professional)</a>
+          <ul>
+            <li><a href="#products-using-ampere">Products using Ampere</a></li>
+          </ul>
+        </li>
+        <li><a href="#11-turing-vs-volta">11. Turing vs Volta</a>
+          <ul>
+            <li><a href="#turinghttpswwwwikiwandcomenturing_microarchitectureconsumer-消费"><a href="https://www.wikiwand.com/en/Turing_(microarchitecture)">Turing</a>（consumer 消费）</a></li>
+            <li><a href="#voltahttpswwwwikiwandcomenvolta_microarchitecture-professional-专业"><a href="https://www.wikiwand.com/en/Volta_(microarchitecture)">Volta</a>（ professional 专业）</a></li>
+          </ul>
+        </li>
+        <li><a href="#10-pascalhttpswwwwikiwandcomenpascal_microarchitecture">10 <a href="https://www.wikiwand.com/en/Pascal_(microarchitecture)">Pascal</a></a></li>
         <li><a href="#9-maxwellhttpswwwwikiwandcomenmaxwell20microarchitecture">9. <a href="https://www.wikiwand.com/en/Maxwell%20(microarchitecture)">Maxwell</a></a></li>
         <li><a href="#8-keplerhttpswwwwikiwandcomenkepler_microarchitecture">8. <a href="https://www.wikiwand.com/en/Kepler_(microarchitecture)">Kepler</a></a></li>
         <li><a href="#7-fermihttpswwwwikiwandcomenfermi_microarchitecture">7. <a href="https://www.wikiwand.com/en/Fermi_(microarchitecture)">Fermi</a></a></li>
