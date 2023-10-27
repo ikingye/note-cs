@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.94b6d9ab45f545b27f0fe8c38ab889915380e691a42d0a106851e86b073a66f7.js" integrity="sha256-lLbZq0X1RbJ/D&#43;jDiriJkVOA5pGkLQoQaFHoawc6Zvc="></script>
+<script defer src="/note-cs/en.search.min.2a3ce1baa0369ac45bbb890757276a27d2c50540174c07fae749d30776b2b897.js" integrity="sha256-KjzhuqA2msRbu4kHVydqJ9LFBUAXTAf650nTB3ayuJc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18782,6 +18782,8 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#pcie-vs-sxm">PCIe vs SXM</a></li>
+    <li><a href="#nvml-nvidia-management-library">nvml: <code>NVIDIA Management Library</code></a></li>
+    <li><a href="#nvidia-smi">nvidia-smi</a></li>
   </ul>
 </nav>
 <hr />
@@ -18932,9 +18934,6 @@ https://github.com/alex-shpak/hugo-book
 <p>NVIDIA A10</p>
 </li>
 <li>
-<p>Tesla T4</p>
-</li>
-<li>
 <p>Tesla V100</p>
 </li>
 <li>
@@ -18965,6 +18964,7 @@ https://github.com/alex-shpak/hugo-book
 <p>Tesla K20</p>
 </li>
 </ul>
+<hr>
 <h3 id="quadrohttpswwwwikiwandcomenquadro-专业级显卡">
   <a href="https://www.wikiwand.com/en/Quadro">Quadro</a>: 专业级显卡
   <a class="anchor" href="#quadrohttpswwwwikiwandcomenquadro-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
@@ -19317,7 +19317,7 @@ https://github.com/alex-shpak/hugo-book
 </li>
 <li>
 <ol start="11">
-<li>Turing: T4,GTX 1660 Ti, RTX 2060</li>
+<li>Turing: T4, GTX 1660 Ti, RTX 2060</li>
 </ol>
 </li>
 <li>
@@ -19429,7 +19429,6 @@ https://github.com/alex-shpak/hugo-book
 <li>Nvidia A100 (GA100)
 <ul>
 <li>NVIDIA A100 Tensor Core GPU</li>
-<li>基于 NVIDIA Ampere 架构，是针对 AI、数据分析和 HPC 的 GPU。</li>
 <li>NVIDIA A800（NVIDIA A100 平替）</li>
 </ul>
 </li>
@@ -19446,6 +19445,20 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#turinghttpswwwwikiwandcomenturing_microarchitectureconsumer-%e6%b6%88%e8%b4%b9">#</a>
 </h4>
 <p>2018</p>
+<ul>
+<li>Tesla T4
+<ul>
+<li>按照英伟达的说法，Tesla T4 是为推理而生的。
+<ul>
+<li>在语音识别模型 DeepSpeech 2 上，T4 比 P4 的 5 倍还要快；</li>
+<li>在神经网络翻译模型 GNMT 上，T4 的速度接近 P4 的 4 倍；</li>
+<li>在图像识别模型 ResNet-50 上，T4 也接近 P4 的 3 倍。</li>
+</ul>
+</li>
+<li>在 T4 诞生之前，P4 在深度学习界的地位，也是很崇高的。</li>
+</ul>
+</li>
+</ul>
 <h4 id="voltahttpswwwwikiwandcomenvolta_microarchitecture-professional-专业">
   <a href="https://www.wikiwand.com/en/Volta_%28microarchitecture%29">Volta</a>（ professional 专业）
   <a class="anchor" href="#voltahttpswwwwikiwandcomenvolta_microarchitecture-professional-%e4%b8%93%e4%b8%9a">#</a>
@@ -19536,6 +19549,42 @@ https://github.com/alex-shpak/hugo-book
 </li>
 <li>NVLink 比 PCIe 信号线多 8 倍，而且 NVLink 的带宽是指双向带宽，PCIe 通常是说单向带宽。</li>
 </ul>
+<hr>
+<hr>
+<h2 id="nvml-nvidia-management-library">
+  nvml: <code>NVIDIA Management Library</code>
+  <a class="anchor" href="#nvml-nvidia-management-library">#</a>
+</h2>
+<blockquote>
+<p>A C-based API for monitoring and managing various states of the NVIDIA GPU devices. It provides a direct access to the queries and commands exposed via nvidia-smi. The runtime version of NVML ships with the NVIDIA display driver, and the SDK provides the appropriate header, stub libraries and sample applications. Each new version of NVML is backwards compatible and is intended to be a platform for building 3rd party applications.</p>
+</blockquote>
+<h2 id="nvidia-smi">
+  nvidia-smi
+  <a class="anchor" href="#nvidia-smi">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 查询全部信息</span>
+</span></span><span style="display:flex;"><span>nvidia-smi -q
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查询 gpu 架构</span>
+</span></span><span style="display:flex;"><span>nvidia-smi -q | grep Architecture
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 拓扑信息</span>
+</span></span><span style="display:flex;"><span>nvidia-smi topo -m
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># GPU 利用率统计</span>
+</span></span><span style="display:flex;"><span>nvidia-smi --format<span style="color:#f92672">=</span>csv,noheader,nounits --query-gpu<span style="color:#f92672">=</span>timestamp,index,memory.total,memory.used,memory.free,utilization.gpu,utilization.memory -lms <span style="color:#ae81ff">500</span> -f  gup.log
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 筛选 gpu2</span>
+</span></span><span style="display:flex;"><span>awk  -F<span style="color:#e6db74">&#34;,&#34;</span>  <span style="color:#e6db74">&#39;{ if($2==2){print $0} } &#39;</span>  smi-1-90s-instance.log &gt; gpu2.log
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 计算 gpu 平均利用率</span>
+</span></span><span style="display:flex;"><span>cat gpu2.log| awk <span style="color:#e6db74">&#39;{sum7+=$7;count++} END {print sum7/count}&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 动态观察 GPU 的状态（原地刷新）</span>
+</span></span><span style="display:flex;"><span>watch -n 0.5 nvidia-smi
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5 秒刷新一次</span>
+</span></span><span style="display:flex;"><span>nvidia-smi -l <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20231027163232.png" alt="" /></p>
 </article>
  
       
@@ -19657,6 +19706,8 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#pcie-vs-sxm">PCIe vs SXM</a></li>
+    <li><a href="#nvml-nvidia-management-library">nvml: <code>NVIDIA Management Library</code></a></li>
+    <li><a href="#nvidia-smi">nvidia-smi</a></li>
   </ul>
 </nav>
 <hr />
