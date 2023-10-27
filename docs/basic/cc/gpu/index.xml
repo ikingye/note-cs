@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPU on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/basic/cc/gpu/</link>
+    <description>Recent content in GPU on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/basic/cc/gpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvidia</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/</guid>
+      <description>Nvidia #   NVIDIA: 即英伟达，品牌名 GeForce: 是显卡系列名称  Tesla: 专业级显卡,  架构: Kepler 数值计算 深度学习、人工智能和高性能计算   Quadro: 专业级显卡  架构: Fermi 图形计算 专业可视化设计和创作   GeForce: 普通消费级显卡  架构: Maxwell 图形计算 游戏娱乐领域     RTX: 代表“高端”，一般是带光影追踪功能，只出现在 20 系显卡及以上  GTX 是系列中的高端显卡 GTS 是系列中的中端显卡 GT 是系列中的入门级显卡   30: 代表的是第几代  20 30 40   6: 是显卡性能档次的定位  89 是高端 567 是中端 1234 是低端   0: 不用管这位数字，一般都是 0 ti  TI 增强 Super 小增强 SE 阉割 M 等于移动端如 MX, Max-Q       AD102 (76.</description>
+    </item>
+    
+  </channel>
+</rss>

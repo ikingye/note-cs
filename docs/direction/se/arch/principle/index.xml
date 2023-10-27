@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>原则 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/</link>
+    <description>Recent content in 原则 on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/principle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CAP</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</guid>
+      <description>CAP #  P 是前提 #  在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个 distributed data store 来说，不可能同时满足以下三点：
+ 一致性（Consistency）  每次读取要么获得最近写入的数据，要么获得一个错误。   可用性（Availability）  每次请求都能获得一个非错误响应，但不保证返回的是最新写入的数据。   分区容错性（Partition tolerance）  以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。 尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。 分区指网络分区，通信的两台服务器之间网络断开，就发生了网络分区    一般选 AP #  也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。
+比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，
+ 如果 A 不写，保持一致性，那么我们就失去了 A 的服务， 但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。  这里的一致性（Consistency）是强一致性，意思是 AB 的数据时刻都是同步的， 如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。</description>
+    </item>
+    
+    <item>
+      <title>ACID</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</guid>
+      <description>ACID #   In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.
+  ACID 是追求 CAP (Consistency, Availability, Partition tolerance) 的一致性 (C)</description>
+    </item>
+    
+    <item>
+      <title>BASE</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</guid>
+      <description>BASE #  Basically Available, Soft state, Eventual consistency
+BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。
+基本可用 #   流量削峰  在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值   延迟响应  在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果   体验降级  比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。   过载保护  把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。    最终的一致 #   读时修复：在读取数据时，检测数据的不一致，进行修复。  比如 Cassandra 的 Read Repair 实现，具体来说，在向 Cassandra 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。   写时修复：在写入数据，检测数据的不一致时，进行修复。  比如 Cassandra 的 Hinted Handoff 实现。具体来说，Cassandra 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。 写时修复不需要做数据一致性对比，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。   异步修复：这个是最常用的方式，通过定时对账检测副本数据的一致性，并修复。   </description>
+    </item>
+    
+  </channel>
+</rss>
