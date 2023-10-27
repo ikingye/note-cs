@@ -5,19 +5,21 @@
   <meta name="generator" content="Hugo 0.99.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CUDA #  Hello World for CUDA #  // This is the REAL &#34;hello world&#34; for CUDA! // It takes the string &#34;Hello &#34;, prints it, then passes it to CUDA // with an array of offsets. Then the offsets are added in parallel // to produce the string &#34;World!&#34; // By Ingemar Ragnemalm 2010  // nvcc hello-world.cu -L /usr/local/cuda/lib -lcudart -o hello-world  #include &lt;stdio.h&gt; const int N = 16; const int blocksize = 16;  __global__ void hello(char *a, int *b) {  a[threadIdx.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CUDA" />
-<meta property="og:description" content="CUDA #  Hello World for CUDA #  // This is the REAL &#34;hello world&#34; for CUDA! // It takes the string &#34;Hello &#34;, prints it, then passes it to CUDA // with an array of offsets. Then the offsets are added in parallel // to produce the string &#34;World!&#34; // By Ingemar Ragnemalm 2010  // nvcc hello-world.cu -L /usr/local/cuda/lib -lcudart -o hello-world  #include &lt;stdio.h&gt; const int N = 16; const int blocksize = 16;  __global__ void hello(char *a, int *b) {  a[threadIdx." />
+<meta name="description" content="DMI #  直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。
+ DMI 1.0, introduced in 2004. DMI 2.0, introduced in 2011, doubles the data transfer rate to 2 GB/s with a ×4 link. It is used to link an Intel CPU with the Intel Platform Controller Hub (PCH), which supersedes the historic implementation of a separate northbridge and southbridge.: 14 DMI 3.0, released in August 2015, allows the 8 GT/s transfer rate per lane, for a total of four lanes and 3.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="DMI" />
+<meta property="og:description" content="DMI #  直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。
+ DMI 1.0, introduced in 2004. DMI 2.0, introduced in 2011, doubles the data transfer rate to 2 GB/s with a ×4 link. It is used to link an Intel CPU with the Intel Platform Controller Hub (PCH), which supersedes the historic implementation of a separate northbridge and southbridge.: 14 DMI 3.0, released in August 2015, allows the 8 GT/s transfer rate per lane, for a total of four lanes and 3." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kingye.me/note-cs/docs/study/skill/cuda/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kingye.me/note-cs/docs/basic/cc/dmi/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-24T14:26:22+08:00" />
 
-<title>CUDA | 计算机学习笔记</title>
+
+<title>DMI | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.b79189b059c12f4dc940d7c78ad64a20708b1aebd14f971a01022654f217f461.js" integrity="sha256-t5GJsFnBL03JQNfHitZKIHCLGuvRT5caAQImVPIX9GE="></script>
+<script defer src="/note-cs/en.search.min.94b6d9ab45f545b27f0fe8c38ab889915380e691a42d0a106851e86b073a66f7.js" integrity="sha256-lLbZq0X1RbJ/D&#43;jDiriJkVOA5pGkLQoQaFHoawc6Zvc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -105,6 +107,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="https://kingye.me/note-cs/docs/basic/cc/cpu/" class="">CPU</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/basic/cc/dmi/" class=" active">DMI</a>
   
 
         </li>
@@ -1423,45 +1438,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/cxl/" class="">CXL</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/pcie/" class="">PCIe</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/roce/" class="">RoCE 网络</a>
-  
-
-        </li>
-      
     
   </ul>
 
@@ -16781,7 +16757,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-97500ca5e33932d2e54cb7de4a635e45" class="toggle" checked />
+    <input type="checkbox" id="section-97500ca5e33932d2e54cb7de4a635e45" class="toggle"  />
     <label for="section-97500ca5e33932d2e54cb7de4a635e45" class="flex justify-between">
       <a  class="">4.1 技能树</a>
     </label>
@@ -17475,22 +17451,6 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-a0d5c86869e1457e730d84eb2bb1ecd8" class="toggle" checked />
-    <label for="section-a0d5c86869e1457e730d84eb2bb1ecd8" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/skill/cuda/" class="active">CUDA</a>
-    </label>
-  
 
         </li>
       
@@ -18760,7 +18720,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>CUDA</strong>
+  <strong>DMI</strong>
 
   <label for="toc-control">
     
@@ -18774,12 +18734,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#hello-world-for-cuda">Hello World for CUDA</a></li>
-    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
@@ -18801,78 +18756,20 @@ https://github.com/alex-shpak/hugo-book
 </script>
 
       
-  <article id="article" class="markdown"><h1 id="cuda">
-  CUDA
-  <a class="anchor" href="#cuda">#</a>
+  <article id="article" class="markdown"><h1 id="dmihttpswwwwikiwandcomendirect_media_interface">
+  <a href="https://www.wikiwand.com/en/Direct_Media_Interface">DMI</a>
+  <a class="anchor" href="#dmihttpswwwwikiwandcomendirect_media_interface">#</a>
 </h1>
-<h2 id="hello-world-for-cuda">
-  Hello World for CUDA
-  <a class="anchor" href="#hello-world-for-cuda">#</a>
-</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// This is the REAL &#34;hello world&#34; for CUDA!
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// It takes the string &#34;Hello &#34;, prints it, then passes it to CUDA
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// with an array of offsets. Then the offsets are added in parallel
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// to produce the string &#34;World!&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// By Ingemar Ragnemalm 2010
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// nvcc hello-world.cu -L /usr/local/cuda/lib -lcudart -o hello-world
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> N <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> blocksize <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>__global__
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">hello</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>a, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>b)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    a[threadIdx.x] <span style="color:#f92672">+=</span> b[threadIdx.x];
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> a[N] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello </span><span style="color:#ae81ff">\0\0\0\0\0\0</span><span style="color:#e6db74">&#34;</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> b[N] <span style="color:#f92672">=</span> {<span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>};
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>ad;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>bd;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> csize <span style="color:#f92672">=</span> N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">char</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> isize <span style="color:#f92672">=</span> N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">int</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;%s&#34;</span>, a);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    cudaMalloc( (<span style="color:#66d9ef">void</span><span style="color:#f92672">**</span>)<span style="color:#f92672">&amp;</span>ad, csize );
-</span></span><span style="display:flex;"><span>    cudaMalloc( (<span style="color:#66d9ef">void</span><span style="color:#f92672">**</span>)<span style="color:#f92672">&amp;</span>bd, isize );
-</span></span><span style="display:flex;"><span>    cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice );
-</span></span><span style="display:flex;"><span>    cudaMemcpy( bd, b, isize, cudaMemcpyHostToDevice );
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    dim3 dimBlock( blocksize, <span style="color:#ae81ff">1</span> );
-</span></span><span style="display:flex;"><span>    dim3 dimGrid( <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span> );
-</span></span><span style="display:flex;"><span>    hello<span style="color:#f92672">&lt;&lt;&lt;</span>dimGrid, dimBlock<span style="color:#f92672">&gt;&gt;&gt;</span>(ad, bd);
-</span></span><span style="display:flex;"><span>    cudaMemcpy( a, ad, csize, cudaMemcpyDeviceToHost );
-</span></span><span style="display:flex;"><span>    cudaFree( ad );
-</span></span><span style="display:flex;"><span>    cudaFree( bd );
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, a);
-</span></span><span style="display:flex;"><span>    sleep(<span style="color:#ae81ff">1</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> EXIT_SUCCESS;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>参考：</p>
+<p>直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。</p>
 <ul>
-<li><a href="https://computer-graphics.se/hello-world-for-cuda-opencl.html">Hello World for CUDA, OpenCL and GLSL</a></li>
-</ul>
-<hr>
-<h2 id="cuda-vs-cudnn-vs-cublas">
-  CUDA vs cuDNN vs cuBLAS
-  <a class="anchor" href="#cuda-vs-cudnn-vs-cublas">#</a>
-</h2>
+<li>DMI 1.0, introduced in <code>2004</code>.</li>
+<li>DMI 2.0, introduced in <code>2011</code>, doubles the data transfer rate to 2 GB/s with a ×4 link. It is used to link an Intel CPU with the Intel Platform Controller Hub (PCH), which supersedes the historic implementation of a separate northbridge and southbridge.: 14</li>
+<li>DMI 3.0, released in August <code>2015</code>, allows the 8 GT/s transfer rate per lane, for a total of four lanes and 3.93 GB/s for the CPU–PCH link. It is used by two-chip variants of the Intel Skylake microprocessors, which are used in conjunction with Intel 100 Series chipsets; some low power (Skylake-U onwards) and ultra low power (Skylake-Y onwards) mobile Intel processors have the PCH integrated into the physical package as a separate die, referred to as OPI (On Package DMI interconnect Interface) and effectively following the system on a chip (SoC) design layout. On 9 March 2015, Intel announced the Broadwell-based Xeon D as its first enterprise platform to fully incorporate the PCH in an SoC configuration.
 <ul>
-<li>cuDNN 是<strong>基于 CUDA</strong> 的深度学习 GPU 加速库，有了它才能在 GPU 上完成深度学习的计算
-<ul>
-<li>只要把 cuDNN 文件复制到 CUDA 的对应文件夹里就可以，即是所谓插入式设计</li>
+<li>In 2021, with the release of 500 series chipsets, Intel increased the amount of DMI 3.0 lanes from four to eight, doubling the bandwidth.</li>
 </ul>
 </li>
-<li>cuBLAS (<code>CUDA Basic Linear Algebra Subroutine library</code>) CUDA 基本线性代数子程序库</li>
-<li>cutlass 仅支持矩阵乘法运算，不支持卷积算子，从而难以直接应用到计算机视觉领域的推理部署中。</li>
+<li>DMI 4.0, released on <code>2021-11-04</code> with 600 series chipsets, doubles the bandwidth each lane provides and is two times faster when compared to DMI 3.0. The number of DMI 4.0 lanes depends on chipset model used.</li>
 </ul>
 </article>
  
@@ -18883,12 +18780,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/fe1dc4368a1590da80593cf6e50f89d50633eaed" title='Last modified by yewang | 2023-10-24' target="_blank" rel="noopener">
-      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2023-10-24</span>
-    </a>
-  </div>
 
 
 
@@ -18945,12 +18836,7 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#hello-world-for-cuda">Hello World for CUDA</a></li>
-    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>

@@ -11,13 +11,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-25T22:15:57+08:00" />
+<meta property="article:modified_time" content="2023-10-26T14:55:32+08:00" />
 
 <title>Nvidia | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.b79189b059c12f4dc940d7c78ad64a20708b1aebd14f971a01022654f217f461.js" integrity="sha256-t5GJsFnBL03JQNfHitZKIHCLGuvRT5caAQImVPIX9GE="></script>
+<script defer src="/note-cs/en.search.min.94b6d9ab45f545b27f0fe8c38ab889915380e691a42d0a106851e86b073a66f7.js" integrity="sha256-lLbZq0X1RbJ/D&#43;jDiriJkVOA5pGkLQoQaFHoawc6Zvc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -105,6 +105,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="https://kingye.me/note-cs/docs/basic/cc/cpu/" class="">CPU</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/basic/cc/dmi/" class="">DMI</a>
   
 
         </li>
@@ -1423,45 +1436,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/cxl/" class="">CXL</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/pcie/" class="">PCIe</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/roce/" class="">RoCE 网络</a>
-  
-
-        </li>
-      
     
   </ul>
 
@@ -17486,22 +17460,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a0d5c86869e1457e730d84eb2bb1ecd8" class="toggle"  />
-    <label for="section-a0d5c86869e1457e730d84eb2bb1ecd8" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/skill/cuda/" class="">CUDA</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <input type="checkbox" id="section-014be71d4cf0e2b6b1ed31023a1cbe06" class="toggle"  />
     <label for="section-014be71d4cf0e2b6b1ed31023a1cbe06" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/study/skill/type/" class="">文档类型</a>
@@ -18933,30 +18891,172 @@ https://github.com/alex-shpak/hugo-book
 <p>GA107 芯片，对应 3050</p>
 </li>
 </ul>
-<p>参考：</p>
-<ul>
-<li><a href="https://developer.nvidia.com/nsight-visual-studio-edition-supported-gpus-full-list">[Nvidia] General GPU Support</a></li>
-</ul>
 <hr>
 <h2 id="nvidia-显卡系列">
   Nvidia 显卡系列
   <a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97">#</a>
 </h2>
+<p>参考：</p>
+<ul>
+<li><a href="https://developer.nvidia.com/nsight-visual-studio-edition-supported-gpus-full-list">[Nvidia] General GPU Support</a></li>
+</ul>
 <h3 id="teslahttpswwwwikiwandcomennvidia_tesla-专业级显卡">
   <a href="https://www.wikiwand.com/en/Nvidia_Tesla">Tesla</a>: 专业级显卡
   <a class="anchor" href="#teslahttpswwwwikiwandcomennvidia_tesla-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
 </h3>
 <ul>
-<li>用于对抗 AMD 的 <a href="https://www.wikiwand.com/zh-cn/FireStream">FireStream</a> 系列</li>
+<li>
+<p>用于对抗 AMD 的 <a href="https://www.wikiwand.com/zh-cn/FireStream">FireStream</a> 系列</p>
+</li>
+<li>
+<p>NVIDIA H100 Tensor Core GPU</p>
+<ul>
+<li>至于 H 系列是目前主打的旗舰产品，未来都将会是 H 系列占主导</li>
+<li>H100 是一款针对大模型专门优化过的芯片，使用台积电 5nm 定制版本制程（4N）打造，单块芯片包含 800 亿晶体管</li>
+<li>同时也是全球首款 PCI-E 5 和 HBM 3 显卡，一块 H100 的 IO 带宽就是 40 terabyte 每秒</li>
+</ul>
+</li>
+<li>
+<p>NVIDIA A100 Tensor Core GPU</p>
+</li>
+<li>
+<p>NVIDIA A40</p>
+</li>
+<li>
+<p>NVIDIA A30</p>
+</li>
+<li>
+<p>NVIDIA A16</p>
+</li>
+<li>
+<p>NVIDIA A10</p>
+</li>
+<li>
+<p>Tesla T4</p>
+</li>
+<li>
+<p>Tesla V100</p>
+</li>
+<li>
+<p>Tesla P100</p>
+</li>
+<li>
+<p>Tesla P40</p>
+</li>
+<li>
+<p>Tesla P4</p>
+</li>
+<li>
+<p>Tesla M60</p>
+</li>
+<li>
+<p>Tesla M40</p>
+</li>
+<li>
+<p>Tesla M10</p>
+</li>
+<li>
+<p>Tesla M4</p>
+</li>
+<li>
+<p>Tesla K40</p>
+</li>
+<li>
+<p>Tesla K20</p>
+</li>
 </ul>
 <h3 id="quadrohttpswwwwikiwandcomenquadro-专业级显卡">
   <a href="https://www.wikiwand.com/en/Quadro">Quadro</a>: 专业级显卡
   <a class="anchor" href="#quadrohttpswwwwikiwandcomenquadro-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
 </h3>
+<ul>
+<li>RTX A6000 Ada</li>
+<li>RTX A6000</li>
+<li>Quadro RTX 8000</li>
+<li>Quadro RTX 6000</li>
+<li>Quadro RTX 5000</li>
+<li>Quadro RTX 4000</li>
+<li>Quadro GV100</li>
+<li>Quadro GP100</li>
+<li>Quadro P6000</li>
+<li>Quadro P5000</li>
+<li>Quadro P4000</li>
+<li>Quadro P2000</li>
+<li>Quadro P1000</li>
+<li>Quadro P600</li>
+<li>Quadro P500</li>
+<li>Quadro P400</li>
+<li>Quadro M6000</li>
+<li>Quadro M5000</li>
+<li>Quadro M4000</li>
+<li>Quadro M2000</li>
+<li>Quadro K6000</li>
+<li>Quadro K5200</li>
+<li>Quadro K2200</li>
+<li>Quadro K1200</li>
+<li>Quadro K620</li>
+</ul>
 <h3 id="geforcehttpswwwwikiwandcomengeforce-普通消费级显卡">
   <a href="https://www.wikiwand.com/en/GeForce">GeForce</a>: 普通消费级显卡
   <a class="anchor" href="#geforcehttpswwwwikiwandcomengeforce-%e6%99%ae%e9%80%9a%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
 </h3>
+<ul>
+<li>GeForce RTX 4090</li>
+<li>GeForce RTX 4080</li>
+<li>GeForce RTX 4070 Ti</li>
+<li>GeForce RTX 4070</li>
+<li>GeForce RTX 4060</li>
+<li>GeForce RTX 4050</li>
+<li>GeForce RTX 3090</li>
+<li>GeForce RTX 3080 Ti Laptop GPU</li>
+<li>GeForce RTX 3080 TI</li>
+<li>GeForce RTX 3080</li>
+<li>GeForce RTX 3070 TI</li>
+<li>GeForce RTX 3070</li>
+<li>GeForce RTX 3060 TI</li>
+<li>GeForce RTX 3060</li>
+<li>GeForce RTX 3050 TI</li>
+<li>GeForce RTX 3050</li>
+<li>NVIDIA TITAN RTX</li>
+<li>GeForce RTX 2080 Ti</li>
+<li>GeForce RTX 2080 Super</li>
+<li>GeForce RTX 2080</li>
+<li>GeForce RTX 2070 Super</li>
+<li>GeForce RTX 2070</li>
+<li>GeForce RTX 2060 Super</li>
+<li>GeForce RTX 2060</li>
+<li>GeForce GTX 1660 Ti Max-Q</li>
+<li>GeForce GTX 1660 Ti</li>
+<li>GeForce GTX 1660</li>
+<li>GeForce GTX 1650 Ti Max-Q</li>
+<li>GeForce GTX 1650 Ti</li>
+<li>GeForce GTX 1650 Max-Q</li>
+<li>GeForce GTX 1650</li>
+<li>NVIDIA TITAN V</li>
+<li>NVIDIA TITAN Xp</li>
+<li>NVIDIA TITAN X</li>
+<li>GeForce GTX 1080 Ti</li>
+<li>GeForce GTX 1080</li>
+<li>GeForce GTX 1070 Ti</li>
+<li>GeForce GTX 1070</li>
+<li>GeForce GTX 1060</li>
+<li>GeForce GTX 1050 Ti</li>
+<li>GeForce GTX 1050</li>
+<li>GeForce GT 1030</li>
+<li>GeForce GT 1010</li>
+<li>GeForce GTX TITAN X</li>
+<li>GeForce GTX 980 Ti</li>
+<li>GeForce GTX 980</li>
+<li>GeForce GTX 980M</li>
+<li>GeForce GTX 970</li>
+<li>GeForce GTX 970M</li>
+<li>GeForce GTX 960</li>
+<li>GeForce GTX 950</li>
+<li>GeForce GTX 750 Ti</li>
+<li>GeForce GTX 750</li>
+<li>GeForce GTX 745</li>
+</ul>
+<hr>
 <ul>
 <li>1999
 <ul>
@@ -19092,32 +19192,92 @@ https://github.com/alex-shpak/hugo-book
   产品
   <a class="anchor" href="#%e4%ba%a7%e5%93%81">#</a>
 </h2>
+<p>据统计 NVIDIA 当前在售的 AI 加速卡至少有 9 款型号，其中高性能的有 4 款，分别是 V100、A800、A100 及 H100。价格方面，</p>
 <ul>
-<li>GeForce RTX 4090</li>
-<li>NVIDIA H100 CNX</li>
-<li>NVIDIA H100</li>
-<li>NVIDIA A100</li>
-<li>NVIDIA A2</li>
-<li>NVIDIA A10</li>
-<li>NVIDIA A16</li>
-<li>NVIDIA A30</li>
-<li>NVIDIA A40</li>
-<li>NVIDIA L40</li>
-<li>NVIDIA BlueField DPU</li>
-<li>NVIDIA 融合加速器</li>
-<li>NVIDIA ConnectX SmartNIC</li>
-<li>NVIDIA V100</li>
-<li>NVIDIA HGX</li>
-<li>NVIDIA DGX H100</li>
-<li>NVIDIA DGX 系统</li>
-<li>NVIDIA EGX 平台</li>
-<li>NVIDIA EGX A100</li>
-<li>EGX Server</li>
-<li>Ethernet Adaptors &amp; Switches</li>
-<li>虚拟 PC</li>
-<li>虚拟应用程序</li>
-<li>RTX 虚拟工作站</li>
-<li>RTX 云端虚拟工作站</li>
+<li>
+<p>V100 加速卡至少 10000 美元，按当前的汇率，约合 6.9 万元人民币；</p>
+</li>
+<li>
+<p>A800 售价 12000 美元，约合人民币 8.7 万元，市场一度炒高到 10 万元人民币；</p>
+<ul>
+<li>服务器现货更是从 120 万涨到了 140 万元左右</li>
+</ul>
+</li>
+<li>
+<p>A100 售价在 1.5 万美元，约合人民币 10.8 万元；</p>
+</li>
+<li>
+<p>H100 加速卡是 NVIDIA 当前最强的，售价 3.65 万美元，约合 26.4 万元人民币</p>
+</li>
+<li>
+<p>GeForce RTX 4090</p>
+</li>
+<li>
+<p>NVIDIA H100 CNX</p>
+</li>
+<li>
+<p>NVIDIA A2</p>
+</li>
+<li>
+<p>NVIDIA A10</p>
+</li>
+<li>
+<p>NVIDIA A16</p>
+</li>
+<li>
+<p>NVIDIA A30</p>
+</li>
+<li>
+<p>NVIDIA A40</p>
+</li>
+<li>
+<p>NVIDIA L40</p>
+</li>
+<li>
+<p>NVIDIA BlueField DPU</p>
+</li>
+<li>
+<p>NVIDIA 融合加速器</p>
+</li>
+<li>
+<p>NVIDIA ConnectX SmartNIC</p>
+</li>
+<li>
+<p>NVIDIA V100</p>
+</li>
+<li>
+<p>NVIDIA HGX</p>
+</li>
+<li>
+<p>NVIDIA DGX H100</p>
+</li>
+<li>
+<p>NVIDIA DGX 系统</p>
+</li>
+<li>
+<p>NVIDIA EGX 平台</p>
+</li>
+<li>
+<p>NVIDIA EGX A100</p>
+</li>
+<li>
+<p>EGX Server</p>
+</li>
+<li>
+<p>Ethernet Adaptors &amp; Switches</p>
+</li>
+<li>
+<p>虚拟 PC</p>
+</li>
+<li>
+<p>虚拟应用程序</p>
+</li>
+<li>
+<p>RTX 虚拟工作站</p>
+</li>
+<li>
+<p>RTX 云端虚拟工作站</p>
+</li>
 </ul>
 <hr>
 <h2 id="gpu-架构">
@@ -19125,16 +19285,56 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#gpu-%e6%9e%b6%e6%9e%84">#</a>
 </h2>
 <ul>
+<li>
+<ol start="6">
 <li>Tesla: 市面已经没有相关显卡</li>
+</ol>
+</li>
+<li>
+<ol start="7">
 <li>Fermi: GeForce 400, 500, 600, GT-630</li>
+</ol>
+</li>
+<li>
+<ol start="8">
 <li>Kepler: Tesla K40/K80, GeForce 700, GT-730</li>
+</ol>
+</li>
+<li>
+<ol start="9">
 <li>Maxwell: Tesla/Quadro M series GeForce 900, GTX-970</li>
+</ol>
+</li>
+<li>
+<ol start="10">
 <li>Pascal: Tesla P100, GTX 1080, GTX 1070, GTX 1060</li>
+</ol>
+</li>
+<li>
+<ol start="11">
 <li>Votal: Tesla V100, GTX 1180</li>
+</ol>
+</li>
+<li>
+<ol start="11">
 <li>Turing: T4,GTX 1660 Ti, RTX 2060</li>
+</ol>
+</li>
+<li>
+<ol start="12">
 <li>Ampere: A100, GTX3080</li>
+</ol>
+</li>
+<li>
+<ol start="12">
 <li>Hopper: H100</li>
+</ol>
+</li>
+<li>
+<ol start="13">
 <li>Ada Lovelace: 4090</li>
+</ol>
+</li>
 </ul>
 <h3 id="14-blackwell">
   14. Blackwell
@@ -19167,18 +19367,6 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <p>2020</p>
 <p>安培微架构（Ampere）是 NVIDIA 于 2020 年 5 月发布的一个 GPU 架构。用以取代图灵微架构（Turing microarchitecture）。命名为“安培”以向法国物理学家安德烈-马里·安培（<code>André-Marie Ampère</code>）致敬。Ampere 架构拥有晶体管达 540 亿，是三星 8nm 级芯片。是世界上晶体管最多的芯片，直到后来被苹果 M1 Max 击败。</p>
-<hr>
-<p>据统计 NVIDIA 当前在售的 AI 加速卡至少有 9 款型号，其中高性能的有 4 款，分别是 V100、A800、A100 及 H100。价格方面，</p>
-<ul>
-<li>V100 加速卡至少 10000 美元，按当前的汇率，约合 6.9 万元人民币；</li>
-<li>A800 售价 12000 美元，约合人民币 8.7 万元，市场一度炒高到 10 万元人民币；
-<ul>
-<li>服务器现货更是从 120 万涨到了 140 万元左右</li>
-</ul>
-</li>
-<li>A100 售价在 1.5 万美元，约合人民币 10.8 万元；</li>
-<li>H100 加速卡是 NVIDIA 当前最强的，售价 3.65 万美元，约合 26.4 万元人民币</li>
-</ul>
 <hr>
 <h4 id="products-using-ampere">
   Products using Ampere
@@ -19358,9 +19546,9 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/468357523bad4deb144ee7e23faccf72509ed422" title='Last modified by yewang | 2023-10-25' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/52e79479bba84e9ce12268c0647757b0b113ce7f" title='Last modified by yewang | 2023-10-26' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2023-10-25</span>
+      <span>2023-10-26</span>
     </a>
   </div>
 

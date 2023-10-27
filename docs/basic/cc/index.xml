@@ -16,6 +16,16 @@
     </item>
     
     <item>
+      <title>DMI</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/dmi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/cc/dmi/</guid>
+      <description>DMI #  直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。
+ DMI 1.0, introduced in 2004. DMI 2.0, introduced in 2011, doubles the data transfer rate to 2 GB/s with a ×4 link. It is used to link an Intel CPU with the Intel Platform Controller Hub (PCH), which supersedes the historic implementation of a separate northbridge and southbridge.: 14 DMI 3.0, released in August 2015, allows the 8 GT/s transfer rate per lane, for a total of four lanes and 3.</description>
+    </item>
+    
+    <item>
       <title>存储卡</title>
       <link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

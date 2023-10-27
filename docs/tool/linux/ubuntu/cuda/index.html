@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.b79189b059c12f4dc940d7c78ad64a20708b1aebd14f971a01022654f217f461.js" integrity="sha256-t5GJsFnBL03JQNfHitZKIHCLGuvRT5caAQImVPIX9GE="></script>
+<script defer src="/note-cs/en.search.min.94b6d9ab45f545b27f0fe8c38ab889915380e691a42d0a106851e86b073a66f7.js" integrity="sha256-lLbZq0X1RbJ/D&#43;jDiriJkVOA5pGkLQoQaFHoawc6Zvc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -105,6 +105,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="https://kingye.me/note-cs/docs/basic/cc/cpu/" class="">CPU</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/basic/cc/dmi/" class="">DMI</a>
   
 
         </li>
@@ -1423,45 +1436,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/cxl/" class="">CXL</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/pcie/" class="">PCIe</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/basic/network/roce/" class="">RoCE 网络</a>
-  
-
-        </li>
-      
     
   </ul>
 
@@ -17486,22 +17460,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a0d5c86869e1457e730d84eb2bb1ecd8" class="toggle"  />
-    <label for="section-a0d5c86869e1457e730d84eb2bb1ecd8" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/study/skill/cuda/" class="">CUDA</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <input type="checkbox" id="section-014be71d4cf0e2b6b1ed31023a1cbe06" class="toggle"  />
     <label for="section-014be71d4cf0e2b6b1ed31023a1cbe06" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/study/skill/type/" class="">文档类型</a>
@@ -18789,6 +18747,8 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#测试-cuda">测试 cuda</a></li>
+    <li><a href="#hello-world-for-cuda">Hello World for CUDA</a></li>
+    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a></li>
   </ul>
 </nav>
 <hr />
@@ -19000,7 +18960,78 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>  free(x);
 </span></span><span style="display:flex;"><span>  free(y);
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div></article>
+</span></span></code></pre></div><hr>
+<hr>
+<h2 id="hello-world-for-cuda">
+  Hello World for CUDA
+  <a class="anchor" href="#hello-world-for-cuda">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// This is the REAL &#34;hello world&#34; for CUDA!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// It takes the string &#34;Hello &#34;, prints it, then passes it to CUDA
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// with an array of offsets. Then the offsets are added in parallel
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// to produce the string &#34;World!&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// By Ingemar Ragnemalm 2010
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// nvcc hello-world.cu -L /usr/local/cuda/lib -lcudart -o hello-world
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> N <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> blocksize <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>__global__
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">hello</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>a, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>b)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    a[threadIdx.x] <span style="color:#f92672">+=</span> b[threadIdx.x];
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> a[N] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello </span><span style="color:#ae81ff">\0\0\0\0\0\0</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> b[N] <span style="color:#f92672">=</span> {<span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>ad;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>bd;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> csize <span style="color:#f92672">=</span> N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">char</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> isize <span style="color:#f92672">=</span> N<span style="color:#f92672">*</span><span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">int</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;%s&#34;</span>, a);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    cudaMalloc( (<span style="color:#66d9ef">void</span><span style="color:#f92672">**</span>)<span style="color:#f92672">&amp;</span>ad, csize );
+</span></span><span style="display:flex;"><span>    cudaMalloc( (<span style="color:#66d9ef">void</span><span style="color:#f92672">**</span>)<span style="color:#f92672">&amp;</span>bd, isize );
+</span></span><span style="display:flex;"><span>    cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice );
+</span></span><span style="display:flex;"><span>    cudaMemcpy( bd, b, isize, cudaMemcpyHostToDevice );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    dim3 dimBlock( blocksize, <span style="color:#ae81ff">1</span> );
+</span></span><span style="display:flex;"><span>    dim3 dimGrid( <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span> );
+</span></span><span style="display:flex;"><span>    hello<span style="color:#f92672">&lt;&lt;&lt;</span>dimGrid, dimBlock<span style="color:#f92672">&gt;&gt;&gt;</span>(ad, bd);
+</span></span><span style="display:flex;"><span>    cudaMemcpy( a, ad, csize, cudaMemcpyDeviceToHost );
+</span></span><span style="display:flex;"><span>    cudaFree( ad );
+</span></span><span style="display:flex;"><span>    cudaFree( bd );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    printf(<span style="color:#e6db74">&#34;%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, a);
+</span></span><span style="display:flex;"><span>    sleep(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> EXIT_SUCCESS;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>参考：</p>
+<ul>
+<li><a href="https://computer-graphics.se/hello-world-for-cuda-opencl.html">Hello World for CUDA, OpenCL and GLSL</a></li>
+</ul>
+<hr>
+<h2 id="cuda-vs-cudnn-vs-cublas">
+  CUDA vs cuDNN vs cuBLAS
+  <a class="anchor" href="#cuda-vs-cudnn-vs-cublas">#</a>
+</h2>
+<ul>
+<li>cuDNN 是<strong>基于 CUDA</strong> 的深度学习 GPU 加速库，有了它才能在 GPU 上完成深度学习的计算
+<ul>
+<li>只要把 cuDNN 文件复制到 CUDA 的对应文件夹里就可以，即是所谓插入式设计</li>
+</ul>
+</li>
+<li>cuBLAS (<code>CUDA Basic Linear Algebra Subroutine library</code>) CUDA 基本线性代数子程序库</li>
+<li>cutlass 仅支持矩阵乘法运算，不支持卷积算子，从而难以直接应用到计算机视觉领域的推理部署中。</li>
+</ul>
+</article>
  
       
 
@@ -19086,6 +19117,8 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#测试-cuda">测试 cuda</a></li>
+    <li><a href="#hello-world-for-cuda">Hello World for CUDA</a></li>
+    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a></li>
   </ul>
 </nav>
 <hr />
