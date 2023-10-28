@@ -211,15 +211,6 @@ https://microk8s.io
     </item>
     
     <item>
-      <title>Nvidia</title>
-      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/nvidia/</guid>
-      <description>Nvidia #  apt install ubuntu-drivers-common  # 查询推荐的 nvidia 驱动 ubuntu-drivers devices  # 按推荐安装驱动 apt install -y nvidia-driver-450  # CUDA Toolkit: 12.2 # Driver Version: 535.54.03 # Release Date: 2023.6.26 curl -LO https://us.download.nvidia.com/tesla/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run bash NVIDIA-Linux-x86_64-535.54.03.run  # CUDA Toolkit: 12.0 # Driver Version: 525.60.13 # Release Date: 2022.12.5 curl -LO https://us.download.nvidia.com/tesla/525.60.13/NVIDIA-Linux-x86_64-525.60.13.run bash NVIDIA-Linux-x86_64-525.60.13.run  # CUDA Toolkit: 11.7 # Driver Version: 515.86.01 # Release Date: 2022.11.22 curl -LO https://us.</description>
-    </item>
-    
-    <item>
       <title>pip</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
