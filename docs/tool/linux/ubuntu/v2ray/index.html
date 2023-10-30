@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.d5c361a346fad0cef2a2a2442acd3cc78060e18e3401b6f4770349c02cf39716.js" integrity="sha256-1cNho0b60M7yoqJEKs08x4Bg4Y40Abb0dwNJwCzzlxY="></script>
+<script defer src="/note-cs/en.search.min.ee3ae6ed8fc5349926e34d06c85cb3437b34cfd53a7213726ba9d4b8dcebe924.js" integrity="sha256-7jrm7Y/FNJkm400GyFyzQ3s0z9U6chNya6nUuNzr6SQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18716,7 +18716,15 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#linux-客户端">Linux 客户端</a>
+      <ul>
+        <li><a href="#v2raya">v2rayA</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
@@ -18836,7 +18844,29 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>systemctl restart xray
-</span></span></code></pre></div></article>
+</span></span></code></pre></div><hr>
+<h2 id="linux-客户端">
+  Linux 客户端
+  <a class="anchor" href="#linux-%e5%ae%a2%e6%88%b7%e7%ab%af">#</a>
+</h2>
+<h3 id="v2raya">
+  v2rayA
+  <a class="anchor" href="#v2raya">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 添加公钥</span>
+</span></span><span style="display:flex;"><span>wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/keyrings/v2raya.asc
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加 V2RayA 软件源</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [signed-by=/etc/apt/keyrings/v2raya.asc] https://apt.v2raya.org/ v2raya main&#34;</span> | sudo tee /etc/apt/sources.list.d/v2raya.list
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 安装 V2RayA</span>
+</span></span><span style="display:flex;"><span>sudo apt install v2raya v2ray <span style="color:#75715e">## 也可以使用 xray 包</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo systemctl start v2raya.service
+</span></span><span style="display:flex;"><span>sudo systemctl enable v2raya.service
+</span></span></code></pre></div><p>参考： <a href="https://v2raya.org/docs/prologue/quick-start/">v2raya 快速上手</a></p>
+</article>
  
       
 
@@ -18907,7 +18937,15 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#linux-客户端">Linux 客户端</a>
+      <ul>
+        <li><a href="#v2raya">v2rayA</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>

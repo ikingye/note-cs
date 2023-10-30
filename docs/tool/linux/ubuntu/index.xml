@@ -188,7 +188,7 @@ pipenv install jupyterlab  alias python-jupyter=&amp;#34;/Users/yewang/.local/sh
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid>
       <description>MicroK8s #  ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable snap install kubectl --classic --channel=1.23/stable  microk8s enable dashboard dns ingress  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 k8s.gcr.io/ingress-nginx/controller:v1.2.0  microk8s ctr image pull registry.</description>
+安装 #  snap install microk8s --classic snap install kubectl --classic  # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable  mkdir -p ~/.kube microk8s config &amp;gt; ~/.kube/config  microk8s enable dashboard dns ingress  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 # microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry.</description>
     </item>
     
     <item>
@@ -216,7 +216,7 @@ https://microk8s.io
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</guid>
-      <description>pip #  # 设置 python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip # python -m pip install --upgrade pip pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple   # 临时安装 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx </description>
+      <description>pip #  # 设置 镜像源 python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip  pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple   # 临时安装 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx </description>
     </item>
     
     <item>
@@ -225,7 +225,7 @@ https://microk8s.io
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid>
-      <description>pipenv #  pypa/pipenv # 进入虚拟环境 $ pipenv shell $ pipenv shell --python=3.9.  # 退出虚拟环境 $ exit 设置镜像源 #  # vim Pipfile [[source]] # url 替换成这个源 url = &amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34; 如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python
+      <description>pipenv #  pypa/pipenv # 进入虚拟环境 pipenv shell pipenv shell --python=3.10  # 退出虚拟环境 exit 设置镜像源 #  # vim Pipfile [[source]] # url 替换成这个源 url = &amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34; 如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python
  Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.
  </description>
     </item>
@@ -237,7 +237,7 @@ https://microk8s.io
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid>
       <description>pyenv #  pyenv/pyenv 安装 #  git clone https://github.com/pyenv/pyenv.git ~/.pyenv  echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;command -v pyenv &amp;gt;/dev/null || export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc  # 使用 taobao 的 npm 源 cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 #  之后才能编译 python 成功
-sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv  # 安装 pyenv install 3.</description>
+sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv   # 列出所有可安装 python 版本 pyenv install -l  # 安装 pyenv install 3.</description>
     </item>
     
     <item>
@@ -255,7 +255,7 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</guid>
-      <description>Streamlit #  streamlit run xxx.py --server.address &amp;#34;0.0.0.0&amp;#34; --server.port 7865 </description>
+      <description>Streamlit #  pip install streamlit  streamlit run xxx.py --server.address &amp;#34;0.0.0.0&amp;#34; --server.port 7865 </description>
     </item>
     
     <item>
@@ -283,7 +283,7 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
       
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid>
       <description>zsh #  oh-my-zsh #  安装
-apt install -y git zsh  sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh   # 设置默认为 zsh sudo chsh -s /usr/bin/zsh yewang </description>
+apt install -y git zsh  # sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;  sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh  alias cdcode=&amp;#39;cd ~/code&amp;#39; alias cdstudy=&amp;#39;cdcode &amp;amp;&amp;amp; cd study&amp;#39; alias cdtest=&amp;#39;cdstudy &amp;amp;&amp;amp; cd test&amp;#39; alias cdgithub=&amp;#39;cdcode &amp;amp;&amp;amp; cd github&amp;#39; alias cdgitlab=&amp;#39;cdcode &amp;amp;&amp;amp; cd gitlab&amp;#39; alias cdbitbucket=&amp;#39;cdcode &amp;amp;&amp;amp; cd bitbucket&amp;#39;  # proxy # export http_proxy=149.</description>
     </item>
     
   </channel>

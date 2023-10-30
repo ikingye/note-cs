@@ -6,10 +6,10 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="pyenv #  pyenv/pyenv 安装 #  git clone https://github.com/pyenv/pyenv.git ~/.pyenv  echo &#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;command -v pyenv &gt;/dev/null || export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &#34;$(pyenv init -)&#34;&#39; &gt;&gt; ~/.zshrc  # 使用 taobao 的 npm 源 cat &lt;&lt; EOF &gt;&gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 #  之后才能编译 python 成功
-sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv  # 安装 pyenv install 3.">
+sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv   # 列出所有可安装 python 版本 pyenv install -l  # 安装 pyenv install 3.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="pyenv" />
 <meta property="og:description" content="pyenv #  pyenv/pyenv 安装 #  git clone https://github.com/pyenv/pyenv.git ~/.pyenv  echo &#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;command -v pyenv &gt;/dev/null || export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &#34;$(pyenv init -)&#34;&#39; &gt;&gt; ~/.zshrc  # 使用 taobao 的 npm 源 cat &lt;&lt; EOF &gt;&gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 #  之后才能编译 python 成功
-sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv  # 安装 pyenv install 3." />
+sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-dev \  libffi-dev \  liblzma-dev \  libncursesw5-dev \  libreadline-dev \  libsqlite3-dev \  libssl-dev \  libxml2-dev \  libxmlsec1-dev \  llvm \  make \  tk-dev \  wget \  xz-utils \  zlib1g-dev  使用 #  pyenv   # 列出所有可安装 python 版本 pyenv install -l  # 安装 pyenv install 3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@ sudo apt update sudo apt install -y \  gcc \  build-essential \  curl \  libbz2-
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.d5c361a346fad0cef2a2a2442acd3cc78060e18e3401b6f4770349c02cf39716.js" integrity="sha256-1cNho0b60M7yoqJEKs08x4Bg4Y40Abb0dwNJwCzzlxY="></script>
+<script defer src="/note-cs/en.search.min.ee3ae6ed8fc5349926e34d06c85cb3437b34cfd53a7213726ba9d4b8dcebe924.js" integrity="sha256-7jrm7Y/FNJkm400GyFyzQ3s0z9U6chNya6nUuNzr6SQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18805,20 +18805,31 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pyenv
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 列出所有可安装 python 版本</span>
+</span></span><span style="display:flex;"><span>pyenv install -l
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 安装</span>
-</span></span><span style="display:flex;"><span>pyenv install 3.11.0
+</span></span><span style="display:flex;"><span>pyenv install 3.12.0
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用上面 .zshrc 定义的 npm 源</span>
-</span></span><span style="display:flex;"><span>pyenvinstall 3.11.0
-</span></span><span style="display:flex;"><span>pyenvinstall 3.10.8
+</span></span><span style="display:flex;"><span>pyenvinstall 3.12.0
+</span></span><span style="display:flex;"><span>pyenvinstall 3.11.6
+</span></span><span style="display:flex;"><span>pyenvinstall 3.10.13
 </span></span><span style="display:flex;"><span>pyenvinstall 3.9.15
 </span></span><span style="display:flex;"><span>pyenvinstall 3.8.15
 </span></span><span style="display:flex;"><span>pyenvinstall 3.7.15
 </span></span><span style="display:flex;"><span>pyenvinstall 3.6.15
 </span></span><span style="display:flex;"><span>pyenvinstall 2.7.18
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 列出已安装 python 版本</span>
+</span></span><span style="display:flex;"><span>pyenv versions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pyenv global 3.10
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># pyenv global 3.10 2.7</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># writing the version name to a .python-version file in the current directory.</span>
-</span></span><span style="display:flex;"><span>pyenv local 3.9
+</span></span><span style="display:flex;"><span>pyenv local 3.10
 </span></span></code></pre></div></article>
  
       

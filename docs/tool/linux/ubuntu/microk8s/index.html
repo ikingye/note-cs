@@ -7,11 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MicroK8s #  ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable snap install kubectl --classic --channel=1.23/stable  microk8s enable dashboard dns ingress  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 k8s.gcr.io/ingress-nginx/controller:v1.2.0  microk8s ctr image pull registry.">
+安装 #  snap install microk8s --classic snap install kubectl --classic  # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable  mkdir -p ~/.kube microk8s config &gt; ~/.kube/config  microk8s enable dashboard dns ingress  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 # microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="MicroK8s" />
 <meta property="og:description" content="MicroK8s #  ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-安装 #  # snap install microk8s --classic snap install microk8s --classic --channel=1.23/stable snap install kubectl --classic --channel=1.23/stable  microk8s enable dashboard dns ingress  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1  microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 k8s.gcr.io/ingress-nginx/controller:v1.2.0  microk8s ctr image pull registry." />
+安装 #  snap install microk8s --classic snap install kubectl --classic  # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable  mkdir -p ~/.kube microk8s config &gt; ~/.kube/config  microk8s enable dashboard dns ingress  # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 # microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@ https://microk8s.io
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.d5c361a346fad0cef2a2a2442acd3cc78060e18e3401b6f4770349c02cf39716.js" integrity="sha256-1cNho0b60M7yoqJEKs08x4Bg4Y40Abb0dwNJwCzzlxY="></script>
+<script defer src="/note-cs/en.search.min.ee3ae6ed8fc5349926e34d06c85cb3437b34cfd53a7213726ba9d4b8dcebe924.js" integrity="sha256-7jrm7Y/FNJkm400GyFyzQ3s0z9U6chNya6nUuNzr6SQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18722,7 +18722,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#安装">安装</a></li>
+    <li><a href="#安装">安装</a>
+      <ul>
+        <li><a href="#安装-kubectl-的另一种方法">安装 kubectl 的另一种方法</a></li>
+      </ul>
+    </li>
     <li><a href="#常用命令">常用命令</a></li>
     <li><a href="#安装配置">安装配置</a>
       <ul>
@@ -18763,15 +18767,21 @@ https://github.com/alex-shpak/hugo-book
   安装
   <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># snap install microk8s --classic</span>
-</span></span><span style="display:flex;"><span>snap install microk8s --classic --channel<span style="color:#f92672">=</span>1.23/stable
-</span></span><span style="display:flex;"><span>snap install kubectl --classic --channel<span style="color:#f92672">=</span>1.23/stable
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>snap install microk8s --classic
+</span></span><span style="display:flex;"><span>snap install kubectl --classic
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># snap install microk8s --classic --channel=1.23/stable</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># snap install kubectl --classic --channel=1.23/stable</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p ~/.kube
+</span></span><span style="display:flex;"><span>microk8s config &gt; ~/.kube/config
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>microk8s enable dashboard dns ingress
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 拉镜像</span>
-</span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1
-</span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.1 k8s.gcr.io/pause:3.1
+</span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7</span>
+</span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 registry.k8s.io/pause:3.7
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0
 </span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0 k8s.gcr.io/ingress-nginx/controller:v1.2.0
@@ -18782,9 +18792,15 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;alias k=kubectl&#34;</span> &gt;&gt; ~/.zshrc
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;export PATH=\$PATH:/snap/bin&#34;</span> &gt;&gt; ~/.zshrc
 </span></span><span style="display:flex;"><span>zsh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mkdir -p ~/.kube
-</span></span><span style="display:flex;"><span>microk8s config &gt; ~/.kube/config
+</span></span></code></pre></div><h3 id="安装-kubectl-的另一种方法">
+  安装 kubectl 的另一种方法
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85-kubectl-%e7%9a%84%e5%8f%a6%e4%b8%80%e7%a7%8d%e6%96%b9%e6%b3%95">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># install kubectl</span>
+</span></span><span style="display:flex;"><span>curl -LO <span style="color:#e6db74">&#34;https://dl.k8s.io/release/</span><span style="color:#66d9ef">$(</span>curl -L -s https://dl.k8s.io/release/stable.txt<span style="color:#66d9ef">)</span><span style="color:#e6db74">/bin/linux/amd64/kubectl&#34;</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main&#34;</span> | sudo tee /etc/apt/sources.list.d/kubernetes.list
+</span></span><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install kubectl -y
 </span></span></code></pre></div><hr>
 <h2 id="常用命令">
   常用命令
@@ -18891,7 +18907,11 @@ no_proxy=10.0.0.0/8,172.16.0.0/12,192.168/16
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#安装">安装</a></li>
+    <li><a href="#安装">安装</a>
+      <ul>
+        <li><a href="#安装-kubectl-的另一种方法">安装 kubectl 的另一种方法</a></li>
+      </ul>
+    </li>
     <li><a href="#常用命令">常用命令</a></li>
     <li><a href="#安装配置">安装配置</a>
       <ul>
