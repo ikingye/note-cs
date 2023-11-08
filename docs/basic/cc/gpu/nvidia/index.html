@@ -19,7 +19,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.ee639ba9abdf9a1170c4abba385be407c1e650b1de09e214548268a753ef30f0.js" integrity="sha256-7mObqavfmhFwxKu6OFvkB8HmULHeCeIUVIJop1PvMPA="></script>
+<script defer src="/note-cs/en.search.min.84beb6d2e9ea3b2f1a2512aea6e43b244db4147f80730c1922af3325fb89e126.js" integrity="sha256-hL620unqOy8aJRKupuQ7JE20FH&#43;AcwwZIq8zJfuJ4SY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18988,8 +18988,13 @@ https://github.com/alex-shpak/hugo-book
   <a href="https://www.wikiwand.com/en/GeForce">GeForce</a>: 普通消费级显卡
   <a class="anchor" href="#geforcehttpswwwwikiwandcomengeforce-%e6%99%ae%e9%80%9a%e6%b6%88%e8%b4%b9%e7%ba%a7%e6%98%be%e5%8d%a1">#</a>
 </h3>
+<p>参考：<a href="https://www.nvidia.com/en-us/geforce/graphics-cards/compare/">Compare: GeForce Graphics Cards</a></p>
 <ul>
-<li>GeForce RTX 4090</li>
+<li>GeForce RTX 4090
+<ul>
+<li>大模型的训练用 4090 是不行的，但推理（inference/serving）用 4090 不仅可行，在性价比上还能比 H100 稍高。4090 如果极致优化，性价比甚至可以达到 H100 的 2 倍。</li>
+</ul>
+</li>
 <li>GeForce RTX 4080</li>
 <li>GeForce RTX 4070 Ti</li>
 <li>GeForce RTX 4070</li>
@@ -19261,6 +19266,9 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer">#</a>
 </h4>
 <p>officially announced on <code>2022-09-20</code></p>
+<ul>
+<li>RTX 40 系列</li>
+</ul>
 <h4 id="hopperhttpswwwwikiwandcomenhopper_microarchitecture-professional">
   <a href="https://www.wikiwand.com/en/Hopper_%28microarchitecture%29">Hopper</a> (professional)
   <a class="anchor" href="#hopperhttpswwwwikiwandcomenhopper_microarchitecture-professional">#</a>
@@ -19285,17 +19293,23 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <p>安培微架构（Ampere）是 NVIDIA 于 <em>2020 年 5 月</em>发布的一个 GPU 架构。用以取代图灵微架构（Turing microarchitecture）。命名为“安培”以向法国物理学家安德烈-马里·安培（<code>André-Marie Ampère</code>）致敬。Ampere 架构拥有晶体管达 540 亿，是三星 8nm 级芯片。是世界上晶体管最多的芯片，直到后来被苹果 <code>M1 Max</code> 击败。</p>
 <ul>
-<li>GeForce MX series
+<li>
+<p>RTX 30 系列</p>
+</li>
+<li>
+<p>GeForce MX series</p>
 <ul>
 <li>GeForce MX570 (mobile) (GA107)</li>
 </ul>
 </li>
-<li>GeForce 20 series
+<li>
+<p>GeForce 20 series</p>
 <ul>
 <li>GeForce RTX 2050 (mobile) (GA107)</li>
 </ul>
 </li>
-<li>GeForce 30 series
+<li>
+<p>GeForce 30 series</p>
 <ul>
 <li>GeForce RTX 3050 Laptop GPU (GA107)</li>
 <li>GeForce RTX 3050 (GA106 or GA107)</li>
@@ -19316,7 +19330,8 @@ https://github.com/alex-shpak/hugo-book
 <li>GeForce RTX 3090 Ti (GA102)</li>
 </ul>
 </li>
-<li>Nvidia Workstation GPUs (formerly Quadro)
+<li>
+<p>Nvidia Workstation GPUs (formerly Quadro)</p>
 <ul>
 <li>RTX A1000 (mobile) (GA107)</li>
 <li>RTX A2000 (mobile) (GA107)</li>
@@ -19331,7 +19346,8 @@ https://github.com/alex-shpak/hugo-book
 <li>RTX A6000 (GA102)</li>
 </ul>
 </li>
-<li>Nvidia Data Center GPUs (formerly Tesla)
+<li>
+<p>Nvidia Data Center GPUs (formerly Tesla)</p>
 <ul>
 <li>Nvidia A2 (GA107)</li>
 <li>Nvidia A10 (GA102)</li>
@@ -19364,7 +19380,14 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <p>2018</p>
 <ul>
-<li>Tesla T4
+<li>
+<p>RTX 20 系列</p>
+</li>
+<li>
+<p>GTX 16 系列</p>
+</li>
+<li>
+<p>Tesla T4</p>
 <ul>
 <li>按照英伟达的说法，Tesla T4 是为推理而生的。
 <ul>
@@ -19393,7 +19416,15 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <p>2016</p>
 <ul>
+<li>GTX 10 系列</li>
 <li>P100</li>
+<li>Tesla P4
+<ul>
+<li>2016 年 9 月 13 日，GTC China 大会上，NVIDIA 发布了 Tesla P4 GPU。这是一块采用 Pascal 架构、2560 个 CUDA 核心、8GB GDDR5 显存、显存带宽 192.0GB/S 半高 Data Center 系列 GPU。</li>
+<li>Tesla P4 的 GPU 算力为 6.1，核心代号为 GP104，同 GTX1080 一样。具有 4 个 GPC，20 个 SM 单元，每个 GPC 有 5 个 SM，每个 SM 有 128 个 CUDA 核心，共计 2560 个 CUDA 核心，提供 5.5TFLOPS 的单精度计算性能，，256KB 寄存器，96KB 的 Shared Memory，总共 48KB 的 L1 缓存和 8 个纹理单元。</li>
+<li>P4 是专业卡，其实就是老黄为了坑钱给专业人士弄的卡。性能和 1080 一样。做某些程序时 1080 会负优化，但有办法可以解除这个限制。所以专业卡一般等于智商税</li>
+</ul>
+</li>
 </ul>
 <hr>
 <h3 id="9-maxwellhttpswwwwikiwandcomenmaxwell20microarchitecture">
@@ -19401,6 +19432,9 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#9-maxwellhttpswwwwikiwandcomenmaxwell20microarchitecture">#</a>
 </h3>
 <p>2014</p>
+<ul>
+<li>GTX 900 系列</li>
+</ul>
 <hr>
 <h3 id="8-keplerhttpswwwwikiwandcomenkepler_microarchitecture">
   8. <a href="https://www.wikiwand.com/en/Kepler_%28microarchitecture%29">Kepler</a>
