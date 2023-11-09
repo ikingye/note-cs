@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.c4a12f8fb90447e43ea127288f1e9e48381c7de90609bf48756062060ff60a6c.js" integrity="sha256-xKEvj7kER&#43;Q&#43;oScojx6eSDgcfekGCb9IdWBiBg/2Cmw="></script>
+<script defer src="/note-cs/en.search.min.6726f7922c41e37791e51384ebded433a9487b1edcedc98e72370c78e2cc69eb.js" integrity="sha256-Zyb3kixB43eR5ROE697UM6lIex7c7cmOcjcMeOLMaes="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19108,7 +19108,14 @@ hello hugo book
 <p>
 <link rel="stylesheet" href="/note-cs/katex/katex.min.css" />
 <script defer src="/note-cs/katex/katex.min.js"></script>
-<script defer src="/note-cs/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+<script defer src="/note-cs/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+  delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+  ]
+});"></script><span>
   \(x = \begin{cases}
 a &amp;\text{if } b \\
 c &amp;\text{if } d

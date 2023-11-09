@@ -5,9 +5,7 @@
   <meta name="generator" content="Hugo 0.99.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="   \(\)  GPU #  $$E=mc^2$$
-$E=mc^2$
- GPU 算力 #  单位换算：
+<meta name="description" content="   \(\)  GPU #  GPU 算力 #  单位换算：
 一个 MFLOPS（mega FLOPS）等于每秒一佰万（= $10^6$ ）次的浮点运算；
 一个 GFLOPS（giga FLOPS）等于每秒拾亿（= ）次的浮点运算；
 一个 TFLOPS（tera FLOPS）等于每秒万亿（= ）次的浮点运算；
@@ -25,7 +23,7 @@ $E=mc^2$
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.c4a12f8fb90447e43ea127288f1e9e48381c7de90609bf48756062060ff60a6c.js" integrity="sha256-xKEvj7kER&#43;Q&#43;oScojx6eSDgcfekGCb9IdWBiBg/2Cmw="></script>
+<script defer src="/note-cs/en.search.min.6726f7922c41e37791e51384ebded433a9487b1edcedc98e72370c78e2cc69eb.js" integrity="sha256-Zyb3kixB43eR5ROE697UM6lIex7c7cmOcjcMeOLMaes="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/basic/cc/gpu/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -18776,7 +18774,14 @@ https://github.com/alex-shpak/hugo-book
   <article id="article" class="markdown">
 <link rel="stylesheet" href="/note-cs/katex/katex.min.css" />
 <script defer src="/note-cs/katex/katex.min.js"></script>
-<script defer src="/note-cs/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+<script defer src="/note-cs/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+  delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+  ]
+});"></script><span>
   \(\)
 </span>
 
@@ -18784,9 +18789,6 @@ https://github.com/alex-shpak/hugo-book
   GPU
   <a class="anchor" href="#gpu">#</a>
 </h1>
-<p>$$E=mc^2$$</p>
-<p>$E=mc^2$</p>
-<hr>
 <h2 id="gpu-算力">
   GPU 算力
   <a class="anchor" href="#gpu-%e7%ae%97%e5%8a%9b">#</a>
@@ -18823,7 +18825,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/f0933b77f32f94f88009511aa921287371687cdc" title='Last modified by Tommy Chen | 2023-11-09' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/2be0fd455b0640ea7ade84b4d2e6b84494bea806" title='Last modified by Tommy Chen | 2023-11-09' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2023-11-09</span>
     </a>
