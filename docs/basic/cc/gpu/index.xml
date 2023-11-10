@@ -24,5 +24,16 @@
  NVIDIA: 即英伟达，品牌名 GeForce: 是显卡系列名称  Tesla: 专业级显卡,  Data Center 数值计算 深度学习、人工智能和高性能计算   Quadro: 专业级显卡  NVIDIA RTX 图形计算 专业可视化设计和创作   GeForce: 普通消费级显卡  图形计算 游戏娱乐领域     RTX: 代表“高端”，一般是带光影追踪功能，只出现在 20 系显卡及以上  GTX 是系列中的高端显卡 GTS 是系列中的中端显卡 GT 是系列中的入门级显卡   30: 代表的是第几代  20 30 40   6: 是显卡性能档次的定位  89 是高端 567 是中端 1234 是低端   0: 不用管这位数字，一般都是 0 Ti  Ti 增强 Super 小增强 SE 阉割 M 等于移动端如 MX, Max-Q       AD102 (76.</description>
     </item>
     
+    <item>
+      <title>test</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/gpu/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/test/</guid>
+      <description>   \(\)  $$ { $$
+$$ \{ $$
+$$ \{ $$  $$ \\{ $$ </description>
+    </item>
+    
   </channel>
 </rss>
