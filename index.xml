@@ -3379,9 +3379,8 @@ If you need to have ruby first in your PATH, run:  echo &amp;#39;export PATH=&am
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/test/</guid>
-      <description>   \(\)  $$ { $$
-$$ \{ $$
-$$ \{ $$  $$ \\{ $$ </description>
+      <description>   \(\)  $$ \begin{pmatrix} 1&amp;amp;2\ 3&amp;amp;4\ \end{pmatrix} $$
+ \[\begin{pmatrix} 1&amp;amp;2\\ 3&amp;amp;4\\ \end{pmatrix}\]  </description>
     </item>
     
     <item>
