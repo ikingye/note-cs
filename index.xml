@@ -2936,6 +2936,15 @@ nginxinc/kubernetes-ingress vs kubernetes/ingress-nginx #  参考：
     </item>
     
     <item>
+      <title>ab</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</guid>
+      <description>ab #  apt install apache2-utils -y   # -c 10 表示并发用户数为10 # -n 100 表示请求总数为100 ab -c 10 -n 100 http://localhost:8080  # This is ApacheBench, Version 2.3 &amp;lt;$Revision: 1879490 $&amp;gt; # Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/ # Licensed to The Apache Software Foundation, http://www.apache.org/  # Benchmarking localhost (be patient) # Completed 100 requests # Completed 200 requests # Completed 300 requests # Completed 400 requests # Completed 500 requests # Completed 600 requests # Completed 700 requests # Completed 800 requests # Completed 900 requests # Completed 1000 requests # Finished 1000 requests   # Server Software: # Server Hostname: localhost # Server Port: 8080  # Document Path: / # Document Length: 12 bytes  # Concurrency Level: 100 # Time taken for tests: 0.</description>
+    </item>
+    
+    <item>
       <title>apt</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
