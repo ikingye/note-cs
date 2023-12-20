@@ -2,16 +2,16 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="makefile #  make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
-简介 #  Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系   $$  $ 是 make 变量 $$ 是 shell 变量    target 声明 #   创建一个 target： targets : prerequisites  recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2.">
+<meta name="description" content="makefile # make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
+简介 # Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+基础 # 语法 # 注释：# 文件名： 必须是 Makefile 区分大小写 make &lt;target&gt; 生成 target 重命名：make -f &quot;filename&quot; &lt;target&gt; 只认识 TAB，不认识空格 但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改 shell 符号 @：不把命令打印到 stdout -：发生错误了也没关系 $$ $ 是 make 变量 $$ 是 shell 变量 target 声明 # 创建一个 target： targets : prerequisites recipe prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 没有给 prerequisites, 只会在目标文件文件不存在时执行 targets 和 prerequisites 都可以是多个, 以空格分割 file2.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="makefile" />
-<meta property="og:description" content="makefile #  make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
-简介 #  Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
-基础 #  语法 #   注释：# 文件名： 必须是 Makefile  区分大小写   make &lt;target&gt; 生成 target  重命名：make -f &quot;filename&quot; &lt;target&gt;   只认识 TAB，不认识空格  但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改   shell 符号  @：不把命令打印到 stdout -：发生错误了也没关系   $$  $ 是 make 变量 $$ 是 shell 变量    target 声明 #   创建一个 target： targets : prerequisites  recipe  prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给  没有给 prerequisites, 只会在目标文件文件不存在时执行   targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
+<meta property="og:description" content="makefile # make 不带参数，只会执行 makefile 中第一条 target 声明（带冒号的语句）
+简介 # Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。 创建这一工具的目标是 减少不必要的编译或者任务。 传说 Stuart Feldman 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。
+基础 # 语法 # 注释：# 文件名： 必须是 Makefile 区分大小写 make &lt;target&gt; 生成 target 重命名：make -f &quot;filename&quot; &lt;target&gt; 只认识 TAB，不认识空格 但是在 GNU Make 3.82 之后, 可以通过设置参数 .RECIPEPREFIX 进行修改 shell 符号 @：不把命令打印到 stdout -：发生错误了也没关系 $$ $ 是 make 变量 $$ 是 shell 变量 target 声明 # 创建一个 target： targets : prerequisites recipe prerequisites(依赖) 是可选的, recipe(做法) 也可以多个或者不给 没有给 prerequisites, 只会在目标文件文件不存在时执行 targets 和 prerequisites 都可以是多个, 以空格分割 file2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/basic/compile/make/makefile/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.96e25a7fd1a2e61e825943fb41df7d3fd5b79fecdf585fa08b516371fd573ab0.js" integrity="sha256-luJaf9Gi5h6CWUP7Qd99P9W3n&#43;zfWF&#43;gi1Fjcf1XOrA="></script>
+<script defer src="/note-cs/en.search.min.ef83e8431e0a9d356e53abb62007ad68817668c5bcca0bfee655ce277c04da1a.js" integrity="sha256-74PoQx4KnTVuU6u2IAetaIF2aMW8ygv&#43;5lXOJ3wE2ho="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15968,17 +15968,6 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/hugo-book/" class="">hugo-book</a>
-  
-
-        </li>
       
     
   </ul>
