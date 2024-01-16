@@ -19,7 +19,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.e1f803995c50f2ec0f3d2af6b32076b02a1098181ad15b707cb482a99b639957.js" integrity="sha256-4fgDmVxQ8uwPPSr2syB2sCoQmBga0VtwfLSCqZtjmVc="></script>
+<script defer src="/note-cs/en.search.min.e1fb2b29a535d8c5e8ace362cddda428dba98a6cf623d3e1e6e7ec32a4ba86ce.js" integrity="sha256-4fsrKaU12MXorONizd2kKNupimz2I9Ph5ufsMqS6hs4="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18805,7 +18805,11 @@ https://github.com/alex-shpak/hugo-book
     </li>
     <li><a href="#测试-cuda">测试 cuda</a></li>
     <li><a href="#hello-world-for-cuda">Hello World for CUDA</a></li>
-    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a></li>
+    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a>
+      <ul>
+        <li><a href="#查看-cudnn-版本">查看 cuDNN 版本</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 <hr />
@@ -19087,7 +19091,20 @@ https://github.com/alex-shpak/hugo-book
 <li>cuBLAS (<code>CUDA Basic Linear Algebra Subroutine library</code>) CUDA 基本线性代数子程序库</li>
 <li>cutlass 仅支持矩阵乘法运算，不支持卷积算子，从而难以直接应用到计算机视觉领域的推理部署中。</li>
 </ul>
-</article>
+<h3 id="查看-cudnn-版本">
+  查看 cuDNN 版本
+  <a class="anchor" href="#%e6%9f%a5%e7%9c%8b-cudnn-%e7%89%88%e6%9c%ac">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 查看cuDNN版本</span>
+</span></span><span style="display:flex;"><span>cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>例如：
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define CUDNN_MAJOR 8</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define CUDNN_MINOR 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define CUDNN_PATCHLEVEL 4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>表示当前使用的是cuDNN 8.2.4 版本
+</span></span></code></pre></div></article>
  
       
 
@@ -19174,7 +19191,11 @@ https://github.com/alex-shpak/hugo-book
     </li>
     <li><a href="#测试-cuda">测试 cuda</a></li>
     <li><a href="#hello-world-for-cuda">Hello World for CUDA</a></li>
-    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a></li>
+    <li><a href="#cuda-vs-cudnn-vs-cublas">CUDA vs cuDNN vs cuBLAS</a>
+      <ul>
+        <li><a href="#查看-cudnn-版本">查看 cuDNN 版本</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 <hr />
