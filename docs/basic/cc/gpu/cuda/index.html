@@ -5,21 +5,21 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CUDA # nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本 nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动 cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia.ko) 参考：CUDA Compatibility
+<meta name="description" content="CUDA # nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本 nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动 cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia.ko) 参考：CUDA Compatibility
 安装 # # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CUDA" />
-<meta property="og:description" content="CUDA # nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本 nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动 cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia.ko) 参考：CUDA Compatibility
+<meta property="og:description" content="CUDA # nvidia-smi 显示的是支持的最高版本的 cuda nvcc -V 显示的当前安装的 cuda 版本 nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动 cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续（以后）驱动程序版本上工作 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.so) GPU kernel-mode driver (nvidia.ko) 参考：CUDA Compatibility
 安装 # # ubuntu 20.04, x86_64 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb sudo dpkg -i cuda-keyring_1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-30T18:02:58+08:00" />
+<meta property="article:modified_time" content="2024-01-16T18:02:36+08:00" />
 
 <title>CUDA | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.e1fb2b29a535d8c5e8ace362cddda428dba98a6cf623d3e1e6e7ec32a4ba86ce.js" integrity="sha256-4fsrKaU12MXorONizd2kKNupimz2I9Ph5ufsMqS6hs4="></script>
+<script defer src="/note-cs/en.search.min.b5da58287dd93fdeb5b1dda900a53e579f717ea2367294873ae8c506ee7a7f24.js" integrity="sha256-tdpYKH3ZP961sd2pAKU&#43;V59xfqI2cpSHOujFBu56fyQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18841,7 +18841,7 @@ https://github.com/alex-shpak/hugo-book
 <li>nvcc: <code>NVIDIA (R) Cuda compiler driver</code></li>
 </ul>
 </li>
-<li>我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是不是 GPU 驱动
+<li>我们常说的 cuda 指的是 <code>nvidia cuda toolkit</code> 软件开发包，而不是 GPU 驱动
 <ul>
 <li>cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本</li>
 </ul>
@@ -19114,9 +19114,9 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/e11fc035b8ddee89b46402e4c7fcbc23ef78600e" title='Last modified by Tommy Chen | 2023-10-30' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/a0c2ae740828adbd349fcd2c30646ccb315ba0eb" title='Last modified by yewang | 2024-01-16' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2023-10-30</span>
+      <span>2024-01-16</span>
     </a>
   </div>
 
