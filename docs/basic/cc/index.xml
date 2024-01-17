@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1.1 计算机组成原理 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/basic/cc/</link>
+    <description>Recent content in 1.1 计算机组成原理 on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/basic/cc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CPU</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/cpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/basic/cc/cpu/</guid>
+      <description> CPU # 参考：&#xA;史上最全桌面级 CPU 天梯图 </description>
+    </item>
+    <item>
+      <title>DMI</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/dmi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/basic/cc/dmi/</guid>
+      <description>DMI # 直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。&#xA;DMI 1.0, introduced in 2004. DMI 2.0, introduced in 2011, doubles the data transfer rate to 2 GB/s with a ×4 link. It is used to link an Intel CPU with the Intel Platform Controller Hub (PCH), which supersedes the historic implementation of a separate northbridge and southbridge.: 14 DMI 3.0, released in August 2015, allows the 8 GT/s transfer rate per lane, for a total of four lanes and 3.</description>
+    </item>
+    <item>
+      <title>存储卡</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/basic/cc/memory-card/</guid>
+      <description>存储卡 # memory card 存储卡，快闪存储卡、闪卡&#xA;miniSD&#xA;首次于 2003 年的 CeBIT 展览中由 SanDisk 公布 MiniSD 卡由 SD 卡发展派生而来 记忆棒，Memory Stick，由日本索尼公司最先研发出来的移动存储媒体&#xA;XD 卡，全称为 XD Picture Card，XD 取自于“Extreme Digital”&#xA;XD 卡是由日本奥林巴斯株式会社和富士有限公司联合推出 微硬盘（Microdrive）&#xA;由 IBM 公司开发的一款超级迷你硬盘机产品 华为 NM 存储卡（Nano Memory Card，简称 NM 卡）&#xA;是华为自创的一种超微型存储卡，与 MicroSD 存储卡相比，体积减小 45%，和 Nano SIM 卡的规格几乎完全相同。 CF 卡（Compact Flash）&#xA;1994 年首次由 SanDisk 公司生产并制定了相关规范 对于现在的消费电子产品而言，CF 卡体积是个很大的问题 SM 卡，Smart Media&#xA;由东芝公司在 1995-11 发布的 Flash Memory 存储卡 MMC 卡，MultiMedia Card&#xA;由美国 SANDISK 公司和德国西门子公司在 2000 年共同开发 SD 卡，Secure Digital Memory Card</description>
+    </item>
+  </channel>
+</rss>

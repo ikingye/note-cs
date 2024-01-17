@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.2.1 Ubuntu on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/</link>
+    <description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ab</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</guid>
+      <description>ab # apt install apache2-utils -y # -c 10 表示并发用户数为10 # -n 100 表示请求总数为100 ab -c 10 -n 100 http://localhost:8080 # This is ApacheBench, Version 2.3 &amp;lt;$Revision: 1879490 $&amp;gt; # Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/ # Licensed to The Apache Software Foundation, http://www.apache.org/ # Benchmarking localhost (be patient) # Completed 100 requests # Completed 200 requests # Completed 300 requests # Completed 400 requests # Completed 500 requests # Completed 600 requests # Completed 700 requests # Completed 800 requests # Completed 900 requests # Completed 1000 requests # Finished 1000 requests # Server Software: # Server Hostname: localhost # Server Port: 8080 # Document Path: / # Document Length: 12 bytes # Concurrency Level: 100 # Time taken for tests: 0.</description>
+    </item>
+    <item>
+      <title>apt</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid>
+      <description>apt # apt vs apt-get # Advanced Package Tool，又名 apt-get，是一款适用于 Unix 和 Linux 系统的应用程序管理器&#xA;apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项 可以用 apt 替换部分 apt-get 系列命令，但不是全部 对于低级操作，仍然需要 apt-get 作为普通用户，可以首先使用 apt apt 命令 取代的命令 命令的功能 apt install apt-get install 安装软件包 apt remove apt-get remove 移除软件包 apt purge apt-get purge 移除软件包及配置文件 apt update apt-get update 刷新存储库索引 apt upgrade apt-get upgrade 升级所有可升级的软件包 apt autoremove apt-get autoremove 自动删除不需要的包 apt full-upgrade apt-get dist-upgrade 在升级软件包时自动处理依赖关系 apt search apt-cache search 搜索应用程序 apt show apt-cache show 显示装细节 apt 还有一些自己的命令</description>
+    </item>
+    <item>
+      <title>Cargo</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</guid>
+      <description> Cargo # 常用命令 # 安装配置 # curl https://sh.rustup.rs -sSf | sh&#xA;参考：&#xA;The Cargo Book </description>
+    </item>
+    <item>
+      <title>Conda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid>
+      <description>Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
+    </item>
+    <item>
+      <title>Containerd</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</guid>
+      <description>Containerd # # 生成一个默认的配置 mkdir /etc/containerd containerd config default &amp;gt; /etc/containerd/config.toml 配置 # disabled_plugins = [] imports = [] oom_score = 0 plugin_dir = &amp;#34;&amp;#34; required_plugins = [] root = &amp;#34;/var/lib/containerd&amp;#34; state = &amp;#34;/run/containerd&amp;#34; temp = &amp;#34;&amp;#34; version = 2 [cgroup] path = &amp;#34;&amp;#34; [debug] address = &amp;#34;&amp;#34; format = &amp;#34;&amp;#34; gid = 0 level = &amp;#34;&amp;#34; uid = 0 [grpc] address = &amp;#34;/run/containerd/containerd.sock&amp;#34; gid = 0 max_recv_message_size = 16777216 max_send_message_size = 16777216 tcp_address = &amp;#34;&amp;#34; tcp_tls_ca = &amp;#34;&amp;#34; tcp_tls_cert = &amp;#34;&amp;#34; tcp_tls_key = &amp;#34;&amp;#34; uid = 0 [metrics] address = &amp;#34;&amp;#34; grpc_histogram = false [plugins] [plugins.</description>
+    </item>
+    <item>
+      <title>crictl</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</guid>
+      <description>crictl # crictl 是 CRI 兼容的容器运行时命令行接口，用来检查和调试 Kubernetes 节点上的容器运行时和应用程序 kubernetes-sigs/cri-tools crictl 不支持改镜像 tag&#xA;crictl 不支持 load 镜像文件&#xA;需要用 ctr&#xA;# namespace 为 k8s.io ctr -n=k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 ctr -n=k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6 参考：&#xA;Crictl not support load images? Manually Loading Container Images with containerD 安装 # VERSION=&amp;#34;v1.26.0&amp;#34; wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin # rm -f crictl-$VERSION-linux-amd64.tar.gz # 默认是使用 docker # 配置使用 containerd cat &amp;lt;&amp;lt; EOF &amp;gt; /etc/crictl.</description>
+    </item>
+    <item>
+      <title>ctr</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</guid>
+      <description>ctr # ctr 是 containerd 自带的 CLI 命令行工具 ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（crictl image 才能看到） ctr -n k8s.io image list ctr -n k8s.io image pull # namespace ctr ns ls # 删除镜像 ctr -n k8s.io i rm $(ctr -n k8s.io i ls -q) # 删除容器 ctr -n k8s.io c rm $(ctr -n k8s.io c ls -q) ctr -n k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 # tag 重命名 ctr -n k8s.</description>
+    </item>
+    <item>
+      <title>Dash</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</guid>
+      <description> Dash # </description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</guid>
+      <description>Docker # 使用 # # 停止 docker systemctl stop docker.socket 安装 # # Uninstall old versions sudo apt-get remove docker docker-engine docker.io containerd runc # Update the apt package index and install packages to allow apt to use a repository over HTTPS sudo apt-get update sudo apt-get install -y \ ca-certificates \ curl \ gnupg \ lsb-release # Add Docker’s official GPG key sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download.</description>
+    </item>
+    <item>
+      <title>feh</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid>
+      <description> feh # feh: image viewer and cataloguer&#xA;安装 # sudo apt install feh feh ERROR: Can&amp;rsquo;t open X display. # lsix # hackerb9/lsix Like &amp;ldquo;ls&amp;rdquo;, but for images. Shows thumbnails in terminal using sixel graphics.&#xA;# 安装 sudo apt-get install imagemagick sudo curl -Lo /usr/local/bin/lsix https://github.com/hackerb9/lsix/blob/1.8/lsix chmod +x /usr/local/bin/lsix </description>
+    </item>
+    <item>
+      <title>Gradio</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</guid>
+      <description> Gradio # import gradio as gr def greet(name): return &amp;#34;Hello &amp;#34; + name + &amp;#34;!&amp;#34; with gr.Blocks() as demo: output = gr.Textbox(label=&amp;#34;Output Box&amp;#34;) name = gr.Textbox(label=&amp;#34;Name&amp;#34;) greet_btn = gr.Button(&amp;#34;Greet&amp;#34;) greet_btn.click(fn=greet, inputs=name, outputs=output) demo.launch(share=True, server_name=&amp;#34;0.0.0.0&amp;#34;, server_port=8722) </description>
+    </item>
+    <item>
+      <title>gvm</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</guid>
+      <description>gvm # moovweb/gvm 安装：&#xA;zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) 使用：&#xA;$ gvm listall $ gvm list apt-get install bison make gcc -y # 使用二进制安装 gvm install go1.15.15 -B gvm install go1.16.15 -B gvm install go1.17.13 -B gvm install go1.18.9 -B gvm install go1.19.4 -B $ gvm use go1.15 $ gvm uninstall go1.15 # 使用二进制安装 $ gvm install go1.15 -B $ gvm install -h Invalid version: -h Usage: gvm install [version] [options] -s, --source=SOURCE Install Go from specified source.</description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</guid>
+      <description> Java # apt install default-jdk # lts version sudo apt install -y openjdk-8-jdk sudo apt install -y openjdk-11-jdk sudo apt install -y openjdk-17-jdk # list java versions update-java-alternatives --list # java-1.8.0-openjdk-amd64 1081 /usr/lib/jvm/java-1.8.0-openjdk-amd64 # java-1.11.0-openjdk-amd64 1111 /usr/lib/jvm/java-1.11.0-openjdk-amd64 # java-1.17.0-openjdk-amd64 1711 /usr/lib/jvm/java-1.17.0-openjdk-amd64 cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc # switch java version alias javato8=&amp;#34;update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64&amp;#34; alias javato11=&amp;#34;update-java-alternatives --set /usr/lib/jvm/java-1.11.0-openjdk-amd64&amp;#34; alias javato17=&amp;#34;update-java-alternatives --set /usr/lib/jvm/java-1.17.0-openjdk-amd64&amp;#34; EOF zsh </description>
+    </item>
+    <item>
+      <title>Jupyter</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</guid>
+      <description>Jupyter # JupyterLab 包含了 Jupyter Notebook 所有功能，并升级增加了很多功能&#xA;pipenv install jupyterlab alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：&#xA;JupyterLab Installation 配置 # # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39; Jupyter Notebook vs Jupyter Lab # Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.</description>
+    </item>
+    <item>
+      <title>k3d</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</guid>
+      <description>k3d # rancher/k3d 常用命令 # k3d cluster create ecsp-test-1 --subnet &amp;#34;172.27.1.0/24&amp;#34; --api-port 10.232.205.41:8701 --servers 1 --agents 2 k3d cluster create ecsp-test-2 --subnet &amp;#34;172.27.2.0/24&amp;#34; --api-port 10.232.205.41:8702 k3d cluster create ecsp-test-3 --subnet &amp;#34;172.27.3.0/24&amp;#34; --api-port 10.232.205.41:8703 k3d cluster create ecsp-test-4 --subnet &amp;#34;172.27.4.0/24&amp;#34; --api-port 10.232.205.41:8704 k3d cluster create ecsp-test-5 --subnet &amp;#34;172.27.5.0/24&amp;#34; --api-port 10.232.205.41:8705 # yq01 k3d cluster create ecsp-edge-1 --subnet &amp;#34;172.27.1.0/24&amp;#34; --api-port 10.197.34.39:8001 --image rancher/k3s:v1.18.19-k3s1 --k3s-server-arg &amp;#39;--kube-apiserver-arg=service-node-port-range=8100-8199&amp;#39; -p &amp;#34;8100-8199:8100-8199@loadbalancer&amp;#34; --verbose k3d cluster create ecsp-edge-2 --subnet &amp;#34;172.</description>
+    </item>
+    <item>
+      <title>KubeEdge</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</guid>
+      <description> KubeEdge # 部署 # # ime-study3 keadm init --advertise-address=&amp;#34;120.241.124.226&amp;#34; --profile version=v1.13.0 --kube-config=/root/.kube/config kubectl get all -n kubeedge keadm gettoken # ime-study4 # namespace 必须是 k8s.io，containerd 才能使用，crictl image 才能看到 ctr -n=k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 ctr -n=k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6 rm -rf /etc/kubeedge/ keadm join --cloudcore-ipport=&amp;#34;120.241.124.226:10000&amp;#34; --token=f76a721023f724ae4ff872c8ec9e04e672d4eb93d1327638526389267084629b.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzU3Mjk0MDl9.TrcHtDra2gwuBw-9Aa8aDkDK99n1JoxwYYz8Kv4ugPo --kubeedge-version=v1.13.0 </description>
+    </item>
+    <item>
+      <title>KubeSphere</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid>
+      <description> KubeSphere # kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;: {&amp;#34;annotations&amp;#34;:{&amp;#34;storageclass.kubernetes.io/is-default-class&amp;#34;:&amp;#34;true&amp;#34;}}}&amp;#39; </description>
+    </item>
+    <item>
+      <title>langflow</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</guid>
+      <description> langflow # langflow --host &amp;#34;0.0.0.0&amp;#34; --port 7865 </description>
+    </item>
+    <item>
+      <title>MicroK8s</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid>
+      <description>MicroK8s # ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.&#xA;https://microk8s.io&#xA;安装 # snap install microk8s --classic snap install kubectl --classic # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable mkdir -p ~/.kube microk8s config &amp;gt; ~/.kube/config microk8s enable dashboard dns ingress # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 # microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 registry.</description>
+    </item>
+    <item>
+      <title>Mosquitto</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid>
+      <description> Mosquitto # eclipse/mosquitto 安装 # apt install mosquitto -y apt install mosquitto-clients -y 使用 # # mosquitto_pub version 1.6.9 running on libmosquitto 1.6.9. mosquitto_pub {[-h host] [-p port] [-u username] [-P password] -t topic | -L URL} {-f file | -l | -n | -m message} [-c] [-k keepalive] [-q qos] [-r] [--repeat N] [--repeat-delay time] [-A bind_address] [-i id] [-I id_prefix] [-d] [--quiet] [-M max_inflight] [-u username [-P password]] [--will-topic [--will-payload payload] [--will-qos qos] [--will-retain]] [{--cafile file | --capath dir} [--cert file] [--key file] [--ciphers ciphers] [--insecure] [--tls-alpn protocol] [--tls-engine engine] [--keyform keyform] [--tls-engine-kpass-sha1]] [--psk hex-key --psk-identity identity [--ciphers ciphers]] [--proxy socks-url] [--property command identifier value] [-D command identifier value] </description>
+    </item>
+    <item>
+      <title>Multipass</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</guid>
+      <description>Multipass # canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run&#xA;# 安装 snap install multipass # Find available images multipass find # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3 # 安装需要的 sudo su apt update apt install net-tools selinux-utils # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 # 使用的是桥接模式，因为：</description>
+    </item>
+    <item>
+      <title>pip</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</guid>
+      <description> pip # # 设置 镜像源 python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple # 临时安装 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx </description>
+    </item>
+    <item>
+      <title>pipenv</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid>
+      <description>pipenv # pypa/pipenv # 进入虚拟环境 pipenv shell pipenv shell --python=3.10 # 退出虚拟环境 exit 设置镜像源 # # vim Pipfile [[source]] # url 替换成这个源 url = &amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34; 如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python&#xA;Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.</description>
+    </item>
+    <item>
+      <title>pyenv</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid>
+      <description>pyenv # pyenv/pyenv 安装 # git clone https://github.com/pyenv/pyenv.git ~/.pyenv echo &amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;command -v pyenv &amp;gt;/dev/null || export PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc echo &amp;#39;eval &amp;#34;$(pyenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc # 使用 taobao 的 npm 源 cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF 安装依赖 # 之后才能编译 python 成功&#xA;sudo apt update sudo apt install -y \ gcc \ build-essential \ curl \ libbz2-dev \ libffi-dev \ liblzma-dev \ libncursesw5-dev \ libreadline-dev \ libsqlite3-dev \ libssl-dev \ libxml2-dev \ libxmlsec1-dev \ llvm \ make \ tk-dev \ wget \ xz-utils \ zlib1g-dev 使用 # pyenv # 列出所有可安装 python 版本 pyenv install -l # 安装 pyenv install 3.</description>
+    </item>
+    <item>
+      <title>pytorch</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</guid>
+      <description> pytorch # # cuda 11.4 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch </description>
+    </item>
+    <item>
+      <title>Streamlit</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</guid>
+      <description> Streamlit # pip install streamlit streamlit run xxx.py --server.address &amp;#34;0.0.0.0&amp;#34; --server.port 7865 </description>
+    </item>
+    <item>
+      <title>systemd</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</guid>
+      <description> systemd # systemctl # systemctl list-units --type=service --state=active | grep ray </description>
+    </item>
+    <item>
+      <title>v2ray</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</guid>
+      <description>v2ray # 服务端 # wget -N --no-check-certificate -q -O install.sh &amp;#34;https://raw.githubusercontent.com/wulabing/Xray_onekey/nginx_forward/install.sh&amp;#34; &amp;amp;&amp;amp; chmod +x install.sh &amp;amp;&amp;amp; bash install.sh # 启动方式 # 启动 Xray：systemctl start xray # 停止 Xray：systemctl stop xray # 启动 Nginx：systemctl start nginx # 停止 Nginx：systemctl stop nginx # 相关目录 # Web 目录：/www/xray_web # Xray 服务端配置：/usr/local/etc/xray/config.json # Nginx 目录： /etc/nginx openai # docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restart unless-stopped amirdaaee/cloudflare-warp:latest curl -x &amp;#34;socks5://127.0.0.1:7081&amp;#34; ipinfo.</description>
+    </item>
+    <item>
+      <title>zsh</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid>
+      <description> zsh # oh-my-zsh # 安装&#xA;apt install -y git zsh # sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; EOF &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh alias cdcode=&amp;#39;cd ~/code&amp;#39; alias cdstudy=&amp;#39;cdcode &amp;amp;&amp;amp; cd study&amp;#39; alias cdtest=&amp;#39;cdstudy &amp;amp;&amp;amp; cd test&amp;#39; alias cdgithub=&amp;#39;cdcode &amp;amp;&amp;amp; cd github&amp;#39; alias cdgitlab=&amp;#39;cdcode &amp;amp;&amp;amp; cd gitlab&amp;#39; alias cdbitbucket=&amp;#39;cdcode &amp;amp;&amp;amp; cd bitbucket&amp;#39; # proxy # export http_proxy=149.28.137.166:20171 # export https_proxy=149.28.137.166:20171 # 设置默认为 zsh sudo chsh -s /usr/bin/zsh yewang </description>
+    </item>
+  </channel>
+</rss>
