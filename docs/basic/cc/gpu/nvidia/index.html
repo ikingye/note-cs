@@ -21,7 +21,7 @@ AD103 (45." />
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.81c6e0952827551b9e5edb80f2ba6ae4fbe22141032615be9e7f6f493bd56beb.js" integrity="sha256-gcbglSgnVRueXtuA8rpq5PviIUEDJhW&#43;nn9vSTvVa&#43;s="></script>
+<script defer src="/note-cs/en.search.min.a3d6936f685c7e3f08024fa6b90c77a755bfe0658f2270ae4e7583f312ffbf9d.js" integrity="sha256-o9aTb2hcfj8IAk&#43;muQx3p1W/4GWPInCuTnWD8xL/v50="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18847,7 +18847,6 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#1-fahrenheithttpswwwwikiwandcomenfahrenheit_microarchitecture">1. <a href="https://www.wikiwand.com/en/Fahrenheit_(microarchitecture)">Fahrenheit</a></a></li>
       </ul>
     </li>
-    <li><a href="#pcie-vs-sxm">PCIe vs SXM</a></li>
     <li><a href="#nvml-nvidia-management-library">nvml: <code>NVIDIA Management Library</code></a></li>
     <li><a href="#nvidia-驱动">Nvidia 驱动</a>
       <ul>
@@ -19348,7 +19347,11 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <p>officially announced on <code>2022-09-20</code></p>
 <ul>
-<li>RTX 40 系列</li>
+<li>RTX 40 系列
+<ul>
+<li>GeForce RTX 4090</li>
+</ul>
+</li>
 </ul>
 <h4 id="hopperhttpswwwwikiwandcomenhopper_microarchitecture-professional">
   <a href="https://www.wikiwand.com/en/Hopper_%28microarchitecture%29">Hopper</a> (professional)
@@ -19442,12 +19445,10 @@ https://github.com/alex-shpak/hugo-book
 </li>
 <li>NVIDIA A800 40GB
 <ul>
-<li>NVIDIA A100 平替</li>
 <li>芯片的数据传输速率为 400GB/s</li>
 <li>A800 只影响多卡互联的性能，而计算能力完全保留</li>
 </ul>
 </li>
-<li>Nvidia A100 80GB (GA100)</li>
 </ul>
 </li>
 </ul>
@@ -19560,29 +19561,6 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#1-fahrenheithttpswwwwikiwandcomenfahrenheit_microarchitecture">#</a>
 </h3>
 <hr>
-<h2 id="pcie-vs-sxm">
-  PCIe vs SXM
-  <a class="anchor" href="#pcie-vs-sxm">#</a>
-</h2>
-<ul>
-<li>其实，A100 SXM4 与 CPU 之间的通讯，也是靠 PCIe 4.0 的。
-<ul>
-<li>PCIe 和 SXM4 只是规格尺寸和接口差异，性能的差异可以忽略。</li>
-</ul>
-</li>
-<li>SXM4 和 PCIe 版本的差异，在 <code>NVLINK</code> 上。
-<ul>
-<li>PCIe 版本最多支持 2 卡互联，而 SXM4 的 A100 不使用 nvswitch 情况下，就可以做 4 卡 mesh 布置了。而 nvswitch 能提供的带宽也非常可观，即使 16 卡配置，也不会有明显性能下滑。</li>
-<li>PCIe 和 SXM4 两者 GPU 间互联差异还是很大的。也可以看到 NVIDIA 的侧重点是卡间通讯带宽，而不是 GPU 到 CPU 这段。
-<ul>
-<li>NVIDIA 在几年间已经多次提升了 <code>NVLINK</code> 带宽，因为<strong>多卡协同的带宽</strong>才是真正的瓶颈。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>NVLink 比 PCIe 信号线多 8 倍，而且 NVLink 的带宽是指双向带宽，PCIe 通常是说单向带宽。</li>
-</ul>
-<hr>
 <hr>
 <h2 id="nvml-nvidia-management-library">
   nvml: <code>NVIDIA Management Library</code>
@@ -19597,13 +19575,13 @@ https://github.com/alex-shpak/hugo-book
   Nvidia 驱动
   <a class="anchor" href="#nvidia-%e9%a9%b1%e5%8a%a8">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt install ubuntu-drivers-common
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt install -y ubuntu-drivers-common
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 查询推荐的 nvidia 驱动</span>
 </span></span><span style="display:flex;"><span>ubuntu-drivers devices
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 按推荐安装驱动</span>
-</span></span><span style="display:flex;"><span>apt install -y nvidia-driver-450
+</span></span><span style="display:flex;"><span>apt install -y nvidia-driver-535
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># CUDA Toolkit: 12.2</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Driver Version: 535.54.03</span>
@@ -19868,7 +19846,6 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#1-fahrenheithttpswwwwikiwandcomenfahrenheit_microarchitecture">1. <a href="https://www.wikiwand.com/en/Fahrenheit_(microarchitecture)">Fahrenheit</a></a></li>
       </ul>
     </li>
-    <li><a href="#pcie-vs-sxm">PCIe vs SXM</a></li>
     <li><a href="#nvml-nvidia-management-library">nvml: <code>NVIDIA Management Library</code></a></li>
     <li><a href="#nvidia-驱动">Nvidia 驱动</a>
       <ul>
