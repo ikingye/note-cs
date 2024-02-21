@@ -21,7 +21,7 @@ AD103 (45." />
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.19e396ce1312262258a2c1ac693c6bbe3b32214257af9fa86ebc02eb1318c141.js" integrity="sha256-GeOWzhMSJiJYosGsaTxrvjsyIUJXr5&#43;obrwC6xMYwUE="></script>
+<script defer src="/note-cs/en.search.min.fd7af399a86ba169ae2968bfc8c716b33879316e80454df563af17f3f67aafe2.js" integrity="sha256-/XrzmahroWmuKWi/yMcWszh5MW6ARU31Y68X8/Z6r&#43;I="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18832,6 +18832,7 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#产品">产品</a></li>
+    <li><a href="#sm-version">SM Version</a></li>
     <li><a href="#gpu-架构">GPU 架构</a>
       <ul>
         <li><a href="#14-blackwell">14. Blackwell</a></li>
@@ -19290,6 +19291,54 @@ https://github.com/alex-shpak/hugo-book
 <li>H100 加速卡是 NVIDIA 当前最强的，售价 3.65 万美元，约合 26.4 万元人民币</li>
 </ul>
 <hr>
+<h2 id="sm-version">
+  SM Version
+  <a class="anchor" href="#sm-version">#</a>
+</h2>
+<ul>
+<li><a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capabilities">Compute Capability</a> 也就是 SM Version</li>
+<li>Compute Capability 是一个硬件和架构的特性指标。Compute Capability 告诉你 GPU 支持哪些功能和指令集，而 TOPS 告诉你 GPU 能有多快。</li>
+</ul>
+<p>NVIDIA 的 SM（<code>Streaming Multiprocessor</code>）版本指的是其 GPU（图形处理单元）架构中的流式多处理器的设计和版本。流式多处理器是 NVIDIA GPU 的基本计算单元，负责执行并行计算任务。每个版本的 SM 都有其特定的特性、计算能力和架构优化，这些都会直接影响到 GPU 的性能、能效和支持的功能。</p>
+<ul>
+<li>
+<ol start="2">
+<li>Fermi</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Kepler</li>
+</ol>
+</li>
+<li>Compute Capability 版本号从 3.x（Kepler）直接跳到了 5.x（Maxwell），跳过了 4.x</li>
+<li>
+<ol start="5">
+<li>Maxwell</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Pascal</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Volta</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Ampere</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Hopper</li>
+</ol>
+</li>
+</ul>
+<hr>
 <h2 id="gpu-架构">
   GPU 架构
   <a class="anchor" href="#gpu-%e6%9e%b6%e6%9e%84">#</a>
@@ -19322,7 +19371,7 @@ https://github.com/alex-shpak/hugo-book
 </li>
 <li>
 <ol start="11">
-<li>Votal: Tesla V100, GTX 1180</li>
+<li>Volta: Tesla V100, GTX 1180</li>
 </ol>
 </li>
 <li>
@@ -19833,6 +19882,7 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#产品">产品</a></li>
+    <li><a href="#sm-version">SM Version</a></li>
     <li><a href="#gpu-架构">GPU 架构</a>
       <ul>
         <li><a href="#14-blackwell">14. Blackwell</a></li>
