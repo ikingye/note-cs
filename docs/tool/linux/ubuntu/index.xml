@@ -82,7 +82,7 @@
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</guid>
-      <description> Gradio # import gradio as gr def greet(name): return &amp;#34;Hello &amp;#34; + name + &amp;#34;!&amp;#34; with gr.Blocks() as demo: output = gr.Textbox(label=&amp;#34;Output Box&amp;#34;) name = gr.Textbox(label=&amp;#34;Name&amp;#34;) greet_btn = gr.Button(&amp;#34;Greet&amp;#34;) greet_btn.click(fn=greet, inputs=name, outputs=output) demo.launch(share=True, server_name=&amp;#34;0.0.0.0&amp;#34;, server_port=8722) </description>
+      <description> Gradio # gradio-app/gradio import gradio as gr def greet(name): return &amp;#34;Hello &amp;#34; + name + &amp;#34;!&amp;#34; with gr.Blocks() as demo: output = gr.Textbox(label=&amp;#34;Output Box&amp;#34;) name = gr.Textbox(label=&amp;#34;Name&amp;#34;) greet_btn = gr.Button(&amp;#34;Greet&amp;#34;) greet_btn.click(fn=greet, inputs=name, outputs=output) demo.launch(share=True, server_name=&amp;#34;0.0.0.0&amp;#34;, server_port=8722) </description>
     </item>
     <item>
       <title>gvm</title>

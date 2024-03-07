@@ -5,19 +5,19 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Gradio # import gradio as gr def greet(name): return &#34;Hello &#34; &#43; name &#43; &#34;!&#34; with gr.Blocks() as demo: output = gr.Textbox(label=&#34;Output Box&#34;) name = gr.Textbox(label=&#34;Name&#34;) greet_btn = gr.Button(&#34;Greet&#34;) greet_btn.click(fn=greet, inputs=name, outputs=output) demo.launch(share=True, server_name=&#34;0.0.0.0&#34;, server_port=8722) ">
+<meta name="description" content=" Gradio # gradio-app/gradio import gradio as gr def greet(name): return &#34;Hello &#34; &#43; name &#43; &#34;!&#34; with gr.Blocks() as demo: output = gr.Textbox(label=&#34;Output Box&#34;) name = gr.Textbox(label=&#34;Name&#34;) greet_btn = gr.Button(&#34;Greet&#34;) greet_btn.click(fn=greet, inputs=name, outputs=output) demo.launch(share=True, server_name=&#34;0.0.0.0&#34;, server_port=8722) ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Gradio" />
-<meta property="og:description" content=" Gradio # import gradio as gr def greet(name): return &#34;Hello &#34; &#43; name &#43; &#34;!&#34; with gr.Blocks() as demo: output = gr.Textbox(label=&#34;Output Box&#34;) name = gr.Textbox(label=&#34;Name&#34;) greet_btn = gr.Button(&#34;Greet&#34;) greet_btn.click(fn=greet, inputs=name, outputs=output) demo.launch(share=True, server_name=&#34;0.0.0.0&#34;, server_port=8722) " />
+<meta property="og:description" content=" Gradio # gradio-app/gradio import gradio as gr def greet(name): return &#34;Hello &#34; &#43; name &#43; &#34;!&#34; with gr.Blocks() as demo: output = gr.Textbox(label=&#34;Output Box&#34;) name = gr.Textbox(label=&#34;Name&#34;) greet_btn = gr.Button(&#34;Greet&#34;) greet_btn.click(fn=greet, inputs=name, outputs=output) demo.launch(share=True, server_name=&#34;0.0.0.0&#34;, server_port=8722) " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-10-24T14:26:22+08:00" />
+<meta property="article:modified_time" content="2024-03-07T12:03:38+08:00" />
 
 <title>Gradio | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.cc13771cd2bbe25bea5021487c4e6a229706d069b9eeb514c200b234346449ed.js" integrity="sha256-zBN3HNK74lvqUCFIfE5qIpcG0Gm57rUUwgCyNDRkSe0="></script>
+<script defer src="/note-cs/en.search.min.bfef75415cd324d5f8b30b102a562dac167bdfe4dc53d153996124019ddbd941.js" integrity="sha256-v&#43;91QVzTJNX4swsQKlYtrBZ73&#43;TcU9FTmWEkAZ3b2UE="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18834,6 +18834,7 @@ https://github.com/alex-shpak/hugo-book
   Gradio
   <a class="anchor" href="#gradio">#</a>
 </h1>
+<p><a href="https://github.com/gradio-app/gradio">gradio-app/gradio</a> <img src="https://img.shields.io/github/stars/gradio-app/gradio.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/gradio-app/gradio.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/gradio-app/gradio.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/gradio-app/gradio.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/gradio-app/gradio.svg" alt="Last commit" /></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> gradio <span style="color:#66d9ef">as</span> gr
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(name):
@@ -18856,9 +18857,9 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/fe1dc4368a1590da80593cf6e50f89d50633eaed" title='Last modified by yewang | 2023-10-24' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/78a88630bc9d4699c6a2037bdb02b66db2f95d93" title='Last modified by yewang | 2024-03-07' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2023-10-24</span>
+      <span>2024-03-07</span>
     </a>
   </div>
 
