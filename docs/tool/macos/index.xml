@@ -43,6 +43,13 @@
       <description>Capslock # Vonng/Capslock 让 Capslock 再次伟大！</description>
     </item>
     <item>
+      <title>Git</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/git/</guid>
+      <description>Git # 分支 # # 本地仓库 分支引用 refs/heads/v1.0.0 # 远程跟踪分支引用, 远程仓库 origin 中有一个分支 v1.0.0 refs/remotes/origin/v1.0.0 # 标签引用，包括远程和本地 refs/tags/v1.0.0 tag # 远程 tag 被视为本地 tag 的一种，它们都存储在 refs/tags/ 路径下。当你从远程仓库拉取或推送 tag 时，Git 会自动同步这些 tag 到本地仓库中的 refs/tags/ 路径 分支和 tag 重名 # 远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支 # # 本地拉 v1.0.0 tag git fetch origin tag v1.0.0 # git fetch origin --tags # 基于 tag 拉 v1.0.0 分支, # git co -b 分支名 tag名 git co -b v1.</description>
+    </item>
+    <item>
       <title>GitHub</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
