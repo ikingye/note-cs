@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.1 MacOS on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/tool/macos/</link>
+    <description>Recent content in 4.1 MacOS on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/tool/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.NET</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/dotnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/dotnet/</guid>
+      <description> .NET # .NET 8.0 SDK (v8.0.100) - macOS Arm64 Installer!&#xA;# 安装 .NET SDK brew install --cask dotnet-sdk </description>
+    </item>
+    <item>
+      <title>adb</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/adb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/adb/</guid>
+      <description> adb # 安装 # brew install android-platform-tools 教程 # # 启动 adb devices </description>
+    </item>
+    <item>
+      <title>Axure</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/axure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/axure/</guid>
+      <description> Axure RP # Rapid Prototyping 快速原型&#xA;快捷键 # cmd + D: 副本 cmd + R: 替换 </description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/csharp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/csharp/</guid>
+      <description>C# # 使用 Visual Studio Code 写 C# 程序 # C# Dev Kit # C# Dev Kit helps you manage your code with a solution explorer and test your code with integrated unit test discovery and execution, elevating your C# development experience wherever you like to develop (Windows, macOS, Linux, and even in a Codespace).&#xA;This extension builds on top of the great C# language capabilities provided by the C# extension, 即 vscode-csharp and enhances your C# environment by adding a set of powerful tools and utilities that integrate natively with VS Code to help C# developers write, debug, and maintain their code faster and with fewer errors.</description>
+    </item>
+    <item>
+      <title>Capslock</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/capslock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/capslock/</guid>
+      <description>Capslock # Vonng/Capslock 让 Capslock 再次伟大！</description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/git/</guid>
+      <description>Git # 分支 # # 本地仓库 分支引用 refs/heads/v1.0.0 # 远程跟踪分支引用, 远程仓库 origin 中有一个分支 v1.0.0 refs/remotes/origin/v1.0.0 # 标签引用，包括远程和本地 refs/tags/v1.0.0 tag # 远程 tag 被视为本地 tag 的一种，它们都存储在 refs/tags/ 路径下。当你从远程仓库拉取或推送 tag 时，Git 会自动同步这些 tag 到本地仓库中的 refs/tags/ 路径 分支和 tag 重名 # 远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支 # # 本地拉 v1.0.0 tag git fetch origin tag v1.0.0 # git fetch origin --tags # 基于 tag 拉 v1.0.0 分支, # git co -b 分支名 tag名 git co -b v1.</description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/github/</guid>
+      <description>GitHub # 设置代理 # git config --global http.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; git config --global https.proxy &amp;#34;http://127.0.0.1:8081&amp;#34; # socks5 代理（如 Shadowsocks） git config --global http.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; git config --global https.proxy &amp;#34;socks5://127.0.0.1:1080&amp;#34; # 取消代理 git config --global --unset http.proxy git config --global --unset https.proxy 学习 Github # Github Learning Lab # Introduction to GitHub # Github 工具 # cli/cli # GitHub’s official command line tool https://cli.github.com&#xA;github/hub # A command-line tool that makes git easier to use with GitHub.</description>
+    </item>
+    <item>
+      <title>Goland</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/goland/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/goland/</guid>
+      <description>Goland # 快捷键 # 跳转 # 指定行 cmd + L&#xA;指定文件 shift + cmd + O&#xA;返回光标上一个位置 cmd + opt + 方向键&#xA;查询 # 函数列表 cmd + f12&#xA;当前文件查询 cmd + F&#xA;当前文件替换 cmd + R&#xA;所有文件查询 shift + cmd + F&#xA;所有文件替换 shift + cmd + R&#xA;选择 # 选中下一个相同内容 ctrl + G 选中所有相同内容 ctrl + G 展开所有代码块 shift + cmd + = 折叠所有代码块 shift + cmd + - 折叠或展开当前代码块 cmd + .</description>
+    </item>
+    <item>
+      <title>gvm</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/gvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/gvm/</guid>
+      <description> gvm # moovweb/gvm 安装：&#xA;zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) mac m1 # mac m1 使用 gvm 安装 arm64 版本的 go&#xA;file ~/.gvm/gos/go1.16.15/bin/go ~/.gvm/gos/go1.16.15/bin/go: Mach-O 64-bit executable arm64 参考：https://github.com/moovweb/gvm/issues/406&#xA;RROR: Couldn&#39;t remove pkgsets # gvm use go1.11.1 go clean -modcache gvm use go1.11.4 gvm uninstall go1.11.1 也可以手动删除&#xA;rm -rf ~/.gvm/pkgsets/go1.11.1 gvm uninstall go1.11.1 参考：&#xA;ERROR: Couldn&amp;rsquo;t remove pkgsets </description>
+    </item>
+    <item>
+      <title>HHKB</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/hhkb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/hhkb/</guid>
+      <description>HHKB 键盘 # Happy Hacking Keyboard&#xA;使用 # 方向键 # 右侧的 Fn 键 + [ / ; &#39;</description>
+    </item>
+    <item>
+      <title>IntelliJ IDEA</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/idea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/idea/</guid>
+      <description>IntelliJ IDEA # 插件 # Alibaba Java Coding Guidelines # 教程 # xiaoxiunique/tool-tips # idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
+    </item>
+    <item>
+      <title>Mas</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/mas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/mas/</guid>
+      <description>mas-cli/mas # Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.&#xA;$ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
+    </item>
+    <item>
+      <title>picgo</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/picgo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/picgo/</guid>
+      <description> picgo # CLI 命令 # PicGo/PicGo-Core # Molunerfinn/PicGo # picgo vscode 快捷键 # Windows/Unix Uploading an image from clipoard: Ctrl + Alt + U Uploading images from explorer: Ctrl + Alt + E Uploading an image from input box: Ctrl + Alt + O OsX Uploading an image from clipboard: Cmd + Opt + U Uploading images from explorer: Cmd + Opt + E Uploading an image from input box: Cmd + Opt + O </description>
+    </item>
+    <item>
+      <title>pyenv</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/pyenv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/pyenv/</guid>
+      <description>pyenv/pyenv 安装 # 使用 # </description>
+    </item>
+    <item>
+      <title>ruby</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/ruby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/ruby/</guid>
+      <description> ruby # 安装 # brew install ruby&#xA;If you need to have ruby first in your PATH, run: echo &amp;#39;export PATH=&amp;#34;/opt/homebrew/opt/ruby/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc For compilers to find ruby you may need to set: export LDFLAGS=&amp;#34;-L/opt/homebrew/opt/ruby/lib&amp;#34; export CPPFLAGS=&amp;#34;-I/opt/homebrew/opt/ruby/include&amp;#34; For pkg-config to find ruby you may need to set: export PKG_CONFIG_PATH=&amp;#34;/opt/homebrew/opt/ruby/lib/pkgconfig&amp;#34; </description>
+    </item>
+    <item>
+      <title>tmux</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/tmux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/tmux/</guid>
+      <description> tmux # gpakosz/.tmux 配置 # ChrisJohnsen/tmux-MacOSX-pasteboard # Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.&#xA;Other services and unpatched builds of screen are also affected.&#xA;gpakosz/.tmux # Oh My Tmux!&#xA;cd git clone https://github.com/gpakosz/.tmux.git ln -s -f .tmux/.tmux.conf cp .tmux/.tmux.conf.local . 教程 # tmux 2: Productive Mouse-Free Development by @bphogan. 手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频] 让你的 tmux 起死回生！[视频] </description>
+    </item>
+    <item>
+      <title>vim</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/vim/</guid>
+      <description>vim # 教程 # iggredible/Learn-Vim # A book for learning the Vim editor the smart way.</description>
+    </item>
+    <item>
+      <title>VSCode</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/vscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/vscode/</guid>
+      <description>VSCode # Microsoft/vscode 安装 # brew cask install visual-studio-code 配置 # settings.json&#xA;{ &amp;#34;gitlens.advanced.messages&amp;#34;: { &amp;#34;suppressShowKeyBindingsNotice&amp;#34;: true }, &amp;#34;gitlens.historyExplorer.enabled&amp;#34;: true, &amp;#34;java.errors.incompleteClasspath.severity&amp;#34;: &amp;#34;ignore&amp;#34;, &amp;#34;materialTheme.autoApplyIcons&amp;#34;: true, &amp;#34;workbench.colorCustomizations&amp;#34;: {}, &amp;#34;materialTheme.accentPrevious&amp;#34;: &amp;#34;Breaking Bad&amp;#34;, &amp;#34;materialTheme.fixIconsRunning&amp;#34;: false, // Controls the font family. &amp;#34;editor.fontFamily&amp;#34;: &amp;#34;Consolas, &amp;#39;微软雅黑&amp;#39;, Dengxian, Menlo, Monaco, &amp;#39;Courier New&amp;#39;, monospace&amp;#34;, // &amp;#34;editor.fontFamily&amp;#34;: &amp;#34;Inconsolata, Consolas, &amp;#39;微软雅黑&amp;#39;, Dengxian, Menlo, Monaco, &amp;#39;Courier New&amp;#39;, monospace&amp;#34;, &amp;#34;editor.lineHeight&amp;#34;: 22, &amp;#34;editor.fontSize&amp;#34;: 14, &amp;#34;workbench.startupEditor&amp;#34;: &amp;#34;newUntitledFile&amp;#34;, &amp;#34;editor.suggestSelection&amp;#34;: &amp;#34;first&amp;#34;, &amp;#34;vsintellicode.modify.editor.suggestSelection&amp;#34;: &amp;#34;automaticallyOverrodeDefaultValue&amp;#34;, &amp;#34;python.jediEnabled&amp;#34;: false, &amp;#34;leetcode.endpoint&amp;#34;: &amp;#34;leetcode-cn&amp;#34;, &amp;#34;python.</description>
+    </item>
+    <item>
+      <title>XDM</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/xdm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/xdm/</guid>
+      <description>XDM # 下载</description>
+    </item>
+  </channel>
+</rss>
