@@ -15,6 +15,13 @@
       <description>ab # apt install apache2-utils -y # -c 10 表示并发用户数为10 # -n 100 表示请求总数为100 ab -c 10 -n 100 http://localhost:8080 # This is ApacheBench, Version 2.3 &amp;lt;$Revision: 1879490 $&amp;gt; # Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/ # Licensed to The Apache Software Foundation, http://www.apache.org/ # Benchmarking localhost (be patient) # Completed 100 requests # Completed 200 requests # Completed 300 requests # Completed 400 requests # Completed 500 requests # Completed 600 requests # Completed 700 requests # Completed 800 requests # Completed 900 requests # Completed 1000 requests # Finished 1000 requests # Server Software: # Server Hostname: localhost # Server Port: 8080 # Document Path: / # Document Length: 12 bytes # Concurrency Level: 100 # Time taken for tests: 0.</description>
     </item>
     <item>
+      <title>Ansible</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</guid>
+      <description>Ansible # 安装 # sudo apt update sudo apt install software-properties-common sudo add-apt-repository --yes --update ppa:ansible/ansible sudo apt install ansible 参考：Installing Ansible on Ubuntu</description>
+    </item>
+    <item>
       <title>apt</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -153,6 +160,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</guid>
       <description>Multipass # canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run&#xA;# 安装 snap install multipass # Find available images multipass find # 使用本地 image multipass launch --name k3s --mem 1G --disk 5G file://~/ubuntu-20.04-server-cloudimg-amd64.img # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3 # 安装需要的 sudo su apt update apt install net-tools selinux-utils # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 # 使用的是桥接模式，因为：</description>
+    </item>
+    <item>
+      <title>PHP</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</guid>
+      <description> PHP # 安装 # sudo apt-get -y install php-fpm </description>
     </item>
     <item>
       <title>pip</title>

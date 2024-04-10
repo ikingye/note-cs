@@ -2129,6 +2129,13 @@
       <description> adb # 安装 # brew install android-platform-tools 教程 # # 启动 adb devices </description>
     </item>
     <item>
+      <title>Ansible</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</guid>
+      <description>Ansible # 安装 # sudo apt update sudo apt install software-properties-common sudo add-apt-repository --yes --update ppa:ansible/ansible sudo apt install ansible 参考：Installing Ansible on Ubuntu</description>
+    </item>
+    <item>
       <title>apt</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2400,6 +2407,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/driver/</guid>
       <description>Nvidia 驱动 # 显卡类型 说明 GeForce RTX 游戏卡 TITAN 游戏发烧卡, 深度学习屌丝卡 NVIDIA RTX / Quadro 图形卡 Data Center / Tesla 计算卡 GRID 物理卡：只有 GRID K1/K2 两个型号，早停产。 虚拟卡：Quadro 系列或者是 Tesla 系列分出来的多张虚拟显卡 Networking NVS ION apt install -y ubuntu-drivers-common # 查询推荐的 nvidia 驱动 ubuntu-drivers devices # 按推荐安装驱动 apt install -y nvidia-driver-535 # CUDA Toolkit: 12.2 # Driver Version: 535.54.03 # Release Date: 2023.6.26 curl -LO https://us.download.nvidia.com/tesla/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run bash NVIDIA-Linux-x86_64-535.54.03.run # CUDA Toolkit: 12.</description>
+    </item>
+    <item>
+      <title>PHP</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</guid>
+      <description> PHP # 安装 # sudo apt-get -y install php-fpm </description>
     </item>
     <item>
       <title>picgo</title>
