@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="https://kingye.me/note-cs/docs/tool/linux/centos/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>docker</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</guid>
+      <description>docker # 安装 # sudo yum install -y yum-utils sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin sudo systemctl start docker sudo docker run hello-world 参考：https://docs.docker.com/engine/install/centos/</description>
+    </item>
+    <item>
       <title>zsh</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/centos/zsh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
