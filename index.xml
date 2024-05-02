@@ -866,7 +866,7 @@
       <link>https://kingye.me/note-cs/docs/tool/macos/ssh/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/ssh/config/</guid>
-      <description>config # my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitee HostName gitee.com User git IdentityFile ~/.ssh/id_rsa ################ others ################ Host * # 复用之前已经建立的连接 ControlMaster auto # 在最后一个连接关闭之后也不真正的关掉连接 ControlPersist yes # 指定了这个连接的 socket 保存的路径 ControlPath ~/.</description>
+      <description>config # my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitee HostName gitee.com User git IdentityFile ~/.ssh/id_rsa ################ others ################ Host * # 复用之前已经建立的连接 ControlMaster auto # 在最后一个连接关闭之后也不真正的关掉连接 ControlPersist yes # 心跳 ServerAliveInterval 60 # 指定了这个连接的 socket 保存的路径 ControlPath ~/.</description>
     </item>
     <item>
       <title>Dash</title>

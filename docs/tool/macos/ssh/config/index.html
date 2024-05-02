@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="config # my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitee HostName gitee.com User git IdentityFile ~/.ssh/id_rsa ################ others ################ Host * # 复用之前已经建立的连接 ControlMaster auto # 在最后一个连接关闭之后也不真正的关掉连接 ControlPersist yes # 指定了这个连接的 socket 保存的路径 ControlPath ~/.">
+<meta name="description" content="config # my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitee HostName gitee.com User git IdentityFile ~/.ssh/id_rsa ################ others ################ Host * # 复用之前已经建立的连接 ControlMaster auto # 在最后一个连接关闭之后也不真正的关掉连接 ControlPersist yes # 心跳 ServerAliveInterval 60 # 指定了这个连接的 socket 保存的路径 ControlPath ~/.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="config" />
-<meta property="og:description" content="config # my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitee HostName gitee.com User git IdentityFile ~/.ssh/id_rsa ################ others ################ Host * # 复用之前已经建立的连接 ControlMaster auto # 在最后一个连接关闭之后也不真正的关掉连接 ControlPersist yes # 指定了这个连接的 socket 保存的路径 ControlPath ~/." />
+<meta property="og:description" content="config # my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host bitbucket HostName bitbucket.org User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitee HostName gitee.com User git IdentityFile ~/.ssh/id_rsa ################ others ################ Host * # 复用之前已经建立的连接 ControlMaster auto # 在最后一个连接关闭之后也不真正的关掉连接 ControlPersist yes # 心跳 ServerAliveInterval 60 # 指定了这个连接的 socket 保存的路径 ControlPath ~/." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/ssh/config/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.eead63e754c2d97cfbe51394de6ac68538df762f88cde7084afcb3b70a23aaf2.js" integrity="sha256-7q1j51TC2Xz75ROU3mrGhTjfdi&#43;IzecISvyztwojqvI="></script>
+<script defer src="/note-cs/en.search.min.f52789b52ec14b9c285ff34837133e0b3060fc9d0c6a4214ac5acf91e3575b28.js" integrity="sha256-9SeJtS7BS5woX/NINxM&#43;CzBg/J0MakIUrFrPkeNXWyg="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19005,10 +19005,10 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    ControlMaster auto
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 在最后一个连接关闭之后也不真正的关掉连接</span>
 </span></span><span style="display:flex;"><span>    ControlPersist yes
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 指定了这个连接的 socket 保存的路径</span>
-</span></span><span style="display:flex;"><span>    ControlPath ~/.ssh/connection-%r@%h:%p
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 心跳</span>
 </span></span><span style="display:flex;"><span>    ServerAliveInterval <span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 指定了这个连接的 socket 保存的路径</span>
+</span></span><span style="display:flex;"><span>    ControlPath ~/.ssh/connection-%r@%h:%p
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ServerAliveCountMax 20</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ForwardAgent yes</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># KexAlgorithms +diffie-hellman-group1-sha1</span>
