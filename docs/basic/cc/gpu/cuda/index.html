@@ -5,21 +5,23 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CUDA # nvcc -V 显示的当前安装的 cuda 版本
+<meta name="description" content="CUDA # Compute Unified Device Architecture
+统一计算架构 nvcc -V 显示的当前安装的 cuda 版本
 nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动
 cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序
 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作
 最新 nvidia 驱动版本支持所有版本的 CUDA GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。
 只有一半的 CUDA 能支持整数计算
-在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.">
+在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CUDA" />
-<meta property="og:description" content="CUDA # nvcc -V 显示的当前安装的 cuda 版本
+<meta property="og:description" content="CUDA # Compute Unified Device Architecture
+统一计算架构 nvcc -V 显示的当前安装的 cuda 版本
 nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动
 cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序
 cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作
 最新 nvidia 驱动版本支持所有版本的 CUDA GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。
 只有一半的 CUDA 能支持整数计算
-在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda." />
+在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/" /><meta property="article:section" content="docs" />
 
@@ -29,7 +31,7 @@ cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.0a20b853c3b8294b7cb68c4cef697ab8027ff25894bf4c23a072e6b3d599d0f1.js" integrity="sha256-CiC4U8O4KUt8toxM72l6uAJ/8liUv0wjoHLms9WZ0PE="></script>
+<script defer src="/note-cs/en.search.min.8e13d07a8df3647c4810b654a720a836b8f771660597cb2c610c6643e446628f.js" integrity="sha256-jhPQeo3zZHxIELZUpyCoNrj3cWYFl8ssYQxmQ&#43;RGYo8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19007,6 +19009,12 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <ul>
 <li>
+<p><code>Compute Unified Device Architecture</code></p>
+<ul>
+<li>统一计算架构</li>
+</ul>
+</li>
+<li>
 <p>nvcc -V 显示的当前安装的 cuda 版本</p>
 <ul>
 <li>nvcc: <code>NVIDIA (R) Cuda compiler driver</code></li>
@@ -19036,7 +19044,11 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503003008.png" alt="" /></p>
 <ul>
-<li>在 CUDA 核心（<code>CUDA Core</code>）的右边，是 TenSor 核心 (<code>Tensor Core</code>)</li>
+<li>在 CUDA 核心（<code>CUDA Core</code>）的右边，是 TenSor 核心 (<code>Tensor Core</code>)
+<ul>
+<li>Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算</li>
+</ul>
+</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503003237.png" alt="" /></p>
 <h2 id="nvidia-driver-和-cuda-toolkit-版本兼容性">

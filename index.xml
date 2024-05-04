@@ -2182,7 +2182,7 @@
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid>
-      <description>Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
+      <description>Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 安装 # wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh bash Miniconda3-latest-Linux-x86_64.sh 参考：https://docs.conda.io/projects/conda/en/stable/&#xA;使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
     </item>
     <item>
       <title>Containerd</title>
@@ -2217,7 +2217,7 @@
       <link>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</guid>
-      <description>CUDA # nvcc -V 显示的当前安装的 cuda 版本&#xA;nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动&#xA;cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序&#xA;cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作&#xA;最新 nvidia 驱动版本支持所有版本的 CUDA GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。&#xA;只有一半的 CUDA 能支持整数计算&#xA;在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.</description>
+      <description>CUDA # Compute Unified Device Architecture&#xA;统一计算架构 nvcc -V 显示的当前安装的 cuda 版本&#xA;nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动&#xA;cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序&#xA;cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作&#xA;最新 nvidia 驱动版本支持所有版本的 CUDA GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。&#xA;只有一半的 CUDA 能支持整数计算&#xA;在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.</description>
     </item>
     <item>
       <title>Dash</title>
@@ -2406,7 +2406,7 @@
       <link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</guid>
-      <description>Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie Tesla: 市面已经没有相关显卡 Fermi: GeForce 400, 500, 600, GT-630 Kepler: Tesla K40/K80, GeForce 700, GT-730 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 Pascal: Tesla P100, GTX 1080, GTX 1070, GTX 1060 Volta: Tesla V100, GTX 1180 Turing: T4, GTX 1660 Ti, RTX 2060 Ampere: A100, GTX3080 Hopper: H100, H200 Ada Lovelace: 4090 Blackwell 14. Blackwell # 13. Ada Lovelace vs Hopper # Ada Lovelace (consumer) # officially announced on 2022-09-20</description>
+      <description>Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie Tesla: 市面已经没有相关显卡 Fermi: GeForce 400, 500, 600, GT-630 Kepler: K40/K80, GeForce 700, GT-730 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060 Volta: V100, GTX 1180 首次引入 Tensor Core Turing: T4, GTX 1660 Ti, RTX 2060 Ampere: A100, GTX 3080 Hopper: H100, H200 Ada Lovelace: 4090, L4, L40 Blackwell 14. Blackwell # 13. Ada Lovelace vs Hopper # Ada Lovelace (consumer) # officially announced on 2022-09-20</description>
     </item>
     <item>
       <title>Nvidia 驱动</title>

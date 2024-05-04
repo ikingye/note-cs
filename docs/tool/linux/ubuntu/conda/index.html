@@ -5,9 +5,11 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &lt;&lt; EOF &gt; ~/.">
+<meta name="description" content="Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 安装 # wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh bash Miniconda3-latest-Linux-x86_64.sh 参考：https://docs.conda.io/projects/conda/en/stable/
+使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &lt;&lt; EOF &gt; ~/.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Conda" />
-<meta property="og:description" content="Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &lt;&lt; EOF &gt; ~/." />
+<meta property="og:description" content="Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 安装 # wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh bash Miniconda3-latest-Linux-x86_64.sh 参考：https://docs.conda.io/projects/conda/en/stable/
+使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &lt;&lt; EOF &gt; ~/." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +19,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.0a20b853c3b8294b7cb68c4cef697ab8027ff25894bf4c23a072e6b3d599d0f1.js" integrity="sha256-CiC4U8O4KUt8toxM72l6uAJ/8liUv0wjoHLms9WZ0PE="></script>
+<script defer src="/note-cs/en.search.min.8e13d07a8df3647c4810b654a720a836b8f771660597cb2c610c6643e446628f.js" integrity="sha256-jhPQeo3zZHxIELZUpyCoNrj3cWYFl8ssYQxmQ&#43;RGYo8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -18950,6 +18952,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#安装">安装</a></li>
     <li><a href="#使用教程">使用教程</a></li>
     <li><a href="#镜像源">镜像源</a>
       <ul>
@@ -18996,6 +18999,14 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
+<h2 id="安装">
+  安装
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bash Miniconda3-latest-Linux-x86_64.sh
+</span></span></code></pre></div><p>参考：https://docs.conda.io/projects/conda/en/stable/</p>
 <h2 id="使用教程">
   使用教程
   <a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b">#</a>
@@ -19219,6 +19230,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#安装">安装</a></li>
     <li><a href="#使用教程">使用教程</a></li>
     <li><a href="#镜像源">镜像源</a>
       <ul>
