@@ -194,7 +194,7 @@
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</guid>
-      <description>poetry # python-poetry/poetry # 安装 pipx install poetry # tab completion, 参考：https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh mkdir $ZSH_CUSTOM/plugins/poetry poetry completions zsh &amp;gt; $ZSH_CUSTOM/plugins/poetry/_poetry # 在 ~/.zshrc 的 plugins 里面加上 poetry，再执行 zsh # plugins( # poetry # ... # ) 教程 # Poetry replaces setup.py, requirements.txt, setup.cfg, MANIFEST.in and Pipfile with a simple pyproject.toml based project format.&#xA;Poetry will not automatically install a python interpreter for you.&#xA;# 新建项目 poetry new poetry-demo # 从已有的项目初始化 cd pre-existing-project poetry init 版本说明 # 脱字符号 ^: 最左侧非零数字的更改 ^1.</description>
+      <description>poetry # python-poetry/poetry # 安装 pipx install poetry # tab completion, 参考：https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh mkdir $ZSH_CUSTOM/plugins/poetry poetry completions zsh &amp;gt; $ZSH_CUSTOM/plugins/poetry/_poetry # 在 ~/.zshrc 的 plugins 里面加上 poetry，再执行 zsh # plugins( # poetry # ... # ) 教程 # Poetry replaces setup.py, requirements.txt, setup.cfg, MANIFEST.in and Pipfile with a simple pyproject.toml based project format.&#xA;Poetry will not automatically install a python interpreter for you.&#xA;# 新建项目 poetry new poetry-demo # 从已有的项目初始化 cd pre-existing-project poetry init # 进入虚拟环境，还会打开一个嵌套的 shell poetry shell # 1.</description>
     </item>
     <item>
       <title>pyenv</title>

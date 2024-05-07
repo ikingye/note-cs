@@ -7,21 +7,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="poetry # python-poetry/poetry # 安装 pipx install poetry # tab completion, 参考：https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh mkdir $ZSH_CUSTOM/plugins/poetry poetry completions zsh &gt; $ZSH_CUSTOM/plugins/poetry/_poetry # 在 ~/.zshrc 的 plugins 里面加上 poetry，再执行 zsh # plugins( # poetry # ... # ) 教程 # Poetry replaces setup.py, requirements.txt, setup.cfg, MANIFEST.in and Pipfile with a simple pyproject.toml based project format.
 Poetry will not automatically install a python interpreter for you.
-# 新建项目 poetry new poetry-demo # 从已有的项目初始化 cd pre-existing-project poetry init 版本说明 # 脱字符号 ^: 最左侧非零数字的更改 ^1.">
+# 新建项目 poetry new poetry-demo # 从已有的项目初始化 cd pre-existing-project poetry init # 进入虚拟环境，还会打开一个嵌套的 shell poetry shell # 1.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="poetry" />
 <meta property="og:description" content="poetry # python-poetry/poetry # 安装 pipx install poetry # tab completion, 参考：https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh mkdir $ZSH_CUSTOM/plugins/poetry poetry completions zsh &gt; $ZSH_CUSTOM/plugins/poetry/_poetry # 在 ~/.zshrc 的 plugins 里面加上 poetry，再执行 zsh # plugins( # poetry # ... # ) 教程 # Poetry replaces setup.py, requirements.txt, setup.cfg, MANIFEST.in and Pipfile with a simple pyproject.toml based project format.
 Poetry will not automatically install a python interpreter for you.
-# 新建项目 poetry new poetry-demo # 从已有的项目初始化 cd pre-existing-project poetry init 版本说明 # 脱字符号 ^: 最左侧非零数字的更改 ^1." />
+# 新建项目 poetry new poetry-demo # 从已有的项目初始化 cd pre-existing-project poetry init # 进入虚拟环境，还会打开一个嵌套的 shell poetry shell # 1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2024-05-07T18:03:02+08:00" />
 
 <title>poetry | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.8f318b325e1cacdac0df8d1fd95ef8a242929f39de79cb8df9dc6c039178085c.js" integrity="sha256-jzGLMl4crNrA340f2V74okKSnzneecuN&#43;dxsA5F4CFw="></script>
+<script defer src="/note-cs/en.search.min.9daaa5a941761fb1eb8b3af082f99f98dd0d733c5e87b217cbe1120301304c7a.js" integrity="sha256-naqlqUF2H7HrizrwgvmfmN0Nczxeh7IXy&#43;ESAwEwTHo="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19042,20 +19042,47 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 从已有的项目初始化</span>
 </span></span><span style="display:flex;"><span>cd pre-existing-project
 </span></span><span style="display:flex;"><span>poetry init
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 进入虚拟环境，还会打开一个嵌套的 shell</span>
+</span></span><span style="display:flex;"><span>poetry shell
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 退出虚拟环境</span>
+</span></span><span style="display:flex;"><span>deactivate
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 退出虚拟环境，并退出会话，丢失当前会话的所有上下文和未保存的状态</span>
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加新的依赖</span>
+</span></span><span style="display:flex;"><span>poetry add
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看依赖</span>
+</span></span><span style="display:flex;"><span>poetry show
+</span></span><span style="display:flex;"><span>poetry show --tree
+</span></span><span style="display:flex;"><span>poetry show --outdated
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更新 dependencies</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This is equivalent to deleting the poetry.lock file and running install again</span>
+</span></span><span style="display:flex;"><span>poetry update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 移除依赖</span>
+</span></span><span style="display:flex;"><span>poetry remove
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://python-poetry.org/docs/configuration/#cache-dir</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 虚拟环境目录</span>
+</span></span><span style="display:flex;"><span>cd ~/Library/Caches/pypoetry
 </span></span></code></pre></div><hr>
 <h2 id="版本说明">
   版本说明
   <a class="anchor" href="#%e7%89%88%e6%9c%ac%e8%af%b4%e6%98%8e">#</a>
 </h2>
 <ul>
-<li>脱字符号 <code>^</code>: <em>最左侧非零数字</em>的更改
+<li>脱字符号 <code>^</code>: <em>最左侧非零数字</em>不能变
 <ul>
 <li><code>^1.2</code>: <code>1.2</code> &lt;= 版本号 &lt; <code>2.0</code></li>
 <li><code>^0.2.3</code>: <code>0.2.3</code> &lt;= 版本号 &lt; <code>0.3.0</code></li>
 <li><code>^1.2.3</code>: <code>1.2.3</code> &lt;= 版本号 &lt; <code>2.0.0</code></li>
 </ul>
 </li>
-<li>波浪号运算符 <code>~</code>: 下一个重要版本
+<li>波浪号运算符 <code>~</code>: 下一个重要版本（右侧第二位不能变）
 <ul>
 <li><code>~1.2</code>: <code>1.2</code> &lt;= 版本号 &lt; <code>2.0</code></li>
 <li><code>~0.2.3</code>: <code>0.2.3</code> &lt;= 版本号 &lt; <code>0.3.0</code></li>
@@ -19074,6 +19101,12 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/b0ca6d8548a76025d39e75564871e87174b9b888" title='Last modified by yewang | 2024-05-07' target="_blank" rel="noopener">
+      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2024-05-07</span>
+    </a>
+  </div>
 
 
 
