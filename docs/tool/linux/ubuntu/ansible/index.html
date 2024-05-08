@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ansible # 安装 # sudo apt update sudo apt install software-properties-common sudo add-apt-repository --yes --update ppa:ansible/ansible sudo apt install ansible 参考：Installing Ansible on Ubuntu">
+<meta name="description" content="Ansible # 安装 # # pipx 安装 pipx install --include-deps ansible # 升级 pipx upgrade --include-injected ansible # apt 安装 sudo apt update sudo apt install software-properties-common sudo add-apt-repository --yes --update ppa:ansible/ansible sudo apt install ansible 参考：Installing Ansible on Ubuntu">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Ansible" />
-<meta property="og:description" content="Ansible # 安装 # sudo apt update sudo apt install software-properties-common sudo add-apt-repository --yes --update ppa:ansible/ansible sudo apt install ansible 参考：Installing Ansible on Ubuntu" />
+<meta property="og:description" content="Ansible # 安装 # # pipx 安装 pipx install --include-deps ansible # 升级 pipx upgrade --include-injected ansible # apt 安装 sudo apt update sudo apt install software-properties-common sudo add-apt-repository --yes --update ppa:ansible/ansible sudo apt install ansible 参考：Installing Ansible on Ubuntu" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.9daaa5a941761fb1eb8b3af082f99f98dd0d733c5e87b217cbe1120301304c7a.js" integrity="sha256-naqlqUF2H7HrizrwgvmfmN0Nczxeh7IXy&#43;ESAwEwTHo="></script>
+<script defer src="/note-cs/en.search.min.af7a6c4731571e7d13a8f3b54e434c9c9875a9ac75c8d24d2560929480a083f1.js" integrity="sha256-r3psRzFXHn0TqPO1TkNMnJh1qax1yNJNJWCSlICgg/E="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19011,7 +19011,15 @@ https://github.com/alex-shpak/hugo-book
   安装
   <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt update
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># pipx 安装</span>
+</span></span><span style="display:flex;"><span>pipx install --include-deps ansible
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 升级</span>
+</span></span><span style="display:flex;"><span>pipx upgrade --include-injected ansible
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># apt 安装</span>
+</span></span><span style="display:flex;"><span>sudo apt update
 </span></span><span style="display:flex;"><span>sudo apt install software-properties-common
 </span></span><span style="display:flex;"><span>sudo add-apt-repository --yes --update ppa:ansible/ansible
 </span></span><span style="display:flex;"><span>sudo apt install ansible
