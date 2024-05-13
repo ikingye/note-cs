@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.2.2 CentOS on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/tool/linux/centos/</link>
+    <description>Recent content in 4.2.2 CentOS on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/tool/linux/centos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</guid>
+      <description>docker # 安装 # sudo yum install -y yum-utils sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin sudo systemctl start docker sudo docker run hello-world 参考：https://docs.docker.com/engine/install/centos/</description>
+    </item>
+    <item>
+      <title>zsh</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/zsh/</guid>
+      <description> zsh # oh-my-zsh # 安装&#xA;sudo yum install -y git zsh # sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh alias cdcode=&amp;#39;cd ~/code&amp;#39; alias cdstudy=&amp;#39;cdcode &amp;amp;&amp;amp; cd study&amp;#39; alias cdtest=&amp;#39;cdstudy &amp;amp;&amp;amp; cd test&amp;#39; alias cdgithub=&amp;#39;cdcode &amp;amp;&amp;amp; cd github&amp;#39; alias cdgitlab=&amp;#39;cdcode &amp;amp;&amp;amp; cd gitlab&amp;#39; alias cdbitbucket=&amp;#39;cdcode &amp;amp;&amp;amp; cd bitbucket&amp;#39; # proxy # export http_proxy=149.28.137.166:20171 # export https_proxy=149.28.137.166:20171 # 设置默认为 zsh sudo chsh -s /usr/bin/zsh yewang </description>
+    </item>
+  </channel>
+</rss>
