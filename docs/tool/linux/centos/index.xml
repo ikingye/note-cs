@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="https://kingye.me/note-cs/docs/tool/linux/centos/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>curl</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</guid>
+      <description> curl # 安装 curl 支持 https # sudo yum install openssl-devel libssh2-devel -y cd /usr/local/src # sudo wget -c --no-check-certificate https://curl.se/download/curl-7.79.0.tar.gz # 放到 vpc sudo wget -c vultr.kingye.me/curl-7.79.0.tar.gz sudo tar -xzf curl-7.79.0.tar.gz cd curl-7.79.0 sudo ./configure --with-ssl sudo make sudo make install sudo ldconfig /usr/local/bin/curl -V </description>
+    </item>
+    <item>
       <title>docker</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
