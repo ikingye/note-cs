@@ -519,6 +519,13 @@
       <description> telnet # 只能测试 tcp 端口连接&#xA;无法测试 udp 端口连接（可以用 netcat）&#xA;telnet domain/ip [port] telnet 退出 # 按 CTRL + ] 然后输入 quit </description>
     </item>
     <item>
+      <title>动手学深度学习</title>
+      <link>https://kingye.me/note-cs/docs/study/book/ai/d2l/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/book/ai/d2l/</guid>
+      <description> 动手学深度学习 # 安装环境 # # 安装 conda wget -c --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh bash Miniconda3-latest-Linux-x86_64.sh conda create --name d2l python=3.9 -y conda activate d2l pip install torch==1.12.0 pip install torchvision==0.13.0 pip install d2l==0.17.6 mkdir code/d2l &amp;amp;&amp;amp; cd d2l wget -c vultr.kingye.me/d2l-zh.zip unzip d2l-zh.zip &amp;amp;&amp;amp; rm d2l-zh.zip cd pytorch jupyter notebook --ip=0.0.0.0 --port=8215 </description>
+    </item>
+    <item>
       <title>高阶</title>
       <link>https://kingye.me/note-cs/docs/basic/os/type/android/appendix/interview/expert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2339,6 +2346,13 @@
       <description>Jupyter # JupyterLab 包含了 Jupyter Notebook 所有功能，并升级增加了很多功能&#xA;pipenv install jupyterlab alias python-jupyter=&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34; alias jupyter=&amp;#34;python-jupyter -m jupyter&amp;#34; alias jlab=&amp;#34;jupyter lab&amp;#34; alias jlist=&amp;#34;jupyter kernelspec list&amp;#34; 参考：&#xA;JupyterLab Installation 配置 # # vi ~/.jupyter/jupyter_notebook_config.py # 绝对路径 c.NotebookApp.notebook_dir = &amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39; Jupyter Notebook vs Jupyter Lab # Jupyter Lab is a next-generation web-based user interface for Project Jupyter Jupyter Notebook Interface is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.</description>
     </item>
     <item>
+      <title>Jupyter</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/jupyter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/jupyter/</guid>
+      <description> Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath </description>
+    </item>
+    <item>
       <title>k3d</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2456,6 +2470,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid>
       <description>pipenv # pypa/pipenv # 进入虚拟环境 pipenv shell pipenv shell --python=3.10 # 退出虚拟环境 exit 设置镜像源 # # vim Pipfile [[source]] # url 替换成这个源 url = &amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34; 如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python&#xA;Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.</description>
+    </item>
+    <item>
+      <title>pipx</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/pipx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/pipx/</guid>
+      <description> pipx # </description>
     </item>
     <item>
       <title>pipx</title>

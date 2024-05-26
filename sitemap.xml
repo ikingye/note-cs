@@ -491,6 +491,8 @@
     <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/</loc>
     <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
+    <loc>https://kingye.me/note-cs/docs/study/book/ai/d2l/</loc>
+  </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/os/type/android/source/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
   </url><url>
@@ -2918,6 +2920,8 @@
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</loc>
     <lastmod>2023-10-24T14:26:22+08:00</lastmod>
   </url><url>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/jupyter/</loc>
+  </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</loc>
     <lastmod>2024-05-20T18:02:28+08:00</lastmod>
   </url><url>
@@ -2980,6 +2984,8 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</loc>
     <lastmod>2023-10-30T12:03:08+08:00</lastmod>
+  </url><url>
+    <loc>https://kingye.me/note-cs/docs/tool/linux/centos/pipx/</loc>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipx/</loc>
     <lastmod>2024-05-22T12:02:56+08:00</lastmod>

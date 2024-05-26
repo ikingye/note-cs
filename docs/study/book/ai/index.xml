@@ -14,5 +14,12 @@
       <guid>https://kingye.me/note-cs/docs/study/book/ai/prml/</guid>
       <description> Pattern Recognition and Machine Learning # </description>
     </item>
+    <item>
+      <title>动手学深度学习</title>
+      <link>https://kingye.me/note-cs/docs/study/book/ai/d2l/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/book/ai/d2l/</guid>
+      <description> 动手学深度学习 # 安装环境 # # 安装 conda wget -c --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh bash Miniconda3-latest-Linux-x86_64.sh conda create --name d2l python=3.9 -y conda activate d2l pip install torch==1.12.0 pip install torchvision==0.13.0 pip install d2l==0.17.6 mkdir code/d2l &amp;amp;&amp;amp; cd d2l wget -c vultr.kingye.me/d2l-zh.zip unzip d2l-zh.zip &amp;amp;&amp;amp; rm d2l-zh.zip cd pytorch jupyter notebook --ip=0.0.0.0 --port=8215 </description>
+    </item>
   </channel>
 </rss>

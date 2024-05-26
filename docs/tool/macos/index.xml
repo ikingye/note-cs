@@ -85,6 +85,13 @@
       <description>IntelliJ IDEA # 插件 # Alibaba Java Coding Guidelines # 教程 # xiaoxiunique/tool-tips # idea 中相见恨晚的技巧 https://atips.cn/idea/</description>
     </item>
     <item>
+      <title>Jupyter</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/jupyter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/jupyter/</guid>
+      <description> Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath </description>
+    </item>
+    <item>
       <title>kubectx</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/kubectx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
