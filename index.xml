@@ -2185,6 +2185,13 @@
       <description> Cargo # 常用命令 # 安装配置 # curl https://sh.rustup.rs -sSf | sh&#xA;参考：&#xA;The Cargo Book </description>
     </item>
     <item>
+      <title>conda</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/conda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/conda/</guid>
+      <description> conda # mkdir -p ~/miniconda3 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 rm -rf ~/miniconda3/miniconda.sh ~/miniconda3/bin/conda init bash ~/miniconda3/bin/conda init zsh </description>
+    </item>
+    <item>
       <title>Conda</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2393,6 +2400,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</guid>
       <description> langflow # langflow --host &amp;#34;0.0.0.0&amp;#34; --port 7865 </description>
+    </item>
+    <item>
+      <title>mamba</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/mamba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/mamba/</guid>
+      <description> mamba # </description>
     </item>
     <item>
       <title>Mas</title>
