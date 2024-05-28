@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="https://kingye.me/note-cs/docs/tool/linux/centos/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>cuda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</guid>
+      <description> cuda # 安装 # # centos 7 安装 cuda 12.1 wget -c https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-rhel7-12-1-local-12.1.0_530.30.02-1.x86_64.rpm sudo rpm -i cuda-repo-rhel7-12-1-local-12.1.0_530.30.02-1.x86_64.rpm sudo yum clean all sudo yum -y install nvidia-driver-latest-dkms sudo yum -y install cuda # 参考：https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;Distribution=RHEL&amp;amp;target_version=7&amp;amp;target_type=rpm_local </description>
+    </item>
+    <item>
       <title>curl</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -20,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</guid>
       <description>docker # 安装 # sudo yum install -y yum-utils sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin sudo systemctl start docker sudo docker run hello-world 参考：https://docs.docker.com/engine/install/centos/</description>
+    </item>
+    <item>
+      <title>mamba</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</guid>
+      <description>mamba # conda-forge/miniforge 安装 # # 安装 curl -L -O &amp;#34;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh&amp;#34; bash Miniforge3-$(uname)-$(uname -m).sh # -c 表示渠道 mamba create -n myjlabenv jupyterlab -c conda-forge mamba activate myjlabenv # activate our environment jupyter lab # this will start up jupyter lab and open a browser mamba activate myjlabenv mamba install bqplot # now you can use bqplot in myjlabenv mamba install &amp;#34;matplotlib&amp;gt;=3.5.0&amp;#34; cartopy # now you installed matplotlib with version&amp;gt;=3.</description>
     </item>
     <item>
       <title>pipx</title>

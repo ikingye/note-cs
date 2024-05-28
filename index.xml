@@ -2227,11 +2227,18 @@
       <description>ctr # ctr 是 containerd 自带的 CLI 命令行工具 ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（crictl image 才能看到） ctr -n k8s.io image list ctr -n k8s.io image pull # namespace ctr ns ls # 删除镜像 ctr -n k8s.io i rm $(ctr -n k8s.io i ls -q) # 删除容器 ctr -n k8s.io c rm $(ctr -n k8s.io c ls -q) ctr -n k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 # tag 重命名 ctr -n k8s.</description>
     </item>
     <item>
+      <title>cuda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</guid>
+      <description> cuda # 安装 # # centos 7 安装 cuda 12.1 wget -c https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-rhel7-12-1-local-12.1.0_530.30.02-1.x86_64.rpm sudo rpm -i cuda-repo-rhel7-12-1-local-12.1.0_530.30.02-1.x86_64.rpm sudo yum clean all sudo yum -y install nvidia-driver-latest-dkms sudo yum -y install cuda # 参考：https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;Distribution=RHEL&amp;amp;target_version=7&amp;amp;target_type=rpm_local </description>
+    </item>
+    <item>
       <title>CUDA</title>
       <link>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</guid>
-      <description>CUDA # Compute Unified Device Architecture&#xA;统一计算架构 nvcc -V 显示的当前安装的 cuda 版本&#xA;nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动&#xA;cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序&#xA;cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作&#xA;最新 nvidia 驱动版本支持所有版本的 CUDA GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。&#xA;只有一半的 CUDA 能支持整数计算&#xA;在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.</description>
+      <description>CUDA # Compute Unified Device Architecture&#xA;统一计算架构 nvcc -V 显示的当前安装的 cuda 版本&#xA;nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动&#xA;cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序&#xA;cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作&#xA;cuda 可以是旧的，驱动可以是更新的 最新 nvidia 驱动版本支持所有版本的 CUDA GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。&#xA;只有一半的 CUDA 能支持整数计算&#xA;在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.</description>
     </item>
     <item>
       <title>curl</title>
@@ -2403,10 +2410,17 @@
     </item>
     <item>
       <title>mamba</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</guid>
+      <description>mamba # conda-forge/miniforge 安装 # # 安装 curl -L -O &amp;#34;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh&amp;#34; bash Miniforge3-$(uname)-$(uname -m).sh # -c 表示渠道 mamba create -n myjlabenv jupyterlab -c conda-forge mamba activate myjlabenv # activate our environment jupyter lab # this will start up jupyter lab and open a browser mamba activate myjlabenv mamba install bqplot # now you can use bqplot in myjlabenv mamba install &amp;#34;matplotlib&amp;gt;=3.5.0&amp;#34; cartopy # now you installed matplotlib with version&amp;gt;=3.</description>
+    </item>
+    <item>
+      <title>mamba</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/mamba/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/mamba/</guid>
-      <description> mamba # </description>
+      <description>mamba # conda-forge/miniforge 安装 # # 安装 curl -L -O &amp;#34;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh&amp;#34; bash Miniforge3-$(uname)-$(uname -m).sh # -c 表示渠道 mamba create -n myjlabenv jupyterlab -c conda-forge mamba activate myjlabenv # activate our environment jupyter lab # this will start up jupyter lab and open a browser mamba activate myjlabenv mamba install bqplot # now you can use bqplot in myjlabenv mamba install &amp;#34;matplotlib&amp;gt;=3.5.0&amp;#34; cartopy # now you installed matplotlib with version&amp;gt;=3.</description>
     </item>
     <item>
       <title>Mas</title>
@@ -2526,6 +2540,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</guid>
       <description> pytorch # # cuda 11.4 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch </description>
+    </item>
+    <item>
+      <title>pytorch</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/pytorch/</guid>
+      <description> pytorch # # 安装 # cd ~/code/study/ai/pytorch/study-pytorch/hello-pytorch mamba create -n hello-pytorch mamba activate hello-pytorch mamba install torch torchvision torchaudio -c conda-forge </description>
     </item>
     <item>
       <title>ROM</title>
