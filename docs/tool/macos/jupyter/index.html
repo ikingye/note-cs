@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath ">
+<meta name="description" content="Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath pipx install notebook pipx install jupyter-book # 验证安装 jupyter --version jupyter-lab --version notebook --version jupyter-book --version jupyter --version # Selected Jupyter core packages... # IPython : 8.18.1 # ipykernel : 6.29.4 # ipywidgets : 8.1.2 # jupyter_client : 7.4.9 # jupyter_core : 5.7.2 # jupyter_server : 2.14.0 # jupyterlab : not installed # nbclient : 0.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Jupyter" />
-<meta property="og:description" content=" Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath " />
+<meta property="og:description" content="Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath pipx install notebook pipx install jupyter-book # 验证安装 jupyter --version jupyter-lab --version notebook --version jupyter-book --version jupyter --version # Selected Jupyter core packages... # IPython : 8.18.1 # ipykernel : 6.29.4 # ipywidgets : 8.1.2 # jupyter_client : 7.4.9 # jupyter_core : 5.7.2 # jupyter_server : 2.14.0 # jupyterlab : not installed # nbclient : 0." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/jupyter/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.a1f28b221ab15b1e9c407d071e82240add90249c1c1593890f220da8d2a1d077.js" integrity="sha256-ofKLIhqxWx6cQH0HHoIkCt2QJJwcFZOJDyINqNKh0Hc="></script>
+<script defer src="/note-cs/en.search.min.401b874c5463235300fcc8b9bbc124d899db60182b80257f2b2f806e91d2f50c.js" integrity="sha256-QBuHTFRjI1MA/Mi5u8Ek2JnbYBgrgCV/Ky&#43;AbpHS9Qw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19095,13 +19095,34 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>pipx install jupyterlab --include-deps
 </span></span><span style="display:flex;"><span>pipx ensurepath
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>pipx inject jupyterlab pandas
 </span></span><span style="display:flex;"><span>pipx ensurepath
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pipx install notebook
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pipx inject jupyterlab pandas
-</span></span><span style="display:flex;"><span>pipx ensurepath
+</span></span><span style="display:flex;"><span>pipx install jupyter-book
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 验证安装</span>
+</span></span><span style="display:flex;"><span>jupyter --version
+</span></span><span style="display:flex;"><span>jupyter-lab --version
+</span></span><span style="display:flex;"><span>notebook --version
+</span></span><span style="display:flex;"><span>jupyter-book --version
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jupyter --version
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Selected Jupyter core packages...</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># IPython          : 8.18.1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ipykernel        : 6.29.4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ipywidgets       : 8.1.2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># jupyter_client   : 7.4.9</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># jupyter_core     : 5.7.2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># jupyter_server   : 2.14.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># jupyterlab       : not installed</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># nbclient         : 0.10.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># nbconvert        : 7.16.4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># nbformat         : 5.10.4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># notebook         : 6.5.7</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># qtconsole        : 5.5.2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># traitlets        : 5.14.3</span>
 </span></span></code></pre></div></article>
  
       

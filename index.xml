@@ -2350,7 +2350,7 @@
       <link>https://kingye.me/note-cs/docs/tool/macos/jupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/jupyter/</guid>
-      <description> Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath </description>
+      <description>Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath pipx install notebook pipx install jupyter-book # 验证安装 jupyter --version jupyter-lab --version notebook --version jupyter-book --version jupyter --version # Selected Jupyter core packages... # IPython : 8.18.1 # ipykernel : 6.29.4 # ipywidgets : 8.1.2 # jupyter_client : 7.4.9 # jupyter_core : 5.7.2 # jupyter_server : 2.14.0 # jupyterlab : not installed # nbclient : 0.</description>
     </item>
     <item>
       <title>k3d</title>
