@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>行为型 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/</link>
+    <description>Recent content in 行为型 on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>命令</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/command/</guid>
+      <description> 命令模式 # Command Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>翻译器</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/interpreter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/interpreter/</guid>
+      <description> 翻译器模式 # Interpreter Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>迭代器</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/</guid>
+      <description> 迭代器模式 # Iterator Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>中介者</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/mediator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/mediator/</guid>
+      <description> 中介者模式 # Mediator Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>回忆</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/memento/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/memento/</guid>
+      <description> 回忆模式 # Memento Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>职责链</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/chain-of-responsibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/chain-of-responsibility/</guid>
+      <description> 职责链模式 # Chain-of-responsibility Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>观察者</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/observer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/observer/</guid>
+      <description> 观察者模式 # Observer Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>状态机</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/state/</guid>
+      <description> 状态机模式 # State Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>策略</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/strategy/</guid>
+      <description> 策略模式 # Strategy Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>模板方法</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</guid>
+      <description> 模板方法模式 # Template Method Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+    <item>
+      <title>参观者</title>
+      <link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/visitor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/visitor/</guid>
+      <description> 参观者模式 # Visitor Pattern&#xA;代码示例 # C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript </description>
+    </item>
+  </channel>
+</rss>
