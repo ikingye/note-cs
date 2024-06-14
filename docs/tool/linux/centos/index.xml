@@ -36,6 +36,13 @@
       <description> git # </description>
     </item>
     <item>
+      <title>k3d</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/k3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/k3d/</guid>
+      <description> k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &amp;#34;172.27.1.0/24&amp;#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &amp;#34;172.27.2.0/24&amp;#34; --api-port 10.173.199.27:8702 安装配置 # </description>
+    </item>
+    <item>
       <title>mamba</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
