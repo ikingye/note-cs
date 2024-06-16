@@ -5,15 +5,17 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" Mosquitto # eclipse/mosquitto 安装 # apt install mosquitto -y apt install mosquitto-clients -y 使用 # # mosquitto_pub version 1.6.9 running on libmosquitto 1.6.9. mosquitto_pub {[-h host] [-p port] [-u username] [-P password] -t topic | -L URL} {-f file | -l | -n | -m message} [-c] [-k keepalive] [-q qos] [-r] [--repeat N] [--repeat-delay time] [-A bind_address] [-i id] [-I id_prefix] [-d] [--quiet] [-M max_inflight] [-u username [-P password]] [--will-topic [--will-payload payload] [--will-qos qos] [--will-retain]] [{--cafile file | --capath dir} [--cert file] [--key file] [--ciphers ciphers] [--insecure] [--tls-alpn protocol] [--tls-engine engine] [--keyform keyform] [--tls-engine-kpass-sha1]] [--psk hex-key --psk-identity identity [--ciphers ciphers]] [--proxy socks-url] [--property command identifier value] [-D command identifier value] ">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Mosquitto" />
-<meta property="og:description" content=" Mosquitto # eclipse/mosquitto 安装 # apt install mosquitto -y apt install mosquitto-clients -y 使用 # # mosquitto_pub version 1.6.9 running on libmosquitto 1.6.9. mosquitto_pub {[-h host] [-p port] [-u username] [-P password] -t topic | -L URL} {-f file | -l | -n | -m message} [-c] [-k keepalive] [-q qos] [-r] [--repeat N] [--repeat-delay time] [-A bind_address] [-i id] [-I id_prefix] [-d] [--quiet] [-M max_inflight] [-u username [-P password]] [--will-topic [--will-payload payload] [--will-qos qos] [--will-retain]] [{--cafile file | --capath dir} [--cert file] [--key file] [--ciphers ciphers] [--insecure] [--tls-alpn protocol] [--tls-engine engine] [--keyform keyform] [--tls-engine-kpass-sha1]] [--psk hex-key --psk-identity identity [--ciphers ciphers]] [--proxy socks-url] [--property command identifier value] [-D command identifier value] " />
+<meta name="description" content=" 迭代器模式 # Iterator Pattern
+代码示例 # C C&#43;&#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="迭代器" />
+<meta property="og:description" content=" 迭代器模式 # Iterator Pattern
+代码示例 # C C&#43;&#43; C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-04-06T16:00:49+08:00" />
+<meta property="article:modified_time" content="2021-11-01T15:00:05+08:00" />
 
-<title>Mosquitto | 计算机学习笔记</title>
+<title>迭代器 | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
@@ -7894,7 +7896,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-8bb63f16227ae819f137c3afe363ec0f" class="toggle"  />
+    <input type="checkbox" id="section-8bb63f16227ae819f137c3afe363ec0f" class="toggle" checked />
     <label for="section-8bb63f16227ae819f137c3afe363ec0f" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/direction/se/" class="">2.1 软件工程</a>
     </label>
@@ -7910,7 +7912,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-8e0a20e4d1806e6b353def9ee6e99c73" class="toggle"  />
+    <input type="checkbox" id="section-8e0a20e4d1806e6b353def9ee6e99c73" class="toggle" checked />
     <label for="section-8e0a20e4d1806e6b353def9ee6e99c73" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/direction/se/design-pattern/" class="">2.1.1 设计模式</a>
     </label>
@@ -8313,9 +8315,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-72cda9784df1b258fc9af5aa87d6b932" class="toggle"  />
+    <input type="checkbox" id="section-72cda9784df1b258fc9af5aa87d6b932" class="toggle" checked />
     <label for="section-72cda9784df1b258fc9af5aa87d6b932" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/" class="">迭代器</a>
+      <a href="https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/" class="active">迭代器</a>
     </label>
   
 
@@ -16356,7 +16358,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-320c7b5f5be7113aa5975fcedd8e4b5a" class="toggle" checked />
+    <input type="checkbox" id="section-320c7b5f5be7113aa5975fcedd8e4b5a" class="toggle"  />
     <label for="section-320c7b5f5be7113aa5975fcedd8e4b5a" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/" class="">4.2.1 Ubuntu</a>
     </label>
@@ -16708,9 +16710,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6b72373c873308b5aff7e217fb07e3c5" class="toggle" checked />
+    <input type="checkbox" id="section-6b72373c873308b5aff7e217fb07e3c5" class="toggle"  />
     <label for="section-6b72373c873308b5aff7e217fb07e3c5" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/" class="active">Mosquitto</a>
+      <a href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/" class="">Mosquitto</a>
     </label>
   
 
@@ -19190,7 +19192,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Mosquitto</strong>
+  <strong>迭代器</strong>
 
   <label for="toc-control">
     
@@ -19206,8 +19208,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#安装">安装</a></li>
-    <li><a href="#使用">使用</a></li>
+    <li><a href="#代码示例">代码示例</a></li>
   </ul>
 </nav>
 <hr />
@@ -19228,41 +19229,52 @@ https://github.com/alex-shpak/hugo-book
 
 
       
-  <article id="article" class="markdown"><h1 id="mosquitto">
-  Mosquitto
-  <a class="anchor" href="#mosquitto">#</a>
+  <article id="article" class="markdown"><h1 id="迭代器模式">
+  迭代器模式
+  <a class="anchor" href="#%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f">#</a>
 </h1>
-<p><a href="https://github.com/eclipse/mosquitto">eclipse/mosquitto</a> <img src="https://img.shields.io/github/stars/eclipse/mosquitto.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/eclipse/mosquitto.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/eclipse/mosquitto.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/eclipse/mosquitto.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/eclipse/mosquitto.svg" alt="Last commit" /></p>
-<h2 id="安装">
-  安装
-  <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
+<p>Iterator Pattern</p>
+<h2 id="代码示例">
+  代码示例
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt install mosquitto -y
-</span></span><span style="display:flex;"><span>apt install mosquitto-clients -y
-</span></span></code></pre></div><h2 id="使用">
-  使用
-  <a class="anchor" href="#%e4%bd%bf%e7%94%a8">#</a>
-</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># mosquitto_pub version 1.6.9 running on libmosquitto 1.6.9.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mosquitto_pub <span style="color:#f92672">{[</span>-h host<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-p port<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-u username<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-P password<span style="color:#f92672">]</span> -t topic | -L URL<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">{</span>-f file | -l | -n | -m message<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-c<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-k keepalive<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-q qos<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-r<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--repeat N<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--repeat-delay time<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-A bind_address<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-i id<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-I id_prefix<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-d<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--quiet<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-M max_inflight<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-u username <span style="color:#f92672">[</span>-P password<span style="color:#f92672">]]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--will-topic <span style="color:#f92672">[</span>--will-payload payload<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--will-qos qos<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--will-retain<span style="color:#f92672">]]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[{</span>--cafile file | --capath dir<span style="color:#f92672">}</span> <span style="color:#f92672">[</span>--cert file<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--key file<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                       <span style="color:#f92672">[</span>--ciphers ciphers<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--insecure<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                       <span style="color:#f92672">[</span>--tls-alpn protocol<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                       <span style="color:#f92672">[</span>--tls-engine engine<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--keyform keyform<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--tls-engine-kpass-sha1<span style="color:#f92672">]]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--psk hex-key --psk-identity identity <span style="color:#f92672">[</span>--ciphers ciphers<span style="color:#f92672">]]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--proxy socks-url<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>--property command identifier value<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>                     <span style="color:#f92672">[</span>-D command identifier value<span style="color:#f92672">]</span>
-</span></span></code></pre></div></article>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
+  <label for="tabs-code-0">C</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-1"  />
+  <label for="tabs-code-1">C&#43;&#43;</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-2"  />
+  <label for="tabs-code-2">C#</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-3"  />
+  <label for="tabs-code-3">Go</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-4"  />
+  <label for="tabs-code-4">Java</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-5"  />
+  <label for="tabs-code-5">JavaScript</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-6"  />
+  <label for="tabs-code-6">Kotlin</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-7"  />
+  <label for="tabs-code-7">PHP</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-8"  />
+  <label for="tabs-code-8">Python2</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-9"  />
+  <label for="tabs-code-9">Python3</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-10"  />
+  <label for="tabs-code-10">Ruby</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-11"  />
+  <label for="tabs-code-11">Rust</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-12"  />
+  <label for="tabs-code-12">Scala</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-13"  />
+  <label for="tabs-code-13">Swift</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"></code></pre></div></div><input type="radio" class="toggle" name="tabs-code" id="tabs-code-14"  />
+  <label for="tabs-code-14">TypeScript</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"></code></pre></div></div></div>
+
+</article>
  
       
 
@@ -19272,9 +19284,9 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/0588e51120eca8246a980d1bd25f1d8fca7aaa67" title='Last modified by yewang | 2023-04-06' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/e11fcf719f35e04d68b7aab588f7a260c3d5293c" title='Last modified by yewang | 2021-11-01' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2023-04-06</span>
+      <span>2021-11-01</span>
     </a>
   </div>
 
@@ -19335,8 +19347,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#安装">安装</a></li>
-    <li><a href="#使用">使用</a></li>
+    <li><a href="#代码示例">代码示例</a></li>
   </ul>
 </nav>
 <hr />
