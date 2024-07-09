@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 config: | mirrors: &#34;docker.io&#34;: endpoint: - https://pjuig8sx.mirror.aliyuncs.com - https://mirror.baidubce.com - https://hub-mirror.c.163.com - https://v16stybc.mirror.aliyuncs.com - https://hub.uuuadc.top - https://docker.anyhub.us.kg - https://dockerhub.jobcher.com - https://dockerhub.icu - https://docker.kingye.me - https://docker.">
+<meta name="description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 host: &#34;127.0.0.1&#34; config: | mirrors: &#34;docker.io&#34;: endpoint: - https://pjuig8sx.mirror.aliyuncs.com - https://mirror.baidubce.com - https://hub-mirror.c.163.com - https://v16stybc.mirror.aliyuncs.com - https://hub.uuuadc.top - https://docker.anyhub.us.kg - https://dockerhub.jobcher.com - https://dockerhub.icu - https://docker.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="k3d" />
-<meta property="og:description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 config: | mirrors: &#34;docker.io&#34;: endpoint: - https://pjuig8sx.mirror.aliyuncs.com - https://mirror.baidubce.com - https://hub-mirror.c.163.com - https://v16stybc.mirror.aliyuncs.com - https://hub.uuuadc.top - https://docker.anyhub.us.kg - https://dockerhub.jobcher.com - https://dockerhub.icu - https://docker.kingye.me - https://docker." />
+<meta property="og:description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 host: &#34;127.0.0.1&#34; config: | mirrors: &#34;docker.io&#34;: endpoint: - https://pjuig8sx.mirror.aliyuncs.com - https://mirror.baidubce.com - https://hub-mirror.c.163.com - https://v16stybc.mirror.aliyuncs.com - https://hub.uuuadc.top - https://docker.anyhub.us.kg - https://dockerhub.jobcher.com - https://dockerhub.icu - https://docker." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/centos/k3d/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.db7645d9646109d47db24eafa9562d370909d6e48851873f5e0f7545aead2792.js" integrity="sha256-23ZF2WRhCdR9sk6vqVYtNwkJ1uSIUYc/Xg91Ra6tJ5I="></script>
+<script defer src="/note-cs/en.search.min.0bec05298a5f13f289fbac5dad854a740bd9bce613354fdf18c7121093d5688d.js" integrity="sha256-C&#43;wFKYpfE/KJ&#43;6xdrYVKdAvZvOYTNU/fGMcSEJPVaI0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19249,6 +19249,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">registries:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  create:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    name: registry-1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    host: &#34;127.0.0.1&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  config: |
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    mirrors:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;docker.io&#34;:
@@ -19266,7 +19267,6 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.awsl9527.cn
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">subnet: &#34;172.27.1.0/24&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">kubeAPI:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  hostIP: &#34;10.173.199.27&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  hostPort: &#34;8701&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
 </span></span><span style="display:flex;"><span>
@@ -19283,6 +19283,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">registries:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  create:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    name: registry-2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    host: &#34;127.0.0.1&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  config: |
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    mirrors:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;docker.io&#34;:
@@ -19300,7 +19301,6 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.awsl9527.cn
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">subnet: &#34;172.27.2.0/24&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">kubeAPI:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  hostIP: &#34;10.173.199.27&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  hostPort: &#34;8702&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
 </span></span><span style="display:flex;"><span>
