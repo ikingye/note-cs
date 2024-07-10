@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.2.2 CentOS on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/tool/linux/centos/</link>
+    <description>Recent content in 4.2.2 CentOS on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/tool/linux/centos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cuda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</guid>
+      <description> cuda # 安装 # # centos 7 安装 cuda 12.1 wget -c https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-rhel7-12-1-local-12.1.0_530.30.02-1.x86_64.rpm sudo rpm -i cuda-repo-rhel7-12-1-local-12.1.0_530.30.02-1.x86_64.rpm sudo yum clean all sudo yum -y install nvidia-driver-latest-dkms sudo yum -y install cuda # 参考：https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;Distribution=RHEL&amp;amp;target_version=7&amp;amp;target_type=rpm_local </description>
+    </item>
+    <item>
+      <title>curl</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</guid>
+      <description> curl # 安装 curl 支持 https # sudo yum install openssl-devel libssh2-devel -y cd /usr/local/src # sudo wget -c --no-check-certificate https://curl.se/download/curl-7.79.0.tar.gz # 放到 vpc sudo wget -c vultr.kingye.me/curl-7.79.0.tar.gz sudo tar -xzf curl-7.79.0.tar.gz cd curl-7.79.0 sudo ./configure --with-ssl sudo make sudo make install sudo ldconfig /usr/local/bin/curl -V </description>
+    </item>
+    <item>
+      <title>docker</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</guid>
+      <description>docker # 安装 # sudo yum install -y yum-utils sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin sudo systemctl start docker sudo docker run hello-world 参考：https://docs.docker.com/engine/install/centos/</description>
+    </item>
+    <item>
+      <title>git</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/git/</guid>
+      <description> git # </description>
+    </item>
+    <item>
+      <title>k3d</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/k3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/k3d/</guid>
+      <description>k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &amp;#34;172.27.1.0/24&amp;#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &amp;#34;172.27.2.0/24&amp;#34; --api-port 10.173.199.27:8702 cat &amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 host: &amp;#34;127.0.0.1&amp;#34; config: | mirrors: &amp;#34;docker.io&amp;#34;: endpoint: - https://pjuig8sx.mirror.aliyuncs.com - https://mirror.baidubce.com - https://hub-mirror.c.163.com - https://v16stybc.mirror.aliyuncs.com - https://hub.uuuadc.top - https://docker.anyhub.us.kg - https://dockerhub.jobcher.com - https://dockerhub.icu - https://docker.</description>
+    </item>
+    <item>
+      <title>mamba</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</guid>
+      <description>mamba # conda-forge/miniforge 安装 # # 安装 curl -L -O &amp;#34;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh&amp;#34; bash Miniforge3-$(uname)-$(uname -m).sh # -c 表示渠道 mamba create -n myjlabenv jupyterlab -c conda-forge mamba activate myjlabenv # activate our environment jupyter lab # this will start up jupyter lab and open a browser mamba activate myjlabenv mamba install bqplot # now you can use bqplot in myjlabenv mamba install &amp;#34;matplotlib&amp;gt;=3.5.0&amp;#34; cartopy # now you installed matplotlib with version&amp;gt;=3.</description>
+    </item>
+    <item>
+      <title>pipx</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/pipx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/pipx/</guid>
+      <description> pipx # </description>
+    </item>
+    <item>
+      <title>pytorch</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</guid>
+      <description> pytorch # install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia </description>
+    </item>
+    <item>
+      <title>zsh</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/zsh/</guid>
+      <description> zsh # oh-my-zsh # 安装&#xA;sudo yum install -y git zsh # sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34; cat &amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt;&amp;gt; ~/.zshrc export PROMPT=&amp;#39;%{$fg[magenta]%}%(?..%?%1v)%n@%{$fg[green]%}%M:%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)&amp;#39; EOF zsh alias cdcode=&amp;#39;cd ~/code&amp;#39; alias cdstudy=&amp;#39;cdcode &amp;amp;&amp;amp; cd study&amp;#39; alias cdtest=&amp;#39;cdstudy &amp;amp;&amp;amp; cd test&amp;#39; alias cdgithub=&amp;#39;cdcode &amp;amp;&amp;amp; cd github&amp;#39; alias cdgitlab=&amp;#39;cdcode &amp;amp;&amp;amp; cd gitlab&amp;#39; alias cdbitbucket=&amp;#39;cdcode &amp;amp;&amp;amp; cd bitbucket&amp;#39; # proxy # export http_proxy=149.28.137.166:20171 # export https_proxy=149.28.137.166:20171 # 设置默认为 zsh sudo chsh -s /usr/bin/zsh yewang </description>
+    </item>
+  </channel>
+</rss>
