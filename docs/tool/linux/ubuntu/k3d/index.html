@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" k3d # rancher/k3d 常用命令 # k3d cluster create ecsp-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.232.205.41:8701 --servers 1 --agents 2 k3d cluster create ecsp-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.232.205.41:8702 安装配置 # ">
+<meta name="description" content=" k3d # rancher/k3d 常用命令 # # 安装 k3d wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash k3d cluster create ecsp-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.232.205.41:8701 --servers 1 --agents 2 k3d cluster create ecsp-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.232.205.41:8702 安装配置 # ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="k3d" />
-<meta property="og:description" content=" k3d # rancher/k3d 常用命令 # k3d cluster create ecsp-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.232.205.41:8701 --servers 1 --agents 2 k3d cluster create ecsp-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.232.205.41:8702 安装配置 # " />
+<meta property="og:description" content=" k3d # rancher/k3d 常用命令 # # 安装 k3d wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash k3d cluster create ecsp-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.232.205.41:8701 --servers 1 --agents 2 k3d cluster create ecsp-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.232.205.41:8702 安装配置 # " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.0bec05298a5f13f289fbac5dad854a740bd9bce613354fdf18c7121093d5688d.js" integrity="sha256-C&#43;wFKYpfE/KJ&#43;6xdrYVKdAvZvOYTNU/fGMcSEJPVaI0="></script>
+<script defer src="/note-cs/en.search.min.5693b070ea805d21a0afc922e2f48455ea29372d7694e83871984e451a0b917b.js" integrity="sha256-VpOwcOqAXSGgr8ki4vSEVeopNy12lOg4cZhORRoLkXs="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19237,7 +19237,11 @@ https://github.com/alex-shpak/hugo-book
   常用命令
   <a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>k3d cluster create ecsp-test-1 --subnet <span style="color:#e6db74">&#34;172.27.1.0/24&#34;</span> --api-port 10.232.205.41:8701 --servers <span style="color:#ae81ff">1</span> --agents <span style="color:#ae81ff">2</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 安装 k3d</span>
+</span></span><span style="display:flex;"><span>wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>k3d cluster create ecsp-test-1 --subnet <span style="color:#e6db74">&#34;172.27.1.0/24&#34;</span> --api-port 10.232.205.41:8701 --servers <span style="color:#ae81ff">1</span> --agents <span style="color:#ae81ff">2</span>
 </span></span><span style="display:flex;"><span>k3d cluster create ecsp-test-2 --subnet <span style="color:#e6db74">&#34;172.27.2.0/24&#34;</span> --api-port 10.232.205.41:8702
 </span></span></code></pre></div><h2 id="安装配置">
   安装配置

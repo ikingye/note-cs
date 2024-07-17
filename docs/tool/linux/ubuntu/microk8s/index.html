@@ -7,11 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MicroK8s # ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-安装 # snap install microk8s --classic snap install kubectl --classic # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable mkdir -p ~/.kube microk8s config &gt; ~/.kube/config microk8s enable dashboard dns ingress # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 # microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 registry.">
+安装 # snap install microk8s --classic snap install kubectl --classic # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable mkdir -p ~/.kube microk8s config &gt; ~/.kube/config microk8s enable dns microk8s enable dashboard ingress # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="MicroK8s" />
 <meta property="og:description" content="MicroK8s # ubuntu/microk8s MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.
 https://microk8s.io
-安装 # snap install microk8s --classic snap install kubectl --classic # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable mkdir -p ~/.kube microk8s config &gt; ~/.kube/config microk8s enable dashboard dns ingress # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 # microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 registry." />
+安装 # snap install microk8s --classic snap install kubectl --classic # snap install microk8s --classic --channel=1.23/stable # snap install kubectl --classic --channel=1.23/stable mkdir -p ~/.kube microk8s config &gt; ~/.kube/config microk8s enable dns microk8s enable dashboard ingress # 拉镜像 microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7 microk8s ctr image tag registry." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@ https://microk8s.io
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.0bec05298a5f13f289fbac5dad854a740bd9bce613354fdf18c7121093d5688d.js" integrity="sha256-C&#43;wFKYpfE/KJ&#43;6xdrYVKdAvZvOYTNU/fGMcSEJPVaI0="></script>
+<script defer src="/note-cs/en.search.min.5693b070ea805d21a0afc922e2f48455ea29372d7694e83871984e451a0b917b.js" integrity="sha256-VpOwcOqAXSGgr8ki4vSEVeopNy12lOg4cZhORRoLkXs="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19215,6 +19215,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#安装-kubectl-的另一种方法">安装 kubectl 的另一种方法</a></li>
       </ul>
     </li>
+    <li><a href="#配置镜像源">配置镜像源</a></li>
     <li><a href="#常用命令">常用命令</a></li>
     <li><a href="#安装配置">安装配置</a>
       <ul>
@@ -19261,11 +19262,12 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>mkdir -p ~/.kube
 </span></span><span style="display:flex;"><span>microk8s config &gt; ~/.kube/config
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>microk8s enable dashboard dns ingress
+</span></span><span style="display:flex;"><span>microk8s enable dns
+</span></span><span style="display:flex;"><span>microk8s enable dashboard ingress
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 拉镜像</span>
 </span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7</span>
+</span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 k8s.gcr.io/pause:3.7
 </span></span><span style="display:flex;"><span>microk8s ctr image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.7 registry.k8s.io/pause:3.7
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>microk8s ctr image pull registry.cn-hangzhou.aliyuncs.com/google_containers/nginx-ingress-controller:v1.2.0
@@ -19286,6 +19288,34 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main&#34;</span> | sudo tee /etc/apt/sources.list.d/kubernetes.list
 </span></span><span style="display:flex;"><span>sudo apt update
 </span></span><span style="display:flex;"><span>sudo apt install kubectl -y
+</span></span></code></pre></div><hr>
+<h2 id="配置镜像源">
+  配置镜像源
+  <a class="anchor" href="#%e9%85%8d%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 先停止</span>
+</span></span><span style="display:flex;"><span>sudo microk8s.stop
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo vim /var/snap/microk8s/current/args/containerd-template.toml
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">[</span>plugins.<span style="color:#e6db74">&#34;io.containerd.grpc.v1.cri&#34;</span>.registry.mirrors<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">[</span>plugins.<span style="color:#e6db74">&#34;io.containerd.grpc.v1.cri&#34;</span>.registry.mirrors.<span style="color:#e6db74">&#34;docker.io&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    endpoint <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;docker.1panel.live&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;hub.rat.dev&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;docker.anyhub.us.kg&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;docker.chenby.cn&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;dockerhub.jobcher.com&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;docker.awsl9527.cn&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;docker.m.daocloud.io&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo microk8s.start
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>microk8s.ctr images pull docker.io/library/busybox:latest
+</span></span><span style="display:flex;"><span>microk8s.ctr images pull docker.io/calico/cni:v3.19.1
 </span></span></code></pre></div><hr>
 <h2 id="常用命令">
   常用命令
@@ -19397,6 +19427,7 @@ no_proxy=10.0.0.0/8,172.16.0.0/12,192.168/16
         <li><a href="#安装-kubectl-的另一种方法">安装 kubectl 的另一种方法</a></li>
       </ul>
     </li>
+    <li><a href="#配置镜像源">配置镜像源</a></li>
     <li><a href="#常用命令">常用命令</a></li>
     <li><a href="#安装配置">安装配置</a>
       <ul>

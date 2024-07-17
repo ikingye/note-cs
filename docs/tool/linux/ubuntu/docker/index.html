@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Docker # 使用 # # 停止 docker systemctl stop docker.socket 安装 # # Uninstall old versions sudo apt-get remove docker docker-engine docker.io containerd runc # Update the apt package index and install packages to allow apt to use a repository over HTTPS sudo apt-get update sudo apt-get install -y \ ca-certificates \ curl \ gnupg \ lsb-release # Add Docker’s official GPG key sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download.">
+<meta name="description" content="Docker # 使用 # # 停止 docker systemctl stop docker.socket 安装 # # 使用网易镜像源 sudo apt-get update sudo apt-get install ca-certificates curl sudo install -m 0755 -d /etc/apt/keyrings sudo curl -fsSL https://mirrors.163.com/docker-ce/linux/ubuntu/gpg -o /etc/apt/keyrings/docker-163.asc sudo chmod a&#43;r /etc/apt/keyrings/docker-163.asc # Add the repository to Apt sources: echo \ &#34;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker-163.asc] https://mirrors.163.com/docker-ce/linux/ubuntu \ $(. /etc/os-release &amp;&amp; echo &#34;$VERSION_CODENAME&#34;) stable&#34; | \ sudo tee /etc/apt/sources.list.d/docker-163.list &gt; /dev/null sudo apt-get update sudo apt-get install docker-ce docker-ce-cli containerd.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Docker" />
-<meta property="og:description" content="Docker # 使用 # # 停止 docker systemctl stop docker.socket 安装 # # Uninstall old versions sudo apt-get remove docker docker-engine docker.io containerd runc # Update the apt package index and install packages to allow apt to use a repository over HTTPS sudo apt-get update sudo apt-get install -y \ ca-certificates \ curl \ gnupg \ lsb-release # Add Docker’s official GPG key sudo mkdir -p /etc/apt/keyrings curl -fsSL https://download." />
+<meta property="og:description" content="Docker # 使用 # # 停止 docker systemctl stop docker.socket 安装 # # 使用网易镜像源 sudo apt-get update sudo apt-get install ca-certificates curl sudo install -m 0755 -d /etc/apt/keyrings sudo curl -fsSL https://mirrors.163.com/docker-ce/linux/ubuntu/gpg -o /etc/apt/keyrings/docker-163.asc sudo chmod a&#43;r /etc/apt/keyrings/docker-163.asc # Add the repository to Apt sources: echo \ &#34;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker-163.asc] https://mirrors.163.com/docker-ce/linux/ubuntu \ $(. /etc/os-release &amp;&amp; echo &#34;$VERSION_CODENAME&#34;) stable&#34; | \ sudo tee /etc/apt/sources.list.d/docker-163.list &gt; /dev/null sudo apt-get update sudo apt-get install docker-ce docker-ce-cli containerd." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.0bec05298a5f13f289fbac5dad854a740bd9bce613354fdf18c7121093d5688d.js" integrity="sha256-C&#43;wFKYpfE/KJ&#43;6xdrYVKdAvZvOYTNU/fGMcSEJPVaI0="></script>
+<script defer src="/note-cs/en.search.min.5693b070ea805d21a0afc922e2f48455ea29372d7694e83871984e451a0b917b.js" integrity="sha256-VpOwcOqAXSGgr8ki4vSEVeopNy12lOg4cZhORRoLkXs="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19212,6 +19212,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#安装指定版本-docker">安装指定版本 docker</a></li>
       </ul>
     </li>
+    <li><a href="#设置镜像源">设置镜像源</a></li>
   </ul>
 </nav>
 <hr />
@@ -19246,32 +19247,21 @@ https://github.com/alex-shpak/hugo-book
   安装
   <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Uninstall old versions</span>
-</span></span><span style="display:flex;"><span>sudo apt-get remove docker docker-engine docker.io containerd runc
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Update the apt package index and install packages to allow apt to use a repository over HTTPS</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 使用网易镜像源</span>
 </span></span><span style="display:flex;"><span>sudo apt-get update
-</span></span><span style="display:flex;"><span>sudo apt-get install -y <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    ca-certificates <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    curl <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    gnupg <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    lsb-release
+</span></span><span style="display:flex;"><span>sudo apt-get install ca-certificates curl
+</span></span><span style="display:flex;"><span>sudo install -m <span style="color:#ae81ff">0755</span> -d /etc/apt/keyrings
+</span></span><span style="display:flex;"><span>sudo curl -fsSL https://mirrors.163.com/docker-ce/linux/ubuntu/gpg -o /etc/apt/keyrings/docker-163.asc
+</span></span><span style="display:flex;"><span>sudo chmod a+r /etc/apt/keyrings/docker-163.asc
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add Docker’s official GPG key</span>
-</span></span><span style="display:flex;"><span>sudo mkdir -p /etc/apt/keyrings
-</span></span><span style="display:flex;"><span>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># set up the repository</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [arch=</span><span style="color:#66d9ef">$(</span>dpkg --print-architecture<span style="color:#66d9ef">)</span><span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Receiving a GPG error when running apt-get update?</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># sudo chmod a+r /etc/apt/keyrings/docker.gpg</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add the repository to Apt sources:</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">&#34;deb [arch=</span><span style="color:#66d9ef">$(</span>dpkg --print-architecture<span style="color:#66d9ef">)</span><span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker-163.asc] https://mirrors.163.com/docker-ce/linux/ubuntu \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  </span><span style="color:#66d9ef">$(</span>. /etc/os-release <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;</span>$VERSION_CODENAME<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span> | <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  sudo tee /etc/apt/sources.list.d/docker-163.list &gt; /dev/null
 </span></span><span style="display:flex;"><span>sudo apt-get update
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 安装最新版本 docker</span>
-</span></span><span style="display:flex;"><span>sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</span></span><span style="display:flex;"><span>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 </span></span></code></pre></div><h3 id="安装指定版本-docker">
   安装指定版本 docker
   <a class="anchor" href="#%e5%ae%89%e8%a3%85%e6%8c%87%e5%ae%9a%e7%89%88%e6%9c%ac-docker">#</a>
@@ -19286,6 +19276,28 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>VERSION_STRING<span style="color:#f92672">=</span>5:20.10.13~3-0~ubuntu-jammy
 </span></span><span style="display:flex;"><span>sudo apt-get install docker-ce<span style="color:#f92672">=</span>$VERSION_STRING docker-ce-cli<span style="color:#f92672">=</span>$VERSION_STRING containerd.io docker-compose-plugin
+</span></span></code></pre></div><hr>
+<h2 id="设置镜像源">
+  设置镜像源
+  <a class="anchor" href="#%e8%ae%be%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39; &gt; /etc/docker/daemon.json
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &#34;experimental&#34;: false,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &#34;debug&#34;: true,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &#34;registry-mirrors&#34;: [
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;https://docker.1panel.live&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;https://hub.rat.dev&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;https://docker.anyhub.us.kg&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;https://docker.chenby.cn&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;https://dockerhub.jobcher.com&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;https://docker.awsl9527.cn&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;https://docker.m.daocloud.io&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  ]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>systemctl restart docker
 </span></span></code></pre></div></article>
  
       
@@ -19365,6 +19377,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#安装指定版本-docker">安装指定版本 docker</a></li>
       </ul>
     </li>
+    <li><a href="#设置镜像源">设置镜像源</a></li>
   </ul>
 </nav>
 <hr />
