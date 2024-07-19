@@ -103,7 +103,7 @@
       <link>https://kingye.me/note-cs/docs/tool/macos/kubectx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/kubectx/</guid>
-      <description> kubectx # ahmetb/kubectx # 安装 brew install kubectx </description>
+      <description>kubectx # ahmetb/kubectx # 安装 brew install kubectx alias kx=kubectx alias kn=kubens # 展示当前可用集群列表 kx # 选中某集群 kx xxx # 展示 namespace 列表 kn # 选中某 ns kn xxx kubemerge # # vim ~/.zshrc kubemerge() { if [ $# -eq 0 ]; then echo &amp;#34;Usage: kubemerge &amp;lt;path-to-kubeconfig1&amp;gt; [&amp;lt;path-to-kubeconfig2&amp;gt; ...]&amp;#34; return 1 fi # Ensure ~/.kube directory exists mkdir -p ~/.kube # Ensure ~/.kube/config exists and is not empty if [ !</description>
     </item>
     <item>
       <title>mamba</title>

@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 host: &#34;127.0.0.1&#34; config: | mirrors: &#34;docker.io&#34;: endpoint: - https://pjuig8sx.mirror.aliyuncs.com - https://mirror.baidubce.com - https://hub-mirror.c.163.com - https://v16stybc.mirror.aliyuncs.com - https://hub.uuuadc.top - https://docker.anyhub.us.kg - https://dockerhub.jobcher.com - https://dockerhub.icu - https://docker.">
+<meta name="description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 host: &#34;127.0.0.1&#34; config: | mirrors: &#34;docker.io&#34;: endpoint: - https://docker.1panel.live - https://hub.rat.dev - https://docker.anyhub.us.kg - https://docker.chenby.cn - https://dockerhub.jobcher.com - https://docker.awsl9527.cn - https://docker.m.daocloud.io subnet: &#34;172.27.1.0/24&#34; kubeAPI: hostPort: &#34;8701&#34; EOF k3d cluster create --config k3d-config-cluster-1.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="k3d" />
-<meta property="og:description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 host: &#34;127.0.0.1&#34; config: | mirrors: &#34;docker.io&#34;: endpoint: - https://pjuig8sx.mirror.aliyuncs.com - https://mirror.baidubce.com - https://hub-mirror.c.163.com - https://v16stybc.mirror.aliyuncs.com - https://hub.uuuadc.top - https://docker.anyhub.us.kg - https://dockerhub.jobcher.com - https://dockerhub.icu - https://docker." />
+<meta property="og:description" content="k3d # rancher/k3d 常用命令 # k3d cluster create yewang-test-1 --subnet &#34;172.27.1.0/24&#34; --api-port 10.173.199.27:8701 --servers 1 --agents 2 k3d cluster create yewang-test-2 --subnet &#34;172.27.2.0/24&#34; --api-port 10.173.199.27:8702 cat &lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 servers: 1 agents: 2 registries: create: name: registry-1 host: &#34;127.0.0.1&#34; config: | mirrors: &#34;docker.io&#34;: endpoint: - https://docker.1panel.live - https://hub.rat.dev - https://docker.anyhub.us.kg - https://docker.chenby.cn - https://dockerhub.jobcher.com - https://docker.awsl9527.cn - https://docker.m.daocloud.io subnet: &#34;172.27.1.0/24&#34; kubeAPI: hostPort: &#34;8701&#34; EOF k3d cluster create --config k3d-config-cluster-1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/centos/k3d/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.3850b7bec4737d1c4d4182de38832238ba1a2c297078d9029c6da75aa822e0dc.js" integrity="sha256-OFC3vsRzfRxNQYLeOIMiOLoaLClweNkCnG2nWqgi4Nw="></script>
+<script defer src="/note-cs/en.search.min.a39b0da175618c3f1e5d9ebf3738ac770e6aaaffb14472f76259ad361039c937.js" integrity="sha256-o5sNoXVhjD8eXZ6/Nzisdw5qqv&#43;xRHL3YlmtNhA5yTc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19254,17 +19254,13 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    mirrors:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;docker.io&#34;:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        endpoint:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://pjuig8sx.mirror.aliyuncs.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://mirror.baidubce.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://hub-mirror.c.163.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://v16stybc.mirror.aliyuncs.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://hub.uuuadc.top
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.1panel.live
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://hub.rat.dev
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.anyhub.us.kg
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.chenby.cn
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://dockerhub.jobcher.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://dockerhub.icu
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.kingye.me
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.ckyl.me
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.awsl9527.cn
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.m.daocloud.io
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">subnet: &#34;172.27.1.0/24&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">kubeAPI:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  hostPort: &#34;8701&#34;
@@ -19288,17 +19284,13 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    mirrors:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &#34;docker.io&#34;:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        endpoint:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://pjuig8sx.mirror.aliyuncs.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://mirror.baidubce.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://hub-mirror.c.163.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://v16stybc.mirror.aliyuncs.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://hub.uuuadc.top
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.1panel.live
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://hub.rat.dev
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.anyhub.us.kg
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.chenby.cn
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://dockerhub.jobcher.com
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://dockerhub.icu
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.kingye.me
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.ckyl.me
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.awsl9527.cn
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          - https://docker.m.daocloud.io
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">subnet: &#34;172.27.2.0/24&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">kubeAPI:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  hostPort: &#34;8702&#34;

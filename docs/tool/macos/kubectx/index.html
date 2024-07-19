@@ -5,19 +5,19 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" kubectx # ahmetb/kubectx # 安装 brew install kubectx ">
+<meta name="description" content="kubectx # ahmetb/kubectx # 安装 brew install kubectx alias kx=kubectx alias kn=kubens # 展示当前可用集群列表 kx # 选中某集群 kx xxx # 展示 namespace 列表 kn # 选中某 ns kn xxx kubemerge # # vim ~/.zshrc kubemerge() { if [ $# -eq 0 ]; then echo &#34;Usage: kubemerge &lt;path-to-kubeconfig1&gt; [&lt;path-to-kubeconfig2&gt; ...]&#34; return 1 fi # Ensure ~/.kube directory exists mkdir -p ~/.kube # Ensure ~/.kube/config exists and is not empty if [ !">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="kubectx" />
-<meta property="og:description" content=" kubectx # ahmetb/kubectx # 安装 brew install kubectx " />
+<meta property="og:description" content="kubectx # ahmetb/kubectx # 安装 brew install kubectx alias kx=kubectx alias kn=kubens # 展示当前可用集群列表 kx # 选中某集群 kx xxx # 展示 namespace 列表 kn # 选中某 ns kn xxx kubemerge # # vim ~/.zshrc kubemerge() { if [ $# -eq 0 ]; then echo &#34;Usage: kubemerge &lt;path-to-kubeconfig1&gt; [&lt;path-to-kubeconfig2&gt; ...]&#34; return 1 fi # Ensure ~/.kube directory exists mkdir -p ~/.kube # Ensure ~/.kube/config exists and is not empty if [ !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/kubectx/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-05-15T12:02:40+08:00" />
+<meta property="article:modified_time" content="2024-07-18T21:03:06+08:00" />
 
 <title>kubectx | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.3850b7bec4737d1c4d4182de38832238ba1a2c297078d9029c6da75aa822e0dc.js" integrity="sha256-OFC3vsRzfRxNQYLeOIMiOLoaLClweNkCnG2nWqgi4Nw="></script>
+<script defer src="/note-cs/en.search.min.a39b0da175618c3f1e5d9ebf3738ac770e6aaaffb14472f76259ad361039c937.js" integrity="sha256-o5sNoXVhjD8eXZ6/Nzisdw5qqv&#43;xRHL3YlmtNhA5yTc="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19204,7 +19204,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#kubemerge">kubemerge</a></li>
+  </ul>
+</nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
@@ -19230,6 +19234,73 @@ https://github.com/alex-shpak/hugo-book
 <p><a href="https://github.com/ahmetb/kubectx">ahmetb/kubectx</a> <img src="https://img.shields.io/github/stars/ahmetb/kubectx.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/ahmetb/kubectx.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/ahmetb/kubectx.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/ahmetb/kubectx.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/ahmetb/kubectx.svg" alt="Last commit" /></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 安装</span>
 </span></span><span style="display:flex;"><span>brew install kubectx
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>alias kx<span style="color:#f92672">=</span>kubectx
+</span></span><span style="display:flex;"><span>alias kn<span style="color:#f92672">=</span>kubens
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 展示当前可用集群列表</span>
+</span></span><span style="display:flex;"><span>kx
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 选中某集群</span>
+</span></span><span style="display:flex;"><span>kx xxx
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 展示 namespace 列表</span>
+</span></span><span style="display:flex;"><span>kn
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 选中某 ns</span>
+</span></span><span style="display:flex;"><span>kn xxx
+</span></span></code></pre></div><h2 id="kubemerge">
+  kubemerge
+  <a class="anchor" href="#kubemerge">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># vim ~/.zshrc</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>kubemerge<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		echo <span style="color:#e6db74">&#34;Usage: kubemerge &lt;path-to-kubeconfig1&gt; [&lt;path-to-kubeconfig2&gt; ...]&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Ensure ~/.kube directory exists</span>
+</span></span><span style="display:flex;"><span>	mkdir -p ~/.kube
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Ensure ~/.kube/config exists and is not empty</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -f ~/.kube/config <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> <span style="color:#f92672">[</span> ! -s ~/.kube/config <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>		touch ~/.kube/config
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> NEW_KUBECONFIG in <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;cache&#34;</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#34;</span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;config_temp&#34;</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#34;</span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;kubectx&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>			echo <span style="color:#e6db74">&#34;Skipping </span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -f <span style="color:#e6db74">&#34;</span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>			echo <span style="color:#e6db74">&#34;File not found: </span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">continue</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		local CONTEXT_NAME<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename <span style="color:#e6db74">&#34;</span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e"># Check if the context name already exists</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> kubectl config get-contexts -o name | grep -q <span style="color:#e6db74">&#34;^</span>$CONTEXT_NAME$<span style="color:#e6db74">&#34;</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>			echo <span style="color:#e6db74">&#34;Context \&#34;</span>$CONTEXT_NAME<span style="color:#e6db74">\&#34; already exists. Skipping merge and rename.&#34;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#75715e"># Merge the new kubeconfig with the existing one</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span> KUBECONFIG<span style="color:#f92672">=</span>~/.kube/config:$NEW_KUBECONFIG kubectl config view --merge --flatten &gt;~/.kube/config_temp; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>				mv ~/.kube/config_temp ~/.kube/config
+</span></span><span style="display:flex;"><span>				echo <span style="color:#e6db74">&#34;Merged </span>$NEW_KUBECONFIG<span style="color:#e6db74"> successfully.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				<span style="color:#75715e"># Extract new contexts from the new kubeconfig file</span>
+</span></span><span style="display:flex;"><span>				NEW_CONTEXTS<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>kubectl --kubeconfig<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$NEW_KUBECONFIG<span style="color:#e6db74">&#34;</span> config get-contexts -o name<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">for</span> CONTEXT in $NEW_CONTEXTS; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>					kubectl config rename-context <span style="color:#e6db74">&#34;</span>$CONTEXT<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$CONTEXT_NAME<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>				echo <span style="color:#e6db74">&#34;Failed to merge </span>$NEW_KUBECONFIG<span style="color:#e6db74"> due to invalid format or content.&#34;</span>
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div></article>
  
       
@@ -19240,9 +19311,9 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/299c0758c0d23d688fd3ecee7be7fdcdf330ed24" title='Last modified by yewang | 2024-05-15' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/0dda4e8c454ab0c6eab6df2a2c93449c7a65cdbf" title='Last modified by yewang | 2024-07-18' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2024-05-15</span>
+      <span>2024-07-18</span>
     </a>
   </div>
 
@@ -19301,7 +19372,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#kubemerge">kubemerge</a></li>
+  </ul>
+</nav>
 <hr />
 <ul>
   <li><a href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png" target="_blank" rel="noopener noreferrer">微信</a></li>
