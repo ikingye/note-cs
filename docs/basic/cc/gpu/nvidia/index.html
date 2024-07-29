@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Nvidia # 例如： NVIDIA GeForce RTX 3060 Ti
-NVIDIA: 即英伟达，品牌名 GeForce: 是显卡系列名称 Tesla: 专业级显卡, Data Center 数值计算 深度学习、人工智能和高性能计算 Quadro: 专业级显卡 NVIDIA RTX 图形计算 专业可视化设计和创作 GeForce: 普通消费级显卡 图形计算 游戏娱乐领域 RTX: 代表“高端”，一般是带光影追踪功能，只出现在 20 系显卡及以上 RTX 是 NVIDIA 较新的 GPU 系列，首次引入了实时光线追踪技术（Ray Tracing） GTX 是系列中的高端显卡 这是 NVIDIA 的图形处理单元（GPU）中较早的一个系列 GTX 可以视为 Giga Texel Shader eXtreme 的非正式缩写，尽管这并不是 NVIDIA 官方的解释，主要强调其在图形处理方面的高性能 GTX 系列更多的是针对传统的高性能图形处理，而 RTX 系列则是在此基础上加入了对最新渲染技术（如光线追踪）的支持，以及针对 AI 计算的优化。 GTS 是系列中的中端显卡 GT 是系列中的入门级显卡 30: 代表的是第几代 20 30 40 6: 是显卡性能档次的定位 89 是高端 567 是中端 1234 是低端 0: 不用管这位数字，一般都是 0 Ti Ti 增强 Super 小增强 SE 阉割 M 等于移动端如 MX, Max-Q AD102 (76.">
+NVIDIA: 即英伟达，品牌名 GeForce: 是显卡系列名称 Tesla: 专业级显卡, Data Center 数值计算 深度学习、人工智能和高性能计算 Quadro: 专业级显卡 NVIDIA RTX 图形计算 专业可视化设计和创作 2018 年 RTX 4000 出来后逐渐放弃了 Quadro，2020 年的 RTX A6000 标志着正式放弃 Quadro GeForce: 普通消费级显卡 图形计算 游戏娱乐领域 RTX: 代表“高端”，一般是带光影追踪功能，只出现在 20 系显卡及以上 RTX 是 NVIDIA 较新的 GPU 系列，首次引入了实时光线追踪技术（Ray Tracing） GTX 是系列中的高端显卡 这是 NVIDIA 的图形处理单元（GPU）中较早的一个系列 GTX 可以视为 Giga Texel Shader eXtreme 的非正式缩写，尽管这并不是 NVIDIA 官方的解释，主要强调其在图形处理方面的高性能 GTX 系列更多的是针对传统的高性能图形处理，而 RTX 系列则是在此基础上加入了对最新渲染技术（如光线追踪）的支持，以及针对 AI 计算的优化。 GTS 是系列中的中端显卡 GT 是系列中的入门级显卡 30: 代表的是第几代 20 30 40 6: 是显卡性能档次的定位 89 是高端 567 是中端 1234 是低端 0: 不用管这位数字，一般都是 0 Ti Ti 增强 Super 小增强 SE 阉割 M 等于移动端如 MX, Max-Q AD102 (76.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Nvidia" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -16,7 +16,7 @@ NVIDIA: 即英伟达，品牌名 GeForce: 是显卡系列名称 Tesla: 专业级
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.8a6c65cdc21c3e690fbf4a74e70291c15f70632f30e2d5ceb54aeb1a65aa59a9.js" integrity="sha256-imxlzcIcPmkPv0p05wKRwV9wYy8w4tXOtUrrGmWqWak="></script>
+<script defer src="/note-cs/en.search.min.b24887b1e3b9f0562396940f71660c876d660b11a6bf8ea849f01d48bd5da8dc.js" integrity="sha256-skiHseO58FYjlpQPcWYMh21mCxGmv46oSfAdSL1dqNw="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -19206,6 +19206,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#quadro-vs-geforce">Quadro vs Geforce</a></li>
     <li><a href="#产品">产品</a></li>
     <li><a href="#nvml-nvidia-management-library">nvml: <code>NVIDIA Management Library</code></a></li>
   </ul>
@@ -19249,6 +19250,7 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="https://www.nvidia.com/en-us/design-visualization/">NVIDIA RTX</a></li>
 <li>图形计算</li>
 <li>专业可视化设计和创作</li>
+<li>2018 年 RTX 4000 出来后逐渐放弃了 Quadro，2020 年的 RTX A6000 标志着正式放弃 Quadro</li>
 </ul>
 </li>
 <li>GeForce: 普通消费级显卡
@@ -19321,6 +19323,33 @@ https://github.com/alex-shpak/hugo-book
 <p>GA107 芯片，对应 3050</p>
 </li>
 </ul>
+<h2 id="quadro-vs-geforce">
+  Quadro vs Geforce
+  <a class="anchor" href="#quadro-vs-geforce">#</a>
+</h2>
+<p>Quadro 和 Geforce 基本上只有如下 3 个主要区别了：</p>
+<ol>
+<li>显存。
+<ul>
+<li>Geforce 限一个尴尬的 11G 就是为了让你做大工程的时候爆显存，逼着刚需用户买专业卡。</li>
+<li>另外专业卡用 ECC 显存，主打一个遇到错误能检查和恢复的能力，非 ECC 显存此时只要不是严重错误可能直接忽略了，错误严重了就挂了。但由于现代内存可靠性足够好，关于 ecc 的作用其实很玄学，我就问一点 —— 主内存怎么办，工作条件更复杂的主内存都不支持 ecc，你若不放心显存，就放心内存了？若关注 ecc，请你别光盯着显卡，主板也换工作站或服务器板，也用 ecc 内存。服务器上专业卡是企业合理的选择，没啥说的，我吐槽的是 desktop。</li>
+</ul>
+</li>
+<li>驱动。
+<ul>
+<li>会通过驱动的识别，仅在专业卡上 enable 一些功能，比如 nvenc 编码并发度，比如针对一些老旧工业软件的 workaround 等，这种是纯软件的。</li>
+<li>Titan 和 3090 被称为半专业卡，显存高于一般的 Geforce，但是也会在驱动上限制。</li>
+<li>AMD 由于市场弱势，对游戏卡的软件限制要少很多。</li>
+</ul>
+</li>
+<li>频率、散热和外形。
+<ul>
+<li>非公高端游戏卡往往做成 3slot，散热堆料丧病，频率灰烬。</li>
+<li>专业卡为了多卡好插甚至上机架，至多双 slot。频率也会压得低点，更有利于长稳运行。</li>
+<li>大家可能知道现在很多矿老板买来游戏卡也是降频挖矿，一样的道理，还省电，单位千瓦时产出更高。</li>
+</ul>
+</li>
+</ol>
 <hr>
 <h2 id="产品">
   产品
@@ -19346,6 +19375,7 @@ https://github.com/alex-shpak/hugo-book
 <blockquote>
 <p>A C-based API for monitoring and managing various states of the NVIDIA GPU devices. It provides a direct access to the queries and commands exposed via nvidia-smi. The runtime version of NVML ships with the NVIDIA display driver, and the SDK provides the appropriate header, stub libraries and sample applications. Each new version of NVML is backwards compatible and is intended to be a platform for building 3rd party applications.</p>
 </blockquote>
+<hr>
 </article>
  
       
@@ -19419,6 +19449,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#quadro-vs-geforce">Quadro vs Geforce</a></li>
     <li><a href="#产品">产品</a></li>
     <li><a href="#nvml-nvidia-management-library">nvml: <code>NVIDIA Management Library</code></a></li>
   </ul>

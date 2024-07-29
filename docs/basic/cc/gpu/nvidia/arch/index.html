@@ -5,9 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie Tesla: 市面已经没有相关显卡 Fermi: GeForce 400, 500, 600, GT-630 Kepler: K40/K80, GeForce 700, GT-730 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060 Volta: V100, GTX 1180 首次引入 Tensor Core Turing: T4, GTX 1660 Ti, RTX 2060 Ampere: A100, GTX 3080 Hopper: H100, H200 Ada Lovelace: 4090, L4, L40 Blackwell 14. Blackwell # 13. Ada Lovelace vs Hopper # Ada Lovelace (consumer) # officially announced on 2022-09-20">
+<meta name="description" content="Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie 2008 Tesla: 市面已经没有相关显卡 2010 Fermi: GeForce 400, 500, 600, GT-630 2012 Kepler: K40/K80, GeForce 700, GT-730 2014 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 2016 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060 2017 Volta: V100, GTX 1180, TiTan V 首次引入 Tensor Core 2018 Turing: T4, GTX 1660 Ti, RTX 2060, RTX 5000 2020 Ampere: A40, A100, GTX 3080 2022 Hopper: H100, H200 2022 Ada Lovelace: 4090, L4, L40, L40S 2024 Blackwell: B200 14.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Nvidia 架构" />
-<meta property="og:description" content="Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie Tesla: 市面已经没有相关显卡 Fermi: GeForce 400, 500, 600, GT-630 Kepler: K40/K80, GeForce 700, GT-730 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060 Volta: V100, GTX 1180 首次引入 Tensor Core Turing: T4, GTX 1660 Ti, RTX 2060 Ampere: A100, GTX 3080 Hopper: H100, H200 Ada Lovelace: 4090, L4, L40 Blackwell 14. Blackwell # 13. Ada Lovelace vs Hopper # Ada Lovelace (consumer) # officially announced on 2022-09-20" />
+<meta property="og:description" content="Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie 2008 Tesla: 市面已经没有相关显卡 2010 Fermi: GeForce 400, 500, 600, GT-630 2012 Kepler: K40/K80, GeForce 700, GT-730 2014 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 2016 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060 2017 Volta: V100, GTX 1180, TiTan V 首次引入 Tensor Core 2018 Turing: T4, GTX 1660 Ti, RTX 2060, RTX 5000 2020 Ampere: A40, A100, GTX 3080 2022 Hopper: H100, H200 2022 Ada Lovelace: 4090, L4, L40, L40S 2024 Blackwell: B200 14." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.8a6c65cdc21c3e690fbf4a74e70291c15f70632f30e2d5ceb54aeb1a65aa59a9.js" integrity="sha256-imxlzcIcPmkPv0p05wKRwV9wYy8w4tXOtUrrGmWqWak="></script>
+<script defer src="/note-cs/en.search.min.b24887b1e3b9f0562396940f71660c876d660b11a6bf8ea849f01d48bd5da8dc.js" integrity="sha256-skiHseO58FYjlpQPcWYMh21mCxGmv46oSfAdSL1dqNw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19206,7 +19206,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#14-blackwell">14. Blackwell</a></li>
+    <li><a href="#14-blackwellhttpswwwwikiwandcomenblackwell_microarchitecture">14. <a href="https://www.wikiwand.com/en/Blackwell_(microarchitecture)">Blackwell</a></a></li>
     <li><a href="#13-ada-lovelace-vs-hopper">13. <code>Ada Lovelace</code> vs Hopper</a>
       <ul>
         <li><a href="#ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer"><a href="https://www.wikiwand.com/en/Ada_Lovelace_(microarchitecture)">Ada Lovelace</a> (consumer)</a></li>
@@ -19282,32 +19282,32 @@ https://github.com/alex-shpak/hugo-book
 </li>
 <li>
 <ol start="6">
-<li>Tesla: 市面已经没有相关显卡</li>
+<li>2008 Tesla: 市面已经没有相关显卡</li>
 </ol>
 </li>
 <li>
 <ol start="7">
-<li>Fermi: GeForce 400, 500, 600, GT-630</li>
+<li>2010 Fermi: GeForce 400, 500, 600, GT-630</li>
 </ol>
 </li>
 <li>
 <ol start="8">
-<li>Kepler: K40/K80, GeForce 700, GT-730</li>
+<li>2012 Kepler: K40/K80, GeForce 700, GT-730</li>
 </ol>
 </li>
 <li>
 <ol start="9">
-<li>Maxwell: Tesla/Quadro M series GeForce 900, GTX-970</li>
+<li>2014 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970</li>
 </ol>
 </li>
 <li>
 <ol start="10">
-<li>Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060</li>
+<li>2016 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060</li>
 </ol>
 </li>
 <li>
 <ol start="11">
-<li>Volta: V100, GTX 1180</li>
+<li>2017 Volta: V100, GTX 1180, TiTan V</li>
 </ol>
 <ul>
 <li>首次引入 <code>Tensor Core</code></li>
@@ -19315,33 +19315,34 @@ https://github.com/alex-shpak/hugo-book
 </li>
 <li>
 <ol start="11">
-<li>Turing: T4, GTX 1660 Ti, RTX 2060</li>
+<li>2018 Turing: T4, GTX 1660 Ti, RTX 2060, RTX 5000</li>
 </ol>
 </li>
 <li>
 <ol start="12">
-<li>Ampere: A100, GTX 3080</li>
+<li>2020 Ampere: A40, A100, GTX 3080</li>
 </ol>
 </li>
 <li>
 <ol start="13">
-<li>Hopper: H100, H200</li>
+<li>2022 Hopper: H100, H200</li>
 </ol>
 </li>
 <li>
 <ol start="13">
-<li>Ada Lovelace: 4090, L4, L40</li>
+<li>2022 Ada Lovelace: 4090, L4, L40, L40S</li>
 </ol>
 </li>
 <li>
 <ol start="14">
-<li>Blackwell</li>
+<li>2024 Blackwell: B200</li>
 </ol>
 </li>
 </ul>
-<h2 id="14-blackwell">
-  14. Blackwell
-  <a class="anchor" href="#14-blackwell">#</a>
+<hr>
+<h2 id="14-blackwellhttpswwwwikiwandcomenblackwell_microarchitecture">
+  14. <a href="https://www.wikiwand.com/en/Blackwell_%28microarchitecture%29">Blackwell</a>
+  <a class="anchor" href="#14-blackwellhttpswwwwikiwandcomenblackwell_microarchitecture">#</a>
 </h2>
 <h2 id="13-ada-lovelace-vs-hopper">
   13. <code>Ada Lovelace</code> vs Hopper
@@ -19639,7 +19640,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#14-blackwell">14. Blackwell</a></li>
+    <li><a href="#14-blackwellhttpswwwwikiwandcomenblackwell_microarchitecture">14. <a href="https://www.wikiwand.com/en/Blackwell_(microarchitecture)">Blackwell</a></a></li>
     <li><a href="#13-ada-lovelace-vs-hopper">13. <code>Ada Lovelace</code> vs Hopper</a>
       <ul>
         <li><a href="#ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer"><a href="https://www.wikiwand.com/en/Ada_Lovelace_(microarchitecture)">Ada Lovelace</a> (consumer)</a></li>
