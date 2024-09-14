@@ -2193,6 +2193,13 @@
     </item>
     <item>
       <title>Conda</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/centos/conda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/centos/conda/</guid>
+      <description>Conda # conda 是一款软件管理软件，相当于 windows 里面的应用商店 miniconda 和 anaconda 中都包含了 conda miniconda windows 64 位安装包大小为 51.4 Mb，只包含了 conda、python、和一些必备的软件工具 anaconda windows 64 位安装包大小为 462 Mb，是 miniconda 的扩展，包含了数据科学和机器学习要用到的很多软件。 安装 # wget -c --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh bash Miniconda3-latest-Linux-x86_64.sh 参考：https://docs.conda.io/projects/conda/en/stable/&#xA;使用教程 # # 清理缓存 conda clean -a # The base environment is activated by default conda config --set auto_activate_base True # The base environment is not activated by default conda config --set auto_activate_base False # 查看已创建的conda环境 conda info --envs # 激活环境 conda activate base # 退出环境 conda deactivate 镜像源 # 阿里云 # cat &amp;lt;&amp;lt; EOF &amp;gt; ~/.</description>
+    </item>
+    <item>
+      <title>Conda</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid>
