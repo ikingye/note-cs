@@ -47,7 +47,7 @@
       <link>https://kingye.me/note-cs/docs/tool/macos/conda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/conda/</guid>
-      <description> conda # mkdir -p ~/miniconda3 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 rm -rf ~/miniconda3/miniconda.sh ~/miniconda3/bin/conda init bash ~/miniconda3/bin/conda init zsh </description>
+      <description> conda # mkdir -p ~/miniconda3 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 rm -rf ~/miniconda3/miniconda.sh ~/miniconda3/bin/conda init bash ~/miniconda3/bin/conda init zsh 基础用法 # conda create --name d2l python=3.9 -y </description>
     </item>
     <item>
       <title>Git</title>
@@ -145,7 +145,7 @@
       <link>https://kingye.me/note-cs/docs/tool/macos/pytorch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/pytorch/</guid>
-      <description> pytorch # # 安装 # cd ~/code/study/ai/pytorch/study-pytorch/hello-pytorch mamba create -n hello-pytorch mamba activate hello-pytorch mamba install pytorch::pytorch torchvision torchaudio -c pytorch mamba install --file requirements.txt </description>
+      <description> pytorch # # 安装 # cd ~/code/study/ai/pytorch/study-pytorch/hello-pytorch mamba create -n hello-pytorch mamba activate hello-pytorch mamba install -y pytorch::pytorch torchvision torchaudio -c pytorch mamba install --file requirements.txt </description>
     </item>
     <item>
       <title>ruby</title>
