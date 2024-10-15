@@ -2497,7 +2497,7 @@
       <link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</guid>
-      <description>Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie 2008 Tesla: 市面已经没有相关显卡 2010 Fermi: GeForce 400, 500, 600, GT-630 2012 Kepler: K40/K80, GeForce 700, GT-730 2014 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 2016 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060 2017 Volta: V100, GTX 1180, TiTan V 首次引入 Tensor Core 2018 Turing: T4, GTX 1660 Ti, RTX 2060, RTX 5000 2020 Ampere: A40, A100, GTX 3080 2022 Hopper: H100, H200 2022 Ada Lovelace: 4090, L4, L40, L40S 2024 Blackwell: H200, B100 14.</description>
+      <description>Nvidia 架构 # Fahrenheit Celsius Kelvin Rankine Curie 2008 Tesla: 市面已经没有相关显卡 2010 Fermi: GeForce 400, 500, 600, GT-630 2012 Kepler: K40/K80, GeForce 700, GT-730 2014 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970 2016 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060 2017 Volta: V100, GTX 1180, TiTan V 首次引入 Tensor Core 2018 Turing: T4, GTX 1660 Ti, RTX 2060, RTX 5000 2020 Ampere: A10, A40, A100, GTX 3080 2022 Hopper: H100, H200 2022 Ada Lovelace: 4090, L4, L40, L40S 2024 Blackwell: H200, B100 14.</description>
     </item>
     <item>
       <title>nvidia 驱动</title>
