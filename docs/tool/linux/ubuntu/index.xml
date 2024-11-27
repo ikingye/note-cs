@@ -218,6 +218,13 @@
       <description> pytorch # # cuda 11.4 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch </description>
     </item>
     <item>
+      <title>sealos</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</guid>
+      <description> sealos # sealos run labring/kubernetes:v1.25.0-4.2.0 labring/helm:v3.8.2 labring/calico:v3.24.1 \ --masters 172.16.0.30 </description>
+    </item>
+    <item>
       <title>Streamlit</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

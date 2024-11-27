@@ -2612,6 +2612,13 @@
       <description> ruby # 安装 # brew install ruby&#xA;If you need to have ruby first in your PATH, run: echo &amp;#39;export PATH=&amp;#34;/opt/homebrew/opt/ruby/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc For compilers to find ruby you may need to set: export LDFLAGS=&amp;#34;-L/opt/homebrew/opt/ruby/lib&amp;#34; export CPPFLAGS=&amp;#34;-I/opt/homebrew/opt/ruby/include&amp;#34; For pkg-config to find ruby you may need to set: export PKG_CONFIG_PATH=&amp;#34;/opt/homebrew/opt/ruby/lib/pkgconfig&amp;#34; </description>
     </item>
     <item>
+      <title>sealos</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</guid>
+      <description> sealos # sealos run labring/kubernetes:v1.25.0-4.2.0 labring/helm:v3.8.2 labring/calico:v3.24.1 \ --masters 172.16.0.30 </description>
+    </item>
+    <item>
       <title>SM Version</title>
       <link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
