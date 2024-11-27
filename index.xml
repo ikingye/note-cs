@@ -2616,7 +2616,7 @@
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</guid>
-      <description> sealos # sealos run labring/kubernetes:v1.25.0-4.2.0 labring/helm:v3.8.2 labring/calico:v3.24.1 \ --masters 172.16.0.30 </description>
+      <description> sealos # labring/sealos sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single </description>
     </item>
     <item>
       <title>SM Version</title>
