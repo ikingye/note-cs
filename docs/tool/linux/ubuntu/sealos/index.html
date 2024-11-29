@@ -5,19 +5,19 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" sealos # labring/sealos sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single laf # # curl -LO https://raw.githubusercontent.com/labring/laf/refs/heads/main/deploy/install-on-linux.sh # sed -i &#39;s#sealos pull labring#sealos pull registry.cn-shanghai.aliyuncs.com/labring#g&#39; install-on-linux.sh # install required components sealos run labring/openebs:v1.9.0 sealos run labring/cert-manager:v1.8.0 sealos run labring/metrics-server:v0.6.2 sealos run docker.io/labring/ingress-nginx:v1.8.1 \ -e HELM_OPTS=&#34;--set controller.hostNetwork=true --set controller.kind=DaemonSet --set controller.service.enabled=false&#34; sealos run labring/kubeblocks:v0.7.1 sealos run --env DOMAIN=$DOMAIN --env DB_PV_SIZE=5Gi --env OSS_PV_SIZE=5Gi --env EXTERNAL_HTTP_SCHEMA=http lafyun/laf:latest ">
+<meta name="description" content=" sealos # labring/sealos sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single laf # # curl -LO https://raw.githubusercontent.com/labring/laf/refs/heads/main/deploy/install-on-linux.sh # sed -i &#39;s#sealos pull labring#sealos pull registry.cn-shanghai.aliyuncs.com/labring#g&#39; install-on-linux.sh # install required components sealos run registry.cn-shanghai.aliyuncs.com/labring/openebs:v1.9.0 sealos run registry.cn-shanghai.aliyuncs.com/labring/cert-manager:v1.8.0 sealos run registry.cn-shanghai.aliyuncs.com/labring/metrics-server:v0.6.2 sealos run registry.cn-shanghai.aliyuncs.com/labring/ingress-nginx:v1.8.1 \ -e HELM_OPTS=&#34;--set controller.hostNetwork=true --set controller.kind=DaemonSet --set controller.service.enabled=false&#34; sealos run registry.cn-shanghai.aliyuncs.com/labring/kubeblocks:v0.7.1 sealos run --env DOMAIN=$DOMAIN --env DB_PV_SIZE=5Gi --env OSS_PV_SIZE=5Gi --env EXTERNAL_HTTP_SCHEMA=http registry.cn-shanghai.aliyuncs.com/labring/laf:latest ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="sealos" />
-<meta property="og:description" content=" sealos # labring/sealos sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single laf # # curl -LO https://raw.githubusercontent.com/labring/laf/refs/heads/main/deploy/install-on-linux.sh # sed -i &#39;s#sealos pull labring#sealos pull registry.cn-shanghai.aliyuncs.com/labring#g&#39; install-on-linux.sh # install required components sealos run labring/openebs:v1.9.0 sealos run labring/cert-manager:v1.8.0 sealos run labring/metrics-server:v0.6.2 sealos run docker.io/labring/ingress-nginx:v1.8.1 \ -e HELM_OPTS=&#34;--set controller.hostNetwork=true --set controller.kind=DaemonSet --set controller.service.enabled=false&#34; sealos run labring/kubeblocks:v0.7.1 sealos run --env DOMAIN=$DOMAIN --env DB_PV_SIZE=5Gi --env OSS_PV_SIZE=5Gi --env EXTERNAL_HTTP_SCHEMA=http lafyun/laf:latest " />
+<meta property="og:description" content=" sealos # labring/sealos sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single laf # # curl -LO https://raw.githubusercontent.com/labring/laf/refs/heads/main/deploy/install-on-linux.sh # sed -i &#39;s#sealos pull labring#sealos pull registry.cn-shanghai.aliyuncs.com/labring#g&#39; install-on-linux.sh # install required components sealos run registry.cn-shanghai.aliyuncs.com/labring/openebs:v1.9.0 sealos run registry.cn-shanghai.aliyuncs.com/labring/cert-manager:v1.8.0 sealos run registry.cn-shanghai.aliyuncs.com/labring/metrics-server:v0.6.2 sealos run registry.cn-shanghai.aliyuncs.com/labring/ingress-nginx:v1.8.1 \ -e HELM_OPTS=&#34;--set controller.hostNetwork=true --set controller.kind=DaemonSet --set controller.service.enabled=false&#34; sealos run registry.cn-shanghai.aliyuncs.com/labring/kubeblocks:v0.7.1 sealos run --env DOMAIN=$DOMAIN --env DB_PV_SIZE=5Gi --env OSS_PV_SIZE=5Gi --env EXTERNAL_HTTP_SCHEMA=http registry.cn-shanghai.aliyuncs.com/labring/laf:latest " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-11-27T18:02:30+08:00" />
+<meta property="article:modified_time" content="2024-11-29T12:03:19+08:00" />
 
 <title>sealos | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.bcc31db5c2173026cf8a672a1be9b111ce7b352884b355231b183780249feeca.js" integrity="sha256-vMMdtcIXMCbPimcqG&#43;mxEc57NSiEs1UjGxg3gCSf7so="></script>
+<script defer src="/note-cs/en.search.min.e233a5c9da40911fadfa4c39a5219e8f2c3a97263b9c324270e0ed99dbab5b35.js" integrity="sha256-4jOlydpAkR&#43;t&#43;kw5pSGejyw6lyY7nDJCcODtmdurWzU="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19362,15 +19362,15 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># install required components</span>
-</span></span><span style="display:flex;"><span>sealos run labring/openebs:v1.9.0
-</span></span><span style="display:flex;"><span>sealos run labring/cert-manager:v1.8.0
-</span></span><span style="display:flex;"><span>sealos run labring/metrics-server:v0.6.2
-</span></span><span style="display:flex;"><span>sealos run docker.io/labring/ingress-nginx:v1.8.1 <span style="color:#ae81ff">\
+</span></span><span style="display:flex;"><span>sealos run registry.cn-shanghai.aliyuncs.com/labring/openebs:v1.9.0
+</span></span><span style="display:flex;"><span>sealos run registry.cn-shanghai.aliyuncs.com/labring/cert-manager:v1.8.0
+</span></span><span style="display:flex;"><span>sealos run registry.cn-shanghai.aliyuncs.com/labring/metrics-server:v0.6.2
+</span></span><span style="display:flex;"><span>sealos run registry.cn-shanghai.aliyuncs.com/labring/ingress-nginx:v1.8.1 <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -e HELM_OPTS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--set controller.hostNetwork=true --set controller.kind=DaemonSet --set controller.service.enabled=false&#34;</span>
-</span></span><span style="display:flex;"><span>sealos run labring/kubeblocks:v0.7.1
+</span></span><span style="display:flex;"><span>sealos run registry.cn-shanghai.aliyuncs.com/labring/kubeblocks:v0.7.1
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>sealos run --env DOMAIN<span style="color:#f92672">=</span>$DOMAIN --env DB_PV_SIZE<span style="color:#f92672">=</span>5Gi --env OSS_PV_SIZE<span style="color:#f92672">=</span>5Gi --env EXTERNAL_HTTP_SCHEMA<span style="color:#f92672">=</span>http lafyun/laf:latest
+</span></span><span style="display:flex;"><span>sealos run --env DOMAIN<span style="color:#f92672">=</span>$DOMAIN --env DB_PV_SIZE<span style="color:#f92672">=</span>5Gi --env OSS_PV_SIZE<span style="color:#f92672">=</span>5Gi --env EXTERNAL_HTTP_SCHEMA<span style="color:#f92672">=</span>http registry.cn-shanghai.aliyuncs.com/labring/laf:latest
 </span></span></code></pre></div></article>
  
       
@@ -19381,9 +19381,9 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/f761439777ef1b51fcaca80a76ae14ccb377dd21" title='Last modified by yewang | 2024-11-27' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/bd5c10256a1f7e68cc6edc2a0e5dcbef39bb7853" title='Last modified by yewang | 2024-11-29' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2024-11-27</span>
+      <span>2024-11-29</span>
     </a>
   </div>
 
