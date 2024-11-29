@@ -2616,7 +2616,7 @@
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</guid>
-      <description> sealos # labring/sealos sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single </description>
+      <description> sealos # labring/sealos sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single laf # # curl -LO https://raw.githubusercontent.com/labring/laf/refs/heads/main/deploy/install-on-linux.sh # sed -i &amp;#39;s#sealos pull labring#sealos pull registry.cn-shanghai.aliyuncs.com/labring#g&amp;#39; install-on-linux.sh # install required components sealos run labring/openebs:v1.9.0 sealos run labring/cert-manager:v1.8.0 sealos run labring/metrics-server:v0.6.2 sealos run docker.io/labring/ingress-nginx:v1.8.1 \ -e HELM_OPTS=&amp;#34;--set controller.hostNetwork=true --set controller.kind=DaemonSet --set controller.service.enabled=false&amp;#34; sealos run labring/kubeblocks:v0.7.1 sealos run --env DOMAIN=$DOMAIN --env DB_PV_SIZE=5Gi --env OSS_PV_SIZE=5Gi --env EXTERNAL_HTTP_SCHEMA=http lafyun/laf:latest </description>
     </item>
     <item>
       <title>SM Version</title>
