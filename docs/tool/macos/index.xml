@@ -127,6 +127,13 @@
       <description>Multipass # canonical/multipass Multipass orchestrates virtual Ubuntu instances https://multipass.run&#xA;# 安装 # Find available images multipass find # 使用本地 image multipass launch --name rd-node-1 --mem 1G --disk 5G file://~/multipass/ubuntu-22.04-server-cloudimg-amd64.img # 默认就是 cpus 1, mem 1G, disk 5G # 参考：https://multipass.run/docs/launch-command multipass launch --name rd-node-1 --cpus 10 --mem 20G --disk 20G file://~/multipass/ubuntu-22.04-server-cloudimg-amd64.img multipass launch --name rd-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-1 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-2 --cpus 10 --mem 20G --disk 20G multipass launch --name qa-node-3 --cpus 10 --mem 20G --disk 20G # 挂载 multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge rd-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-1:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-2:/home/work/host multipass mount /home/work/ecsp/deploy/ecsp-edge qa-node-3:/home/work/host # 为 VM 启动一个 shell multipass shell rd-node-1 multipass shell rd-node-2 multipass shell qa-node-1 multipass shell qa-node-2 multipass shell qa-node-3 # 安装需要的 sudo su apt update apt install net-tools selinux-utils # 删除 # Delete instances multipass delete ecsp-node-1 multipass delete ecsp-node-2 # Purge all deleted instances permanently multipass purge 网络 # 使用的是桥接模式，因为：</description>
     </item>
     <item>
+      <title>OrbStack</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/orbstack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/orbstack/</guid>
+      <description> OrbStack # cat &amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt; ~/.orbstack/config/docker.json { &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://docker.kingye.me&amp;#34; ] } EOF docker info | grep -A 1 &amp;#34;Registry Mirrors&amp;#34; </description>
+    </item>
+    <item>
       <title>picgo</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/picgo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

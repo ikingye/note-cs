@@ -2514,6 +2514,13 @@
       <description>Nvidia 驱动 # 显卡类型 说明 GeForce RTX 游戏卡 TITAN 游戏发烧卡, 深度学习屌丝卡 NVIDIA RTX / Quadro 图形卡 Data Center / Tesla 计算卡 GRID 物理卡：只有 GRID K1/K2 两个型号，早停产。 虚拟卡：Quadro 系列或者是 Tesla 系列分出来的多张虚拟显卡 Networking NVS ION apt install -y ubuntu-drivers-common # 查询推荐的 nvidia 驱动 ubuntu-drivers devices # 按推荐安装驱动 apt install -y nvidia-driver-535 # CUDA Toolkit: 12.2 # Driver Version: 535.54.03 # Release Date: 2023.6.26 curl -LO https://us.download.nvidia.com/tesla/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run bash NVIDIA-Linux-x86_64-535.54.03.run # CUDA Toolkit: 12.</description>
     </item>
     <item>
+      <title>OrbStack</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/orbstack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/orbstack/</guid>
+      <description> OrbStack # cat &amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt; ~/.orbstack/config/docker.json { &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://docker.kingye.me&amp;#34; ] } EOF docker info | grep -A 1 &amp;#34;Registry Mirrors&amp;#34; </description>
+    </item>
+    <item>
       <title>PHP</title>
       <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
