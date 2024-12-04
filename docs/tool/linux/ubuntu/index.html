@@ -5,7 +5,7 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ubuntu # 开源镜像 # 清华开源镜像 CentOS Ubuntu 中科大 CentOS 阿里巴巴开源镜像 Ubuntu 22.04 x86 # # 清华 cat &lt;&lt; EOF &gt; /etc/apt/sources.list # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse # deb https://mirrors.">
+<meta name="description" content="Ubuntu # 开源镜像 # 清华开源镜像 CentOS Ubuntu 中科大 CentOS 阿里巴巴开源镜像 Ubuntu 24.04 x86 # # 清华 cat &lt;&lt; EOF &gt; /etc/apt/sources.list # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-updates main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-updates main restricted universe multiverse deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-backports main restricted universe multiverse # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-backports main restricted universe multiverse # 以下安全更新软件源包含了官方源与镜像站配置，如有需要可自行修改注释切换 deb http://security.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="4.2.1 Ubuntu" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.66a05255b2060102590ab242afd4b9e3fcfa77e45e855e510dc22f634f85b6e3.js" integrity="sha256-ZqBSVbIGAQJZCrJCr9S54/z6d&#43;RehV5RDcIvY0&#43;FtuM="></script>
+<script defer src="/note-cs/en.search.min.96bb04cf65e126806c19160a9589528060438bff2ae6ac069d0203dd55673fda.js" integrity="sha256-lrsEz2XhJoBsGRYKlYlSgGBDi/8q5qwGnQID3VVnP9o="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -19342,6 +19342,8 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#开源镜像">开源镜像</a>
       <ul>
+        <li><a href="#2404-x86">24.04 x86</a></li>
+        <li><a href="#2404-arm64">24.04 arm64</a></li>
         <li><a href="#2204-x86">22.04 x86</a></li>
         <li><a href="#2004-x86">20.04 x86</a>
           <ul>
@@ -19401,7 +19403,95 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ul>
-<h3 id="2204-x86">
+<h3 id="2404-x86">
+  24.04 x86
+  <a class="anchor" href="#2404-x86">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 清华</span>
+</span></span><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; EOF &gt; /etc/apt/sources.list
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># 以下安全更新软件源包含了官方源与镜像站配置，如有需要可自行修改注释切换
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb http://security.ubuntu.com/ubuntu/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src http://security.ubuntu.com/ubuntu/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># 预发布软件源，不建议启用
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>apt update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 阿里云</span>
+</span></span><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; EOF &gt; /etc/apt/sources.list
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb https://mirrors.aliyun.com/ubuntu/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.aliyun.com/ubuntu/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>apt update
+</span></span></code></pre></div><h3 id="2404-arm64">
+  24.04 arm64
+  <a class="anchor" href="#2404-arm64">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 清华</span>
+</span></span><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; EOF &gt; /etc/apt/sources.list
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># 以下安全更新软件源包含了官方源与镜像站配置，如有需要可自行修改注释切换
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb http://ports.ubuntu.com/ubuntu-ports/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src http://ports.ubuntu.com/ubuntu-ports/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># 预发布软件源，不建议启用
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>apt update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 阿里云</span>
+</span></span><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; EOF &gt; /etc/apt/sources.list
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu-ports/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu-ports/ noble main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu-ports/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu-ports/ noble-security main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu-ports/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu-ports/ noble-updates main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb https://mirrors.aliyun.com/ubuntu-ports/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># deb-src https://mirrors.aliyun.com/ubuntu-ports/ noble-proposed main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb https://mirrors.aliyun.com/ubuntu-ports/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">deb-src https://mirrors.aliyun.com/ubuntu-ports/ noble-backports main restricted universe multiverse
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>apt update
+</span></span></code></pre></div><h3 id="2204-x86">
   22.04 x86
   <a class="anchor" href="#2204-x86">#</a>
 </h3>
@@ -19650,6 +19740,8 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#开源镜像">开源镜像</a>
       <ul>
+        <li><a href="#2404-x86">24.04 x86</a></li>
+        <li><a href="#2404-arm64">24.04 arm64</a></li>
         <li><a href="#2204-x86">22.04 x86</a></li>
         <li><a href="#2004-x86">20.04 x86</a>
           <ul>
