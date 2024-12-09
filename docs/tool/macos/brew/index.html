@@ -13,7 +13,7 @@ brew tap # 没有参数会自动更新已经存在的 tap 并列出当前已经 
 可以使用 brew tap-pin username/repo 使这个仓库优先级高于 core
 使用 brew-tap-unpin username/repo 取消
 当你使用 brew install foo 这个命令时，brew 将按照下面的顺序去查找哪个 formula(tap) 将被使用:
-pinned taps core formulae other taps 镜像加速 # 清华大学镜像 # 替换现有上游">
+pinned taps core formulae other taps 镜像加速 # 清华大学镜像 # # 替换 brew 程序本身的源 # export HOMEBREW_API_DOMAIN= export HOMEBREW_BREW_GIT_REMOTE=&#34;https://mirrors.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="homebrew" />
 <meta property="og:description" content="Homebrew # tap # brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae
 如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件
@@ -23,17 +23,17 @@ brew tap # 没有参数会自动更新已经存在的 tap 并列出当前已经 
 可以使用 brew tap-pin username/repo 使这个仓库优先级高于 core
 使用 brew-tap-unpin username/repo 取消
 当你使用 brew install foo 这个命令时，brew 将按照下面的顺序去查找哪个 formula(tap) 将被使用:
-pinned taps core formulae other taps 镜像加速 # 清华大学镜像 # 替换现有上游" />
+pinned taps core formulae other taps 镜像加速 # 清华大学镜像 # # 替换 brew 程序本身的源 # export HOMEBREW_API_DOMAIN= export HOMEBREW_BREW_GIT_REMOTE=&#34;https://mirrors." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/package-manager/brew/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/brew/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-11-16T22:00:56+08:00" />
+
 
 <title>homebrew | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.96bb04cf65e126806c19160a9589528060438bff2ae6ac069d0203dd55673fda.js" integrity="sha256-lrsEz2XhJoBsGRYKlYlSgGBDi/8q5qwGnQID3VVnP9o="></script>
+<script defer src="/note-cs/en.search.min.576b5344afd0328d91db49682769da5dc085dc9ebd59e2753c42d4f7b4462793.js" integrity="sha256-V2tTRK/QMo2R20loJ2naXcCF3J69WeJ1PELU97RGJ5M="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15776,6 +15776,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-2d1b1dfbffd97d650f469778c35c8d6b" class="toggle" checked />
+    <label for="section-2d1b1dfbffd97d650f469778c35c8d6b" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/brew/" class="active">homebrew</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-c2551bdcd80605a70f19fc4fcc064b7f" class="toggle"  />
     <label for="section-c2551bdcd80605a70f19fc4fcc064b7f" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/idea/" class="">IntelliJ IDEA</a>
@@ -16146,7 +16162,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-ab2b2ccf896945932ce70c4f2b792694" class="toggle" checked />
+    <input type="checkbox" id="section-ab2b2ccf896945932ce70c4f2b792694" class="toggle"  />
     <label for="section-ab2b2ccf896945932ce70c4f2b792694" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/package-manager/" class="">包管理工具</a>
     </label>
@@ -16154,22 +16170,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-45a02d5daa941232f725518497fdbc18" class="toggle" checked />
-    <label for="section-45a02d5daa941232f725518497fdbc18" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/package-manager/brew/" class="active">homebrew</a>
-    </label>
-  
-
-        </li>
-      
     
   </ul>
 
@@ -19428,20 +19428,16 @@ https://github.com/alex-shpak/hugo-book
   <a href="https://mirror.tuna.tsinghua.edu.cn/help/homebrew/">清华大学镜像</a>
   <a class="anchor" href="#%e6%b8%85%e5%8d%8e%e5%a4%a7%e5%ad%a6%e9%95%9c%e5%83%8fhttpsmirrortunatsinghuaeducnhelphomebrew">#</a>
 </h3>
-<p>替换现有上游</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># brew 程序本身，Homebrew/Linuxbrew 相同</span>
-</span></span><span style="display:flex;"><span>git -C <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --repo<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 替换 brew 程序本身的源</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># export HOMEBREW_API_DOMAIN=</span>
+</span></span><span style="display:flex;"><span>export HOMEBREW_BREW_GIT_REMOTE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 以下针对 mac OS 系统上的 Homebrew</span>
-</span></span><span style="display:flex;"><span>git -C <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --repo homebrew/core<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
-</span></span><span style="display:flex;"><span>git -C <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --repo homebrew/cask<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
-</span></span><span style="display:flex;"><span>git -C <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --repo homebrew/cask-fonts<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-fonts.git
-</span></span><span style="display:flex;"><span>git -C <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --repo homebrew/cask-drivers<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask-drivers.git
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用下面的几行命令自动设置</span>
+</span></span><span style="display:flex;"><span>export HOMEBREW_CORE_GIT_REMOTE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> tap in core cask command-not-found; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    brew tap --custom-remote --force-auto-update <span style="color:#e6db74">&#34;homebrew/</span><span style="color:#e6db74">${</span>tap<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-</span><span style="color:#e6db74">${</span>tap<span style="color:#e6db74">}</span><span style="color:#e6db74">.git&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 以下针对 Linux 系统上的 Linuxbrew</span>
-</span></span><span style="display:flex;"><span>git -C <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>brew --repo homebrew/core<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/linuxbrew-core.git
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更换后测试工作是否正常</span>
 </span></span><span style="display:flex;"><span>brew update
 </span></span></code></pre></div><hr>
 <h2 id="参考">
@@ -19461,12 +19457,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/d833fdae8a0c4c17ce890daf2181b4af8e25a7cb" title='Last modified by yewang | 2022-11-16' target="_blank" rel="noopener">
-      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2022-11-16</span>
-    </a>
-  </div>
 
 
 
