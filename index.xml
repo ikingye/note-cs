@@ -1156,6 +1156,13 @@
       <description>ACID # In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. In the context of databases, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.&#xA;ACID 是追求 CAP (Consistency, Availability, Partition tolerance) 的一致性 (C)</description>
     </item>
     <item>
+      <title>Agent</title>
+      <link>https://kingye.me/note-cs/docs/domain/ai/agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/domain/ai/agent/</guid>
+      <description> Agent # 这是一个关于 [[ml]] 的测试。&#xA;任务调度：&#xA;agronholm/apscheduler celery/celery apache/airflow PrefectHQ/prefect </description>
+    </item>
+    <item>
       <title>Ambassador</title>
       <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ambassador/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
