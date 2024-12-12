@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPU on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/basic/cc/gpu/</link>
+    <description>Recent content in GPU on 计算机学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/basic/cc/gpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CUDA</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</guid>
+      <description>CUDA # Compute Unified Device Architecture&#xA;统一计算架构 nvcc -V 显示的当前安装的 cuda 版本&#xA;nvcc: NVIDIA (R) Cuda compiler driver 我们常说的 cuda 指的是 nvidia cuda toolkit 软件开发包，而不是 GPU 驱动&#xA;cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本 cuda 每个版本都对应一个最低版本的显卡驱动程序&#xA;cuda 程序是向后兼容的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作&#xA;cuda 可以是旧的，驱动可以是更新的 最新 nvidia 驱动版本支持所有版本的 CUDA GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。&#xA;只有一半的 CUDA 能支持整数计算&#xA;在 CUDA 核心（CUDA Core）的右边，是 TenSor 核心 (Tensor Core) Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算 nvidia driver 和 cuda toolkit 版本兼容性 # CUDA Toolkit runtime, libraries, tools Nvidia Display Driver Package CUDA user-mode driver (libcuda.</description>
+    </item>
+  </channel>
+</rss>
