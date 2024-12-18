@@ -8,11 +8,7 @@
 <meta name="description" content="数据库 # OLTP vs OLAP # OLTP (On-line Transaction Processing) is involved in the operation of a particular system.
 OLAP (On-line Analytical Processing) deals with Historical Data or Archival Data.
 参考：
-What are OLTP and OLAP. What is the difference between them? OLAP # prestodb/presto # The official home of the Presto distributed SQL query engine for big data http://prestodb.github.io
-Presto 是 Facebook 开发的分布式大数据 SQL 查询引擎，专门进行快速数据分析。
-特点：
-可以将多个数据源的数据进行合并，可以跨越整个组织进行分析。
-直接从 HDFS 读取数据，在使用前不需要大量的 ETL 操作。">
+What are OLTP and OLAP. What is the difference between them? OLAP # prestodb/presto The official home of the Presto distributed SQL query engine for big data http://prestodb.github.io Presto 是 Facebook 开发的分布式大数据 SQL 查询引擎，专门进行快速数据分析。特点： 可以将多个数据源的数据进行合并，可以跨越整个组织进行分析。 直接从 HDFS 读取数据，在使用前不需要大量的 ETL 操作。 apache/druid Apache Druid: a high performance real-time analytics database.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="2.2.1 数据库" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -22,7 +18,7 @@ Presto 是 Facebook 开发的分布式大数据 SQL 查询引擎，专门进行�
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.01e11abb114866c9723859b9d074accd6c125f2d5e8397b989f4246d122f1b5b.js" integrity="sha256-AeEauxFIZslyOFm50HSszWwSXy1eg5e5ifQkbRIvG1s="></script>
+<script defer src="/note-cs/en.search.min.f33063b2dd568278b12eef35e25314ad588bcbccd533e01cdb27912516f647a8.js" integrity="sha256-8zBjst1WgnixLu814lMUrViLy8zVM&#43;Ac2yeRJRb2R6g="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/direction/be/db/index.xml" title="计算机学习笔记" />
 <!--
 Made with Book Theme
@@ -19362,19 +19358,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#oltp-vs-olap">OLTP vs OLAP</a>
       <ul>
-        <li><a href="#olap">OLAP</a>
-          <ul>
-            <li><a href="#prestodbprestohttpsgithubcomprestodbpresto-github-starshttpsimgshieldsiogithubstarsprestodbprestosvg"><a href="https://github.com/prestodb/presto">prestodb/presto</a> <img src="https://img.shields.io/github/stars/prestodb/presto.svg" alt="Github stars"></a></li>
-            <li><a href="#apachedruidhttpsgithubcomapachedruid-github-starshttpsimgshieldsiogithubstarsapachedruidsvg"><a href="https://github.com/apache/druid">apache/druid</a> <img src="https://img.shields.io/github/stars/apache/druid.svg" alt="Github stars"></a></li>
-            <li><a href="#apacheimpalahttpsgithubcomapacheimpala-github-starshttpsimgshieldsiogithubstarsapacheimpalasvg"><a href="https://github.com/apache/impala">apache/impala</a> <img src="https://img.shields.io/github/stars/apache/impala.svg" alt="Github stars"></a>
-              <ul>
-                <li><a href="#clouderaimpalahttpsgithubcomclouderaimpala-github-starshttpsimgshieldsiogithubstarsclouderaimpalasvg"><a href="https://github.com/cloudera/Impala">cloudera/Impala</a> <img src="https://img.shields.io/github/stars/cloudera/Impala.svg" alt="Github stars"></a></li>
-              </ul>
-            </li>
-            <li><a href="#apachekylinhttpsgithubcomapachekylin-github-starshttpsimgshieldsiogithubstarsapachekylinsvg"><a href="https://github.com/apache/kylin">apache/kylin</a> <img src="https://img.shields.io/github/stars/apache/kylin.svg" alt="Github stars"></a></li>
-            <li><a href="#apachehivehttpsgithubcomapachehive-github-starshttpsimgshieldsiogithubstarsapachehivesvg"><a href="https://github.com/apache/hive">apache/hive</a> <img src="https://img.shields.io/github/stars/apache/hive.svg" alt="Github stars"></a></li>
-          </ul>
-        </li>
+        <li><a href="#olap">OLAP</a></li>
       </ul>
     </li>
   </ul>
@@ -19415,58 +19399,44 @@ https://github.com/alex-shpak/hugo-book
   OLAP
   <a class="anchor" href="#olap">#</a>
 </h3>
-<h4 id="prestodbprestohttpsgithubcomprestodbpresto-github-starshttpsimgshieldsiogithubstarsprestodbprestosvg">
-  <a href="https://github.com/prestodb/presto">prestodb/presto</a> <img src="https://img.shields.io/github/stars/prestodb/presto.svg" alt="Github stars" />
-  <a class="anchor" href="#prestodbprestohttpsgithubcomprestodbpresto-github-starshttpsimgshieldsiogithubstarsprestodbprestosvg">#</a>
-</h4>
-<p>The official home of the Presto distributed SQL query engine for big data
-<a href="http://prestodb.github.io">http://prestodb.github.io</a></p>
-<p>Presto 是 Facebook 开发的分布式大数据 SQL 查询引擎，专门进行快速数据分析。</p>
-<p>特点：</p>
+<ul>
+<li>
+<p><a href="https://github.com/prestodb/presto">prestodb/presto</a> <img src="https://img.shields.io/github/stars/prestodb/presto.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/prestodb/presto.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/prestodb/presto.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/prestodb/presto.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/prestodb/presto.svg" alt="Last commit" /></p>
+<ul>
+<li>The official home of the Presto distributed SQL query engine for big data</li>
+<li><a href="http://prestodb.github.io">http://prestodb.github.io</a></li>
+<li>Presto 是 Facebook 开发的分布式大数据 SQL 查询引擎，专门进行快速数据分析。特点：
 <ol>
-<li>
-<p>可以将多个数据源的数据进行合并，可以跨越整个组织进行分析。</p>
-</li>
-<li>
-<p>直接从 HDFS 读取数据，在使用前不需要大量的 ETL 操作。</p>
-</li>
+<li>可以将多个数据源的数据进行合并，可以跨越整个组织进行分析。</li>
+<li>直接从 HDFS 读取数据，在使用前不需要大量的 ETL 操作。</li>
 </ol>
-<h4 id="apachedruidhttpsgithubcomapachedruid-github-starshttpsimgshieldsiogithubstarsapachedruidsvg">
-  <a href="https://github.com/apache/druid">apache/druid</a> <img src="https://img.shields.io/github/stars/apache/druid.svg" alt="Github stars" />
-  <a class="anchor" href="#apachedruidhttpsgithubcomapachedruid-github-starshttpsimgshieldsiogithubstarsapachedruidsvg">#</a>
-</h4>
-<p>Apache Druid: a high performance real-time analytics database.
-<a href="https://druid.apache.org/">https://druid.apache.org/</a></p>
-<p>Druid 是广告分析公司 Metamarkets 开发的一个用于大数据实时查询和分析的分布式实时处理系统，主要用于广告分析，互联网广告系统监控、度量和网络监控。</p>
-<h4 id="apacheimpalahttpsgithubcomapacheimpala-github-starshttpsimgshieldsiogithubstarsapacheimpalasvg">
-  <a href="https://github.com/apache/impala">apache/impala</a> <img src="https://img.shields.io/github/stars/apache/impala.svg" alt="Github stars" />
-  <a class="anchor" href="#apacheimpalahttpsgithubcomapacheimpala-github-starshttpsimgshieldsiogithubstarsapacheimpalasvg">#</a>
-</h4>
-<p>Apache Impala
-<a href="https://impala.apache.org">https://impala.apache.org</a></p>
-<h5 id="clouderaimpalahttpsgithubcomclouderaimpala-github-starshttpsimgshieldsiogithubstarsclouderaimpalasvg">
-  <a href="https://github.com/cloudera/Impala">cloudera/Impala</a> <img src="https://img.shields.io/github/stars/cloudera/Impala.svg" alt="Github stars" />
-  <a class="anchor" href="#clouderaimpalahttpsgithubcomclouderaimpala-github-starshttpsimgshieldsiogithubstarsclouderaimpalasvg">#</a>
-</h5>
-<p>Real-time Query for Hadoop; <strong>mirror</strong> of Apache Impala
-<a href="http://impala.io">http://impala.io</a></p>
-<hr>
-<h4 id="apachekylinhttpsgithubcomapachekylin-github-starshttpsimgshieldsiogithubstarsapachekylinsvg">
-  <a href="https://github.com/apache/kylin">apache/kylin</a> <img src="https://img.shields.io/github/stars/apache/kylin.svg" alt="Github stars" />
-  <a class="anchor" href="#apachekylinhttpsgithubcomapachekylin-github-starshttpsimgshieldsiogithubstarsapachekylinsvg">#</a>
-</h4>
-<p>Apache Kylin is an open source Distributed Analytics Engine, contributed by eBay Inc.,
-provides SQL interface and multi-dimensional analysis (OLAP) on Hadoop supporting extremely large datasets.
-<a href="http://kylin.apache.org">http://kylin.apache.org</a>.</p>
-<p>Apache Kylin 最初由 eBay 开发并贡献至开源社区的分布式分析引擎，提供 Hadoop 之上的 SQL 查询接口及多维分析（OLAP）能力以支持超大规模数据。</p>
-<h4 id="apachehivehttpsgithubcomapachehive-github-starshttpsimgshieldsiogithubstarsapachehivesvg">
-  <a href="https://github.com/apache/hive">apache/hive</a> <img src="https://img.shields.io/github/stars/apache/hive.svg" alt="Github stars" />
-  <a class="anchor" href="#apachehivehttpsgithubcomapachehive-github-starshttpsimgshieldsiogithubstarsapachehivesvg">#</a>
-</h4>
-<p>Apache Hive
-<a href="https://hive.apache.org/">https://hive.apache.org/</a></p>
-<p>The Apache Hive (TM) data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL.
-Built on top of Apache Hadoop (TM).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/apache/druid">apache/druid</a> <img src="https://img.shields.io/github/stars/apache/druid.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/apache/druid.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/apache/druid.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/apache/druid.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/apache/druid.svg" alt="Last commit" /></p>
+<ul>
+<li>Apache Druid: a high performance real-time analytics database.
+<a href="https://druid.apache.org/">https://druid.apache.org/</a></li>
+<li>Druid 是广告分析公司 Metamarkets 开发的一个用于大数据实时查询和分析的分布式实时处理系统，主要用于广告分析，互联网广告系统监控、度量和网络监控。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/apache/impala">apache/impala</a> <img src="https://img.shields.io/github/stars/apache/impala.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/apache/impala.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/apache/impala.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/apache/impala.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/apache/impala.svg" alt="Last commit" /></p>
+</li>
+<li>
+<p><a href="https://github.com/apache/kylin">apache/kylin</a> <img src="https://img.shields.io/github/stars/apache/kylin.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/apache/kylin.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/apache/kylin.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/apache/kylin.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/apache/kylin.svg" alt="Last commit" /></p>
+<ul>
+<li>Apache Kylin 最初由 eBay 开发并贡献至开源社区的分布式分析引擎，提供 Hadoop 之上的 SQL 查询接口及多维分析（OLAP）能力以支持超大规模数据。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/apache/hive">apache/hive</a> <img src="https://img.shields.io/github/stars/apache/hive.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/apache/hive.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/apache/hive.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/apache/hive.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/apache/hive.svg" alt="Last commit" /></p>
+<ul>
+<li>The Apache Hive (TM) data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL.</li>
+</ul>
+</li>
+</ul>
 </article>
  
       
@@ -19542,19 +19512,7 @@ Built on top of Apache Hadoop (TM).</p>
   <ul>
     <li><a href="#oltp-vs-olap">OLTP vs OLAP</a>
       <ul>
-        <li><a href="#olap">OLAP</a>
-          <ul>
-            <li><a href="#prestodbprestohttpsgithubcomprestodbpresto-github-starshttpsimgshieldsiogithubstarsprestodbprestosvg"><a href="https://github.com/prestodb/presto">prestodb/presto</a> <img src="https://img.shields.io/github/stars/prestodb/presto.svg" alt="Github stars"></a></li>
-            <li><a href="#apachedruidhttpsgithubcomapachedruid-github-starshttpsimgshieldsiogithubstarsapachedruidsvg"><a href="https://github.com/apache/druid">apache/druid</a> <img src="https://img.shields.io/github/stars/apache/druid.svg" alt="Github stars"></a></li>
-            <li><a href="#apacheimpalahttpsgithubcomapacheimpala-github-starshttpsimgshieldsiogithubstarsapacheimpalasvg"><a href="https://github.com/apache/impala">apache/impala</a> <img src="https://img.shields.io/github/stars/apache/impala.svg" alt="Github stars"></a>
-              <ul>
-                <li><a href="#clouderaimpalahttpsgithubcomclouderaimpala-github-starshttpsimgshieldsiogithubstarsclouderaimpalasvg"><a href="https://github.com/cloudera/Impala">cloudera/Impala</a> <img src="https://img.shields.io/github/stars/cloudera/Impala.svg" alt="Github stars"></a></li>
-              </ul>
-            </li>
-            <li><a href="#apachekylinhttpsgithubcomapachekylin-github-starshttpsimgshieldsiogithubstarsapachekylinsvg"><a href="https://github.com/apache/kylin">apache/kylin</a> <img src="https://img.shields.io/github/stars/apache/kylin.svg" alt="Github stars"></a></li>
-            <li><a href="#apachehivehttpsgithubcomapachehive-github-starshttpsimgshieldsiogithubstarsapachehivesvg"><a href="https://github.com/apache/hive">apache/hive</a> <img src="https://img.shields.io/github/stars/apache/hive.svg" alt="Github stars"></a></li>
-          </ul>
-        </li>
+        <li><a href="#olap">OLAP</a></li>
       </ul>
     </li>
   </ul>
