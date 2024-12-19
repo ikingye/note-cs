@@ -2521,6 +2521,13 @@
       <description>Nvidia 驱动 # 显卡类型 说明 GeForce RTX 游戏卡 TITAN 游戏发烧卡, 深度学习屌丝卡 NVIDIA RTX / Quadro 图形卡 Data Center / Tesla 计算卡 GRID 物理卡：只有 GRID K1/K2 两个型号，早停产。 虚拟卡：Quadro 系列或者是 Tesla 系列分出来的多张虚拟显卡 Networking NVS ION apt install -y ubuntu-drivers-common # 查询推荐的 nvidia 驱动 ubuntu-drivers devices # 按推荐安装驱动 apt install -y nvidia-driver-535 # CUDA Toolkit: 12.2 # Driver Version: 535.54.03 # Release Date: 2023.6.26 curl -LO https://us.download.nvidia.com/tesla/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run bash NVIDIA-Linux-x86_64-535.54.03.run # CUDA Toolkit: 12.</description>
     </item>
     <item>
+      <title>obsidian</title>
+      <link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</guid>
+      <description> obsidian # 同步数据 # obsidian-livesync # vrtmrz/obsidian-livesync self-hosted-livesync-server # mkdir obsidian cd obsidian git clone https://github.com/vrtmrz/self-hosted-livesync-server cd self-hosted-livesync-server # Create Caddy&amp;#39;s network docker network create caddy # 看教程 https://github.com/vrtmrz/self-hosted-livesync-server export COUCHDB_SERVER=&amp;#34;couchdb.kingye.me&amp;#34; export COUCHDB_USER=&amp;#34;kingye&amp;#34; export COUCHDB_PW=&amp;#34;&amp;#34; # docker compose version docker-compose -f docker-compose.yml up -d </description>
+    </item>
+    <item>
       <title>OrbStack</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/orbstack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
