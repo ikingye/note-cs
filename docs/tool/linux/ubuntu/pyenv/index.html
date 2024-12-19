@@ -5,10 +5,10 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="pyenv # pyenv/pyenv 安装 # curl https://pyenv.run | bash echo &#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;[[ -d $PYENV_ROOT/bin ]] &amp;&amp; export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &#34;$(pyenv init -)&#34;&#39; &gt;&gt; ~/.zshrc # git clone https://github.com/pyenv/pyenv.git ~/.pyenv # 使用 taobao 的 npm 源 cat &lt;&lt; &#39;EOF&#39; &gt;&gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF zsh 安装依赖 # 之后才能编译 python 成功
+<meta name="description" content="pyenv # pyenv/pyenv 安装 # curl https://pyenv.run | bash echo &#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;[[ -d $PYENV_ROOT/bin ]] &amp;&amp; export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &#34;$(pyenv init -)&#34;&#39; &gt;&gt; ~/.zshrc # git clone https://github.com/pyenv/pyenv.git ~/.pyenv # 使用 taobao 的 npm 源 cat &lt;&lt; &#39;EOF&#39; &gt;&gt; ~/.zshrc function pyenvinstall { wget -c https://registry.npmmirror.com/-/binary/python/$@/Python-$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF zsh 安装依赖 # 之后才能编译 python 成功
 sudo apt update sudo apt install -y \ gcc \ build-essential \ curl \ libbz2-dev \ libffi-dev \ liblzma-dev \ libncursesw5-dev \ libreadline-dev \ libsqlite3-dev \ libssl-dev \ libxml2-dev \ libxmlsec1-dev \ llvm \ make \ tk-dev \ wget \ xz-utils \ zlib1g-dev 使用 # pyenv # 列出所有可安装 python 版本 pyenv install -l # 安装 pyenv install 3.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="pyenv" />
-<meta property="og:description" content="pyenv # pyenv/pyenv 安装 # curl https://pyenv.run | bash echo &#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;[[ -d $PYENV_ROOT/bin ]] &amp;&amp; export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &#34;$(pyenv init -)&#34;&#39; &gt;&gt; ~/.zshrc # git clone https://github.com/pyenv/pyenv.git ~/.pyenv # 使用 taobao 的 npm 源 cat &lt;&lt; &#39;EOF&#39; &gt;&gt; ~/.zshrc function pyenvinstall { wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF zsh 安装依赖 # 之后才能编译 python 成功
+<meta property="og:description" content="pyenv # pyenv/pyenv 安装 # curl https://pyenv.run | bash echo &#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;[[ -d $PYENV_ROOT/bin ]] &amp;&amp; export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &#34;$(pyenv init -)&#34;&#39; &gt;&gt; ~/.zshrc # git clone https://github.com/pyenv/pyenv.git ~/.pyenv # 使用 taobao 的 npm 源 cat &lt;&lt; &#39;EOF&#39; &gt;&gt; ~/.zshrc function pyenvinstall { wget -c https://registry.npmmirror.com/-/binary/python/$@/Python-$@.tar.xz -P ~/.pyenv/cache/ pyenv install \$@ } EOF zsh 安装依赖 # 之后才能编译 python 成功
 sudo apt update sudo apt install -y \ gcc \ build-essential \ curl \ libbz2-dev \ libffi-dev \ liblzma-dev \ libncursesw5-dev \ libreadline-dev \ libsqlite3-dev \ libssl-dev \ libxml2-dev \ libxmlsec1-dev \ llvm \ make \ tk-dev \ wget \ xz-utils \ zlib1g-dev 使用 # pyenv # 列出所有可安装 python 版本 pyenv install -l # 安装 pyenv install 3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/" /><meta property="article:section" content="docs" />
@@ -19,7 +19,7 @@ sudo apt update sudo apt install -y \ gcc \ build-essential \ curl \ libbz2-dev 
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.f33063b2dd568278b12eef35e25314ad588bcbccd533e01cdb27912516f647a8.js" integrity="sha256-8zBjst1WgnixLu814lMUrViLy8zVM&#43;Ac2yeRJRb2R6g="></script>
+<script defer src="/note-cs/en.search.min.7cdea4b2d8c90022ad5ac5a16f794b407da58dcc12d700b5f0d8d64cdad2394d.js" integrity="sha256-fN6kstjJACKtWsWhb3lLQH2ljcwS1wC18NjWTNrSOU0="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15338,6 +15338,24 @@ https://github.com/alex-shpak/hugo-book
     <a href="https://kingye.me/note-cs/docs/domain/ai/agent/" class="">Agent</a>
   
 
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://kingye.me/note-cs/docs/domain/ai/agent/qianfan/" class="">百度千帆</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
         </li>
       
     
@@ -19403,7 +19421,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39; &gt;&gt; ~/.zshrc
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">function pyenvinstall {
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    wget -c https://npm.taobao.org/mirrors/python/\$@/Python-\$@.tar.xz -P ~/.pyenv/cache/
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    wget -c https://registry.npmmirror.com/-/binary/python/$@/Python-$@.tar.xz -P ~/.pyenv/cache/
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    pyenv install \$@
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">}
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
