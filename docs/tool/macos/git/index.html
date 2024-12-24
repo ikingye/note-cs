@@ -17,7 +17,7 @@
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.f62e7bc04c91c8f32a9df78bd00a8572ea0f0c3e823f4f87194233ca612db87f.js" integrity="sha256-9i57wEyRyPMqnfeL0AqFcuoPDD6CP0&#43;HGUIzymEtuH8="></script>
+<script defer src="/note-cs/en.search.min.d2f9feba56ad218222e3817cb824a37613894fa91f856e2f76da8f2b83a76eec.js" integrity="sha256-0vn&#43;ulatIYIi44F8uCSjdhOJT6kfhW4vdtqPK4Onbuw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -19049,6 +19049,11 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#pcottlelearngitbranchinghttpsgithubcompcottlelearngitbranching-github-starshttpsimgshieldsiogithubstarspcottlelearngitbranchingsvg-github-forkshttpsimgshieldsiogithubforkspcottlelearngitbranchingsvg-languagehttpsimgshieldsiogithublanguagestoppcottlelearngitbranchingsvg-last-taghttpsimgshieldsiogithubvtagpcottlelearngitbranchingsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitpcottlelearngitbranchingsvg"><a href="https://github.com/pcottle/learnGitBranching">pcottle/learnGitBranching</a> <img src="https://img.shields.io/github/stars/pcottle/learnGitBranching.svg" alt="Github stars"> <img src="https://img.shields.io/github/forks/pcottle/learnGitBranching.svg" alt="Github forks"> <img src="https://img.shields.io/github/languages/top/pcottle/learnGitBranching.svg" alt="Language"> <img src="https://img.shields.io/github/v/tag/pcottle/learnGitBranching.svg?sort=semver" alt="Last Tag"> <img src="https://img.shields.io/github/last-commit/pcottle/learnGitBranching.svg" alt="Last commit"></a></li>
       </ul>
     </li>
+    <li><a href="#常见问题">常见问题</a>
+      <ul>
+        <li><a href="#保留-remote-的历史记录但是不关心未来这个文件的变化">保留 remote 的历史记录，但是不关心未来这个文件的变化</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 <hr />
@@ -19338,7 +19343,21 @@ chmod 644 ~/.ssh/config
 </h3>
 <p>LearnGitBranching is a git repository visualizer, sandbox, and a series of educational tutorials and challenges.</p>
 <p><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></p>
-</article>
+<hr>
+<h2 id="常见问题">
+  常见问题
+  <a class="anchor" href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98">#</a>
+</h2>
+<h3 id="保留-remote-的历史记录但是不关心未来这个文件的变化">
+  保留 remote 的历史记录，但是不关心未来这个文件的变化
+  <a class="anchor" href="#%e4%bf%9d%e7%95%99-remote-%e7%9a%84%e5%8e%86%e5%8f%b2%e8%ae%b0%e5%bd%95%e4%bd%86%e6%98%af%e4%b8%8d%e5%85%b3%e5%bf%83%e6%9c%aa%e6%9d%a5%e8%bf%99%e4%b8%aa%e6%96%87%e4%bb%b6%e7%9a%84%e5%8f%98%e5%8c%96">#</a>
+</h3>
+<p>比如某个文件频繁变化，希望不再管理后续更新。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git update-index --assume-unchanged xxx-filepath
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 继续跟进变化</span>
+</span></span><span style="display:flex;"><span>git update-index --no-assume-unchanged xxx-filepath
+</span></span></code></pre></div></article>
  
       
 
@@ -19451,6 +19470,11 @@ chmod 644 ~/.ssh/config
     <li><a href="#教程">教程</a>
       <ul>
         <li><a href="#pcottlelearngitbranchinghttpsgithubcompcottlelearngitbranching-github-starshttpsimgshieldsiogithubstarspcottlelearngitbranchingsvg-github-forkshttpsimgshieldsiogithubforkspcottlelearngitbranchingsvg-languagehttpsimgshieldsiogithublanguagestoppcottlelearngitbranchingsvg-last-taghttpsimgshieldsiogithubvtagpcottlelearngitbranchingsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitpcottlelearngitbranchingsvg"><a href="https://github.com/pcottle/learnGitBranching">pcottle/learnGitBranching</a> <img src="https://img.shields.io/github/stars/pcottle/learnGitBranching.svg" alt="Github stars"> <img src="https://img.shields.io/github/forks/pcottle/learnGitBranching.svg" alt="Github forks"> <img src="https://img.shields.io/github/languages/top/pcottle/learnGitBranching.svg" alt="Language"> <img src="https://img.shields.io/github/v/tag/pcottle/learnGitBranching.svg?sort=semver" alt="Last Tag"> <img src="https://img.shields.io/github/last-commit/pcottle/learnGitBranching.svg" alt="Last commit"></a></li>
+      </ul>
+    </li>
+    <li><a href="#常见问题">常见问题</a>
+      <ul>
+        <li><a href="#保留-remote-的历史记录但是不关心未来这个文件的变化">保留 remote 的历史记录，但是不关心未来这个文件的变化</a></li>
       </ul>
     </li>
   </ul>
