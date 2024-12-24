@@ -20,8 +20,7 @@
     <loc>https://kingye.me/note-cs/docs/study/book/others/practical-vim/zh/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/storage/imagehost/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/imagehost/</loc>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/deploy/install/</loc>
     <lastmod>2021-12-10T14:22:32+08:00</lastmod>
@@ -184,9 +183,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/pl/shell/type/bash/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/academic/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/compile/make/makefile/</loc>
     <lastmod>2020-09-01T15:17:23+08:00</lastmod>
@@ -452,17 +448,11 @@
     <loc>https://kingye.me/note-cs/docs/direction/security/appendix/interview/advanced/</loc>
     <lastmod>2020-04-17T00:55:05+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/config/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/compile/make/cmake/</loc>
     <lastmod>2022-10-31T04:44:55+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/study/book/be/Designing-Data-Intensive-Applications/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/hugo-book/</loc>
-    <lastmod>2024-01-17T11:00:49+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/pl/shell/command/kill/</loc>
     <lastmod>2020-09-23T15:21:05+08:00</lastmod>
@@ -487,9 +477,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/os/type/windows/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/study/book/ai/d2l/</loc>
     <lastmod>2024-09-18T21:02:02+08:00</lastmod>
@@ -793,9 +780,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/be/platform/nodejs/basic/version/</loc>
     <lastmod>2020-06-11T20:08:25+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/study/tutorial/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/study/book/basic/cc/sicp/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
@@ -1157,11 +1141,7 @@
     <loc>https://kingye.me/note-cs/docs/direction/be/auth/sso/cas/</loc>
     <lastmod>2022-04-10T16:14:40+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/codelabs/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/ssh/config/</loc>
-    <lastmod>2024-05-02T18:01:22+08:00</lastmod>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/codelabs/</loc>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/</loc>
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
@@ -1184,17 +1164,13 @@
     <loc>https://kingye.me/note-cs/docs/study/skill/stream-media/debug/gdb/tutorial/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/git/config/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
     <loc>https://kingye.me/note-cs/docs/study/course/basic/pl/go/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/study/course/basic/pl/go/go-wiki/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/hugo/</loc>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/virtual/hyperkit/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
@@ -1256,9 +1232,6 @@
     <loc>https://kingye.me/note-cs/docs/direction/be/db/redis/source/type/string/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/git/submodule/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/virtual/vmware/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
@@ -1282,9 +1255,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/cn/</loc>
     <lastmod>2020-11-26T11:16:50+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/5/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
@@ -1312,21 +1282,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/os/type/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/flowchart/tutorial/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/graphviz/tutorial/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/latex/tutorial/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/mermaid/tutorial/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/plantuml/tutorial/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/pl/assembly/</loc>
     <lastmod>2022-10-08T10:48:09+08:00</lastmod>
@@ -1760,9 +1715,6 @@
     <loc>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/onenote/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/virtual/parallels/</loc>
     <lastmod>2020-04-16T22:39:44+08:00</lastmod>
   </url><url>
@@ -1807,12 +1759,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/command/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/4/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/storage/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/practice/error/</loc>
     <lastmod>2020-07-02T00:05:55+08:00</lastmod>
@@ -2075,6 +2021,8 @@
     <loc>https://kingye.me/note-cs/docs/direction/se/arch/scene/release/ab-testing/</loc>
     <lastmod>2020-06-09T20:36:07+08:00</lastmod>
   </url><url>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/anki/</loc>
+  </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/contour/</loc>
     <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
@@ -2084,8 +2032,7 @@
     <loc>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</loc>
     <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/gitbook/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/gitbook/</loc>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/</loc>
     <lastmod>2021-12-10T14:22:32+08:00</lastmod>
@@ -2140,9 +2087,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/be/devops/terraform/</loc>
     <lastmod>2020-10-21T18:39:49+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/3/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/os/type/android/basic/practice/</loc>
     <lastmod>2020-07-06T13:17:19+08:00</lastmod>
@@ -2492,9 +2436,6 @@
     <loc>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/study/coding-online/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
   </url><url>
@@ -2534,17 +2475,11 @@
     <loc>https://kingye.me/note-cs/docs/basic/pl/zig/basic/others/version/</loc>
     <lastmod>2022-10-31T04:44:55+08:00</lastmod>
   </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/note/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
-  </url><url>
     <loc>https://kingye.me/note-cs/docs/study/</loc>
     <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/se/design-pattern/other/simple-factory/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/study/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/pl/python/</loc>
     <lastmod>2021-07-26T17:18:22+08:00</lastmod>
@@ -2898,13 +2833,9 @@
     <lastmod>2023-10-24T14:26:22+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/flowchart/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/centos/git/</loc>
     <lastmod>2024-06-02T20:01:35+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/git/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/git/</loc>
     <lastmod>2024-12-23T12:03:44+08:00</lastmod>
@@ -2922,7 +2853,6 @@
     <lastmod>2024-03-07T12:03:38+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/graphviz/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</loc>
     <lastmod>2023-04-06T16:00:49+08:00</lastmod>
@@ -2954,6 +2884,8 @@
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</loc>
     <lastmod>2024-07-17T12:02:28+08:00</lastmod>
   </url><url>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/katex/</loc>
+  </url><url>
     <loc>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</loc>
     <lastmod>2021-12-10T14:22:32+08:00</lastmod>
   </url><url>
@@ -2970,7 +2902,6 @@
     <lastmod>2023-10-24T14:26:22+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/latex/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</loc>
     <lastmod>2024-06-02T20:01:35+08:00</lastmod>
@@ -2984,8 +2915,9 @@
     <loc>https://kingye.me/note-cs/docs/tool/macos/mas/</loc>
     <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
+    <loc>https://kingye.me/note-cs/docs/tool/macos/mathjax/</loc>
+  </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/mermaid/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</loc>
     <lastmod>2024-07-17T12:02:28+08:00</lastmod>
@@ -3042,7 +2974,6 @@
     <lastmod>2024-12-19T12:03:37+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/plantuml/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</loc>
     <lastmod>2024-05-07T21:03:23+08:00</lastmod>
@@ -3078,7 +3009,6 @@
     <lastmod>2024-04-01T18:06:28+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/ssh/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</loc>
     <lastmod>2024-03-07T12:03:38+08:00</lastmod>
@@ -3111,7 +3041,6 @@
     <lastmod>2020-04-19T23:53:21+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/tool/macos/package-manager/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/basic/cc/storage/</loc>
     <lastmod>2024-09-05T18:01:41+08:00</lastmod>
@@ -3127,9 +3056,6 @@
   </url><url>
     <loc>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>
-  </url><url>
-    <loc>https://kingye.me/note-cs/docs/tool/macos/tool/</loc>
-    <lastmod>2022-11-16T22:00:56+08:00</lastmod>
   </url><url>
     <loc>https://kingye.me/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/</loc>
     <lastmod>2021-11-01T15:00:05+08:00</lastmod>

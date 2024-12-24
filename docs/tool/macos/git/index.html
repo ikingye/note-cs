@@ -5,19 +5,19 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="git # git module # git submodule foreach git reset --hard HEAD git submodule update git submodule foreach &#34;git checkout master; git pull&#34; git submodule foreach git clean -f 更新 submodule # git submodule update --init git submodule update --remote merge vs squash vs rebase # merge 不能保持 master 分支干净，但是保持了所有的 commit history，大多数情况下都是不好的，个别情况挺好 squash 也可以保持 master 分支干净，但是 master 中 author 都是 maintainer，而不是原 owner rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 author
-squash merge # # 切换到目标分支 $ git checkout master # 以 squash 的形式 merge $ git merge --squash devel # it does not produce a commit right away: you need an additional commit $ git commit -m &#34;squash branch&#34; 你会发现，在 master 分支上居然有未提交的修改，然后你就需要在 master 上主动提交了修改， 注意，这里是你 commit 的，也就是改变了 commit 的 author。 git merge has a &ndash;commit option, but it cannot be used with &ndash;squash.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="git" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/git/" />
+<meta name="description" content="Git # 分支 # # 本地仓库 分支引用 refs/heads/v1.0.0 # 远程跟踪分支引用, 远程仓库 origin 中有一个分支 v1.0.0 refs/remotes/origin/v1.0.0 # 标签引用，包括远程和本地 refs/tags/v1.0.0 tag # 远程 tag 被视为本地 tag 的一种，它们都存储在 refs/tags/ 路径下。当你从远程仓库拉取或推送 tag 时，Git 会自动同步这些 tag 到本地仓库中的 refs/tags/ 路径 分支和 tag 重名 # 远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支 # # 本地拉 v1.0.0 tag git fetch origin tag v1.0.0 # git fetch origin --tags # 基于 tag 拉 v1.0.0 分支, # git co -b 分支名 tag名 git co -b v1.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Git" />
+<meta property="og:description" content="Git # 分支 # # 本地仓库 分支引用 refs/heads/v1.0.0 # 远程跟踪分支引用, 远程仓库 origin 中有一个分支 v1.0.0 refs/remotes/origin/v1.0.0 # 标签引用，包括远程和本地 refs/tags/v1.0.0 tag # 远程 tag 被视为本地 tag 的一种，它们都存储在 refs/tags/ 路径下。当你从远程仓库拉取或推送 tag 时，Git 会自动同步这些 tag 到本地仓库中的 refs/tags/ 路径 分支和 tag 重名 # 远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支 # # 本地拉 v1.0.0 tag git fetch origin tag v1.0.0 # git fetch origin --tags # 基于 tag 拉 v1.0.0 分支, # git co -b 分支名 tag名 git co -b v1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/git/" /><meta property="article:section" content="docs" />
 
-<title>git | 计算机学习笔记</title>
+<meta property="article:modified_time" content="2024-12-23T12:03:44+08:00" />
+
+<title>Git | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.f8cc622e2154d48719e32edcb519248bea4c6c34c5277ec622c9faa691b068dc.js" integrity="sha256-&#43;MxiLiFU1IcZ4y7ctRkki&#43;pMbDTFJ37GIsn6ppGwaNw="></script>
-<link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/tool/macos/git/index.xml" title="计算机学习笔记" />
+<script defer src="/note-cs/en.search.min.f62e7bc04c91c8f32a9df78bd00a8572ea0f0c3e823f4f87194233ca612db87f.js" integrity="sha256-9i57wEyRyPMqnfeL0AqFcuoPDD6CP0&#43;HGUIzymEtuH8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15437,16 +15437,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-309498f77afa73933bce5c57e75b738b" class="toggle"  />
-    <label for="section-309498f77afa73933bce5c57e75b738b" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/5/" class="">五星</a>
-    </label>
+    <a href="https://kingye.me/note-cs/docs/tool/macos/imagehost/" class="">图床</a>
   
-
-          
-  <ul>
-    
-  </ul>
 
         </li>
       
@@ -15458,16 +15450,11 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b9f2decad5ae7943f8c4540ff6f5879a" class="toggle"  />
-    <label for="section-b9f2decad5ae7943f8c4540ff6f5879a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/4/" class="">四星</a>
+    <input type="checkbox" id="section-371747ba3bbd66bf3b3a471e6f834b6b" class="toggle"  />
+    <label for="section-371747ba3bbd66bf3b3a471e6f834b6b" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/codelabs/" class="">Codelabs</a>
     </label>
   
-
-          
-  <ul>
-    
-  </ul>
 
         </li>
       
@@ -15479,16 +15466,43 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-2a149b8e9db35c00cc4ab2b591432139" class="toggle"  />
-    <label for="section-2a149b8e9db35c00cc4ab2b591432139" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/3/" class="">三星</a>
+    <input type="checkbox" id="section-a1d7a37c91d42a9971848d86eaf132a2" class="toggle"  />
+    <label for="section-a1d7a37c91d42a9971848d86eaf132a2" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/hugo/" class="">Hugo</a>
     </label>
   
 
-          
-  <ul>
+        </li>
+      
     
-  </ul>
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b67c85572e0eb0d1d8356753af1a6ba" class="toggle"  />
+    <label for="section-2b67c85572e0eb0d1d8356753af1a6ba" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/anki/" class="">Anki</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ec0e04befb83817a3940b14a0563ccff" class="toggle"  />
+    <label for="section-ec0e04befb83817a3940b14a0563ccff" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/gitbook/" class="">Gitbook</a>
+    </label>
+  
 
         </li>
       
@@ -15599,24 +15613,6 @@ https://github.com/alex-shpak/hugo-book
     <a href="https://kingye.me/note-cs/docs/tool/macos/flowchart/" class="">Flowchart</a>
   
 
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/flowchart/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
         </li>
       
     
@@ -15627,62 +15623,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-9a0a0171f9826dd9dc49ae51eea3f869" class="toggle" checked />
-    <label for="section-9a0a0171f9826dd9dc49ae51eea3f869" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/git/" class="active">git</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1f582510f1480ea4ba74b9dda9989b3a" class="toggle"  />
-    <label for="section-1f582510f1480ea4ba74b9dda9989b3a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/git/config/" class="">git config</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-258d645fb3c2c614e48e6b91069357f5" class="toggle"  />
-    <label for="section-258d645fb3c2c614e48e6b91069357f5" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/git/submodule/" class="">submodule</a>
-    </label>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-d1dff48526c37eafa8458a3a03c2fc84" class="toggle"  />
+    <input type="checkbox" id="section-d1dff48526c37eafa8458a3a03c2fc84" class="toggle" checked />
     <label for="section-d1dff48526c37eafa8458a3a03c2fc84" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/git/" class="">Git</a>
+      <a href="https://kingye.me/note-cs/docs/tool/macos/git/" class="active">Git</a>
     </label>
   
 
@@ -15730,24 +15673,6 @@ https://github.com/alex-shpak/hugo-book
   
     <a href="https://kingye.me/note-cs/docs/tool/macos/graphviz/" class="">Graphviz</a>
   
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/graphviz/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -15839,6 +15764,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-b27547a5e2ae9a19010eef6c24ba3e2a" class="toggle"  />
+    <label for="section-b27547a5e2ae9a19010eef6c24ba3e2a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/katex/" class="">KaTeX</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-01bbf5ee5a8a20ac5fa8658d5f040aee" class="toggle"  />
     <label for="section-01bbf5ee5a8a20ac5fa8658d5f040aee" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/kubectx/" class="">kubectx</a>
@@ -15857,24 +15798,6 @@ https://github.com/alex-shpak/hugo-book
   
     <a href="https://kingye.me/note-cs/docs/tool/macos/latex/" class="">LaTeX</a>
   
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/latex/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -15918,11 +15841,14 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://kingye.me/note-cs/docs/tool/macos/mermaid/" class="">Mermaid</a>
+    <input type="checkbox" id="section-9514648b9214f22b115b54cc154fefba" class="toggle"  />
+    <label for="section-9514648b9214f22b115b54cc154fefba" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/mathjax/" class="">MathJax</a>
+    </label>
   
 
-          
-  <ul>
+        </li>
+      
     
       
         <li>
@@ -15931,13 +15857,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://kingye.me/note-cs/docs/tool/macos/mermaid/tutorial/" class="">教程</a>
+    <a href="https://kingye.me/note-cs/docs/tool/macos/mermaid/" class="">Mermaid</a>
   
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -16000,24 +15921,6 @@ https://github.com/alex-shpak/hugo-book
     <a href="https://kingye.me/note-cs/docs/tool/macos/plantuml/" class="">PlantUML</a>
   
 
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/plantuml/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
         </li>
       
     
@@ -16076,32 +15979,11 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a090cd2c2ab9a0b3e23326f8dca63c4b" class="toggle"  />
-    <label for="section-a090cd2c2ab9a0b3e23326f8dca63c4b" class="flex justify-between">
+    <input type="checkbox" id="section-918b8d38a1b25564f9034c0d03aa0444" class="toggle"  />
+    <label for="section-918b8d38a1b25564f9034c0d03aa0444" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/ssh/" class="">ssh</a>
     </label>
   
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-ea1bf610f27a8ade6d1796d1cf2f0cad" class="toggle"  />
-    <label for="section-ea1bf610f27a8ade6d1796d1cf2f0cad" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/ssh/config/" class="">config</a>
-    </label>
-  
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -16177,274 +16059,11 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-ab2b2ccf896945932ce70c4f2b792694" class="toggle"  />
-    <label for="section-ab2b2ccf896945932ce70c4f2b792694" class="flex justify-between">
+    <input type="checkbox" id="section-d7fd9c7d55368801733c8c62069106c6" class="toggle"  />
+    <label for="section-d7fd9c7d55368801733c8c62069106c6" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/package-manager/" class="">包管理工具</a>
     </label>
   
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/" class="">第四部分 工具</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-81d40de98c661c58921b30444432cbd1" class="toggle"  />
-    <label for="section-81d40de98c661c58921b30444432cbd1" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/" class="">笔记</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-6ef02fd1ab8f854ce341c0ba1e22a927" class="toggle"  />
-    <label for="section-6ef02fd1ab8f854ce341c0ba1e22a927" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/codelabs/" class="">Codelabs</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-07543dcb0e61ca1391004352b4abc54a" class="toggle"  />
-    <label for="section-07543dcb0e61ca1391004352b4abc54a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/" class="">Hugo</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/config/" class="">配置</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/" class="">主题</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/academic/" class="">hugo-academic</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/hugo-book/" class="">hugo-book</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="toggle"  />
-    <label for="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/onenote/" class="">OneNote</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-cb612cbd99314cae9f9bee900a0254fe" class="toggle"  />
-    <label for="section-cb612cbd99314cae9f9bee900a0254fe" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/storage/" class="">存储</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/storage/imagehost/" class="">图床</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-670d431cc832e45c07e828d3dcefbd56" class="toggle"  />
-    <label for="section-670d431cc832e45c07e828d3dcefbd56" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/gitbook/" class="">Gitbook</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-9085754fbcdf97cd9eb2d58f1edc989b" class="toggle"  />
-    <label for="section-9085754fbcdf97cd9eb2d58f1edc989b" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/study/" class="">计算机学习</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-94ae5ce35bd8913c2c6c8be545f51d1e" class="toggle"  />
-    <label for="section-94ae5ce35bd8913c2c6c8be545f51d1e" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/study/coding-online/" class="">在线编程</a>
-    </label>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -19372,7 +18991,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/note-cs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>git</strong>
+  <strong>Git</strong>
 
   <label for="toc-control">
     
@@ -19388,6 +19007,13 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#分支">分支</a></li>
+    <li><a href="#tag">tag</a></li>
+    <li><a href="#分支和-tag-重名">分支和 tag 重名</a>
+      <ul>
+        <li><a href="#远程有个-v100-tag想基于它拉一个远程-v100-分支">远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支</a></li>
+      </ul>
+    </li>
     <li><a href="#git-module">git module</a>
       <ul>
         <li><a href="#更新-submodule">更新 submodule</a></li>
@@ -19405,6 +19031,24 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#hard-reset-vs-mixed-reset-vs-soft-reset"><code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code></a></li>
     <li><a href="#git-reflog">git reflog</a></li>
     <li><a href="#git-回退">git 回退</a></li>
+    <li><a href="#config-权限">config 权限</a></li>
+    <li><a href="#git-submodule">git submodule</a>
+      <ul>
+        <li><a href="#拉取-submodule">拉取 submodule</a></li>
+        <li><a href="#git-submodule-add--b"><code>git submodule add -b</code></a></li>
+        <li><a href="#submodule-修改-url">submodule 修改 url</a></li>
+        <li><a href="#delete-submodule">delete submodule</a>
+          <ul>
+            <li><a href="#untracked-status">untracked status</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#教程">教程</a>
+      <ul>
+        <li><a href="#pcottlelearngitbranchinghttpsgithubcompcottlelearngitbranching-github-starshttpsimgshieldsiogithubstarspcottlelearngitbranchingsvg-github-forkshttpsimgshieldsiogithubforkspcottlelearngitbranchingsvg-languagehttpsimgshieldsiogithublanguagestoppcottlelearngitbranchingsvg-last-taghttpsimgshieldsiogithubvtagpcottlelearngitbranchingsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitpcottlelearngitbranchingsvg"><a href="https://github.com/pcottle/learnGitBranching">pcottle/learnGitBranching</a> <img src="https://img.shields.io/github/stars/pcottle/learnGitBranching.svg" alt="Github stars"> <img src="https://img.shields.io/github/forks/pcottle/learnGitBranching.svg" alt="Github forks"> <img src="https://img.shields.io/github/languages/top/pcottle/learnGitBranching.svg" alt="Language"> <img src="https://img.shields.io/github/v/tag/pcottle/learnGitBranching.svg?sort=semver" alt="Last Tag"> <img src="https://img.shields.io/github/last-commit/pcottle/learnGitBranching.svg" alt="Last commit"></a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 <hr />
@@ -19426,9 +19070,50 @@ https://github.com/alex-shpak/hugo-book
 
       
   <article id="article" class="markdown"><h1 id="git">
-  git
+  Git
   <a class="anchor" href="#git">#</a>
 </h1>
+<h2 id="分支">
+  分支
+  <a class="anchor" href="#%e5%88%86%e6%94%af">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 本地仓库 分支引用</span>
+</span></span><span style="display:flex;"><span>refs/heads/v1.0.0
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 远程跟踪分支引用, 远程仓库 origin 中有一个分支 v1.0.0</span>
+</span></span><span style="display:flex;"><span>refs/remotes/origin/v1.0.0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 标签引用，包括远程和本地</span>
+</span></span><span style="display:flex;"><span>refs/tags/v1.0.0
+</span></span></code></pre></div><hr>
+<h2 id="tag">
+  tag
+  <a class="anchor" href="#tag">#</a>
+</h2>
+<ul>
+<li>远程 tag 被视为本地 tag 的一种，它们都存储在 refs/tags/ 路径下。当你从远程仓库拉取或推送 tag 时，Git 会自动同步这些 tag 到本地仓库中的 refs/tags/ 路径</li>
+</ul>
+<hr>
+<h2 id="分支和-tag-重名">
+  分支和 tag 重名
+  <a class="anchor" href="#%e5%88%86%e6%94%af%e5%92%8c-tag-%e9%87%8d%e5%90%8d">#</a>
+</h2>
+<h3 id="远程有个-v100-tag想基于它拉一个远程-v100-分支">
+  远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支
+  <a class="anchor" href="#%e8%bf%9c%e7%a8%8b%e6%9c%89%e4%b8%aa-v100-tag%e6%83%b3%e5%9f%ba%e4%ba%8e%e5%ae%83%e6%8b%89%e4%b8%80%e4%b8%aa%e8%bf%9c%e7%a8%8b-v100-%e5%88%86%e6%94%af">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 本地拉 v1.0.0 tag</span>
+</span></span><span style="display:flex;"><span>git fetch origin tag v1.0.0
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># git fetch origin --tags</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 基于 tag 拉 v1.0.0 分支,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># git co -b 分支名 tag名</span>
+</span></span><span style="display:flex;"><span>git co -b v1.0.0 v1.0.0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 把本地分支推送到远程分支</span>
+</span></span><span style="display:flex;"><span>git push origin refs/heads/v2.11.3:refs/heads/v2.11.3
+</span></span></code></pre></div><p>原理：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git show-ref v2.11.3
+</span></span></code></pre></div><hr>
 <h2 id="git-module">
   git module
   <a class="anchor" href="#git-module">#</a>
@@ -19575,6 +19260,84 @@ rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 auth
 <ul>
 <li><a href="https://stackoverflow.com/questions/11200839/why-git-cant-do-hard-soft-resets-by-path">Why git can&rsquo;t do hard/soft resets by path?</a></li>
 </ul>
+<hr>
+<h2 id="config-权限">
+  config 权限
+  <a class="anchor" href="#config-%e6%9d%83%e9%99%90">#</a>
+</h2>
+<p>问题： <code>Bad owner or permissions on ~/.ssh/config</code></p>
+<p>解决：</p>
+<pre tabindex="0"><code>chown $USER ~/.ssh/config
+chmod 644 ~/.ssh/config
+</code></pre><hr>
+<h2 id="git-submodule">
+  git submodule
+  <a class="anchor" href="#git-submodule">#</a>
+</h2>
+<h3 id="拉取-submodule">
+  拉取 submodule
+  <a class="anchor" href="#%e6%8b%89%e5%8f%96-submodule">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule init
+</span></span><span style="display:flex;"><span>git submodule update --remote
+</span></span></code></pre></div><h3 id="git-submodule-add--b">
+  <code>git submodule add -b</code>
+  <a class="anchor" href="#git-submodule-add--b">#</a>
+</h3>
+<p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/1777854/how-can-i-specify-a-branch-tag-when-adding-a-git-submodule">How can I specify a branch/tag when adding a Git submodule?</a></li>
+</ul>
+<h3 id="submodule-修改-url">
+  submodule 修改 url
+  <a class="anchor" href="#submodule-%e4%bf%ae%e6%94%b9-url">#</a>
+</h3>
+<ul>
+<li>edit the <code>.gitmodules</code> file to update the URL</li>
+<li><code>git submodule sync</code></li>
+</ul>
+<p>参考：
+<a href="https://stackoverflow.com/questions/913701/how-to-change-the-remote-repository-for-a-git-submodule">How to change the remote repository for a git submodule?</a></p>
+<h3 id="delete-submodule">
+  delete submodule
+  <a class="anchor" href="#delete-submodule">#</a>
+</h3>
+<ul>
+<li>Delete the relevant section from the .gitmodules file.</li>
+<li>Stage the .gitmodules changes <code>git add .gitmodules</code></li>
+<li>Delete the relevant section from <code>.git/config</code>.</li>
+<li>Run <code>git rm --cached path_to_submodule</code> (no trailing slash).</li>
+<li>Run <code>rm -rf .git/modules/path_to_submodule</code> (no trailing slash).</li>
+<li>Commit <code>git commit -m &quot;Removed submodule &quot;</code></li>
+<li>Delete the now untracked submodule files <code>rm -rf path_to_submodule</code></li>
+</ul>
+<p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule">How do I remove a submodule?</a></li>
+</ul>
+<hr>
+<h4 id="untracked-status">
+  untracked status
+  <a class="anchor" href="#untracked-status">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>submodule <span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    path <span style="color:#f92672">=</span> example
+</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">=</span> git://github.com/ikingye/example.git
+</span></span><span style="display:flex;"><span>    ignore <span style="color:#f92672">=</span> dirty
+</span></span></code></pre></div><ul>
+<li><a href="https://stackoverflow.com/questions/5126765/how-to-get-rid-of-git-submodules-untracked-status">How to get rid of Git submodules untracked status?</a></li>
+</ul>
+<hr>
+<h2 id="教程">
+  教程
+  <a class="anchor" href="#%e6%95%99%e7%a8%8b">#</a>
+</h2>
+<h3 id="pcottlelearngitbranchinghttpsgithubcompcottlelearngitbranching-github-starshttpsimgshieldsiogithubstarspcottlelearngitbranchingsvg-github-forkshttpsimgshieldsiogithubforkspcottlelearngitbranchingsvg-languagehttpsimgshieldsiogithublanguagestoppcottlelearngitbranchingsvg-last-taghttpsimgshieldsiogithubvtagpcottlelearngitbranchingsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitpcottlelearngitbranchingsvg">
+  <a href="https://github.com/pcottle/learnGitBranching">pcottle/learnGitBranching</a> <img src="https://img.shields.io/github/stars/pcottle/learnGitBranching.svg" alt="Github stars" /> <img src="https://img.shields.io/github/forks/pcottle/learnGitBranching.svg" alt="Github forks" /> <img src="https://img.shields.io/github/languages/top/pcottle/learnGitBranching.svg" alt="Language" /> <img src="https://img.shields.io/github/v/tag/pcottle/learnGitBranching.svg?sort=semver" alt="Last Tag" /> <img src="https://img.shields.io/github/last-commit/pcottle/learnGitBranching.svg" alt="Last commit" />
+  <a class="anchor" href="#pcottlelearngitbranchinghttpsgithubcompcottlelearngitbranching-github-starshttpsimgshieldsiogithubstarspcottlelearngitbranchingsvg-github-forkshttpsimgshieldsiogithubforkspcottlelearngitbranchingsvg-languagehttpsimgshieldsiogithublanguagestoppcottlelearngitbranchingsvg-last-taghttpsimgshieldsiogithubvtagpcottlelearngitbranchingsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitpcottlelearngitbranchingsvg">#</a>
+</h3>
+<p>LearnGitBranching is a git repository visualizer, sandbox, and a series of educational tutorials and challenges.</p>
+<p><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></p>
 </article>
  
       
@@ -19585,9 +19348,9 @@ rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 auth
 
 
 
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/d833fdae8a0c4c17ce890daf2181b4af8e25a7cb" title='Last modified by yewang | 2022-11-16' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/61a4a152c5244564836b38a4eb45bfee85ce3bd1" title='Last modified by yewang | 2024-12-23' target="_blank" rel="noopener">
       <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2022-11-16</span>
+      <span>2024-12-23</span>
     </a>
   </div>
 
@@ -19648,6 +19411,13 @@ rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 auth
   
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#分支">分支</a></li>
+    <li><a href="#tag">tag</a></li>
+    <li><a href="#分支和-tag-重名">分支和 tag 重名</a>
+      <ul>
+        <li><a href="#远程有个-v100-tag想基于它拉一个远程-v100-分支">远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支</a></li>
+      </ul>
+    </li>
     <li><a href="#git-module">git module</a>
       <ul>
         <li><a href="#更新-submodule">更新 submodule</a></li>
@@ -19665,6 +19435,24 @@ rebase 可以尽可能保持 master 分支干净整洁，并且易于识别 auth
     <li><a href="#hard-reset-vs-mixed-reset-vs-soft-reset"><code>hard reset</code> vs <code>mixed reset</code> vs <code>soft reset</code></a></li>
     <li><a href="#git-reflog">git reflog</a></li>
     <li><a href="#git-回退">git 回退</a></li>
+    <li><a href="#config-权限">config 权限</a></li>
+    <li><a href="#git-submodule">git submodule</a>
+      <ul>
+        <li><a href="#拉取-submodule">拉取 submodule</a></li>
+        <li><a href="#git-submodule-add--b"><code>git submodule add -b</code></a></li>
+        <li><a href="#submodule-修改-url">submodule 修改 url</a></li>
+        <li><a href="#delete-submodule">delete submodule</a>
+          <ul>
+            <li><a href="#untracked-status">untracked status</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#教程">教程</a>
+      <ul>
+        <li><a href="#pcottlelearngitbranchinghttpsgithubcompcottlelearngitbranching-github-starshttpsimgshieldsiogithubstarspcottlelearngitbranchingsvg-github-forkshttpsimgshieldsiogithubforkspcottlelearngitbranchingsvg-languagehttpsimgshieldsiogithublanguagestoppcottlelearngitbranchingsvg-last-taghttpsimgshieldsiogithubvtagpcottlelearngitbranchingsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitpcottlelearngitbranchingsvg"><a href="https://github.com/pcottle/learnGitBranching">pcottle/learnGitBranching</a> <img src="https://img.shields.io/github/stars/pcottle/learnGitBranching.svg" alt="Github stars"> <img src="https://img.shields.io/github/forks/pcottle/learnGitBranching.svg" alt="Github forks"> <img src="https://img.shields.io/github/languages/top/pcottle/learnGitBranching.svg" alt="Language"> <img src="https://img.shields.io/github/v/tag/pcottle/learnGitBranching.svg?sort=semver" alt="Last Tag"> <img src="https://img.shields.io/github/last-commit/pcottle/learnGitBranching.svg" alt="Last commit"></a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 <hr />

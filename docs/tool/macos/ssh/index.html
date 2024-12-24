@@ -5,19 +5,21 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" ssh # ssh-keygen # 代理 # ssh -o ProxyCommand=&#39;socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody&#39; user@host # SOCKS5 ssh -o ProxyCommand=&#39;socat - &#34;SOCKS5:%h:%p|tcp:myproxy:1080&#34;&#39; user@host # http ssh -o ProxyCommand=&#39;socat - &#34;PROXY:%h:%p|tcp:myproxy:80&#34;&#39; user@host 参考：
-Connecting to host by SSH client in Linux by proxy ">
+<meta name="description" content="ssh # ssh-keygen # 代理 # ssh -o ProxyCommand=&#39;socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody&#39; user@host # SOCKS5 ssh -o ProxyCommand=&#39;socat - &#34;SOCKS5:%h:%p|tcp:myproxy:1080&#34;&#39; user@host # http ssh -o ProxyCommand=&#39;socat - &#34;PROXY:%h:%p|tcp:myproxy:80&#34;&#39; user@host 参考：
+Connecting to host by SSH client in Linux by proxy my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="ssh" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/ssh/" />
+<meta property="og:description" content="ssh # ssh-keygen # 代理 # ssh -o ProxyCommand=&#39;socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody&#39; user@host # SOCKS5 ssh -o ProxyCommand=&#39;socat - &#34;SOCKS5:%h:%p|tcp:myproxy:1080&#34;&#39; user@host # http ssh -o ProxyCommand=&#39;socat - &#34;PROXY:%h:%p|tcp:myproxy:80&#34;&#39; user@host 参考：
+Connecting to host by SSH client in Linux by proxy my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kingye.me/note-cs/docs/tool/macos/ssh/" /><meta property="article:section" content="docs" />
+
+
 
 <title>ssh | 计算机学习笔记</title>
 <link rel="manifest" href="/note-cs/manifest.json">
 <link rel="icon" href="/note-cs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/note-cs/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/note-cs/en.search.min.f8cc622e2154d48719e32edcb519248bea4c6c34c5277ec622c9faa691b068dc.js" integrity="sha256-&#43;MxiLiFU1IcZ4y7ctRkki&#43;pMbDTFJ37GIsn6ppGwaNw="></script>
-<link rel="alternate" type="application/rss+xml" href="https://kingye.me/note-cs/docs/tool/macos/ssh/index.xml" title="计算机学习笔记" />
+<script defer src="/note-cs/en.search.min.f62e7bc04c91c8f32a9df78bd00a8572ea0f0c3e823f4f87194233ca612db87f.js" integrity="sha256-9i57wEyRyPMqnfeL0AqFcuoPDD6CP0&#43;HGUIzymEtuH8="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -15437,16 +15439,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-309498f77afa73933bce5c57e75b738b" class="toggle"  />
-    <label for="section-309498f77afa73933bce5c57e75b738b" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/5/" class="">五星</a>
-    </label>
+    <a href="https://kingye.me/note-cs/docs/tool/macos/imagehost/" class="">图床</a>
   
-
-          
-  <ul>
-    
-  </ul>
 
         </li>
       
@@ -15458,16 +15452,11 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b9f2decad5ae7943f8c4540ff6f5879a" class="toggle"  />
-    <label for="section-b9f2decad5ae7943f8c4540ff6f5879a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/4/" class="">四星</a>
+    <input type="checkbox" id="section-371747ba3bbd66bf3b3a471e6f834b6b" class="toggle"  />
+    <label for="section-371747ba3bbd66bf3b3a471e6f834b6b" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/codelabs/" class="">Codelabs</a>
     </label>
   
-
-          
-  <ul>
-    
-  </ul>
 
         </li>
       
@@ -15479,16 +15468,43 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-2a149b8e9db35c00cc4ab2b591432139" class="toggle"  />
-    <label for="section-2a149b8e9db35c00cc4ab2b591432139" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/3/" class="">三星</a>
+    <input type="checkbox" id="section-a1d7a37c91d42a9971848d86eaf132a2" class="toggle"  />
+    <label for="section-a1d7a37c91d42a9971848d86eaf132a2" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/hugo/" class="">Hugo</a>
     </label>
   
 
-          
-  <ul>
+        </li>
+      
     
-  </ul>
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b67c85572e0eb0d1d8356753af1a6ba" class="toggle"  />
+    <label for="section-2b67c85572e0eb0d1d8356753af1a6ba" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/anki/" class="">Anki</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ec0e04befb83817a3940b14a0563ccff" class="toggle"  />
+    <label for="section-ec0e04befb83817a3940b14a0563ccff" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/gitbook/" class="">Gitbook</a>
+    </label>
+  
 
         </li>
       
@@ -15599,77 +15615,6 @@ https://github.com/alex-shpak/hugo-book
     <a href="https://kingye.me/note-cs/docs/tool/macos/flowchart/" class="">Flowchart</a>
   
 
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/flowchart/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-9a0a0171f9826dd9dc49ae51eea3f869" class="toggle"  />
-    <label for="section-9a0a0171f9826dd9dc49ae51eea3f869" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/git/" class="">git</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-1f582510f1480ea4ba74b9dda9989b3a" class="toggle"  />
-    <label for="section-1f582510f1480ea4ba74b9dda9989b3a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/git/config/" class="">git config</a>
-    </label>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-258d645fb3c2c614e48e6b91069357f5" class="toggle"  />
-    <label for="section-258d645fb3c2c614e48e6b91069357f5" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/git/submodule/" class="">submodule</a>
-    </label>
-  
-
-        </li>
-      
-    
-  </ul>
-
         </li>
       
     
@@ -15730,24 +15675,6 @@ https://github.com/alex-shpak/hugo-book
   
     <a href="https://kingye.me/note-cs/docs/tool/macos/graphviz/" class="">Graphviz</a>
   
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/graphviz/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -15839,6 +15766,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-b27547a5e2ae9a19010eef6c24ba3e2a" class="toggle"  />
+    <label for="section-b27547a5e2ae9a19010eef6c24ba3e2a" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/katex/" class="">KaTeX</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-01bbf5ee5a8a20ac5fa8658d5f040aee" class="toggle"  />
     <label for="section-01bbf5ee5a8a20ac5fa8658d5f040aee" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/kubectx/" class="">kubectx</a>
@@ -15857,24 +15800,6 @@ https://github.com/alex-shpak/hugo-book
   
     <a href="https://kingye.me/note-cs/docs/tool/macos/latex/" class="">LaTeX</a>
   
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/latex/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -15918,11 +15843,14 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://kingye.me/note-cs/docs/tool/macos/mermaid/" class="">Mermaid</a>
+    <input type="checkbox" id="section-9514648b9214f22b115b54cc154fefba" class="toggle"  />
+    <label for="section-9514648b9214f22b115b54cc154fefba" class="flex justify-between">
+      <a href="https://kingye.me/note-cs/docs/tool/macos/mathjax/" class="">MathJax</a>
+    </label>
   
 
-          
-  <ul>
+        </li>
+      
     
       
         <li>
@@ -15931,13 +15859,8 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://kingye.me/note-cs/docs/tool/macos/mermaid/tutorial/" class="">教程</a>
+    <a href="https://kingye.me/note-cs/docs/tool/macos/mermaid/" class="">Mermaid</a>
   
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -16000,24 +15923,6 @@ https://github.com/alex-shpak/hugo-book
     <a href="https://kingye.me/note-cs/docs/tool/macos/plantuml/" class="">PlantUML</a>
   
 
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/plantuml/tutorial/" class="">教程</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
         </li>
       
     
@@ -16076,32 +15981,11 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-a090cd2c2ab9a0b3e23326f8dca63c4b" class="toggle" checked />
-    <label for="section-a090cd2c2ab9a0b3e23326f8dca63c4b" class="flex justify-between">
+    <input type="checkbox" id="section-918b8d38a1b25564f9034c0d03aa0444" class="toggle" checked />
+    <label for="section-918b8d38a1b25564f9034c0d03aa0444" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/ssh/" class="active">ssh</a>
     </label>
   
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-ea1bf610f27a8ade6d1796d1cf2f0cad" class="toggle"  />
-    <label for="section-ea1bf610f27a8ade6d1796d1cf2f0cad" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/ssh/config/" class="">config</a>
-    </label>
-  
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -16177,274 +16061,11 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-ab2b2ccf896945932ce70c4f2b792694" class="toggle"  />
-    <label for="section-ab2b2ccf896945932ce70c4f2b792694" class="flex justify-between">
+    <input type="checkbox" id="section-d7fd9c7d55368801733c8c62069106c6" class="toggle"  />
+    <label for="section-d7fd9c7d55368801733c8c62069106c6" class="flex justify-between">
       <a href="https://kingye.me/note-cs/docs/tool/macos/package-manager/" class="">包管理工具</a>
     </label>
   
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/" class="">第四部分 工具</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-81d40de98c661c58921b30444432cbd1" class="toggle"  />
-    <label for="section-81d40de98c661c58921b30444432cbd1" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/" class="">笔记</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-6ef02fd1ab8f854ce341c0ba1e22a927" class="toggle"  />
-    <label for="section-6ef02fd1ab8f854ce341c0ba1e22a927" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/codelabs/" class="">Codelabs</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-07543dcb0e61ca1391004352b4abc54a" class="toggle"  />
-    <label for="section-07543dcb0e61ca1391004352b4abc54a" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/" class="">Hugo</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/config/" class="">配置</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/" class="">主题</a>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/academic/" class="">hugo-academic</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/hugo/theme/hugo-book/" class="">hugo-book</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="toggle"  />
-    <label for="section-80a08cbd6dce89dc71f1d20f6e4e220c" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/onenote/" class="">OneNote</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-cb612cbd99314cae9f9bee900a0254fe" class="toggle"  />
-    <label for="section-cb612cbd99314cae9f9bee900a0254fe" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/storage/" class="">存储</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/storage/imagehost/" class="">图床</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-670d431cc832e45c07e828d3dcefbd56" class="toggle"  />
-    <label for="section-670d431cc832e45c07e828d3dcefbd56" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/note/gitbook/" class="">Gitbook</a>
-    </label>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-9085754fbcdf97cd9eb2d58f1edc989b" class="toggle"  />
-    <label for="section-9085754fbcdf97cd9eb2d58f1edc989b" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/study/" class="">计算机学习</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-94ae5ce35bd8913c2c6c8be545f51d1e" class="toggle"  />
-    <label for="section-94ae5ce35bd8913c2c6c8be545f51d1e" class="flex justify-between">
-      <a href="https://kingye.me/note-cs/docs/tool/macos/tool/study/coding-online/" class="">在线编程</a>
-    </label>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
 
         </li>
       
@@ -19390,6 +19011,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#ssh-keygen">ssh-keygen</a></li>
     <li><a href="#代理">代理</a></li>
+    <li><a href="#my-config">my config</a></li>
   </ul>
 </nav>
 <hr />
@@ -19433,7 +19055,53 @@ https://github.com/alex-shpak/hugo-book
 <ul>
 <li><a href="https://unix.stackexchange.com/questions/68826/connecting-to-host-by-ssh-client-in-linux-by-proxy">Connecting to host by SSH client in Linux by proxy</a></li>
 </ul>
-</article>
+<hr>
+<h2 id="my-config">
+  my config
+  <a class="anchor" href="#my-config">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Host github
+</span></span><span style="display:flex;"><span>    HostName github.com
+</span></span><span style="display:flex;"><span>    User git
+</span></span><span style="display:flex;"><span>    IdentityFile ~/.ssh/id_rsa
+</span></span><span style="display:flex;"><span>    ProxyCommand nc -v -x 127.0.0.1:1081 %h %p
+</span></span><span style="display:flex;"><span>Host gitlab
+</span></span><span style="display:flex;"><span>    HostName gitlab.com
+</span></span><span style="display:flex;"><span>    User git
+</span></span><span style="display:flex;"><span>    IdentityFile ~/.ssh/id_rsa
+</span></span><span style="display:flex;"><span>    ProxyCommand nc -v -x 127.0.0.1:1081 %h %p
+</span></span><span style="display:flex;"><span>Host bitbucket
+</span></span><span style="display:flex;"><span>    HostName bitbucket.org
+</span></span><span style="display:flex;"><span>    User git
+</span></span><span style="display:flex;"><span>    IdentityFile ~/.ssh/id_rsa
+</span></span><span style="display:flex;"><span>    ProxyCommand nc -v -x 127.0.0.1:1081 %h %p
+</span></span><span style="display:flex;"><span>Host gitee
+</span></span><span style="display:flex;"><span>    HostName gitee.com
+</span></span><span style="display:flex;"><span>    User git
+</span></span><span style="display:flex;"><span>    IdentityFile ~/.ssh/id_rsa
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">################ others ################</span>
+</span></span><span style="display:flex;"><span>Host *
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 复用之前已经建立的连接</span>
+</span></span><span style="display:flex;"><span>    ControlMaster auto
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 在最后一个连接关闭之后也不真正的关掉连接</span>
+</span></span><span style="display:flex;"><span>    ControlPersist yes
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 心跳</span>
+</span></span><span style="display:flex;"><span>    ServerAliveInterval <span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 指定了这个连接的 socket 保存的路径</span>
+</span></span><span style="display:flex;"><span>    ControlPath ~/.ssh/connection-%r@%h:%p
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ServerAliveCountMax 20</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ForwardAgent yes</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># KexAlgorithms +diffie-hellman-group1-sha1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># PreferredAuthentications publickey</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># TCPKeepAlive no</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Compression yes</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 走 HTTP 代理</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=8081</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 走 socks5 代理（如 Shadowsocks）</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ProxyCommand nc -v -x 127.0.0.1:1080 %h %p</span>
+</span></span></code></pre></div></article>
  
       
 
@@ -19442,12 +19110,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-
-  <div><a class="flex align-center" href="https://github.com/ikingye/note-cs/commit/d833fdae8a0c4c17ce890daf2181b4af8e25a7cb" title='Last modified by yewang | 2022-11-16' target="_blank" rel="noopener">
-      <img src="/note-cs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2022-11-16</span>
-    </a>
-  </div>
 
 
 
@@ -19508,6 +19170,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#ssh-keygen">ssh-keygen</a></li>
     <li><a href="#代理">代理</a></li>
+    <li><a href="#my-config">my config</a></li>
   </ul>
 </nav>
 <hr />

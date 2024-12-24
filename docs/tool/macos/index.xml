@@ -8,6 +8,41 @@
     <language>en</language>
     <atom:link href="https://kingye.me/note-cs/docs/tool/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>图床</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/imagehost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/imagehost/</guid>
+      <description>图床 # 图床选择 # GitHub + jsdelivr # 上传图床软件 # PicGo # 参考官网：https://github.com/Molunerfinn/PicGo&#xA;vs-picgo # https://github.com/PicGo/vs-picgo</description>
+    </item>
+    <item>
+      <title>Codelabs</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/codelabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/codelabs/</guid>
+      <description>Codelabs # 简介 # Google Developers Codelabs # 中国内地访问 clmirror.storage.googleapis.com&#xA;Hello Istio Codelab(with Google Kubernetes Engine) googlecodelabs/tools # Codelabs management &amp;amp; hosting tools</description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/hugo/</guid>
+      <description> Hugo 快速上手 # 简介 # 参考官网：https://gohugo.io&#xA;Hugo 配置 # 参考：https://themes.gohugo.io/hugo-book&#xA;Hugo 主题 # hugo-academic # 适合作为个人主页，内容比较丰富，尤其适合作为技术或科研人员的博客。&#xA;hugo-book # 适合记笔记，或者写书。我很喜欢他右侧的页面目录，类似语雀。 其实语雀编辑体验很好，尤其是最近改版后允许用户直接在左侧目录操作新增页面。 不使用语雀，而使用 github pages，最关键也可以说唯一的原因就是对其他平台不放心，内容还是自己保管比较好。 不然万一哪天平台下线，只是一个道歉页面，而作为免费用户，只能自己想办法导出笔记，想想还是算了。 参考：https://themes.gohugo.io&#xA;Academic # 配置 # 写博客 # hugo new &amp;ndash;kind post post/my-post&#xA;hugo-book # 参考 # https://github.com/alex-shpak/hugo-book https://themes.gohugo.io/hugo-book KaTeX/KaTeX TeX wiki </description>
+    </item>
+    <item>
+      <title>Anki</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/anki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/anki/</guid>
+      <description>Anki # 插件 # glutanimate/review-heatmap # Anki add-on to help you keep track of your review activity&#xA;ninja33/ODH # 在线词典助手&#xA;AnkiConnect # 该插件用于 Anki PC 客户端扩展功能，配合 Chrome 插件《Anki 划词制卡助手》 或者 《在线词典助手》使用。 https://www.laohuang.net/20160817/ankiconnect-py-file/&#xA;Notes for Mac OS X Users # Starting with Mac OS X Mavericks, a feature named App Nap has been introduced to the operating system. This feature causes certain applications which are open (but not visible) to be placed in a suspended state.</description>
+    </item>
+    <item>
+      <title>Gitbook</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/gitbook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/gitbook/</guid>
+      <description> Gitbook # gitbook serve # serve 多个笔记本 # &amp;ndash;port Port for server to listen on (Default is 4000)&#xA;&amp;ndash;lrport Port for livereload server to listen on (Default is 35729)&#xA;So you can change both two ports and serve as many books as you want.&#xA;eg:&#xA;one:&#xA;gitbook --lrport 35730 --port 4001 serve another:&#xA;gitbook --lrport 35731 --port 4002 serve </description>
+    </item>
+    <item>
       <title>.NET</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/dotnet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,6 +85,13 @@
       <description> conda # mkdir -p ~/miniconda3 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 rm -rf ~/miniconda3/miniconda.sh ~/miniconda3/bin/conda init bash ~/miniconda3/bin/conda init zsh 基础用法 # conda create --name d2l python=3.12 -y </description>
     </item>
     <item>
+      <title>Flowchart</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/flowchart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/flowchart/</guid>
+      <description>Flowchart # adrai/flowchart.js Draws simple SVG flow chart diagrams from textual representation of the diagram http://flowchart.js.org/</description>
+    </item>
+    <item>
       <title>Git</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -69,6 +111,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/goland/</guid>
       <description>Goland # 快捷键 # 跳转 # 指定行 cmd + L&#xA;指定文件 shift + cmd + O&#xA;返回光标上一个位置 cmd + opt + 方向键&#xA;查询 # 函数列表 cmd + f12&#xA;当前文件查询 cmd + F&#xA;当前文件替换 cmd + R&#xA;所有文件查询 shift + cmd + F&#xA;所有文件替换 shift + cmd + R&#xA;选择 # 选中下一个相同内容 ctrl + G 选中所有相同内容 ctrl + G 展开所有代码块 shift + cmd + = 折叠所有代码块 shift + cmd + - 折叠或展开当前代码块 cmd + .</description>
+    </item>
+    <item>
+      <title>Graphviz</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/graphviz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/graphviz/</guid>
+      <description>Graphviz # graphviz/graphviz&#xA;http://www.graphviz.org/documentation/&#xA;插件 # xflr6/graphviz Simple Python interface for Graphviz https://graphviz.readthedocs.io/</description>
     </item>
     <item>
       <title>gvm</title>
@@ -106,11 +155,25 @@
       <description>Jupyter # 安装 # # install jupyterlab pipx install jupyterlab --include-deps pipx ensurepath pipx inject jupyterlab pandas pipx ensurepath pipx install notebook pipx install jupyter-book # 验证安装 jupyter --version jupyter-lab --version notebook --version jupyter-book --version jupyter --version # Selected Jupyter core packages... # IPython : 8.18.1 # ipykernel : 6.29.4 # ipywidgets : 8.1.2 # jupyter_client : 7.4.9 # jupyter_core : 5.7.2 # jupyter_server : 2.14.0 # jupyterlab : not installed # nbclient : 0.</description>
     </item>
     <item>
+      <title>KaTeX</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/katex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/katex/</guid>
+      <description>KaTeX # \[f(x) = \int\_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\] \(f(x) = \int\_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\) $$ L(Y,f(X))=\left{\begin{matrix} 1,Y\neq f(X) \ 0,Y = f(X)\end{matrix}\right. $$</description>
+    </item>
+    <item>
       <title>kubectx</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/kubectx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/kubectx/</guid>
       <description>kubectx # ahmetb/kubectx # 安装 brew install kubectx alias kx=kubectx alias kn=kubens # 展示当前可用集群列表 kx # 选中某集群 kx xxx # 展示 namespace 列表 kn # 选中某 ns kn xxx kubemerge # # vim ~/.zshrc kubemerge() { if [ $# -eq 0 ]; then echo &amp;#34;Usage: kubemerge &amp;lt;path-to-kubeconfig1&amp;gt; [&amp;lt;path-to-kubeconfig2&amp;gt; ...]&amp;#34; return 1 fi # Ensure ~/.kube directory exists mkdir -p ~/.kube # Ensure ~/.kube/config exists and is not empty if [ !</description>
+    </item>
+    <item>
+      <title>LaTeX</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/latex/</guid>
+      <description> LaTeX # latex3/latex2e The LaTeX2e kernel https://www.latex-project.org/&#xA;latex3/latex3 The LaTeX3 Development Repository https://latex-project.org/latex3.html&#xA;Mathpix # Mathpix 允许你截取复杂数学方程式的截图，并立即将其转换为 LaTeX 可编辑文本。&#xA;参考 # 自学 LaTeX 可以读什么书入门？ 如何在 1 小时内快速入手 LaTeX？ 有哪些好的 LaTeX 编辑器？ 用这个漂亮的工具将方程式截图迅速转换为 LaTeX KaTeX/KaTeX TeX wiki LaTeX 在线编辑器 一份其实很短的 LaTeX 入门文档 LaTeX 数学符号对应表 </description>
     </item>
     <item>
       <title>mamba</title>
@@ -125,6 +188,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/mas/</guid>
       <description>mas-cli/mas # Each application in the Mac App Store has a product identifier which is also used for mas-cli commands. Using mas list will show all installed applications and their product identifiers.&#xA;$ mas list 446107677 Screens 407963104 Pixelmator 497799835 Xcode $ mas search Xcode 497799835 Xcode 688199928 Docs for Xcode 449589707 Dash 3 - API Docs &amp;amp; Snippets. Integrates with Xcode, Alfred, TextWrangler and many more. [...] $ mas install 808809998 ==&amp;gt; Downloading PaintCode 2 ==&amp;gt; Installed PaintCode 2 # If you want to install the first result that the search command returns, use the lucky command.</description>
+    </item>
+    <item>
+      <title>MathJax</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/mathjax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/mathjax/</guid>
+      <description> MathJax # 参考：&#xA;MathJax input TeX and LaTeX MathML AsciiMath </description>
+    </item>
+    <item>
+      <title>Mermaid</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/mermaid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/mermaid/</guid>
+      <description>Mermaid # mermaid-js/mermaid Generation of diagram and flowchart from text in a similar manner as markdown http://mermaid-js.github.io/mermaid/</description>
     </item>
     <item>
       <title>Multipass</title>
@@ -148,6 +225,13 @@
       <description> picgo # CLI 命令 # PicGo/PicGo-Core # Molunerfinn/PicGo # picgo vscode 快捷键 # Windows/Unix Uploading an image from clipoard: Ctrl + Alt + U Uploading images from explorer: Ctrl + Alt + E Uploading an image from input box: Ctrl + Alt + O OsX Uploading an image from clipboard: Cmd + Opt + U Uploading images from explorer: Cmd + Opt + E Uploading an image from input box: Cmd + Opt + O </description>
     </item>
     <item>
+      <title>PlantUML</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/plantuml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/plantuml/</guid>
+      <description>PlantUML # plantuml/plantuml PlantUML 是一个开源项目，支持快速绘制时序图、用例图、类图、活动图、组件图、状态图、对象图、部署图等。同时还支持非 UML 图的甘特图、架构图等。</description>
+    </item>
+    <item>
       <title>pyenv</title>
       <link>https://kingye.me/note-cs/docs/tool/macos/pyenv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -167,6 +251,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/ruby/</guid>
       <description> ruby # 安装 # brew install ruby&#xA;If you need to have ruby first in your PATH, run: echo &amp;#39;export PATH=&amp;#34;/opt/homebrew/opt/ruby/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.zshrc For compilers to find ruby you may need to set: export LDFLAGS=&amp;#34;-L/opt/homebrew/opt/ruby/lib&amp;#34; export CPPFLAGS=&amp;#34;-I/opt/homebrew/opt/ruby/include&amp;#34; For pkg-config to find ruby you may need to set: export PKG_CONFIG_PATH=&amp;#34;/opt/homebrew/opt/ruby/lib/pkgconfig&amp;#34; </description>
+    </item>
+    <item>
+      <title>ssh</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/ssh/</guid>
+      <description>ssh # ssh-keygen # 代理 # ssh -o ProxyCommand=&amp;#39;socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody&amp;#39; user@host # SOCKS5 ssh -o ProxyCommand=&amp;#39;socat - &amp;#34;SOCKS5:%h:%p|tcp:myproxy:1080&amp;#34;&amp;#39; user@host # http ssh -o ProxyCommand=&amp;#39;socat - &amp;#34;PROXY:%h:%p|tcp:myproxy:80&amp;#34;&amp;#39; user@host 参考：&#xA;Connecting to host by SSH client in Linux by proxy my config # Host github HostName github.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.0.0.1:1081 %h %p Host gitlab HostName gitlab.com User git IdentityFile ~/.ssh/id_rsa ProxyCommand nc -v -x 127.</description>
     </item>
     <item>
       <title>tmux</title>
@@ -195,6 +286,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://kingye.me/note-cs/docs/tool/macos/xdm/</guid>
       <description>XDM # 下载</description>
+    </item>
+    <item>
+      <title>包管理工具</title>
+      <link>https://kingye.me/note-cs/docs/tool/macos/package-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/tool/macos/package-manager/</guid>
+      <description>包管理工具 # Linux # Ubuntu # apt # sudo apt install # download .deb package sudo dpkg -i fd_8.0.0_amd64.deb # adapt version number and architecture Debian # apt-get # sudo apt-get install Fedora # dnf # dnf install dnf copr # dnf copr enable keefle/fd dnf install fd Alpine Linux # apk # apk add Arch Linux # pacman # pacman -S Gentoo Linux # emerge # emerge -av openSUSE Linux # zypper # zypper in Void Linux # xbps-install # xbps-install -S FreeBSD # pkg # pkg install Mac # Homebrew # MacPorts # Windows # Scoop # Chocolatey # 其他 # NixOS / via Nix # Nix package manager # nix-env -i Node.</description>
     </item>
   </channel>
 </rss>
