@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPU on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/basic/cc/gpu/</link>
+    <description>Recent content in GPU on 计算机学习笔记</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/basic/cc/gpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CUDA</title>
+      <link>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</guid>
+      <description>&lt;h1 id=&#34;cuda&#34;&gt;&#xA;  CUDA&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#cuda&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Compute Unified Device Architecture&lt;/code&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;统一计算架构&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;nvcc -V 显示的当前安装的 cuda 版本&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;nvcc: &lt;code&gt;NVIDIA (R) Cuda compiler driver&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;我们常说的 cuda 指的是 &lt;code&gt;nvidia cuda toolkit&lt;/code&gt; 软件开发包，而不是 GPU 驱动&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;cuda 每个版本都对应一个最低版本的显卡驱动程序&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;cuda 程序是&lt;em&gt;向后兼容&lt;/em&gt;的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;cuda 可以是旧的，驱动可以是更新的&lt;/li&gt;&#xA;&lt;li&gt;最新 nvidia 驱动版本支持所有版本的 CUDA&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;只有一半的 CUDA 能支持整数计算&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503003008.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在 CUDA 核心（&lt;code&gt;CUDA Core&lt;/code&gt;）的右边，是 TenSor 核心 (&lt;code&gt;Tensor Core&lt;/code&gt;)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503003237.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

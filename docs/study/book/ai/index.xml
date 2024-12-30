@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5.8 人工智能 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/study/book/ai/</link>
+    <description>Recent content in 5.8 人工智能 on 计算机学习笔记</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/study/book/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pattern Recognition and Machine Learning</title>
+      <link>https://kingye.me/note-cs/docs/study/book/ai/prml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/book/ai/prml/</guid>
+      <description>&lt;h1 id=&#34;pattern-recognition-and-machine-learninghttpsbookdoubancomsubject2061116&#34;&gt;&#xA;  &lt;a href=&#34;https://book.douban.com/subject/2061116/&#34;&gt;Pattern Recognition and Machine Learning&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#pattern-recognition-and-machine-learninghttpsbookdoubancomsubject2061116&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>动手学深度学习</title>
+      <link>https://kingye.me/note-cs/docs/study/book/ai/d2l/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/book/ai/d2l/</guid>
+      <description>&lt;h1 id=&#34;动手学深度学习httpszhd2lai&#34;&gt;&#xA;  &lt;a href=&#34;https://zh.d2l.ai/&#34;&gt;动手学深度学习&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%8a%a8%e6%89%8b%e5%ad%a6%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0httpszhd2lai&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf&#34;&gt;pytorch 版本&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安装环境&#34;&gt;&#xA;  安装环境&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ae%89%e8%a3%85%e7%8e%af%e5%a2%83&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 安装 conda&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget -c --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash Miniconda3-latest-Linux-x86_64.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda create --name d2l python&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;3.9 -y&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;conda activate d2l&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install torch&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;1.12.0&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install torchvision&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;0.13.0&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install d2l&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;0.17.6&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir code/d2l &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; cd d2l&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget -c vultr.kingye.me/d2l-zh.zip&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;unzip d2l-zh.zip &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm d2l-zh.zip&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd pytorch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jupyter notebook --ip&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0.0.0.0 --port&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8215&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

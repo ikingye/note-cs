@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.8 生态 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/</link>
+    <description>Recent content in 2.8 生态 on 计算机学习笔记</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenResty</title>
+      <link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/openresty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/openresty/</guid>
+      <description>&lt;h1 id=&#34;openresty&#34;&gt;&#xA;  OpenResty&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#openresty&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/openresty/openresty&#34;&gt;openresty/openresty&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/openresty/openresty.svg&#34; alt=&#34;Github stars&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/openresty/openresty.svg&#34; alt=&#34;Language&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/openresty/openresty.svg?sort=semver&#34; alt=&#34;Last Tag&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/openresty/openresty.svg&#34; alt=&#34;Last commit&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;参考：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/266535644&#34;&gt;OpenResty 究竟解决了什么痛点？&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;教程&#34;&gt;&#xA;  教程&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%95%99%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;参考：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://openresty.gitbooks.io/programming-openresty/content/&#34;&gt;Programming OpenResty - 章亦春&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://moonbingbing.gitbooks.io/openresty-best-practices&#34;&gt;OpenResty 最佳实践&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

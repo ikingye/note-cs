@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4.5 流媒体 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/study/skill/stream-media/</link>
+    <description>Recent content in 4.5 流媒体 on 计算机学习笔记</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VoIP</title>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/voip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/voip/</guid>
+      <description>&lt;h1 id=&#34;voip&#34;&gt;&#xA;  VoIP&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#voip&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;voip-vs-sip&#34;&gt;&#xA;  VoIP vs SIP&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#voip-vs-sip&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In simple terms, VoIP means making or receiving phone calls over the internet or internal networks. SIP, on the other hand, is an application layer protocol that is used to establish, modify and terminate multimedia sessions such as VoIP calls.&lt;/p&gt;&#xA;&lt;p&gt;A major difference between VoIP and SIP is their scope. VoIP is not a discrete technology in its own right. Rather, it is actually a family of technologies used within modern telecommunication networks, whereas SIP is a signalling protocol used within the VoIP umbrella.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EasyDarwin</title>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/easydarwin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/easydarwin/</guid>
+      <description>&lt;h1 id=&#34;easydarwin&#34;&gt;&#xA;  EasyDarwin&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#easydarwin&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;EasyDarwin 是基于 Apple 的开源项目 &lt;code&gt;Darwin Streaming Server&lt;/code&gt; 衍生而来的， Darwin 本身支持的是 RTSP 流媒体协议&lt;/p&gt;&#xA;&lt;h2 id=&#34;macosforgedsshttpsgithubcommacosforgedss-github-starshttpsimgshieldsiogithubstarsmacosforgedsssvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/macosforge/dss&#34;&gt;macosforge/dss&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/macosforge/dss.svg&#34; alt=&#34;Github stars&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macosforgedsshttpsgithubcommacosforgedss-github-starshttpsimgshieldsiogithubstarsmacosforgedsssvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Darwin Streaming Server is Apple&amp;rsquo;s open source version of the QuickTime Streaming Server technology allowing you to send streaming media across the Internet using the industry standard RTP and RTSP protocols.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;easydarwin-生态&#34;&gt;&#xA;  EasyDarwin 生态&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#easydarwin-%e7%94%9f%e6%80%81&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;EasyDarwin 开源流媒体服务器：www.EasyDarwin.org&lt;/li&gt;&#xA;&lt;li&gt;EasyDSS 商用流媒体解决方案：www.EasyDSS.com, 点播与直播服务器&#xA;&lt;ul&gt;&#xA;&lt;li&gt;EasyBMS&lt;/li&gt;&#xA;&lt;li&gt;EasyRMS, 录播服务器&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;EasyNVR 无插件直播方案：www.EasyNVR.com, 摄像机互联网直播服务&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;easygb28181server&#34;&gt;&#xA;  EasyGB28181Server&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#easygb28181server&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;EasyNVR 采用的是 Onvif 协议接入云平台，&#xA;而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SRS</title>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/srs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/srs/</guid>
+      <description>&lt;h1 id=&#34;srs&#34;&gt;&#xA;  SRS&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#srs&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ossrs/srs&#34;&gt;ossrs/srs&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/ossrs/srs.svg&#34; alt=&#34;Github stars&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;SRS is a RTMP/HLS/WebRTC/SRT/GB28181 streaming cluster, high efficiency, stable and simple.&lt;/p&gt;&#xA;&lt;h2 id=&#34;配置信息&#34;&gt;&#xA;  配置信息&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%85%8d%e7%bd%ae%e4%bf%a1%e6%81%af&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>ZLMediaKit</title>
+      <link>https://kingye.me/note-cs/docs/study/skill/stream-media/zlmediakit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/study/skill/stream-media/zlmediakit/</guid>
+      <description>&lt;h1 id=&#34;zlmediakit&#34;&gt;&#xA;  ZLMediaKit&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#zlmediakit&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/xiongziliang/ZLMediaKit&#34;&gt;xiongziliang/ZLMediaKit&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/xiongziliang/ZLMediaKit.svg&#34; alt=&#34;Github stars&#34; /&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# h264推流&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ffmpeg -re -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/path/to/test.mp4&amp;#34;&lt;/span&gt; -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://127.0.0.1/live/test&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ffmpeg -re -stream_loop -1 -i carbrand.MOV -vcodec h264 -acodec aac -f rtp_mpegts rtp://127.0.0.1:10000&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rtsp __defaultVhost__ rtp &lt;span style=&#34;color:#ae81ff&#34;&gt;55667788&lt;/span&gt; CodecH264&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;1920/1080/50&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rtsp://127.0.0.1/rtp/55667788&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

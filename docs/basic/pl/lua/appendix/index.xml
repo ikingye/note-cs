@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>第四部分 附录 on 计算机学习笔记</title>
+    <link>https://kingye.me/note-cs/docs/basic/pl/lua/appendix/</link>
+    <description>Recent content in 第四部分 附录 on 计算机学习笔记</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://kingye.me/note-cs/docs/basic/pl/lua/appendix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://kingye.me/note-cs/docs/basic/pl/lua/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kingye.me/note-cs/docs/basic/pl/lua/appendix/attention/</guid>
+      <description>&lt;h1 id=&#34;关注项目&#34;&gt;&#xA;  关注项目&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%85%b3%e6%b3%a8%e9%a1%b9%e7%9b%ae&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ngx_http_lua_module&#34;&gt;&#xA;  ngx_http_lua_module&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#ngx_http_lua_module&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/openresty/lua-nginx-module&#34;&gt;openresty/lua-nginx-module&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/openresty/lua-nginx-module.svg&#34; alt=&#34;Github stars&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/openresty/lua-nginx-module.svg&#34; alt=&#34;Language&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/openresty/lua-nginx-module.svg?sort=semver&#34; alt=&#34;Last Tag&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/openresty/lua-nginx-module.svg&#34; alt=&#34;Last commit&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;ngx_http_lua_module - Embed the power of Lua into Nginx HTTP Servers.&lt;/p&gt;&#xA;&lt;p&gt;This module is a core component of OpenResty.&#xA;If you are using this module, then you are essentially using &lt;code&gt;OpenResty&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;turbolua&#34;&gt;&#xA;  Turbo.lua&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#turbolua&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/kernelsauce/turbo&#34;&gt;kernelsauce/turbo&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/kernelsauce/turbo.svg&#34; alt=&#34;Github stars&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/kernelsauce/turbo.svg&#34; alt=&#34;Language&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/kernelsauce/turbo.svg?sort=semver&#34; alt=&#34;Last Tag&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/kernelsauce/turbo.svg&#34; alt=&#34;Last commit&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;Turbo is a framework built for LuaJIT 2 to simplify the task of building fast and scalable network applications. It uses a event-driven, non-blocking, no thread design to deliver excellent performance and minimal footprint to high-load applications while also providing excellent support for embedded uses.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
