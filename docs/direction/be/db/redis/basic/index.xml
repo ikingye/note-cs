@@ -1,18 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>第一部分 基础入门 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/</link>
-    <description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/direction/be/db/redis/basic/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Quick Start</title>
-      <link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</guid>
-      <description>&lt;h1 id=&#34;quick-start&#34;&gt;&#xA;  Quick Start&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;redis-cli -h host -p port -a password&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装&#34;&gt;&#xA;  安装&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;开机自启&#34;&gt;&#xA;  开机自启&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%bc%80%e6%9c%ba%e8%87%aa%e5%90%af&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;sudo vi /usr/lib/systemd/system/redis.service&lt;/code&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-config&#34; data-lang=&#34;config&#34;&gt;[Unit]&#xA;Description=Redis persistent key-value database&#xA;After=network.target&#xA;After=network-online.target&#xA;Wants=network-online.target&#xA;&#xA;[Service]&#xA;ExecStart=/usr/bin/redis-server /etc/redis.conf --supervised systemd&#xA;ExecStop=/usr/libexec/redis-shutdown&#xA;Type=notify&#xA;User=redis&#xA;Group=redis&#xA;RuntimeDirectory=redis&#xA;RuntimeDirectoryMode=0755&#xA;&#xA;[Install]&#xA;WantedBy=multi-user.target&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;保存退出，执行 &lt;code&gt;sudo systemctl daemon-reload&lt;/code&gt;&#xA;启动服务 &lt;code&gt;sudo systemctl start redis.service&lt;/code&gt;&#xA;设置开机自启动 &lt;code&gt;sudo systemctl enable redis.service&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;设置密码&#34;&gt;&#xA;  设置密码&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%ae%be%e7%bd%ae%e5%af%86%e7%a0%81&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;打开文件 &lt;code&gt;/etc/redis.conf&lt;/code&gt;，&#xA;找到其中的 &lt;code&gt;# requirepass foobared&lt;/code&gt;，去掉前面的 &lt;code&gt;#&lt;/code&gt;，&#xA;并把 &lt;code&gt;foobared&lt;/code&gt; 改成你的密码。&lt;/p&gt;&#xA;&lt;p&gt;ps:&#xA;如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？&#xA;答案是：可以&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/redis/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Start</title><link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</guid><description>&lt;h1 id="quick-start">
+ Quick Start
+ &lt;a class="anchor" href="#quick-start">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>redis-cli -h host -p port -a password
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装">
+ 安装
+ &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="开机自启">
+ 开机自启
+ &lt;a class="anchor" href="#%e5%bc%80%e6%9c%ba%e8%87%aa%e5%90%af">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;code>sudo vi /usr/lib/systemd/system/redis.service&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-config" data-lang="config">[Unit]
+Description=Redis persistent key-value database
+After=network.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/redis-server /etc/redis.conf --supervised systemd
+ExecStop=/usr/libexec/redis-shutdown
+Type=notify
+User=redis
+Group=redis
+RuntimeDirectory=redis
+RuntimeDirectoryMode=0755
+
+[Install]
+WantedBy=multi-user.target
+&lt;/code>&lt;/pre>&lt;p>保存退出，执行 &lt;code>sudo systemctl daemon-reload&lt;/code>
+启动服务 &lt;code>sudo systemctl start redis.service&lt;/code>
+设置开机自启动 &lt;code>sudo systemctl enable redis.service&lt;/code>&lt;/p>
+&lt;h2 id="设置密码">
+ 设置密码
+ &lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e5%af%86%e7%a0%81">#&lt;/a>
+&lt;/h2>
+&lt;p>打开文件 &lt;code>/etc/redis.conf&lt;/code>，
+找到其中的 &lt;code># requirepass foobared&lt;/code>，去掉前面的 &lt;code>#&lt;/code>，
+并把 &lt;code>foobared&lt;/code> 改成你的密码。&lt;/p>
+&lt;p>ps:
+如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？
+答案是：可以&lt;/p></description></item></channel></rss>

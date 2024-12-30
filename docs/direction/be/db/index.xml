@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2.2.1 数据库 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/direction/be/db/</link>
-    <description>Recent content in 2.2.1 数据库 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/direction/be/db/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MinIO</title>
-      <link>https://kingye.me/note-cs/docs/direction/be/db/minio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/be/db/minio/</guid>
-      <description>&lt;h1 id=&#34;minio&#34;&gt;&#xA;  MinIO&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#minio&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;MinIO 是开源 (AGPL v3.0 协议) 高性能对象存储，提供了 Amazon S3 云存储服务兼容的 API，可以用于处理非结构化数据，例如图片、视频、日志文件，备份和容器镜像。最大支持 5TB 对象。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;专注于高性能，但简化了架构 (相比较 GlusterFS 和 Ceph)，所以不支持动态扩展 (提供有限的扩展运维能力)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.2.1 数据库 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/</link><description>Recent content in 2.2.1 数据库 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/index.xml" rel="self" type="application/rss+xml"/><item><title>MinIO</title><link>https://kingye.me/note-cs/docs/direction/be/db/minio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/minio/</guid><description>&lt;h1 id="minio">
+ MinIO
+ &lt;a class="anchor" href="#minio">#&lt;/a>
+&lt;/h1>
+&lt;p>MinIO 是开源 (AGPL v3.0 协议) 高性能对象存储，提供了 Amazon S3 云存储服务兼容的 API，可以用于处理非结构化数据，例如图片、视频、日志文件，备份和容器镜像。最大支持 5TB 对象。&lt;/p>
+&lt;ul>
+&lt;li>专注于高性能，但简化了架构 (相比较 GlusterFS 和 Ceph)，所以不支持动态扩展 (提供有限的扩展运维能力)&lt;/li>
+&lt;/ul></description></item></channel></rss>

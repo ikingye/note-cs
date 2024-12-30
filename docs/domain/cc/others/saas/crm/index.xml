@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>CRM on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/</link>
-    <description>Recent content in CRM on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Salesforce</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/salesforce/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/salesforce/</guid>
-      <description>&lt;h1 id=&#34;salesforce&#34;&gt;&#xA;  Salesforce&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#salesforce&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CRM on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/</link><description>Recent content in CRM on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/index.xml" rel="self" type="application/rss+xml"/><item><title>Salesforce</title><link>https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/saas/crm/salesforce/</guid><description>&lt;h1 id="salesforce">
+ Salesforce
+ &lt;a class="anchor" href="#salesforce">#&lt;/a>
+&lt;/h1></description></item></channel></rss>

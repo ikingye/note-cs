@@ -1,39 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>1.2 操作系统 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/basic/os/</link>
-    <description>Recent content in 1.2 操作系统 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/basic/os/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CPU</title>
-      <link>https://kingye.me/note-cs/docs/basic/os/cpu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/os/cpu/</guid>
-      <description>&lt;h1 id=&#34;cpu&#34;&gt;&#xA;  CPU&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#cpu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;l1-cache&#34;&gt;&#xA;  L1 Cache&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#l1-cache&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Intel Core i7 的组织结构：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200706130655.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>内存</title>
-      <link>https://kingye.me/note-cs/docs/basic/os/memory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/os/memory/</guid>
-      <description>&lt;h1 id=&#34;内存&#34;&gt;&#xA;  内存&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%86%85%e5%ad%98&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>线程</title>
-      <link>https://kingye.me/note-cs/docs/basic/os/thread/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/os/thread/</guid>
-      <description>&lt;h1 id=&#34;线程&#34;&gt;&#xA;  线程&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%ba%bf%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;栈通常是连续增长的，由于每个进程中的各个线程共享虚拟内存空间，当有多个线程时，就需要为每个线程分配不同起始地址的栈。 这就需要在分配栈之前先预估每个线程栈的大小。&lt;/p&gt;&#xA;&lt;p&gt;如果线程数量非常多，就很容易栈溢出。&lt;/p&gt;&#xA;&lt;h2 id=&#34;split-stacks&#34;&gt;&#xA;  Split Stacks&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#split-stacks&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;为了解决这个问题，就有了 &lt;a href=&#34;https://gcc.gnu.org/wiki/SplitStacks&#34;&gt;Split Stacks&lt;/a&gt; 技术： 创建栈时，只分配一块比较小的内存，如果进行某次函数调用导致栈空间不足时，就会在其他地方分配一块新的栈空间。 新的空间不需要和老的栈空间连续。函数调用的参数会拷贝到新的栈空间中，接下来的函数执行都在新栈空间中进行。&lt;/p&gt;&#xA;&lt;h2 id=&#34;golang-连续栈&#34;&gt;&#xA;  Golang 连续栈&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#golang-%e8%bf%9e%e7%bb%ad%e6%a0%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Golang 的栈管理方式与此类似，但是为了更高的效率，使用了 &lt;a href=&#34;https://docs.google.com/document/d/1wAaf1rYoM4S4gtnPh0zOlGzWtrZFQ5suE8qr2sD8uWQ/pub&#34;&gt;Golang 连续栈&lt;/a&gt;。&#xA;实现方式也是先分配一块固定大小的栈，在栈空间不足时，分配一块更大的栈，并把旧的栈全部拷贝到新栈中。&#xA;这样避免了 Split Stacks 方法可能导致的频繁内存分配和释放。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>进程</title>
-      <link>https://kingye.me/note-cs/docs/basic/os/process/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/os/process/</guid>
-      <description>&lt;h1 id=&#34;进程&#34;&gt;&#xA;  进程&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%9b%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;进程虚拟地址空间&#34;&gt;&#xA;  进程虚拟地址空间&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%9b%e7%a8%8b%e8%99%9a%e6%8b%9f%e5%9c%b0%e5%9d%80%e7%a9%ba%e9%97%b4&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200706131224.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200706131356.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.2 操作系统 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/os/</link><description>Recent content in 1.2 操作系统 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/os/index.xml" rel="self" type="application/rss+xml"/><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/os/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/cpu/</guid><description>&lt;h1 id="cpu">
+ CPU
+ &lt;a class="anchor" href="#cpu">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="l1-cache">
+ L1 Cache
+ &lt;a class="anchor" href="#l1-cache">#&lt;/a>
+&lt;/h2>
+&lt;p>Intel Core i7 的组织结构：&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200706130655.png" alt="" />&lt;/p></description></item><item><title>内存</title><link>https://kingye.me/note-cs/docs/basic/os/memory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/memory/</guid><description>&lt;h1 id="内存">
+ 内存
+ &lt;a class="anchor" href="#%e5%86%85%e5%ad%98">#&lt;/a>
+&lt;/h1></description></item><item><title>线程</title><link>https://kingye.me/note-cs/docs/basic/os/thread/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/thread/</guid><description>&lt;h1 id="线程">
+ 线程
+ &lt;a class="anchor" href="#%e7%ba%bf%e7%a8%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>栈通常是连续增长的，由于每个进程中的各个线程共享虚拟内存空间，当有多个线程时，就需要为每个线程分配不同起始地址的栈。 这就需要在分配栈之前先预估每个线程栈的大小。&lt;/p>
+&lt;p>如果线程数量非常多，就很容易栈溢出。&lt;/p>
+&lt;h2 id="split-stacks">
+ Split Stacks
+ &lt;a class="anchor" href="#split-stacks">#&lt;/a>
+&lt;/h2>
+&lt;p>为了解决这个问题，就有了 &lt;a href="https://gcc.gnu.org/wiki/SplitStacks">Split Stacks&lt;/a> 技术： 创建栈时，只分配一块比较小的内存，如果进行某次函数调用导致栈空间不足时，就会在其他地方分配一块新的栈空间。 新的空间不需要和老的栈空间连续。函数调用的参数会拷贝到新的栈空间中，接下来的函数执行都在新栈空间中进行。&lt;/p>
+&lt;h2 id="golang-连续栈">
+ Golang 连续栈
+ &lt;a class="anchor" href="#golang-%e8%bf%9e%e7%bb%ad%e6%a0%88">#&lt;/a>
+&lt;/h2>
+&lt;p>Golang 的栈管理方式与此类似，但是为了更高的效率，使用了 &lt;a href="https://docs.google.com/document/d/1wAaf1rYoM4S4gtnPh0zOlGzWtrZFQ5suE8qr2sD8uWQ/pub">Golang 连续栈&lt;/a>。
+实现方式也是先分配一块固定大小的栈，在栈空间不足时，分配一块更大的栈，并把旧的栈全部拷贝到新栈中。
+这样避免了 Split Stacks 方法可能导致的频繁内存分配和释放。&lt;/p></description></item><item><title>进程</title><link>https://kingye.me/note-cs/docs/basic/os/process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/process/</guid><description>&lt;h1 id="进程">
+ 进程
+ &lt;a class="anchor" href="#%e8%bf%9b%e7%a8%8b">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="进程虚拟地址空间">
+ 进程虚拟地址空间
+ &lt;a class="anchor" href="#%e8%bf%9b%e7%a8%8b%e8%99%9a%e6%8b%9f%e5%9c%b0%e5%9d%80%e7%a9%ba%e9%97%b4">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200706131224.png" alt="" />&lt;/p>
+&lt;hr>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200706131356.png" alt="" />&lt;/p></description></item></channel></rss>

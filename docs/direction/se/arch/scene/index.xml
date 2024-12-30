@@ -1,18 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>场景 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/direction/se/arch/scene/</link>
-    <description>Recent content in 场景 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/scene/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>缓存</title>
-      <link>https://kingye.me/note-cs/docs/direction/se/arch/scene/cache/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/se/arch/scene/cache/</guid>
-      <description>&lt;h1 id=&#34;缓存&#34;&gt;&#xA;  缓存&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bc%93%e5%ad%98&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;热点数据集中失效问题&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;设置不同的失效时间&lt;/li&gt;&#xA;&lt;li&gt;互斥锁&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;缓存穿透&#34;&gt;&#xA;  缓存穿透&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bc%93%e5%ad%98%e7%a9%bf%e9%80%8f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;查询不存在的数据&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;布隆过滤器&lt;/li&gt;&#xA;&lt;li&gt;把这个空结果进行缓存。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;缓存雪崩&#34;&gt;&#xA;  缓存雪崩&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bc%93%e5%ad%98%e9%9b%aa%e5%b4%a9&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。&lt;/p&gt;&#xA;&lt;h3 id=&#34;解决&#34;&gt;&#xA;  解决&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%a7%a3%e5%86%b3&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;事前：使用集群缓存，保证缓存服务的高可用&lt;/li&gt;&#xA;&lt;li&gt;事中：&lt;code&gt;ehcache&lt;/code&gt; 本地缓存 + &lt;code&gt;Hystrix&lt;/code&gt; 限流 &amp;amp; 降级，避免 MySQL 被打死&lt;/li&gt;&#xA;&lt;li&gt;事后：开启 Redis 持久化机制，尽快恢复缓存集群&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;参考：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ehcache/ehcache3&#34;&gt;ehcache/ehcache3&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/ehcache/ehcache3.svg&#34; alt=&#34;Github stars&#34; /&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;缓存击穿&#34;&gt;&#xA;  缓存击穿&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bc%93%e5%ad%98%e5%87%bb%e7%a9%bf&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了，&#xA;就会导致大量的请求都打到数据库上面去。&lt;/p&gt;&#xA;&lt;p&gt;缓存击穿实际上是缓存雪崩的一个特例&lt;/p&gt;&#xA;&lt;h3 id=&#34;解决-1&#34;&gt;&#xA;  解决&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%a7%a3%e5%86%b3-1&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;问题是多个线程同时去查询数据库的这条数据，&#xA;我们可以在第一个查询数据的请求上使用一个&lt;strong&gt;互斥锁&lt;/strong&gt;来锁住它。&#xA;其他的线程走到这一步拿不到锁就等着，等第一个线程查询到了数据，然后做缓存。&#xA;后面的线程进来发现已经有缓存了，就直接走缓存。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>场景 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/</link><description>Recent content in 场景 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/scene/index.xml" rel="self" type="application/rss+xml"/><item><title>缓存</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/scene/cache/</guid><description>&lt;h1 id="缓存">
+ 缓存
+ &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98">#&lt;/a>
+&lt;/h1>
+&lt;p>热点数据集中失效问题&lt;/p>
+&lt;ul>
+&lt;li>设置不同的失效时间&lt;/li>
+&lt;li>互斥锁&lt;/li>
+&lt;/ul>
+&lt;h2 id="缓存穿透">
+ 缓存穿透
+ &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98%e7%a9%bf%e9%80%8f">#&lt;/a>
+&lt;/h2>
+&lt;p>查询不存在的数据&lt;/p>
+&lt;ul>
+&lt;li>布隆过滤器&lt;/li>
+&lt;li>把这个空结果进行缓存。&lt;/li>
+&lt;/ul>
+&lt;h2 id="缓存雪崩">
+ 缓存雪崩
+ &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98%e9%9b%aa%e5%b4%a9">#&lt;/a>
+&lt;/h2>
+&lt;p>当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。&lt;/p>
+&lt;h3 id="解决">
+ 解决
+ &lt;a class="anchor" href="#%e8%a7%a3%e5%86%b3">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>事前：使用集群缓存，保证缓存服务的高可用&lt;/li>
+&lt;li>事中：&lt;code>ehcache&lt;/code> 本地缓存 + &lt;code>Hystrix&lt;/code> 限流 &amp;amp; 降级，避免 MySQL 被打死&lt;/li>
+&lt;li>事后：开启 Redis 持久化机制，尽快恢复缓存集群&lt;/li>
+&lt;/ul>
+&lt;p>参考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ehcache/ehcache3">ehcache/ehcache3&lt;/a> &lt;img src="https://img.shields.io/github/stars/ehcache/ehcache3.svg" alt="Github stars" />&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="缓存击穿">
+ 缓存击穿
+ &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98%e5%87%bb%e7%a9%bf">#&lt;/a>
+&lt;/h2>
+&lt;p>在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了，
+就会导致大量的请求都打到数据库上面去。&lt;/p>
+&lt;p>缓存击穿实际上是缓存雪崩的一个特例&lt;/p>
+&lt;h3 id="解决-1">
+ 解决
+ &lt;a class="anchor" href="#%e8%a7%a3%e5%86%b3-1">#&lt;/a>
+&lt;/h3>
+&lt;p>问题是多个线程同时去查询数据库的这条数据，
+我们可以在第一个查询数据的请求上使用一个&lt;strong>互斥锁&lt;/strong>来锁住它。
+其他的线程走到这一步拿不到锁就等着，等第一个线程查询到了数据，然后做缓存。
+后面的线程进来发现已经有缓存了，就直接走缓存。&lt;/p></description></item></channel></rss>

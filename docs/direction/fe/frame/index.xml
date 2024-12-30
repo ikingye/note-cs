@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2.2.3 框架 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/direction/fe/frame/</link>
-    <description>Recent content in 2.2.3 框架 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/direction/fe/frame/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Jquery</title>
-      <link>https://kingye.me/note-cs/docs/direction/fe/frame/jquery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/fe/frame/jquery/</guid>
-      <description>&lt;h1 id=&#34;jquery&#34;&gt;&#xA;  Jquery&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#jquery&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.2.3 框架 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/fe/frame/</link><description>Recent content in 2.2.3 框架 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/fe/frame/index.xml" rel="self" type="application/rss+xml"/><item><title>Jquery</title><link>https://kingye.me/note-cs/docs/direction/fe/frame/jquery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/fe/frame/jquery/</guid><description>&lt;h1 id="jquery">
+ Jquery
+ &lt;a class="anchor" href="#jquery">#&lt;/a>
+&lt;/h1></description></item></channel></rss>

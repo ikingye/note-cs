@@ -1,18 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2.1 软件工程 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/direction/se/</link>
-    <description>Recent content in 2.1 软件工程 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/direction/se/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>UML</title>
-      <link>https://kingye.me/note-cs/docs/direction/se/uml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/se/uml/</guid>
-      <description>&lt;h1 id=&#34;uml&#34;&gt;&#xA;  UML&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#uml&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;泛化关系-generalization&#34;&gt;&#xA;  泛化关系 (generalization)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%b3%9b%e5%8c%96%e5%85%b3%e7%b3%bb-generalization&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;is-a&lt;/li&gt;&#xA;&lt;li&gt;最终代码中，泛化关系表现为继承非抽象类&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;带&lt;strong&gt;空心三角形&lt;/strong&gt;箭头的&lt;strong&gt;直线&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511231923.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;实现关系-realize&#34;&gt;&#xA;  实现关系 (realize)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ae%9e%e7%8e%b0%e5%85%b3%e7%b3%bb-realize&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;最终代码中，实现关系表现为继承抽象类&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;带&lt;strong&gt;空心三角形&lt;/strong&gt;箭头的&lt;strong&gt;虚线&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511231943.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;聚合关系-aggregation&#34;&gt;&#xA;  聚合关系 (aggregation)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%81%9a%e5%90%88%e5%85%b3%e7%b3%bb-aggregation&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;表示整体由部分构成的语义&#xA;&lt;ul&gt;&#xA;&lt;li&gt;例如一个部门由多个员工组成&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;整体和部分&lt;strong&gt;不是强依赖&lt;/strong&gt;的，即使整体不存在了，部分仍然存在&#xA;&lt;ul&gt;&#xA;&lt;li&gt;例如， 部门撤销了，人员不会消失，他们依然存在&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;带&lt;strong&gt;空心菱形&lt;/strong&gt;箭头的&lt;strong&gt;直线&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232007.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;组合关系-composition&#34;&gt;&#xA;  组合关系 (composition)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bb%84%e5%90%88%e5%85%b3%e7%b3%bb-composition&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;表示整体由部分构成的语义&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如公司由多个部门组成&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了&#xA;&lt;ul&gt;&#xA;&lt;li&gt;例如， 公司不存在了，部门也将不存在了&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;带&lt;strong&gt;实心菱形&lt;/strong&gt;箭头&lt;strong&gt;直线&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232023.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;关联关系-association&#34;&gt;&#xA;  关联关系 (association)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%85%b3%e8%81%94%e5%85%b3%e7%b3%bb-association&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;它一般用来定义对象之间静态的、天然的结构；通常与运行状态无关&lt;/li&gt;&#xA;&lt;li&gt;所以，关联关系是一种 &amp;ldquo;强关联&amp;rdquo; 的关系&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;在最终代码中，关联对象通常是以&lt;strong&gt;成员变量&lt;/strong&gt;的形式实现的&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;带箭头的&lt;strong&gt;直线&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232034.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;依赖关系-dependency&#34;&gt;&#xA;  依赖关系 (dependency)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%be%9d%e8%b5%96%e5%85%b3%e7%b3%bb-dependency&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;描述一个对象在&lt;strong&gt;运行期间&lt;/strong&gt;会用到另一个对象的关系&lt;/li&gt;&#xA;&lt;li&gt;是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化，依赖关系也可能发生变化&lt;/li&gt;&#xA;&lt;li&gt;在最终代码中，依赖关系体现为类构造方法及类方法的&lt;strong&gt;传入参数&lt;/strong&gt;，箭头的指向为调用关系&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html&#34;&gt;依赖关系除了临时知道对方外，还是 &amp;ldquo;使用&amp;rdquo; 对方的方法和属性；&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;带箭头的&lt;strong&gt;虚线&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232054.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.1 软件工程 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/</link><description>Recent content in 2.1 软件工程 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/index.xml" rel="self" type="application/rss+xml"/><item><title>UML</title><link>https://kingye.me/note-cs/docs/direction/se/uml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/uml/</guid><description>&lt;h1 id="uml">
+ UML
+ &lt;a class="anchor" href="#uml">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="泛化关系-generalization">
+ 泛化关系 (generalization)
+ &lt;a class="anchor" href="#%e6%b3%9b%e5%8c%96%e5%85%b3%e7%b3%bb-generalization">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>is-a&lt;/li>
+&lt;li>最终代码中，泛化关系表现为继承非抽象类&lt;/li>
+&lt;/ul>
+&lt;p>带&lt;strong>空心三角形&lt;/strong>箭头的&lt;strong>直线&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511231923.png" alt="" />&lt;/p>
+&lt;h2 id="实现关系-realize">
+ 实现关系 (realize)
+ &lt;a class="anchor" href="#%e5%ae%9e%e7%8e%b0%e5%85%b3%e7%b3%bb-realize">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>最终代码中，实现关系表现为继承抽象类&lt;/li>
+&lt;/ul>
+&lt;p>带&lt;strong>空心三角形&lt;/strong>箭头的&lt;strong>虚线&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511231943.png" alt="" />&lt;/p>
+&lt;h2 id="聚合关系-aggregation">
+ 聚合关系 (aggregation)
+ &lt;a class="anchor" href="#%e8%81%9a%e5%90%88%e5%85%b3%e7%b3%bb-aggregation">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>表示整体由部分构成的语义
+&lt;ul>
+&lt;li>例如一个部门由多个员工组成&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>整体和部分&lt;strong>不是强依赖&lt;/strong>的，即使整体不存在了，部分仍然存在
+&lt;ul>
+&lt;li>例如， 部门撤销了，人员不会消失，他们依然存在&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>带&lt;strong>空心菱形&lt;/strong>箭头的&lt;strong>直线&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232007.png" alt="" />&lt;/p>
+&lt;h2 id="组合关系-composition">
+ 组合关系 (composition)
+ &lt;a class="anchor" href="#%e7%bb%84%e5%90%88%e5%85%b3%e7%b3%bb-composition">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>表示整体由部分构成的语义
+&lt;ul>
+&lt;li>比如公司由多个部门组成&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了
+&lt;ul>
+&lt;li>例如， 公司不存在了，部门也将不存在了&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>带&lt;strong>实心菱形&lt;/strong>箭头&lt;strong>直线&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232023.png" alt="" />&lt;/p>
+&lt;h2 id="关联关系-association">
+ 关联关系 (association)
+ &lt;a class="anchor" href="#%e5%85%b3%e8%81%94%e5%85%b3%e7%b3%bb-association">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>它一般用来定义对象之间静态的、天然的结构；通常与运行状态无关&lt;/li>
+&lt;li>所以，关联关系是一种 &amp;ldquo;强关联&amp;rdquo; 的关系
+&lt;ul>
+&lt;li>比如，乘车人和车票之间就是一种关联关系；学生和学校就是一种关联关系&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>在最终代码中，关联对象通常是以&lt;strong>成员变量&lt;/strong>的形式实现的&lt;/li>
+&lt;/ul>
+&lt;p>带箭头的&lt;strong>直线&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232034.png" alt="" />&lt;/p>
+&lt;h2 id="依赖关系-dependency">
+ 依赖关系 (dependency)
+ &lt;a class="anchor" href="#%e4%be%9d%e8%b5%96%e5%85%b3%e7%b3%bb-dependency">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>描述一个对象在&lt;strong>运行期间&lt;/strong>会用到另一个对象的关系&lt;/li>
+&lt;li>是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化，依赖关系也可能发生变化&lt;/li>
+&lt;li>在最终代码中，依赖关系体现为类构造方法及类方法的&lt;strong>传入参数&lt;/strong>，箭头的指向为调用关系
+&lt;ul>
+&lt;li>&lt;a href="https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html">依赖关系除了临时知道对方外，还是 &amp;ldquo;使用&amp;rdquo; 对方的方法和属性；&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>带箭头的&lt;strong>虚线&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232054.png" alt="" />&lt;/p></description></item></channel></rss>

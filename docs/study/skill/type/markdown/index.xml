@@ -1,18 +1,846 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>markdown on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/study/skill/type/markdown/</link>
-    <description>Recent content in markdown on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/study/skill/type/markdown/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>markdown 公式</title>
-      <link>https://kingye.me/note-cs/docs/study/skill/type/markdown/formula/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/study/skill/type/markdown/formula/</guid>
-      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://kingye.me/note-cs/note-cs/katex/katex.min.css&#34; /&gt;&#xA;&lt;script defer src=&#34;https://kingye.me/note-cs/note-cs/katex/katex.min.js&#34;&gt;&lt;/script&gt;&#xA;&lt;script defer src=&#34;https://kingye.me/note-cs/note-cs/katex/auto-render.min.js&#34; onload=&#34;renderMathInElement(document.body, {&#xA;  delimiters: [&#xA;      {left: &#39;$$&#39;, right: &#39;$$&#39;, display: true},&#xA;      {left: &#39;\\[&#39;, right: &#39;\\]&#39;, display: true},&#xA;      {left: &#39;$&#39;, right: &#39;$&#39;, display: false},&#xA;      {left: &#39;\\(&#39;, right: &#39;\\)&#39;, display: false}&#xA;  ]&#xA;});&#34;&gt;&lt;/script&gt;&lt;span&gt;&#xA;  \(\)&#xA;&lt;/span&gt;&#xA;&#xA;&lt;h1 id=&#34;markdown-公式&#34;&gt;&#xA;  markdown 公式&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#markdown-%e5%85%ac%e5%bc%8f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;来源：&lt;a href=&#34;https://github.com/bytesfly/blog/blob/master/Tool/markdown-formula.md&#34;&gt;一文学会在 Markdown 中编辑数学符号与公式&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;行内公式：将公式插入到本行内&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;我在 1 年后：$0.99^{365} \approx 0.02551796$&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$0.99^&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;365&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\a&lt;/span&gt;pprox 0.02551796$&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;单独的公式块：将公式插入到新的一行内，并且居中&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;观众老爷们在 1 年后：&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;1.01^{365} \approx 37.78343433&#xA;$$&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$$&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1.01^&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;365&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\a&lt;/span&gt;pprox 37.78343433&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$$&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;符号&#34;&gt;&#xA;  符号&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%ac%a6%e5%8f%b7&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;上下标运算符&#34;&gt;&#xA;  上下标、运算符&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%8a%e4%b8%8b%e6%a0%87%e8%bf%90%e7%ae%97%e7%ac%a6&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;显示效果&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 公式语法&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;上标&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$x^2、 x^y 、e^{365}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;x^2、 x^y 、e^{365}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;下标&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$x_0、a_1、Y_a$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;x_0、a_1、Y_a&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;分式&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{x}{y}、\frac{1}{x+1}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\frac{x}{y}、\frac{1}{x+1}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;乘&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\times$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\times&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;除&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\div$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\div&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;加减&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\pm$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\pm&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;减加&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\mp$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\mp&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;求和&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\sum$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\sum&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;求和上下标&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\sum_0^3 、\sum_0^{\infty} 、\sum_{-\infty}^{\infty}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\sum_0^3 、\sum_0^{\infty} 、\sum_{-\infty}^{\infty}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;求积&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\prod$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\prod&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;微分&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\partial$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\partial&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;积分&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\int 、\displaystyle\int$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\int 、\displaystyle\int&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;不等于&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\neq$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\neq&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;大于等于&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\geq$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\geq&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;小于等于&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\leq$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\leq&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;约等于&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\approx$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\approx&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;不大于等于&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$x+y \ngeq z$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;x+y \ngeq z&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;点乘&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$a \cdot b$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;a \cdot b&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;星乘&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$a \ast b$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;a \ast b&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;取整函数&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left \lfloor \frac{a}{b} \right \rfloor$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left \lfloor \frac{a}{b} \right \rfloor&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;取顶函数&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left \lceil \frac{c}{d} \right \rceil$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left \lceil \frac{c}{d} \right \rceil&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;括号&#34;&gt;&#xA;  括号&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%8b%ac%e5%8f%b7&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;显示效果&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 公式语法&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;圆括号（小括号）&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left( \frac{a}{b} \right)$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left( \frac{a}{b} \right)&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;方括号（中括号）&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left[ \frac{a}{b} \right]$或者$[ \frac{x}{y} ]$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left[ \frac{a}{b} \right]&lt;/code&gt;或者&lt;code&gt;[ \frac{x}{y} ]&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;花括号（大括号）&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\lbrace \frac{a}{b} \rbrace$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\lbrace \frac{a}{b} \rbrace&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;角括号&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left \langle \frac{a}{b} \right \rangle$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left \langle \frac{a}{b} \right \rangle&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;混合括号&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left [ a,b \right )$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left [ a,b \right )&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;三角函数指数对数&#34;&gt;&#xA;  三角函数、指数、对数&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e6%8c%87%e6%95%b0%e5%af%b9%e6%95%b0&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;显示效果&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 公式语法&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;sin&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\sin(x)$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\sin(x)&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;cos&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\cos(x)$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\cos(x)&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;tan&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\tan(x)$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\tan(x)&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;cot&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\cot(x)$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\cot(x)&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;log&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\log_2 10$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\log_2 10&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;lg&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\lg 100$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\lg 100&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;ln&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\ln2$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\ln2&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;数学符号&#34;&gt;&#xA;  数学符号&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;显示效果&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 公式语法&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;无穷&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\infty$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\infty&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;矢量&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\vec{a}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\vec{a}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;一阶导数&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\dot{x}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\dot{x}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;二阶导数&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\ddot{x}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\ddot{x}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;算数平均值&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\bar{a}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\bar{a}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;概率分布&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\hat{a}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\hat{a}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;虚数 i、j&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\imath、\jmath$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\imath、\jmath&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;省略号(一)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$1,2,3,\ldots,n$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;1,2,3,\ldots,n&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;省略号(二)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$x_1 + x_2 + \cdots + x_n$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;x_1 + x_2 + \cdots + x_n&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;省略号(三)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\vdots$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\vdots&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;省略号(四)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\ddots$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\ddots&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;斜线与反斜线&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left / \frac{a}{b} \right \backslash$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left / \frac{a}{b} \right \backslash&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;上下箭头&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\left \uparrow \frac{a}{b} \right \downarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\left \uparrow \frac{a}{b} \right \downarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\angle$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\angle$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\angle&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\prime$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\prime$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\prime&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\rightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\rightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\rightarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\leftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\leftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\leftarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Rightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Rightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Rightarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Leftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Leftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Leftarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Uparrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Uparrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Uparrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Downarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Downarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Downarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\longrightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\longrightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\longrightarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\longleftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\longleftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\longleftarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Longrightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Longrightarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Longrightarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Longleftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Longleftarrow$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Longleftarrow&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\nabla$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\nabla$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\nabla&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\because$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\because$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\because&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\therefore$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\therefore$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\therefore&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\mid$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\mid$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\mid&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\backslash$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\backslash$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\backslash&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\forall$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\forall$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\forall&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\exists$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\exists$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\exists&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\backsim$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\backsim$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\backsim&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\cong$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\cong$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\cong&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\oint$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\oint$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\oint&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\implies$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\implies$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\implies&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\iff$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\iff$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\iff&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\impliedby$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\impliedby$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\impliedby&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;连线符号&#34;&gt;&#xA;  连线符号&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%9e%e7%ba%bf%e7%ac%a6%e5%8f%b7&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;显示效果&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 公式语法&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\overleftarrow{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\overleftarrow{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\overrightarrow{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\overrightarrow{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\overleftrightarrow{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\overleftrightarrow{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\underleftarrow{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\underleftarrow{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\underrightarrow{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\underrightarrow{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\underleftrightarrow{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\underleftrightarrow{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\overline{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\overline{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\underline{a+b+c}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\underline{a+b+c}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\overbrace{a+b+c}^{Sample}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\overbrace{a+b+c}^{Sample}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\underbrace{a+b+c}_{Sample}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\underbrace{a+b+c}_{Sample}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\overbrace{a+\underbrace{b+c}_{1.0}}^{2.0}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\overbrace{a+\underbrace{b+c}_{1.0}}^{2.0}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\underbrace{a\cdot a\cdots a}_{b\text{ times}}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\underbrace{a\cdot a\cdots a}_{b\text{ times}}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;高级运算符&#34;&gt;&#xA;  高级运算符&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%ab%98%e7%ba%a7%e8%bf%90%e7%ae%97%e7%ac%a6&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;显示效果&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 公式语法&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;平均数运算&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\overline{xyz}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\overline{xyz}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;开二次方运算&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\sqrt {xy}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\sqrt {xy}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;开方运算&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\sqrt[n]{x}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\sqrt[n]{x}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;极限运算(一)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;极限运算(二)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;求和运算(一)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;求和运算(二)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;积分运算(一)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\int^{\infty}_{0}{xdx}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\int^{\infty}_{0}{xdx}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;积分运算(二)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\displaystyle \int^{\infty}_{0}{xdx}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\displaystyle \int^{\infty}_{0}{xdx}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;微分运算&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\frac{\partial x}{\partial y}、\frac{\partial^2x}{\partial y^2}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\frac{\partial x}{\partial y}、\frac{\partial^2x}{\partial y^2}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;集合运算&#34;&gt;&#xA;  集合运算&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%9b%86%e5%90%88%e8%bf%90%e7%ae%97&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;显示效果&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 公式语法&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;属于&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \in B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \in B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;不属于&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \notin B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \notin B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;子集&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$x \subset y、y \supset x$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;x \subset y、y \supset x&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;真子集&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$x \subseteq y、y \supseteq x$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;x \subseteq y、y \supseteq x&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;并集&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \cup B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \cup B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;交集&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \cap B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \cap B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;差集&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \setminus B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \setminus B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;同或&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \bigodot B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \bigodot B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;同与&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \bigotimes B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \bigotimes B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;异或&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A \bigoplus B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A \bigoplus B&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;实数集合&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\mathbb{R}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\mathbb{R}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;自然数集合&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\mathbb{Z}$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\mathbb{Z}&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;希腊字母&#34;&gt;&#xA;  希腊字母&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b8%8c%e8%85%8a%e5%ad%97%e6%af%8d&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;大写字母&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 语法&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;小写字母&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;markdown 语法&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;中文注音&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$A$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\alpha$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\alpha&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;阿尔法&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$B$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;B&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\beta$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\beta&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;贝塔&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Gamma$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Gamma&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\gamma$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\gamma&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;伽马&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Delta$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Delta&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\delta$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\delta&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;德尔塔&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$E$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;E&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\epsilon$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\epsilon&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;伊普西龙&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$Z$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;Z&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\zeta$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\zeta&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;截塔&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$H$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;H&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\eta$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\eta&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;艾塔&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Theta$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Theta&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\theta$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\theta&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;西塔&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$I$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;I&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\iota$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\iota&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;约塔&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$K$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;K&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\kappa$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\kappa&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;卡帕&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Lambda$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Lambda&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\lambda$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\lambda&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;兰布达&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$M$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;M&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\mu$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\mu&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;缪&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$N$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;N&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\nu$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\nu&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;纽&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Xi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Xi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\xi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\xi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;克西&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$O$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;O&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\omicron$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\omicron&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;奥密克戎&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Pi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Pi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\pi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\pi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;派&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$P$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;P&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\rho$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\rho&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;肉&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Sigma$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Sigma&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\sigma$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\sigma&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;西格马&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$T$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\tau$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\tau&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;套&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Upsilon$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Upsilon&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\upsilon$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\upsilon&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;宇普西龙&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Phi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Phi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\phi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;佛爱&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$X$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;X&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\chi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\chi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;西&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Psi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Psi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\psi$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\psi&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;普西&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\Omega$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\Omega&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;$\omega$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;\omega&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;欧米伽&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;字体转换&#34;&gt;&#xA;  字体转换&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ad%97%e4%bd%93%e8%bd%ac%e6%8d%a2&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;若要对公式的某一部分字符进行字体转换，可以用 &lt;code&gt;{\font {需转换的部分字符}}&lt;/code&gt; 命令，其中&lt;code&gt;\font&lt;/code&gt;部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>markdown on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/type/markdown/</link><description>Recent content in markdown on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/type/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>markdown 公式</title><link>https://kingye.me/note-cs/docs/study/skill/type/markdown/formula/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/type/markdown/formula/</guid><description>&lt;link rel="stylesheet" href="https://kingye.me/note-cs/note-cs/katex/katex.min.css" />
+&lt;script defer src="https://kingye.me/note-cs/note-cs/katex/katex.min.js">&lt;/script>
+&lt;script defer src="https://kingye.me/note-cs/note-cs/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+ delimiters: [
+ {left: '$$', right: '$$', display: true},
+ {left: '\\[', right: '\\]', display: true},
+ {left: '$', right: '$', display: false},
+ {left: '\\(', right: '\\)', display: false}
+ ]
+});">&lt;/script>&lt;span>
+ \(\)
+&lt;/span>
+
+&lt;h1 id="markdown-公式">
+ markdown 公式
+ &lt;a class="anchor" href="#markdown-%e5%85%ac%e5%bc%8f">#&lt;/a>
+&lt;/h1>
+&lt;p>来源：&lt;a href="https://github.com/bytesfly/blog/blob/master/Tool/markdown-formula.md">一文学会在 Markdown 中编辑数学符号与公式&lt;/a>&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>行内公式：将公式插入到本行内&lt;/li>
+&lt;/ul>
+&lt;p>我在 1 年后：$0.99^{365} \approx 0.02551796$&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$0.99^&lt;span style="color:#f92672">{&lt;/span>365&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#ae81ff">\a&lt;/span>pprox 0.02551796$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>单独的公式块：将公式插入到新的一行内，并且居中&lt;/li>
+&lt;/ul>
+&lt;p>观众老爷们在 1 年后：&lt;/p>
+&lt;p>$$
+1.01^{365} \approx 37.78343433
+$$&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$$
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>1.01^&lt;span style="color:#f92672">{&lt;/span>365&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#ae81ff">\a&lt;/span>pprox 37.78343433
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="符号">
+ 符号
+ &lt;a class="anchor" href="#%e7%ac%a6%e5%8f%b7">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="上下标运算符">
+ 上下标、运算符
+ &lt;a class="anchor" href="#%e4%b8%8a%e4%b8%8b%e6%a0%87%e8%bf%90%e7%ae%97%e7%ac%a6">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">显示效果&lt;/th>
+ &lt;th style="text-align: center">markdown 公式语法&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">上标&lt;/td>
+ &lt;td style="text-align: center">$x^2、 x^y 、e^{365}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>x^2、 x^y 、e^{365}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">下标&lt;/td>
+ &lt;td style="text-align: center">$x_0、a_1、Y_a$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>x_0、a_1、Y_a&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">分式&lt;/td>
+ &lt;td style="text-align: center">$\frac{x}{y}、\frac{1}{x+1}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\frac{x}{y}、\frac{1}{x+1}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">乘&lt;/td>
+ &lt;td style="text-align: center">$\times$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\times&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">除&lt;/td>
+ &lt;td style="text-align: center">$\div$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\div&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">加减&lt;/td>
+ &lt;td style="text-align: center">$\pm$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\pm&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">减加&lt;/td>
+ &lt;td style="text-align: center">$\mp$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\mp&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">求和&lt;/td>
+ &lt;td style="text-align: center">$\sum$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\sum&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">求和上下标&lt;/td>
+ &lt;td style="text-align: center">$\sum_0^3 、\sum_0^{\infty} 、\sum_{-\infty}^{\infty}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\sum_0^3 、\sum_0^{\infty} 、\sum_{-\infty}^{\infty}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">求积&lt;/td>
+ &lt;td style="text-align: center">$\prod$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\prod&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">微分&lt;/td>
+ &lt;td style="text-align: center">$\partial$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\partial&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">积分&lt;/td>
+ &lt;td style="text-align: center">$\int 、\displaystyle\int$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\int 、\displaystyle\int&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">不等于&lt;/td>
+ &lt;td style="text-align: center">$\neq$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\neq&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">大于等于&lt;/td>
+ &lt;td style="text-align: center">$\geq$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\geq&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">小于等于&lt;/td>
+ &lt;td style="text-align: center">$\leq$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\leq&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">约等于&lt;/td>
+ &lt;td style="text-align: center">$\approx$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\approx&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">不大于等于&lt;/td>
+ &lt;td style="text-align: center">$x+y \ngeq z$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>x+y \ngeq z&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">点乘&lt;/td>
+ &lt;td style="text-align: center">$a \cdot b$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>a \cdot b&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">星乘&lt;/td>
+ &lt;td style="text-align: center">$a \ast b$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>a \ast b&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">取整函数&lt;/td>
+ &lt;td style="text-align: center">$\left \lfloor \frac{a}{b} \right \rfloor$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left \lfloor \frac{a}{b} \right \rfloor&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">取顶函数&lt;/td>
+ &lt;td style="text-align: center">$\left \lceil \frac{c}{d} \right \rceil$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left \lceil \frac{c}{d} \right \rceil&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="括号">
+ 括号
+ &lt;a class="anchor" href="#%e6%8b%ac%e5%8f%b7">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">显示效果&lt;/th>
+ &lt;th style="text-align: center">markdown 公式语法&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">圆括号（小括号）&lt;/td>
+ &lt;td style="text-align: center">$\left( \frac{a}{b} \right)$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left( \frac{a}{b} \right)&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">方括号（中括号）&lt;/td>
+ &lt;td style="text-align: center">$\left[ \frac{a}{b} \right]$或者$[ \frac{x}{y} ]$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left[ \frac{a}{b} \right]&lt;/code>或者&lt;code>[ \frac{x}{y} ]&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">花括号（大括号）&lt;/td>
+ &lt;td style="text-align: center">$\lbrace \frac{a}{b} \rbrace$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\lbrace \frac{a}{b} \rbrace&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">角括号&lt;/td>
+ &lt;td style="text-align: center">$\left \langle \frac{a}{b} \right \rangle$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left \langle \frac{a}{b} \right \rangle&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">混合括号&lt;/td>
+ &lt;td style="text-align: center">$\left [ a,b \right )$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left [ a,b \right )&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="三角函数指数对数">
+ 三角函数、指数、对数
+ &lt;a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e6%8c%87%e6%95%b0%e5%af%b9%e6%95%b0">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">显示效果&lt;/th>
+ &lt;th style="text-align: center">markdown 公式语法&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">sin&lt;/td>
+ &lt;td style="text-align: center">$\sin(x)$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\sin(x)&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">cos&lt;/td>
+ &lt;td style="text-align: center">$\cos(x)$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\cos(x)&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">tan&lt;/td>
+ &lt;td style="text-align: center">$\tan(x)$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\tan(x)&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">cot&lt;/td>
+ &lt;td style="text-align: center">$\cot(x)$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\cot(x)&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">log&lt;/td>
+ &lt;td style="text-align: center">$\log_2 10$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\log_2 10&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">lg&lt;/td>
+ &lt;td style="text-align: center">$\lg 100$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\lg 100&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">ln&lt;/td>
+ &lt;td style="text-align: center">$\ln2$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\ln2&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="数学符号">
+ 数学符号
+ &lt;a class="anchor" href="#%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">显示效果&lt;/th>
+ &lt;th style="text-align: center">markdown 公式语法&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">无穷&lt;/td>
+ &lt;td style="text-align: center">$\infty$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\infty&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">矢量&lt;/td>
+ &lt;td style="text-align: center">$\vec{a}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\vec{a}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">一阶导数&lt;/td>
+ &lt;td style="text-align: center">$\dot{x}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\dot{x}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">二阶导数&lt;/td>
+ &lt;td style="text-align: center">$\ddot{x}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\ddot{x}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">算数平均值&lt;/td>
+ &lt;td style="text-align: center">$\bar{a}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\bar{a}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">概率分布&lt;/td>
+ &lt;td style="text-align: center">$\hat{a}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\hat{a}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">虚数 i、j&lt;/td>
+ &lt;td style="text-align: center">$\imath、\jmath$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\imath、\jmath&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">省略号(一)&lt;/td>
+ &lt;td style="text-align: center">$1,2,3,\ldots,n$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>1,2,3,\ldots,n&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">省略号(二)&lt;/td>
+ &lt;td style="text-align: center">$x_1 + x_2 + \cdots + x_n$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>x_1 + x_2 + \cdots + x_n&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">省略号(三)&lt;/td>
+ &lt;td style="text-align: center">$\vdots$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\vdots&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">省略号(四)&lt;/td>
+ &lt;td style="text-align: center">$\ddots$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\ddots&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">斜线与反斜线&lt;/td>
+ &lt;td style="text-align: center">$\left / \frac{a}{b} \right \backslash$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left / \frac{a}{b} \right \backslash&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">上下箭头&lt;/td>
+ &lt;td style="text-align: center">$\left \uparrow \frac{a}{b} \right \downarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\left \uparrow \frac{a}{b} \right \downarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\angle$&lt;/td>
+ &lt;td style="text-align: center">$\angle$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\angle&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\prime$&lt;/td>
+ &lt;td style="text-align: center">$\prime$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\prime&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\rightarrow$&lt;/td>
+ &lt;td style="text-align: center">$\rightarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\rightarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\leftarrow$&lt;/td>
+ &lt;td style="text-align: center">$\leftarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\leftarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Rightarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Rightarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Rightarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Leftarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Leftarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Leftarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Uparrow$&lt;/td>
+ &lt;td style="text-align: center">$\Uparrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Uparrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Downarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Downarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Downarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\longrightarrow$&lt;/td>
+ &lt;td style="text-align: center">$\longrightarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\longrightarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\longleftarrow$&lt;/td>
+ &lt;td style="text-align: center">$\longleftarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\longleftarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Longrightarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Longrightarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Longrightarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Longleftarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Longleftarrow$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Longleftarrow&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\nabla$&lt;/td>
+ &lt;td style="text-align: center">$\nabla$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\nabla&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\because$&lt;/td>
+ &lt;td style="text-align: center">$\because$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\because&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\therefore$&lt;/td>
+ &lt;td style="text-align: center">$\therefore$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\therefore&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\mid$&lt;/td>
+ &lt;td style="text-align: center">$\mid$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\mid&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\backslash$&lt;/td>
+ &lt;td style="text-align: center">$\backslash$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\backslash&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\forall$&lt;/td>
+ &lt;td style="text-align: center">$\forall$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\forall&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\exists$&lt;/td>
+ &lt;td style="text-align: center">$\exists$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\exists&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\backsim$&lt;/td>
+ &lt;td style="text-align: center">$\backsim$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\backsim&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\cong$&lt;/td>
+ &lt;td style="text-align: center">$\cong$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\cong&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\oint$&lt;/td>
+ &lt;td style="text-align: center">$\oint$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\oint&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\implies$&lt;/td>
+ &lt;td style="text-align: center">$\implies$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\implies&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\iff$&lt;/td>
+ &lt;td style="text-align: center">$\iff$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\iff&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\impliedby$&lt;/td>
+ &lt;td style="text-align: center">$\impliedby$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\impliedby&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="连线符号">
+ 连线符号
+ &lt;a class="anchor" href="#%e8%bf%9e%e7%ba%bf%e7%ac%a6%e5%8f%b7">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">显示效果&lt;/th>
+ &lt;th style="text-align: center">markdown 公式语法&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">$\overleftarrow{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\overleftarrow{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\overrightarrow{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\overrightarrow{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\overleftrightarrow{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\overleftrightarrow{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\underleftarrow{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\underleftarrow{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\underrightarrow{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\underrightarrow{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\underleftrightarrow{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\underleftrightarrow{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\overline{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\overline{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\underline{a+b+c}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\underline{a+b+c}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\overbrace{a+b+c}^{Sample}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\overbrace{a+b+c}^{Sample}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\underbrace{a+b+c}_{Sample}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\underbrace{a+b+c}_{Sample}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\overbrace{a+\underbrace{b+c}_{1.0}}^{2.0}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\overbrace{a+\underbrace{b+c}_{1.0}}^{2.0}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\underbrace{a\cdot a\cdots a}_{b\text{ times}}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\underbrace{a\cdot a\cdots a}_{b\text{ times}}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="高级运算符">
+ 高级运算符
+ &lt;a class="anchor" href="#%e9%ab%98%e7%ba%a7%e8%bf%90%e7%ae%97%e7%ac%a6">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">显示效果&lt;/th>
+ &lt;th style="text-align: center">markdown 公式语法&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">平均数运算&lt;/td>
+ &lt;td style="text-align: center">$\overline{xyz}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\overline{xyz}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">开二次方运算&lt;/td>
+ &lt;td style="text-align: center">$\sqrt {xy}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\sqrt {xy}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">开方运算&lt;/td>
+ &lt;td style="text-align: center">$\sqrt[n]{x}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\sqrt[n]{x}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">极限运算(一)&lt;/td>
+ &lt;td style="text-align: center">$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">极限运算(二)&lt;/td>
+ &lt;td style="text-align: center">$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">求和运算(一)&lt;/td>
+ &lt;td style="text-align: center">$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">求和运算(二)&lt;/td>
+ &lt;td style="text-align: center">$\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">积分运算(一)&lt;/td>
+ &lt;td style="text-align: center">$\int^{\infty}_{0}{xdx}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\int^{\infty}_{0}{xdx}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">积分运算(二)&lt;/td>
+ &lt;td style="text-align: center">$\displaystyle \int^{\infty}_{0}{xdx}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\displaystyle \int^{\infty}_{0}{xdx}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">微分运算&lt;/td>
+ &lt;td style="text-align: center">$\frac{\partial x}{\partial y}、\frac{\partial^2x}{\partial y^2}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\frac{\partial x}{\partial y}、\frac{\partial^2x}{\partial y^2}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="集合运算">
+ 集合运算
+ &lt;a class="anchor" href="#%e9%9b%86%e5%90%88%e8%bf%90%e7%ae%97">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">显示效果&lt;/th>
+ &lt;th style="text-align: center">markdown 公式语法&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">属于&lt;/td>
+ &lt;td style="text-align: center">$A \in B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \in B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">不属于&lt;/td>
+ &lt;td style="text-align: center">$A \notin B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \notin B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">子集&lt;/td>
+ &lt;td style="text-align: center">$x \subset y、y \supset x$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>x \subset y、y \supset x&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">真子集&lt;/td>
+ &lt;td style="text-align: center">$x \subseteq y、y \supseteq x$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>x \subseteq y、y \supseteq x&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">并集&lt;/td>
+ &lt;td style="text-align: center">$A \cup B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \cup B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">交集&lt;/td>
+ &lt;td style="text-align: center">$A \cap B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \cap B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">差集&lt;/td>
+ &lt;td style="text-align: center">$A \setminus B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \setminus B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">同或&lt;/td>
+ &lt;td style="text-align: center">$A \bigodot B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \bigodot B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">同与&lt;/td>
+ &lt;td style="text-align: center">$A \bigotimes B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \bigotimes B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">异或&lt;/td>
+ &lt;td style="text-align: center">$A \bigoplus B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A \bigoplus B&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">实数集合&lt;/td>
+ &lt;td style="text-align: center">$\mathbb{R}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\mathbb{R}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">自然数集合&lt;/td>
+ &lt;td style="text-align: center">$\mathbb{Z}$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\mathbb{Z}&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="希腊字母">
+ 希腊字母
+ &lt;a class="anchor" href="#%e5%b8%8c%e8%85%8a%e5%ad%97%e6%af%8d">#&lt;/a>
+&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">大写字母&lt;/th>
+ &lt;th style="text-align: center">markdown 语法&lt;/th>
+ &lt;th style="text-align: center">小写字母&lt;/th>
+ &lt;th style="text-align: center">markdown 语法&lt;/th>
+ &lt;th style="text-align: center">中文注音&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">$A$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>A&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\alpha$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\alpha&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">阿尔法&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$B$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>B&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\beta$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\beta&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">贝塔&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Gamma$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Gamma&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\gamma$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\gamma&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">伽马&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Delta$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Delta&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\delta$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\delta&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">德尔塔&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$E$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>E&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\epsilon$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\epsilon&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">伊普西龙&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$Z$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>Z&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\zeta$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\zeta&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">截塔&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$H$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>H&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\eta$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\eta&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">艾塔&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Theta$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Theta&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\theta$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\theta&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">西塔&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$I$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>I&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\iota$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\iota&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">约塔&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$K$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>K&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\kappa$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\kappa&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">卡帕&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Lambda$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Lambda&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\lambda$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\lambda&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">兰布达&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$M$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>M&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\mu$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\mu&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">缪&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$N$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>N&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\nu$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\nu&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">纽&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Xi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Xi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\xi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\xi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">克西&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$O$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>O&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\omicron$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\omicron&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">奥密克戎&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Pi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Pi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\pi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\pi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">派&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$P$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>P&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\rho$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\rho&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">肉&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Sigma$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Sigma&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\sigma$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\sigma&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">西格马&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$T$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>T&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\tau$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\tau&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">套&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Upsilon$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Upsilon&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\upsilon$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\upsilon&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">宇普西龙&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Phi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Phi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\phi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\phi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">佛爱&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$X$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>X&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\chi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\chi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">西&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Psi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Psi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\psi$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\psi&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">普西&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\Omega$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\Omega&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">$\omega$&lt;/td>
+ &lt;td style="text-align: center">&lt;code>\omega&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">欧米伽&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="字体转换">
+ 字体转换
+ &lt;a class="anchor" href="#%e5%ad%97%e4%bd%93%e8%bd%ac%e6%8d%a2">#&lt;/a>
+&lt;/h3>
+&lt;p>若要对公式的某一部分字符进行字体转换，可以用 &lt;code>{\font {需转换的部分字符}}&lt;/code> 命令，其中&lt;code>\font&lt;/code>部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体。&lt;/p></description></item></channel></rss>

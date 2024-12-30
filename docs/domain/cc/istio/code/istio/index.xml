@@ -1,39 +1,289 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>3.1 Istio on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/</link>
-    <description>Recent content in 3.1 Istio on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>3.1.1 Istio 源码结构</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</guid>
-      <description>&lt;h1 id=&#34;istio-源码结构&#34;&gt;&#xA;  Istio 源码结构&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e6%ba%90%e7%a0%81%e7%bb%93%e6%9e%84&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;book-tabs&#34;&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-api-resources&#34; id=&#34;tabs-api-resources-0&#34; checked=&#34;checked&#34; /&gt;&#xA;  &lt;label for=&#34;tabs-api-resources-0&#34;&gt;1.6.5&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ tree -L &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── BUGS-AND-FEATURE-REQUESTS.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── CODEOWNERS&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── CONTRIBUTING.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── LICENSE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── Makefile&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── Makefile.core.mk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── Makefile.overrides.mk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── README.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── SUPPORT.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── bin&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── check_no_modify.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── check_samples.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── codecov.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── codecov_diff.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── diff_yaml.py&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── init.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── mixer_codegen.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── nomodify.md5&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── protoc.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── update_crds.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── update_deps.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── update_no_modify.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── codecov.skip&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── codecov.threshold&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── common&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── Makefile.common.mk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── config&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── scripts&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── common-protos&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── github.com&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── gogoproto&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── google&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── k8s.io&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── docker&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── Dockerfile.base&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── ca-certificates.tgz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── galley&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── README.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── pkg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── testdatasets&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── go.mod&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── go.sum&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── install&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── consul&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── gcp&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── istio.deps&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── istioctl&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── cmd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── docker&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── pkg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── licenses&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── manifests&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── addons&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── charts&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── profiles&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── mixer&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── README.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── adapter&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── cmd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── docker&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── pkg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── template&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── test&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── testdata&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── operator&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── ARCHITECTURE.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── LICENSE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── README.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── cmd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── codecov.skip&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── codecov.threshold&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── data&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── deploy&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── docker&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── images&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── operator.mk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── pkg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── samples&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── scripts&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── version&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── pilot&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── cmd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── docker&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── pkg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── test&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── pkg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── adsc&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── bootstrap&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── cmd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── config&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── dns&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── envoy&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── istio-agent&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── jwt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── keepalive&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── kube&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── mcp&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── proto&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── queue&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── spiffe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── test&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── tracing&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── util&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── webhooks&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── prow&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── config&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── integ-suite-kind.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── integ-suite-local.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── lib.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── release-commit.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── release-test.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── upload-istioio-snippets.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── release&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── downloadIstioCandidate.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── downloadIstioCtl.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── samples&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── README.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── addons&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── bookinfo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── certs&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── custom-bootstrap&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── external&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── fortio&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── health-check&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── helloworld&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── httpbin&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── https&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── kubernetes-blog&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── multicluster&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── rawvm&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── security&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── sleep&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── tcp-echo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── websockets&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── security&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── README.md&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── cmd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── pkg&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── proto&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── samples&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── test.go&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── tests&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── apps&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── binary&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── codecov&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── common&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── integration&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── istio.mk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── testdata&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── util&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;├── tools&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── buildx-gen.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── certs&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── convert_RbacConfig_to_ClusterRbacConfig.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── dump_kubernetes.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── gen_istio_image_list.sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── istio-clean-iptables&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── istio-docker.mk&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   ├── istio-iptables&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;│   └── packaging&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;└── vendor&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── cloud.google.com&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── code.cloudfoundry.org&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── contrib.go.opencensus.io&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── fortio.org&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── github.com&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── go.opencensus.io&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ├── go.uber.org&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    └── golang.org&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;144&lt;/span&gt; directories, &lt;span style=&#34;color:#ae81ff&#34;&gt;54&lt;/span&gt; files&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-api-resources&#34; id=&#34;tabs-api-resources-1&#34;  /&gt;&#xA;  &lt;label for=&#34;tabs-api-resources-1&#34;&gt;1.4.6&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;/div&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Pilot</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</guid>
-      <description>&lt;h1 id=&#34;pilot&#34;&gt;&#xA;  Pilot&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#pilot&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;blockquote class=&#34;book-hint info&#34;&gt;&#xA;  若无特别说明，本文是根据 &lt;a href=&#34;https://github.com/istio/istio/tree/1.6.5&#34;&gt;Istio 1.6.5&lt;/a&gt; 进行分析。&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;h2 id=&#34;pilot-discovery&#34;&gt;&#xA;  pilot discovery&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#pilot-discovery&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;函数调用栈&#34;&gt;&#xA;  函数调用栈&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%87%bd%e6%95%b0%e8%b0%83%e7%94%a8%e6%a0%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L72&#34;&gt;NewServer&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L190&#34;&gt;initConfigController&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L88&#34;&gt;makeKubeConfigController&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L397&#34;&gt;(add schema) collections.Pilot.All()&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L402&#34;&gt;NewClient&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L408&#34;&gt;NewController&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L126&#34;&gt;(add stores for CRD kinds) addInformer&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L138&#34;&gt;newCacheHandler&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L216&#34;&gt;informer := cache.NewSharedIndexInformer(&amp;hellip;)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L226&#34;&gt;informer.AddEventHandler&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L233&#34;&gt;queue.Push(onEvent)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L92&#34;&gt;s.ConfigStores = append(s.ConfigStores, configController)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L134&#34;&gt;aggregateConfigController, err := configaggregate.MakeCache(s.ConfigStores)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L138&#34;&gt;s.configController = aggregateConfigController&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L144&#34;&gt;addStartFunc&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L193&#34;&gt;initServiceControllers&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L65&#34;&gt;NewServiceDiscovery&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L95&#34;&gt;RegisterEventHandler&lt;/a&gt;: 注册 serviceEntryKind 与 workloadEntryKind 的 handler&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L256&#34;&gt;initDiscoveryService&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L468&#34;&gt;initEventHandlers&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L762&#34;&gt;定义 handler&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L772&#34;&gt;s.EnvoyXdsServer.ConfigUpdate(pushReq)&lt;/a&gt;: 真正做的事情，更新 envoy xds 配置&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L796&#34;&gt;添加 handler&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L78&#34;&gt;discoveryServer.Start(stop)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L344&#34;&gt;(&lt;code&gt;crd controller&lt;/code&gt;) Run&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L353&#34;&gt;informer.Run(stop)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L348&#34;&gt;cache.WaitForCacheSync(stop, c.HasSynced)&lt;/a&gt;: 等待 Informer 完成一次本地缓存的数据同步操作&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L349&#34;&gt;c.queue.Run(stop)&lt;/a&gt;: 执行 &lt;code&gt;queue.tasks&lt;/code&gt;，即 &lt;code&gt;cacheHandler.onEvent&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L303&#34;&gt;执行 handlers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Istio 熔断</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</guid>
-      <description>&lt;h1 id=&#34;istio-熔断&#34;&gt;&#xA;  Istio 熔断&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e7%86%94%e6%96%ad&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>Istio 限流</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</guid>
-      <description>&lt;h1 id=&#34;istio-限流&#34;&gt;&#xA;  Istio 限流&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e9%99%90%e6%b5%81&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3.1 Istio on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/</link><description>Recent content in 3.1 Istio on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/index.xml" rel="self" type="application/rss+xml"/><item><title>3.1.1 Istio 源码结构</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</guid><description>&lt;h1 id="istio-源码结构">
+ Istio 源码结构
+ &lt;a class="anchor" href="#istio-%e6%ba%90%e7%a0%81%e7%bb%93%e6%9e%84">#&lt;/a>
+&lt;/h1>
+
+
+
+
+&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-0" checked="checked" />
+ &lt;label for="tabs-api-resources-0">1.6.5&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ tree -L &lt;span style="color:#ae81ff">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── BUGS-AND-FEATURE-REQUESTS.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── CODEOWNERS
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── CONTRIBUTING.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── LICENSE
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Makefile
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Makefile.core.mk
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Makefile.overrides.mk
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── SUPPORT.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── bin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── check_no_modify.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── check_samples.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov_diff.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── diff_yaml.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── init.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── mixer_codegen.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── nomodify.md5
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── protoc.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── update_crds.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── update_deps.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── update_no_modify.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── codecov.skip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── codecov.threshold
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── common
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── Makefile.common.mk
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── scripts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── common-protos
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── github.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── gogoproto
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── google
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── k8s.io
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── Dockerfile.base
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── ca-certificates.tgz
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── galley
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── testdatasets
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── go.mod
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── go.sum
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── consul
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── gcp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── istio.deps
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── istioctl
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── pkg
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── licenses
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── ...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── manifests
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── addons
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── charts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── profiles
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── mixer
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── adapter
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── template
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── test
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── testdata
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── operator
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── ARCHITECTURE.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── LICENSE
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov.skip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov.threshold
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── deploy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── images
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── operator.mk
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── samples
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── scripts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── version
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── pilot
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── test
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── pkg
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── adsc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── bootstrap
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── dns
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── envoy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-agent
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── jwt
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── keepalive
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── kube
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── mcp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── proto
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── queue
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── spiffe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── test
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── tracing
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── util
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── webhooks
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── prow
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── config
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── integ-suite-kind.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── integ-suite-local.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── lib.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── release-commit.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── release-test.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── upload-istioio-snippets.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── release
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── downloadIstioCandidate.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── downloadIstioCtl.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── samples
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── addons
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── bookinfo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── certs
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── custom-bootstrap
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── external
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── fortio
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── health-check
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── helloworld
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── httpbin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── https
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── kubernetes-blog
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── multicluster
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── rawvm
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── security
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── sleep
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── tcp-echo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── websockets
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── security
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── proto
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── samples
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── test.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── tests
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── apps
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── binary
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── common
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── integration
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio.mk
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── testdata
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── util
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── tools
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── buildx-gen.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── certs
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── convert_RbacConfig_to_ClusterRbacConfig.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── dump_kubernetes.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── gen_istio_image_list.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-clean-iptables
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-docker.mk
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-iptables
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── packaging
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── vendor
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── cloud.google.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── code.cloudfoundry.org
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── contrib.go.opencensus.io
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── fortio.org
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── github.com
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── go.opencensus.io
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── go.uber.org
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── golang.org
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">144&lt;/span> directories, &lt;span style="color:#ae81ff">54&lt;/span> files
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-1" />
+ &lt;label for="tabs-api-resources-1">1.4.6&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;/div>&lt;/div></description></item><item><title>Pilot</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</guid><description>&lt;h1 id="pilot">
+ Pilot
+ &lt;a class="anchor" href="#pilot">#&lt;/a>
+&lt;/h1>
+&lt;blockquote class="book-hint info">
+ 若无特别说明，本文是根据 &lt;a href="https://github.com/istio/istio/tree/1.6.5">Istio 1.6.5&lt;/a> 进行分析。
+&lt;/blockquote>
+
+&lt;h2 id="pilot-discovery">
+ pilot discovery
+ &lt;a class="anchor" href="#pilot-discovery">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="函数调用栈">
+ 函数调用栈
+ &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0%e8%b0%83%e7%94%a8%e6%a0%88">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L72">NewServer&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L190">initConfigController&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L88">makeKubeConfigController&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L397">(add schema) collections.Pilot.All()&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L402">NewClient&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L408">NewController&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L126">(add stores for CRD kinds) addInformer&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L138">newCacheHandler&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L216">informer := cache.NewSharedIndexInformer(&amp;hellip;)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L226">informer.AddEventHandler&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L233">queue.Push(onEvent)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L92">s.ConfigStores = append(s.ConfigStores, configController)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L134">aggregateConfigController, err := configaggregate.MakeCache(s.ConfigStores)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L138">s.configController = aggregateConfigController&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L144">addStartFunc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L193">initServiceControllers&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L65">NewServiceDiscovery&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L95">RegisterEventHandler&lt;/a>: 注册 serviceEntryKind 与 workloadEntryKind 的 handler&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L256">initDiscoveryService&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L468">initEventHandlers&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L762">定义 handler&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L772">s.EnvoyXdsServer.ConfigUpdate(pushReq)&lt;/a>: 真正做的事情，更新 envoy xds 配置&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L796">添加 handler&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L78">discoveryServer.Start(stop)&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L344">(&lt;code>crd controller&lt;/code>) Run&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L353">informer.Run(stop)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L348">cache.WaitForCacheSync(stop, c.HasSynced)&lt;/a>: 等待 Informer 完成一次本地缓存的数据同步操作&lt;/li>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L349">c.queue.Run(stop)&lt;/a>: 执行 &lt;code>queue.tasks&lt;/code>，即 &lt;code>cacheHandler.onEvent&lt;/code>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L303">执行 handlers&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Istio 熔断</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</guid><description>&lt;h1 id="istio-熔断">
+ Istio 熔断
+ &lt;a class="anchor" href="#istio-%e7%86%94%e6%96%ad">#&lt;/a>
+&lt;/h1></description></item><item><title>Istio 限流</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</guid><description>&lt;h1 id="istio-限流">
+ Istio 限流
+ &lt;a class="anchor" href="#istio-%e9%99%90%e6%b5%81">#&lt;/a>
+&lt;/h1></description></item></channel></rss>

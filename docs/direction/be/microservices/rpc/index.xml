@@ -1,25 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2.2.5.1 RPC on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/</link>
-    <description>Recent content in 2.2.5.1 RPC on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/direction/be/microservices/rpc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2.2.5.1.1 protobuf</title>
-      <link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/protobuf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid>
-      <description>&lt;h1 id=&#34;protobufhttpsgithubcomprotocolbuffersprotobuf-github-starshttpsimgshieldsiogithubstarsprotocolbuffersprotobufsvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/protocolbuffers/protobuf&#34;&gt;protobuf&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/protocolbuffers/protobuf.svg&#34; alt=&#34;Github stars&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#protobufhttpsgithubcomprotocolbuffersprotobuf-github-starshttpsimgshieldsiogithubstarsprotocolbuffersprotobufsvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>brpc</title>
-      <link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/brpc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/brpc/</guid>
-      <description>&lt;h1 id=&#34;brpchttpsgithubcomapacheincubator-brpc-github-starshttpsimgshieldsiogithubstarsapacheincubator-brpcsvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/apache/incubator-brpc&#34;&gt;brpc&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/apache/incubator-brpc.svg&#34; alt=&#34;Github stars&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#brpchttpsgithubcomapacheincubator-brpc-github-starshttpsimgshieldsiogithubstarsapacheincubator-brpcsvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.2.5.1 RPC on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/</link><description>Recent content in 2.2.5.1 RPC on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/microservices/rpc/index.xml" rel="self" type="application/rss+xml"/><item><title>2.2.5.1.1 protobuf</title><link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/protobuf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/protobuf/</guid><description>&lt;h1 id="protobufhttpsgithubcomprotocolbuffersprotobuf-github-starshttpsimgshieldsiogithubstarsprotocolbuffersprotobufsvg">
+ &lt;a href="https://github.com/protocolbuffers/protobuf">protobuf&lt;/a> &lt;img src="https://img.shields.io/github/stars/protocolbuffers/protobuf.svg" alt="Github stars" />
+ &lt;a class="anchor" href="#protobufhttpsgithubcomprotocolbuffersprotobuf-github-starshttpsimgshieldsiogithubstarsprotocolbuffersprotobufsvg">#&lt;/a>
+&lt;/h1></description></item><item><title>brpc</title><link>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/brpc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/microservices/rpc/brpc/</guid><description>&lt;h1 id="brpchttpsgithubcomapacheincubator-brpc-github-starshttpsimgshieldsiogithubstarsapacheincubator-brpcsvg">
+ &lt;a href="https://github.com/apache/incubator-brpc">brpc&lt;/a> &lt;img src="https://img.shields.io/github/stars/apache/incubator-brpc.svg" alt="Github stars" />
+ &lt;a class="anchor" href="#brpchttpsgithubcomapacheincubator-brpc-github-starshttpsimgshieldsiogithubstarsapacheincubator-brpcsvg">#&lt;/a>
+&lt;/h1></description></item></channel></rss>

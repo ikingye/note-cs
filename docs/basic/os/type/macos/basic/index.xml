@@ -1,18 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>第一部分 基础入门 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/</link>
-    <description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/basic/os/type/macos/basic/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>macOS 版本</title>
-      <link>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/version/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/version/</guid>
-      <description>&lt;h1 id=&#34;macos-版本&#34;&gt;&#xA;  macOS 版本&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-%e7%89%88%e6%9c%ac&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;参考：&lt;a href=&#34;https://www.wikiwand.com/zh-cn/MacOS&#34;&gt;macOS wikipedia&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macos-13-ventura&#34;&gt;&#xA;  macOS 13: Ventura&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-13-ventura&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2022 年&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;macos-12-monterey&#34;&gt;&#xA;  macOS 12: Monterey&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-12-monterey&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2021 年 10 月 25 日&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;macos-11-big-sur&#34;&gt;&#xA;  macOS 11: Big Sur&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-11-big-sur&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2020 年 11 月 12 日&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;macos-1015-catalina&#34;&gt;&#xA;  macOS 10.15: Catalina&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-1015-catalina&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2019 年 10 月 7 日&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;macos-1014-mojave&#34;&gt;&#xA;  macOS 10.14: Mojave&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-1014-mojave&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2018 年 9 月 25 日&lt;/p&gt;&#xA;&lt;h2 id=&#34;macos-1013-high-sierra&#34;&gt;&#xA;  macOS 10.13: High Sierra&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-1013-high-sierra&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2017 年 9 月 25 日&lt;/p&gt;&#xA;&lt;h2 id=&#34;macos-1012-sierra&#34;&gt;&#xA;  macOS 10.12: Sierra&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#macos-1012-sierra&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;2016 年 9 月 20 日&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/os/type/macos/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>macOS 版本</title><link>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/type/macos/basic/version/</guid><description>&lt;h1 id="macos-版本">
+ macOS 版本
+ &lt;a class="anchor" href="#macos-%e7%89%88%e6%9c%ac">#&lt;/a>
+&lt;/h1>
+&lt;p>参考：&lt;a href="https://www.wikiwand.com/zh-cn/MacOS">macOS wikipedia&lt;/a>&lt;/p>
+&lt;h2 id="macos-13-ventura">
+ macOS 13: Ventura
+ &lt;a class="anchor" href="#macos-13-ventura">#&lt;/a>
+&lt;/h2>
+&lt;p>2022 年&lt;/p>
+&lt;hr>
+&lt;h2 id="macos-12-monterey">
+ macOS 12: Monterey
+ &lt;a class="anchor" href="#macos-12-monterey">#&lt;/a>
+&lt;/h2>
+&lt;p>2021 年 10 月 25 日&lt;/p>
+&lt;hr>
+&lt;h2 id="macos-11-big-sur">
+ macOS 11: Big Sur
+ &lt;a class="anchor" href="#macos-11-big-sur">#&lt;/a>
+&lt;/h2>
+&lt;p>2020 年 11 月 12 日&lt;/p>
+&lt;hr>
+&lt;h2 id="macos-1015-catalina">
+ macOS 10.15: Catalina
+ &lt;a class="anchor" href="#macos-1015-catalina">#&lt;/a>
+&lt;/h2>
+&lt;p>2019 年 10 月 7 日&lt;/p>
+&lt;hr>
+&lt;h2 id="macos-1014-mojave">
+ macOS 10.14: Mojave
+ &lt;a class="anchor" href="#macos-1014-mojave">#&lt;/a>
+&lt;/h2>
+&lt;p>2018 年 9 月 25 日&lt;/p>
+&lt;h2 id="macos-1013-high-sierra">
+ macOS 10.13: High Sierra
+ &lt;a class="anchor" href="#macos-1013-high-sierra">#&lt;/a>
+&lt;/h2>
+&lt;p>2017 年 9 月 25 日&lt;/p>
+&lt;h2 id="macos-1012-sierra">
+ macOS 10.12: Sierra
+ &lt;a class="anchor" href="#macos-1012-sierra">#&lt;/a>
+&lt;/h2>
+&lt;p>2016 年 9 月 20 日&lt;/p></description></item></channel></rss>

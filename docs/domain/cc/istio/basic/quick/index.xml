@@ -1,32 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>1.1 快速上手 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/</link>
-    <description>Recent content in 1.1 快速上手 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>安装</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/install/</guid>
-      <description>&lt;h1 id=&#34;istio-安装&#34;&gt;&#xA;  Istio 安装&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;快速安装适合新人&#34;&gt;&#xA;  快速安装（适合新人）&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%bf%ab%e9%80%9f%e5%ae%89%e8%a3%85%e9%80%82%e5%90%88%e6%96%b0%e4%ba%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Download and install Istio&lt;/li&gt;&#xA;&lt;li&gt;Deploy the sample application&lt;/li&gt;&#xA;&lt;li&gt;Open the application to outside traffic&lt;/li&gt;&#xA;&lt;li&gt;View the dashboard&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;使用-istioctl-进行安装&#34;&gt;&#xA;  使用 Istioctl 进行安装&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%bd%bf%e7%94%a8-istioctl-%e8%bf%9b%e8%a1%8c%e5%ae%89%e8%a3%85&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;下载-istio-release&#34;&gt;&#xA;  下载 Istio release&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%8b%e8%bd%bd-istio-release&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;完成平台设置platform-specific-setup&#34;&gt;&#xA;  [完成平台设置](platform-specific setup)&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ae%8c%e6%88%90%e5%b9%b3%e5%8f%b0%e8%ae%be%e7%bd%aeplatform-specific-setup&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;check-the-requirements-for-pods-and-serviceshttpsistioiodocsopsdeploymentrequirements&#34;&gt;&#xA;  &lt;a href=&#34;https://istio.io/docs/ops/deployment/requirements/&#34;&gt;Check the Requirements for Pods and Services&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#check-the-requirements-for-pods-and-serviceshttpsistioiodocsopsdeploymentrequirements&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;install-istio-using-the-default-profile&#34;&gt;&#xA;  Install Istio using the default profile&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#install-istio-using-the-default-profile&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export INGRESS_HOST&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;kubectl get po -l istio&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ingressgateway -n istio-system -o jsonpath&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{.items[0].status.hostIP}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export INGRESS_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;kubectl -n istio-system get service istio-ingressgateway -o jsonpath&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{.spec.ports[?(@.name==&amp;#34;http2&amp;#34;)].nodePort}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export SECURE_INGRESS_PORT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;kubectl -n istio-system get service istio-ingressgateway -o jsonpath&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{.spec.ports[?(@.name==&amp;#34;https&amp;#34;)].nodePort}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export GATEWAY_URL&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$INGRESS_HOST:$INGRESS_PORT&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo http://$GATEWAY_URL/productpage&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>FAQ</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/faq/</guid>
-      <description>&lt;h1 id=&#34;faq&#34;&gt;&#xA;  FAQ&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#faq&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;istio-如何实现-sidecar-注入&#34;&gt;&#xA;  Istio 如何实现 Sidecar 注入？&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0-sidecar-%e6%b3%a8%e5%85%a5&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;istio-如何实现流量管理&#34;&gt;&#xA;  Istio 如何实现流量管理？&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e6%b5%81%e9%87%8f%e7%ae%a1%e7%90%86&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;如何拦截流量 intercept traffic&lt;/p&gt;&#xA;&lt;h2 id=&#34;istio-是在哪一层实现流量管理为什么要在那一层&#34;&gt;&#xA;  Istio 是在哪一层实现流量管理？为什么要在那一层？&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e6%98%af%e5%9c%a8%e5%93%aa%e4%b8%80%e5%b1%82%e5%ae%9e%e7%8e%b0%e6%b5%81%e9%87%8f%e7%ae%a1%e7%90%86%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e5%9c%a8%e9%82%a3%e4%b8%80%e5%b1%82&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Layer7 routing&lt;/p&gt;&#xA;&lt;h2 id=&#34;istio-如何实现-mtls-认证&#34;&gt;&#xA;  Istio 如何实现 mTLS 认证？&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#istio-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0-mtls-%e8%ae%a4%e8%af%81&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>Kiali</title>
-      <link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</guid>
-      <description>&lt;h1 id=&#34;kiali&#34;&gt;&#xA;  Kiali&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#kiali&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/kiali/kiali&#34;&gt;kiali/kiali&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/kiali/kiali.svg&#34; alt=&#34;Github stars&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;Kiali project, observability for the Istio service mesh&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1 快速上手 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/</link><description>Recent content in 1.1 快速上手 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/index.xml" rel="self" type="application/rss+xml"/><item><title>安装</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/install/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/install/</guid><description>&lt;h1 id="istio-安装">
+ Istio 安装
+ &lt;a class="anchor" href="#istio-%e5%ae%89%e8%a3%85">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="快速安装适合新人">
+ 快速安装（适合新人）
+ &lt;a class="anchor" href="#%e5%bf%ab%e9%80%9f%e5%ae%89%e8%a3%85%e9%80%82%e5%90%88%e6%96%b0%e4%ba%ba">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Download and install Istio&lt;/li>
+&lt;li>Deploy the sample application&lt;/li>
+&lt;li>Open the application to outside traffic&lt;/li>
+&lt;li>View the dashboard&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用-istioctl-进行安装">
+ 使用 Istioctl 进行安装
+ &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8-istioctl-%e8%bf%9b%e8%a1%8c%e5%ae%89%e8%a3%85">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="下载-istio-release">
+ 下载 Istio release
+ &lt;a class="anchor" href="#%e4%b8%8b%e8%bd%bd-istio-release">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="完成平台设置platform-specific-setup">
+ [完成平台设置](platform-specific setup)
+ &lt;a class="anchor" href="#%e5%ae%8c%e6%88%90%e5%b9%b3%e5%8f%b0%e8%ae%be%e7%bd%aeplatform-specific-setup">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="check-the-requirements-for-pods-and-serviceshttpsistioiodocsopsdeploymentrequirements">
+ &lt;a href="https://istio.io/docs/ops/deployment/requirements/">Check the Requirements for Pods and Services&lt;/a>
+ &lt;a class="anchor" href="#check-the-requirements-for-pods-and-serviceshttpsistioiodocsopsdeploymentrequirements">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="install-istio-using-the-default-profile">
+ Install Istio using the default profile
+ &lt;a class="anchor" href="#install-istio-using-the-default-profile">#&lt;/a>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>export INGRESS_HOST&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>kubectl get po -l istio&lt;span style="color:#f92672">=&lt;/span>ingressgateway -n istio-system -o jsonpath&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;{.items[0].status.hostIP}&amp;#39;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export INGRESS_PORT&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>kubectl -n istio-system get service istio-ingressgateway -o jsonpath&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;{.spec.ports[?(@.name==&amp;#34;http2&amp;#34;)].nodePort}&amp;#39;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export SECURE_INGRESS_PORT&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>kubectl -n istio-system get service istio-ingressgateway -o jsonpath&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;{.spec.ports[?(@.name==&amp;#34;https&amp;#34;)].nodePort}&amp;#39;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export GATEWAY_URL&lt;span style="color:#f92672">=&lt;/span>$INGRESS_HOST:$INGRESS_PORT
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo http://$GATEWAY_URL/productpage
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>FAQ</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/faq/</guid><description>&lt;h1 id="faq">
+ FAQ
+ &lt;a class="anchor" href="#faq">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="istio-如何实现-sidecar-注入">
+ Istio 如何实现 Sidecar 注入？
+ &lt;a class="anchor" href="#istio-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0-sidecar-%e6%b3%a8%e5%85%a5">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="istio-如何实现流量管理">
+ Istio 如何实现流量管理？
+ &lt;a class="anchor" href="#istio-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0%e6%b5%81%e9%87%8f%e7%ae%a1%e7%90%86">#&lt;/a>
+&lt;/h2>
+&lt;p>如何拦截流量 intercept traffic&lt;/p>
+&lt;h2 id="istio-是在哪一层实现流量管理为什么要在那一层">
+ Istio 是在哪一层实现流量管理？为什么要在那一层？
+ &lt;a class="anchor" href="#istio-%e6%98%af%e5%9c%a8%e5%93%aa%e4%b8%80%e5%b1%82%e5%ae%9e%e7%8e%b0%e6%b5%81%e9%87%8f%e7%ae%a1%e7%90%86%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e5%9c%a8%e9%82%a3%e4%b8%80%e5%b1%82">#&lt;/a>
+&lt;/h2>
+&lt;p>Layer7 routing&lt;/p>
+&lt;h2 id="istio-如何实现-mtls-认证">
+ Istio 如何实现 mTLS 认证？
+ &lt;a class="anchor" href="#istio-%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0-mtls-%e8%ae%a4%e8%af%81">#&lt;/a>
+&lt;/h2></description></item><item><title>Kiali</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/quick/kiali/</guid><description>&lt;h1 id="kiali">
+ Kiali
+ &lt;a class="anchor" href="#kiali">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/kiali/kiali">kiali/kiali&lt;/a> &lt;img src="https://img.shields.io/github/stars/kiali/kiali.svg" alt="Github stars" />&lt;/p>
+&lt;p>Kiali project, observability for the Istio service mesh&lt;/p></description></item></channel></rss>

@@ -1,46 +1,226 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>1.1 计算机组成原理 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/basic/cc/</link>
-    <description>Recent content in 1.1 计算机组成原理 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/basic/cc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CPU</title>
-      <link>https://kingye.me/note-cs/docs/basic/cc/cpu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/cc/cpu/</guid>
-      <description>&lt;h1 id=&#34;cpu&#34;&gt;&#xA;  CPU&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#cpu&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../../../../static/image/2022/20230511174835.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;参考：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://tieba.baidu.com/p/5005825360?see_lz=1&amp;amp;pn=2&#34;&gt;史上最全桌面级 CPU 天梯图&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>DMI</title>
-      <link>https://kingye.me/note-cs/docs/basic/cc/dmi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/cc/dmi/</guid>
-      <description>&lt;h1 id=&#34;dmihttpswwwwikiwandcomendirect_media_interface&#34;&gt;&#xA;  &lt;a href=&#34;https://www.wikiwand.com/en/Direct_Media_Interface&#34;&gt;DMI&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#dmihttpswwwwikiwandcomendirect_media_interface&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;DMI 1.0, introduced in &lt;code&gt;2004&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;DMI 2.0, introduced in &lt;code&gt;2011&lt;/code&gt;, doubles the data transfer rate to 2 GB/s with a ×4 link. It is used to link an Intel CPU with the Intel Platform Controller Hub (PCH), which supersedes the historic implementation of a separate northbridge and southbridge.: 14&lt;/li&gt;&#xA;&lt;li&gt;DMI 3.0, released in August &lt;code&gt;2015&lt;/code&gt;, allows the 8 GT/s transfer rate per lane, for a total of four lanes and 3.93 GB/s for the CPU–PCH link. It is used by two-chip variants of the Intel Skylake microprocessors, which are used in conjunction with Intel 100 Series chipsets; some low power (Skylake-U onwards) and ultra low power (Skylake-Y onwards) mobile Intel processors have the PCH integrated into the physical package as a separate die, referred to as OPI (On Package DMI interconnect Interface) and effectively following the system on a chip (SoC) design layout. On 9 March 2015, Intel announced the Broadwell-based Xeon D as its first enterprise platform to fully incorporate the PCH in an SoC configuration.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In 2021, with the release of 500 series chipsets, Intel increased the amount of DMI 3.0 lanes from four to eight, doubling the bandwidth.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;DMI 4.0, released on &lt;code&gt;2021-11-04&lt;/code&gt; with 600 series chipsets, doubles the bandwidth each lane provides and is two times faster when compared to DMI 3.0. The number of DMI 4.0 lanes depends on chipset model used.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>ROM</title>
-      <link>https://kingye.me/note-cs/docs/basic/cc/rom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/cc/rom/</guid>
-      <description>&lt;h1 id=&#34;rom-read-only-memory-只读存储器httpswwwwikiwandcomzh-cne594afe8ae80e8a898e686b6e9ab94&#34;&gt;&#xA;  ROM: Read-only memory, &lt;a href=&#34;https://www.wikiwand.com/zh-cn/%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94&#34;&gt;只读存储器&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rom-read-only-memory-%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8httpswwwwikiwandcomzh-cne594afe8ae80e8a898e686b6e9ab94&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;ROM 有 5 种类型：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;掩膜编程的只读存储器 MROM（Mask-programmedROM）&lt;/li&gt;&#xA;&lt;li&gt;可编程的只读存储器 PROM（Programmable ROM）&lt;/li&gt;&#xA;&lt;li&gt;可擦除可编程的只读存储器 &lt;code&gt;EPROM&lt;/code&gt;（Erasable Programmable ROM）&lt;/li&gt;&#xA;&lt;li&gt;可电擦除可编程的只读存储器 &lt;code&gt;EEPROM&lt;/code&gt;（Elecrically Erasable Programmable ROM）&lt;/li&gt;&#xA;&lt;li&gt;快擦除读写存储器（&lt;code&gt;Flash Memory&lt;/code&gt;）&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Memory Card 是一种使用 Flash Memory 技术的可移动存储卡&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;eprom-erasable-programmable-read-only-memory-可擦除可编程式只读存储器httpswwwwikiwandcomzh-cne58fafe693a6e999a4e58fafe8a68fe58a83e5bc8fe594afe8ae80e8a898e686b6e9ab94&#34;&gt;&#xA;  EPROM: &lt;code&gt;Erasable Programmable Read-Only Memory&lt;/code&gt; &lt;a href=&#34;https://www.wikiwand.com/zh-cn/%E5%8F%AF%E6%93%A6%E9%99%A4%E5%8F%AF%E8%A6%8F%E5%8A%83%E5%BC%8F%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94&#34;&gt;可擦除可编程式只读存储器&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#eprom-erasable-programmable-read-only-memory-%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%bc%8f%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8httpswwwwikiwandcomzh-cne58fafe693a6e999a4e58fafe8a68fe58a83e5bc8fe594afe8ae80e8a898e686b6e9ab94&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;eeprom-electrically-erasable-programmable-read-only-memory-电子式可擦除可编程只读存储器httpswwwwikiwandcomzh-cneeprom&#34;&gt;&#xA;  EEPROM: &lt;code&gt;Electrically-Erasable Programmable Read-Only Memory&lt;/code&gt; &lt;a href=&#34;https://www.wikiwand.com/zh-cn/EEPROM&#34;&gt;电子式可擦除可编程只读存储器&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#eeprom-electrically-erasable-programmable-read-only-memory-%e7%94%b5%e5%ad%90%e5%bc%8f%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8httpswwwwikiwandcomzh-cneeprom&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;flash-memory-闪存httpswwwwikiwandcomzh-cne5bfabe997aae5ad98e582a8e599a8&#34;&gt;&#xA;  &lt;code&gt;Flash memory&lt;/code&gt; &lt;a href=&#34;https://www.wikiwand.com/zh-cn/%E5%BF%AB%E9%97%AA%E5%AD%98%E5%82%A8%E5%99%A8&#34;&gt;闪存&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#flash-memory-%e9%97%aa%e5%ad%98httpswwwwikiwandcomzh-cne5bfabe997aae5ad98e582a8e599a8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;也叫&lt;code&gt;快闪内存&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;手机上的闪存通常分为&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wikiwand.com/zh-cn/EMMC&#34;&gt;eMMC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wikiwand.com/zh-cn/%E9%80%9A%E7%94%A8%E9%97%AA%E5%AD%98%E5%AD%98%E5%82%A8&#34;&gt;UFS&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Universal Flash Storage, 通用闪存存储&lt;/li&gt;&#xA;&lt;li&gt;UFS 卡被视作嵌入式多媒体记忆卡（embedded Multi Media Card，&lt;code&gt;eMMC&lt;/code&gt;）和 &lt;em&gt;SD 卡&lt;/em&gt;的取代者&lt;/li&gt;&#xA;&lt;li&gt;UFS 相较 eMMC 最大的不同是并行信号改为了更加先进的&lt;strong&gt;串行信号&lt;/strong&gt;，从而可以迅速提高频率；同时半双工改为&lt;strong&gt;全双工&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;UFS 基于小型电脑系统介面（&lt;code&gt;SCSI&lt;/code&gt;）结构模型（&lt;code&gt;SCSI Architectural Model&lt;/code&gt;）以及支援 SCSI 标记指令序列（&lt;code&gt;SCSI Tagged Command Queuing&lt;/code&gt;）&lt;/li&gt;&#xA;&lt;li&gt;2011-02 JEDEC 固态技术协会（JEDEC）研发了 UFS 1.0 标准，2013-09 发布 2.0，2016-04 发布 2.1，2018-01 发布 3.0，2020-01 发布 3.1，&lt;em&gt;2020-08 发布 2.2&lt;/em&gt;，2022-08 发布 4.0&lt;/li&gt;&#xA;&lt;li&gt;UFS Card: 2016-03 发布 1.0，2018-01 发布 1.1，2020-12 发布 3.0&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wikiwand.com/zh-cn/NVM_Express&#34;&gt;NVME&lt;/a&gt;（特用于苹果设备中的闪存）&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;NVM Express&lt;/code&gt;, 或称&lt;code&gt;非易失性内存主机控制器接口规范&lt;/code&gt; &lt;code&gt;Non-Volatile Memory Host Controller Interface Specification&lt;/code&gt;，缩写：NVMHCIS&lt;/li&gt;&#xA;&lt;li&gt;NVM: &lt;code&gt;Non-Volatile Memory&lt;/code&gt; 非挥发性内存&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;手机的闪存的内部构造与 &lt;em&gt;U 盘&lt;/em&gt;和 SSD 的差异不大，同样具备了 &lt;strong&gt;NAND（存储数据的 MLC/TLC 闪存颗粒）&lt;strong&gt;以及负责控制数据传输和闪存磨损平衡的&lt;/strong&gt;主控 IC&lt;/strong&gt;。只是因为手机内部空间有限，两者是终被封装到同一块芯片内。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;SSD: &lt;code&gt;Solid State Disk&lt;/code&gt; 或 &lt;code&gt;Solid State Drive&lt;/code&gt;，固态驱动器，是用固态电子存储芯片阵列制成的硬盘&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SSD 其实也是 Flash&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/39204230&#34;&gt;为什么现在市面上很少见到采用 eMMC 作为存储芯片的固态硬盘主控？&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;市面上的 SSD 主控早就实现了 NAND 颗粒的多通道读写，具体可以类比多通道内存。这样看来，将多块 eMMC 组成类似 RAID 而后再包装成 SSD，无论是性能上还是耐久度上均无任何优势&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Flash memory&lt;/code&gt; 在分类上属于 &lt;code&gt;EEPROM&lt;/code&gt; 的一种，但一般业界所讲的 EEPROM 指的是那种&lt;strong&gt;非快闪式&lt;/strong&gt;的普通 EEPROM，并不是指它&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;emmc-embedded-mmc&#34;&gt;&#xA;  eMMC: embedded MMC&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#emmc-embedded-mmc&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;MMC: &lt;a href=&#34;https://www.wikiwand.com/en/MultiMediaCard&#34;&gt;MultiMediaCard&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;MMC 是一个相当古老的外置存储卡标准了，当年同台竞技的还有 CF（&lt;code&gt;Compact Flash&lt;/code&gt;）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;The currently implemented eMMC architecture puts the MMC components (flash memory and controller) into a small &lt;a href=&#34;https://www.wikiwand.com/en/Ball_grid_array&#34;&gt;ball grid array&lt;/a&gt; (BGA) IC package for use in circuit boards as an embedded non-volatile memory system.&lt;/li&gt;&#xA;&lt;li&gt;eMMC 本质上只是一个面向嵌入式设备的 I/O interface 及其物理层实现的标准集&lt;/li&gt;&#xA;&lt;li&gt;eMMC 其实是 MMC 标准的近亲，多出来的一个 e 是嵌入式的首字母，因此这和 SD 卡家族不一样，面向的是要焊在电路板上的使用场景，eMMC 采用了 BGA 的封装标准&lt;/li&gt;&#xA;&lt;li&gt;一块 eMMC 的芯片里面至少要包括三个功能组件：Flash、Flash 控制器还有 MMC 的总线控制器&lt;/li&gt;&#xA;&lt;li&gt;eMMC 其实是从 Nand 进化而来&#xA;&lt;ul&gt;&#xA;&lt;li&gt;eMMC 是封装和引脚都是标准的，而 Nand 的接口和时序不标准&#xA;&lt;ul&gt;&#xA;&lt;li&gt;这个标准体现在至少三个方面：物理封装、硬件电平和脚位、软件时序&lt;/li&gt;&#xA;&lt;li&gt;所有的 eMMC 芯片，不管是哪家厂家的，不管是多大容量的，都可以直接替换使用&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;eMMC 的引脚比 Nand 也更少，体积也更小&lt;/li&gt;&#xA;&lt;li&gt;eMMC 基本都是 &lt;code&gt;MLC&lt;/code&gt; Nand，因为便宜啊&lt;/li&gt;&#xA;&lt;li&gt;eMMC 基本等于 &lt;code&gt;U 盘&lt;/code&gt;，都是简单的主控 + &lt;code&gt;Nand Flash&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;nor-flash&#34;&gt;&#xA;  NOR flash&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#nor-flash&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;nand-flash&#34;&gt;&#xA;  NAND flash&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#nand-flash&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Nand 内部的&lt;em&gt;存储单元&lt;/em&gt;有两大类：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>存储</title>
-      <link>https://kingye.me/note-cs/docs/basic/cc/storage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/cc/storage/</guid>
-      <description>&lt;h1 id=&#34;存储&#34;&gt;&#xA;  存储&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ad%98%e5%82%a8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;块存储&lt;/li&gt;&#xA;&lt;li&gt;文件存储&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HDFS (Hadoop)&lt;/li&gt;&#xA;&lt;li&gt;GPFS&lt;/li&gt;&#xA;&lt;li&gt;GFS (google)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;对象存储&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Swift&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;统一存储（支持块存储、对象存储和文件存储）&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ceph&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;参考：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/26914264&#34;&gt;OpenStack 中的 Swift 是对象存储？&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;分布式文件存储&#34;&gt;&#xA;  分布式文件存储&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%88%86%e5%b8%83%e5%bc%8f%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;glusterglusterfshttpsgithubcomglusterglusterfs-github-starshttpsimgshieldsiogithubstarsglusterglusterfssvg-github-forkshttpsimgshieldsiogithubforksglusterglusterfssvg-languagehttpsimgshieldsiogithublanguagestopglusterglusterfssvg-last-taghttpsimgshieldsiogithubvtagglusterglusterfssvgsortsemver-last-commithttpsimgshieldsiogithublast-commitglusterglusterfssvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/gluster/glusterfs&#34;&gt;gluster/glusterfs&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/gluster/glusterfs.svg&#34; alt=&#34;Github stars&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/forks/gluster/glusterfs.svg&#34; alt=&#34;Github forks&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/gluster/glusterfs.svg&#34; alt=&#34;Language&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/gluster/glusterfs.svg?sort=semver&#34; alt=&#34;Last Tag&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/gluster/glusterfs.svg&#34; alt=&#34;Last commit&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#glusterglusterfshttpsgithubcomglusterglusterfs-github-starshttpsimgshieldsiogithubstarsglusterglusterfssvg-github-forkshttpsimgshieldsiogithubforksglusterglusterfssvg-languagehttpsimgshieldsiogithublanguagestopglusterglusterfssvg-last-taghttpsimgshieldsiogithubvtagglusterglusterfssvgsortsemver-last-commithttpsimgshieldsiogithublast-commitglusterglusterfssvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;cephcephhttpsgithubcomcephceph-github-starshttpsimgshieldsiogithubstarscephcephsvg-github-forkshttpsimgshieldsiogithubforkscephcephsvg-languagehttpsimgshieldsiogithublanguagestopcephcephsvg-last-taghttpsimgshieldsiogithubvtagcephcephsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitcephcephsvg&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/ceph/ceph&#34;&gt;ceph/ceph&lt;/a&gt; &lt;img src=&#34;https://img.shields.io/github/stars/ceph/ceph.svg&#34; alt=&#34;Github stars&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/forks/ceph/ceph.svg&#34; alt=&#34;Github forks&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/languages/top/ceph/ceph.svg&#34; alt=&#34;Language&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/v/tag/ceph/ceph.svg?sort=semver&#34; alt=&#34;Last Tag&#34; /&gt; &lt;img src=&#34;https://img.shields.io/github/last-commit/ceph/ceph.svg&#34; alt=&#34;Last commit&#34; /&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#cephcephhttpsgithubcomcephceph-github-starshttpsimgshieldsiogithubstarscephcephsvg-github-forkshttpsimgshieldsiogithubforkscephcephsvg-languagehttpsimgshieldsiogithublanguagestopcephcephsvg-last-taghttpsimgshieldsiogithubvtagcephcephsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitcephcephsvg&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Ceph is a distributed object, block, and file storage platform&lt;/p&gt;&#xA;&lt;p&gt;参考：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/kevingrace/p/8387999.html&#34;&gt;Ceph 分布式存储工作原理 及 部署介绍&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;块存储-vs-文件存储-vs-对象存储&#34;&gt;&#xA;  块存储 vs 文件存储 vs 对象存储&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%9d%97%e5%ad%98%e5%82%a8-vs-%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8-vs-%e5%af%b9%e8%b1%a1%e5%ad%98%e5%82%a8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;文件存储&lt;/code&gt;的用户是自然人&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;块存储&lt;/code&gt;的用户是可以读写&lt;strong&gt;块设备&lt;/strong&gt;的软件系统，例如传统的文件系统、数据库&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;对象存储&lt;/code&gt;的用户则是其它计算机软件&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;总体区别：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>存储卡</title>
-      <link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/basic/cc/memory-card/</guid>
-      <description>&lt;h1 id=&#34;存储卡&#34;&gt;&#xA;  存储卡&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ad%98%e5%82%a8%e5%8d%a1&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;memory card &lt;a href=&#34;https://www.wikiwand.com/zh-cn/%E8%A8%98%E6%86%B6%E5%8D%A1&#34;&gt;存储卡&lt;/a&gt;，快闪存储卡、闪卡&lt;/p&gt;&#xA;&lt;p&gt;Memory Card 是一种使用 Flash Memory 技术的可移动存储卡&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.wikiwand.com/zh-cn/MiniSD%E5%8D%A1&#34;&gt;miniSD&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;首次于 &lt;em&gt;2003&lt;/em&gt; 年的 CeBIT 展览中由 SanDisk 公布&lt;/li&gt;&#xA;&lt;li&gt;MiniSD 卡由 SD 卡发展派生而来&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;记忆棒，Memory Stick，由日本索尼公司最先研发出来的移动存储媒体&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;XD 卡，全称为 XD Picture Card，XD 取自于“Extreme Digital”&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;XD 卡是由日本奥林巴斯株式会社和富士有限公司联合推出&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;微硬盘（Microdrive）&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;由 IBM 公司开发的一款超级迷你硬盘机产品&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;华为 NM 存储卡（Nano Memory Card，简称 NM 卡）&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是华为自创的一种超微型存储卡，与 &lt;code&gt;MicroSD&lt;/code&gt; 存储卡相比，体积减小 45%，和 &lt;code&gt;Nano SIM&lt;/code&gt; 卡的规格几乎完全相同。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;CF 卡（&lt;code&gt;Compact Flash&lt;/code&gt;）&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;1994&lt;/em&gt; 年首次由 SanDisk 公司生产并制定了相关规范&lt;/li&gt;&#xA;&lt;li&gt;对于现在的消费电子产品而言，CF 卡&lt;em&gt;体积&lt;/em&gt;是个很大的问题&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;SM 卡，Smart Media&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;由东芝公司在 &lt;em&gt;1995-11&lt;/em&gt; 发布的 Flash Memory 存储卡&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;MMC 卡，MultiMedia Card&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1 计算机组成原理 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/cc/</link><description>Recent content in 1.1 计算机组成原理 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/cc/index.xml" rel="self" type="application/rss+xml"/><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/cc/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/cpu/</guid><description>&lt;h1 id="cpu">
+ CPU
+ &lt;a class="anchor" href="#cpu">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;img src="../../../../../static/image/2022/20230511174835.png" alt="" />&lt;/p>
+&lt;p>参考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://tieba.baidu.com/p/5005825360?see_lz=1&amp;amp;pn=2">史上最全桌面级 CPU 天梯图&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>DMI</title><link>https://kingye.me/note-cs/docs/basic/cc/dmi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/dmi/</guid><description>&lt;h1 id="dmihttpswwwwikiwandcomendirect_media_interface">
+ &lt;a href="https://www.wikiwand.com/en/Direct_Media_Interface">DMI&lt;/a>
+ &lt;a class="anchor" href="#dmihttpswwwwikiwandcomendirect_media_interface">#&lt;/a>
+&lt;/h1>
+&lt;p>直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。&lt;/p>
+&lt;ul>
+&lt;li>DMI 1.0, introduced in &lt;code>2004&lt;/code>.&lt;/li>
+&lt;li>DMI 2.0, introduced in &lt;code>2011&lt;/code>, doubles the data transfer rate to 2 GB/s with a ×4 link. It is used to link an Intel CPU with the Intel Platform Controller Hub (PCH), which supersedes the historic implementation of a separate northbridge and southbridge.: 14&lt;/li>
+&lt;li>DMI 3.0, released in August &lt;code>2015&lt;/code>, allows the 8 GT/s transfer rate per lane, for a total of four lanes and 3.93 GB/s for the CPU–PCH link. It is used by two-chip variants of the Intel Skylake microprocessors, which are used in conjunction with Intel 100 Series chipsets; some low power (Skylake-U onwards) and ultra low power (Skylake-Y onwards) mobile Intel processors have the PCH integrated into the physical package as a separate die, referred to as OPI (On Package DMI interconnect Interface) and effectively following the system on a chip (SoC) design layout. On 9 March 2015, Intel announced the Broadwell-based Xeon D as its first enterprise platform to fully incorporate the PCH in an SoC configuration.
+&lt;ul>
+&lt;li>In 2021, with the release of 500 series chipsets, Intel increased the amount of DMI 3.0 lanes from four to eight, doubling the bandwidth.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DMI 4.0, released on &lt;code>2021-11-04&lt;/code> with 600 series chipsets, doubles the bandwidth each lane provides and is two times faster when compared to DMI 3.0. The number of DMI 4.0 lanes depends on chipset model used.&lt;/li>
+&lt;/ul></description></item><item><title>ROM</title><link>https://kingye.me/note-cs/docs/basic/cc/rom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/rom/</guid><description>&lt;h1 id="rom-read-only-memory-只读存储器httpswwwwikiwandcomzh-cne594afe8ae80e8a898e686b6e9ab94">
+ ROM: Read-only memory, &lt;a href="https://www.wikiwand.com/zh-cn/%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94">只读存储器&lt;/a>
+ &lt;a class="anchor" href="#rom-read-only-memory-%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8httpswwwwikiwandcomzh-cne594afe8ae80e8a898e686b6e9ab94">#&lt;/a>
+&lt;/h1>
+&lt;p>ROM 有 5 种类型：&lt;/p>
+&lt;ul>
+&lt;li>掩膜编程的只读存储器 MROM（Mask-programmedROM）&lt;/li>
+&lt;li>可编程的只读存储器 PROM（Programmable ROM）&lt;/li>
+&lt;li>可擦除可编程的只读存储器 &lt;code>EPROM&lt;/code>（Erasable Programmable ROM）&lt;/li>
+&lt;li>可电擦除可编程的只读存储器 &lt;code>EEPROM&lt;/code>（Elecrically Erasable Programmable ROM）&lt;/li>
+&lt;li>快擦除读写存储器（&lt;code>Flash Memory&lt;/code>）
+&lt;ul>
+&lt;li>Memory Card 是一种使用 Flash Memory 技术的可移动存储卡&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="eprom-erasable-programmable-read-only-memory-可擦除可编程式只读存储器httpswwwwikiwandcomzh-cne58fafe693a6e999a4e58fafe8a68fe58a83e5bc8fe594afe8ae80e8a898e686b6e9ab94">
+ EPROM: &lt;code>Erasable Programmable Read-Only Memory&lt;/code> &lt;a href="https://www.wikiwand.com/zh-cn/%E5%8F%AF%E6%93%A6%E9%99%A4%E5%8F%AF%E8%A6%8F%E5%8A%83%E5%BC%8F%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94">可擦除可编程式只读存储器&lt;/a>
+ &lt;a class="anchor" href="#eprom-erasable-programmable-read-only-memory-%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%bc%8f%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8httpswwwwikiwandcomzh-cne58fafe693a6e999a4e58fafe8a68fe58a83e5bc8fe594afe8ae80e8a898e686b6e9ab94">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="eeprom-electrically-erasable-programmable-read-only-memory-电子式可擦除可编程只读存储器httpswwwwikiwandcomzh-cneeprom">
+ EEPROM: &lt;code>Electrically-Erasable Programmable Read-Only Memory&lt;/code> &lt;a href="https://www.wikiwand.com/zh-cn/EEPROM">电子式可擦除可编程只读存储器&lt;/a>
+ &lt;a class="anchor" href="#eeprom-electrically-erasable-programmable-read-only-memory-%e7%94%b5%e5%ad%90%e5%bc%8f%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8httpswwwwikiwandcomzh-cneeprom">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="flash-memory-闪存httpswwwwikiwandcomzh-cne5bfabe997aae5ad98e582a8e599a8">
+ &lt;code>Flash memory&lt;/code> &lt;a href="https://www.wikiwand.com/zh-cn/%E5%BF%AB%E9%97%AA%E5%AD%98%E5%82%A8%E5%99%A8">闪存&lt;/a>
+ &lt;a class="anchor" href="#flash-memory-%e9%97%aa%e5%ad%98httpswwwwikiwandcomzh-cne5bfabe997aae5ad98e582a8e599a8">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>也叫&lt;code>快闪内存&lt;/code>&lt;/li>
+&lt;li>手机上的闪存通常分为
+&lt;ul>
+&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/EMMC">eMMC&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/%E9%80%9A%E7%94%A8%E9%97%AA%E5%AD%98%E5%AD%98%E5%82%A8">UFS&lt;/a>
+&lt;ul>
+&lt;li>Universal Flash Storage, 通用闪存存储&lt;/li>
+&lt;li>UFS 卡被视作嵌入式多媒体记忆卡（embedded Multi Media Card，&lt;code>eMMC&lt;/code>）和 &lt;em>SD 卡&lt;/em>的取代者&lt;/li>
+&lt;li>UFS 相较 eMMC 最大的不同是并行信号改为了更加先进的&lt;strong>串行信号&lt;/strong>，从而可以迅速提高频率；同时半双工改为&lt;strong>全双工&lt;/strong>&lt;/li>
+&lt;li>UFS 基于小型电脑系统介面（&lt;code>SCSI&lt;/code>）结构模型（&lt;code>SCSI Architectural Model&lt;/code>）以及支援 SCSI 标记指令序列（&lt;code>SCSI Tagged Command Queuing&lt;/code>）&lt;/li>
+&lt;li>2011-02 JEDEC 固态技术协会（JEDEC）研发了 UFS 1.0 标准，2013-09 发布 2.0，2016-04 发布 2.1，2018-01 发布 3.0，2020-01 发布 3.1，&lt;em>2020-08 发布 2.2&lt;/em>，2022-08 发布 4.0&lt;/li>
+&lt;li>UFS Card: 2016-03 发布 1.0，2018-01 发布 1.1，2020-12 发布 3.0&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/NVM_Express">NVME&lt;/a>（特用于苹果设备中的闪存）
+&lt;ul>
+&lt;li>&lt;code>NVM Express&lt;/code>, 或称&lt;code>非易失性内存主机控制器接口规范&lt;/code> &lt;code>Non-Volatile Memory Host Controller Interface Specification&lt;/code>，缩写：NVMHCIS&lt;/li>
+&lt;li>NVM: &lt;code>Non-Volatile Memory&lt;/code> 非挥发性内存&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>手机的闪存的内部构造与 &lt;em>U 盘&lt;/em>和 SSD 的差异不大，同样具备了 &lt;strong>NAND（存储数据的 MLC/TLC 闪存颗粒）&lt;strong>以及负责控制数据传输和闪存磨损平衡的&lt;/strong>主控 IC&lt;/strong>。只是因为手机内部空间有限，两者是终被封装到同一块芯片内。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SSD: &lt;code>Solid State Disk&lt;/code> 或 &lt;code>Solid State Drive&lt;/code>，固态驱动器，是用固态电子存储芯片阵列制成的硬盘
+&lt;ul>
+&lt;li>SSD 其实也是 Flash&lt;/li>
+&lt;li>&lt;a href="https://www.zhihu.com/question/39204230">为什么现在市面上很少见到采用 eMMC 作为存储芯片的固态硬盘主控？&lt;/a>
+&lt;ul>
+&lt;li>市面上的 SSD 主控早就实现了 NAND 颗粒的多通道读写，具体可以类比多通道内存。这样看来，将多块 eMMC 组成类似 RAID 而后再包装成 SSD，无论是性能上还是耐久度上均无任何优势&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>Flash memory&lt;/code> 在分类上属于 &lt;code>EEPROM&lt;/code> 的一种，但一般业界所讲的 EEPROM 指的是那种&lt;strong>非快闪式&lt;/strong>的普通 EEPROM，并不是指它&lt;/li>
+&lt;/ul>
+&lt;h3 id="emmc-embedded-mmc">
+ eMMC: embedded MMC
+ &lt;a class="anchor" href="#emmc-embedded-mmc">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>MMC: &lt;a href="https://www.wikiwand.com/en/MultiMediaCard">MultiMediaCard&lt;/a>
+&lt;ul>
+&lt;li>MMC 是一个相当古老的外置存储卡标准了，当年同台竞技的还有 CF（&lt;code>Compact Flash&lt;/code>）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The currently implemented eMMC architecture puts the MMC components (flash memory and controller) into a small &lt;a href="https://www.wikiwand.com/en/Ball_grid_array">ball grid array&lt;/a> (BGA) IC package for use in circuit boards as an embedded non-volatile memory system.&lt;/li>
+&lt;li>eMMC 本质上只是一个面向嵌入式设备的 I/O interface 及其物理层实现的标准集&lt;/li>
+&lt;li>eMMC 其实是 MMC 标准的近亲，多出来的一个 e 是嵌入式的首字母，因此这和 SD 卡家族不一样，面向的是要焊在电路板上的使用场景，eMMC 采用了 BGA 的封装标准&lt;/li>
+&lt;li>一块 eMMC 的芯片里面至少要包括三个功能组件：Flash、Flash 控制器还有 MMC 的总线控制器&lt;/li>
+&lt;li>eMMC 其实是从 Nand 进化而来
+&lt;ul>
+&lt;li>eMMC 是封装和引脚都是标准的，而 Nand 的接口和时序不标准
+&lt;ul>
+&lt;li>这个标准体现在至少三个方面：物理封装、硬件电平和脚位、软件时序&lt;/li>
+&lt;li>所有的 eMMC 芯片，不管是哪家厂家的，不管是多大容量的，都可以直接替换使用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>eMMC 的引脚比 Nand 也更少，体积也更小&lt;/li>
+&lt;li>eMMC 基本都是 &lt;code>MLC&lt;/code> Nand，因为便宜啊&lt;/li>
+&lt;li>eMMC 基本等于 &lt;code>U 盘&lt;/code>，都是简单的主控 + &lt;code>Nand Flash&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="nor-flash">
+ NOR flash
+ &lt;a class="anchor" href="#nor-flash">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="nand-flash">
+ NAND flash
+ &lt;a class="anchor" href="#nand-flash">#&lt;/a>
+&lt;/h3>
+&lt;p>Nand 内部的&lt;em>存储单元&lt;/em>有两大类：&lt;/p></description></item><item><title>存储</title><link>https://kingye.me/note-cs/docs/basic/cc/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/storage/</guid><description>&lt;h1 id="存储">
+ 存储
+ &lt;a class="anchor" href="#%e5%ad%98%e5%82%a8">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>块存储&lt;/li>
+&lt;li>文件存储
+&lt;ul>
+&lt;li>HDFS (Hadoop)&lt;/li>
+&lt;li>GPFS&lt;/li>
+&lt;li>GFS (google)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>对象存储
+&lt;ul>
+&lt;li>Swift&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>统一存储（支持块存储、对象存储和文件存储）
+&lt;ul>
+&lt;li>Ceph&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>参考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.zhihu.com/question/26914264">OpenStack 中的 Swift 是对象存储？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="分布式文件存储">
+ 分布式文件存储
+ &lt;a class="anchor" href="#%e5%88%86%e5%b8%83%e5%bc%8f%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="glusterglusterfshttpsgithubcomglusterglusterfs-github-starshttpsimgshieldsiogithubstarsglusterglusterfssvg-github-forkshttpsimgshieldsiogithubforksglusterglusterfssvg-languagehttpsimgshieldsiogithublanguagestopglusterglusterfssvg-last-taghttpsimgshieldsiogithubvtagglusterglusterfssvgsortsemver-last-commithttpsimgshieldsiogithublast-commitglusterglusterfssvg">
+ &lt;a href="https://github.com/gluster/glusterfs">gluster/glusterfs&lt;/a> &lt;img src="https://img.shields.io/github/stars/gluster/glusterfs.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/gluster/glusterfs.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/gluster/glusterfs.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/gluster/glusterfs.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/gluster/glusterfs.svg" alt="Last commit" />
+ &lt;a class="anchor" href="#glusterglusterfshttpsgithubcomglusterglusterfs-github-starshttpsimgshieldsiogithubstarsglusterglusterfssvg-github-forkshttpsimgshieldsiogithubforksglusterglusterfssvg-languagehttpsimgshieldsiogithublanguagestopglusterglusterfssvg-last-taghttpsimgshieldsiogithubvtagglusterglusterfssvgsortsemver-last-commithttpsimgshieldsiogithublast-commitglusterglusterfssvg">#&lt;/a>
+&lt;/h3>
+&lt;h3 id="cephcephhttpsgithubcomcephceph-github-starshttpsimgshieldsiogithubstarscephcephsvg-github-forkshttpsimgshieldsiogithubforkscephcephsvg-languagehttpsimgshieldsiogithublanguagestopcephcephsvg-last-taghttpsimgshieldsiogithubvtagcephcephsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitcephcephsvg">
+ &lt;a href="https://github.com/ceph/ceph">ceph/ceph&lt;/a> &lt;img src="https://img.shields.io/github/stars/ceph/ceph.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/ceph/ceph.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/ceph/ceph.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/ceph/ceph.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/ceph/ceph.svg" alt="Last commit" />
+ &lt;a class="anchor" href="#cephcephhttpsgithubcomcephceph-github-starshttpsimgshieldsiogithubstarscephcephsvg-github-forkshttpsimgshieldsiogithubforkscephcephsvg-languagehttpsimgshieldsiogithublanguagestopcephcephsvg-last-taghttpsimgshieldsiogithubvtagcephcephsvgsortsemver-last-commithttpsimgshieldsiogithublast-commitcephcephsvg">#&lt;/a>
+&lt;/h3>
+&lt;p>Ceph is a distributed object, block, and file storage platform&lt;/p>
+&lt;p>参考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.cnblogs.com/kevingrace/p/8387999.html">Ceph 分布式存储工作原理 及 部署介绍&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="块存储-vs-文件存储-vs-对象存储">
+ 块存储 vs 文件存储 vs 对象存储
+ &lt;a class="anchor" href="#%e5%9d%97%e5%ad%98%e5%82%a8-vs-%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8-vs-%e5%af%b9%e8%b1%a1%e5%ad%98%e5%82%a8">#&lt;/a>
+&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>文件存储&lt;/code>的用户是自然人&lt;/li>
+&lt;li>&lt;code>块存储&lt;/code>的用户是可以读写&lt;strong>块设备&lt;/strong>的软件系统，例如传统的文件系统、数据库&lt;/li>
+&lt;li>&lt;code>对象存储&lt;/code>的用户则是其它计算机软件&lt;/li>
+&lt;/ul>
+&lt;p>总体区别：&lt;/p></description></item><item><title>存储卡</title><link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/memory-card/</guid><description>&lt;h1 id="存储卡">
+ 存储卡
+ &lt;a class="anchor" href="#%e5%ad%98%e5%82%a8%e5%8d%a1">#&lt;/a>
+&lt;/h1>
+&lt;p>memory card &lt;a href="https://www.wikiwand.com/zh-cn/%E8%A8%98%E6%86%B6%E5%8D%A1">存储卡&lt;/a>，快闪存储卡、闪卡&lt;/p>
+&lt;p>Memory Card 是一种使用 Flash Memory 技术的可移动存储卡&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://www.wikiwand.com/zh-cn/MiniSD%E5%8D%A1">miniSD&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>首次于 &lt;em>2003&lt;/em> 年的 CeBIT 展览中由 SanDisk 公布&lt;/li>
+&lt;li>MiniSD 卡由 SD 卡发展派生而来&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>记忆棒，Memory Stick，由日本索尼公司最先研发出来的移动存储媒体&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>XD 卡，全称为 XD Picture Card，XD 取自于“Extreme Digital”&lt;/p>
+&lt;ul>
+&lt;li>XD 卡是由日本奥林巴斯株式会社和富士有限公司联合推出&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>微硬盘（Microdrive）&lt;/p>
+&lt;ul>
+&lt;li>由 IBM 公司开发的一款超级迷你硬盘机产品&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>华为 NM 存储卡（Nano Memory Card，简称 NM 卡）&lt;/p>
+&lt;ul>
+&lt;li>是华为自创的一种超微型存储卡，与 &lt;code>MicroSD&lt;/code> 存储卡相比，体积减小 45%，和 &lt;code>Nano SIM&lt;/code> 卡的规格几乎完全相同。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>CF 卡（&lt;code>Compact Flash&lt;/code>）&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>1994&lt;/em> 年首次由 SanDisk 公司生产并制定了相关规范&lt;/li>
+&lt;li>对于现在的消费电子产品而言，CF 卡&lt;em>体积&lt;/em>是个很大的问题&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>SM 卡，Smart Media&lt;/p>
+&lt;ul>
+&lt;li>由东芝公司在 &lt;em>1995-11&lt;/em> 发布的 Flash Memory 存储卡&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>MMC 卡，MultiMedia Card&lt;/p></description></item></channel></rss>

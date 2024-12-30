@@ -1,32 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>原则 on 计算机学习笔记</title>
-    <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/</link>
-    <description>Recent content in 原则 on 计算机学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/principle/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CAP</title>
-      <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</guid>
-      <description>&lt;h1 id=&#34;caphttpswwwwikiwandcomencap_theorem&#34;&gt;&#xA;  &lt;a href=&#34;https://www.wikiwand.com/en/CAP_theorem&#34;&gt;CAP&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#caphttpswwwwikiwandcomencap_theorem&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;p-是前提&#34;&gt;&#xA;  P 是前提&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#p-%e6%98%af%e5%89%8d%e6%8f%90&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个 &lt;a href=&#34;https://www.wikiwand.com/en/Distributed_data_store&#34;&gt;distributed data store&lt;/a&gt; 来说，不可能同时满足以下三点：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;一致性（&lt;a href=&#34;https://www.wikiwand.com/en/Consistency_%28database_systems%29&#34;&gt;Consistency&lt;/a&gt;）&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每次读取要么获得最近写入的数据，要么获得一个错误。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;可用性（&lt;a href=&#34;https://www.wikiwand.com/en/Availability&#34;&gt;Availability&lt;/a&gt;）&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每次请求都能获得一个&lt;strong&gt;非错误&lt;/strong&gt;响应，但不保证返回的是最新写入的数据。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.wikiwand.com/en/Network_partition&#34;&gt;分区&lt;/a&gt;容错性（&lt;a href=&#34;https://www.wikiwand.com/en/Network_partitioning&#34;&gt;Partition tolerance&lt;/a&gt;）&#xA;&lt;ul&gt;&#xA;&lt;li&gt;以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。&lt;/li&gt;&#xA;&lt;li&gt;尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。&lt;/li&gt;&#xA;&lt;li&gt;分区指&lt;strong&gt;网络分区&lt;/strong&gt;，通信的两台服务器之间网络断开，就发生了网络分区&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;一般选-ap&#34;&gt;&#xA;  一般选 AP&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%b8%80%e8%88%ac%e9%80%89-ap&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。&lt;/p&gt;&#xA;&lt;p&gt;比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;如果 A 不写，保持一致性，那么我们就失去了 A 的服务，&lt;/li&gt;&#xA;&lt;li&gt;但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这里的一致性（&lt;a href=&#34;https://www.wikiwand.com/en/Consistency_%28database_systems%29&#34;&gt;Consistency&lt;/a&gt;）是&lt;strong&gt;强一致性&lt;/strong&gt;，意思是 AB 的数据时刻都是同步的，&#xA;如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。&#xA;如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。&lt;/p&gt;&#xA;&lt;h2 id=&#34;现实中的-cap&#34;&gt;&#xA;  现实中的 CAP&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%8e%b0%e5%ae%9e%e4%b8%ad%e7%9a%84-cap&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;CAP 对实际工作缺乏指导性。&lt;/p&gt;&#xA;&lt;p&gt;实际系统主要有三种：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;强调 availability 的 eventual consistency 系统，&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如 Amazon Dynamo 及他们的复制品；&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;强调一致性的系统，&#xA;&lt;ul&gt;&#xA;&lt;li&gt;典型的是基于 Paxos 的系统；&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;强调性能不顾其他的系统，&#xA;&lt;ul&gt;&#xA;&lt;li&gt;典型的是 Async replication 的主从备份系统。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;参考&#34;&gt;&#xA;  参考&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%8f%82%e8%80%83&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/64778723&#34;&gt;CAP 理论常被解释为一种 “三选二” 定律，这是否是一种误解？&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/363054486&#34;&gt;分布式事务中的最终一致具体应该如何实现？&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.zhihu.com/question/56571269&#34;&gt;分布式系统中的数据一致性和性能怎么权衡？&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>ACID</title>
-      <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</guid>
-      <description>&lt;h1 id=&#34;acidhttpswwwwikiwandcomenacid&#34;&gt;&#xA;  &lt;a href=&#34;https://www.wikiwand.com/en/ACID&#34;&gt;ACID&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#acidhttpswwwwikiwandcomenacid&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://www.wikiwand.com/en/Computer_science&#34;&gt;computer science&lt;/a&gt;, ACID (&lt;a href=&#34;https://www.wikiwand.com/en/Atomicity_%28database_systems%29&#34;&gt;atomicity&lt;/a&gt;, &lt;a href=&#34;https://www.wikiwand.com/en/Consistency_%28database_systems%29&#34; title=&#34;Consistency (database systems)&#34;&gt;consistency&lt;/a&gt;, &lt;a href=&#34;https://www.wikiwand.com/en/Isolation_%28database_systems%29&#34; title=&#34;Isolation (database systems)&#34;&gt;isolation&lt;/a&gt;, &lt;a href=&#34;https://www.wikiwand.com/en/Durability_%28database_systems%29&#34;&gt;durability&lt;/a&gt;) is a set of properties of &lt;a href=&#34;https://www.wikiwand.com/en/Database_transaction&#34;&gt;database transactions&lt;/a&gt; intended to guarantee validity even in the event of errors, power failures, etc. In the context of &lt;a href=&#34;https://www.wikiwand.com/en/Database&#34;&gt;databases&lt;/a&gt;, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;code&gt;ACID&lt;/code&gt; 是追求 &lt;code&gt;CAP&lt;/code&gt; (&lt;code&gt;Consistency&lt;/code&gt;, &lt;code&gt;Availability&lt;/code&gt;, &lt;code&gt;Partition tolerance&lt;/code&gt;) 的&lt;code&gt;一致性&lt;/code&gt; (&lt;code&gt;C&lt;/code&gt;)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>BASE</title>
-      <link>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</guid>
-      <description>&lt;h1 id=&#34;base&#34;&gt;&#xA;  BASE&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#base&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Basically Available, Soft state, &lt;a href=&#34;https://www.wikiwand.com/en/Eventual_consistency&#34;&gt;Eventual consistency&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。&lt;/p&gt;&#xA;&lt;h2 id=&#34;基本可用&#34;&gt;&#xA;  基本可用&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%9f%ba%e6%9c%ac%e5%8f%af%e7%94%a8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;流量削峰&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;延迟响应&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;体验降级&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;过载保护&#xA;&lt;ul&gt;&#xA;&lt;li&gt;把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;最终的一致&#34;&gt;&#xA;  最终的一致&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%9c%80%e7%bb%88%e7%9a%84%e4%b8%80%e8%87%b4&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;读时修复：在读取数据时，检测数据的不一致，进行修复。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如 &lt;code&gt;Cassandra&lt;/code&gt; 的 Read Repair 实现，具体来说，在向 &lt;code&gt;Cassandra&lt;/code&gt; 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;写时修复：在写入数据，检测数据的不一致时，进行修复。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;比如 &lt;code&gt;Cassandra&lt;/code&gt; 的 Hinted Handoff 实现。具体来说，&lt;code&gt;Cassandra&lt;/code&gt; 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。&lt;/li&gt;&#xA;&lt;li&gt;写时修复&lt;em&gt;不需要做数据一致性对比&lt;/em&gt;，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;异步修复：这个是&lt;strong&gt;最常用&lt;/strong&gt;的方式，通过定时对账检测副本数据的一致性，并修复。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>原则 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/</link><description>Recent content in 原则 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/principle/index.xml" rel="self" type="application/rss+xml"/><item><title>CAP</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</guid><description>&lt;h1 id="caphttpswwwwikiwandcomencap_theorem">
+ &lt;a href="https://www.wikiwand.com/en/CAP_theorem">CAP&lt;/a>
+ &lt;a class="anchor" href="#caphttpswwwwikiwandcomencap_theorem">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="p-是前提">
+ P 是前提
+ &lt;a class="anchor" href="#p-%e6%98%af%e5%89%8d%e6%8f%90">#&lt;/a>
+&lt;/h2>
+&lt;p>在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个 &lt;a href="https://www.wikiwand.com/en/Distributed_data_store">distributed data store&lt;/a> 来说，不可能同时满足以下三点：&lt;/p>
+&lt;ul>
+&lt;li>一致性（&lt;a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29">Consistency&lt;/a>）
+&lt;ul>
+&lt;li>每次读取要么获得最近写入的数据，要么获得一个错误。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>可用性（&lt;a href="https://www.wikiwand.com/en/Availability">Availability&lt;/a>）
+&lt;ul>
+&lt;li>每次请求都能获得一个&lt;strong>非错误&lt;/strong>响应，但不保证返回的是最新写入的数据。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://www.wikiwand.com/en/Network_partition">分区&lt;/a>容错性（&lt;a href="https://www.wikiwand.com/en/Network_partitioning">Partition tolerance&lt;/a>）
+&lt;ul>
+&lt;li>以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在 C 和 A 之间做出选择。&lt;/li>
+&lt;li>尽管任意数量的消息被节点间的网络丢失（或延迟），系统仍继续运行。&lt;/li>
+&lt;li>分区指&lt;strong>网络分区&lt;/strong>，通信的两台服务器之间网络断开，就发生了网络分区&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="一般选-ap">
+ 一般选 AP
+ &lt;a class="anchor" href="#%e4%b8%80%e8%88%ac%e9%80%89-ap">#&lt;/a>
+&lt;/h2>
+&lt;p>也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。&lt;/p>
+&lt;p>比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，&lt;/p>
+&lt;ul>
+&lt;li>如果 A 不写，保持一致性，那么我们就失去了 A 的服务，&lt;/li>
+&lt;li>但是如果 A 写了，跟 B 的数据就不一致了，我们自然就丧失了一致性。&lt;/li>
+&lt;/ul>
+&lt;p>这里的一致性（&lt;a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29">Consistency&lt;/a>）是&lt;strong>强一致性&lt;/strong>，意思是 AB 的数据时刻都是同步的，
+如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。
+如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。&lt;/p>
+&lt;h2 id="现实中的-cap">
+ 现实中的 CAP
+ &lt;a class="anchor" href="#%e7%8e%b0%e5%ae%9e%e4%b8%ad%e7%9a%84-cap">#&lt;/a>
+&lt;/h2>
+&lt;p>CAP 对实际工作缺乏指导性。&lt;/p>
+&lt;p>实际系统主要有三种：&lt;/p>
+&lt;ul>
+&lt;li>强调 availability 的 eventual consistency 系统，
+&lt;ul>
+&lt;li>比如 Amazon Dynamo 及他们的复制品；&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>强调一致性的系统，
+&lt;ul>
+&lt;li>典型的是基于 Paxos 的系统；&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>强调性能不顾其他的系统，
+&lt;ul>
+&lt;li>典型的是 Async replication 的主从备份系统。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考">
+ 参考
+ &lt;a class="anchor" href="#%e5%8f%82%e8%80%83">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.zhihu.com/question/64778723">CAP 理论常被解释为一种 “三选二” 定律，这是否是一种误解？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.zhihu.com/question/363054486">分布式事务中的最终一致具体应该如何实现？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.zhihu.com/question/56571269">分布式系统中的数据一致性和性能怎么权衡？&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>ACID</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</guid><description>&lt;h1 id="acidhttpswwwwikiwandcomenacid">
+ &lt;a href="https://www.wikiwand.com/en/ACID">ACID&lt;/a>
+ &lt;a class="anchor" href="#acidhttpswwwwikiwandcomenacid">#&lt;/a>
+&lt;/h1>
+&lt;blockquote>
+&lt;p>In &lt;a href="https://www.wikiwand.com/en/Computer_science">computer science&lt;/a>, ACID (&lt;a href="https://www.wikiwand.com/en/Atomicity_%28database_systems%29">atomicity&lt;/a>, &lt;a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29" title="Consistency (database systems)">consistency&lt;/a>, &lt;a href="https://www.wikiwand.com/en/Isolation_%28database_systems%29" title="Isolation (database systems)">isolation&lt;/a>, &lt;a href="https://www.wikiwand.com/en/Durability_%28database_systems%29">durability&lt;/a>) is a set of properties of &lt;a href="https://www.wikiwand.com/en/Database_transaction">database transactions&lt;/a> intended to guarantee validity even in the event of errors, power failures, etc. In the context of &lt;a href="https://www.wikiwand.com/en/Database">databases&lt;/a>, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>&lt;code>ACID&lt;/code> 是追求 &lt;code>CAP&lt;/code> (&lt;code>Consistency&lt;/code>, &lt;code>Availability&lt;/code>, &lt;code>Partition tolerance&lt;/code>) 的&lt;code>一致性&lt;/code> (&lt;code>C&lt;/code>)&lt;/p></description></item><item><title>BASE</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</guid><description>&lt;h1 id="base">
+ BASE
+ &lt;a class="anchor" href="#base">#&lt;/a>
+&lt;/h1>
+&lt;p>Basically Available, Soft state, &lt;a href="https://www.wikiwand.com/en/Eventual_consistency">Eventual consistency&lt;/a>&lt;/p>
+&lt;p>BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。&lt;/p>
+&lt;h2 id="基本可用">
+ 基本可用
+ &lt;a class="anchor" href="#%e5%9f%ba%e6%9c%ac%e5%8f%af%e7%94%a8">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>流量削峰
+&lt;ul>
+&lt;li>在不同的时间，出售不同区域的票，将访问请求错开，削弱请求峰值&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>延迟响应
+&lt;ul>
+&lt;li>在春运期间，自己提交的购票请求，往往会在队列中排队等待处理，可能几分钟或十几分钟后，系统才开始处理，然后响应处理结果&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>体验降级
+&lt;ul>
+&lt;li>比如用小图片来替代原始图片，通过降低图片的清晰度和大小，提升系统的处理能力。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>过载保护
+&lt;ul>
+&lt;li>把接收到的请求放在指定的队列中排队处理，如果请求等待时间超时了（假设是 100ms），这个时候直接拒绝超时请求；再比如队列满了之后，就清除队列中一定数量的排队请求，保护系统不过载，实现系统的基本可用。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="最终的一致">
+ 最终的一致
+ &lt;a class="anchor" href="#%e6%9c%80%e7%bb%88%e7%9a%84%e4%b8%80%e8%87%b4">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>读时修复：在读取数据时，检测数据的不一致，进行修复。
+&lt;ul>
+&lt;li>比如 &lt;code>Cassandra&lt;/code> 的 Read Repair 实现，具体来说，在向 &lt;code>Cassandra&lt;/code> 系统查询数据的时候，如果检测到不同节点的副本数据不一致，系统就自动修复数据。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>写时修复：在写入数据，检测数据的不一致时，进行修复。
+&lt;ul>
+&lt;li>比如 &lt;code>Cassandra&lt;/code> 的 Hinted Handoff 实现。具体来说，&lt;code>Cassandra&lt;/code> 集群的节点之间远程写数据的时候，如果写失败就将数据缓存下来，然后定时重传，修复数据的不一致性。&lt;/li>
+&lt;li>写时修复&lt;em>不需要做数据一致性对比&lt;/em>，性能消耗比较低，对系统运行影响也不大，推荐在实现最终一致性时优先实现这种方式。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>异步修复：这个是&lt;strong>最常用&lt;/strong>的方式，通过定时对账检测副本数据的一致性，并修复。&lt;/li>
+&lt;/ul>
+&lt;hr></description></item></channel></rss>
