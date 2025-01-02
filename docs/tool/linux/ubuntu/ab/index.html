@@ -1,8 +1,69 @@
 <!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.140.1"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
-  软件工程
+  ab
   #
-"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/study/book/se/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="5.5 软件工程"><meta property="og:description" content="软件工程 #"><meta property="og:locale" content="en"><meta property="og:type" content="website"><title>5.5 软件工程 | 计算机学习笔记</title>
-<link rel=manifest href=/note-cs/manifest.json><link rel=icon href=/note-cs/favicon.png><link rel=canonical href=https://kingye.me/note-cs/docs/study/book/se/><link rel=stylesheet href=/note-cs/book.min.a9fd347d07ee042ade7b8c22d2c14b72b69e154966252ab277e80a22c2a3be81.css integrity="sha256-qf00fQfuBCree4wi0sFLcraeFUlmJSqyd+gKIsKjvoE=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.34a4167e31809905be97621f969e1a87c3fd911d95405ba7c87b5d89db415625.js integrity="sha256-NKQWfjGAmQW+l2Iflp4ah8P9kR2VQFunyHtdidtBViU=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://kingye.me/note-cs/docs/study/book/se/index.xml title=计算机学习笔记></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+
+apt install apache2-utils -y
+
+
+# -c 10 表示并发用户数为10
+# -n 100 表示请求总数为100
+ab -c 10 -n 100 http://localhost:8080
+
+# This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+# Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+# Licensed to The Apache Software Foundation, http://www.apache.org/
+
+# Benchmarking localhost (be patient)
+# Completed 100 requests
+# Completed 200 requests
+# Completed 300 requests
+# Completed 400 requests
+# Completed 500 requests
+# Completed 600 requests
+# Completed 700 requests
+# Completed 800 requests
+# Completed 900 requests
+# Completed 1000 requests
+# Finished 1000 requests
+
+
+# Server Software:
+# Server Hostname:        localhost
+# Server Port:            8080
+
+# Document Path:          /
+# Document Length:        12 bytes
+
+# Concurrency Level:      100
+# Time taken for tests:   0.090 seconds
+# Complete requests:      1000
+# Failed requests:        0
+# Total transferred:      174000 bytes
+# HTML transferred:       12000 bytes
+# Requests per second:    11112.84 [#/sec] (mean)
+# Time per request:       8.999 [ms] (mean)
+# Time per request:       0.090 [ms] (mean, across all concurrent requests)
+# Transfer rate:          1888.31 [Kbytes/sec] received
+
+# Connection Times (ms)
+#               min  mean[+/-sd] median   max
+# Connect:        0    3   1.0      3       6
+# Processing:     1    5   5.3      4      24
+# Waiting:        0    4   5.5      2      22
+# Total:          5    9   5.0      7      26
+
+# Percentage of the requests served within a certain time (ms)
+#   50%      7
+#   66%      7
+#   75%      8
+#   80%      8
+#   90%     22
+#   95%     23
+#   98%     25
+#   99%     25
+#  100%     26 (longest request)
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="ab"><meta property="og:description" content="ab # apt install apache2-utils -y # -c 10 表示并发用户数为10 # -n 100 表示请求总数为100 ab -c 10 -n 100 http://localhost:8080 # This is ApacheBench, Version 2.3 <$Revision: 1879490 $> # Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/ # Licensed to The Apache Software Foundation, http://www.apache.org/ # Benchmarking localhost (be patient) # Completed 100 requests # Completed 200 requests # Completed 300 requests # Completed 400 requests # Completed 500 requests # Completed 600 requests # Completed 700 requests # Completed 800 requests # Completed 900 requests # Completed 1000 requests # Finished 1000 requests # Server Software: # Server Hostname: localhost # Server Port: 8080 # Document Path: / # Document Length: 12 bytes # Concurrency Level: 100 # Time taken for tests: 0.090 seconds # Complete requests: 1000 # Failed requests: 0 # Total transferred: 174000 bytes # HTML transferred: 12000 bytes # Requests per second: 11112.84 [#/sec] (mean) # Time per request: 8.999 [ms] (mean) # Time per request: 0.090 [ms] (mean, across all concurrent requests) # Transfer rate: 1888.31 [Kbytes/sec] received # Connection Times (ms) # min mean[+/-sd] median max # Connect: 0 3 1.0 3 6 # Processing: 1 5 5.3 4 24 # Waiting: 0 4 5.5 2 22 # Total: 5 9 5.0 7 26 # Percentage of the requests served within a certain time (ms) # 50% 7 # 66% 7 # 75% 8 # 80% 8 # 90% 22 # 95% 23 # 98% 25 # 99% 25 # 100% 26 (longest request)"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2023-11-20T14:10:17+08:00"><title>ab | 计算机学习笔记</title>
+<link rel=manifest href=/note-cs/manifest.json><link rel=icon href=/note-cs/favicon.png><link rel=canonical href=https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/><link rel=stylesheet href=/note-cs/book.min.a9fd347d07ee042ade7b8c22d2c14b72b69e154966252ab277e80a22c2a3be81.css integrity="sha256-qf00fQfuBCree4wi0sFLcraeFUlmJSqyd+gKIsKjvoE=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.7a52be38c99b13752d82340dc93ec9f8f6248a0039912363614ed26047922a78.js integrity="sha256-elK+OMmbE3UtgjQNyT7J+PYkigA5kSNjYU7SYEeSKng=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/note-cs/><span>计算机学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础</span><ul><li><input type=checkbox id=section-b8a8b6bcfe972d57601ab3d1dc57b001 class=toggle>
 <label for=section-b8a8b6bcfe972d57601ab3d1dc57b001 class="flex justify-between"><a href=/note-cs/docs/basic/cc/>1.1 计算机组成原理</a></label><ul><li><a href=/note-cs/docs/basic/cc/cpu/>CPU</a></li><li><a href=/note-cs/docs/basic/cc/dmi/>DMI</a></li><li><a href=/note-cs/docs/basic/cc/gpu/>GPU</a><ul><li><input type=checkbox id=section-007874cebad02ad15472055b20beeba4 class=toggle>
 <label for=section-007874cebad02ad15472055b20beeba4 class="flex justify-between"><a href=/note-cs/docs/basic/cc/gpu/cuda/>CUDA</a></label></li><li><a href=/note-cs/docs/basic/cc/gpu/nvidia/>Nvidia</a><ul><li><a href=/note-cs/docs/basic/cc/gpu/nvidia/list/>Nvidia 显卡系列</a></li><li><a href=/note-cs/docs/basic/cc/gpu/nvidia/arch/>Nvidia 架构</a></li><li><a href=/note-cs/docs/basic/cc/gpu/nvidia/driver/>Nvidia 驱动</a></li><li><a href=/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/>SM Version</a></li></ul></li></ul></li><li><a href=/note-cs/docs/basic/cc/rom/>ROM</a></li><li><a href=/note-cs/docs/basic/cc/storage/>存储</a></li><li><a href=/note-cs/docs/basic/cc/memory-card/>存储卡</a></li></ul></li><li><input type=checkbox id=section-5bea2ea7226add67eaa6c7e0ba9c1aa1 class=toggle>
@@ -503,9 +564,9 @@
 <label for=section-7e615d0f8ae7ee02ca0619a008634807 class="flex justify-between"><a href=/note-cs/docs/tool/macos/vim/>vim</a></label></li><li><input type=checkbox id=section-374844cb4df71e2084d20c926c854931 class=toggle>
 <label for=section-374844cb4df71e2084d20c926c854931 class="flex justify-between"><a href=/note-cs/docs/tool/macos/vscode/>VSCode</a></label></li><li><input type=checkbox id=section-4ae0b6fbb56cca6b8fb4c629ddbc4e52 class=toggle>
 <label for=section-4ae0b6fbb56cca6b8fb4c629ddbc4e52 class="flex justify-between"><a href=/note-cs/docs/tool/macos/xdm/>XDM</a></label></li><li><input type=checkbox id=section-67913237ec09d5447e884d4f4e3ba8da class=toggle>
-<label for=section-67913237ec09d5447e884d4f4e3ba8da class="flex justify-between"><a href=/note-cs/docs/tool/macos/package-manager/>包管理工具</a></label></li></ul></li><li><a href=/note-cs/docs/tool/linux/>4.2 Linux</a><ul><li><input type=checkbox id=section-e990b9b38eb39444d0f2a412760e5360 class=toggle>
-<label for=section-e990b9b38eb39444d0f2a412760e5360 class="flex justify-between"><a href=/note-cs/docs/tool/linux/ubuntu/>4.2.1 Ubuntu</a></label><ul><li><input type=checkbox id=section-aea7ac7eb116531ccd94a3492195b591 class=toggle>
-<label for=section-aea7ac7eb116531ccd94a3492195b591 class="flex justify-between"><a href=/note-cs/docs/tool/linux/ubuntu/ab/>ab</a></label></li><li><input type=checkbox id=section-1c4d83d9a0a1e78d88bcf58c3ef157b5 class=toggle>
+<label for=section-67913237ec09d5447e884d4f4e3ba8da class="flex justify-between"><a href=/note-cs/docs/tool/macos/package-manager/>包管理工具</a></label></li></ul></li><li><a href=/note-cs/docs/tool/linux/>4.2 Linux</a><ul><li><input type=checkbox id=section-e990b9b38eb39444d0f2a412760e5360 class=toggle checked>
+<label for=section-e990b9b38eb39444d0f2a412760e5360 class="flex justify-between"><a href=/note-cs/docs/tool/linux/ubuntu/>4.2.1 Ubuntu</a></label><ul><li><input type=checkbox id=section-aea7ac7eb116531ccd94a3492195b591 class=toggle checked>
+<label for=section-aea7ac7eb116531ccd94a3492195b591 class="flex justify-between"><a href=/note-cs/docs/tool/linux/ubuntu/ab/ class=active>ab</a></label></li><li><input type=checkbox id=section-1c4d83d9a0a1e78d88bcf58c3ef157b5 class=toggle>
 <label for=section-1c4d83d9a0a1e78d88bcf58c3ef157b5 class="flex justify-between"><a href=/note-cs/docs/tool/linux/ubuntu/ansible/>Ansible</a></label></li><li><input type=checkbox id=section-717b16d4b079df68880db801eee6ab20 class=toggle>
 <label for=section-717b16d4b079df68880db801eee6ab20 class="flex justify-between"><a href=/note-cs/docs/tool/linux/ubuntu/apt/>apt</a></label></li><li><input type=checkbox id=section-54ae03e98874477125ae810e65de707b class=toggle>
 <label for=section-54ae03e98874477125ae810e65de707b class="flex justify-between"><a href=/note-cs/docs/tool/linux/ubuntu/cargo/>Cargo</a></label></li><li><input type=checkbox id=section-6cc83084215becf3a52ab9e4b82042ac class=toggle>
@@ -596,7 +657,7 @@
 <label for=section-d4e049071877c4cea186285a21c0a401 class="flex justify-between"><a href=/note-cs/docs/study/skill/stream-media/stream-media/ps/>PS</a></label></li><li><input type=checkbox id=section-50b9f9517f4b7c63e1ac2667e64872fc class=toggle>
 <label for=section-50b9f9517f4b7c63e1ac2667e64872fc class="flex justify-between"><a href=/note-cs/docs/study/skill/stream-media/stream-media/live-tech/>直播技术</a></label></li><li><input type=checkbox id=section-9181d7d4947d9e2b900e41c8da65e6c2 class=toggle>
 <label for=section-9181d7d4947d9e2b900e41c8da65e6c2 class="flex justify-between"><a href=/note-cs/docs/study/skill/stream-media/stream-media/video-codec/>视频编码</a></label></li></ul></li></ul></li><li><input type=checkbox id=section-94e422a3e5bf0d4b872ca12b0dd073a6 class=toggle>
-<label for=section-94e422a3e5bf0d4b872ca12b0dd073a6 class="flex justify-between"><a href=/note-cs/docs/study/skill/type/>文档类型</a></label><ul><li><a href=/note-cs/docs/study/skill/type/markdown/>markdown</a><ul><li><a href=/note-cs/docs/study/skill/type/markdown/formula/>markdown 公式</a></li></ul></li><li><a href=/note-cs/docs/study/skill/type/pdf/>pdf</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/epub/>epub</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/mobi/>mobi</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/azw3/>azw3</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/asciidoc/>AsciiDoc</a></li></ul></li></ul></li><li><input type=checkbox id=section-6fee14ba43d2e4cf5b7cb62e2e8c5b9e class=toggle checked>
+<label for=section-94e422a3e5bf0d4b872ca12b0dd073a6 class="flex justify-between"><a href=/note-cs/docs/study/skill/type/>文档类型</a></label><ul><li><a href=/note-cs/docs/study/skill/type/markdown/>markdown</a><ul><li><a href=/note-cs/docs/study/skill/type/markdown/formula/>markdown 公式</a></li></ul></li><li><a href=/note-cs/docs/study/skill/type/pdf/>pdf</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/epub/>epub</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/mobi/>mobi</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/azw3/>azw3</a><ul></ul></li><li><a href=/note-cs/docs/study/skill/type/asciidoc/>AsciiDoc</a></li></ul></li></ul></li><li><input type=checkbox id=section-6fee14ba43d2e4cf5b7cb62e2e8c5b9e class=toggle>
 <label for=section-6fee14ba43d2e4cf5b7cb62e2e8c5b9e class="flex justify-between"><a href=/note-cs/docs/study/book/>4.2 读书</a></label><ul><li><input type=checkbox id=section-2c5f40a6e67db5c48229e2d2964f9dcd class=toggle>
 <label for=section-2c5f40a6e67db5c48229e2d2964f9dcd class="flex justify-between"><a href=/note-cs/docs/study/book/basic/>5.1 计算机基础</a></label><ul><li><a href=/note-cs/docs/study/book/basic/cc/>5.1.1 计算机组成原理</a><ul><li><input type=checkbox id=section-5969d704384841d12c5d71eba6140d3e class=toggle>
 <label for=section-5969d704384841d12c5d71eba6140d3e class="flex justify-between"><a href=/note-cs/docs/study/book/basic/cc/csapp/>深入理解计算机系统</a></label><ul></ul></li><li><input type=checkbox id=section-6376c7f407cb2be382fd10e09431cfde class=toggle>
@@ -608,8 +669,8 @@
 <label for=section-adc80ffba3c2b8b842d78d4f2c2303cc class="flex justify-between"><a href=/note-cs/docs/study/book/be/>5.2 后端</a></label><ul><li><input type=checkbox id=section-eb66b2f424399d9cfda5fd0efdb30a6c class=toggle>
 <label for=section-eb66b2f424399d9cfda5fd0efdb30a6c class="flex justify-between"><a href=/note-cs/docs/study/book/be/Designing-Data-Intensive-Applications/>Designing Data-Intensive Applications</a></label><ul></ul></li></ul></li><li><input type=checkbox id=section-8203a6b6719d2b3391993429f27c15ff class=toggle>
 <label for=section-8203a6b6719d2b3391993429f27c15ff class="flex justify-between"><a href=/note-cs/docs/study/book/fe/>5.3 前端</a></label><ul></ul></li><li><input type=checkbox id=section-327f9a7af2803f001c5bb12282659493 class=toggle>
-<label for=section-327f9a7af2803f001c5bb12282659493 class="flex justify-between"><a href=/note-cs/docs/study/book/security/>5.4 安全</a></label><ul></ul></li><li><input type=checkbox id=section-15606220b1a365325adf074b7672337f class=toggle checked>
-<label for=section-15606220b1a365325adf074b7672337f class="flex justify-between"><a href=/note-cs/docs/study/book/se/ class=active>5.5 软件工程</a></label><ul></ul></li><li><input type=checkbox id=section-4f35800631b4d30c9f35bce60aeab4dc class=toggle>
+<label for=section-327f9a7af2803f001c5bb12282659493 class="flex justify-between"><a href=/note-cs/docs/study/book/security/>5.4 安全</a></label><ul></ul></li><li><input type=checkbox id=section-15606220b1a365325adf074b7672337f class=toggle>
+<label for=section-15606220b1a365325adf074b7672337f class="flex justify-between"><a href=/note-cs/docs/study/book/se/>5.5 软件工程</a></label><ul></ul></li><li><input type=checkbox id=section-4f35800631b4d30c9f35bce60aeab4dc class=toggle>
 <label for=section-4f35800631b4d30c9f35bce60aeab4dc class="flex justify-between"><a href=/note-cs/docs/study/book/cc/>5.6 云计算</a></label><ul></ul></li><li><input type=checkbox id=section-b201cd6caaa5d229cb3b689dbe99a21f class=toggle>
 <label for=section-b201cd6caaa5d229cb3b689dbe99a21f class="flex justify-between"><a href=/note-cs/docs/study/book/bigdata/>5.7 大数据</a></label><ul></ul></li><li><input type=checkbox id=section-e55c8bb9ee673d8497c85b362e61cf8f class=toggle>
 <label for=section-e55c8bb9ee673d8497c85b362e61cf8f class="flex justify-between"><a href=/note-cs/docs/study/book/ai/>5.8 人工智能</a></label><ul><li><input type=checkbox id=section-e4f1f72a0f21c63f56e637c593ef8d5c class=toggle>
@@ -643,8 +704,68 @@
 <label for=section-144731ee23b548e165d0fe378026ad05 class="flex justify-between"><a href=/note-cs/docs/study/activity/istio-handbook/>《Istio Handbook》写作</a></label><ul></ul></li><li><input type=checkbox id=section-0ff0b8691399d36d8cc1260543be6ee5 class=toggle>
 <label for=section-0ff0b8691399d36d8cc1260543be6ee5 class="flex justify-between"><a href=/note-cs/docs/study/activity/csapp/>《深入理解计算机系统》学习</a></label><ul></ul></li><li><input type=checkbox id=section-572b409c90e3e7cb82ae156df16fdc16 class=toggle>
 <label for=section-572b409c90e3e7cb82ae156df16fdc16 class="flex justify-between"><a href=/note-cs/docs/study/activity/kubernetes-scheduler/>Kubernetes 调度器源码学习</a></label><ul></ul></li></ul></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/note-cs/svg/menu.svg class=book-icon alt=Menu>
-</label><strong>5.5 软件工程</strong>
-<label for=toc-control><img src=/note-cs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></aside></header><article id=article class=markdown><h1 id=软件工程>软件工程
-<a class=anchor href=#%e8%bd%af%e4%bb%b6%e5%b7%a5%e7%a8%8b>#</a></h1></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/note-cs/commit/e11fcf719f35e04d68b7aab588f7a260c3d5293c title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/note-cs/svg/calendar.svg class=book-icon alt>
-<span>2021-11-01</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/note-cs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
+</label><strong>ab</strong>
+<label for=toc-control><img src=/note-cs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></aside></header><article id=article class=markdown><h1 id=ab>ab
+<a class=anchor href=#ab>#</a></h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>apt install apache2-utils -y
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># -c 10 表示并发用户数为10</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># -n 100 表示请求总数为100</span>
+</span></span><span style=display:flex><span>ab -c <span style=color:#ae81ff>10</span> -n <span style=color:#ae81ff>100</span> http://localhost:8080
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># This is ApacheBench, Version 2.3 &lt;$Revision: 1879490 $&gt;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Licensed to The Apache Software Foundation, http://www.apache.org/</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Benchmarking localhost (be patient)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 100 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 200 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 300 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 400 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 500 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 600 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 700 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 800 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 900 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Completed 1000 requests</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Finished 1000 requests</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Server Software:</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Server Hostname:        localhost</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Server Port:            8080</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Document Path:          /</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Document Length:        12 bytes</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Concurrency Level:      100</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Time taken for tests:   0.090 seconds</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Complete requests:      1000</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Failed requests:        0</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Total transferred:      174000 bytes</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># HTML transferred:       12000 bytes</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Requests per second:    11112.84 [#/sec] (mean)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Time per request:       8.999 [ms] (mean)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Time per request:       0.090 [ms] (mean, across all concurrent requests)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Transfer rate:          1888.31 [Kbytes/sec] received</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Connection Times (ms)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#               min  mean[+/-sd] median   max</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Connect:        0    3   1.0      3       6</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Processing:     1    5   5.3      4      24</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Waiting:        0    4   5.5      2      22</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Total:          5    9   5.0      7      26</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Percentage of the requests served within a certain time (ms)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   50%      7</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   66%      7</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   75%      8</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   80%      8</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   90%     22</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   95%     23</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   98%     25</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#   99%     25</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#  100%     26 (longest request)</span>
+</span></span></code></pre></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/note-cs/commit/70807300970f8ff493ededced76e0616e5879e07 title='Last modified by ikingye | 2023-11-20' target=_blank rel=noopener><img src=/note-cs/svg/calendar.svg class=book-icon alt>
+<span>2023-11-20</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/note-cs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
 版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></div></aside></main></body></html>
