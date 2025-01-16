@@ -9407,7 +9407,67 @@ Using mas list will show all installed applications and their product identifier
 &lt;h2 id="使用">
  使用
  &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8">#&lt;/a>
-&lt;/h2></description></item><item><title>pytorch</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</guid><description>&lt;h1 id="pytorch">
+&lt;/h2></description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/python/</guid><description>&lt;h1 id="python">
+ python
+ &lt;a class="anchor" href="#python">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装 pipx&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># sudo yum install -y python3&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python3 -m pip install --user pipx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>python3 -m pipx ensurepath
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 升级&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># python3 -m pip install --user --upgrade pipx&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 再安装 poetry&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pipx install poetry
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装 poetry&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># curl -sSL https://install.python-poetry.org | python3 -&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装 pyenv&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl https://pyenv.run | bash
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</guid><description>&lt;h1 id="python">
+ python
+ &lt;a class="anchor" href="#python">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install -y pipx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pipx install poetry
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/macos/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/python/</guid><description>&lt;h1 id="python">
+ python
+ &lt;a class="anchor" href="#python">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 先安装 pipx&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew update
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew install pipx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 再安装 poetry&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pipx install poetry
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装 pyenv&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>brew install pyenv
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 从镜像下载&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cat &lt;span style="color:#e6db74">&amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt;&amp;gt; ~/.zshrc
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">function pyenvinstall {
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> wget -c https://registry.npmmirror.com/-/binary/python/$@/Python-$@.tar.xz -P ~/.pyenv/cache/
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> pyenv install $@
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">}
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">EOF&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>zsh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 更新 pyenv 缓存&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pyenv update
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 列出可选的版本&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pyenv install -l
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装需要的 python 版本&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pyenvinstall 3.13.1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>pytorch</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</guid><description>&lt;h1 id="pytorch">
  pytorch
  &lt;a class="anchor" href="#pytorch">#&lt;/a>
 &lt;/h1>
@@ -9725,6 +9785,35 @@ Using mas list will show all installed applications and their product identifier
 &lt;li>&lt;a href="https://pragprog.com/book/bhtmux2/tmux-2">tmux 2: Productive Mouse-Free Development&lt;/a> by &lt;a href="https://twitter.com/bphogan">@bphogan&lt;/a>.&lt;/li>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/43687973">手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频]&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://zhuanlan.zhihu.com/p/259640277">让你的 tmux 起死回生！[视频]&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>uv</title><link>https://kingye.me/note-cs/docs/tool/macos/uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/uv/</guid><description>&lt;h1 id="uv">
+ uv
+ &lt;a class="anchor" href="#uv">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/astral-sh/uv">astral-sh/uv&lt;/a> &lt;img src="https://img.shields.io/github/stars/astral-sh/uv.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/astral-sh/uv.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/astral-sh/uv.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/astral-sh/uv.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/astral-sh/uv.svg" alt="Last commit" />&lt;/p>
+&lt;h2 id="教程">
+ 教程
+ &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LsSf https://astral.sh/uv/install.sh | sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv init hello-world
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd hello-world
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv config python
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="uv-init-生成的文件目录">
+ uv init 生成的文件目录
+ &lt;a class="anchor" href="#uv-init-%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e4%bb%b6%e7%9b%ae%e5%bd%95">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>.python-version&lt;/code>
+&lt;ul>
+&lt;li>The .python-version file contains the project&amp;rsquo;s default Python version. This file tells uv which Python version to use when creating the project&amp;rsquo;s virtual environment.&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul></description></item><item><title>v2ray</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</guid><description>&lt;h1 id="v2ray">
  v2ray
  &lt;a class="anchor" href="#v2ray">#&lt;/a>
