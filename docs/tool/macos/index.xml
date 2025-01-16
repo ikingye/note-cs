@@ -1130,8 +1130,15 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd hello-world
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv add requests
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv add requests&lt;span style="color:#f92672">=&lt;/span>2.52.1
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv config python
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># manually update the environment&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv sync
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># active to run scripts and commands in the project without uv run&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>source .venv/bin/activate
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="uv-init-生成的文件目录">
  uv init 生成的文件目录
  &lt;a class="anchor" href="#uv-init-%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e4%bb%b6%e7%9b%ae%e5%bd%95">#&lt;/a>
