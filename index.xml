@@ -6780,6 +6780,10 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 退出环境&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>conda deactivate
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 取消默认激活&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>conda config --set auto_activate_base false
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># conda config --show&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Conda</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/conda/</guid><description>&lt;h1 id="conda">
  Conda
  &lt;a class="anchor" href="#conda">#&lt;/a>
@@ -9806,11 +9810,16 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv add requests&lt;span style="color:#f92672">=&lt;/span>2.52.1
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># manually update the environment&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv sync
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># active to run scripts and commands in the project without uv run&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>source .venv/bin/activate
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果需要 pip&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv venv --pip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果已经创建了 venv&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv pip install -U pip
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="uv-init-生成的文件目录">
  uv init 生成的文件目录
  &lt;a class="anchor" href="#uv-init-%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e4%bb%b6%e7%9b%ae%e5%bd%95">#&lt;/a>
