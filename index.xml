@@ -9817,7 +9817,7 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果需要 pip&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv venv --pip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv venv
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果已经创建了 venv&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv pip install -U pip
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="uv-init-生成的文件目录">
