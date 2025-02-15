@@ -250,7 +250,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 取消默认激活&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>conda config --set auto_activate_base false
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># conda config --show&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># conda config --show | grep auto_activate_base&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Flowchart</title><link>https://kingye.me/note-cs/docs/tool/macos/flowchart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/flowchart/</guid><description>&lt;h1 id="flowchart">
  Flowchart
  &lt;a class="anchor" href="#flowchart">#&lt;/a>
@@ -1142,6 +1142,7 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv sync
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># active to run scripts and commands in the project without uv run&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>source .venv/bin/activate
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># alias workon=&amp;#34;source .venv/bin/activate&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 如果需要 pip&lt;/span>
