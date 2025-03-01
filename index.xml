@@ -7469,55 +7469,62 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo yum -y install cuda
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 参考：https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;Distribution=RHEL&amp;amp;target_version=7&amp;amp;target_type=rpm_local&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>CUDA</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/</guid><description>&lt;h1 id="cuda">
- CUDA
- &lt;a class="anchor" href="#cuda">#&lt;/a>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>CUDA 编程</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/cuda-programming/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/cuda/cuda-programming/</guid><description>&lt;h1 id="cuda-编程">
+ CUDA 编程
+ &lt;a class="anchor" href="#cuda-%e7%bc%96%e7%a8%8b">#&lt;/a>
 &lt;/h1>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;code>Compute Unified Device Architecture&lt;/code>&lt;/p>
-&lt;ul>
-&lt;li>统一计算架构&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>nvcc -V 显示的当前安装的 cuda 版本&lt;/p>
-&lt;ul>
-&lt;li>nvcc: &lt;code>NVIDIA (R) Cuda compiler driver&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>我们常说的 cuda 指的是 &lt;code>nvidia cuda toolkit&lt;/code> 软件开发包，而不是 GPU 驱动&lt;/p>
-&lt;ul>
-&lt;li>cuda 版本也即 CUDA 工具包的版本，而不是显卡驱动版本&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>cuda 每个版本都对应一个最低版本的显卡驱动程序&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>cuda 程序是&lt;em>向后兼容&lt;/em>的，针对特定版本的 CUDA 编译的应用程序将继续在后续驱动程序版本上工作&lt;/p>
-&lt;ul>
-&lt;li>cuda 可以是旧的，驱动可以是更新的&lt;/li>
-&lt;li>最新 nvidia 驱动版本支持所有版本的 CUDA&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>GPU 核心和 CUDA 核心通常指的是同一个概念。在 NVIDIA 的术语中，CUDA 核心是 GPU 上的处理单元，负责执行计算任务。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>只有一半的 CUDA 能支持整数计算&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503003008.png" alt="" />&lt;/p>
-&lt;ul>
-&lt;li>在 CUDA 核心（&lt;code>CUDA Core&lt;/code>）的右边，是 TenSor 核心 (&lt;code>Tensor Core&lt;/code>)
-&lt;ul>
-&lt;li>Tensor Cores 是 NVIDIA 在其 Volta 和后续架构中引入的另一种专用计算核心，主要用于加速深度学习和机器学习中的张量运算&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503003237.png" alt="" />&lt;/p></description></item><item><title>curl</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</guid><description>&lt;h1 id="curl">
+&lt;h2 id="hello-world-for-cuda">
+ Hello World for CUDA
+ &lt;a class="anchor" href="#hello-world-for-cuda">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// This is the REAL &amp;#34;hello world&amp;#34; for CUDA!
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// It takes the string &amp;#34;Hello &amp;#34;, prints it, then passes it to CUDA
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// with an array of offsets. Then the offsets are added in parallel
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// to produce the string &amp;#34;World!&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// By Ingemar Ragnemalm 2010
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// nvcc hello-world.cu -L /usr/local/cuda/lib -lcudart -o hello-world
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> N &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">16&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> blocksize &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">16&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>__global__
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">hello&lt;/span>(&lt;span style="color:#66d9ef">char&lt;/span> &lt;span style="color:#f92672">*&lt;/span>a, &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#f92672">*&lt;/span>b)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> a[threadIdx.x] &lt;span style="color:#f92672">+=&lt;/span> b[threadIdx.x];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">char&lt;/span> a[N] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello &lt;/span>&lt;span style="color:#ae81ff">\0\0\0\0\0\0&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> b[N] &lt;span style="color:#f92672">=&lt;/span> {&lt;span style="color:#ae81ff">15&lt;/span>, &lt;span style="color:#ae81ff">10&lt;/span>, &lt;span style="color:#ae81ff">6&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">11&lt;/span>, &lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">char&lt;/span> &lt;span style="color:#f92672">*&lt;/span>ad;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#f92672">*&lt;/span>bd;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> csize &lt;span style="color:#f92672">=&lt;/span> N&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#66d9ef">sizeof&lt;/span>(&lt;span style="color:#66d9ef">char&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> isize &lt;span style="color:#f92672">=&lt;/span> N&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#66d9ef">sizeof&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;%s&amp;#34;&lt;/span>, a);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cudaMalloc( (&lt;span style="color:#66d9ef">void&lt;/span>&lt;span style="color:#f92672">**&lt;/span>)&lt;span style="color:#f92672">&amp;amp;&lt;/span>ad, csize );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cudaMalloc( (&lt;span style="color:#66d9ef">void&lt;/span>&lt;span style="color:#f92672">**&lt;/span>)&lt;span style="color:#f92672">&amp;amp;&lt;/span>bd, isize );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cudaMemcpy( bd, b, isize, cudaMemcpyHostToDevice );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dim3 dimBlock( blocksize, &lt;span style="color:#ae81ff">1&lt;/span> );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> dim3 dimGrid( &lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">1&lt;/span> );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> hello&lt;span style="color:#f92672">&amp;lt;&amp;lt;&amp;lt;&lt;/span>dimGrid, dimBlock&lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span>(ad, bd);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cudaMemcpy( a, ad, csize, cudaMemcpyDeviceToHost );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cudaFree( ad );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cudaFree( bd );
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;%s&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, a);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sleep(&lt;span style="color:#ae81ff">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> EXIT_SUCCESS;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>参考：&lt;/p></description></item><item><title>curl</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</guid><description>&lt;h1 id="curl">
  curl
  &lt;a class="anchor" href="#curl">#&lt;/a>
 &lt;/h1>
