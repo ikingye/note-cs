@@ -773,6 +773,17 @@ $$&lt;/p></description></item><item><title>kubectx</title><link>https://kingye.m
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 删除缓存文件&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>conda clean --all -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>marimo</title><link>https://kingye.me/note-cs/docs/tool/macos/marimo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/marimo/</guid><description>&lt;h1 id="marimo">
+ marimo
+ &lt;a class="anchor" href="#marimo">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>uv init
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv venv
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv pip install marimo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 教程&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>marimo tutorial intro
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mas</title><link>https://kingye.me/note-cs/docs/tool/macos/mas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/mas/</guid><description>&lt;h1 id="mas-climashttpsgithubcommas-climas-github-starshttpsimgshieldsiogithubstarsmas-climassvg">
  &lt;a href="https://github.com/mas-cli/mas">mas-cli/mas&lt;/a> &lt;img src="https://img.shields.io/github/stars/mas-cli/mas.svg" alt="Github stars" />
  &lt;a class="anchor" href="#mas-climashttpsgithubcommas-climas-github-starshttpsimgshieldsiogithubstarsmas-climassvg">#&lt;/a>

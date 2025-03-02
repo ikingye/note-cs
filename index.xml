@@ -8599,6 +8599,17 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 删除缓存文件&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>conda clean --all -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>marimo</title><link>https://kingye.me/note-cs/docs/tool/macos/marimo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/marimo/</guid><description>&lt;h1 id="marimo">
+ marimo
+ &lt;a class="anchor" href="#marimo">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>uv init
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv venv
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uv pip install marimo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 教程&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>marimo tutorial intro
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mas</title><link>https://kingye.me/note-cs/docs/tool/macos/mas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/mas/</guid><description>&lt;h1 id="mas-climashttpsgithubcommas-climas-github-starshttpsimgshieldsiogithubstarsmas-climassvg">
  &lt;a href="https://github.com/mas-cli/mas">mas-cli/mas&lt;/a> &lt;img src="https://img.shields.io/github/stars/mas-cli/mas.svg" alt="Github stars" />
  &lt;a class="anchor" href="#mas-climashttpsgithubcommas-climas-github-starshttpsimgshieldsiogithubstarsmas-climassvg">#&lt;/a>
@@ -8897,7 +8908,48 @@ Using mas list will show all installed applications and their product identifier
  网络
  &lt;a class="anchor" href="#%e7%bd%91%e7%bb%9c">#&lt;/a>
 &lt;/h2>
-&lt;p>使用的是&lt;strong>桥接模式&lt;/strong>，因为：&lt;/p></description></item><item><title>Nvidia 显卡系列</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</guid><description>&lt;h1 id="nvidia-显卡系列">
+&lt;p>使用的是&lt;strong>桥接模式&lt;/strong>，因为：&lt;/p></description></item><item><title>NCCL</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</guid><description>&lt;h1 id="nccl">
+ NCCL
+ &lt;a class="anchor" href="#nccl">#&lt;/a>
+&lt;/h1>
+&lt;p>NCCL 在网络模型训练框架中位于深度学习框架（如 Torch、TF、PP 等），和 CUDA 框架之间。同级并列的还有深度学习库 CUDNN、线性代数库 CUBLAS。&lt;/p>
+&lt;p>&lt;code>Nvidia Collective multi-GPU Communication Library&lt;/code>&lt;/p>
+&lt;p>是一个实现多 GPU 的 collective communication 通信（all-gather, reduce, broadcast）库，Nvidia 做了很多优化，以在 PCIe、Nvlink、InfiniBand 上实现较高的通信速度。&lt;/p>
+&lt;ul>
+&lt;li>PCIe 适用于标准 GPU 连接和一般数据传输&lt;/li>
+&lt;li>NVLink 主要用于连接高性能计算（HPC）和深度学习应用中的 GPU，可以显著提高多 GPU 系统的数据传输和处理能力
+&lt;ul>
+&lt;li>NVLink 可以提供每秒几百 GB 的带宽，显著高于 PCIe&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>GPU Direct P2P&lt;/code> 是一种允许 NVIDIA GPU 直接通过 PCIe 或 NVLink 互相通信的技术，无需 CPU 介入&lt;/li>
+&lt;li>InfiniBand 连接不同计算机或服务器的一种网络技术&lt;/li>
+&lt;/ul>
+&lt;h2 id="communication-primitive">
+ Communication Primitive
+ &lt;a class="anchor" href="#communication-primitive">#&lt;/a>
+&lt;/h2>
+&lt;p>并行任务的通信一般可以分为&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Point-to-point Communication&lt;/code>
+&lt;ul>
+&lt;li>P2P 通信这种模式只有一个 sender 和一个 receiver，实现起来比较简单&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>Collective Communication&lt;/code>
+&lt;ul>
+&lt;li>Collective Communication 包含多个 sender 多个 receiver&lt;/li>
+&lt;li>一般的通信原语包括 broadcast, gather, all-gather, scatter, reduce, all-reduce, reduce-scatter, all-to-all 等&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="ring-based-collective-communication">
+ ring-based Collective communication
+ &lt;a class="anchor" href="#ring-based-collective-communication">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>传统 &lt;code>Collective communication&lt;/code> 假设通信节点组成的 topology 是一颗 fat tree，这样通信效率最高&lt;/p></description></item><item><title>Nvidia 显卡系列</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</guid><description>&lt;h1 id="nvidia-显卡系列">
  Nvidia 显卡系列
  &lt;a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97">#&lt;/a>
 &lt;/h1>
