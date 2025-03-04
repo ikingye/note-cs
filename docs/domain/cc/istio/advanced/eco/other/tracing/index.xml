@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Distributed Tracing on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/</link><description>Recent content in Distributed Tracing on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/index.xml" rel="self" type="application/rss+xml"/><item><title>Jaeger</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/jaeger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/jaeger/</guid><description>&lt;h1 id="jaeger">
+ Jaeger
+ &lt;a class="anchor" href="#jaeger">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;code>Jaeger \ˈyā-gər\&lt;/code>&lt;/p>
+&lt;p>&lt;a href="https://github.com/jaegertracing/jaeger">jaegertracing/jaeger&lt;/a> &lt;img src="https://img.shields.io/github/stars/jaegertracing/jaeger.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/languages/top/jaegertracing/jaeger.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/jaegertracing/jaeger.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/jaegertracing/jaeger.svg" alt="Last commit" />&lt;/p>
+&lt;p>CNCF Jaeger, a Distributed Tracing Platform &lt;a href="https://www.jaegertracing.io/">https://www.jaegertracing.io/&lt;/a>&lt;/p></description></item><item><title>SkyWalking</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/skywalking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/skywalking/</guid><description>&lt;h1 id="skywalking">
+ SkyWalking
+ &lt;a class="anchor" href="#skywalking">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/apache/skywalking">apache/skywalking&lt;/a> &lt;img src="https://img.shields.io/github/stars/apache/skywalking.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/languages/top/apache/skywalking.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/apache/skywalking.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/apache/skywalking.svg" alt="Last commit" />&lt;/p>
+&lt;p>APM, Application Performance Monitoring System
+&lt;a href="https://skywalking.apache.org/">https://skywalking.apache.org/&lt;/a>&lt;/p></description></item><item><title>Zipkin</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/zipkin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/zipkin/</guid><description>&lt;h1 id="zipkin">
+ Zipkin
+ &lt;a class="anchor" href="#zipkin">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/openzipkin/zipkin">openzipkin/zipkin&lt;/a> &lt;img src="https://img.shields.io/github/stars/openzipkin/zipkin.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/languages/top/openzipkin/zipkin.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/openzipkin/zipkin.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/openzipkin/zipkin.svg" alt="Last commit" />&lt;/p>
+&lt;p>Zipkin is a distributed tracing system
+&lt;a href="https://zipkin.io/">https://zipkin.io/&lt;/a>&lt;/p></description></item><item><title>LightStep</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/lightstep/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/tracing/lightstep/</guid><description>&lt;h1 id="lightstep">
+ LightStep
+ &lt;a class="anchor" href="#lightstep">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://lightstep.com/">https://lightstep.com/&lt;/a>&lt;/p>
+&lt;h2 id="lightstep-tracer-go">
+ lightstep-tracer-go
+ &lt;a class="anchor" href="#lightstep-tracer-go">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;a href="https://github.com/lightstep/lightstep-tracer-go">lightstep/lightstep-tracer-go&lt;/a> &lt;img src="https://img.shields.io/github/stars/lightstep/lightstep-tracer-go.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/languages/top/lightstep/lightstep-tracer-go.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/lightstep/lightstep-tracer-go.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/lightstep/lightstep-tracer-go.svg" alt="Last commit" />&lt;/p></description></item></channel></rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.3.4 Shell 类型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/pl/shell/type/</link><description>Recent content in 1.3.4 Shell 类型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/pl/shell/type/index.xml" rel="self" type="application/rss+xml"/><item><title>sh</title><link>https://kingye.me/note-cs/docs/basic/pl/shell/type/sh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/shell/type/sh/</guid><description>&lt;h1 id="sh">
+ sh
+ &lt;a class="anchor" href="#sh">#&lt;/a>
+&lt;/h1>
+&lt;p>标记为 &lt;code>#!/bin/sh&lt;/code> 的脚本不应使用任何 POSIX 没有规定的特性 (如 &lt;code>let&lt;/code> 等命令，但 &lt;code>#!/bin/bash&lt;/code> 可以)。&lt;/p></description></item><item><title>Bash</title><link>https://kingye.me/note-cs/docs/basic/pl/shell/type/bash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/shell/type/bash/</guid><description>&lt;h1 id="bash">
+ Bash
+ &lt;a class="anchor" href="#bash">#&lt;/a>
+&lt;/h1></description></item><item><title>Zsh</title><link>https://kingye.me/note-cs/docs/basic/pl/shell/type/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/shell/type/zsh/</guid><description>&lt;h1 id="zsh">
+ Zsh
+ &lt;a class="anchor" href="#zsh">#&lt;/a>
+&lt;/h1></description></item><item><title>Dash</title><link>https://kingye.me/note-cs/docs/basic/pl/shell/type/dash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/shell/type/dash/</guid><description>&lt;h1 id="dash">
+ Dash
+ &lt;a class="anchor" href="#dash">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="dash-与-bash-的区别">
+ Dash 与 Bash 的区别
+ &lt;a class="anchor" href="#dash-%e4%b8%8e-bash-%e7%9a%84%e5%8c%ba%e5%88%ab">#&lt;/a>
+&lt;/h2>
+&lt;ol>
+&lt;li>定义函数&lt;/li>
+&lt;/ol>
+&lt;p>bash: function 在 bash 中为关键字&lt;/p>
+&lt;p>dash: dash 中没有 function 这个关键字&lt;/p>
+&lt;p>2.select var in list; do command; done&lt;/p>
+&lt;p>bash: 支持&lt;/p>
+&lt;p>dash: 不支持，替代方法：采用 while+read+case 来实现&lt;/p>
+&lt;ol start="3">
+&lt;li>echo {0..10}&lt;/li>
+&lt;/ol>
+&lt;p>bash: 支持 {n..m} 展开&lt;/p>
+&lt;p>dash: 不支持，替代方法，采用 seq 外部命令&lt;/p>
+&lt;ol start="4">
+&lt;li>here string&lt;/li>
+&lt;/ol>
+&lt;p>bash: 支持 here string&lt;/p>
+&lt;p>dash: 不支持，替代方法：可采用 here documents&lt;/p>
+&lt;ol start="5">
+&lt;li>
+&lt;blockquote>
+&lt;p>&amp;amp;word 重定向标准输出和标准错误&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ol>
+&lt;p>bash: 当 word 为非数字时，&amp;gt;&amp;amp;word 变成重定向标准错误和标准输出到文件 word&lt;/p>
+&lt;p>dash: &amp;gt;&amp;amp;word, word 不支持非数字，替代方法: &amp;gt;word 2&amp;gt;&amp;amp;1; 常见用法 &amp;gt;/dev/null 2&amp;gt;&amp;amp;1&lt;/p></description></item></channel></rss>

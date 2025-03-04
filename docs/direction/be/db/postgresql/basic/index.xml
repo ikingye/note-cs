@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>快速上手</title><link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid><description>&lt;h1 id="postgresql-快速上手">
+ PostgreSQL 快速上手
+ &lt;a class="anchor" href="#postgresql-%e5%bf%ab%e9%80%9f%e4%b8%8a%e6%89%8b">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="安装">
+ 安装
+ &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="macos">
+ MacOS
+ &lt;a class="anchor" href="#macos">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>安装：&lt;code>brew install postgresql&lt;/code>&lt;/li>
+&lt;li>启动：&lt;code>brew services start postgresql&lt;/code>&lt;/li>
+&lt;li>创建用户名数据库：&lt;code>createdb&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="基础命令">
+ 基础命令
+ &lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e5%91%bd%e4%bb%a4">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="登录-postgresql-控制台psql">
+ 登录 PostgreSQL 控制台：&lt;code>psql&lt;/code>
+ &lt;a class="anchor" href="#%e7%99%bb%e5%bd%95-postgresql-%e6%8e%a7%e5%88%b6%e5%8f%b0psql">#&lt;/a>
+&lt;/h3>
+&lt;p>&lt;code>psql -U [user] -d [database] -h [host] -p [port]&lt;/code>&lt;/p>
+&lt;p>默认 &lt;code>psql&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>user：当前mac用户
+database：用户同名数据库
+主机：localhost
+端口号：5432，postgresql的默认端口是5432
+&lt;/code>&lt;/pre>&lt;h3 id="l">
+ &lt;code>\l&lt;/code>
+ &lt;a class="anchor" href="#l">#&lt;/a>
+&lt;/h3>
+&lt;p>使用 &lt;code>\l&lt;/code> 命令列出所有的数据库，看到已存在用户同名数据库、postgres 数据库。
+但是 postgres 数据库的所有者是当前用户，没有 postgres 用户。&lt;/p>
+&lt;ul>
+&lt;li>创建 postgres 用户：&lt;code>CREATE USER postgres WITH PASSWORD 'password';&lt;/code>&lt;/li>
+&lt;li>删除默认生成的 postgres 数据库：&lt;code>DROP DATABASE postgres;&lt;/code>&lt;/li>
+&lt;li>创建属于 postgres 用户的 postgres 数据库：&lt;code>CREATE DATABASE postgres OWNER postgres;&lt;/code>&lt;/li>
+&lt;li>将数据库所有权限赋予 postgres 用户：&lt;code>GRANT ALL PRIVILEGES ON DATABASE postgres to postgres;&lt;/code>&lt;/li>
+&lt;li>给 postgres 用户添加创建数据库的属性：&lt;code>ALTER ROLE postgres CREATEDB;&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="常用控制台命令">
+ 常用控制台命令
+ &lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e6%8e%a7%e5%88%b6%e5%8f%b0%e5%91%bd%e4%bb%a4">#&lt;/a>
+&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sql" data-lang="sql">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>password&lt;span style="color:#960050;background-color:#1e0010">：设置当前登录用户的密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>h&lt;span style="color:#960050;background-color:#1e0010">：查看&lt;/span>SQL命令的解释&lt;span style="color:#960050;background-color:#1e0010">，比如\&lt;/span>h &lt;span style="color:#66d9ef">select&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>&lt;span style="color:#f92672">?&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">：查看&lt;/span>psql命令列表&lt;span style="color:#960050;background-color:#1e0010">。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>l&lt;span style="color:#960050;background-color:#1e0010">：列出所有数据库。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>&lt;span style="color:#66d9ef">c&lt;/span> [database_name]&lt;span style="color:#960050;background-color:#1e0010">：连接其他数据库。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>d&lt;span style="color:#960050;background-color:#1e0010">：列出当前数据库的所有表格。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>d [&lt;span style="color:#66d9ef">table_name&lt;/span>]&lt;span style="color:#960050;background-color:#1e0010">：列出某一张表格的结构。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>du&lt;span style="color:#960050;background-color:#1e0010">：列出所有用户。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>e&lt;span style="color:#960050;background-color:#1e0010">：打开文本编辑器。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>conninfo&lt;span style="color:#960050;background-color:#1e0010">：列出当前数据库和连接的信息。&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>password [&lt;span style="color:#66d9ef">user&lt;/span>]: &lt;span style="color:#960050;background-color:#1e0010">修改用户密码&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">\&lt;/span>q&lt;span style="color:#960050;background-color:#1e0010">：退出&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="查询">
+ 查询
+ &lt;a class="anchor" href="#%e6%9f%a5%e8%af%a2">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="x">
+ \x
+ &lt;a class="anchor" href="#x">#&lt;/a>
+&lt;/h3>
+&lt;p>类似 mysql 的 \G&lt;/p></description></item><item><title>版本</title><link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/version/</guid><description>&lt;h1 id="postgresql-版本">
+ PostgreSQL 版本
+ &lt;a class="anchor" href="#postgresql-%e7%89%88%e6%9c%ac">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="12">
+ 12
+ &lt;a class="anchor" href="#12">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="122">
+ 12.2
+ &lt;a class="anchor" href="#122">#&lt;/a>
+&lt;/h3>
+&lt;hr></description></item></channel></rss>

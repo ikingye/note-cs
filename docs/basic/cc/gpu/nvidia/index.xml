@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nvidia on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/</link><description>Recent content in Nvidia on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/index.xml" rel="self" type="application/rss+xml"/><item><title>NCCL</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</guid><description>&lt;h1 id="nccl">
+ NCCL
+ &lt;a class="anchor" href="#nccl">#&lt;/a>
+&lt;/h1>
+&lt;p>NCCL 在网络模型训练框架中位于深度学习框架（如 Torch、TF、PP 等），和 CUDA 框架之间。同级并列的还有深度学习库 CUDNN、线性代数库 CUBLAS。&lt;/p>
+&lt;p>&lt;code>Nvidia Collective multi-GPU Communication Library&lt;/code>&lt;/p>
+&lt;p>是一个实现多 GPU 的 collective communication 通信（all-gather, reduce, broadcast）库，Nvidia 做了很多优化，以在 PCIe、Nvlink、InfiniBand 上实现较高的通信速度。&lt;/p>
+&lt;ul>
+&lt;li>PCIe 适用于标准 GPU 连接和一般数据传输&lt;/li>
+&lt;li>NVLink 主要用于连接高性能计算（HPC）和深度学习应用中的 GPU，可以显著提高多 GPU 系统的数据传输和处理能力
+&lt;ul>
+&lt;li>NVLink 可以提供每秒几百 GB 的带宽，显著高于 PCIe&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>GPU Direct P2P&lt;/code> 是一种允许 NVIDIA GPU 直接通过 PCIe 或 NVLink 互相通信的技术，无需 CPU 介入&lt;/li>
+&lt;li>InfiniBand 连接不同计算机或服务器的一种网络技术&lt;/li>
+&lt;/ul>
+&lt;h2 id="communication-primitive">
+ Communication Primitive
+ &lt;a class="anchor" href="#communication-primitive">#&lt;/a>
+&lt;/h2>
+&lt;p>并行任务的通信一般可以分为&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Point-to-point Communication&lt;/code>
+&lt;ul>
+&lt;li>P2P 通信这种模式只有一个 sender 和一个 receiver，实现起来比较简单&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>Collective Communication&lt;/code>
+&lt;ul>
+&lt;li>Collective Communication 包含多个 sender 多个 receiver&lt;/li>
+&lt;li>一般的通信原语包括 broadcast, gather, all-gather, scatter, reduce, all-reduce, reduce-scatter, all-to-all 等&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="ring-based-collective-communication">
+ ring-based Collective communication
+ &lt;a class="anchor" href="#ring-based-collective-communication">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>传统 &lt;code>Collective communication&lt;/code> 假设通信节点组成的 topology 是一颗 fat tree，这样通信效率最高&lt;/p></description></item><item><title>Nvidia 显卡系列</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</guid><description>&lt;h1 id="nvidia-显卡系列">
+ Nvidia 显卡系列
+ &lt;a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="nvidia-显卡系列-1">
+ Nvidia 显卡系列
+ &lt;a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97-1">#&lt;/a>
+&lt;/h2>
+&lt;p>参考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://developer.nvidia.com/nsight-visual-studio-edition-supported-gpus-full-list">[Nvidia] General GPU Support&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="teslahttpswwwwikiwandcomennvidia_tesla-专业级显卡">
+ &lt;a href="https://www.wikiwand.com/en/Nvidia_Tesla">Tesla&lt;/a>: 专业级显卡
+ &lt;a class="anchor" href="#teslahttpswwwwikiwandcomennvidia_tesla-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>用于对抗 AMD 的 &lt;a href="https://www.wikiwand.com/zh-cn/FireStream">FireStream&lt;/a> 系列&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>NVIDIA H100 Tensor Core GPU&lt;/p>
+&lt;ul>
+&lt;li>至于 H 系列是目前主打的旗舰产品，未来都将会是 H 系列占主导&lt;/li>
+&lt;li>H100 是一款针对大模型专门优化过的芯片，使用台积电 5nm 定制版本制程（4N）打造，单块芯片包含 800 亿晶体管&lt;/li>
+&lt;li>同时也是全球首款 PCI-E 5 和 HBM 3 显卡，一块 H100 的 IO 带宽就是 40 terabyte 每秒&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>NVIDIA A100 Tensor Core GPU&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>NVIDIA A40&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>NVIDIA A30&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>NVIDIA A16&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>NVIDIA A10&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tesla V100&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tesla P100&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tesla P40&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tesla P4&lt;/p></description></item><item><title>Nvidia 架构</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</guid><description>&lt;h1 id="nvidia-架构">
+ Nvidia 架构
+ &lt;a class="anchor" href="#nvidia-%e6%9e%b6%e6%9e%84">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;ol>
+&lt;li>Fahrenheit&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="2">
+&lt;li>Celsius&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="3">
+&lt;li>Kelvin&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="4">
+&lt;li>Rankine&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="5">
+&lt;li>Curie&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="6">
+&lt;li>2008 Tesla: 市面已经没有相关显卡&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="7">
+&lt;li>2010 Fermi: GeForce 400, 500, 600, GT-630&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="8">
+&lt;li>2012 Kepler: K40/K80, GeForce 700, GT-730&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="9">
+&lt;li>2014 Maxwell: Tesla/Quadro M series GeForce 900, GTX-970&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="10">
+&lt;li>2016 Pascal: P4, P100, GTX 1080, GTX 1070, GTX 1060&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="11">
+&lt;li>2017 Volta: V100, GTX 1180, TiTan V&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>首次引入 &lt;code>Tensor Core&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;ol start="11">
+&lt;li>2018 Turing: T4, GTX 1660 Ti, RTX 2060, RTX 5000&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="12">
+&lt;li>2020 Ampere: A2, A10, A16, A30, A40, A100, GTX 3080&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="13">
+&lt;li>2022 Hopper: H100, H200&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="13">
+&lt;li>2022 Ada Lovelace: 4090, L4, L40, L40S&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;ol start="14">
+&lt;li>2024 Blackwell: B40, B100, B200&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="14-blackwellhttpswwwwikiwandcomenblackwell_microarchitecture">
+ 14. &lt;a href="https://www.wikiwand.com/en/Blackwell_%28microarchitecture%29">Blackwell&lt;/a>
+ &lt;a class="anchor" href="#14-blackwellhttpswwwwikiwandcomenblackwell_microarchitecture">#&lt;/a>
+&lt;/h2>
+&lt;h2 id="13-ada-lovelace-vs-hopper">
+ 13. &lt;code>Ada Lovelace&lt;/code> vs Hopper
+ &lt;a class="anchor" href="#13-ada-lovelace-vs-hopper">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer">
+ &lt;a href="https://www.wikiwand.com/en/Ada_Lovelace_%28microarchitecture%29">Ada Lovelace&lt;/a> (consumer)
+ &lt;a class="anchor" href="#ada-lovelacehttpswwwwikiwandcomenada_lovelace_microarchitecture-consumer">#&lt;/a>
+&lt;/h3>
+&lt;p>officially announced on &lt;code>2022-09-20&lt;/code>&lt;/p></description></item><item><title>Nvidia 驱动</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/driver/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/driver/</guid><description>&lt;h1 id="nvidia-驱动">
+ Nvidia 驱动
+ &lt;a class="anchor" href="#nvidia-%e9%a9%b1%e5%8a%a8">#&lt;/a>
+&lt;/h1>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>显卡类型&lt;/th>
+ &lt;th>说明&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>GeForce RTX&lt;/td>
+ &lt;td>游戏卡&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>TITAN&lt;/td>
+ &lt;td>游戏发烧卡, 深度学习屌丝卡&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>NVIDIA RTX / Quadro&lt;/td>
+ &lt;td>图形卡&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Data Center / Tesla&lt;/td>
+ &lt;td>计算卡&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>GRID&lt;/td>
+ &lt;td>物理卡：只有 GRID K1/K2 两个型号，早停产。 虚拟卡：Quadro 系列或者是 Tesla 系列分出来的多张虚拟显卡&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Networking&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>NVS&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ION&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240222164121.png" alt="" />&lt;/p>
+&lt;hr>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>apt install -y ubuntu-drivers-common
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 查询推荐的 nvidia 驱动&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ubuntu-drivers devices
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 按推荐安装驱动&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>apt install -y nvidia-driver-535
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 12.2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 535.54.03&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2023.6.26&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/535.54.03/NVIDIA-Linux-x86_64-535.54.03.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-535.54.03.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 12.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 525.60.13&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2022.12.5&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/525.60.13/NVIDIA-Linux-x86_64-525.60.13.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-525.60.13.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 11.7&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 515.86.01&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2022.11.22&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/515.86.01/NVIDIA-Linux-x86_64-515.86.01.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-515.86.01.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 11.6&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 510.108.03&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2022.11.22&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/510.108.03/NVIDIA-Linux-x86_64-510.108.03.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-510.108.03.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 11.4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 470.161.03&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2022.11.22&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/470.161.03/NVIDIA-Linux-x86_64-470.161.03.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-470.161.03.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 11.2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 460.106.00&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2021.10.26&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/460.106.00/NVIDIA-Linux-x86_64-460.106.00.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-460.106.00.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 11.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 450.216.04&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2022.11.22&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/450.216.04/NVIDIA-Linux-x86_64-450.216.04.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-450.216.04.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 10.2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 440.118.02&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2020.9.30&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/440.118.02/NVIDIA-Linux-x86_64-440.118.02.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-440.118.02.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 10.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 418.226.00&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2021.10.26&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/418.226.00/NVIDIA-Linux-x86_64-418.226.00.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-418.226.00.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 10.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 410.129&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2019.9.4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://us.download.nvidia.com/tesla/410.129/NVIDIA-Linux-x86_64-410.129.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-410.129.run
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="卸载-nvidia-driver">
+ 卸载 nvidia driver
+ &lt;a class="anchor" href="#%e5%8d%b8%e8%bd%bd-nvidia-driver">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 方法一&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dpkg -l | grep -i nvidia
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt-get remove --purge &lt;span style="color:#e6db74">&amp;#39;^nvidia-.*&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># If the ubuntu-desktop package is removed, reinstall it with the following command:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># sudo apt-get install ubuntu-desktop&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 方法二&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh NVIDIA-Linux-x86_64-535.54.03.run --uninstall
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="nvidia-smi">
+ nvidia-smi
+ &lt;a class="anchor" href="#nvidia-smi">#&lt;/a>
+&lt;/h2>
+&lt;p>nvidia-smi 右上角显示的 &lt;code>CUDA Version:&lt;/code> 是指支持的&lt;em>最高版本&lt;/em>的 cuda&lt;/p></description></item><item><title>SM Version</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</guid><description>&lt;h1 id="sm-version">
+ SM Version
+ &lt;a class="anchor" href="#sm-version">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="sm-version-1">
+ SM Version
+ &lt;a class="anchor" href="#sm-version-1">#&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capabilities">Compute Capability&lt;/a> 也就是 SM Version&lt;/li>
+&lt;li>Compute Capability 是一个硬件和架构的特性指标。Compute Capability 告诉你 GPU 支持哪些功能和指令集，而 TOPS 告诉你 GPU 能有多快。&lt;/li>
+&lt;/ul>
+&lt;p>NVIDIA 的 SM（&lt;code>Streaming Multiprocessor&lt;/code>）版本指的是其 GPU（图形处理单元）架构中的流式多处理器的设计和版本。流式多处理器是 NVIDIA GPU 的基本计算单元，负责执行并行计算任务。每个版本的 SM 都有其特定的特性、计算能力和架构优化，这些都会直接影响到 GPU 的性能、能效和支持的功能。&lt;/p>
+&lt;ul>
+&lt;li>1.x Tesla
+&lt;ul>
+&lt;li>Compute Capability 1.x 对应于 NVIDIA 的 Tesla 架构，这是 NVIDIA 第一代支持 CUDA 的 GPU 架构，引入了基本的 GPGPU（通用计算在图形处理单元上）计算能力。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2.x Fermi&lt;/li>
+&lt;li>3.x Kepler&lt;/li>
+&lt;li>Compute Capability 版本号从 3.x（Kepler）直接跳到了 5.x（Maxwell），跳过了 4.x&lt;/li>
+&lt;li>5.x Maxwell&lt;/li>
+&lt;li>6.x Pascal&lt;/li>
+&lt;li>7.x Volta&lt;/li>
+&lt;li>7.5 Turing&lt;/li>
+&lt;li>8.x Ampere&lt;/li>
+&lt;li>9.x Hopper&lt;/li>
+&lt;/ul></description></item></channel></rss>
