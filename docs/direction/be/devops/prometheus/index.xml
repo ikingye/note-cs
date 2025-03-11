@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prometheus on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/devops/prometheus/</link><description>Recent content in Prometheus on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/devops/prometheus/index.xml" rel="self" type="application/rss+xml"/><item><title>告警规则</title><link>https://kingye.me/note-cs/docs/direction/be/devops/prometheus/alerting-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/prometheus/alerting-rule/</guid><description>&lt;h1 id="告警规则">
+ 告警规则
+ &lt;a class="anchor" href="#%e5%91%8a%e8%ad%a6%e8%a7%84%e5%88%99">#&lt;/a>
+&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">groups&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">example&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">rules&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">alert&lt;/span>: &lt;span style="color:#ae81ff">HighRequestLatency&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">expr&lt;/span>: &lt;span style="color:#ae81ff">job:request_latency_seconds:mean5m{job=&amp;#34;myjob&amp;#34;} &amp;gt; 0.5&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">for&lt;/span>: &lt;span style="color:#ae81ff">10m&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">labels&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">severity&lt;/span>: &lt;span style="color:#ae81ff">page&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">annotations&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">summary&lt;/span>: &lt;span style="color:#ae81ff">High request latency&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">groups&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">example&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">rules&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">record&lt;/span>: &lt;span style="color:#ae81ff">job:http_inprogress_requests:sum&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">expr&lt;/span>: &lt;span style="color:#ae81ff">sum(http_inprogress_requests) by (job)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>记录规则</title><link>https://kingye.me/note-cs/docs/direction/be/devops/prometheus/recording-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/prometheus/recording-rule/</guid><description>&lt;h1 id="记录规则">
+ 记录规则
+ &lt;a class="anchor" href="#%e8%ae%b0%e5%bd%95%e8%a7%84%e5%88%99">#&lt;/a>
+&lt;/h1></description></item></channel></rss>
