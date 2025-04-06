@@ -7617,21 +7617,21 @@ Automate everything from code deployment to network configuration to cloud manag
  安装
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85">#&lt;/a>
 &lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 使用网易镜像源&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Add Docker&amp;#39;s official GPG key:&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt-get update
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt-get install ca-certificates curl
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo install -m &lt;span style="color:#ae81ff">0755&lt;/span> -d /etc/apt/keyrings
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo curl -fsSL https://mirrors.163.com/docker-ce/linux/ubuntu/gpg -o /etc/apt/keyrings/docker-163.asc
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo chmod a+r /etc/apt/keyrings/docker-163.asc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo chmod a+r /etc/apt/keyrings/docker.asc
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Add the repository to Apt sources:&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#ae81ff">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> &lt;span style="color:#e6db74">&amp;#34;deb [arch=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>dpkg --print-architecture&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker-163.asc] https://mirrors.163.com/docker-ce/linux/ubuntu \
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> &lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>. /etc/os-release &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$VERSION_CODENAME&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74"> stable&amp;#34;&lt;/span> | &lt;span style="color:#ae81ff">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> sudo tee /etc/apt/sources.list.d/docker-163.list &amp;gt; /dev/null
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> &lt;span style="color:#e6db74">&amp;#34;deb [arch=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>dpkg --print-architecture&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> &lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>. /etc/os-release &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>UBUNTU_CODENAME&lt;span style="color:#66d9ef">:-&lt;/span>$VERSION_CODENAME&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74"> stable&amp;#34;&lt;/span> | &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> sudo tee /etc/apt/sources.list.d/docker.list &amp;gt; /dev/null
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt-get update
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose -y
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="安装指定版本-docker">
  安装指定版本 docker
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e6%8c%87%e5%ae%9a%e7%89%88%e6%9c%ac-docker">#&lt;/a>
@@ -9295,18 +9295,17 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>docker network create caddy
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 看教程 https://github.com/vrtmrz/self-hosted-livesync-server&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export COUCHDB_SERVER&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;couchdb.kingye.me&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export COUCHDB_SERVER&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;couchdb3.kingye.me&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export COUCHDB_USER&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;kingye&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export COUCHDB_PW&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># vim docker-compose.yml&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 把和 nginx 冲突的 80 端口改成其他的，比如 8080&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># - &amp;#34;8080:80&amp;#34; # 宿主机端口:容器端口&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># docker compose version&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>docker-compose -f docker-compose.yml up -d
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
-&lt;h2 id="obsidian-客户端">
- obsidian 客户端
- &lt;a class="anchor" href="#obsidian-%e5%ae%a2%e6%88%b7%e7%ab%af">#&lt;/a>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>sudo snap install obsidian --classic
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>OrbStack</title><link>https://kingye.me/note-cs/docs/tool/macos/orbstack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/orbstack/</guid><description>&lt;h1 id="orbstack">
  OrbStack
  &lt;a class="anchor" href="#orbstack">#&lt;/a>
