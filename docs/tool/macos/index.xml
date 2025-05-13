@@ -910,7 +910,9 @@ Using mas list will show all installed applications and their product identifier
  使用教程
  &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b">#&lt;/a>
 &lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ollama run qwen2:0.5b
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>ollama list
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ollama run qwen2:0.5b
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>OrbStack</title><link>https://kingye.me/note-cs/docs/tool/macos/orbstack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/orbstack/</guid><description>&lt;h1 id="orbstack">
  OrbStack
  &lt;a class="anchor" href="#orbstack">#&lt;/a>
