@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>5.8 人工智能 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/book/ai/</link><description>Recent content in 5.8 人工智能 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/book/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Pattern Recognition and Machine Learning</title><link>https://kingye.me/note-cs/docs/study/book/ai/prml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/book/ai/prml/</guid><description>&lt;h1 id="pattern-recognition-and-machine-learninghttpsbookdoubancomsubject2061116">
+ &lt;a href="https://book.douban.com/subject/2061116/">Pattern Recognition and Machine Learning&lt;/a>
+ &lt;a class="anchor" href="#pattern-recognition-and-machine-learninghttpsbookdoubancomsubject2061116">#&lt;/a>
+&lt;/h1></description></item><item><title>动手学深度学习</title><link>https://kingye.me/note-cs/docs/study/book/ai/d2l/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/book/ai/d2l/</guid><description>&lt;h1 id="动手学深度学习httpszhd2lai">
+ &lt;a href="https://zh.d2l.ai/">动手学深度学习&lt;/a>
+ &lt;a class="anchor" href="#%e5%8a%a8%e6%89%8b%e5%ad%a6%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0httpszhd2lai">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf">pytorch 版本&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="安装环境">
+ 安装环境
+ &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e7%8e%af%e5%a2%83">#&lt;/a>
+&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装 conda&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget -c --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash Miniconda3-latest-Linux-x86_64.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>conda create --name d2l python&lt;span style="color:#f92672">=&lt;/span>3.9 -y
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>conda activate d2l
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pip install torch&lt;span style="color:#f92672">==&lt;/span>1.12.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pip install torchvision&lt;span style="color:#f92672">==&lt;/span>0.13.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pip install d2l&lt;span style="color:#f92672">==&lt;/span>0.17.6
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir code/d2l &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> cd d2l
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>wget -c vultr.kingye.me/d2l-zh.zip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>unzip d2l-zh.zip &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> rm d2l-zh.zip
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd pytorch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>jupyter notebook --ip&lt;span style="color:#f92672">=&lt;/span>0.0.0.0 --port&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">8215&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
