@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ONVIF on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/</link><description>Recent content in ONVIF on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/index.xml" rel="self" type="application/rss+xml"/><item><title>设备发现</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/discovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/discovery/</guid><description>&lt;h1 id="设备发现">
+ 设备发现
+ &lt;a class="anchor" href="#%e8%ae%be%e5%a4%87%e5%8f%91%e7%8e%b0">#&lt;/a>
+&lt;/h1>
+&lt;p>我们传统的 Web Services 服务调用的模式都是这样的：客户端在设计时就预先知道目标服务的地址（IP 地址或者域名），客户端基于这个地址进行服务调用。&lt;/p>
+&lt;p>那如果客户端预先不知道目标服务的地址该怎么办？&lt;/p>
+&lt;p>WS-Discovery（全称为 Web Services Dynamic Discovery）标准就是用于解决该问题的，遵循该标准，客户端预先不知道目标服务地址的情况下，可以动态地探测到可用的目标服务，以便进行服务调用。这个过程就是「设备发现」的过程。&lt;/p>
+&lt;h2 id="ws-discovery-模式">
+ WS-Discovery 模式
+ &lt;a class="anchor" href="#ws-discovery-%e6%a8%a1%e5%bc%8f">#&lt;/a>
+&lt;/h2>
+&lt;p>WS-Discovery 定义了两种模式：Ad hoc 模式和 Managed 模式。&lt;/p>
+&lt;h3 id="ad-hoc-模式">
+ Ad hoc 模式
+ &lt;a class="anchor" href="#ad-hoc-%e6%a8%a1%e5%bc%8f">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Ad hoc 模式&lt;/strong>：客户端以多播 (multicast) 的形式往多播组 (multicast group) 发送一个 Probe（探测）消息搜寻目标服务，在该探测消息中，包含相应的搜寻条件。如果目标服务满足该条件，则直接将响应 ProbeMatch 消息（服务自身相关的信息，包括地址）回复给客户端。&lt;/li>
+&lt;/ul>
+&lt;p>Message Exchanges in an ad hoc mode.
+&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153821.png" alt="" />&lt;/p>
+&lt;p>Message exchanges in an ad hoc mode in the presence of a Discovery Proxy.
+&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153835.png" alt="" />&lt;/p>
+&lt;h3 id="managed-模式">
+ Managed 模式
+ &lt;a class="anchor" href="#managed-%e6%a8%a1%e5%bc%8f">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Managed 模式&lt;/strong>：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。&lt;/li>
+&lt;/ul>
+&lt;p>Message exchanges in a managed mode.
+&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153754.png" alt="" />&lt;/p></description></item><item><title>gsoap 生成 onvif 框架</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/gsoap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/gsoap/</guid><description>&lt;h1 id="gsoap-生成-onvif-框架">
+ gsoap 生成 onvif 框架
+ &lt;a class="anchor" href="#gsoap-%e7%94%9f%e6%88%90-onvif-%e6%a1%86%e6%9e%b6">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="生成参数">
+ 生成参数
+ &lt;a class="anchor" href="#%e7%94%9f%e6%88%90%e5%8f%82%e6%95%b0">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="wsdl2h">
+ wsdl2h
+ &lt;a class="anchor" href="#wsdl2h">#&lt;/a>
+&lt;/h3>
+&lt;h4 id="-o4">
+ -O4
+ &lt;a class="anchor" href="#-o4">#&lt;/a>
+&lt;/h4>
+&lt;p>aggressively optimizes the output by &amp;ldquo;schema slicing&amp;rdquo; to remove unused schema components, see our article &lt;a href="https://www.genivia.com/slicing.html">Schema Slicing Methods to Reduce Development Costs of WSDL-Based Web Services&lt;/a> for details;&lt;/p>
+&lt;h4 id="-p">
+ -P
+ &lt;a class="anchor" href="#-p">#&lt;/a>
+&lt;/h4>
+&lt;p>don&amp;rsquo;t create polymorphic types inherited from xsd__anyType;&lt;/p>
+&lt;p>removes the base class &lt;code>xsd__anyType&lt;/code> from the generated C++ classes, which are normally added by wsdl2h if the &lt;em>&lt;code>xsd:anyType&lt;/code>&lt;/em> XSD type is used somewhere in a WSDL.&lt;/p></description></item></channel></rss>

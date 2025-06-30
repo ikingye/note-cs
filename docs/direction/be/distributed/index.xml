@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.2.4 分布式系统 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/distributed/</link><description>Recent content in 2.2.4 分布式系统 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/distributed/index.xml" rel="self" type="application/rss+xml"/><item><title>2.2.4.3 Zookeeper</title><link>https://kingye.me/note-cs/docs/direction/be/distributed/zookeeper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/distributed/zookeeper/</guid><description>&lt;h1 id="zookeeper">
+ Zookeeper
+ &lt;a class="anchor" href="#zookeeper">#&lt;/a>
+&lt;/h1></description></item><item><title>2.2.4.4 Etcd</title><link>https://kingye.me/note-cs/docs/direction/be/distributed/etcd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/distributed/etcd/</guid><description>&lt;h1 id="etcd">
+ Etcd
+ &lt;a class="anchor" href="#etcd">#&lt;/a>
+&lt;/h1>
+&lt;ul>
+&lt;li>读音：&lt;/li>
+&lt;li>名称来源：&lt;code>UNIX&lt;/code> 的 &lt;code>/etc&lt;/code> 文件夹和分布式系统 (Distribute system) 的 D&lt;/li>
+&lt;/ul></description></item><item><title>一致性哈希</title><link>https://kingye.me/note-cs/docs/direction/be/distributed/consistent-hashing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/distributed/consistent-hashing/</guid><description>&lt;h1 id="一致性哈希">
+ 一致性哈希
+ &lt;a class="anchor" href="#%e4%b8%80%e8%87%b4%e6%80%a7%e5%93%88%e5%b8%8c">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="http://blog.phpdr.net/wp-content/uploads/2012/08/Consistent-Hashing-and-Random-Trees.pdf">这篇论文&lt;/a>中提出了一致性 hash 的概念。&lt;/p>
+&lt;p>&lt;a href="https://github.com/apache/incubator-brpc/blob/master/docs/cn/consistent_hashing.md">incubator-brpc doc - 一致性哈希&lt;/a>&lt;/p>
+&lt;p>一致性 hash 满足以下四个性质：&lt;/p>
+&lt;ul>
+&lt;li>平衡性 (Balance) : 每个节点被选到的概率是 O (1/n)。&lt;/li>
+&lt;li>单调性 (Monotonicity) : 当新节点加入时， 不会有请求在老节点间移动， 只会从老节点移动到新节点。当有节点被删除时，也不会影响落在别的节点上的请求。&lt;/li>
+&lt;li>分散性 (Spread) : 当上游的机器看到不同的下游列表时 (在上线时及不稳定的网络中比较常见), 同一个请求尽量映射到少量的节点中。&lt;/li>
+&lt;li>负载 (Load) : 当上游的机器看到不同的下游列表的时候， 保证每台下游分到的请求数量尽量一致。&lt;/li>
+&lt;/ul></description></item><item><title>分布式事务</title><link>https://kingye.me/note-cs/docs/direction/be/distributed/transaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/distributed/transaction/</guid><description>&lt;h1 id="分布式事务">
+ 分布式事务
+ &lt;a class="anchor" href="#%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="微服务化带来的分布式事务问题">
+ 微服务化带来的分布式事务问题
+ &lt;a class="anchor" href="#%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%8c%96%e5%b8%a6%e6%9d%a5%e7%9a%84%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e9%97%ae%e9%a2%98">#&lt;/a>
+&lt;/h2>
+&lt;p>每一个服务内部的数据一致性仍由本地事务来保证。而整个业务层面的全局数据一致性要如何保障呢？&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200528160805.png" alt="" />&lt;/p>
+&lt;h2 id="解决方案">
+ 解决方案
+ &lt;a class="anchor" href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88">#&lt;/a>
+&lt;/h2>
+&lt;p>分布式事务的实现主要有以下 5 种方案：&lt;/p>
+&lt;ul>
+&lt;li>XA 方案&lt;/li>
+&lt;li>TCC 方案&lt;/li>
+&lt;li>本地消息表&lt;/li>
+&lt;li>可靠消息最终一致性方案&lt;/li>
+&lt;li>最大努力通知方案&lt;/li>
+&lt;/ul>
+&lt;p>如果你真的被问到，可以这么说，我们某某特别严格的场景，用的是 TCC 来保证强一致性；然后其他的一些场景基于阿里的 RocketMQ 来实现分布式事务。&lt;/p>
+&lt;p>你找一个严格资金要求绝对不能错的场景，你可以说你是用的 TCC 方案；如果是一般的分布式事务场景，订单插入之后要调用库存服务更新库存，库存数据没有资金那么的敏感，可以用可靠消息最终一致性方案。&lt;/p>
+&lt;p>友情提示一下，RocketMQ 3.2.6 之前的版本，是可以按照上面的思路来的，但是之后接口做了一些改变，我这里不再赘述了。&lt;/p>
+&lt;p>当然如果你愿意，你可以参考可靠消息最终一致性方案来自己实现一套分布式事务，比如基于 RocketMQ 来玩儿。&lt;/p>
+&lt;p>参考：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/doocs/advanced-java/blob/master/docs/distributed-system/distributed-transaction.md">分布式事务了解吗？你们是如何解决分布式事务问题的？&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="xa-方案">
+ XA 方案
+ &lt;a class="anchor" href="#xa-%e6%96%b9%e6%a1%88">#&lt;/a>
+&lt;/h2>
+&lt;p>两阶段提交方案&lt;/p>
+&lt;p>有一个事务管理器的概念，负责&lt;strong>协调多个数据库&lt;/strong>（资源管理器）的事务，事务管理器先问问各个数据库你准备好了吗？
+如果每个数据库都回复 ok，那么就正式提交事务，在各个数据库上执行操作；如果任何其中一个数据库回答不 ok，那么就回滚事务。&lt;/p>
+&lt;p>这种分布式事务方案，比较适合单块应用里，跨多个库的分布式事务，而且因为严重依赖于数据库层面来搞定复杂的事务，效率很低，绝对不适合高并发的场景。&lt;/p>
+&lt;p>如果要玩儿，那么基于 &lt;code>Spring + JTA&lt;/code> 就可以搞定，自己随便搜个 demo 看看就知道了。&lt;/p>
+&lt;p>这个方案，我们很少用，一般来说某个系统内部如果出现跨多个库的这么一个操作，是不合规的。&lt;/p>
+&lt;hr>
+&lt;h3 id="tcc">
+ TCC
+ &lt;a class="anchor" href="#tcc">#&lt;/a>
+&lt;/h3>
+&lt;p>这种方案说实话几乎很少人使用，
+因为这个事务回滚实际上是严重依赖于你自己写代码来回滚和补偿了，会造成补偿代码巨大，非常之恶心，业务代码是很难维护的。&lt;/p>
+&lt;p>比如说我们，一般来说跟钱相关的，跟钱打交道的，支付、交易相关的场景，我们会用 TCC，严格保证分布式事务要么全部成功，要么全部自动回滚，严格保证资金的正确性，保证在资金上不会出现问题。&lt;/p>
+&lt;p>而且最好是你的各个业务执行的时间都比较短。&lt;/p>
+&lt;p>TCC 分布式事务框架，比如国内开源的&lt;/p>
+&lt;ul>
+&lt;li>ByteTCC&lt;/li>
+&lt;li>himly&lt;/li>
+&lt;li>tcc-transaction&lt;/li>
+&lt;/ul>
+&lt;h4 id="try">
+ Try
+ &lt;a class="anchor" href="#try">#&lt;/a>
+&lt;/h4>
+&lt;p>首先你的业务的主流程以及各个接口提供的业务含义，不是说直接完成那个业务操作，而是完成一个 Try 的操作。&lt;/p></description></item></channel></rss>
