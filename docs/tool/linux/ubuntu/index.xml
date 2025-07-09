@@ -621,25 +621,23 @@
 &lt;/li>
 &lt;/ul>
 &lt;blockquote class="book-hint warning">
- &lt;ul>
-&lt;li>
-&lt;p>crictl 不支持改镜像 tag&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>crictl 不支持 load 镜像文件&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>需要用 ctr&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># namespace 为 k8s.io&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ctr -n&lt;span style="color:#f92672">=&lt;/span>k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ctr -n&lt;span style="color:#f92672">=&lt;/span>k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul>
-&lt;p>参考：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/kubernetes-sigs/cri-tools/issues/546">Crictl not support load images?&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.scottlowe.org/2020/01/25/manually-loading-container-images-with-containerd/">Manually Loading Container Images with containerD&lt;/a>&lt;/li>
-&lt;/ul>
+ 
+
+- crictl 不支持改镜像 tag
+- crictl 不支持 load 镜像文件
+- 需要用 ctr
+
+ ```shell
+ # namespace 为 k8s.io
+ ctr -n=k8s.io image pull registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6
+ ctr -n=k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6
+ ```
+
+参考：
+
+- [Crictl not support load images?](https://github.com/kubernetes-sigs/cri-tools/issues/546)
+- [Manually Loading Container Images with containerD](https://blog.scottlowe.org/2020/01/25/manually-loading-container-images-with-containerd/)
+
 
 &lt;/blockquote>
 
@@ -675,14 +673,12 @@
 &lt;li>ctr 是 containerd 自带的 CLI 命令行工具&lt;/li>
 &lt;/ul>
 &lt;blockquote class="book-hint warning">
- &lt;ul>
-&lt;li>ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（&lt;code>crictl image&lt;/code> 才能看到）
-&lt;ul>
-&lt;li>ctr -n k8s.io image list&lt;/li>
-&lt;li>ctr -n k8s.io image pull&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+ 
+
+- ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（`crictl image` 才能看到）
+ - ctr -n k8s.io image list
+ - ctr -n k8s.io image pull
+
 
 &lt;/blockquote>
 

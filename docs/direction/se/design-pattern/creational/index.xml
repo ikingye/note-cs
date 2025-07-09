@@ -18,41 +18,223 @@
  代码示例
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
 &lt;/h2>
+&lt;div class="book-tabs">
 
 
+---
 
 
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
- &lt;label for="tabs-code-0">C&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
- &lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
- &lt;label for="tabs-code-2">C#&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
- &lt;label for="tabs-code-3">Go&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
- &lt;label for="tabs-code-4">Java&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
- &lt;label for="tabs-code-5">JavaScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
- &lt;label for="tabs-code-6">Kotlin&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
- &lt;label for="tabs-code-7">PHP&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
- &lt;label for="tabs-code-8">Python2&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
- &lt;label for="tabs-code-9">Python3&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
- &lt;label for="tabs-code-10">Ruby&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ruby" data-lang="ruby">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
- &lt;label for="tabs-code-11">Rust&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
- &lt;label for="tabs-code-12">Scala&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-scala" data-lang="scala">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
- &lt;label for="tabs-code-13">Swift&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-swift" data-lang="swift">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
- &lt;label for="tabs-code-14">TypeScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;/div></description></item><item><title>构造器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</guid><description>&lt;h1 id="构造器模式">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
+&lt;label for="tabs-code-0">C&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
+&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c++
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
+&lt;label for="tabs-code-2">C#&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c#
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
+&lt;label for="tabs-code-3">Go&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```go
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
+&lt;label for="tabs-code-4">Java&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```java
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
+&lt;label for="tabs-code-5">JavaScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```javascript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
+&lt;label for="tabs-code-6">Kotlin&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```kotlin
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
+&lt;label for="tabs-code-7">PHP&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```php
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
+&lt;label for="tabs-code-8">Python2&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
+&lt;label for="tabs-code-9">Python3&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
+&lt;label for="tabs-code-10">Ruby&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```ruby
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
+&lt;label for="tabs-code-11">Rust&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```rust
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
+&lt;label for="tabs-code-12">Scala&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```scala
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
+&lt;label for="tabs-code-13">Swift&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```swift
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
+&lt;label for="tabs-code-14">TypeScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```typescript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;/div></description></item><item><title>构造器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</guid><description>&lt;h1 id="构造器模式">
  构造器模式
  &lt;a class="anchor" href="#%e6%9e%84%e9%80%a0%e5%99%a8%e6%a8%a1%e5%bc%8f">#&lt;/a>
 &lt;/h1>
@@ -76,41 +258,223 @@
  代码示例
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
 &lt;/h2>
+&lt;div class="book-tabs">
 
 
+---
 
 
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
- &lt;label for="tabs-code-0">C&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
- &lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
- &lt;label for="tabs-code-2">C#&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
- &lt;label for="tabs-code-3">Go&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
- &lt;label for="tabs-code-4">Java&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
- &lt;label for="tabs-code-5">JavaScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
- &lt;label for="tabs-code-6">Kotlin&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
- &lt;label for="tabs-code-7">PHP&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
- &lt;label for="tabs-code-8">Python2&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
- &lt;label for="tabs-code-9">Python3&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
- &lt;label for="tabs-code-10">Ruby&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ruby" data-lang="ruby">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
- &lt;label for="tabs-code-11">Rust&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
- &lt;label for="tabs-code-12">Scala&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-scala" data-lang="scala">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
- &lt;label for="tabs-code-13">Swift&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-swift" data-lang="swift">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
- &lt;label for="tabs-code-14">TypeScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;/div></description></item><item><title>工厂方法</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</guid><description>&lt;h1 id="工厂方法模式">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
+&lt;label for="tabs-code-0">C&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
+&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c++
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
+&lt;label for="tabs-code-2">C#&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c#
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
+&lt;label for="tabs-code-3">Go&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```go
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
+&lt;label for="tabs-code-4">Java&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```java
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
+&lt;label for="tabs-code-5">JavaScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```javascript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
+&lt;label for="tabs-code-6">Kotlin&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```kotlin
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
+&lt;label for="tabs-code-7">PHP&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```php
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
+&lt;label for="tabs-code-8">Python2&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
+&lt;label for="tabs-code-9">Python3&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
+&lt;label for="tabs-code-10">Ruby&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```ruby
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
+&lt;label for="tabs-code-11">Rust&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```rust
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
+&lt;label for="tabs-code-12">Scala&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```scala
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
+&lt;label for="tabs-code-13">Swift&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```swift
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
+&lt;label for="tabs-code-14">TypeScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```typescript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;/div></description></item><item><title>工厂方法</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</guid><description>&lt;h1 id="工厂方法模式">
  工厂方法模式
  &lt;a class="anchor" href="#%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f">#&lt;/a>
 &lt;/h1>
@@ -130,41 +494,223 @@
  代码示例
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
 &lt;/h2>
+&lt;div class="book-tabs">
 
 
+---
 
 
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
- &lt;label for="tabs-code-0">C&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
- &lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
- &lt;label for="tabs-code-2">C#&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
- &lt;label for="tabs-code-3">Go&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
- &lt;label for="tabs-code-4">Java&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
- &lt;label for="tabs-code-5">JavaScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
- &lt;label for="tabs-code-6">Kotlin&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
- &lt;label for="tabs-code-7">PHP&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
- &lt;label for="tabs-code-8">Python2&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
- &lt;label for="tabs-code-9">Python3&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
- &lt;label for="tabs-code-10">Ruby&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ruby" data-lang="ruby">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
- &lt;label for="tabs-code-11">Rust&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
- &lt;label for="tabs-code-12">Scala&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-scala" data-lang="scala">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
- &lt;label for="tabs-code-13">Swift&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-swift" data-lang="swift">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
- &lt;label for="tabs-code-14">TypeScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;/div>
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
+&lt;label for="tabs-code-0">C&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
+&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c++
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
+&lt;label for="tabs-code-2">C#&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c#
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
+&lt;label for="tabs-code-3">Go&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```go
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
+&lt;label for="tabs-code-4">Java&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```java
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
+&lt;label for="tabs-code-5">JavaScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```javascript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
+&lt;label for="tabs-code-6">Kotlin&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```kotlin
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
+&lt;label for="tabs-code-7">PHP&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```php
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
+&lt;label for="tabs-code-8">Python2&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
+&lt;label for="tabs-code-9">Python3&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
+&lt;label for="tabs-code-10">Ruby&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```ruby
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
+&lt;label for="tabs-code-11">Rust&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```rust
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
+&lt;label for="tabs-code-12">Scala&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```scala
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
+&lt;label for="tabs-code-13">Swift&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```swift
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
+&lt;label for="tabs-code-14">TypeScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```typescript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;/div>
 
 &lt;hr>
 &lt;h2 id="参考">
@@ -182,41 +728,223 @@
  代码示例
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
 &lt;/h2>
+&lt;div class="book-tabs">
 
 
+---
 
 
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
- &lt;label for="tabs-code-0">C&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
- &lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
- &lt;label for="tabs-code-2">C#&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
- &lt;label for="tabs-code-3">Go&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
- &lt;label for="tabs-code-4">Java&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
- &lt;label for="tabs-code-5">JavaScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
- &lt;label for="tabs-code-6">Kotlin&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-kotlin" data-lang="kotlin">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
- &lt;label for="tabs-code-7">PHP&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
- &lt;label for="tabs-code-8">Python2&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
- &lt;label for="tabs-code-9">Python3&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
- &lt;label for="tabs-code-10">Ruby&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ruby" data-lang="ruby">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
- &lt;label for="tabs-code-11">Rust&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
- &lt;label for="tabs-code-12">Scala&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-scala" data-lang="scala">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
- &lt;label for="tabs-code-13">Swift&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-swift" data-lang="swift">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
- &lt;label for="tabs-code-14">TypeScript&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;/div></description></item><item><title>单例</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</guid><description>&lt;h1 id="单例模式">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
+&lt;label for="tabs-code-0">C&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
+&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c++
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
+&lt;label for="tabs-code-2">C#&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c#
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
+&lt;label for="tabs-code-3">Go&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```go
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
+&lt;label for="tabs-code-4">Java&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```java
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
+&lt;label for="tabs-code-5">JavaScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```javascript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
+&lt;label for="tabs-code-6">Kotlin&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```kotlin
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
+&lt;label for="tabs-code-7">PHP&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```php
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
+&lt;label for="tabs-code-8">Python2&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
+&lt;label for="tabs-code-9">Python3&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
+&lt;label for="tabs-code-10">Ruby&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```ruby
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
+&lt;label for="tabs-code-11">Rust&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```rust
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
+&lt;label for="tabs-code-12">Scala&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```scala
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
+&lt;label for="tabs-code-13">Swift&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```swift
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
+&lt;label for="tabs-code-14">TypeScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```typescript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;/div></description></item><item><title>单例</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</guid><description>&lt;h1 id="单例模式">
  单例模式
  &lt;a class="anchor" href="#%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f">#&lt;/a>
 &lt;/h1>

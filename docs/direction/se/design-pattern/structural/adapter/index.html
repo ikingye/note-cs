@@ -39,41 +39,223 @@ public class AdapterPattern {
 
 
 
+---
 
 
-  C
-  
-  C++
-  
-  C#
-  
-  Go
-  
-  Java
-  
-  JavaScript
-  
-  Kotlin
-  
-  PHP
-  
-  Python2
-  
-  Python3
-  
-  Ruby
-  
-  Rust
-  
-  Scala
-  
-  Swift
-  
-  TypeScript
-  "><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="适配器"><meta property="og:description" content="适配器模式 # Adapter
+
+C
+
+
+```c
+
+```
+
+
+
+
+---
+
+
+
+C++
+
+
+```c++
+
+```
+
+
+
+
+---
+
+
+
+C#
+
+
+```c#
+
+```
+
+
+
+
+---
+
+
+
+Go
+
+
+```go
+
+```
+
+
+
+
+---
+
+
+
+Java
+
+
+```java
+
+```
+
+
+
+
+---
+
+
+
+JavaScript
+
+
+```javascript
+
+```
+
+
+
+
+---
+
+
+
+Kotlin
+
+
+```kotlin
+
+```
+
+
+
+
+---
+
+
+
+PHP
+
+
+```php
+
+```
+
+
+
+
+---
+
+
+
+Python2
+
+
+```python
+
+```
+
+
+
+
+---
+
+
+
+Python3
+
+
+```python
+
+```
+
+
+
+
+---
+
+
+
+Ruby
+
+
+```ruby
+
+```
+
+
+
+
+---
+
+
+
+Rust
+
+
+```rust
+
+```
+
+
+
+
+---
+
+
+
+Scala
+
+
+```scala
+
+```
+
+
+
+
+---
+
+
+
+Swift
+
+
+```swift
+
+```
+
+
+
+
+---
+
+
+
+TypeScript
+
+
+```typescript
+
+```
+
+
+
+
+---
+
+
+"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="适配器"><meta property="og:description" content="适配器模式 # Adapter
 适配器 Adapter 继承自 Adaptee，同时又实现了目标(Target)接口。
-public interface Target { // 这是源类Adapteee没有的方法 public void Request(); } public class Adaptee { public void SpecificRequest() { } } // 适配器Adapter继承自Adaptee，同时又实现了目标(Target)接口。 public class Adapter extends Adaptee implements Target { // 目标接口要求调用Request()这个方法名，但源类Adaptee没有方法Request() // 因此适配器补充上这个方法名 // 但实际上Request()只是调用源类Adaptee的SpecificRequest()方法的内容 // 所以适配器只是将SpecificRequest()方法作了一层封装，封装成Target可以调用的Request()而已 @Override public void Request() { this.SpecificRequest(); } } public class AdapterPattern { public static void main(String[] args){ Target mAdapter = new Adapter()； mAdapter.Request(); } } 代码示例 # C C++ C# Go Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift TypeScript"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:00:05+08:00"><title>适配器 | 计算机学习笔记</title>
-<link rel=manifest href=/note-cs/manifest.json><link rel=icon href=/note-cs/favicon.png><link rel=canonical href=https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/><link rel=stylesheet href=/note-cs/book.min.a9fd347d07ee042ade7b8c22d2c14b72b69e154966252ab277e80a22c2a3be81.css integrity="sha256-qf00fQfuBCree4wi0sFLcraeFUlmJSqyd+gKIsKjvoE=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.06c3325658a8679f7cb593341b52c3996e595bb944eff1a628de3404c00dbecf.js integrity="sha256-BsMyVlioZ598tZM0G1LDmW5ZW7lE7/GmKN40BMANvs8=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+public interface Target { // 这是源类Adapteee没有的方法 public void Request(); } public class Adaptee { public void SpecificRequest() { } } // 适配器Adapter继承自Adaptee，同时又实现了目标(Target)接口。 public class Adapter extends Adaptee implements Target { // 目标接口要求调用Request()这个方法名，但源类Adaptee没有方法Request() // 因此适配器补充上这个方法名 // 但实际上Request()只是调用源类Adaptee的SpecificRequest()方法的内容 // 所以适配器只是将SpecificRequest()方法作了一层封装，封装成Target可以调用的Request()而已 @Override public void Request() { this.SpecificRequest(); } } public class AdapterPattern { public static void main(String[] args){ Target mAdapter = new Adapter()； mAdapter.Request(); } } 代码示例 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python ``` --- Python3 ```python ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- TypeScript ```typescript ``` ---"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:00:05+08:00"><title>适配器 | 计算机学习笔记</title>
+<link rel=icon href=/note-cs/favicon.png><link rel=manifest href=/note-cs/manifest.json><link rel=canonical href=https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/><link rel=stylesheet href=/note-cs/book.min.03e4ab3052a8f058fc41ced92a79ea4c4438a6d2e0faea497adf146e9ca5d0bc.css integrity="sha256-A+SrMFKo8Fj8Qc7ZKnnqTEQ4ptLg+upJet8Ubpyl0Lw=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.4a3cde4f906479e005a2327790485bbe47553d6d940fb289ee0a55d077c0bd82.js integrity="sha256-SjzeT5BkeeAFojJ3kEhbvkdVPW2UD7KJ7gpV0HfAvYI=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/note-cs/><span>计算机学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础</span><ul><li><input type=checkbox id=section-b8a8b6bcfe972d57601ab3d1dc57b001 class=toggle>
 <label for=section-b8a8b6bcfe972d57601ab3d1dc57b001 class="flex justify-between"><a href=/note-cs/docs/basic/cc/>1.1 计算机组成原理</a></label><ul><li><a href=/note-cs/docs/basic/cc/cpu/>CPU</a></li><li><a href=/note-cs/docs/basic/cc/dmi/>DMI</a></li><li><a href=/note-cs/docs/basic/cc/gpu/>GPU</a><ul><li><input type=checkbox id=section-dbab80a6c2f300c57d7481089fd96531 class=toggle>
 <label for=section-dbab80a6c2f300c57d7481089fd96531 class="flex justify-between"><a href=/note-cs/docs/basic/cc/gpu/cuda/>CUDA</a></label><ul><li><input type=checkbox id=section-b84be7befc9889834cc4135c83a7f7e0 class=toggle>
@@ -524,7 +706,8 @@ public interface Target { // 这是源类Adapteee没有的方法 public void Req
 <label for=section-7f856317a82a23f6ea20bfcd900f6052 class="flex justify-between"><a href=/note-cs/docs/domain/cc/virtual/vmware/>VMware Fusion</a></label><ul></ul></li><li><input type=checkbox id=section-b170a20d57fe5b0cfa17eb0857969f5f class=toggle>
 <label for=section-b170a20d57fe5b0cfa17eb0857969f5f class="flex justify-between"><a href=/note-cs/docs/domain/cc/virtual/parallels/>Parallels</a></label><ul></ul></li><li><input type=checkbox id=section-04f1f5e8f98d72623c25bc12e0f6171d class=toggle>
 <label for=section-04f1f5e8f98d72623c25bc12e0f6171d class="flex justify-between"><a href=/note-cs/docs/domain/cc/virtual/virtualbox/>VirtualBox</a></label><ul></ul></li><li><input type=checkbox id=section-ea9272f37531a73e0d8c5270f1f831f1 class=toggle>
-<label for=section-ea9272f37531a73e0d8c5270f1f831f1 class="flex justify-between"><a href=/note-cs/docs/domain/cc/virtual/network/>虚拟机网络</a></label><ul></ul></li></ul></li><li><input type=checkbox id=section-d70c9e2148b4f6bdcae55f5ddbc6283c class=toggle>
+<label for=section-ea9272f37531a73e0d8c5270f1f831f1 class="flex justify-between"><a href=/note-cs/docs/domain/cc/virtual/network/>虚拟机网络</a></label><ul></ul></li><li><input type=checkbox id=section-5a00aafb096ee318b773a2b706d71a15 class=toggle>
+<label for=section-5a00aafb096ee318b773a2b706d71a15 class="flex justify-between"><a href=/note-cs/docs/domain/cc/virtual/iommu/>IOMMU</a></label></li></ul></li><li><input type=checkbox id=section-d70c9e2148b4f6bdcae55f5ddbc6283c class=toggle>
 <label for=section-d70c9e2148b4f6bdcae55f5ddbc6283c class="flex justify-between"><a href=/note-cs/docs/domain/cc/others/>其他</a></label><ul><li><input type=checkbox id=section-239ba25de13cd9a2a8a7ec8260871ad9 class=toggle>
 <label for=section-239ba25de13cd9a2a8a7ec8260871ad9 class="flex justify-between"><a href=/note-cs/docs/domain/cc/others/iaas/>IaaS</a></label><ul></ul></li><li><input type=checkbox id=section-70a6353b2ff22b62f90b44e0f808162f class=toggle>
 <label for=section-70a6353b2ff22b62f90b44e0f808162f class="flex justify-between"><a href=/note-cs/docs/domain/cc/others/paas/>PaaS</a></label><ul><li><a href=/note-cs/docs/domain/cc/others/paas/gae/>GAE</a></li><li><a href=/note-cs/docs/domain/cc/others/paas/heroku/>Heroku</a></li><li><a href=/note-cs/docs/domain/cc/others/paas/openshift/>OpenShift</a></li><li><a href=/note-cs/docs/domain/cc/others/paas/cloud-foundry/>Cloud Foundry</a></li><li><a href=/note-cs/docs/domain/cc/others/paas/appfog/>AppFog</a></li></ul></li><li><input type=checkbox id=section-27e7d221b91a2096ded27a0e6125c087 class=toggle>
@@ -721,9 +904,7 @@ public interface Target { // 这是源类Adapteee没有的方法 public void Req
 <label for=section-7936f940104437924a877ae883051c1a class="flex justify-between"><a href=/note-cs/docs/study/activity/>4.4 学习活动</a></label><ul><li><input type=checkbox id=section-144731ee23b548e165d0fe378026ad05 class=toggle>
 <label for=section-144731ee23b548e165d0fe378026ad05 class="flex justify-between"><a href=/note-cs/docs/study/activity/istio-handbook/>《Istio Handbook》写作</a></label><ul></ul></li><li><input type=checkbox id=section-0ff0b8691399d36d8cc1260543be6ee5 class=toggle>
 <label for=section-0ff0b8691399d36d8cc1260543be6ee5 class="flex justify-between"><a href=/note-cs/docs/study/activity/csapp/>《深入理解计算机系统》学习</a></label><ul></ul></li><li><input type=checkbox id=section-572b409c90e3e7cb82ae156df16fdc16 class=toggle>
-<label for=section-572b409c90e3e7cb82ae156df16fdc16 class="flex justify-between"><a href=/note-cs/docs/study/activity/kubernetes-scheduler/>Kubernetes 调度器源码学习</a></label><ul></ul></li></ul></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/note-cs/svg/menu.svg class=book-icon alt=Menu>
-</label><strong>适配器</strong>
-<label for=toc-control><img src=/note-cs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#代码示例>代码示例</a></li></ul></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></aside></header><article id=article class=markdown><h1 id=适配器模式>适配器模式
+<label for=section-572b409c90e3e7cb82ae156df16fdc16 class="flex justify-between"><a href=/note-cs/docs/study/activity/kubernetes-scheduler/>Kubernetes 调度器源码学习</a></label><ul></ul></li></ul></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/note-cs/svg/menu.svg class=book-icon alt=Menu></label><h3>适配器</h3><label for=toc-control><img src=/note-cs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#代码示例>代码示例</a></li></ul></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></aside></header><article id=article class=markdown><h1 id=适配器模式>适配器模式
 <a class=anchor href=#%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f>#</a></h1><p>Adapter</p><p>适配器 Adapter 继承自 Adaptee，同时又实现了目标(Target)接口。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>Target</span> {
 </span></span><span style=display:flex><span>    <span style=color:#75715e>// 这是源类Adapteee没有的方法</span>
 </span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>Request</span>();
@@ -753,21 +934,51 @@ public interface Target { // 这是源类Adapteee没有的方法 public void Req
 </span></span><span style=display:flex><span>    }
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=代码示例>代码示例
-<a class=anchor href=#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-code id=tabs-code-0 checked>
-<label for=tabs-code-0>C</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-1>
-<label for=tabs-code-1>C++</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-2>
-<label for=tabs-code-2>C#</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-3>
-<label for=tabs-code-3>Go</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-4>
-<label for=tabs-code-4>Java</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-5>
-<label for=tabs-code-5>JavaScript</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-6>
-<label for=tabs-code-6>Kotlin</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-7>
-<label for=tabs-code-7>PHP</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-8>
-<label for=tabs-code-8>Python2</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-9>
-<label for=tabs-code-9>Python3</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-10>
-<label for=tabs-code-10>Ruby</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-11>
-<label for=tabs-code-11>Rust</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-12>
-<label for=tabs-code-12>Scala</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-scala data-lang=scala></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-13>
-<label for=tabs-code-13>Swift</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift></code></pre></div></div><input type=radio class=toggle name=tabs-code id=tabs-code-14>
-<label for=tabs-code-14>TypeScript</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript></code></pre></div></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/note-cs/commit/e11fcf719f35e04d68b7aab588f7a260c3d5293c title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/note-cs/svg/calendar.svg class=book-icon alt>
+<a class=anchor href=#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b>#</a></h2><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-0 checked>
+<label for=tabs-code-0>C</label><div class="book-tabs-content markdown-inner">```c
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-1>
+<label for=tabs-code-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-2>
+<label for=tabs-code-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-3>
+<label for=tabs-code-3>Go</label><div class="book-tabs-content markdown-inner">```go
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-4>
+<label for=tabs-code-4>Java</label><div class="book-tabs-content markdown-inner">```java
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-5>
+<label for=tabs-code-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-6>
+<label for=tabs-code-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-7>
+<label for=tabs-code-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-8>
+<label for=tabs-code-8>Python2</label><div class="book-tabs-content markdown-inner">```python
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-9>
+<label for=tabs-code-9>Python3</label><div class="book-tabs-content markdown-inner">```python
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-10>
+<label for=tabs-code-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-11>
+<label for=tabs-code-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-12>
+<label for=tabs-code-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-13>
+<label for=tabs-code-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---
+<input type=radio class=toggle name=tabs-code id=tabs-code-14>
+<label for=tabs-code-14>TypeScript</label><div class="book-tabs-content markdown-inner">```typescript
+```</div>---</div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/note-cs/commit/e11fcf719f35e04d68b7aab588f7a260c3d5293c title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/note-cs/svg/calendar.svg class=book-icon alt>
 <span>2021-11-01</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/note-cs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
 版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#代码示例>代码示例</a></li></ul></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></div></aside></main></body></html>

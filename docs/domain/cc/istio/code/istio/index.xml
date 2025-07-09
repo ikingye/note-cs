@@ -2,199 +2,214 @@
  Istio 源码结构
  &lt;a class="anchor" href="#istio-%e6%ba%90%e7%a0%81%e7%bb%93%e6%9e%84">#&lt;/a>
 &lt;/h1>
+&lt;div class="book-tabs">
 
 
+&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-0" checked="checked" />
+&lt;label for="tabs-api-resources-0">1.6.5&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```shell
+$ tree -L 2
+.
+├── BUGS-AND-FEATURE-REQUESTS.md
+├── CODEOWNERS
+├── CONTRIBUTING.md
+├── LICENSE
+├── Makefile
+├── Makefile.core.mk
+├── Makefile.overrides.mk
+├── README.md
+├── SUPPORT.md
+├── bin
+│ ├── check_no_modify.sh
+│ ├── check_samples.sh
+│ ├── codecov.sh
+│ ├── codecov_diff.sh
+│ ├── diff_yaml.py
+│ ├── init.sh
+│ ├── mixer_codegen.sh
+│ ├── nomodify.md5
+│ ├── protoc.sh
+│ ├── update_crds.sh
+│ ├── update_deps.sh
+│ └── update_no_modify.sh
+├── codecov.skip
+├── codecov.threshold
+├── common
+│ ├── Makefile.common.mk
+│ ├── config
+│ └── scripts
+├── common-protos
+│ ├── github.com
+│ ├── gogoproto
+│ ├── google
+│ └── k8s.io
+├── docker
+│ ├── Dockerfile.base
+│ └── ca-certificates.tgz
+├── galley
+│ ├── README.md
+│ ├── pkg
+│ ├── testdatasets
+│ └── tools
+├── go.mod
+├── go.sum
+├── install
+│ ├── consul
+│ ├── gcp
+│ └── tools
+├── istio.deps
+├── istioctl
+│ ├── cmd
+│ ├── docker
+│ └── pkg
+├── licenses
+│ ├── ...
+├── manifests
+│ ├── addons
+│ ├── charts
+│ └── profiles
+├── mixer
+│ ├── README.md
+│ ├── adapter
+│ ├── cmd
+│ ├── docker
+│ ├── pkg
+│ ├── template
+│ ├── test
+│ ├── testdata
+│ └── tools
+├── operator
+│ ├── ARCHITECTURE.md
+│ ├── LICENSE
+│ ├── README.md
+│ ├── cmd
+│ ├── codecov.skip
+│ ├── codecov.threshold
+│ ├── data
+│ ├── deploy
+│ ├── docker
+│ ├── images
+│ ├── operator.mk
+│ ├── pkg
+│ ├── samples
+│ ├── scripts
+│ └── version
+├── pilot
+│ ├── cmd
+│ ├── docker
+│ ├── pkg
+│ ├── test
+│ └── tools
+├── pkg
+│ ├── adsc
+│ ├── bootstrap
+│ ├── cmd
+│ ├── config
+│ ├── dns
+│ ├── envoy
+│ ├── istio-agent
+│ ├── jwt
+│ ├── keepalive
+│ ├── kube
+│ ├── mcp
+│ ├── proto
+│ ├── queue
+│ ├── spiffe
+│ ├── test
+│ ├── tracing
+│ ├── util
+│ └── webhooks
+├── prow
+│ ├── config
+│ ├── integ-suite-kind.sh
+│ ├── integ-suite-local.sh
+│ ├── lib.sh
+│ ├── release-commit.sh
+│ ├── release-test.sh
+│ └── upload-istioio-snippets.sh
+├── release
+│ ├── downloadIstioCandidate.sh
+│ └── downloadIstioCtl.sh
+├── samples
+│ ├── README.md
+│ ├── addons
+│ ├── bookinfo
+│ ├── certs
+│ ├── custom-bootstrap
+│ ├── external
+│ ├── fortio
+│ ├── health-check
+│ ├── helloworld
+│ ├── httpbin
+│ ├── https
+│ ├── kubernetes-blog
+│ ├── multicluster
+│ ├── rawvm
+│ ├── security
+│ ├── sleep
+│ ├── tcp-echo
+│ └── websockets
+├── security
+│ ├── README.md
+│ ├── cmd
+│ ├── pkg
+│ ├── proto
+│ ├── samples
+│ └── tools
+├── test.go
+├── tests
+│ ├── apps
+│ ├── binary
+│ ├── codecov
+│ ├── common
+│ ├── integration
+│ ├── istio.mk
+│ ├── testdata
+│ └── util
+├── tools
+│ ├── buildx-gen.sh
+│ ├── certs
+│ ├── convert_RbacConfig_to_ClusterRbacConfig.sh
+│ ├── dump_kubernetes.sh
+│ ├── gen_istio_image_list.sh
+│ ├── istio-clean-iptables
+│ ├── istio-docker.mk
+│ ├── istio-iptables
+│ └── packaging
+└── vendor
+ ├── cloud.google.com
+ ├── code.cloudfoundry.org
+ ├── contrib.go.opencensus.io
+ ├── fortio.org
+ ├── github.com
+ ├── go.opencensus.io
+ ├── go.uber.org
+ └── golang.org
+
+144 directories, 54 files
+
+```
+
+&lt;/div>
 
 
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-0" checked="checked" />
- &lt;label for="tabs-api-resources-0">1.6.5&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$ tree -L &lt;span style="color:#ae81ff">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>.
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── BUGS-AND-FEATURE-REQUESTS.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── CODEOWNERS
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── CONTRIBUTING.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── LICENSE
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Makefile
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Makefile.core.mk
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── Makefile.overrides.mk
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── README.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── SUPPORT.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── bin
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── check_no_modify.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── check_samples.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov_diff.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── diff_yaml.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── init.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── mixer_codegen.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── nomodify.md5
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── protoc.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── update_crds.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── update_deps.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── update_no_modify.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── codecov.skip
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── codecov.threshold
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── common
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── Makefile.common.mk
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── config
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── scripts
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── common-protos
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── github.com
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── gogoproto
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── google
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── k8s.io
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── docker
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── Dockerfile.base
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── ca-certificates.tgz
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── galley
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── testdatasets
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── go.mod
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── go.sum
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── install
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── consul
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── gcp
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── istio.deps
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── istioctl
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── pkg
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── licenses
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── ...
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── manifests
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── addons
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── charts
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── profiles
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── mixer
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── adapter
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── template
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── test
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── testdata
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── operator
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── ARCHITECTURE.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── LICENSE
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov.skip
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov.threshold
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── data
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── deploy
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── images
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── operator.mk
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── samples
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── scripts
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── version
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── pilot
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── docker
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── test
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── pkg
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── adsc
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── bootstrap
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── config
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── dns
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── envoy
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-agent
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── jwt
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── keepalive
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── kube
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── mcp
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── proto
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── queue
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── spiffe
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── test
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── tracing
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── util
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── webhooks
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── prow
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── config
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── integ-suite-kind.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── integ-suite-local.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── lib.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── release-commit.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── release-test.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── upload-istioio-snippets.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── release
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── downloadIstioCandidate.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── downloadIstioCtl.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── samples
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── addons
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── bookinfo
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── certs
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── custom-bootstrap
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── external
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── fortio
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── health-check
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── helloworld
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── httpbin
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── https
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── kubernetes-blog
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── multicluster
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── rawvm
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── security
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── sleep
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── tcp-echo
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── websockets
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── security
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── README.md
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── cmd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── pkg
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── proto
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── samples
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── tools
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── test.go
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── tests
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── apps
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── binary
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── codecov
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── common
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── integration
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio.mk
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── testdata
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── util
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── tools
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── buildx-gen.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── certs
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── convert_RbacConfig_to_ClusterRbacConfig.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── dump_kubernetes.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── gen_istio_image_list.sh
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-clean-iptables
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-docker.mk
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ ├── istio-iptables
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └── packaging
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└── vendor
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── cloud.google.com
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── code.cloudfoundry.org
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── contrib.go.opencensus.io
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── fortio.org
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── github.com
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── go.opencensus.io
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── go.uber.org
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── golang.org
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">144&lt;/span> directories, &lt;span style="color:#ae81ff">54&lt;/span> files
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-1" />
- &lt;label for="tabs-api-resources-1">1.4.6&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;/div>&lt;/div></description></item><item><title>Pilot</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</guid><description>&lt;h1 id="pilot">
+&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-1" />
+&lt;label for="tabs-api-resources-1">1.4.6&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+&lt;/div>
+
+
+&lt;/div></description></item><item><title>Pilot</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</guid><description>&lt;h1 id="pilot">
  Pilot
  &lt;a class="anchor" href="#pilot">#&lt;/a>
 &lt;/h1>
 &lt;blockquote class="book-hint info">
- 若无特别说明，本文是根据 &lt;a href="https://github.com/istio/istio/tree/1.6.5">Istio 1.6.5&lt;/a> 进行分析。
+ 
+若无特别说明，本文是根据 [Istio 1.6.5](https://github.com/istio/istio/tree/1.6.5) 进行分析。
+
 &lt;/blockquote>
 
 &lt;h2 id="pilot-discovery">
