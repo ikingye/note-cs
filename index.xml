@@ -4444,7 +4444,15 @@ CUPS（&lt;code>Control and User Plane Separation&lt;/code> ）架构&lt;/p></de
 &lt;hr></description></item><item><title>CDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</guid><description>&lt;h1 id="cds">
  CDS
  &lt;a class="anchor" href="#cds">#&lt;/a>
-&lt;/h1></description></item><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/os/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/cpu/</guid><description>&lt;h1 id="cpu">
+&lt;/h1></description></item><item><title>Claude Code</title><link>https://kingye.me/note-cs/docs/tool/macos/claude-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/claude-code/</guid><description>&lt;h1 id="claude-code">
+ Claude Code
+ &lt;a class="anchor" href="#claude-code">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/anthropics/claude-code">anthropics/claude-code&lt;/a> &lt;img src="https://img.shields.io/github/stars/anthropics/claude-code.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/anthropics/claude-code.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/anthropics/claude-code.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/anthropics/claude-code.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/anthropics/claude-code.svg" alt="Last commit" />&lt;/p></description></item><item><title>Codex CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/codex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/codex/</guid><description>&lt;h1 id="codex-cli">
+ Codex CLI
+ &lt;a class="anchor" href="#codex-cli">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/openai/codex">openai/codex&lt;/a> &lt;img src="https://img.shields.io/github/stars/openai/codex.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/openai/codex.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/openai/codex.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/openai/codex.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/openai/codex.svg" alt="Last commit" />&lt;/p></description></item><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/os/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/cpu/</guid><description>&lt;h1 id="cpu">
  CPU
  &lt;a class="anchor" href="#cpu">#&lt;/a>
 &lt;/h1>
@@ -4489,7 +4497,11 @@ CUPS（&lt;code>Control and User Plane Separation&lt;/code> ）架构&lt;/p></de
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ri Classname
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ri Classname.class_method
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ri Classname#instance_method
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>H264</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid><description>&lt;h1 id="h264">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Gemini CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</guid><description>&lt;h1 id="gemini-cli">
+ Gemini CLI
+ &lt;a class="anchor" href="#gemini-cli">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/google-gemini/gemini-cli">google-gemini/gemini-cli&lt;/a> &lt;img src="https://img.shields.io/github/stars/google-gemini/gemini-cli.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/google-gemini/gemini-cli.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/google-gemini/gemini-cli.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/google-gemini/gemini-cli.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/google-gemini/gemini-cli.svg" alt="Last commit" />&lt;/p></description></item><item><title>H264</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid><description>&lt;h1 id="h264">
  H264
  &lt;a class="anchor" href="#h264">#&lt;/a>
 &lt;/h1>

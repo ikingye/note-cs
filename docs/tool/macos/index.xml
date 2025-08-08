@@ -110,7 +110,19 @@
 &lt;/li>
 &lt;li>&lt;a href="https://github.com/KaTeX/KaTeX">KaTeX/KaTeX&lt;/a> &lt;img src="https://img.shields.io/github/stars/KaTeX/KaTeX.svg" alt="Github stars" />&lt;/li>
 &lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/TeX">TeX wiki&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Anki</title><link>https://kingye.me/note-cs/docs/tool/macos/anki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/anki/</guid><description>&lt;h1 id="anki">
+&lt;/ul></description></item><item><title>Claude Code</title><link>https://kingye.me/note-cs/docs/tool/macos/claude-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/claude-code/</guid><description>&lt;h1 id="claude-code">
+ Claude Code
+ &lt;a class="anchor" href="#claude-code">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/anthropics/claude-code">anthropics/claude-code&lt;/a> &lt;img src="https://img.shields.io/github/stars/anthropics/claude-code.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/anthropics/claude-code.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/anthropics/claude-code.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/anthropics/claude-code.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/anthropics/claude-code.svg" alt="Last commit" />&lt;/p></description></item><item><title>Codex CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/codex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/codex/</guid><description>&lt;h1 id="codex-cli">
+ Codex CLI
+ &lt;a class="anchor" href="#codex-cli">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/openai/codex">openai/codex&lt;/a> &lt;img src="https://img.shields.io/github/stars/openai/codex.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/openai/codex.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/openai/codex.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/openai/codex.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/openai/codex.svg" alt="Last commit" />&lt;/p></description></item><item><title>Gemini CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</guid><description>&lt;h1 id="gemini-cli">
+ Gemini CLI
+ &lt;a class="anchor" href="#gemini-cli">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;a href="https://github.com/google-gemini/gemini-cli">google-gemini/gemini-cli&lt;/a> &lt;img src="https://img.shields.io/github/stars/google-gemini/gemini-cli.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/forks/google-gemini/gemini-cli.svg" alt="Github forks" /> &lt;img src="https://img.shields.io/github/languages/top/google-gemini/gemini-cli.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/google-gemini/gemini-cli.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/google-gemini/gemini-cli.svg" alt="Last commit" />&lt;/p></description></item><item><title>Anki</title><link>https://kingye.me/note-cs/docs/tool/macos/anki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/anki/</guid><description>&lt;h1 id="anki">
  Anki
  &lt;a class="anchor" href="#anki">#&lt;/a>
 &lt;/h1>
