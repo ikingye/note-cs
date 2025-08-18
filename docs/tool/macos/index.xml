@@ -1118,7 +1118,10 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=8081&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># 走 socks5 代理（如 Shadowsocks）&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># ProxyCommand nc -v -x 127.0.0.1:1080 %h %p&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>tmux</title><link>https://kingye.me/note-cs/docs/tool/macos/tmux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/tmux/</guid><description>&lt;h1 id="tmux">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>tabby</title><link>https://kingye.me/note-cs/docs/tool/macos/tabby/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/tabby/</guid><description>&lt;h1 id="tabby">
+ tabby
+ &lt;a class="anchor" href="#tabby">#&lt;/a>
+&lt;/h1></description></item><item><title>tmux</title><link>https://kingye.me/note-cs/docs/tool/macos/tmux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/tmux/</guid><description>&lt;h1 id="tmux">
  tmux
  &lt;a class="anchor" href="#tmux">#&lt;/a>
 &lt;/h1>
