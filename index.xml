@@ -13068,6 +13068,12 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 按推荐安装驱动&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>apt install -y nvidia-driver-535
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># https://download.nvidia.com/XFree86/Linux-x86_64/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>curl -LO https://download.nvidia.com/XFree86/Linux-x86_64/550.163.01/NVIDIA-Linux-x86_64-550.163.01.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bash NVIDIA-Linux-x86_64-550.163.01.run
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># CUDA Toolkit: 12.2&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Driver Version: 535.54.03&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Release Date: 2023.6.26&lt;/span>
@@ -13145,7 +13151,29 @@ Using mas list will show all installed applications and their product identifier
  nvidia-smi
  &lt;a class="anchor" href="#nvidia-smi">#&lt;/a>
 &lt;/h2>
-&lt;p>nvidia-smi 右上角显示的 &lt;code>CUDA Version:&lt;/code> 是指支持的&lt;em>最高版本&lt;/em>的 cuda&lt;/p></description></item><item><title>obsidian</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</guid><description>&lt;h1 id="obsidian">
+&lt;p>nvidia-smi 右上角显示的 &lt;code>CUDA Version:&lt;/code> 是指支持的&lt;em>最高版本&lt;/em>的 cuda&lt;/p></description></item><item><title>nvidia-docker</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nvidia-docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nvidia-docker/</guid><description>&lt;h1 id="nvidia-docker">
+ nvidia-docker
+ &lt;a class="anchor" href="#nvidia-docker">#&lt;/a>
+&lt;/h1>
+&lt;p>因为 GPU 属于特定的厂商产品，需要特定的 driver，
+Docker 本身并不支持 GPU。
+以前如果要在 Docker 中使用 GPU，就需要在 container 中安装主机上使用 GPU 的 driver，
+然后把主机上的 GPU 设备（例如：/dev/nvidia0）映射到 container 中。
+所以这样的 Docker image 并不具备可移植性。&lt;/p>
+&lt;p>Nvidia-docker 项目就是为了解决这个问题，
+它让 Docker image 不需要知道底层 GPU 的相关信息，而是通过启动 container 时 mount 设备和驱动文件来实现的。&lt;/p>
+&lt;h2 id="nvidia-container-toolkit">
+ NVIDIA Container Toolkit
+ &lt;a class="anchor" href="#nvidia-container-toolkit">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;code>NVIDIA Container Toolkit&lt;/code>（以前称为 &lt;code>NVIDIA Docker&lt;/code>）是一个更全面的工具集，包括了 &lt;code>NVIDIA Container Runtime&lt;/code>，以及其他工具和库，使得在 Docker 和其他容器平台上能够方便地部署和管理 GPU 加速的容器应用。&lt;/p>
+&lt;p>Toolkit 主要包括以下几个组件：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>libnvidia-container&lt;/code>: 一个库，用于构建和运行 NVIDIA GPU 加速的容器，无论宿主机的配置如何。&lt;/li>
+&lt;li>&lt;code>nvidia-container-runtime&lt;/code>: 实际的容器运行时，可以集成到 Docker 和其他容器平台。&lt;/li>
+&lt;li>&lt;code>nvidia-docker2&lt;/code>: 一个便捷的包，包括 Docker 插件和 nvidia-container-runtime，简化了使用 Docker 运行 GPU 加速容器的过程。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503233151.png" alt="" />&lt;/p></description></item><item><title>obsidian</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</guid><description>&lt;h1 id="obsidian">
  obsidian
  &lt;a class="anchor" href="#obsidian">#&lt;/a>
 &lt;/h1>
