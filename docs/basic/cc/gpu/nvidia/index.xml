@@ -352,11 +352,14 @@ Docker 本身并不支持 GPU。
 &lt;p>&lt;code>NVIDIA Container Toolkit&lt;/code>（以前称为 &lt;code>NVIDIA Docker&lt;/code>）是一个更全面的工具集，包括了 &lt;code>NVIDIA Container Runtime&lt;/code>，以及其他工具和库，使得在 Docker 和其他容器平台上能够方便地部署和管理 GPU 加速的容器应用。&lt;/p>
 &lt;p>Toolkit 主要包括以下几个组件：&lt;/p>
 &lt;ul>
-&lt;li>&lt;code>libnvidia-container&lt;/code>: 一个库，用于构建和运行 NVIDIA GPU 加速的容器，无论宿主机的配置如何。&lt;/li>
-&lt;li>&lt;code>nvidia-container-runtime&lt;/code>: 实际的容器运行时，可以集成到 Docker 和其他容器平台。&lt;/li>
-&lt;li>&lt;code>nvidia-docker2&lt;/code>: 一个便捷的包，包括 Docker 插件和 nvidia-container-runtime，简化了使用 Docker 运行 GPU 加速容器的过程。&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20240503233151.png" alt="" />&lt;/p></description></item><item><title>SM Version</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</guid><description>&lt;h1 id="sm-version">
+&lt;li>
+&lt;p>&lt;code>libnvidia-container&lt;/code>: 一个库，用于构建和运行 NVIDIA GPU 加速的容器，无论宿主机的配置如何。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>nvidia-container-runtime&lt;/code>: 实际的容器运行时，可以集成到 Docker 和其他容器平台。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>nvidia-docker2&lt;/code>: 一个便捷的包，包括 Docker 插件和 nvidia-container-runtime，简化了使用 Docker 运行 GPU 加速容器的过程。&lt;/p></description></item><item><title>SM Version</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</guid><description>&lt;h1 id="sm-version">
  SM Version
  &lt;a class="anchor" href="#sm-version">#&lt;/a>
 &lt;/h1>
