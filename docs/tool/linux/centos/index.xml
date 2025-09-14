@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.2 CentOS on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/</link><description>Recent content in 4.2.2 CentOS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/tool/linux/centos/index.xml" rel="self" type="application/rss+xml"/><item><title>Conda</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/conda/</guid><description>&lt;h1 id="conda"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.2 CentOS on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/</link><description>Recent content in 4.2.2 CentOS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/linux/centos/index.xml" rel="self" type="application/rss+xml"/><item><title>Conda</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/conda/</guid><description>&lt;h1 id="conda"&gt;
  Conda
  
  &lt;a class="anchor" href="#conda"&gt;#&lt;/a&gt;
@@ -156,7 +156,7 @@
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;conda install xxx：这种方式安装的库都会放在 &lt;code&gt;anaconda3/pkgs&lt;/code&gt; 目录下，&lt;/p&gt;</description></item><item><title>cuda</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/cuda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/cuda/</guid><description>&lt;h1 id="cuda"&gt;
+&lt;p&gt;conda install xxx：这种方式安装的库都会放在 &lt;code&gt;anaconda3/pkgs&lt;/code&gt; 目录下，&lt;/p&gt;</description></item><item><title>cuda</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/cuda/</guid><description>&lt;h1 id="cuda"&gt;
  cuda
  
  &lt;a class="anchor" href="#cuda"&gt;#&lt;/a&gt;
@@ -176,7 +176,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo yum -y install cuda
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 参考：https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;Distribution=RHEL&amp;amp;target_version=7&amp;amp;target_type=rpm_local&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>curl</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/curl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/curl/</guid><description>&lt;h1 id="curl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>curl</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/curl/</guid><description>&lt;h1 id="curl"&gt;
  curl
  
  &lt;a class="anchor" href="#curl"&gt;#&lt;/a&gt;
@@ -204,7 +204,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo ldconfig
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/usr/local/bin/curl -V
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>docker</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/docker/</guid><description>&lt;h1 id="docker"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>docker</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/docker/</guid><description>&lt;h1 id="docker"&gt;
  docker
  
  &lt;a class="anchor" href="#docker"&gt;#&lt;/a&gt;
@@ -224,12 +224,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl start docker
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo docker run hello-world
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：https://docs.docker.com/engine/install/centos/&lt;/p&gt;</description></item><item><title>git</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/git/</guid><description>&lt;h1 id="git"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：https://docs.docker.com/engine/install/centos/&lt;/p&gt;</description></item><item><title>git</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/git/</guid><description>&lt;h1 id="git"&gt;
  git
  
  &lt;a class="anchor" href="#git"&gt;#&lt;/a&gt;
  
-&lt;/h1&gt;</description></item><item><title>k3d</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/k3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/k3d/</guid><description>&lt;h1 id="k3d"&gt;
+&lt;/h1&gt;</description></item><item><title>k3d</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/k3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/k3d/</guid><description>&lt;h1 id="k3d"&gt;
  k3d
  
  &lt;a class="anchor" href="#k3d"&gt;#&lt;/a&gt;
@@ -328,7 +328,7 @@
  
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
  
-&lt;/h2&gt;</description></item><item><title>mamba</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/mamba/</guid><description>&lt;h1 id="mamba"&gt;
+&lt;/h2&gt;</description></item><item><title>mamba</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/mamba/</guid><description>&lt;h1 id="mamba"&gt;
  mamba
  
  &lt;a class="anchor" href="#mamba"&gt;#&lt;/a&gt;
@@ -376,17 +376,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;export PIP_CACHE_DIR=/home/users/yewang/.cache/pip
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>nvidia 驱动</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/nvidia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/nvidia/</guid><description>&lt;h1 id="nvidia-驱动"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>nvidia 驱动</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/nvidia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/nvidia/</guid><description>&lt;h1 id="nvidia-驱动"&gt;
  nvidia 驱动
  
  &lt;a class="anchor" href="#nvidia-%e9%a9%b1%e5%8a%a8"&gt;#&lt;/a&gt;
  
-&lt;/h1&gt;</description></item><item><title>pipx</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/pipx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/pipx/</guid><description>&lt;h1 id="pipx"&gt;
+&lt;/h1&gt;</description></item><item><title>pipx</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/pipx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/pipx/</guid><description>&lt;h1 id="pipx"&gt;
  pipx
  
  &lt;a class="anchor" href="#pipx"&gt;#&lt;/a&gt;
  
-&lt;/h1&gt;</description></item><item><title>python</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/python/</guid><description>&lt;h1 id="python"&gt;
+&lt;/h1&gt;</description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/python/</guid><description>&lt;h1 id="python"&gt;
  python
  
  &lt;a class="anchor" href="#python"&gt;#&lt;/a&gt;
@@ -409,7 +409,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装 pyenv&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://pyenv.run | bash
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;
  pytorch
  
  &lt;a class="anchor" href="#pytorch"&gt;#&lt;/a&gt;
@@ -417,7 +417,7 @@
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;install pytorch torchvision torchaudio pytorch-cuda&lt;span style="color:#f92672"&gt;=&lt;/span&gt;12.1 -c pytorch -c nvidia
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>zsh</title><link>http://localhost:1304/note-cs/docs/tool/linux/centos/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/centos/zsh/</guid><description>&lt;h1 id="zsh"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>zsh</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/zsh/</guid><description>&lt;h1 id="zsh"&gt;
  zsh
  
  &lt;a class="anchor" href="#zsh"&gt;#&lt;/a&gt;

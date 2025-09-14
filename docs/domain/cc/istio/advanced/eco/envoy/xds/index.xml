@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xDS on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/</link><description>Recent content in xDS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/index.xml" rel="self" type="application/rss+xml"/><item><title>LDS</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</guid><description>&lt;h1 id="lds"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xDS on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/</link><description>Recent content in xDS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/index.xml" rel="self" type="application/rss+xml"/><item><title>LDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</guid><description>&lt;h1 id="lds"&gt;
  &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/lds"&gt;LDS&lt;/a&gt;
  
  &lt;a class="anchor" href="#lds"&gt;#&lt;/a&gt;
@@ -16,17 +16,17 @@
 
 &lt;blockquote class='book-hint '&gt;
  &lt;p&gt;任何在 Envoy 配置中静态定义的监听器都不能通过 LDS API 进行修改或删除。&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>CDS</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</guid><description>&lt;h1 id="cds"&gt;
+&lt;/blockquote&gt;</description></item><item><title>CDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</guid><description>&lt;h1 id="cds"&gt;
  CDS
  
  &lt;a class="anchor" href="#cds"&gt;#&lt;/a&gt;
  
-&lt;/h1&gt;</description></item><item><title>EDS</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</guid><description>&lt;h1 id="eds"&gt;
+&lt;/h1&gt;</description></item><item><title>EDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</guid><description>&lt;h1 id="eds"&gt;
  EDS
  
  &lt;a class="anchor" href="#eds"&gt;#&lt;/a&gt;
  
-&lt;/h1&gt;</description></item><item><title>RDS</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</guid><description>&lt;h1 id="rds"&gt;
+&lt;/h1&gt;</description></item><item><title>RDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</guid><description>&lt;h1 id="rds"&gt;
  RDS
  
  &lt;a class="anchor" href="#rds"&gt;#&lt;/a&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GB28181 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/</link><description>Recent content in GB28181 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/index.xml" rel="self" type="application/rss+xml"/><item><title>SDP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sdp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sdp/</guid><description>&lt;h1 id="sdp"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GB28181 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/</link><description>Recent content in GB28181 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/index.xml" rel="self" type="application/rss+xml"/><item><title>SDP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sdp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sdp/</guid><description>&lt;h1 id="sdp"&gt;
  SDP
  
  &lt;a class="anchor" href="#sdp"&gt;#&lt;/a&gt;
@@ -40,7 +40,7 @@
 &lt;li&gt;使用的带宽信息&lt;/li&gt;
 &lt;li&gt;可信赖的接洽信息&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 &lt;code&gt;WebRTC&lt;/code&gt; 就在 SDP 的基础上进行了继续拓展&lt;/p&gt;</description></item><item><title>SIP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sip/</guid><description>&lt;h1 id="sip"&gt;
+&lt;p&gt;如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 &lt;code&gt;WebRTC&lt;/code&gt; 就在 SDP 的基础上进行了继续拓展&lt;/p&gt;</description></item><item><title>SIP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sip/</guid><description>&lt;h1 id="sip"&gt;
  SIP
  
  &lt;a class="anchor" href="#sip"&gt;#&lt;/a&gt;
@@ -96,7 +96,7 @@
  &lt;a class="anchor" href="#bye"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;同一个会话，CSeq 要 +1&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>协议详情</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/protocal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/protocal/</guid><description>&lt;h1 id="gb28181-协议解析"&gt;
+&lt;p&gt;&lt;strong&gt;同一个会话，CSeq 要 +1&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>协议详情</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/protocal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/protocal/</guid><description>&lt;h1 id="gb28181-协议解析"&gt;
  GB28181 协议解析
  
  &lt;a class="anchor" href="#gb28181-%e5%8d%8f%e8%ae%ae%e8%a7%a3%e6%9e%90"&gt;#&lt;/a&gt;
@@ -143,7 +143,7 @@
  &lt;a class="anchor" href="#%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e5%99%a8-register-server"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。&lt;/p&gt;</description></item><item><title>数据包</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/packet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/packet/</guid><description>&lt;h1 id="数据包"&gt;
+&lt;p&gt;IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。&lt;/p&gt;</description></item><item><title>数据包</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/packet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/packet/</guid><description>&lt;h1 id="数据包"&gt;
  数据包
  
  &lt;a class="anchor" href="#%e6%95%b0%e6%8d%ae%e5%8c%85"&gt;#&lt;/a&gt;
@@ -235,7 +235,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; User-Agent: IP Camera
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Expires: &lt;span style="color:#ae81ff"&gt;3600&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Content-Length: &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609141735.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>源码实现</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/code/</guid><description>&lt;h1 id="源码实现"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609141735.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>源码实现</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/code/</guid><description>&lt;h1 id="源码实现"&gt;
  源码实现
  
  &lt;a class="anchor" href="#%e6%ba%90%e7%a0%81%e5%ae%9e%e7%8e%b0"&gt;#&lt;/a&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ONVIF on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/onvif/</link><description>Recent content in ONVIF on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/stream-media/onvif/index.xml" rel="self" type="application/rss+xml"/><item><title>设备发现</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/onvif/discovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/onvif/discovery/</guid><description>&lt;h1 id="设备发现"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ONVIF on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/</link><description>Recent content in ONVIF on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/index.xml" rel="self" type="application/rss+xml"/><item><title>设备发现</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/discovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/discovery/</guid><description>&lt;h1 id="设备发现"&gt;
  设备发现
  
  &lt;a class="anchor" href="#%e8%ae%be%e5%a4%87%e5%8f%91%e7%8e%b0"&gt;#&lt;/a&gt;
@@ -37,7 +37,7 @@
 &lt;li&gt;&lt;strong&gt;Managed 模式&lt;/strong&gt;：即代理模式。Ad hoc 模式有个局限性，只能局限于一个较小的网络。Managed 模式就是为了解决这个问题的，在 Managed 模式下，一个维护所有可用目标服务的中心发现代理（Discovery Proxy）被建立起来，客户端只需要将探测消息发送到该发现代理就可以得到相应的目标服务信息。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Message exchanges in a managed mode.
-&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153754.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>gsoap 生成 onvif 框架</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/onvif/gsoap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/onvif/gsoap/</guid><description>&lt;h1 id="gsoap-生成-onvif-框架"&gt;
+&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200426153754.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>gsoap 生成 onvif 框架</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/gsoap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/onvif/gsoap/</guid><description>&lt;h1 id="gsoap-生成-onvif-框架"&gt;
  gsoap 生成 onvif 框架
  
  &lt;a class="anchor" href="#gsoap-%e7%94%9f%e6%88%90-onvif-%e6%a1%86%e6%9e%b6"&gt;#&lt;/a&gt;

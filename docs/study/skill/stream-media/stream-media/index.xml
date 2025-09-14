@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>流媒体技术 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/</link><description>Recent content in 流媒体技术 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/index.xml" rel="self" type="application/rss+xml"/><item><title>RTMP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</guid><description>&lt;h1 id="rtmp"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>流媒体技术 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/</link><description>Recent content in 流媒体技术 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/index.xml" rel="self" type="application/rss+xml"/><item><title>RTMP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</guid><description>&lt;h1 id="rtmp"&gt;
  &lt;a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE"&gt;RTMP&lt;/a&gt;
  
  &lt;a class="anchor" href="#rtmp"&gt;#&lt;/a&gt;
@@ -34,7 +34,7 @@
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/58633763"&gt;为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>RTP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/rtp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/rtp/</guid><description>&lt;h1 id="rtp"&gt;
+&lt;/ul&gt;</description></item><item><title>RTP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</guid><description>&lt;h1 id="rtp"&gt;
  &lt;a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE"&gt;RTP&lt;/a&gt;
  
  &lt;a class="anchor" href="#rtp"&gt;#&lt;/a&gt;
@@ -81,7 +81,7 @@
  
 &lt;/h4&gt;
 &lt;p&gt;进行 PS 封装时，将每个&lt;strong&gt;视频帧&lt;/strong&gt;封装为一个&lt;strong&gt;PS 包&lt;/strong&gt;，
-且每个&lt;strong&gt;关键帧&lt;/strong&gt;的 PS 包中包含系统头（&lt;code&gt;System Header&lt;/code&gt;）和 PSM（&lt;code&gt;Program Stream Map&lt;/code&gt;）。&lt;/p&gt;</description></item><item><title>RTSP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</guid><description>&lt;h1 id="rtsp"&gt;
+且每个&lt;strong&gt;关键帧&lt;/strong&gt;的 PS 包中包含系统头（&lt;code&gt;System Header&lt;/code&gt;）和 PSM（&lt;code&gt;Program Stream Map&lt;/code&gt;）。&lt;/p&gt;</description></item><item><title>RTSP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</guid><description>&lt;h1 id="rtsp"&gt;
  &lt;a href="https://www.wikiwand.com/zh-cn/%E5%8D%B3%E6%99%82%E4%B8%B2%E6%B5%81%E5%8D%94%E5%AE%9A"&gt;RTSP&lt;/a&gt;
  
  &lt;a class="anchor" href="#rtsp"&gt;#&lt;/a&gt;
@@ -268,14 +268,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session: &lt;span style="color:#ae81ff"&gt;313720730&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Date: Tue, May &lt;span style="color:#ae81ff"&gt;23&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2017&lt;/span&gt; 16:15:10 GMT
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 好的，服务器说：对你这个会话Session: 313720730， 我把它干掉&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>WebRTC</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</guid><description>&lt;h1 id="webrtc"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>WebRTC</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</guid><description>&lt;h1 id="webrtc"&gt;
  WebRTC
  
  &lt;a class="anchor" href="#webrtc"&gt;#&lt;/a&gt;
  
 &lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;Web Real-Time Communication&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;支持网页浏览器进行实时语音对话或视频对话的 API&lt;/p&gt;</description></item><item><title>H264</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/h264/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid><description>&lt;h1 id="h264"&gt;
+&lt;p&gt;支持网页浏览器进行实时语音对话或视频对话的 API&lt;/p&gt;</description></item><item><title>H264</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid><description>&lt;h1 id="h264"&gt;
  H264
  
  &lt;a class="anchor" href="#h264"&gt;#&lt;/a&gt;
@@ -307,13 +307,13 @@
  &lt;a class="anchor" href="#nalu"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;NALU&lt;/code&gt; (&lt;code&gt;NAL Units&lt;/code&gt;) 组成&lt;/p&gt;</description></item><item><title>HLS</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/hls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/hls/</guid><description>&lt;h1 id="hls"&gt;
+&lt;p&gt;&lt;code&gt;NALU&lt;/code&gt; (&lt;code&gt;NAL Units&lt;/code&gt;) 组成&lt;/p&gt;</description></item><item><title>HLS</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</guid><description>&lt;h1 id="hls"&gt;
  HLS
  
  &lt;a class="anchor" href="#hls"&gt;#&lt;/a&gt;
  
 &lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;HTTP Live Streaming&lt;/code&gt;&lt;/p&gt;</description></item><item><title>HTTP FLV</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</guid><description>&lt;h1 id="http-flv"&gt;
+&lt;p&gt;&lt;code&gt;HTTP Live Streaming&lt;/code&gt;&lt;/p&gt;</description></item><item><title>HTTP FLV</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</guid><description>&lt;h1 id="http-flv"&gt;
  HTTP FLV
  
  &lt;a class="anchor" href="#http-flv"&gt;#&lt;/a&gt;
@@ -325,7 +325,7 @@
  &lt;a class="anchor" href="#bilibiliflvjs-github-stars"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
-&lt;p&gt;HTML5 FLV Player&lt;/p&gt;</description></item><item><title>MPEG</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</guid><description>&lt;h1 id="mpeg"&gt;
+&lt;p&gt;HTML5 FLV Player&lt;/p&gt;</description></item><item><title>MPEG</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</guid><description>&lt;h1 id="mpeg"&gt;
  &lt;a href="https://www.wikiwand.com/zh-cn/MPEG"&gt;MPEG&lt;/a&gt;
  
  &lt;a class="anchor" href="#mpeg"&gt;#&lt;/a&gt;
@@ -339,7 +339,7 @@
 &lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-4" title="MPEG-4"&gt;MPEG-4&lt;/a&gt;：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和  &lt;a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E7%89%88%E6%AC%8A%E7%AE%A1%E7%90%86" title="数字版权管理"&gt;数字版权管理&lt;/a&gt;（Digital Rights Management），其中第 10 部分由 &lt;code&gt;ISO/IEC&lt;/code&gt; 和 &lt;code&gt;ITU-T&lt;/code&gt; 联合发布，称为  &lt;a href="https://www.wikiwand.com/zh-cn/H.264" title="H.264"&gt;H.264/MPEG-4 Part 10&lt;/a&gt;。&lt;/li&gt;
 &lt;li&gt;MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-21" title="MPEG-21"&gt;MPEG-21&lt;/a&gt;：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>PS</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/ps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/ps/</guid><description>&lt;h1 id="ps"&gt;
+&lt;/ul&gt;</description></item><item><title>PS</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</guid><description>&lt;h1 id="ps"&gt;
  PS
  
  &lt;a class="anchor" href="#ps"&gt;#&lt;/a&gt;
@@ -393,7 +393,7 @@
  &lt;a class="anchor" href="#es"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
-&lt;p&gt;Elementary Stream&lt;/p&gt;</description></item><item><title>直播技术</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</guid><description>&lt;h1 id="直播技术"&gt;
+&lt;p&gt;Elementary Stream&lt;/p&gt;</description></item><item><title>直播技术</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</guid><description>&lt;h1 id="直播技术"&gt;
  直播技术
  
  &lt;a class="anchor" href="#%e7%9b%b4%e6%92%ad%e6%8a%80%e6%9c%af"&gt;#&lt;/a&gt;
@@ -435,7 +435,7 @@
 &lt;/li&gt;
 &lt;li&gt;音画同步&lt;/li&gt;
 &lt;li&gt;视频数据（&lt;code&gt;YUV/RGB&lt;/code&gt;）发送到视频输出设备，音频数据（&lt;code&gt;PCM&lt;/code&gt;）发送到音频输出设备&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>视频编码</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</guid><description>&lt;h1 id="视频编码"&gt;
+&lt;/ol&gt;</description></item><item><title>视频编码</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</guid><description>&lt;h1 id="视频编码"&gt;
  视频编码
  
  &lt;a class="anchor" href="#%e8%a7%86%e9%a2%91%e7%bc%96%e7%a0%81"&gt;#&lt;/a&gt;

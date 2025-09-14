@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/security/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/security/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>XSS</title><link>http://localhost:1304/note-cs/docs/direction/security/basic/xss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/security/basic/xss/</guid><description>&lt;h1 id="xss"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/security/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/security/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>XSS</title><link>https://kingye.me/note-cs/docs/direction/security/basic/xss/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/security/basic/xss/</guid><description>&lt;h1 id="xss"&gt;
  XSS
  
  &lt;a class="anchor" href="#xss"&gt;#&lt;/a&gt;
@@ -52,7 +52,7 @@
  &lt;a class="anchor" href="#%e5%ad%98%e5%82%a8%e5%9e%8b"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;存储型 XSS 的攻击步骤：&lt;/p&gt;</description></item><item><title>CSRF</title><link>http://localhost:1304/note-cs/docs/direction/security/basic/csrf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/security/basic/csrf/</guid><description>&lt;h1 id="csrf"&gt;
+&lt;p&gt;存储型 XSS 的攻击步骤：&lt;/p&gt;</description></item><item><title>CSRF</title><link>https://kingye.me/note-cs/docs/direction/security/basic/csrf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/security/basic/csrf/</guid><description>&lt;h1 id="csrf"&gt;
  CSRF
  
  &lt;a class="anchor" href="#csrf"&gt;#&lt;/a&gt;

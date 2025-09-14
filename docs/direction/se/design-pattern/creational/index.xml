@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>创建型 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/</link><description>Recent content in 创建型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/index.xml" rel="self" type="application/rss+xml"/><item><title>抽象工厂</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</guid><description>&lt;h1 id="抽象工厂模式"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>创建型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/</link><description>Recent content in 创建型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/index.xml" rel="self" type="application/rss+xml"/><item><title>抽象工厂</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</guid><description>&lt;h1 id="抽象工厂模式"&gt;
  抽象工厂模式
  
  &lt;a class="anchor" href="#%e6%8a%bd%e8%b1%a1%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
@@ -238,7 +238,7 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>构造器</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/builder/</guid><description>&lt;h1 id="构造器模式"&gt;
+&lt;/div&gt;</description></item><item><title>构造器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</guid><description>&lt;h1 id="构造器模式"&gt;
  构造器模式
  
  &lt;a class="anchor" href="#%e6%9e%84%e9%80%a0%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
@@ -482,7 +482,7 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>工厂方法</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/factory-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/factory-method/</guid><description>&lt;h1 id="工厂方法模式"&gt;
+&lt;/div&gt;</description></item><item><title>工厂方法</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</guid><description>&lt;h1 id="工厂方法模式"&gt;
  工厂方法模式
  
  &lt;a class="anchor" href="#%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
@@ -733,7 +733,7 @@
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/27125796"&gt;简单工厂模式、工厂方法模式和抽象工厂模式有何区别？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>原型</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/prototype/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/prototype/</guid><description>&lt;h1 id="原型模式"&gt;
+&lt;/ul&gt;</description></item><item><title>原型</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/prototype/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/prototype/</guid><description>&lt;h1 id="原型模式"&gt;
  原型模式
  
  &lt;a class="anchor" href="#%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
@@ -962,7 +962,7 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>单例</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/singleton/</guid><description>&lt;h1 id="单例模式"&gt;
+&lt;/div&gt;</description></item><item><title>单例</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</guid><description>&lt;h1 id="单例模式"&gt;
  单例模式
  
  &lt;a class="anchor" href="#%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;

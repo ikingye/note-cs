@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.5 流媒体 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/</link><description>Recent content in 4.5 流媒体 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/stream-media/index.xml" rel="self" type="application/rss+xml"/><item><title>VoIP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/voip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/voip/</guid><description>&lt;h1 id="voip"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.5 流媒体 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/</link><description>Recent content in 4.5 流媒体 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/index.xml" rel="self" type="application/rss+xml"/><item><title>VoIP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/voip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/voip/</guid><description>&lt;h1 id="voip"&gt;
  VoIP
  
  &lt;a class="anchor" href="#voip"&gt;#&lt;/a&gt;
@@ -11,7 +11,7 @@
  
 &lt;/h2&gt;
 &lt;p&gt;In simple terms, VoIP means making or receiving phone calls over the internet or internal networks. SIP, on the other hand, is an application layer protocol that is used to establish, modify and terminate multimedia sessions such as VoIP calls.&lt;/p&gt;
-&lt;p&gt;A major difference between VoIP and SIP is their scope. VoIP is not a discrete technology in its own right. Rather, it is actually a family of technologies used within modern telecommunication networks, whereas SIP is a signalling protocol used within the VoIP umbrella.&lt;/p&gt;</description></item><item><title>EasyDarwin</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/easydarwin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/easydarwin/</guid><description>&lt;h1 id="easydarwin"&gt;
+&lt;p&gt;A major difference between VoIP and SIP is their scope. VoIP is not a discrete technology in its own right. Rather, it is actually a family of technologies used within modern telecommunication networks, whereas SIP is a signalling protocol used within the VoIP umbrella.&lt;/p&gt;</description></item><item><title>EasyDarwin</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/easydarwin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/easydarwin/</guid><description>&lt;h1 id="easydarwin"&gt;
  EasyDarwin
  
  &lt;a class="anchor" href="#easydarwin"&gt;#&lt;/a&gt;
@@ -49,7 +49,7 @@
  
 &lt;/h3&gt;
 &lt;p&gt;EasyNVR 采用的是 Onvif 协议接入云平台，
-而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台&lt;/p&gt;</description></item><item><title>SRS</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/srs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/srs/</guid><description>&lt;h1 id="srs"&gt;
+而 EasyGB28181Server 则是以 GB/T28181 方式接入云平台&lt;/p&gt;</description></item><item><title>SRS</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/srs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/srs/</guid><description>&lt;h1 id="srs"&gt;
  SRS
  
  &lt;a class="anchor" href="#srs"&gt;#&lt;/a&gt;
@@ -62,7 +62,7 @@
  
  &lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae%e4%bf%a1%e6%81%af"&gt;#&lt;/a&gt;
  
-&lt;/h2&gt;</description></item><item><title>ZLMediaKit</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/zlmediakit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/zlmediakit/</guid><description>&lt;h1 id="zlmediakit"&gt;
+&lt;/h2&gt;</description></item><item><title>ZLMediaKit</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/zlmediakit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/zlmediakit/</guid><description>&lt;h1 id="zlmediakit"&gt;
  ZLMediaKit
  
  &lt;a class="anchor" href="#zlmediakit"&gt;#&lt;/a&gt;

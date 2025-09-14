@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.2.6 DevOps on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/</link><description>Recent content in 2.2.6 DevOps on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/be/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Terraform</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/terraform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/terraform/</guid><description>&lt;h1 id="terraform"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.2.6 DevOps on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/devops/</link><description>Recent content in 2.2.6 DevOps on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Terraform</title><link>https://kingye.me/note-cs/docs/direction/be/devops/terraform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/terraform/</guid><description>&lt;h1 id="terraform"&gt;
  Terraform
  
  &lt;a class="anchor" href="#terraform"&gt;#&lt;/a&gt;
@@ -6,7 +6,7 @@
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/hashicorp/terraform"&gt;hashicorp/terraform&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/hashicorp/terraform.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/hashicorp/terraform.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/hashicorp/terraform.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/hashicorp/terraform.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
-&lt;a href="https://www.terraform.io/"&gt;https://www.terraform.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Ansible</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/ansible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/ansible/</guid><description>&lt;h1 id="ansible"&gt;
+&lt;a href="https://www.terraform.io/"&gt;https://www.terraform.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Ansible</title><link>https://kingye.me/note-cs/docs/direction/be/devops/ansible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/ansible/</guid><description>&lt;h1 id="ansible"&gt;
  Ansible
  
  &lt;a class="anchor" href="#ansible"&gt;#&lt;/a&gt;
@@ -14,7 +14,7 @@
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/ansible/ansible"&gt;ansible/ansible&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ansible/ansible.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ansible/ansible.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ansible/ansible.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ansible/ansible.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain.
-Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems.&lt;/p&gt;</description></item><item><title>Packer</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/packer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/packer/</guid><description>&lt;h1 id="packer"&gt;
+Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems.&lt;/p&gt;</description></item><item><title>Packer</title><link>https://kingye.me/note-cs/docs/direction/be/devops/packer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/packer/</guid><description>&lt;h1 id="packer"&gt;
  Packer
  
  &lt;a class="anchor" href="#packer"&gt;#&lt;/a&gt;
@@ -22,7 +22,7 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/hashicorp/packer"&gt;hashicorp/packer&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/hashicorp/packer.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/hashicorp/packer.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/hashicorp/packer.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/hashicorp/packer.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
-&lt;a href="http://www.packer.io/"&gt;http://www.packer.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Chef</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/chef/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/chef/</guid><description>&lt;h1 id="chef"&gt;
+&lt;a href="http://www.packer.io/"&gt;http://www.packer.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Chef</title><link>https://kingye.me/note-cs/docs/direction/be/devops/chef/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/chef/</guid><description>&lt;h1 id="chef"&gt;
  Chef
  
  &lt;a class="anchor" href="#chef"&gt;#&lt;/a&gt;
@@ -30,7 +30,7 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/chef/chef"&gt;chef/chef&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/chef/chef.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/chef/chef.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/chef/chef.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/chef/chef.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Chef Infra, a powerful automation platform that transforms infrastructure into code automating how infrastructure is configured, deployed and managed across any environment, at any scale
-&lt;a href="http://www.chef.io/chef/"&gt;http://www.chef.io/chef/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Jenkins</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/Jenkins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/Jenkins/</guid><description>&lt;h1 id="jenkins"&gt;
+&lt;a href="http://www.chef.io/chef/"&gt;http://www.chef.io/chef/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Jenkins</title><link>https://kingye.me/note-cs/docs/direction/be/devops/Jenkins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/Jenkins/</guid><description>&lt;h1 id="jenkins"&gt;
  Jenkins
  
  &lt;a class="anchor" href="#jenkins"&gt;#&lt;/a&gt;
@@ -38,7 +38,7 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/jenkinsci/jenkins"&gt;jenkinsci/jenkins&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/jenkinsci/jenkins.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/jenkinsci/jenkins.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/jenkinsci/jenkins.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/jenkinsci/jenkins.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Jenkins automation server
-&lt;a href="https://www.jenkins.io/"&gt;https://www.jenkins.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Pulumi</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/pulumi/</guid><description>&lt;h1 id="pulumi"&gt;
+&lt;a href="https://www.jenkins.io/"&gt;https://www.jenkins.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Pulumi</title><link>https://kingye.me/note-cs/docs/direction/be/devops/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/pulumi/</guid><description>&lt;h1 id="pulumi"&gt;
  Pulumi
  
  &lt;a class="anchor" href="#pulumi"&gt;#&lt;/a&gt;
@@ -46,7 +46,7 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/pulumi/pulumi"&gt;pulumi/pulumi&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/pulumi/pulumi.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/pulumi/pulumi.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/pulumi/pulumi.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/pulumi/pulumi.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Pulumi - Modern Infrastructure as Code. Any cloud, any language
-&lt;a href="https://www.pulumi.com/"&gt;https://www.pulumi.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Puppet</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/puppet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/puppet/</guid><description>&lt;h1 id="puppet"&gt;
+&lt;a href="https://www.pulumi.com/"&gt;https://www.pulumi.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Puppet</title><link>https://kingye.me/note-cs/docs/direction/be/devops/puppet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/puppet/</guid><description>&lt;h1 id="puppet"&gt;
  Puppet
  
  &lt;a class="anchor" href="#puppet"&gt;#&lt;/a&gt;
@@ -54,7 +54,7 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/puppetlabs/puppet"&gt;puppetlabs/puppet&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/puppetlabs/puppet.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/puppetlabs/puppet.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/puppetlabs/puppet.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/puppetlabs/puppet.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Server automation framework and application
-&lt;a href="https://puppet.com/open-source/#osp"&gt;https://puppet.com/open-source/#osp&lt;/a&gt;&lt;/p&gt;</description></item><item><title>SaltStack</title><link>http://localhost:1304/note-cs/docs/direction/be/devops/saltstack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/devops/saltstack/</guid><description>&lt;h1 id="saltstack"&gt;
+&lt;a href="https://puppet.com/open-source/#osp"&gt;https://puppet.com/open-source/#osp&lt;/a&gt;&lt;/p&gt;</description></item><item><title>SaltStack</title><link>https://kingye.me/note-cs/docs/direction/be/devops/saltstack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/devops/saltstack/</guid><description>&lt;h1 id="saltstack"&gt;
  SaltStack
  
  &lt;a class="anchor" href="#saltstack"&gt;#&lt;/a&gt;

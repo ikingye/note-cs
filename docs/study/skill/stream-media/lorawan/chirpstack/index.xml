@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChirpStack on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/</link><description>Recent content in ChirpStack on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/index.xml" rel="self" type="application/rss+xml"/><item><title>Network</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/network/</guid><description>&lt;h1 id="chirpstack-network-server"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChirpStack on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/</link><description>Recent content in ChirpStack on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/index.xml" rel="self" type="application/rss+xml"/><item><title>Network</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/network/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/network/</guid><description>&lt;h1 id="chirpstack-network-server"&gt;
  &lt;a href="https://github.com/brocaar/chirpstack-network-server"&gt;ChirpStack Network Server&lt;/a&gt;
  
  &lt;a class="anchor" href="#chirpstack-network-server"&gt;#&lt;/a&gt;
@@ -149,7 +149,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;(21 rows)&lt;/p&gt;</description></item><item><title>Application</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/application/</guid><description>&lt;h1 id="chirpstack-application-server"&gt;
+&lt;p&gt;(21 rows)&lt;/p&gt;</description></item><item><title>Application</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/lorawan/chirpstack/application/</guid><description>&lt;h1 id="chirpstack-application-server"&gt;
  &lt;a href="https://github.com/brocaar/chirpstack-application-server"&gt;ChirpStack Application Server&lt;/a&gt;
  
  &lt;a class="anchor" href="#chirpstack-application-server"&gt;#&lt;/a&gt;

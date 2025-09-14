@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/be/db/postgresql/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/be/db/postgresql/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>快速上手</title><link>http://localhost:1304/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid><description>&lt;h1 id="postgresql-快速上手"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>快速上手</title><link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/quick-start/</guid><description>&lt;h1 id="postgresql-快速上手"&gt;
  PostgreSQL 快速上手
  
  &lt;a class="anchor" href="#postgresql-%e5%bf%ab%e9%80%9f%e4%b8%8a%e6%89%8b"&gt;#&lt;/a&gt;
@@ -84,7 +84,7 @@ database：用户同名数据库
  &lt;a class="anchor" href="#x"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;类似 mysql 的 \G&lt;/p&gt;</description></item><item><title>版本</title><link>http://localhost:1304/note-cs/docs/direction/be/db/postgresql/basic/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/be/db/postgresql/basic/version/</guid><description>&lt;h1 id="postgresql-版本"&gt;
+&lt;p&gt;类似 mysql 的 \G&lt;/p&gt;</description></item><item><title>版本</title><link>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/postgresql/basic/version/</guid><description>&lt;h1 id="postgresql-版本"&gt;
  PostgreSQL 版本
  
  &lt;a class="anchor" href="#postgresql-%e7%89%88%e6%9c%ac"&gt;#&lt;/a&gt;

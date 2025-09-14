@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.1 Ubuntu on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/</link><description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>ab</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/ab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/ab/</guid><description>&lt;h1 id="ab"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.1 Ubuntu on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/</link><description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>ab</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</guid><description>&lt;h1 id="ab"&gt;
  ab
  
  &lt;a class="anchor" href="#ab"&gt;#&lt;/a&gt;
@@ -64,7 +64,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 98% 25&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 99% 25&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 100% 26 (longest request)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Ansible</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/ansible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/ansible/</guid><description>&lt;h1 id="ansible"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Ansible</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</guid><description>&lt;h1 id="ansible"&gt;
  Ansible
  
  &lt;a class="anchor" href="#ansible"&gt;#&lt;/a&gt;
@@ -88,7 +88,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install software-properties-common
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo add-apt-repository --yes --update ppa:ansible/ansible
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install ansible
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;a href="https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu"&gt;Installing Ansible on Ubuntu&lt;/a&gt;&lt;/p&gt;</description></item><item><title>apt</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/apt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/apt/</guid><description>&lt;h1 id="apt"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;a href="https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu"&gt;Installing Ansible on Ubuntu&lt;/a&gt;&lt;/p&gt;</description></item><item><title>apt</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid><description>&lt;h1 id="apt"&gt;
  apt
  
  &lt;a class="anchor" href="#apt"&gt;#&lt;/a&gt;
@@ -176,7 +176,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;apt 还有一些自己的命令&lt;/p&gt;</description></item><item><title>Cargo</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/cargo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/cargo/</guid><description>&lt;h1 id="cargo"&gt;
+&lt;p&gt;apt 还有一些自己的命令&lt;/p&gt;</description></item><item><title>Cargo</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</guid><description>&lt;h1 id="cargo"&gt;
  Cargo
  
  &lt;a class="anchor" href="#cargo"&gt;#&lt;/a&gt;
@@ -198,7 +198,7 @@
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://doc.rust-lang.org/cargo"&gt;The Cargo Book&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Conda</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/conda/</guid><description>&lt;h1 id="conda"&gt;
+&lt;/ul&gt;</description></item><item><title>Conda</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid><description>&lt;h1 id="conda"&gt;
  Conda
  
  &lt;a class="anchor" href="#conda"&gt;#&lt;/a&gt;
@@ -356,7 +356,7 @@
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;conda install xxx：这种方式安装的库都会放在 &lt;code&gt;anaconda3/pkgs&lt;/code&gt; 目录下，&lt;/p&gt;</description></item><item><title>Containerd</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/containerd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/containerd/</guid><description>&lt;h1 id="containerd"&gt;
+&lt;p&gt;conda install xxx：这种方式安装的库都会放在 &lt;code&gt;anaconda3/pkgs&lt;/code&gt; 目录下，&lt;/p&gt;</description></item><item><title>Containerd</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</guid><description>&lt;h1 id="containerd"&gt;
  Containerd
  
  &lt;a class="anchor" href="#containerd"&gt;#&lt;/a&gt;
@@ -647,7 +647,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;address&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; gid = 0
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; uid = 0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>crictl</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/crictl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/crictl/</guid><description>&lt;h1 id="crictl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>crictl</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</guid><description>&lt;h1 id="crictl"&gt;
  crictl
  
  &lt;a class="anchor" href="#crictl"&gt;#&lt;/a&gt;
@@ -709,7 +709,7 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;crictl image ls
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;crictl ps -a
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ctr</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/ctr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/ctr/</guid><description>&lt;h1 id="ctr"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ctr</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</guid><description>&lt;h1 id="ctr"&gt;
  ctr
  
  &lt;a class="anchor" href="#ctr"&gt;#&lt;/a&gt;
@@ -745,13 +745,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ctr -n k8s.io image export pause3.6.tar registry.k8s.io/pause:3.6
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# --base-name 重命名&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ctr -n k8s.io image import --base-name registry.k8s.io/pause-self-define:3.6 pause3.6.tar
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Dash</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/dash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/dash/</guid><description>&lt;h1 id="dash"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Dash</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</guid><description>&lt;h1 id="dash"&gt;
  Dash
  
  &lt;a class="anchor" href="#dash"&gt;#&lt;/a&gt;
  
 &lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Docker</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/docker/</guid><description>&lt;h1 id="docker"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Docker</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</guid><description>&lt;h1 id="docker"&gt;
  Docker
  
  &lt;a class="anchor" href="#docker"&gt;#&lt;/a&gt;
@@ -853,7 +853,7 @@
  &lt;a class="anchor" href="#docker-privileged"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
-&lt;p&gt;docker run &amp;ndash;privileged=true 和 docker run &amp;ndash;privileged 是完全等价的&lt;/p&gt;</description></item><item><title>feh</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/feh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/feh/</guid><description>&lt;h1 id="feh"&gt;
+&lt;p&gt;docker run &amp;ndash;privileged=true 和 docker run &amp;ndash;privileged 是完全等价的&lt;/p&gt;</description></item><item><title>feh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid><description>&lt;h1 id="feh"&gt;
  feh
  
  &lt;a class="anchor" href="#feh"&gt;#&lt;/a&gt;
@@ -887,7 +887,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo curl -Lo /usr/local/bin/lsix https://github.com/hackerb9/lsix/blob/1.8/lsix
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x /usr/local/bin/lsix
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gradio</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/gradio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/gradio/</guid><description>&lt;h1 id="gradio"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gradio</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</guid><description>&lt;h1 id="gradio"&gt;
  Gradio
  
  &lt;a class="anchor" href="#gradio"&gt;#&lt;/a&gt;
@@ -906,7 +906,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; greet_btn&lt;span style="color:#f92672"&gt;.&lt;/span&gt;click(fn&lt;span style="color:#f92672"&gt;=&lt;/span&gt;greet, inputs&lt;span style="color:#f92672"&gt;=&lt;/span&gt;name, outputs&lt;span style="color:#f92672"&gt;=&lt;/span&gt;output)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;demo&lt;span style="color:#f92672"&gt;.&lt;/span&gt;launch(share&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;, server_name&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;, server_port&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;8722&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>gvm</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/gvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/gvm/</guid><description>&lt;h1 id="gvm"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>gvm</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</guid><description>&lt;h1 id="gvm"&gt;
  gvm
  
  &lt;a class="anchor" href="#gvm"&gt;#&lt;/a&gt;
@@ -966,7 +966,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; alias - manage go version aliases
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pkgset - manage go packages sets
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pkgenv - edit the environment &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; a package set
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Java</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/java/</guid><description>&lt;h1 id="java"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Java</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</guid><description>&lt;h1 id="java"&gt;
  Java
  
  &lt;a class="anchor" href="#java"&gt;#&lt;/a&gt;
@@ -996,7 +996,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Jupyter</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/jupyter/</guid><description>&lt;h1 id="jupyter"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Jupyter</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</guid><description>&lt;h1 id="jupyter"&gt;
  Jupyter
  
  &lt;a class="anchor" href="#jupyter"&gt;#&lt;/a&gt;
@@ -1046,7 +1046,7 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;jupyter kernelspec list
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;jupyter kernelspec uninstall
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>k3d</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/k3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/k3d/</guid><description>&lt;h1 id="k3d"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>k3d</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</guid><description>&lt;h1 id="k3d"&gt;
  k3d
  
  &lt;a class="anchor" href="#k3d"&gt;#&lt;/a&gt;
@@ -1070,7 +1070,7 @@
  
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
  
-&lt;/h2&gt;</description></item><item><title>KubeEdge</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/kubeedge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/kubeedge/</guid><description>&lt;h1 id="kubeedge"&gt;
+&lt;/h2&gt;</description></item><item><title>KubeEdge</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</guid><description>&lt;h1 id="kubeedge"&gt;
  KubeEdge
  
  &lt;a class="anchor" href="#kubeedge"&gt;#&lt;/a&gt;
@@ -1097,7 +1097,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm -rf /etc/kubeedge/
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;keadm join --cloudcore-ipport&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;120.241.124.226:10000&amp;#34;&lt;/span&gt; --token&lt;span style="color:#f92672"&gt;=&lt;/span&gt;f76a721023f724ae4ff872c8ec9e04e672d4eb93d1327638526389267084629b.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzU3Mjk0MDl9.TrcHtDra2gwuBw-9Aa8aDkDK99n1JoxwYYz8Kv4ugPo --kubeedge-version&lt;span style="color:#f92672"&gt;=&lt;/span&gt;v1.13.0
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KubeSphere</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/kubesphere/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid><description>&lt;h1 id="kubesphere"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KubeSphere</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid><description>&lt;h1 id="kubesphere"&gt;
  KubeSphere
  
  &lt;a class="anchor" href="#kubesphere"&gt;#&lt;/a&gt;
@@ -1105,14 +1105,14 @@
 &lt;/h1&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;
 kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;: {&amp;#34;annotations&amp;#34;:{&amp;#34;storageclass.kubernetes.io/is-default-class&amp;#34;:&amp;#34;true&amp;#34;}}}&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>langflow</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/langflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/langflow/</guid><description>&lt;h1 id="langflow"&gt;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>langflow</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</guid><description>&lt;h1 id="langflow"&gt;
  langflow
  
  &lt;a class="anchor" href="#langflow"&gt;#&lt;/a&gt;
  
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;langflow --host &lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt; --port &lt;span style="color:#ae81ff"&gt;7865&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>mamba</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/mamba/</guid><description>&lt;h1 id="mamba"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>mamba</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mamba/</guid><description>&lt;h1 id="mamba"&gt;
  mamba
  
  &lt;a class="anchor" href="#mamba"&gt;#&lt;/a&gt;
@@ -1141,7 +1141,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mamba create -n pytorch python&lt;span style="color:#f92672"&gt;=&lt;/span&gt;3.10
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mamba activate pytorch
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>MicroK8s</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/microk8s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/microk8s/</guid><description>&lt;h1 id="microk8s"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>MicroK8s</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid><description>&lt;h1 id="microk8s"&gt;
  MicroK8s
  
  &lt;a class="anchor" href="#microk8s"&gt;#&lt;/a&gt;
@@ -1248,7 +1248,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
  &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;vi &lt;code&gt;/etc/environment&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Mosquitto</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/mosquitto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid><description>&lt;h1 id="mosquitto"&gt;
+&lt;p&gt;vi &lt;code&gt;/etc/environment&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Mosquitto</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid><description>&lt;h1 id="mosquitto"&gt;
  Mosquitto
  
  &lt;a class="anchor" href="#mosquitto"&gt;#&lt;/a&gt;
@@ -1288,7 +1288,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;--proxy socks-url&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;--property command identifier value&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;-D command identifier value&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Multipass</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/multipass/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/multipass/</guid><description>&lt;h1 id="multipass"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Multipass</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</guid><description>&lt;h1 id="multipass"&gt;
  Multipass
  
  &lt;a class="anchor" href="#multipass"&gt;#&lt;/a&gt;
@@ -1345,7 +1345,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
  &lt;a class="anchor" href="#%e7%bd%91%e7%bb%9c"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
-&lt;p&gt;使用的是&lt;strong&gt;桥接模式&lt;/strong&gt;，因为：&lt;/p&gt;</description></item><item><title>obsidian</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/obsidian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/obsidian/</guid><description>&lt;h1 id="obsidian"&gt;
+&lt;p&gt;使用的是&lt;strong&gt;桥接模式&lt;/strong&gt;，因为：&lt;/p&gt;</description></item><item><title>obsidian</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</guid><description>&lt;h1 id="obsidian"&gt;
  obsidian
  
  &lt;a class="anchor" href="#obsidian"&gt;#&lt;/a&gt;
@@ -1392,7 +1392,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# docker compose version&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker-compose -f docker-compose.yml up -d
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PHP</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/php/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/php/</guid><description>&lt;h1 id="php"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PHP</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</guid><description>&lt;h1 id="php"&gt;
  PHP
  
  &lt;a class="anchor" href="#php"&gt;#&lt;/a&gt;
@@ -1405,7 +1405,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
  
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get -y install php-fpm
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pip</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pip/</guid><description>&lt;h1 id="pip"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pip</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</guid><description>&lt;h1 id="pip"&gt;
  pip
  
  &lt;a class="anchor" href="#pip"&gt;#&lt;/a&gt;
@@ -1419,7 +1419,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 临时安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pipenv</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pipenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pipenv/</guid><description>&lt;h1 id="pipenv"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pipenv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid><description>&lt;h1 id="pipenv"&gt;
  pipenv
  
  &lt;a class="anchor" href="#pipenv"&gt;#&lt;/a&gt;
@@ -1446,7 +1446,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 
 &lt;blockquote class='book-hint '&gt;
  &lt;p&gt;&lt;a href="https://github.com/pypa/pipenv/issues/4339"&gt;Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>pipx</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pipx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pipx/</guid><description>&lt;h1 id="pipx"&gt;
+&lt;/blockquote&gt;</description></item><item><title>pipx</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipx/</guid><description>&lt;h1 id="pipx"&gt;
  pipx
  
  &lt;a class="anchor" href="#pipx"&gt;#&lt;/a&gt;
@@ -1476,7 +1476,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
  
  &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
  
-&lt;/h2&gt;</description></item><item><title>poetry</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/poetry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/poetry/</guid><description>&lt;h1 id="poetry"&gt;
+&lt;/h2&gt;</description></item><item><title>poetry</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</guid><description>&lt;h1 id="poetry"&gt;
  poetry
  
  &lt;a class="anchor" href="#poetry"&gt;#&lt;/a&gt;
@@ -1507,7 +1507,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
  &lt;p&gt;Poetry replaces setup.py, requirements.txt, setup.cfg, MANIFEST.in and Pipfile with a simple &lt;code&gt;pyproject.toml&lt;/code&gt; based project format.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote class='book-hint '&gt;
- &lt;p&gt;Poetry will &lt;code&gt;not&lt;/code&gt; automatically install a python interpreter for you.&lt;/p&gt;</description></item><item><title>pyenv</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pyenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pyenv/</guid><description>&lt;h1 id="pyenv"&gt;
+ &lt;p&gt;Poetry will &lt;code&gt;not&lt;/code&gt; automatically install a python interpreter for you.&lt;/p&gt;</description></item><item><title>pyenv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid><description>&lt;h1 id="pyenv"&gt;
  pyenv
  
  &lt;a class="anchor" href="#pyenv"&gt;#&lt;/a&gt;
@@ -1544,7 +1544,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e4%be%9d%e8%b5%96"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;之后才能编译 python 成功&lt;/p&gt;</description></item><item><title>python</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/python/</guid><description>&lt;h1 id="python"&gt;
+&lt;p&gt;之后才能编译 python 成功&lt;/p&gt;</description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</guid><description>&lt;h1 id="python"&gt;
  python
  
  &lt;a class="anchor" href="#python"&gt;#&lt;/a&gt;
@@ -1553,7 +1553,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install -y pipx
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipx install poetry
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;
  pytorch
  
  &lt;a class="anchor" href="#pytorch"&gt;#&lt;/a&gt;
@@ -1561,7 +1561,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# cuda 11.4&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda install pytorch&lt;span style="color:#f92672"&gt;==&lt;/span&gt;1.12.1 torchvision&lt;span style="color:#f92672"&gt;==&lt;/span&gt;0.13.1 torchaudio&lt;span style="color:#f92672"&gt;==&lt;/span&gt;0.12.1 cudatoolkit&lt;span style="color:#f92672"&gt;=&lt;/span&gt;11.3 -c pytorch
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>sealos</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/sealos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/sealos/</guid><description>&lt;h1 id="sealos"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>sealos</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</guid><description>&lt;h1 id="sealos"&gt;
  sealos
  
  &lt;a class="anchor" href="#sealos"&gt;#&lt;/a&gt;
@@ -1590,7 +1590,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sealos run --env DOMAIN&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$DOMAIN --env DB_PV_SIZE&lt;span style="color:#f92672"&gt;=&lt;/span&gt;5Gi --env OSS_PV_SIZE&lt;span style="color:#f92672"&gt;=&lt;/span&gt;5Gi --env EXTERNAL_HTTP_SCHEMA&lt;span style="color:#f92672"&gt;=&lt;/span&gt;http registry.cn-shanghai.aliyuncs.com/labring/laf:latest
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Streamlit</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/streamlit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/streamlit/</guid><description>&lt;h1 id="streamlit"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Streamlit</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</guid><description>&lt;h1 id="streamlit"&gt;
  Streamlit
  
  &lt;a class="anchor" href="#streamlit"&gt;#&lt;/a&gt;
@@ -1600,7 +1600,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install streamlit
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;streamlit run xxx.py --server.address &lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt; --server.port &lt;span style="color:#ae81ff"&gt;7865&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>systemd</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/systemd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/systemd/</guid><description>&lt;h1 id="systemd"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>systemd</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</guid><description>&lt;h1 id="systemd"&gt;
  systemd
  
  &lt;a class="anchor" href="#systemd"&gt;#&lt;/a&gt;
@@ -1613,7 +1613,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
  
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl list-units --type&lt;span style="color:#f92672"&gt;=&lt;/span&gt;service --state&lt;span style="color:#f92672"&gt;=&lt;/span&gt;active | grep ray
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>v2ray</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/v2ray/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/v2ray/</guid><description>&lt;h1 id="v2ray"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>v2ray</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</guid><description>&lt;h1 id="v2ray"&gt;
  v2ray
  
  &lt;a class="anchor" href="#v2ray"&gt;#&lt;/a&gt;
@@ -1702,7 +1702,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl start v2raya.service
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl enable v2raya.service
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考： &lt;a href="https://v2raya.org/docs/prologue/quick-start/"&gt;v2raya 快速上手&lt;/a&gt;&lt;/p&gt;</description></item><item><title>zsh</title><link>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/linux/ubuntu/zsh/</guid><description>&lt;h1 id="zsh"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考： &lt;a href="https://v2raya.org/docs/prologue/quick-start/"&gt;v2raya 快速上手&lt;/a&gt;&lt;/p&gt;</description></item><item><title>zsh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid><description>&lt;h1 id="zsh"&gt;
  zsh
  
  &lt;a class="anchor" href="#zsh"&gt;#&lt;/a&gt;
