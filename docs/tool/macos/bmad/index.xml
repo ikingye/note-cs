@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bmad on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/macos/bmad/</link><description>Recent content in bmad on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/macos/bmad/index.xml" rel="self" type="application/rss+xml"/><item><title>User Guide</title><link>https://kingye.me/note-cs/docs/tool/macos/bmad/user-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/bmad/user-guide/</guid><description>&lt;h1 id="bmad-method--user-guide"&gt;
+ BMad Method — User Guide
+ &lt;a class="anchor" href="#bmad-method--user-guide"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;This guide will help you understand and effectively use the BMad Method for agile AI-driven planning and development.&lt;/p&gt;
+&lt;h2 id="the-bmad-plan-and-execute-workflow"&gt;
+ The BMad Plan and Execute Workflow
+ &lt;a class="anchor" href="#the-bmad-plan-and-execute-workflow"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;First, here is the full standard Greenfield Planning + Execution Workflow. Brownfield is very similar, but it&amp;rsquo;s suggested to understand this greenfield first, even if on a simple project before tackling a brownfield project. The BMad Method needs to be installed to the root of your new project folder. For the planning phase, you can optionally perform it with powerful web agents, potentially resulting in higher quality results at a fraction of the cost it would take to complete if providing your own API key or credits in some Agentic tools. For planning, powerful thinking models and larger context - along with working as a partner with the agents will net the best results.&lt;/p&gt;</description></item></channel></rss>

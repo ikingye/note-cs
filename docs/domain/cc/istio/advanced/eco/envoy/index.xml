@@ -1,141 +1,141 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Envoy on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/</link><description>Recent content in Envoy on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/index.xml" rel="self" type="application/rss+xml"/><item><title>Envoy API</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/api/</guid><description>&lt;h1 id="envoy-api">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Envoy on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/</link><description>Recent content in Envoy on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/index.xml" rel="self" type="application/rss+xml"/><item><title>Envoy API</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/api/</guid><description>&lt;h1 id="envoy-api"&gt;
  Envoy API
- &lt;a class="anchor" href="#envoy-api">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="api-versioning-guidelineshttpsgithubcomenvoyproxyenvoyblobv1171apiapi_versioningmd">
- &lt;a href="https://github.com/envoyproxy/envoy/blob/v1.17.1/api/API_VERSIONING.md">API versioning guidelines&lt;/a>
- &lt;a class="anchor" href="#api-versioning-guidelineshttpsgithubcomenvoyproxyenvoyblobv1171apiapi_versioningmd">#&lt;/a>
-&lt;/h2>
-&lt;hr>
-&lt;h2 id="udpa">
+ &lt;a class="anchor" href="#envoy-api"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="api-versioning-guidelines"&gt;
+ &lt;a href="https://github.com/envoyproxy/envoy/blob/v1.17.1/api/API_VERSIONING.md"&gt;API versioning guidelines&lt;/a&gt;
+ &lt;a class="anchor" href="#api-versioning-guidelines"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="udpa"&gt;
  UDPA
- &lt;a class="anchor" href="#udpa">#&lt;/a>
-&lt;/h2>
-&lt;p>Universal Data Plane API&lt;/p>
-&lt;p>&lt;a href="https://github.com/cncf/udpa">cncf/udpa&lt;/a> &lt;img src="https://img.shields.io/github/stars/cncf/udpa.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/languages/top/cncf/udpa.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/cncf/udpa.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/cncf/udpa.svg" alt="Last commit" />&lt;/p>
-&lt;p>Universal Data Plane API Working Group (UDPA-WG)
-Goal: The objective of the Universal Data Plane API Working Group (UDPA-WG) is to bring together parties across the industry interested in a common control and configuration API for data plane proxies and load balancers.&lt;/p></description></item><item><title>Envoy filters</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/filter/</guid><description>&lt;h1 id="envoy-filters">
+ &lt;a class="anchor" href="#udpa"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Universal Data Plane API&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/cncf/udpa"&gt;cncf/udpa&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/cncf/udpa.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/cncf/udpa.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/cncf/udpa.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/cncf/udpa.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;Universal Data Plane API Working Group (UDPA-WG)
+Goal: The objective of the Universal Data Plane API Working Group (UDPA-WG) is to bring together parties across the industry interested in a common control and configuration API for data plane proxies and load balancers.&lt;/p&gt;</description></item><item><title>Envoy filters</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/filter/</guid><description>&lt;h1 id="envoy-filters"&gt;
  Envoy filters
- &lt;a class="anchor" href="#envoy-filters">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="lua-filter">
+ &lt;a class="anchor" href="#envoy-filters"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="lua-filter"&gt;
  Lua filter
- &lt;a class="anchor" href="#lua-filter">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="envoy-apisix">
+ &lt;a class="anchor" href="#lua-filter"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="envoy-apisix"&gt;
  envoy-apisix
- &lt;a class="anchor" href="#envoy-apisix">#&lt;/a>
-&lt;/h3>
-&lt;p>&lt;a href="https://github.com/api7/envoy-apisix">api7/envoy-apisix&lt;/a> &lt;img src="https://img.shields.io/github/stars/api7/envoy-apisix.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/languages/top/api7/envoy-apisix.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/api7/envoy-apisix.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/api7/envoy-apisix.svg" alt="Last commit" />&lt;/p>
-&lt;p>A Lua framework that support Apache APISIX plugins run directly in Envoy Lua filter without modify Envoy.&lt;/p></description></item><item><title>版本</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/version/</guid><description>&lt;h1 id="envoy-版本">
+ &lt;a class="anchor" href="#envoy-apisix"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/api7/envoy-apisix"&gt;api7/envoy-apisix&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/api7/envoy-apisix.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/api7/envoy-apisix.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/api7/envoy-apisix.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/api7/envoy-apisix.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;A Lua framework that support Apache APISIX plugins run directly in Envoy Lua filter without modify Envoy.&lt;/p&gt;</description></item><item><title>版本</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/version/</guid><description>&lt;h1 id="envoy-版本"&gt;
  Envoy 版本
- &lt;a class="anchor" href="#envoy-%e7%89%88%e6%9c%ac">#&lt;/a>
-&lt;/h1>
-&lt;p>参考： &lt;a href="https://www.envoyproxy.io/docs/envoy/v1.15.0/version_history/version_history">https://www.envoyproxy.io/docs/envoy/v1.15.0/version_history/version_history&lt;/a>&lt;/p>
-&lt;h2 id="117">
+ &lt;a class="anchor" href="#envoy-%e7%89%88%e6%9c%ac"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;参考： &lt;a href="https://www.envoyproxy.io/docs/envoy/v1.15.0/version_history/version_history"&gt;https://www.envoyproxy.io/docs/envoy/v1.15.0/version_history/version_history&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="117"&gt;
  1.17
- &lt;a class="anchor" href="#117">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1171">
+ &lt;a class="anchor" href="#117"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1171"&gt;
  1.17.1
- &lt;a class="anchor" href="#1171">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="1170">
+ &lt;a class="anchor" href="#1171"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="1170"&gt;
  1.17.0
- &lt;a class="anchor" href="#1170">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="116">
+ &lt;a class="anchor" href="#1170"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="116"&gt;
  1.16
- &lt;a class="anchor" href="#116">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1162">
+ &lt;a class="anchor" href="#116"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1162"&gt;
  1.16.2
- &lt;a class="anchor" href="#1162">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="1160-2020-10-08">
+ &lt;a class="anchor" href="#1162"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="1160-2020-10-08"&gt;
  1.16.0 (2020-10-08)
- &lt;a class="anchor" href="#1160-2020-10-08">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="115">
+ &lt;a class="anchor" href="#1160-2020-10-08"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="115"&gt;
  1.15
- &lt;a class="anchor" href="#115">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1150-2020-07-06">
+ &lt;a class="anchor" href="#115"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1150-2020-07-06"&gt;
  1.15.0 (2020-07-06)
- &lt;a class="anchor" href="#1150-2020-07-06">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="114">
+ &lt;a class="anchor" href="#1150-2020-07-06"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="114"&gt;
  1.14
- &lt;a class="anchor" href="#114">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1143-2020-06-30">
+ &lt;a class="anchor" href="#114"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1143-2020-06-30"&gt;
  1.14.3 (2020-06-30)
- &lt;a class="anchor" href="#1143-2020-06-30">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="1142-2020-06-08">
+ &lt;a class="anchor" href="#1143-2020-06-30"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="1142-2020-06-08"&gt;
  1.14.2 (2020-06-08)
- &lt;a class="anchor" href="#1142-2020-06-08">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="1140-2020-04-08">
+ &lt;a class="anchor" href="#1142-2020-06-08"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="1140-2020-04-08"&gt;
  1.14.0 (2020-04-08)
- &lt;a class="anchor" href="#1140-2020-04-08">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="113">
+ &lt;a class="anchor" href="#1140-2020-04-08"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="113"&gt;
  1.13
- &lt;a class="anchor" href="#113">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1133-2020-06-30">
+ &lt;a class="anchor" href="#113"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1133-2020-06-30"&gt;
  1.13.3 (2020-06-30)
- &lt;a class="anchor" href="#1133-2020-06-30">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="1130-2020-01-20">
+ &lt;a class="anchor" href="#1133-2020-06-30"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="1130-2020-01-20"&gt;
  1.13.0 (2020-01-20)
- &lt;a class="anchor" href="#1130-2020-01-20">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="112">
+ &lt;a class="anchor" href="#1130-2020-01-20"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="112"&gt;
  1.12
- &lt;a class="anchor" href="#112">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1125-2020-06-30">
+ &lt;a class="anchor" href="#112"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1125-2020-06-30"&gt;
  1.12.5 (2020-06-30)
- &lt;a class="anchor" href="#1125-2020-06-30">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="1121-2019-11-08">
+ &lt;a class="anchor" href="#1125-2020-06-30"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="1121-2019-11-08"&gt;
  1.12.1 (2019-11-08)
- &lt;a class="anchor" href="#1121-2019-11-08">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="15-2017-12-04">
+ &lt;a class="anchor" href="#1121-2019-11-08"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="15-2017-12-04"&gt;
  1.5 (2017-12-04)
- &lt;a class="anchor" href="#15-2017-12-04">#&lt;/a>
-&lt;/h2>
-&lt;hr>
-&lt;h2 id="14-2017-08-24">
+ &lt;a class="anchor" href="#15-2017-12-04"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="14-2017-08-24"&gt;
  1.4 (2017-08-24)
- &lt;a class="anchor" href="#14-2017-08-24">#&lt;/a>
-&lt;/h2>
-&lt;hr>
-&lt;h2 id="13-2017-05-17">
+ &lt;a class="anchor" href="#14-2017-08-24"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="13-2017-05-17"&gt;
  1.3 (2017-05-17)
- &lt;a class="anchor" href="#13-2017-05-17">#&lt;/a>
-&lt;/h2>
-&lt;hr>
-&lt;h2 id="12-2017-03-07">
+ &lt;a class="anchor" href="#13-2017-05-17"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="12-2017-03-07"&gt;
  1.2 (2017-03-07)
- &lt;a class="anchor" href="#12-2017-03-07">#&lt;/a>
-&lt;/h2>
-&lt;hr>
-&lt;h2 id="11-2016-11-30">
+ &lt;a class="anchor" href="#12-2017-03-07"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="11-2016-11-30"&gt;
  1.1 (2016-11-30)
- &lt;a class="anchor" href="#11-2016-11-30">#&lt;/a>
-&lt;/h2>
-&lt;hr>
-&lt;h2 id="10-2016-09-12">
+ &lt;a class="anchor" href="#11-2016-11-30"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="10-2016-09-12"&gt;
  1.0 (2016-09-12)
- &lt;a class="anchor" href="#10-2016-09-12">#&lt;/a>
-&lt;/h2></description></item></channel></rss>
+ &lt;a class="anchor" href="#10-2016-09-12"&gt;#&lt;/a&gt;
+&lt;/h2&gt;</description></item></channel></rss>

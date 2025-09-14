@@ -1,54 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PaaS on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/</link><description>Recent content in PaaS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/others/paas/index.xml" rel="self" type="application/rss+xml"/><item><title>GAE</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/gae/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/gae/</guid><description>&lt;h1 id="google-app-engine">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PaaS on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/</link><description>Recent content in PaaS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/others/paas/index.xml" rel="self" type="application/rss+xml"/><item><title>GAE</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/gae/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/gae/</guid><description>&lt;h1 id="google-app-engine"&gt;
  Google App Engine
- &lt;a class="anchor" href="#google-app-engine">#&lt;/a>
-&lt;/h1></description></item><item><title>Heroku</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/heroku/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/heroku/</guid><description>&lt;h1 id="heroku">
+ &lt;a class="anchor" href="#google-app-engine"&gt;#&lt;/a&gt;
+&lt;/h1&gt;</description></item><item><title>Heroku</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/heroku/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/heroku/</guid><description>&lt;h1 id="heroku"&gt;
  Heroku
- &lt;a class="anchor" href="#heroku">#&lt;/a>
-&lt;/h1></description></item><item><title>OpenShift</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/openshift/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/openshift/</guid><description>&lt;h1 id="openshift">
+ &lt;a class="anchor" href="#heroku"&gt;#&lt;/a&gt;
+&lt;/h1&gt;</description></item><item><title>OpenShift</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/openshift/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/openshift/</guid><description>&lt;h1 id="openshift"&gt;
  OpenShift
- &lt;a class="anchor" href="#openshift">#&lt;/a>
-&lt;/h1>
-&lt;p>Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform.&lt;/p>
-&lt;p>&lt;img src="https://www.openshift.com/hubfs/images/illustrations/marketure-diagram.svg" alt="" />&lt;/p>
-&lt;p>OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。&lt;/p>
-&lt;p>Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。&lt;/p>
-&lt;p>Openshift 没有 root 权限&lt;/p>
-&lt;p>参考：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.zhihu.com/question/31637672">openshift 和普通 vps 的区别在哪儿？&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Cloud Foundry</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/cloud-foundry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/cloud-foundry/</guid><description>&lt;h1 id="cloud-foundry">
+ &lt;a class="anchor" href="#openshift"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Red Hat OpenShift is a leading hybrid cloud, enterprise Kubernetes application platform.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.openshift.com/hubfs/images/illustrations/marketure-diagram.svg" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;OpenShift 在 Kubernetes 的基础上整合了应用的生命周期管理，包括 image 的编译，持续集成，部署以及更新。&lt;/p&gt;
+&lt;p&gt;Openshift 以前是 IaaS，现在 Openshift 自己宣称自己搭配 LXC 已经是 PaaS 了，VPS 不是云服务但可以类比为 IaaS。&lt;/p&gt;
+&lt;p&gt;Openshift 没有 root 权限&lt;/p&gt;
+&lt;p&gt;参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.zhihu.com/question/31637672"&gt;openshift 和普通 vps 的区别在哪儿？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Cloud Foundry</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/cloud-foundry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/cloud-foundry/</guid><description>&lt;h1 id="cloud-foundry"&gt;
  Cloud Foundry
- &lt;a class="anchor" href="#cloud-foundry">#&lt;/a>
-&lt;/h1>
-&lt;p>Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。&lt;/p>
-&lt;h2 id="组件">
+ &lt;a class="anchor" href="#cloud-foundry"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Cloud Foundry 提供了云、开发者框架和应用服务的选择，可以更快、更容易的构建、测试、发布和大规模部署应用程序。它是一个开源项目，可通过各种私有云发行版和公有云实例获得。&lt;/p&gt;
+&lt;h2 id="组件"&gt;
  组件
- &lt;a class="anchor" href="#%e7%bb%84%e4%bb%b6">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg">
- &lt;a href="https://github.com/cloudfoundry/bosh">cloudfoundry/bosh&lt;/a> &lt;img src="https://img.shields.io/github/stars/cloudfoundry/bosh.svg" alt="Github stars" />
- &lt;a class="anchor" href="#cloudfoundryboshhttpsgithubcomcloudfoundrybosh-github-starshttpsimgshieldsiogithubstarscloudfoundryboshsvg">#&lt;/a>
-&lt;/h3>
-&lt;p>Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&lt;/p>
-&lt;h3 id="cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg">
- &lt;a href="https://github.com/cloudfoundry/cli">cloudfoundry/cli&lt;/a> &lt;img src="https://img.shields.io/github/stars/cloudfoundry/cli.svg" alt="Github stars" />
- &lt;a class="anchor" href="#cloudfoundryclihttpsgithubcomcloudfoundrycli-github-starshttpsimgshieldsiogithubstarscloudfoundryclisvg">#&lt;/a>
-&lt;/h3>
-&lt;p>The official command line client for Cloud Foundry
-&lt;a href="https://docs.cloudfoundry.org/cf-cli">https://docs.cloudfoundry.org/cf-cli&lt;/a>&lt;/p>
-&lt;h3 id="cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg">
- &lt;a href="https://github.com/cloudfoundry/uaa">cloudfoundry/uaa&lt;/a> &lt;img src="https://img.shields.io/github/stars/cloudfoundry/uaa.svg" alt="Github stars" />
- &lt;a class="anchor" href="#cloudfoundryuaahttpsgithubcomcloudfoundryuaa-github-starshttpsimgshieldsiogithubstarscloudfoundryuaasvg">#&lt;/a>
-&lt;/h3>
-&lt;p>CloudFoundry User Account and Authentication (UAA) Server&lt;/p>
-&lt;hr>
-&lt;h2 id="cloud-foundry-缺点">
+ &lt;a class="anchor" href="#%e7%bb%84%e4%bb%b6"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="cloudfoundrybosh-github-stars"&gt;
+ &lt;a href="https://github.com/cloudfoundry/bosh"&gt;cloudfoundry/bosh&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/cloudfoundry/bosh.svg" alt="Github stars" /&gt;
+ &lt;a class="anchor" href="#cloudfoundrybosh-github-stars"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Cloud Foundry BOSH is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&lt;/p&gt;
+&lt;h3 id="cloudfoundrycli-github-stars"&gt;
+ &lt;a href="https://github.com/cloudfoundry/cli"&gt;cloudfoundry/cli&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/cloudfoundry/cli.svg" alt="Github stars" /&gt;
+ &lt;a class="anchor" href="#cloudfoundrycli-github-stars"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The official command line client for Cloud Foundry
+&lt;a href="https://docs.cloudfoundry.org/cf-cli"&gt;https://docs.cloudfoundry.org/cf-cli&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="cloudfoundryuaa-github-stars"&gt;
+ &lt;a href="https://github.com/cloudfoundry/uaa"&gt;cloudfoundry/uaa&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/cloudfoundry/uaa.svg" alt="Github stars" /&gt;
+ &lt;a class="anchor" href="#cloudfoundryuaa-github-stars"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;CloudFoundry User Account and Authentication (UAA) Server&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="cloud-foundry-缺点"&gt;
  Cloud Foundry 缺点
- &lt;a class="anchor" href="#cloud-foundry-%e7%bc%ba%e7%82%b9">#&lt;/a>
-&lt;/h2>
-&lt;p>诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。
-而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。&lt;/p>
-&lt;p>而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。&lt;/p></description></item><item><title>AppFog</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/appfog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/appfog/</guid><description>&lt;h1 id="appfog">
+ &lt;a class="anchor" href="#cloud-foundry-%e7%bc%ba%e7%82%b9"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;诸如 Cloud Foundry 的 PaaS，用户必须为不同语言、不同框架区分不同的打包方式，这个打包过程是非常具有灾难性的。
+而现实往往更糟糕，当在本地跑的好好的应用，由于和远端环境的不一致，在打包后却需要在云端各种调试，最终才能让应用 “平稳” 运行。&lt;/p&gt;
+&lt;p&gt;而 Docker 的出现改变了一切，它凭借镜像解决了这个问题。Docker 一不做二不休，干脆把完整的操作系统目录也打包进去，如此高的集成度，保证了云端和本地环境的高度一致，并且随时随地轻易地移植。&lt;/p&gt;</description></item><item><title>AppFog</title><link>https://kingye.me/note-cs/docs/domain/cc/others/paas/appfog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/others/paas/appfog/</guid><description>&lt;h1 id="appfog"&gt;
  AppFog
- &lt;a class="anchor" href="#appfog">#&lt;/a>
-&lt;/h1></description></item></channel></rss>
+ &lt;a class="anchor" href="#appfog"&gt;#&lt;/a&gt;
+&lt;/h1&gt;</description></item></channel></rss>

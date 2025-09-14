@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Start</title><link>https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/quick-start/</guid><description>&lt;h1 id="quick-start">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Start</title><link>https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/mysql/basic/quick-start/</guid><description>&lt;h1 id="quick-start"&gt;
  Quick Start
- &lt;a class="anchor" href="#quick-start">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="mysql-client">
+ &lt;a class="anchor" href="#quick-start"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="mysql-client"&gt;
  Mysql Client
- &lt;a class="anchor" href="#mysql-client">#&lt;/a>
-&lt;/h2>
-&lt;p>&lt;code>/etc/my.cnf&lt;/code>&lt;/p>
-&lt;h2 id="mysql-server">
+ &lt;a class="anchor" href="#mysql-client"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;/etc/my.cnf&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="mysql-server"&gt;
  Mysql Server
- &lt;a class="anchor" href="#mysql-server">#&lt;/a>
-&lt;/h2></description></item></channel></rss>
+ &lt;a class="anchor" href="#mysql-server"&gt;#&lt;/a&gt;
+&lt;/h2&gt;</description></item></channel></rss>

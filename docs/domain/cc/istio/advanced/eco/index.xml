@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.8 生态 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/</link><description>Recent content in 2.8 生态 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenResty</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/openresty/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/openresty/</guid><description>&lt;h1 id="openresty">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2.8 生态 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/</link><description>Recent content in 2.8 生态 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenResty</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/openresty/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/openresty/</guid><description>&lt;h1 id="openresty"&gt;
  OpenResty
- &lt;a class="anchor" href="#openresty">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;a href="https://github.com/openresty/openresty">openresty/openresty&lt;/a> &lt;img src="https://img.shields.io/github/stars/openresty/openresty.svg" alt="Github stars" /> &lt;img src="https://img.shields.io/github/languages/top/openresty/openresty.svg" alt="Language" /> &lt;img src="https://img.shields.io/github/v/tag/openresty/openresty.svg?sort=semver" alt="Last Tag" /> &lt;img src="https://img.shields.io/github/last-commit/openresty/openresty.svg" alt="Last commit" />&lt;/p>
-&lt;p>参考：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.zhihu.com/question/266535644">OpenResty 究竟解决了什么痛点？&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="教程">
+ &lt;a class="anchor" href="#openresty"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/openresty/openresty"&gt;openresty/openresty&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/openresty/openresty.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/openresty/openresty.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/openresty/openresty.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/openresty/openresty.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.zhihu.com/question/266535644"&gt;OpenResty 究竟解决了什么痛点？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="教程"&gt;
  教程
- &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b">#&lt;/a>
-&lt;/h2>
-&lt;p>参考：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://openresty.gitbooks.io/programming-openresty/content/">Programming OpenResty - 章亦春&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://moonbingbing.gitbooks.io/openresty-best-practices">OpenResty 最佳实践&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+ &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://openresty.gitbooks.io/programming-openresty/content/"&gt;Programming OpenResty - 章亦春&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://moonbingbing.gitbooks.io/openresty-best-practices"&gt;OpenResty 最佳实践&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

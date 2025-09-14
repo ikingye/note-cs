@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3.1 Istio on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/</link><description>Recent content in 3.1 Istio on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/index.xml" rel="self" type="application/rss+xml"/><item><title>3.1.1 Istio 源码结构</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</guid><description>&lt;h1 id="istio-源码结构">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3.1 Istio on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/</link><description>Recent content in 3.1 Istio on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/index.xml" rel="self" type="application/rss+xml"/><item><title>3.1.1 Istio 源码结构</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/structure/</guid><description>&lt;h1 id="istio-源码结构"&gt;
  Istio 源码结构
- &lt;a class="anchor" href="#istio-%e6%ba%90%e7%a0%81%e7%bb%93%e6%9e%84">#&lt;/a>
-&lt;/h1>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#istio-%e6%ba%90%e7%a0%81%e7%bb%93%e6%9e%84"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;div class="book-tabs"&gt;
 
 
-&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-0" checked="checked" />
-&lt;label for="tabs-api-resources-0">1.6.5&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-0" checked="checked" /&gt;
+&lt;label for="tabs-api-resources-0"&gt;1.6.5&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```shell
 $ tree -L 2
@@ -192,113 +192,113 @@ $ tree -L 2
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
-&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-1" />
-&lt;label for="tabs-api-resources-1">1.4.6&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-api-resources" id="tabs-api-resources-1" /&gt;
+&lt;label for="tabs-api-resources-1"&gt;1.4.6&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;/div>
+&lt;/div&gt;
 
 
-&lt;/div></description></item><item><title>Pilot</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</guid><description>&lt;h1 id="pilot">
+&lt;/div&gt;</description></item><item><title>Pilot</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/pilot/</guid><description>&lt;h1 id="pilot"&gt;
  Pilot
- &lt;a class="anchor" href="#pilot">#&lt;/a>
-&lt;/h1>
-&lt;blockquote class="book-hint info">
+ &lt;a class="anchor" href="#pilot"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote class="book-hint info"&gt;
  
 若无特别说明，本文是根据 [Istio 1.6.5](https://github.com/istio/istio/tree/1.6.5) 进行分析。
 
-&lt;/blockquote>
+&lt;/blockquote&gt;
 
-&lt;h2 id="pilot-discovery">
+&lt;h2 id="pilot-discovery"&gt;
  pilot discovery
- &lt;a class="anchor" href="#pilot-discovery">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="函数调用栈">
+ &lt;a class="anchor" href="#pilot-discovery"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="函数调用栈"&gt;
  函数调用栈
- &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0%e8%b0%83%e7%94%a8%e6%a0%88">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L72">NewServer&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L190">initConfigController&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L88">makeKubeConfigController&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L397">(add schema) collections.Pilot.All()&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L402">NewClient&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L408">NewController&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L126">(add stores for CRD kinds) addInformer&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L138">newCacheHandler&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L216">informer := cache.NewSharedIndexInformer(&amp;hellip;)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L226">informer.AddEventHandler&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L233">queue.Push(onEvent)&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L92">s.ConfigStores = append(s.ConfigStores, configController)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L134">aggregateConfigController, err := configaggregate.MakeCache(s.ConfigStores)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L138">s.configController = aggregateConfigController&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L144">addStartFunc&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L193">initServiceControllers&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L65">NewServiceDiscovery&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L95">RegisterEventHandler&lt;/a>: 注册 serviceEntryKind 与 workloadEntryKind 的 handler&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L256">initDiscoveryService&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L468">initEventHandlers&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L762">定义 handler&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L772">s.EnvoyXdsServer.ConfigUpdate(pushReq)&lt;/a>: 真正做的事情，更新 envoy xds 配置&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L796">添加 handler&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L78">discoveryServer.Start(stop)&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L344">(&lt;code>crd controller&lt;/code>) Run&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L353">informer.Run(stop)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L348">cache.WaitForCacheSync(stop, c.HasSynced)&lt;/a>: 等待 Informer 完成一次本地缓存的数据同步操作&lt;/li>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L349">c.queue.Run(stop)&lt;/a>: 执行 &lt;code>queue.tasks&lt;/code>，即 &lt;code>cacheHandler.onEvent&lt;/code>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L303">执行 handlers&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul></description></item><item><title>Istio 熔断</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</guid><description>&lt;h1 id="istio-熔断">
+ &lt;a class="anchor" href="#%e5%87%bd%e6%95%b0%e8%b0%83%e7%94%a8%e6%a0%88"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L72"&gt;NewServer&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L190"&gt;initConfigController&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L88"&gt;makeKubeConfigController&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L397"&gt;(add schema) collections.Pilot.All()&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L402"&gt;NewClient&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L408"&gt;NewController&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L126"&gt;(add stores for CRD kinds) addInformer&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L138"&gt;newCacheHandler&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L216"&gt;informer := cache.NewSharedIndexInformer(&amp;hellip;)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L226"&gt;informer.AddEventHandler&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L233"&gt;queue.Push(onEvent)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L92"&gt;s.ConfigStores = append(s.ConfigStores, configController)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L134"&gt;aggregateConfigController, err := configaggregate.MakeCache(s.ConfigStores)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L138"&gt;s.configController = aggregateConfigController&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/configcontroller.go#L144"&gt;addStartFunc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L193"&gt;initServiceControllers&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L65"&gt;NewServiceDiscovery&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/servicecontroller.go#L95"&gt;RegisterEventHandler&lt;/a&gt;: 注册 serviceEntryKind 与 workloadEntryKind 的 handler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L256"&gt;initDiscoveryService&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L468"&gt;initEventHandlers&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L762"&gt;定义 handler&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L772"&gt;s.EnvoyXdsServer.ConfigUpdate(pushReq)&lt;/a&gt;: 真正做的事情，更新 envoy xds 配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/bootstrap/server.go#L796"&gt;添加 handler&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/cmd/pilot-discovery/main.go#L78"&gt;discoveryServer.Start(stop)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L344"&gt;(&lt;code&gt;crd controller&lt;/code&gt;) Run&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L353"&gt;informer.Run(stop)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L348"&gt;cache.WaitForCacheSync(stop, c.HasSynced)&lt;/a&gt;: 等待 Informer 完成一次本地缓存的数据同步操作&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L349"&gt;c.queue.Run(stop)&lt;/a&gt;: 执行 &lt;code&gt;queue.tasks&lt;/code&gt;，即 &lt;code&gt;cacheHandler.onEvent&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/istio/istio/blob/f508fdd78eb0d3444e2bc2b3f36966d904c5db52/pilot/pkg/config/kube/crd/controller/controller.go#L303"&gt;执行 handlers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Istio 熔断</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/circuit-break/</guid><description>&lt;h1 id="istio-熔断"&gt;
  Istio 熔断
- &lt;a class="anchor" href="#istio-%e7%86%94%e6%96%ad">#&lt;/a>
-&lt;/h1></description></item><item><title>Istio 限流</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</guid><description>&lt;h1 id="istio-限流">
+ &lt;a class="anchor" href="#istio-%e7%86%94%e6%96%ad"&gt;#&lt;/a&gt;
+&lt;/h1&gt;</description></item><item><title>Istio 限流</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/code/istio/rate-limit/</guid><description>&lt;h1 id="istio-限流"&gt;
  Istio 限流
- &lt;a class="anchor" href="#istio-%e9%99%90%e6%b5%81">#&lt;/a>
-&lt;/h1></description></item></channel></rss>
+ &lt;a class="anchor" href="#istio-%e9%99%90%e6%b5%81"&gt;#&lt;/a&gt;
+&lt;/h1&gt;</description></item></channel></rss>

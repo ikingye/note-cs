@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>熔断 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/</link><description>Recent content in 熔断 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/index.xml" rel="self" type="application/rss+xml"/><item><title>4.3 关注项目</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</guid><description>&lt;h1 id="关注">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>熔断 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/</link><description>Recent content in 熔断 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/index.xml" rel="self" type="application/rss+xml"/><item><title>4.3 关注项目</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/scene/circuit-breaker/attention/</guid><description>&lt;h1 id="关注"&gt;
  关注
- &lt;a class="anchor" href="#%e5%85%b3%e6%b3%a8">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="其他">
+ &lt;a class="anchor" href="#%e5%85%b3%e6%b3%a8"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="其他"&gt;
  其他
- &lt;a class="anchor" href="#%e5%85%b6%e4%bb%96">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="resilience4jresilience4jhttpsgithubcomresilience4jresilience4j">
- &lt;a href="https://github.com/resilience4j/resilience4j">resilience4j/resilience4j&lt;/a>
- &lt;a class="anchor" href="#resilience4jresilience4jhttpsgithubcomresilience4jresilience4j">#&lt;/a>
-&lt;/h3>
-&lt;p>&lt;img src="https://img.shields.io/github/stars/resilience4j/resilience4j.svg" alt="Github stars" />&lt;/p>
-&lt;h3 id="ehcacheehcache3httpsgithubcomehcacheehcache3-github-starshttpsimgshieldsiogithubstarsehcacheehcache3svg">
- &lt;a href="https://github.com/ehcache/ehcache3">ehcache/ehcache3&lt;/a> &lt;img src="https://img.shields.io/github/stars/ehcache/ehcache3.svg" alt="Github stars" />
- &lt;a class="anchor" href="#ehcacheehcache3httpsgithubcomehcacheehcache3-github-starshttpsimgshieldsiogithubstarsehcacheehcache3svg">#&lt;/a>
-&lt;/h3>
-&lt;p>ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库，
+ &lt;a class="anchor" href="#%e5%85%b6%e4%bb%96"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="resilience4jresilience4j"&gt;
+ &lt;a href="https://github.com/resilience4j/resilience4j"&gt;resilience4j/resilience4j&lt;/a&gt;
+ &lt;a class="anchor" href="#resilience4jresilience4j"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/resilience4j/resilience4j.svg" alt="Github stars" /&gt;&lt;/p&gt;
+&lt;h3 id="ehcacheehcache3-github-stars"&gt;
+ &lt;a href="https://github.com/ehcache/ehcache3"&gt;ehcache/ehcache3&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ehcache/ehcache3.svg" alt="Github stars" /&gt;
+ &lt;a class="anchor" href="#ehcacheehcache3-github-stars"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;ehcache 是 ​​ 一个用 Java 实现的使用简单，高速，实现线程安全的缓存管理类库，
 ehcache 提供了用内存，磁盘文件存储，以及分布式存储方式等多种灵活的 cache 管理方案。
-&lt;a href="http://www.ehcache.org">http://www.ehcache.org&lt;/a>&lt;/p>
-&lt;h3 id="netflixhystrixhttpsgithubcomnetflixhystrix">
- &lt;a href="https://github.com/Netflix/Hystrix">Netflix/Hystrix&lt;/a>
- &lt;a class="anchor" href="#netflixhystrixhttpsgithubcomnetflixhystrix">#&lt;/a>
-&lt;/h3>
-&lt;p>&lt;img src="https://img.shields.io/github/stars/Netflix/Hystrix.svg" alt="Github stars" />&lt;/p>
-&lt;p>Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，&lt;/p>
-&lt;p>Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。&lt;/p></description></item></channel></rss>
+&lt;a href="http://www.ehcache.org"&gt;http://www.ehcache.org&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="netflixhystrix"&gt;
+ &lt;a href="https://github.com/Netflix/Hystrix"&gt;Netflix/Hystrix&lt;/a&gt;
+ &lt;a class="anchor" href="#netflixhystrix"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://img.shields.io/github/stars/Netflix/Hystrix.svg" alt="Github stars" /&gt;&lt;/p&gt;
+&lt;p&gt;Hystrix 是 Netflix OSS 的一部分，是微服务领域的领先的熔断工具。Hystrix 可以被视为白盒监控工具，而 Istio 可以被视为黑盒监控工具，&lt;/p&gt;
+&lt;p&gt;Istio 是无缝衔接服务，istio 可以在不更改应用程序代码的情况下配置和使用。Hystrix 的使用需要更改每个服务来引入 Hystrix libraries。&lt;/p&gt;</description></item></channel></rss>

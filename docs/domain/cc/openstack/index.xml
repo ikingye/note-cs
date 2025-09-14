@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenStack on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/openstack/</link><description>Recent content in OpenStack on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/openstack/index.xml" rel="self" type="application/rss+xml"/><item><title>Neutron</title><link>https://kingye.me/note-cs/docs/domain/cc/openstack/neutron/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/openstack/neutron/</guid><description>&lt;h1 id="neutron">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenStack on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/openstack/</link><description>Recent content in OpenStack on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/openstack/index.xml" rel="self" type="application/rss+xml"/><item><title>Neutron</title><link>https://kingye.me/note-cs/docs/domain/cc/openstack/neutron/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/openstack/neutron/</guid><description>&lt;h1 id="neutron"&gt;
  Neutron
- &lt;a class="anchor" href="#neutron">#&lt;/a>
-&lt;/h1>
-&lt;p>Neutron 当前支持的二层网络类型有 6 种：&lt;/p>
-&lt;ul>
-&lt;li>Local&lt;/li>
-&lt;li>Flat&lt;/li>
-&lt;li>VLAN&lt;/li>
-&lt;li>GRE&lt;/li>
-&lt;li>VXLAN&lt;/li>
-&lt;li>Geneve&lt;/li>
-&lt;/ul></description></item></channel></rss>
+ &lt;a class="anchor" href="#neutron"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Neutron 当前支持的二层网络类型有 6 种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Local&lt;/li&gt;
+&lt;li&gt;Flat&lt;/li&gt;
+&lt;li&gt;VLAN&lt;/li&gt;
+&lt;li&gt;GRE&lt;/li&gt;
+&lt;li&gt;VXLAN&lt;/li&gt;
+&lt;li&gt;Geneve&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

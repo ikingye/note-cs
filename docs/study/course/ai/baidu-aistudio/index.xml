@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>百度大脑 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/</link><description>Recent content in 百度大脑 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/index.xml" rel="self" type="application/rss+xml"/><item><title>零基础实践深度学习</title><link>https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/deep-learning-from-beginning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/deep-learning-from-beginning/</guid><description>&lt;h1 id="百度架构师手把手带你零基础实践深度学习">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>百度大脑 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/</link><description>Recent content in 百度大脑 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/index.xml" rel="self" type="application/rss+xml"/><item><title>零基础实践深度学习</title><link>https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/deep-learning-from-beginning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/course/ai/baidu-aistudio/deep-learning-from-beginning/</guid><description>&lt;h1 id="百度架构师手把手带你零基础实践深度学习"&gt;
  百度架构师手把手带你零基础实践深度学习
- &lt;a class="anchor" href="#%e7%99%be%e5%ba%a6%e6%9e%b6%e6%9e%84%e5%b8%88%e6%89%8b%e6%8a%8a%e6%89%8b%e5%b8%a6%e4%bd%a0%e9%9b%b6%e5%9f%ba%e7%a1%80%e5%ae%9e%e8%b7%b5%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;a href="https://aistudio.baidu.com/aistudio/course/introduce/1297">https://aistudio.baidu.com/aistudio/course/introduce/1297&lt;/a>&lt;/p>
-&lt;h2 id="课程列表">
+ &lt;a class="anchor" href="#%e7%99%be%e5%ba%a6%e6%9e%b6%e6%9e%84%e5%b8%88%e6%89%8b%e6%8a%8a%e6%89%8b%e5%b8%a6%e4%bd%a0%e9%9b%b6%e5%9f%ba%e7%a1%80%e5%ae%9e%e8%b7%b5%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://aistudio.baidu.com/aistudio/course/introduce/1297"&gt;https://aistudio.baidu.com/aistudio/course/introduce/1297&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="课程列表"&gt;
  课程列表
- &lt;a class="anchor" href="#%e8%af%be%e7%a8%8b%e5%88%97%e8%a1%a8">#&lt;/a>
-&lt;/h2>
-&lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> 预习课程
-&lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> &lt;a href="https://aistudio.baidu.com/aistudio/projectdetail/1106204">深度学习常用数学知识&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第一章：零基础入门深度学习&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第二章：一个案例吃透深度学习&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第三章：深度学习实践应用 —— 计算机视觉&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第四章：目标检测 YoloV3&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第五章：深度学习实践应用 —— 自然语言处理&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第六章：情感分类&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第七章：深度学习实践应用 —— 推荐系统&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 第八章：深度学习高阶导入&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 拓展：【AI 实战案例项目集】&lt;/li>
-&lt;/ul></description></item></channel></rss>
+ &lt;a class="anchor" href="#%e8%af%be%e7%a8%8b%e5%88%97%e8%a1%a8"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 预习课程
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;a href="https://aistudio.baidu.com/aistudio/projectdetail/1106204"&gt;深度学习常用数学知识&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第一章：零基础入门深度学习&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第二章：一个案例吃透深度学习&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第三章：深度学习实践应用 —— 计算机视觉&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第四章：目标检测 YoloV3&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第五章：深度学习实践应用 —— 自然语言处理&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第六章：情感分类&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第七章：深度学习实践应用 —— 推荐系统&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 第八章：深度学习高阶导入&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; 拓展：【AI 实战案例项目集】&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

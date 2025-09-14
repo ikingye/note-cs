@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spring on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/</link><description>Recent content in Spring on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/frame/java/spring/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring Boot</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</guid><description>&lt;h1 id="spring-boot">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spring on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/</link><description>Recent content in Spring on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/frame/java/spring/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring Boot</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</guid><description>&lt;h1 id="spring-boot"&gt;
  Spring Boot
- &lt;a class="anchor" href="#spring-boot">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="教程">
+ &lt;a class="anchor" href="#spring-boot"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="教程"&gt;
  教程
- &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="ityouknowspring-boot-exampleshttpsgithubcomityouknowspring-boot-examples-github-starshttpsimgshieldsiogithubstarsityouknowspring-boot-examplessvg">
- &lt;a href="https://github.com/ityouknow/spring-boot-examples">ityouknow/spring-boot-examples&lt;/a> &lt;img src="https://img.shields.io/github/stars/ityouknow/spring-boot-examples.svg" alt="Github stars" />
- &lt;a class="anchor" href="#ityouknowspring-boot-exampleshttpsgithubcomityouknowspring-boot-examples-github-starshttpsimgshieldsiogithubstarsityouknowspring-boot-examplessvg">#&lt;/a>
-&lt;/h3>
-&lt;p>Spring Boot 教程、技术栈示例代码，快速简单上手教程。&lt;/p></description></item><item><title>Spring Cloud</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</guid><description>&lt;h1 id="spring-cloud">
+ &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="ityouknowspring-boot-examples-github-stars"&gt;
+ &lt;a href="https://github.com/ityouknow/spring-boot-examples"&gt;ityouknow/spring-boot-examples&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ityouknow/spring-boot-examples.svg" alt="Github stars" /&gt;
+ &lt;a class="anchor" href="#ityouknowspring-boot-examples-github-stars"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Spring Boot 教程、技术栈示例代码，快速简单上手教程。&lt;/p&gt;</description></item><item><title>Spring Cloud</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-cloud/</guid><description>&lt;h1 id="spring-cloud"&gt;
  Spring Cloud
- &lt;a class="anchor" href="#spring-cloud">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="教程">
+ &lt;a class="anchor" href="#spring-cloud"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="教程"&gt;
  教程
- &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="ityouknowspring-cloud-exampleshttpsgithubcomityouknowspring-cloud-examples-github-starshttpsimgshieldsiogithubstarsityouknowspring-cloud-examplessvg">
- &lt;a href="https://github.com/ityouknow/spring-cloud-examples">ityouknow/spring-cloud-examples&lt;/a> &lt;img src="https://img.shields.io/github/stars/ityouknow/spring-cloud-examples.svg" alt="Github stars" />
- &lt;a class="anchor" href="#ityouknowspring-cloud-exampleshttpsgithubcomityouknowspring-cloud-examples-github-starshttpsimgshieldsiogithubstarsityouknowspring-cloud-examplessvg">#&lt;/a>
-&lt;/h3>
-&lt;p>Spring Cloud 学习案例，服务发现、服务治理、链路追踪、服务监控等&lt;/p></description></item><item><title>Spring MVC</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</guid><description>&lt;h1 id="spring-mvc">
+ &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="ityouknowspring-cloud-examples-github-stars"&gt;
+ &lt;a href="https://github.com/ityouknow/spring-cloud-examples"&gt;ityouknow/spring-cloud-examples&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ityouknow/spring-cloud-examples.svg" alt="Github stars" /&gt;
+ &lt;a class="anchor" href="#ityouknowspring-cloud-examples-github-stars"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Spring Cloud 学习案例，服务发现、服务治理、链路追踪、服务监控等&lt;/p&gt;</description></item><item><title>Spring MVC</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-mvc/</guid><description>&lt;h1 id="spring-mvc"&gt;
  Spring MVC
- &lt;a class="anchor" href="#spring-mvc">#&lt;/a>
-&lt;/h1></description></item></channel></rss>
+ &lt;a class="anchor" href="#spring-mvc"&gt;#&lt;/a&gt;
+&lt;/h1&gt;</description></item></channel></rss>

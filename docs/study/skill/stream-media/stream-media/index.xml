@@ -1,455 +1,455 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>流媒体技术 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/</link><description>Recent content in 流媒体技术 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/index.xml" rel="self" type="application/rss+xml"/><item><title>RTMP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</guid><description>&lt;h1 id="rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae">
- &lt;a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE">RTMP&lt;/a>
- &lt;a class="anchor" href="#rtmphttpswwwwikiwandcomzh-cne5ae9ee697b6e6b688e681afe58d8fe8aeae">#&lt;/a>
-&lt;/h1>
-&lt;p>Real-Time Messaging Protocol&lt;/p>
-&lt;p>默认端口：1935&lt;/p>
-&lt;h2 id="握手">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>流媒体技术 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/</link><description>Recent content in 流媒体技术 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/index.xml" rel="self" type="application/rss+xml"/><item><title>RTMP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtmp/</guid><description>&lt;h1 id="rtmp"&gt;
+ &lt;a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE"&gt;RTMP&lt;/a&gt;
+ &lt;a class="anchor" href="#rtmp"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Real-Time Messaging Protocol&lt;/p&gt;
+&lt;p&gt;默认端口：1935&lt;/p&gt;
+&lt;h2 id="握手"&gt;
  握手
- &lt;a class="anchor" href="#%e6%8f%a1%e6%89%8b">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="复杂握手">
+ &lt;a class="anchor" href="#%e6%8f%a1%e6%89%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="复杂握手"&gt;
  复杂握手
- &lt;a class="anchor" href="#%e5%a4%8d%e6%9d%82%e6%8f%a1%e6%89%8b">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="rtmp-vs-rtsp">
+ &lt;a class="anchor" href="#%e5%a4%8d%e6%9d%82%e6%8f%a1%e6%89%8b"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="rtmp-vs-rtsp"&gt;
  RTMP vs RTSP
- &lt;a class="anchor" href="#rtmp-vs-rtsp">#&lt;/a>
-&lt;/h2>
-&lt;p>目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.&lt;/p>
-&lt;ol>
-&lt;li>直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。&lt;/li>
-&lt;li>国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。&lt;/li>
-&lt;li>网络中的路由器或防火墙可能对 RTSP 端口不开放。&lt;/li>
-&lt;/ol>
-&lt;p>参考：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.zhihu.com/question/58633763">为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>RTP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</guid><description>&lt;h1 id="rtphttpswwwwikiwandcomzh-cne5ae9ee697b6e4bca0e8be93e58d8fe8aeae">
- &lt;a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE">RTP&lt;/a>
- &lt;a class="anchor" href="#rtphttpswwwwikiwandcomzh-cne5ae9ee697b6e4bca0e8be93e58d8fe8aeae">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="报文结构">
+ &lt;a class="anchor" href="#rtmp-vs-rtsp"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;目前直播方案是：rtmp 推到 server，然后转 rtmp/http-flv/hls.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;直播走的是互联网的路子，浏览器和 Flash 不支持 RTSP。&lt;/li&gt;
+&lt;li&gt;国内的 CDN 对 RTMP 做过优化，而 RTSP 没有。&lt;/li&gt;
+&lt;li&gt;网络中的路由器或防火墙可能对 RTSP 端口不开放。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.zhihu.com/question/58633763"&gt;为什么现在的视频直播不使用 RTSP 协议而是使用 RTMP？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>RTP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtp/</guid><description>&lt;h1 id="rtp"&gt;
+ &lt;a href="https://www.wikiwand.com/zh-cn/%E5%AE%9E%E6%97%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE"&gt;RTP&lt;/a&gt;
+ &lt;a class="anchor" href="#rtp"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="报文结构"&gt;
  报文结构
- &lt;a class="anchor" href="#%e6%8a%a5%e6%96%87%e7%bb%93%e6%9e%84">#&lt;/a>
-&lt;/h2>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615163832.png" alt="" />&lt;/p>
-&lt;ul>
-&lt;li>Ver.（2 bits）是目前协议的版本号码，目前版号是 2。&lt;/li>
-&lt;li>P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。&lt;/li>
-&lt;li>X（1 bit）是否在使用延伸空间于报文之中。&lt;/li>
-&lt;li>CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。&lt;/li>
-&lt;li>M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。&lt;/li>
-&lt;li>PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。&lt;/li>
-&lt;li>SSRC 是同步化来源。&lt;/li>
-&lt;/ul>
-&lt;h3 id="rtp-header">
+ &lt;a class="anchor" href="#%e6%8a%a5%e6%96%87%e7%bb%93%e6%9e%84"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615163832.png" alt="" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ver.（2 bits）是目前协议的版本号码，目前版号是 2。&lt;/li&gt;
+&lt;li&gt;P（1 bit）是用于 RTP 报文（packet）结束点的预留空间，视报文是否需要多余的填塞空间。&lt;/li&gt;
+&lt;li&gt;X（1 bit）是否在使用延伸空间于报文之中。&lt;/li&gt;
+&lt;li&gt;CC（4 bits）包含了 CSRC 数目用于修正标头（fixed header）。&lt;/li&gt;
+&lt;li&gt;M（1 bit）是用于应用等级以及其原型（profile）的定义。如果不为零表示目前的数据有特别的程序解译。&lt;/li&gt;
+&lt;li&gt;PT（7 bits）是指 payload 的格式并决定将如何去由应用程序加以解译。&lt;/li&gt;
+&lt;li&gt;SSRC 是同步化来源。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="rtp-header"&gt;
  RTP Header
- &lt;a class="anchor" href="#rtp-header">#&lt;/a>
-&lt;/h3>
-&lt;p>前 12 个字节出现在每个 &lt;code>RTP&lt;/code> 包中，仅仅在被混合器插入时，才出现 &lt;code>CSRC&lt;/code> 识别符列表。&lt;/p>
-&lt;hr>
-&lt;h3 id="rtppsh264">
- &lt;code>RTP&lt;/code>/&lt;code>PS&lt;/code>/&lt;code>H.264&lt;/code>
- &lt;a class="anchor" href="#rtppsh264">#&lt;/a>
-&lt;/h3>
-&lt;p>基于 RTP 的 &lt;code>PS 封装&lt;/code>
-首先按照 &lt;code>ISO/IEC 13818-1:2000&lt;/code> 将视音频封装成 &lt;strong>PS 包&lt;/strong>，
-再将 PS 包以负载的方式封装成 &lt;strong>RTP 包&lt;/strong>。&lt;/p>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200610204652.png" alt="" />&lt;/p>
-&lt;h4 id="ps-包">
+ &lt;a class="anchor" href="#rtp-header"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;前 12 个字节出现在每个 &lt;code&gt;RTP&lt;/code&gt; 包中，仅仅在被混合器插入时，才出现 &lt;code&gt;CSRC&lt;/code&gt; 识别符列表。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="rtppsh264"&gt;
+ &lt;code&gt;RTP&lt;/code&gt;/&lt;code&gt;PS&lt;/code&gt;/&lt;code&gt;H.264&lt;/code&gt;
+ &lt;a class="anchor" href="#rtppsh264"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;基于 RTP 的 &lt;code&gt;PS 封装&lt;/code&gt;
+首先按照 &lt;code&gt;ISO/IEC 13818-1:2000&lt;/code&gt; 将视音频封装成 &lt;strong&gt;PS 包&lt;/strong&gt;，
+再将 PS 包以负载的方式封装成 &lt;strong&gt;RTP 包&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200610204652.png" alt="" /&gt;&lt;/p&gt;
+&lt;h4 id="ps-包"&gt;
  PS 包
- &lt;a class="anchor" href="#ps-%e5%8c%85">#&lt;/a>
-&lt;/h4>
-&lt;p>进行 PS 封装时，将每个&lt;strong>视频帧&lt;/strong>封装为一个&lt;strong>PS 包&lt;/strong>，
-且每个&lt;strong>关键帧&lt;/strong>的 PS 包中包含系统头（&lt;code>System Header&lt;/code>）和 PSM（&lt;code>Program Stream Map&lt;/code>）。&lt;/p></description></item><item><title>RTSP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</guid><description>&lt;h1 id="rtsphttpswwwwikiwandcomzh-cne58db3e69982e4b8b2e6b581e58d94e5ae9a">
- &lt;a href="https://www.wikiwand.com/zh-cn/%E5%8D%B3%E6%99%82%E4%B8%B2%E6%B5%81%E5%8D%94%E5%AE%9A">RTSP&lt;/a>
- &lt;a class="anchor" href="#rtsphttpswwwwikiwandcomzh-cne58db3e69982e4b8b2e6b581e58d94e5ae9a">#&lt;/a>
-&lt;/h1>
-&lt;p>Real Time Streaming Protocol&lt;/p>
-&lt;p>默认端口：&lt;code>554&lt;/code>&lt;/p>
-&lt;h2 id="方法">
+ &lt;a class="anchor" href="#ps-%e5%8c%85"&gt;#&lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;进行 PS 封装时，将每个&lt;strong&gt;视频帧&lt;/strong&gt;封装为一个&lt;strong&gt;PS 包&lt;/strong&gt;，
+且每个&lt;strong&gt;关键帧&lt;/strong&gt;的 PS 包中包含系统头（&lt;code&gt;System Header&lt;/code&gt;）和 PSM（&lt;code&gt;Program Stream Map&lt;/code&gt;）。&lt;/p&gt;</description></item><item><title>RTSP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/rtsp/</guid><description>&lt;h1 id="rtsp"&gt;
+ &lt;a href="https://www.wikiwand.com/zh-cn/%E5%8D%B3%E6%99%82%E4%B8%B2%E6%B5%81%E5%8D%94%E5%AE%9A"&gt;RTSP&lt;/a&gt;
+ &lt;a class="anchor" href="#rtsp"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Real Time Streaming Protocol&lt;/p&gt;
+&lt;p&gt;默认端口：&lt;code&gt;554&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="方法"&gt;
  方法
- &lt;a class="anchor" href="#%e6%96%b9%e6%b3%95">#&lt;/a>
-&lt;/h2>
-&lt;p>一般的顺序是：&lt;/p>
-&lt;ul>
-&lt;li>OPTIONS&lt;/li>
-&lt;li>DESCRIBE&lt;/li>
-&lt;li>SETUP&lt;/li>
-&lt;li>PLAY&lt;/li>
-&lt;li>TEARDOWN&lt;/li>
-&lt;/ul>
-&lt;h3 id="options">
+ &lt;a class="anchor" href="#%e6%96%b9%e6%b3%95"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;一般的顺序是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OPTIONS&lt;/li&gt;
+&lt;li&gt;DESCRIBE&lt;/li&gt;
+&lt;li&gt;SETUP&lt;/li&gt;
+&lt;li&gt;PLAY&lt;/li&gt;
+&lt;li&gt;TEARDOWN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="options"&gt;
  OPTIONS
- &lt;a class="anchor" href="#options">#&lt;/a>
-&lt;/h3>
-&lt;p>请求返回服务器将接受的请求类型。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>C-&amp;gt;S: OPTIONS rtsp://example.com/media.mp4 RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> CSeq: &lt;span style="color:#ae81ff">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Require: implicit-play
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Proxy-Require: gzipped-messages
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>S-&amp;gt;C: RTSP/1.0 &lt;span style="color:#ae81ff">200&lt;/span> OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> CSeq: &lt;span style="color:#ae81ff">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="describe">
+ &lt;a class="anchor" href="#options"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;请求返回服务器将接受的请求类型。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;C-&amp;gt;S: OPTIONS rtsp://example.com/media.mp4 RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; CSeq: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Require: implicit-play
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Proxy-Require: gzipped-messages
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;S-&amp;gt;C: RTSP/1.0 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; CSeq: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Public: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="describe"&gt;
  DESCRIBE
- &lt;a class="anchor" href="#describe">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="setup">
+ &lt;a class="anchor" href="#describe"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="setup"&gt;
  SETUP
- &lt;a class="anchor" href="#setup">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="teardown">
+ &lt;a class="anchor" href="#setup"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="teardown"&gt;
  TEARDOWN
- &lt;a class="anchor" href="#teardown">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="play">
+ &lt;a class="anchor" href="#teardown"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="play"&gt;
  PLAY
- &lt;a class="anchor" href="#play">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="pause">
+ &lt;a class="anchor" href="#play"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;h3 id="pause"&gt;
  PAUSE
- &lt;a class="anchor" href="#pause">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h2 id="包详情">
+ &lt;a class="anchor" href="#pause"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="包详情"&gt;
  包详情
- &lt;a class="anchor" href="#%e5%8c%85%e8%af%a6%e6%83%85">#&lt;/a>
-&lt;/h2>
-&lt;p>海康摄像头&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672">(&lt;/span>LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># OPTIONS ：这个是选项，问下服务器我到底有啥本领技能？&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>RTSP/1.0 &lt;span style="color:#ae81ff">200&lt;/span> OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">2&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Public: OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Date: Tue, May &lt;span style="color:#ae81ff">23&lt;/span> &lt;span style="color:#ae81ff">2017&lt;/span> 16:08:47 GMT
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 服务器回复你，你有这么多技能：OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>DESCRIBE rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">3&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672">(&lt;/span>LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Accept: application/sdp
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># DESCRIBE ：我想让服务器描述一下流的情况，你用sdp的格式告诉我吧&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>RTSP/1.0 &lt;span style="color:#ae81ff">401&lt;/span> Unauthorized
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">3&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>WWW-Authenticate: Digest realm&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1868cb21d4df&amp;#34;&lt;/span>, nonce&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span>, stale&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;FALSE&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>WWW-Authenticate: Basic realm&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1868cb21d4df&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Date: Tue, May &lt;span style="color:#ae81ff">23&lt;/span> &lt;span style="color:#ae81ff">2017&lt;/span> 16:08:47 GMT
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 服务器回答，你没有认证（用户密码），所以给你401吧&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>DESCRIBE rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">4&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Authorization: Digest username&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;admin&amp;#34;&lt;/span>, realm&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1868cb21d4df&amp;#34;&lt;/span>, nonce&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span>, uri&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream&amp;#34;&lt;/span>, response&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;8b9d4d3e6ae627b62f430874a8c6e333&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672">(&lt;/span>LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Accept: application/sdp
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># DESCRIBE ：我表示不服，再上诉：让服务器描述一下流的情况，你用sdp的格式告诉我吧&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>RTSP/1.0 &lt;span style="color:#ae81ff">200&lt;/span> OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">4&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Content-Type: application/sdp
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Content-Base: rtsp://172.17.11.155:554/h264/ch1/main/av_stream/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Content-Length: &lt;span style="color:#ae81ff">598&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>v&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>o&lt;span style="color:#f92672">=&lt;/span>- &lt;span style="color:#ae81ff">1495555727123750&lt;/span> &lt;span style="color:#ae81ff">1495555727123750&lt;/span> IN IP4 172.17.10.7
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>s&lt;span style="color:#f92672">=&lt;/span>Media Presentation
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>e&lt;span style="color:#f92672">=&lt;/span>NONE
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>b&lt;span style="color:#f92672">=&lt;/span>AS:5050
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>t&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>control:rtsp://172.17.11.155:554/h264/ch1/main/av_stream/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>m&lt;span style="color:#f92672">=&lt;/span>video &lt;span style="color:#ae81ff">0&lt;/span> RTP/AVP &lt;span style="color:#ae81ff">96&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>c&lt;span style="color:#f92672">=&lt;/span>IN IP4 0.0.0.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>b&lt;span style="color:#f92672">=&lt;/span>AS:5000
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>recvonly
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>x-dimensions:1920,1080
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>control:rtsp://172.17.11.155:554/h264/ch1/main/av_stream/trackID&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>rtpmap:96 H264/90000
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>fmtp:96 profile-level-id&lt;span style="color:#f92672">=&lt;/span>420029; packetization-mode&lt;span style="color:#f92672">=&lt;/span>1; sprop-parameter-sets&lt;span style="color:#f92672">=&lt;/span>Z00AKpWoHgCJ+WEAAAcIAAFfkAQ&lt;span style="color:#f92672">=&lt;/span>,aO48gA&lt;span style="color:#f92672">==&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>Media_header:MEDIAINFO&lt;span style="color:#f92672">=&lt;/span>494D4B48010200000400000100000000000000000000000000000000000000000000000000000000;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>a&lt;span style="color:#f92672">=&lt;/span>appversion:1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 服务器答应了，然后把SDP发给我了&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 里面有各种信息：我看到只有一路视频，1080P的，H264编码；&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 96是视频流ID, 这符合规范，mediainfo可能是sps pps的加密信息&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>SETUP rtsp://172.17.11.155:554/h264/ch1/main/av_stream/trackID&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span> RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">5&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Authorization: Digest username&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;admin&amp;#34;&lt;/span>, realm&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1868cb21d4df&amp;#34;&lt;/span>, nonce&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span>, uri&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span>, response&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;a34897f9b42eb7f501d549f6fa558838&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672">(&lt;/span>LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Transport: RTP/AVP/TCP;unicast;interleaved&lt;span style="color:#f92672">=&lt;/span>0-1
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># SETUP ：为了透过防火墙，我想指定传输机制RTP/AVP/TCP告诉服务器&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>RTSP/1.0 &lt;span style="color:#ae81ff">200&lt;/span> OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">5&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Session: 313720730;timeout&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">60&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Transport: RTP/AVP/TCP;unicast;interleaved&lt;span style="color:#f92672">=&lt;/span>0-1;ssrc&lt;span style="color:#f92672">=&lt;/span>72a9bdb8;mode&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;play&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Date: Tue, May &lt;span style="color:#ae81ff">23&lt;/span> &lt;span style="color:#ae81ff">2017&lt;/span> 16:08:47 GMT
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 服务器准了，并告诉你可以play了&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>PLAY rtsp://172.17.11.155:554/h264/ch1/main/av_stream/ RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">6&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Authorization: Digest username&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;admin&amp;#34;&lt;/span>, realm&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1868cb21d4df&amp;#34;&lt;/span>, nonce&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span>, uri&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span>, response&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;13e073b1f7a0d1be0442491ba4613c35&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672">(&lt;/span>LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Session: &lt;span style="color:#ae81ff">313720730&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Range: npt&lt;span style="color:#f92672">=&lt;/span>0.000-
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># PLAY ：我想告诉服务器以SETUP指定的机制开始发送数据；&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 还可以用关键字Range指定play的范围&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>RTSP/1.0 &lt;span style="color:#ae81ff">200&lt;/span> OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">6&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Session: &lt;span style="color:#ae81ff">313720730&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>RTP-Info: url&lt;span style="color:#f92672">=&lt;/span>rtsp://172.17.11.155:554/h264/ch1/main/av_stream/trackID&lt;span style="color:#f92672">=&lt;/span>1;seq&lt;span style="color:#f92672">=&lt;/span>13657;rtptime&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">106503066&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Date: Tue, May &lt;span style="color:#ae81ff">23&lt;/span> &lt;span style="color:#ae81ff">2017&lt;/span> 16:08:47 GMT
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 服务器很听话，给到了初始的随机序列号和随机时间戳seq=13657;rtptime=106503066&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>GET_PARAMETER rtsp://172.17.11.155:554/h264/ch1/main/av_stream/ RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">7&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Authorization: Digest username&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;admin&amp;#34;&lt;/span>, realm&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1868cb21d4df&amp;#34;&lt;/span>, nonce&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span>, uri&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span>, response&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;5845426a0c6ce7ca7839ac9e639d7197&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672">(&lt;/span>LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Session: &lt;span style="color:#ae81ff">313720730&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># GET_PARAMETER ：我请求检查URL指定的演示与媒体的参数值。&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 没有实体体时，也许能用来测试用户与服务器的连通情况&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$.. .&lt;span style="color:#e6db74">`&lt;/span>5Y.Y..r...gM.*......a......_..$....&lt;span style="color:#e6db74">`&lt;/span>5Z.Y..r...h.&amp;lt;.$....&lt;span style="color:#e6db74">`&lt;/span>5&lt;span style="color:#f92672">[&lt;/span>.Y..r......y....$....&lt;span style="color:#e6db74">`&lt;/span>5&lt;span style="color:#ae81ff">\.&lt;/span>Y..r...|....sT...e....Z&amp;amp;x&lt;span style="color:#f92672">]&lt;/span>A....UF...8..I..O...x.4ZC/|$..
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 一堆数据？&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>TEARDOWN rtsp://172.17.11.155:554/h264/ch1/main/av_stream/ RTSP/1.0
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">14&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Authorization: Digest username&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;admin&amp;#34;&lt;/span>, realm&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;1868cb21d4df&amp;#34;&lt;/span>, nonce&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span>, uri&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span>, response&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;a52194fbc2c6433e1f1dbf33576a7f7c&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672">(&lt;/span>LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Session: &lt;span style="color:#ae81ff">313720730&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$..&lt;span style="color:#f92672">(&lt;/span>......&lt;span style="color:#f92672">[&lt;/span>.r.........l...................&lt;span style="color:#f92672">[&lt;/span>.
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># TEARDOWN ：不玩了，就停止给定URL流发送数据，并释放相关资源&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>RTSP/1.0 &lt;span style="color:#ae81ff">200&lt;/span> OK
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CSeq: &lt;span style="color:#ae81ff">14&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Session: &lt;span style="color:#ae81ff">313720730&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Date: Tue, May &lt;span style="color:#ae81ff">23&lt;/span> &lt;span style="color:#ae81ff">2017&lt;/span> 16:15:10 GMT
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 好的，服务器说：对你这个会话Session: 313720730， 我把它干掉&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>参考：&lt;/p></description></item><item><title>WebRTC</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</guid><description>&lt;h1 id="webrtc">
+ &lt;a class="anchor" href="#%e5%8c%85%e8%af%a6%e6%83%85"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;海康摄像头&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OPTIONS rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# OPTIONS ：这个是选项，问下服务器我到底有啥本领技能？&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RTSP/1.0 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Public: OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Date: Tue, May &lt;span style="color:#ae81ff"&gt;23&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2017&lt;/span&gt; 16:08:47 GMT
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 服务器回复你，你有这么多技能：OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, TEARDOWN, SET_PARAMETER, GET_PARAMETER&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;DESCRIBE rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Accept: application/sdp
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# DESCRIBE ：我想让服务器描述一下流的情况，你用sdp的格式告诉我吧&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RTSP/1.0 &lt;span style="color:#ae81ff"&gt;401&lt;/span&gt; Unauthorized
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WWW-Authenticate: Digest realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1868cb21d4df&amp;#34;&lt;/span&gt;, nonce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span&gt;, stale&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;FALSE&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;WWW-Authenticate: Basic realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1868cb21d4df&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Date: Tue, May &lt;span style="color:#ae81ff"&gt;23&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2017&lt;/span&gt; 16:08:47 GMT
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 服务器回答，你没有认证（用户密码），所以给你401吧&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;DESCRIBE rtsp://172.17.11.155:554/h264/ch1/main/av_stream RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Authorization: Digest username&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;admin&amp;#34;&lt;/span&gt;, realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1868cb21d4df&amp;#34;&lt;/span&gt;, nonce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span&gt;, uri&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream&amp;#34;&lt;/span&gt;, response&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;8b9d4d3e6ae627b62f430874a8c6e333&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Accept: application/sdp
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# DESCRIBE ：我表示不服，再上诉：让服务器描述一下流的情况，你用sdp的格式告诉我吧&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RTSP/1.0 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Content-Type: application/sdp
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Content-Base: rtsp://172.17.11.155:554/h264/ch1/main/av_stream/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Content-Length: &lt;span style="color:#ae81ff"&gt;598&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;v&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;o&lt;span style="color:#f92672"&gt;=&lt;/span&gt;- &lt;span style="color:#ae81ff"&gt;1495555727123750&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1495555727123750&lt;/span&gt; IN IP4 172.17.10.7
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;s&lt;span style="color:#f92672"&gt;=&lt;/span&gt;Media Presentation
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;e&lt;span style="color:#f92672"&gt;=&lt;/span&gt;NONE
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;b&lt;span style="color:#f92672"&gt;=&lt;/span&gt;AS:5050
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;t&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;control:rtsp://172.17.11.155:554/h264/ch1/main/av_stream/
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;m&lt;span style="color:#f92672"&gt;=&lt;/span&gt;video &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt; RTP/AVP &lt;span style="color:#ae81ff"&gt;96&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;c&lt;span style="color:#f92672"&gt;=&lt;/span&gt;IN IP4 0.0.0.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;b&lt;span style="color:#f92672"&gt;=&lt;/span&gt;AS:5000
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;recvonly
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;x-dimensions:1920,1080
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;control:rtsp://172.17.11.155:554/h264/ch1/main/av_stream/trackID&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;rtpmap:96 H264/90000
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;fmtp:96 profile-level-id&lt;span style="color:#f92672"&gt;=&lt;/span&gt;420029; packetization-mode&lt;span style="color:#f92672"&gt;=&lt;/span&gt;1; sprop-parameter-sets&lt;span style="color:#f92672"&gt;=&lt;/span&gt;Z00AKpWoHgCJ+WEAAAcIAAFfkAQ&lt;span style="color:#f92672"&gt;=&lt;/span&gt;,aO48gA&lt;span style="color:#f92672"&gt;==&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;Media_header:MEDIAINFO&lt;span style="color:#f92672"&gt;=&lt;/span&gt;494D4B48010200000400000100000000000000000000000000000000000000000000000000000000;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a&lt;span style="color:#f92672"&gt;=&lt;/span&gt;appversion:1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 服务器答应了，然后把SDP发给我了&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 里面有各种信息：我看到只有一路视频，1080P的，H264编码；&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 96是视频流ID, 这符合规范，mediainfo可能是sps pps的加密信息&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;SETUP rtsp://172.17.11.155:554/h264/ch1/main/av_stream/trackID&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Authorization: Digest username&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;admin&amp;#34;&lt;/span&gt;, realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1868cb21d4df&amp;#34;&lt;/span&gt;, nonce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span&gt;, uri&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span&gt;, response&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;a34897f9b42eb7f501d549f6fa558838&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Transport: RTP/AVP/TCP;unicast;interleaved&lt;span style="color:#f92672"&gt;=&lt;/span&gt;0-1
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# SETUP ：为了透过防火墙，我想指定传输机制RTP/AVP/TCP告诉服务器&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RTSP/1.0 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session: 313720730;timeout&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Transport: RTP/AVP/TCP;unicast;interleaved&lt;span style="color:#f92672"&gt;=&lt;/span&gt;0-1;ssrc&lt;span style="color:#f92672"&gt;=&lt;/span&gt;72a9bdb8;mode&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;play&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Date: Tue, May &lt;span style="color:#ae81ff"&gt;23&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2017&lt;/span&gt; 16:08:47 GMT
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 服务器准了，并告诉你可以play了&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;PLAY rtsp://172.17.11.155:554/h264/ch1/main/av_stream/ RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Authorization: Digest username&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;admin&amp;#34;&lt;/span&gt;, realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1868cb21d4df&amp;#34;&lt;/span&gt;, nonce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span&gt;, uri&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span&gt;, response&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;13e073b1f7a0d1be0442491ba4613c35&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session: &lt;span style="color:#ae81ff"&gt;313720730&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Range: npt&lt;span style="color:#f92672"&gt;=&lt;/span&gt;0.000-
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# PLAY ：我想告诉服务器以SETUP指定的机制开始发送数据；&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 还可以用关键字Range指定play的范围&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RTSP/1.0 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session: &lt;span style="color:#ae81ff"&gt;313720730&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RTP-Info: url&lt;span style="color:#f92672"&gt;=&lt;/span&gt;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/trackID&lt;span style="color:#f92672"&gt;=&lt;/span&gt;1;seq&lt;span style="color:#f92672"&gt;=&lt;/span&gt;13657;rtptime&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;106503066&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Date: Tue, May &lt;span style="color:#ae81ff"&gt;23&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2017&lt;/span&gt; 16:08:47 GMT
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 服务器很听话，给到了初始的随机序列号和随机时间戳seq=13657;rtptime=106503066&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;GET_PARAMETER rtsp://172.17.11.155:554/h264/ch1/main/av_stream/ RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;7&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Authorization: Digest username&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;admin&amp;#34;&lt;/span&gt;, realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1868cb21d4df&amp;#34;&lt;/span&gt;, nonce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span&gt;, uri&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span&gt;, response&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;5845426a0c6ce7ca7839ac9e639d7197&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session: &lt;span style="color:#ae81ff"&gt;313720730&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# GET_PARAMETER ：我请求检查URL指定的演示与媒体的参数值。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 没有实体体时，也许能用来测试用户与服务器的连通情况&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$.. .&lt;span style="color:#e6db74"&gt;`&lt;/span&gt;5Y.Y..r...gM.*......a......_..$....&lt;span style="color:#e6db74"&gt;`&lt;/span&gt;5Z.Y..r...h.&amp;lt;.$....&lt;span style="color:#e6db74"&gt;`&lt;/span&gt;5&lt;span style="color:#f92672"&gt;[&lt;/span&gt;.Y..r......y....$....&lt;span style="color:#e6db74"&gt;`&lt;/span&gt;5&lt;span style="color:#ae81ff"&gt;\.&lt;/span&gt;Y..r...|....sT...e....Z&amp;amp;x&lt;span style="color:#f92672"&gt;]&lt;/span&gt;A....UF...8..I..O...x.4ZC/|$..
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 一堆数据？&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;TEARDOWN rtsp://172.17.11.155:554/h264/ch1/main/av_stream/ RTSP/1.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;14&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Authorization: Digest username&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;admin&amp;#34;&lt;/span&gt;, realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;1868cb21d4df&amp;#34;&lt;/span&gt;, nonce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;cfbaf30c677edba80dbd7f0eb1df5db6&amp;#34;&lt;/span&gt;, uri&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;rtsp://172.17.11.155:554/h264/ch1/main/av_stream/&amp;#34;&lt;/span&gt;, response&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;a52194fbc2c6433e1f1dbf33576a7f7c&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;User-Agent: LibVLC/2.2.4 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;LIVE555 Streaming Media v2016.02.22&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session: &lt;span style="color:#ae81ff"&gt;313720730&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$..&lt;span style="color:#f92672"&gt;(&lt;/span&gt;......&lt;span style="color:#f92672"&gt;[&lt;/span&gt;.r.........l...................&lt;span style="color:#f92672"&gt;[&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# TEARDOWN ：不玩了，就停止给定URL流发送数据，并释放相关资源&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;RTSP/1.0 &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt; OK
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;CSeq: &lt;span style="color:#ae81ff"&gt;14&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session: &lt;span style="color:#ae81ff"&gt;313720730&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Date: Tue, May &lt;span style="color:#ae81ff"&gt;23&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2017&lt;/span&gt; 16:15:10 GMT
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 好的，服务器说：对你这个会话Session: 313720730， 我把它干掉&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>WebRTC</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/webrtc/</guid><description>&lt;h1 id="webrtc"&gt;
  WebRTC
- &lt;a class="anchor" href="#webrtc">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;code>Web Real-Time Communication&lt;/code>&lt;/p>
-&lt;p>支持网页浏览器进行实时语音对话或视频对话的 API&lt;/p></description></item><item><title>H264</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid><description>&lt;h1 id="h264">
+ &lt;a class="anchor" href="#webrtc"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Web Real-Time Communication&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;支持网页浏览器进行实时语音对话或视频对话的 API&lt;/p&gt;</description></item><item><title>H264</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/h264/</guid><description>&lt;h1 id="h264"&gt;
  H264
- &lt;a class="anchor" href="#h264">#&lt;/a>
-&lt;/h1>
-&lt;p>H.264，又称为  &lt;code>MPEG-4 第 10 部分&lt;/code>，高级视频编码（英语： &lt;code>MPEG-4 Part 10&lt;/code>, &lt;code>Advanced Video Coding&lt;/code> ，缩写为 &lt;code>MPEG-4 AVC&lt;/code>）是一种面向块，基于&lt;a href="https://www.wikiwand.com/zh-cn/%E8%BF%90%E5%8A%A8%E8%A1%A5%E5%81%BF">运动补偿&lt;/a>的视频编码标准（英语：&lt;a href="https://www.wikiwand.com/en/Video_coding_format" title="en:Video coding format">Advanced Video Coding&lt;/a>） 。&lt;/p>
-&lt;p>&lt;code>AVC&lt;/code> 和 &lt;code>XviD&lt;/code> 都属于 MPEG-4 编码，但由于 &lt;code>AVC&lt;/code> 属于 MPEG-4 Part 10，在技术特性上比属于 MPEG-4 Part2 的 &lt;code>XviD&lt;/code> 要先进。&lt;/p>
-&lt;p>它和 &lt;code>ITU-T H.264&lt;/code> 标准是一致的，故又称为 &lt;code>H.264&lt;/code>。&lt;/p>
-&lt;h2 id="裸流">
+ &lt;a class="anchor" href="#h264"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;H.264，又称为  &lt;code&gt;MPEG-4 第 10 部分&lt;/code&gt;，高级视频编码（英语： &lt;code&gt;MPEG-4 Part 10&lt;/code&gt;, &lt;code&gt;Advanced Video Coding&lt;/code&gt; ，缩写为 &lt;code&gt;MPEG-4 AVC&lt;/code&gt;）是一种面向块，基于&lt;a href="https://www.wikiwand.com/zh-cn/%E8%BF%90%E5%8A%A8%E8%A1%A5%E5%81%BF"&gt;运动补偿&lt;/a&gt;的视频编码标准（英语：&lt;a href="https://www.wikiwand.com/en/Video_coding_format" title="en:Video coding format"&gt;Advanced Video Coding&lt;/a&gt;） 。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;AVC&lt;/code&gt; 和 &lt;code&gt;XviD&lt;/code&gt; 都属于 MPEG-4 编码，但由于 &lt;code&gt;AVC&lt;/code&gt; 属于 MPEG-4 Part 10，在技术特性上比属于 MPEG-4 Part2 的 &lt;code&gt;XviD&lt;/code&gt; 要先进。&lt;/p&gt;
+&lt;p&gt;它和 &lt;code&gt;ITU-T H.264&lt;/code&gt; 标准是一致的，故又称为 &lt;code&gt;H.264&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id="裸流"&gt;
  裸流
- &lt;a class="anchor" href="#%e8%a3%b8%e6%b5%81">#&lt;/a>
-&lt;/h2>
-&lt;p>H.264 原始码流（又称为 “裸流”）是由一个一个的 &lt;code>NALU&lt;/code> 组成的。&lt;/p>
-&lt;p>H264 码流可以分为两层&lt;/p>
-&lt;ul>
-&lt;li>VCL 层&lt;/li>
-&lt;li>NAL 层（&lt;code>Network abstraction layer&lt;/code>, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息
-&lt;ul>
-&lt;li>NAL 层由多个单元 &lt;code>NALU&lt;/code> 组成&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615170039.png" alt="" />&lt;/p>
-&lt;h3 id="nalu">
- &lt;code>NALU&lt;/code>
- &lt;a class="anchor" href="#nalu">#&lt;/a>
-&lt;/h3>
-&lt;p>&lt;code>NALU&lt;/code> (&lt;code>NAL Units&lt;/code>) 组成&lt;/p></description></item><item><title>HLS</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</guid><description>&lt;h1 id="hls">
+ &lt;a class="anchor" href="#%e8%a3%b8%e6%b5%81"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;H.264 原始码流（又称为 “裸流”）是由一个一个的 &lt;code&gt;NALU&lt;/code&gt; 组成的。&lt;/p&gt;
+&lt;p&gt;H264 码流可以分为两层&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VCL 层&lt;/li&gt;
+&lt;li&gt;NAL 层（&lt;code&gt;Network abstraction layer&lt;/code&gt;, 叫网络抽象层），保存了 H264 相关的参数信息和图像信息
+&lt;ul&gt;
+&lt;li&gt;NAL 层由多个单元 &lt;code&gt;NALU&lt;/code&gt; 组成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615170039.png" alt="" /&gt;&lt;/p&gt;
+&lt;h3 id="nalu"&gt;
+ &lt;code&gt;NALU&lt;/code&gt;
+ &lt;a class="anchor" href="#nalu"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;NALU&lt;/code&gt; (&lt;code&gt;NAL Units&lt;/code&gt;) 组成&lt;/p&gt;</description></item><item><title>HLS</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/hls/</guid><description>&lt;h1 id="hls"&gt;
  HLS
- &lt;a class="anchor" href="#hls">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;code>HTTP Live Streaming&lt;/code>&lt;/p></description></item><item><title>HTTP FLV</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</guid><description>&lt;h1 id="http-flv">
+ &lt;a class="anchor" href="#hls"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;HTTP Live Streaming&lt;/code&gt;&lt;/p&gt;</description></item><item><title>HTTP FLV</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/http-flv/</guid><description>&lt;h1 id="http-flv"&gt;
  HTTP FLV
- &lt;a class="anchor" href="#http-flv">#&lt;/a>
-&lt;/h1>
-&lt;h2 id="bilibiliflvjshttpsgithubcombilibiliflvjs-github-starshttpsimgshieldsiogithubstarsbilibiliflvjssvg">
- &lt;a href="https://github.com/Bilibili/flv.js">Bilibili/flv.js&lt;/a> &lt;img src="https://img.shields.io/github/stars/Bilibili/flv.js.svg" alt="Github stars" />
- &lt;a class="anchor" href="#bilibiliflvjshttpsgithubcombilibiliflvjs-github-starshttpsimgshieldsiogithubstarsbilibiliflvjssvg">#&lt;/a>
-&lt;/h2>
-&lt;p>HTML5 FLV Player&lt;/p></description></item><item><title>MPEG</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</guid><description>&lt;h1 id="mpeghttpswwwwikiwandcomzh-cnmpeg">
- &lt;a href="https://www.wikiwand.com/zh-cn/MPEG">MPEG&lt;/a>
- &lt;a class="anchor" href="#mpeghttpswwwwikiwandcomzh-cnmpeg">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615172352.png" alt="" />&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-1">MPEG-1&lt;/a>：第一个官方的视讯音频压缩标准，随后在  &lt;a href="https://www.wikiwand.com/zh-cn/Video_CD" title="Video CD">Video CD&lt;/a>  中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称  &lt;a href="https://www.wikiwand.com/zh-cn/MP3" title="MP3">MP3&lt;/a>，成为比较流行的音频压缩格式。&lt;/li>
-&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-2" title="MPEG-2">MPEG-2&lt;/a>：广播质量的视讯、音频和传输协议。被用于无线  &lt;a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E9%9B%BB%E8%A6%96" title="数字电视">数字电视&lt;/a> - &lt;a href="https://www.wikiwand.com/zh-cn/ATSC" title="ATSC">ATSC&lt;/a>、&lt;a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB">DVB&lt;/a>  以及  &lt;a href="https://www.wikiwand.com/zh-cn/ISDB" title="ISDB">ISDB&lt;/a>、数字卫星电视（例如  &lt;a href="https://www.wikiwand.com/zh-cn/DirecTV">DirecTV&lt;/a>）、数字  &lt;a href="https://www.wikiwand.com/zh-cn/%E6%9C%89%E7%BA%BF%E7%94%B5%E8%A7%86">有线电视&lt;/a>信号，以及  &lt;a href="https://www.wikiwand.com/zh-cn/DVD" title="DVD">DVD&lt;/a>  视频光盘技术中。&lt;/li>
-&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-3" title="MPEG-3">MPEG-3&lt;/a>：原本目标是为  &lt;a href="https://www.wikiwand.com/zh-cn/%E9%AB%98%E8%A7%A3%E6%9E%90%E5%BA%A6%E9%9B%BB%E8%A6%96" title="高清晰度电视">高清晰度电视&lt;/a>（ &lt;a href="https://www.wikiwand.com/zh-cn/HDTV" title="HDTV">HDTV&lt;/a>）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。&lt;/li>
-&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-4" title="MPEG-4">MPEG-4&lt;/a>：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和  &lt;a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E7%89%88%E6%AC%8A%E7%AE%A1%E7%90%86" title="数字版权管理">数字版权管理&lt;/a>（Digital Rights Management），其中第 10 部分由 &lt;code>ISO/IEC&lt;/code> 和 &lt;code>ITU-T&lt;/code> 联合发布，称为  &lt;a href="https://www.wikiwand.com/zh-cn/H.264" title="H.264">H.264/MPEG-4 Part 10&lt;/a>。&lt;/li>
-&lt;li>MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。&lt;/li>
-&lt;li>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-21" title="MPEG-21">MPEG-21&lt;/a>：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。&lt;/li>
-&lt;/ul></description></item><item><title>PS</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</guid><description>&lt;h1 id="ps">
+ &lt;a class="anchor" href="#http-flv"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="bilibiliflvjs-github-stars"&gt;
+ &lt;a href="https://github.com/Bilibili/flv.js"&gt;Bilibili/flv.js&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/Bilibili/flv.js.svg" alt="Github stars" /&gt;
+ &lt;a class="anchor" href="#bilibiliflvjs-github-stars"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;HTML5 FLV Player&lt;/p&gt;</description></item><item><title>MPEG</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/mpeg/</guid><description>&lt;h1 id="mpeg"&gt;
+ &lt;a href="https://www.wikiwand.com/zh-cn/MPEG"&gt;MPEG&lt;/a&gt;
+ &lt;a class="anchor" href="#mpeg"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200615172352.png" alt="" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-1"&gt;MPEG-1&lt;/a&gt;：第一个官方的视讯音频压缩标准，随后在  &lt;a href="https://www.wikiwand.com/zh-cn/Video_CD" title="Video CD"&gt;Video CD&lt;/a&gt;  中被采用，其中的音频压缩的第三级（MPEG-1 Layer 3）简称  &lt;a href="https://www.wikiwand.com/zh-cn/MP3" title="MP3"&gt;MP3&lt;/a&gt;，成为比较流行的音频压缩格式。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-2" title="MPEG-2"&gt;MPEG-2&lt;/a&gt;：广播质量的视讯、音频和传输协议。被用于无线  &lt;a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E9%9B%BB%E8%A6%96" title="数字电视"&gt;数字电视&lt;/a&gt; - &lt;a href="https://www.wikiwand.com/zh-cn/ATSC" title="ATSC"&gt;ATSC&lt;/a&gt;、&lt;a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB"&gt;DVB&lt;/a&gt;  以及  &lt;a href="https://www.wikiwand.com/zh-cn/ISDB" title="ISDB"&gt;ISDB&lt;/a&gt;、数字卫星电视（例如  &lt;a href="https://www.wikiwand.com/zh-cn/DirecTV"&gt;DirecTV&lt;/a&gt;）、数字  &lt;a href="https://www.wikiwand.com/zh-cn/%E6%9C%89%E7%BA%BF%E7%94%B5%E8%A7%86"&gt;有线电视&lt;/a&gt;信号，以及  &lt;a href="https://www.wikiwand.com/zh-cn/DVD" title="DVD"&gt;DVD&lt;/a&gt;  视频光盘技术中。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-3" title="MPEG-3"&gt;MPEG-3&lt;/a&gt;：原本目标是为  &lt;a href="https://www.wikiwand.com/zh-cn/%E9%AB%98%E8%A7%A3%E6%9E%90%E5%BA%A6%E9%9B%BB%E8%A6%96" title="高清晰度电视"&gt;高清晰度电视&lt;/a&gt;（ &lt;a href="https://www.wikiwand.com/zh-cn/HDTV" title="HDTV"&gt;HDTV&lt;/a&gt;）设计，随后发现 MPEG-2 已足够 HDTV 应用，故 MPEG-3 的研发便中止。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-4" title="MPEG-4"&gt;MPEG-4&lt;/a&gt;：2003 年发布的视讯压缩标准，主要是扩展 MPEG-1、MPEG-2 等标准以支持视频／音频对象（video/audio &amp;ldquo;objects&amp;rdquo;）的编码、3D 内容、低比特率编码（low bitrate encoding）和  &lt;a href="https://www.wikiwand.com/zh-cn/%E6%95%B8%E4%BD%8D%E7%89%88%E6%AC%8A%E7%AE%A1%E7%90%86" title="数字版权管理"&gt;数字版权管理&lt;/a&gt;（Digital Rights Management），其中第 10 部分由 &lt;code&gt;ISO/IEC&lt;/code&gt; 和 &lt;code&gt;ITU-T&lt;/code&gt; 联合发布，称为  &lt;a href="https://www.wikiwand.com/zh-cn/H.264" title="H.264"&gt;H.264/MPEG-4 Part 10&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;MPEG-7：MPEG-7 并不是一个视讯压缩标准，它是一个多媒体内容的描述标准。&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-21" title="MPEG-21"&gt;MPEG-21&lt;/a&gt;：MPEG-21 是一个正在制定中的标准，它的目标是为未来多媒体的应用提供一个完整的平台。&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>PS</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/ps/</guid><description>&lt;h1 id="ps"&gt;
  PS
- &lt;a class="anchor" href="#ps">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;code>Program stream&lt;/code>&lt;/p>
-&lt;p>PS 流的包结构是&lt;strong>可变长度&lt;/strong>的，
-一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。&lt;/p>
-&lt;p>在&lt;strong>信道环境较好&lt;/strong>，传输误码较低时，一般采用 PS 码流。&lt;/p>
-&lt;hr>
-&lt;h2 id="tshttpswwwwikiwandcomenmpeg_transport_stream">
- &lt;a href="https://www.wikiwand.com/en/MPEG_transport_stream">TS&lt;/a>
- &lt;a class="anchor" href="#tshttpswwwwikiwandcomenmpeg_transport_stream">#&lt;/a>
-&lt;/h2>
-&lt;p>MPEG transport stream (MPEG-TS, MTS)&lt;/p>
-&lt;p>传输流，是由固定长度为 188 字节的包组成，
+ &lt;a class="anchor" href="#ps"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Program stream&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;PS 流的包结构是&lt;strong&gt;可变长度&lt;/strong&gt;的，
+一旦某一 PS 包的同步信息丢失，接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。&lt;/p&gt;
+&lt;p&gt;在&lt;strong&gt;信道环境较好&lt;/strong&gt;，传输误码较低时，一般采用 PS 码流。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="ts"&gt;
+ &lt;a href="https://www.wikiwand.com/en/MPEG_transport_stream"&gt;TS&lt;/a&gt;
+ &lt;a class="anchor" href="#ts"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;MPEG transport stream (MPEG-TS, MTS)&lt;/p&gt;
+&lt;p&gt;传输流，是由固定长度为 188 字节的包组成，
 含有一个或多个 program, 一个 program 可以包含多个视频、音频、和文字信息的 ES 流；
-每个 ES 流会有不同的 PID 标示。&lt;/p>
-&lt;p>而又为了可以分析这些 ES 流，TS 有一些固定的 PID 用来间隔发送 program 和 ES 流信息的表格:&lt;/p>
-&lt;ul>
-&lt;li>PAT&lt;/li>
-&lt;li>PMT 表&lt;/li>
-&lt;/ul>
-&lt;p>TS 流的包结构是&lt;strong>固定长度&lt;/strong>的，
-当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。&lt;/p>
-&lt;p>在&lt;strong>信道环境较为恶劣&lt;/strong>，传输误码较高时，一般采用 TS 码流。&lt;/p>
-&lt;h3 id="ts-流解码过程">
+每个 ES 流会有不同的 PID 标示。&lt;/p&gt;
+&lt;p&gt;而又为了可以分析这些 ES 流，TS 有一些固定的 PID 用来间隔发送 program 和 ES 流信息的表格:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PAT&lt;/li&gt;
+&lt;li&gt;PMT 表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TS 流的包结构是&lt;strong&gt;固定长度&lt;/strong&gt;的，
+当传输误码破坏了某一 TS 包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。&lt;/p&gt;
+&lt;p&gt;在&lt;strong&gt;信道环境较为恶劣&lt;/strong&gt;，传输误码较高时，一般采用 TS 码流。&lt;/p&gt;
+&lt;h3 id="ts-流解码过程"&gt;
  TS 流解码过程
- &lt;a class="anchor" href="#ts-%e6%b5%81%e8%a7%a3%e7%a0%81%e8%bf%87%e7%a8%8b">#&lt;/a>
-&lt;/h3>
-&lt;ol>
-&lt;li>获取 TS 中的 &lt;code>PAT&lt;/code>&lt;/li>
-&lt;li>获取 TS 中的 &lt;code>PMT&lt;/code>&lt;/li>
-&lt;li>根据 PMT 可以知道当前网络中传输的视频（音频）类型（H264），相应的 PID，&lt;code>PCR&lt;/code> 的 PID 等信息。&lt;/li>
-&lt;li>设置 demux 模块的视频 Filter 为相应视频的 PID 和 stream type 等。&lt;/li>
-&lt;li>从视频 Demux Filter 后得到的 TS 数据包中的 payload 数据就是 one piece of PES，
+ &lt;a class="anchor" href="#ts-%e6%b5%81%e8%a7%a3%e7%a0%81%e8%bf%87%e7%a8%8b"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;获取 TS 中的 &lt;code&gt;PAT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;获取 TS 中的 &lt;code&gt;PMT&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;根据 PMT 可以知道当前网络中传输的视频（音频）类型（H264），相应的 PID，&lt;code&gt;PCR&lt;/code&gt; 的 PID 等信息。&lt;/li&gt;
+&lt;li&gt;设置 demux 模块的视频 Filter 为相应视频的 PID 和 stream type 等。&lt;/li&gt;
+&lt;li&gt;从视频 Demux Filter 后得到的 TS 数据包中的 payload 数据就是 one piece of PES，
 在 TS header 中有一些关于此 payload 属于哪个 PES 的 第多少个数据包。
-因此软件中应该将此 payload 中的数据 copy 到 PES 的 buffer 中，用于&lt;strong>拼接一个 PES 包&lt;/strong>。&lt;/li>
-&lt;li>拼接好的 PES 包的包头会有 &lt;code>PTS&lt;/code>，&lt;code>DTS&lt;/code> 信息，去掉 PES 的 header 就是 &lt;code>ES&lt;/code>。&lt;/li>
-&lt;li>直接将被拔掉 PES 包头的 ES 包送给 &lt;code>decoder&lt;/code> 就可以进行解码。
-解码出来的数据就是一帧一帧的视频数据，这些数据至少应当与 PES 中的 &lt;code>PTS&lt;/code> 关联一下，以便进行&lt;strong>视音频同步&lt;/strong>。&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h2 id="es">
+因此软件中应该将此 payload 中的数据 copy 到 PES 的 buffer 中，用于&lt;strong&gt;拼接一个 PES 包&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;拼接好的 PES 包的包头会有 &lt;code&gt;PTS&lt;/code&gt;，&lt;code&gt;DTS&lt;/code&gt; 信息，去掉 PES 的 header 就是 &lt;code&gt;ES&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;直接将被拔掉 PES 包头的 ES 包送给 &lt;code&gt;decoder&lt;/code&gt; 就可以进行解码。
+解码出来的数据就是一帧一帧的视频数据，这些数据至少应当与 PES 中的 &lt;code&gt;PTS&lt;/code&gt; 关联一下，以便进行&lt;strong&gt;视音频同步&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id="es"&gt;
  ES
- &lt;a class="anchor" href="#es">#&lt;/a>
-&lt;/h2>
-&lt;p>Elementary Stream&lt;/p></description></item><item><title>直播技术</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</guid><description>&lt;h1 id="直播技术">
+ &lt;a class="anchor" href="#es"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Elementary Stream&lt;/p&gt;</description></item><item><title>直播技术</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/live-tech/</guid><description>&lt;h1 id="直播技术"&gt;
  直播技术
- &lt;a class="anchor" href="#%e7%9b%b4%e6%92%ad%e6%8a%80%e6%9c%af">#&lt;/a>
-&lt;/h1>
-&lt;ol>
-&lt;li>摄像头视频采集，原始视频数据：&lt;code>RGB/YUV&lt;/code>&lt;/li>
-&lt;li>话筒音频采集，原始音频数据：&lt;code>PCM&lt;/code>&lt;/li>
-&lt;li>视频文件编码，&lt;code>RGB/YUV&lt;/code> -&amp;gt; &lt;code>H.264/H.265&lt;/code>&lt;/li>
-&lt;li>音频文件编码，&lt;code>PCM&lt;/code> -&amp;gt; &lt;code>AAC&lt;/code>&lt;/li>
-&lt;li>编码为有&lt;strong>流媒体&lt;/strong>特性的&lt;strong>多媒体容器格式&lt;/strong>（&lt;code>Multimedia Container Format&lt;/code>），
-如 &lt;code>FLV&lt;/code>/&lt;code>TS&lt;/code>/&lt;code>RTMP Package&lt;/code>&lt;/li>
-&lt;li>推流到&lt;strong>流媒体服务器&lt;/strong>
-&lt;ul>
-&lt;li>应用层：&lt;code>HLS/RTSP/RTMP&lt;/code>&lt;/li>
-&lt;li>传输层：&lt;code>RTP/RTCP&lt;/code>&lt;/li>
-&lt;li>网络层：&lt;code>RSVP&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>服务端处理
-&lt;ul>
-&lt;li>转码/录制/截图/鉴黄&lt;/li>
-&lt;li>生成&lt;strong>拉流 URL&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>拉流&lt;/strong>到客户端
-&lt;ul>
-&lt;li>应用层：&lt;code>HLS/RTMP&lt;/code>&lt;/li>
-&lt;li>传输层：&lt;code>RTP/RTCP&lt;/code>&lt;/li>
-&lt;li>网络层：&lt;code>RSVP&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>解复用&lt;/strong>，多媒体容器格式（&lt;code>FLV&lt;/code>/&lt;code>TS&lt;/code>/&lt;code>RTMP Package&lt;/code>）的流 -&amp;gt; 音视频数据（&lt;code>H.264/AAC&lt;/code>）&lt;/li>
-&lt;li>解码视频文件为 &lt;code>YUV/RGB&lt;/code>，解码音频文件为 &lt;code>PCM&lt;/code>
-&lt;ul>
-&lt;li>硬解码（&lt;code>GPU 解码&lt;/code>，&lt;code>CPU 辅助&lt;/code>）&lt;/li>
-&lt;li>软解码（&lt;code>CPU 解码&lt;/code>）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>音画同步&lt;/li>
-&lt;li>视频数据（&lt;code>YUV/RGB&lt;/code>）发送到视频输出设备，音频数据（&lt;code>PCM&lt;/code>）发送到音频输出设备&lt;/li>
-&lt;/ol></description></item><item><title>视频编码</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</guid><description>&lt;h1 id="视频编码">
+ &lt;a class="anchor" href="#%e7%9b%b4%e6%92%ad%e6%8a%80%e6%9c%af"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;摄像头视频采集，原始视频数据：&lt;code&gt;RGB/YUV&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;话筒音频采集，原始音频数据：&lt;code&gt;PCM&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;视频文件编码，&lt;code&gt;RGB/YUV&lt;/code&gt; -&amp;gt; &lt;code&gt;H.264/H.265&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;音频文件编码，&lt;code&gt;PCM&lt;/code&gt; -&amp;gt; &lt;code&gt;AAC&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;编码为有&lt;strong&gt;流媒体&lt;/strong&gt;特性的&lt;strong&gt;多媒体容器格式&lt;/strong&gt;（&lt;code&gt;Multimedia Container Format&lt;/code&gt;），
+如 &lt;code&gt;FLV&lt;/code&gt;/&lt;code&gt;TS&lt;/code&gt;/&lt;code&gt;RTMP Package&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;推流到&lt;strong&gt;流媒体服务器&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;应用层：&lt;code&gt;HLS/RTSP/RTMP&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;传输层：&lt;code&gt;RTP/RTCP&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;网络层：&lt;code&gt;RSVP&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;服务端处理
+&lt;ul&gt;
+&lt;li&gt;转码/录制/截图/鉴黄&lt;/li&gt;
+&lt;li&gt;生成&lt;strong&gt;拉流 URL&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;拉流&lt;/strong&gt;到客户端
+&lt;ul&gt;
+&lt;li&gt;应用层：&lt;code&gt;HLS/RTMP&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;传输层：&lt;code&gt;RTP/RTCP&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;网络层：&lt;code&gt;RSVP&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解复用&lt;/strong&gt;，多媒体容器格式（&lt;code&gt;FLV&lt;/code&gt;/&lt;code&gt;TS&lt;/code&gt;/&lt;code&gt;RTMP Package&lt;/code&gt;）的流 -&amp;gt; 音视频数据（&lt;code&gt;H.264/AAC&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;解码视频文件为 &lt;code&gt;YUV/RGB&lt;/code&gt;，解码音频文件为 &lt;code&gt;PCM&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;硬解码（&lt;code&gt;GPU 解码&lt;/code&gt;，&lt;code&gt;CPU 辅助&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;软解码（&lt;code&gt;CPU 解码&lt;/code&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;音画同步&lt;/li&gt;
+&lt;li&gt;视频数据（&lt;code&gt;YUV/RGB&lt;/code&gt;）发送到视频输出设备，音频数据（&lt;code&gt;PCM&lt;/code&gt;）发送到音频输出设备&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>视频编码</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/stream-media/video-codec/</guid><description>&lt;h1 id="视频编码"&gt;
  视频编码
- &lt;a class="anchor" href="#%e8%a7%86%e9%a2%91%e7%bc%96%e7%a0%81">#&lt;/a>
-&lt;/h1>
-&lt;hr>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>年份&lt;/th>
- &lt;th>标准&lt;/th>
- &lt;th>制定组织&lt;/th>
- &lt;th>解除著作权保护（&lt;a href="https://www.wikiwand.com/zh-cn/%E6%95%B0%E5%AD%97%E7%89%88%E6%9D%83%E7%AE%A1%E7%90%86#%E2%80%9CDRM-Free%E2%80%9D">DRM-free&lt;/a>）&lt;/th>
- &lt;th>主要应用&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>1984&lt;/td>
- &lt;td>H.120&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T&lt;/a>&lt;/td>
- &lt;td>是&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>1990&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/H.261" title="H.261">H.261&lt;/a>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T&lt;/a>&lt;/td>
- &lt;td>是&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E6%9C%83%E8%AD%B0">视频会议&lt;/a>、&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E9%80%9A%E8%A9%B1">视频通话&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>1993&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-1" title="MPEG-1">MPEG-1 第二部分&lt;/a>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO&lt;/a>／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC&lt;/a>&lt;/td>
- &lt;td>是&lt;/td>
- &lt;td>影音光盘（&lt;a href="https://www.wikiwand.com/zh-cn/VCD" title="VCD">VCD&lt;/a>）&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>1995&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-2" title="MPEG-2">H.262/MPEG-2 第二部分&lt;/a>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO&lt;/a>／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC&lt;/a>、&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T&lt;/a>&lt;/td>
- &lt;td>否&lt;/td>
- &lt;td>DVD 影碟（&lt;a href="https://www.wikiwand.com/zh-cn/DVD-Video" title="DVD-Video">DVD-Video&lt;/a>）、 &lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89">蓝光&lt;/a>（ &lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F">Blu-Ray&lt;/a>）影碟、数字视频广播（&lt;a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB">DVB&lt;/a>）、&lt;a href="https://www.wikiwand.com/zh-cn/SVCD" title="SVCD">SVCD&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>1996&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/H.263" title="H.263">H.263&lt;/a>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T&lt;/a>&lt;/td>
- &lt;td>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E6%9C%83%E8%AD%B0" title="视频会议">视频会议&lt;/a>、&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E9%80%9A%E8%A9%B1" title="视频通话">视频通话&lt;/a>、 &lt;a href="https://www.wikiwand.com/zh-cn/3G">3G&lt;/a>  手机视频（&lt;a href="https://www.wikiwand.com/zh-cn/3GP" title="3GP">3GP&lt;/a>）&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>1999&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-4" title="MPEG-4">MPEG-4 第二部分&lt;/a>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO&lt;/a>／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC&lt;/a>&lt;/td>
- &lt;td>否&lt;/td>
- &lt;td>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>2003&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/H.264/MPEG-4_AVC" title="H.264/MPEG-4 AVC">H.264/MPEG-4 AVC&lt;/a>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO">ISO&lt;/a>／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC&lt;/a>、&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T">ITU-T&lt;/a>&lt;/td>
- &lt;td>否&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89">蓝光&lt;/a>（ &lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F">Blu-Ray&lt;/a>）影碟、数字视频广播（&lt;a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB">DVB&lt;/a>）、&lt;a href="https://www.wikiwand.com/zh-cn/IPod" title="IPod">iPod&lt;/a>  视频、 &lt;a href="https://www.wikiwand.com/zh-cn/%E9%AB%98%E7%95%AB%E8%B3%AADVD" title="高清DVD">高清 DVD&lt;/a>（&lt;a href="https://www.wikiwand.com/zh-cn/HD_DVD" title="HD DVD">HD DVD&lt;/a>）&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>2013&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/High_Efficiency_Video_Coding">H.265/High Efficiency Video Coding&lt;/a>&lt;/td>
- &lt;td>&lt;a href="https://www.wikiwand.com/zh-cn/ISO">ISO&lt;/a>/&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC">IEC&lt;/a>、&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T">ITU-T&lt;/a>&lt;/td>
- &lt;td>否&lt;/td>
- &lt;td>尚未普及&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;hr>
-&lt;h2 id="avc-h264">
- &lt;code>AVC&lt;/code> (H.264)
- &lt;a class="anchor" href="#avc-h264">#&lt;/a>
-&lt;/h2>
-&lt;p>H.264，又称为  &lt;code>MPEG-4 第 10 部分&lt;/code>，高级视频编码（英语： &lt;code>MPEG-4 Part 10&lt;/code>, &lt;code>Advanced Video Coding&lt;/code> ，缩写为 &lt;code>MPEG-4 AVC&lt;/code>）是一种面向块，基于&lt;a href="https://www.wikiwand.com/zh-cn/%E8%BF%90%E5%8A%A8%E8%A1%A5%E5%81%BF">运动补偿&lt;/a>的视频编码标准（英语：&lt;a href="https://www.wikiwand.com/en/Video_coding_format" title="en:Video coding format">Advanced Video Coding&lt;/a>） 。&lt;/p></description></item></channel></rss>
+ &lt;a class="anchor" href="#%e8%a7%86%e9%a2%91%e7%bc%96%e7%a0%81"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;hr&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;年份&lt;/th&gt;
+ &lt;th&gt;标准&lt;/th&gt;
+ &lt;th&gt;制定组织&lt;/th&gt;
+ &lt;th&gt;解除著作权保护（&lt;a href="https://www.wikiwand.com/zh-cn/%E6%95%B0%E5%AD%97%E7%89%88%E6%9D%83%E7%AE%A1%E7%90%86#%E2%80%9CDRM-Free%E2%80%9D"&gt;DRM-free&lt;/a&gt;）&lt;/th&gt;
+ &lt;th&gt;主要应用&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1984&lt;/td&gt;
+ &lt;td&gt;H.120&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T"&gt;ITU-T&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;是&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1990&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/H.261" title="H.261"&gt;H.261&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T"&gt;ITU-T&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;是&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E6%9C%83%E8%AD%B0"&gt;视频会议&lt;/a&gt;、&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E9%80%9A%E8%A9%B1"&gt;视频通话&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1993&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-1" title="MPEG-1"&gt;MPEG-1 第二部分&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO"&gt;ISO&lt;/a&gt;／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC"&gt;IEC&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;是&lt;/td&gt;
+ &lt;td&gt;影音光盘（&lt;a href="https://www.wikiwand.com/zh-cn/VCD" title="VCD"&gt;VCD&lt;/a&gt;）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1995&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-2" title="MPEG-2"&gt;H.262/MPEG-2 第二部分&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO"&gt;ISO&lt;/a&gt;／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC"&gt;IEC&lt;/a&gt;、&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T"&gt;ITU-T&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;否&lt;/td&gt;
+ &lt;td&gt;DVD 影碟（&lt;a href="https://www.wikiwand.com/zh-cn/DVD-Video" title="DVD-Video"&gt;DVD-Video&lt;/a&gt;）、 &lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89"&gt;蓝光&lt;/a&gt;（ &lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F"&gt;Blu-Ray&lt;/a&gt;）影碟、数字视频广播（&lt;a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB"&gt;DVB&lt;/a&gt;）、&lt;a href="https://www.wikiwand.com/zh-cn/SVCD" title="SVCD"&gt;SVCD&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1996&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/H.263" title="H.263"&gt;H.263&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T"&gt;ITU-T&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E6%9C%83%E8%AD%B0" title="视频会议"&gt;视频会议&lt;/a&gt;、&lt;a href="https://www.wikiwand.com/zh-cn/%E8%A6%96%E8%A8%8A%E9%80%9A%E8%A9%B1" title="视频通话"&gt;视频通话&lt;/a&gt;、 &lt;a href="https://www.wikiwand.com/zh-cn/3G"&gt;3G&lt;/a&gt;  手机视频（&lt;a href="https://www.wikiwand.com/zh-cn/3GP" title="3GP"&gt;3GP&lt;/a&gt;）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;1999&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/MPEG-4" title="MPEG-4"&gt;MPEG-4 第二部分&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO"&gt;ISO&lt;/a&gt;／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC"&gt;IEC&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;否&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2003&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/H.264/MPEG-4_AVC" title="H.264/MPEG-4 AVC"&gt;H.264/MPEG-4 AVC&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ISO" title="ISO"&gt;ISO&lt;/a&gt;／&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC"&gt;IEC&lt;/a&gt;、&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T" title="ITU-T"&gt;ITU-T&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;否&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89"&gt;蓝光&lt;/a&gt;（ &lt;a href="https://www.wikiwand.com/zh-cn/%E8%97%8D%E5%85%89%E5%85%89%E7%A2%9F"&gt;Blu-Ray&lt;/a&gt;）影碟、数字视频广播（&lt;a href="https://www.wikiwand.com/zh-cn/DVB" title="DVB"&gt;DVB&lt;/a&gt;）、&lt;a href="https://www.wikiwand.com/zh-cn/IPod" title="IPod"&gt;iPod&lt;/a&gt;  视频、 &lt;a href="https://www.wikiwand.com/zh-cn/%E9%AB%98%E7%95%AB%E8%B3%AADVD" title="高清DVD"&gt;高清 DVD&lt;/a&gt;（&lt;a href="https://www.wikiwand.com/zh-cn/HD_DVD" title="HD DVD"&gt;HD DVD&lt;/a&gt;）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2013&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/High_Efficiency_Video_Coding"&gt;H.265/High Efficiency Video Coding&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://www.wikiwand.com/zh-cn/ISO"&gt;ISO&lt;/a&gt;/&lt;a href="https://www.wikiwand.com/zh-cn/IEC" title="IEC"&gt;IEC&lt;/a&gt;、&lt;a href="https://www.wikiwand.com/zh-cn/ITU-T"&gt;ITU-T&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;否&lt;/td&gt;
+ &lt;td&gt;尚未普及&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="avc-h264"&gt;
+ &lt;code&gt;AVC&lt;/code&gt; (H.264)
+ &lt;a class="anchor" href="#avc-h264"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;H.264，又称为  &lt;code&gt;MPEG-4 第 10 部分&lt;/code&gt;，高级视频编码（英语： &lt;code&gt;MPEG-4 Part 10&lt;/code&gt;, &lt;code&gt;Advanced Video Coding&lt;/code&gt; ，缩写为 &lt;code&gt;MPEG-4 AVC&lt;/code&gt;）是一种面向块，基于&lt;a href="https://www.wikiwand.com/zh-cn/%E8%BF%90%E5%8A%A8%E8%A1%A5%E5%81%BF"&gt;运动补偿&lt;/a&gt;的视频编码标准（英语：&lt;a href="https://www.wikiwand.com/en/Video_coding_format" title="en:Video coding format"&gt;Advanced Video Coding&lt;/a&gt;） 。&lt;/p&gt;</description></item></channel></rss>

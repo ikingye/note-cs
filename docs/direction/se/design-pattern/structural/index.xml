@@ -1,1662 +1,1662 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>架构型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/</link><description>Recent content in 架构型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/index.xml" rel="self" type="application/rss+xml"/><item><title>适配器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/</guid><description>&lt;h1 id="适配器模式">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>架构型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/</link><description>Recent content in 架构型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/index.xml" rel="self" type="application/rss+xml"/><item><title>适配器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/</guid><description>&lt;h1 id="适配器模式"&gt;
  适配器模式
- &lt;a class="anchor" href="#%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f">#&lt;/a>
-&lt;/h1>
-&lt;p>Adapter&lt;/p>
-&lt;p>适配器 Adapter 继承自 Adaptee，同时又实现了目标(Target)接口。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">Target&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 这是源类Adapteee没有的方法&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">Request&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Adaptee&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">SpecificRequest&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 适配器Adapter继承自Adaptee，同时又实现了目标(Target)接口。&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Adapter&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> Adaptee &lt;span style="color:#66d9ef">implements&lt;/span> Target {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 目标接口要求调用Request()这个方法名，但源类Adaptee没有方法Request()&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 因此适配器补充上这个方法名&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 但实际上Request()只是调用源类Adaptee的SpecificRequest()方法的内容&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 所以适配器只是将SpecificRequest()方法作了一层封装，封装成Target可以调用的Request()而已&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">@Override&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">Request&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>.&lt;span style="color:#a6e22e">SpecificRequest&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">AdapterPattern&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(String&lt;span style="color:#f92672">[]&lt;/span> args){
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Target mAdapter &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Adapter()&lt;span style="color:#960050;background-color:#1e0010">；&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mAdapter.&lt;span style="color:#a6e22e">Request&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="代码示例">
+ &lt;a class="anchor" href="#%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Adapter&lt;/p&gt;
+&lt;p&gt;适配器 Adapter 继承自 Adaptee，同时又实现了目标(Target)接口。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;interface&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Target&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 这是源类Adapteee没有的方法&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Request&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Adaptee&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;SpecificRequest&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 适配器Adapter继承自Adaptee，同时又实现了目标(Target)接口。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Adapter&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;extends&lt;/span&gt; Adaptee &lt;span style="color:#66d9ef"&gt;implements&lt;/span&gt; Target {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 目标接口要求调用Request()这个方法名，但源类Adaptee没有方法Request()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 因此适配器补充上这个方法名&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 但实际上Request()只是调用源类Adaptee的SpecificRequest()方法的内容&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 所以适配器只是将SpecificRequest()方法作了一层封装，封装成Target可以调用的Request()而已&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;@Override&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Request&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;SpecificRequest&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;AdapterPattern&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args){
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Target mAdapter &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Adapter()&lt;span style="color:#960050;background-color:#1e0010"&gt;；&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; mAdapter.&lt;span style="color:#a6e22e"&gt;Request&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="代码示例"&gt;
  代码示例
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
-&lt;/h2>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="book-tabs"&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
-&lt;label for="tabs-code-0">C&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
+&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
-&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
+&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
-&lt;label for="tabs-code-2">C#&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
+&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
-&lt;label for="tabs-code-3">Go&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
+&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
-&lt;label for="tabs-code-4">Java&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
+&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
-&lt;label for="tabs-code-5">JavaScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
+&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
-&lt;label for="tabs-code-6">Kotlin&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
+&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
-&lt;label for="tabs-code-7">PHP&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
+&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
-&lt;label for="tabs-code-8">Python2&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
+&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
-&lt;label for="tabs-code-9">Python3&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
+&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
-&lt;label for="tabs-code-10">Ruby&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
+&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
-&lt;label for="tabs-code-11">Rust&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
+&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
-&lt;label for="tabs-code-12">Scala&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
+&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
-&lt;label for="tabs-code-13">Swift&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
+&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
-&lt;label for="tabs-code-14">TypeScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
+&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;/div></description></item><item><title>桥接</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/bridge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/bridge/</guid><description>&lt;h1 id="桥接模式">
+&lt;/div&gt;</description></item><item><title>桥接</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/bridge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/bridge/</guid><description>&lt;h1 id="桥接模式"&gt;
  桥接模式
- &lt;a class="anchor" href="#%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f">#&lt;/a>
-&lt;/h1>
-&lt;p>Bridge&lt;/p>
-&lt;h2 id="代码示例">
+ &lt;a class="anchor" href="#%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Bridge&lt;/p&gt;
+&lt;h2 id="代码示例"&gt;
  代码示例
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
-&lt;/h2>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="book-tabs"&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
-&lt;label for="tabs-code-0">C&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
+&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
-&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
+&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
-&lt;label for="tabs-code-2">C#&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
+&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
-&lt;label for="tabs-code-3">Go&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
+&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
-&lt;label for="tabs-code-4">Java&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
+&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
-&lt;label for="tabs-code-5">JavaScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
+&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
-&lt;label for="tabs-code-6">Kotlin&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
+&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
-&lt;label for="tabs-code-7">PHP&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
+&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
-&lt;label for="tabs-code-8">Python2&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
+&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
-&lt;label for="tabs-code-9">Python3&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
+&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
-&lt;label for="tabs-code-10">Ruby&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
+&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
-&lt;label for="tabs-code-11">Rust&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
+&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
-&lt;label for="tabs-code-12">Scala&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
+&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
-&lt;label for="tabs-code-13">Swift&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
+&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
-&lt;label for="tabs-code-14">TypeScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
+&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;/div></description></item><item><title>组合</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/composite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/composite/</guid><description>&lt;h1 id="组合模式">
+&lt;/div&gt;</description></item><item><title>组合</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/composite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/composite/</guid><description>&lt;h1 id="组合模式"&gt;
  组合模式
- &lt;a class="anchor" href="#%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f">#&lt;/a>
-&lt;/h1>
-&lt;p>Composite Pattern&lt;/p>
-&lt;h2 id="代码示例">
+ &lt;a class="anchor" href="#%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Composite Pattern&lt;/p&gt;
+&lt;h2 id="代码示例"&gt;
  代码示例
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
-&lt;/h2>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="book-tabs"&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
-&lt;label for="tabs-code-0">C&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
+&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
-&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
+&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
-&lt;label for="tabs-code-2">C#&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
+&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
-&lt;label for="tabs-code-3">Go&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
+&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
-&lt;label for="tabs-code-4">Java&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
+&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
-&lt;label for="tabs-code-5">JavaScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
+&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
-&lt;label for="tabs-code-6">Kotlin&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
+&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
-&lt;label for="tabs-code-7">PHP&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
+&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
-&lt;label for="tabs-code-8">Python2&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
+&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
-&lt;label for="tabs-code-9">Python3&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
+&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
-&lt;label for="tabs-code-10">Ruby&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
+&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
-&lt;label for="tabs-code-11">Rust&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
+&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
-&lt;label for="tabs-code-12">Scala&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
+&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
-&lt;label for="tabs-code-13">Swift&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
+&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
-&lt;label for="tabs-code-14">TypeScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
+&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;/div></description></item><item><title>装饰</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/decorator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/decorator/</guid><description>&lt;h1 id="装饰模式">
+&lt;/div&gt;</description></item><item><title>装饰</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/decorator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/decorator/</guid><description>&lt;h1 id="装饰模式"&gt;
  装饰模式
- &lt;a class="anchor" href="#%e8%a3%85%e9%a5%b0%e6%a8%a1%e5%bc%8f">#&lt;/a>
-&lt;/h1>
-&lt;p>Decorator&lt;/p>
-&lt;h2 id="代码示例">
+ &lt;a class="anchor" href="#%e8%a3%85%e9%a5%b0%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Decorator&lt;/p&gt;
+&lt;h2 id="代码示例"&gt;
  代码示例
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
-&lt;/h2>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="book-tabs"&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
-&lt;label for="tabs-code-0">C&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
+&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
-&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
+&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
-&lt;label for="tabs-code-2">C#&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
+&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
-&lt;label for="tabs-code-3">Go&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
+&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
-&lt;label for="tabs-code-4">Java&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
+&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
-&lt;label for="tabs-code-5">JavaScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
+&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
-&lt;label for="tabs-code-6">Kotlin&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
+&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
-&lt;label for="tabs-code-7">PHP&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
+&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
-&lt;label for="tabs-code-8">Python2&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
+&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
-&lt;label for="tabs-code-9">Python3&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
+&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
-&lt;label for="tabs-code-10">Ruby&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
+&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
-&lt;label for="tabs-code-11">Rust&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
+&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
-&lt;label for="tabs-code-12">Scala&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
+&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
-&lt;label for="tabs-code-13">Swift&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
+&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
-&lt;label for="tabs-code-14">TypeScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
+&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;/div></description></item><item><title>外观</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</guid><description>&lt;h1 id="外观模式">
+&lt;/div&gt;</description></item><item><title>外观</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</guid><description>&lt;h1 id="外观模式"&gt;
  外观模式
- &lt;a class="anchor" href="#%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f">#&lt;/a>
-&lt;/h1>
-&lt;p>Facade&lt;/p>
-&lt;ul>
-&lt;li>适配器是将接口转换为不同接口&lt;/li>
-&lt;li>外观模式是提供一个统一的接口来简化接口&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Facade&lt;/span> Pattern
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(String&lt;span style="color:#f92672">[]&lt;/span> args) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//实例化电器类&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> SubSystemA_Light light &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> SubSystemA_Light();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> SubSystemB_Television television &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> SubSystemB_Television();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> SubSystemC_Aircondition aircondition &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> SubSystemC_Aircondition();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//传参&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Facade facade &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Facade(light,television,aircondition);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//客户端直接与外观对象进行交互&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> facade.&lt;span style="color:#a6e22e">on&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System.&lt;span style="color:#a6e22e">out&lt;/span>.&lt;span style="color:#a6e22e">prinln&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;可以看电视了&amp;#34;&lt;/span>)&lt;span style="color:#960050;background-color:#1e0010">；&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> facade.&lt;span style="color:#a6e22e">off&lt;/span>;
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System.&lt;span style="color:#a6e22e">out&lt;/span>.&lt;span style="color:#a6e22e">prinln&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;可以睡觉了&amp;#34;&lt;/span>)&lt;span style="color:#960050;background-color:#1e0010">；&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="代码示例">
+ &lt;a class="anchor" href="#%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Facade&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;适配器是将接口转换为不同接口&lt;/li&gt;
+&lt;li&gt;外观模式是提供一个统一的接口来简化接口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Facade&lt;/span&gt; Pattern
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//实例化电器类&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; SubSystemA_Light light &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; SubSystemA_Light();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; SubSystemB_Television television &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; SubSystemB_Television();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; SubSystemC_Aircondition aircondition &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; SubSystemC_Aircondition();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//传参&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Facade facade &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Facade(light,television,aircondition);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//客户端直接与外观对象进行交互&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; facade.&lt;span style="color:#a6e22e"&gt;on&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;prinln&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;可以看电视了&amp;#34;&lt;/span&gt;)&lt;span style="color:#960050;background-color:#1e0010"&gt;；&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; facade.&lt;span style="color:#a6e22e"&gt;off&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;prinln&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;可以睡觉了&amp;#34;&lt;/span&gt;)&lt;span style="color:#960050;background-color:#1e0010"&gt;；&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="代码示例"&gt;
  代码示例
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
-&lt;/h2>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="book-tabs"&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
-&lt;label for="tabs-code-0">C&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
+&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
-&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
+&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
-&lt;label for="tabs-code-2">C#&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
+&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
-&lt;label for="tabs-code-3">Go&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
+&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
-&lt;label for="tabs-code-4">Java&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
+&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
-&lt;label for="tabs-code-5">JavaScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
+&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
-&lt;label for="tabs-code-6">Kotlin&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
+&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
-&lt;label for="tabs-code-7">PHP&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
+&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
-&lt;label for="tabs-code-8">Python2&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
+&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
-&lt;label for="tabs-code-9">Python3&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
+&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
-&lt;label for="tabs-code-10">Ruby&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
+&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
-&lt;label for="tabs-code-11">Rust&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
+&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
-&lt;label for="tabs-code-12">Scala&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
+&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
-&lt;label for="tabs-code-13">Swift&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
+&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
-&lt;label for="tabs-code-14">TypeScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
+&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;/div></description></item><item><title>享元</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/flyweight/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/flyweight/</guid><description>&lt;h1 id="享元模式">
+&lt;/div&gt;</description></item><item><title>享元</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/flyweight/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/flyweight/</guid><description>&lt;h1 id="享元模式"&gt;
  享元模式
- &lt;a class="anchor" href="#%e4%ba%ab%e5%85%83%e6%a8%a1%e5%bc%8f">#&lt;/a>
-&lt;/h1>
-&lt;p>Flyweight&lt;/p>
-&lt;h2 id="代码示例">
+ &lt;a class="anchor" href="#%e4%ba%ab%e5%85%83%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Flyweight&lt;/p&gt;
+&lt;h2 id="代码示例"&gt;
  代码示例
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
-&lt;/h2>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="book-tabs"&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
-&lt;label for="tabs-code-0">C&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
+&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
-&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
+&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
-&lt;label for="tabs-code-2">C#&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
+&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
-&lt;label for="tabs-code-3">Go&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
+&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
-&lt;label for="tabs-code-4">Java&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
+&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
-&lt;label for="tabs-code-5">JavaScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
+&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
-&lt;label for="tabs-code-6">Kotlin&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
+&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
-&lt;label for="tabs-code-7">PHP&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
+&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
-&lt;label for="tabs-code-8">Python2&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
+&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
-&lt;label for="tabs-code-9">Python3&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
+&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
-&lt;label for="tabs-code-10">Ruby&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
+&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
-&lt;label for="tabs-code-11">Rust&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
+&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
-&lt;label for="tabs-code-12">Scala&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
+&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
-&lt;label for="tabs-code-13">Swift&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
+&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
-&lt;label for="tabs-code-14">TypeScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
+&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;/div></description></item><item><title>代理</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</guid><description>&lt;h1 id="代理模式">
+&lt;/div&gt;</description></item><item><title>代理</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</guid><description>&lt;h1 id="代理模式"&gt;
  代理模式
- &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f">#&lt;/a>
-&lt;/h1>
-&lt;p>Proxy&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">Subject&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">buyMac&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">RealSubject&lt;/span> implement Subject {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">@Override&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">buyMac&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System.&lt;span style="color:#a6e22e">out&lt;/span>.&lt;span style="color:#a6e22e">println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;买一台Mac&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Proxy&lt;/span> &lt;span style="color:#66d9ef">implements&lt;/span> Subject {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">@Override&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> buyMac {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//引用并创建真实对象实例，即&amp;#34;我&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> RealSubject realSubject &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> RealSubject();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//调用真实对象的方法，进行代理购买Mac&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> realSubject.&lt;span style="color:#a6e22e">buyMac&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//代理对象额外做的操作&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">this&lt;/span>.&lt;span style="color:#a6e22e">WrapMac&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">WrapMac&lt;/span>() {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System.&lt;span style="color:#a6e22e">out&lt;/span>.&lt;span style="color:#a6e22e">println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;用盒子包装好Mac&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">ProxyPattern&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(String&lt;span style="color:#f92672">[]&lt;/span> args) {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Subject proxy &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Proxy();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> proxy.&lt;span style="color:#a6e22e">buyMac&lt;/span>();
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="代码示例">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Proxy&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;interface&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Subject&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;buyMac&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;RealSubject&lt;/span&gt; implement Subject {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;@Override&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;buyMac&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;买一台Mac&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Proxy&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;implements&lt;/span&gt; Subject {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;@Override&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; buyMac {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//引用并创建真实对象实例，即&amp;#34;我&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; RealSubject realSubject &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; RealSubject();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//调用真实对象的方法，进行代理购买Mac&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; realSubject.&lt;span style="color:#a6e22e"&gt;buyMac&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;//代理对象额外做的操作&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;this&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;WrapMac&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;WrapMac&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; System.&lt;span style="color:#a6e22e"&gt;out&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;println&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;&amp;#34;用盒子包装好Mac&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;ProxyPattern&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;void&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;main&lt;/span&gt;(String&lt;span style="color:#f92672"&gt;[]&lt;/span&gt; args) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Subject proxy &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Proxy();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; proxy.&lt;span style="color:#a6e22e"&gt;buyMac&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="代码示例"&gt;
  代码示例
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b">#&lt;/a>
-&lt;/h2>
-&lt;div class="book-tabs">
+ &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="book-tabs"&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" />
-&lt;label for="tabs-code-0">C&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
+&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" />
-&lt;label for="tabs-code-1">C&amp;#43;&amp;#43;&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
+&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" />
-&lt;label for="tabs-code-2">C#&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
+&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" />
-&lt;label for="tabs-code-3">Go&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
+&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" />
-&lt;label for="tabs-code-4">Java&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
+&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" />
-&lt;label for="tabs-code-5">JavaScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
+&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" />
-&lt;label for="tabs-code-6">Kotlin&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
+&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" />
-&lt;label for="tabs-code-7">PHP&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
+&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" />
-&lt;label for="tabs-code-8">Python2&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
+&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" />
-&lt;label for="tabs-code-9">Python3&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
+&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" />
-&lt;label for="tabs-code-10">Ruby&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
+&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" />
-&lt;label for="tabs-code-11">Rust&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
+&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" />
-&lt;label for="tabs-code-12">Scala&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
+&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" />
-&lt;label for="tabs-code-13">Swift&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
+&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" />
-&lt;label for="tabs-code-14">TypeScript&lt;/label>
-&lt;div class="book-tabs-content markdown-inner">
+&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
+&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
+&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
 ```
 
-&lt;/div>
+&lt;/div&gt;
 
 
 ---
 
 
-&lt;/div></description></item></channel></rss>
+&lt;/div&gt;</description></item></channel></rss>
