@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GB28181 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/</link><description>Recent content in GB28181 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/index.xml" rel="self" type="application/rss+xml"/><item><title>SDP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sdp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sdp/</guid><description>&lt;h1 id="sdp"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GB28181 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/</link><description>Recent content in GB28181 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/index.xml" rel="self" type="application/rss+xml"/><item><title>SDP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sdp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sdp/</guid><description>&lt;h1 id="sdp"&gt;
  SDP
+ 
  &lt;a class="anchor" href="#sdp"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Session Description Protocol&lt;/p&gt;
 &lt;p&gt;SDP 本身并不提供媒体服务，它只是描述了媒体服务在哪，以及如何和那个媒体服务打交道。&lt;/p&gt;
@@ -19,7 +21,9 @@
 但是这样会降低或者说没有充分发挥端到端的音视频能力，协商显得更加灵活点。&lt;/p&gt;
 &lt;h2 id="sdp-作用"&gt;
  SDP 作用
+ 
  &lt;a class="anchor" href="#sdp-%e4%bd%9c%e7%94%a8"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;SDP 作用包括以下一些方面&lt;/p&gt;
 &lt;ul&gt;
@@ -36,25 +40,33 @@
 &lt;li&gt;使用的带宽信息&lt;/li&gt;
 &lt;li&gt;可信赖的接洽信息&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 &lt;code&gt;WebRTC&lt;/code&gt; 就在 SDP 的基础上进行了继续拓展&lt;/p&gt;</description></item><item><title>SIP</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/sip/</guid><description>&lt;h1 id="sip"&gt;
+&lt;p&gt;如果拓展，还可以描述会话的安全方案信息、服务质量信息等，其中 &lt;code&gt;WebRTC&lt;/code&gt; 就在 SDP 的基础上进行了继续拓展&lt;/p&gt;</description></item><item><title>SIP</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/sip/</guid><description>&lt;h1 id="sip"&gt;
  SIP
+ 
  &lt;a class="anchor" href="#sip"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;SIP 协议使用 RTP 协议传送音视频数据流，使用 SDP 协议进行媒体描述。&lt;/p&gt;
 &lt;h2 id="call-id"&gt;
  CALL-ID
+ 
  &lt;a class="anchor" href="#call-id"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;SIP 的一次通话，可以通过 &lt;code&gt;From&lt;/code&gt;, &lt;code&gt;To&lt;/code&gt;, &lt;code&gt;Call-ID&lt;/code&gt; 三元组来区分。&lt;/p&gt;
 &lt;p&gt;CALL-ID 字段用于标识一个特定邀请以及与这个邀请相关的所有后续事务（即标识一个会话）&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="包内容"&gt;
  包内容
+ 
  &lt;a class="anchor" href="#%e5%8c%85%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="message"&gt;
  Message
+ 
  &lt;a class="anchor" href="#message"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Session Initiation Protocol &lt;span style="color:#f92672"&gt;(&lt;/span&gt;MESSAGE&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Request-Line: MESSAGE sip:34020000002000000001@3402000000 SIP/2.0
@@ -80,52 +92,74 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;/Notify&amp;gt;&lt;span style="color:#ae81ff"&gt;\n&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="bye"&gt;
  Bye
+ 
  &lt;a class="anchor" href="#bye"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;同一个会话，CSeq 要 +1&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>协议详情</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/protocal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/protocal/</guid><description>&lt;h1 id="gb28181-协议解析"&gt;
+&lt;p&gt;&lt;strong&gt;同一个会话，CSeq 要 +1&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>协议详情</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/protocal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/protocal/</guid><description>&lt;h1 id="gb28181-协议解析"&gt;
  GB28181 协议解析
+ 
  &lt;a class="anchor" href="#gb28181-%e5%8d%8f%e8%ae%ae%e8%a7%a3%e6%9e%90"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;点击在线查看标准完整文本： &lt;a href="http://c.gb688.cn/bzgk/gb/showGb?type=online&amp;amp;hcno=469659DC56B9B8187671FF08748CEC89"&gt;公共安全视频监控联网系统信息传输、交换、控制技术要求。&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="名词解释"&gt;
  名词解释
+ 
  &lt;a class="anchor" href="#%e5%90%8d%e8%af%8d%e8%a7%a3%e9%87%8a"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="sip-服务器"&gt;
  SIP 服务器
+ 
  &lt;a class="anchor" href="#sip-%e6%9c%8d%e5%8a%a1%e5%99%a8"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h3 id="sip-client"&gt;
  SIP client
+ 
  &lt;a class="anchor" href="#sip-client"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;具有注册登记、建立 / 终止会话连接、接收和播放视音频流等功能，主要包括用户界面、用户代理 (UA)、媒体解码模块和媒体通信模块。&lt;/p&gt;
 &lt;h3 id="sip-device"&gt;
  SIP device
+ 
  &lt;a class="anchor" href="#sip-device"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;具有注册、建立 / 终止会话连接和控制、采集 / 编解码以及传送视音频流等的功能实体，主要包括用户代理 (UA)、媒体采集 / 编解码模块和媒体通信模块。&lt;/p&gt;
 &lt;p&gt;联网系统中 SIP 设备的实现形式主要有支持 SIP 协议的网络摄像机、视频编 / 解码设备、数字硬盘录像机 (DVR) 和报警设备等。若 SIP 设备具有多路视音频编解码通道，每个通道宜成为一个 SIP 逻辑 UA, 具有唯一的 SIPURI, 并向 SIP 服务器注册。&lt;/p&gt;
 &lt;h3 id="sip-监控域-sip-surveil-lance-realm"&gt;
  SIP 监控域 SIP surveil lance realm
+ 
  &lt;a class="anchor" href="#sip-%e7%9b%91%e6%8e%a7%e5%9f%9f-sip-surveil-lance-realm"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;支持本标准规定的通信协议的监控网络，通常由 SIP 服务器和注册在 SIP 服务器上的监控资源、用户终端、网络等组成。&lt;/p&gt;
 &lt;h3 id="注册服务器-register-server"&gt;
  注册服务器 register server
+ 
  &lt;a class="anchor" href="#%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e5%99%a8-register-server"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
-&lt;p&gt;IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。&lt;/p&gt;</description></item><item><title>数据包</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/packet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/packet/</guid><description>&lt;h1 id="数据包"&gt;
+&lt;p&gt;IETF RFC 3261 规定的 SIP 逻辑实体，是具有接收注册请求、将请求中携带的信息进行保存并提供本域内位置服务的功能服务器。&lt;/p&gt;</description></item><item><title>数据包</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/packet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/packet/</guid><description>&lt;h1 id="数据包"&gt;
  数据包
+ 
  &lt;a class="anchor" href="#%e6%95%b0%e6%8d%ae%e5%8c%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="register"&gt;
  Register
+ 
  &lt;a class="anchor" href="#register"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="request-register-no-auth"&gt;
  request: Register (no auth)
+ 
  &lt;a class="anchor" href="#request-register-no-auth"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Frame 2117: &lt;span style="color:#ae81ff"&gt;442&lt;/span&gt; bytes on wire &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;3536&lt;/span&gt; bits&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;442&lt;/span&gt; bytes captured &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;3536&lt;/span&gt; bits&lt;span style="color:#f92672"&gt;)&lt;/span&gt; on interface &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Ethernet II, Src: 98:df:82:6d:9e:52 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;98:df:82:6d:9e:52&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, Dst: Apple_70:23:0d &lt;span style="color:#f92672"&gt;(&lt;/span&gt;88:e9:fe:70:23:0d&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
@@ -150,7 +184,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Content-Length: &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="response-401"&gt;
  response: 401
+ 
  &lt;a class="anchor" href="#response-401"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Frame 2121: &lt;span style="color:#ae81ff"&gt;524&lt;/span&gt; bytes on wire &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;4192&lt;/span&gt; bits&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;524&lt;/span&gt; bytes captured &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;4192&lt;/span&gt; bits&lt;span style="color:#f92672"&gt;)&lt;/span&gt; on interface &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Ethernet II, Src: Apple_70:23:0d &lt;span style="color:#f92672"&gt;(&lt;/span&gt;88:e9:fe:70:23:0d&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, Dst: 98:df:82:6d:9e:52 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;98:df:82:6d:9e:52&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
@@ -174,7 +210,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; WWW-Authenticate: Digest realm&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;3402000000&amp;#34;&lt;/span&gt;,qop&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;auth&amp;#34;&lt;/span&gt;,nonce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;a1b6ba00d8cbaa8ce99d1d39b2905d12&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="request-register-auth"&gt;
  request: register (auth)
+ 
  &lt;a class="anchor" href="#request-register-auth"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Frame 2122: &lt;span style="color:#ae81ff"&gt;704&lt;/span&gt; bytes on wire &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;5632&lt;/span&gt; bits&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, &lt;span style="color:#ae81ff"&gt;704&lt;/span&gt; bytes captured &lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;5632&lt;/span&gt; bits&lt;span style="color:#f92672"&gt;)&lt;/span&gt; on interface &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Ethernet II, Src: 98:df:82:6d:9e:52 &lt;span style="color:#f92672"&gt;(&lt;/span&gt;98:df:82:6d:9e:52&lt;span style="color:#f92672"&gt;)&lt;/span&gt;, Dst: Apple_70:23:0d &lt;span style="color:#f92672"&gt;(&lt;/span&gt;88:e9:fe:70:23:0d&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
@@ -197,13 +235,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; User-Agent: IP Camera
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Expires: &lt;span style="color:#ae81ff"&gt;3600&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Content-Length: &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609141735.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>源码实现</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/gb28181/code/</guid><description>&lt;h1 id="源码实现"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200609141735.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>源码实现</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/gb28181/code/</guid><description>&lt;h1 id="源码实现"&gt;
  源码实现
+ 
  &lt;a class="anchor" href="#%e6%ba%90%e7%a0%81%e5%ae%9e%e7%8e%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="名词解释"&gt;
  名词解释
+ 
  &lt;a class="anchor" href="#%e5%90%8d%e8%af%8d%e8%a7%a3%e9%87%8a"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;AOR：Address Of Record
@@ -212,11 +254,15 @@
 &lt;hr&gt;
 &lt;h2 id="开源实现"&gt;
  开源实现
+ 
  &lt;a class="anchor" href="#%e5%bc%80%e6%ba%90%e5%ae%9e%e7%8e%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="go"&gt;
  go
+ 
  &lt;a class="anchor" href="#go"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/StefanKopieczek/gossip"&gt;StefanKopieczek/gossip&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/StefanKopieczek/gossip.svg" alt="Github stars" /&gt;&lt;/li&gt;
@@ -241,21 +287,27 @@ Dependencies
 &lt;/ul&gt;
 &lt;h3 id="c"&gt;
  C
+ 
  &lt;a class="anchor" href="#c"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/pjsip/pjproject"&gt;pjsip/pjproject&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/pjsip/pjproject.svg" alt="Github stars" /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="c-1"&gt;
  &lt;code&gt;C#&lt;/code&gt;
+ 
  &lt;a class="anchor" href="#c-1"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/GB28181/GB28181.Solution"&gt;GB28181/GB28181.Solution&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/GB28181/GB28181.Solution.svg" alt="Github stars" /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="c-2"&gt;
  C++
+ 
  &lt;a class="anchor" href="#c-2"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/ossrs/srs"&gt;ossrs/srs&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ossrs/srs.svg" alt="Github stars" /&gt;&lt;/li&gt;
@@ -263,14 +315,18 @@ Dependencies
 &lt;/ul&gt;
 &lt;h3 id="nodejs"&gt;
  Node.js
+ 
  &lt;a class="anchor" href="#nodejs"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/kirm/sip.js"&gt;kirm/sip.js&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kirm/sip.js.svg" alt="Github stars" /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="二进制前端开源后端不开源"&gt;
  二进制（前端开源，后端不开源）
+ 
  &lt;a class="anchor" href="#%e4%ba%8c%e8%bf%9b%e5%88%b6%e5%89%8d%e7%ab%af%e5%bc%80%e6%ba%90%e5%90%8e%e7%ab%af%e4%b8%8d%e5%bc%80%e6%ba%90"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/livegbs/GB28181-Server"&gt;livegbs/GB28181-Server&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/livegbs/GB28181-Server.svg" alt="Github stars" /&gt;&lt;/li&gt;

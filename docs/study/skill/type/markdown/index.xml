@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>markdown on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/type/markdown/</link><description>Recent content in markdown on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/type/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>markdown 公式</title><link>https://kingye.me/note-cs/docs/study/skill/type/markdown/formula/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/type/markdown/formula/</guid><description>&lt;span&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>markdown on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/type/markdown/</link><description>Recent content in markdown on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/type/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>markdown 公式</title><link>http://localhost:1304/note-cs/docs/study/skill/type/markdown/formula/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/type/markdown/formula/</guid><description>&lt;span&gt;
  \(\)
 &lt;/span&gt;
 
 &lt;h1 id="markdown-公式"&gt;
  markdown 公式
+ 
  &lt;a class="anchor" href="#markdown-%e5%85%ac%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;来源：&lt;a href="https://github.com/bytesfly/blog/blob/master/Tool/markdown-formula.md"&gt;一文学会在 Markdown 中编辑数学符号与公式&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -26,11 +28,15 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id="符号"&gt;
  符号
+ 
  &lt;a class="anchor" href="#%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="上下标运算符"&gt;
  上下标、运算符
+ 
  &lt;a class="anchor" href="#%e4%b8%8a%e4%b8%8b%e6%a0%87%e8%bf%90%e7%ae%97%e7%ac%a6"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -150,7 +156,9 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="括号"&gt;
  括号
+ 
  &lt;a class="anchor" href="#%e6%8b%ac%e5%8f%b7"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -190,7 +198,9 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="三角函数指数对数"&gt;
  三角函数、指数、对数
+ 
  &lt;a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e6%8c%87%e6%95%b0%e5%af%b9%e6%95%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -240,7 +250,9 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="数学符号"&gt;
  数学符号
+ 
  &lt;a class="anchor" href="#%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -445,7 +457,9 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="连线符号"&gt;
  连线符号
+ 
  &lt;a class="anchor" href="#%e8%bf%9e%e7%ba%bf%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -507,7 +521,9 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="高级运算符"&gt;
  高级运算符
+ 
  &lt;a class="anchor" href="#%e9%ab%98%e7%ba%a7%e8%bf%90%e7%ae%97%e7%ac%a6"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -572,7 +588,9 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="集合运算"&gt;
  集合运算
+ 
  &lt;a class="anchor" href="#%e9%9b%86%e5%90%88%e8%bf%90%e7%ae%97"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -647,7 +665,9 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="希腊字母"&gt;
  希腊字母
+ 
  &lt;a class="anchor" href="#%e5%b8%8c%e8%85%8a%e5%ad%97%e6%af%8d"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -832,6 +852,8 @@ $$&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id="字体转换"&gt;
  字体转换
+ 
  &lt;a class="anchor" href="#%e5%ad%97%e4%bd%93%e8%bd%ac%e6%8d%a2"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;若要对公式的某一部分字符进行字体转换，可以用 &lt;code&gt;{\font {需转换的部分字符}}&lt;/code&gt; 命令，其中&lt;code&gt;\font&lt;/code&gt;部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体。&lt;/p&gt;</description></item></channel></rss>

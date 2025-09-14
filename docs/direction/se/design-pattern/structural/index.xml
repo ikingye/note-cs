@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>架构型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/</link><description>Recent content in 架构型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/index.xml" rel="self" type="application/rss+xml"/><item><title>适配器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/adapter/</guid><description>&lt;h1 id="适配器模式"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>架构型 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/</link><description>Recent content in 架构型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/index.xml" rel="self" type="application/rss+xml"/><item><title>适配器</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/adapter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/adapter/</guid><description>&lt;h1 id="适配器模式"&gt;
  适配器模式
+ 
  &lt;a class="anchor" href="#%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Adapter&lt;/p&gt;
 &lt;p&gt;适配器 Adapter 继承自 Adaptee，同时又实现了目标(Target)接口。&lt;/p&gt;
@@ -34,7 +36,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -252,14 +256,18 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>桥接</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/bridge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/bridge/</guid><description>&lt;h1 id="桥接模式"&gt;
+&lt;/div&gt;</description></item><item><title>桥接</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/bridge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/bridge/</guid><description>&lt;h1 id="桥接模式"&gt;
  桥接模式
+ 
  &lt;a class="anchor" href="#%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Bridge&lt;/p&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -477,14 +485,18 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>组合</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/composite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/composite/</guid><description>&lt;h1 id="组合模式"&gt;
+&lt;/div&gt;</description></item><item><title>组合</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/composite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/composite/</guid><description>&lt;h1 id="组合模式"&gt;
  组合模式
+ 
  &lt;a class="anchor" href="#%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Composite Pattern&lt;/p&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -702,14 +714,18 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>装饰</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/decorator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/decorator/</guid><description>&lt;h1 id="装饰模式"&gt;
+&lt;/div&gt;</description></item><item><title>装饰</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/decorator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/decorator/</guid><description>&lt;h1 id="装饰模式"&gt;
  装饰模式
+ 
  &lt;a class="anchor" href="#%e8%a3%85%e9%a5%b0%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Decorator&lt;/p&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -927,9 +943,11 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>外观</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/facade/</guid><description>&lt;h1 id="外观模式"&gt;
+&lt;/div&gt;</description></item><item><title>外观</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/facade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/facade/</guid><description>&lt;h1 id="外观模式"&gt;
  外观模式
+ 
  &lt;a class="anchor" href="#%e5%a4%96%e8%a7%82%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Facade&lt;/p&gt;
 &lt;ul&gt;
@@ -956,7 +974,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -1174,14 +1194,18 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>享元</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/flyweight/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/flyweight/</guid><description>&lt;h1 id="享元模式"&gt;
+&lt;/div&gt;</description></item><item><title>享元</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/flyweight/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/flyweight/</guid><description>&lt;h1 id="享元模式"&gt;
  享元模式
+ 
  &lt;a class="anchor" href="#%e4%ba%ab%e5%85%83%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Flyweight&lt;/p&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -1399,9 +1423,11 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>代理</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/structural/proxy/</guid><description>&lt;h1 id="代理模式"&gt;
+&lt;/div&gt;</description></item><item><title>代理</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/proxy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/structural/proxy/</guid><description>&lt;h1 id="代理模式"&gt;
  代理模式
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Proxy&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;interface&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Subject&lt;/span&gt; {
@@ -1441,7 +1467,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 

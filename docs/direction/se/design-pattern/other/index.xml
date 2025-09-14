@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>其他模式 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/other/</link><description>Recent content in 其他模式 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/other/index.xml" rel="self" type="application/rss+xml"/><item><title>简单工厂</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/other/simple-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/other/simple-factory/</guid><description>&lt;h1 id="简单工厂模式"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>其他模式 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/other/</link><description>Recent content in 其他模式 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/se/design-pattern/other/index.xml" rel="self" type="application/rss+xml"/><item><title>简单工厂</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/other/simple-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/other/simple-factory/</guid><description>&lt;h1 id="简单工厂模式"&gt;
  简单工厂模式
+ 
  &lt;a class="anchor" href="#%e7%ae%80%e5%8d%95%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Simple Factory Pattern，又称为静态工厂方法 (Static Factory Method) 模式&lt;/p&gt;
 &lt;p&gt;通过&lt;strong&gt;传入参数&lt;/strong&gt;获取到对象，不关心创建对象的细节。&lt;/p&gt;
@@ -26,7 +28,9 @@
 &lt;/ul&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 

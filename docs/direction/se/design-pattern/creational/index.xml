@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>创建型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/</link><description>Recent content in 创建型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/index.xml" rel="self" type="application/rss+xml"/><item><title>抽象工厂</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</guid><description>&lt;h1 id="抽象工厂模式"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>创建型 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/</link><description>Recent content in 创建型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/index.xml" rel="self" type="application/rss+xml"/><item><title>抽象工厂</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/abstract-factory/</guid><description>&lt;h1 id="抽象工厂模式"&gt;
  抽象工厂模式
+ 
  &lt;a class="anchor" href="#%e6%8a%bd%e8%b1%a1%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Abstract Factory Pattern&lt;/p&gt;
 &lt;p&gt;提供一个创建一系列相关或相互依赖对象的接口，而无须指定它们具体的类，具体的工厂负责实现具体的产品实例。&lt;/p&gt;
@@ -16,7 +18,9 @@
 &lt;/ul&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -234,9 +238,11 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>构造器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/builder/</guid><description>&lt;h1 id="构造器模式"&gt;
+&lt;/div&gt;</description></item><item><title>构造器</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/builder/</guid><description>&lt;h1 id="构造器模式"&gt;
  构造器模式
+ 
  &lt;a class="anchor" href="#%e6%9e%84%e9%80%a0%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Builder&lt;/p&gt;
 &lt;ul&gt;
@@ -256,7 +262,9 @@
 &lt;/ul&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -474,9 +482,11 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>工厂方法</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/factory-method/</guid><description>&lt;h1 id="工厂方法模式"&gt;
+&lt;/div&gt;</description></item><item><title>工厂方法</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/factory-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/factory-method/</guid><description>&lt;h1 id="工厂方法模式"&gt;
  工厂方法模式
+ 
  &lt;a class="anchor" href="#%e5%b7%a5%e5%8e%82%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Factory Method&lt;/p&gt;
 &lt;p&gt;又称工厂模式、多态工厂模式和虚拟构造器模式，&lt;/p&gt;
@@ -492,7 +502,9 @@
 &lt;/ul&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -715,18 +727,24 @@
 &lt;hr&gt;
 &lt;h2 id="参考"&gt;
  参考
+ 
  &lt;a class="anchor" href="#%e5%8f%82%e8%80%83"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/27125796"&gt;简单工厂模式、工厂方法模式和抽象工厂模式有何区别？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>原型</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/prototype/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/prototype/</guid><description>&lt;h1 id="原型模式"&gt;
+&lt;/ul&gt;</description></item><item><title>原型</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/prototype/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/prototype/</guid><description>&lt;h1 id="原型模式"&gt;
  原型模式
+ 
  &lt;a class="anchor" href="#%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Prototype&lt;/p&gt;
 &lt;h2 id="代码示例"&gt;
  代码示例
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
 
@@ -944,14 +962,18 @@
 ---
 
 
-&lt;/div&gt;</description></item><item><title>单例</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/creational/singleton/</guid><description>&lt;h1 id="单例模式"&gt;
+&lt;/div&gt;</description></item><item><title>单例</title><link>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/design-pattern/creational/singleton/</guid><description>&lt;h1 id="单例模式"&gt;
  单例模式
+ 
  &lt;a class="anchor" href="#%e5%8d%95%e4%be%8b%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Singleton&lt;/p&gt;
 &lt;h5 id="实现方法"&gt;
  实现方法
+ 
  &lt;a class="anchor" href="#%e5%ae%9e%e7%8e%b0%e6%96%b9%e6%b3%95"&gt;#&lt;/a&gt;
+ 
 &lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;初始化时即创建单例
@@ -975,7 +997,9 @@
 &lt;/ul&gt;
 &lt;h5 id="饿汉式线程安全"&gt;
  饿汉式（线程安全）
+ 
  &lt;a class="anchor" href="#%e9%a5%bf%e6%b1%89%e5%bc%8f%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8"&gt;#&lt;/a&gt;
+ 
 &lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;JVM 在类的初始化阶段 (即 在 Class 被加载后、被线程使用前)，会执行类的初始化&lt;/li&gt;
@@ -1000,85 +1024,14 @@
 &lt;/ul&gt;
 &lt;h5 id="枚举类线程安全"&gt;
  枚举类（线程安全）
+ 
  &lt;a class="anchor" href="#%e6%9e%9a%e4%b8%be%e7%b1%bb%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8"&gt;#&lt;/a&gt;
+ 
 &lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;这是最简洁，最易用的单例实现方式&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;单元素的枚举类型已经成为实现 Singleton 的最佳方法
-- 《Effective Java》&lt;/p&gt;&lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;enum&lt;/span&gt; Singleton {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 定义 1 个枚举的元素，即为单例类的1个实例&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; INSTANCE;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 隐藏了 1 个空的、私有的 构造方法&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// private Singleton () {}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 获取单例的方式：&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Singleton singleton &lt;span style="color:#f92672"&gt;=&lt;/span&gt; Singleton.&lt;span style="color:#a6e22e"&gt;INSTANCE&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id="懒汉式-基础实现线程不安全"&gt;
- 懒汉式 基础实现（线程不安全）
- &lt;a class="anchor" href="#%e6%87%92%e6%b1%89%e5%bc%8f-%e5%9f%ba%e7%a1%80%e5%ae%9e%e7%8e%b0%e7%ba%bf%e7%a8%8b%e4%b8%8d%e5%ae%89%e5%85%a8"&gt;#&lt;/a&gt;
-&lt;/h5&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Singleton&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 1. 类加载时，先不自动创建单例，将单例的引用先赋值为 Null&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;private&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; Singleton ourInstance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;null&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 2. 构造函数 设置为 私有权限&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 禁止他人创建实例&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;private&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Singleton&lt;/span&gt;() {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 3. 需要时才手动调用 newInstance（） 创建 单例&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; Singleton &lt;span style="color:#a6e22e"&gt;newInstance&lt;/span&gt;() {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 先判断单例是否为空，以避免重复创建&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (ourInstance &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;null&lt;/span&gt;) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ourInstance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Singleton();
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; ourInstance;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id="懒汉式-同步锁线程安全"&gt;
- 懒汉式 同步锁（线程安全）
- &lt;a class="anchor" href="#%e6%87%92%e6%b1%89%e5%bc%8f-%e5%90%8c%e6%ad%a5%e9%94%81%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8"&gt;#&lt;/a&gt;
-&lt;/h5&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-java" data-lang="java"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 写法1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Singleton&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 1. 类加载时，先不自动创建单例&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 即，将单例的引用先赋值为 Null&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;private&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; Singleton ourInstance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;null&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;；&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 2. 构造函数 设置为 私有权限&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 原因：禁止他人创建实例&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;private&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Singleton&lt;/span&gt;() {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 3. 加入同步锁&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;synchronized&lt;/span&gt; Singleton &lt;span style="color:#a6e22e"&gt;getInstance&lt;/span&gt;() {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 先判断单例是否为空，以避免重复创建&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (ourInstance &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;null&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ourInstance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Singleton();
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; ourInstance;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 写法2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;// 该写法的作用与上述写法作用相同，只是写法有所区别&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;class&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Singleton&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;private&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; Singleton instance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;null&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;private&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;Singleton&lt;/span&gt;() {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;public&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;static&lt;/span&gt; Singleton &lt;span style="color:#a6e22e"&gt;getInstance&lt;/span&gt;() {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;// 加入同步锁&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;synchronized&lt;/span&gt; (Singleton.&lt;span style="color:#a6e22e"&gt;class&lt;/span&gt;) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; (instance &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;null&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; instance &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;new&lt;/span&gt; Singleton();
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; instance;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;缺点&lt;/p&gt;</description></item></channel></rss>
+
+&lt;blockquote class='book-hint '&gt;
+ &lt;p&gt;单元素的枚举类型已经成为实现 Singleton 的最佳方法
+- 《Effective Java》&lt;/p&gt;</description></item></channel></rss>

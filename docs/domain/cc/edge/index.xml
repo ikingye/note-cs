@@ -1,19 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>边缘计算 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/edge/</link><description>Recent content in 边缘计算 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/edge/index.xml" rel="self" type="application/rss+xml"/><item><title>5G 边缘计算</title><link>https://kingye.me/note-cs/docs/domain/cc/edge/5g-edge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/edge/5g-edge/</guid><description>&lt;h1 id="5g-边缘计算"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>边缘计算 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/domain/cc/edge/</link><description>Recent content in 边缘计算 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/domain/cc/edge/index.xml" rel="self" type="application/rss+xml"/><item><title>5G 边缘计算</title><link>http://localhost:1304/note-cs/docs/domain/cc/edge/5g-edge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/edge/5g-edge/</guid><description>&lt;h1 id="5g-边缘计算"&gt;
  5G 边缘计算
+ 
  &lt;a class="anchor" href="#5g-%e8%be%b9%e7%bc%98%e8%ae%a1%e7%ae%97"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;5G 的 G 是英文 Generation 的缩写，也就是 “世代” 的意思&lt;/p&gt;
 &lt;p&gt;简单说，5G 就是第五代移动通信系统&lt;/p&gt;
 &lt;h2 id="5g-与边缘计算有什么关系"&gt;
  5G 与边缘计算有什么关系？
+ 
  &lt;a class="anchor" href="#5g-%e4%b8%8e%e8%be%b9%e7%bc%98%e8%ae%a1%e7%ae%97%e6%9c%89%e4%bb%80%e4%b9%88%e5%85%b3%e7%b3%bb"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;5G 通信网络更加&lt;strong&gt;去中心化&lt;/strong&gt;，需要在网络边缘部署小规模或者便携式数据中心，进行&lt;strong&gt;终端请求的本地化处理&lt;/strong&gt;，以满足 URLLC 和 mMTC 的超低延时需求，因此边缘计算是 5G 核心技术之一。&lt;/p&gt;
 &lt;p&gt;5G 的三大典型应用场景&lt;strong&gt;对网络性能的要求有显著差异&lt;/strong&gt;，但为控制成本，运营商必然选择&lt;strong&gt;一张承载网&lt;/strong&gt; + &lt;strong&gt;网络切片 / 边缘计算&lt;/strong&gt;技术，实现在最少的资本投入下最丰富的网络功能。&lt;/p&gt;
 &lt;p&gt;在 5G 时代，承载网的带&lt;strong&gt;宽瓶颈&lt;/strong&gt;、&lt;strong&gt;时延抖动&lt;/strong&gt;等性能瓶颈难以突破，引入边缘计算后将大量业务在网络边缘终结。&lt;/p&gt;
 &lt;h2 id="5g-与边缘计算的关系"&gt;
  5G 与边缘计算的关系
+ 
  &lt;a class="anchor" href="#5g-%e4%b8%8e%e8%be%b9%e7%bc%98%e8%ae%a1%e7%ae%97%e7%9a%84%e5%85%b3%e7%b3%bb"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;5G 为边缘计算产业的落地和发展提供了良好的网络基础，
 主要体现在三大场景（&lt;code&gt;eMBB&lt;/code&gt;，&lt;code&gt;uRLLC&lt;/code&gt; 和 &lt;code&gt;mMTC&lt;/code&gt;）的支持、核心网用户面功能的灵活部署以及 5G 网络能力开放等方面。&lt;/p&gt;

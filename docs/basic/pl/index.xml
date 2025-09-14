@@ -1,49 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.5 编程语言 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/pl/</link><description>Recent content in 1.5 编程语言 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/pl/index.xml" rel="self" type="application/rss+xml"/><item><title>C</title><link>https://kingye.me/note-cs/docs/basic/pl/c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/c/</guid><description>&lt;h1 id="c-学习笔记"&gt;
  C 学习笔记
+ 
  &lt;a class="anchor" href="#c-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-c/" target="_blank"&gt;C 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>PHP</title><link>https://kingye.me/note-cs/docs/basic/pl/php/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/php/</guid><description>&lt;h1 id="php"&gt;
  PHP
+ 
  &lt;a class="anchor" href="#php"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-php/" target="_blank"&gt;PHP 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>JavaScript</title><link>https://kingye.me/note-cs/docs/basic/pl/javascript/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/javascript/</guid><description>&lt;h1 id="javascript"&gt;
  JavaScript
+ 
  &lt;a class="anchor" href="#javascript"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-javascript/" target="_blank"&gt;JavaScript 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Python</title><link>https://kingye.me/note-cs/docs/basic/pl/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/python/</guid><description>&lt;h1 id="python"&gt;
  Python
+ 
  &lt;a class="anchor" href="#python"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-python/" target="_blank"&gt;Python 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Java</title><link>https://kingye.me/note-cs/docs/basic/pl/java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/java/</guid><description>&lt;h1 id="java"&gt;
  Java
+ 
  &lt;a class="anchor" href="#java"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-java/" target="_blank"&gt;Java 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>C++</title><link>https://kingye.me/note-cs/docs/basic/pl/cpp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/cpp/</guid><description>&lt;h1 id="c-学习笔记"&gt;
  C++ 学习笔记
+ 
  &lt;a class="anchor" href="#c-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-cpp/" target="_blank"&gt;C++ 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Go</title><link>https://kingye.me/note-cs/docs/basic/pl/go/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/go/</guid><description>&lt;h1 id="go-学习笔记"&gt;
  Go 学习笔记
+ 
  &lt;a class="anchor" href="#go-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-go/" target="_blank"&gt;Go 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Rust</title><link>https://kingye.me/note-cs/docs/basic/pl/rust/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/rust/</guid><description>&lt;h1 id="rust"&gt;
  Rust
+ 
  &lt;a class="anchor" href="#rust"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-rust/" target="_blank"&gt;Rust 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Kotlin</title><link>https://kingye.me/note-cs/docs/basic/pl/kotlin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/kotlin/</guid><description>&lt;h1 id="kotlin-学习笔记"&gt;
  Kotlin 学习笔记
+ 
  &lt;a class="anchor" href="#kotlin-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-kotlin/" target="_blank"&gt;Kotlin 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Scala</title><link>https://kingye.me/note-cs/docs/basic/pl/scala/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/scala/</guid><description>&lt;h1 id="scala"&gt;
  Scala
+ 
  &lt;a class="anchor" href="#scala"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-scala/" target="_blank"&gt;Scala 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Julia</title><link>https://kingye.me/note-cs/docs/basic/pl/julia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/julia/</guid><description>&lt;h1 id="julia"&gt;
  Julia
+ 
  &lt;a class="anchor" href="#julia"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-julia/" target="_blank"&gt;Julia 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item><item><title>C#</title><link>https://kingye.me/note-cs/docs/basic/pl/csharp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/pl/csharp/</guid><description>&lt;h1 id="c-学习笔记"&gt;
  C# 学习笔记
+ 
  &lt;a class="anchor" href="#c-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;详见：&lt;a href="https://kingye.me/note-cs/study-csharp/" target="_blank"&gt;C# 学习笔记&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

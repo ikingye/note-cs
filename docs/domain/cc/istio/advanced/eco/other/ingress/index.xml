@@ -1,51 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ingress Controller on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/</link><description>Recent content in Ingress Controller on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/index.xml" rel="self" type="application/rss+xml"/><item><title>Kong Ingress</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kong-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kong-ingress/</guid><description>&lt;h1 id="kong-ingress"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ingress Controller on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/</link><description>Recent content in Ingress Controller on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/index.xml" rel="self" type="application/rss+xml"/><item><title>Kong Ingress</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kong-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kong-ingress/</guid><description>&lt;h1 id="kong-ingress"&gt;
  Kong Ingress
+ 
  &lt;a class="anchor" href="#kong-ingress"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/Kong/kubernetes-ingress-controller"&gt;Kong/kubernetes-ingress-controller&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/Kong/kubernetes-ingress-controller.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/Kong/kubernetes-ingress-controller.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/Kong/kubernetes-ingress-controller.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/Kong/kubernetes-ingress-controller.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;p&gt;Kong for Kubernetes&lt;/p&gt;</description></item><item><title>Ambassador</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ambassador/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ambassador/</guid><description>&lt;h1 id="ambassador"&gt;
+&lt;p&gt;Kong for Kubernetes&lt;/p&gt;</description></item><item><title>Ambassador</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ambassador/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ambassador/</guid><description>&lt;h1 id="ambassador"&gt;
  Ambassador
+ 
  &lt;a class="anchor" href="#ambassador"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/datawire/ambassador"&gt;datawire/ambassador&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/datawire/ambassador.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/datawire/ambassador.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/datawire/ambassador.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/datawire/ambassador.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;p&gt;Open source Kubernetes-native API gateway for microservices built on the Envoy Proxy&lt;/p&gt;</description></item><item><title>Traefik</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/traefik/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/traefik/</guid><description>&lt;h1 id="traefik"&gt;
+&lt;p&gt;Open source Kubernetes-native API gateway for microservices built on the Envoy Proxy&lt;/p&gt;</description></item><item><title>Traefik</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/traefik/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/traefik/</guid><description>&lt;h1 id="traefik"&gt;
  Traefik
+ 
  &lt;a class="anchor" href="#traefik"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/traefik/traefik"&gt;traefik/traefik&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/traefik/traefik.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/traefik/traefik.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/traefik/traefik.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/traefik/traefik.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;The Cloud Native Application Proxy
-&lt;a href="https://traefik.io/"&gt;https://traefik.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Contour</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/contour/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/contour/</guid><description>&lt;h1 id="contour"&gt;
+&lt;a href="https://traefik.io/"&gt;https://traefik.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Contour</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/contour/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/contour/</guid><description>&lt;h1 id="contour"&gt;
  Contour
+ 
  &lt;a class="anchor" href="#contour"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/projectcontour/contour"&gt;projectcontour/contour&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/projectcontour/contour.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/projectcontour/contour.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/projectcontour/contour.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/projectcontour/contour.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;p&gt;Contour is a Kubernetes ingress controller using Envoy proxy.&lt;/p&gt;</description></item><item><title>Istio Ingress</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/istio-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/istio-ingress/</guid><description>&lt;h1 id="istio-ingress"&gt;
+&lt;p&gt;Contour is a Kubernetes ingress controller using Envoy proxy.&lt;/p&gt;</description></item><item><title>Istio Ingress</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/istio-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/istio-ingress/</guid><description>&lt;h1 id="istio-ingress"&gt;
  Istio Ingress
+ 
  &lt;a class="anchor" href="#istio-ingress"&gt;#&lt;/a&gt;
-&lt;/h1&gt;</description></item><item><title>kubernetes/ingress-nginx</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ingress-nginx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ingress-nginx/</guid><description>&lt;h1 id="nginx-ingress-controller"&gt;
+ 
+&lt;/h1&gt;</description></item><item><title>kubernetes/ingress-nginx</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ingress-nginx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/ingress-nginx/</guid><description>&lt;h1 id="nginx-ingress-controller"&gt;
  NGINX Ingress Controller
+ 
  &lt;a class="anchor" href="#nginx-ingress-controller"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/kubernetes/ingress-nginx"&gt;kubernetes/ingress-nginx&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kubernetes/ingress-nginx.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/kubernetes/ingress-nginx.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/kubernetes/ingress-nginx.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/kubernetes/ingress-nginx.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;NGINX Ingress Controller for Kubernetes
-&lt;a href="https://kubernetes.github.io/ingress-nginx/"&gt;https://kubernetes.github.io/ingress-nginx/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Haproxy Ingress</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/haproxy-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/haproxy-ingress/</guid><description>&lt;h1 id="haproxy-ingress"&gt;
+&lt;a href="https://kubernetes.github.io/ingress-nginx/"&gt;https://kubernetes.github.io/ingress-nginx/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Haproxy Ingress</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/haproxy-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/haproxy-ingress/</guid><description>&lt;h1 id="haproxy-ingress"&gt;
  Haproxy Ingress
+ 
  &lt;a class="anchor" href="#haproxy-ingress"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="jcmoraisjrhaproxy-ingress"&gt;
  jcmoraisjr/haproxy-ingress
+ 
  &lt;a class="anchor" href="#jcmoraisjrhaproxy-ingress"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://github.com/jcmoraisjr/haproxy-ingress"&gt;jcmoraisjr/haproxy-ingress&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/jcmoraisjr/haproxy-ingress.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/jcmoraisjr/haproxy-ingress.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/jcmoraisjr/haproxy-ingress.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/jcmoraisjr/haproxy-ingress.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>nginxinc/kubernetes-ingress</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kubernetes-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kubernetes-ingress/</guid><description>&lt;h1 id="nginx-ingress-controller"&gt;
+&lt;p&gt;&lt;a href="https://github.com/jcmoraisjr/haproxy-ingress"&gt;jcmoraisjr/haproxy-ingress&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/jcmoraisjr/haproxy-ingress.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/jcmoraisjr/haproxy-ingress.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/jcmoraisjr/haproxy-ingress.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/jcmoraisjr/haproxy-ingress.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>nginxinc/kubernetes-ingress</title><link>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kubernetes-ingress/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/cc/istio/advanced/eco/other/ingress/kubernetes-ingress/</guid><description>&lt;h1 id="nginx-ingress-controller"&gt;
  NGINX Ingress Controller
+ 
  &lt;a class="anchor" href="#nginx-ingress-controller"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/nginxinc/kubernetes-ingress"&gt;nginxinc/kubernetes-ingress&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/nginxinc/kubernetes-ingress.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/nginxinc/kubernetes-ingress.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/nginxinc/kubernetes-ingress.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/nginxinc/kubernetes-ingress.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;NGINX and NGINX Plus Ingress Controllers for Kubernetes
 &lt;a href="https://docs.nginx.com/nginx-ingress-controller/"&gt;https://docs.nginx.com/nginx-ingress-controller/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="nginxinckubernetes-ingress-vs-kubernetesingress-nginx"&gt;
  &lt;code&gt;nginxinc/kubernetes-ingress&lt;/code&gt; vs &lt;code&gt;kubernetes/ingress-nginx&lt;/code&gt;
+ 
  &lt;a class="anchor" href="#nginxinckubernetes-ingress-vs-kubernetesingress-nginx"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;

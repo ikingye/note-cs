@@ -1,39 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.1 MacOS on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/macos/</link><description>Recent content in 4.1 MacOS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/macos/index.xml" rel="self" type="application/rss+xml"/><item><title>图床</title><link>https://kingye.me/note-cs/docs/tool/macos/imagehost/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/imagehost/</guid><description>&lt;h1 id="图床"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.1 MacOS on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/tool/macos/</link><description>Recent content in 4.1 MacOS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/tool/macos/index.xml" rel="self" type="application/rss+xml"/><item><title>图床</title><link>http://localhost:1304/note-cs/docs/tool/macos/imagehost/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/imagehost/</guid><description>&lt;h1 id="图床"&gt;
  图床
+ 
  &lt;a class="anchor" href="#%e5%9b%be%e5%ba%8a"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="图床选择"&gt;
  图床选择
+ 
  &lt;a class="anchor" href="#%e5%9b%be%e5%ba%8a%e9%80%89%e6%8b%a9"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="github--jsdelivr"&gt;
  GitHub + &lt;a href="https://www.jsdelivr.com/"&gt;jsdelivr&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#github--jsdelivr"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h2 id="上传图床软件"&gt;
  上传图床软件
+ 
  &lt;a class="anchor" href="#%e4%b8%8a%e4%bc%a0%e5%9b%be%e5%ba%8a%e8%bd%af%e4%bb%b6"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="picgo"&gt;
  PicGo
+ 
  &lt;a class="anchor" href="#picgo"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;参考官网：&lt;a href="https://github.com/Molunerfinn/PicGo"&gt;https://github.com/Molunerfinn/PicGo&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id="vs-picgo"&gt;
  vs-picgo
+ 
  &lt;a class="anchor" href="#vs-picgo"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
-&lt;p&gt;&lt;a href="https://github.com/PicGo/vs-picgo"&gt;https://github.com/PicGo/vs-picgo&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Codelabs</title><link>https://kingye.me/note-cs/docs/tool/macos/codelabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/codelabs/</guid><description>&lt;h1 id="codelabs"&gt;
+&lt;p&gt;&lt;a href="https://github.com/PicGo/vs-picgo"&gt;https://github.com/PicGo/vs-picgo&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Codelabs</title><link>http://localhost:1304/note-cs/docs/tool/macos/codelabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/codelabs/</guid><description>&lt;h1 id="codelabs"&gt;
  Codelabs
+ 
  &lt;a class="anchor" href="#codelabs"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="简介"&gt;
  简介
+ 
  &lt;a class="anchor" href="#%e7%ae%80%e4%bb%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h2 id="google-developers-codelabs"&gt;
  &lt;a href="https://codelabs.developers.google.com/"&gt;Google Developers Codelabs&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#google-developers-codelabs"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://clmirror.storage.googleapis.com/index.html"&gt;中国内地访问 clmirror.storage.googleapis.com&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -41,36 +59,50 @@
 &lt;/ul&gt;
 &lt;h2 id="googlecodelabstools"&gt;
  &lt;a href="https://github.com/googlecodelabs/tools"&gt;googlecodelabs/tools&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#googlecodelabstools"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
-&lt;p&gt;Codelabs management &amp;amp; hosting tools&lt;/p&gt;</description></item><item><title>Hugo</title><link>https://kingye.me/note-cs/docs/tool/macos/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/hugo/</guid><description>&lt;h1 id="hugo-快速上手"&gt;
+&lt;p&gt;Codelabs management &amp;amp; hosting tools&lt;/p&gt;</description></item><item><title>Hugo</title><link>http://localhost:1304/note-cs/docs/tool/macos/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/hugo/</guid><description>&lt;h1 id="hugo-快速上手"&gt;
  Hugo 快速上手
+ 
  &lt;a class="anchor" href="#hugo-%e5%bf%ab%e9%80%9f%e4%b8%8a%e6%89%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="简介"&gt;
  简介
+ 
  &lt;a class="anchor" href="#%e7%ae%80%e4%bb%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;参考官网：&lt;a href="https://gohugo.io/"&gt;https://gohugo.io&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id="hugo-配置"&gt;
  Hugo 配置
+ 
  &lt;a class="anchor" href="#hugo-%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;参考：&lt;a href="https://themes.gohugo.io/hugo-book/"&gt;https://themes.gohugo.io/hugo-book&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id="hugo-主题"&gt;
  Hugo 主题
+ 
  &lt;a class="anchor" href="#hugo-%e4%b8%bb%e9%a2%98"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="hugo-academic"&gt;
  hugo-academic
+ 
  &lt;a class="anchor" href="#hugo-academic"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;适合作为个人主页，内容比较丰富，尤其适合作为技术或科研人员的博客。&lt;/p&gt;
 &lt;h2 id="hugo-book"&gt;
  hugo-book
+ 
  &lt;a class="anchor" href="#hugo-book"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;适合记笔记，或者写书。我很喜欢他右侧的页面目录，类似&lt;a href="https://yuque.com"&gt;语雀&lt;/a&gt;。&lt;/li&gt;
@@ -82,25 +114,35 @@
 &lt;hr&gt;
 &lt;h1 id="academic"&gt;
  &lt;a href="https://sourcethemes.com/academic/"&gt;Academic&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#academic"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="配置"&gt;
  配置
+ 
  &lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h2 id="写博客"&gt;
  写博客
+ 
  &lt;a class="anchor" href="#%e5%86%99%e5%8d%9a%e5%ae%a2"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;hugo new &amp;ndash;kind post post/my-post&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id="hugo-book-1"&gt;
  hugo-book
+ 
  &lt;a class="anchor" href="#hugo-book-1"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="参考"&gt;
  参考
+ 
  &lt;a class="anchor" href="#%e5%8f%82%e8%80%83"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/alex-shpak/hugo-book"&gt;https://github.com/alex-shpak/hugo-book&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/alex-shpak/hugo-book.svg" alt="Github stars" /&gt;
@@ -110,67 +152,95 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/KaTeX/KaTeX"&gt;KaTeX/KaTeX&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/KaTeX/KaTeX.svg" alt="Github stars" /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.wikiwand.com/zh-cn/TeX"&gt;TeX wiki&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Claude Code</title><link>https://kingye.me/note-cs/docs/tool/macos/claude-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/claude-code/</guid><description>&lt;h1 id="claude-code"&gt;
+&lt;/ul&gt;</description></item><item><title>Claude Code</title><link>http://localhost:1304/note-cs/docs/tool/macos/claude-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/claude-code/</guid><description>&lt;h1 id="claude-code"&gt;
  Claude Code
+ 
  &lt;a class="anchor" href="#claude-code"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/anthropics/claude-code"&gt;anthropics/claude-code&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/anthropics/claude-code.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/anthropics/claude-code.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/anthropics/claude-code.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/anthropics/claude-code.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/anthropics/claude-code.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Codex CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/codex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/codex/</guid><description>&lt;h1 id="codex-cli"&gt;
+&lt;p&gt;&lt;a href="https://github.com/anthropics/claude-code"&gt;anthropics/claude-code&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/anthropics/claude-code.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/anthropics/claude-code.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/anthropics/claude-code.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/anthropics/claude-code.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/anthropics/claude-code.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Codex CLI</title><link>http://localhost:1304/note-cs/docs/tool/macos/codex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/codex/</guid><description>&lt;h1 id="codex-cli"&gt;
  Codex CLI
+ 
  &lt;a class="anchor" href="#codex-cli"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/openai/codex"&gt;openai/codex&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/openai/codex.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/openai/codex.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/openai/codex.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/openai/codex.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/openai/codex.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Gemini CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</guid><description>&lt;h1 id="gemini-cli"&gt;
+&lt;p&gt;&lt;a href="https://github.com/openai/codex"&gt;openai/codex&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/openai/codex.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/openai/codex.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/openai/codex.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/openai/codex.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/openai/codex.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Gemini CLI</title><link>http://localhost:1304/note-cs/docs/tool/macos/gemini-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/gemini-cli/</guid><description>&lt;h1 id="gemini-cli"&gt;
  Gemini CLI
+ 
  &lt;a class="anchor" href="#gemini-cli"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/google-gemini/gemini-cli"&gt;google-gemini/gemini-cli&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/google-gemini/gemini-cli.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/google-gemini/gemini-cli.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/google-gemini/gemini-cli.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/google-gemini/gemini-cli.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/google-gemini/gemini-cli.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Anki</title><link>https://kingye.me/note-cs/docs/tool/macos/anki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/anki/</guid><description>&lt;h1 id="anki"&gt;
+&lt;p&gt;&lt;a href="https://github.com/google-gemini/gemini-cli"&gt;google-gemini/gemini-cli&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/google-gemini/gemini-cli.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/google-gemini/gemini-cli.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/google-gemini/gemini-cli.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/google-gemini/gemini-cli.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/google-gemini/gemini-cli.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Anki</title><link>http://localhost:1304/note-cs/docs/tool/macos/anki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/anki/</guid><description>&lt;h1 id="anki"&gt;
  Anki
+ 
  &lt;a class="anchor" href="#anki"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="插件"&gt;
  插件
+ 
  &lt;a class="anchor" href="#%e6%8f%92%e4%bb%b6"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="glutanimatereview-heatmap-github-stars"&gt;
  &lt;a href="https://github.com/glutanimate/review-heatmap"&gt;glutanimate/review-heatmap&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/glutanimate/review-heatmap.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#glutanimatereview-heatmap-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;Anki add-on to help you keep track of your review activity&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200922150931.png" alt="" /&gt;&lt;/p&gt;
 &lt;h3 id="ninja33odh-github-stars"&gt;
  &lt;a href="https://github.com/ninja33/ODH"&gt;ninja33/ODH&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ninja33/ODH.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#ninja33odh-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;在线词典助手&lt;/p&gt;
 &lt;h4 id="ankiconnect"&gt;
  AnkiConnect
+ 
  &lt;a class="anchor" href="#ankiconnect"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;p&gt;该插件用于 Anki PC 客户端扩展功能，配合 Chrome 插件《Anki 划词制卡助手》 或者 《在线词典助手》使用。
 &lt;a href="https://www.laohuang.net/20160817/ankiconnect-py-file/"&gt;https://www.laohuang.net/20160817/ankiconnect-py-file/&lt;/a&gt;&lt;/p&gt;
 &lt;h5 id="notes-for-mac-os-x-users"&gt;
  Notes for Mac OS X Users
+ 
  &lt;a class="anchor" href="#notes-for-mac-os-x-users"&gt;#&lt;/a&gt;
+ 
 &lt;/h5&gt;
-&lt;p&gt;Starting with &lt;a href="https://en.wikipedia.org/wiki/OS_X_Mavericks"&gt;Mac OS X Mavericks&lt;/a&gt;, a feature named &lt;em&gt;App Nap&lt;/em&gt; has been introduced to the operating system. This feature causes certain applications which are open (but not visible) to be placed in a suspended state. As this behavior causes AnkiConnect to stop working while you have another window in the foreground, App Nap should be disabled for Anki:&lt;/p&gt;</description></item><item><title>AutoCut</title><link>https://kingye.me/note-cs/docs/tool/macos/autocut/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/autocut/</guid><description>&lt;h1 id="autocut"&gt;
+&lt;p&gt;Starting with &lt;a href="https://en.wikipedia.org/wiki/OS_X_Mavericks"&gt;Mac OS X Mavericks&lt;/a&gt;, a feature named &lt;em&gt;App Nap&lt;/em&gt; has been introduced to the operating system. This feature causes certain applications which are open (but not visible) to be placed in a suspended state. As this behavior causes AnkiConnect to stop working while you have another window in the foreground, App Nap should be disabled for Anki:&lt;/p&gt;</description></item><item><title>AutoCut</title><link>http://localhost:1304/note-cs/docs/tool/macos/autocut/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/autocut/</guid><description>&lt;h1 id="autocut"&gt;
  AutoCut
+ 
  &lt;a class="anchor" href="#autocut"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="安装"&gt;
  安装
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install git+https://github.com/mli/autocut.git
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gitbook</title><link>https://kingye.me/note-cs/docs/tool/macos/gitbook/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/gitbook/</guid><description>&lt;h1 id="gitbook"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gitbook</title><link>http://localhost:1304/note-cs/docs/tool/macos/gitbook/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/gitbook/</guid><description>&lt;h1 id="gitbook"&gt;
  Gitbook
+ 
  &lt;a class="anchor" href="#gitbook"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="gitbook-serve"&gt;
  gitbook serve
+ 
  &lt;a class="anchor" href="#gitbook-serve"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="serve-多个笔记本"&gt;
  serve 多个笔记本
+ 
  &lt;a class="anchor" href="#serve-%e5%a4%9a%e4%b8%aa%e7%ac%94%e8%ae%b0%e6%9c%ac"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;&amp;ndash;port Port for server to listen on (Default is 4000)&lt;/p&gt;
 &lt;p&gt;&amp;ndash;lrport Port for livereload server to listen on (Default is 35729)&lt;/p&gt;
@@ -180,61 +250,83 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gitbook --lrport &lt;span style="color:#ae81ff"&gt;35730&lt;/span&gt; --port &lt;span style="color:#ae81ff"&gt;4001&lt;/span&gt; serve
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;another:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gitbook --lrport &lt;span style="color:#ae81ff"&gt;35731&lt;/span&gt; --port &lt;span style="color:#ae81ff"&gt;4002&lt;/span&gt; serve
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>.NET</title><link>https://kingye.me/note-cs/docs/tool/macos/dotnet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/dotnet/</guid><description>&lt;h1 id="net"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>.NET</title><link>http://localhost:1304/note-cs/docs/tool/macos/dotnet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/dotnet/</guid><description>&lt;h1 id="net"&gt;
  .NET
+ 
  &lt;a class="anchor" href="#net"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-8.0.100-macos-arm64-installer"&gt;.NET 8.0 SDK (v8.0.100) - macOS Arm64 Installer!&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装 .NET SDK&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install --cask dotnet-sdk
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>adb</title><link>https://kingye.me/note-cs/docs/tool/macos/adb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/adb/</guid><description>&lt;h1 id="adb"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>adb</title><link>http://localhost:1304/note-cs/docs/tool/macos/adb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/adb/</guid><description>&lt;h1 id="adb"&gt;
  adb
+ 
  &lt;a class="anchor" href="#adb"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="安装"&gt;
  安装
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install android-platform-tools
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="教程"&gt;
  教程
+ 
  &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 启动&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;adb devices
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Axure</title><link>https://kingye.me/note-cs/docs/tool/macos/axure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/axure/</guid><description>&lt;h1 id="axure-rp"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Axure</title><link>http://localhost:1304/note-cs/docs/tool/macos/axure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/axure/</guid><description>&lt;h1 id="axure-rp"&gt;
  Axure RP
+ 
  &lt;a class="anchor" href="#axure-rp"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;Rapid Prototyping&lt;/code&gt; 快速原型&lt;/p&gt;
 &lt;h2 id="快捷键"&gt;
  快捷键
+ 
  &lt;a class="anchor" href="#%e5%bf%ab%e6%8d%b7%e9%94%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;cmd + D: 副本&lt;/li&gt;
 &lt;li&gt;cmd + R: 替换&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>C#</title><link>https://kingye.me/note-cs/docs/tool/macos/csharp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/csharp/</guid><description>&lt;h1 id="c"&gt;
+&lt;/ul&gt;</description></item><item><title>C#</title><link>http://localhost:1304/note-cs/docs/tool/macos/csharp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/csharp/</guid><description>&lt;h1 id="c"&gt;
  C#
+ 
  &lt;a class="anchor" href="#c"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="使用-visual-studio-code-写-c-程序"&gt;
  使用 Visual Studio Code 写 C# 程序
+ 
  &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8-visual-studio-code-%e5%86%99-c-%e7%a8%8b%e5%ba%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="c-dev-kit"&gt;
  C# Dev Kit
+ 
  &lt;a class="anchor" href="#c-dev-kit"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;C# Dev Kit helps you manage your code with a solution explorer and test your code with integrated unit test discovery and execution, elevating your C# development experience wherever you like to develop (Windows, macOS, Linux, and even in a Codespace).&lt;/p&gt;
-&lt;p&gt;This extension builds on top of the great C# language capabilities provided by the &lt;a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp"&gt;C# extension, 即 vscode-csharp&lt;/a&gt; and enhances your C# environment by adding a set of powerful tools and utilities that integrate natively with VS Code to help C# developers write, debug, and maintain their code faster and with fewer errors. Some of this new tooling includes but is not limited to:&lt;/p&gt;</description></item><item><title>Capslock</title><link>https://kingye.me/note-cs/docs/tool/macos/capslock/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/capslock/</guid><description>&lt;h1 id="capslock"&gt;
+&lt;p&gt;This extension builds on top of the great C# language capabilities provided by the &lt;a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp"&gt;C# extension, 即 vscode-csharp&lt;/a&gt; and enhances your C# environment by adding a set of powerful tools and utilities that integrate natively with VS Code to help C# developers write, debug, and maintain their code faster and with fewer errors. Some of this new tooling includes but is not limited to:&lt;/p&gt;</description></item><item><title>Capslock</title><link>http://localhost:1304/note-cs/docs/tool/macos/capslock/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/capslock/</guid><description>&lt;h1 id="capslock"&gt;
  Capslock
+ 
  &lt;a class="anchor" href="#capslock"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/Vonng/Capslock"&gt;Vonng/Capslock&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/Vonng/Capslock.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/Vonng/Capslock.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/Vonng/Capslock.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/Vonng/Capslock.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/Vonng/Capslock.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;p&gt;让 Capslock 再次伟大！&lt;/p&gt;</description></item><item><title>conda</title><link>https://kingye.me/note-cs/docs/tool/macos/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/conda/</guid><description>&lt;h1 id="conda"&gt;
+&lt;p&gt;让 Capslock 再次伟大！&lt;/p&gt;</description></item><item><title>conda</title><link>http://localhost:1304/note-cs/docs/tool/macos/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/conda/</guid><description>&lt;h1 id="conda"&gt;
  conda
+ 
  &lt;a class="anchor" href="#conda"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir -p ~/miniconda3
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
@@ -246,7 +338,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;~/miniconda3/bin/conda init zsh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="基础用法"&gt;
  基础用法
+ 
  &lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e7%94%a8%e6%b3%95"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda create --name d2l python&lt;span style="color:#f92672"&gt;=&lt;/span&gt;3.12 -y
@@ -263,19 +357,25 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 取消默认激活&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda config --set auto_activate_base false
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# conda config --show | grep auto_activate_base&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Flowchart</title><link>https://kingye.me/note-cs/docs/tool/macos/flowchart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/flowchart/</guid><description>&lt;h1 id="flowchart"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Flowchart</title><link>http://localhost:1304/note-cs/docs/tool/macos/flowchart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/flowchart/</guid><description>&lt;h1 id="flowchart"&gt;
  Flowchart
+ 
  &lt;a class="anchor" href="#flowchart"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/adrai/flowchart.js"&gt;adrai/flowchart.js&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/adrai/flowchart.js.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/adrai/flowchart.js.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/adrai/flowchart.js.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/adrai/flowchart.js.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Draws simple SVG flow chart diagrams from textual representation of the diagram
-&lt;a href="http://flowchart.js.org/"&gt;http://flowchart.js.org/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Git</title><link>https://kingye.me/note-cs/docs/tool/macos/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/git/</guid><description>&lt;h1 id="git"&gt;
+&lt;a href="http://flowchart.js.org/"&gt;http://flowchart.js.org/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Git</title><link>http://localhost:1304/note-cs/docs/tool/macos/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/git/</guid><description>&lt;h1 id="git"&gt;
  Git
+ 
  &lt;a class="anchor" href="#git"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="分支"&gt;
  分支
+ 
  &lt;a class="anchor" href="#%e5%88%86%e6%94%af"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 本地仓库 分支引用&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;refs/heads/v1.0.0
@@ -287,7 +387,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id="tag"&gt;
  tag
+ 
  &lt;a class="anchor" href="#tag"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;远程 tag 被视为本地 tag 的一种，它们都存储在 refs/tags/ 路径下。当你从远程仓库拉取或推送 tag 时，Git 会自动同步这些 tag 到本地仓库中的 refs/tags/ 路径&lt;/li&gt;
@@ -295,11 +397,15 @@
 &lt;hr&gt;
 &lt;h2 id="分支和-tag-重名"&gt;
  分支和 tag 重名
+ 
  &lt;a class="anchor" href="#%e5%88%86%e6%94%af%e5%92%8c-tag-%e9%87%8d%e5%90%8d"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="远程有个-v100-tag想基于它拉一个远程-v100-分支"&gt;
  远程有个 v1.0.0 tag，想基于它拉一个远程 v1.0.0 分支
+ 
  &lt;a class="anchor" href="#%e8%bf%9c%e7%a8%8b%e6%9c%89%e4%b8%aa-v100-tag%e6%83%b3%e5%9f%ba%e4%ba%8e%e5%ae%83%e6%8b%89%e4%b8%80%e4%b8%aa%e8%bf%9c%e7%a8%8b-v100-%e5%88%86%e6%94%af"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 本地拉 v1.0.0 tag&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git fetch origin tag v1.0.0
@@ -311,13 +417,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 把本地分支推送到远程分支&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push origin refs/heads/v2.11.3:refs/heads/v2.11.3
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;原理：&lt;/p&gt;</description></item><item><title>GitHub</title><link>https://kingye.me/note-cs/docs/tool/macos/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/github/</guid><description>&lt;h1 id="github"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;原理：&lt;/p&gt;</description></item><item><title>GitHub</title><link>http://localhost:1304/note-cs/docs/tool/macos/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/github/</guid><description>&lt;h1 id="github"&gt;
  GitHub
+ 
  &lt;a class="anchor" href="#github"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="设置代理"&gt;
  设置代理
+ 
  &lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global http.proxy &lt;span style="color:#e6db74"&gt;&amp;#34;http://127.0.0.1:8081&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git config --global https.proxy &lt;span style="color:#e6db74"&gt;&amp;#34;http://127.0.0.1:8081&amp;#34;&lt;/span&gt;
@@ -332,41 +442,59 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id="学习-github"&gt;
  学习 Github
+ 
  &lt;a class="anchor" href="#%e5%ad%a6%e4%b9%a0-github"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="github-learning-lab"&gt;
  &lt;a href="https://lab.github.com/"&gt;Github Learning Lab&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#github-learning-lab"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="introduction-to-github"&gt;
  &lt;a href="https://lab.github.com/githubtraining/introduction-to-github"&gt;Introduction to GitHub&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#introduction-to-github"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;hr&gt;
 &lt;h2 id="github-工具"&gt;
  Github 工具
+ 
  &lt;a class="anchor" href="#github-%e5%b7%a5%e5%85%b7"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="clicli-github-stars"&gt;
  &lt;a href="https://github.com/cli/cli"&gt;cli/cli&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/cli/cli.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#clicli-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;GitHub’s official command line tool &lt;a href="https://cli.github.com"&gt;https://cli.github.com&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="githubhub-github-stars"&gt;
  &lt;a href="https://github.com/github/hub"&gt;github/hub&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/github/hub.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#githubhub-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
-&lt;p&gt;A command-line tool that makes git easier to use with GitHub. &lt;a href="https://hub.github.com/"&gt;https://hub.github.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Goland</title><link>https://kingye.me/note-cs/docs/tool/macos/goland/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/goland/</guid><description>&lt;h1 id="goland"&gt;
+&lt;p&gt;A command-line tool that makes git easier to use with GitHub. &lt;a href="https://hub.github.com/"&gt;https://hub.github.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Goland</title><link>http://localhost:1304/note-cs/docs/tool/macos/goland/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/goland/</guid><description>&lt;h1 id="goland"&gt;
  Goland
+ 
  &lt;a class="anchor" href="#goland"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="快捷键"&gt;
  快捷键
+ 
  &lt;a class="anchor" href="#%e5%bf%ab%e6%8d%b7%e9%94%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="跳转"&gt;
  跳转
+ 
  &lt;a class="anchor" href="#%e8%b7%b3%e8%bd%ac"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -381,7 +509,9 @@
 &lt;/ul&gt;
 &lt;h3 id="查询"&gt;
  查询
+ 
  &lt;a class="anchor" href="#%e6%9f%a5%e8%af%a2"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -402,7 +532,9 @@
 &lt;/ul&gt;
 &lt;h3 id="选择"&gt;
  选择
+ 
  &lt;a class="anchor" href="#%e9%80%89%e6%8b%a9"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;选中下一个相同内容 &lt;code&gt;ctrl + G&lt;/code&gt;&lt;/li&gt;
@@ -415,7 +547,9 @@
 &lt;/ul&gt;
 &lt;h3 id="修改"&gt;
  修改
+ 
  &lt;a class="anchor" href="#%e4%bf%ae%e6%94%b9"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;复制当前行内容到下一行 &lt;code&gt;cmd + D&lt;/code&gt;&lt;/li&gt;
@@ -429,32 +563,42 @@
 &lt;hr&gt;
 &lt;h2 id="license"&gt;
  license
+ 
  &lt;a class="anchor" href="#license"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;下载 &lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Graphviz</title><link>https://kingye.me/note-cs/docs/tool/macos/graphviz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/graphviz/</guid><description>&lt;h1 id="graphviz"&gt;
+&lt;/ul&gt;</description></item><item><title>Graphviz</title><link>http://localhost:1304/note-cs/docs/tool/macos/graphviz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/graphviz/</guid><description>&lt;h1 id="graphviz"&gt;
  Graphviz
+ 
  &lt;a class="anchor" href="#graphviz"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://gitlab.com/graphviz/graphviz"&gt;graphviz/graphviz&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.graphviz.org/documentation/"&gt;http://www.graphviz.org/documentation/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="插件"&gt;
  插件
+ 
  &lt;a class="anchor" href="#%e6%8f%92%e4%bb%b6"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/xflr6/graphviz"&gt;xflr6/graphviz&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/xflr6/graphviz.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/xflr6/graphviz.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/xflr6/graphviz.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/xflr6/graphviz.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Simple Python interface for Graphviz
-&lt;a href="https://graphviz.readthedocs.io/"&gt;https://graphviz.readthedocs.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>gvm</title><link>https://kingye.me/note-cs/docs/tool/macos/gvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/gvm/</guid><description>&lt;h1 id="gvm"&gt;
+&lt;a href="https://graphviz.readthedocs.io/"&gt;https://graphviz.readthedocs.io/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>gvm</title><link>http://localhost:1304/note-cs/docs/tool/macos/gvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/gvm/</guid><description>&lt;h1 id="gvm"&gt;
  gvm
+ 
  &lt;a class="anchor" href="#gvm"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/moovweb/gvm"&gt;moovweb/gvm&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/moovweb/gvm.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/moovweb/gvm.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/moovweb/gvm.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/moovweb/gvm.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;安装：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh &amp;lt; &amp;lt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="mac-m1"&gt;
  mac m1
+ 
  &lt;a class="anchor" href="#mac-m1"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;mac m1 使用 gvm 安装 arm64 版本的 go&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;file ~/.gvm/gos/go1.16.15/bin/go
@@ -463,7 +607,9 @@
 &lt;hr&gt;
 &lt;h2 id="rror-couldnt-remove-pkgsets"&gt;
  &lt;code&gt;RROR: Couldn't remove pkgsets&lt;/code&gt;
+ 
  &lt;a class="anchor" href="#rror-couldnt-remove-pkgsets"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gvm use go1.11.1
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;go clean -modcache
@@ -479,35 +625,49 @@
 &lt;hr&gt;
 &lt;h2 id="代理"&gt;
  代理
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>HHKB</title><link>https://kingye.me/note-cs/docs/tool/macos/hhkb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/hhkb/</guid><description>&lt;h1 id="hhkb-键盘"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>HHKB</title><link>http://localhost:1304/note-cs/docs/tool/macos/hhkb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/hhkb/</guid><description>&lt;h1 id="hhkb-键盘"&gt;
  &lt;a href="https://www.wikiwand.com/zh-cn/Happy_Hacking_Keyboard"&gt;HHKB 键盘&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#hhkb-%e9%94%ae%e7%9b%98"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Happy Hacking Keyboard&lt;/p&gt;
 &lt;h2 id="使用"&gt;
  使用
+ 
  &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="方向键"&gt;
  方向键
+ 
  &lt;a class="anchor" href="#%e6%96%b9%e5%90%91%e9%94%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
-&lt;p&gt;右侧的 Fn 键 + &lt;code&gt;[ / ; '&lt;/code&gt;&lt;/p&gt;</description></item><item><title>homebrew</title><link>https://kingye.me/note-cs/docs/tool/macos/brew/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/brew/</guid><description>&lt;h1 id="homebrew"&gt;
+&lt;p&gt;右侧的 Fn 键 + &lt;code&gt;[ / ; '&lt;/code&gt;&lt;/p&gt;</description></item><item><title>homebrew</title><link>http://localhost:1304/note-cs/docs/tool/macos/brew/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/brew/</guid><description>&lt;h1 id="homebrew"&gt;
  Homebrew
+ 
  &lt;a class="anchor" href="#homebrew"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="tap"&gt;
  tap
+ 
  &lt;a class="anchor" href="#tap"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;brew tap 可以为 brew 的软件的 跟踪，更新，安装添加更多的的 tap formulae&lt;/p&gt;
 &lt;p&gt;如果你在核心仓库没有找到你需要的软件，那么你就需要安装第三方的仓库去安装你需要的软件&lt;/p&gt;
 &lt;p&gt;tap 命令的仓库源默认来至于 Github，但是这个命令也不限制于这一个地方&lt;/p&gt;
 &lt;h3 id="brew-tap"&gt;
  brew tap
+ 
  &lt;a class="anchor" href="#brew-tap"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;没有参数会自动更新已经存在的 tap 并列出当前已经 tapped 的仓库&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# URL 默认是 https://github.com/user/homebrew-repo&lt;/span&gt;
@@ -528,11 +688,15 @@
 &lt;hr&gt;
 &lt;h2 id="镜像加速"&gt;
  镜像加速
+ 
  &lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%8a%a0%e9%80%9f"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="清华大学镜像"&gt;
  &lt;a href="https://mirror.tuna.tsinghua.edu.cn/help/homebrew/"&gt;清华大学镜像&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#%e6%b8%85%e5%8d%8e%e5%a4%a7%e5%ad%a6%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 替换 brew 程序本身的源&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# export HOMEBREW_API_DOMAIN=&lt;/span&gt;
@@ -548,40 +712,56 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id="参考"&gt;
  参考
+ 
  &lt;a class="anchor" href="#%e5%8f%82%e8%80%83"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/19862108"&gt;Homebrew 和 Fink、MacPort 相比有什么优势？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.raydbg.com/2019/Homebrew-Update-Slow/"&gt;解决 Homebrew 下载更新极慢的问题&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>IntelliJ IDEA</title><link>https://kingye.me/note-cs/docs/tool/macos/idea/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/idea/</guid><description>&lt;h1 id="intellij-idea"&gt;
+&lt;/ul&gt;</description></item><item><title>IntelliJ IDEA</title><link>http://localhost:1304/note-cs/docs/tool/macos/idea/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/idea/</guid><description>&lt;h1 id="intellij-idea"&gt;
  IntelliJ IDEA
+ 
  &lt;a class="anchor" href="#intellij-idea"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="插件"&gt;
  插件
+ 
  &lt;a class="anchor" href="#%e6%8f%92%e4%bb%b6"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="alibaba-java-coding-guidelines"&gt;
  &lt;a href="https://github.com/alibaba/p3c/tree/master/idea-plugin"&gt;Alibaba Java Coding Guidelines&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#alibaba-java-coding-guidelines"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;hr&gt;
 &lt;h2 id="教程"&gt;
  教程
+ 
  &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="xiaoxiuniquetool-tips-github-stars"&gt;
  &lt;a href="https://github.com/xiaoxiunique/tool-tips"&gt;xiaoxiunique/tool-tips&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/xiaoxiunique/tool-tips.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#xiaoxiuniquetool-tips-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;idea 中相见恨晚的技巧
-&lt;a href="https://atips.cn/idea/"&gt;https://atips.cn/idea/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Jupyter</title><link>https://kingye.me/note-cs/docs/tool/macos/jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/jupyter/</guid><description>&lt;h1 id="jupyter"&gt;
+&lt;a href="https://atips.cn/idea/"&gt;https://atips.cn/idea/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Jupyter</title><link>http://localhost:1304/note-cs/docs/tool/macos/jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/jupyter/</guid><description>&lt;h1 id="jupyter"&gt;
  Jupyter
+ 
  &lt;a class="anchor" href="#jupyter"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="安装"&gt;
  安装
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# install jupyterlab&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipx install jupyterlab --include-deps
@@ -615,14 +795,16 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# notebook : 6.5.7&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# qtconsole : 5.5.2&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# traitlets : 5.14.3&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KaTeX</title><link>https://kingye.me/note-cs/docs/tool/macos/katex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/katex/</guid><description>&lt;h1 id="katex"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KaTeX</title><link>http://localhost:1304/note-cs/docs/tool/macos/katex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/katex/</guid><description>&lt;h1 id="katex"&gt;
  KaTeX
+ 
  &lt;a class="anchor" href="#katex"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 
-&lt;link rel="stylesheet" href="https://kingye.me/note-cs/katex/katex.min.css" /&gt;
-&lt;script defer src="https://kingye.me/note-cs/katex/katex.min.js"&gt;&lt;/script&gt;
-&lt;script defer src="https://kingye.me/note-cs/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
+&lt;link rel="stylesheet" href="http://localhost:1304/note-cs/katex/katex.min.css" /&gt;
+&lt;script defer src="http://localhost:1304/note-cs/katex/katex.min.js"&gt;&lt;/script&gt;
+&lt;script defer src="http://localhost:1304/note-cs/katex/auto-render.min.js" onload="renderMathInElement(document.body, {
  delimiters: [
  {left: '$$', right: '$$', display: true},
  {left: '\\[', right: '\\]', display: true},
@@ -641,9 +823,11 @@
 L(Y,f(X))=\left{\begin{matrix}
 1,Y\neq f(X) \
 0,Y = f(X)\end{matrix}\right.
-$$&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingye.me/note-cs/docs/tool/macos/kubectx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/kubectx/</guid><description>&lt;h1 id="kubectx"&gt;
+$$&lt;/p&gt;</description></item><item><title>kubectx</title><link>http://localhost:1304/note-cs/docs/tool/macos/kubectx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/kubectx/</guid><description>&lt;h1 id="kubectx"&gt;
  kubectx
+ 
  &lt;a class="anchor" href="#kubectx"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/ahmetb/kubectx"&gt;ahmetb/kubectx&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ahmetb/kubectx.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ahmetb/kubectx.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ahmetb/kubectx.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ahmetb/kubectx.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ahmetb/kubectx.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
@@ -662,7 +846,9 @@ $$&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingy
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kn xxx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="kubemerge"&gt;
  kubemerge
+ 
  &lt;a class="anchor" href="#kubemerge"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# vim ~/.zshrc&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -715,9 +901,11 @@ $$&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingy
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;		&lt;span style="color:#66d9ef"&gt;fi&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;	&lt;span style="color:#66d9ef"&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>LaTeX</title><link>https://kingye.me/note-cs/docs/tool/macos/latex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/latex/</guid><description>&lt;h1 id="latex"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>LaTeX</title><link>http://localhost:1304/note-cs/docs/tool/macos/latex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/latex/</guid><description>&lt;h1 id="latex"&gt;
  LaTeX
+ 
  &lt;a class="anchor" href="#latex"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/latex3/latex2e"&gt;latex3/latex2e&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/latex3/latex2e.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/latex3/latex2e.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/latex3/latex2e.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/latex3/latex2e.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;The LaTeX2e kernel
@@ -728,12 +916,16 @@ $$&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingy
 &lt;hr&gt;
 &lt;h2 id="mathpix"&gt;
  &lt;a href="https://mathpix.com/"&gt;Mathpix&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#mathpix"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;Mathpix 允许你截取复杂数学方程式的截图，并立即将其转换为 LaTeX 可编辑文本。&lt;/p&gt;
 &lt;h2 id="参考"&gt;
  参考
+ 
  &lt;a class="anchor" href="#%e5%8f%82%e8%80%83"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/26645810"&gt;自学 LaTeX 可以读什么书入门？&lt;/a&gt;&lt;/li&gt;
@@ -745,14 +937,18 @@ $$&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingy
 &lt;li&gt;&lt;a href="https://editor.codecogs.com/"&gt;LaTeX 在线编辑器&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://liam.page/2014/09/08/latex-introduction/"&gt;一份其实很短的 LaTeX 入门文档&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.cnblogs.com/dingdangsunny/p/12312966.html"&gt;LaTeX 数学符号对应表&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>mamba</title><link>https://kingye.me/note-cs/docs/tool/macos/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/mamba/</guid><description>&lt;h1 id="mamba"&gt;
+&lt;/ul&gt;</description></item><item><title>mamba</title><link>http://localhost:1304/note-cs/docs/tool/macos/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/mamba/</guid><description>&lt;h1 id="mamba"&gt;
  mamba
+ 
  &lt;a class="anchor" href="#mamba"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/conda-forge/miniforge"&gt;conda-forge/miniforge&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/conda-forge/miniforge.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/conda-forge/miniforge.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/conda-forge/miniforge.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/conda-forge/miniforge.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/conda-forge/miniforge.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;h2 id="安装"&gt;
  安装
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -L -O &lt;span style="color:#e6db74"&gt;&amp;#34;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;-&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname -m&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;.sh&amp;#34;&lt;/span&gt;
@@ -785,9 +981,11 @@ $$&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingy
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 删除缓存文件&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean --all -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>marimo</title><link>https://kingye.me/note-cs/docs/tool/macos/marimo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/marimo/</guid><description>&lt;h1 id="marimo"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>marimo</title><link>http://localhost:1304/note-cs/docs/tool/macos/marimo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/marimo/</guid><description>&lt;h1 id="marimo"&gt;
  marimo
+ 
  &lt;a class="anchor" href="#marimo"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv init
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv venv
@@ -796,9 +994,11 @@ $$&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingy
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 教程&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;marimo tutorial intro
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Mas</title><link>https://kingye.me/note-cs/docs/tool/macos/mas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/mas/</guid><description>&lt;h1 id="mas-climas-github-stars"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Mas</title><link>http://localhost:1304/note-cs/docs/tool/macos/mas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/mas/</guid><description>&lt;h1 id="mas-climas-github-stars"&gt;
  &lt;a href="https://github.com/mas-cli/mas"&gt;mas-cli/mas&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/mas-cli/mas.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#mas-climas-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;Each application in the Mac App Store has a product identifier which is also used for mas-cli commands.
 Using mas list will show all installed applications and their product identifiers.&lt;/p&gt;
@@ -843,9 +1043,11 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$ mas signin mas@example.com
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;==&lt;/span&gt;&amp;gt; Signing in to Apple ID: mas@example.com
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Password:
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>MathJax</title><link>https://kingye.me/note-cs/docs/tool/macos/mathjax/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/mathjax/</guid><description>&lt;h1 id="mathjax"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>MathJax</title><link>http://localhost:1304/note-cs/docs/tool/macos/mathjax/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/mathjax/</guid><description>&lt;h1 id="mathjax"&gt;
  &lt;a href="https://docs.mathjax.org/en/latest/index.html"&gt;MathJax&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#mathjax"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
@@ -856,15 +1058,19 @@ Using mas list will show all installed applications and their product identifier
 &lt;li&gt;&lt;code&gt;AsciiMath&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Mermaid</title><link>https://kingye.me/note-cs/docs/tool/macos/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/mermaid/</guid><description>&lt;h1 id="mermaid"&gt;
+&lt;/ul&gt;</description></item><item><title>Mermaid</title><link>http://localhost:1304/note-cs/docs/tool/macos/mermaid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/mermaid/</guid><description>&lt;h1 id="mermaid"&gt;
  Mermaid
+ 
  &lt;a class="anchor" href="#mermaid"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/mermaid-js/mermaid"&gt;mermaid-js/mermaid&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/mermaid-js/mermaid.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/mermaid-js/mermaid.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/mermaid-js/mermaid.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/mermaid-js/mermaid.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Generation of diagram and flowchart from text in a similar manner as markdown
-&lt;a href="http://mermaid-js.github.io/mermaid/"&gt;http://mermaid-js.github.io/mermaid/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Multipass</title><link>https://kingye.me/note-cs/docs/tool/macos/multipass/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/multipass/</guid><description>&lt;h1 id="multipass"&gt;
+&lt;a href="http://mermaid-js.github.io/mermaid/"&gt;http://mermaid-js.github.io/mermaid/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Multipass</title><link>http://localhost:1304/note-cs/docs/tool/macos/multipass/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/multipass/</guid><description>&lt;h1 id="multipass"&gt;
  Multipass
+ 
  &lt;a class="anchor" href="#multipass"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/canonical/multipass"&gt;canonical/multipass&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/canonical/multipass.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/canonical/multipass.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/canonical/multipass.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/canonical/multipass.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/canonical/multipass.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Multipass orchestrates virtual Ubuntu instances
@@ -912,22 +1118,30 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;multipass purge
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="网络"&gt;
  网络
+ 
  &lt;a class="anchor" href="#%e7%bd%91%e7%bb%9c"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
-&lt;p&gt;使用的是&lt;strong&gt;桥接模式&lt;/strong&gt;，因为：&lt;/p&gt;</description></item><item><title>Ollama</title><link>https://kingye.me/note-cs/docs/tool/macos/ollama/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/ollama/</guid><description>&lt;h1 id="ollama"&gt;
+&lt;p&gt;使用的是&lt;strong&gt;桥接模式&lt;/strong&gt;，因为：&lt;/p&gt;</description></item><item><title>Ollama</title><link>http://localhost:1304/note-cs/docs/tool/macos/ollama/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/ollama/</guid><description>&lt;h1 id="ollama"&gt;
  Ollama
+ 
  &lt;a class="anchor" href="#ollama"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="使用教程"&gt;
  使用教程
+ 
  &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ollama list
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ollama run qwen2:0.5b
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>OrbStack</title><link>https://kingye.me/note-cs/docs/tool/macos/orbstack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/orbstack/</guid><description>&lt;h1 id="orbstack"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>OrbStack</title><link>http://localhost:1304/note-cs/docs/tool/macos/orbstack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/orbstack/</guid><description>&lt;h1 id="orbstack"&gt;
  OrbStack
+ 
  &lt;a class="anchor" href="#orbstack"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt; ~/.orbstack/config/docker.json
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;{
@@ -938,26 +1152,36 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker info | grep -A &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Registry Mirrors&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>picgo</title><link>https://kingye.me/note-cs/docs/tool/macos/picgo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/picgo/</guid><description>&lt;h1 id="picgo"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>picgo</title><link>http://localhost:1304/note-cs/docs/tool/macos/picgo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/picgo/</guid><description>&lt;h1 id="picgo"&gt;
  picgo
+ 
  &lt;a class="anchor" href="#picgo"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="cli-命令"&gt;
  &lt;a href="https://picgo.github.io/PicGo-Core-Doc/zh/guide/commands.html"&gt;CLI 命令&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#cli-%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h2 id="picgopicgo-core-github-stars"&gt;
  &lt;a href="https://github.com/PicGo/PicGo-Core"&gt;PicGo/PicGo-Core&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/PicGo/PicGo-Core.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#picgopicgo-core-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h2 id="molunerfinnpicgo-github-stars"&gt;
  &lt;a href="https://github.com/Molunerfinn/PicGo"&gt;Molunerfinn/PicGo&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/Molunerfinn/PicGo.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#molunerfinnpicgo-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;hr&gt;
 &lt;h2 id="picgo-vscode-快捷键"&gt;
  picgo vscode 快捷键
+ 
  &lt;a class="anchor" href="#picgo-vscode-%e5%bf%ab%e6%8d%b7%e9%94%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows/Unix
@@ -974,22 +1198,30 @@ Using mas list will show all installed applications and their product identifier
 &lt;li&gt;Uploading an image from input box: &lt;code&gt;Cmd + Opt + O&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>PlantUML</title><link>https://kingye.me/note-cs/docs/tool/macos/plantuml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/plantuml/</guid><description>&lt;h1 id="plantuml"&gt;
+&lt;/ul&gt;</description></item><item><title>PlantUML</title><link>http://localhost:1304/note-cs/docs/tool/macos/plantuml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/plantuml/</guid><description>&lt;h1 id="plantuml"&gt;
  PlantUML
+ 
  &lt;a class="anchor" href="#plantuml"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/plantuml/plantuml"&gt;plantuml/plantuml&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/plantuml/plantuml.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/plantuml/plantuml.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/plantuml/plantuml.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/plantuml/plantuml.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;p&gt;PlantUML 是一个开源项目，支持快速绘制时序图、用例图、类图、活动图、组件图、状态图、对象图、部署图等。同时还支持非 UML 图的甘特图、架构图等。&lt;/p&gt;</description></item><item><title>pyenv</title><link>https://kingye.me/note-cs/docs/tool/macos/pyenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/pyenv/</guid><description>&lt;p&gt;&lt;a href="https://github.com/pyenv/pyenv"&gt;pyenv/pyenv&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/pyenv/pyenv.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/pyenv/pyenv.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/pyenv/pyenv.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/pyenv/pyenv.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/pyenv/pyenv.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;PlantUML 是一个开源项目，支持快速绘制时序图、用例图、类图、活动图、组件图、状态图、对象图、部署图等。同时还支持非 UML 图的甘特图、架构图等。&lt;/p&gt;</description></item><item><title>pyenv</title><link>http://localhost:1304/note-cs/docs/tool/macos/pyenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/pyenv/</guid><description>&lt;p&gt;&lt;a href="https://github.com/pyenv/pyenv"&gt;pyenv/pyenv&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/pyenv/pyenv.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/pyenv/pyenv.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/pyenv/pyenv.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/pyenv/pyenv.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/pyenv/pyenv.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;h2 id="安装"&gt;
  安装
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h2 id="使用"&gt;
  使用
+ 
  &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;
-&lt;/h2&gt;</description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/macos/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/python/</guid><description>&lt;h1 id="python"&gt;
+ 
+&lt;/h2&gt;</description></item><item><title>python</title><link>http://localhost:1304/note-cs/docs/tool/macos/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/python/</guid><description>&lt;h1 id="python"&gt;
  python
+ 
  &lt;a class="anchor" href="#python"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 先安装 pipx&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew update
@@ -1019,9 +1251,11 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装需要的 python 版本&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pyenvinstall 3.13.1
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>https://kingye.me/note-cs/docs/tool/macos/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>http://localhost:1304/note-cs/docs/tool/macos/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;
  pytorch
+ 
  &lt;a class="anchor" href="#pytorch"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# cd ~/code/study/ai/pytorch/study-pytorch/hello-pytorch&lt;/span&gt;
@@ -1031,13 +1265,17 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mamba install -y pytorch::pytorch torchvision torchaudio -c pytorch
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mamba install --file requirements.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ruby</title><link>https://kingye.me/note-cs/docs/tool/macos/ruby/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/ruby/</guid><description>&lt;h1 id="ruby"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ruby</title><link>http://localhost:1304/note-cs/docs/tool/macos/ruby/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/ruby/</guid><description>&lt;h1 id="ruby"&gt;
  ruby
+ 
  &lt;a class="anchor" href="#ruby"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="安装"&gt;
  安装
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;brew install ruby&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;If you need to have ruby first in your PATH, run:
@@ -1049,17 +1287,23 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;For pkg-config to find ruby you may need to set:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; export PKG_CONFIG_PATH&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;/opt/homebrew/opt/ruby/lib/pkgconfig&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ssh</title><link>https://kingye.me/note-cs/docs/tool/macos/ssh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/ssh/</guid><description>&lt;h1 id="ssh"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ssh</title><link>http://localhost:1304/note-cs/docs/tool/macos/ssh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/ssh/</guid><description>&lt;h1 id="ssh"&gt;
  ssh
+ 
  &lt;a class="anchor" href="#ssh"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="ssh-keygen"&gt;
  ssh-keygen
+ 
  &lt;a class="anchor" href="#ssh-keygen"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h2 id="代理"&gt;
  代理
+ 
  &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ssh -o ProxyCommand&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;socat - SOCKS4A:myproxy:%h:%p,socksuser=nobody&amp;#39;&lt;/span&gt; user@host
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1075,7 +1319,9 @@ Using mas list will show all installed applications and their product identifier
 &lt;hr&gt;
 &lt;h2 id="my-config"&gt;
  my config
+ 
  &lt;a class="anchor" href="#my-config"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host github
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; HostName github.com
@@ -1118,27 +1364,37 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=8081&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# 走 socks5 代理（如 Shadowsocks）&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75715e"&gt;# ProxyCommand nc -v -x 127.0.0.1:1080 %h %p&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>tabby</title><link>https://kingye.me/note-cs/docs/tool/macos/tabby/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/tabby/</guid><description>&lt;h1 id="tabby"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>tabby</title><link>http://localhost:1304/note-cs/docs/tool/macos/tabby/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/tabby/</guid><description>&lt;h1 id="tabby"&gt;
  tabby
+ 
  &lt;a class="anchor" href="#tabby"&gt;#&lt;/a&gt;
-&lt;/h1&gt;</description></item><item><title>tmux</title><link>https://kingye.me/note-cs/docs/tool/macos/tmux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/tmux/</guid><description>&lt;h1 id="tmux"&gt;
+ 
+&lt;/h1&gt;</description></item><item><title>tmux</title><link>http://localhost:1304/note-cs/docs/tool/macos/tmux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/tmux/</guid><description>&lt;h1 id="tmux"&gt;
  tmux
+ 
  &lt;a class="anchor" href="#tmux"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/gpakosz/.tmux"&gt;gpakosz/.tmux&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/gpakosz/.tmux.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/gpakosz/.tmux.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/gpakosz/.tmux.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/gpakosz/.tmux.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;h2 id="配置"&gt;
  配置
+ 
  &lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="chrisjohnsentmux-macosx-pasteboard-github-stars"&gt;
  &lt;a href="https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard"&gt;ChrisJohnsen/tmux-MacOSX-pasteboard&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ChrisJohnsen/tmux-MacOSX-pasteboard.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#chrisjohnsentmux-macosx-pasteboard-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;Using the Mac OS X programs pbpaste and pbcopy under tmux does not work.&lt;/p&gt;
 &lt;p&gt;Other services and unpatched builds of screen are also affected.&lt;/p&gt;
 &lt;h3 id="gpakosztmux-github-stars"&gt;
  &lt;a href="https://github.com/gpakosz/.tmux"&gt;gpakosz/.tmux&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/gpakosz/.tmux.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#gpakosztmux-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;Oh My Tmux!&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd
@@ -1148,20 +1404,26 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id="教程"&gt;
  教程
+ 
  &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://pragprog.com/book/bhtmux2/tmux-2"&gt;tmux 2: Productive Mouse-Free Development&lt;/a&gt; by &lt;a href="https://twitter.com/bphogan"&gt;@bphogan&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://zhuanlan.zhihu.com/p/43687973"&gt;手把手教你使用终端复用神器 Tmux，丢掉鼠标不是梦 [视频]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://zhuanlan.zhihu.com/p/259640277"&gt;让你的 tmux 起死回生！[视频]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>uv</title><link>https://kingye.me/note-cs/docs/tool/macos/uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/uv/</guid><description>&lt;h1 id="uv"&gt;
+&lt;/ul&gt;</description></item><item><title>uv</title><link>http://localhost:1304/note-cs/docs/tool/macos/uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/uv/</guid><description>&lt;h1 id="uv"&gt;
  uv
+ 
  &lt;a class="anchor" href="#uv"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/astral-sh/uv"&gt;astral-sh/uv&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/astral-sh/uv.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/astral-sh/uv.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/astral-sh/uv.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/astral-sh/uv.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/astral-sh/uv.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;h2 id="教程"&gt;
  教程
+ 
  &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -1189,7 +1451,9 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv pip install -U pip
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="uv-init-生成的文件目录"&gt;
  uv init 生成的文件目录
+ 
  &lt;a class="anchor" href="#uv-init-%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e4%bb%b6%e7%9b%ae%e5%bd%95"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;.python-version&lt;/code&gt;
@@ -1197,34 +1461,46 @@ Using mas list will show all installed applications and their product identifier
 &lt;li&gt;The .python-version file contains the project&amp;rsquo;s default Python version. This file tells uv which Python version to use when creating the project&amp;rsquo;s virtual environment.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>vim</title><link>https://kingye.me/note-cs/docs/tool/macos/vim/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/vim/</guid><description>&lt;h1 id="vim"&gt;
+&lt;/ul&gt;</description></item><item><title>vim</title><link>http://localhost:1304/note-cs/docs/tool/macos/vim/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/vim/</guid><description>&lt;h1 id="vim"&gt;
  vim
+ 
  &lt;a class="anchor" href="#vim"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;hr&gt;
 &lt;h2 id="教程"&gt;
  教程
+ 
  &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="iggrediblelearn-vim-github-stars"&gt;
  &lt;a href="https://github.com/iggredible/Learn-Vim"&gt;iggredible/Learn-Vim&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/iggredible/Learn-Vim.svg" alt="Github stars" /&gt;
+ 
  &lt;a class="anchor" href="#iggrediblelearn-vim-github-stars"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
-&lt;p&gt;A book for learning the Vim editor the smart way.&lt;/p&gt;</description></item><item><title>VSCode</title><link>https://kingye.me/note-cs/docs/tool/macos/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/vscode/</guid><description>&lt;h1 id="vscode"&gt;
+&lt;p&gt;A book for learning the Vim editor the smart way.&lt;/p&gt;</description></item><item><title>VSCode</title><link>http://localhost:1304/note-cs/docs/tool/macos/vscode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/vscode/</guid><description>&lt;h1 id="vscode"&gt;
  VSCode
+ 
  &lt;a class="anchor" href="#vscode"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/Microsoft/vscode"&gt;Microsoft/vscode&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/Microsoft/vscode.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/Microsoft/vscode.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/Microsoft/vscode.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/Microsoft/vscode.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="安装"&gt;
  安装
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;brew cask install visual-studio-code
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id="配置"&gt;
  配置
+ 
  &lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;settings.json&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
@@ -1555,25 +1831,35 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ],
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;bracketPairColorizer.depreciation-notice&amp;#34;&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;false&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>XDM</title><link>https://kingye.me/note-cs/docs/tool/macos/xdm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/xdm/</guid><description>&lt;h1 id="xdm"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>XDM</title><link>http://localhost:1304/note-cs/docs/tool/macos/xdm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/xdm/</guid><description>&lt;h1 id="xdm"&gt;
  XDM
+ 
  &lt;a class="anchor" href="#xdm"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://xtremedownloadmanager.com/#downloads"&gt;下载&lt;/a&gt;&lt;/p&gt;</description></item><item><title>包管理工具</title><link>https://kingye.me/note-cs/docs/tool/macos/package-manager/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/package-manager/</guid><description>&lt;h1 id="包管理工具"&gt;
+&lt;p&gt;&lt;a href="https://xtremedownloadmanager.com/#downloads"&gt;下载&lt;/a&gt;&lt;/p&gt;</description></item><item><title>包管理工具</title><link>http://localhost:1304/note-cs/docs/tool/macos/package-manager/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/tool/macos/package-manager/</guid><description>&lt;h1 id="包管理工具"&gt;
  包管理工具
+ 
  &lt;a class="anchor" href="#%e5%8c%85%e7%ae%a1%e7%90%86%e5%b7%a5%e5%85%b7"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="linux"&gt;
  Linux
+ 
  &lt;a class="anchor" href="#linux"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="ubuntu"&gt;
  Ubuntu
+ 
  &lt;a class="anchor" href="#ubuntu"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="apt"&gt;
  apt
+ 
  &lt;a class="anchor" href="#apt"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1581,138 +1867,198 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dpkg -i fd_8.0.0_amd64.deb &lt;span style="color:#75715e"&gt;# adapt version number and architecture&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="debian"&gt;
  Debian
+ 
  &lt;a class="anchor" href="#debian"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="apt-get"&gt;
  apt-get
+ 
  &lt;a class="anchor" href="#apt-get"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="fedora"&gt;
  Fedora
+ 
  &lt;a class="anchor" href="#fedora"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="dnf"&gt;
  dnf
+ 
  &lt;a class="anchor" href="#dnf"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dnf install
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id="dnf-copr"&gt;
  dnf copr
+ 
  &lt;a class="anchor" href="#dnf-copr"&gt;#&lt;/a&gt;
+ 
 &lt;/h5&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dnf copr enable keefle/fd
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dnf install fd
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="alpine-linux"&gt;
  Alpine Linux
+ 
  &lt;a class="anchor" href="#alpine-linux"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="apk"&gt;
  apk
+ 
  &lt;a class="anchor" href="#apk"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apk add
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="arch-linux"&gt;
  Arch Linux
+ 
  &lt;a class="anchor" href="#arch-linux"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="pacman"&gt;
  pacman
+ 
  &lt;a class="anchor" href="#pacman"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pacman -S
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="gentoo-linux"&gt;
  Gentoo Linux
+ 
  &lt;a class="anchor" href="#gentoo-linux"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="emerge"&gt;
  emerge
+ 
  &lt;a class="anchor" href="#emerge"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;emerge -av
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="opensuse-linux"&gt;
  openSUSE Linux
+ 
  &lt;a class="anchor" href="#opensuse-linux"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="zypper"&gt;
  zypper
+ 
  &lt;a class="anchor" href="#zypper"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zypper in
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="void-linux"&gt;
  Void Linux
+ 
  &lt;a class="anchor" href="#void-linux"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="xbps-install"&gt;
  xbps-install
+ 
  &lt;a class="anchor" href="#xbps-install"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;xbps-install -S
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="freebsd"&gt;
  FreeBSD
+ 
  &lt;a class="anchor" href="#freebsd"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="pkg"&gt;
  pkg
+ 
  &lt;a class="anchor" href="#pkg"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;pkg install
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id="mac"&gt;
  Mac
+ 
  &lt;a class="anchor" href="#mac"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="homebrew"&gt;
  Homebrew
+ 
  &lt;a class="anchor" href="#homebrew"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h3 id="macports"&gt;
  MacPorts
+ 
  &lt;a class="anchor" href="#macports"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;hr&gt;
 &lt;h2 id="windows"&gt;
  Windows
+ 
  &lt;a class="anchor" href="#windows"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="scoop"&gt;
  &lt;a href="http://scoop.sh/"&gt;Scoop&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#scoop"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h3 id="chocolatey"&gt;
  &lt;a href="https://chocolatey.org/"&gt;Chocolatey&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#chocolatey"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h2 id="其他"&gt;
  其他
+ 
  &lt;a class="anchor" href="#%e5%85%b6%e4%bb%96"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;h3 id="nixos--via-nix"&gt;
  NixOS / via Nix
+ 
  &lt;a class="anchor" href="#nixos--via-nix"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="nix-package-manager"&gt;
  &lt;a href="https://nixos.org/nix/"&gt;Nix package manager&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#nix-package-manager"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;nix-env -i
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="nodejs"&gt;
  Node.js
+ 
  &lt;a class="anchor" href="#nodejs"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="npm"&gt;
  NPM
+ 
  &lt;a class="anchor" href="#npm"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# On linux and macOS&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install -g
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="rust"&gt;
  Rust
+ 
  &lt;a class="anchor" href="#rust"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;h4 id="cargo"&gt;
  cargo
+ 
  &lt;a class="anchor" href="#cargo"&gt;#&lt;/a&gt;
+ 
 &lt;/h4&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;cargo install
 &lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

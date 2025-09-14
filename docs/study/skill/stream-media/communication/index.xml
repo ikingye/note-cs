@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>通信技术 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/</link><description>Recent content in 通信技术 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/skill/stream-media/communication/index.xml" rel="self" type="application/rss+xml"/><item><title>4G</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/4g/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/4g/</guid><description>&lt;h1 id="4g"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>通信技术 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/communication/</link><description>Recent content in 通信技术 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/skill/stream-media/communication/index.xml" rel="self" type="application/rss+xml"/><item><title>4G</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/communication/4g/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/communication/4g/</guid><description>&lt;h1 id="4g"&gt;
  4G
+ 
  &lt;a class="anchor" href="#4g"&gt;#&lt;/a&gt;
-&lt;/h1&gt;</description></item><item><title>5G</title><link>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/5g/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/skill/stream-media/communication/5g/</guid><description>&lt;h1 id="5g"&gt;
+ 
+&lt;/h1&gt;</description></item><item><title>5G</title><link>http://localhost:1304/note-cs/docs/study/skill/stream-media/communication/5g/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/skill/stream-media/communication/5g/</guid><description>&lt;h1 id="5g"&gt;
  5G
+ 
  &lt;a class="anchor" href="#5g"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;h2 id="5g-速度"&gt;
  5G 速度
+ 
  &lt;a class="anchor" href="#5g-%e9%80%9f%e5%ba%a6"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;世界上最快的 4G 网速（挪威，63.13Mbps）&lt;/p&gt;
 &lt;p&gt;最快的宽带网速（新加坡，189Mbps）&lt;/p&gt;
@@ -15,7 +21,9 @@
 &lt;p&gt;在 5G 峰值下载速率是 4G LTE 可体验速率的 10 倍&lt;/p&gt;
 &lt;h2 id="5g-应用场景"&gt;
  5G 应用场景
+ 
  &lt;a class="anchor" href="#5g-%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;国际电信联盟无线电通信局（ITU-R）定义了 5G 的三大典型应用场景为：&lt;/p&gt;
 &lt;ul&gt;
@@ -25,23 +33,31 @@
 &lt;/ul&gt;
 &lt;h3 id="增强型移动宽带embb"&gt;
  增强型移动宽带（eMBB）
+ 
  &lt;a class="anchor" href="#%e5%a2%9e%e5%bc%ba%e5%9e%8b%e7%a7%bb%e5%8a%a8%e5%ae%bd%e5%b8%a6embb"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;eMBB 主要面向虚拟现实（VR）/ 增强现实（AR）、在线 4K 视频等高带宽需求业务&lt;/p&gt;
 &lt;h3 id="超可靠低时延通信urllc"&gt;
  超可靠低时延通信（uRLLC）
+ 
  &lt;a class="anchor" href="#%e8%b6%85%e5%8f%af%e9%9d%a0%e4%bd%8e%e6%97%b6%e5%bb%b6%e9%80%9a%e4%bf%a1urllc"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;mMTC 主要面向智慧城市、智能交通等高连接密度需求的业务&lt;/p&gt;
 &lt;h3 id="海量大规模连接物联网mmtc"&gt;
  海量大规模连接物联网（mMTC）
+ 
  &lt;a class="anchor" href="#%e6%b5%b7%e9%87%8f%e5%a4%a7%e8%a7%84%e6%a8%a1%e8%bf%9e%e6%8e%a5%e7%89%a9%e8%81%94%e7%bd%91mmtc"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;uRLLC 主要面向车联网、无人驾驶、无人机等时延敏感的业务。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="5g-架构"&gt;
  5G 架构
+ 
  &lt;a class="anchor" href="#5g-%e6%9e%b6%e6%9e%84"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;5G 核心网采用控制面（SMF：&lt;code&gt;Session Management Function&lt;/code&gt;）和用户面 UPF 分离的
 CUPS（&lt;code&gt;Control and User Plane Separation&lt;/code&gt; ）架构&lt;/p&gt;</description></item></channel></rss>

@@ -1,16 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>5.8 人工智能 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/study/book/ai/</link><description>Recent content in 5.8 人工智能 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/study/book/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Pattern Recognition and Machine Learning</title><link>https://kingye.me/note-cs/docs/study/book/ai/prml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/book/ai/prml/</guid><description>&lt;h1 id="pattern-recognition-and-machine-learning"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>5.8 人工智能 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/study/book/ai/</link><description>Recent content in 5.8 人工智能 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/study/book/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Pattern Recognition and Machine Learning</title><link>http://localhost:1304/note-cs/docs/study/book/ai/prml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/book/ai/prml/</guid><description>&lt;h1 id="pattern-recognition-and-machine-learning"&gt;
  &lt;a href="https://book.douban.com/subject/2061116/"&gt;Pattern Recognition and Machine Learning&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#pattern-recognition-and-machine-learning"&gt;#&lt;/a&gt;
-&lt;/h1&gt;</description></item><item><title>动手学深度学习</title><link>https://kingye.me/note-cs/docs/study/book/ai/d2l/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/study/book/ai/d2l/</guid><description>&lt;h1 id="动手学深度学习"&gt;
+ 
+&lt;/h1&gt;</description></item><item><title>动手学深度学习</title><link>http://localhost:1304/note-cs/docs/study/book/ai/d2l/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/study/book/ai/d2l/</guid><description>&lt;h1 id="动手学深度学习"&gt;
  &lt;a href="https://zh.d2l.ai/"&gt;动手学深度学习&lt;/a&gt;
+ 
  &lt;a class="anchor" href="#%e5%8a%a8%e6%89%8b%e5%ad%a6%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://zh-v2.d2l.ai/d2l-zh-pytorch.pdf"&gt;pytorch 版本&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="安装环境"&gt;
  安装环境
+ 
  &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e7%8e%af%e5%a2%83"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装 conda&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -c --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh

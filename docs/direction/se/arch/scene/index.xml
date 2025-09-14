@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>场景 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/</link><description>Recent content in 场景 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/scene/index.xml" rel="self" type="application/rss+xml"/><item><title>缓存</title><link>https://kingye.me/note-cs/docs/direction/se/arch/scene/cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/scene/cache/</guid><description>&lt;h1 id="缓存"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>场景 on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/direction/se/arch/scene/</link><description>Recent content in 场景 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/direction/se/arch/scene/index.xml" rel="self" type="application/rss+xml"/><item><title>缓存</title><link>http://localhost:1304/note-cs/docs/direction/se/arch/scene/cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/direction/se/arch/scene/cache/</guid><description>&lt;h1 id="缓存"&gt;
  缓存
+ 
  &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
 &lt;p&gt;热点数据集中失效问题&lt;/p&gt;
 &lt;ul&gt;
@@ -9,7 +11,9 @@
 &lt;/ul&gt;
 &lt;h2 id="缓存穿透"&gt;
  缓存穿透
+ 
  &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98%e7%a9%bf%e9%80%8f"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;查询不存在的数据&lt;/p&gt;
 &lt;ul&gt;
@@ -18,12 +22,16 @@
 &lt;/ul&gt;
 &lt;h2 id="缓存雪崩"&gt;
  缓存雪崩
+ 
  &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98%e9%9b%aa%e5%b4%a9"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;当某一时刻发生大规模的缓存失效的情况，比如你的缓存服务宕机了，会有大量的请求进来直接打到 DB 上面。结果就是 DB 称不住，挂掉。&lt;/p&gt;
 &lt;h3 id="解决"&gt;
  解决
+ 
  &lt;a class="anchor" href="#%e8%a7%a3%e5%86%b3"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;事前：使用集群缓存，保证缓存服务的高可用&lt;/li&gt;
@@ -37,14 +45,18 @@
 &lt;hr&gt;
 &lt;h2 id="缓存击穿"&gt;
  缓存击穿
+ 
  &lt;a class="anchor" href="#%e7%bc%93%e5%ad%98%e5%87%bb%e7%a9%bf"&gt;#&lt;/a&gt;
+ 
 &lt;/h2&gt;
 &lt;p&gt;在平常高并发的系统中，大量的请求同时查询一个 key 时，此时这个 key 正好失效了，
 就会导致大量的请求都打到数据库上面去。&lt;/p&gt;
 &lt;p&gt;缓存击穿实际上是缓存雪崩的一个特例&lt;/p&gt;
 &lt;h3 id="解决-1"&gt;
  解决
+ 
  &lt;a class="anchor" href="#%e8%a7%a3%e5%86%b3-1"&gt;#&lt;/a&gt;
+ 
 &lt;/h3&gt;
 &lt;p&gt;问题是多个线程同时去查询数据库的这条数据，
 我们可以在第一个查询数据的请求上使用一个&lt;strong&gt;互斥锁&lt;/strong&gt;来锁住它。

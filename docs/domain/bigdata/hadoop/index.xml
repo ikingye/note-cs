@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hadoop on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/bigdata/hadoop/</link><description>Recent content in Hadoop on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/bigdata/hadoop/index.xml" rel="self" type="application/rss+xml"/><item><title>HBase</title><link>https://kingye.me/note-cs/docs/domain/bigdata/hadoop/hbase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/bigdata/hadoop/hbase/</guid><description>&lt;h1 id="hbase"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hadoop on 计算机学习笔记</title><link>http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/</link><description>Recent content in Hadoop on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/index.xml" rel="self" type="application/rss+xml"/><item><title>HBase</title><link>http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/hbase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/hbase/</guid><description>&lt;h1 id="hbase"&gt;
  HBase
+ 
  &lt;a class="anchor" href="#hbase"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/apache/hbase"&gt;apache/hbase&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/apache/hbase.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/apache/hbase.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/apache/hbase.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/apache/hbase.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>HDFS</title><link>https://kingye.me/note-cs/docs/domain/bigdata/hadoop/hdfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/bigdata/hadoop/hdfs/</guid><description>&lt;h1 id="hdfs"&gt;
+&lt;p&gt;&lt;a href="https://github.com/apache/hbase"&gt;apache/hbase&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/apache/hbase.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/apache/hbase.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/apache/hbase.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/apache/hbase.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>HDFS</title><link>http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/hdfs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/hdfs/</guid><description>&lt;h1 id="hdfs"&gt;
  HDFS
+ 
  &lt;a class="anchor" href="#hdfs"&gt;#&lt;/a&gt;
-&lt;/h1&gt;</description></item><item><title>MapReduce</title><link>https://kingye.me/note-cs/docs/domain/bigdata/hadoop/mapreduce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/bigdata/hadoop/mapreduce/</guid><description>&lt;h1 id="mapreduce"&gt;
+ 
+&lt;/h1&gt;</description></item><item><title>MapReduce</title><link>http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/mapreduce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1304/note-cs/docs/domain/bigdata/hadoop/mapreduce/</guid><description>&lt;h1 id="mapreduce"&gt;
  MapReduce
+ 
  &lt;a class="anchor" href="#mapreduce"&gt;#&lt;/a&gt;
+ 
 &lt;/h1&gt;</description></item></channel></rss>
