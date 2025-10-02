@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.1 Ubuntu on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/</link><description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>ab</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</guid><description>&lt;h1 id="ab"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.1 Ubuntu on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/</link><description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Codex CLI</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/</guid><description>&lt;h1 id="codex-cli"&gt;
+ Codex CLI
+ 
+ &lt;a class="anchor" href="#codex-cli"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/openai/codex"&gt;openai/codex&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/openai/codex.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/openai/codex.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/openai/codex.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/openai/codex.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/openai/codex.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;h2 id="ubuntu-server-使用-codex-cli"&gt;
+ ubuntu server 使用 codex cli
+ 
+ &lt;a class="anchor" href="#ubuntu-server-%e4%bd%bf%e7%94%a8-codex-cli"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;
+&lt;h3 id="ssh-config-配置代理"&gt;
+ ssh config 配置代理
+ 
+ &lt;a class="anchor" href="#ssh-config-%e9%85%8d%e7%bd%ae%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;vim ~/.ssh/config&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-txt" data-lang="txt"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host hhht-211
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; HostName 1.180.13.251
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; User root
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; IdentityFile ~/.ssh/id_rsa
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Port 211
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; # 代理
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; RemoteForward 127.0.0.1:1080 127.0.0.1:1080
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;本地电脑的 127.0.0.1:1080 有 http 代理，可以科学上网（访问 openai codex）&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="部署配置"&gt;
+ 部署配置
+ 
+ &lt;a class="anchor" href="#%e9%83%a8%e7%bd%b2%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;ssh 登录远程服务器&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# apt update&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# apt install npm -y&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm i -g @openai/codex
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;alias codex=&amp;#39;http_proxy=http://127.0.0.1:1080 https_proxy=http://127.0.0.1:1080 codex&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;. ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="vscode-ssh-remote-使用-codex-插件"&gt;
+ vscode ssh remote 使用 codex 插件
+ 
+ &lt;a class="anchor" href="#vscode-ssh-remote-%e4%bd%bf%e7%94%a8-codex-%e6%8f%92%e4%bb%b6"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;</description></item><item><title>ab</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</guid><description>&lt;h1 id="ab"&gt;
  ab
  
  &lt;a class="anchor" href="#ab"&gt;#&lt;/a&gt;
