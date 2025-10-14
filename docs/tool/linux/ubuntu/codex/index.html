@@ -1,4 +1,4 @@
-<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.151.0"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.151.0"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content='
   Codex CLI
   
   #
@@ -37,9 +37,9 @@ ssh 登录远程服务器
 # apt install npm -y
 npm i -g @openai/codex
 
-cat << 'EOF' >> ~/.bashrc
+cat << &#39;EOF&#39; >> ~/.bashrc
 
-alias codex='http_proxy=http://127.0.0.1:1080 https_proxy=http://127.0.0.1:1080 codex'
+alias codex=&#39;http_proxy=http://127.0.0.1:1080 https_proxy=http://127.0.0.1:1080 codex&#39;
 
 EOF
 . ~/.bashrc
@@ -48,10 +48,36 @@ EOF
   
   #
   
-"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="Codex CLI"><meta property="og:description" content="Codex CLI # openai/codex ubuntu server 使用 codex cli # ssh config 配置代理 # vim ~/.ssh/config
+
+cd "$(dirname "$(which codex)")"
+
+# 首次已备份过就不会再动；若没备份过会备份
+[ -f codex.real ] || mv codex codex.real
+
+cat > codex <<&#39;SH&#39;
+#!/usr/bin/env bash
+# —— HTTP 代理在 127.0.0.1:1080 ——
+# 同时设置大/小写 + ALL_PROXY，最大兼容性（HTTPS 也会通过 HTTP CONNECT）
+export HTTP_PROXY="http://127.0.0.1:1080"
+export HTTPS_PROXY="http://127.0.0.1:1080"
+export ALL_PROXY="http://127.0.0.1:1080"
+
+export http_proxy="${HTTP_PROXY}"
+export https_proxy="${HTTPS_PROXY}"
+export all_proxy="${ALL_PROXY}"
+
+# 不走代理的直连目标
+export NO_PROXY="localhost,127.0.0.1,::1"
+export no_proxy="${NO_PROXY}"
+
+exec "$(dirname "$0")/codex.real" "$@"
+SH
+
+chmod +x codex
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="Codex CLI"><meta property="og:description" content='Codex CLI # openai/codex ubuntu server 使用 codex cli # ssh config 配置代理 # vim ~/.ssh/config
 Host hhht-211 HostName 1.180.13.251 User root IdentityFile ~/.ssh/id_rsa Port 211 # 代理 RemoteForward 127.0.0.1:1080 127.0.0.1:1080 本地电脑的 127.0.0.1:1080 有 http 代理，可以科学上网（访问 openai codex）
 部署配置 # ssh 登录远程服务器
-# apt update # apt install npm -y npm i -g @openai/codex cat << 'EOF' >> ~/.bashrc alias codex='http_proxy=http://127.0.0.1:1080 https_proxy=http://127.0.0.1:1080 codex' EOF . ~/.bashrc vscode ssh remote 使用 codex 插件 #"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2025-10-02T12:12:02+08:00"><title>Codex CLI | 计算机学习笔记</title><link rel=icon href=/note-cs/favicon.png><link rel=manifest href=/note-cs/manifest.json><link rel=canonical href=https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/><link rel=stylesheet href=/note-cs/book.min.ce1c5c2253283c431b33f3a26460127223ab7b4d18f018f6ef1294e954b520da.css integrity="sha256-zhxcIlMoPEMbM/OiZGASciOre00Y8Bj27xKU6VS1INo=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.510c7b64dad3ddbfd18c9debc1052b4cb948bcdeff74eacd16187c7ec379e2fd.js integrity="sha256-UQx7ZNrT3b/RjJ3rwQUrTLlIvN7/dOrNFhh8fsN54v0=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+# apt update # apt install npm -y npm i -g @openai/codex cat << &#39;EOF&#39; >> ~/.bashrc alias codex=&#39;http_proxy=http://127.0.0.1:1080 https_proxy=http://127.0.0.1:1080 codex&#39; EOF . ~/.bashrc vscode ssh remote 使用 codex 插件 # cd "$(dirname "$(which codex)")" # 首次已备份过就不会再动；若没备份过会备份 [ -f codex.real ] || mv codex codex.real cat > codex <<&#39;SH&#39; #!/usr/bin/env bash # —— HTTP 代理在 127.0.0.1:1080 —— # 同时设置大/小写 + ALL_PROXY，最大兼容性（HTTPS 也会通过 HTTP CONNECT） export HTTP_PROXY="http://127.0.0.1:1080" export HTTPS_PROXY="http://127.0.0.1:1080" export ALL_PROXY="http://127.0.0.1:1080" export http_proxy="${HTTP_PROXY}" export https_proxy="${HTTPS_PROXY}" export all_proxy="${ALL_PROXY}" # 不走代理的直连目标 export NO_PROXY="localhost,127.0.0.1,::1" export no_proxy="${NO_PROXY}" exec "$(dirname "$0")/codex.real" "$@" SH chmod +x codex'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2025-10-02T12:12:02+08:00"><title>Codex CLI | 计算机学习笔记</title><link rel=icon href=/note-cs/favicon.png><link rel=manifest href=/note-cs/manifest.json><link rel=canonical href=https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/><link rel=stylesheet href=/note-cs/book.min.ce1c5c2253283c431b33f3a26460127223ab7b4d18f018f6ef1294e954b520da.css integrity="sha256-zhxcIlMoPEMbM/OiZGASciOre00Y8Bj27xKU6VS1INo=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.af668860b8c0602808c90fc85501fecd52cd2e43952996c2bf89aa253305f39d.js integrity="sha256-r2aIYLjAYCgIyQ/IVQH+zVLNLkOVKZbCv4mqJTMF850=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/note-cs/><span>计算机学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础</span><ul><li><input type=checkbox id=section-b264d5c1a2ab3bb2fd731008bd799320 class=toggle>
 <label for=section-b264d5c1a2ab3bb2fd731008bd799320 class=flex><a href=/note-cs/docs/basic/cc/ class=flex-auto>1.1 计算机组成原理</a></label><ul><li><a href=/note-cs/docs/basic/cc/cpu/>CPU</a></li><li><a href=/note-cs/docs/basic/cc/dmi/>DMI</a></li><li><a href=/note-cs/docs/basic/cc/gpu/>GPU</a><ul><li><input type=checkbox id=section-0333e6ea7218a6a6c5bedbd86cb89c0d class=toggle>
 <label for=section-0333e6ea7218a6a6c5bedbd86cb89c0d class=flex><a href=/note-cs/docs/basic/cc/gpu/cuda/ class=flex-auto>CUDA</a></label><ul><li><input type=checkbox id=section-d3c04b475f915bab9e14a3a2c0456a80 class=toggle>
@@ -724,7 +750,32 @@ Host hhht-211 HostName 1.180.13.251 User root IdentityFile ~/.ssh/id_rsa Port 21
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>EOF</span>
 </span></span><span style=display:flex><span>. ~/.bashrc
 </span></span></code></pre></div><h2 id=vscode-ssh-remote-使用-codex-插件>vscode ssh remote 使用 codex 插件
-<a class=anchor href=#vscode-ssh-remote-%e4%bd%bf%e7%94%a8-codex-%e6%8f%92%e4%bb%b6>#</a></h2></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><span><a href=/note-cs/docs/tool/linux/ubuntu/ class="flex align-center"><img src=/note-cs/svg/backward.svg class=book-icon alt=Previous title="4.2.1 Ubuntu">
+<a class=anchor href=#vscode-ssh-remote-%e4%bd%bf%e7%94%a8-codex-%e6%8f%92%e4%bb%b6>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>cd <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>dirname <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>which codex<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 首次已备份过就不会再动；若没备份过会备份</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span> -f codex.real <span style=color:#f92672>]</span> <span style=color:#f92672>||</span> mv codex codex.real
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>cat &gt; codex <span style=color:#e6db74>&lt;&lt;&#39;SH&#39;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>#!/usr/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#e6db74># —— HTTP 代理在 127.0.0.1:1080 ——
+</span></span></span><span style=display:flex><span><span style=color:#e6db74># 同时设置大/小写 + ALL_PROXY，最大兼容性（HTTPS 也会通过 HTTP CONNECT）
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export HTTP_PROXY=&#34;http://127.0.0.1:1080&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export HTTPS_PROXY=&#34;http://127.0.0.1:1080&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export ALL_PROXY=&#34;http://127.0.0.1:1080&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export http_proxy=&#34;${HTTP_PROXY}&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export https_proxy=&#34;${HTTPS_PROXY}&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export all_proxy=&#34;${ALL_PROXY}&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74># 不走代理的直连目标
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export NO_PROXY=&#34;localhost,127.0.0.1,::1&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>export no_proxy=&#34;${NO_PROXY}&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>exec &#34;$(dirname &#34;$0&#34;)/codex.real&#34; &#34;$@&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>SH</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>chmod +x codex
+</span></span></code></pre></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><span><a href=/note-cs/docs/tool/linux/ubuntu/ class="flex align-center"><img src=/note-cs/svg/backward.svg class=book-icon alt=Previous title="4.2.1 Ubuntu">
 <span>4.2.1 Ubuntu</span>
 </a></span><span><a href=/note-cs/docs/tool/linux/ubuntu/ab/ class="flex align-center"><span>ab</span>
 <img src=/note-cs/svg/forward.svg class=book-icon alt=Next title=ab></a></span></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/note-cs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
