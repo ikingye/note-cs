@@ -848,20 +848,24 @@
  
 &lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Add Docker&amp;#39;s official GPG key:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install ca-certificates curl
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install ca-certificates curl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo install -m &lt;span style="color:#ae81ff"&gt;0755&lt;/span&gt; -d /etc/apt/keyrings
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo chmod a+r /etc/apt/keyrings/docker.asc
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Add the repository to Apt sources:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;deb [arch=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;dpkg --print-architecture&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt; signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; &lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;. /etc/os-release &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; echo &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;UBUNTU_CODENAME&lt;span style="color:#66d9ef"&gt;:-&lt;/span&gt;$VERSION_CODENAME&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt; stable&amp;#34;&lt;/span&gt; | &lt;span style="color:#ae81ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; sudo tee /etc/apt/sources.list.d/docker.list &amp;gt; /dev/null
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo tee /etc/apt/sources.list.d/docker.sources &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt;EOF
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Types: deb
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;URIs: https://download.docker.com/linux/ubuntu
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Suites: $(. /etc/os-release &amp;amp;&amp;amp; echo &amp;#34;${UBUNTU_CODENAME:-$VERSION_CODENAME}&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Components: stable
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Signed-By: /etc/apt/keyrings/docker.asc
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose -y
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装指定版本-docker"&gt;
  安装指定版本 docker
  
@@ -1141,8 +1145,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create ecsp-test-1 --subnet &lt;span style="color:#e6db74"&gt;&amp;#34;172.27.1.0/24&amp;#34;&lt;/span&gt; --api-port 10.232.205.41:8701 --servers &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; --agents &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create ecsp-test-2 --subnet &lt;span style="color:#e6db74"&gt;&amp;#34;172.27.2.0/24&amp;#34;&lt;/span&gt; --api-port 10.232.205.41:8702
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create aicp-test-1 --subnet &lt;span style="color:#e6db74"&gt;&amp;#34;172.27.1.0/24&amp;#34;&lt;/span&gt; --api-port 172.16.48.74:8701 --servers &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; --agents &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create aicp-test-2 --subnet &lt;span style="color:#e6db74"&gt;&amp;#34;172.27.2.0/24&amp;#34;&lt;/span&gt; --api-port 172.16.48.74:8702
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装配置"&gt;
  安装配置
  
