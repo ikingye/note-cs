@@ -67,18 +67,22 @@ sudo systemctl restart docker
 # https://hub.docker.com/r/nvidia/cuda/tags
 
 cat << &#39;DOCKERFILE_EOF&#39; > Dockerfile
-FROM nvidia/cuda:13.1.0-base-ubuntu24.04
+FROM nvidia/cuda:12.8.1-base-ubuntu24.04
 
 ARG K3S_VERSION="v1.35.0+k3s1"
+ARG KUBECTL_VERSION="v1.35.0"
 ARG DEBIAN_FRONTEND=noninteractive
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-# 1) 基础工具 + NVIDIA Container Toolkit
+# 1) 基础工具 + CNI plugins + NVIDIA Container Toolkit
 RUN set -eux; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
-      ca-certificates curl gnupg iptables; \
+      ca-certificates curl gnupg \
+      iptables iproute2 \
+      containernetworking-plugins \
+      iputils-ping conntrack ethtool; \
     mkdir -p /usr/share/keyrings; \
     curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \
       | gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg; \
@@ -90,23 +94,48 @@ RUN set -eux; \
       nvidia-container-toolkit \
       nvidia-container-runtime \
       libnvidia-container-tools; \
+    \
+    # 关键：把发行版 CNI 目录映射到 k3s 常用路径
+    mkdir -p /opt/cni; \
+    if [ -d /usr/lib/cni ]; then ln -sf /usr/lib/cni /opt/cni/bin; fi; \
+    if [ -d /usr/libexec/cni ]; then ln -sf /usr/libexec/cni /opt/cni/bin; fi; \
+    \
     command -v nvidia-container-runtime; \
     nvidia-container-runtime --version || true; \
     rm -rf /var/lib/apt/lists/*
 
+
 # 2) 安装 k3s
 RUN set -eux; \
     curl -fsSL --retry 5 --retry-delay 1 \
-      -o /usr/local/bin/k3s \
-      "https://github.com/k3s-io/k3s/releases/download/${K3S_VERSION}/k3s" && \
-    chmod +x /usr/local/bin/k3s && \
-    /usr/local/bin/k3s --version
+      -o /bin/k3s \
+      "https://proxy.kingye.me/proxy/https://github.com/k3s-io/k3s/releases/download/${K3S_VERSION}/k3s" && \
+    chmod +x /bin/k3s && \
+    /bin/k3s --version
+
+RUN set -eux; \
+    curl -fL --retry 5 --retry-delay 1 \
+      -o /bin/kubectl \
+      "https://proxy.kingye.me/proxy/https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl" && \
+    chmod +x /bin/kubectl && \
+    /bin/kubectl version --client=true --output=yaml
+
+RUN set -eux; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends fuse-overlayfs; \
+    rm -rf /var/lib/apt/lists/*
 
 # 3) containerd 配置
 RUN set -eux; \
     mkdir -p /var/lib/rancher/k3s/agent/etc/containerd; \
     cat > /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl <<&#39;CONTAINERD_EOF&#39;
 version = 2
+
+[plugins."io.containerd.grpc.v1.cri"]
+  [plugins."io.containerd.grpc.v1.cri".cni]
+    bin_dir  = "/opt/cni/bin"
+    conf_dir = "/var/lib/rancher/k3s/agent/etc/cni/net.d"
+    max_conf_num = 1
 
 [plugins."io.containerd.grpc.v1.cri".containerd]
   default_runtime_name = "runc"
@@ -129,7 +158,7 @@ set -euo pipefail
 cmd="${1:-server}"
 shift || true
 
-exec /usr/local/bin/k3s "${cmd}" "$@"
+exec /bin/k3s "${cmd}" "$@"
 ENTRYPOINT_EOF
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
@@ -138,8 +167,8 @@ CMD ["server", "--disable=traefik", "--disable=servicelb"]
 DOCKERFILE_EOF
 
 # 构建镜像（现在会使用代理）
-docker build -t ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1 .
-docker push ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1
+docker build -t ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 .
+docker push ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1
 
 # 依赖
 sudo apt-get update
@@ -162,7 +191,11 @@ sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 
 # 验证 GPU 容器
-docker run --rm --gpus all nvidia/cuda:13.1.0-base-ubuntu24.04 nvidia-smi
+docker run --rm --gpus all nvidia/cuda:12.8.0-base-ubuntu24.04 nvidia-smi
+
+docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1.0 nvidia-smi
+
+docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 nvidia-smi
 
 
 cat << &#39;EOF&#39; > k3d-config-cluster-2.yaml
@@ -172,7 +205,7 @@ metadata:
   name: cluster-2
 
 # 1) 换成带 GPU runtime 适配的 k3s 镜像（来自 vainkop1/k3s-gpu）
-image: ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1
+image: ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1
 
 servers: 1
 agents: 2
@@ -181,6 +214,12 @@ agents: 2
 options:
   runtime:
     gpuRequest: all
+  k3s:
+    extraArgs:
+      - arg: "--snapshotter=native"
+        nodeFilters:
+          - server:*
+          - agent:*
 
 registries:
   config: |
@@ -192,7 +231,7 @@ EOF
 k3d cluster create --config k3d-config-cluster-2.yaml --verbose
 
 k3d kubeconfig merge cluster-2 --switch-context
-'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="k3d"><meta property="og:description" content='k3d # rancher/k3d 常用命令 # # 安装 k3d wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash # https://hub.docker.com/r/rancher/k3s/tags cat << &#39;EOF&#39; > k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 image: rancher/k3s:v1.35.0-k3s1 servers: 1 agents: 2 registries: config: | mirrors: "docker.io": endpoint: - https://hub.kingye.me EOF k3d cluster create --config k3d-config-cluster-1.yaml --verbose 安装配置 # GPU # k3s-gpu # # 为 Docker daemon 配置代理（永久生效） sudo mkdir -p /etc/systemd/system/docker.service.d sudo tee /etc/systemd/system/docker.service.d/http-proxy.conf > /dev/null <<&#39;EOF&#39; [Service] Environment="HTTP_PROXY=http://127.0.0.1:1080" Environment="HTTPS_PROXY=http://127.0.0.1:1080" Environment="NO_PROXY=localhost,127.0.0.1" EOF sudo systemctl daemon-reload sudo systemctl restart docker # https://hub.docker.com/r/nvidia/cuda/tags cat << &#39;DOCKERFILE_EOF&#39; > Dockerfile FROM nvidia/cuda:13.1.0-base-ubuntu24.04 ARG K3S_VERSION="v1.35.0+k3s1" ARG DEBIAN_FRONTEND=noninteractive SHELL ["/bin/bash", "-o", "pipefail", "-c"] # 1) 基础工具 + NVIDIA Container Toolkit RUN set -eux; \ apt-get update; \ apt-get install -y --no-install-recommends \ ca-certificates curl gnupg iptables; \ mkdir -p /usr/share/keyrings; \ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \ | gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg; \ curl -fsSL https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list \ | sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g&#39; \ > /etc/apt/sources.list.d/nvidia-container-toolkit.list; \ apt-get update; \ apt-get install -y --no-install-recommends \ nvidia-container-toolkit \ nvidia-container-runtime \ libnvidia-container-tools; \ command -v nvidia-container-runtime; \ nvidia-container-runtime --version || true; \ rm -rf /var/lib/apt/lists/* # 2) 安装 k3s RUN set -eux; \ curl -fsSL --retry 5 --retry-delay 1 \ -o /usr/local/bin/k3s \ "https://github.com/k3s-io/k3s/releases/download/${K3S_VERSION}/k3s" && \ chmod +x /usr/local/bin/k3s && \ /usr/local/bin/k3s --version # 3) containerd 配置 RUN set -eux; \ mkdir -p /var/lib/rancher/k3s/agent/etc/containerd; \ cat > /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl <<&#39;CONTAINERD_EOF&#39; version = 2 [plugins."io.containerd.grpc.v1.cri".containerd] default_runtime_name = "runc" [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc] runtime_type = "io.containerd.runc.v2" [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia] runtime_type = "io.containerd.runc.v2" [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options] BinaryName = "/usr/bin/nvidia-container-runtime" CONTAINERD_EOF # 4) entrypoint RUN set -eux; \ cat > /usr/local/bin/entrypoint.sh <<&#39;ENTRYPOINT_EOF&#39; #!/usr/bin/env bash set -euo pipefail cmd="${1:-server}" shift || true exec /usr/local/bin/k3s "${cmd}" "$@" ENTRYPOINT_EOF RUN chmod +x /usr/local/bin/entrypoint.sh ENTRYPOINT ["/usr/local/bin/entrypoint.sh"] CMD ["server", "--disable=traefik", "--disable=servicelb"] DOCKERFILE_EOF # 构建镜像（现在会使用代理） docker build -t ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1 . docker push ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1 # 依赖 sudo apt-get update sudo apt-get install -y curl ca-certificates gnupg # 添加仓库 key curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \ | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg # 添加 repo 列表 curl -fsSL https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list \ | sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g&#39; \ | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list > /dev/null sudo apt-get update sudo apt-get install -y nvidia-container-toolkit sudo nvidia-ctk runtime configure --runtime=docker sudo systemctl restart docker # 验证 GPU 容器 docker run --rm --gpus all nvidia/cuda:13.1.0-base-ubuntu24.04 nvidia-smi cat << &#39;EOF&#39; > k3d-config-cluster-2.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-2 # 1) 换成带 GPU runtime 适配的 k3s 镜像（来自 vainkop1/k3s-gpu） image: ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1 servers: 1 agents: 2 # 2) 把 GPU 透传给 k3d 的节点容器（等价于 --gpus all） options: runtime: gpuRequest: all registries: config: | mirrors: "docker.io": endpoint: - https://hub.kingye.me EOF k3d cluster create --config k3d-config-cluster-2.yaml --verbose k3d kubeconfig merge cluster-2 --switch-context'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2025-12-23T21:05:36+08:00"><title>k3d | 计算机学习笔记</title><link rel=icon href=/note-cs/favicon.png><link rel=manifest href=/note-cs/manifest.json><link rel=canonical href=https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/><link rel=stylesheet href=/note-cs/book.min.ce1c5c2253283c431b33f3a26460127223ab7b4d18f018f6ef1294e954b520da.css integrity="sha256-zhxcIlMoPEMbM/OiZGASciOre00Y8Bj27xKU6VS1INo=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.54e11e11dc9367dc0612650c3c8fbecde257478d3dcbb89cea71795d4730711c.js integrity="sha256-VOEeEdyTZ9wGEmUMPI++zeJXR409y7ic6nF5XUcwcRw=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="k3d"><meta property="og:description" content='k3d # rancher/k3d 常用命令 # # 安装 k3d wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash # https://hub.docker.com/r/rancher/k3s/tags cat << &#39;EOF&#39; > k3d-config-cluster-1.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-1 image: rancher/k3s:v1.35.0-k3s1 servers: 1 agents: 2 registries: config: | mirrors: "docker.io": endpoint: - https://hub.kingye.me EOF k3d cluster create --config k3d-config-cluster-1.yaml --verbose 安装配置 # GPU # k3s-gpu # # 为 Docker daemon 配置代理（永久生效） sudo mkdir -p /etc/systemd/system/docker.service.d sudo tee /etc/systemd/system/docker.service.d/http-proxy.conf > /dev/null <<&#39;EOF&#39; [Service] Environment="HTTP_PROXY=http://127.0.0.1:1080" Environment="HTTPS_PROXY=http://127.0.0.1:1080" Environment="NO_PROXY=localhost,127.0.0.1" EOF sudo systemctl daemon-reload sudo systemctl restart docker # https://hub.docker.com/r/nvidia/cuda/tags cat << &#39;DOCKERFILE_EOF&#39; > Dockerfile FROM nvidia/cuda:12.8.1-base-ubuntu24.04 ARG K3S_VERSION="v1.35.0+k3s1" ARG KUBECTL_VERSION="v1.35.0" ARG DEBIAN_FRONTEND=noninteractive SHELL ["/bin/bash", "-o", "pipefail", "-c"] # 1) 基础工具 + CNI plugins + NVIDIA Container Toolkit RUN set -eux; \ apt-get update; \ apt-get install -y --no-install-recommends \ ca-certificates curl gnupg \ iptables iproute2 \ containernetworking-plugins \ iputils-ping conntrack ethtool; \ mkdir -p /usr/share/keyrings; \ curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \ | gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg; \ curl -fsSL https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list \ | sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g&#39; \ > /etc/apt/sources.list.d/nvidia-container-toolkit.list; \ apt-get update; \ apt-get install -y --no-install-recommends \ nvidia-container-toolkit \ nvidia-container-runtime \ libnvidia-container-tools; \ \ # 关键：把发行版 CNI 目录映射到 k3s 常用路径 mkdir -p /opt/cni; \ if [ -d /usr/lib/cni ]; then ln -sf /usr/lib/cni /opt/cni/bin; fi; \ if [ -d /usr/libexec/cni ]; then ln -sf /usr/libexec/cni /opt/cni/bin; fi; \ \ command -v nvidia-container-runtime; \ nvidia-container-runtime --version || true; \ rm -rf /var/lib/apt/lists/* # 2) 安装 k3s RUN set -eux; \ curl -fsSL --retry 5 --retry-delay 1 \ -o /bin/k3s \ "https://proxy.kingye.me/proxy/https://github.com/k3s-io/k3s/releases/download/${K3S_VERSION}/k3s" && \ chmod +x /bin/k3s && \ /bin/k3s --version RUN set -eux; \ curl -fL --retry 5 --retry-delay 1 \ -o /bin/kubectl \ "https://proxy.kingye.me/proxy/https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl" && \ chmod +x /bin/kubectl && \ /bin/kubectl version --client=true --output=yaml RUN set -eux; \ apt-get update; \ apt-get install -y --no-install-recommends fuse-overlayfs; \ rm -rf /var/lib/apt/lists/* # 3) containerd 配置 RUN set -eux; \ mkdir -p /var/lib/rancher/k3s/agent/etc/containerd; \ cat > /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl <<&#39;CONTAINERD_EOF&#39; version = 2 [plugins."io.containerd.grpc.v1.cri"] [plugins."io.containerd.grpc.v1.cri".cni] bin_dir = "/opt/cni/bin" conf_dir = "/var/lib/rancher/k3s/agent/etc/cni/net.d" max_conf_num = 1 [plugins."io.containerd.grpc.v1.cri".containerd] default_runtime_name = "runc" [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc] runtime_type = "io.containerd.runc.v2" [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia] runtime_type = "io.containerd.runc.v2" [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options] BinaryName = "/usr/bin/nvidia-container-runtime" CONTAINERD_EOF # 4) entrypoint RUN set -eux; \ cat > /usr/local/bin/entrypoint.sh <<&#39;ENTRYPOINT_EOF&#39; #!/usr/bin/env bash set -euo pipefail cmd="${1:-server}" shift || true exec /bin/k3s "${cmd}" "$@" ENTRYPOINT_EOF RUN chmod +x /usr/local/bin/entrypoint.sh ENTRYPOINT ["/usr/local/bin/entrypoint.sh"] CMD ["server", "--disable=traefik", "--disable=servicelb"] DOCKERFILE_EOF # 构建镜像（现在会使用代理） docker build -t ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 . docker push ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 # 依赖 sudo apt-get update sudo apt-get install -y curl ca-certificates gnupg # 添加仓库 key curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \ | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg # 添加 repo 列表 curl -fsSL https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list \ | sed &#39;s#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g&#39; \ | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list > /dev/null sudo apt-get update sudo apt-get install -y nvidia-container-toolkit sudo nvidia-ctk runtime configure --runtime=docker sudo systemctl restart docker # 验证 GPU 容器 docker run --rm --gpus all nvidia/cuda:12.8.0-base-ubuntu24.04 nvidia-smi docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1.0 nvidia-smi docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 nvidia-smi cat << &#39;EOF&#39; > k3d-config-cluster-2.yaml apiVersion: k3d.io/v1alpha5 kind: Simple metadata: name: cluster-2 # 1) 换成带 GPU runtime 适配的 k3s 镜像（来自 vainkop1/k3s-gpu） image: ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 servers: 1 agents: 2 # 2) 把 GPU 透传给 k3d 的节点容器（等价于 --gpus all） options: runtime: gpuRequest: all k3s: extraArgs: - arg: "--snapshotter=native" nodeFilters: - server:* - agent:* registries: config: | mirrors: "docker.io": endpoint: - https://hub.kingye.me EOF k3d cluster create --config k3d-config-cluster-2.yaml --verbose k3d kubeconfig merge cluster-2 --switch-context'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2025-12-24T12:05:16+08:00"><title>k3d | 计算机学习笔记</title><link rel=icon href=/note-cs/favicon.png><link rel=manifest href=/note-cs/manifest.json><link rel=canonical href=https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/><link rel=stylesheet href=/note-cs/book.min.ce1c5c2253283c431b33f3a26460127223ab7b4d18f018f6ef1294e954b520da.css integrity="sha256-zhxcIlMoPEMbM/OiZGASciOre00Y8Bj27xKU6VS1INo=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.d4e947fd1a713345dad24f65db69698e8911b65aa2e9263e07e7aeced64720fe.js integrity="sha256-1OlH/RpxM0Xa0k9l22lpjokRtlqi6SY+B+euztZHIP4=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/note-cs/><span>计算机学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础</span><ul><li><input type=checkbox id=section-b264d5c1a2ab3bb2fd731008bd799320 class=toggle>
 <label for=section-b264d5c1a2ab3bb2fd731008bd799320 class=flex><a href=/note-cs/docs/basic/cc/ class=flex-auto>1.1 计算机组成原理</a></label><ul><li><a href=/note-cs/docs/basic/cc/cpu/>CPU</a></li><li><a href=/note-cs/docs/basic/cc/dmi/>DMI</a></li><li><a href=/note-cs/docs/basic/cc/gpu/>GPU</a><ul><li><input type=checkbox id=section-0333e6ea7218a6a6c5bedbd86cb89c0d class=toggle>
 <label for=section-0333e6ea7218a6a6c5bedbd86cb89c0d class=flex><a href=/note-cs/docs/basic/cc/gpu/cuda/ class=flex-auto>CUDA</a></label><ul><li><input type=checkbox id=section-d3c04b475f915bab9e14a3a2c0456a80 class=toggle>
@@ -886,18 +925,22 @@ k3d kubeconfig merge cluster-2 --switch-context
 </span></span><span style=display:flex><span><span style=color:#75715e># https://hub.docker.com/r/nvidia/cuda/tags</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>cat <span style=color:#e6db74>&lt;&lt; &#39;DOCKERFILE_EOF&#39; &gt; Dockerfile
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>FROM nvidia/cuda:13.1.0-base-ubuntu24.04
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>FROM nvidia/cuda:12.8.1-base-ubuntu24.04
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>ARG K3S_VERSION=&#34;v1.35.0+k3s1&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>ARG KUBECTL_VERSION=&#34;v1.35.0&#34;
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>ARG DEBIAN_FRONTEND=noninteractive
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>SHELL [&#34;/bin/bash&#34;, &#34;-o&#34;, &#34;pipefail&#34;, &#34;-c&#34;]
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74># 1) 基础工具 + NVIDIA Container Toolkit
+</span></span></span><span style=display:flex><span><span style=color:#e6db74># 1) 基础工具 + CNI plugins + NVIDIA Container Toolkit
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>RUN set -eux; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    apt-get update; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    apt-get install -y --no-install-recommends \
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      ca-certificates curl gnupg iptables; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      ca-certificates curl gnupg \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      iptables iproute2 \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      containernetworking-plugins \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      iputils-ping conntrack ethtool; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    mkdir -p /usr/share/keyrings; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>      | gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg; \
@@ -909,23 +952,48 @@ k3d kubeconfig merge cluster-2 --switch-context
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>      nvidia-container-toolkit \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>      nvidia-container-runtime \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>      libnvidia-container-tools; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    # 关键：把发行版 CNI 目录映射到 k3s 常用路径
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    mkdir -p /opt/cni; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    if [ -d /usr/lib/cni ]; then ln -sf /usr/lib/cni /opt/cni/bin; fi; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    if [ -d /usr/libexec/cni ]; then ln -sf /usr/libexec/cni /opt/cni/bin; fi; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    command -v nvidia-container-runtime; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    nvidia-container-runtime --version || true; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    rm -rf /var/lib/apt/lists/*
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74># 2) 安装 k3s
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>RUN set -eux; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    curl -fsSL --retry 5 --retry-delay 1 \
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      -o /usr/local/bin/k3s \
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>      &#34;https://github.com/k3s-io/k3s/releases/download/${K3S_VERSION}/k3s&#34; &amp;&amp; \
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    chmod +x /usr/local/bin/k3s &amp;&amp; \
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    /usr/local/bin/k3s --version
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      -o /bin/k3s \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      &#34;https://proxy.kingye.me/proxy/https://github.com/k3s-io/k3s/releases/download/${K3S_VERSION}/k3s&#34; &amp;&amp; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    chmod +x /bin/k3s &amp;&amp; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    /bin/k3s --version
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>RUN set -eux; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    curl -fL --retry 5 --retry-delay 1 \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      -o /bin/kubectl \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      &#34;https://proxy.kingye.me/proxy/https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl&#34; &amp;&amp; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    chmod +x /bin/kubectl &amp;&amp; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    /bin/kubectl version --client=true --output=yaml
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>RUN set -eux; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    apt-get update; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    apt-get install -y --no-install-recommends fuse-overlayfs; \
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    rm -rf /var/lib/apt/lists/*
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74># 3) containerd 配置
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>RUN set -eux; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    mkdir -p /var/lib/rancher/k3s/agent/etc/containerd; \
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    cat &gt; /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl &lt;&lt;&#39;CONTAINERD_EOF&#39;
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>version = 2
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>[plugins.&#34;io.containerd.grpc.v1.cri&#34;]
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  [plugins.&#34;io.containerd.grpc.v1.cri&#34;.cni]
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    bin_dir  = &#34;/opt/cni/bin&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    conf_dir = &#34;/var/lib/rancher/k3s/agent/etc/cni/net.d&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    max_conf_num = 1
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>[plugins.&#34;io.containerd.grpc.v1.cri&#34;.containerd]
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>  default_runtime_name = &#34;runc&#34;
@@ -948,7 +1016,7 @@ k3d kubeconfig merge cluster-2 --switch-context
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>cmd=&#34;${1:-server}&#34;
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>shift || true
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>exec /usr/local/bin/k3s &#34;${cmd}&#34; &#34;$@&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>exec /bin/k3s &#34;${cmd}&#34; &#34;$@&#34;
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>ENTRYPOINT_EOF
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>RUN chmod +x /usr/local/bin/entrypoint.sh
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
@@ -957,8 +1025,8 @@ k3d kubeconfig merge cluster-2 --switch-context
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>DOCKERFILE_EOF</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># 构建镜像（现在会使用代理）</span>
-</span></span><span style=display:flex><span>docker build -t ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1 .
-</span></span><span style=display:flex><span>docker push ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1
+</span></span><span style=display:flex><span>docker build -t ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 .
+</span></span><span style=display:flex><span>docker push ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1
 </span></span></code></pre></div><hr><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#75715e># 依赖</span>
 </span></span><span style=display:flex><span>sudo apt-get update
 </span></span><span style=display:flex><span>sudo apt-get install -y curl ca-certificates gnupg
@@ -980,7 +1048,11 @@ k3d kubeconfig merge cluster-2 --switch-context
 </span></span><span style=display:flex><span>sudo systemctl restart docker
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># 验证 GPU 容器</span>
-</span></span><span style=display:flex><span>docker run --rm --gpus all nvidia/cuda:13.1.0-base-ubuntu24.04 nvidia-smi
+</span></span><span style=display:flex><span>docker run --rm --gpus all nvidia/cuda:12.8.0-base-ubuntu24.04 nvidia-smi
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1.0 nvidia-smi
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 nvidia-smi
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>cat <span style=color:#e6db74>&lt;&lt; &#39;EOF&#39; &gt; k3d-config-cluster-2.yaml
@@ -990,7 +1062,7 @@ k3d kubeconfig merge cluster-2 --switch-context
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>  name: cluster-2
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74># 1) 换成带 GPU runtime 适配的 k3s 镜像（来自 vainkop1/k3s-gpu）
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>image: ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>image: ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>servers: 1
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>agents: 2
@@ -999,6 +1071,12 @@ k3d kubeconfig merge cluster-2 --switch-context
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>options:
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>  runtime:
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>    gpuRequest: all
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  k3s:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    extraArgs:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      - arg: &#34;--snapshotter=native&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        nodeFilters:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>          - server:*
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>          - agent:*
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>registries:
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>  config: |
