@@ -14362,7 +14362,7 @@ Using mas list will show all installed applications and their product identifier
  &lt;a class="anchor" href="#mermaid"&gt;#&lt;/a&gt;
  
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/mermaid-js/mermaid"&gt;mermaid-js/mermaid&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/mermaid-js/mermaid.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/mermaid-js/mermaid.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/mermaid-js/mermaid.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/mermaid-js/mermaid.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mermaid-js/mermaid"&gt;mermaid-js/mermaid&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/mermaid-js/mermaid.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/mermaid-js/mermaid.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/mermaid-js/mermaid.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/mermaid-js/mermaid.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/mermaid-js/mermaid.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Generation of diagram and flowchart from text in a similar manner as markdown
 &lt;a href="http://mermaid-js.github.io/mermaid/"&gt;http://mermaid-js.github.io/mermaid/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>MicroK8s</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid><description>&lt;h1 id="microk8s"&gt;
  MicroK8s
@@ -14471,7 +14471,18 @@ Using mas list will show all installed applications and their product identifier
  &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
  
 &lt;/h3&gt;
-&lt;p&gt;vi &lt;code&gt;/etc/environment&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Mosquitto</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid><description>&lt;h1 id="mosquitto"&gt;
+&lt;p&gt;vi &lt;code&gt;/etc/environment&lt;/code&gt;&lt;/p&gt;</description></item><item><title>mise</title><link>https://kingye.me/note-cs/docs/tool/macos/mise/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/mise/</guid><description>&lt;h1 id="mise"&gt;
+ mise
+ 
+ &lt;a class="anchor" href="#mise"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/jdx/mise"&gt;jdx/mise&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/jdx/mise.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/jdx/mise.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/jdx/mise.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/jdx/mise.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/jdx/mise.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Like &lt;a href="https://asdf-vm.com/"&gt;asdf&lt;/a&gt; (or &lt;a href="https://github.com/nvm-sh/nvm"&gt;nvm&lt;/a&gt; or &lt;a href="https://github.com/pyenv/pyenv"&gt;pyenv&lt;/a&gt; but for any language) it manages &lt;a href="https://mise.jdx.dev/dev-tools/"&gt;dev tools&lt;/a&gt; like node, python, cmake, terraform, and &lt;a href="https://mise.jdx.dev/registry.html"&gt;hundreds more&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Like &lt;a href="https://github.com/direnv/direnv"&gt;direnv&lt;/a&gt; it manages &lt;a href="https://mise.jdx.dev/environments/"&gt;environment variables&lt;/a&gt; for different project directories.&lt;/li&gt;
+&lt;li&gt;Like &lt;a href="https://www.gnu.org/software/make/manual/make.html"&gt;make&lt;/a&gt; it manages &lt;a href="https://mise.jdx.dev/tasks/"&gt;tasks&lt;/a&gt; used to build and test projects.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Mosquitto</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid><description>&lt;h1 id="mosquitto"&gt;
  Mosquitto
  
  &lt;a class="anchor" href="#mosquitto"&gt;#&lt;/a&gt;
