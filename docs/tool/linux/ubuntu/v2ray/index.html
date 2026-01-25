@@ -59,161 +59,33 @@ vim /usr/local/etc/xray/config.json
         "domain": ["openai.com"]
       },
 
+
+# inbounds 加上
+      {
+        "port": 14443,
+        "listen": "0.0.0.0",
+        "tag": "GW-VLESS-in",
+        "protocol": "VLESS",
+        "settings": {
+          "clients": [
+            {
+              "id": "REPLACE_WITH_NEW_UUID",
+              "encryption": "none"
+            }
+          ],
+          "decryption": "none"
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "none",
+          "wsSettings": {
+            "path": "/gw1080"
+          }
+        }
+      },
+
 # 然后重启
 systemctl restart xray
-
-  ip 白名单
-  
-  #
-  
-
-# 第一次
-
-# 安装依赖与目录
-sudo apt-get update
-sudo apt-get install -y iptables-persistent ipset
-sudo mkdir -p /etc/iptables
-
-# 创建 ipset 集合（白名单容器）
-sudo ipset create PROXY_WL hash:ip -exist
-
-# iptables 链与规则（仅建立一次，幂等）
-# 端口
-HTTP_PORT=3128
-SOCKS_PORT=29108
-
-# 若链不存在则创建
-sudo iptables -L PROXY_WHITELIST -n >/dev/null 2>&amp;1 || sudo iptables -N PROXY_WHITELIST
-
-# 链首：匹配 ipset 的来源就放行（幂等）
-sudo iptables -C PROXY_WHITELIST -m set --match-set PROXY_WL src -j RETURN 2>/dev/null \
-  || sudo iptables -I PROXY_WHITELIST 1 -m set --match-set PROXY_WL src -j RETURN
-
-# 内网/回环（按需保留）
-for cidr in 127.0.0.0/8 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16; do
-  sudo iptables -C PROXY_WHITELIST -s $cidr -j RETURN 2>/dev/null || \
-  sudo iptables -A PROXY_WHITELIST -s $cidr -j RETURN
-done
-
-# 链尾：其余丢弃
-sudo iptables -C PROXY_WHITELIST -j DROP 2>/dev/null || sudo iptables -A PROXY_WHITELIST -j DROP
-
-# 把链挂到端口（TCP：HTTP+SOCKS）
-sudo iptables -C INPUT -p tcp -m multiport --dports $HTTP_PORT,$SOCKS_PORT -j PROXY_WHITELIST 2>/dev/null \
-  || sudo iptables -A INPUT -p tcp -m multiport --dports $HTTP_PORT,$SOCKS_PORT -j PROXY_WHITELIST
-
-# 如果需要 SOCKS 的 UDP（可选）
-sudo iptables -C INPUT -p udp --dport $SOCKS_PORT -j PROXY_WHITELIST 2>/dev/null \
-  || sudo iptables -A INPUT -p udp --dport $SOCKS_PORT -j PROXY_WHITELIST
-
-# 持久化 + 自启动（保证重启也生效）
-# 保存当前 iptables/ipset
-sudo sh -c &#39;iptables-save > /etc/iptables/rules.v4&#39;
-sudo sh -c &#39;ip6tables-save > /etc/iptables/rules.v6&#39;   # 用不到IPv6也可留空
-sudo sh -c &#39;ipset save > /etc/iptables/ipset.conf&#39;
-
-# 创建 ipset 开机恢复服务（带 -exist，幂等）
-sudo tee /etc/systemd/system/ipset-restore.service >/dev/null <<&#39;EOF&#39;
-[Unit]
-Description=Restore ipset sets
-DefaultDependencies=no
-Before=netfilter-persistent.service
-
-[Service]
-Type=oneshot
-ExecStart=/usr/sbin/ipset restore -exist -f /etc/iptables/ipset.conf
-RemainAfterExit=yes
-
-[Install]
-WantedBy=multi-user.target
-EOF
-
-# 启用/启动
-sudo systemctl daemon-reload
-sudo systemctl enable ipset-restore.service
-sudo systemctl enable netfilter-persistent
-sudo systemctl restart ipset-restore.service
-sudo systemctl restart netfilter-persistent
-
-# 安装 “白名单助手” 脚本
-sudo tee /usr/local/sbin/proxy-wl >/dev/null <<&#39;EOF&#39;
-#!/usr/bin/env bash
-set -euo pipefail
-SET=PROXY_WL
-CONF_DIR=/etc/iptables
-IPSET_CONF=$CONF_DIR/ipset.conf
-IPT_V4=$CONF_DIR/rules.v4
-
-usage() { echo "Usage: $0 {add IP|del IP|list|save}"; exit 1; }
-
-[ $# -ge 1 ] || usage
-cmd="$1"; shift || true
-
-case "$cmd" in
-  add)
-    [ $# -eq 1 ] || usage
-    sudo ipset add "$SET" "$1" -exist
-    echo "[ADD] $1"
-    ;;
-  del)
-    [ $# -eq 1 ] || usage
-    sudo ipset del "$SET" "$1"
-    echo "[DEL] $1"
-    ;;
-  list)
-    sudo ipset list "$SET"
-    ;;
-  save)
-    sudo mkdir -p "$CONF_DIR"
-    sudo sh -c "ipset save > &#39;$IPSET_CONF&#39;"
-    sudo sh -c "iptables-save > &#39;$IPT_V4&#39;"
-    # 幂等恢复一次
-    sudo /usr/sbin/ipset restore -exist -f "$IPSET_CONF"
-    echo "[SAVE] persisted & restored."
-    ;;
-  *)
-    usage
-    ;;
-esac
-EOF
-sudo chmod +x /usr/local/sbin/proxy-wl
-# 增删 ip
-sudo proxy-wl add 1.180.13.249
-sudo proxy-wl add 14.155.58.153
-# sudo proxy-wl del 1.180.13.249
-sudo proxy-wl list
-sudo proxy-wl save
-
-
-  使用方法
-  
-  #
-  
-
-cat <<&#39;EOF&#39; >> ~/.bashrc
-
-# Proxy on/off helpers
-proxy() {
-  local url="http://A1kq-V7mQ3pX:zG7Y~m2Q9pL6_uV4-F3tC8wR@207.246.111.213:3128"
-  export http_proxy="$url"
-  export https_proxy="$url"
-  export HTTP_PROXY="$url"
-  export HTTPS_PROXY="$url"
-  # 常见 no_proxy 列表，可按需加入内网网段
-  export no_proxy="localhost,127.0.0.1,::1"
-  export NO_PROXY="$no_proxy"
-  echo "Proxy ON -> $url"
-}
-
-unproxy() {
-  unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY no_proxy NO_PROXY
-  echo "Proxy OFF"
-}
-
-EOF
-
-# 让当前 shell 生效
-. ~/.bashrc
 
 cat <<&#39;EOF&#39; >> ~/.zshrc
 
@@ -265,7 +137,7 @@ sudo apt install v2raya v2ray ## 也可以使用 xray 包
 sudo systemctl start v2raya.service
 sudo systemctl enable v2raya.service
 参考： v2raya 快速上手'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/"><meta property="og:site_name" content="计算机学习笔记"><meta property="og:title" content="v2ray"><meta property="og:description" content='v2ray # 服务端 # wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/Xray_onekey/nginx_forward/install.sh" && chmod +x install.sh && bash install.sh # 启动方式 # 启动 Xray：systemctl start xray # 停止 Xray：systemctl stop xray # 启动 Nginx：systemctl start nginx # 停止 Nginx：systemctl stop nginx # 相关目录 # Web 目录：/www/xray_web # Xray 服务端配置：/usr/local/etc/xray/config.json # Nginx 目录： /etc/nginx openai # 安装参考 [[ubuntu/docker]]
-docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restart unless-stopped amirdaaee/cloudflare-warp:latest curl -x "socks5://127.0.0.1:7081" ipinfo.io vim /usr/local/etc/xray/config.json # outbounds 加上 { "protocol": "socks", "settings": { "servers": [ { "address": "127.0.0.1", "port": 7081, "users": [] } ] }, "tag": "warp_proxy" }, # routing - rules 加上 { "type": "field", "outboundTag": "warp_proxy", "domain": ["openai.com"] }, # 然后重启 systemctl restart xray ip 白名单 # # 第一次 # 安装依赖与目录 sudo apt-get update sudo apt-get install -y iptables-persistent ipset sudo mkdir -p /etc/iptables # 创建 ipset 集合（白名单容器） sudo ipset create PROXY_WL hash:ip -exist # iptables 链与规则（仅建立一次，幂等） # 端口 HTTP_PORT=3128 SOCKS_PORT=29108 # 若链不存在则创建 sudo iptables -L PROXY_WHITELIST -n >/dev/null 2>&amp;1 || sudo iptables -N PROXY_WHITELIST # 链首：匹配 ipset 的来源就放行（幂等） sudo iptables -C PROXY_WHITELIST -m set --match-set PROXY_WL src -j RETURN 2>/dev/null \ || sudo iptables -I PROXY_WHITELIST 1 -m set --match-set PROXY_WL src -j RETURN # 内网/回环（按需保留） for cidr in 127.0.0.0/8 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16; do sudo iptables -C PROXY_WHITELIST -s $cidr -j RETURN 2>/dev/null || \ sudo iptables -A PROXY_WHITELIST -s $cidr -j RETURN done # 链尾：其余丢弃 sudo iptables -C PROXY_WHITELIST -j DROP 2>/dev/null || sudo iptables -A PROXY_WHITELIST -j DROP # 把链挂到端口（TCP：HTTP+SOCKS） sudo iptables -C INPUT -p tcp -m multiport --dports $HTTP_PORT,$SOCKS_PORT -j PROXY_WHITELIST 2>/dev/null \ || sudo iptables -A INPUT -p tcp -m multiport --dports $HTTP_PORT,$SOCKS_PORT -j PROXY_WHITELIST # 如果需要 SOCKS 的 UDP（可选） sudo iptables -C INPUT -p udp --dport $SOCKS_PORT -j PROXY_WHITELIST 2>/dev/null \ || sudo iptables -A INPUT -p udp --dport $SOCKS_PORT -j PROXY_WHITELIST # 持久化 + 自启动（保证重启也生效） # 保存当前 iptables/ipset sudo sh -c &#39;iptables-save > /etc/iptables/rules.v4&#39; sudo sh -c &#39;ip6tables-save > /etc/iptables/rules.v6&#39; # 用不到IPv6也可留空 sudo sh -c &#39;ipset save > /etc/iptables/ipset.conf&#39; # 创建 ipset 开机恢复服务（带 -exist，幂等） sudo tee /etc/systemd/system/ipset-restore.service >/dev/null <<&#39;EOF&#39; [Unit] Description=Restore ipset sets DefaultDependencies=no Before=netfilter-persistent.service [Service] Type=oneshot ExecStart=/usr/sbin/ipset restore -exist -f /etc/iptables/ipset.conf RemainAfterExit=yes [Install] WantedBy=multi-user.target EOF # 启用/启动 sudo systemctl daemon-reload sudo systemctl enable ipset-restore.service sudo systemctl enable netfilter-persistent sudo systemctl restart ipset-restore.service sudo systemctl restart netfilter-persistent # 安装 “白名单助手” 脚本 sudo tee /usr/local/sbin/proxy-wl >/dev/null <<&#39;EOF&#39; #!/usr/bin/env bash set -euo pipefail SET=PROXY_WL CONF_DIR=/etc/iptables IPSET_CONF=$CONF_DIR/ipset.conf IPT_V4=$CONF_DIR/rules.v4 usage() { echo "Usage: $0 {add IP|del IP|list|save}"; exit 1; } [ $# -ge 1 ] || usage cmd="$1"; shift || true case "$cmd" in add) [ $# -eq 1 ] || usage sudo ipset add "$SET" "$1" -exist echo "[ADD] $1" ;; del) [ $# -eq 1 ] || usage sudo ipset del "$SET" "$1" echo "[DEL] $1" ;; list) sudo ipset list "$SET" ;; save) sudo mkdir -p "$CONF_DIR" sudo sh -c "ipset save > &#39;$IPSET_CONF&#39;" sudo sh -c "iptables-save > &#39;$IPT_V4&#39;" # 幂等恢复一次 sudo /usr/sbin/ipset restore -exist -f "$IPSET_CONF" echo "[SAVE] persisted & restored." ;; *) usage ;; esac EOF sudo chmod +x /usr/local/sbin/proxy-wl # 增删 ip sudo proxy-wl add 1.180.13.249 sudo proxy-wl add 14.155.58.153 # sudo proxy-wl del 1.180.13.249 sudo proxy-wl list sudo proxy-wl save 使用方法 # cat <<&#39;EOF&#39; >> ~/.bashrc # Proxy on/off helpers proxy() { local url="http://A1kq-V7mQ3pX:zG7Y~m2Q9pL6_uV4-F3tC8wR@207.246.111.213:3128" export http_proxy="$url" export https_proxy="$url" export HTTP_PROXY="$url" export HTTPS_PROXY="$url" # 常见 no_proxy 列表，可按需加入内网网段 export no_proxy="localhost,127.0.0.1,::1" export NO_PROXY="$no_proxy" echo "Proxy ON -> $url" } unproxy() { unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY no_proxy NO_PROXY echo "Proxy OFF" } EOF # 让当前 shell 生效 . ~/.bashrc cat <<&#39;EOF&#39; >> ~/.zshrc # Proxy on/off helpers proxy() { local url="http://A1kq-V7mQ3pX:zG7Y~m2Q9pL6_uV4-F3tC8wR@207.246.111.213:3128" export http_proxy="$url" export https_proxy="$url" export HTTP_PROXY="$url" export HTTPS_PROXY="$url" # 常见 no_proxy 列表，可按需加入内网网段 export no_proxy="localhost,127.0.0.1,::1" export NO_PROXY="$no_proxy" echo "Proxy ON -> $url" } unproxy() { unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY no_proxy NO_PROXY echo "Proxy OFF" } EOF # 让当前 shell 生效 . ~/.zshrc Linux 客户端 # v2rayA # # 添加公钥 wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/keyrings/v2raya.asc # 添加 V2RayA 软件源 echo "deb [signed-by=/etc/apt/keyrings/v2raya.asc] https://apt.v2raya.org/ v2raya main" | sudo tee /etc/apt/sources.list.d/v2raya.list sudo apt update # 安装 V2RayA sudo apt install v2raya v2ray ## 也可以使用 xray 包 sudo systemctl start v2raya.service sudo systemctl enable v2raya.service 参考： v2raya 快速上手'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2025-10-05T13:24:08+08:00"><title>v2ray | 计算机学习笔记</title><link rel=icon href=/note-cs/favicon.png><link rel=manifest href=/note-cs/manifest.json><link rel=canonical href=https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/><link rel=stylesheet href=/note-cs/book.min.ce1c5c2253283c431b33f3a26460127223ab7b4d18f018f6ef1294e954b520da.css integrity="sha256-zhxcIlMoPEMbM/OiZGASciOre00Y8Bj27xKU6VS1INo=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.c8520f1bd152b5c13a8f8f9dd1449cd223eb13233a9b3c225808c1af3fd88553.js integrity="sha256-yFIPG9FStcE6j4+d0USc0iPrEyM6mzwiWAjBrz/YhVM=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restart unless-stopped amirdaaee/cloudflare-warp:latest curl -x "socks5://127.0.0.1:7081" ipinfo.io vim /usr/local/etc/xray/config.json # outbounds 加上 { "protocol": "socks", "settings": { "servers": [ { "address": "127.0.0.1", "port": 7081, "users": [] } ] }, "tag": "warp_proxy" }, # routing - rules 加上 { "type": "field", "outboundTag": "warp_proxy", "domain": ["openai.com"] }, # inbounds 加上 { "port": 14443, "listen": "0.0.0.0", "tag": "GW-VLESS-in", "protocol": "VLESS", "settings": { "clients": [ { "id": "REPLACE_WITH_NEW_UUID", "encryption": "none" } ], "decryption": "none" }, "streamSettings": { "network": "ws", "security": "none", "wsSettings": { "path": "/gw1080" } } }, # 然后重启 systemctl restart xray cat <<&#39;EOF&#39; >> ~/.zshrc # Proxy on/off helpers proxy() { local url="http://A1kq-V7mQ3pX:zG7Y~m2Q9pL6_uV4-F3tC8wR@207.246.111.213:3128" export http_proxy="$url" export https_proxy="$url" export HTTP_PROXY="$url" export HTTPS_PROXY="$url" # 常见 no_proxy 列表，可按需加入内网网段 export no_proxy="localhost,127.0.0.1,::1" export NO_PROXY="$no_proxy" echo "Proxy ON -> $url" } unproxy() { unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY no_proxy NO_PROXY echo "Proxy OFF" } EOF # 让当前 shell 生效 . ~/.zshrc Linux 客户端 # v2rayA # # 添加公钥 wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/keyrings/v2raya.asc # 添加 V2RayA 软件源 echo "deb [signed-by=/etc/apt/keyrings/v2raya.asc] https://apt.v2raya.org/ v2raya main" | sudo tee /etc/apt/sources.list.d/v2raya.list sudo apt update # 安装 V2RayA sudo apt install v2raya v2ray ## 也可以使用 xray 包 sudo systemctl start v2raya.service sudo systemctl enable v2raya.service 参考： v2raya 快速上手'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2025-10-05T13:24:08+08:00"><title>v2ray | 计算机学习笔记</title><link rel=icon href=/note-cs/favicon.png><link rel=manifest href=/note-cs/manifest.json><link rel=canonical href=https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/><link rel=stylesheet href=/note-cs/book.min.ce1c5c2253283c431b33f3a26460127223ab7b4d18f018f6ef1294e954b520da.css integrity="sha256-zhxcIlMoPEMbM/OiZGASciOre00Y8Bj27xKU6VS1INo=" crossorigin=anonymous><script defer src=/note-cs/fuse.min.js></script><script defer src=/note-cs/en.search.min.222c7492c1ab1894dde99d57cd92dbc2c3d5574c3653d185f65d65d608c97057.js integrity="sha256-Iix0ksGrGJTd6Z1XzZLbwsPVV0w2U9GF9l1l1gjJcFc=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/note-cs/><span>计算机学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础</span><ul><li><input type=checkbox id=section-b264d5c1a2ab3bb2fd731008bd799320 class=toggle>
 <label for=section-b264d5c1a2ab3bb2fd731008bd799320 class=flex><a href=/note-cs/docs/basic/cc/ class=flex-auto>1.1 计算机组成原理</a></label><ul><li><a href=/note-cs/docs/basic/cc/cpu/>CPU</a></li><li><a href=/note-cs/docs/basic/cc/dmi/>DMI</a></li><li><a href=/note-cs/docs/basic/cc/gpu/>GPU</a><ul><li><input type=checkbox id=section-0333e6ea7218a6a6c5bedbd86cb89c0d class=toggle>
 <label for=section-0333e6ea7218a6a6c5bedbd86cb89c0d class=flex><a href=/note-cs/docs/basic/cc/gpu/cuda/ class=flex-auto>CUDA</a></label><ul><li><input type=checkbox id=section-d3c04b475f915bab9e14a3a2c0456a80 class=toggle>
@@ -916,7 +788,7 @@ docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restar
 <label for=section-caf546b9b145c4964b14cbbb5d882b65 class=flex><a href=/note-cs/docs/study/activity/ class=flex-auto>4.4 学习活动</a></label><ul><li><input type=checkbox id=section-464d5ffb99abd5e6ccd766730f17f14a class=toggle>
 <label for=section-464d5ffb99abd5e6ccd766730f17f14a class=flex><a href=/note-cs/docs/study/activity/istio-handbook/ class=flex-auto>《Istio Handbook》写作</a></label><ul></ul></li><li><input type=checkbox id=section-e3abae7393dd2a474b678aa8c0fb0fe5 class=toggle>
 <label for=section-e3abae7393dd2a474b678aa8c0fb0fe5 class=flex><a href=/note-cs/docs/study/activity/csapp/ class=flex-auto>《深入理解计算机系统》学习</a></label><ul></ul></li><li><input type=checkbox id=section-a928bb53de042edb5ea59396f4fac359 class=toggle>
-<label for=section-a928bb53de042edb5ea59396f4fac359 class=flex><a href=/note-cs/docs/study/activity/kubernetes-scheduler/ class=flex-auto>Kubernetes 调度器源码学习</a></label><ul></ul></li></ul></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/note-cs/svg/menu.svg class=book-icon alt=Menu></label><h3>v2ray</h3><label for=toc-control><img src=/note-cs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#服务端>服务端</a></li><li><a href=#openai>openai</a><ul><li><a href=#ip-白名单>ip 白名单</a></li><li><a href=#使用方法>使用方法</a></li></ul></li><li><a href=#linux-客户端>Linux 客户端</a><ul><li><a href=#v2raya>v2rayA</a></li></ul></li></ul></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></aside></header><article id=article class=markdown><h1 id=v2ray>v2ray
+<label for=section-a928bb53de042edb5ea59396f4fac359 class=flex><a href=/note-cs/docs/study/activity/kubernetes-scheduler/ class=flex-auto>Kubernetes 调度器源码学习</a></label><ul></ul></li></ul></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/note-cs/svg/menu.svg class=book-icon alt=Menu></label><h3>v2ray</h3><label for=toc-control><img src=/note-cs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#服务端>服务端</a></li><li><a href=#openai>openai</a></li><li><a href=#linux-客户端>Linux 客户端</a><ul><li><a href=#v2raya>v2rayA</a></li></ul></li></ul></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></aside></header><article id=article class=markdown><h1 id=v2ray>v2ray
 <a class=anchor href=#v2ray>#</a></h1><h2 id=服务端>服务端
 <a class=anchor href=#%e6%9c%8d%e5%8a%a1%e7%ab%af>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>wget -N --no-check-certificate -q -O install.sh <span style=color:#e6db74>&#34;https://raw.githubusercontent.com/wulabing/Xray_onekey/nginx_forward/install.sh&#34;</span> <span style=color:#f92672>&amp;&amp;</span> chmod +x install.sh <span style=color:#f92672>&amp;&amp;</span> bash install.sh
 </span></span><span style=display:flex><span>
@@ -961,150 +833,33 @@ docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restar
 </span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;domain&#34;</span>: <span style=color:#f92672>[</span><span style=color:#e6db74>&#34;openai.com&#34;</span><span style=color:#f92672>]</span>
 </span></span><span style=display:flex><span>      <span style=color:#f92672>}</span>,
 </span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># inbounds 加上</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;port&#34;</span>: 14443,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;listen&#34;</span>: <span style=color:#e6db74>&#34;0.0.0.0&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;tag&#34;</span>: <span style=color:#e6db74>&#34;GW-VLESS-in&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;protocol&#34;</span>: <span style=color:#e6db74>&#34;VLESS&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;settings&#34;</span>: <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>          <span style=color:#e6db74>&#34;clients&#34;</span>: <span style=color:#f92672>[</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>              <span style=color:#e6db74>&#34;id&#34;</span>: <span style=color:#e6db74>&#34;REPLACE_WITH_NEW_UUID&#34;</span>,
+</span></span><span style=display:flex><span>              <span style=color:#e6db74>&#34;encryption&#34;</span>: <span style=color:#e6db74>&#34;none&#34;</span>
+</span></span><span style=display:flex><span>            <span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>]</span>,
+</span></span><span style=display:flex><span>          <span style=color:#e6db74>&#34;decryption&#34;</span>: <span style=color:#e6db74>&#34;none&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;streamSettings&#34;</span>: <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>          <span style=color:#e6db74>&#34;network&#34;</span>: <span style=color:#e6db74>&#34;ws&#34;</span>,
+</span></span><span style=display:flex><span>          <span style=color:#e6db74>&#34;security&#34;</span>: <span style=color:#e6db74>&#34;none&#34;</span>,
+</span></span><span style=display:flex><span>          <span style=color:#e6db74>&#34;wsSettings&#34;</span>: <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;path&#34;</span>: <span style=color:#e6db74>&#34;/gw1080&#34;</span>
+</span></span><span style=display:flex><span>          <span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>}</span>,
+</span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#75715e># 然后重启</span>
 </span></span><span style=display:flex><span>systemctl restart xray
-</span></span></code></pre></div><h3 id=ip-白名单>ip 白名单
-<a class=anchor href=#ip-%e7%99%bd%e5%90%8d%e5%8d%95>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#75715e># 第一次</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 安装依赖与目录</span>
-</span></span><span style=display:flex><span>sudo apt-get update
-</span></span><span style=display:flex><span>sudo apt-get install -y iptables-persistent ipset
-</span></span><span style=display:flex><span>sudo mkdir -p /etc/iptables
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 创建 ipset 集合（白名单容器）</span>
-</span></span><span style=display:flex><span>sudo ipset create PROXY_WL hash:ip -exist
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># iptables 链与规则（仅建立一次，幂等）</span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 端口</span>
-</span></span><span style=display:flex><span>HTTP_PORT<span style=color:#f92672>=</span><span style=color:#ae81ff>3128</span>
-</span></span><span style=display:flex><span>SOCKS_PORT<span style=color:#f92672>=</span><span style=color:#ae81ff>29108</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 若链不存在则创建</span>
-</span></span><span style=display:flex><span>sudo iptables -L PROXY_WHITELIST -n &gt;/dev/null 2&gt;&amp;<span style=color:#ae81ff>1</span> <span style=color:#f92672>||</span> sudo iptables -N PROXY_WHITELIST
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 链首：匹配 ipset 的来源就放行（幂等）</span>
-</span></span><span style=display:flex><span>sudo iptables -C PROXY_WHITELIST -m set --match-set PROXY_WL src -j RETURN 2&gt;/dev/null <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  <span style=color:#f92672>||</span> sudo iptables -I PROXY_WHITELIST <span style=color:#ae81ff>1</span> -m set --match-set PROXY_WL src -j RETURN
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 内网/回环（按需保留）</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> cidr in 127.0.0.0/8 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16; <span style=color:#66d9ef>do</span>
-</span></span><span style=display:flex><span>  sudo iptables -C PROXY_WHITELIST -s $cidr -j RETURN 2&gt;/dev/null <span style=color:#f92672>||</span> <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  sudo iptables -A PROXY_WHITELIST -s $cidr -j RETURN
-</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 链尾：其余丢弃</span>
-</span></span><span style=display:flex><span>sudo iptables -C PROXY_WHITELIST -j DROP 2&gt;/dev/null <span style=color:#f92672>||</span> sudo iptables -A PROXY_WHITELIST -j DROP
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 把链挂到端口（TCP：HTTP+SOCKS）</span>
-</span></span><span style=display:flex><span>sudo iptables -C INPUT -p tcp -m multiport --dports $HTTP_PORT,$SOCKS_PORT -j PROXY_WHITELIST 2&gt;/dev/null <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  <span style=color:#f92672>||</span> sudo iptables -A INPUT -p tcp -m multiport --dports $HTTP_PORT,$SOCKS_PORT -j PROXY_WHITELIST
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 如果需要 SOCKS 的 UDP（可选）</span>
-</span></span><span style=display:flex><span>sudo iptables -C INPUT -p udp --dport $SOCKS_PORT -j PROXY_WHITELIST 2&gt;/dev/null <span style=color:#ae81ff>\
-</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  <span style=color:#f92672>||</span> sudo iptables -A INPUT -p udp --dport $SOCKS_PORT -j PROXY_WHITELIST
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 持久化 + 自启动（保证重启也生效）</span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 保存当前 iptables/ipset</span>
-</span></span><span style=display:flex><span>sudo sh -c <span style=color:#e6db74>&#39;iptables-save &gt; /etc/iptables/rules.v4&#39;</span>
-</span></span><span style=display:flex><span>sudo sh -c <span style=color:#e6db74>&#39;ip6tables-save &gt; /etc/iptables/rules.v6&#39;</span>   <span style=color:#75715e># 用不到IPv6也可留空</span>
-</span></span><span style=display:flex><span>sudo sh -c <span style=color:#e6db74>&#39;ipset save &gt; /etc/iptables/ipset.conf&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 创建 ipset 开机恢复服务（带 -exist，幂等）</span>
-</span></span><span style=display:flex><span>sudo tee /etc/systemd/system/ipset-restore.service &gt;/dev/null <span style=color:#e6db74>&lt;&lt;&#39;EOF&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>[Unit]
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Description=Restore ipset sets
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>DefaultDependencies=no
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Before=netfilter-persistent.service
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>[Service]
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Type=oneshot
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>ExecStart=/usr/sbin/ipset restore -exist -f /etc/iptables/ipset.conf
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>RemainAfterExit=yes
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>[Install]
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>WantedBy=multi-user.target
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>EOF</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 启用/启动</span>
-</span></span><span style=display:flex><span>sudo systemctl daemon-reload
-</span></span><span style=display:flex><span>sudo systemctl enable ipset-restore.service
-</span></span><span style=display:flex><span>sudo systemctl enable netfilter-persistent
-</span></span><span style=display:flex><span>sudo systemctl restart ipset-restore.service
-</span></span><span style=display:flex><span>sudo systemctl restart netfilter-persistent
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 安装 “白名单助手” 脚本</span>
-</span></span><span style=display:flex><span>sudo tee /usr/local/sbin/proxy-wl &gt;/dev/null <span style=color:#e6db74>&lt;&lt;&#39;EOF&#39;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>#!/usr/bin/env bash
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>set -euo pipefail
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>SET=PROXY_WL
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>CONF_DIR=/etc/iptables
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>IPSET_CONF=$CONF_DIR/ipset.conf
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>IPT_V4=$CONF_DIR/rules.v4
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>usage() { echo &#34;Usage: $0 {add IP|del IP|list|save}&#34;; exit 1; }
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>[ $# -ge 1 ] || usage
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>cmd=&#34;$1&#34;; shift || true
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>case &#34;$cmd&#34; in
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  add)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    [ $# -eq 1 ] || usage
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    sudo ipset add &#34;$SET&#34; &#34;$1&#34; -exist
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    echo &#34;[ADD] $1&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    ;;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  del)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    [ $# -eq 1 ] || usage
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    sudo ipset del &#34;$SET&#34; &#34;$1&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    echo &#34;[DEL] $1&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    ;;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  list)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    sudo ipset list &#34;$SET&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    ;;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  save)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    sudo mkdir -p &#34;$CONF_DIR&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    sudo sh -c &#34;ipset save &gt; &#39;$IPSET_CONF&#39;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    sudo sh -c &#34;iptables-save &gt; &#39;$IPT_V4&#39;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    # 幂等恢复一次
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    sudo /usr/sbin/ipset restore -exist -f &#34;$IPSET_CONF&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    echo &#34;[SAVE] persisted &amp; restored.&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    ;;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  *)
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    usage
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    ;;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>esac
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>EOF</span>
-</span></span><span style=display:flex><span>sudo chmod +x /usr/local/sbin/proxy-wl
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#75715e># 增删 ip</span>
-</span></span><span style=display:flex><span>sudo proxy-wl add 1.180.13.249
-</span></span><span style=display:flex><span>sudo proxy-wl add 14.155.58.153
-</span></span><span style=display:flex><span><span style=color:#75715e># sudo proxy-wl del 1.180.13.249</span>
-</span></span><span style=display:flex><span>sudo proxy-wl list
-</span></span><span style=display:flex><span>sudo proxy-wl save
-</span></span></code></pre></div><hr><h3 id=使用方法>使用方法
-<a class=anchor href=#%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>cat <span style=color:#e6db74>&lt;&lt;&#39;EOF&#39; &gt;&gt; ~/.bashrc
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74># Proxy on/off helpers
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>proxy() {
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  local url=&#34;http://A1kq-V7mQ3pX:zG7Y~m2Q9pL6_uV4-F3tC8wR@207.246.111.213:3128&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  export http_proxy=&#34;$url&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  export https_proxy=&#34;$url&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  export HTTP_PROXY=&#34;$url&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  export HTTPS_PROXY=&#34;$url&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  # 常见 no_proxy 列表，可按需加入内网网段
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  export no_proxy=&#34;localhost,127.0.0.1,::1&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  export NO_PROXY=&#34;$no_proxy&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  echo &#34;Proxy ON -&gt; $url&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>}
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>unproxy() {
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY no_proxy NO_PROXY
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  echo &#34;Proxy OFF&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>}
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>EOF</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># 让当前 shell 生效</span>
-</span></span><span style=display:flex><span>. ~/.bashrc
 </span></span></code></pre></div><hr><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>cat <span style=color:#e6db74>&lt;&lt;&#39;EOF&#39; &gt;&gt; ~/.zshrc
 </span></span></span><span style=display:flex><span><span style=color:#e6db74>
 </span></span></span><span style=display:flex><span><span style=color:#e6db74># Proxy on/off helpers
@@ -1147,4 +902,4 @@ docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restar
 <span>systemd</span>
 </a></span><span><a href=/note-cs/docs/tool/linux/ubuntu/zsh/ class="flex align-center"><span>zsh</span>
 <img src=/note-cs/svg/forward.svg class=book-icon alt=Next title=zsh></a></span></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/note-cs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
-版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#服务端>服务端</a></li><li><a href=#openai>openai</a><ul><li><a href=#ip-白名单>ip 白名单</a></li><li><a href=#使用方法>使用方法</a></li></ul></li><li><a href=#linux-客户端>Linux 客户端</a><ul><li><a href=#v2raya>v2rayA</a></li></ul></li></ul></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></div></aside></main></body></html>
+版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#服务端>服务端</a></li><li><a href=#openai>openai</a></li><li><a href=#linux-客户端>Linux 客户端</a><ul><li><a href=#v2raya>v2rayA</a></li></ul></li></ul></nav><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></div></aside></main></body></html>
