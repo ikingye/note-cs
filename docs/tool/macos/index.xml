@@ -204,7 +204,8 @@
  &lt;a class="anchor" href="#conan"&gt;#&lt;/a&gt;
  
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/conan-io/conan"&gt;conan-io/conan&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/conan-io/conan.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/conan-io/conan.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/conan-io/conan.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/conan-io/conan.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/conan-io/conan.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Gemini CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</guid><description>&lt;h1 id="gemini-cli"&gt;
+&lt;p&gt;&lt;a href="https://github.com/conan-io/conan"&gt;conan-io/conan&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/conan-io/conan.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/conan-io/conan.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/conan-io/conan.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/conan-io/conan.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/conan-io/conan.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;Conan - The open-source C and C++ package manager&lt;/p&gt;</description></item><item><title>Gemini CLI</title><link>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/gemini-cli/</guid><description>&lt;h1 id="gemini-cli"&gt;
  Gemini CLI
  
  &lt;a class="anchor" href="#gemini-cli"&gt;#&lt;/a&gt;
@@ -221,7 +222,21 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd gemini-cli
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout feature/openrouter-support
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Anki</title><link>https://kingye.me/note-cs/docs/tool/macos/anki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/anki/</guid><description>&lt;h1 id="anki"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>spack</title><link>https://kingye.me/note-cs/docs/tool/macos/spack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/spack/</guid><description>&lt;h1 id="spack"&gt;
+ spack
+ 
+ &lt;a class="anchor" href="#spack"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/spack/spack"&gt;spack/spack&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/spack/spack.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/spack/spack.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/spack/spack.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/spack/spack.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/spack/spack.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;A flexible package manager that supports multiple versions, configurations, platforms, and compilers.&lt;/p&gt;</description></item><item><title>vcpkg</title><link>https://kingye.me/note-cs/docs/tool/macos/vcpkg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/vcpkg/</guid><description>&lt;h1 id="vcpkg"&gt;
+ vcpkg
+ 
+ &lt;a class="anchor" href="#vcpkg"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/microsoft/vcpkg"&gt;microsoft/vcpkg&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/microsoft/vcpkg.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/microsoft/vcpkg.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/microsoft/vcpkg.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/microsoft/vcpkg.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/microsoft/vcpkg.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;C++ Library Manager for Windows, Linux, and MacOS&lt;/p&gt;</description></item><item><title>Anki</title><link>https://kingye.me/note-cs/docs/tool/macos/anki/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/anki/</guid><description>&lt;h1 id="anki"&gt;
  Anki
  
  &lt;a class="anchor" href="#anki"&gt;#&lt;/a&gt;

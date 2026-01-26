@@ -5196,7 +5196,8 @@ CUPS（&lt;code&gt;Control and User Plane Separation&lt;/code&gt; ）架构&lt;/
  &lt;a class="anchor" href="#conan"&gt;#&lt;/a&gt;
  
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/conan-io/conan"&gt;conan-io/conan&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/conan-io/conan.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/conan-io/conan.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/conan-io/conan.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/conan-io/conan.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/conan-io/conan.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/os/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/cpu/</guid><description>&lt;h1 id="cpu"&gt;
+&lt;p&gt;&lt;a href="https://github.com/conan-io/conan"&gt;conan-io/conan&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/conan-io/conan.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/conan-io/conan.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/conan-io/conan.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/conan-io/conan.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/conan-io/conan.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;Conan - The open-source C and C++ package manager&lt;/p&gt;</description></item><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/os/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/cpu/</guid><description>&lt;h1 id="cpu"&gt;
  CPU
  
  &lt;a class="anchor" href="#cpu"&gt;#&lt;/a&gt;
@@ -5507,7 +5508,14 @@ CUPS（&lt;code&gt;Control and User Plane Separation&lt;/code&gt; ）架构&lt;/
  &lt;a class="anchor" href="#es"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
-&lt;p&gt;Elementary Stream&lt;/p&gt;</description></item><item><title>Spring Boot</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</guid><description>&lt;h1 id="spring-boot"&gt;
+&lt;p&gt;Elementary Stream&lt;/p&gt;</description></item><item><title>spack</title><link>https://kingye.me/note-cs/docs/tool/macos/spack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/spack/</guid><description>&lt;h1 id="spack"&gt;
+ spack
+ 
+ &lt;a class="anchor" href="#spack"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/spack/spack"&gt;spack/spack&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/spack/spack.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/spack/spack.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/spack/spack.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/spack/spack.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/spack/spack.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;A flexible package manager that supports multiple versions, configurations, platforms, and compilers.&lt;/p&gt;</description></item><item><title>Spring Boot</title><link>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/frame/java/spring/spring-boot/</guid><description>&lt;h1 id="spring-boot"&gt;
  Spring Boot
  
  &lt;a class="anchor" href="#spring-boot"&gt;#&lt;/a&gt;
@@ -5658,7 +5666,14 @@ CUPS（&lt;code&gt;Control and User Plane Separation&lt;/code&gt; ）架构&lt;/
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;带箭头的&lt;strong&gt;虚线&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232054.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>内存</title><link>https://kingye.me/note-cs/docs/basic/os/memory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/memory/</guid><description>&lt;h1 id="内存"&gt;
+&lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200511232054.png" alt="" /&gt;&lt;/p&gt;</description></item><item><title>vcpkg</title><link>https://kingye.me/note-cs/docs/tool/macos/vcpkg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/vcpkg/</guid><description>&lt;h1 id="vcpkg"&gt;
+ vcpkg
+ 
+ &lt;a class="anchor" href="#vcpkg"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/microsoft/vcpkg"&gt;microsoft/vcpkg&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/microsoft/vcpkg.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/microsoft/vcpkg.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/microsoft/vcpkg.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/microsoft/vcpkg.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/microsoft/vcpkg.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;p&gt;C++ Library Manager for Windows, Linux, and MacOS&lt;/p&gt;</description></item><item><title>内存</title><link>https://kingye.me/note-cs/docs/basic/os/memory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/os/memory/</guid><description>&lt;h1 id="内存"&gt;
  内存
  
  &lt;a class="anchor" href="#%e5%86%85%e5%ad%98"&gt;#&lt;/a&gt;
