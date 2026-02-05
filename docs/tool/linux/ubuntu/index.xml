@@ -274,7 +274,13 @@
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://doc.rust-lang.org/cargo"&gt;The Cargo Book&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Conda</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid><description>&lt;h1 id="conda"&gt;
+&lt;/ul&gt;</description></item><item><title>ClickHouse</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ClickHouse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ClickHouse/</guid><description>&lt;h1 id="clickhouse"&gt;
+ ClickHouse
+ 
+ &lt;a class="anchor" href="#clickhouse"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/ClickHouse/ClickHouse"&gt;ClickHouse/ClickHouse&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ClickHouse/ClickHouse.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ClickHouse/ClickHouse.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ClickHouse/ClickHouse.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ClickHouse/ClickHouse.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ClickHouse/ClickHouse.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Conda</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid><description>&lt;h1 id="conda"&gt;
  Conda
  
  &lt;a class="anchor" href="#conda"&gt;#&lt;/a&gt;
@@ -951,7 +957,13 @@
  &lt;a class="anchor" href="#docker-privileged"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
-&lt;p&gt;docker run &amp;ndash;privileged=true 和 docker run &amp;ndash;privileged 是完全等价的&lt;/p&gt;</description></item><item><title>feh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid><description>&lt;h1 id="feh"&gt;
+&lt;p&gt;docker run &amp;ndash;privileged=true 和 docker run &amp;ndash;privileged 是完全等价的&lt;/p&gt;</description></item><item><title>Doris</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/doris/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/doris/</guid><description>&lt;h1 id="doris"&gt;
+ Doris
+ 
+ &lt;a class="anchor" href="#doris"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/apache/doris"&gt;apache/doris&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/apache/doris.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/apache/doris.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/apache/doris.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/apache/doris.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/apache/doris.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>feh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid><description>&lt;h1 id="feh"&gt;
  feh
  
  &lt;a class="anchor" href="#feh"&gt;#&lt;/a&gt;
