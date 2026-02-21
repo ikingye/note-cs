@@ -13084,7 +13084,28 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/adrai/flowchart.js"&gt;adrai/flowchart.js&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/adrai/flowchart.js.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/adrai/flowchart.js.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/adrai/flowchart.js.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/adrai/flowchart.js.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Draws simple SVG flow chart diagrams from textual representation of the diagram
-&lt;a href="http://flowchart.js.org/"&gt;http://flowchart.js.org/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>git</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/git/</guid><description>&lt;h1 id="git"&gt;
+&lt;a href="http://flowchart.js.org/"&gt;http://flowchart.js.org/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>fzf</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/fzf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/fzf/</guid><description>&lt;h1 id="fzf"&gt;
+ fzf
+ 
+ &lt;a class="anchor" href="#fzf"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/junegunn/fzf"&gt;junegunn/fzf&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/junegunn/fzf.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/junegunn/fzf.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/junegunn/fzf.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/junegunn/fzf.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/junegunn/fzf.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gateway API Inference Extension</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gaie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gaie/</guid><description>&lt;h1 id="gateway-api-inference-extension"&gt;
+ Gateway API Inference Extension
+ 
+ &lt;a class="anchor" href="#gateway-api-inference-extension"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension"&gt;kubernetes-sigs/gateway-api-inference-extension&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/kubernetes-sigs/gateway-api-inference-extension.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Your Hugging Face Token with access to the set of Llama models&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl create secret generic hf-token --from-literal&lt;span style="color:#f92672"&gt;=&lt;/span&gt;token&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$HF_TOKEN
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl apply -f &lt;span style="color:#e6db74"&gt;&amp;#34;https://raw.githubusercontent.com/kubernetes-sigs/gateway-api-inference-extension/refs/tags/&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;IGW_LATEST_RELEASE&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;/config/manifests/vllm/gpu-deployment.yaml&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl apply -f &lt;span style="color:#e6db74"&gt;&amp;#34;https://github.com/kubernetes-sigs/gateway-api-inference-extension/releases/download/&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;IGW_LATEST_RELEASE&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;/manifests.yaml&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>git</title><link>https://kingye.me/note-cs/docs/tool/linux/centos/git/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/centos/git/</guid><description>&lt;h1 id="git"&gt;
  git
  
  &lt;a class="anchor" href="#git"&gt;#&lt;/a&gt;
@@ -13434,7 +13455,15 @@ Automate everything from code deployment to network configuration to cloud manag
  &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>HHKB</title><link>https://kingye.me/note-cs/docs/tool/macos/hhkb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/hhkb/</guid><description>&lt;h1 id="hhkb-键盘"&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>helm</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/helm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/helm/</guid><description>&lt;h1 id="helm"&gt;
+ helm
+ 
+ &lt;a class="anchor" href="#helm"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>HHKB</title><link>https://kingye.me/note-cs/docs/tool/macos/hhkb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/hhkb/</guid><description>&lt;h1 id="hhkb-键盘"&gt;
  &lt;a href="https://www.wikiwand.com/zh-cn/Happy_Hacking_Keyboard"&gt;HHKB 键盘&lt;/a&gt;
  
  &lt;a class="anchor" href="#hhkb-%e9%94%ae%e7%9b%98"&gt;#&lt;/a&gt;
@@ -13786,6 +13815,17 @@ Automate everything from code deployment to network configuration to cloud manag
  &lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;
  
 &lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster list
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl config get-contexts
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias kctx&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;kubectl config use-context&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装"&gt;
+ 安装
+ 
+ &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装 k3d&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -13796,7 +13836,7 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;kind: Simple
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;metadata:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; name: cluster-1
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;image: rancher/k3s:v1.35.0-k3s1
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;image: rancher/k3s:v1.35.1-k3s1
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;servers: 1
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;agents: 2
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;registries:
@@ -13830,8 +13870,8 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo mkdir -p /etc/systemd/system/docker.service.d
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo tee /etc/systemd/system/docker.service.d/http-proxy.conf &amp;gt; /dev/null &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt;&amp;#39;EOF&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;[Service]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Environment=&amp;#34;HTTP_PROXY=http://127.0.0.1:1080&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Environment=&amp;#34;HTTPS_PROXY=http://127.0.0.1:1080&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Environment=&amp;#34;HTTP_PROXY=http://218.16.121.13:1080&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Environment=&amp;#34;HTTPS_PROXY=http://218.16.121.13:1080&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -13844,8 +13884,8 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; &amp;#39;DOCKERFILE_EOF&amp;#39; &amp;gt; Dockerfile
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;FROM nvidia/cuda:12.8.1-base-ubuntu24.04
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;ARG K3S_VERSION=&amp;#34;v1.35.0+k3s1&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;ARG KUBECTL_VERSION=&amp;#34;v1.35.0&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;ARG K3S_VERSION=&amp;#34;v1.35.1+k3s1&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;ARG KUBECTL_VERSION=&amp;#34;v1.35.1&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;ARG DEBIAN_FRONTEND=noninteractive
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;SHELL [&amp;#34;/bin/bash&amp;#34;, &amp;#34;-o&amp;#34;, &amp;#34;pipefail&amp;#34;, &amp;#34;-c&amp;#34;]
@@ -13906,12 +13946,6 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; cat &amp;gt; /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl &amp;lt;&amp;lt;&amp;#39;CONTAINERD_EOF&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;version = 2
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;[plugins.&amp;#34;io.containerd.grpc.v1.cri&amp;#34;]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; [plugins.&amp;#34;io.containerd.grpc.v1.cri&amp;#34;.cni]
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; bin_dir = &amp;#34;/opt/cni/bin&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; conf_dir = &amp;#34;/var/lib/rancher/k3s/agent/etc/cni/net.d&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; max_conf_num = 1
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;[plugins.&amp;#34;io.containerd.grpc.v1.cri&amp;#34;.containerd]
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; default_runtime_name = &amp;#34;runc&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
@@ -13930,10 +13964,20 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;#!/usr/bin/env bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;set -euo pipefail
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;cmd=&amp;#34;${1:-server}&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;shift || true
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;# 如果没有参数：默认跑 k3s server
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;if [[ $# -eq 0 ]]; then
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; exec /bin/k3s server --disable=traefik --disable=servicelb
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;fi
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;exec /bin/k3s &amp;#34;${cmd}&amp;#34; &amp;#34;$@&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;case &amp;#34;$1&amp;#34; in
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; server|agent|--help|-h|kubectl|ctr|crictl)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; exec /bin/k3s &amp;#34;$@&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; ;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; *)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; # 允许调试：bash / sh / nvidia-smi / cat ...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; exec &amp;#34;$@&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; ;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;esac
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;ENTRYPOINT_EOF
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;RUN chmod +x /usr/local/bin/entrypoint.sh
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
@@ -13942,8 +13986,8 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;DOCKERFILE_EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 构建镜像（现在会使用代理）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker push ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t ikingye/k3s-gpu:v1.35.1-k3s1-cuda12.8.1 .
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker push ikingye/k3s-gpu:v1.35.1-k3s1-cuda12.8.1
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 依赖&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
@@ -13966,21 +14010,21 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl restart docker
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 验证 GPU 容器&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm --gpus all nvidia/cuda:12.8.0-base-ubuntu24.04 nvidia-smi
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm --gpus all nvidia/cuda:12.8.1-base-ubuntu24.04 nvidia-smi
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda13.1.0 nvidia-smi
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm --gpus all ikingye/k3s-gpu:v1.35.1-k3s1-cuda13.1.0 nvidia-smi
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm --gpus all ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1 nvidia-smi
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm --gpus all ikingye/k3s-gpu:v1.35.1-k3s1-cuda12.8.1 nvidia-smi
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt; k3d-config-cluster-2.yaml
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt; k3d-config-cluster-1.yaml
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;apiVersion: k3d.io/v1alpha5
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;kind: Simple
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;metadata:
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; name: cluster-2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; name: cluster-1
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;# 1) 换成带 GPU runtime 适配的 k3s 镜像（来自 vainkop1/k3s-gpu）
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;image: ikingye/k3s-gpu:v1.35.0-k3s1-cuda12.8.1
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;image: ikingye/k3s-gpu:v1.35.1-k3s1-cuda12.8.1
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;servers: 1
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;agents: 2
@@ -13991,7 +14035,8 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; gpuRequest: all
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; k3s:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; extraArgs:
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - arg: &amp;#34;--snapshotter=native&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; # 对所有节点（server+agent）都生效
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - arg: &amp;#34;--snapshotter=fuse-overlayfs&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; nodeFilters:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - server:*
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - agent:*
@@ -14003,10 +14048,17 @@ Automate everything from code deployment to network configuration to cloud manag
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; endpoint:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - https://hub.kingye.me
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create --config k3d-config-cluster-2.yaml --verbose
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create --config k3d-config-cluster-1.yaml --gpus all --verbose
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d kubeconfig merge cluster-2 --switch-context
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KaTeX</title><link>https://kingye.me/note-cs/docs/tool/macos/katex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/katex/</guid><description>&lt;h1 id="katex"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# k3d kubeconfig merge cluster-1 --switch-context&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>k9s</title><link>https://kingye.me/note-cs/docs/tool/macos/k9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/k9s/</guid><description>&lt;h1 id="k9s"&gt;
+ k9s
+ 
+ &lt;a class="anchor" href="#k9s"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/derailed/k9s"&gt;derailed/k9s&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/derailed/k9s.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/derailed/k9s.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/derailed/k9s.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/derailed/k9s.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/derailed/k9s.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KaTeX</title><link>https://kingye.me/note-cs/docs/tool/macos/katex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/katex/</guid><description>&lt;h1 id="katex"&gt;
  KaTeX
  
  &lt;a class="anchor" href="#katex"&gt;#&lt;/a&gt;
@@ -14041,7 +14093,21 @@ $$&lt;/p&gt;</description></item><item><title>Kiali</title><link>https://kingye.
  
 &lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/kiali/kiali"&gt;kiali/kiali&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kiali/kiali.svg" alt="Github stars" /&gt;&lt;/p&gt;
-&lt;p&gt;Kiali project, observability for the Istio service mesh&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingye.me/note-cs/docs/tool/macos/kubectx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/kubectx/</guid><description>&lt;h1 id="kubectx"&gt;
+&lt;p&gt;Kiali project, observability for the Istio service mesh&lt;/p&gt;</description></item><item><title>kubectx</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubectx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubectx/</guid><description>&lt;h1 id="kubectx"&gt;
+ kubectx
+ 
+ &lt;a class="anchor" href="#kubectx"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/ahmetb/kubectx"&gt;ahmetb/kubectx&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ahmetb/kubectx.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ahmetb/kubectx.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ahmetb/kubectx.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ahmetb/kubectx.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ahmetb/kubectx.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd /usr/local/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget https://github.com/ahmetb/kubectx/releases/latest/download/kubectx
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget https://github.com/ahmetb/kubectx/releases/latest/download/kubens
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x kubectx kubens
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>kubectx</title><link>https://kingye.me/note-cs/docs/tool/macos/kubectx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/kubectx/</guid><description>&lt;h1 id="kubectx"&gt;
  kubectx
  
  &lt;a class="anchor" href="#kubectx"&gt;#&lt;/a&gt;
@@ -16164,7 +16230,7 @@ Docker 本身并不支持 GPU。
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;commands&amp;#34;&lt;/span&gt;: [
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;bookmarks.list&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ]
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }&lt;span style="color:#960050;background-color:#1e0010"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; },
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;before&amp;#34;&lt;/span&gt;: [
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Z&amp;#34;&lt;/span&gt;,

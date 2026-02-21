@@ -861,7 +861,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# notebook : 6.5.7&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# qtconsole : 5.5.2&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# traitlets : 5.14.3&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KaTeX</title><link>https://kingye.me/note-cs/docs/tool/macos/katex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/katex/</guid><description>&lt;h1 id="katex"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>k9s</title><link>https://kingye.me/note-cs/docs/tool/macos/k9s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/k9s/</guid><description>&lt;h1 id="k9s"&gt;
+ k9s
+ 
+ &lt;a class="anchor" href="#k9s"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/derailed/k9s"&gt;derailed/k9s&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/derailed/k9s.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/derailed/k9s.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/derailed/k9s.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/derailed/k9s.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/derailed/k9s.svg" alt="Last commit" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KaTeX</title><link>https://kingye.me/note-cs/docs/tool/macos/katex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/macos/katex/</guid><description>&lt;h1 id="katex"&gt;
  KaTeX
  
  &lt;a class="anchor" href="#katex"&gt;#&lt;/a&gt;
@@ -1685,7 +1692,7 @@ Using mas list will show all installed applications and their product identifier
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;commands&amp;#34;&lt;/span&gt;: [
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;bookmarks.list&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ]
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }&lt;span style="color:#960050;background-color:#1e0010"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; },
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;before&amp;#34;&lt;/span&gt;: [
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;Z&amp;#34;&lt;/span&gt;,
