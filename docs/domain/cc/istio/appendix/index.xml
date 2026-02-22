@@ -1,88 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第四部分 附录 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/</link><description>Recent content in 第四部分 附录 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/appendix/index.xml" rel="self" type="application/rss+xml"/><item><title>4.1 教程</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/tutorial/</guid><description>&lt;h1 id="istio-教程"&gt;
- Istio 教程
- 
- &lt;a class="anchor" href="#istio-%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="基础"&gt;
- 基础
- 
- &lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第四部分 附录 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/</link><description>Recent content in 第四部分 附录 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/appendix/index.xml" rel="self" type="application/rss+xml"/><item><title>4.1 教程</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/tutorial/</guid><description>&lt;h1 id="istio-教程"&gt;Istio 教程&lt;a class="anchor" href="#istio-%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="基础"&gt;基础&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;katacoda: &lt;a href="https://katacoda.com/guoxudong/scenarios/install-istio-using-istioctl"&gt;使用 istioctl 安装 istio&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.gmem.cc/istio-study-note"&gt;绿色记忆: Istio 学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.gmem.cc/interaction-between-istio-pilot-and-envoy"&gt;绿色记忆: Istio Pilot 与 Envoy 的交互机制解读&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="进阶"&gt;
- 进阶
- 
- &lt;a class="anchor" href="#%e8%bf%9b%e9%98%b6"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;</description></item><item><title>4.2 面试题</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/interview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/interview/</guid><description>&lt;h1 id="istio-面试题"&gt;
- Istio 面试题
- 
- &lt;a class="anchor" href="#istio-%e9%9d%a2%e8%af%95%e9%a2%98"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="基础题"&gt;
- 基础题
- 
- &lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%a2%98"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h2 id="进阶题"&gt;
- 进阶题
- 
- &lt;a class="anchor" href="#%e8%bf%9b%e9%98%b6%e9%a2%98"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;</description></item><item><title>4.3 关注项目</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/attention/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/attention/</guid><description>&lt;h1 id="关注项目"&gt;
- 关注项目
- 
- &lt;a class="anchor" href="#%e5%85%b3%e6%b3%a8%e9%a1%b9%e7%9b%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h3 id="istioistio-github-stars-language-last-tag-last-commit"&gt;
- &lt;a href="https://github.com/istio/istio"&gt;istio/istio&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/istio/istio.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/istio/istio.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/istio/istio.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/istio/istio.svg" alt="Last commit" /&gt;
- 
- &lt;a class="anchor" href="#istioistio-github-stars-language-last-tag-last-commit"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h2 id="进阶"&gt;进阶&lt;a class="anchor" href="#%e8%bf%9b%e9%98%b6"&gt;#&lt;/a&gt;&lt;/h2&gt;</description></item><item><title>4.2 面试题</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/interview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/interview/</guid><description>&lt;h1 id="istio-面试题"&gt;Istio 面试题&lt;a class="anchor" href="#istio-%e9%9d%a2%e8%af%95%e9%a2%98"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="基础题"&gt;基础题&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%a2%98"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="进阶题"&gt;进阶题&lt;a class="anchor" href="#%e8%bf%9b%e9%98%b6%e9%a2%98"&gt;#&lt;/a&gt;&lt;/h2&gt;</description></item><item><title>4.3 关注项目</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/attention/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/appendix/attention/</guid><description>&lt;h1 id="关注项目"&gt;关注项目&lt;a class="anchor" href="#%e5%85%b3%e6%b3%a8%e9%a1%b9%e7%9b%ae"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h3 id="istioistio-github-stars-language-last-tag-last-commit"&gt;&lt;a href="https://github.com/istio/istio"&gt;istio/istio&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/istio/istio.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/istio/istio.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/istio/istio.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/istio/istio.svg" alt="Last commit" /&gt;&lt;a class="anchor" href="#istioistio-github-stars-language-last-tag-last-commit"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Connect, secure, control, and observe services. &lt;a href="https://istio.io"&gt;https://istio.io&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="envoyproxyenvoy-github-stars"&gt;
- &lt;a href="https://github.com/envoyproxy/envoy"&gt;envoyproxy/envoy&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/envoyproxy/envoy.svg" alt="Github stars" /&gt;
- 
- &lt;a class="anchor" href="#envoyproxyenvoy-github-stars"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="envoyproxyenvoy-github-stars"&gt;&lt;a href="https://github.com/envoyproxy/envoy"&gt;envoyproxy/envoy&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/envoyproxy/envoy.svg" alt="Github stars" /&gt;&lt;a class="anchor" href="#envoyproxyenvoy-github-stars"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Cloud-native high-performance edge/middle/service proxy &lt;a href="https://www.envoyproxy.io"&gt;https://www.envoyproxy.io&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="kialikiali-github-stars"&gt;
- &lt;a href="https://github.com/kiali/kiali"&gt;kiali/kiali&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kiali/kiali.svg" alt="Github stars" /&gt;
- 
- &lt;a class="anchor" href="#kialikiali-github-stars"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="kialikiali-github-stars"&gt;&lt;a href="https://github.com/kiali/kiali"&gt;kiali/kiali&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kiali/kiali.svg" alt="Github stars" /&gt;&lt;a class="anchor" href="#kialikiali-github-stars"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Kiali project, observability for the Istio service mesh&lt;/p&gt;
-&lt;h3 id="mosnmosn-github-stars"&gt;
- &lt;a href="https://github.com/mosn/mosn"&gt;mosn/mosn&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/mosn/mosn.svg" alt="Github stars" /&gt;
- 
- &lt;a class="anchor" href="#mosnmosn-github-stars"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="mosnmosn-github-stars"&gt;&lt;a href="https://github.com/mosn/mosn"&gt;mosn/mosn&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/mosn/mosn.svg" alt="Github stars" /&gt;&lt;a class="anchor" href="#mosnmosn-github-stars"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;MOSN is a cloud native proxy for edge or service mesh. &lt;a href="https://mosn.io"&gt;https://mosn.io&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/rancher/rio"&gt;rancher/rio&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/rancher/rio.svg" alt="Github stars" /&gt;&lt;/p&gt;
 &lt;p&gt;Application Deployment Engine for Kubernetes &lt;a href="https://rio.io"&gt;https://rio.io&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="其他"&gt;
- 其他
- 
- &lt;a class="anchor" href="#%e5%85%b6%e4%bb%96"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="kuberneteskubernetes-github-stars-github-forks-language-last-tag-last-commit"&gt;
- &lt;a href="https://github.com/kubernetes/kubernetes"&gt;kubernetes/kubernetes&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kubernetes/kubernetes.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/kubernetes/kubernetes.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/kubernetes/kubernetes.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/kubernetes/kubernetes.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/kubernetes/kubernetes.svg" alt="Last commit" /&gt;
- 
- &lt;a class="anchor" href="#kuberneteskubernetes-github-stars-github-forks-language-last-tag-last-commit"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h2 id="其他"&gt;其他&lt;a class="anchor" href="#%e5%85%b6%e4%bb%96"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="kuberneteskubernetes-github-stars-github-forks-language-last-tag-last-commit"&gt;&lt;a href="https://github.com/kubernetes/kubernetes"&gt;kubernetes/kubernetes&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kubernetes/kubernetes.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/kubernetes/kubernetes.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/kubernetes/kubernetes.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/kubernetes/kubernetes.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/kubernetes/kubernetes.svg" alt="Last commit" /&gt;&lt;a class="anchor" href="#kuberneteskubernetes-github-stars-github-forks-language-last-tag-last-commit"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Production-Grade Container Scheduling and Management &lt;a href="https://kubernetes.io"&gt;https://kubernetes.io&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

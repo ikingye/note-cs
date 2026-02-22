@@ -1,22 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.1 Ubuntu on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/</link><description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Codex CLI</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/</guid><description>&lt;h1 id="codex-cli"&gt;
- Codex CLI
- 
- &lt;a class="anchor" href="#codex-cli"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>4.2.1 Ubuntu on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/</link><description>Recent content in 4.2.1 Ubuntu on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/tool/linux/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Codex CLI</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/codex/</guid><description>&lt;h1 id="codex-cli"&gt;Codex CLI&lt;a class="anchor" href="#codex-cli"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/openai/codex"&gt;openai/codex&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/openai/codex.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/openai/codex.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/openai/codex.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/openai/codex.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/openai/codex.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;h2 id="ubuntu-server-使用-codex-cli"&gt;
- ubuntu server 使用 codex cli
- 
- &lt;a class="anchor" href="#ubuntu-server-%e4%bd%bf%e7%94%a8-codex-cli"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="ssh-config-配置代理"&gt;
- ssh config 配置代理
- 
- &lt;a class="anchor" href="#ssh-config-%e9%85%8d%e7%bd%ae%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h2 id="ubuntu-server-使用-codex-cli"&gt;ubuntu server 使用 codex cli&lt;a class="anchor" href="#ubuntu-server-%e4%bd%bf%e7%94%a8-codex-cli"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="ssh-config-配置代理"&gt;ssh config 配置代理&lt;a class="anchor" href="#ssh-config-%e9%85%8d%e7%bd%ae%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;vim ~/.ssh/config&lt;/code&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-txt" data-lang="txt"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Host hhht-211
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; HostName 1.180.13.251
@@ -24,14 +9,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; IdentityFile ~/.ssh/id_rsa
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Port 211
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; # 代理
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; RemoteForward 127.0.0.1:1080 127.0.0.1:1080
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;本地电脑的 127.0.0.1:1080 有 http 代理，可以科学上网（访问 openai codex）&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id="部署配置"&gt;
- 部署配置
- 
- &lt;a class="anchor" href="#%e9%83%a8%e7%bd%b2%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; RemoteForward 127.0.0.1:1080 127.0.0.1:1080&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;本地电脑的 127.0.0.1:1080 有 http 代理，可以科学上网（访问 openai codex）&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="部署配置"&gt;部署配置&lt;a class="anchor" href="#%e9%83%a8%e7%bd%b2%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;ssh 登录远程服务器&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# apt update&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# apt install npm -y&lt;/span&gt;
@@ -42,13 +21,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;alias codex=&amp;#39;http_proxy=http://127.0.0.1:1080 https_proxy=http://127.0.0.1:1080 codex&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;. ~/.bashrc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="vscode-ssh-remote-使用-codex-插件"&gt;
- vscode ssh remote 使用 codex 插件
- 
- &lt;a class="anchor" href="#vscode-ssh-remote-%e4%bd%bf%e7%94%a8-codex-%e6%8f%92%e4%bb%b6"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;. ~/.bashrc&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="vscode-ssh-remote-使用-codex-插件"&gt;vscode ssh remote 使用 codex 插件&lt;a class="anchor" href="#vscode-ssh-remote-%e4%bd%bf%e7%94%a8-codex-%e6%8f%92%e4%bb%b6"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;dirname &lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;which codex&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 首次已备份过就不会再动；若没备份过会备份&lt;/span&gt;
@@ -73,13 +46,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;exec &amp;#34;$(dirname &amp;#34;$0&amp;#34;)/codex.real&amp;#34; &amp;#34;$@&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;SH&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x codex
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ab</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</guid><description>&lt;h1 id="ab"&gt;
- ab
- 
- &lt;a class="anchor" href="#ab"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x codex&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ab</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ab/</guid><description>&lt;h1 id="ab"&gt;ab&lt;a class="anchor" href="#ab"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install apache2-utils -y
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -139,19 +106,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 95% 23&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 98% 25&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 99% 25&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 100% 26 (longest request)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Ansible</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</guid><description>&lt;h1 id="ansible"&gt;
- Ansible
- 
- &lt;a class="anchor" href="#ansible"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 100% 26 (longest request)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Ansible</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ansible/</guid><description>&lt;h1 id="ansible"&gt;Ansible&lt;a class="anchor" href="#ansible"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# pipx 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipx install --include-deps ansible
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -163,19 +119,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt update
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install software-properties-common
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo add-apt-repository --yes --update ppa:ansible/ansible
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install ansible
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;a href="https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu"&gt;Installing Ansible on Ubuntu&lt;/a&gt;&lt;/p&gt;</description></item><item><title>apt</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid><description>&lt;h1 id="apt"&gt;
- apt
- 
- &lt;a class="anchor" href="#apt"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="apt-vs-apt-get"&gt;
- apt vs &lt;code&gt;apt-get&lt;/code&gt;
- 
- &lt;a class="anchor" href="#apt-vs-apt-get"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install ansible&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;a href="https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu"&gt;Installing Ansible on Ubuntu&lt;/a&gt;&lt;/p&gt;</description></item><item><title>apt</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/apt/</guid><description>&lt;h1 id="apt"&gt;apt&lt;a class="anchor" href="#apt"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="apt-vs-apt-get"&gt;apt vs &lt;code&gt;apt-get&lt;/code&gt;&lt;a class="anchor" href="#apt-vs-apt-get"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Advanced Package Tool，又名 apt-get，是一款适用于 Unix 和 Linux 系统的应用程序管理器&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;apt 可以看作 apt-get 和 apt-cache 命令的子集, 可以为包管理提供必要的命令选项
@@ -252,40 +197,15 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;apt 还有一些自己的命令&lt;/p&gt;</description></item><item><title>Cargo</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</guid><description>&lt;h1 id="cargo"&gt;
- Cargo
- 
- &lt;a class="anchor" href="#cargo"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="常用命令"&gt;
- 常用命令
- 
- &lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h2 id="安装配置"&gt;
- 安装配置
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;p&gt;apt 还有一些自己的命令&lt;/p&gt;</description></item><item><title>Cargo</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/cargo/</guid><description>&lt;h1 id="cargo"&gt;Cargo&lt;a class="anchor" href="#cargo"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="常用命令"&gt;常用命令&lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="安装配置"&gt;安装配置&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;curl https://sh.rustup.rs -sSf | sh&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://doc.rust-lang.org/cargo"&gt;The Cargo Book&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>ClickHouse</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ClickHouse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ClickHouse/</guid><description>&lt;h1 id="clickhouse"&gt;
- ClickHouse
- 
- &lt;a class="anchor" href="#clickhouse"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/ClickHouse/ClickHouse"&gt;ClickHouse/ClickHouse&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ClickHouse/ClickHouse.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ClickHouse/ClickHouse.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ClickHouse/ClickHouse.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ClickHouse/ClickHouse.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ClickHouse/ClickHouse.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Conda</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid><description>&lt;h1 id="conda"&gt;
- Conda
- 
- &lt;a class="anchor" href="#conda"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>ClickHouse</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ClickHouse/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ClickHouse/</guid><description>&lt;h1 id="clickhouse"&gt;ClickHouse&lt;a class="anchor" href="#clickhouse"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/ClickHouse/ClickHouse"&gt;ClickHouse/ClickHouse&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ClickHouse/ClickHouse.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ClickHouse/ClickHouse.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ClickHouse/ClickHouse.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ClickHouse/ClickHouse.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ClickHouse/ClickHouse.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>Conda</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/conda/</guid><description>&lt;h1 id="conda"&gt;Conda&lt;a class="anchor" href="#conda"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;conda 是一款软件管理软件，相当于 windows 里面的应用商店&lt;/li&gt;
 &lt;li&gt;miniconda 和 anaconda 中都包含了 conda
@@ -295,22 +215,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -c --no-check-certificate https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bash Miniconda3-latest-Linux-x86_64.sh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：https://docs.conda.io/projects/conda/en/stable/&lt;/p&gt;
-&lt;h2 id="使用教程"&gt;
- 使用教程
- 
- &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bash Miniconda3-latest-Linux-x86_64.sh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：https://docs.conda.io/projects/conda/en/stable/&lt;/p&gt;
+&lt;h2 id="使用教程"&gt;使用教程&lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 清理缓存&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean -a
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -328,20 +237,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda activate base
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 退出环境&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda deactivate
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="镜像源"&gt;
- 镜像源
- 
- &lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="阿里云"&gt;
- 阿里云
- 
- &lt;a class="anchor" href="#%e9%98%bf%e9%87%8c%e4%ba%91"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda deactivate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="镜像源"&gt;镜像源&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="阿里云"&gt;阿里云&lt;a class="anchor" href="#%e9%98%bf%e9%87%8c%e4%ba%91"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; EOF &amp;gt; ~/.condarc
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;channels:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - defaults
@@ -359,13 +257,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; simpleitk: http://mirrors.aliyun.com/anaconda/cloud
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean -i
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="清华-tuna"&gt;
- &lt;a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/"&gt;清华 TUNA&lt;/a&gt;
- 
- &lt;a class="anchor" href="#%e6%b8%85%e5%8d%8e-tuna"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean -i&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="清华-tuna"&gt;&lt;a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/"&gt;清华 TUNA&lt;/a&gt;&lt;a class="anchor" href="#%e6%b8%85%e5%8d%8e-tuna"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; EOF &amp;gt; ~/.condarc
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;channels:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - defaults
@@ -384,13 +276,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean -i
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="北京外国语"&gt;
- &lt;a href="https://mirrors.bfsu.edu.cn/help/anaconda/"&gt;北京外国语&lt;/a&gt;
- 
- &lt;a class="anchor" href="#%e5%8c%97%e4%ba%ac%e5%a4%96%e5%9b%bd%e8%af%ad"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean -i&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="北京外国语"&gt;&lt;a href="https://mirrors.bfsu.edu.cn/help/anaconda/"&gt;北京外国语&lt;/a&gt;&lt;a class="anchor" href="#%e5%8c%97%e4%ba%ac%e5%a4%96%e5%9b%bd%e8%af%ad"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; EOF &amp;gt; ~/.condarc
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;channels:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - defaults
@@ -409,14 +295,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean -i
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="conda-vs-pip"&gt;
- conda vs pip
- 
- &lt;a class="anchor" href="#conda-vs-pip"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda clean -i&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="conda-vs-pip"&gt;conda vs pip&lt;a class="anchor" href="#conda-vs-pip"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;pip 是用来安装 python 包的，安装的是 python wheel 或者源代码的包。从源码安装的时候需要有编译器的支持，pip 也不会去支持 python 语言之外的依赖项。&lt;/li&gt;
 &lt;li&gt;conda 是用来安装 conda package，虽然大部分 conda 包是 python 的，但它支持了不少非 python 语言写的依赖项，比如 mkl cuda 这种 c c++写的包。conda 安装的都是编译好的二进制包，不需要你自己编译。这导致了 conda 装东西的体积一般比较大，尤其是 mkl 这种，动不动几百兆甚至一 G 多。
@@ -430,29 +310,13 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="conda-install-vs-pip-install"&gt;
- &lt;code&gt;conda install&lt;/code&gt; vs &lt;code&gt;pip install&lt;/code&gt;
- 
- &lt;a class="anchor" href="#conda-install-vs-pip-install"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="conda-install-vs-pip-install"&gt;&lt;code&gt;conda install&lt;/code&gt; vs &lt;code&gt;pip install&lt;/code&gt;&lt;a class="anchor" href="#conda-install-vs-pip-install"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;conda install xxx：这种方式安装的库都会放在 &lt;code&gt;anaconda3/pkgs&lt;/code&gt; 目录下，&lt;/p&gt;</description></item><item><title>Containerd</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</guid><description>&lt;h1 id="containerd"&gt;
- Containerd
- 
- &lt;a class="anchor" href="#containerd"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;conda install xxx：这种方式安装的库都会放在 &lt;code&gt;anaconda3/pkgs&lt;/code&gt; 目录下，&lt;/p&gt;</description></item><item><title>Containerd</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/containerd/</guid><description>&lt;h1 id="containerd"&gt;Containerd&lt;a class="anchor" href="#containerd"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 生成一个默认的配置&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir /etc/containerd
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;containerd config default &amp;gt; /etc/containerd/config.toml
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="配置"&gt;
- 配置
- 
- &lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;containerd config default &amp;gt; /etc/containerd/config.toml&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="配置"&gt;配置&lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;disabled_plugins&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;[]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;imports&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;[]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;oom_score&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;0&lt;/span&gt;
@@ -728,13 +592,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;[ttrpc]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;address&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; gid = 0
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; uid = 0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>crictl</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</guid><description>&lt;h1 id="crictl"&gt;
- crictl
- 
- &lt;a class="anchor" href="#crictl"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; uid = 0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>crictl</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/crictl/</guid><description>&lt;h1 id="crictl"&gt;crictl&lt;a class="anchor" href="#crictl"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;crictl 是 CRI 兼容的容器运行时命令行接口，用来检查和调试 Kubernetes 节点上的容器运行时和应用程序
 &lt;ul&gt;
@@ -743,7 +601,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote class="book-hint warning"&gt;
- 
+
 
 - crictl 不支持改镜像 tag
 - crictl 不支持 load 镜像文件
@@ -760,15 +618,8 @@
 - [Crictl not support load images?](https://github.com/kubernetes-sigs/cri-tools/issues/546)
 - [Manually Loading Container Images with containerD](https://blog.scottlowe.org/2020/01/25/manually-loading-container-images-with-containerd/)
 
-
 &lt;/blockquote&gt;
-
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;VERSION&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;v1.26.0&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
@@ -781,35 +632,21 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;runtime-endpoint: unix:///run/containerd/containerd.sock
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;image-endpoint: unix:///run/containerd/containerd.sock
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;timeout: 10
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="使用"&gt;
- 使用
- 
- &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="使用"&gt;使用&lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;crictl image ls
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;crictl ps -a
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ctr</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</guid><description>&lt;h1 id="ctr"&gt;
- ctr
- 
- &lt;a class="anchor" href="#ctr"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;crictl ps -a&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>ctr</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/ctr/</guid><description>&lt;h1 id="ctr"&gt;ctr&lt;a class="anchor" href="#ctr"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;ctr 是 containerd 自带的 CLI 命令行工具&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote class="book-hint warning"&gt;
- 
+
 
 - ctr image pull 的镜像，namespace 必须是 k8s.io，containerd 才能使用（`crictl image` 才能看到）
  - ctr -n k8s.io image list
  - ctr -n k8s.io image pull
 
-
 &lt;/blockquote&gt;
-
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# namespace&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ctr ns ls
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -826,25 +663,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 导出镜像&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ctr -n k8s.io image export pause3.6.tar registry.k8s.io/pause:3.6
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# --base-name 重命名&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ctr -n k8s.io image import --base-name registry.k8s.io/pause-self-define:3.6 pause3.6.tar
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Dash</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</guid><description>&lt;h1 id="dash"&gt;
- Dash
- 
- &lt;a class="anchor" href="#dash"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Docker</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</guid><description>&lt;h1 id="docker"&gt;
- Docker
- 
- &lt;a class="anchor" href="#docker"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="使用"&gt;
- 使用
- 
- &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ctr -n k8s.io image import --base-name registry.k8s.io/pause-self-define:3.6 pause3.6.tar&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Dash</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/dash/</guid><description>&lt;h1 id="dash"&gt;Dash&lt;a class="anchor" href="#dash"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Docker</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/docker/</guid><description>&lt;h1 id="docker"&gt;Docker&lt;a class="anchor" href="#docker"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="使用"&gt;使用&lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 停止 docker&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl stop docker.socket
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -864,13 +685,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;207.246.111.213 ghcr.io&amp;#34;&lt;/span&gt; | sudo tee -a /etc/hosts
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;207.246.111.213 ghcr.io&amp;#34;&lt;/span&gt; | sudo tee -a /etc/hosts&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Add Docker&amp;#39;s official GPG key:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt update
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install ca-certificates curl
@@ -889,13 +704,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt update
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装指定版本-docker"&gt;
- 安装指定版本 docker
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e6%8c%87%e5%ae%9a%e7%89%88%e6%9c%ac-docker"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装指定版本-docker"&gt;安装指定版本 docker&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e6%8c%87%e5%ae%9a%e7%89%88%e6%9c%ac-docker"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# List the available versions:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt-cache madison docker-ce | awk &lt;span style="color:#e6db74"&gt;&amp;#39;{ print $3 }&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -905,14 +714,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 5:20.10.13~3-0~ubuntu-jammy&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;VERSION_STRING&lt;span style="color:#f92672"&gt;=&lt;/span&gt;5:20.10.13~3-0~ubuntu-jammy
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install docker-ce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$VERSION_STRING docker-ce-cli&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$VERSION_STRING containerd.io docker-compose-plugin
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="设置镜像源"&gt;
- 设置镜像源
- 
- &lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install docker-ce&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$VERSION_STRING docker-ce-cli&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$VERSION_STRING containerd.io docker-compose-plugin&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="设置镜像源"&gt;设置镜像源&lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; &amp;gt; /etc/docker/daemon.json
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;{
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; &amp;#34;experimental&amp;#34;: false,
@@ -929,101 +732,46 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl restart docker
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="docker-compose"&gt;
- docker compose
- 
- &lt;a class="anchor" href="#docker-compose"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="安装-1"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85-1"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl restart docker&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="docker-compose"&gt;docker compose&lt;a class="anchor" href="#docker-compose"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="安装-1"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85-1"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# docker compose version&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir -p ~/.docker/cli-plugins/
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -SL &lt;span style="color:#e6db74"&gt;&amp;#34;https://github.com/docker/compose/releases/latest/download/docker-compose-&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname -s&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;-&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname -m&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt; -o ~/.docker/cli-plugins/docker-compose
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x ~/.docker/cli-plugins/docker-compose
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker compose version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="docker-privileged"&gt;
- docker &amp;ndash;privileged
- 
- &lt;a class="anchor" href="#docker-privileged"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;p&gt;docker run &amp;ndash;privileged=true 和 docker run &amp;ndash;privileged 是完全等价的&lt;/p&gt;</description></item><item><title>Doris</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/doris/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/doris/</guid><description>&lt;h1 id="doris"&gt;
- Doris
- 
- &lt;a class="anchor" href="#doris"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/apache/doris"&gt;apache/doris&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/apache/doris.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/apache/doris.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/apache/doris.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/apache/doris.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/apache/doris.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>feh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid><description>&lt;h1 id="feh"&gt;
- feh
- 
- &lt;a class="anchor" href="#feh"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker compose version&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="docker-privileged"&gt;docker &amp;ndash;privileged&lt;a class="anchor" href="#docker-privileged"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;docker run &amp;ndash;privileged=true 和 docker run &amp;ndash;privileged 是完全等价的&lt;/p&gt;</description></item><item><title>Doris</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/doris/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/doris/</guid><description>&lt;h1 id="doris"&gt;Doris&lt;a class="anchor" href="#doris"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/apache/doris"&gt;apache/doris&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/apache/doris.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/apache/doris.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/apache/doris.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/apache/doris.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/apache/doris.svg" alt="Last commit" /&gt;&lt;/p&gt;</description></item><item><title>feh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/feh/</guid><description>&lt;h1 id="feh"&gt;feh&lt;a class="anchor" href="#feh"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;feh: image viewer and cataloguer&lt;/p&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install feh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="feh-error-cant-open-x-display"&gt;
- feh ERROR: Can&amp;rsquo;t open X display.
- 
- &lt;a class="anchor" href="#feh-error-cant-open-x-display"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install feh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="feh-error-cant-open-x-display"&gt;feh ERROR: Can&amp;rsquo;t open X display.&lt;a class="anchor" href="#feh-error-cant-open-x-display"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;hr&gt;
-&lt;h2 id="lsix"&gt;
- lsix
- 
- &lt;a class="anchor" href="#lsix"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="lsix"&gt;lsix&lt;a class="anchor" href="#lsix"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/hackerb9/lsix"&gt;hackerb9/lsix&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/hackerb9/lsix.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/hackerb9/lsix.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/hackerb9/lsix.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/hackerb9/lsix.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/hackerb9/lsix.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Like &amp;ldquo;ls&amp;rdquo;, but for images. Shows thumbnails in terminal using sixel graphics.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install imagemagick
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo curl -Lo /usr/local/bin/lsix https://github.com/hackerb9/lsix/blob/1.8/lsix
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x /usr/local/bin/lsix
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>fzf</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/fzf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/fzf/</guid><description>&lt;h1 id="fzf"&gt;
- fzf
- 
- &lt;a class="anchor" href="#fzf"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x /usr/local/bin/lsix&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>fzf</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/fzf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/fzf/</guid><description>&lt;h1 id="fzf"&gt;fzf&lt;a class="anchor" href="#fzf"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/junegunn/fzf"&gt;junegunn/fzf&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/junegunn/fzf.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/junegunn/fzf.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/junegunn/fzf.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/junegunn/fzf.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/junegunn/fzf.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gateway API Inference Extension</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gaie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gaie/</guid><description>&lt;h1 id="gateway-api-inference-extension"&gt;
- Gateway API Inference Extension
- 
- &lt;a class="anchor" href="#gateway-api-inference-extension"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gateway API Inference Extension</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gaie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gaie/</guid><description>&lt;h1 id="gateway-api-inference-extension"&gt;Gateway API Inference Extension&lt;a class="anchor" href="#gateway-api-inference-extension"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension"&gt;kubernetes-sigs/gateway-api-inference-extension&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/kubernetes-sigs/gateway-api-inference-extension.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/kubernetes-sigs/gateway-api-inference-extension.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Your Hugging Face Token with access to the set of Llama models&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;IGW_LATEST_RELEASE&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;curl -s https://api.github.com/repos/kubernetes-sigs/gateway-api-inference-extension/releases &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; | jq -r &lt;span style="color:#e6db74"&gt;&amp;#39;.[] | select(.prerelease == false) | .tag_name&amp;#39;&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; | sort -V &lt;span style="color:#ae81ff"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ae81ff"&gt;&lt;/span&gt; | tail -n1&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Your Hugging Face Token with access to the set of Llama models&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl create secret generic hf-token --from-literal&lt;span style="color:#f92672"&gt;=&lt;/span&gt;token&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$HF_TOKEN
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl apply -f &lt;span style="color:#e6db74"&gt;&amp;#34;https://raw.githubusercontent.com/kubernetes-sigs/gateway-api-inference-extension/refs/tags/&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;IGW_LATEST_RELEASE&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;/config/manifests/vllm/gpu-deployment.yaml&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl apply -f &lt;span style="color:#e6db74"&gt;&amp;#34;https://github.com/kubernetes-sigs/gateway-api-inference-extension/releases/download/&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;IGW_LATEST_RELEASE&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;/manifests.yaml&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gradio</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</guid><description>&lt;h1 id="gradio"&gt;
- Gradio
- 
- &lt;a class="anchor" href="#gradio"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl apply -f &lt;span style="color:#e6db74"&gt;&amp;#34;https://github.com/kubernetes-sigs/gateway-api-inference-extension/releases/download/&lt;/span&gt;&lt;span style="color:#e6db74"&gt;${&lt;/span&gt;IGW_LATEST_RELEASE&lt;span style="color:#e6db74"&gt;}&lt;/span&gt;&lt;span style="color:#e6db74"&gt;/manifests.yaml&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Gradio</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gradio/</guid><description>&lt;h1 id="gradio"&gt;Gradio&lt;a class="anchor" href="#gradio"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/gradio-app/gradio"&gt;gradio-app/gradio&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/gradio-app/gradio.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/gradio-app/gradio.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/gradio-app/gradio.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/gradio-app/gradio.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/gradio-app/gradio.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; gradio &lt;span style="color:#66d9ef"&gt;as&lt;/span&gt; gr
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1036,17 +784,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; greet_btn &lt;span style="color:#f92672"&gt;=&lt;/span&gt; gr&lt;span style="color:#f92672"&gt;.&lt;/span&gt;Button(&lt;span style="color:#e6db74"&gt;&amp;#34;Greet&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; greet_btn&lt;span style="color:#f92672"&gt;.&lt;/span&gt;click(fn&lt;span style="color:#f92672"&gt;=&lt;/span&gt;greet, inputs&lt;span style="color:#f92672"&gt;=&lt;/span&gt;name, outputs&lt;span style="color:#f92672"&gt;=&lt;/span&gt;output)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;demo&lt;span style="color:#f92672"&gt;.&lt;/span&gt;launch(share&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;, server_name&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;, server_port&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;8722&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>gvm</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</guid><description>&lt;h1 id="gvm"&gt;
- gvm
- 
- &lt;a class="anchor" href="#gvm"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;demo&lt;span style="color:#f92672"&gt;.&lt;/span&gt;launch(share&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;True&lt;/span&gt;, server_name&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;, server_port&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;8722&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>gvm</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/gvm/</guid><description>&lt;h1 id="gvm"&gt;gvm&lt;a class="anchor" href="#gvm"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/moovweb/gvm"&gt;moovweb/gvm&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/moovweb/gvm.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/moovweb/gvm.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/moovweb/gvm.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/moovweb/gvm.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;安装：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh &amp;lt; &amp;lt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh &amp;lt; &amp;lt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer&lt;span style="color:#f92672"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gvm listall
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;gvm list
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1098,21 +839,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; listall - list available versions
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; alias - manage go version aliases
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pkgset - manage go packages sets
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pkgenv - edit the environment &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; a package set
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>helm</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/helm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/helm/</guid><description>&lt;h1 id="helm"&gt;
- helm
- 
- &lt;a class="anchor" href="#helm"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pkgenv - edit the environment &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; a package set&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>helm</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/helm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/helm/</guid><description>&lt;h1 id="helm"&gt;helm&lt;a class="anchor" href="#helm"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Java</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</guid><description>&lt;h1 id="java"&gt;
- Java
- 
- &lt;a class="anchor" href="#java"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Java</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/java/</guid><description>&lt;h1 id="java"&gt;Java&lt;a class="anchor" href="#java"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install default-jdk
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# lts version&lt;/span&gt;
@@ -1136,39 +865,21 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Jupyter</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</guid><description>&lt;h1 id="jupyter"&gt;
- Jupyter
- 
- &lt;a class="anchor" href="#jupyter"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Jupyter</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/jupyter/</guid><description>&lt;h1 id="jupyter"&gt;Jupyter&lt;a class="anchor" href="#jupyter"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;JupyterLab 包含了 Jupyter Notebook 所有功能，并升级增加了很多功能&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipenv install jupyterlab
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias python-jupyter&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;/Users/yewang/.local/share/virtualenvs/yewang-jvfc4aCO/bin/python&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias jupyter&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;python-jupyter -m jupyter&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias jlab&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;jupyter lab&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias jlist&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;jupyter kernelspec list&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias jlist&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;jupyter kernelspec list&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html"&gt;JupyterLab Installation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="配置"&gt;
- 配置
- 
- &lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="配置"&gt;配置&lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# vi ~/.jupyter/jupyter_notebook_config.py&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 绝对路径&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;c.NotebookApp.notebook_dir &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="jupyter-notebook-vs-jupyter-lab"&gt;
- &lt;code&gt;Jupyter Notebook&lt;/code&gt; vs &lt;code&gt;Jupyter Lab&lt;/code&gt;
- 
- &lt;a class="anchor" href="#jupyter-notebook-vs-jupyter-lab"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;c.NotebookApp.notebook_dir &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#39;/Users/yewang/note/kingye/jupyter&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="jupyter-notebook-vs-jupyter-lab"&gt;&lt;code&gt;Jupyter Notebook&lt;/code&gt; vs &lt;code&gt;Jupyter Lab&lt;/code&gt;&lt;a class="anchor" href="#jupyter-notebook-vs-jupyter-lab"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Jupyter Lab&lt;/code&gt; is a next-generation web-based user interface for Project Jupyter&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Jupyter Notebook Interface&lt;/code&gt; is a Web-based application for authoring documents that combine live-code with narrative text, equations and visualizations.
@@ -1178,39 +889,17 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id="jupyter-kernel"&gt;
- Jupyter kernel
- 
- &lt;a class="anchor" href="#jupyter-kernel"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="jupyter-kernel"&gt;Jupyter kernel&lt;a class="anchor" href="#jupyter-kernel"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;jupyter kernelspec list
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;jupyter kernelspec uninstall
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>k3d</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</guid><description>&lt;h1 id="k3d"&gt;
- k3d
- 
- &lt;a class="anchor" href="#k3d"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;jupyter kernelspec uninstall&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;/p&gt;</description></item><item><title>k3d</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/k3d/</guid><description>&lt;h1 id="k3d"&gt;k3d&lt;a class="anchor" href="#k3d"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/rancher/k3d"&gt;rancher/k3d&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/rancher/k3d.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/rancher/k3d.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/rancher/k3d.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/rancher/k3d.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/rancher/k3d.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;h2 id="常用命令"&gt;
- 常用命令
- 
- &lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="常用命令"&gt;常用命令&lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster list
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl config get-contexts
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias kctx&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;kubectl config use-context&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias kctx&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#39;kubectl config use-context&amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装 k3d&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1232,25 +921,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - https://hub.kingye.me
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create --config k3d-config-cluster-1.yaml --verbose
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装配置"&gt;
- 安装配置
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="gpu"&gt;
- GPU
- 
- &lt;a class="anchor" href="#gpu"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
-&lt;h4 id="k3s-gpu"&gt;
- k3s-gpu
- 
- &lt;a class="anchor" href="#k3s-gpu"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create --config k3d-config-cluster-1.yaml --verbose&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装配置"&gt;安装配置&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="gpu"&gt;GPU&lt;a class="anchor" href="#gpu"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id="k3s-gpu"&gt;k3s-gpu&lt;a class="anchor" href="#k3s-gpu"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 为 Docker daemon 配置代理（永久生效）&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo mkdir -p /etc/systemd/system/docker.service.d
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo tee /etc/systemd/system/docker.service.d/http-proxy.conf &amp;gt; /dev/null &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt;&amp;#39;EOF&amp;#39;
@@ -1354,8 +1027,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 构建镜像（现在会使用代理）&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t ikingye/k3s-gpu:v1.35.1-k3s1-cuda12.8.1 .
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker push ikingye/k3s-gpu:v1.35.1-k3s1-cuda12.8.1
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker push ikingye/k3s-gpu:v1.35.1-k3s1-cuda12.8.1&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 依赖&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install -y curl ca-certificates gnupg
@@ -1371,7 +1043,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install -y nvidia-container-toolkit
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo nvidia-ctk runtime configure --runtime&lt;span style="color:#f92672"&gt;=&lt;/span&gt;docker
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl restart docker
@@ -1398,6 +1069,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;agents: 2
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;options:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; runtime:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; gpuRequest: all
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; k3s:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; extraArgs:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - arg: &amp;#34;--disable=traefik&amp;#34;
@@ -1406,7 +1079,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - arg: &amp;#34;--disable=servicelb&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; nodeFilters:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - server:*
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - arg: &amp;#34;--snapshotter=fuse-overlayfs&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - arg: &amp;#34;--snapshotter=native&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; nodeFilters:
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - server:*
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - agent:*
@@ -1422,19 +1095,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - https://hub.kingye.me
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 先删旧集群&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 1) 删旧集群&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster delete cluster-1 &lt;span style="color:#f92672"&gt;||&lt;/span&gt; true
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 用配置文件创建；GPU 用 CLI 指定（你这个版本 help 里明确支持）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create --config k3d-config-cluster-1.yaml --gpus all --verbose
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 2) 清理旧网络（避免脏状态）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker network rm k3d-cluster-1 2&amp;gt;/dev/null &lt;span style="color:#f92672"&gt;||&lt;/span&gt; true
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# k3d kubeconfig merge cluster-1 --switch-context&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>kubectx</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubectx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubectx/</guid><description>&lt;h1 id="kubectx"&gt;
- kubectx
- 
- &lt;a class="anchor" href="#kubectx"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 3) 创建（不要额外再加 --gpus all，YAML里已经有 gpuRequest: all）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;k3d cluster create --config k3d-config-cluster-1.yaml --verbose
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# k3d kubeconfig merge cluster-1 --switch-context&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>kubectx</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubectx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubectx/</guid><description>&lt;h1 id="kubectx"&gt;kubectx&lt;a class="anchor" href="#kubectx"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/ahmetb/kubectx"&gt;ahmetb/kubectx&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ahmetb/kubectx.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ahmetb/kubectx.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ahmetb/kubectx.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ahmetb/kubectx.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ahmetb/kubectx.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd /usr/local/bin
@@ -1442,19 +1113,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget https://github.com/ahmetb/kubectx/releases/latest/download/kubectx
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget https://github.com/ahmetb/kubectx/releases/latest/download/kubens
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x kubectx kubens
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KubeEdge</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</guid><description>&lt;h1 id="kubeedge"&gt;
- KubeEdge
- 
- &lt;a class="anchor" href="#kubeedge"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="部署"&gt;
- 部署
- 
- &lt;a class="anchor" href="#%e9%83%a8%e7%bd%b2"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chmod +x kubectx kubens&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KubeEdge</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubeedge/</guid><description>&lt;h1 id="kubeedge"&gt;KubeEdge&lt;a class="anchor" href="#kubeedge"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="部署"&gt;部署&lt;a class="anchor" href="#%e9%83%a8%e7%bd%b2"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ime-study3&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;keadm init --advertise-address&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;120.241.124.226&amp;#34;&lt;/span&gt; --profile version&lt;span style="color:#f92672"&gt;=&lt;/span&gt;v1.13.0 --kube-config&lt;span style="color:#f92672"&gt;=&lt;/span&gt;/root/.kube/config
@@ -1469,35 +1129,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ctr -n&lt;span style="color:#f92672"&gt;=&lt;/span&gt;k8s.io image tag registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6 registry.k8s.io/pause:3.6
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm -rf /etc/kubeedge/
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;keadm join --cloudcore-ipport&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;120.241.124.226:10000&amp;#34;&lt;/span&gt; --token&lt;span style="color:#f92672"&gt;=&lt;/span&gt;f76a721023f724ae4ff872c8ec9e04e672d4eb93d1327638526389267084629b.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzU3Mjk0MDl9.TrcHtDra2gwuBw-9Aa8aDkDK99n1JoxwYYz8Kv4ugPo --kubeedge-version&lt;span style="color:#f92672"&gt;=&lt;/span&gt;v1.13.0
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KubeSphere</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid><description>&lt;h1 id="kubesphere"&gt;
- KubeSphere
- 
- &lt;a class="anchor" href="#kubesphere"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;keadm join --cloudcore-ipport&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;120.241.124.226:10000&amp;#34;&lt;/span&gt; --token&lt;span style="color:#f92672"&gt;=&lt;/span&gt;f76a721023f724ae4ff872c8ec9e04e672d4eb93d1327638526389267084629b.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzU3Mjk0MDl9.TrcHtDra2gwuBw-9Aa8aDkDK99n1JoxwYYz8Kv4ugPo --kubeedge-version&lt;span style="color:#f92672"&gt;=&lt;/span&gt;v1.13.0&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KubeSphere</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/kubesphere/</guid><description>&lt;h1 id="kubesphere"&gt;KubeSphere&lt;a class="anchor" href="#kubesphere"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;
-kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;: {&amp;#34;annotations&amp;#34;:{&amp;#34;storageclass.kubernetes.io/is-default-class&amp;#34;:&amp;#34;true&amp;#34;}}}&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>langflow</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</guid><description>&lt;h1 id="langflow"&gt;
- langflow
- 
- &lt;a class="anchor" href="#langflow"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;langflow --host &lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt; --port &lt;span style="color:#ae81ff"&gt;7865&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>mamba</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mamba/</guid><description>&lt;h1 id="mamba"&gt;
- mamba
- 
- &lt;a class="anchor" href="#mamba"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;: {&amp;#34;annotations&amp;#34;:{&amp;#34;storageclass.kubernetes.io/is-default-class&amp;#34;:&amp;#34;true&amp;#34;}}}&amp;#39;&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>langflow</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/langflow/</guid><description>&lt;h1 id="langflow"&gt;langflow&lt;a class="anchor" href="#langflow"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;langflow --host &lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt; --port &lt;span style="color:#ae81ff"&gt;7865&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>mamba</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mamba/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mamba/</guid><description>&lt;h1 id="mamba"&gt;mamba&lt;a class="anchor" href="#mamba"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/conda-forge/miniforge"&gt;conda-forge/miniforge&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/conda-forge/miniforge.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/conda-forge/miniforge.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/conda-forge/miniforge.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/conda-forge/miniforge.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/conda-forge/miniforge.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -L -O &lt;span style="color:#e6db74"&gt;&amp;#34;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;-&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname -m&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;.sh&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bash Miniforge3-&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;-&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;uname -m&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;.sh
@@ -1513,22 +1150,11 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mamba create -n pytorch python&lt;span style="color:#f92672"&gt;=&lt;/span&gt;3.10
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mamba activate pytorch
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>MicroK8s</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid><description>&lt;h1 id="microk8s"&gt;
- MicroK8s
- 
- &lt;a class="anchor" href="#microk8s"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mamba activate pytorch&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>MicroK8s</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/microk8s/</guid><description>&lt;h1 id="microk8s"&gt;MicroK8s&lt;a class="anchor" href="#microk8s"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/ubuntu/microk8s"&gt;ubuntu/microk8s&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ubuntu/microk8s.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ubuntu/microk8s.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ubuntu/microk8s.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ubuntu/microk8s.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ubuntu/microk8s.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;MicroK8s is a small, fast, single-package Kubernetes for developers, IoT and edge.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://microk8s.io"&gt;https://microk8s.io&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;snap install microk8s --classic
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;snap install kubectl --classic
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1554,25 +1180,13 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;alias k=kubectl&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.zshrc
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;export PATH=\$PATH:/snap/bin&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.zshrc
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装-kubectl-的另一种方法"&gt;
- 安装 kubectl 的另一种方法
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85-kubectl-%e7%9a%84%e5%8f%a6%e4%b8%80%e7%a7%8d%e6%96%b9%e6%b3%95"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装-kubectl-的另一种方法"&gt;安装 kubectl 的另一种方法&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85-kubectl-%e7%9a%84%e5%8f%a6%e4%b8%80%e7%a7%8d%e6%96%b9%e6%b3%95"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# install kubectl&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -LO &lt;span style="color:#e6db74"&gt;&amp;#34;https://dl.k8s.io/release/&lt;/span&gt;&lt;span style="color:#66d9ef"&gt;$(&lt;/span&gt;curl -L -s https://dl.k8s.io/release/stable.txt&lt;span style="color:#66d9ef"&gt;)&lt;/span&gt;&lt;span style="color:#e6db74"&gt;/bin/linux/amd64/kubectl&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main&amp;#34;&lt;/span&gt; | sudo tee /etc/apt/sources.list.d/kubernetes.list
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt update
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install kubectl -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="配置镜像源"&gt;
- 配置镜像源
- 
- &lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install kubectl -y&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="配置镜像源"&gt;配置镜像源&lt;a class="anchor" href="#%e9%85%8d%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 先停止&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo microk8s.stop
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1595,53 +1209,19 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo microk8s.start
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;microk8s.ctr images pull docker.io/library/busybox:latest
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;microk8s.ctr images pull docker.io/calico/cni:v3.19.1
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="常用命令"&gt;
- 常用命令
- 
- &lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;microk8s enable dns
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装配置"&gt;
- 安装配置
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;microk8s.ctr images pull docker.io/calico/cni:v3.19.1&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="常用命令"&gt;常用命令&lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;microk8s enable dns&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装配置"&gt;安装配置&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# microk8s kubelet service 配置文件&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /etc/systemd/system/snap.microk8s.daemon-kubelet.service
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 查看状态&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl status snap.microk8s.daemon-kubelet
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="代理"&gt;
- 代理
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
-&lt;p&gt;vi &lt;code&gt;/etc/environment&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Mosquitto</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid><description>&lt;h1 id="mosquitto"&gt;
- Mosquitto
- 
- &lt;a class="anchor" href="#mosquitto"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl status snap.microk8s.daemon-kubelet&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="代理"&gt;代理&lt;a class="anchor" href="#%e4%bb%a3%e7%90%86"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;vi &lt;code&gt;/etc/environment&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Mosquitto</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/mosquitto/</guid><description>&lt;h1 id="mosquitto"&gt;Mosquitto&lt;a class="anchor" href="#mosquitto"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/eclipse/mosquitto"&gt;eclipse/mosquitto&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/eclipse/mosquitto.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/eclipse/mosquitto.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/eclipse/mosquitto.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/eclipse/mosquitto.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/eclipse/mosquitto.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install mosquitto -y
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install mosquitto-clients -y
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="使用"&gt;
- 使用
- 
- &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install mosquitto-clients -y&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="使用"&gt;使用&lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# mosquitto_pub version 1.6.9 running on libmosquitto 1.6.9.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mosquitto_pub &lt;span style="color:#f92672"&gt;{[&lt;/span&gt;-h host&lt;span style="color:#f92672"&gt;]&lt;/span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;-p port&lt;span style="color:#f92672"&gt;]&lt;/span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;-u username&lt;span style="color:#f92672"&gt;]&lt;/span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;-P password&lt;span style="color:#f92672"&gt;]&lt;/span&gt; -t topic | -L URL&lt;span style="color:#f92672"&gt;}&lt;/span&gt;
@@ -1660,13 +1240,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;--psk hex-key --psk-identity identity &lt;span style="color:#f92672"&gt;[&lt;/span&gt;--ciphers ciphers&lt;span style="color:#f92672"&gt;]]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;--proxy socks-url&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;--property command identifier value&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;-D command identifier value&lt;span style="color:#f92672"&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Multipass</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</guid><description>&lt;h1 id="multipass"&gt;
- Multipass
- 
- &lt;a class="anchor" href="#multipass"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;[&lt;/span&gt;-D command identifier value&lt;span style="color:#f92672"&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Multipass</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/multipass/</guid><description>&lt;h1 id="multipass"&gt;Multipass&lt;a class="anchor" href="#multipass"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/canonical/multipass"&gt;canonical/multipass&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/canonical/multipass.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/canonical/multipass.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/canonical/multipass.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/canonical/multipass.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/canonical/multipass.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;Multipass orchestrates virtual Ubuntu instances
 &lt;a href="https://multipass.run"&gt;https://multipass.run&lt;/a&gt;&lt;/p&gt;
@@ -1711,38 +1285,12 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;multipass delete ecsp-node-1
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;multipass delete ecsp-node-2
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Purge all deleted instances permanently&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;multipass purge
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="网络"&gt;
- 网络
- 
- &lt;a class="anchor" href="#%e7%bd%91%e7%bb%9c"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;p&gt;使用的是&lt;strong&gt;桥接模式&lt;/strong&gt;，因为：&lt;/p&gt;</description></item><item><title>obsidian</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</guid><description>&lt;h1 id="obsidian"&gt;
- obsidian
- 
- &lt;a class="anchor" href="#obsidian"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="同步数据"&gt;
- 同步数据
- 
- &lt;a class="anchor" href="#%e5%90%8c%e6%ad%a5%e6%95%b0%e6%8d%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="obsidian-livesync"&gt;
- obsidian-livesync
- 
- &lt;a class="anchor" href="#obsidian-livesync"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;multipass purge&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="网络"&gt;网络&lt;a class="anchor" href="#%e7%bd%91%e7%bb%9c"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;使用的是&lt;strong&gt;桥接模式&lt;/strong&gt;，因为：&lt;/p&gt;</description></item><item><title>obsidian</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/obsidian/</guid><description>&lt;h1 id="obsidian"&gt;obsidian&lt;a class="anchor" href="#obsidian"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="同步数据"&gt;同步数据&lt;a class="anchor" href="#%e5%90%8c%e6%ad%a5%e6%95%b0%e6%8d%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="obsidian-livesync"&gt;obsidian-livesync&lt;a class="anchor" href="#obsidian-livesync"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://github.com/vrtmrz/obsidian-livesync"&gt;vrtmrz/obsidian-livesync&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/vrtmrz/obsidian-livesync.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/vrtmrz/obsidian-livesync.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/vrtmrz/obsidian-livesync.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/vrtmrz/obsidian-livesync.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/vrtmrz/obsidian-livesync.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;h4 id="self-hosted-livesync-server"&gt;
- self-hosted-livesync-server
- 
- &lt;a class="anchor" href="#self-hosted-livesync-server"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;h4 id="self-hosted-livesync-server"&gt;self-hosted-livesync-server&lt;a class="anchor" href="#self-hosted-livesync-server"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir obsidian
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd obsidian
@@ -1764,26 +1312,9 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# - &amp;#34;8080:80&amp;#34; # 宿主机端口:容器端口&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# docker compose version&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker-compose -f docker-compose.yml up -d
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PHP</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</guid><description>&lt;h1 id="php"&gt;
- PHP
- 
- &lt;a class="anchor" href="#php"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get -y install php-fpm
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pip</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</guid><description>&lt;h1 id="pip"&gt;
- pip
- 
- &lt;a class="anchor" href="#pip"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker-compose -f docker-compose.yml up -d&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PHP</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/php/</guid><description>&lt;h1 id="php"&gt;PHP&lt;a class="anchor" href="#php"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get -y install php-fpm&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pip</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pip/</guid><description>&lt;h1 id="pip"&gt;pip&lt;a class="anchor" href="#pip"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 设置 镜像源&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -1791,40 +1322,20 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 临时安装&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pipenv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid><description>&lt;h1 id="pipenv"&gt;
- pipenv
- 
- &lt;a class="anchor" href="#pipenv"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install -i https://pypi.tuna.tsinghua.edu.cn/simple xxxx&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pipenv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipenv/</guid><description>&lt;h1 id="pipenv"&gt;pipenv&lt;a class="anchor" href="#pipenv"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/pypa/pipenv"&gt;pypa/pipenv&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/pypa/pipenv.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/languages/top/pypa/pipenv.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/pypa/pipenv.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/pypa/pipenv.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 进入虚拟环境&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipenv shell
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipenv shell --python&lt;span style="color:#f92672"&gt;=&lt;/span&gt;3.10
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 退出虚拟环境&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;exit
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="设置镜像源"&gt;
- 设置镜像源
- 
- &lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;exit&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="设置镜像源"&gt;设置镜像源&lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e9%95%9c%e5%83%8f%e6%ba%90"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# vim Pipfile&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;[[&lt;/span&gt;source&lt;span style="color:#f92672"&gt;]]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# url 替换成这个源&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;url &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python&lt;/p&gt;
-
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;url &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;https://pypi.tuna.tsinghua.edu.cn/simple&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果没有 Pipfile 指定，pipenv 默认使用最高版本的 python&lt;/p&gt;
 &lt;blockquote class='book-hint '&gt;
- &lt;p&gt;&lt;a href="https://github.com/pypa/pipenv/issues/4339"&gt;Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>pipx</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipx/</guid><description>&lt;h1 id="pipx"&gt;
- pipx
- 
- &lt;a class="anchor" href="#pipx"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/pypa/pipenv/issues/4339"&gt;Pipenv uses a different finding approach that the highest version goes first. You can anyway pass the python version by pipenv install &amp;ndash;python=3.7.&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>pipx</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pipx/</guid><description>&lt;h1 id="pipx"&gt;pipx&lt;a class="anchor" href="#pipx"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/pypa/pipx"&gt;pypa/pipx&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/pypa/pipx.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/pypa/pipx.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/pypa/pipx.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/pypa/pipx.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/pypa/pipx.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;p&gt;pipx 相对于 pip 的一些主要优点：&lt;/p&gt;
 &lt;ul&gt;
@@ -1837,24 +1348,8 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/ul&gt;
 &lt;p&gt;总的来说，pipx 特别适合用来管理和使用命令行工具或者需要隔离的 Python 应用，而 pip 更适合于在开发环境中管理库的依赖关系。对于一般的库依赖管理，尤其是在开发项目中，使用 pip 配合虚拟环境（如 venv）通常是更合适的选择。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install -y pipx
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="使用教程"&gt;
- 使用教程
- 
- &lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;</description></item><item><title>poetry</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</guid><description>&lt;h1 id="poetry"&gt;
- poetry
- 
- &lt;a class="anchor" href="#poetry"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install -y pipx&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="使用教程"&gt;使用教程&lt;a class="anchor" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;</description></item><item><title>poetry</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/poetry/</guid><description>&lt;h1 id="poetry"&gt;poetry&lt;a class="anchor" href="#poetry"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/python-poetry/poetry"&gt;python-poetry/poetry&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/python-poetry/poetry.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/python-poetry/poetry.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/python-poetry/poetry.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/python-poetry/poetry.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/python-poetry/poetry.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipx install poetry
@@ -1867,32 +1362,13 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# plugins(&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# poetry&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# ...&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# )&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="教程"&gt;
- 教程
- 
- &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# )&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="教程"&gt;教程&lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote class='book-hint '&gt;
- &lt;p&gt;Poetry replaces setup.py, requirements.txt, setup.cfg, MANIFEST.in and Pipfile with a simple &lt;code&gt;pyproject.toml&lt;/code&gt; based project format.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote class='book-hint '&gt;
- &lt;p&gt;Poetry will &lt;code&gt;not&lt;/code&gt; automatically install a python interpreter for you.&lt;/p&gt;</description></item><item><title>pyenv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid><description>&lt;h1 id="pyenv"&gt;
- pyenv
- 
- &lt;a class="anchor" href="#pyenv"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;Poetry replaces setup.py, requirements.txt, setup.cfg, MANIFEST.in and Pipfile with a simple &lt;code&gt;pyproject.toml&lt;/code&gt; based project format.&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote class='book-hint '&gt;
+&lt;p&gt;Poetry will &lt;code&gt;not&lt;/code&gt; automatically install a python interpreter for you.&lt;/p&gt;</description></item><item><title>pyenv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pyenv/</guid><description>&lt;h1 id="pyenv"&gt;pyenv&lt;a class="anchor" href="#pyenv"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/pyenv/pyenv"&gt;pyenv/pyenv&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/pyenv/pyenv.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/pyenv/pyenv.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/pyenv/pyenv.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/pyenv/pyenv.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/pyenv/pyenv.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://pyenv.run | bash
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#39;export PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; ~/.zshrc
@@ -1910,48 +1386,19 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装依赖"&gt;
- 安装依赖
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e4%be%9d%e8%b5%96"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
-&lt;p&gt;之后才能编译 python 成功&lt;/p&gt;</description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</guid><description>&lt;h1 id="python"&gt;
- python
- 
- &lt;a class="anchor" href="#python"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;zsh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="安装依赖"&gt;安装依赖&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85%e4%be%9d%e8%b5%96"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;之后才能编译 python 成功&lt;/p&gt;</description></item><item><title>python</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/python/</guid><description>&lt;h1 id="python"&gt;python&lt;a class="anchor" href="#python"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install -y pipx
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipx install poetry
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;
- pytorch
- 
- &lt;a class="anchor" href="#pytorch"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pipx install poetry&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>pytorch</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/pytorch/</guid><description>&lt;h1 id="pytorch"&gt;pytorch&lt;a class="anchor" href="#pytorch"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# cuda 11.4&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;conda install pytorch&lt;span style="color:#f92672"&gt;==&lt;/span&gt;1.12.1 torchvision&lt;span style="color:#f92672"&gt;==&lt;/span&gt;0.13.1 torchaudio&lt;span style="color:#f92672"&gt;==&lt;/span&gt;0.12.1 cudatoolkit&lt;span style="color:#f92672"&gt;=&lt;/span&gt;11.3 -c pytorch
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# https://pytorch.org/get-started/locally/&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# cuda 12.8&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv pip install torch torchvision
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>sealos</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</guid><description>&lt;h1 id="sealos"&gt;
- sealos
- 
- &lt;a class="anchor" href="#sealos"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv pip install torch torchvision&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>sealos</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/sealos/</guid><description>&lt;h1 id="sealos"&gt;sealos&lt;a class="anchor" href="#sealos"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/labring/sealos"&gt;labring/sealos&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/labring/sealos.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/labring/sealos.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/labring/sealos.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/labring/sealos.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/labring/sealos.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="laf"&gt;
- laf
- 
- &lt;a class="anchor" href="#laf"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sealos run registry.cn-shanghai.aliyuncs.com/labring/kubernetes:v1.30.5 registry.cn-shanghai.aliyuncs.com/labring/helm:v3.16.2 registry.cn-shanghai.aliyuncs.com/labring/cilium:v1.15.8 --single&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="laf"&gt;laf&lt;a class="anchor" href="#laf"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# curl -LO https://raw.githubusercontent.com/labring/laf/refs/heads/main/deploy/install-on-linux.sh&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# sed -i &amp;#39;s#sealos pull labring#sealos pull registry.cn-shanghai.aliyuncs.com/labring#g&amp;#39; install-on-linux.sh&lt;/span&gt;
@@ -1966,43 +1413,15 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sealos run registry.cn-shanghai.aliyuncs.com/labring/kubeblocks:v0.7.1
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sealos run --env DOMAIN&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$DOMAIN --env DB_PV_SIZE&lt;span style="color:#f92672"&gt;=&lt;/span&gt;5Gi --env OSS_PV_SIZE&lt;span style="color:#f92672"&gt;=&lt;/span&gt;5Gi --env EXTERNAL_HTTP_SCHEMA&lt;span style="color:#f92672"&gt;=&lt;/span&gt;http registry.cn-shanghai.aliyuncs.com/labring/laf:latest
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Streamlit</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</guid><description>&lt;h1 id="streamlit"&gt;
- Streamlit
- 
- &lt;a class="anchor" href="#streamlit"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sealos run --env DOMAIN&lt;span style="color:#f92672"&gt;=&lt;/span&gt;$DOMAIN --env DB_PV_SIZE&lt;span style="color:#f92672"&gt;=&lt;/span&gt;5Gi --env OSS_PV_SIZE&lt;span style="color:#f92672"&gt;=&lt;/span&gt;5Gi --env EXTERNAL_HTTP_SCHEMA&lt;span style="color:#f92672"&gt;=&lt;/span&gt;http registry.cn-shanghai.aliyuncs.com/labring/laf:latest&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Streamlit</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/streamlit/</guid><description>&lt;h1 id="streamlit"&gt;Streamlit&lt;a class="anchor" href="#streamlit"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/streamlit/streamlit"&gt;streamlit/streamlit&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/streamlit/streamlit.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/streamlit/streamlit.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/streamlit/streamlit.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/streamlit/streamlit.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/streamlit/streamlit.svg" alt="Last commit" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install streamlit
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;streamlit run xxx.py --server.address &lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt; --server.port &lt;span style="color:#ae81ff"&gt;7865&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>systemd</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</guid><description>&lt;h1 id="systemd"&gt;
- systemd
- 
- &lt;a class="anchor" href="#systemd"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="systemctl"&gt;
- systemctl
- 
- &lt;a class="anchor" href="#systemctl"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl list-units --type&lt;span style="color:#f92672"&gt;=&lt;/span&gt;service --state&lt;span style="color:#f92672"&gt;=&lt;/span&gt;active | grep ray
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>uv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/uv/</guid><description>&lt;h1 id="uv"&gt;
- uv
- 
- &lt;a class="anchor" href="#uv"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;streamlit run xxx.py --server.address &lt;span style="color:#e6db74"&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt; --server.port &lt;span style="color:#ae81ff"&gt;7865&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>systemd</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/systemd/</guid><description>&lt;h1 id="systemd"&gt;systemd&lt;a class="anchor" href="#systemd"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="systemctl"&gt;systemctl&lt;a class="anchor" href="#systemctl"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl list-units --type&lt;span style="color:#f92672"&gt;=&lt;/span&gt;service --state&lt;span style="color:#f92672"&gt;=&lt;/span&gt;active | grep ray&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>uv</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/uv/</guid><description>&lt;h1 id="uv"&gt;uv&lt;a class="anchor" href="#uv"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/astral-sh/uv"&gt;astral-sh/uv&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/astral-sh/uv.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/astral-sh/uv.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/astral-sh/uv.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/astral-sh/uv.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/astral-sh/uv.svg" alt="Last commit" /&gt;&lt;/p&gt;
-&lt;h2 id="教程"&gt;
- 教程
- 
- &lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="教程"&gt;教程&lt;a class="anchor" href="#%e6%95%99%e7%a8%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 安装&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -LsSf https://astral.sh/uv/install.sh | sh
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -2026,31 +1445,15 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv venv
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# uv venv --python 3.11.6&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 如果已经创建了 venv&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv pip install -U pip
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="uv-init-生成的文件目录"&gt;
- uv init 生成的文件目录
- 
- &lt;a class="anchor" href="#uv-init-%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e4%bb%b6%e7%9b%ae%e5%bd%95"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;uv pip install -U pip&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="uv-init-生成的文件目录"&gt;uv init 生成的文件目录&lt;a class="anchor" href="#uv-init-%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e4%bb%b6%e7%9b%ae%e5%bd%95"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;.python-version&lt;/code&gt;
 &lt;ul&gt;
 &lt;li&gt;The .python-version file contains the project&amp;rsquo;s default Python version. This file tells uv which Python version to use when creating the project&amp;rsquo;s virtual environment.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>v2ray</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</guid><description>&lt;h1 id="v2ray"&gt;
- v2ray
- 
- &lt;a class="anchor" href="#v2ray"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="服务端"&gt;
- 服务端
- 
- &lt;a class="anchor" href="#%e6%9c%8d%e5%8a%a1%e7%ab%af"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/ul&gt;</description></item><item><title>v2ray</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/v2ray/</guid><description>&lt;h1 id="v2ray"&gt;v2ray&lt;a class="anchor" href="#v2ray"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="服务端"&gt;服务端&lt;a class="anchor" href="#%e6%9c%8d%e5%8a%a1%e7%ab%af"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -N --no-check-certificate -q -O install.sh &lt;span style="color:#e6db74"&gt;&amp;#34;https://raw.githubusercontent.com/wulabing/Xray_onekey/nginx_forward/install.sh&amp;#34;&lt;/span&gt; &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; chmod +x install.sh &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; bash install.sh
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -2062,13 +1465,7 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 相关目录&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Web 目录：/www/xray_web&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Xray 服务端配置：/usr/local/etc/xray/config.json&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Nginx 目录： /etc/nginx&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="openai"&gt;
- openai
- 
- &lt;a class="anchor" href="#openai"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Nginx 目录： /etc/nginx&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="openai"&gt;openai&lt;a class="anchor" href="#openai"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;安装参考 [[ubuntu/docker]]&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run -d --name warp -p 127.0.0.1:7081:1080 -p 127.0.0.1:7082:8080 --restart unless-stopped amirdaaee/cloudflare-warp:latest
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -2099,20 +1496,9 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;}&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 然后重启&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl restart xray
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="linux-客户端"&gt;
- Linux 客户端
- 
- &lt;a class="anchor" href="#linux-%e5%ae%a2%e6%88%b7%e7%ab%af"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="v2raya"&gt;
- v2rayA
- 
- &lt;a class="anchor" href="#v2raya"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;systemctl restart xray&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="linux-客户端"&gt;Linux 客户端&lt;a class="anchor" href="#linux-%e5%ae%a2%e6%88%b7%e7%ab%af"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="v2raya"&gt;v2rayA&lt;a class="anchor" href="#v2raya"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 添加公钥&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/keyrings/v2raya.asc
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -2124,19 +1510,8 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt install v2raya v2ray &lt;span style="color:#75715e"&gt;## 也可以使用 xray 包&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl start v2raya.service
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl enable v2raya.service
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考： &lt;a href="https://v2raya.org/docs/prologue/quick-start/"&gt;v2raya 快速上手&lt;/a&gt;&lt;/p&gt;</description></item><item><title>zsh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid><description>&lt;h1 id="zsh"&gt;
- zsh
- 
- &lt;a class="anchor" href="#zsh"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="oh-my-zsh"&gt;
- &lt;a href="https://ohmyz.sh/"&gt;oh-my-zsh&lt;/a&gt;
- 
- &lt;a class="anchor" href="#oh-my-zsh"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo systemctl enable v2raya.service&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考： &lt;a href="https://v2raya.org/docs/prologue/quick-start/"&gt;v2raya 快速上手&lt;/a&gt;&lt;/p&gt;</description></item><item><title>zsh</title><link>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/tool/linux/ubuntu/zsh/</guid><description>&lt;h1 id="zsh"&gt;zsh&lt;a class="anchor" href="#zsh"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="oh-my-zsh"&gt;&lt;a href="https://ohmyz.sh/"&gt;oh-my-zsh&lt;/a&gt;&lt;a class="anchor" href="#oh-my-zsh"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;安装&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apt install -y git zsh
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -2168,17 +1543,10 @@ kubectl patch storageclass local-storage -p &amp;#39;{&amp;#34;metadata&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 设置默认为 zsh&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo chsh -s /usr/bin/zsh yewang
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="oh-my-zsh-主题乱码解决办法"&gt;
- &lt;a href="https://www.cnblogs.com/marsggbo/p/17531721.html"&gt;Oh-my-zsh 主题乱码解决办法&lt;/a&gt;
- 
- &lt;a class="anchor" href="#oh-my-zsh-%e4%b8%bb%e9%a2%98%e4%b9%b1%e7%a0%81%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo chsh -s /usr/bin/zsh yewang&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="oh-my-zsh-主题乱码解决办法"&gt;&lt;a href="https://www.cnblogs.com/marsggbo/p/17531721.html"&gt;Oh-my-zsh 主题乱码解决办法&lt;/a&gt;&lt;a class="anchor" href="#oh-my-zsh-%e4%b8%bb%e9%a2%98%e4%b9%b1%e7%a0%81%e8%a7%a3%e5%86%b3%e5%8a%9e%e6%b3%95"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd ~/Downloads &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git clone https://github.com/powerline/fonts.git	&lt;span style="color:#75715e"&gt;#将 Powerline 字体文件下载到「下载」文件夹中&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd fonts &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ./install.sh	&lt;span style="color:#75715e"&gt;#安装所有 Powerline 字体&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf ~/Downloads/fonts	&lt;span style="color:#75715e"&gt;#删除下载的字体文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Iterm2 的设置路径是: [iTerm2] -&amp;gt; [Profiles] -&amp;gt; [Default] -&amp;gt; [Text] -&amp;gt; [Font] -&amp;gt; [DejaVu Sans Mono for Powerline]&lt;/p&gt;</description></item></channel></rss>
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf ~/Downloads/fonts	&lt;span style="color:#75715e"&gt;#删除下载的字体文件&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Iterm2 的设置路径是: [iTerm2] -&amp;gt; [Profiles] -&amp;gt; [Default] -&amp;gt; [Text] -&amp;gt; [Font] -&amp;gt; [DejaVu Sans Mono for Powerline]&lt;/p&gt;</description></item></channel></rss>

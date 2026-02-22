@@ -1,15 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>原则 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/</link><description>Recent content in 原则 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/principle/index.xml" rel="self" type="application/rss+xml"/><item><title>CAP</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</guid><description>&lt;h1 id="cap"&gt;
- &lt;a href="https://www.wikiwand.com/en/CAP_theorem"&gt;CAP&lt;/a&gt;
- 
- &lt;a class="anchor" href="#cap"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="p-是前提"&gt;
- P 是前提
- 
- &lt;a class="anchor" href="#p-%e6%98%af%e5%89%8d%e6%8f%90"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>原则 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/</link><description>Recent content in 原则 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/arch/principle/index.xml" rel="self" type="application/rss+xml"/><item><title>CAP</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/cap/</guid><description>&lt;h1 id="cap"&gt;&lt;a href="https://www.wikiwand.com/en/CAP_theorem"&gt;CAP&lt;/a&gt;&lt;a class="anchor" href="#cap"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="p-是前提"&gt;P 是前提&lt;a class="anchor" href="#p-%e6%98%af%e5%89%8d%e6%8f%90"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在理论计算机科学中，CAP 定理（CAP theorem），又被称作布鲁尔定理（Brewer&amp;rsquo;s theorem），它指出对于一个 &lt;a href="https://www.wikiwand.com/en/Distributed_data_store"&gt;distributed data store&lt;/a&gt; 来说，不可能同时满足以下三点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;一致性（&lt;a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29"&gt;Consistency&lt;/a&gt;）
@@ -30,12 +20,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="一般选-ap"&gt;
- 一般选 AP
- 
- &lt;a class="anchor" href="#%e4%b8%80%e8%88%ac%e9%80%89-ap"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="一般选-ap"&gt;一般选 AP&lt;a class="anchor" href="#%e4%b8%80%e8%88%ac%e9%80%89-ap"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;也就是说，在存在网络分区的情况下，一致性和可用性必须二选一。&lt;/p&gt;
 &lt;p&gt;比如：A 服务器 B 服务器同步数据，现在 A B 之间网络断掉了，那么现在发来 A 一个写入请求，但是 B 却没有相关的请求，显然，&lt;/p&gt;
 &lt;ul&gt;
@@ -45,12 +30,7 @@
 &lt;p&gt;这里的一致性（&lt;a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29"&gt;Consistency&lt;/a&gt;）是&lt;strong&gt;强一致性&lt;/strong&gt;，意思是 AB 的数据时刻都是同步的，
 如果我们放弃了强一致性，不代表我们的数据就是一定是不一致的了，我们可以让 A 先写入本地，等到通信恢复了再同步给 B，这就是所谓的最终一致性，长远的看我们的数据还是一致的，我们只是在某一个时间窗口里数据不一致罢了。
 如果这个时间窗口小过了用户逻辑处理的时间。那么其实对于用户来说根本感觉不到。&lt;/p&gt;
-&lt;h2 id="现实中的-cap"&gt;
- 现实中的 CAP
- 
- &lt;a class="anchor" href="#%e7%8e%b0%e5%ae%9e%e4%b8%ad%e7%9a%84-cap"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="现实中的-cap"&gt;现实中的 CAP&lt;a class="anchor" href="#%e7%8e%b0%e5%ae%9e%e4%b8%ad%e7%9a%84-cap"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;CAP 对实际工作缺乏指导性。&lt;/p&gt;
 &lt;p&gt;实际系统主要有三种：&lt;/p&gt;
 &lt;ul&gt;
@@ -70,40 +50,18 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="参考"&gt;
- 参考
- 
- &lt;a class="anchor" href="#%e5%8f%82%e8%80%83"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="参考"&gt;参考&lt;a class="anchor" href="#%e5%8f%82%e8%80%83"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/64778723"&gt;CAP 理论常被解释为一种 “三选二” 定律，这是否是一种误解？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/363054486"&gt;分布式事务中的最终一致具体应该如何实现？&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/56571269"&gt;分布式系统中的数据一致性和性能怎么权衡？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>ACID</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</guid><description>&lt;h1 id="acid"&gt;
- &lt;a href="https://www.wikiwand.com/en/ACID"&gt;ACID&lt;/a&gt;
- 
- &lt;a class="anchor" href="#acid"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-
+&lt;/ul&gt;</description></item><item><title>ACID</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/acid/</guid><description>&lt;h1 id="acid"&gt;&lt;a href="https://www.wikiwand.com/en/ACID"&gt;ACID&lt;/a&gt;&lt;a class="anchor" href="#acid"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;blockquote class='book-hint '&gt;
- &lt;p&gt;In &lt;a href="https://www.wikiwand.com/en/Computer_science"&gt;computer science&lt;/a&gt;, ACID (&lt;a href="https://www.wikiwand.com/en/Atomicity_%28database_systems%29"&gt;atomicity&lt;/a&gt;, &lt;a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29" title="Consistency (database systems)"&gt;consistency&lt;/a&gt;, &lt;a href="https://www.wikiwand.com/en/Isolation_%28database_systems%29" title="Isolation (database systems)"&gt;isolation&lt;/a&gt;, &lt;a href="https://www.wikiwand.com/en/Durability_%28database_systems%29"&gt;durability&lt;/a&gt;) is a set of properties of &lt;a href="https://www.wikiwand.com/en/Database_transaction"&gt;database transactions&lt;/a&gt; intended to guarantee validity even in the event of errors, power failures, etc. In the context of &lt;a href="https://www.wikiwand.com/en/Database"&gt;databases&lt;/a&gt;, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;hr&gt;
-&lt;p&gt;&lt;code&gt;ACID&lt;/code&gt; 是追求 &lt;code&gt;CAP&lt;/code&gt; (&lt;code&gt;Consistency&lt;/code&gt;, &lt;code&gt;Availability&lt;/code&gt;, &lt;code&gt;Partition tolerance&lt;/code&gt;) 的&lt;code&gt;一致性&lt;/code&gt; (&lt;code&gt;C&lt;/code&gt;)&lt;/p&gt;</description></item><item><title>BASE</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</guid><description>&lt;h1 id="base"&gt;
- BASE
- 
- &lt;a class="anchor" href="#base"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;In &lt;a href="https://www.wikiwand.com/en/Computer_science"&gt;computer science&lt;/a&gt;, ACID (&lt;a href="https://www.wikiwand.com/en/Atomicity_%28database_systems%29"&gt;atomicity&lt;/a&gt;, &lt;a href="https://www.wikiwand.com/en/Consistency_%28database_systems%29" title="Consistency (database systems)"&gt;consistency&lt;/a&gt;, &lt;a href="https://www.wikiwand.com/en/Isolation_%28database_systems%29" title="Isolation (database systems)"&gt;isolation&lt;/a&gt;, &lt;a href="https://www.wikiwand.com/en/Durability_%28database_systems%29"&gt;durability&lt;/a&gt;) is a set of properties of &lt;a href="https://www.wikiwand.com/en/Database_transaction"&gt;database transactions&lt;/a&gt; intended to guarantee validity even in the event of errors, power failures, etc. In the context of &lt;a href="https://www.wikiwand.com/en/Database"&gt;databases&lt;/a&gt;, a sequence of database operations that satisfies the ACID properties (and these can be perceived as a single logical operation on the data) is called a transaction.&lt;/p&gt;&lt;/blockquote&gt;&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;ACID&lt;/code&gt; 是追求 &lt;code&gt;CAP&lt;/code&gt; (&lt;code&gt;Consistency&lt;/code&gt;, &lt;code&gt;Availability&lt;/code&gt;, &lt;code&gt;Partition tolerance&lt;/code&gt;) 的&lt;code&gt;一致性&lt;/code&gt; (&lt;code&gt;C&lt;/code&gt;)&lt;/p&gt;</description></item><item><title>BASE</title><link>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/arch/principle/base/</guid><description>&lt;h1 id="base"&gt;BASE&lt;a class="anchor" href="#base"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Basically Available, Soft state, &lt;a href="https://www.wikiwand.com/en/Eventual_consistency"&gt;Eventual consistency&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;BASE 理论是 CAP 理论中的 AP 的延伸，是对互联网大规模分布式系统的实践总结，强调可用性。&lt;/p&gt;
-&lt;h2 id="基本可用"&gt;
- 基本可用
- 
- &lt;a class="anchor" href="#%e5%9f%ba%e6%9c%ac%e5%8f%af%e7%94%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="基本可用"&gt;基本可用&lt;a class="anchor" href="#%e5%9f%ba%e6%9c%ac%e5%8f%af%e7%94%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;流量削峰
 &lt;ul&gt;
@@ -126,12 +84,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="最终的一致"&gt;
- 最终的一致
- 
- &lt;a class="anchor" href="#%e6%9c%80%e7%bb%88%e7%9a%84%e4%b8%80%e8%87%b4"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="最终的一致"&gt;最终的一致&lt;a class="anchor" href="#%e6%9c%80%e7%bb%88%e7%9a%84%e4%b8%80%e8%87%b4"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;读时修复：在读取数据时，检测数据的不一致，进行修复。
 &lt;ul&gt;

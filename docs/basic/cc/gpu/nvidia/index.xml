@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nvidia on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/</link><description>Recent content in Nvidia on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/index.xml" rel="self" type="application/rss+xml"/><item><title>NCCL</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</guid><description>&lt;h1 id="nccl"&gt;
- NCCL
- 
- &lt;a class="anchor" href="#nccl"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nvidia on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/</link><description>Recent content in Nvidia on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/index.xml" rel="self" type="application/rss+xml"/><item><title>NCCL</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nccl/</guid><description>&lt;h1 id="nccl"&gt;NCCL&lt;a class="anchor" href="#nccl"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;NCCL 在网络模型训练框架中位于深度学习框架（如 Torch、TF、PP 等），和 CUDA 框架之间。同级并列的还有深度学习库 CUDNN、线性代数库 CUBLAS。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Nvidia Collective multi-GPU Communication Library&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;是一个实现多 GPU 的 collective communication 通信（all-gather, reduce, broadcast）库，Nvidia 做了很多优化，以在 PCIe、Nvlink、InfiniBand 上实现较高的通信速度。&lt;/p&gt;
@@ -17,12 +12,7 @@
 &lt;li&gt;&lt;code&gt;GPU Direct P2P&lt;/code&gt; 是一种允许 NVIDIA GPU 直接通过 PCIe 或 NVLink 互相通信的技术，无需 CPU 介入&lt;/li&gt;
 &lt;li&gt;InfiniBand 连接不同计算机或服务器的一种网络技术&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="communication-primitive"&gt;
- Communication Primitive
- 
- &lt;a class="anchor" href="#communication-primitive"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="communication-primitive"&gt;Communication Primitive&lt;a class="anchor" href="#communication-primitive"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;并行任务的通信一般可以分为&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Point-to-point Communication&lt;/code&gt;
@@ -37,36 +27,16 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="ring-based-collective-communication"&gt;
- ring-based Collective communication
- 
- &lt;a class="anchor" href="#ring-based-collective-communication"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="ring-based-collective-communication"&gt;ring-based Collective communication&lt;a class="anchor" href="#ring-based-collective-communication"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;传统 &lt;code&gt;Collective communication&lt;/code&gt; 假设通信节点组成的 topology 是一颗 fat tree，这样通信效率最高&lt;/p&gt;</description></item><item><title>Nvidia 显卡系列</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</guid><description>&lt;h1 id="nvidia-显卡系列"&gt;
- Nvidia 显卡系列
- 
- &lt;a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="nvidia-显卡系列-1"&gt;
- Nvidia 显卡系列
- 
- &lt;a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97-1"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;p&gt;传统 &lt;code&gt;Collective communication&lt;/code&gt; 假设通信节点组成的 topology 是一颗 fat tree，这样通信效率最高&lt;/p&gt;</description></item><item><title>Nvidia 显卡系列</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/list/</guid><description>&lt;h1 id="nvidia-显卡系列"&gt;Nvidia 显卡系列&lt;a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="nvidia-显卡系列-1"&gt;Nvidia 显卡系列&lt;a class="anchor" href="#nvidia-%e6%98%be%e5%8d%a1%e7%b3%bb%e5%88%97-1"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://developer.nvidia.com/nsight-visual-studio-edition-supported-gpus-full-list"&gt;[Nvidia] General GPU Support&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="tesla-专业级显卡"&gt;
- &lt;a href="https://www.wikiwand.com/en/Nvidia_Tesla"&gt;Tesla&lt;/a&gt;: 专业级显卡
- 
- &lt;a class="anchor" href="#tesla-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="tesla-专业级显卡"&gt;&lt;a href="https://www.wikiwand.com/en/Nvidia_Tesla"&gt;Tesla&lt;/a&gt;: 专业级显卡&lt;a class="anchor" href="#tesla-%e4%b8%93%e4%b8%9a%e7%ba%a7%e6%98%be%e5%8d%a1"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;用于对抗 AMD 的 &lt;a href="https://www.wikiwand.com/zh-cn/FireStream"&gt;FireStream&lt;/a&gt; 系列&lt;/p&gt;
@@ -104,12 +74,13 @@
 &lt;p&gt;Tesla P40&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Tesla P4&lt;/p&gt;</description></item><item><title>Nvidia 架构</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</guid><description>&lt;h1 id="nvidia-架构"&gt;
- Nvidia 架构
- 
- &lt;a class="anchor" href="#nvidia-%e6%9e%b6%e6%9e%84"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;Tesla P4&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tesla M60&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tesla M40&lt;/p&gt;</description></item><item><title>Nvidia 架构</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/arch/</guid><description>&lt;h1 id="nvidia-架构"&gt;Nvidia 架构&lt;a class="anchor" href="#nvidia-%e6%9e%b6%e6%9e%84"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;ol&gt;
@@ -196,30 +167,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id="14-blackwell"&gt;
- 14. &lt;a href="https://www.wikiwand.com/en/Blackwell_%28microarchitecture%29"&gt;Blackwell&lt;/a&gt;
- 
- &lt;a class="anchor" href="#14-blackwell"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h2 id="13-ada-lovelace-vs-hopper"&gt;
- 13. &lt;code&gt;Ada Lovelace&lt;/code&gt; vs Hopper
- 
- &lt;a class="anchor" href="#13-ada-lovelace-vs-hopper"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="ada-lovelace-consumer"&gt;
- &lt;a href="https://www.wikiwand.com/en/Ada_Lovelace_%28microarchitecture%29"&gt;Ada Lovelace&lt;/a&gt; (consumer)
- 
- &lt;a class="anchor" href="#ada-lovelace-consumer"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
-&lt;p&gt;officially announced on &lt;code&gt;2022-09-20&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Nvidia 驱动</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/driver/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/driver/</guid><description>&lt;h1 id="nvidia-驱动"&gt;
- Nvidia 驱动
- 
- &lt;a class="anchor" href="#nvidia-%e9%a9%b1%e5%8a%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;h2 id="14-blackwell"&gt;14. &lt;a href="https://www.wikiwand.com/en/Blackwell_%28microarchitecture%29"&gt;Blackwell&lt;/a&gt;&lt;a class="anchor" href="#14-blackwell"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="13-ada-lovelace-vs-hopper"&gt;13. &lt;code&gt;Ada Lovelace&lt;/code&gt; vs Hopper&lt;a class="anchor" href="#13-ada-lovelace-vs-hopper"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="ada-lovelace-consumer"&gt;&lt;a href="https://www.wikiwand.com/en/Ada_Lovelace_%28microarchitecture%29"&gt;Ada Lovelace&lt;/a&gt; (consumer)&lt;a class="anchor" href="#ada-lovelace-consumer"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;officially announced on &lt;code&gt;2022-09-20&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Nvidia 驱动</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/driver/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/driver/</guid><description>&lt;h1 id="nvidia-驱动"&gt;Nvidia 驱动&lt;a class="anchor" href="#nvidia-%e9%a9%b1%e5%8a%a8"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -337,13 +288,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Driver Version: 410.129&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# Release Date: 2019.9.4&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -LO https://us.download.nvidia.com/tesla/410.129/NVIDIA-Linux-x86_64-410.129.run
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bash NVIDIA-Linux-x86_64-410.129.run
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="卸载-nvidia-driver"&gt;
- 卸载 nvidia driver
- 
- &lt;a class="anchor" href="#%e5%8d%b8%e8%bd%bd-nvidia-driver"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bash NVIDIA-Linux-x86_64-410.129.run&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="卸载-nvidia-driver"&gt;卸载 nvidia driver&lt;a class="anchor" href="#%e5%8d%b8%e8%bd%bd-nvidia-driver"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 方法一&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dpkg -l | grep -i nvidia
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get remove --purge &lt;span style="color:#e6db74"&gt;&amp;#39;^nvidia-.*&amp;#39;&lt;/span&gt;
@@ -352,20 +297,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# sudo apt-get install ubuntu-desktop&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 方法二&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sh NVIDIA-Linux-x86_64-535.54.03.run --uninstall
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="nvidia-smi"&gt;
- nvidia-smi
- 
- &lt;a class="anchor" href="#nvidia-smi"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;p&gt;nvidia-smi 右上角显示的 &lt;code&gt;CUDA Version:&lt;/code&gt; 是指支持的&lt;em&gt;最高版本&lt;/em&gt;的 cuda&lt;/p&gt;</description></item><item><title>nvidia-docker</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nvidia-docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nvidia-docker/</guid><description>&lt;h1 id="nvidia-docker"&gt;
- nvidia-docker
- 
- &lt;a class="anchor" href="#nvidia-docker"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sh NVIDIA-Linux-x86_64-535.54.03.run --uninstall&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="nvidia-smi"&gt;nvidia-smi&lt;a class="anchor" href="#nvidia-smi"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;nvidia-smi 右上角显示的 &lt;code&gt;CUDA Version:&lt;/code&gt; 是指支持的&lt;em&gt;最高版本&lt;/em&gt;的 cuda&lt;/p&gt;</description></item><item><title>nvidia-docker</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nvidia-docker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/nvidia-docker/</guid><description>&lt;h1 id="nvidia-docker"&gt;nvidia-docker&lt;a class="anchor" href="#nvidia-docker"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;因为 GPU 属于特定的厂商产品，需要特定的 driver，
 Docker 本身并不支持 GPU。
 以前如果要在 Docker 中使用 GPU，就需要在 container 中安装主机上使用 GPU 的 driver，
@@ -373,12 +307,7 @@ Docker 本身并不支持 GPU。
 所以这样的 Docker image 并不具备可移植性。&lt;/p&gt;
 &lt;p&gt;Nvidia-docker 项目就是为了解决这个问题，
 它让 Docker image 不需要知道底层 GPU 的相关信息，而是通过启动 container 时 mount 设备和驱动文件来实现的。&lt;/p&gt;
-&lt;h2 id="nvidia-container-toolkit"&gt;
- NVIDIA Container Toolkit
- 
- &lt;a class="anchor" href="#nvidia-container-toolkit"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="nvidia-container-toolkit"&gt;NVIDIA Container Toolkit&lt;a class="anchor" href="#nvidia-container-toolkit"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;NVIDIA Container Toolkit&lt;/code&gt;（以前称为 &lt;code&gt;NVIDIA Docker&lt;/code&gt;）是一个更全面的工具集，包括了 &lt;code&gt;NVIDIA Container Runtime&lt;/code&gt;，以及其他工具和库，使得在 Docker 和其他容器平台上能够方便地部署和管理 GPU 加速的容器应用。&lt;/p&gt;
 &lt;p&gt;Toolkit 主要包括以下几个组件：&lt;/p&gt;
 &lt;ul&gt;
@@ -389,18 +318,8 @@ Docker 本身并不支持 GPU。
 &lt;p&gt;&lt;code&gt;nvidia-container-runtime&lt;/code&gt;: 实际的容器运行时，可以集成到 Docker 和其他容器平台。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;nvidia-docker2&lt;/code&gt;: 一个便捷的包，包括 Docker 插件和 nvidia-container-runtime，简化了使用 Docker 运行 GPU 加速容器的过程。&lt;/p&gt;</description></item><item><title>SM Version</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</guid><description>&lt;h1 id="sm-version"&gt;
- SM Version
- 
- &lt;a class="anchor" href="#sm-version"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="sm-version-1"&gt;
- SM Version
- 
- &lt;a class="anchor" href="#sm-version-1"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nvidia-docker2&lt;/code&gt;: 一个便捷的包，包括 Docker 插件和 nvidia-container-runtime，简化了使用 Docker 运行 GPU 加速容器的过程。&lt;/p&gt;</description></item><item><title>SM Version</title><link>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/gpu/nvidia/SM-Version/</guid><description>&lt;h1 id="sm-version"&gt;SM Version&lt;a class="anchor" href="#sm-version"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="sm-version-1"&gt;SM Version&lt;a class="anchor" href="#sm-version-1"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capabilities"&gt;Compute Capability&lt;/a&gt; 也就是 SM Version&lt;/li&gt;
 &lt;li&gt;Compute Capability 是一个硬件和架构的特性指标。Compute Capability 告诉你 GPU 支持哪些功能和指令集，而 TOPS 告诉你 GPU 能有多快。&lt;/li&gt;

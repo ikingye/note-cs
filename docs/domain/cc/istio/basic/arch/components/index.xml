@@ -1,29 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>组件 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/</link><description>Recent content in 组件 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/index.xml" rel="self" type="application/rss+xml"/><item><title>Mixer</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</guid><description>&lt;h1 id="mixer-基础"&gt;
- Mixer 基础
- 
- &lt;a class="anchor" href="#mixer-%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>组件 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/</link><description>Recent content in 组件 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/index.xml" rel="self" type="application/rss+xml"/><item><title>Mixer</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/mixer/</guid><description>&lt;h1 id="mixer-基础"&gt;Mixer 基础&lt;a class="anchor" href="#mixer-%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Mixer 已弃用。&lt;/p&gt;
 &lt;p&gt;Mixer 所提供的功能已迁移至 Envoy 代理中。 在 Istio 中对 Mixer 的支持将截止到 Istio 1.7 发行版。&lt;/p&gt;
-&lt;p&gt;请参考  &lt;a href="https://istio.io/zh/docs/reference/config/telemetry"&gt;Telemetry V2&lt;/a&gt;，它取代了 Mixer 遥测。&lt;/p&gt;</description></item><item><title>Pilot</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</guid><description>&lt;h1 id="pilot-基础"&gt;
- Pilot 基础
- 
- &lt;a class="anchor" href="#pilot-%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;请参考  &lt;a href="https://istio.io/zh/docs/reference/config/telemetry"&gt;Telemetry V2&lt;/a&gt;，它取代了 Mixer 遥测。&lt;/p&gt;</description></item><item><title>Pilot</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/pilot/</guid><description>&lt;h1 id="pilot-基础"&gt;Pilot 基础&lt;a class="anchor" href="#pilot-%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/YaoZengzeng/KubernetesResearch/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Istio%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E4%B9%8BPilot.md"&gt;深入理解 Istio 核心组件之 Pilot&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.servicemesher.com/blog/deepin-service-mesh-tech-details/"&gt;深入解读 Service Mesh 背后的技术细节&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Citadel</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</guid><description>&lt;h1 id="citadel"&gt;
- Citadel
- 
- &lt;a class="anchor" href="#citadel"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;</description></item><item><title>Galley</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</guid><description>&lt;h1 id="galley-基础"&gt;
- Galley 基础
- 
- &lt;a class="anchor" href="#galley-%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item><item><title>Citadel</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/citadel/</guid><description>&lt;h1 id="citadel"&gt;Citadel&lt;a class="anchor" href="#citadel"&gt;#&lt;/a&gt;&lt;/h1&gt;</description></item><item><title>Galley</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/basic/arch/components/galley/</guid><description>&lt;h1 id="galley-基础"&gt;Galley 基础&lt;a class="anchor" href="#galley-%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;&lt;/h1&gt;</description></item></channel></rss>

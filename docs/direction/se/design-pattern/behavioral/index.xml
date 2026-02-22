@@ -1,25 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>行为型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/</link><description>Recent content in 行为型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/index.xml" rel="self" type="application/rss+xml"/><item><title>命令</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/command/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/command/</guid><description>&lt;h1 id="命令模式"&gt;
- 命令模式
- 
- &lt;a class="anchor" href="#%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>行为型 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/</link><description>Recent content in 行为型 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/index.xml" rel="self" type="application/rss+xml"/><item><title>命令</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/command/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/command/</guid><description>&lt;h1 id="命令模式"&gt;命令模式&lt;a class="anchor" href="#%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Command Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -27,13 +14,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -41,13 +25,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -55,13 +36,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -69,13 +47,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -83,13 +58,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -97,13 +69,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -111,13 +80,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -125,13 +91,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -139,13 +102,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -153,13 +113,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -167,13 +124,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -181,13 +135,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -195,13 +146,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -209,13 +157,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -223,32 +168,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>翻译器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/interpreter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/interpreter/</guid><description>&lt;h1 id="翻译器模式"&gt;
- 翻译器模式
- 
- &lt;a class="anchor" href="#%e7%bf%bb%e8%af%91%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>翻译器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/interpreter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/interpreter/</guid><description>&lt;h1 id="翻译器模式"&gt;翻译器模式&lt;a class="anchor" href="#%e7%bf%bb%e8%af%91%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Interpreter Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -256,13 +186,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -270,13 +197,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -284,13 +208,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -298,13 +219,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -312,13 +230,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -326,13 +241,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -340,13 +252,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -354,13 +263,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -368,13 +274,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -382,13 +285,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -396,13 +296,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -410,13 +307,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -424,13 +318,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -438,13 +329,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -452,32 +340,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>迭代器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/</guid><description>&lt;h1 id="迭代器模式"&gt;
- 迭代器模式
- 
- &lt;a class="anchor" href="#%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>迭代器</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/iterator/</guid><description>&lt;h1 id="迭代器模式"&gt;迭代器模式&lt;a class="anchor" href="#%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Iterator Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -485,13 +358,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -499,13 +369,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -513,13 +380,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -527,13 +391,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -541,13 +402,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -555,13 +413,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -569,13 +424,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -583,13 +435,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -597,13 +446,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -611,13 +457,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -625,13 +468,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -639,13 +479,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -653,13 +490,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -667,13 +501,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -681,32 +512,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>中介者</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/mediator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/mediator/</guid><description>&lt;h1 id="中介者模式"&gt;
- 中介者模式
- 
- &lt;a class="anchor" href="#%e4%b8%ad%e4%bb%8b%e8%80%85%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>中介者</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/mediator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/mediator/</guid><description>&lt;h1 id="中介者模式"&gt;中介者模式&lt;a class="anchor" href="#%e4%b8%ad%e4%bb%8b%e8%80%85%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Mediator Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -714,13 +530,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -728,13 +541,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -742,13 +552,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -756,13 +563,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -770,13 +574,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -784,13 +585,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -798,13 +596,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -812,13 +607,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -826,13 +618,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -840,13 +629,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -854,13 +640,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -868,13 +651,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -882,13 +662,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -896,13 +673,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -910,32 +684,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>回忆</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/memento/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/memento/</guid><description>&lt;h1 id="回忆模式"&gt;
- 回忆模式
- 
- &lt;a class="anchor" href="#%e5%9b%9e%e5%bf%86%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>回忆</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/memento/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/memento/</guid><description>&lt;h1 id="回忆模式"&gt;回忆模式&lt;a class="anchor" href="#%e5%9b%9e%e5%bf%86%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Memento Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -943,13 +702,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -957,13 +713,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -971,13 +724,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -985,13 +735,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -999,13 +746,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -1013,13 +757,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -1027,13 +768,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -1041,13 +779,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1055,13 +790,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1069,13 +801,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -1083,13 +812,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -1097,13 +823,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -1111,13 +834,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -1125,13 +845,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -1139,32 +856,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>职责链</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/chain-of-responsibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/chain-of-responsibility/</guid><description>&lt;h1 id="职责链模式"&gt;
- 职责链模式
- 
- &lt;a class="anchor" href="#%e8%81%8c%e8%b4%a3%e9%93%be%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>职责链</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/chain-of-responsibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/chain-of-responsibility/</guid><description>&lt;h1 id="职责链模式"&gt;职责链模式&lt;a class="anchor" href="#%e8%81%8c%e8%b4%a3%e9%93%be%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Chain-of-responsibility Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -1172,13 +874,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -1186,13 +885,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -1200,13 +896,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -1214,13 +907,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -1228,13 +918,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -1242,13 +929,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -1256,13 +940,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -1270,13 +951,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1284,13 +962,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1298,13 +973,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -1312,13 +984,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -1326,13 +995,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -1340,13 +1006,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -1354,13 +1017,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -1368,32 +1028,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>观察者</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/observer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/observer/</guid><description>&lt;h1 id="观察者模式"&gt;
- 观察者模式
- 
- &lt;a class="anchor" href="#%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>观察者</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/observer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/observer/</guid><description>&lt;h1 id="观察者模式"&gt;观察者模式&lt;a class="anchor" href="#%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Observer Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -1401,13 +1046,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -1415,13 +1057,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -1429,13 +1068,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -1443,13 +1079,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -1457,13 +1090,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -1471,13 +1101,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -1485,13 +1112,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -1499,13 +1123,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1513,13 +1134,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1527,13 +1145,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -1541,13 +1156,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -1555,13 +1167,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -1569,13 +1178,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -1583,13 +1189,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -1597,32 +1200,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>状态机</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/state/</guid><description>&lt;h1 id="状态机模式"&gt;
- 状态机模式
- 
- &lt;a class="anchor" href="#%e7%8a%b6%e6%80%81%e6%9c%ba%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>状态机</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/state/</guid><description>&lt;h1 id="状态机模式"&gt;状态机模式&lt;a class="anchor" href="#%e7%8a%b6%e6%80%81%e6%9c%ba%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;State Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -1630,13 +1218,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -1644,13 +1229,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -1658,13 +1240,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -1672,13 +1251,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -1686,13 +1262,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -1700,13 +1273,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -1714,13 +1284,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -1728,13 +1295,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1742,13 +1306,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1756,13 +1317,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -1770,13 +1328,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -1784,13 +1339,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -1798,13 +1350,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -1812,13 +1361,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -1826,32 +1372,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>策略</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/strategy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/strategy/</guid><description>&lt;h1 id="策略模式"&gt;
- 策略模式
- 
- &lt;a class="anchor" href="#%e7%ad%96%e7%95%a5%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>策略</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/strategy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/strategy/</guid><description>&lt;h1 id="策略模式"&gt;策略模式&lt;a class="anchor" href="#%e7%ad%96%e7%95%a5%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Strategy Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -1859,13 +1390,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -1873,13 +1401,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -1887,13 +1412,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -1901,13 +1423,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -1915,13 +1434,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -1929,13 +1445,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -1943,13 +1456,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -1957,13 +1467,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1971,13 +1478,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -1985,13 +1489,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -1999,13 +1500,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -2013,13 +1511,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -2027,13 +1522,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -2041,13 +1533,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -2055,32 +1544,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>模板方法</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</guid><description>&lt;h1 id="模板方法模式"&gt;
- 模板方法模式
- 
- &lt;a class="anchor" href="#%e6%a8%a1%e6%9d%bf%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>模板方法</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/template-method/</guid><description>&lt;h1 id="模板方法模式"&gt;模板方法模式&lt;a class="anchor" href="#%e6%a8%a1%e6%9d%bf%e6%96%b9%e6%b3%95%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Template Method Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -2088,13 +1562,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -2102,13 +1573,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -2116,13 +1584,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -2130,13 +1595,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -2144,13 +1606,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -2158,13 +1617,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -2172,13 +1628,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -2186,13 +1639,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -2200,13 +1650,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -2214,13 +1661,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -2228,13 +1672,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -2242,13 +1683,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -2256,13 +1694,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -2270,13 +1705,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -2284,32 +1716,17 @@
 
 &lt;/div&gt;
 
-
 ---
 
-
-&lt;/div&gt;</description></item><item><title>参观者</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/visitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/visitor/</guid><description>&lt;h1 id="参观者模式"&gt;
- 参观者模式
- 
- &lt;a class="anchor" href="#%e5%8f%82%e8%a7%82%e8%80%85%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>参观者</title><link>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/visitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/se/design-pattern/behavioral/visitor/</guid><description>&lt;h1 id="参观者模式"&gt;参观者模式&lt;a class="anchor" href="#%e5%8f%82%e8%a7%82%e8%80%85%e6%a8%a1%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Visitor Pattern&lt;/p&gt;
-&lt;h2 id="代码示例"&gt;
- 代码示例
- 
- &lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="代码示例"&gt;代码示例&lt;a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-
 
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;C&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-0" checked="checked" /&gt;
-&lt;label for="tabs-code-0"&gt;C&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c
 
@@ -2317,13 +1734,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-1" /&gt;
-&lt;label for="tabs-code-1"&gt;C&amp;#43;&amp;#43;&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c++
 
@@ -2331,13 +1745,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-2" /&gt;&lt;label for="tabs-0-2"&gt;C#&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-2" /&gt;
-&lt;label for="tabs-code-2"&gt;C#&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```c#
 
@@ -2345,13 +1756,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-3" /&gt;&lt;label for="tabs-0-3"&gt;Go&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-3" /&gt;
-&lt;label for="tabs-code-3"&gt;Go&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```go
 
@@ -2359,13 +1767,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-4" /&gt;&lt;label for="tabs-0-4"&gt;Java&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-4" /&gt;
-&lt;label for="tabs-code-4"&gt;Java&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```java
 
@@ -2373,13 +1778,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-5" /&gt;&lt;label for="tabs-0-5"&gt;JavaScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-5" /&gt;
-&lt;label for="tabs-code-5"&gt;JavaScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```javascript
 
@@ -2387,13 +1789,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-6" /&gt;&lt;label for="tabs-0-6"&gt;Kotlin&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-6" /&gt;
-&lt;label for="tabs-code-6"&gt;Kotlin&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```kotlin
 
@@ -2401,13 +1800,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-7" /&gt;&lt;label for="tabs-0-7"&gt;PHP&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-7" /&gt;
-&lt;label for="tabs-code-7"&gt;PHP&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```php
 
@@ -2415,13 +1811,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-8" /&gt;&lt;label for="tabs-0-8"&gt;Python2&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-8" /&gt;
-&lt;label for="tabs-code-8"&gt;Python2&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -2429,13 +1822,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-9" /&gt;&lt;label for="tabs-0-9"&gt;Python3&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-9" /&gt;
-&lt;label for="tabs-code-9"&gt;Python3&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```python
 
@@ -2443,13 +1833,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-10" /&gt;&lt;label for="tabs-0-10"&gt;Ruby&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-10" /&gt;
-&lt;label for="tabs-code-10"&gt;Ruby&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```ruby
 
@@ -2457,13 +1844,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-11" /&gt;&lt;label for="tabs-0-11"&gt;Rust&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-11" /&gt;
-&lt;label for="tabs-code-11"&gt;Rust&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```rust
 
@@ -2471,13 +1855,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-12" /&gt;&lt;label for="tabs-0-12"&gt;Scala&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-12" /&gt;
-&lt;label for="tabs-code-12"&gt;Scala&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```scala
 
@@ -2485,13 +1866,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-13" /&gt;&lt;label for="tabs-0-13"&gt;Swift&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-13" /&gt;
-&lt;label for="tabs-code-13"&gt;Swift&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```swift
 
@@ -2499,13 +1877,10 @@
 
 &lt;/div&gt;
 
-
 ---
 
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-14" /&gt;&lt;label for="tabs-0-14"&gt;TypeScript&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
 
-&lt;input type="radio" class="toggle" name="tabs-code" id="tabs-code-14" /&gt;
-&lt;label for="tabs-code-14"&gt;TypeScript&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;
 
 ```typescript
 
@@ -2513,8 +1888,6 @@
 
 &lt;/div&gt;
 
-
 ---
-
 
 &lt;/div&gt;</description></item></channel></rss>

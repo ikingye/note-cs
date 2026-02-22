@@ -1,31 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>make on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/compile/make/</link><description>Recent content in make on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/compile/make/index.xml" rel="self" type="application/rss+xml"/><item><title>makefile</title><link>https://kingye.me/note-cs/docs/basic/compile/make/makefile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/compile/make/makefile/</guid><description>&lt;h1 id="makefile"&gt;
- makefile
- 
- &lt;a class="anchor" href="#makefile"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>make on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/compile/make/</link><description>Recent content in make on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/compile/make/index.xml" rel="self" type="application/rss+xml"/><item><title>makefile</title><link>https://kingye.me/note-cs/docs/basic/compile/make/makefile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/compile/make/makefile/</guid><description>&lt;h1 id="makefile"&gt;makefile&lt;a class="anchor" href="#makefile"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;make 不带参数，只会执行 makefile 中第一条 &lt;code&gt;target 声明&lt;/code&gt;（带冒号的语句）&lt;/p&gt;
-&lt;h2 id="简介"&gt;
- 简介
- 
- &lt;a class="anchor" href="#%e7%ae%80%e4%bb%8b"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="简介"&gt;简介&lt;a class="anchor" href="#%e7%ae%80%e4%bb%8b"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Makefile 用于定义如何创建目标文件，比如如何从源码到可执行文件。
 创建这一工具的目标是 减少不必要的编译或者任务。
 传说 &lt;a href="https://en.wikipedia.org/wiki/Stuart_Feldman"&gt;Stuart Feldman&lt;/a&gt; 在 1976 年花了一个周末写出来的， 而今仍然使用广泛，特别是在 Unix 和 Linux 系统上。&lt;/p&gt;
-&lt;h2 id="基础"&gt;
- 基础
- 
- &lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="语法"&gt;
- 语法
- 
- &lt;a class="anchor" href="#%e8%af%ad%e6%b3%95"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h2 id="基础"&gt;基础&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="语法"&gt;语法&lt;a class="anchor" href="#%e8%af%ad%e6%b3%95"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;注释：&lt;code&gt;#&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;文件名： 必须是 &lt;code&gt;Makefile&lt;/code&gt;
@@ -56,12 +36,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id="target-声明"&gt;
- target 声明
- 
- &lt;a class="anchor" href="#target-%e5%a3%b0%e6%98%8e"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;h4 id="target-声明"&gt;target 声明&lt;a class="anchor" href="#target-%e5%a3%b0%e6%98%8e"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;创建一个 &lt;code&gt;target&lt;/code&gt;：
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-makefile" data-lang="makefile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;targets &lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; prerequisites
@@ -87,8 +62,7 @@
 &lt;li&gt;如果声明重复的 &lt;code&gt;target&lt;/code&gt;，make 会给一个 warning，&lt;strong&gt;后面会覆盖前面的&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;但是如果&lt;strong&gt;不定义任何 recipe&lt;/strong&gt;, 就不会冲突, 只是多了依赖关系
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-makefile" data-lang="makefile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;file2.txt&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; file0.txt file3.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-makefile" data-lang="makefile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;file2.txt&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; file0.txt file3.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Phony&lt;/code&gt;(假的) Targets
@@ -104,12 +78,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id="常用-phony-target"&gt;
- 常用 phony target
- 
- &lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8-phony-target"&gt;#&lt;/a&gt;
- 
-&lt;/h5&gt;
+&lt;h5 id="常用-phony-target"&gt;常用 phony target&lt;a class="anchor" href="#%e5%b8%b8%e7%94%a8-phony-target"&gt;#&lt;/a&gt;&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;all&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;clean&lt;/code&gt;&lt;/li&gt;
@@ -117,12 +86,7 @@
 &lt;li&gt;&lt;code&gt;uninstall&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h4 id="变量与通配符"&gt;
- 变量与通配符
- 
- &lt;a class="anchor" href="#%e5%8f%98%e9%87%8f%e4%b8%8e%e9%80%9a%e9%85%8d%e7%ac%a6"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;h4 id="变量与通配符"&gt;变量与通配符&lt;a class="anchor" href="#%e5%8f%98%e9%87%8f%e4%b8%8e%e9%80%9a%e9%85%8d%e7%ac%a6"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;$^&lt;/code&gt;: 代表 prerequisites
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-makefile" data-lang="makefile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 即便分开定义依赖, $^ 依然能拿到
@@ -143,12 +107,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h4 id="模式匹配"&gt;
- 模式匹配
- 
- &lt;a class="anchor" href="#%e6%a8%a1%e5%bc%8f%e5%8c%b9%e9%85%8d"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;h4 id="模式匹配"&gt;模式匹配&lt;a class="anchor" href="#%e6%a8%a1%e5%bc%8f%e5%8c%b9%e9%85%8d"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;make 会找到最具体的匹配
 &lt;ul&gt;
@@ -163,12 +122,7 @@
 &lt;li&gt;make 已经有一些内置的规则, 比如从 _.c 到 _.o&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h4 id="竖线"&gt;
- 竖线
- 
- &lt;a class="anchor" href="#%e7%ab%96%e7%ba%bf"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;h4 id="竖线"&gt;竖线&lt;a class="anchor" href="#%e7%ab%96%e7%ba%bf"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;竖线左边为：正常前提目标（&lt;code&gt;Normal Prerequisites&lt;/code&gt;）
 &lt;ul&gt;
@@ -182,22 +136,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-makefile" data-lang="makefile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;process&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; file*.txt | dir/a.foo.b
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h4 id="变量"&gt;
- 变量
- 
- &lt;a class="anchor" href="#%e5%8f%98%e9%87%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-makefile" data-lang="makefile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;process&lt;/span&gt;&lt;span style="color:#f92672"&gt;:&lt;/span&gt; file*.txt | dir/a.foo.b&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h4 id="变量"&gt;变量&lt;a class="anchor" href="#%e5%8f%98%e9%87%8f"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;变量都是字符串类型&lt;/p&gt;</description></item><item><title>cmake</title><link>https://kingye.me/note-cs/docs/basic/compile/make/cmake/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/compile/make/cmake/</guid><description>&lt;h1 id="cmake"&gt;
- cmake
- 
- &lt;a class="anchor" href="#cmake"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;变量都是字符串类型&lt;/p&gt;</description></item><item><title>cmake</title><link>https://kingye.me/note-cs/docs/basic/compile/make/cmake/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/compile/make/cmake/</guid><description>&lt;h1 id="cmake"&gt;cmake&lt;a class="anchor" href="#cmake"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;推荐 xmake&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;

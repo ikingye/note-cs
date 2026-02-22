@@ -2,20 +2,14 @@
  \(\)
 &lt;/span&gt;
 
-&lt;h1 id="markdown-公式"&gt;
- markdown 公式
- 
- &lt;a class="anchor" href="#markdown-%e5%85%ac%e5%bc%8f"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;h1 id="markdown-公式"&gt;markdown 公式&lt;a class="anchor" href="#markdown-%e5%85%ac%e5%bc%8f"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;来源：&lt;a href="https://github.com/bytesfly/blog/blob/master/Tool/markdown-formula.md"&gt;一文学会在 Markdown 中编辑数学符号与公式&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;行内公式：将公式插入到本行内&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;我在 1 年后：$0.99^{365} \approx 0.02551796$&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$0.99^&lt;span style="color:#f92672"&gt;{&lt;/span&gt;365&lt;span style="color:#f92672"&gt;}&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\a&lt;/span&gt;pprox 0.02551796$
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$0.99^&lt;span style="color:#f92672"&gt;{&lt;/span&gt;365&lt;span style="color:#f92672"&gt;}&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\a&lt;/span&gt;pprox 0.02551796$&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;单独的公式块：将公式插入到新的一行内，并且居中&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;观众老爷们在 1 年后：&lt;/p&gt;
@@ -24,20 +18,9 @@
 $$&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$$
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;1.01^&lt;span style="color:#f92672"&gt;{&lt;/span&gt;365&lt;span style="color:#f92672"&gt;}&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;\a&lt;/span&gt;pprox 37.78343433
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$$
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id="符号"&gt;
- 符号
- 
- &lt;a class="anchor" href="#%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="上下标运算符"&gt;
- 上下标、运算符
- 
- &lt;a class="anchor" href="#%e4%b8%8a%e4%b8%8b%e6%a0%87%e8%bf%90%e7%ae%97%e7%ac%a6"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$$&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="符号"&gt;符号&lt;a class="anchor" href="#%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="上下标运算符"&gt;上下标、运算符&lt;a class="anchor" href="#%e4%b8%8a%e4%b8%8b%e6%a0%87%e8%bf%90%e7%ae%97%e7%ac%a6"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -154,12 +137,7 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="括号"&gt;
- 括号
- 
- &lt;a class="anchor" href="#%e6%8b%ac%e5%8f%b7"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="括号"&gt;括号&lt;a class="anchor" href="#%e6%8b%ac%e5%8f%b7"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -196,12 +174,7 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="三角函数指数对数"&gt;
- 三角函数、指数、对数
- 
- &lt;a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e6%8c%87%e6%95%b0%e5%af%b9%e6%95%b0"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="三角函数指数对数"&gt;三角函数、指数、对数&lt;a class="anchor" href="#%e4%b8%89%e8%a7%92%e5%87%bd%e6%95%b0%e6%8c%87%e6%95%b0%e5%af%b9%e6%95%b0"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -248,12 +221,7 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="数学符号"&gt;
- 数学符号
- 
- &lt;a class="anchor" href="#%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="数学符号"&gt;数学符号&lt;a class="anchor" href="#%e6%95%b0%e5%ad%a6%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -455,12 +423,7 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="连线符号"&gt;
- 连线符号
- 
- &lt;a class="anchor" href="#%e8%bf%9e%e7%ba%bf%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="连线符号"&gt;连线符号&lt;a class="anchor" href="#%e8%bf%9e%e7%ba%bf%e7%ac%a6%e5%8f%b7"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -519,12 +482,7 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="高级运算符"&gt;
- 高级运算符
- 
- &lt;a class="anchor" href="#%e9%ab%98%e7%ba%a7%e8%bf%90%e7%ae%97%e7%ac%a6"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="高级运算符"&gt;高级运算符&lt;a class="anchor" href="#%e9%ab%98%e7%ba%a7%e8%bf%90%e7%ae%97%e7%ac%a6"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -586,12 +544,7 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="集合运算"&gt;
- 集合运算
- 
- &lt;a class="anchor" href="#%e9%9b%86%e5%90%88%e8%bf%90%e7%ae%97"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="集合运算"&gt;集合运算&lt;a class="anchor" href="#%e9%9b%86%e5%90%88%e8%bf%90%e7%ae%97"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -663,12 +616,7 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="希腊字母"&gt;
- 希腊字母
- 
- &lt;a class="anchor" href="#%e5%b8%8c%e8%85%8a%e5%ad%97%e6%af%8d"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="希腊字母"&gt;希腊字母&lt;a class="anchor" href="#%e5%b8%8c%e8%85%8a%e5%ad%97%e6%af%8d"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -850,10 +798,5 @@ $$&lt;/p&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id="字体转换"&gt;
- 字体转换
- 
- &lt;a class="anchor" href="#%e5%ad%97%e4%bd%93%e8%bd%ac%e6%8d%a2"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="字体转换"&gt;字体转换&lt;a class="anchor" href="#%e5%ad%97%e4%bd%93%e8%bd%ac%e6%8d%a2"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;若要对公式的某一部分字符进行字体转换，可以用 &lt;code&gt;{\font {需转换的部分字符}}&lt;/code&gt; 命令，其中&lt;code&gt;\font&lt;/code&gt;部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体。&lt;/p&gt;</description></item></channel></rss>

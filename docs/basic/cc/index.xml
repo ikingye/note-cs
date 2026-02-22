@@ -1,19 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1 计算机组成原理 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/cc/</link><description>Recent content in 1.1 计算机组成原理 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/cc/index.xml" rel="self" type="application/rss+xml"/><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/cc/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/cpu/</guid><description>&lt;h1 id="cpu"&gt;
- CPU
- 
- &lt;a class="anchor" href="#cpu"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1 计算机组成原理 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/basic/cc/</link><description>Recent content in 1.1 计算机组成原理 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/basic/cc/index.xml" rel="self" type="application/rss+xml"/><item><title>CPU</title><link>https://kingye.me/note-cs/docs/basic/cc/cpu/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/cpu/</guid><description>&lt;h1 id="cpu"&gt;CPU&lt;a class="anchor" href="#cpu"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;img src="../../../../../static/image/2022/20230511174835.png" alt="" /&gt;&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://tieba.baidu.com/p/5005825360?see_lz=1&amp;amp;pn=2"&gt;史上最全桌面级 CPU 天梯图&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>DMI</title><link>https://kingye.me/note-cs/docs/basic/cc/dmi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/dmi/</guid><description>&lt;h1 id="dmi"&gt;
- &lt;a href="https://www.wikiwand.com/en/Direct_Media_Interface"&gt;DMI&lt;/a&gt;
- 
- &lt;a class="anchor" href="#dmi"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>DMI</title><link>https://kingye.me/note-cs/docs/basic/cc/dmi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/dmi/</guid><description>&lt;h1 id="dmi"&gt;&lt;a href="https://www.wikiwand.com/en/Direct_Media_Interface"&gt;DMI&lt;/a&gt;&lt;a class="anchor" href="#dmi"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;直接媒体接口（英语：Direct Media Interface，DMI）是英特尔专用的总线，用于电脑主板上南桥芯片和北桥芯片之间的连接。 DMI 的首次应用是作为 2004 年推出的英特尔 900 系列北桥芯片与 ICH6 南桥芯片之间的连接接口。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;DMI 1.0, introduced in &lt;code&gt;2004&lt;/code&gt;.&lt;/li&gt;
@@ -24,12 +14,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;DMI 4.0, released on &lt;code&gt;2021-11-04&lt;/code&gt; with 600 series chipsets, doubles the bandwidth each lane provides and is two times faster when compared to DMI 3.0. The number of DMI 4.0 lanes depends on chipset model used.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>ROM</title><link>https://kingye.me/note-cs/docs/basic/cc/rom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/rom/</guid><description>&lt;h1 id="rom-read-only-memory-只读存储器"&gt;
- ROM: Read-only memory, &lt;a href="https://www.wikiwand.com/zh-cn/%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94"&gt;只读存储器&lt;/a&gt;
- 
- &lt;a class="anchor" href="#rom-read-only-memory-%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>ROM</title><link>https://kingye.me/note-cs/docs/basic/cc/rom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/rom/</guid><description>&lt;h1 id="rom-read-only-memory-只读存储器"&gt;ROM: Read-only memory, &lt;a href="https://www.wikiwand.com/zh-cn/%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94"&gt;只读存储器&lt;/a&gt;&lt;a class="anchor" href="#rom-read-only-memory-%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;ROM 有 5 种类型：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;掩膜编程的只读存储器 MROM（Mask-programmedROM）&lt;/li&gt;
@@ -42,24 +27,9 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="eprom-erasable-programmable-read-only-memory-可擦除可编程式只读存储器"&gt;
- EPROM: &lt;code&gt;Erasable Programmable Read-Only Memory&lt;/code&gt; &lt;a href="https://www.wikiwand.com/zh-cn/%E5%8F%AF%E6%93%A6%E9%99%A4%E5%8F%AF%E8%A6%8F%E5%8A%83%E5%BC%8F%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94"&gt;可擦除可编程式只读存储器&lt;/a&gt;
- 
- &lt;a class="anchor" href="#eprom-erasable-programmable-read-only-memory-%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%bc%8f%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h2 id="eeprom-electrically-erasable-programmable-read-only-memory-电子式可擦除可编程只读存储器"&gt;
- EEPROM: &lt;code&gt;Electrically-Erasable Programmable Read-Only Memory&lt;/code&gt; &lt;a href="https://www.wikiwand.com/zh-cn/EEPROM"&gt;电子式可擦除可编程只读存储器&lt;/a&gt;
- 
- &lt;a class="anchor" href="#eeprom-electrically-erasable-programmable-read-only-memory-%e7%94%b5%e5%ad%90%e5%bc%8f%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h2 id="flash-memory-闪存"&gt;
- &lt;code&gt;Flash memory&lt;/code&gt; &lt;a href="https://www.wikiwand.com/zh-cn/%E5%BF%AB%E9%97%AA%E5%AD%98%E5%82%A8%E5%99%A8"&gt;闪存&lt;/a&gt;
- 
- &lt;a class="anchor" href="#flash-memory-%e9%97%aa%e5%ad%98"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="eprom-erasable-programmable-read-only-memory-可擦除可编程式只读存储器"&gt;EPROM: &lt;code&gt;Erasable Programmable Read-Only Memory&lt;/code&gt; &lt;a href="https://www.wikiwand.com/zh-cn/%E5%8F%AF%E6%93%A6%E9%99%A4%E5%8F%AF%E8%A6%8F%E5%8A%83%E5%BC%8F%E5%94%AF%E8%AE%80%E8%A8%98%E6%86%B6%E9%AB%94"&gt;可擦除可编程式只读存储器&lt;/a&gt;&lt;a class="anchor" href="#eprom-erasable-programmable-read-only-memory-%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%bc%8f%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="eeprom-electrically-erasable-programmable-read-only-memory-电子式可擦除可编程只读存储器"&gt;EEPROM: &lt;code&gt;Electrically-Erasable Programmable Read-Only Memory&lt;/code&gt; &lt;a href="https://www.wikiwand.com/zh-cn/EEPROM"&gt;电子式可擦除可编程只读存储器&lt;/a&gt;&lt;a class="anchor" href="#eeprom-electrically-erasable-programmable-read-only-memory-%e7%94%b5%e5%ad%90%e5%bc%8f%e5%8f%af%e6%93%a6%e9%99%a4%e5%8f%af%e7%bc%96%e7%a8%8b%e5%8f%aa%e8%af%bb%e5%ad%98%e5%82%a8%e5%99%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="flash-memory-闪存"&gt;&lt;code&gt;Flash memory&lt;/code&gt; &lt;a href="https://www.wikiwand.com/zh-cn/%E5%BF%AB%E9%97%AA%E5%AD%98%E5%82%A8%E5%99%A8"&gt;闪存&lt;/a&gt;&lt;a class="anchor" href="#flash-memory-%e9%97%aa%e5%ad%98"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;也叫&lt;code&gt;快闪内存&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;手机上的闪存通常分为
@@ -96,12 +66,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Flash memory&lt;/code&gt; 在分类上属于 &lt;code&gt;EEPROM&lt;/code&gt; 的一种，但一般业界所讲的 EEPROM 指的是那种&lt;strong&gt;非快闪式&lt;/strong&gt;的普通 EEPROM，并不是指它&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="emmc-embedded-mmc"&gt;
- eMMC: embedded MMC
- 
- &lt;a class="anchor" href="#emmc-embedded-mmc"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="emmc-embedded-mmc"&gt;eMMC: embedded MMC&lt;a class="anchor" href="#emmc-embedded-mmc"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;MMC: &lt;a href="https://www.wikiwand.com/en/MultiMediaCard"&gt;MultiMediaCard&lt;/a&gt;
 &lt;ul&gt;
@@ -126,24 +91,9 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="nor-flash"&gt;
- NOR flash
- 
- &lt;a class="anchor" href="#nor-flash"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
-&lt;h3 id="nand-flash"&gt;
- NAND flash
- 
- &lt;a class="anchor" href="#nand-flash"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
-&lt;p&gt;Nand 内部的&lt;em&gt;存储单元&lt;/em&gt;有两大类：&lt;/p&gt;</description></item><item><title>存储</title><link>https://kingye.me/note-cs/docs/basic/cc/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/storage/</guid><description>&lt;h1 id="存储"&gt;
- 存储
- 
- &lt;a class="anchor" href="#%e5%ad%98%e5%82%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;h3 id="nor-flash"&gt;NOR flash&lt;a class="anchor" href="#nor-flash"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="nand-flash"&gt;NAND flash&lt;a class="anchor" href="#nand-flash"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Nand 内部的&lt;em&gt;存储单元&lt;/em&gt;有两大类：&lt;/p&gt;</description></item><item><title>存储</title><link>https://kingye.me/note-cs/docs/basic/cc/storage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/storage/</guid><description>&lt;h1 id="存储"&gt;存储&lt;a class="anchor" href="#%e5%ad%98%e5%82%a8"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;块存储&lt;/li&gt;
 &lt;li&gt;文件存储
@@ -168,46 +118,34 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.zhihu.com/question/26914264"&gt;OpenStack 中的 Swift 是对象存储？&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="分布式文件存储"&gt;
- 分布式文件存储
- 
- &lt;a class="anchor" href="#%e5%88%86%e5%b8%83%e5%bc%8f%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h3 id="glusterglusterfs-github-stars-github-forks-language-last-tag-last-commit"&gt;
- &lt;a href="https://github.com/gluster/glusterfs"&gt;gluster/glusterfs&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/gluster/glusterfs.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/gluster/glusterfs.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/gluster/glusterfs.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/gluster/glusterfs.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/gluster/glusterfs.svg" alt="Last commit" /&gt;
- 
- &lt;a class="anchor" href="#glusterglusterfs-github-stars-github-forks-language-last-tag-last-commit"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
-&lt;h3 id="cephceph-github-stars-github-forks-language-last-tag-last-commit"&gt;
- &lt;a href="https://github.com/ceph/ceph"&gt;ceph/ceph&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ceph/ceph.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ceph/ceph.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ceph/ceph.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ceph/ceph.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ceph/ceph.svg" alt="Last commit" /&gt;
- 
- &lt;a class="anchor" href="#cephceph-github-stars-github-forks-language-last-tag-last-commit"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h2 id="分布式文件存储"&gt;分布式文件存储&lt;a class="anchor" href="#%e5%88%86%e5%b8%83%e5%bc%8f%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="glusterglusterfs-github-stars-github-forks-language-last-tag-last-commit"&gt;&lt;a href="https://github.com/gluster/glusterfs"&gt;gluster/glusterfs&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/gluster/glusterfs.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/gluster/glusterfs.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/gluster/glusterfs.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/gluster/glusterfs.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/gluster/glusterfs.svg" alt="Last commit" /&gt;&lt;a class="anchor" href="#glusterglusterfs-github-stars-github-forks-language-last-tag-last-commit"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="cephceph-github-stars-github-forks-language-last-tag-last-commit"&gt;&lt;a href="https://github.com/ceph/ceph"&gt;ceph/ceph&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/ceph/ceph.svg" alt="Github stars" /&gt; &lt;img src="https://img.shields.io/github/forks/ceph/ceph.svg" alt="Github forks" /&gt; &lt;img src="https://img.shields.io/github/languages/top/ceph/ceph.svg" alt="Language" /&gt; &lt;img src="https://img.shields.io/github/v/tag/ceph/ceph.svg?sort=semver" alt="Last Tag" /&gt; &lt;img src="https://img.shields.io/github/last-commit/ceph/ceph.svg" alt="Last commit" /&gt;&lt;a class="anchor" href="#cephceph-github-stars-github-forks-language-last-tag-last-commit"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Ceph is a distributed object, block, and file storage platform&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.cnblogs.com/kevingrace/p/8387999.html"&gt;Ceph 分布式存储工作原理 及 部署介绍&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id="块存储-vs-文件存储-vs-对象存储"&gt;
- 块存储 vs 文件存储 vs 对象存储
- 
- &lt;a class="anchor" href="#%e5%9d%97%e5%ad%98%e5%82%a8-vs-%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8-vs-%e5%af%b9%e8%b1%a1%e5%ad%98%e5%82%a8"&gt;#&lt;/a&gt;
- 
-&lt;/h4&gt;
+&lt;h4 id="块存储-vs-文件存储-vs-对象存储"&gt;块存储 vs 文件存储 vs 对象存储&lt;a class="anchor" href="#%e5%9d%97%e5%ad%98%e5%82%a8-vs-%e6%96%87%e4%bb%b6%e5%ad%98%e5%82%a8-vs-%e5%af%b9%e8%b1%a1%e5%ad%98%e5%82%a8"&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;文件存储&lt;/code&gt;的用户是自然人&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;块存储&lt;/code&gt;的用户是可以读写&lt;strong&gt;块设备&lt;/strong&gt;的软件系统，例如传统的文件系统、数据库&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;对象存储&lt;/code&gt;的用户则是其它计算机软件&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;总体区别：&lt;/p&gt;</description></item><item><title>存储卡</title><link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/memory-card/</guid><description>&lt;h1 id="存储卡"&gt;
- 存储卡
- 
- &lt;a class="anchor" href="#%e5%ad%98%e5%82%a8%e5%8d%a1"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+&lt;p&gt;总体区别：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文件存储会以文件和文件夹的层次结构来整理和呈现数据;&lt;/li&gt;
+&lt;li&gt;块存储会将数据拆分到任意划分且大小相同的卷中;&lt;/li&gt;
+&lt;li&gt;对象存储会管理数据并将其链接至关联的元数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;协议区别：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1、文件存储对外提供 NFS、SMB、FTP、POSIX 等协议；&lt;/li&gt;
+&lt;li&gt;2、块存储对外提供 iSCSI，FC，NBD 等协议；&lt;/li&gt;
+&lt;li&gt;3、对象存储对外提供 S3 协议&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在网络存储中，服务器把本地的一个逻辑块设备通过某种协议模拟成一个块设备，远程的客户端使用相同的协议把这个逻辑块设备作为一个本地存储介质来使用，划分分区，格式化自己的文件系统等等。
+这就是块存储，比较常见的块存储协议是 &lt;code&gt;iSCSI&lt;/code&gt;。&lt;/p&gt;</description></item><item><title>存储卡</title><link>https://kingye.me/note-cs/docs/basic/cc/memory-card/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/basic/cc/memory-card/</guid><description>&lt;h1 id="存储卡"&gt;存储卡&lt;a class="anchor" href="#%e5%ad%98%e5%82%a8%e5%8d%a1"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;memory card &lt;a href="https://www.wikiwand.com/zh-cn/%E8%A8%98%E6%86%B6%E5%8D%A1"&gt;存储卡&lt;/a&gt;，快闪存储卡、闪卡&lt;/p&gt;
 &lt;p&gt;Memory Card 是一种使用 Flash Memory 技术的可移动存储卡&lt;/p&gt;
 &lt;ul&gt;

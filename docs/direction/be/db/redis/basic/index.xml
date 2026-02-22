@@ -1,22 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/redis/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Start</title><link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</guid><description>&lt;h1 id="quick-start"&gt;
- Quick Start
- 
- &lt;a class="anchor" href="#quick-start"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;redis-cli -h host -p port -a password
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装"&gt;
- 安装
- 
- &lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
-&lt;h2 id="开机自启"&gt;
- 开机自启
- 
- &lt;a class="anchor" href="#%e5%bc%80%e6%9c%ba%e8%87%aa%e5%90%af"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>第一部分 基础入门 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/</link><description>Recent content in 第一部分 基础入门 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/direction/be/db/redis/basic/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Start</title><link>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/direction/be/db/redis/basic/quick-start/</guid><description>&lt;h1 id="quick-start"&gt;Quick Start&lt;a class="anchor" href="#quick-start"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;redis-cli -h host -p port -a password&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="安装"&gt;安装&lt;a class="anchor" href="#%e5%ae%89%e8%a3%85"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="开机自启"&gt;开机自启&lt;a class="anchor" href="#%e5%bc%80%e6%9c%ba%e8%87%aa%e5%90%af"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;sudo vi /usr/lib/systemd/system/redis.service&lt;/code&gt;&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code class="language-config" data-lang="config"&gt;[Unit]
 Description=Redis persistent key-value database
@@ -34,19 +18,16 @@ RuntimeDirectory=redis
 RuntimeDirectoryMode=0755
 
 [Install]
-WantedBy=multi-user.target
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;保存退出，执行 &lt;code&gt;sudo systemctl daemon-reload&lt;/code&gt;
+WantedBy=multi-user.target&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;保存退出，执行 &lt;code&gt;sudo systemctl daemon-reload&lt;/code&gt;
 启动服务 &lt;code&gt;sudo systemctl start redis.service&lt;/code&gt;
 设置开机自启动 &lt;code&gt;sudo systemctl enable redis.service&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="设置密码"&gt;
- 设置密码
- 
- &lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e5%af%86%e7%a0%81"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;h2 id="设置密码"&gt;设置密码&lt;a class="anchor" href="#%e8%ae%be%e7%bd%ae%e5%af%86%e7%a0%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;打开文件 &lt;code&gt;/etc/redis.conf&lt;/code&gt;，
 找到其中的 &lt;code&gt;# requirepass foobared&lt;/code&gt;，去掉前面的 &lt;code&gt;#&lt;/code&gt;，
 并把 &lt;code&gt;foobared&lt;/code&gt; 改成你的密码。&lt;/p&gt;
 &lt;p&gt;ps:
 如果 redis 没有启用密码，我使用 redis-cli -a xxx 可以访问吗？
-答案是：可以&lt;/p&gt;</description></item></channel></rss>
+答案是：可以&lt;/p&gt;
+&lt;h2 id="为什么-redis-默认端口是-6379"&gt;为什么 Redis 默认端口是 6379&lt;a class="anchor" href="#%e4%b8%ba%e4%bb%80%e4%b9%88-redis-%e9%bb%98%e8%ae%a4%e7%ab%af%e5%8f%a3%e6%98%af-6379"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;6379 在是手机按键上 MERZ 对应的号码，而 MERZ 取自意大利歌女 Alessia Merz 的名字。
+MERZ 长期以来被 antirez 及其朋友当作愚蠢的代名词。&lt;/p&gt;</description></item></channel></rss>

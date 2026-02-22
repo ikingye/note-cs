@@ -1,43 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>云原生 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/cn/</link><description>Recent content in 云原生 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/cn/index.xml" rel="self" type="application/rss+xml"/><item><title>4.3 关注项目</title><link>https://kingye.me/note-cs/docs/domain/cc/cn/attention/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/cn/attention/</guid><description>&lt;h1 id="关注项目"&gt;
- 关注项目
- 
- &lt;a class="anchor" href="#%e5%85%b3%e6%b3%a8%e9%a1%b9%e7%9b%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="cncflandscape-github-stars"&gt;
- &lt;a href="https://github.com/cncf/landscape"&gt;cncf/landscape&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/cncf/landscape.svg" alt="Github stars" /&gt;
- 
- &lt;a class="anchor" href="#cncflandscape-github-stars"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>云原生 on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/cn/</link><description>Recent content in 云原生 on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/cn/index.xml" rel="self" type="application/rss+xml"/><item><title>4.3 关注项目</title><link>https://kingye.me/note-cs/docs/domain/cc/cn/attention/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/cn/attention/</guid><description>&lt;h1 id="关注项目"&gt;关注项目&lt;a class="anchor" href="#%e5%85%b3%e6%b3%a8%e9%a1%b9%e7%9b%ae"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="cncflandscape-github-stars"&gt;&lt;a href="https://github.com/cncf/landscape"&gt;cncf/landscape&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/cncf/landscape.svg" alt="Github stars" /&gt;&lt;a class="anchor" href="#cncflandscape-github-stars"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The Cloud Native Interactive Landscape filters and sorts hundreds of projects and products, and shows details including GitHub stars, funding or market cap, first and last commits, contributor counts, headquarters location, and recent tweets.
 &lt;a href="https://l.cncf.io"&gt;https://l.cncf.io&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="trail-map"&gt;
- Trail Map
- 
- &lt;a class="anchor" href="#trail-map"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="trail-map"&gt;Trail Map&lt;a class="anchor" href="#trail-map"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src="https://cdn.jsdelivr.net/gh/cncf/trailmap/CNCF_TrailMap_latest.png" alt="Trail Map" /&gt;&lt;/p&gt;
-&lt;h3 id="cncf-cloud-native-landscape"&gt;
- CNCF Cloud Native Landscape
- 
- &lt;a class="anchor" href="#cncf-cloud-native-landscape"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="cncf-cloud-native-landscape"&gt;CNCF Cloud Native Landscape&lt;a class="anchor" href="#cncf-cloud-native-landscape"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://landscape.cncf.io/images/landscape.png"&gt;&lt;img src="https://landscape.cncf.io/images/landscape.png" alt="CNCF Cloud Native Landscape" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="cncf-serverless-landscape"&gt;
- CNCF Serverless Landscape
- 
- &lt;a class="anchor" href="#cncf-serverless-landscape"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="cncf-serverless-landscape"&gt;CNCF Serverless Landscape&lt;a class="anchor" href="#cncf-serverless-landscape"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://landscape.cncf.io/images/serverless.png"&gt;&lt;img src="https://landscape.cncf.io/images/serverless.png" alt="CNCF Serverless Landscape" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id="dragonflyossdragonfly-github-stars"&gt;
- &lt;a href="https://github.com/dragonflyoss/Dragonfly"&gt;dragonflyoss/Dragonfly&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/dragonflyoss/Dragonfly.svg" alt="Github stars" /&gt;
- 
- &lt;a class="anchor" href="#dragonflyossdragonfly-github-stars"&gt;#&lt;/a&gt;
- 
-&lt;/h3&gt;
+&lt;h3 id="dragonflyossdragonfly-github-stars"&gt;&lt;a href="https://github.com/dragonflyoss/Dragonfly"&gt;dragonflyoss/Dragonfly&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/dragonflyoss/Dragonfly.svg" alt="Github stars" /&gt;&lt;a class="anchor" href="#dragonflyossdragonfly-github-stars"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Dragonfly is an intelligent P2P based image and file distribution system.&lt;/p&gt;</description></item></channel></rss>

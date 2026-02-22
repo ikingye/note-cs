@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xDS on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/</link><description>Recent content in xDS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/index.xml" rel="self" type="application/rss+xml"/><item><title>LDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</guid><description>&lt;h1 id="lds"&gt;
- &lt;a href="https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/lds"&gt;LDS&lt;/a&gt;
- 
- &lt;a class="anchor" href="#lds"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xDS on 计算机学习笔记</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/</link><description>Recent content in xDS on 计算机学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/index.xml" rel="self" type="application/rss+xml"/><item><title>LDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/lds/</guid><description>&lt;h1 id="lds"&gt;&lt;a href="https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/lds"&gt;LDS&lt;/a&gt;&lt;a class="anchor" href="#lds"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;监听器发现服务（LDS）是一个可选的 API，Envoy 将调用它来动态获取监听器。Envoy 将协调 API 响应，并根据需要添加、修改或删除已知的监听器。&lt;/p&gt;
 &lt;p&gt;监听器更新的语义如下：&lt;/p&gt;
 &lt;ul&gt;
@@ -13,22 +8,5 @@
 &lt;li&gt;当更新或删除监听器时，旧的监听器将被置于 “draining（逐出）” 状态，就像整个服务重新启动时一样。监听器移除之后，该监听器所拥有的连接，经过一段时间优雅地关闭（如果可能的话）剩余的连接。逐出时间通过 &lt;code&gt;--drain-time-s&lt;/code&gt; 选项设置。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;注意&lt;/p&gt;
-
 &lt;blockquote class='book-hint '&gt;
- &lt;p&gt;任何在 Envoy 配置中静态定义的监听器都不能通过 LDS API 进行修改或删除。&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>CDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</guid><description>&lt;h1 id="cds"&gt;
- CDS
- 
- &lt;a class="anchor" href="#cds"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;</description></item><item><title>EDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</guid><description>&lt;h1 id="eds"&gt;
- EDS
- 
- &lt;a class="anchor" href="#eds"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;</description></item><item><title>RDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</guid><description>&lt;h1 id="rds"&gt;
- RDS
- 
- &lt;a class="anchor" href="#rds"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;</description></item></channel></rss>
+&lt;p&gt;任何在 Envoy 配置中静态定义的监听器都不能通过 LDS API 进行修改或删除。&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>CDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/cds/</guid><description>&lt;h1 id="cds"&gt;CDS&lt;a class="anchor" href="#cds"&gt;#&lt;/a&gt;&lt;/h1&gt;</description></item><item><title>EDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/eds/</guid><description>&lt;h1 id="eds"&gt;EDS&lt;a class="anchor" href="#eds"&gt;#&lt;/a&gt;&lt;/h1&gt;</description></item><item><title>RDS</title><link>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/note-cs/docs/domain/cc/istio/advanced/eco/envoy/xds/rds/</guid><description>&lt;h1 id="rds"&gt;RDS&lt;a class="anchor" href="#rds"&gt;#&lt;/a&gt;&lt;/h1&gt;</description></item></channel></rss>
