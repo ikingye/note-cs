@@ -12261,7 +12261,7 @@ Docker 本身并不支持 GPU。
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;default&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;right&amp;#34;&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;jupyter-notebook&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;left&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; },
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;workbench.editor.untitled.hint&amp;#34;&lt;/span&gt;&lt;span style="color:#960050;background-color:#1e0010"&gt;:&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;hidden&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;workbench.editor.untitled.hint&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;hidden&amp;#34;&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;workbench.colorTheme&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;Material Theme&amp;#34;&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;cSpell.enableFiletypes&amp;#34;&lt;/span&gt;: [
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;!less&amp;#34;&lt;/span&gt;
