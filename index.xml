@@ -12216,7 +12216,7 @@ Docker 本身并不支持 GPU。
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;tabnine.experimentalAutoImports&amp;#34;&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;[php]&amp;#34;&lt;/span&gt;: {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;editor.defaultFormatter&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;bmewburn.vscode-intelephense-client&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#960050;background-color:#1e0010"&gt;}&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;todo-tree.tree.showScanModeButton&amp;#34;&lt;/span&gt;: &lt;span style="color:#66d9ef"&gt;true&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;todo-tree.regex.regex&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;(//|#|&amp;lt;!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)&amp;#34;&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;&amp;#34;todo-tree.general.tags&amp;#34;&lt;/span&gt;: [
